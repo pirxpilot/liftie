@@ -9,7 +9,9 @@
     "express": "~3",
     "jade": "*",
     "stylus": "*",
-    "superagent": "~0"
+    "superagent": "~0",
+    "cheerio-soupselect": "~0.1.1",
+    "htmlparser2": "~2.5.0"
   },
   "devDependencies": {
     "mocha": "~1",
