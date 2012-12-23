@@ -1,17 +1,18 @@
 extends layout
 
 block content
-  section.resort
-    header
-      a(href='http://www.skialpine.com/mountain/snow-report') Alpine Meadows
-    ul.lifts
-      for ls in liftStatus
-        li.lift
-          span.name= ls.name
-          span.status= ls.status
-    footer
-      ul.summary
-        li 0 open
-        li 0 close
-        li 0 onhold
-        li 0 scheduled
+  for resort in resorts
+    section.resort
+      header
+        a(href=resort.href)= resort.name
+      ul.lifts
+        for ls in resort.status
+          li.lift
+            span.name= ls.name
+            span.status= ls.status
+      footer
+        ul.summary
+          li 0 open
+          li 0 close
+          li 0 onhold
+          li 0 scheduled
