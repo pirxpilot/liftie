@@ -1,5 +1,55 @@
+@import 'nib'
+
+$primary=#00B7FF
+
+*
+  padding 0
+  margin 0
+
 body
-  padding: 50px
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif
+  padding: 20px
+  font-size: 1em
+  font-family: Ubuntu, "Lucida Grande", Helvetica, Arial, sans-serif
+
 a
   color: #00B7FF
+
+.resort
+  padding 1em
+  max-width 300px
+  background-color GhostWhite
+
+  header
+    font-size 1.2em
+    line-height 1em
+    padding-bottom .4em
+    border-bottom solid 1px grey
+    a
+      text-decoration none
+
+  footer
+    font-size .8em
+    border-top solid 1px grey
+    padding-top .4em
+
+.lifts
+  list-style none
+
+  .lift
+    display block
+    padding .5em 0
+    clearfix()
+
+    .name
+      float left
+
+    .status
+      float right
+
+.summary
+  list-style none
+  clearfix()
+
+  li
+    float left
+    margin-right 1em

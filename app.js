@@ -6,7 +6,16 @@
 var express = require('express'),
   routes = require('./lib/routes'),
   http = require('http'),
-  path = require('path');
+  path = require('path'),
+  stylus = require('stylus'),
+  nib = require('nib');
+
+function compileCss(str, path) {
+  return stylus(str)
+    .set('filename', path)
+    .set('compress', true)
+    .use(nib());
+}
 
 var app = express();
 
@@ -18,7 +27,10 @@ app.configure(function(){
   app.use(express.logger('dev'));
   app.use(express.bodyParser());
   app.use(app.router);
-  app.use(require('stylus').middleware(__dirname + '/public'));
+  app.use(stylus.middleware({
+    src: __dirname + '/public',
+    compile: compileCss
+  }));
   app.use(express.static(path.join(__dirname, 'public')));
 });
 
