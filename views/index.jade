@@ -12,7 +12,5 @@ block content
             span.status= ls.status
       footer
         ul.summary
-          li 0 open
-          li 0 close
-          li 0 onhold
-          li 0 scheduled
+          for value, key in resort.stats
+            li  #{value} #{key}
