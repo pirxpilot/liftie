@@ -1,8 +1,3 @@
-
-/**
- * Module dependencies.
- */
-
 var express = require('express'),
   routes = require('./lib/routes'),
   http = require('http'),

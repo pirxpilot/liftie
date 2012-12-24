@@ -1,6 +1,6 @@
 {
   "name": "liftie",
-  "description": "Simple quick lift status",
+  "description": "Clean, simple, easy to read, fast lift status for all ski resort",
   "version": "0.0.1",
   "scripts": {
     "start": "node app"
