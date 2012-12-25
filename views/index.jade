@@ -6,10 +6,10 @@ block content
       header
         a(href=resort.href)= resort.name
       ul.lifts
-        for ls in resort.status
+        for status, name in resort.status
           li.lift
-            span.name= ls.name
-            span.status= ls.status
+            span.name #{name}
+            span.status #{status}
       footer
         ul.summary
           for value, key in resort.stats

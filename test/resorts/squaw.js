@@ -43,10 +43,7 @@ describe('parse squaw', function() {
         'Silverado': 'closed'
       };
 
-      assert.equal(status.length, Object.keys(expected).length);
-      status.forEach(function(ls) {
-        assert.deepEqual(ls.status, expected[ls.name], 'Status for ' + ls.name);
-      });
+      assert.deepEqual(status, expected);
       done(err);
     }));
   });

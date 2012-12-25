@@ -5,7 +5,7 @@ var stats = require('../lib/stats');
 
 describe('stats', function() {
   it('should report 0 for empty', function() {
-    assert.deepEqual(stats([]), {
+    assert.deepEqual(stats({}), {
       open: 0,
       closed: 0,
       hold: 0,
@@ -29,13 +29,6 @@ describe('stats', function() {
       'n14': 'scheduled',
       'n17': 'scheduled'
     };
-    status = Object.keys(status).map(function(key) {
-      return {
-        name: key,
-        status: status[key]
-      };
-    });
-
     assert.deepEqual(stats(status), {
       open: 5,
       closed: 4,
