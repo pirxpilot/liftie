@@ -9,7 +9,7 @@ block content
         for status, name in resort.status
           li.lift
             span.name #{name}
-            span.status #{status}
+            span.status(class='ls-#{status}')
       footer
         ul.summary
           for value, key in resort.stats
