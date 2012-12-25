@@ -1,3 +1,5 @@
+[![Build Status](https://secure.travis-ci.org/code42day/liftie.png)](http://travis-ci.org/code42day/liftie)
+
 #liftie.info
 
 Clean, simple, easy to read, fast lift status for all ski resort.

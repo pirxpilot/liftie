@@ -20,6 +20,12 @@
     "jshint": "~0"
   },
   "main": "app.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "make test"
+  },
   "repository": "",
   "keywords": [
     "ski",
