@@ -1,4 +1,12 @@
 
+0.0.2 / 2012-12-24 
+==================
+
+  * Replace text with icons representing status
+  * Add missing squaw.html example
+  * Add travis-ci build status
+  * Simplify status object
+
 0.0.1 / 2012-12-24 
 ==================
 
