@@ -3,7 +3,7 @@
   "description": "Clean, simple, easy to read, fast lift status for all ski resort",
   "version": "0.0.3",
   "scripts": {
-    "start": "node app"
+    "test": "make test"
   },
   "dependencies": {
     "express": "~3",
@@ -13,7 +13,8 @@
     "cheerio-soupselect": "~0.1.1",
     "htmlparser2": "~2.5.0",
     "nib": "~0.9.0",
-    "async": "~0.1.22"
+    "async": "~0.1.22",
+    "async-cache": "~0.1.0"
   },
   "devDependencies": {
     "mocha": "~1",
@@ -22,9 +23,6 @@
   "main": "app.js",
   "directories": {
     "test": "test"
-  },
-  "scripts": {
-    "test": "make test"
   },
   "repository": "git://github.com/code42day/liftie.git",
   "keywords": [
