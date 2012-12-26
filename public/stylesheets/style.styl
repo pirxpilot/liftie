@@ -1,14 +1,18 @@
 @import 'nib'
-@import './icons'
 
-$primary=#00B7FF
+// colors: http://colorschemedesigner.com/#0542cw0w0w0w0
+$blue=#104ba9
+$red=#ff1e00
+$yellow=#ffa200
+$green=#00bf32
+
+@import './icons'
 
 *
   padding 0
   margin 0
 
 body
-  padding: 20px
   font-size: 1em
   font-family: Ubuntu, "Lucida Grande", Helvetica, Arial, sans-serif
 
@@ -20,8 +24,7 @@ a
   float left
   background-color GhostWhite
   padding 1em
-  margin-right 1em
-  margin-bottom 1em
+  margin 1em 0 0 1em
   min-width 280px
 
   header
@@ -60,3 +63,19 @@ a
   li
     float left
     margin-right 1em
+
+body > footer
+  clear both
+  padding-top 1em
+  line-height 1.4em
+  text-align center
+
+  a
+    color #444444
+    font-size 1.3em
+    margin 0 .2em
+    text-decoration none
+    transition color .5s ease
+
+    &:hover
+      color black
