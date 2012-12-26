@@ -1,7 +1,7 @@
 {
   "name": "liftie",
   "description": "Clean, simple, easy to read, fast lift status for all ski resort",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "scripts": {
     "start": "node app"
   },
@@ -26,7 +26,7 @@
   "scripts": {
     "test": "make test"
   },
-  "repository": "",
+  "repository": "git://github.com/code42day/liftie.git",
   "keywords": [
     "ski",
     "snowboard"

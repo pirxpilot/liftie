@@ -1,4 +1,12 @@
 
+0.0.3 / 2012-12-25 
+==================
+
+  * Display status icons in resorts stats
+  * Display footer with github and furkot links
+  * Add favicons
+  * Adjust status colors
+
 0.0.2 / 2012-12-24 
 ==================
 
