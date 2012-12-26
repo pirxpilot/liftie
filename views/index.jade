@@ -13,4 +13,6 @@ block content
       footer
         ul.summary
           for value, key in resort.stats
-            li  #{value} #{key}
+            li
+              span(class='ls-#{key}') &nbsp;#{value}&nbsp;
+              span #{key}
