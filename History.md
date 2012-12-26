@@ -1,4 +1,11 @@
 
+0.0.4 / 2012-12-25 
+==================
+
+  * Support for 'resorts' parameter
+  * Add Heavenly
+  * Use async cache to store lift status
+
 0.0.3 / 2012-12-25 
 ==================
 
