@@ -2,7 +2,7 @@ extends layout
 
 block content
   for resort in resorts
-    section.resort
+    section.resort(data-resort=resort.id)
       header
         a(href=resort.href)= resort.name
       ul.lifts
