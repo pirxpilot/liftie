@@ -6,6 +6,10 @@ $red=#ff1e00
 $yellow=#ffa200
 $green=#00bf32
 
+
+$column-width=320px
+$column-gutter=20px
+
 @import './icons'
 
 *
@@ -21,11 +25,12 @@ a
 
 .resort
   clearfix()
+  box-sizing border-box
+  margin $column-gutter ($column-gutter/2)
+  width $column-width
+  padding .8em
   float left
   background-color GhostWhite
-  padding 1em
-  margin 1em 0 0 1em
-  min-width 280px
 
   header
     font-size 1.2em
@@ -62,14 +67,16 @@ a
 
   li
     float left
-    margin-right 1em
+    margin-right .5em
+
+    &:last-child
+      margin-right 0
 
 body > footer
   clear both
   padding-top 1em
   line-height 1.4em
   text-align center
-
   a
     color #444444
     font-size 1.3em
@@ -79,3 +86,22 @@ body > footer
 
     &:hover
       color black
+
+contentWidth(n)
+  return n == 1 ? $column-width : n * ($column-width + $column-gutter)
+
+.content
+  margin 0 auto
+  width contentWidth(7)
+
+
+for col in 4 3 2 1
+  $max = contentWidth(col + 1)
+  $media_query = 'screen and (max-width:' + $max + ')'
+  @media $media_query
+    .content
+      width contentWidth(col)
+    if col == 1
+      .resort
+        margin-right 0
+        margin-left 0
