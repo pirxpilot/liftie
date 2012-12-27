@@ -14,11 +14,14 @@
     "htmlparser2": "~2.5.0",
     "nib": "~0.9.0",
     "async": "~0.1.22",
-    "async-cache": "~0.1.0"
+    "async-cache": "~0.1.0",
+    "connect-cachify": "0.0.12"
   },
   "devDependencies": {
     "mocha": "~1",
-    "jshint": "~0"
+    "jshint": "~0",
+    "component": "~0",
+    "uglify-js": "~2"
   },
   "main": "app.js",
   "directories": {

@@ -1,9 +1,10 @@
 var express = require('express'),
-  routes = require('./lib/routes'),
+  cachify = require('connect-cachify'),
   http = require('http'),
   path = require('path'),
   stylus = require('stylus'),
-  nib = require('nib');
+  nib = require('nib'),
+  routes = require('./lib/routes');
 
 function compileCss(str, path) {
   return stylus(str)
@@ -15,6 +16,8 @@ function compileCss(str, path) {
 var app = express();
 
 app.configure(function(){
+  app.locals.min = '.min';
+  app.locals.cachify = cachify.cachify; // needed since our cachify middleware is below router
   app.set('port', process.env.PORT || 3000);
   app.set('views', __dirname + '/views');
   app.set('view engine', 'jade');
@@ -26,10 +29,14 @@ app.configure(function(){
     src: __dirname + '/public',
     compile: compileCss
   }));
+  app.use(cachify.setup({}, {
+    root: path.join(__dirname, 'public')
+  }));
   app.use(express.static(path.join(__dirname, 'public')));
 });
 
 app.configure('development', function(){
+  app.locals.min = '';
   app.use(express.errorHandler());
 });
 

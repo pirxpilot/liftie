@@ -1,0 +1,12 @@
+{
+  "name": "boot",
+  "description": "Main app boot component",
+  "dependencies": {
+    "visionmedia/superagent": "*"
+  },
+  "scripts": [
+    "index.js",
+    "init.js"
+  ],
+  "local": []
+}
