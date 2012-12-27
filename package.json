@@ -19,7 +19,8 @@
   "devDependencies": {
     "mocha": "~1",
     "jshint": "~0",
-    "component": "~0"
+    "component": "~0",
+    "uglify-js": "~2"
   },
   "main": "app.js",
   "directories": {

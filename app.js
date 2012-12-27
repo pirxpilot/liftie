@@ -15,6 +15,7 @@ function compileCss(str, path) {
 var app = express();
 
 app.configure(function(){
+  app.locals.min = '.min';
   app.set('port', process.env.PORT || 3000);
   app.set('views', __dirname + '/views');
   app.set('view engine', 'jade');
@@ -30,6 +31,7 @@ app.configure(function(){
 });
 
 app.configure('development', function(){
+  app.locals.min = '';
   app.use(express.errorHandler());
 });
 
