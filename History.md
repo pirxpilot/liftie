@@ -1,4 +1,15 @@
 
+0.0.5 / 2012-12-26 
+==================
+
+  * Use connect-cachify for cache busting on .js and .css
+  * Uglify js in production environment
+  * Run init only after readyState complete
+  * Autorefresh resort data
+  * Scaffolding for using component framework
+  * Simple status REST API
+  * Remap icon font to make it compatible with older browsers
+
 0.0.4 / 2012-12-25 
 ==================
 

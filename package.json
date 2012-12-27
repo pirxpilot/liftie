@@ -1,7 +1,7 @@
 {
   "name": "liftie",
-  "description": "Clean, simple, easy to read, fast lift status for all ski resort",
-  "version": "0.0.4",
+  "description": "Clean, simple, easy to read, fast lift status for ski resorts",
+  "version": "0.0.5",
   "scripts": {
     "test": "make test"
   },
