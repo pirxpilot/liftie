@@ -62,7 +62,7 @@ Parse function needs to return a lift status object, which will look something l
       'T-Bar': 'scheduled'
     }
 
-Once all tests are passing add acme to the resort list in the ```routes/index.js``` module.
+Newly added resort is displayed automatically on liftie index page.
 
 ## Credits
 
