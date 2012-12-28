@@ -1,0 +1,1792 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+
+<!-- "****** groomingreport. fileName / mountain-summer.grooming-report PageCategory / mountain-summer.grooming-report Page / mountain-summer Area  -->
+
+<!-- home snippets - vars added -->
+
+<!--[if lt IE 7 ]> <html class="ie6" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie7" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie8" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie9" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class="" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml"> <!--<![endif]-->
+<head>
+	<title>Northstar California | Grooming Report & Lift Status</title>
+	<meta name="description" content="Northstar California snow report and weather conditions at Lake Tahoe. View snow/weather conditions, web cams, lift schedule, grooming and forecast">
+	<meta name="keywords" content="tahoe ski conditions, snowboard ski parks, superpipe, tahoe weather, new snow, tahoe web cam, grooming, tahoe road conditions, cell phone snow alerts northstar at tahoe resort, lake tahoe, skiing, snowboarding, north star, ski resorts, north lake tahoe ca, tahoe skiing">
+	<meta name="revisit-after" content="3 days">
+	<meta name="ROBOTS" content="all">
+	<meta name="rating" content="GENERAL">
+	<meta name="distribution" content="GLOBAL">
+	<meta name="classification" content="Ski Resort">
+	<meta name="copyright" content="Vail Resorts">
+	<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+	
+	<link rel="stylesheet" href="/nsbase/wrap/theme0/css/home_dev.css">
+	<link rel="stylesheet" href="/nsbase/wrap/theme0/css/calendar.css">
+	
+	<link rel="alternate" type="application/rss+xml" title="RSS - Northstar California Snow Report" href="/rss/rss-snow_report.asp">
+	<link rel="alternate" type="application/rss+xml" title="RSS - Northstar California Press Releases" href="/rss/rss-pr.asp">
+	<link rel="alternate" type="application/rss+xml" title="RSS - Northstar California Events" href="/rss/rss-events.asp">
+	
+	<link rel="canonical" href="http://www.northstarattahoe.com/groomingreport.asp">
+	
+	<meta property="og:image" content="http://www.northstarattahoe.com/nsbase/wrap/theme0/images/facebook_ns_logo.png"/>
+
+	
+	<script type="text/javascript" language="javascript" src="/nsbase/wrap/theme0/scripts/jquery-1.7.2.min.js"></script>
+
+	
+
+
+	<script language="javascript" src="/nsbase/wrap/theme0/scripts/left_nav.js" type="text/javascript"></script>
+		
+	<script language="javascript" type="text/javascript">
+	
+// if not the homepage, we must generate the title image
+$(document).ready(function() {
+	
+	// run the header creation script
+	// createHeader('groomingreport.');
+	
+	// position the search box
+	positionSearchBox();
+});
+
+	</script>
+
+
+
+	<script language="javascript" type="text/javascript">
+
+// function to position the search box, based on window width
+function positionSearchBox() {
+	// position the search form
+	var intNewLeft, intNewTop;
+	
+	// caculate offset from the center
+	intNewLeft = ($(window).width() / 2) + 337;
+	
+	// find position of menu bar, and set the top accordingly
+	intNewTop = $('#menuBar').offset().top + 6;
+	
+	// set the position accordingly
+	$('#searchForm').css('left', intNewLeft + 'px');
+	$('#searchForm').css('top', intNewTop + 'px');
+	
+	// make the form visible
+	$('#searchForm').css('visibility', 'visible');
+
+}
+
+// recalculate the position of the searchBox on resize
+$(window).resize(function () { 
+	positionSearchBox();
+});
+
+// remove "search" content on first focus
+function changeSearchText() {
+
+	if ($('#searchField').attr('value') == 'search') {
+		$('#searchField').attr('value', '');
+	}
+}
+
+// hide the our resorts drop down on scroll
+$(window).scroll(function () { 
+	$('#ourResorts').css('visibility', 'hidden');
+});
+	</script>
+
+</head>
+
+<body>
+
+<!-- FB like button setup -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<!-- END FB like setup -->
+
+
+
+<div id="interactiveBar">
+	<div id="interactiveContent">
+
+		<img id="weatherIcon" alt="Partly Cloudy" title="Partly Cloudy" src="/nsbase/wrap/theme0/images/interactiveBar/partly-cloudy.png" />
+
+		<div id="our-sites-tab">
+			<a href="#" id="ourSitesButton" alt="Our Sites" title="Our Sites" onMouseOver="showResortsDropDown(this);" onMouseOut="delayHideResortsDrop();"> OUR SITES </a>
+		</div>
+
+		<div id="menu-container">
+			<select name="interactiveMenu" id="interactiveMenu" style="margin-left: 10px; margin-top: 15px; margin-right: 10px;" onchange="changeIMap(this.value);">
+				<option value="weatherInfo">Forecast</option>
+				<option value="snowInfo">New Snow</option>
+				<option value="trailsInfo">Lifts + Trails</option>
+				<option value="parksInfo">Parks + Pipes</option>
+				<option value="camsBox">Cams</option>
+				<option value="storeBox">Buy</option>
+				<option value="enewsBox">E-News</option>
+				<option value="connectBox">Connect</option>
+			</select>
+		</div>
+
+		<script>
+			var currentBox = 'weatherInfo';
+			$("#interactiveMenu").val("weatherInfo");
+			function changeIMap(id) {
+    			$('#'+currentBox).slideUp('slow',function() {
+    				$('#'+id).slideDown('slow');
+    				currentBox = id;
+    			} );
+			}
+			function hideIMap() {
+    			$('#interactiveContent .item').each(function() { $(this).hide(); });
+    			$('#menu-container').show();
+    			changeIMap('weatherInfo');
+			}
+			function showIMap() {
+    			$('#interactiveContent .item').each(function() { $(this).show(); });
+    			$('#menu-container').hide();
+			}
+			$(window).resize(function() {
+				if ($(window).width() < 993) {
+					hideIMap();
+				} else {
+					showIMap();
+				}
+			});
+			$(document).ready(function(){
+				if ($(window).width() < 993) {
+					hideIMap();
+				}
+ 			});
+		</script>
+
+		<div id="weatherInfo" class="item" onclick="window.location = '/winter/forecast.asp'" style="display: block;">
+			<a href="/winter/forecast.asp"><img class="barTitle" src="/nsbase/wrap/theme0/images/interactiveBar/title_weather.png" width="66" height="8" alt="View 5-day forecast for Northstar in Truckee, California" title="View 5-day forecast for Northstar in Truckee, California" /></a><br />
+			<span id="weatherTemp">14&deg;</span>
+		</div>
+		
+		<div id="snowInfo" class="item" onclick="window.location = '/snowreport.asp'">
+			<a href="/snowreport.asp"><img class="barTitleIcon" src="/nsbase/wrap/theme0/images/interactiveBar/newsnow_icon.png" width="91" height="14" alt="View Northstar Mountain Snow Report" title="View Northstar Mountain Snow Report" /></a><br />
+			<div class="barInfoBox">4"<br />
+			<img class="barBoxTitle" src="/nsbase/wrap/theme0/images/interactiveBar/subtitle_mid-mtn.png" alt="Mid-Mtn" title="Mid-Mtn" /></div>
+			
+			<div class="lastBarInfoBox">6"<br />
+			<img class="barBoxTitle" src="/nsbase/wrap/theme0/images/interactiveBar/subtitle_summit.png" alt="Summit" title="Summit" /></div>
+		</div>
+		
+		<div id="trailsInfo" class="item" onclick="window.location = '/groomingreport.asp'">
+			<a href="/groomingreport.asp"><img class="barTitleIcon" src="/nsbase/wrap/theme0/images/interactiveBar/liftstrails_icon.png" width="110" height="14" alt="View Northstar Mountain Lifts + Trails Report" title="View Northstar Mountain Lifts + Trails Report" /></a><br />
+			<div class="barInfoBox">18<br />
+			<img class="barBoxTitle" src="/nsbase/wrap/theme0/images/interactiveBar/subtitle_lifts.png" alt="Lifts" title="Lifts" /></div>
+			
+			<div class="barInfoBox">87<br />
+			<img class="barBoxTitle" src="/nsbase/wrap/theme0/images/interactiveBar/subtitle_trails.png" alt="Trails" title="Trails" /></div>
+			
+			<div class="lastBarInfoBox">54<br />
+			<img class="barBoxTitle" src="/nsbase/wrap/theme0/images/interactiveBar/subtitle_groomed.png" alt="Groomed" title="Groomed" /></div>
+		</div>
+
+		<div id="parksInfo" class="item" onclick="window.location = '/info/parks/park-report.asp'">
+			<a href="/info/parks/park-report.asp"><img class="barTitleIcon" src="/nsbase/wrap/theme0/images/interactiveBar/parks_icon.png" width="109" height="14" alt="View the Terrain Parks + Pipes Report" title="View the Terrain Parks + Pipes Report" /></a><br />
+			<div class="barInfoBox">3<br />
+			<img class="barBoxTitle" src="/nsbase/wrap/theme0/images/interactiveBar/subtitle_parks.png" alt="Parks" title="Parks" /></div>
+			
+			<div class="barInfoBox">61<br />
+			<img class="barBoxTitle" src="/nsbase/wrap/theme0/images/interactiveBar/subtitle_features.png" alt="Features" title="Features" /></div>
+			
+			<div class="lastBarInfoBox">Closed<br />
+			<img class="barBoxTitle" src="/nsbase/wrap/theme0/images/interactiveBar/subtitle_superpipe.png" alt="Superpipe" title="Superpipe" /></div>
+		</div>
+		
+<!-- SUMMER VERSIONS
+	<div id="bikeInfo" class="item" onclick="window.location = '/info/summer/summer_trail_report.asp'">
+			<a href="/info/summer/summer_trail_report.asp"><img class="barTitleIcon" src="/nsbase/wrap/theme0/images/interactiveBar/bike_icon.png" width="56" height="15" alt="View Northstar Mountain Bike + Hike Park trail report" title="View Northstar Mountain Bike + Hike Park trail report" /></a><br />
+			<div class="barInfoBox">
+0
+
+
+
+<br />
+			<img class="barBoxTitle" src="/nsbase/wrap/theme0/images/interactiveBar/subtitle_trails.png" alt="Trails" title="Trails" /></div>
+			
+			<div class="lastBarInfoBox">
+0
+
+
+
+<br />
+			<img class="barBoxTitle" src="/nsbase/wrap/theme0/images/interactiveBar/subtitle_lifts.png" alt="Lifts" title="Lifts" /></div>
+		</div>
+		
+		
+		<div id="hikeInfo" class="item" onclick="window.location = '/info/summer/summer_trail_report.asp'">
+			<a href="/info/summer/summer_trail_report.asp"><img class="barTitleIcon" src="/nsbase/wrap/theme0/images/interactiveBar/hike_icon.png" width="50" height="14" alt="View Northstar Mountain Bike + Hike Park trail report" title="View Northstar Mountain Bike + Hike Park trail report" /></a><br />
+			<div class="barInfoBox">
+0
+
+
+
+<br />
+			<img class="barBoxTitle" src="/nsbase/wrap/theme0/images/interactiveBar/subtitle_trails.png" alt="Trails" title="Trails" /></div>
+			
+			<div class="lastBarInfoBox">
+4
+
+
+
+<br />
+			<img class="barBoxTitle" src="/nsbase/wrap/theme0/images/interactiveBar/subtitle_vistas.png" alt="Vistas" title="Vistas" /></div>
+		</div>
+		
+		
+		<div id="golfInfo" class="item" onclick="window.location = '/info/summer/golf.asp'">
+			<a href="/info/summer/golf.asp"><img class="barTitleIcon" src="/nsbase/wrap/theme0/images/interactiveBar/golf_icon.png" width="62" height="14" alt="View Northstar golf rates, and reserve tee times online" title="View Northstar golf rates, and reserve tee times online" /></a><br />
+			<div class="barInfoBox">
+18
+
+
+
+<br />
+			<img class="barBoxTitle" src="/nsbase/wrap/theme0/images/interactiveBar/subtitle_holes.png" alt="Holes" title="Holes" /></div>
+			
+			<div class="lastBarInfoBox" id="golfRangeText">
+Open
+
+
+
+<br />
+			<img class="barBoxTitle" src="/nsbase/wrap/theme0/images/interactiveBar/subtitle_range.png" alt="Range" title="Range" /></div>
+		</div>
+		
+		<div id="hoursBox" class="item">
+			<a href="/info/ski/the-mountain/mountain-hours.asp?category=mountain-summer.mtnbike.two"><img class="barButton" src="/nsbase/wrap/theme0/images/interactiveBar/button_hours.png" width="50" height="40" alt="View resort hours of operation" title="View resort hours of operation" /></a>
+		</div>
+-->				
+		<div id="camsBox" class="item">
+			<a href="/info/ski/the-mountain/mountain-cams.asp"><img class="barButton" src="/nsbase/wrap/theme0/images/interactiveBar/button_cams.png" width="41" height="40" alt="View live web cams at Northstar - on the mountain and in the Village at Northstar" title="View live web cams at Northstar - on the mountain and in the Village at Northstar" /></a>
+		</div>
+	
+		<div id="storeBox" class="item">
+			<a href="/info/ski/trip-planning/buy-online.asp"><img class="barButton" src="/nsbase/wrap/theme0/images/interactiveBar/button_store.png" width="47" height="40" alt="Purchase lift tickets & season passes, and reserve lessons & rentals online" title="Purchase lift tickets & season passes, and reserve lessons & rentals online" /></a>
+		</div>
+		
+		<div id="enewsBox" class="item">
+			<a href="http://www.snow.com/my-account/my-email-preferences.aspx" target="_blank"><img class="barButton" src="/nsbase/wrap/theme0/images/interactiveBar/button_enews.png" width="53" height="40" alt="Subscribe to Northstar E-News for updates on special events, lodging deals, ticket discounts and more" title="Subscribe to Northstar E-News for updates on special events, lodging deals, ticket discounts and more" /></a>
+		</div>
+		
+		<div id="connectBox" class="item">
+			<img class="barTitle" src="/nsbase/wrap/theme0/images/interactiveBar/title_connect.png" width="51" height="8" alt="Connect" title="Connect" /><br clear="all" />
+			<a href="http://www.facebook.com/Northstar" target="_blank"><img class="connectIcon" alt="Facebook" title="Facebook" src="/nsbase/wrap/theme0/images/interactiveBar/facebook_icon.png" width="18" height="19" /></a>
+			<a href="https://twitter.com/SkiNorthstar" target="_blank"><img class="connectIcon" alt="Twitter" title="Twitter" src="/nsbase/wrap/theme0/images/interactiveBar/twitter_icon.png" /></a>
+			<a href="http://vimeo.com/skinorthstar" target="_blank"><img class="connectIcon" alt="Vimeo" title="Vimeo" src="/nsbase/wrap/theme0/images/interactiveBar/vimeo_icon.png" width="22" height="18" /></a>
+			<a href="http://instagram.com/skinorthstar/" target="_blank"><img class="lastConnectIcon" alt="Instagram" title="Instagram" src="/nsbase/wrap/theme0/images/interactiveBar/instagram_icon.png" width="19" height="19" /></a>
+		</div>
+	
+	</div><!-- end interactiveContent -->
+</div><!-- end interactiveBar -->
+
+<div id="wrapper">
+
+
+	<a href="/"><img id="northstarLogo" alt="Northstar California" title="Northstar California" src="/nsbase/wrap/theme0/images/northstarLogo.png" width="246" height="140" /></a>
+	
+	<div id="menuBar">
+		<a href="/info/ski/media/about.asp"><img alt="The Way It Should Be" title="The Way It Should Be" src="/nsbase/wrap/theme0/images/blade_icon.png" width="24" height="25" /></a>
+
+
+		<ul id="nav">
+			<li class="mainNav">
+				<a href="/info/ski/media/about.asp">NORTHSTAR EXPERIENCE</a>
+				<ul>
+<li><a href="/info/ski/whats-new.asp">New for Winter 2012.2013</a></li>
+				<li><a href="/info/ski/northstar-mountain-master-plan.asp">Mountain Master Plan</a></li>
+				<li><a href="/info/ski/media/about.asp">About Northstar</a></li>
+				<li><a href="/info/ski/four-perfect-days.asp">Four Perfect Days</a></li>
+				<li><a href="/info/ski/media/history.asp">History</a></li>
+				<li><a href="/info/ski/the-mountain/mountain-stats.asp?category=environment">Mountain Stats</a></li>
+				<li><a href="/info/ski/media/accolades.asp">Accolades + Awards</a></li>
+				<li><a href="/info/ski/media/environment.asp">Environment</a></li>
+				<li><a href="/info/ski/media/community.asp">Community</a></li>
+				
+				</ul>
+			</li>
+			<li class="mainNav">
+				<a href="/info/ski/trip-planning/accommodations-overview.asp">TRIP PLANNING</a>
+				
+				<ul>
+<li><a href="/info/ski/trip-planning/accommodations-overview.asp">Lodging + Hotels</a></li>
+			<li><a href="/info/ski/trip-planning/lodging-deals-packages.asp">Vacation Packages + Deals</a></li>
+			<li><a href="/info/ski/winter_activities.asp">Activities</a></li>
+			<li><a href="/info/ski/lessons-rentals/childcare_minors_camp.asp">Child Care</a></li>
+			<li><a href="/info/ski/trip-planning/food-dining.asp">Food + Dining</a></li>
+			<li><a href="/events.calendar.month.asp?category=trip-planning.events">Events Calendar</a></li>
+			<li><a href="/info/ski/the-mountain/mountain-hours.asp?category=trip-planning.events">Hours of Operation</a></li>
+			<li><a href="/info/ski/the-village/gear.asp">Online Gear Shop</a></li>
+			<li><hr /></li>
+			<li><a href="/info/ski/groups-meetings/group-trips.asp">Winter Groups (20+)</a></li>
+			<li><a href="/info/ski/groups-meetings/tahoe-weddings.asp">Weddings</a></li>
+			<li><a href="/info/ski/groups-meetings/conferences-meetings.asp">Conferences + Meetings</a></li>
+			<li><hr /></li>
+			<li><a href="/info/ski/trip-planning/getting-around.asp">On-Site Transportation</a></li>
+			<li><a href="/info/ski/trip-planning/location.asp">Getting Here</a></li>
+			
+
+				</ul>
+			</li>
+			<li class="mainNav">
+				<a href="/info/ski/tickets-passes/lift-tickets.asp">TICKETS + PASSES</a>
+				
+				<ul>
+<li><a href="/info/ski/tickets-passes/lift-tickets.asp">Lift Tickets</a></li>
+			<li><a href="/info/ski/tickets-passes/season-pass.asp">Season Passes</a></li>
+			<li><a href="/info/ski/tickets-passes/cross-country-passes.asp">Cross Country + Snowshoe</a></li>
+			<li><a href="/info/ski/groups-meetings/group-trips.asp">Groups (20+)</a></li>
+			<li><a href="/info/ski/groups-meetings/bulk-corporate-tickets.asp">Corporate Tickets - Bulk (50+)</a></li>
+			<li><a href="/info/ski/tickets-passes/gift_cards.asp">Gift Cards</a></li>
+			<li><hr /></li>
+			<li><a href="/info/ski/tickets-passes/summer_tickets.asp">Summer Tickets + Passes</a></li>
+			
+				</ul>
+			</li>
+			<li class="mainNav">
+				<a href="/info/ski/lessons-rentals/adult-ski-snowboard-school.asp">LESSONS + RENTALS</a>
+				
+				<ul>
+<li><a href="/info/ski/lessons-rentals/adult-ski-snowboard-school.asp">Adult Ski + Snowboard Lessons</a></li>
+			<li><a href="/info/ski/lessons-rentals/lessons-rental-kids-groups.asp">Kid's Ski + Board School</a></li>
+			<li><a href="/info/ski/lessons-rentals/burton_academy.asp">Burton Snowboard Academy</a></li>
+			<li><a href="/info/ski/lessons-rentals/adventure-guiding-learning.asp">Adventure, Guiding + Learning</a></li>
+			<li><a href="/info/ski/lessons-rentals/nordic_lessons.asp">Nordic Sports + Snowshoe Lessons</a></li>
+			<li><a href="/info/ski/lessons-rentals/equipment-rental.asp">Equipment Rentals</a></li>
+			<li><a href="/info/ski/lessons-rentals/race_programs.asp">Team Programs</a></li>
+			<li><hr /></li>
+			<li><a href="/info/ski/lessons-rentals/summer_rentals_lessons.asp">Summer Lessons + Rentals</a></li>
+			
+				</ul>	
+			</li>
+			<li id="currentNavArea">
+				<a href="/snowreport.asp">THE MOUNTAIN</a>
+				
+				<ul>
+<li><a href="/snowreport.asp">Snow Report + Conditions</a></li>
+			<li><a href="/groomingreport.asp">Grooming Report + Lift Status</a></li>
+			<li><a href="/info/ski/the-mountain/interactive_trail_map.asp">Winter Trail Map</a></li>
+			<li><a href="/info/parks/">Terrain Parks + Pipes</a></li>
+			<li><a href="/info/ski/winter_activities.asp?category=mountain-summer.winteractivities">Mountain Activities</a></li>
+			<li><a href="/info/ski/the-mountain/mountain-restaurants.asp">Food + Dining</a></li>
+			<li><a href="/events.calendar.month.asp?category=mountain-summer.events">Events Calendar</a></li>
+			<li><a href="/info/ski/the-mountain/mountain-hours.asp">Hours of Operation</a></li>
+			<li><a href="/info/ski/the-mountain/safety.asp">Mountain Safety</a></li>
+			<li><a href="/info/ski/northstar-mountain-master-plan.asp">Mountain Master Plan</a></li>
+			<li><hr /></li>
+			<li><a href="/info/ski/the-mountain/mountain-cams.asp">Mountain Cams</a></li>
+			<li><a href="/info/ski/the-mountain/desktop_wallpaper.asp">Desktop Wallpapers</a></li>
+			<li><a href="/info/ski/the-mountain/mountain-photos.asp">Photos</a></li>
+			<li><a href="/info/ski/the-mountain/video_gallery.asp">Videos</a></li>
+			<li><hr /></li>
+			<li><a href="/info/summer/mtn-biking-map.asp">Summer Trail Map</a></li>
+			<li><a href="/info/summer/golf.asp">Golfing</a></li>
+			<li><a href="/info/ski/the-village/village-real-estate.asp?category=mountain-summer.winteractivities">Real Estate</a></li>
+			
+				</ul>	
+			
+			</li>
+			<li class="mainNav">
+				<a href="/info/ski/the-village/village_directory.asp">THE VILLAGE</a>
+			
+				<ul>
+<li><a href="/info/ski/the-village/village_directory.asp">Directory + Map</a></li>
+			<li><a href="/info/ski/the-village/village_cinemas.asp">Movies + Showtimes</a></li>
+			<li><a href="/info/ski/the-village/village-shopping.asp">Shopping</a></li>
+			<li><a href="/info/ski/trip-planning/village-dining-restaurants.asp">Food + Dining</a></li>
+			<li><a href="/info/ski/the-village/balance.asp">Spa Services, Massage + Yoga</a></li>
+			<li><a href="/info/ski/the-village/village-activities.asp">Village Activities + Crafts</a></li>
+			<li><a href="/events.calendar.month.asp?category=shop_dine.events">Events Calendar</a></li>
+			<li><a href="/info/ski/the-mountain/mountain-hours.asp?category=shop_dine.events">Hours of Operation</a></li>
+			<li><a href="/info/ski/tickets-passes/gift_cards.asp">Gift Cards</a></li>
+			<li><a href="/info/ski/the-village/village-real-estate.asp">Real Estate</a></li>
+			
+				</ul>	
+			</li>
+		</ul><!-- end nav ul -->
+		
+		<form id="searchForm" action="/search.asp" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:user="http://rtp.com/rtp"><input id="searchField" onfocus="changeSearchText();" class="inputField" type="text" size="15" name="q" value="search" /> <input id="searchGlass" class="goButton" type="image" src="/nsbase/wrap/theme0/images/searchGlass.png" value="Go!" name="emailGo" /></form>
+	</div>
+	
+
+	<div id="interiorContainer">
+	
+		<div id="leftColumn">
+			<h2 class="subnav">The Mountain</h2><div id="subNav"><a href="/snowreport.asp" class="links1Off">Snow Report + Conditions</a><br /><div class="subNav2"></div><a href="/groomingreport.asp" class="links1On">Grooming Report + Lift Status</a><br /><script type="text/javascript" language="javascript">
+						setIndex(1);
+						</script><div class="subNav2Open"></div><a onmouseover="mouseOver(2);" onmouseout="mouseOut(2);" href="/info/ski/the-mountain/interactive_trail_map.asp" class="links1Off">Winter Trail Map</a><br /><div class="subNav2"><a href="/nsassets/images/the-mountain/big_easy_map.jpg" class="links2Off">The Big Easy</a><br /><a href="/info/ski/the-mountain/mountain-nordic-map.asp" class="links2Off">Cross Country + Snowshoe Trails</a><br /></div><a href="/info/parks/" class="links1Off">Terrain Parks + Pipes</a><br /><div class="subNav2"></div><a onmouseover="mouseOver(4);" onmouseout="mouseOut(4);" href="/info/ski/winter_activities.asp?category=mountain-summer.winteractivities" class="links1Off">Mountain Activities</a><br /><div class="subNav2"><a href="/info/ski/mountain_tours.asp" class="links2Off">Mountain Tours</a><br /><a href="/info/ski/crosscountry.asp" class="links2Off">Cross Country Skiing</a><br /><a href="/info/ski/snowshoe.asp" class="links2Off">Snowshoeing</a><br /><a href="/info/ski/tubing.asp" class="links2Off">Tubing</a><br /></div><a href="/info/ski/the-mountain/mountain-restaurants.asp" class="links1Off">Food + Dining</a><br /><div class="subNav2"></div><a href="/events.calendar.month.asp?category=mountain-summer.events" class="links1Off">Events Calendar</a><br /><div class="subNav2"></div><a href="/info/ski/the-mountain/mountain-hours.asp" class="links1Off">Hours of Operation</a><br /><div class="subNav2"></div><a href="/info/ski/the-mountain/safety.asp" class="links1Off">Mountain Safety</a><br /><div class="subNav2"></div><a href="/info/ski/northstar-mountain-master-plan.asp" class="links1Off">Mountain Master Plan</a><br /><div class="subNav2"></div><a href="" class="links1Off">.............................................................</a><br /><div class="subNav2"></div><a href="/info/ski/the-mountain/mountain-cams.asp" class="links1Off">Mountain Cams</a><br /><div class="subNav2"></div><a href="/info/ski/the-mountain/desktop_wallpaper.asp" class="links1Off">Desktop Wallpapers</a><br /><div class="subNav2"></div><a href="/info/ski/the-mountain/mountain-photos.asp" class="links1Off">Photos</a><br /><div class="subNav2"></div><a href="/info/ski/the-mountain/video_gallery.asp" class="links1Off">Videos</a><br /><div class="subNav2"></div><a href="" class="links1Off">.............................................................</a><br /><div class="subNav2"></div><a onmouseover="mouseOver(16);" onmouseout="mouseOut(16);" href="/info/summer/mtn-biking-map.asp" class="links1Off">Summer Trail Map</a><br /><div class="subNav2"><a href="/info/summer/biking.asp" class="links2Off">Mountain Biking</a><br /><a href="/info/summer/hiking.asp" class="links2Off">Hiking</a><br /></div><a href="/info/summer/golf.asp" class="links1Off">Golfing</a><br /><div class="subNav2"></div><a href="/info/ski/the-village/village-real-estate.asp?category=mountain-summer.winteractivities" class="links1Off">Real Estate</a><br /><div class="subNav2"></div></div>
+			<br /><br />
+			
+			
+<a href="http://reservations.snow.com/datestravelers.asp?siteid=24" target="_blank"><img class="leftPromo" alt="Northstar California" title="Northstar California" src="/nsbase/wrap/theme0/images/home-lodging-widget-small.png" /></a>
+
+
+
+
+
+			<br /><br />
+			
+			
+<a href="/info/parks/"><img class="leftPromo" alt="Northstar Parks + Pipes" title="Northstar Parks + Pipes" src="/nsassets/files/subhero/promo-park-report.png" /></a>
+
+
+
+
+			
+		</div>
+
+		<div id="rightColumn">
+		
+			<img alt="Northstar California | Grooming Report & Lift Status" title="Northstar California | Grooming Report & Lift Status" src="/nsbase/wrap/theme0/images/subhero_default.jpg" width="691" height="234" />
+			
+
+
+			
+			<img align="left" id="titleImg" alt="Northstar California | Grooming Report & Lift Status" title="Northstar California | Grooming Report & Lift Status" src="/nsbase/wrap/theme0/title_generator/images/groomingreport.jpg" width="600" height="36" /><br clear="all" />
+					
+					<div id="shareButtons">
+						<!-- BEGIN facebook like code -->
+						<div class="fb-like" data-href="http://www.northstarattahoe.com/groomingreport.asp" data-send="false" data-layout="button_count" data-width="150" data-show-faces="false"></div>
+						<!-- END facebook like code -->	
+						
+						<!-- twitter button -->
+						<div>
+						<a href="https://twitter.com/share" class="twitter-share-button" data-via="twitterapi" data-lang="en">Tweet</a>
+	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+						</div>
+						<!-- END twitter button -->
+					</div>
+
+					
+					
+			
+			<div id="cmtContent">
+			<!-- begin CMT content -->
+
+
+<a name="top"></a>
+
+<style type="text/css">.red { color: #F00; } .red { color: #F00; } .red { color: #F00; }</style><h1>Grooming Report + Lift Status</h1><p>&#160;</p><p><!-- AddThis Bookmark Button BEGIN --><a onclick="addthis_url   = location.href; addthis_title = document.title; return addthis_click(this);" href="http://www.addthis.com/bookmark.php" target="_blank"><img border="0" alt="AddThis Social Bookmark Button" src="http://s9.addthis.com/button1-bm.gif" width="125" height="16" /></a>&#160;<script type="text/javascript"><!--
+var addthis_pub = 'lozgur';
+//--></script><script type="text/javascript" src="http://s9.addthis.com/js/widget.php?v=10"><!--
+
+//--></script></p><p><strong>Snow Phone:</strong> 530.562.1330</p><p><strong>Today's Remarks, December 27:</strong><br />
+The Ripperoo Parade happens at 4:45pm today. The loveable Ski &amp; Snowboard School mascot will lead guests through the Village filled with music, singing, dancing, complimentary Otis Spunkmeyer cookies, and loads of fun.<br />
+Remember to not ski or ride alone. Buddy up and maintain visual contact. Please stay on open trails.</p><hr />
+
+
+
+
+
+<center>
+<table width="99%" border="0">
+	<tr>
+		<td colspan="4" align="center">
+			<p><span class="headerText" name="groomingReport" id="groomingReport"><b>GROOMING REPORT</b></span>
+			
+			<table width="85%"><tr><td><div class="txtGroom">Freestyle Terrain (shown as FT and 
+			<img src="/nsBase/images/newterrain.gif" width="13" height="7">) may contain 
+			jumps, hits, ramps, banks, fun boxes, jibs, rails, half pipes, quarter pipes, 
+			snowcross, bump terrain, and other constructed or natural terrain features.
+			<a href="/info/ski/the-mountain/park-report.asp">Learn More</a></div></p></td></tr></table>
+
+				<table><tr><td>
+				
+				<b>SORT BY:</b> &#160;
+						<a href="/groomingreport.asp?sort=ability#groomingReport"> Degree of Difficulty <img src="/nsbase/images/green.gif" height="12" width="16" border="0"><img src="/nsbase/images/blue.gif" height="12" width="16" border="0"><img src="/nsbase/images/black.gif" height="12" width="16" border="0"></a> | 
+						<a href="/groomingreport.asp?sort=area#groomingReport">Area</a> |
+						<a href="/groomingreport.asp?sort=alpha#groomingReport">A-Z</a>					
+				
+				</td></tr></table>
+				</p>
+				
+				<p>Updated 12/27/2012 6:48:26 AM</p>
+				
+				<table cellpadding="2" cellspacing="0" align="center" class="snowreport"><tr xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:user="http://rtp.com/rtp">
+<td class="snowreport" Colspan="8" Align="CENTER" bgcolor="#008102"><font size="" color="#ffffff"><b>Easier Trails</b></font></td>
+</tr>
+<tr ALIGN="CENTER" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:user="http://rtp.com/rtp">
+<td class="snowreport" valign="bottom">Trail</td>
+<td class="snowreport" valign="bottom">Open</td>
+<td class="snowreport" valign="bottom">Groomed</td>
+<td class="snowreport" valign="bottom">Snow<br>Making</td>
+<td class="snowreport" valign="bottom">Trail</td>
+<td class="snowreport" valign="bottom">Open</td>
+<td class="snowreport" valign="bottom">Groomed</td>
+<td class="snowreport" valign="bottom">Snow<br>Making</td>
+</tr>
+<tr xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:user="http://rtp.com/rtp">
+<td class="snowreport" align="left"><font color="#008000"><img width="16" height="12" src="/nsbase/images/green.gif">Lower Main Street�
+			
+			</font>
+</td>
+<td class="snowreport" ALIGN="CENTER"><strong>Y</strong></td>
+<td class="snowreport" ALIGN="CENTER"><img width="29" height="25" src="
+                                /nsassets/images/the-mountain/grooming_icon_small.jpg
+                        "></td>
+<td class="snowreport" ALIGN="CENTER">N</td>
+<td class="snowreport" align="left"><font color="#008000"><img width="16" height="12" src="/nsbase/images/green.gif">Skid Trail�
+			
+			</font>�</td>
+<td class="snowreport" ALIGN="CENTER"><strong>Y</strong>�</td>
+<td class="snowreport" ALIGN="CENTER"><img width="29" height="25" src="
+                                /nsassets/images/the-mountain/grooming_icon_small.jpg
+                        ">�</td>
+<td class="snowreport" ALIGN="CENTER">N�</td>
+</tr>
+<tr xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:user="http://rtp.com/rtp">
+<td class="snowreport" align="left"><font color="#008000"><img width="16" height="12" src="/nsbase/images/green.gif">Lumberjack�
+			
+			</font>
+</td>
+<td class="snowreport" ALIGN="CENTER"><strong>Y</strong></td>
+<td class="snowreport" ALIGN="CENTER"><img width="29" height="25" src="
+                                /nsassets/images/the-mountain/grooming_icon_small.jpg
+                        "></td>
+<td class="snowreport" ALIGN="CENTER">Y</td>
+<td class="snowreport" align="left"><font color="#008000"><img width="16" height="12" src="/nsbase/images/green.gif">Bearly�
+			
+			</font>�</td>
+<td class="snowreport" ALIGN="CENTER"><strong>Y</strong>�</td>
+<td class="snowreport" ALIGN="CENTER"><img width="29" height="25" src="
+                                /nsassets/images/the-mountain/grooming_icon_small.jpg
+                        ">�</td>
+<td class="snowreport" ALIGN="CENTER">N�</td>
+</tr>
+<tr xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:user="http://rtp.com/rtp">
+<td class="snowreport" align="left"><font color="#008000"><img width="16" height="12" src="/nsbase/images/green.gif">The Gulch�
+			
+			</font>
+</td>
+<td class="snowreport" ALIGN="CENTER"><strong>Y</strong></td>
+<td class="snowreport" ALIGN="CENTER"><img width="29" height="25" src="
+                                /nsassets/images/the-mountain/grooming_icon_small.jpg
+                        "></td>
+<td class="snowreport" ALIGN="CENTER">N</td>
+<td class="snowreport" align="left"><font color="#008000"><img width="16" height="12" src="/nsbase/images/green.gif">Lil Stash�
+			
+			<img width="17" height="9" src="
+							/nsBase/images/newterrain.gif
+						"></font>�</td>
+<td class="snowreport" ALIGN="CENTER"><strong>Y</strong>�</td>
+<td class="snowreport" ALIGN="CENTER">N�</td>
+<td class="snowreport" ALIGN="CENTER">N�</td>
+</tr>
+<tr xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:user="http://rtp.com/rtp">
+<td class="snowreport" align="left"><font color="#008000"><img width="16" height="12" src="/nsbase/images/green.gif">Woodcutter�
+			
+			</font>
+</td>
+<td class="snowreport" ALIGN="CENTER"><strong>Y</strong></td>
+<td class="snowreport" ALIGN="CENTER"><img width="29" height="25" src="
+                                /nsassets/images/the-mountain/grooming_icon_small.jpg
+                        "></td>
+<td class="snowreport" ALIGN="CENTER">N</td>
+<td class="snowreport" align="left"><font color="#008000"><img width="16" height="12" src="/nsbase/images/green.gif">Easy Street�
+			
+			</font>�</td>
+<td class="snowreport" ALIGN="CENTER"><strong>Y</strong>�</td>
+<td class="snowreport" ALIGN="CENTER"><img width="29" height="25" src="
+                                /nsassets/images/the-mountain/grooming_icon_small.jpg
+                        ">�</td>
+<td class="snowreport" ALIGN="CENTER">N�</td>
+</tr>
+<tr xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:user="http://rtp.com/rtp">
+<td class="snowreport" align="left"><font color="#008000"><img width="16" height="12" src="/nsbase/images/green.gif">Lower Lion's Way�
+			
+			</font>
+</td>
+<td class="snowreport" ALIGN="CENTER"><strong>Y</strong></td>
+<td class="snowreport" ALIGN="CENTER"><img width="29" height="25" src="
+                                /nsassets/images/the-mountain/grooming_icon_small.jpg
+                        "></td>
+<td class="snowreport" ALIGN="CENTER">N</td>
+<td class="snowreport" align="left"><font color="#008000"><img width="16" height="12" src="/nsbase/images/green.gif">Condo Run�
+			
+			</font>�</td>
+<td class="snowreport" ALIGN="CENTER"><strong>Y</strong>�</td>
+<td class="snowreport" ALIGN="CENTER"><img width="29" height="25" src="
+                                /nsassets/images/the-mountain/grooming_icon_small.jpg
+                        ">�</td>
+<td class="snowreport" ALIGN="CENTER">N�</td>
+</tr>
+<tr xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:user="http://rtp.com/rtp">
+<td class="snowreport" align="left"><font color="#008000"><img width="16" height="12" src="/nsbase/images/green.gif">Village Run�
+			
+			</font>
+</td>
+<td class="snowreport" ALIGN="CENTER"><strong>Y</strong></td>
+<td class="snowreport" ALIGN="CENTER"><img width="29" height="25" src="
+                                /nsassets/images/the-mountain/grooming_icon_small.jpg
+                        "></td>
+<td class="snowreport" ALIGN="CENTER">N</td>
+<td class="snowreport" align="left">�</td>
+<td class="snowreport" ALIGN="CENTER">�</td>
+<td class="snowreport" ALIGN="CENTER">�</td>
+<td class="snowreport" ALIGN="CENTER">�</td>
+</tr>
+<tr xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:user="http://rtp.com/rtp">
+<td class="snowreport" Colspan="8" Align="CENTER" bgcolor="#1c21f7"><font size="" color="#ffffff"><b>More Difficult Trails</b></font></td>
+</tr>
+<tr ALIGN="CENTER" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:user="http://rtp.com/rtp">
+<td class="snowreport" valign="bottom">Trail</td>
+<td class="snowreport" valign="bottom">Open</td>
+<td class="snowreport" valign="bottom">Groomed</td>
+<td class="snowreport" valign="bottom">Snow<br>Making</td>
+<td class="snowreport" valign="bottom">Trail</td>
+<td class="snowreport" valign="bottom">Open</td>
+<td class="snowreport" valign="bottom">Groomed</td>
+<td class="snowreport" valign="bottom">Snow<br>Making</td>
+</tr>
+<tr xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:user="http://rtp.com/rtp">
+<td class="snowreport" align="left"><font color="#0000FF"><img width="16" height="12" src="/nsbase/images/blue.gif">Castle Peak�
+			
+			</font>
+</td>
+<td class="snowreport" ALIGN="CENTER"><strong>Y</strong></td>
+<td class="snowreport" ALIGN="CENTER"><img width="29" height="25" src="
+                                /nsassets/images/the-mountain/grooming_icon_small.jpg
+                        "></td>
+<td class="snowreport" ALIGN="CENTER">N</td>
+<td class="snowreport" align="left"><font color="#0000FF"><img width="16" height="12" src="/nsbase/images/blue.gif">The Islands�
+			
+			</font>�</td>
+<td class="snowreport" ALIGN="CENTER"><strong>Y</strong>�</td>
+<td class="snowreport" ALIGN="CENTER">N�</td>
+<td class="snowreport" ALIGN="CENTER">N�</td>
+</tr>
+<tr xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:user="http://rtp.com/rtp">
+<td class="snowreport" align="left"><font color="#0000FF"><img width="16" height="12" src="/nsbase/images/blue.gif">Drifter�
+			
+			</font>
+</td>
+<td class="snowreport" ALIGN="CENTER"><strong>Y</strong></td>
+<td class="snowreport" ALIGN="CENTER"><img width="29" height="25" src="
+                                /nsassets/images/the-mountain/grooming_icon_small.jpg
+                        "></td>
+<td class="snowreport" ALIGN="CENTER">N</td>
+<td class="snowreport" align="left"><font color="#0000FF"><img width="16" height="12" src="/nsbase/images/blue.gif">Washoe�
+			
+			</font>�</td>
+<td class="snowreport" ALIGN="CENTER"><strong>Y</strong>�</td>
+<td class="snowreport" ALIGN="CENTER"><img width="29" height="25" src="
+                                /nsassets/images/the-mountain/grooming_icon_small.jpg
+                        ">�</td>
+<td class="snowreport" ALIGN="CENTER">N�</td>
+</tr>
+<tr xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:user="http://rtp.com/rtp">
+<td class="snowreport" align="left"><font color="#0000FF"><img width="16" height="12" src="/nsbase/images/blue.gif">Schwarzstrasse�
+			
+			</font>
+</td>
+<td class="snowreport" ALIGN="CENTER"><strong>Y</strong></td>
+<td class="snowreport" ALIGN="CENTER"><img width="29" height="25" src="
+                                /nsassets/images/the-mountain/grooming_icon_small.jpg
+                        "></td>
+<td class="snowreport" ALIGN="CENTER">N</td>
+<td class="snowreport" align="left"><font color="#0000FF"><img width="16" height="12" src="/nsbase/images/blue.gif">Cat's Face�
+			
+			<img width="17" height="9" src="
+							/nsBase/images/newterrain.gif
+						"></font>�</td>
+<td class="snowreport" ALIGN="CENTER">N�</td>
+<td class="snowreport" ALIGN="CENTER">N�</td>
+<td class="snowreport" ALIGN="CENTER">Y�</td>
+</tr>
+<tr xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:user="http://rtp.com/rtp">
+<td class="snowreport" align="left"><font color="#0000FF"><img width="16" height="12" src="/nsbase/images/blue.gif">Woodchuck�
+			
+			</font>
+</td>
+<td class="snowreport" ALIGN="CENTER"><strong>Y</strong></td>
+<td class="snowreport" ALIGN="CENTER"><img width="29" height="25" src="
+                                /nsassets/images/the-mountain/grooming_icon_small.jpg
+                        "></td>
+<td class="snowreport" ALIGN="CENTER">Y</td>
+<td class="snowreport" align="left"><font color="#0000FF"><img width="16" height="12" src="/nsbase/images/blue.gif">Drop Off�
+			
+			</font>�</td>
+<td class="snowreport" ALIGN="CENTER"><strong>Y</strong>�</td>
+<td class="snowreport" ALIGN="CENTER"><img width="29" height="25" src="
+                                /nsassets/images/the-mountain/grooming_icon_small.jpg
+                        ">�</td>
+<td class="snowreport" ALIGN="CENTER">N�</td>
+</tr>
+<tr xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:user="http://rtp.com/rtp">
+<td class="snowreport" align="left"><font color="#0000FF"><img width="16" height="12" src="/nsbase/images/blue.gif">Goldmine�
+			
+			</font>
+</td>
+<td class="snowreport" ALIGN="CENTER"><strong>Y</strong></td>
+<td class="snowreport" ALIGN="CENTER"><img width="29" height="25" src="
+                                /nsassets/images/the-mountain/grooming_icon_small.jpg
+                        "></td>
+<td class="snowreport" ALIGN="CENTER">N</td>
+<td class="snowreport" align="left"><font color="#0000FF"><img width="16" height="12" src="/nsbase/images/blue.gif">Forerunner�
+			
+			</font>�</td>
+<td class="snowreport" ALIGN="CENTER"><strong>Y</strong>�</td>
+<td class="snowreport" ALIGN="CENTER"><img width="29" height="25" src="
+                                /nsassets/images/the-mountain/grooming_icon_small.jpg
+                        ">�</td>
+<td class="snowreport" ALIGN="CENTER">N�</td>
+</tr>
+<tr xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:user="http://rtp.com/rtp">
+<td class="snowreport" align="left"><font color="#0000FF"><img width="16" height="12" src="/nsbase/images/blue.gif">Upper Main Street�
+			
+			<img width="17" height="9" src="
+							/nsBase/images/newterrain.gif
+						"></font>
+</td>
+<td class="snowreport" ALIGN="CENTER"><strong>Y</strong></td>
+<td class="snowreport" ALIGN="CENTER"><img width="29" height="25" src="
+                                /nsassets/images/the-mountain/grooming_icon_small.jpg
+                        "></td>
+<td class="snowreport" ALIGN="CENTER">N</td>
+<td class="snowreport" align="left"><font color="#0000FF"><img width="16" height="12" src="/nsbase/images/blue.gif">East Ridge�
+			
+			</font>�</td>
+<td class="snowreport" ALIGN="CENTER"><strong>Y</strong>�</td>
+<td class="snowreport" ALIGN="CENTER"><img width="29" height="25" src="
+                                /nsassets/images/the-mountain/grooming_icon_small.jpg
+                        ">�</td>
+<td class="snowreport" ALIGN="CENTER">N�</td>
+</tr>
+<tr xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:user="http://rtp.com/rtp">
+<td class="snowreport" align="left"><font color="#0000FF"><img width="16" height="12" src="/nsbase/images/blue.gif">West Ridge�
+			
+			</font>
+</td>
+<td class="snowreport" ALIGN="CENTER"><strong>Y</strong></td>
+<td class="snowreport" ALIGN="CENTER"><img width="29" height="25" src="
+                                /nsassets/images/the-mountain/grooming_icon_small.jpg
+                        "></td>
+<td class="snowreport" ALIGN="CENTER">Y</td>
+<td class="snowreport" align="left"><font color="#0000FF"><img width="16" height="12" src="/nsbase/images/blue.gif">Ax Handle�
+			
+			</font>�</td>
+<td class="snowreport" ALIGN="CENTER"><strong>Y</strong>�</td>
+<td class="snowreport" ALIGN="CENTER"><img width="29" height="25" src="
+                                /nsassets/images/the-mountain/grooming_icon_small.jpg
+                        ">�</td>
+<td class="snowreport" ALIGN="CENTER">N�</td>
+</tr>
+<tr xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:user="http://rtp.com/rtp">
+<td class="snowreport" align="left"><font color="#0000FF"><img width="16" height="12" src="/nsbase/images/blue.gif">Stump Alley�
+			
+			</font>
+</td>
+<td class="snowreport" ALIGN="CENTER"><strong>Y</strong></td>
+<td class="snowreport" ALIGN="CENTER">N</td>
+<td class="snowreport" ALIGN="CENTER">N</td>
+<td class="snowreport" align="left"><font color="#0000FF"><img width="16" height="12" src="/nsbase/images/blue.gif">Luggis�
+			
+			</font>�</td>
+<td class="snowreport" ALIGN="CENTER"><strong>Y</strong>�</td>
+<td class="snowreport" ALIGN="CENTER"><img width="29" height="25" src="
+                                /nsassets/images/the-mountain/grooming_icon_small.jpg
+                        ">�</td>
+<td class="snowreport" ALIGN="CENTER">N�</td>
+</tr>
+<tr xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:user="http://rtp.com/rtp">
+<td class="snowreport" align="left"><font color="#0000FF"><img width="16" height="12" src="/nsbase/images/blue.gif">Cascades�
+			
+			</font>
+</td>
+<td class="snowreport" ALIGN="CENTER"><strong>Y</strong></td>
+<td class="snowreport" ALIGN="CENTER"><img width="29" height="25" src="
+                                /nsassets/images/the-mountain/grooming_icon_small.jpg
+                        "></td>
+<td class="snowreport" ALIGN="CENTER">Y</td>
+<td class="snowreport" align="left"><font color="#0000FF"><img width="16" height="12" src="/nsbase/images/blue.gif">Logger's Loop�
+			
+			</font>�</td>
+<td class="snowreport" ALIGN="CENTER"><strong>Y</strong>�</td>
+<td class="snowreport" ALIGN="CENTER"><img width="29" height="25" src="
+                                /nsassets/images/the-mountain/grooming_icon_small.jpg
+                        ">�</td>
+<td class="snowreport" ALIGN="CENTER">N�</td>
+</tr>
+<tr xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:user="http://rtp.com/rtp">
+<td class="snowreport" align="left"><font color="#0000FF"><img width="16" height="12" src="/nsbase/images/blue.gif">Lookout Road�
+			
+			</font>
+</td>
+<td class="snowreport" ALIGN="CENTER"><strong>Y</strong></td>
+<td class="snowreport" ALIGN="CENTER"><img width="29" height="25" src="
+                                /nsassets/images/the-mountain/grooming_icon_small.jpg
+                        "></td>
+<td class="snowreport" ALIGN="CENTER">N</td>
+<td class="snowreport" align="left"><font color="#0000FF"><img width="16" height="12" src="/nsbase/images/blue.gif">The Flume�
+			
+			</font>�</td>
+<td class="snowreport" ALIGN="CENTER"><strong>Y</strong>�</td>
+<td class="snowreport" ALIGN="CENTER"><img width="29" height="25" src="
+                                /nsassets/images/the-mountain/grooming_icon_small.jpg
+                        ">�</td>
+<td class="snowreport" ALIGN="CENTER">N�</td>
+</tr>
+<tr xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:user="http://rtp.com/rtp">
+<td class="snowreport" align="left"><font color="#0000FF"><img width="16" height="12" src="/nsbase/images/blue.gif">Northern Lights�
+			
+			</font>
+</td>
+<td class="snowreport" ALIGN="CENTER"><strong>Y</strong></td>
+<td class="snowreport" ALIGN="CENTER">N</td>
+<td class="snowreport" ALIGN="CENTER">N</td>
+<td class="snowreport" align="left"><font color="#0000FF"><img width="16" height="12" src="/nsbase/images/blue.gif">Christmas Tree�
+			
+			</font>�</td>
+<td class="snowreport" ALIGN="CENTER"><strong>Y</strong>�</td>
+<td class="snowreport" ALIGN="CENTER"><img width="29" height="25" src="
+                                /nsassets/images/the-mountain/grooming_icon_small.jpg
+                        ">�</td>
+<td class="snowreport" ALIGN="CENTER">N�</td>
+</tr>
+<tr xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:user="http://rtp.com/rtp">
+<td class="snowreport" align="left"><font color="#0000FF"><img width="16" height="12" src="/nsbase/images/blue.gif">Sodergren's�
+			
+			</font>
+</td>
+<td class="snowreport" ALIGN="CENTER"><strong>Y</strong></td>
+<td class="snowreport" ALIGN="CENTER">N</td>
+<td class="snowreport" ALIGN="CENTER">N</td>
+<td class="snowreport" align="left"><font color="#0000FF"><img width="16" height="12" src="/nsbase/images/blue.gif">Pioneer�
+			
+			</font>�</td>
+<td class="snowreport" ALIGN="CENTER"><strong>Y</strong>�</td>
+<td class="snowreport" ALIGN="CENTER"><img width="29" height="25" src="
+                                /nsassets/images/the-mountain/grooming_icon_small.jpg
+                        ">�</td>
+<td class="snowreport" ALIGN="CENTER">N�</td>
+</tr>
+<tr xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:user="http://rtp.com/rtp">
+<td class="snowreport" align="left"><font color="#0000FF"><img width="16" height="12" src="/nsbase/images/blue.gif">The Gully�
+			
+			</font>
+</td>
+<td class="snowreport" ALIGN="CENTER"><strong>Y</strong></td>
+<td class="snowreport" ALIGN="CENTER">N</td>
+<td class="snowreport" ALIGN="CENTER">N</td>
+<td class="snowreport" align="left"><font color="#0000FF"><img width="16" height="12" src="/nsbase/images/blue.gif">The Stash�
+			
+			</font>�</td>
+<td class="snowreport" ALIGN="CENTER"><strong>Y</strong>�</td>
+<td class="snowreport" ALIGN="CENTER">N�</td>
+<td class="snowreport" ALIGN="CENTER">N�</td>
+</tr>
+<tr xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:user="http://rtp.com/rtp">
+<td class="snowreport" align="left"><font color="#0000FF"><img width="16" height="12" src="/nsbase/images/blue.gif">Hoot Owl�
+			
+			</font>
+</td>
+<td class="snowreport" ALIGN="CENTER"><strong>Y</strong></td>
+<td class="snowreport" ALIGN="CENTER">N</td>
+<td class="snowreport" ALIGN="CENTER">N</td>
+<td class="snowreport" align="left"><font color="#0000FF"><img width="16" height="12" src="/nsbase/images/blue.gif">Upper Pioneer�
+			
+			</font>�</td>
+<td class="snowreport" ALIGN="CENTER"><strong>Y</strong>�</td>
+<td class="snowreport" ALIGN="CENTER"><img width="29" height="25" src="
+                                /nsassets/images/the-mountain/grooming_icon_small.jpg
+                        ">�</td>
+<td class="snowreport" ALIGN="CENTER">N�</td>
+</tr>
+<tr xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:user="http://rtp.com/rtp">
+<td class="snowreport" align="left"><font color="#0000FF"><img width="16" height="12" src="/nsbase/images/blue.gif">Boondocks�
+			
+			</font>
+</td>
+<td class="snowreport" ALIGN="CENTER"><strong>Y</strong></td>
+<td class="snowreport" ALIGN="CENTER">N</td>
+<td class="snowreport" ALIGN="CENTER">N</td>
+<td class="snowreport" align="left"><font color="#0000FF"><img width="16" height="12" src="/nsbase/images/blue.gif">Lookout Bypass�
+			
+			</font>�</td>
+<td class="snowreport" ALIGN="CENTER"><strong>Y</strong>�</td>
+<td class="snowreport" ALIGN="CENTER"><img width="29" height="25" src="
+                                /nsassets/images/the-mountain/grooming_icon_small.jpg
+                        ">�</td>
+<td class="snowreport" ALIGN="CENTER">N�</td>
+</tr>
+<tr xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:user="http://rtp.com/rtp">
+<td class="snowreport" align="left"><font color="#0000FF"><img width="16" height="12" src="/nsbase/images/blue.gif">Upper Lion's Way�
+			
+			</font>
+</td>
+<td class="snowreport" ALIGN="CENTER"><strong>Y</strong></td>
+<td class="snowreport" ALIGN="CENTER"><img width="29" height="25" src="
+                                /nsassets/images/the-mountain/grooming_icon_small.jpg
+                        "></td>
+<td class="snowreport" ALIGN="CENTER">N</td>
+<td class="snowreport" align="left"><font color="#0000FF"><img width="16" height="12" src="/nsbase/images/blue.gif">Gateway�
+			
+			</font>�</td>
+<td class="snowreport" ALIGN="CENTER">N�</td>
+<td class="snowreport" ALIGN="CENTER"><img width="29" height="25" src="
+                                /nsassets/images/the-mountain/grooming_icon_small.jpg
+                        ">�</td>
+<td class="snowreport" ALIGN="CENTER">N�</td>
+</tr>
+<tr xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:user="http://rtp.com/rtp">
+<td class="snowreport" align="left"><font color="#0000FF"><img width="16" height="12" src="/nsbase/images/blue.gif">Overland Trail�
+			
+			</font>
+</td>
+<td class="snowreport" ALIGN="CENTER">N</td>
+<td class="snowreport" ALIGN="CENTER"><img width="29" height="25" src="
+                                /nsassets/images/the-mountain/grooming_icon_small.jpg
+                        "></td>
+<td class="snowreport" ALIGN="CENTER">N</td>
+<td class="snowreport" align="left"><font color="#0000FF"><img width="16" height="12" src="/nsbase/images/blue.gif">The Glades�
+			
+			</font>�</td>
+<td class="snowreport" ALIGN="CENTER">N�</td>
+<td class="snowreport" ALIGN="CENTER"><img width="29" height="25" src="
+                                /nsassets/images/the-mountain/grooming_icon_small.jpg
+                        ">�</td>
+<td class="snowreport" ALIGN="CENTER">N�</td>
+</tr>
+<tr xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:user="http://rtp.com/rtp">
+<td class="snowreport" align="left"><font color="#0000FF"><img width="16" height="12" src="/nsbase/images/blue.gif">Timberline�
+			
+			</font>
+</td>
+<td class="snowreport" ALIGN="CENTER">N</td>
+<td class="snowreport" ALIGN="CENTER"><img width="29" height="25" src="
+                                /nsassets/images/the-mountain/grooming_icon_small.jpg
+                        "></td>
+<td class="snowreport" ALIGN="CENTER">N</td>
+<td class="snowreport" align="left"><font color="#0000FF"><img width="16" height="12" src="/nsbase/images/blue.gif">The Woods�
+			
+			</font>�</td>
+<td class="snowreport" ALIGN="CENTER"><strong>Y</strong>�</td>
+<td class="snowreport" ALIGN="CENTER"><img width="29" height="25" src="
+                                /nsassets/images/the-mountain/grooming_icon_small.jpg
+                        ">�</td>
+<td class="snowreport" ALIGN="CENTER">N�</td>
+</tr>
+<tr xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:user="http://rtp.com/rtp">
+<td class="snowreport" align="left"><font color="#0000FF"><img width="16" height="12" src="/nsbase/images/blue.gif">Home Run�
+			
+			</font>
+</td>
+<td class="snowreport" ALIGN="CENTER"><strong>Y</strong></td>
+<td class="snowreport" ALIGN="CENTER"><img width="29" height="25" src="
+                                /nsassets/images/the-mountain/grooming_icon_small.jpg
+                        "></td>
+<td class="snowreport" ALIGN="CENTER">N</td>
+<td class="snowreport" align="left"><font color="#0000FF"><img width="16" height="12" src="/nsbase/images/blue.gif">Coyote Fork�
+			
+			</font>�</td>
+<td class="snowreport" ALIGN="CENTER">N�</td>
+<td class="snowreport" ALIGN="CENTER">N�</td>
+<td class="snowreport" ALIGN="CENTER">N�</td>
+</tr>
+<tr xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:user="http://rtp.com/rtp">
+<td class="snowreport" align="left"><font color="#0000FF"><img width="16" height="12" src="/nsbase/images/blue.gif">Straits�
+			
+			<img width="17" height="9" src="
+							/nsBase/images/newterrain.gif
+						"></font>
+</td>
+<td class="snowreport" ALIGN="CENTER"><strong>Y</strong></td>
+<td class="snowreport" ALIGN="CENTER"><img width="29" height="25" src="
+                                /nsassets/images/the-mountain/grooming_icon_small.jpg
+                        "></td>
+<td class="snowreport" ALIGN="CENTER">Y</td>
+<td class="snowreport" align="left"><font color="#0000FF"><img width="16" height="12" src="/nsbase/images/blue.gif">Pinball�
+			
+			<img width="17" height="9" src="
+							/nsBase/images/newterrain.gif
+						"></font>�</td>
+<td class="snowreport" ALIGN="CENTER"><strong>Y</strong>�</td>
+<td class="snowreport" ALIGN="CENTER"><img width="29" height="25" src="
+                                /nsassets/images/the-mountain/grooming_icon_small.jpg
+                        ">�</td>
+<td class="snowreport" ALIGN="CENTER">Y�</td>
+</tr>
+<tr xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:user="http://rtp.com/rtp">
+<td class="snowreport" align="left"><font color="#0000FF"><img width="16" height="12" src="/nsbase/images/blue.gif">Moonshine�
+			
+			<img width="17" height="9" src="
+							/nsBase/images/newterrain.gif
+						"></font>
+</td>
+<td class="snowreport" ALIGN="CENTER"><strong>Y</strong></td>
+<td class="snowreport" ALIGN="CENTER"><img width="29" height="25" src="
+                                /nsassets/images/the-mountain/grooming_icon_small.jpg
+                        "></td>
+<td class="snowreport" ALIGN="CENTER">N</td>
+<td class="snowreport" align="left"><font color="#0000FF"><img width="16" height="12" src="/nsbase/images/blue.gif">Sidewinder�
+			
+			<img width="17" height="9" src="
+							/nsBase/images/newterrain.gif
+						"></font>�</td>
+<td class="snowreport" ALIGN="CENTER"><strong>Y</strong>�</td>
+<td class="snowreport" ALIGN="CENTER"><img width="29" height="25" src="
+                                /nsassets/images/the-mountain/grooming_icon_small.jpg
+                        ">�</td>
+<td class="snowreport" ALIGN="CENTER">N�</td>
+</tr>
+<tr xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:user="http://rtp.com/rtp">
+<td class="snowreport" align="left"><font color="#0000FF"><img width="16" height="12" src="/nsbase/images/blue.gif">Magic Moguls�
+			
+			</font>
+</td>
+<td class="snowreport" ALIGN="CENTER"><strong>Y</strong></td>
+<td class="snowreport" ALIGN="CENTER"><img width="29" height="25" src="
+                                /nsassets/images/the-mountain/grooming_icon_small.jpg
+                        "></td>
+<td class="snowreport" ALIGN="CENTER">N</td>
+<td class="snowreport" align="left"><font color="#0000FF"><img width="16" height="12" src="/nsbase/images/blue.gif">Pipeline�
+			
+			</font>�</td>
+<td class="snowreport" ALIGN="CENTER">N�</td>
+<td class="snowreport" ALIGN="CENTER">N�</td>
+<td class="snowreport" ALIGN="CENTER">Y�</td>
+</tr>
+<tr xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:user="http://rtp.com/rtp">
+<td class="snowreport" Colspan="8" Align="CENTER" bgcolor="#000000"><font size="" color="#ffffff"><b>Most Difficult Trails</b></font></td>
+</tr>
+<tr ALIGN="CENTER" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:user="http://rtp.com/rtp">
+<td class="snowreport" valign="bottom">Trail</td>
+<td class="snowreport" valign="bottom">Open</td>
+<td class="snowreport" valign="bottom">Groomed</td>
+<td class="snowreport" valign="bottom">Snow<br>Making</td>
+<td class="snowreport" valign="bottom">Trail</td>
+<td class="snowreport" valign="bottom">Open</td>
+<td class="snowreport" valign="bottom">Groomed</td>
+<td class="snowreport" valign="bottom">Snow<br>Making</td>
+</tr>
+<tr xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:user="http://rtp.com/rtp">
+<td class="snowreport" align="left"><font color="#000000"><img width="16" height="12" src="/nsbase/images/black.gif">Sierra Grande�
+			
+			</font>
+</td>
+<td class="snowreport" ALIGN="CENTER"><strong>Y</strong></td>
+<td class="snowreport" ALIGN="CENTER">N</td>
+<td class="snowreport" ALIGN="CENTER">N</td>
+<td class="snowreport" align="left"><font color="#000000"><img width="16" height="12" src="/nsbase/images/black.gif">Back Door�
+			
+			</font>�</td>
+<td class="snowreport" ALIGN="CENTER"><strong>Y</strong>�</td>
+<td class="snowreport" ALIGN="CENTER"><img width="29" height="25" src="
+                                /nsassets/images/the-mountain/grooming_icon_small.jpg
+                        ">�</td>
+<td class="snowreport" ALIGN="CENTER">N�</td>
+</tr>
+<tr xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:user="http://rtp.com/rtp">
+<td class="snowreport" align="left"><font color="#000000"><img width="16" height="12" src="/nsbase/images/black.gif">Promised Land�
+			
+			</font>
+</td>
+<td class="snowreport" ALIGN="CENTER"><strong>Y</strong></td>
+<td class="snowreport" ALIGN="CENTER">N</td>
+<td class="snowreport" ALIGN="CENTER">N</td>
+<td class="snowreport" align="left"><font color="#000000"><img width="16" height="12" src="/nsbase/images/black.gif">Iron Horse�
+			
+			</font>�</td>
+<td class="snowreport" ALIGN="CENTER"><strong>Y</strong>�</td>
+<td class="snowreport" ALIGN="CENTER"><img width="29" height="25" src="
+                                /nsassets/images/the-mountain/grooming_icon_small.jpg
+                        ">�</td>
+<td class="snowreport" ALIGN="CENTER">N�</td>
+</tr>
+<tr xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:user="http://rtp.com/rtp">
+<td class="snowreport" align="left"><font color="#000000"><img width="16" height="12" src="/nsbase/images/black.gif">Why Not�
+			
+			</font>
+</td>
+<td class="snowreport" ALIGN="CENTER"><strong>Y</strong></td>
+<td class="snowreport" ALIGN="CENTER">N</td>
+<td class="snowreport" ALIGN="CENTER">N</td>
+<td class="snowreport" align="left"><font color="#000000"><img width="16" height="12" src="/nsbase/images/black.gif">Polaris�
+			
+			</font>�</td>
+<td class="snowreport" ALIGN="CENTER"><strong>Y</strong>�</td>
+<td class="snowreport" ALIGN="CENTER">N�</td>
+<td class="snowreport" ALIGN="CENTER">N�</td>
+</tr>
+<tr xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:user="http://rtp.com/rtp">
+<td class="snowreport" align="left"><font color="#000000"><img width="16" height="12" src="/nsbase/images/black.gif">The Rapids�
+			
+			</font>
+</td>
+<td class="snowreport" ALIGN="CENTER"><strong>Y</strong></td>
+<td class="snowreport" ALIGN="CENTER">N</td>
+<td class="snowreport" ALIGN="CENTER">N</td>
+<td class="snowreport" align="left"><font color="#000000"><img width="16" height="12" src="/nsbase/images/black.gif">Burnout�
+			
+			</font>�</td>
+<td class="snowreport" ALIGN="CENTER"><strong>Y</strong>�</td>
+<td class="snowreport" ALIGN="CENTER"><img width="29" height="25" src="
+                                /nsassets/images/the-mountain/grooming_icon_small.jpg
+                        ">�</td>
+<td class="snowreport" ALIGN="CENTER">N�</td>
+</tr>
+<tr xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:user="http://rtp.com/rtp">
+<td class="snowreport" align="left"><font color="#000000"><img width="16" height="12" src="/nsbase/images/black.gif">Rail Splitter�
+			
+			</font>
+</td>
+<td class="snowreport" ALIGN="CENTER"><strong>Y</strong></td>
+<td class="snowreport" ALIGN="CENTER">N</td>
+<td class="snowreport" ALIGN="CENTER">N</td>
+<td class="snowreport" align="left"><font color="#000000"><img width="16" height="12" src="/nsbase/images/black.gif">Challenger�
+			
+			</font>�</td>
+<td class="snowreport" ALIGN="CENTER"><strong>Y</strong>�</td>
+<td class="snowreport" ALIGN="CENTER"><img width="29" height="25" src="
+                                /nsassets/images/the-mountain/grooming_icon_small.jpg
+                        ">�</td>
+<td class="snowreport" ALIGN="CENTER">N�</td>
+</tr>
+<tr xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:user="http://rtp.com/rtp">
+<td class="snowreport" align="left"><font color="#000000"><img width="16" height="12" src="/nsbase/images/black.gif">Follow Me�
+			
+			</font>
+</td>
+<td class="snowreport" ALIGN="CENTER"><strong>Y</strong></td>
+<td class="snowreport" ALIGN="CENTER">N</td>
+<td class="snowreport" ALIGN="CENTER">N</td>
+<td class="snowreport" align="left"><font color="#000000"><img width="16" height="12" src="/nsbase/images/black.gif">Down Under�
+			
+			</font>�</td>
+<td class="snowreport" ALIGN="CENTER"><strong>Y</strong>�</td>
+<td class="snowreport" ALIGN="CENTER"><img width="29" height="25" src="
+                                /nsassets/images/the-mountain/grooming_icon_small.jpg
+                        ">�</td>
+<td class="snowreport" ALIGN="CENTER">N�</td>
+</tr>
+<tr xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:user="http://rtp.com/rtp">
+<td class="snowreport" align="left"><font color="#000000"><img width="16" height="12" src="/nsbase/images/black.gif">Lower Burnout�
+			
+			</font>
+</td>
+<td class="snowreport" ALIGN="CENTER"><strong>Y</strong></td>
+<td class="snowreport" ALIGN="CENTER"><img width="29" height="25" src="
+                                /nsassets/images/the-mountain/grooming_icon_small.jpg
+                        "></td>
+<td class="snowreport" ALIGN="CENTER">N</td>
+<td class="snowreport" align="left"><font color="#000000"><img width="16" height="12" src="/nsbase/images/black.gif">Monument Glade�
+			
+			</font>�</td>
+<td class="snowreport" ALIGN="CENTER"><strong>Y</strong>�</td>
+<td class="snowreport" ALIGN="CENTER">N�</td>
+<td class="snowreport" ALIGN="CENTER">N�</td>
+</tr>
+<tr xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:user="http://rtp.com/rtp">
+<td class="snowreport" align="left"><font color="#000000"><img width="16" height="12" src="/nsbase/images/black.gif">Lookout Glade�
+			
+			</font>
+</td>
+<td class="snowreport" ALIGN="CENTER">N</td>
+<td class="snowreport" ALIGN="CENTER">N</td>
+<td class="snowreport" ALIGN="CENTER">N</td>
+<td class="snowreport" align="left"><font color="#000000"><img width="16" height="12" src="/nsbase/images/black.gif">Martis�
+			
+			</font>�</td>
+<td class="snowreport" ALIGN="CENTER"><strong>Y</strong>�</td>
+<td class="snowreport" ALIGN="CENTER">N�</td>
+<td class="snowreport" ALIGN="CENTER">N�</td>
+</tr>
+<tr xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:user="http://rtp.com/rtp">
+<td class="snowreport" align="left"><font color="#000000"><img width="16" height="12" src="/nsbase/images/black.gif">Boca�
+			
+			</font>
+</td>
+<td class="snowreport" ALIGN="CENTER"><strong>Y</strong></td>
+<td class="snowreport" ALIGN="CENTER">N</td>
+<td class="snowreport" ALIGN="CENTER">N</td>
+<td class="snowreport" align="left"><font color="#000000"><img width="16" height="12" src="/nsbase/images/black.gif">Upper Martis�
+			
+			</font>�</td>
+<td class="snowreport" ALIGN="CENTER"><strong>Y</strong>�</td>
+<td class="snowreport" ALIGN="CENTER">N�</td>
+<td class="snowreport" ALIGN="CENTER">N�</td>
+</tr>
+<tr xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:user="http://rtp.com/rtp">
+<td class="snowreport" align="left"><font color="#000000"><img width="16" height="12" src="/nsbase/images/black.gif">Gooseneck�
+			
+			</font>
+</td>
+<td class="snowreport" ALIGN="CENTER"><strong>Y</strong></td>
+<td class="snowreport" ALIGN="CENTER">N</td>
+<td class="snowreport" ALIGN="CENTER">N</td>
+<td class="snowreport" align="left"><font color="#000000"><img width="16" height="12" src="/nsbase/images/black.gif">Stampede�
+			
+			</font>�</td>
+<td class="snowreport" ALIGN="CENTER"><strong>Y</strong>�</td>
+<td class="snowreport" ALIGN="CENTER">N�</td>
+<td class="snowreport" ALIGN="CENTER">N�</td>
+</tr>
+<tr xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:user="http://rtp.com/rtp">
+<td class="snowreport" align="left"><font color="#000000"><img width="16" height="12" src="/nsbase/images/black.gif">Prosser�
+			
+			</font>
+</td>
+<td class="snowreport" ALIGN="CENTER"><strong>Y</strong></td>
+<td class="snowreport" ALIGN="CENTER">N</td>
+<td class="snowreport" ALIGN="CENTER">N</td>
+<td class="snowreport" align="left"><font color="#000000"><img width="16" height="12" src="/nsbase/images/black.gif">The Camp Glade�
+			
+			</font>�</td>
+<td class="snowreport" ALIGN="CENTER"><strong>Y</strong>�</td>
+<td class="snowreport" ALIGN="CENTER">N�</td>
+<td class="snowreport" ALIGN="CENTER">N�</td>
+</tr>
+<tr xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:user="http://rtp.com/rtp">
+<td class="snowreport" align="left"><font color="#000000"><img width="16" height="12" src="/nsbase/images/black.gif">Sugar Pine Glade�
+			
+			</font>
+</td>
+<td class="snowreport" ALIGN="CENTER"><strong>Y</strong></td>
+<td class="snowreport" ALIGN="CENTER">N</td>
+<td class="snowreport" ALIGN="CENTER">N</td>
+<td class="snowreport" align="left"><font color="#000000"><img width="16" height="12" src="/nsbase/images/black.gif">Sawmill Glade�
+			
+			</font>�</td>
+<td class="snowreport" ALIGN="CENTER">N�</td>
+<td class="snowreport" ALIGN="CENTER">N�</td>
+<td class="snowreport" ALIGN="CENTER">N�</td>
+</tr>
+<tr xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:user="http://rtp.com/rtp">
+<td class="snowreport" align="left"><font color="#000000"><img width="16" height="12" src="/nsbase/images/black.gif">Hornet's Nest�
+			
+			</font>
+</td>
+<td class="snowreport" ALIGN="CENTER">N</td>
+<td class="snowreport" ALIGN="CENTER">N</td>
+<td class="snowreport" ALIGN="CENTER">N</td>
+<td class="snowreport" align="left"><font color="#000000"><img width="16" height="12" src="/nsbase/images/black.gif">Surprise�
+			
+			</font>�</td>
+<td class="snowreport" ALIGN="CENTER"><strong>Y</strong>�</td>
+<td class="snowreport" ALIGN="CENTER"><img width="29" height="25" src="
+                                /nsassets/images/the-mountain/grooming_icon_small.jpg
+                        ">�</td>
+<td class="snowreport" ALIGN="CENTER">N�</td>
+</tr>
+<tr xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:user="http://rtp.com/rtp">
+<td class="snowreport" align="left"><font color="#000000"><img width="16" height="12" src="/nsbase/images/black.gif">Cowboy Pass�
+			
+			</font>
+</td>
+<td class="snowreport" ALIGN="CENTER"><strong>Y</strong></td>
+<td class="snowreport" ALIGN="CENTER"><img width="29" height="25" src="
+                                /nsassets/images/the-mountain/grooming_icon_small.jpg
+                        "></td>
+<td class="snowreport" ALIGN="CENTER">N</td>
+<td class="snowreport" align="left"><font color="#000000"><img width="16" height="12" src="/nsbase/images/black.gif">Grouse Alley�
+			
+			</font>�</td>
+<td class="snowreport" ALIGN="CENTER"><strong>Y</strong>�</td>
+<td class="snowreport" ALIGN="CENTER">N�</td>
+<td class="snowreport" ALIGN="CENTER">N�</td>
+</tr>
+<tr xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:user="http://rtp.com/rtp">
+<td class="snowreport" align="left"><font color="#000000"><img width="16" height="12" src="/nsbase/images/black.gif">Corridor�
+			
+			</font>
+</td>
+<td class="snowreport" ALIGN="CENTER"><strong>Y</strong></td>
+<td class="snowreport" ALIGN="CENTER">N</td>
+<td class="snowreport" ALIGN="CENTER">N</td>
+<td class="snowreport" align="left"><font color="#000000"><img width="16" height="12" src="/nsbase/images/black.gif">The Plunge�
+			
+			</font>�</td>
+<td class="snowreport" ALIGN="CENTER"><strong>Y</strong>�</td>
+<td class="snowreport" ALIGN="CENTER">N�</td>
+<td class="snowreport" ALIGN="CENTER">N�</td>
+</tr>
+<tr xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:user="http://rtp.com/rtp">
+<td class="snowreport" align="left"><font color="#000000"><img width="16" height="12" src="/nsbase/images/black.gif">Spring Board�
+			
+			</font>
+</td>
+<td class="snowreport" ALIGN="CENTER"><strong>Y</strong></td>
+<td class="snowreport" ALIGN="CENTER">N</td>
+<td class="snowreport" ALIGN="CENTER">N</td>
+<td class="snowreport" align="left"><font color="#000000"><img width="16" height="12" src="/nsbase/images/black.gif">Jibboom�
+			
+			</font>�</td>
+<td class="snowreport" ALIGN="CENTER"><strong>Y</strong>�</td>
+<td class="snowreport" ALIGN="CENTER">N�</td>
+<td class="snowreport" ALIGN="CENTER">N�</td>
+</tr>
+<tr xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:user="http://rtp.com/rtp">
+<td class="snowreport" align="left"><font color="#000000"><img width="16" height="12" src="/nsbase/images/black.gif">Flying Squirrel�
+			
+			</font>
+</td>
+<td class="snowreport" ALIGN="CENTER"><strong>Y</strong></td>
+<td class="snowreport" ALIGN="CENTER">N</td>
+<td class="snowreport" ALIGN="CENTER">N</td>
+<td class="snowreport" align="left"><font color="#000000"><img width="16" height="12" src="/nsbase/images/black.gif">Delight�
+			
+			</font>�</td>
+<td class="snowreport" ALIGN="CENTER"><strong>Y</strong>�</td>
+<td class="snowreport" ALIGN="CENTER">N�</td>
+<td class="snowreport" ALIGN="CENTER">N�</td>
+</tr>
+<tr xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:user="http://rtp.com/rtp">
+<td class="snowreport" align="left"><font color="#000000"><img width="16" height="12" src="/nsbase/images/black.gif">Dutchman�
+			
+			</font>
+</td>
+<td class="snowreport" ALIGN="CENTER"><strong>Y</strong></td>
+<td class="snowreport" ALIGN="CENTER"><img width="29" height="25" src="
+                                /nsassets/images/the-mountain/grooming_icon_small.jpg
+                        "></td>
+<td class="snowreport" ALIGN="CENTER">N</td>
+<td class="snowreport" align="left"><font color="#000000"><img width="16" height="12" src="/nsbase/images/black.gif">The Chute�
+			
+			</font>�</td>
+<td class="snowreport" ALIGN="CENTER"><strong>Y</strong>�</td>
+<td class="snowreport" ALIGN="CENTER"><img width="29" height="25" src="
+                                /nsassets/images/the-mountain/grooming_icon_small.jpg
+                        ">�</td>
+<td class="snowreport" ALIGN="CENTER">N�</td>
+</tr>
+<tr xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:user="http://rtp.com/rtp">
+<td class="snowreport" align="left"><font color="#000000"><img width="16" height="12" src="/nsbase/images/black.gif">Tonini's�
+			
+			</font>
+</td>
+<td class="snowreport" ALIGN="CENTER"><strong>Y</strong></td>
+<td class="snowreport" ALIGN="CENTER">N</td>
+<td class="snowreport" ALIGN="CENTER">N</td>
+<td class="snowreport" align="left"><font color="#000000"><img width="16" height="12" src="/nsbase/images/black.gif">Crosscut�
+			
+			</font>�</td>
+<td class="snowreport" ALIGN="CENTER"><strong>Y</strong>�</td>
+<td class="snowreport" ALIGN="CENTER">N�</td>
+<td class="snowreport" ALIGN="CENTER">N�</td>
+</tr>
+<tr xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:user="http://rtp.com/rtp">
+<td class="snowreport" align="left"><font color="#000000"><img width="16" height="12" src="/nsbase/images/black.gif">Powder Bowl�
+			
+			</font>
+</td>
+<td class="snowreport" ALIGN="CENTER"><strong>Y</strong></td>
+<td class="snowreport" ALIGN="CENTER">N</td>
+<td class="snowreport" ALIGN="CENTER">N</td>
+<td class="snowreport" align="left"><font color="#000000"><img width="16" height="12" src="/nsbase/images/black.gif">Comstock Glade�
+			
+			</font>�</td>
+<td class="snowreport" ALIGN="CENTER"><strong>Y</strong>�</td>
+<td class="snowreport" ALIGN="CENTER">N�</td>
+<td class="snowreport" ALIGN="CENTER">N�</td>
+</tr>
+<tr xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:user="http://rtp.com/rtp">
+<td class="snowreport" align="left"><font color="#000000"><img width="16" height="12" src="/nsbase/images/black.gif">Rendezvous Glade�
+			
+			</font>
+</td>
+<td class="snowreport" ALIGN="CENTER"><strong>Y</strong></td>
+<td class="snowreport" ALIGN="CENTER">N</td>
+<td class="snowreport" ALIGN="CENTER">N</td>
+<td class="snowreport" align="left"><font color="#000000"><img width="16" height="12" src="/nsbase/images/black.gif">The Face�
+			
+			</font>�</td>
+<td class="snowreport" ALIGN="CENTER"><strong>Y</strong>�</td>
+<td class="snowreport" ALIGN="CENTER"><img width="29" height="25" src="
+                                /nsassets/images/the-mountain/grooming_icon_small.jpg
+                        ">�</td>
+<td class="snowreport" ALIGN="CENTER">N�</td>
+</tr>
+</table>		
+				
+				<br />
+				<p align="left" style="margin-left: 85px; margin-bottom: 5px; font-size: 14px;"><strong>Sidecountry Advanced Terrain Areas</strong></p>
+				<table class="snowreport" width="77%"  cellpadding="2" cellspacing="0" align="center">
+				<tr>
+					<td width="30%" class="snowreport" align="left" style="padding: 5px;">Sawtooth Ridge</td>
+					<td width="20%" class="snowreport" align="center" style="padding: 5px;">Closed</td>
+					<td width="50%" class="snowreport" rowspan="2" style="padding: 0 8px 0 8px; line-height: 12px; font-size: 11px;"><p>These areas are open/closed at the descretion of Northstar Resort's Ski Patrol.  Please heed all trail closures and rope lines.</p></td>
+				</tr>
+					<td width="30%" class="snowreport" align="left" style="padding: 5px;">White Rabbit</td>
+					<td width="20%" class="snowreport" align="center" style="padding: 5px;">Closed</td>
+				</tr>	
+				</table>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="4" align="left">
+			<br />
+			<img alt="grooming_icon" src="/nsassets/images/the-mountain/grooming_icon_small.jpg" border="0" height="65" align="left" hspace="10">
+<font color="#595959" size="2">The <strong>GROOMED OVERNIGHT</strong>
+icon is placed daily on trail signage throughout the Mountain to
+indicate which trails were groomed overnight.&nbsp; The icon is also
+used in the below grooming and lift status&nbsp;reports to&nbsp;denote
+the groomed trails.</font> &nbsp;
+			<a href="#top">Back to Top</a>
+		</td>
+	</tr>
+	<tr><td colspan="4" valign="center" height="40px"><hr /></td></tr>
+	<tr>
+		<td colspan="4" align="center">
+			<a name="liftReport" style="text-decoration:none">
+			<p><span class="headerText" name="lift" id="lift"><b>LIFT STATUS </span></p>
+			</a>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="4" align="center">
+			<center xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:user="http://rtp.com/rtp">Updated 12/27/2012 6:48:26 AM</center><br xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:user="http://rtp.com/rtp"><table cellspacing="0" cellpadding="2" class="snowreport" width="100%" border="1" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:user="http://rtp.com/rtp">
+<tr>
+<td colspan="8" align="center" class="snowreport" bgcolor="#023403"><font color="#ffffff"><b>The Backside</b></font></td>
+</tr>
+<tr ALIGN="CENTER">
+<td class="snowreport"><font size="-2"><b>LIFT</b></font></td>
+<td class="snowreport"><font size="-2"><b>TYPE</b></font></td>
+<td class="snowreport"><font size="-2"><b>OPEN</b></font></td>
+<td class="snowreport"><font size="-2"><b>COMMENTS</b></font></td>
+<td class="snowreport"><font size="-2"><b>LIFT</b></font></td>
+<td class="snowreport"><font size="-2"><b>TYPE</b></font></td>
+<td class="snowreport"><font size="-2"><b>OPEN</b></font></td>
+<td class="snowreport"><font size="-2"><b>COMMENTS</b></font></td>
+</tr>
+<tr>
+<td class="snowreport" valign="top">Promised Land Express�</td>
+<td class="snowreport" valign="top"><img src="/nsbase/images/quad_icons.jpg" width="35" height="20">�</td>
+<td ALIGN="CENTER" valign="top" class="snowreport">Y�</td>
+<td ALIGN="center" valign="top" class="snowreport">Quad�</td>
+<td class="snowreport" valign="top">Backside Express �</td>
+<td class="snowreport" valign="top"><img src="/nsbase/images/quad_icons.jpg" width="35" height="20">�</td>
+<td ALIGN="CENTER" valign="top" class="snowreport">Y�</td>
+<td ALIGN="center" valign="top" class="snowreport">Quad�</td>
+</tr>
+<tr>
+<td colspan="8" align="center" class="snowreport" bgcolor="#FF6501"><font color="#ffffff"><b>Lookout Mountain</b></font></td>
+</tr>
+<tr ALIGN="CENTER">
+<td class="snowreport"><font size="-2"><b>LIFT</b></font></td>
+<td class="snowreport"><font size="-2"><b>TYPE</b></font></td>
+<td class="snowreport"><font size="-2"><b>OPEN</b></font></td>
+<td class="snowreport"><font size="-2"><b>COMMENTS</b></font></td>
+<td class="snowreport"><font size="-2"><b>LIFT</b></font></td>
+<td class="snowreport"><font size="-2"><b>TYPE</b></font></td>
+<td class="snowreport"><font size="-2"><b>OPEN</b></font></td>
+<td class="snowreport"><font size="-2"><b>COMMENTS</b></font></td>
+</tr>
+<tr>
+<td class="snowreport" valign="top">Martis Camp Express�</td>
+<td class="snowreport" valign="top"><img src="/nsbase/images/quad_icons.jpg" width="35" height="20">�</td>
+<td ALIGN="CENTER" valign="top" class="snowreport">Y�</td>
+<td ALIGN="center" valign="top" class="snowreport">Quad�</td>
+<td class="snowreport" valign="top">Lookout Link�</td>
+<td class="snowreport" valign="top"><img src="/nsbase/images/surface_icons.jpg" width="35" height="20">�</td>
+<td ALIGN="CENTER" valign="top" class="snowreport">Y�</td>
+<td ALIGN="center" valign="top" class="snowreport">Surface Lift�</td>
+</tr>
+<tr>
+<td colspan="8" align="center" class="snowreport" bgcolor="#0000FE"><font color="#ffffff"><b>Mt. Pluto</b></font></td>
+</tr>
+<tr ALIGN="CENTER">
+<td class="snowreport"><font size="-2"><b>LIFT</b></font></td>
+<td class="snowreport"><font size="-2"><b>TYPE</b></font></td>
+<td class="snowreport"><font size="-2"><b>OPEN</b></font></td>
+<td class="snowreport"><font size="-2"><b>COMMENTS</b></font></td>
+<td class="snowreport"><font size="-2"><b>LIFT</b></font></td>
+<td class="snowreport"><font size="-2"><b>TYPE</b></font></td>
+<td class="snowreport"><font size="-2"><b>OPEN</b></font></td>
+<td class="snowreport"><font size="-2"><b>COMMENTS</b></font></td>
+</tr>
+<tr>
+<td class="snowreport" valign="top">Vista Express�</td>
+<td class="snowreport" valign="top"><img src="/nsbase/images/quad_icons.jpg" width="35" height="20">�</td>
+<td ALIGN="CENTER" valign="top" class="snowreport">Y�</td>
+<td ALIGN="center" valign="top" class="snowreport">Quad�</td>
+<td class="snowreport" valign="top">Comstock Express�</td>
+<td class="snowreport" valign="top"><img src="/nsbase/images/quad_icons.jpg" width="35" height="20">�</td>
+<td ALIGN="CENTER" valign="top" class="snowreport">Y�</td>
+<td ALIGN="center" valign="top" class="snowreport">Quad�</td>
+</tr>
+<tr>
+<td class="snowreport" valign="top">Rendezvous�</td>
+<td class="snowreport" valign="top"><img src="/nsbase/images/triple_icons.jpg" width="35" height="20">�</td>
+<td ALIGN="CENTER" valign="top" class="snowreport">Y�</td>
+<td ALIGN="center" valign="top" class="snowreport">Triple�</td>
+<td valign="top" class="snowreport">�</td>
+<td valign="top" class="snowreport">�</td>
+<td ALIGN="CENTER" valign="top" class="snowreport">�</td>
+<td ALIGN="center" valign="top" class="snowreport">�</td>
+</tr>
+<tr>
+<td colspan="8" align="center" class="snowreport" bgcolor="#808080"><font color="#ffffff"><b>Northwest Territory</b></font></td></tr>
+<tr ALIGN="CENTER">
+<td class="snowreport"><font size="-2"><b>LIFT</b></font></td>
+<td class="snowreport"><font size="-2"><b>TYPE</b></font></td>
+<td class="snowreport"><font size="-2"><b>OPEN</b></font></td>
+<td class="snowreport"><font size="-2"><b>COMMENTS</b></font></td>
+<td class="snowreport"><font size="-2"><b>LIFT</b></font></td>
+<td class="snowreport"><font size="-2"><b>TYPE</b></font></td>
+<td class="snowreport"><font size="-2"><b>OPEN</b></font></td>
+<td class="snowreport"><font size="-2"><b>COMMENTS</b></font></td>
+</tr>
+<tr>
+<td class="snowreport" valign="top">Arrow Express�</td>
+<td class="snowreport" valign="top"><img src="/nsbase/images/quad_icons.jpg" width="35" height="20">�</td>
+<td ALIGN="CENTER" valign="top" class="snowreport">Y�</td>
+<td ALIGN="center" valign="top" class="snowreport">Quad�</td>
+<td class="snowreport" valign="top">The Big Easy�</td>
+<td class="snowreport" valign="top"><img src="/nsbase/images/dble_icons.jpg" width="35" height="20">�</td>
+<td ALIGN="CENTER" valign="top" class="snowreport">Y�</td>
+<td ALIGN="center" valign="top" class="snowreport">Learning Area�</td>
+</tr>
+<tr>
+<td class="snowreport" valign="top">Tahoe Zephyr Express�</td>
+<td class="snowreport" valign="top"><img src="/nsbase/images/6pak_icons.jpg" width="35" height="20">�</td>
+<td ALIGN="CENTER" valign="top" class="snowreport">Y�</td>
+<td ALIGN="center" valign="top" class="snowreport">Six-Pack�</td>
+<td valign="top" class="snowreport">Ursa Major�</td>
+<td valign="top" class="snowreport"><img src="/nsbase/images/surface_icons.jpg" width="35" height="20">�</td>
+<td ALIGN="CENTER" valign="top" class="snowreport">Y�</td>
+<td ALIGN="center" valign="top" class="snowreport">Learning Area�</td>
+</tr>
+<tr>
+<td class="snowreport" valign="top">Big Dipper�</td>
+<td class="snowreport" valign="top"><img src="/nsbase/images/surface_icons.jpg" width="35" height="20">�</td>
+<td ALIGN="CENTER" valign="top" class="snowreport">Y�</td>
+<td ALIGN="center" valign="top" class="snowreport">Learning Area�</td>
+<td class="snowreport" valign="top">Little Dipper�</td>
+<td class="snowreport" valign="top"><img src="/nsbase/images/surface_icons.jpg" width="35" height="20">�</td>
+<td ALIGN="CENTER" valign="top" class="snowreport">N�</td>
+<td ALIGN="center" valign="top" class="snowreport">Learning Area �</td>
+</tr>
+<tr>
+<td class="snowreport" valign="top">Tubing Tow�</td>
+<td class="snowreport" valign="top"><img src="/nsbase/images/surface_icons.jpg" width="35" height="20">�</td>
+<td ALIGN="CENTER" valign="top" class="snowreport">Y�</td>
+<td ALIGN="center" valign="top" class="snowreport">Surface Lift�</td>
+<td valign="top" class="snowreport">Pegasus�</td>
+<td valign="top" class="snowreport"><img src="/nsbase/images/surface_icons.jpg" width="35" height="20">�</td>
+<td ALIGN="CENTER" valign="top" class="snowreport">Y�</td>
+<td ALIGN="center" valign="top" class="snowreport">Learning Area �</td>
+</tr>
+<tr>
+<td colspan="8" align="center" class="snowreport" bgcolor="#7F8001"><font color="#ffffff"><b>Village at Northstar</b></font></td>
+</tr>
+<tr ALIGN="CENTER">
+<td class="snowreport"><font size="-2"><b>LIFT</b></font></td>
+<td class="snowreport"><font size="-2"><b>TYPE</b></font></td>
+<td class="snowreport"><font size="-2"><b>OPEN</b></font></td>
+<td class="snowreport"><font size="-2"><b>COMMENTS</b></font></td>
+<td class="snowreport"><font size="-2"><b>LIFT</b></font></td>
+<td class="snowreport"><font size="-2"><b>TYPE</b></font></td>
+<td class="snowreport"><font size="-2"><b>OPEN</b></font></td>
+<td class="snowreport"><font size="-2"><b>COMMENTS</b></font></td>
+</tr>
+<tr>
+<td class="snowreport" valign="top">Big Springs Express�</td>
+<td class="snowreport" valign="top"><img src="/nsbase/images/gogo_icons.jpg" width="35" height="20">�</td>
+<td ALIGN="CENTER" valign="top" class="snowreport">Y�</td>
+<td ALIGN="center" valign="top" class="snowreport">Gondola�</td>
+<td class="snowreport" valign="top">Highlands Gondola�</td>
+<td class="snowreport" valign="top"><img src="/nsbase/images/gogo_icons.jpg" width="35" height="20">�</td>
+<td ALIGN="CENTER" valign="top" class="snowreport">Y�</td>
+<td ALIGN="center" valign="top" class="snowreport">Gondola�</td>
+</tr>
+<tr>
+<td class="snowreport" valign="top">Village Express�</td>
+<td class="snowreport" valign="top"><img src="/nsbase/images/quad_icons.jpg" width="35" height="20">�</td>
+<td ALIGN="CENTER" valign="top" class="snowreport">Y�</td>
+<td ALIGN="center" valign="top" class="snowreport">Quad�</td>
+<td valign="top" class="snowreport">Orion's Belt�</td>
+<td valign="top" class="snowreport"><img src="/nsbase/images/surface_icons.jpg" width="35" height="20">�</td>
+<td ALIGN="CENTER" valign="top" class="snowreport">Y�</td>
+<td ALIGN="center" valign="top" class="snowreport">Learning Area �</td>
+</tr>
+<tr>
+<td class="snowreport" valign="top">Timberline Triple�</td>
+<td class="snowreport" valign="top"><img src="/nsbase/images/triple_icons.jpg" width="35" height="20">�</td>
+<td ALIGN="CENTER" valign="top" class="snowreport">N�</td>
+<td ALIGN="center" valign="top" class="snowreport">Triple�</td>
+<td class="snowreport" valign="top">�</td>
+<td class="snowreport" valign="top">�</td>
+<td ALIGN="CENTER" valign="top" class="snowreport">�</td>
+<td ALIGN="center" valign="top" class="snowreport">�</td>
+</tr>
+</table>
+
+		</td>
+	</tr>
+	</tr>
+		<td colspan="4" align="left">
+			<a href="#top">Back to Top</a>
+		</td>
+	</tr>
+</table>
+</center>
+
+
+<!-- end CMT content -->
+			</div><!-- end CMT content -->
+			
+		</div><!-- end rightColumn div -->
+		<br clear="all" />
+	</div>
+
+	<div id="footer">
+		
+<div id="footerText"><strong>NORTHSTAR CALIFORNIA� RESORT&#160;</strong>&#160;|&#160;&#160;5001 Northstar Drive Truckee, CA 96161&#160;&#160;�&#160;&#160;1.800.GO.NORTH&#160;&#160;�&#160;&#160;<a title="Northstar's Mailing &amp; Shipping Address" href="/contact-us.asp#contact-mail">Mailing &amp; Shipping Address</a>&#160;&#160;�&#160;&#160;<a title="Northstar's Contact Information" href="/contact-us.asp">Contact Us</a>&#160;&#160;�&#160;&#160;<a title="Chat with Northstar representatives." href="/info/ski/trip-planning/push2chat-talk.asp">Live Chat</a><br /><strong>OTHER VAIL RESORTS SITES</strong>&#160;&#160;|&#160;&#160;<a title="Visit Vail Mountain website" href="http://www.vail.com/" target="_blank">Vail</a>&#160;&#160;�&#160;&#160;<a title="Visit Beaver Creek website" href="http://www.beavercreek.com/" target="_blank">Beaver Creek</a>&#160;&#160;�&#160;&#160;<a title="Visit Breckenridge website" href="http://www.breckenridge.com/" target="_blank">Breckenridge</a>&#160;&#160;�&#160;&#160;<a title="Visit Keystone Mountain website" href="http://www.keystoneresort.com/" target="_blank">Keystone</a>&#160;&#160;�&#160;&#160;<a title="Visit Heavenly Mountain website" href="http://www.skiheavenly.com/" target="_blank">Heavenly</a>&#160;&#160;�&#160;&#160;<a title="Northstar California website" href="http://www.northstarcalifornia.com/">Northstar</a>&#160;&#160;�&#160;&#160;<a title="Visit Kirkwood Mountain website" href="http://www.kirkwood.com/" target="_blank">Kirkwood</a>&#160;&#160;�&#160;&#160;<a title="Visit Snow.com" href="http://www.snow.com/" target="_blank">Snow.com</a>&#160;&#160;�&#160;&#160;<a title="Visit EpicMix website" href="http://www.epicmix.com/" target="_blank">EpicMix</a>&#160;&#160;�&#160;&#160;<a title="Visit Buzz.com website" href="http://buzz.snow.com/" target="_blank">Buzz</a><br /><strong>CORPORATE INFORMATION&#160;</strong>&#160;|&#160;&#160;<a title="Visit Vail Resorts Corporate website" href="http://www.vailresorts.com/" target="_blank">Vail Resorts</a>&#160;&#160;�&#160;&#160;<a title="Visit the Northstar Media Center + Press Room" href="http://news.northstar.vailresorts.com/" target="_blank">Press Room</a>&#160;&#160;�&#160;&#160;<a title="Employment information. Search jobs. Apply online." href="/info/ski/employment/employment.asp" target="_blank">Careers</a><br />
+� 1997-2012 Vail Resorts Management Company. All Rights Reserved.&#160;&#160;<a title="View Terms &amp; Conditions" href="/info/ski/footer/termsandconditions.asp">Terms &amp; Conditions</a>&#160;&#160;�&#160;&#160;<a title="View Privacy Policy" href="http://www.snow.com/privacy.aspx" target="_blank">Privacy Policy</a>&#160;&#160;�&#160;&#160;<a title="Northstar Sitemap" href="/info/site-map.asp">Site Map</a>&#160;&#160;�&#160;&#160;<a title="View all of Northstar's partners and sponsors." href="/info/ski/footer/partners.asp">Partners</a>&#160;&#160;�&#160;&#160;<a href="http://m.northstarcalifornia.com/" title="View Northstar's mobile site." target="_blank">Mobile Site</a><br />
+<p></p></div><div id="footerPartners"><img title="Cadillac" alt="Cadillac" src="http://www.northstarattahoe.com/nsbase/wrap/theme0/images/footer_cadillac.png" width="78" height="30" />&#160;<img title="Pepsi" alt="Pepsi" src="http://www.northstarattahoe.com/nsassets/files/footer/footer_pepsi.png" width="74" height="26" />&#160;<img title="Sprint" alt="Sprint" src="http://www.northstarattahoe.com/nsassets/files/footer/footer_sprint.png" width="74" height="30" />&#160;</div>
+
+
+
+
+	</div>
+	
+</div><!-- end wrapper -->
+
+<br clear="all" />
+
+<div id="popOver" onclick="hidePopOver();">
+
+	<div id="popOverContent">
+
+	</div>
+
+</div>
+
+<script language="javascript" src="/nsbase/wrap/theme0/scripts/title.generator.js" type="text/javascript"></script>
+
+
+
+
+<div id="ourResorts" onmouseover="cancelHideResortsDrop();" onmouseout="delayHideResortsDrop();">
+<div onmouseover="resortHover(this);" onmouseout="resortMouseOut(this);"><a href="http://www.vail.com/"><img src="/nsbase/wrap/theme0/our_resorts/images/Vail.png" /></a><span class="resortWeather"><img src="/nsbase/wrap/theme0/our_resorts/images/heavy-snow.png" /></span><span class="resortTemps">Low: 1&deg; High: 11&deg;</span></div><div onmouseover="resortHover(this);" onmouseout="resortMouseOut(this);"><a href="http://www.beavercreek.com/"><img src="/nsbase/wrap/theme0/our_resorts/images/BeaverCreek.png" /></a><span class="resortWeather"><img src="/nsbase/wrap/theme0/our_resorts/images/heavy-snow.png" /></span><span class="resortTemps">Low: 3&deg; High: 17&deg;</span></div><div onmouseover="resortHover(this);" onmouseout="resortMouseOut(this);"><a href="http://www.breckenridge.com/"><img src="/nsbase/wrap/theme0/our_resorts/images/Breckenridge.png" /></a><span class="resortWeather"><img src="/nsbase/wrap/theme0/our_resorts/images/snow.png" /></span><span class="resortTemps">Low: 0&deg; High: 15&deg;</span></div><div onmouseover="resortHover(this);" onmouseout="resortMouseOut(this);"><a href="http://www.keystoneresort.com/"><img src="/nsbase/wrap/theme0/our_resorts/images/Keystone.png" /></a><span class="resortWeather"><img src="/nsbase/wrap/theme0/our_resorts/images/snow.png" /></span><span class="resortTemps">Low: 4&deg; High: 18&deg;</span></div><div onmouseover="resortHover(this);" onmouseout="resortMouseOut(this);"><a href="http://www.skiheavenly.com/"><img src="/nsbase/wrap/theme0/our_resorts/images/Heavenly.png" /></a><span class="resortWeather"><img src="/nsbase/wrap/theme0/our_resorts/images/partly-cloudy.png" /></span><span class="resortTemps">Low: 13&deg; High: 21&deg;</span></div><div onmouseover="resortHover(this);" onmouseout="resortMouseOut(this);"><a href="http://www.kirkwood.com/"><img src="/nsbase/wrap/theme0/our_resorts/images/Kirkwood.png" /></a><span class="resortTemps" style="padding-right: 10px; line-height: 14px;"><br>Visit Kirkwood Mountain Resort</span></div>
+	<div class="resortsTopBorder" onmouseover="resortHover(this);" onmouseout="resortMouseOut(this);" style="margin-top: 10px;">
+		<a href="http://www.snow.com/"><img src="/nsbase/wrap/theme0/our_resorts/images/snow_logo.png" alt="snow.com" title="snow.com"></a>
+		<span class="resortsSmallText">
+		Information about all seven of our mountains in one place.
+		</span>
+	</div>
+	<div onmouseover="resortHover(this);" onmouseout="resortMouseOut(this);">
+		<a href="http://buzz.snow.com/"><img src="/nsbase/wrap/theme0/our_resorts/images/Buzz.png" alt="Buzz" title="Buzz"></a>
+		<span class="resortsSmallText">
+		Get the latest articles, videos and photos from our mountains.
+		</span>
+	</div>
+	<div onmouseover="resortHover(this);" onmouseout="resortMouseOut(this);">
+		<a href="http://www.epicmix.com/"><img src="/nsbase/wrap/theme0/our_resorts/images/EpicMix.png" alt="EpicMix" title="EpicMix"></a>
+		<span class="resortsSmallText">
+		Connect with friends. Track your day. Share your story.
+		</span>
+	</div>
+
+</div><!-- end ourResorts -->
+
+
+<script language="javascript" src="/nsbase/wrap/theme0/our_resorts/our.resorts.js" type="text/javascript"></script>
+
+<script language="javascript" src="/nsbase/wrap/theme0/our_resorts/our.resorts.js" type="text/javascript"></script>
+
+
+<!--Google Analytics tracking Code-->
+
+<script type="text/javascript"> 
+  var gaJsHost = (("https:" == document.location.protocol) ? 
+  "https://ssl." : "http://www."); 
+  document.write(unescape("%3Cscript src='" + gaJsHost + 
+  "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E")); 
+</script> 
+<script type="text/javascript"> 
+   var pageTracker = _gat._getTracker("UA-1013543-1");
+   pageTracker._setDomainName(".northstarattahoe.com");
+   pageTracker._setAllowHash(false); 
+   pageTracker._trackPageview(); 
+</script> 
+
+<!-- End of Google Analytics Tracking Code -->
+
+<!-- start SLT cookie code -->
+<script type="text/javascript" src="http://www.skilaketahoe.com/sites/all/themes/SLT/assets/js/ga_custom.js"></script>
+
+<script type="text/javascript">
+
+var GAreferral = 'skilaketahoe';
+var GAtrack = 0;
+var GAtimestamp = 1;
+var GAquery = queryStringValue('referral'); 
+
+if (GAquery==GAreferral) {
+     GAtrack = 1;
+     setCookie(GAquery,GAtimestamp,30);
+}
+
+var GAcookieName = getCookie(GAreferral); //checks if cookie is set
+if (GAcookieName == 1) {GAtrack = 1}
+
+</script>
+
+<script type="text/javascript">
+
+   $('a').click(function(){
+
+       var href = $(this).attr('href');
+       var cookie = 'referral=skilaketahoe'; //query
+
+       if ((href.match(/^https?\:/i)) && (!href.match(document.domain))
+) {
+         if(GAtrack==1){
+
+           var query = href.split("?");
+           var count = query.length;
+
+           if (count > 1) { $(this).attr('href', href+'&'+cookie); }
+           else { $(this).attr('href', href+'?'+cookie) ;}
+         }
+       }
+   });
+
+</script>
+<!-- end SLT cookie code -->
+
+<!-- i2a tracking code installed 12-6-10 -->
+<script type="text/javascript" src="/nsbase/wrap/theme0/scripts/i2a.js">
+</script>
+<!-- end i2a tracking code -->
+
+<!-- SiteCatalyst code version: H.16. - installed 1/18/2011
+Copyright 1997-2008 Omniture, Inc. More info available at
+http://www.omniture.com -->
+<script type="text/javascript" src="http://www.snow.com/VailResorts/sites/global/assets/js/tagging/s_code.js"></script>
+
+<script type="text/javascript">//<![CDATA[
+ s.pageName="northstar:mountain-summer:groomingreport.";
+ s.channel="";
+ s.hier1="northstar,mountain-summer,groomingreport.";
+ s.prop1="northstar";
+ s.prop2="northstar:mountain-summer";
+ s.prop3="northstar:mountain-summer:groomingreport."
+ s.prop4="northstar:mountain-summer:groomingreport.";
+ 
+ s.prop7="logged out";
+ s.prop50="vrinorthstar";
+ 
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+s.t()//]]></script>
+
+
+
+</body>
+</html>
