@@ -15,13 +15,15 @@
     "nib": "~0.9.0",
     "async": "~0.1.22",
     "async-cache": "~0.1.0",
-    "connect-cachify": "0.0.12"
+    "connect-cachify": "0.0.12",
+    "lodash": "~1.0.0-rc.3"
   },
   "devDependencies": {
     "mocha": "~1",
     "jshint": "~0",
     "component": "~0",
-    "uglify-js": "~2"
+    "uglify-js": "~2",
+    "commander": "~1.1.1"
   },
   "main": "app.js",
   "directories": {

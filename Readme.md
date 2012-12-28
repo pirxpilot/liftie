@@ -2,7 +2,7 @@
 
 #liftie.info
 
-Clean, simple, easy to read, fast lift status for all ski resort.
+Clean, simple, easy to read, fast ski resort lift status.
 
 ## Features
 
@@ -10,47 +10,59 @@ Clean, simple, easy to read, fast lift status for all ski resort.
 - Refreshes automatically every 65 seconds.
 - Index page displays all supported resorts but it's possible to specify (and bookmark) a subset:
 
-    http://liftie.info?resorts=alpine,squaw
+        http://liftie.info?resorts=alpine,squaw
 
 - REST type API returns a status of each resort.
 
-    GET http://liftie.info/api/resort/<resort>
+        GET http://liftie.info/api/resort/<resort>
 
 - Status is cached on a server side. Regardless of the number of browser request, server will
 retrieve (and parse) the resort pages only once per minute.
 
 ## How to add your favorite  ```acme.com``` resort
 
-- get status page
+The easiest way to start working on a new resort is to run `generate` script.
 
-    curl http://acme.com/lift/status > test/resort/examples/acme.html
+    $./bin/generate
 
-- write parser and parsing test
+    Short name of the resort [acme]:
+    Human readable name of the resort [Acme Ski]:
+    URL of the page with lift status [http://acme.com/lift/status]:
 
-    lib/resorts/acme.js
-    test/resorts/acme.js
+    Generating files for Acme Ski
+    Generating lib/resorts/acme.js...
+    Generating test/resorts/acme.js...
+    Retrieving http://acme.com/lift/status to test/resorts/example/acme.html...
 
-```lib/resorts/acme.js``` needs to export the followin object
+The script expects the short (one word) identifier of the ski resort, the human readable name and
+the URL of the page with lift status. It generates resort module `lib/resort/acme.js` and a test for
+a parsing function `test/resort/acme.js`. It also retrieves the lift status page and puts it in
+`test/resort/example` directory.
+
+At this point you should probably run the tests: since parsing function is not implemented the test
+will fail.
+
+`lib/resorts/acme.js` exports the following object
 
     {
-    	name: 'Acme Ski Resort',
-    	url: {
-    		host: 'http://acme.com',
-    		pathname: '/lift/status'
-    	}
-    	parse: function(dom) {}
+      name: 'Acme Ski Resort',
+      url: {
+        host: 'http://acme.com',
+        pathname: '/lift/status'
+      }
+      parse: function(dom) {}
     }
 
-parse function will need to return lift status object which will look something like that
+Parse function needs to return a lift status object, which will look something like that:
 
     {
-    	'Super Express Lift': 'closed',
-    	'Magic Carpet': 'open',
-    	'Ultra Gondola': 'hold',
-    	'T-Bar': 'scheduled'
+      'Super Express Lift': 'closed',
+      'Magic Carpet': 'open',
+      'Ultra Gondola': 'hold',
+      'T-Bar': 'scheduled'
     }
 
-- add acme to the resort list in the ```routes/index.js``` module
+Newly added resort is displayed automatically on liftie index page.
 
 ## Credits
 
