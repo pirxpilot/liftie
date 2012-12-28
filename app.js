@@ -18,6 +18,7 @@ var app = express();
 app.configure(function(){
   app.locals.min = '.min';
   app.locals.cachify = cachify.cachify; // needed since our cachify middleware is below router
+  app.locals.siteUrl = process.env.SITE_URL || 'http://liftie.info';
   app.set('port', process.env.PORT || 3000);
   app.set('views', __dirname + '/views');
   app.set('view engine', 'jade');
@@ -43,6 +44,7 @@ app.configure('development', function(){
 app.get('/', routes.index);
 app.get('/resort/:resort', routes.index);
 app.get('/api/resort/:resort', routes.api);
+app.get('/sitemap.xml', routes.sitemap);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log("Express server listening on port " + app.get('port'));
