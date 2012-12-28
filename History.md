@@ -1,4 +1,14 @@
 
+0.0.6 / 2012-12-28 
+==================
+
+  * Add Sierra at Tahoe ski resort
+  * Add support for a single resort URL
+  * Automatically discover resorts modules
+  * bin/generate script added
+  * Adjustable CSS layout
+  * Add Homewood Mountain support
+
 0.0.5 / 2012-12-26 
 ==================
 
