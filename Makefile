@@ -1,6 +1,6 @@
 NODE_BIN=./node_modules/.bin
 BUILD_DIR=public/scripts
-SRC = $(wildcard lib/boot/*.js lib/boot/*/*.js)
+SRC = $(wildcard lib/client/*/*.js)
 
 all: lint test build
 
