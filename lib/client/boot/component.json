@@ -5,8 +5,7 @@
     "visionmedia/superagent": "*"
   },
   "scripts": [
-    "index.js",
-    "init.js"
+    "index.js"
   ],
-  "local": []
+  "local": ["init"]
 }
