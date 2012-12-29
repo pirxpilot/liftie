@@ -19,6 +19,10 @@ app.configure(function(){
   app.locals.min = '.min';
   app.locals.cachify = cachify.cachify; // needed since our cachify middleware is below router
   app.locals.siteUrl = process.env.SITE_URL || 'http://liftie.info';
+  app.locals.siteDescription = 'Clean, simple, easy to read, fast ski resort lift status.';
+  app.locals.og= {
+    image: app.locals.siteUrl + '/img/snowflake-256.png',
+  };
   app.set('port', process.env.PORT || 3000);
   app.set('views', __dirname + '/views');
   app.set('view engine', 'jade');
