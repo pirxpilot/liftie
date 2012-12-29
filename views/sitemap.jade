@@ -1,0 +1,15 @@
+!!!xml
+urlset(
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0"
+)
+  url
+    loc= siteUrl
+    changefreq weekly
+
+
+  for resort in resorts
+    url
+      loc #{siteUrl}/resort/#{resort}
+      changefreq daily
+
