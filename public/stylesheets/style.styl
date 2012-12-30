@@ -37,8 +37,9 @@ $column-gutter=16px
   position absolute
   width 1px
 
-// To be used for links rendered with font icons
-// Chrome 19 was weird with clickability without this: http://css-tricks.com/examples/IconFont
+column-break-inside()
+  vendor('column-break-inside', arguments, only: webkit moz official)
+
 .icon-alone
   display inline-block
 
@@ -66,8 +67,9 @@ a
   margin 0 ($column-gutter/2) $column-gutter
   width $column-width
   padding .8em
-  float left
   background-color $background-color
+  column-break-inside avoid
+
 
   &:last-child
     margin-bottom 0
@@ -231,15 +233,16 @@ maxContent(n)
   margin $column-gutter auto
   width contentWidth(7)
 
-
-for col in 4 3 2 1
+for col in 6 5 4 3 2 1
   maxContent(col)
 
+for col in 6 5 4 3 2 1
   $max = contentWidth(col + 1)
   $media_query = 'screen and (max-width:' + $max + ')'
   @media $media_query
     .content
       width contentWidth(col)
+      column-count col
     if col == 1
       .resort
         margin-right 0
