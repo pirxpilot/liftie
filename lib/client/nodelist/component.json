@@ -1,0 +1,8 @@
+{
+  "name": "nodelist",
+  "dependencies": {
+  },
+  "scripts": [
+    "index.js"
+  ]
+}

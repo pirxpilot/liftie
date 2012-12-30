@@ -1,0 +1,12 @@
+{
+  "name": "resort",
+  "dependencies": {
+    "component/classes": "*",
+    "visionmedia/superagent": "*"
+  },
+  "scripts": [
+    "index.js"
+  ],
+  "local": [
+  ]
+}

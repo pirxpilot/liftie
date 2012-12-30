@@ -1,0 +1,13 @@
+{
+  "name": "minimax",
+  "dependencies": {
+    "component/event": "*",
+    "component/classes": "*"
+  },
+  "scripts": [
+    "index.js"
+  ],
+  "local": [
+  	"nodelist"
+  ]
+}
