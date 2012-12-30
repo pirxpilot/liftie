@@ -1,4 +1,13 @@
 
+0.0.7 / 2012-12-30 
+==================
+
+  * Open/close icons in icon file
+  * open/close switch for each resort
+  * Add open graph image parameter
+  * sitemap.xml and robots.txt files added
+  * Added Northstar California ski resort
+
 0.0.6 / 2012-12-28 
 ==================
 
