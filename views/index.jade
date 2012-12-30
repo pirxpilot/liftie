@@ -4,7 +4,8 @@ mixin resort(resort)
   section.resort.open(data-resort=resort.id)
     header
       a(href=resort.href)= resort.name
-      a.minimax(href='#') Open/Close
+      a.minimax.ls-minimax(href='#')
+        span.visuallyhidden Open or Close
     ul.lifts.expandable
       for status, name in resort.status
         li.lift
