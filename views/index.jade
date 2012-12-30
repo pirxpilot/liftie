@@ -1,18 +1,24 @@
 extends layout
 
+mixin resort(resort)
+  section.resort.open(data-resort=resort.id)
+    header
+      a(href=resort.href)= resort.name
+      a.minimax.ls-minimax(href='#')
+        span.visuallyhidden Open or Close
+    ul.lifts.expandable
+      for status, name in resort.status
+        li.lift
+          span.name #{name}
+          span.status(class='ls-#{status}')
+    footer.expandable
+      ul.summary
+        for value, key in resort.stats
+          li
+            span(class='ls-#{key}') &nbsp;#{value}&nbsp;
+            span #{key}
+
+
 block content
   for resort in resorts
-    section.resort(data-resort=resort.id)
-      header
-        a(href=resort.href)= resort.name
-      ul.lifts
-        for status, name in resort.status
-          li.lift
-            span.name #{name}
-            span.status(class='ls-#{status}')
-      footer
-        ul.summary
-          for value, key in resort.stats
-            li
-              span(class='ls-#{key}') &nbsp;#{value}&nbsp;
-              span #{key}
+    mixin resort(resort)

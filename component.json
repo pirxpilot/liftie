@@ -3,5 +3,5 @@
   "description": "Client side of liftie.info",
   "version": "0.0.1",
   "local": ["boot"],
-  "paths": ["lib"]
+  "paths": ["lib/client"]
 }

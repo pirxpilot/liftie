@@ -67,7 +67,8 @@ Newly added resort is displayed automatically on liftie index page.
 ## Credits
 
 Icon Font generated with [IconMoon App](http://icomoon.io)
-Icon Set: [Broccolidry][1] -- License: [Aribitrary][2]
+- Icon Set: [Broccolidry][1] -- License: [Aribitrary][2]
+- Icon Set: [IcoMoon - Free][3] -- License: [CC BY-SA 3.0][4]
 
 ## License
 
@@ -84,3 +85,5 @@ BSD
 
 [1]: http://dribbble.com/shots/587469-Free-16px-Broccolidryiconsaniconsetitisfullof-icons
 [2]: http://licence.visualidiot.com
+[3]: http://keyamoon.com/icomoon
+[4]: http://creativecommons.org/licenses/by-sa/3.0
