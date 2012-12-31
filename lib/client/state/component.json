@@ -1,7 +1,7 @@
 {
-  "name": "minimax",
+  "name": "state",
   "dependencies": {
-    "component/event": "*",
+    "component/cookie": "*",
     "component/classes": "*"
   },
   "scripts": [

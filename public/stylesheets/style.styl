@@ -5,7 +5,7 @@ $blue=#104ba9
 $red=#ff1e00
 $yellow=#ffa200
 $green=#00bf32
-
+$link-color=#00B7FF
 
 $column-width=320px
 $column-gutter=20px
@@ -42,39 +42,70 @@ body
   font-family: Ubuntu, "Lucida Grande", Helvetica, Arial, sans-serif
 
 a
-  color: #00B7FF
+  color $link-color
+  transition color .3s ease
+
+  &:hover
+    color saturate($link-color, 40%)
 
 .resort
   clearfix()
   box-sizing border-box
-  margin $column-gutter ($column-gutter/2)
+  margin 0 ($column-gutter/2) $column-gutter
   width $column-width
   padding .8em
   float left
   background-color GhostWhite
 
+  &:last-child
+    margin-bottom 0
+
+  header,
+  footer
+    transition all .4s ease
+
   header
     font-size 1.2em
     line-height 1em
+    border-bottom solid 1px transparent
     a
       text-decoration none
 
+  footer
+    border-top solid 1px transparent
+    font-size .8em
+
   &.open
     header
-      border-bottom solid 1px grey
+      border-color grey
       padding-bottom .4em
 
-  footer
-    font-size .8em
-    border-top solid 1px grey
-    padding-top .4em
+    footer
+      border-color grey
+      padding-top .4em
+
+.open
+  .expandable
+    opacity 1
+
+  .lifts.expandable
+    max-height 3000px
+
+  footer.expandable
+    max-height 300px
+
+.expandable
+  transition all .4s ease
+  max-height 0
+  overflow-y hidden
+  opacity 0
 
 .lifts
   list-style none
 
   .lift
     display block
-    padding .5em 0
+    padding .4em 0
     clearfix()
 
     .name
@@ -84,10 +115,12 @@ a
       font-size 1.1em
       float right
       text-shadow 1px 1px 2px rgba(0,0,0,.3)
+      padding 2px
 
 .minimax
   float right
   display block
+  padding-right 2px
 
 .ls-minimax:before
   content "\e031" // plus
@@ -126,7 +159,7 @@ contentWidth(n)
   return n == 1 ? $column-width : n * ($column-width + $column-gutter)
 
 .content
-  margin 0 auto
+  margin $column-gutter auto
   width contentWidth(7)
 
 

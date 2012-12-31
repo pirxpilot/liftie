@@ -1,7 +1,7 @@
 extends layout
 
 mixin resort(resort)
-  section.resort.open(data-resort=resort.id)
+  section.resort(data-resort=resort.id, class=resort.open ? 'open' : '')
     header
       a(href=resort.href)= resort.name
       a.minimax.ls-minimax(href='#')
