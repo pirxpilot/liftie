@@ -1,4 +1,15 @@
 
+0.0.8 / 2012-12-31 
+==================
+
+  * Return only a subset of resorts as open
+  * Save open resort state in a cookie
+  * Subtle color change for :hover links
+  * Style adjustement to allow for text-shadow
+  * Make container responsible for top/bottom margin
+  * Ease in open/close state
+  * Added Mount Rose ski resort
+
 0.0.7 / 2012-12-30 
 ==================
 
