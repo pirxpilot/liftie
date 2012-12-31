@@ -1,0 +1,12 @@
+{
+  "name": "state",
+  "dependencies": {
+    "component/cookie": "*",
+    "component/classes": "*"
+  },
+  "scripts": [
+    "index.js"
+  ],
+  "local": [
+  ]
+}

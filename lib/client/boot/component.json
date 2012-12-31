@@ -10,6 +10,7 @@
   	"init",
   	"nodelist",
   	"minimax",
-  	"resort"
+  	"resort",
+    "state"
   ]
 }
