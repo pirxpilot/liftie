@@ -47,11 +47,14 @@ a
 .resort
   clearfix()
   box-sizing border-box
-  margin $column-gutter ($column-gutter/2)
+  margin 0 ($column-gutter/2) $column-gutter
   width $column-width
   padding .8em
   float left
   background-color GhostWhite
+
+  &:last-child
+    margin-bottom 0
 
   header,
   footer
@@ -150,7 +153,7 @@ contentWidth(n)
   return n == 1 ? $column-width : n * ($column-width + $column-gutter)
 
 .content
-  margin 0 auto
+  margin $column-gutter auto
   width contentWidth(7)
 
 
