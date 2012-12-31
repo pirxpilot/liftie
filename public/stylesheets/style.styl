@@ -53,21 +53,45 @@ a
   float left
   background-color GhostWhite
 
+  header,
+  footer
+    transition all .4s ease
+
   header
     font-size 1.2em
     line-height 1em
+    border-bottom solid 1px transparent
     a
       text-decoration none
 
+  footer
+    border-top solid 1px transparent
+    font-size .8em
+
   &.open
     header
-      border-bottom solid 1px grey
+      border-color grey
       padding-bottom .4em
 
-  footer
-    font-size .8em
-    border-top solid 1px grey
-    padding-top .4em
+    footer
+      border-color grey
+      padding-top .4em
+
+.open
+  .expandable
+    opacity 1
+
+  .lifts.expandable
+    max-height 3000px
+
+  footer.expandable
+    max-height 300px
+
+.expandable
+  transition all .4s ease
+  max-height 0
+  overflow-y hidden
+  opacity 0
 
 .lifts
   list-style none
