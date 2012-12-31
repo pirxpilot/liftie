@@ -5,7 +5,7 @@ $blue=#104ba9
 $red=#ff1e00
 $yellow=#ffa200
 $green=#00bf32
-
+$link-color=#00B7FF
 
 $column-width=320px
 $column-gutter=20px
@@ -42,7 +42,11 @@ body
   font-family: Ubuntu, "Lucida Grande", Helvetica, Arial, sans-serif
 
 a
-  color: #00B7FF
+  color $link-color
+  transition color .3s ease
+
+  &:hover
+    color saturate($link-color, 40%)
 
 .resort
   clearfix()
