@@ -14,4 +14,10 @@ describe('stats', function() {
     assert.deepEqual(check('a,x,c', valid), ['a', 'c']);
     assert.deepEqual(check('x,y,z', valid), []);
   });
+  it('should work with Arrays', function() {
+    var valid = ['a', 'b', 'c'];
+    assert.deepEqual(check(['a'], valid), ['a']);
+    assert.deepEqual(check(['a', 'x', 'c'], valid), ['a', 'c']);
+    assert.deepEqual(check(['x', 'y', 'z'], valid), []);
+  });
 });
