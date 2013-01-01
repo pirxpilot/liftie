@@ -20,5 +20,15 @@ mixin resort(resort)
 
 
 block content
-  for resort in resorts
-    mixin resort(resort)
+  .content
+    for resort in resorts
+      mixin resort(resort)
+
+  .content
+    ui.tags
+      for resorts, tag in tags
+        - var href = (tag === 'all') ? '/' : '/tag/' + tag;
+        li
+          a(href=href)
+            span= tag
+            span (#{ resorts.length })
