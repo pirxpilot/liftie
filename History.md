@@ -1,4 +1,17 @@
 
+0.0.9 / 2013-01-01 
+==================
+
+  * Mammoth Lakes resort
+  * Loon Mountain added
+  * Killington added
+  * Add 'Lake Tahoe' and 'California' tags
+  * Display tag links on the page
+  * Handle tag routes
+  * Tags calculator
+  * Prefetch the resort data
+  * Simplified error handling
+
 0.0.8 / 2012-12-31 
 ==================
 
