@@ -2,12 +2,12 @@
   "name": "boot",
   "description": "Main app boot component",
   "dependencies": {
+    "a-sk/domready": "*"
   },
   "scripts": [
     "index.js"
   ],
   "local": [
-  	"init",
   	"nodelist",
   	"minimax",
   	"resort",
