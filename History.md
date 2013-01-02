@@ -1,4 +1,10 @@
 
+1.0.0 / 2013-01-01 
+==================
+
+  * Use primitive 'dataset' polyfill
+  * Use domready compponent to trigger init script
+
 0.0.9 / 2013-01-01 
 ==================
 
