@@ -1,4 +1,14 @@
 
+1.1.0 / 2013-01-03 
+==================
+
+  * More efficient data prefetching
+  * Sugarloaf
+  * Keystone
+  * Vail
+  * Extract common parser for Vail resort websites
+  * Breckenridge
+
 1.0.0 / 2013-01-01 
 ==================
 
