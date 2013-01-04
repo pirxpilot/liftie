@@ -1,5 +1,6 @@
 var select = require('cheerio-soupselect').select;
-
+var coerce = require('../tools/coerce');
+var debug = require('debug')('liftie:resort:${ id }');
 
 function parse(dom) {
   var liftStatus = {};
@@ -8,9 +9,10 @@ function parse(dom) {
   select(dom, '.lift').forEach(function(node) {
     var name = node.children[0].data,
       status = node.children[1].data;
-    liftStatus[name] = status;
+    liftStatus[name] = coerce(status);
   });
 
+  debug('${ name } Lift Status:', liftStatus);
   return liftStatus;
 }
 
