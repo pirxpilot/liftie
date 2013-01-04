@@ -1,4 +1,12 @@
 
+1.1.2 / 2013-01-04 
+==================
+
+  * Jay Peak
+  * Stowe
+  * Use common coerce module to convert status strings
+  * common status coercer
+
 1.1.1 / 2013-01-03 
 ==================
 
