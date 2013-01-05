@@ -1,4 +1,14 @@
 
+1.1.4 / 2013-01-05 
+==================
+
+  * Canyons
+  * Deer Valley
+  * Generate tags attribute for new resorts
+  * Park City
+  * Smugglers' Notch
+  * Added tags for Vermont, NH, Maine
+
 1.1.3 / 2013-01-04 
 ==================
 
