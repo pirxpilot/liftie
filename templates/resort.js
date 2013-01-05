@@ -22,5 +22,6 @@ module.exports = {
     host: '${ host }',
     pathname: '${ pathname }'
   },
+  tags: [],
   parse: parse
 };
