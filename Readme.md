@@ -69,6 +69,7 @@ Newly added resort is displayed automatically on liftie index page.
 Icon Font generated with [IconMoon App](http://icomoon.io)
 - Icon Set: [Broccolidry][1] -- License: [Aribitrary][2]
 - Icon Set: [IcoMoon - Free][3] -- License: [CC BY-SA 3.0][4]
+- Icon Set: [Dollar][5] by [The Morning Son][6] from The Noun Project -- License: [CC BY-SA 3.0][4]
 
 ## License
 
@@ -87,3 +88,5 @@ BSD
 [2]: http://licence.visualidiot.com
 [3]: http://keyamoon.com/icomoon
 [4]: http://creativecommons.org/licenses/by-sa/3.0
+[5]: http://thenounproject.com/noun/dollar/#icon-No6883
+[6]: http://thenounproject.com/The Morning Son
