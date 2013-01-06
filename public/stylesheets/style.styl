@@ -65,10 +65,12 @@ a
   header,
   footer
     transition all .4s ease
+    clearfix()
 
   header
     font-size 1.2em
     line-height 1em
+    padding-top 2px
     border-bottom solid 1px transparent
 
   footer
@@ -77,11 +79,11 @@ a
 
   &.open
     header
-      border-color grey
+      border-color rgba(0,0,0,.5)
       padding-bottom .4em
 
     footer
-      border-color grey
+      border-color rgba(0,0,0,.5)
       padding-top .4em
 
 .open
@@ -129,6 +131,11 @@ a
   .ls-minimax:before
     content "\e032" // minus
 
+.resort-name
+  margin-left .3em
+
+.resort-link
+  font-size .9em
 .summary
   list-style none
   clearfix()
