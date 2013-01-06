@@ -10,6 +10,7 @@ html(lang='en-US')
     meta(property='og:description', content=siteDescription)
 
     link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='publisher', href='https://plus.google.com/107555641794612264233')
   body
     block content
     footer
@@ -17,6 +18,12 @@ html(lang='en-US')
         span.ls-furkot
       a(href='https://github.com/code42day/liftie', title='Fork us and add your favorite ski resort.')
         span.ls-github
+      a(href='https://twitter.com/liftieinfo', title='Follow Liftie.')
+        span.ls-twitter
+      a(href='https://facebook.com/liftie.info', title='Like Liftie.')
+        span.ls-facebook
+      a(href='https://plus.google.com/107555641794612264233', title='+1 Liftie.')
+        span.ls-google-plus
     script(src=cachify('/scripts/liftie#{min}.js'))
     script
       require('boot')
