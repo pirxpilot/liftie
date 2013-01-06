@@ -1,4 +1,12 @@
 
+1.2.0 / 2013-01-06 
+==================
+
+  * Minor margin adjustments
+  * External resort link and liftie page link
+  * Social links: Facebook, Twitter, Google+
+  * More icons added
+
 1.1.4 / 2013-01-05 
 ==================
 
