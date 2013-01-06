@@ -69,7 +69,7 @@ a
   padding .8em
   background-color $background-color
   column-break-inside avoid
-
+  display inline-block
 
   &:last-child
     margin-bottom 0
@@ -229,7 +229,6 @@ maxContent(n)
     max-width contentWidth(n)
 
 .content
-  clearfix()
   margin $column-gutter auto
   width contentWidth(7)
 
