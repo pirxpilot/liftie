@@ -64,11 +64,11 @@ a
 .resort
   clearfix()
   box-sizing border-box
-  margin 0 ($column-gutter/2) $column-gutter
+  margin-bottom $column-gutter
   width $column-width
   padding .8em
   background-color $background-color
-  column-break-inside avoid
+  //column-break-inside avoid
   display inline-block
 
   &:last-child
@@ -232,6 +232,10 @@ maxContent(n)
   margin $column-gutter auto
   width contentWidth(7)
 
+.columns
+  column-gap $column-gutter
+  column-count 7
+
 for col in 6 5 4 3 2 1
   maxContent(col)
 
@@ -241,10 +245,8 @@ for col in 6 5 4 3 2 1
   @media $media_query
     .content
       width contentWidth(col)
+    .columns
       column-count col
     if col == 1
-      .resort
-        margin-right 0
-        margin-left 0
       .tags
         margin 0

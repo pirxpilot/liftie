@@ -41,7 +41,7 @@ mixin resort(resort)
 
 
 block content
-  .content(class='content-#{ resorts.length }')
+  .content.columns(class='content-#{ resorts.length }')
     for resort in resorts
       mixin resort(resort)
 
