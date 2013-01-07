@@ -181,6 +181,10 @@ body > footer
 contentWidth(n)
   return n == 1 ? $column-width : n * ($column-width + $column-gutter)
 
+maxContent(n)
+  .content-{n}
+    max-width contentWidth(n)
+
 .content
   clearfix()
   margin $column-gutter auto
@@ -188,6 +192,8 @@ contentWidth(n)
 
 
 for col in 4 3 2 1
+  maxContent(col)
+
   $max = contentWidth(col + 1)
   $media_query = 'screen and (max-width:' + $max + ')'
   @media $media_query
