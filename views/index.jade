@@ -22,11 +22,11 @@ mixin resort(resort)
 
 
 block content
-  .content
+  .content(class='content-#{ resorts.length }')
     for resort in resorts
       mixin resort(resort)
 
-  .content
+  .content(class='content-#{ resorts.length + 1}')
     ui.tags
       for resorts, tag in tags
         - var href = (tag === 'all') ? '/' : '/tag/' + tag;
