@@ -1,4 +1,13 @@
 
+1.2.1 / 2013-01-06 
+==================
+
+  * Center resort pages
+  * Render title for resort and tag pages
+  * Capability of decorating resort header
+  * Export app object from app.js
+  * Shrink wrap npm dependencies.
+
 1.2.0 / 2013-01-06 
 ==================
 
