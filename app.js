@@ -13,7 +13,7 @@ function compileCss(str, path) {
     .use(nib());
 }
 
-var app = express();
+var app = module.exports = express();
 
 app.configure(function(){
   app.locals.min = '.min';
@@ -52,6 +52,9 @@ app.get('/tag/:tag', routes.tag);
 app.get('/api/resort/:resort', routes.api);
 app.get('/sitemap.xml', routes.sitemap);
 
-http.createServer(app).listen(app.get('port'), function(){
-  console.log("Express server listening on port " + app.get('port'));
-});
+
+if (!module.parent) {
+  http.createServer(app).listen(app.get('port'), function(){
+    console.log("Express server listening on port " + app.get('port'));
+  });
+}
