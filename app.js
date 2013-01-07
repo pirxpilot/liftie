@@ -18,6 +18,7 @@ var app = module.exports = express();
 app.configure(function(){
   app.locals.min = '.min';
   app.locals.cachify = cachify.cachify; // needed since our cachify middleware is below router
+  app.locals.decorateResort = function() {};
   app.locals.siteUrl = process.env.SITE_URL || 'http://liftie.info';
   app.locals.siteDescription = 'Clean, simple, easy to read, fast ski resort lift status.';
   app.locals.og= {
