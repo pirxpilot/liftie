@@ -49,7 +49,8 @@ will fail.
       url: {
         host: 'http://acme.com',
         pathname: '/lift/status'
-      }
+      },
+      tags: ['state', 'area'], // optional
       parse: function(dom) {}
     }
 
@@ -64,9 +65,32 @@ Parse function needs to return a lift status object, which will look something l
 
 Newly added resort is displayed automatically on liftie index page.
 
+### Using resort API
+
+In addition to parsing lift status pages Liftie supports resorts that make their lift status
+available through REST API. In such cases you need to specify `api` element in resort descriptor.
+
+    {
+      name: 'Acme Ski Resort',
+      url: {
+        host: 'http://acme.com',
+        pathname: '/lift/status'
+      },
+      api: {
+        host: 'http://api.acme.com',
+        pathname: '/api/status'
+      },
+      parse: function(json) {}
+    }
+
+If `api` is specified Liftie will retrieve status info through HTTP GET. The resort `parse` function
+will receive parsed json instead of the dom tree. Please note that you still need to configure `url` -
+it is used on Liftie pages to send users to official resort page. Check out [Steamboat](https://github.com/code42day/liftie/blob/master/lib/resorts/steamboat.js) implementation, if you are looking for an example.
+
 ## Credits
 
 Icon Font generated with [IconMoon App](http://icomoon.io)
+
 - Icon Set: [Broccolidry][1] -- License: [Aribitrary][2]
 - Icon Set: [IcoMoon - Free][3] -- License: [CC BY-SA 3.0][4]
 - Icon Set: [Dollar][5] by [The Morning Son][6] from The Noun Project -- License: [CC BY-SA 3.0][4]
@@ -89,4 +113,4 @@ BSD
 [3]: http://keyamoon.com/icomoon
 [4]: http://creativecommons.org/licenses/by-sa/3.0
 [5]: http://thenounproject.com/noun/dollar/#icon-No6883
-[6]: http://thenounproject.com/The Morning Son
+[6]: http://thenounproject.com/The%20Morning%20Son

@@ -1,4 +1,13 @@
 
+1.3.0 / 2013-01-08 
+==================
+
+  * Winter Park
+  * Crested Butte
+  * Copper Mountain
+  * Steamboat
+  * Support JSON REST API for status retrieval
+
 1.2.2 / 2013-01-07 
 ==================
 
