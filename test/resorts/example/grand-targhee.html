@@ -1,0 +1,1232 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>
+	Wyoming Snow & Weather Conditions Report :: Grand Targhee Resort
+</title><meta name="description" content="Grand Targhee Ski Resort, Located in Alta Wyoming" />
+<!--IE Conditionals-->
+    <!--[if lt IE 7 ]><link rel="stylesheet" href="/themes/GTR_11P/css/ie6.css" type="text/css" /><![endif]-->
+    <!--[if IE 7 ]><link rel="stylesheet" href="/themes/GTR_11P/css/ie7.css" type="text/css" /><![endif]-->
+    <!--[if IE 8 ]><link rel="stylesheet" href="/themes/GTR_11P/css/ie8.css" type="text/css" /><![endif]-->
+    <!--[if IE 9 ]><link rel="stylesheet" href="/themes/GTR_11P/css/ie9.css" type="text/css" /><![endif]-->
+	<!--[if IE]><link rel="stylesheet" href="/themes/GTR_11P/css/all-ie-only.css" type="text/css" /><![endif]-->
+<!--Style Sheets-->
+	<link rel="stylesheet" href="/App_Themes/GT/GT_internal.css" type="text/css" /><link rel="stylesheet" href="/App_Themes/GT/GT_common.css" type="text/css" /><link rel="stylesheet" href="/themes/GTR_11P/css/ui-lightness/jquery-ui-1.8.16.custom.css" type="text/css" /><link rel="stylesheet" href="/assets/css/site_manager.css" type="text/css" /><link rel="stylesheet" href="/themes/GTR_11P/css/gtr11p_style.css" type="text/css" /><link rel="stylesheet" href="/themes/GTR_11P/js/jquery.fancybox-1.3.4/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
+
+<!--JS-->
+	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="/themes/GTR_11P/js/jquery.dropmenu.js"></script>
+	<script type="text/javascript" src="/themes/GTR_11P/js/jquery.flexslider.js"></script>
+	<script type="text/javascript" src="/themes/GTR_11P/js/jquery.scrollTo.js"></script>
+	<script type="text/javascript" src="/themes/GTR_11P/js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="/themes/GTR_11P/js/jquery.instagram.js"></script>
+	<script type="text/javascript" src="/App_Themes/Music/js/jquery.nivo.slider.pack.js"></script>
+	<script type="text/javascript" src="/themes/GTR_11P/js/jquery.fancybox-1.3.4/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+	<script type="text/javascript" src="/themes/GTR_11P/js/jquery.countdown.js"></script>
+	
+<script type="text/javascript">
+jQuery(document).ready(function($){
+	// jQuery Navigation Sliding
+	var offset = $("#menu-content").offset();
+	$(window).scroll(function() {
+		if ($(window).scrollTop() > offset.top) {
+			$("#top_nav").stop().animate({top: 0}, 100);
+			$("#top_nav").addClass('fixed-menu');
+			$('.maincont').css('margin-top', '45px');
+		} else {
+			$("#top_nav").stop().animate({top: 0}, 100);
+			$("#top_nav").removeClass('fixed-menu');
+			$('.maincont').css('margin-top', '0px');
+		};
+	}); 
+				
+	$(function(){
+	  var
+		insta_container = $(".instagram"), insta_next_url
+		insta_container.instagram({hash: 'grandtarghee', 
+		clientId:'a35dc7cac7a4489fbdf622f895f43d2a', 
+		show:19, 
+		onComplete:function (photos, data) {
+			insta_next_url = data.pagination.next_url
+			}
+	  })
+	});
+
+	$('#main-slider').flexslider({
+      	animation: 'fade',
+	  	slideshow: 'true',
+	  	slideshowSpeed: '8000',
+	  	animationDuration: '200',
+	  	directionNav: 'false',
+	  	controlsContainer: '.flex-container'
+    });
+	
+    $('#secondary-slider').flexslider({
+		animation: 'slide',
+		slideshow: 'true',
+		slideshowSpeed: '5000',
+		animationDuration: '200',
+		controlNav: 'false',
+		directionNav: 'false'
+	});
+	  
+	$('#slider').nivoSlider();
+	
+	$("#nav-one").dropmenu({});
+	
+	$("a.single_image").fancybox();
+	
+	$("#ui-tabs-one").tabs();
+		
+	$("#ui-tabs-two").tabs();
+	
+	$("#ui-tabs-events").tabs();
+	
+	$("#ui-tabs-internal").tabs();
+ });	
+</script>
+
+<!--sub master scripts-->
+
+    
+	
+    <script language="javascript" src="/include/global.js"></script>
+	<style>
+    .textarea table { margin: 0px;}
+    div.maincont h3 {margin: 5px 0 0 0;}
+    .textarea table {
+    color:#666666;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    text-shadow: 1px 1px 0 #FFFFFF;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: medium none;
+    box-shadow:none;}
+    .textarea table tr {text-align:left;}
+    .textarea td {vertical-align:top;}
+    .textarea table tr td {
+    background: #f7f7f7;
+    border: medium none;
+    padding: 0px;}
+    .textarea table tr td:first-child {border:medium none; padding:0px; text-align:left;}
+</style>
+
+
+    <link rel="stylesheet" href="/themes/GTR_11P/css/winter.css" type="text/css" />
+</head>
+<body>
+<form name="aspnetForm" method="post" action="/the-mountain/conditions/index.php" id="aspnetForm">
+<input type="hidden" name="ctl00_ctl00_ctl00_ctl00_RadScriptManager1_TSM" id="ctl00_ctl00_ctl00_ctl00_RadScriptManager1_TSM" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUENTM4MQ9kFgJmD2QWAmYPZBYCZg9kFgJmD2QWBAIBD2QWAgIUD2QWAgIBD2QWAgIBD2QWAgIBDxYCHgRUZXh0BfAEPHN0eWxlPg0KICAgIC50ZXh0YXJlYSB0YWJsZSB7IG1hcmdpbjogMHB4O30NCiAgICBkaXYubWFpbmNvbnQgaDMge21hcmdpbjogNXB4IDAgMCAwO30NCiAgICAudGV4dGFyZWEgdGFibGUgew0KICAgIGNvbG9yOiM2NjY2NjY7DQogICAgZm9udC1mYW1pbHk6IEFyaWFsLEhlbHZldGljYSxzYW5zLXNlcmlmOw0KICAgIGZvbnQtc2l6ZTogMTJweDsNCiAgICB0ZXh0LXNoYWRvdzogMXB4IDFweCAwICNGRkZGRkY7DQogICAgYm9yZGVyLWNvbGxhcHNlOiBjb2xsYXBzZTsNCiAgICBib3JkZXItc3BhY2luZzogMDsNCiAgICBib3JkZXI6IG1lZGl1bSBub25lOw0KICAgIGJveC1zaGFkb3c6bm9uZTt9DQogICAgLnRleHRhcmVhIHRhYmxlIHRyIHt0ZXh0LWFsaWduOmxlZnQ7fQ0KICAgIC50ZXh0YXJlYSB0ZCB7dmVydGljYWwtYWxpZ246dG9wO30NCiAgICAudGV4dGFyZWEgdGFibGUgdHIgdGQgew0KICAgIGJhY2tncm91bmQ6ICNmN2Y3Zjc7DQogICAgYm9yZGVyOiBtZWRpdW0gbm9uZTsNCiAgICBwYWRkaW5nOiAwcHg7fQ0KICAgIC50ZXh0YXJlYSB0YWJsZSB0ciB0ZDpmaXJzdC1jaGlsZCB7Ym9yZGVyOm1lZGl1bSBub25lOyBwYWRkaW5nOjBweDsgdGV4dC1hbGlnbjpsZWZ0O30NCjwvc3R5bGU+ZAIDDxYCHgZhY3Rpb24FIi90aGUtbW91bnRhaW4vY29uZGl0aW9ucy9pbmRleC5waHAWAgIJD2QWAgIBD2QWCAIBD2QWAgIBDxYCHwAFkwE8bGk+PGEgaHJlZj0iLyI+SG9tZTwvYT4gPHNwYW4gY2xhc3M9ImRpdmlkZXIiPi88L3NwYW4+PC9saT4NCjxhIGhyZWY9Imh0dHA6Ly93d3cuZ3JhbmR0YXJnaGVlLmNvbS93aW50ZXIvdGhlLW1vdW50YWluL2luZGV4LnBocCIgPlRoZSBNb3VudGFpbjwvYT5kAgUPZBYEZg8WAh8ABQxUaGUgTW91bnRhaW5kAgEPFgIfAAWpBTxsaT48YSBocmVmPSIvd2ludGVyL2FjdGl2aXRpZXMvaW5kZXgucGhwIj5Nb3VudGFpbiBBY3Rpdml0aWVzPC9hPjwvbGk+PGxpPjxhIGhyZWY9Ii93aW50ZXIvc25vd2NhdC9pbmRleC5waHAiPlNub3djYXQgQWR2ZW50dXJlczwvYT48L2xpPjxsaT48YSBocmVmPSIvd2ludGVyL3NraWluZy9zY2hvb2xzL2luZGV4LnBocCI+U2tpICYgU25vd2JvYXJkIFNjaG9vbDwvYT48L2xpPjxsaT48YSBocmVmPSIvd2ludGVyL3NraWluZy90ZXJyYWluLXBhcmsucGhwIj5XaW50ZXIgVGVycmFpbiBQYXJrPC9hPjwvbGk+PGxpPjxhIGhyZWY9Ii93aW50ZXIvdGhlLW1vdW50YWluL21vdW50YWluLXNhZmV0eS5waHAiPk1vdW50YWluIFNhZmV0eTwvYT48L2xpPjxsaT48YSBocmVmPSIvdGhlLW1vdW50YWluL2NvbmRpdGlvbnMvaW5kZXgucGhwIj5Tbm93IFJlcG9ydCAmIFdlYXRoZXI8L2E+PC9saT48bGk+PGEgaHJlZj0iL3RoZS1tb3VudGFpbi9ncm9vbWluZy1tYXAucGhwIj5Hcm9vbWluZyBSZXBvcnQgJiBNYXA8L2E+PC9saT48bGk+PGEgaHJlZj0iL3RoZS1tb3VudGFpbi90YXJnaGVlLXRyYWlsLW1hcHMucGhwIj5UcmFpbCBNYXBzPC9hPjwvbGk+PGxpPjxhIGhyZWY9Ii90aGUtbW91bnRhaW4vY3VsdHVyZS9waWMtb2YtdGhlLWRheS5waHAiPlBob3RvcywgVmlkZW9zICYgV2ViY2FtczwvYT48L2xpPmQCBw9kFgQCAQ8WAh8AZWQCAw8WAh8ABSNHcmFuZCBUYXJnaGVlIFNub3cgJiBXZWF0aGVyIFJlcG9ydGQCCw9kFgQCAQ8PFgIeB1Zpc2libGVoZGQCAw8WAh8AZWRk" />
+
+
+<script src="/Telerik.Web.UI.WebResource.axd?_TSM_HiddenField_=ctl00_ctl00_ctl00_ctl00_RadScriptManager1_TSM&amp;compress=1&amp;_TSM_CombinedScripts_=%3b%3bSystem.Web.Extensions%2c+Version%3d1.0.61025.0%2c+Culture%3dneutral%2c+PublicKeyToken%3d31bf3856ad364e35%3aen-US%3a1f0f78f9-0731-4ae9-b308-56936732ccb8%3aea597d4b" type="text/javascript"></script>
+	<!--telerik managers-->
+	
+	
+	<!-------------------------------start website------------------------------------>
+	<div id="website">
+		
+	<div id="fixed-top"> 
+    <h2 class="left"><a href="tel://1-800-827-4433">Call: 800-Targhee</a></h2> 
+    <div class="right">
+        <ul id="inline-menu">
+            <li class="summer"><a href="/summer.aspx" target="_parent">SUMMER SITE</a> </li>
+            <li class="music"><a href="/music.aspx" target="_parent">MUSIC FESTIVALS</a> </li>
+            <!--<li class="mobile"><a href="http://m.grandtarghee.com/" target="_parent">MOBILE</a></li>-->
+        </ul>
+    </div>
+</div> <!-- end fixed top -->
+	<div id="header_wrapper">
+	
+	<!-- HEADER -->
+	
+<div id="headerContainer">
+    <h1 id="Logo">
+        <a href="http://grandtarghee.com">Jackson Hole Wyoming Ski Resort Idaho Ski Resort Backcountry Powder Cat Snowcat Adventures Grand Targhee Resort</a>
+ 	</h1>
+    <div id="snow_bar">
+        <a href="http://www.grandtarghee.com/the-mountain/conditions/index.php">
+        <div class="conditionsInches">
+            <img src="http://www.grandtarghee.com/themes/GTR_11P/css/images/weather-icons/snowing.png" width="64" height="64" />
+            <span class="snowfall">
+				7&#148;<p class="stormTotal">Storm Total</p>
+         	</span>
+            
+		</div>
+        <div id="weatherRow1">
+      		24 HR / 7  Day Snowfall:&nbsp;&nbsp;<span class="orange">3&#148;</span> / <span class="orange">7&#148;</span>
+      	</div>
+        <div id="weatherRow2">
+            Snow Depth / Total:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="orange">70 &#148;</span> / <span class="orange">195&#148;</span>
+        </div>
+        <div id="weatherRow3">
+             Currently: <span class="orange">Snow</span> / 
+             <span class="full-report">Full Report</span>
+        </div>
+		</a>
+ 	</div>
+</div> 
+<!-- end header -->
+
+<!-- Search Box -->
+
+
+<!-- 
+24 Hour Snow Fall : 
+3&#148;
+
+Day Total : ( shows number of days )
+7 
+
+snow fall total for number of day
+7
+
+Snow Depth 
+70
+
+Season Total Snow Fall
+Season Total : 195
+-->
+	</div><!-- end header wrapper -->
+	
+	<!-- TOP NAVIGATION -->
+	<div id="top_nav">
+<div id="menu-content">		
+<ul id="nav-one" class="dropmenu css-only">
+<li class="menu-home"><a href="/winter.aspx">Home</a></li> 
+<li><a href="/lodging/winter_lodging_specials.php">Trip Planning</a>
+    <ul>
+        <li><a href="/lodging/winter_lodging_specials.php">Lodging Specials</a></li>
+        <li><a href="/lodging/index.php">Lodging</a>
+            <ul>
+                <li><a href="/lodging/slopeside/index.php">Slopeside Lodging</a></li>
+                <li><a href="/lodging/vacation-rentals/index.php">Vacation Rentals</a></li>
+                <li><a href="/lodging/longterm-rentals/index.php">Long Term Properties</a></li>
+                <li><a href="/lodging/policies.php">Lodging Policies</a></li>
+            </ul>
+        </li>
+        <li><a href="/winter/activities/amenities.php">Amenities</a></li>
+    	<li><a href="/the-mountain/winter-rates/index.php">Tickets &amp; Passes</a></li>
+        <li><a href="/kids-club/on-mountain-daycare.php">Daycare &amp; Nursery</a></li>
+        <li><a href="/winter/skiing/schools/index.php">Ski &amp; Snowboard School</a></li>
+        <li><a href="/winter/skiing/rentals.php">Rentals &amp; Lease Pkg's</a></li>
+        <li><a href="/the-village-winter/pro-ski-tuning.php">Pro Tune Shop</a></li>
+        <li><a href="/getting-here/index.php">Getting Here</a></li>
+        <li><a href="/area-activities/teton-valley-jackson-hole.php">Teton Valley & Jackson</a></li>
+        <li><a href="/book_lodging.aspx">Book Online</a></li>
+	</ul>
+</li>
+<li><a href="/the-mountain/winter-rates/index.php">Tickets &amp; Passes</a>
+    <ul>
+        <li><a href="/the-mountain/rates/season-passes.php">Season Passes</a></li>
+        <li><a href="/the-mountain/winter-rates/index.php">Lift Tickets</a></li>
+        <li><a href="/the-mountain/rates/multi-pack-passes.php">4-Packs Tickets</a></li>
+        <li><a href="http://shop.grandtarghee.com/itemList.aspx?node_id=195032">Gift Cards</a></li>
+        <li><a href="/getting-here/targhee-local-shuttle.php">Shuttle Pass</a></li>
+    </ul>
+</li>	
+<li><a href="#">Lessons &amp; Rentals</a>
+    <ul>
+        <li><a href="/winter/skiing/schools/index.php">Ski &amp; Snowboard School</a></li>
+        <li><a href="/winter/skiing/rentals.php">Rentals &amp; Lease Pkg's</a></li>
+        <li><a href="/the-village-winter/pro-ski-tuning.php">Pro Tune Shop</a></li>
+    </ul>
+</li>
+<li><a href="/winter/the-village/index.php">Activities &amp; Events</a>
+    <ul>
+     	<li><a href="/the-resort/news-events/events.php">Events Calendar</a></li>
+        <li><a href="/winter/activities/index.php">Activity Center</a>
+            <ul>
+                <li><a href="/winter/skiing/schools/earlytracks.php">Early Tracks</a></li>
+                <li><a href="/winter/snowcat/index.php">Snowcat Adventures</a></li>
+                <li><a href="/winter/activities/daily-complimentary-mountain-tours.php">Daily Mountain Tour</a></li>
+                <li><a href="/winter/activities/snowshoe.php">Snowshoeing</a></li>
+                <li><a href="/winter/activities/naturalist-snowshoe-tours.php">Naturalist Snowshoe Tour</a></li>
+                <li><a href="/winter/activities/nordic.php">Nordic Skiing</a></li>
+                <li><a href="/winter/activities/tubing.php">Tubing Hill</a></li>
+                <li><a href="/winter/activities/snow-mountain-biking.php">Fat/Snow Biking</a></li>
+                <li><a href="/winter/activities/avalanche-demo.php">Avalanche Dog Demo</a></li>
+                <li><a href="/winter/activities/snowmobile.php">Snowmobile Tours</a></li>
+                <li><a href="/winter/activities/backcountry-tours.php">Backcountry Tours</a></li>
+                <li><a href="/activities/targhee-massage-spa.php">Massage Services</a></li>
+                <li><a href="/winter/activities/sleighride-dinners.php">Sleigh Ride Dinners</a></li>
+            </ul>
+        </li>
+        <li><a href="/the-resort/dining-winter.php">Resort Dining</a></li>
+   		<li><a href="/winter/activities/sleighride-dinners.php">Sleigh Ride Dinner</a></li>  
+        <li><a href="/winter/winter-resort-shopping.php">Resort Shopping</a></li>
+        <li><a href="/winter/activities/naturalist.php">The Nature Center</a></li>
+        <li><a href="/amenities/arcade-birthday-parties.php">Arcade</a></li>
+ 		<li><a href="/the-mountain/powder-day-photography.php">Professional Photography</a></li>
+    </ul>
+</li>
+<li><a href="/winter/the-mountain/index.php">The Mountain</a>
+    <ul>
+        <li><a href="/winter/the-mountain/index.php">Mountain Stats</a></li>
+        <li><a href="/winter/skiing/terrain-park.php">Terrain Park</a></li>
+        <li><a href="/the-mountain/targhee-trail-maps.php">Trail Maps</a></li>
+        <li><a href="/the-mountain/conditions/index.php">Snow Report &amp; Weather</a></li>
+        <li><a href="/the-mountain/grooming-map.php">Grooming Report &amp; Map</a></li>
+        <li><a href="#">Targhee Webcams</a></li>
+        <li><a href="/winter/the-mountain/mountain-safety.php">Mountain Safety</a></li>
+        <li><a href="/the-mountain/culture/pic-of-the-day.php">Targhee Photos</a></li>
+        <li><a href="/the-mountain/culture/videos.php">Targhee Videos</a></li>
+        <li><a href="/the-mountain/culture/targhee-characters.php">Targhee Characters</a></li>
+        <li><a href="/athletes/freeride-team.php">Freeride Team</a></li>
+        	
+    </ul>
+</li>
+<li class="last"><a href="/groups/index.php">Groups</a>
+    <ul class="reverse">
+        <li><a href="/groups/group-rates.php">Group Specials</a></li>
+        <li><a href="/groups/day-groups.php">Day Groups</a></li>
+        <li><a href="/groups/meetings-conferences-reunions.php">Meetings &amp; Conferences</a></li>
+        <li><a href="/groups/teton-weddings.php">Teton Weddings</a></li>
+        <li><a href="/groups/groups-facilities.php">Facilities</a></li>
+        <li><a href="/groups/sales-team.php">Group Sales Team</a></li>
+    </ul>
+</li>
+</ul>
+<div class="clearfix"></div>
+</div>
+</div>
+
+		<div class="clearfix"></div>
+		<div class="maincont">
+			<div id="reservations-bar">
+    <div id="currentDeals">
+    	<a class="currentDeals-button" href="/lodging/winter_lodging_specials.php" title="Jackson Hole Vacation Packages">OUR BEST DEALS</a>
+    </div>
+    <h2>Make Your Reservation</h2>
+    <div id="bookNow">
+    	<a class="bookNow-button" href="http://www.grandtarghee.com/book_lodging.aspx" title="See Available Lodging">BOOK NOW</a>
+   	</div>
+    <div id="reservations-bar-right">
+        <div id="search-button"><a class="ir" href="/search/index.php">Search Grand Targhee</a></div>
+        <div id="subscribe-button"><a href="/updates/index.php" rel="tooltip" title="Recieve a weekly email with Events, <br />Conditions, Ticket &amp; Lodging information"><span>SUBSCRIBE TO NEWS</span></a></div>
+    </div>
+</div>
+<div class="clearfix"></div>
+			
+	
+
+<!-- DEV  -->
+	<ul class="breadcrumb">
+		<li><a href="/">Home</a> <span class="divider">/</span></li>
+<a href="http://www.grandtarghee.com/winter/the-mountain/index.php" >The Mountain</a>
+	</ul>
+<!-- DEV  -->
+
+        <div class="leftbar">
+		    
+                    
+	<h4 class="navtitle">The Mountain</h4>
+	<ul>
+	  <li><a href="/winter/activities/index.php">Mountain Activities</a></li><li><a href="/winter/snowcat/index.php">Snowcat Adventures</a></li><li><a href="/winter/skiing/schools/index.php">Ski & Snowboard School</a></li><li><a href="/winter/skiing/terrain-park.php">Winter Terrain Park</a></li><li><a href="/winter/the-mountain/mountain-safety.php">Mountain Safety</a></li><li><a href="/the-mountain/conditions/index.php">Snow Report & Weather</a></li><li><a href="/the-mountain/grooming-map.php">Grooming Report & Map</a></li><li><a href="/the-mountain/targhee-trail-maps.php">Trail Maps</a></li><li><a href="/the-mountain/culture/pic-of-the-day.php">Photos, Videos & Webcams</a></li>
+	</ul>
+	
+	
+<h4 class="navtitle">Upcoming Events</h4>
+    <div id="events_list">
+        
+                <div id="event_item">
+                    <div class="date"> 11-12<br /><span class="eventmonth">Jan</span> </div>
+                    <a href="/the-resort/news-events/2132/Backcountry101Course.php">Backcountry 101 Course</a>
+                    <div class="clearer"></div> 
+                </div>                         
+        
+                <div id="event_item">
+                    <div class="date"> 11-12<br /><span class="eventmonth">Jan</span> </div>
+                    <a href="/the-resort/news-events/2194/ApresSkiBretMosley.php">Apres Ski - Bret Mosley</a>
+                    <div class="clearer"></div> 
+                </div>                         
+        
+                <div id="event_item">
+                    <div class="date"> 11<br /><span class="eventmonth">Jan</span> </div>
+                    <a href="/the-resort/news-events/2036/WhiskeyTasting.php">Whiskey Tasting</a>
+                    <div class="clearer"></div> 
+                </div>                         
+        
+                <div id="event_item">
+                    <div class="date"> 13<br /><span class="eventmonth">Jan</span> </div>
+                    <a href="/the-resort/news-events/2145/NFLFantasyFootballSundays8HDTVs.php">NFL Fantasy Football Sundays (8 HD TV's)</a>
+                    <div class="clearer"></div> 
+                </div>                         
+        
+                <div id="event_item">
+                    <div class="date"> 13<br /><span class="eventmonth">Jan</span> </div>
+                    <a href="/the-resort/news-events/2145/NFLFantasyFootballSundays8HDTVs.php">NFL Fantasy Football Sundays (8 HD TV's)</a>
+                    <div class="clearer"></div> 
+                </div>                         
+        
+                <div id="event_item">
+                    <div class="date"> 15<br /><span class="eventmonth">Jan</span> </div>
+                    <a href="/the-resort/news-events/2153/MoonshineMarysWhiteLightningInvitational.php">Moonshine Mary's White Lightning Invitational</a>
+                    <div class="clearer"></div> 
+                </div>                         
+        
+                <div id="event_item">
+                    <div class="date"> 16<br /><span class="eventmonth">Jan</span> </div>
+                    <a href="/the-resort/news-events/1967/ApresSkiwithJasonSpooner.php">Apres Ski with Jason Spooner</a>
+                    <div class="clearer"></div> 
+                </div>                         
+        
+                <div id="event_item">
+                    <div class="date"> 18-20<br /><span class="eventmonth">Jan</span> </div>
+                    <a href="/the-resort/news-events/2133/AvalancheCourseLevelI.php">Avalanche Course Level I</a>
+                    <div class="clearer"></div> 
+                </div>                         
+        
+                <div id="event_item">
+                    <div class="date"> 18<br /><span class="eventmonth">Jan</span> </div>
+                    <a href="/the-resort/news-events/2195/ApresSkiTheCadillacs.php">Apres Ski - The Cadillacs</a>
+                    <div class="clearer"></div> 
+                </div>                         
+        
+                <div id="event_item">
+                    <div class="date"> 19<br /><span class="eventmonth">Jan</span> </div>
+                    <a href="/the-resort/news-events/1914/2ndAnnualFatBikeRace.php">2nd Annual Fat Bike Race</a>
+                    <div class="clearer"></div> 
+                </div>                         
+        
+                <div id="event_item">
+                    <div class="date"> 19<br /><span class="eventmonth">Jan</span> </div>
+                    <a href="/the-resort/news-events/1916/ClubSeriesAlpineSkiRace.php">Club Series Alpine Ski Race</a>
+                    <div class="clearer"></div> 
+                </div>                         
+        
+                <div id="event_item">
+                    <div class="date"> 19<br /><span class="eventmonth">Jan</span> </div>
+                    <a href="/the-resort/news-events/2196/ApresSkiJonWaynethePain.php">Apres Ski - Jon Wayne & the Pain</a>
+                    <div class="clearer"></div> 
+                </div>                         
+        
+                <div id="event_item">
+                    <div class="date"> 20<br /><span class="eventmonth">Jan</span> </div>
+                    <a href="/the-resort/news-events/2146/NFLFantasyFootballSundays8HDTVs.php">NFL Fantasy Football Sundays (8 HD TV's)</a>
+                    <div class="clearer"></div> 
+                </div>                         
+        
+                <div id="event_item">
+                    <div class="date"> 20<br /><span class="eventmonth">Jan</span> </div>
+                    <a href="/the-resort/news-events/2146/NFLFantasyFootballSundays8HDTVs.php">NFL Fantasy Football Sundays (8 HD TV's)</a>
+                    <div class="clearer"></div> 
+                </div>                         
+        
+                <div id="event_item">
+                    <div class="date"> 22<br /><span class="eventmonth">Jan</span> </div>
+                    <a href="/the-resort/news-events/2154/MoonshineMarysWhiteLightningInvitational.php">Moonshine Mary's White Lightning Invitational</a>
+                    <div class="clearer"></div> 
+                </div>                         
+        
+                <div id="event_item">
+                    <div class="date"> 24<br /><span class="eventmonth">Jan</span> </div>
+                    <a href="/the-resort/news-events/2052/ApresSkiWinshipSneed.php">Apres Ski - Winship & Sneed</a>
+                    <div class="clearer"></div> 
+                </div>                         
+        
+                <div id="event_item">
+                    <div class="date"> 24<br /><span class="eventmonth">Jan</span> </div>
+                    <a href="/the-resort/news-events/2192/FullMoonSnowshoeTour.php">Full Moon Snowshoe Tour</a>
+                    <div class="clearer"></div> 
+                </div>                         
+        
+                <div id="event_item">
+                    <div class="date"> 25<br /><span class="eventmonth">Jan</span> </div>
+                    <a href="/the-resort/news-events/2046/BeerMakersDinner.php">Beer Maker's Dinner</a>
+                    <div class="clearer"></div> 
+                </div>                         
+        
+                <div id="event_item">
+                    <div class="date"> 27<br /><span class="eventmonth">Jan</span> </div>
+                    <a href="/the-resort/news-events/2147/TrapBarHometoNFLFantasyFootball8HDTVs.php">Trap Bar Home to NFL Fantasy Football (8 HD TV's)</a>
+                    <div class="clearer"></div> 
+                </div>                         
+        
+                <div id="event_item">
+                    <div class="date"> 27<br /><span class="eventmonth">Jan</span> </div>
+                    <a href="/the-resort/news-events/2147/TrapBarHometoNFLFantasyFootball8HDTVs.php">Trap Bar Home to NFL Fantasy Football (8 HD TV's)</a>
+                    <div class="clearer"></div> 
+                </div>                         
+        
+                <div id="event_item">
+                    <div class="date"> 27<br /><span class="eventmonth">Jan</span> </div>
+                    <a href="/the-resort/news-events/2198/ApresSkiGeorgeKilbyJrandtheRoadDogs.php">Apres Ski - George Kilby, Jr and the Road Dogs</a>
+                    <div class="clearer"></div> 
+                </div>                         
+        
+                <div id="event_item">
+                    <div class="date"> 29<br /><span class="eventmonth">Jan</span> </div>
+                    <a href="/the-resort/news-events/2155/MoonshineMarysWhiteLightningInvitational.php">Moonshine Mary's White Lightning Invitational</a>
+                    <div class="clearer"></div> 
+                </div>                         
+        
+                <div id="event_item">
+                    <div class="date"> 29<br /><span class="eventmonth">Jan</span> </div>
+                    <a href="/the-resort/news-events/1783/WyomingSpecialOlympics.php">Wyoming Special Olympics</a>
+                    <div class="clearer"></div> 
+                </div>                         
+        
+                <div id="event_item">
+                    <div class="date"> 31<br /><span class="eventmonth">Jan</span> </div>
+                    <a href="/the-resort/news-events/2199/ApresSkiRandomCanyonGrowlers.php">Apres Ski - Random Canyon Growlers </a>
+                    <div class="clearer"></div> 
+                </div>                         
+        
+                <div id="event_item">
+                    <div class="date"> 01-02<br /><span class="eventmonth">Feb</span> </div>
+                    <a href="/the-resort/news-events/1853/ApresSkiUglyValleyBoys.php">Apres Ski - Ugly Valley Boys</a>
+                    <div class="clearer"></div> 
+                </div>                         
+        
+                <div id="event_item">
+                    <div class="date"> 03<br /><span class="eventmonth">Feb</span> </div>
+                    <a href="/the-resort/news-events/1975/NFLSUPERBOWLPARTYTheTrapBarGrill.php">NFL SUPER BOWL PARTY @ The Trap Bar & Grill</a>
+                    <div class="clearer"></div> 
+                </div>                         
+        
+                <div id="event_item">
+                    <div class="date"> 05<br /><span class="eventmonth">Feb</span> </div>
+                    <a href="/the-resort/news-events/2156/MoonshineMarysWhiteLightningInvitational.php">Moonshine Mary's White Lightning Invitational</a>
+                    <div class="clearer"></div> 
+                </div>                         
+        
+                <div id="event_item">
+                    <div class="date"> 06-16<br /><span class="eventmonth">Feb</span> </div>
+                    <a href="/the-resort/news-events/1918/EvanFloydRacesDATETBD.php">Evan Floyd Races - DATE TBD</a>
+                    <div class="clearer"></div> 
+                </div>                         
+        
+                <div id="event_item">
+                    <div class="date"> 08<br /><span class="eventmonth">Feb</span> </div>
+                    <a href="/the-resort/news-events/1955/ApresSkiMillerSisters.php">Apres Ski - Miller Sisters</a>
+                    <div class="clearer"></div> 
+                </div>                         
+        
+                <div id="event_item">
+                    <div class="date"> 08<br /><span class="eventmonth">Feb</span> </div>
+                    <a href="/the-resort/news-events/2035/TequilaTasting.php">Tequila Tasting</a>
+                    <div class="clearer"></div> 
+                </div>                         
+        
+                <div id="event_item">
+                    <div class="date"> 08-11<br /><span class="eventmonth">Feb</span> </div>
+                    <a href="/the-resort/news-events/2134/AvalancheCourseLevelII.php">Avalanche Course Level II</a>
+                    <div class="clearer"></div> 
+                </div>                         
+        
+                <div id="event_item">
+                    <div class="date"> 09<br /><span class="eventmonth">Feb</span> </div>
+                    <a href="/the-resort/news-events/2167/JrFreeskiingIntermountainCupIFSAEvent.php">Jr Freeskiing Inter-mountain Cup, IFSA Event</a>
+                    <div class="clearer"></div> 
+                </div>                         
+        
+                <div id="event_item">
+                    <div class="date"> 09<br /><span class="eventmonth">Feb</span> </div>
+                    <a href="/the-resort/news-events/2200/ApresSkiTheFlannelAttractions.php">Apres Ski - The Flannel Attractions</a>
+                    <div class="clearer"></div> 
+                </div>                         
+        
+                <div id="event_item">
+                    <div class="date"> 12<br /><span class="eventmonth">Feb</span> </div>
+                    <a href="/the-resort/news-events/2157/MoonshineMarysWhiteLightningInvitational.php">Moonshine Mary's White Lightning Invitational</a>
+                    <div class="clearer"></div> 
+                </div>                         
+        
+                <div id="event_item">
+                    <div class="date"> 14<br /><span class="eventmonth">Feb</span> </div>
+                    <a href="/the-resort/news-events/2054/ValentinesSweetheartDinner.php">Valentine's Sweetheart Dinner</a>
+                    <div class="clearer"></div> 
+                </div>                         
+        
+                <div id="event_item">
+                    <div class="date"> 15<br /><span class="eventmonth">Feb</span> </div>
+                    <a href="/the-resort/news-events/2177/ApresSkiTheAltaBoys.php">Apres Ski - The Alta Boys</a>
+                    <div class="clearer"></div> 
+                </div>                         
+        
+                <div id="event_item">
+                    <div class="date"> 16<br /><span class="eventmonth">Feb</span> </div>
+                    <a href="/the-resort/news-events/2089/ApresSkiTheCongress.php">Apres Ski - The Congress</a>
+                    <div class="clearer"></div> 
+                </div>                         
+        
+                <div id="event_item">
+                    <div class="date"> 17<br /><span class="eventmonth">Feb</span> </div>
+                    <a href="/the-resort/news-events/2180/ApresSkiTheCongress.php">Apres Ski - The Congress</a>
+                    <div class="clearer"></div> 
+                </div>                         
+        
+                <div id="event_item">
+                    <div class="date"> 19<br /><span class="eventmonth">Feb</span> </div>
+                    <a href="/the-resort/news-events/2158/MoonshineMarysWhiteLightningInvitational.php">Moonshine Mary's White Lightning Invitational</a>
+                    <div class="clearer"></div> 
+                </div>                         
+        
+                <div id="event_item">
+                    <div class="date"> 22<br /><span class="eventmonth">Feb</span> </div>
+                    <a href="/the-resort/news-events/2077/WineCheeseSampling.php">Wine & Cheese Sampling</a>
+                    <div class="clearer"></div> 
+                </div>                         
+        
+                <div id="event_item">
+                    <div class="date"> 22-24<br /><span class="eventmonth">Feb</span> </div>
+                    <a href="/the-resort/news-events/1822/BigMountainTelemarkComp3rdAnnual.php">Big Mountain Telemark Comp, 3rd Annual</a>
+                    <div class="clearer"></div> 
+                </div>                         
+        
+                <div id="event_item">
+                    <div class="date"> 22<br /><span class="eventmonth">Feb</span> </div>
+                    <a href="/the-resort/news-events/1976/TheShookTwinsEveningShowatTheTrap.php">The Shook Twins Evening Show at The Trap</a>
+                    <div class="clearer"></div> 
+                </div>                         
+        
+                <div id="event_item">
+                    <div class="date"> 23<br /><span class="eventmonth">Feb</span> </div>
+                    <a href="/the-resort/news-events/2181/ApresSkiTheShookTwins.php">Apres Ski - The Shook Twins</a>
+                    <div class="clearer"></div> 
+                </div>                         
+        
+                <div id="event_item">
+                    <div class="date"> 24<br /><span class="eventmonth">Feb</span> </div>
+                    <a href="/the-resort/news-events/2182/ApresSkiLazyEyes.php">Apres Ski -Lazy Eyes</a>
+                    <div class="clearer"></div> 
+                </div>                         
+        
+                <div id="event_item">
+                    <div class="date"> 24<br /><span class="eventmonth">Feb</span> </div>
+                    <a href="/the-resort/news-events/2204/FullMoonSnowshoeTour.php">Full Moon Snowshoe Tour</a>
+                    <div class="clearer"></div> 
+                </div>                         
+        
+                <div id="event_item">
+                    <div class="date"> 26<br /><span class="eventmonth">Feb</span> </div>
+                    <a href="/the-resort/news-events/2160/MoonshineMarysWhiteLightningInvitational.php">Moonshine Mary's White Lightning Invitational</a>
+                    <div class="clearer"></div> 
+                </div>                         
+        
+                <div id="event_item">
+                    <div class="date"> 01<br /><span class="eventmonth">Mar</span> </div>
+                    <a href="/the-resort/news-events/2064/ApresSkiSalem.php">Apres Ski - Salem</a>
+                    <div class="clearer"></div> 
+                </div>                         
+        
+                <div id="event_item">
+                    <div class="date"> 01<br /><span class="eventmonth">Mar</span> </div>
+                    <a href="/the-resort/news-events/2122/SpecialPrixFixeDinnerTheBrandingIronGrill.php">Special Prix Fixe Dinner @ The Branding Iron Grill</a>
+                    <div class="clearer"></div> 
+                </div>                         
+        
+                <div id="event_item">
+                    <div class="date"> 02<br /><span class="eventmonth">Mar</span> </div>
+                    <a href="/the-resort/news-events/1782/2013MarysNippleChallenge.php">2013 Mary's Nipple Challenge</a>
+                    <div class="clearer"></div> 
+                </div>                         
+        
+                <div id="event_item">
+                    <div class="date"> 02<br /><span class="eventmonth">Mar</span> </div>
+                    <a href="/the-resort/news-events/1782/2013MarysNippleChallenge.php">2013 Mary's Nipple Challenge</a>
+                    <div class="clearer"></div> 
+                </div>                         
+        
+                <div id="event_item">
+                    <div class="date"> 02<br /><span class="eventmonth">Mar</span> </div>
+                    <a href="/the-resort/news-events/1919/TetonAdaptiveSportsFunRace4thAnnual.php">Teton Adaptive Sports Fun Race, 4th Annual</a>
+                    <div class="clearer"></div> 
+                </div>                         
+        
+                <div id="event_item">
+                    <div class="date"> 02<br /><span class="eventmonth">Mar</span> </div>
+                    <a href="/the-resort/news-events/2183/ApresSkiChanmanRootsBand.php">Apres Ski - Chanman Roots Band</a>
+                    <div class="clearer"></div> 
+                </div>                         
+        
+                <div id="event_item">
+                    <div class="date"> 05<br /><span class="eventmonth">Mar</span> </div>
+                    <a href="/the-resort/news-events/2161/MoonshineMarysWhiteLightningInvitational.php"> Moonshine Mary's White Lightning Invitational</a>
+                    <div class="clearer"></div> 
+                </div>                         
+        
+                <div id="event_item">
+                    <div class="date"> 08<br /><span class="eventmonth">Mar</span> </div>
+                    <a href="/the-resort/news-events/2201/ApresSkiTheCadillacs.php">Apres Ski - The Cadillacs</a>
+                    <div class="clearer"></div> 
+                </div>                         
+        
+                <div id="event_item">
+                    <div class="date"> 09<br /><span class="eventmonth">Mar</span> </div>
+                    <a href="/the-resort/news-events/2202/ApresSkiThisMustBeTheBand.php">Apres Ski - This Must Be The Band</a>
+                    <div class="clearer"></div> 
+                </div>                         
+        
+                <div id="event_item">
+                    <div class="date"> 10<br /><span class="eventmonth">Mar</span> </div>
+                    <a href="/the-resort/news-events/2203/ApresSkiMillerSisters.php">Apres Ski - Miller Sisters</a>
+                    <div class="clearer"></div> 
+                </div>                         
+        
+                <div id="event_item">
+                    <div class="date"> 12<br /><span class="eventmonth">Mar</span> </div>
+                    <a href="/the-resort/news-events/2162/MoonshineMarysWhiteLightningInvitational.php">Moonshine Mary's White Lightning Invitational</a>
+                    <div class="clearer"></div> 
+                </div>                         
+        
+                <div id="event_item">
+                    <div class="date"> 14<br /><span class="eventmonth">Mar</span> </div>
+                    <a href="/the-resort/news-events/2179/TheSneedWinshipTrio.php">The Sneed Winship Trio</a>
+                    <div class="clearer"></div> 
+                </div>                         
+        
+                <div id="event_item">
+                    <div class="date"> 15-16<br /><span class="eventmonth">Mar</span> </div>
+                    <a href="/the-resort/news-events/1852/ApresSkiNateRobinsonTrio.php">Apres Ski - Nate Robinson Trio</a>
+                    <div class="clearer"></div> 
+                </div>                         
+        
+                <div id="event_item">
+                    <div class="date"> 17<br /><span class="eventmonth">Mar</span> </div>
+                    <a href="/the-resort/news-events/1871/StPatricksDayPartyTheTrapBarGrill.php">St. Patrick's Day Party @ The Trap Bar & Grill</a>
+                    <div class="clearer"></div> 
+                </div>                         
+        
+                <div id="event_item">
+                    <div class="date"> 19<br /><span class="eventmonth">Mar</span> </div>
+                    <a href="/the-resort/news-events/2163/MoonshineMarysWhiteLightingInvitational.php">Moonshine Mary's White Lighting Invitational</a>
+                    <div class="clearer"></div> 
+                </div>                         
+        
+                <div id="event_item">
+                    <div class="date"> 21-24<br /><span class="eventmonth">Mar</span> </div>
+                    <a href="/the-resort/news-events/1921/TargheeIFSAJuniorFreeskiingOpen.php">Targhee IFSA Junior Freeskiing Open</a>
+                    <div class="clearer"></div> 
+                </div>                         
+        
+                <div id="event_item">
+                    <div class="date"> 21-24<br /><span class="eventmonth">Mar</span> </div>
+                    <a href="/the-resort/news-events/1921/TargheeIFSAJuniorFreeskiingOpen.php">Targhee IFSA Junior Freeskiing Open</a>
+                    <div class="clearer"></div> 
+                </div>                         
+        
+                <div id="event_item">
+                    <div class="date"> 22-31<br /><span class="eventmonth">Mar</span> </div>
+                    <a href="/the-resort/news-events/2074/SpringBreakAway2ndAnnual.php">Spring Break Away, 2nd Annual </a>
+                    <div class="clearer"></div> 
+                </div>                         
+        
+                <div id="event_item">
+                    <div class="date"> 22-31<br /><span class="eventmonth">Mar</span> </div>
+                    <a href="/the-resort/news-events/2074/SpringBreakAway2ndAnnual.php">Spring Break Away, 2nd Annual </a>
+                    <div class="clearer"></div> 
+                </div>                         
+        
+                <div id="event_item">
+                    <div class="date"> 22-23<br /><span class="eventmonth">Mar</span> </div>
+                    <a href="/the-resort/news-events/2184/ApresSkiSwagger.php">Apres Ski - Swagger</a>
+                    <div class="clearer"></div> 
+                </div>                         
+        
+                <div id="event_item">
+                    <div class="date"> 22<br /><span class="eventmonth">Mar</span> </div>
+                    <a href="/the-resort/news-events/2185/SwaggerTrapEveningShow.php">Swagger Trap Evening Show</a>
+                    <div class="clearer"></div> 
+                </div>                         
+        
+                <div id="event_item">
+                    <div class="date"> 25<br /><span class="eventmonth">Mar</span> </div>
+                    <a href="/the-resort/news-events/2205/FullMoonSnowshoeTour.php">Full Moon Snowshoe Tour</a>
+                    <div class="clearer"></div> 
+                </div>                         
+        
+                <div id="event_item">
+                    <div class="date"> 26<br /><span class="eventmonth">Mar</span> </div>
+                    <a href="/the-resort/news-events/2164/MoonshineMarysWhiteLightningInvitational.php">Moonshine Mary's White Lightning Invitational</a>
+                    <div class="clearer"></div> 
+                </div>                         
+        
+                <div id="event_item">
+                    <div class="date"> 29-30<br /><span class="eventmonth">Mar</span> </div>
+                    <a href="/the-resort/news-events/2123/Totally80%e2%80%99sWeekendisRadical.php">Totally 80’s Weekend is Radical</a>
+                    <div class="clearer"></div> 
+                </div>                         
+        
+                <div id="event_item">
+                    <div class="date"> 30<br /><span class="eventmonth">Mar</span> </div>
+                    <a href="/the-resort/news-events/1920/AvalancheDogFundraiser22ndAnnual.php">Avalanche Dog Fundraiser, 22nd Annual</a>
+                    <div class="clearer"></div> 
+                </div>                         
+        
+                <div id="event_item">
+                    <div class="date"> 31<br /><span class="eventmonth">Mar</span> </div>
+                    <a href="/the-resort/news-events/2078/EasterBrunchatTheBrandingIron.php">Easter Brunch at The Branding Iron</a>
+                    <div class="clearer"></div> 
+                </div>                         
+        
+                <div id="event_item">
+                    <div class="date"> 01<br /><span class="eventmonth">Apr</span> </div>
+                    <a href="/the-resort/news-events/1683/LadiesWaistRubberLegRaceAprilTBD.php">Ladies Waist Rubber Leg Race: April TBD</a>
+                    <div class="clearer"></div> 
+                </div>                         
+        
+                <div id="event_item">
+                    <div class="date"> 01<br /><span class="eventmonth">Apr</span> </div>
+                    <a href="/the-resort/news-events/1683/LadiesWaistRubberLegRaceAprilTBD.php">Ladies Waist Rubber Leg Race: April TBD</a>
+                    <div class="clearer"></div> 
+                </div>                         
+        
+                <div id="event_item">
+                    <div class="date"> 02<br /><span class="eventmonth">Apr</span> </div>
+                    <a href="/the-resort/news-events/2165/MoonshineMarysWhiteLightningInvitational.php">Moonshine Mary's White Lightning Invitational</a>
+                    <div class="clearer"></div> 
+                </div>                         
+        
+                <div id="event_item">
+                    <div class="date"> 05<br /><span class="eventmonth">Apr</span> </div>
+                    <a href="/the-resort/news-events/2186/ApresSkiOldDeathWhisper.php">Apres Ski - Old Death Whisper</a>
+                    <div class="clearer"></div> 
+                </div>                         
+        
+                <div id="event_item">
+                    <div class="date"> 06<br /><span class="eventmonth">Apr</span> </div>
+                    <a href="/the-resort/news-events/2187/ApresSkiOldDeathWhisper.php">Apres Ski - Old Death Whisper</a>
+                    <div class="clearer"></div> 
+                </div>                         
+        
+                <div id="event_item">
+                    <div class="date"> 19<br /><span class="eventmonth">Apr</span> </div>
+                    <a href="/the-resort/news-events/2178/ApresSkiTheAltaBoys.php">Apres Ski -The Alta Boys</a>
+                    <div class="clearer"></div> 
+                </div>                         
+        
+                <div id="event_item">
+                    <div class="date"> 20<br /><span class="eventmonth">Apr</span> </div>
+                    <a href="/the-resort/news-events/1924/13thAnnualCardboardBoxDerby.php">13th Annual Cardboard Box Derby</a>
+                    <div class="clearer"></div> 
+                </div>                         
+        
+                <div id="event_item">
+                    <div class="date"> 21<br /><span class="eventmonth">Apr</span> </div>
+                    <a href="/the-resort/news-events/2125/WinterClosingDayApresSkiCelebrations.php">Winter Closing Day & Apres Ski Celebrations</a>
+                    <div class="clearer"></div> 
+                </div>                         
+        
+                <div id="event_item">
+                    <div class="date"> Aug 30 -<br />Sep 01 </div>
+                    <a href="/the-resort/news-events/2128/4thAnnualWydahoRendezvousMountainBikeFestival.php">4th Annual Wydaho Rendezvous Mountain Bike Festival</a>
+                    <div class="clearer"></div> 
+                </div>                         
+        
+</div>
+	<!-- AddThis Button BEGIN -->
+	<p align="center">
+		<a href="http://www.addthis.com/bookmark.php?v=250&pub=xa-4a4bc1ce78fe816d" onmouseover="return addthis_open(this, '', '[URL]', '[TITLE]')" onmouseout="addthis_close()" onclick="return addthis_sendto()">
+			<img src="http://s7.addthis.com/static/btn/sm-share-en.gif" width="83" height="16" alt="Bookmark and Share" style="border:0"/>
+		</a>
+		<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js?pub=xa-4a4bc1ce78fe816d"></script>
+	</p>
+	<!-- AddThis Button END -->
+	<!--<a href="http://shop.grandtarghee.com/itemList.aspx?node_id=195032"><img alt="" src="/assets/Sidebar-Gift-Cards.png" /></a>
+
+<div class="gutter">
+<p class="Resevationsbutton">
+<a href="http://www.grandtarghee.com/lodging/winter_lodging_specials.php">Jackson Yellowstone Summer Vacation Reservations</a>
+</p>
+</div>
+-->				  
+	
+
+      	</div> <!-- end left bar -->
+        <div class="textarea">
+            
+	
+	<div class="ribbon">
+    	<div class="wrapAround"></div>
+		<div class="h1_ribbon_left"></div>
+    	<h1 class="contentHeader">Grand Targhee Snow & Weather Report</h1>
+		<div class="h1_ribbon_right"></div>
+    </div>
+	
+<script type="text/javascript" src="http://www.grandtarghee.com/controls/gtr11p/FlickrGal/js/jquery.prettyPhoto.js"></script>
+<link media="screen" type="text/css" rel="stylesheet" href="http://www.grandtarghee.com/controls/gtr11p/FlickrGal/css/prettyPhoto.css">
+<!-- Flickr Feed -->
+<script type="text/javascript" src="http://www.grandtarghee.com/controls/gtr11p/FlickrGal/js/jflickrfeed.min.js"></script>
+<link media="screen" type="text/css" rel="stylesheet" href="http://www.grandtarghee.com/controls/gtr11p/FlickrGal/css/style.css">
+<script type="text/javascript">
+    jQuery(document).ready(function ($) {
+        var urlFlickrFeed = "http://api.flickr.com/services/rest/?format=json&method=flickr.photosets.getPhotos&photoset_id=72157630626544844&api_key=33b20d1b8276f34056a0c7c3009307ba&jsoncallback=?";
+        $.getJSON(urlFlickrFeed, function (data) {
+            if (data && data.photoset && data.photoset.photo) {
+                var countIX = data.photoset.total;
+                var myTitle, urlImgLg, urlImg, flickrItem;
+                flickrItem = null;
+
+                $.each(data.photoset.photo, function (ix, item) {
+                    myTitle = item.title;
+                    urlImg = 'http://farm' + item.farm + '.static.flickr.com/' + item.server + '/' + item.id + '_' + item.secret + '_m.jpg';
+                    urlImgLg = 'http://farm' + item.farm + '.static.flickr.com/' + item.server + '/' + item.id + '_' + item.secret + '_z.jpg';
+                    if (ix == (data.photoset.total - 1))
+                        flickrItem = $('<a class="pop_img popicon" rel="prettyPhoto[gallery1]" title ="' + myTitle.replace('\'', '') + '" href="' + urlImgLg + '" ></a>');
+                    else if (ix > (countIX - 50))
+                        flickrItem = $('<a class="pop_img" rel="prettyPhoto[gallery1]" title ="' + myTitle.replace('\'', '') + '" href="' + urlImgLg + '" ></a>');
+                    if (flickrItem)
+                        $(flickrItem).appendTo('#flickr_feed');
+                });
+            }
+            $("#flickr_feed a.pop_img").prettyPhoto({
+                animation_speed: 'fast',
+                theme: 'light_square',
+                slideshow: 7000,
+                autoplay_slideshow: true,
+                show_title: false
+            });
+        });
+    });
+</script>
+<style>
+a.popicon {
+	margin: 5px -6px 0 0;
+	background: url('http://www.grandtarghee.com/controls/gtr11p/FlickrGal/images/camera_button.png') 0 0 no-repeat;
+	display: block;
+    height: 44px;
+    width: 60px;
+	float:right}
+a.popicon:hover {background-position: 0 -44px;}
+</style>
+<div id="ctl00_ctl00_ctl00_ctl00_phMainContent_phMain_cphTitle_Flickr1_Panel1">
+	
+<div id="flickr_feed"></div>
+
+</div>
+	<div class="clear"></div>
+    <!-- Static Bread Crumb Here ******** -->
+
+            
+    
+<div id="SnowReport_content"> 
+	<div id="contentLeft">
+	    <h3>Latest Update: <span class="currentDate">1/9/2013 5:48:00 AM</span></h3>
+	    <div id="snowFall">
+	        <h2>Snow</h2>
+	        <p>24 Hours Total-5am to 5am ..... <span class="inches">3"</span></p>
+	        <p>Total Since Lifts Closed ......... <span class="inches">0"</span></p>
+            <p>Total Update Since 5:00am ....... <span class="inches">0"</span></p>
+	        <p>Base ........................................... <span class="inches"> 70"</span></p>
+	        <p>Total Snowfall ................... <span class="inches">195"</span></p>
+	    </div>
+		<div id="graph">
+	        <h2>Last 7 Days</h2>
+             <!----start rad chart---->
+            <div id="ctl00_ctl00_ctl00_ctl00_phMainContent_phMain_cphPhoto_ctl00_MtnConditions_cached1_RadChart1" class="RadChart" BorderWidth="0">
+	<!-- 2010.1.309.20 --><img style='border-width: 0px;' alt=''  border='0' src='ChartImage.axd?UseSession=false&amp;ImageName=n%2fo7xM8JJavzR09bvk%2fKr2jhzVXu6SbFaRtza%2fSqAHnY9T%2bQxU6eRJCNYhLJlsvUgoo9zTtjEqWqZhBnJZTlyg%3d%3d&amp;imageFormat=Png' onerror="if(confirm('Error loading RadChart image.\nYou may also wish to check the ASP.NET Trace for further details.\nDisplay stack trace?'))window.location.href=this.src;" /><input id="ctl00_ctl00_ctl00_ctl00_phMainContent_phMain_cphPhoto_ctl00_MtnConditions_cached1_RadChart1_ClientState" name="ctl00_ctl00_ctl00_ctl00_phMainContent_phMain_cphPhoto_ctl00_MtnConditions_cached1_RadChart1_ClientState" type="hidden" />
+</div>
+         	<!----end rad chart---->
+
+			</td>
+ 			<td align="center"></td>
+			<td align="center">
+		</div>
+     	<!----End Last 7 Days Graph---->
+         
+      	<div id="year_snow_totals">
+            <h2>2012 Season Totals</h2>
+            <table>
+                <tr>
+                    <td align="center" width="160px" style="vertical-align : middle;">
+                        <h3 style="float : left; margin : 30px 10px 0 10px; width : 50px;">Base <br />Depth</h3>
+                        <div id="ctl00_ctl00_ctl00_ctl00_phMainContent_phMain_cphPhoto_ctl00_MtnConditions_cached1_chrtDepth" class="RadChart" BorderWidth="0">
+	<img style='border-width: 0px;' alt=''  border='0' src='ChartImage.axd?UseSession=false&amp;ImageName=nzy889kyOyVlZuHHP0LnP9oTe4QktSlGMHSuh8f72vbCFc9Y%2biSPqiiq%2fLE8bk0KGFNobymn4O92OHDlgMUQLg%3d%3d&amp;imageFormat=Png' onerror="if(confirm('Error loading RadChart image.\nYou may also wish to check the ASP.NET Trace for further details.\nDisplay stack trace?'))window.location.href=this.src;" /><input id="ctl00_ctl00_ctl00_ctl00_phMainContent_phMain_cphPhoto_ctl00_MtnConditions_cached1_chrtDepth_ClientState" name="ctl00_ctl00_ctl00_ctl00_phMainContent_phMain_cphPhoto_ctl00_MtnConditions_cached1_chrtDepth_ClientState" type="hidden" />
+</div>
+                	</td>
+                    <td align="center" width="180px" style="vertical-align : middle;">
+                        <h3 style="float : left; margin : 30px 10px 0 10px; width : 50px;">Total <br /> Snowfall</h3>
+                        
+                        <div id="ctl00_ctl00_ctl00_ctl00_phMainContent_phMain_cphPhoto_ctl00_MtnConditions_cached1_chrtTotal" class="RadChart" BorderWidth="0">
+	<img style='border-width: 0px;' alt=''  border='0' src='ChartImage.axd?UseSession=false&amp;ImageName=mNA4%2bQC152ZIp2%2bfrd0y4Lep7BEWZ0QsntVngx0Xuq2V5t%2fesxfQgrI3rZXpg3qBnyu0FlphoDlgjgaU%2bI6dqA%3d%3d&amp;imageFormat=Png' onerror="if(confirm('Error loading RadChart image.\nYou may also wish to check the ASP.NET Trace for further details.\nDisplay stack trace?'))window.location.href=this.src;" /><input id="ctl00_ctl00_ctl00_ctl00_phMainContent_phMain_cphPhoto_ctl00_MtnConditions_cached1_chrtTotal_ClientState" name="ctl00_ctl00_ctl00_ctl00_phMainContent_phMain_cphPhoto_ctl00_MtnConditions_cached1_chrtTotal_ClientState" type="hidden" />
+</div>
+                    </td>
+            	</tr>
+            </table>
+            <div class="clear"></div>
+            <hr />
+		</div>
+    	<!--End Season Snow Totals-->
+
+		<div id="terrainLift">
+            <h2>Terrain & Lift Info</h2>
+            <p><strong>Surface Conditions:</strong> powder, tracked powder, machine groomed</p>
+            <p><strong>Lift Operation:</strong> 5 lifts scheduled to open out of 5</p>
+            <div id="key">
+                <h3>Key</h3>
+                <p class="open">Open</p>
+                <p class="closed">Closed</p>
+                <p class="onHold">On Hold</p>
+                <p class="scheduled">Scheduled</p>
+            </div>
+            <div id="terrainStats">
+                <ul>
+                <li>Operating Hours: 9am - 4pm*</li>
+                <li>100% of lift served terrain open</li>
+                <li>2602 acres open out of 2,602</li>
+                <li>1 terrain park open</li>
+                <li>76 trails open out of 76</li>
+                <li>15Km of nordic trails open out of 15Km</li>
+                </ul>
+                <a href="http://www.grandtarghee.com/the-mountain/grooming-map.php">View Full Grooming Report &raquo;</a>
+            </div>
+            <div class="clear"></div>
+            <div id="liftStatus">
+                <hr />
+                <div><p class='closed'>Mary's Nipple</p><p class='scheduled'>Dreamcatcher</p><p class='scheduled'>Sacajawea</p></div><div><p class='scheduled'>Blackfoot</p><p class='scheduled'>Shoshone</p><p class='scheduled'>Papoose Conveyor</p></div>
+            </div>
+ 		<div class="clear"></div>
+        </div>
+        
+        <div id="generalInfo">
+            <h2>General Info</h2>
+            <p><h3>Value Season Snowcat Adventure Packages!</h3>
+<p>3 night Value Season Snowcat Adventure packages starting at $397 pp*.  Book four or more nights of lodging and Ski FREE at Grand Targhee Resort. Rate is per person per night, based on double occupancy in the Targhee Lodge during Value Season. Rates and maximum occupancy will vary with dates and accommodations selected. Price does not include taxes and fees. Base package includes 4 nights lodging and 4 days of lift tickets.</p>
+<p><em>*Not applicable with any other packages or discounts.  Not available for group stays.  Blackout dates and other restrictions apply. Price does not include taxes and fees. 4 night minimum stay is required.</em></p>
+<div class="rightBookNow">
+<p><a href="tel:+1-800-827-4433" class="button">Call 800.TARGHEE</a></p>
+<p><a href="http://reservations.grandtarghee.com/irmnet/res/resmain.aspx" class="button">Book Online Now</a>&nbsp;</p></div><p><em></em></p>
+
+<h3>Regular Season Lift Ticket Rates</h3>
+<p>Adult (13 - 64 yrs) - $69<br />
+Senior (65+ yrs) - $44<br />
+Junior (6 - 12 yrs) - $29</p></p>
+        </div>
+        <div class="clear"></div>
+    </div><!-- @left content -->
+    
+    <div id="contentRight">
+        <div id="ctl00_ctl00_ctl00_ctl00_phMainContent_phMain_cphPhoto_ctl00_MtnConditions_cached1_notice_alerts_pnl">
+	
+            <div id="noticesAlerts">
+                <h2>Notices & Alerts</h2>
+                <p><p><br /></p><p><b>Lift operation is 9AM-4PM wind and weather permitting.</b><br /><br /></p></p>
+                <hr/>
+            </div>
+        
+</div>
+        <div id="currentConditions">
+            <table width="100%">
+                <tr><td valign="top"><h3 style="position: relative; top: -10px;">Current Conditions</h3></td><td><img id="ctl00_ctl00_ctl00_ctl00_phMainContent_phMain_cphPhoto_ctl00_MtnConditions_cached1_imgWeatherIcon" src="http://www.grandtarghee.com/themes/GTR_11P/css/images/weather-icons/snowing.png" border="0" /><br /></td></tr>
+                <tr><td>Snow</td><td>&nbsp;</td></tr>
+                <tr><td>Base Mtn. Temp</td><td>24&deg; F </td></tr>
+                <tr><td>MPH Wind Speed</td><td>14-20</td></tr>
+                <tr><td>Wind Direction</td><td>SSW</td></tr>
+            </table>
+        </div>
+        <div id="dailyPhoto">
+            <h2><a href="http://www.grandtarghee.com/the-mountain/culture/pic-of-the-day.php">Photo of the Day</a></h2>
+            <a href="http://www.grandtarghee.com/the-mountain/culture/pic-of-the-day.php">
+                <img src="http://max.mediasrvr.com/i.ashx?i=http://www.grandtarghee.com/Imagery/634932488132080078/DSC_5626.jpg&w=294&h=0" />
+            </a>
+        </div>	
+        <div id="webcam">
+            <h2>Targhee Webcams</h2>
+            <a class="single_image" href="http://media.grandtarghee.com/targhee-webcam/webcam_2.jpg">
+                <img alt="Grand Targhee Base Area Webcam" src="http://media.grandtarghee.com/targhee-webcam/webcam_2.jpg" /> 
+            </a>
+            <a class="single_image" href="http://www2.tetoncam.com/tetonl.jpg">
+                <img alt="Teton Valley Webcam" src="http://www2.tetoncam.com/tetonl.jpg" /> 
+            </a>
+            <h2>Weather Pattern</h2>
+            <a class="single_image" href="http://www.goes.noaa.gov/GIFS/WCI8.JPG">
+                <img alt="" src="http://www.goes.noaa.gov/GIFS/WCI8.JPG" width="294" height="250" /> 
+            </a>
+            <hr /
+        </div>
+	</div><!-- @contentRight -->
+</div>
+	<div style="display: block; width: 100%; float: left;">
+        <p><a href="/winter/otheractivities/index.php" class="button">Winter Resort Activities</a> &nbsp;&nbsp;&nbsp;&nbsp;<a href="/the-resort/news-events/events.php" class="button">Event Schedule</a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="/getting-here/targhee-local-shuttle.php" class="button">Town Shuttle Schedule</a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="/the-resort/dining.php" class="button">Restaurants &amp; Dining</a></p>
+        <hr/>
+    </div>
+	<div id="mntnForecast" style="display:block; float:left;">
+        <h2> Mountain Forecast </h2>
+        <div style='display:block; width:100%;'><div class='weather_forcast' ><p class='txt-ctr-caps'>1/9/2013</p><p><img src='http://www.nws.noaa.gov/weather/images/fcicons/sn60.jpg' width='86' height='86' alt='Snow' title='Snow' /></p> <p>Snow<br></p><p class='point-forecast-icons-high'><span style='color:red;'>High: 33 &deg;F</span> <span style='color:blue;'>Low:16 &deg;F</span></p></div><div class='weather_forcast' ><p class='txt-ctr-caps'>1/10/2013</p><p><img src='http://www.nws.noaa.gov/weather/images/fcicons/sn100.jpg' width='86' height='86' alt='Snow' title='Snow' /></p> <p>Snow<br></p><p class='point-forecast-icons-high'><span style='color:red;'>High: 24 &deg;F</span> <span style='color:blue;'>Low:8 &deg;F</span></p></div><div class='weather_forcast' ><p class='txt-ctr-caps'>1/11/2013</p><p><img src='http://www.nws.noaa.gov/weather/images/fcicons/sn60.jpg' width='86' height='86' alt='Snow Likely' title='Snow Likely' /></p> <p>Snow Likely<br></p><p class='point-forecast-icons-high'><span style='color:red;'>High: 11 &deg;F</span> <span style='color:blue;'>Low:-3 &deg;F</span></p></div><div class='weather_forcast' ><p class='txt-ctr-caps'>1/12/2013</p><p><img src='http://www.nws.noaa.gov/weather/images/fcicons/sn30.jpg' width='86' height='86' alt='Chance Snow' title='Chance Snow' /></p> <p>Chance Snow<br></p><p class='point-forecast-icons-high'><span style='color:red;'>High: 2 &deg;F</span> <span style='color:blue;'>Low:-7 &deg;F</span></p></div><div class='weather_forcast' ><p class='txt-ctr-caps'>1/13/2013</p><p><img src='http://www.nws.noaa.gov/weather/images/fcicons/sn30.jpg' width='86' height='86' alt='Slight Chance Snow' title='Slight Chance Snow' /></p> <p>Slight Chance Snow<br></p><p class='point-forecast-icons-high'><span style='color:red;'>High: 5 &deg;F</span> <span style='color:blue;'>Low:-6 &deg;F</span></p></div></div>
+        <hr/>
+        <ul>
+            <li>To view a Detailed Weather Forecast, visit The <a href="http://forecast.weather.gov/MapClick.php?lat=43.80&lon=-110.95&site=riw&smap=1&marine=0&unit=0&lg=en" target="_new">National Weather Service</a>.</li>
+            <li>For on hill temperatures (at 9,200 ft) visit our <a href="http://www.wcc.nrcs.usda.gov/nwcc/sntl-datarpt.jsp?site=1082&days=7&state=WY">SNOTEL station</a>.</li>
+            <li>For on hill temperatures and wind readings ( at 9,800 ft) visit our <a href="http://wxstns.net/wxstns/jhnet/targwnd.txt">Data Site at the top of Dreamcatcher Chairlift</a>.</li>
+            <li>For additional snow and weather data, as well as the regional avalanche forecast visit the <a href="http://www.jhavalanche.org/viewBigsheet">Bridger-Teton National Forest Avalanche Lab</a>.</li>
+        </ul>
+        <hr/>
+        <p><em>*Grand Targhee Resort's main lifts Dreamcatcher and Shoshone operate from 9:00am - 4:00pm.  The Sacajawea & BLackfoot lifts operate from 9:00am - 3:30pm.  All snowfall is estimated using instrumentation and data from our <a href="http://wxstns.net/wxstns/jhnet/targhee.txt">Chief Joe Bowl site</a>(elevation 8,800 ft) at 5:00am. Additional accumulations between 5:00am and lift opening, on heavy snow days, will also be displayed above. This amount is then included in the next day's 24 hour snowfall total. You may also experience greater depths at higher elevations or on different terrain aspects.  Physical measurements are recorded during the day with season totals adjusted accordingly.</em></p>
+    </div> 
+<br/>
+<br/>
+<div class="clear"></div>
+</div> 
+
+            
+	
+    <!-- litContent1 is Content column from the dbrow -->
+    
+    
+    <!-- pnlRightCol is turned off if directed by the cms for this page bucket content-->
+    <!-- phc2 bucket content-->
+
+        </div>
+        
+<br class="clearer" />
+	<!-- Insert second BreadCrumb Nav -->
+	
+    
+
+
+			<div class="clearer"></div>
+		</div><!--end maincont --> 
+		<!-- FOOTER -->
+<div id="footer">
+    <div id="FooterContactBox">
+        <h3 id="footer-logo">
+            <a href="http://grandtarghee.com"><span class="logo-home">Grand Targhee Resort</span></a> 
+        </h3>
+        <p>3300 Ski Hill Rd.<br>
+        Alta, WY 83414<br>
+        1 307-353-2300<br>
+        Call <a href="tel://1-800-827-4433">800-TARGHEE</a><br>
+        <a href="mailto:info@grandtarghee.com">Info@GrandTarghee.com</a><br>
+        <a href="http://www.grandtarghee.com">GrandTarghee.com</a>
+        </p>
+    </div>
+    <div id="FooterBox">
+        <ul>
+            <li><h3 class="footerTitle">Purchase Info</h3></li>
+            <li><a href="/the-mountain/rates/season-passes.php">Winter Season Passes</a></li>
+            <li><a href="/the-mountain/rates/season-passes.php#ultimate">Winter Ultimate Passes</a></li>
+            <li><a href="/the-mountain/rates/multi-pack-passes.php">4-Pack Passes</a></li>
+            <li><a href="/the-mountain/summer-rates/index.php">Summer Tickets & Passes</a></li>
+            <li><a href="/summer/activities/swimming.php">Summer Pool Memberships</a></li>
+            <li><a href="http://shop.grandtarghee.com/itemList.aspx?node_id=195032">Gift Cards</a></li> 
+        </ul>
+        <ul>
+            <li><h3 class="footerTitle">Lodging Info</h3></li>
+            <li><a href="/book_lodging.aspx">Online Reservations</a></li>
+            <li><a href="/lodging/travelinsurance.php">Travel Insurance</a></li>
+            <li><a href="/lodging/policies.php">Lodging Policies</a></li>
+            <li><a href="/lodging/propertymgmtservices.php">Property Management</a></li>
+            <li><a href="https://reservations.grandtarghee.com/IRMNet/%28S%283agih455jxmwal55ffkgvj23%29%29/Login.aspx?ReturnUrl=%2firmnet%2fowner%2fownerhome.aspx">Owners Login</a></li>
+        </ul>
+        <ul>
+            <li><h3 class="footerTitle">About Targhee</h3></li>
+            <li><a href="http://www.grandtargheerealty.com/">Targhee Realty</a></li>
+            <li><a href="/the-mountain/stats/faqs.php">Targhee FAQs</a></li>
+            <li><a href="/about-us/brochure.php">Brochure Request</a></li>
+            <li><a href="http://grandtarghee.requestitem.com/" target="_blank">Donations Request</a></li>
+            <li><a href="/about-us/media-information/index.php">Media Room</a></li>
+            <li><a href="/athletes/freeride-team.php">Freeride Team</a></li>
+            <li><a href="/about-us/partners.php">Partner Resorts</a></li>
+            <li><a href="/about-us/sponsors.php">Partners & Sponsors</a></li>
+        </ul>
+        <ul>
+            <li><h3 class="footerTitle">The Ghee+</h3></li>
+            <li><a href="/the-resort/news-events/news.php">Targhee News</a></li>
+            <li><a href="/the-resort/news-events/events.php">Targhee Events</a></li>
+            <li><a href="/the-mountain/environment/index.php">Sustainability</a></li>
+            <li><a href="/employment/index.php">Jobs/Career Info</a></li>
+            <li><a href="/the-mountain/culture/targhee-characters.php">Targhee Characters</a></li>
+            <!--<li><a href="/the-mountain/culture/pic-of-the-day.php">Photo Of The Day</a></li>-->
+            <!--<li><a href="/the-mountain/culture/videos.php">Videos Gallery</a></li>-->
+            <!--<li><a href="#">Valley Charecters</a></li>-->
+            <!--<li><a href="/the-mountain/culture/photo-gallery.php">Photo Gallery</a></li>-->
+            <!--<li><a href="/the-mountain/culture/skicasts.php">Skicasts</a></li>-->
+            <li><a href="/about-us/contact.php">Contact Us</a></li>
+        </ul>
+        
+        <ul class="lastFooter">
+            <li><h3 class="footerTitle">Follow Us</h3></li>
+            <div id="footer-social-icon">
+            <a href="http://grandtarghee.com/about-us/contact.php" class="emaillink">Email Targhee</a>
+            <a href="http://facebook.com/grandtarghee" class="facebooklink">Facebook</a>
+            <a href="http://grandtarghee.com/rss/snow/current.ashx" class="YouTubelink">RSS Feeds</a>
+            <a href="http://www.flickr.com/photos/41563767@N07/" class="GooglePluslink">Google+</a>
+            </div>
+            <div id="footer-social-icon">
+            <a href="http://www.youtube.com/user/GrandTargheeResort" class="rsslink">RSS</a>
+            <a href="http://plus.google.com/b/103988501273173214300/" class="twitterlink">Twitter</a>
+            <a href="http://twitter.com/grand_targhee" class="Flikrlink">Flikr</a>
+            <a href="http://www.linkedin.com/company/grand-targhee-resort" class="LinkedInlink">LinkedIn</a>
+            </div>
+        </ul>
+    </div>
+</div> <!-- end footer -->
+<div class="subfooter">
+    <a href="/about-us/contact.php">Contact Us</a> | 
+    <a href="/search/index.php">Search</a> | 
+    <a href="/misc/site-map.php">Sitemap</a> | 
+    <a href="/misc/privacy.php">Privacy Policy</a> | 
+    <a href="/misc/terms.php">Terms & Conditions</a> | 
+    <a href="/about-us/sponsors.php">Partners</a> | 
+    <a href="/about-us/media-information/index.php">Media Room</a>
+    <hr>
+    <div class="left">
+    Mail: 3300 Ski Hill Rd. Alta, WY 83414<br>
+    Reservations: 307-353-2300  |  Call 800-TARGHEE
+    </div>
+    <div id="footer-icons" class="right">
+        <h3 id="footer-icon-1">
+            <a href="/winter/skiing/schools/kids.php"></a> 
+        </h3>
+        <h3 id="footer-icon-2">
+            <a href="http://www.nsaa.org/nsaa/environment/sustainable_slopes/"></a> 
+        </h3>
+        <h3 id="footer-icon-3">
+            <a href="http://www.grandtarghee.com/the-resort/news/274/GrandTargheeReceivesSecondNSAAGoldenEagleAward.php"></a> 
+        </h3>
+        <h3 id="footer-icon-4">
+            <a href="http://protectourwinters.org/"></a> 
+        </h3>
+        <h3 id="footer-icon-5">
+            <a href="http://fs.usda.gov/ctnf"></a> 
+        </h3>
+    </div>
+</div> <!-- end sub footer -->
+	</div> 
+	<!------------------------------end Website----------------------------------->
+
+
+<script type="text/javascript">
+//<![CDATA[
+Sys.Application.initialize();
+//]]>
+</script>
+</form>
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6124278-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+<script type="text/javascript">
+adroll_adv_id = "5T7VIPWIN5ACVLUSXNCC4F";
+adroll_pix_id = "OY3LT4JH6FFHVNG5GKDEYM";
+(function () {
+var oldonload = window.onload;
+window.onload = function(){
+   __adroll_loaded=true;
+   var scr = document.createElement("script");
+   var host = (("https:" == document.location.protocol) ? "https://s.adroll.com" : "http://a.adroll.com");
+   scr.setAttribute('async', 'true');
+   scr.type = "text/javascript";
+   scr.src = host + "/j/roundtrip.js";
+   ((document.getElementsByTagName('head') || [null])[0] ||
+    document.getElementsByTagName('script')[0].parentNode).appendChild(scr);
+   if(oldonload){oldonload()}};
+}());
+</script>
+
+</body>
+</html>
