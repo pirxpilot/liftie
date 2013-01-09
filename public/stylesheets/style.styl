@@ -27,7 +27,7 @@ $column-gutter=16px
 /*
  * Hide only visually, but have it available for screenreaders: h5bp.com/v
  */
-.visuallyhidden
+.visuallyhidde
   border 0
   clip rect(0 0 0 0)
   height 1px
@@ -37,6 +37,10 @@ $column-gutter=16px
   position absolute
   width 1px
 
+// To be used for links rendered with font icons
+// Chrome 19 was weird with clickability without this: http://css-tricks.com/examples/IconFont
+.icon-alone
+  display inline-block
 
 body
   font-size: 1em
