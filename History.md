@@ -1,4 +1,11 @@
 
+1.3.1 / 2013-01-08 
+==================
+
+  * npm install script added
+  * Add .icon-style class to links rendered with icon font
+  * Soelden - Austria
+
 1.3.0 / 2013-01-08 
 ==================
 
