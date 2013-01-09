@@ -1,4 +1,10 @@
 
+1.4.1 / 2013-01-09 
+==================
+
+  * Improve Deer Valler status reporting
+  * Define .left and .right CSS classes
+
 1.4.0 / 2013-01-09 
 ==================
 
