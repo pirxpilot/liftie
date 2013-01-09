@@ -6,7 +6,10 @@ var sorter = require('../../lib/routes/sorter');
 
 function id2resorts(commaSeparatedIds) {
   return commaSeparatedIds.split(',').map(function(id) {
-    return { id: id };
+    return {
+      id: id,
+      name: id.toUpperCase()
+    };
   });
 }
 
@@ -48,7 +51,7 @@ describe('sorter', function() {
 
 
   it('should mark mark and sort if cookie present', function() {
-    var resorts = id2resorts('a,b,c,d,e');
+    var resorts = id2resorts('a,e,c,d,b');
 
     resorts = sorter(resorts, {
       'resorts-open': 'e,b'
