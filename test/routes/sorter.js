@@ -25,6 +25,16 @@ describe('sorter', function() {
     });
   });
 
+  it('should mark none as open if no cookie and at least 5 resorts', function() {
+    var resorts = id2resorts('a,b,c,d,e,f');
+
+    resorts = sorter(resorts, {});
+
+    resorts.forEach(function(r) {
+      assert.ok(!r.open);
+    });
+  });
+
   it('should mark none as open if empty cookie', function() {
     var resorts = id2resorts('a,b,c,d,e');
 
