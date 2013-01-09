@@ -1,4 +1,14 @@
 
+1.4.0 / 2013-01-09 
+==================
+
+  * Merge branch 'open-close'
+  * Merge branch 'jackson-hole'
+  * Mark all resorts as closed in some cases
+  * Sort resorts by name
+  * Grand Targhee
+  * Jackson Hole added
+
 1.3.1 / 2013-01-08 
 ==================
 
