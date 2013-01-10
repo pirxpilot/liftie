@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Lifts updated="1/9/2013 7:35:29 PM" friendlyupdated="0 seconds ago">
+  <Lift mountain="Blackcomb" name="7TH HEAVEN EXPRESS" status="CLOSED" speed="0" avgspeed="0" waitstatusid="1" waitstatus="Closed" />
+  <Lift mountain="Blackcomb" name="CAT SKINNER CHAIR" status="CLOSED" speed="0" avgspeed="0" waitstatusid="1" waitstatus="Closed" />
+  <Lift mountain="Blackcomb" name="CRYSTAL CHAIR" status="CLOSED" speed="0" avgspeed="0" waitstatusid="1" waitstatus="Closed" />
+  <Lift mountain="Blackcomb" name="EXCALIBUR GONDOLA" status="CLOSED" speed="3" avgspeed="0" waitstatusid="1" waitstatus="Closed" />
+  <Lift mountain="Blackcomb" name="EXCELERATOR EXPRESS" status="CLOSED" speed="0" avgspeed="0" waitstatusid="1" waitstatus="Closed" />
+  <Lift mountain="Blackcomb" name="GLACIER EXPRESS" status="CLOSED" speed="0" avgspeed="0" waitstatusid="1" waitstatus="Closed" />
+  <Lift mountain="Blackcomb" name="HORSTMAN T-BAR" status="CLOSED" speed="0" avgspeed="0" waitstatusid="1" waitstatus="Closed" />
+  <Lift mountain="Blackcomb" name="JERSEY CREAM EXPRESS" status="CLOSED" speed="0" avgspeed="0" waitstatusid="1" waitstatus="Closed" />
+  <Lift mountain="Blackcomb" name="MAGIC CHAIR" status="CLOSED" speed="0" avgspeed="0" waitstatusid="1" waitstatus="Closed" />
+  <Lift mountain="Blackcomb" name="SHOWCASE T-BAR" status="CLOSED" speed="0" avgspeed="0" waitstatusid="1" waitstatus="Closed" />
+  <Lift mountain="Blackcomb" name="SOLAR COASTER EXPRESS" status="CLOSED" speed="0" avgspeed="0" waitstatusid="1" waitstatus="Closed" />
+  <Lift mountain="Blackcomb" name="TUBE PARK" status="OPEN" speed="0" avgspeed="0" waitstatusid="" waitstatus="" />
+  <Lift mountain="Blackcomb" name="WIZARD EXPRESS" status="CLOSED" speed="0" avgspeed="0" waitstatusid="1" waitstatus="Closed" />
+  <Lift mountain="Whistler" name="BIG RED EXPRESS" status="CLOSED" speed="0" avgspeed="0" waitstatusid="1" waitstatus="Closed" />
+  <Lift mountain="Whistler" name="CREEK SIDE GONDOLA" status="CLOSED" speed="0" avgspeed="0" waitstatusid="1" waitstatus="Closed" />
+  <Lift mountain="Whistler" name="EMERALD EXPRESS" status="CLOSED" speed="0" avgspeed="0" waitstatusid="1" waitstatus="Closed" />
+  <Lift mountain="Whistler" name="FITZSIMMONS EXPRESS" status="CLOSED" speed="0" avgspeed="0" waitstatusid="1" waitstatus="Closed" />
+  <Lift mountain="Whistler" name="FRANZ'S CHAIR" status="CLOSED" speed="0" avgspeed="0" waitstatusid="1" waitstatus="Closed" />
+  <Lift mountain="Whistler" name="GARBANZO EXPRESS" status="CLOSED" speed="0" avgspeed="0" waitstatusid="1" waitstatus="Closed" />
+  <Lift mountain="Whistler" name="HARMONY EXPRESS" status="CLOSED" speed="0" avgspeed="0" waitstatusid="1" waitstatus="Closed" />
+  <Lift mountain="Whistler" name="OLYMPIC CHAIR" status="CLOSED" speed="0" avgspeed="0" waitstatusid="" waitstatus="" />
+  <Lift mountain="Whistler" name="PEAK TO PEAK" status="CLOSED" speed="0" avgspeed="0" waitstatusid="1" waitstatus="Closed" />
+  <Lift mountain="Whistler" name="SYMPHONY EXPRESS" status="CLOSED" speed="0" avgspeed="0" waitstatusid="1" waitstatus="Closed" />
+  <Lift mountain="Whistler" name="T-BARS" status="CLOSED" speed="0" avgspeed="0" waitstatusid="1" waitstatus="Closed" />
+  <Lift mountain="Whistler" name="THE PEAK" status="CLOSED" speed="0" avgspeed="0" waitstatusid="1" waitstatus="Closed" />
+  <Lift mountain="Whistler" name="WHISTLER VILLAGE GONDOLA" status="CLOSED" speed="0" avgspeed="0" waitstatusid="1" waitstatus="Closed" />
+</Lifts>
