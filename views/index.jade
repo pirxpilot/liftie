@@ -33,9 +33,9 @@ block content
 
   .content(class='content-#{ resorts.length + 1}')
     ui.tags
-      for resorts, tag in tags
+      for obj, tag in tags
         - var href = (tag === 'all') ? '/' : '/tag/' + tag;
         li
           a(href=href)
-            span= tag
-            span (#{ resorts.length })
+            span= obj.label
+            span (#{ obj.members.length })
