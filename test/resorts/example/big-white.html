@@ -1,0 +1,736 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/2000/REC-xhtml1-20000126/DTD/xhtml1-transitional.dtd">
+<html lang="en">
+<head>
+
+
+<link rel="image_src" href="http://www.bigwhite.com/themes/bw/images/logo.jpg" />
+<!-- Site Header Content //-->
+<link rel="stylesheet" media="screen" type="text/css" href="/themes/bw/main.css" />
+<link rel="stylesheet" media="screen" type="text/css" href="/themes/bw/typography.css" />
+
+<link rel="stylesheet" media="screen" type="text/css" href="http://www.bigwhite.com/packages/remo_expand/blocks/remo_expand/templates/plus_minus/view.css" />
+<!--<link rel="stylesheet" media="screen" type="text/css" href="http://www.bigwhite.com/packages/remo_expand/blocks/remo_expand/templates/concrete5/view.css" />
+<link rel="stylesheet" media="screen" type="text/css" href="http://www.bigwhite.com/packages/remo_expand/blocks/remo_expand/templates/arrows/view.css" />-->
+<!--[if lte IE 6]>
+    <link type="text/css" rel="stylesheet" rev="stylesheet" href="/index.php/tools/css/themes/bw/ie.css" />
+<![endif]-->
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<title>Big White :: Lift Status</title>
+<meta name="description" content="" />
+<meta name="generator" content="concrete5 - 5.5.2.1" />
+
+<script type="text/javascript">
+var CCM_DISPATCHER_FILENAME = '/index.php';var CCM_CID = 206;var CCM_EDIT_MODE = false;var CCM_ARRANGE_MODE = false;var CCM_IMAGE_PATH = "/updates/concrete5.5.2.1/concrete/images";
+var CCM_TOOLS_PATH = "/index.php/tools/required";
+var CCM_BASE_URL = "http://www.bigwhite.com";
+var CCM_REL = "";
+
+</script>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>	<link rel="shortcut icon" href="/files/4113/2736/8968/favicon.ico" type="image/x-icon" />
+	<link rel="icon" href="/files/4113/2736/8968/favicon.ico" type="image/x-icon" />
+
+<script type="text/javascript" src="/updates/concrete5.5.2.1/concrete/js/jquery.form.js?v=7dd9dc45b17255cf4628973ff4711ae9"></script>
+
+<script src="/themes/bw/jcarousel/jcarousel_w_plugins.js" type="text/javascript"></script>
+<script src="/themes/bw/jquery-ui-1.8.6.custom.min.js" type="text/javascript"></script>
+<script src="/themes/bw/bw.js" type="text/javascript"></script>
+<script src="/themes/bw/ezBgResize.js" type="text/javascript"></script>
+<script src="/themes/bw/remo_expand.js" type="text/javascript"></script>
+<script type="text/javascript">
+function blurSearch(obj) {
+	if (obj.value == '')
+		obj.value = 'Search Bigwhite.com';
+}
+
+function focusSearch(obj) {
+	if (obj.value == 'Search Bigwhite.com')
+		obj.value = '';
+}
+
+jQuery(document).ready(function() {
+	$('#headerNav li.topNav').hover(
+		function() {
+			var a = $(this).find('a.topNav');
+			if ($(a).html() != 'Blog') {
+				$(a).addClass('top-selected');
+				// get background arrow offset
+				var fullLeft = $('#header').offset().left;
+				var width = $(a).width()/2 + 6;
+				var left = $(a).offset().left;
+				var mid = (left + width) - fullLeft;
+				$(this).find('ul.level2').css({
+					'display':'block',
+					'background-position':mid+'px 0px'
+				});
+			}
+		},
+		function() {
+			$(this).find('a.topNav').removeClass('top-selected');
+			$(this).find('ul.level2').css('display','none');
+		});
+	});
+</script>
+<meta name="msvalidate.01" content="AE50EC5B0CED1FB8F323F94CBD925BF8" />
+</head>
+<body>
+<div id="page">
+	        
+	    		<script type="text/javascript">
+            $(document).ready(function() {
+                $("#header-background").ezBgResize();
+            });
+        </script>
+   	    <div id="header-background" style="position:absolute;">
+    	<img alt="" src="/files/9513/2995/5996/inner_bg_FEB-NEW-BIG-WHITE-MAP-BACKGROUND.jpg" />	
+    </div>
+        		
+	<div id="header" style="margin-top:0px;" >
+        <div id="logo">
+            <a href="/">
+                <img src="/themes/bw/images/logo.jpg" border="0" alt="Bigwhite.com" />
+            </a>
+        </div>
+        
+        <div id="header-right">
+            <div id="header-top">
+                <div id="header-report">
+                    <div id="report-weather">
+                    	<a href="/mountain-info/mountain-reports/weather-forecast/" class="weather-nav">&nbsp;</a>
+                        <div style="float:left;">
+                        <img src="/themes/bw/images/weather/low_cast.png" alt="Overcast" />                        </div>
+                        <div style="float:left;padding-top:10px;">
+                        -4                        </div>
+                    </div>
+                    <div id="report-snow">
+                    	<a href="/mountain-info/mountain-reports/daily-snow-report/" class="weather-nav">&nbsp;</a>
+                        <div class="slider-cont">
+	                        <ul class="slider">
+		                        <li class="snow-since snow-cont">
+		                        	<span class="since-time">Past 12 hours</span>
+		                        	6 cm
+		                    	</li>
+		                    	<li class="snow-since snow-cont">
+		                        	<span class="since-time">Last 24 Hours</span>
+		                        	15 cm
+		                    	</li>
+		                    	<li class="snow-since snow-cont">
+		                        	<span class="since-time">Last 7 Days</span>
+		                        	56 cm
+		                    	</li>
+	                    	</ul>
+                    	</div>
+                    </div>
+                    <script type="text/javascript">
+						$(document).ready(function() {
+						    $('#report-snow .slider-cont')
+							    .jcarousel({
+							        vertical: true,
+							        wrap: 'circular'
+							    })
+							    .jcarouselAutoscroll({
+						            target: '+=1'
+						        });
+						});
+					</script>
+                    <div id="report-base">
+                    	<a href="/mountain-info/mountain-reports/daily-snow-report/" class="weather-nav">&nbsp;</a>
+                        193 cm
+                    </div>
+                    <div id="report-groomed">
+                    	<a href="/mountain-info/mountain-reports/grooming-report/" class="weather-nav">&nbsp;</a>
+                        <div id="report-groomed-bottom">
+                        	49                        </div>
+                    </div>
+                </div>
+                
+                <div id="header-top-right">
+                    <div id="header-top-nav">
+                        <p><a href="http://www.bigwhite.com/passholders/?utm_source=bigwhite.com&amp;utm_medium=homepage-btr&amp;utm_campaign=passholders-bluetr">Passholders</a> &nbsp; | &nbsp;&nbsp;<a href="http://www.bigwhite.com/mountain-info/tickets-and-rentals-pricing/tickets/?utm_source=bigwhite.com&amp;utm_medium=homepage-btr&amp;utm_campaign=tickets-bluetr">Tickets</a> &nbsp; | &nbsp;&nbsp;<a href="http://www.bigwhite.com/media-public/web-cams/?utm_source=bigwhite.com&amp;utm_medium=homepage-btr&amp;utm_campaign=webcams-bluetr">Web Cams</a></p>                    </div>
+                    <div id="header-search">
+                        <form action="/index.php/search-results/" method="get">	
+                            <div id="header-search-left"><input name="q" type="text" value="Search Bigwhite.com" onblur="blurSearch(this);" onfocus="focusSearch(this);" /></div>
+                            <div id="header-search-right"><input name="submit" type="submit" value="" /></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div id="header-bottom">
+                <div id="header-home">
+                    <a href="/">
+                        <img src="/themes/bw/images/home.jpg" border="0" alt="Bigwhite.com" />
+                    </a>
+                </div>
+                <div id="headerNav">
+                                        <!--<ul class="nav"><li class="topNav"><a class="topNav" href="/mountain-info/">Mountain Info</a></li><li class="topNav"><a class="topNav" href="/plan-your-trip/">Plan Your Trip</a></li><li class="topNav"><a class="topNav" href="/events-and-activities/">Events &amp; Activities</a></li><li class="topNav"><a class="topNav" href="/ski-school/">Ski School</a></li><li class="topNav"><a class="topNav" href="/media-public/">Media</a></li><li class="topNav"><a class="topNav" href="/blog/">Blog</a></li></ul>-->
+                    <ul class="nav"><li class="topNav"><a class="topNav" href="/mountain-info">Mountain Info</a><ul class="level2" style="display: none; background-position: 323.5px 0px;"><li class="subNav"><a class="subNav" href="/mountain-info/tickets-and-rentals-pricing">Tickets & Rentals</a><ul class="level3"><li><a href="/mountain-info/tickets-and-rentals-pricing/season-passes">Season Passes</a></li><li><a href="/mountain-info/tickets-and-rentals-pricing/new-estore">New Estore</a></li><li><a href="/mountain-info/tickets-and-rentals-pricing/tickets">Tickets</a></li><li><a href="/mountain-info/tickets-and-rentals-pricing/local-discount-tickets">Local Discount Tickets</a></li><li><a href="/mountain-info/tickets-and-rentals-pricing/rentals">Rentals</a></li><li><a href="/mountain-info/tickets-and-rentals-pricing/tubing-skating">Tubing & Skating</a></li><li><a href="/mountain-info/tickets-and-rentals-pricing/beginner-tips">Beginner Tips</a></li><li><a href="/mountain-info/tickets-and-rentals-pricing/gift-cards">Gift Cards</a></li><li><a href="/mountain-info/tickets-and-rentals-pricing/exchange-rate">Exchange Rate</a></li></ul></li><li class="subNav"><a class="subNav" href="/mountain-info/general">General</a><ul class="level3"><li><a href="/mountain-info/general/mountain-stats">Mountain Stats</a></li><li><a href="/mountain-info/general/opening-hours-season-2011-2012">Hours of Operation</a></li><li><a href="/mountain-info/general/maps-and-brochures">Maps & Brochures</a></li><li><a href="/mountain-info/general/what-s-new">What's New</a></li><li><a href="/mountain-info/general/faqs">FAQs</a></li><li><a href="/mountain-info/general/awards">Awards</a></li><li><a href="/mountain-info/general/testimonials">Testimonials</a></li><li><a href="/mountain-info/general/virtual-mountain-tours">Virtual Mountain Tours</a></li><li><a href="/mountain-info/general/request-centre">Request Centre</a></li><li><a href="/mountain-info/general/mountain-safety">Mountain Safety</a></li><li><a href="/mountain-info/general/real-estate">Real Estate</a></li></ul></li><li class="subNav"><a class="subNav" href="/mountain-info/mountain-services">Mountain Services</a><ul class="level3"><li><a href="/mountain-info/mountain-services/concierge-services">Concierge Services</a></li><li><a href="/mountain-info/mountain-services/retail-shopping">Retail Shopping</a></li><li><a href="/mountain-info/mountain-services/rentals-and-repairs">Rentals & Repairs</a></li><li><a href="/mountain-info/mountain-services/medical-clinic">Medical Clinic</a></li><li><a href="/mountain-info/mountain-services/on-mountain-shuttle">On Mountain Shuttle</a></li><li><a href="/mountain-info/mountain-services/day-spas">Day Spas</a></li><li><a href="/mountain-info/mountain-services/fitness-instruction">Fitness Instruction</a></li><li><a href="/mountain-info/mountain-services/shopping-shuttle">Shopping Shuttle</a></li><li><a href="/mountain-info/mountain-services/complimentary-mountain-tours">Complimentary Mountain Tours</a></li></ul></li><li class="subNav"><a class="subNav" href="/mountain-info/food-dining-entertainment">Food/Dining/Entertainment</a><ul class="level3"><li><a href="/mountain-info/food-dining-entertainment/grocery-and-food-services">Grocery & Food Services</a></li><li><a href="/mountain-info/food-dining-entertainment/restaurants">Restaurants</a></li><li><a href="/mountain-info/food-dining-entertainment/nightlife">Nightlife</a></li><li><a href="/mountain-info/food-dining-entertainment/kettle-valley-steakhouse">Kettle Valley Steakhouse</a></li><li><a href="http://www.vacationfoods.com/" target="_blank">Order Groceries Online</a></li></ul></li><li class="subNav"><a class="subNav" href="/mountain-info/mountain-reports">Mountain Reports</a><ul class="level3"><li><a href="/mountain-info/mountain-reports/daily-snow-report">Daily Snow Report</a></li><li><a href="/mountain-info/mountain-reports/grooming-report">Grooming Report</a></li><li><a href="/mountain-info/mountain-reports/lift-status">Lift Status</a></li><li><a href="/mountain-info/mountain-reports/park-conditions">Park Conditions</a></li><li><a href="/mountain-info/mountain-reports/weather-forecast">Weather Forecast</a></li><li><a href="http://www.weatheroffice.gc.ca/radar/index_e.html?id=XSS" target="_blank">Doppler Weather</a></li></ul></li></ul></li><li class="topNav"><a class="topNav" href="/plan-your-trip">Plan Your Trip</a><ul class="level2" style="display: none; background-position: 323.5px 0px;"><li class="subNav"><a class="subNav" href="/plan-your-trip/accommodation">Accommodation</a><ul class="level3"><li><a href="/plan-your-trip/accommodation/central-reservations">Central Reservations</a></li><li><a href="/plan-your-trip/accommodation/request-a-quote">Request A Quote</a></li><li><a href="/plan-your-trip/accommodation/book-online">Book Online</a></li><li><a href="/plan-your-trip/accommodation/executive-condos">Executive Condos</a></li><li><a href="/plan-your-trip/accommodation/hotels">Full Service Hotels</a></li><li><a href="/plan-your-trip/accommodation/condos-and-townhomes">Condos and Townhomes</a></li><li><a href="/plan-your-trip/accommodation/vacation-homes-and-cabins">Vacation Homes and Cabins</a></li><li><a href="/plan-your-trip/accommodation/luxury-accommodation">Luxury Accommodation</a></li><li><a href="/plan-your-trip/accommodation/hostel">Hostel</a></li><li><a href="/plan-your-trip/accommodation/discounted-lift-tickets">Discounted Lift Tickets</a></li><li><a href="/plan-your-trip/accommodation/discounted-rentals">Discounted Rentals</a></li><li><a href="/plan-your-trip/accommodation/discounted-lessons">Discounted Lessons</a></li><li><a href="http://bit.ly/wePYcr" target="_blank">Kelowna Hotels</a></li></ul></li><li class="subNav"><a class="subNav" href="/plan-your-trip/specials-and-airfares">Specials & Airfares</a><ul class="level3"><li><a href="/plan-your-trip/specials-and-airfares/hot-deals">Hot Deals</a></li><li><a href="http://www.bigwhite.com/passholders/">Passholder Specials</a></li><li><a href="/plan-your-trip/specials-and-airfares/airline-information">Airline Information</a></li><li><a href="/plan-your-trip/specials-and-airfares/australian-deals">Australian Deals</a></li></ul></li><li class="subNav"><a class="subNav" href="/plan-your-trip/how-to-get-here">How to Get Here</a><ul class="level3"><li><a href="/plan-your-trip/how-to-get-here/what-you-need-to-know">What You Need To Know</a></li><li><a href="/plan-your-trip/how-to-get-here/getting-to-big-white">Getting to Big White</a></li><li><a href="/plan-your-trip/how-to-get-here/express-bus-to-big-white">Express Bus</a></li><li><a href="/plan-your-trip/how-to-get-here/airport-shuttle">Airport Shuttle</a></li><li><a href="/plan-your-trip/how-to-get-here/winter-tire-requirements">Tire Requirements</a></li><li><a href="/plan-your-trip/how-to-get-here/travel-tips">Travel Tips</a></li><li><a href="/plan-your-trip/how-to-get-here/vancouver-bus-trips">Vancouver Bus Trips</a></li></ul></li><li class="subNav"><a class="subNav" href="/plan-your-trip/groups">Groups</a><ul class="level3"><li><a href="/plan-your-trip/groups/request-a-group-quote">Request a Group Quote</a></li><li><a href="/plan-your-trip/groups/westjet-group-packages">WestJet Group Packages</a></li><li><a href="/plan-your-trip/groups/christmas-parties">Christmas Parties</a></li><li><a href="/plan-your-trip/groups/day-groups">Day Groups</a></li><li><a href="/plan-your-trip/groups/non-profit-day-groups">Non Profit Day Groups</a></li><li><a href="/plan-your-trip/groups/ski-groups-and-clubs">Families, Friends & Ski Clubs</a></li><li><a href="/plan-your-trip/groups/school-groups">School Groups</a></li><li><a href="/plan-your-trip/groups/corporate-groups">Corporate & Team Building</a></li><li><a href="/plan-your-trip/groups/savings-club-vouchers">Savings Club Vouchers</a></li><li><a href="/plan-your-trip/groups/tips-for-planning">Tips for Planning</a></li></ul></li><li class="subNav" style="float:right;"><div id="menu-ad"><div class="menu-img"><a href="/plan-your-trip/special-offers/buy-5-get-7-1213"><img src="/files/8413/4074/8485/Menu-Ad-Buy-5-Get-7.jpg" alt="" border="0" width="140px" /></a></div><div class="menu-text"><p>Get s days and 2 nights FREE!</p></div><div class="menu-link"><a href="/plan-your-trip/special-offers/buy-5-get-7-1213" class="call-to-action" title="Learn More">Learn More</a></div></div></li></ul></li><li class="topNav"><a class="topNav" href="/events-and-activities">Events & Activities</a><ul class="level2" style="display: none; background-position: 323.5px 0px;"><li class="subNav"><a class="subNav" href="/events-and-activities/resort-events">Resort Events</a><ul class="level3"><li><a href="/events-and-activities/resort-events/events-calendar">Events Calendar</a></li><li><a href="/events-and-activities/resort-events/weekly-events">Daily Family Activities</a></li><li><a href="/events-and-activities/resort-events/christmas-holidays">Christmas Holidays</a></li><li><a href="/events-and-activities/resort-events/annual-events">Annual Events</a></li><li><a href="/events-and-activities/resort-events/cruz-the-blues">Cruz The Blues</a></li><li><a href="http://www.bigwhite.com/contests/">Big White Contests</a></li></ul></li><li class="subNav"><a class="subNav" href="/events-and-activities/skiing-and-boarding">Skiing & Boarding</a><ul class="level3"><li><a href="/events-and-activities/skiing-and-boarding/skiing-at-big-white">Skiing at Big White</a></li><li><a href="/events-and-activities/skiing-and-boarding/snowboarding-at-big-white">Snowboarding at Big White</a></li><li><a href="/events-and-activities/skiing-and-boarding/10-friday-nights">$10 Friday Nights</a></li><li><a href="/events-and-activities/skiing-and-boarding/night-skiing">Night Skiing</a></li><li><a href="/events-and-activities/skiing-and-boarding/nordic">Nordic</a></li></ul></li><li class="subNav"><a class="subNav" href="http://www.bigwhite.com/telus-park/park-scene/">TELUS Terrain Park</a><ul class="level3"><li><a href="http://www.bigwhite.com/telus-park/park-scene">Park Scene</a></li><li><a href="http://www.bigwhite.com/telus-park/event-calendar">Events</a></li><li><a href="http://www.bigwhite.com/telus-park/park-conditions">Conditions</a></li><li><a href="http://www.bigwhite.com/telus-park/videos">Videos</a></li><li><a href="http://www.bigwhite.com/telus-park/photos">Photos</a></li><li><a href="http://www.bigwhite.com/telus-park/history">Park History</a></li></ul></li><li class="subNav"><a class="subNav" href="/events-and-activities/adventure-winter-activities">Adventure Activities</a><ul class="level3"><li><a href="/events-and-activities/adventure-winter-activities/dog-sled-tours">Dog Sled Tours</a></li><li><a href="/events-and-activities/adventure-winter-activities/ice-climbing-tower">Ice Climbing Tower</a></li><li><a href="/events-and-activities/adventure-winter-activities/rockets-games">Kelowna Rockets Hockey</a></li><li><a href="/events-and-activities/adventure-winter-activities/sleigh-rides">Sleigh Rides</a></li><li><a href="/events-and-activities/adventure-winter-activities/snowmobiling-tours">Snowmobiling Tours</a></li><li><a href="/events-and-activities/adventure-winter-activities/kids-mini-z-s">Kids Mini Z's</a></li><li><a href="/events-and-activities/adventure-winter-activities/snow-biking">Snow Biking</a></li><li><a href="/events-and-activities/adventure-winter-activities/snowlimo-tours">SnowLimo Tours</a></li><li><a href="/events-and-activities/adventure-winter-activities/skating">Skating</a></li><li><a href="/events-and-activities/adventure-winter-activities/tubing">Tubing</a></li><li><a href="/events-and-activities/adventure-winter-activities/snowshoeing">Snowshoeing</a></li></ul></li><li class="subNav" style="float:right;"><div id="menu-ad"><div class="menu-img"><a href="/mountain-info/mountain-services/concierge-services"><img src="/files/2512/9417/8383/menu-ad-concierge-desk.jpg" alt="" border="0" width="140px" /></a></div><div class="menu-text"><p>Your one stop shop for activities, services, events and family fun.</p></div><div class="menu-link"><a href="/mountain-info/mountain-services/concierge-services" class="call-to-action" title="Concierge Desk">Concierge Desk</a></div></div></li></ul></li><li class="topNav"><a class="topNav" href="/ski-school">Ski School</a><ul class="level2" style="display: none; background-position: 323.5px 0px;"><li class="subNav"><a class="subNav" href="/ski-school/overview">General</a><ul class="level3"><li><a href="/ski-school/overview/early-bird-specials">Early Bird Specials</a></li><li><a href="/ski-school/overview/what-you-need-to-know">Adult Ability Chart</a></li><li><a href="/ski-school/overview/testimonials">Testimonials</a></li><li><a href="/ski-school/overview/request-info">Request Info</a></li><li><a href="/ski-school/overview/contact-info">Contact Info</a></li></ul></li><li class="subNav"><a class="subNav" href="/ski-school/kids-centre">Kids' Centre</a><ul class="level3"><li><a href="/ski-school/kids-centre/group-lessons">Group Lessons</a></li><li><a href="/ski-school/kids-centre/private-coaching">Private Coaching</a></li><li><a href="/ski-school/kids-centre/tot-town-daycare">Tot Town Daycare</a></li><li><a href="/ski-school/kids-centre/after-school-program">After School Program</a></li><li><a href="/ski-school/kids-centre/ability-levels">Ability Levels</a></li><li><a href="/ski-school/kids-centre/watch-ability-levels">Watch Ability Levels</a></li><li><a href="/ski-school/kids-centre/lunch-menu">Lunch Menu</a></li><li><a href="/ski-school/kids-centre/after-dark">After Dark Program</a></li><li><a href="/ski-school/kids-centre/mom-dad-and-me">Mom/Dad & Me are Skiing!</a></li><li><a href="/ski-school/kids-centre/information-request-form">Request Info/Contact Us</a></li></ul></li><li class="subNav"><a class="subNav" href="/ski-school/group-programs">Group Programs</a><ul class="level3"><li><a href="/ski-school/group-programs/beginner-programs">Beginner Programs</a></li><li><a href="/ski-school/group-programs/ski-ride-experience">Ski/Ride Experience</a></li><li><a href="/ski-school/group-programs/ladies-day">Ladies Day</a></li><li><a href="/ski-school/group-programs/50-plus">Seniors' Ski Club</a></li><li><a href="/ski-school/group-programs/high-performance-series">High Performance Series</a></li><li><a href="/ski-school/group-programs/adaptive-ski-club">People in Motion's Adaptive Ski</a></li><li><a href="/ski-school/group-programs/instructor-certification-programs">Instructor Certification Programs</a></li><li><a href="/ski-school/group-programs/australian-snowsports-camps">Australian Snowsports Camps</a></li><li><a href="/ski-school/group-programs/snowshoeing">Snowshoeing</a></li></ul></li><li class="subNav"><a class="subNav" href="/ski-school/freestyle-programs">Freestyle Programs</a><ul class="level3"><li><a href="/ski-school/freestyle-programs/teen-freestyle-coaching">Teen Freestyle Coaching</a></li><li><a href="/ski-school/freestyle-programs/freeride-club">Freeride Club</a></li><li><a href="/ski-school/freestyle-programs/freestyle-ski-team">Freestyle Ski Team</a></li><li><a href="/ski-school/freestyle-programs/freestyle-snowboard-team">Freestyle Snowboard Team</a></li><li><a href="/ski-school/freestyle-programs/flight-school-and-heavy-metal-shop">Flight School/Heavy Metal Shop</a></li><li><a href="/ski-school/freestyle-programs/rugged-riders-freestyle-camps">Rugged Riders Freestyle Camps</a></li></ul></li><li class="subNav"><a class="subNav" href="/ski-school/private-coaching">Private Coaching</a><ul class="level3"><li><a href="/ski-school/private-coaching/half-day">Half Day</a></li><li><a href="/ski-school/private-coaching/full-day">Full Day</a></li><li><a href="/ski-school/private-coaching/first-tracks">First Tracks</a></li><li><a href="/ski-school/private-coaching/late-day">Late Day</a></li><li><a href="/ski-school/private-coaching/adopt-an-instructor">Adopt an Instructor</a></li><li><a href="/ski-school/private-coaching/telemark">Telemark</a></li></ul></li></ul></li><li class="topNav"><a class="topNav" href="/media-public">Media</a><ul class="level2" style="display: none; background-position: 323.5px 0px;"><li class="subNav"><a class="subNav" href="/media-public/resort-videos">Resort Videos</a><ul class="level3"><li><a href="/media-public/resort-videos/weekly-update">Weekly Update</a></li><li><a href="/media-public/resort-videos/latest-videos">Latest Videos</a></li><li><a href="/media-public/resort-videos/2011-2012-season">2011-2012 Season</a></li><li><a href="/media-public/resort-videos/2010-2011-season">2010-2011 Season</a></li><li><a href="/media-public/resort-videos/2009-2010-season">2009-2010 Season</a></li><li><a href="/media-public/resort-videos/submit-videos">Submit Videos</a></li></ul></li><li class="subNav"><a class="subNav" href="/media-public/web-cams">Web Cams</a><ul class="level3"><li><a href="http://www.bigwhite.com/media-public/web-cams/">View All Webcams</a></li><li><a href="/media-public/web-cams/live-white-crystal-cam">Live White Crystal Cam</a></li></ul></li><li class="subNav"><a class="subNav" href="/media-public/photos">Resort Photos</a><ul class="level3"><li><a href="/media-public/photos/opening-day-photos">Opening Day Photos</a></li><li><a href="/media-public/photos/photos-of-the-day">Photos of The Day</a></li><li><a href="/media-public/photos/more-from-the-week">More From The Week</a></li><li><a href="/media-public/photos/submit-photos">Submit Photos</a></li><li><a href="/media-public/photos/guest-photos">Guest Photos</a></li></ul></li><li class="subNav"><a class="subNav" href="/media-public/big-white-virtual-tours">Big White Virtual Tours</a><ul class="level3"><li><a href="/media-public/big-white-virtual-tours/360-tours">360 Tours</a></li><li><a href="/media-public/big-white-virtual-tours/virtual-mountain-tours">Virtual Mountain Tours</a></li></ul></li><li class="subNav"><a class="subNav" href="/media-public/media-access">Media Portal</a><ul class="level3"><li><a href="http://www.bigwhite.com/media">Media Site</a></li><li><a href="/media-public/media-access/filming-at-big-white">Filming at Big White</a></li><li><a href="/media-public/media-access/maps-and-brochures">Maps & Brochures</a></li><li><a href="/media-public/media-access/big-white-history">Big White History</a></li></ul></li></ul></li><li class="topNav"><a class="topNav" href="/blog">Blog</a><ul class="level2" style="display: none; background-position: 323.5px 0px;"></ul></li></ul> 
+                </div>
+            </div>
+        </div>
+	</div>    	
+	
+    <div id="breadcrumb">
+    	<div id="bread-left">
+        	<ul class="nav"><li class="nav-path-selected topNav"><a class="nav-path-selected topNav" href="/mountain-info/">Mountain Info</a><ul class="level2"><li class="nav-path-selected subNav"><a class="nav-path-selected subNav" href="/mountain-info/mountain-reports/">Mountain Reports</a><ul class="level3"><li class="nav-selected nav-path-selected"><a class="nav-selected nav-path-selected" href="/mountain-info/mountain-reports/lift-status/">Lift Status</a></li></ul></li></ul></li></ul>	
+        </div>
+        <div id="bread-right">
+        	<div class="social-twitter" style="padding-top:4px;">
+                 <!-- Place this tag where you want the +1 button to render -->
+                <g:plusone size="small" annotation="inline" width="180"></g:plusone>
+                
+                <!-- Place this render call where appropriate -->
+                <script type="text/javascript">
+                  (function() {
+                    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+                    po.src = 'https://apis.google.com/js/plusone.js';
+                    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+                  })();
+                </script>
+            </div>
+            
+            <div class="social-facebook">
+            	<iframe src="http://www.facebook.com/plugins/like.php?href=http://bigwhite.com&amp;layout=standard&amp;show_faces=false&amp;width=190&amp;action=like&amp;colorscheme=light&amp;height=28" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:190px; height:28px;" allowTransparency="true"></iframe>
+			</div>
+        </div>
+    </div>
+    
+	<div id="body-in-three">
+		<div id="sidebar">
+			<ul class="nav"><li class="topNav"><a  href="/mountain-info/tickets-and-rentals-pricing/" class="topNav">Tickets & Rentals</a><ul class="level2"><li class="subNav"><a  href="/mountain-info/tickets-and-rentals-pricing/season-passes/" class="subNav">Season Passes</a></li><li class="subNav"><a  href="/mountain-info/tickets-and-rentals-pricing/new-estore/" class="subNav">New Estore</a></li><li class="subNav"><a  href="/mountain-info/tickets-and-rentals-pricing/tickets/" class="subNav">Tickets</a></li><li class="subNav"><a  href="/mountain-info/tickets-and-rentals-pricing/local-discount-tickets/" class="subNav">Local Discount Tickets</a></li><li class="subNav"><a  href="/mountain-info/tickets-and-rentals-pricing/rentals/" class="subNav">Rentals</a></li><li class="subNav"><a  href="/mountain-info/tickets-and-rentals-pricing/tubing-skating/" class="subNav">Tubing & Skating</a></li><li class="subNav"><a  href="/mountain-info/tickets-and-rentals-pricing/beginner-tips/" class="subNav">Beginner Tips</a></li><li class="subNav"><a  href="/mountain-info/tickets-and-rentals-pricing/gift-cards/" class="subNav">Gift Cards</a></li><li class="subNav"><a  href="/mountain-info/tickets-and-rentals-pricing/exchange-rate/" class="subNav">Exchange Rate</a></li></ul></li><li class="topNav"><a  href="/mountain-info/general/" class="topNav">General</a><ul class="level2"><li class="subNav"><a  href="/mountain-info/general/mountain-stats/" class="subNav">Mountain Stats</a></li><li class="subNav"><a  href="/mountain-info/general/opening-hours-season-2011-2012/" class="subNav">Hours of Operation</a></li><li class="subNav"><a  href="/mountain-info/general/maps-and-brochures/" class="subNav">Maps & Brochures</a></li><li class="subNav"><a  href="/mountain-info/general/what-s-new/" class="subNav">What's New</a></li><li class="subNav"><a  href="/mountain-info/general/faqs/" class="subNav">FAQs</a></li><li class="subNav"><a  href="/mountain-info/general/awards/" class="subNav">Awards</a></li><li class="subNav"><a  href="/mountain-info/general/testimonials/" class="subNav">Testimonials</a></li><li class="subNav"><a  href="/mountain-info/general/virtual-mountain-tours/" class="subNav">Virtual Mountain Tours</a></li><li class="subNav"><a  href="/mountain-info/general/request-centre/" class="subNav">Request Centre</a></li><li class="subNav"><a  href="/mountain-info/general/mountain-safety/" class="subNav">Mountain Safety</a></li><li class="subNav"><a  href="/mountain-info/general/real-estate/" class="subNav">Real Estate</a></li></ul></li><li class="topNav"><a  href="/mountain-info/mountain-services/" class="topNav">Mountain Services</a><ul class="level2"><li class="subNav"><a  href="/mountain-info/mountain-services/concierge-services/" class="subNav">Concierge Services</a></li><li class="subNav"><a  href="/mountain-info/mountain-services/retail-shopping/" class="subNav">Retail Shopping</a></li><li class="subNav"><a  href="/mountain-info/mountain-services/rentals-and-repairs/" class="subNav">Rentals & Repairs</a></li><li class="subNav"><a  href="/mountain-info/mountain-services/medical-clinic/" class="subNav">Medical Clinic</a></li><li class="subNav"><a  href="/mountain-info/mountain-services/on-mountain-shuttle/" class="subNav">On Mountain Shuttle</a></li><li class="subNav"><a  href="/mountain-info/mountain-services/day-spas/" class="subNav">Day Spas</a></li><li class="subNav"><a  href="/mountain-info/mountain-services/fitness-instruction/" class="subNav">Fitness Instruction</a></li><li class="subNav"><a  href="/mountain-info/mountain-services/shopping-shuttle/" class="subNav">Shopping Shuttle</a></li><li class="subNav"><a  href="/mountain-info/mountain-services/complimentary-mountain-tours/" class="subNav">Complimentary Mountain Tours</a></li></ul></li><li class="topNav"><a  href="/mountain-info/food-dining-entertainment/" class="topNav">Food/Dining/Entertainment</a><ul class="level2"><li class="subNav"><a  href="/mountain-info/food-dining-entertainment/grocery-and-food-services/" class="subNav">Grocery & Food Services</a></li><li class="subNav"><a  href="/mountain-info/food-dining-entertainment/restaurants/" class="subNav">Restaurants</a></li><li class="subNav"><a  href="/mountain-info/food-dining-entertainment/nightlife/" class="subNav">Nightlife</a></li><li class="subNav"><a  href="/mountain-info/food-dining-entertainment/kettle-valley-steakhouse/" class="subNav">Kettle Valley Steakhouse</a></li><li class="subNav"><a target="_blank" href="http://www.vacationfoods.com/" class="subNav">Order Groceries Online</a></li></ul></li><li class="nav-path-selected topNav"><a class="nav-path-selected topNav"  href="/mountain-info/mountain-reports/">Mountain Reports</a><ul class="level2"><li class="subNav"><a  href="/mountain-info/mountain-reports/daily-snow-report/" class="subNav">Daily Snow Report</a></li><li class="subNav"><a  href="/mountain-info/mountain-reports/grooming-report/" class="subNav">Grooming Report</a></li><li class="nav-selected nav-path-selected subNav"><a class="nav-selected nav-path-selected subNav"  href="/mountain-info/mountain-reports/lift-status/">Lift Status</a></li><li class="subNav"><a  href="/mountain-info/mountain-reports/park-conditions/" class="subNav">Park Conditions</a></li><li class="subNav"><a  href="/mountain-info/mountain-reports/weather-forecast/" class="subNav">Weather Forecast</a></li><li class="subNav"><a target="_blank" href="http://www.weatheroffice.gc.ca/radar/index_e.html?id=XSS" class="subNav">Doppler Weather</a></li></ul></li></ul>
+	    
+    
+    <div class="callout-left">
+    	                    <div class="callout-img-left">
+                                    <a href="/index.php/plan-your-trip/specials-and-airfares/hot-deals/">
+                        <img src="/files/5713/1705/3209/callout-hotdeals.jpg" alt="" width="198px" border="0"/>
+                    </a>
+                            </div>
+                
+        <div class="callout-text-left">
+        <input type="hidden" value="end|now" />
+        <input type="hidden" value="msg|" />
+        <input type="hidden" value="msg|0" />
+        
+        <input type="hidden" value="server_time|18:50:12" />
+        <input type="hidden" value="server_time|America/Los_Angeles" />
+        
+                 
+            <p>Check out our latest special offers and packages – we have something for everyone!</p>
+                </div>
+                            <div class="callout-link-left"><a href="/index.php/plan-your-trip/specials-and-airfares/hot-deals/" class="call-to-action" title="Learn More">Learn More</a></div>
+               	
+    </div>
+   
+		
+		</div>
+		
+		<div id="main-content-three">	
+			
+<style>
+	#lift {
+		color:#4d4d4d;
+		font-size:12px;
+		overflow:hidden;
+	}
+	
+	#lift p.updated {
+		color:#303030;
+		font-size:18px;
+		font-weight:bold;
+		margin-bottom:20px;
+	}
+	
+	#lift-total {
+		width:466px;
+		height:34px;
+		overflow:hidden;
+		border-top:1px solid #dcddde;
+		border-bottom:1px solid #dcddde;
+		color:#231f20;
+		font-size:13px;
+		padding:13px 0px 0px 6px;
+		margin-bottom:18px;
+	}
+	
+	#lift-open {
+		float:left;
+		background:url(/concrete/themes/default/images/status/open_large.png) 0px 3px no-repeat;
+		padding:2px 0px 0px 24px;
+		margin-right:38px;
+		height:32px;
+	}
+	
+	#lift-closed {
+		float:left;
+		background:url(/concrete/themes/default/images/status/closed_large.png) top left no-repeat;
+		padding:2px 0px 0px 28px;
+		margin-right:38px;
+		height:32px;
+	}
+	
+	#lift-standby {
+		float:left;
+		background:url(/themes/bw/images/status/slow.png) 0px 3px no-repeat;
+		padding:2px 0px 0px 28px;
+		height:32px;
+	}
+	
+	#lift div.lift-item {
+		padding:10px 10px;
+		width:448px;
+		overflow:hidden;
+		border-bottom:1px solid #808080;
+	}
+	
+	#lift div.lift-first {
+		border-top:1px solid #808080;
+	}
+	
+	#lift div.lift-color {
+		background-color:#f3f7fa;
+	}
+	
+	#lift div.lift-title {
+		float:left;
+		width:425px;
+	}
+	
+	/*
+	#lift div.lift-title a {
+		color:#303030;
+		font-size:13px;
+		font-weight:bold;
+		text-decoration:none;
+	}
+	
+	#lift div.lift-title a:hover {
+		text-decoration:underline;
+	}
+	*/
+	
+	#lift div.lift-title {
+		color:#303030;
+		font-size:13px;
+		font-weight:bold;
+		text-decoration:none;
+	}
+	
+	#lift div.lift-status {
+		float:left;
+	}
+	
+	#lift div.lift-desc {
+		display:none;
+		color:#231f20;
+		font-size:11px;
+		padding:25px 20px 0px 20px;
+	}
+	
+	#lift div.lift-desc p { margin-bottom:5px; }
+</style>
+
+<!--
+<script type="text/javascript">
+	function lift(id,obj) {
+		if ($(obj).hasClass('lift-unopened')) {
+			$('#lift-desc-'+id).show('fast');
+			$(obj).removeClass('lift-unopened');
+			$(obj).addClass('lift-opened');
+		}
+		else {
+			$('#lift-desc-'+id).hide('fast');
+			$(obj).addClass('lift-unopened');
+			$(obj).removeClass('lift-opened');
+		}
+		
+		return false;
+	}
+</script>
+-->
+<div id="lift">
+	<h1>Lift Status</h1>
+    
+    <p class="updated">Last Updated January 9th, 2013 4:08 PM</p>
+    
+    <div id="lift-total">
+    	<div id="lift-open">Open(15)</div>
+        <div id="lift-closed">Closed(1)</div>
+        <div id="lift-standby">Standby(0)</div>
+    </div>
+    
+    <p class="updated">Lift:</p>
+    
+            <div class="lift-item lift-color lift-first">
+    	<div class="lift-title">
+        	<!--
+        	<a href="" onclick="return lift(11,this);" class="lift-unopened">Lara’s Gondola - <span style="font-weight:normal">7:45am-11pm Fri-Sun & 7:45am-10pm Mon-Thurs</span></a>
+            -->
+           	Lara’s Gondola - <span style="font-weight:normal">7:45am-11pm Fri-Sun & 7:45am-10pm Mon-Thurs</span>
+        </div>
+        <div class="lift-status">
+        	<img src="/concrete/themes/default/images/status/open.png" alt="open" />        </div>
+        <div id="lift-desc-11" class="lift-desc" >
+        	        </div>
+    </div>
+    
+            <div class="lift-item  ">
+    	<div class="lift-title">
+        	<!--
+        	<a href="" onclick="return lift(17,this);" class="lift-unopened">Ridge Rocket Express Quad - <span style="font-weight:normal">8:45am-3:30pm</span></a>
+            -->
+           	Ridge Rocket Express Quad - <span style="font-weight:normal">8:45am-3:30pm</span>
+        </div>
+        <div class="lift-status">
+        	<img src="/concrete/themes/default/images/status/open.png" alt="open" />        </div>
+        <div id="lift-desc-17" class="lift-desc" >
+        	        </div>
+    </div>
+    
+            <div class="lift-item lift-color ">
+    	<div class="lift-title">
+        	<!--
+        	<a href="" onclick="return lift(6,this);" class="lift-opened">Bullet Express Quad - <span style="font-weight:normal">8:45am-3:30pm </span></a>
+            -->
+           	Bullet Express Quad - <span style="font-weight:normal">8:45am-3:30pm </span>
+        </div>
+        <div class="lift-status">
+        	<img src="/concrete/themes/default/images/status/open.png" alt="open" />        </div>
+        <div id="lift-desc-6" class="lift-desc" style="display:block">
+        	<p>(Open for night skiing until 8pm Tuesdays-Saturdays)</p>        </div>
+    </div>
+    
+            <div class="lift-item  ">
+    	<div class="lift-title">
+        	<!--
+        	<a href="" onclick="return lift(5,this);" class="lift-unopened">Black Forest Express Quad - <span style="font-weight:normal">8:45am-3:30pm </span></a>
+            -->
+           	Black Forest Express Quad - <span style="font-weight:normal">8:45am-3:30pm </span>
+        </div>
+        <div class="lift-status">
+        	<img src="/concrete/themes/default/images/status/open.png" alt="open" />        </div>
+        <div id="lift-desc-5" class="lift-desc" >
+        	        </div>
+    </div>
+    
+            <div class="lift-item lift-color ">
+    	<div class="lift-title">
+        	<!--
+        	<a href="" onclick="return lift(9,this);" class="lift-unopened">Gem Lake Express Quad - <span style="font-weight:normal">8:45am-3:30pm</span></a>
+            -->
+           	Gem Lake Express Quad - <span style="font-weight:normal">8:45am-3:30pm</span>
+        </div>
+        <div class="lift-status">
+        	<img src="/concrete/themes/default/images/status/open.png" alt="open" />        </div>
+        <div id="lift-desc-9" class="lift-desc" >
+        	        </div>
+    </div>
+    
+            <div class="lift-item  ">
+    	<div class="lift-title">
+        	<!--
+        	<a href="" onclick="return lift(15,this);" class="lift-opened">Plaza Quad Chair - <span style="font-weight:normal">8:45am-3:30pm </span></a>
+            -->
+           	Plaza Quad Chair - <span style="font-weight:normal">8:45am-3:30pm </span>
+        </div>
+        <div class="lift-status">
+        	<img src="/concrete/themes/default/images/status/open.png" alt="open" />        </div>
+        <div id="lift-desc-15" class="lift-desc" style="display:block">
+        	<p>(Open for night skiing until 8pm Tuesdays-Saturdays)</p>        </div>
+    </div>
+    
+            <div class="lift-item lift-color ">
+    	<div class="lift-title">
+        	<!--
+        	<a href="" onclick="return lift(16,this);" class="lift-unopened">Powder Triple Chair - <span style="font-weight:normal">8:45am-3:30pm</span></a>
+            -->
+           	Powder Triple Chair - <span style="font-weight:normal">8:45am-3:30pm</span>
+        </div>
+        <div class="lift-status">
+        	<img src="/concrete/themes/default/images/status/open.png" alt="open" />        </div>
+        <div id="lift-desc-16" class="lift-desc" >
+        	        </div>
+    </div>
+    
+            <div class="lift-item  ">
+    	<div class="lift-title">
+        	<!--
+        	<a href="" onclick="return lift(8,this);" class="lift-unopened">Falcon Double Chair - <span style="font-weight:normal">8:45am-3:30pm (Sat & Sun Only)</span></a>
+            -->
+           	Falcon Double Chair - <span style="font-weight:normal">8:45am-3:30pm (Sat & Sun Only)</span>
+        </div>
+        <div class="lift-status">
+        	<img src="/concrete/themes/default/images/status/closed.png" alt="closed" />        </div>
+        <div id="lift-desc-8" class="lift-desc" >
+        	        </div>
+    </div>
+    
+            <div class="lift-item lift-color ">
+    	<div class="lift-title">
+        	<!--
+        	<a href="" onclick="return lift(7,this);" class="lift-opened">Cliff Chair - <span style="font-weight:normal">9:00am-3:15pm</span></a>
+            -->
+           	Cliff Chair - <span style="font-weight:normal">9:00am-3:15pm</span>
+        </div>
+        <div class="lift-status">
+        	<img src="/concrete/themes/default/images/status/open.png" alt="open" />        </div>
+        <div id="lift-desc-7" class="lift-desc" style="display:block">
+        	<p>Daily&nbsp;Morning Avalanche Control</p>        </div>
+    </div>
+    
+            <div class="lift-item  ">
+    	<div class="lift-title">
+        	<!--
+        	<a href="" onclick="return lift(4,this);" class="lift-unopened">Alpine T-bar - <span style="font-weight:normal">8:45am-3:30pm </span></a>
+            -->
+           	Alpine T-bar - <span style="font-weight:normal">8:45am-3:30pm </span>
+        </div>
+        <div class="lift-status">
+        	<img src="/concrete/themes/default/images/status/open.png" alt="open" />        </div>
+        <div id="lift-desc-4" class="lift-desc" >
+        	        </div>
+    </div>
+    
+            <div class="lift-item lift-color ">
+    	<div class="lift-title">
+        	<!--
+        	<a href="" onclick="return lift(12,this);" class="lift-unopened">Magic Carpet - <span style="font-weight:normal">8:45am-3:30pm</span></a>
+            -->
+           	Magic Carpet - <span style="font-weight:normal">8:45am-3:30pm</span>
+        </div>
+        <div class="lift-status">
+        	<img src="/concrete/themes/default/images/status/open.png" alt="open" />        </div>
+        <div id="lift-desc-12" class="lift-desc" >
+        	        </div>
+    </div>
+    
+            <div class="lift-item  ">
+    	<div class="lift-title">
+        	<!--
+        	<a href="" onclick="return lift(10,this);" class="lift-unopened">Kids Carpet - <span style="font-weight:normal">8:45am-3:30pm</span></a>
+            -->
+           	Kids Carpet - <span style="font-weight:normal">8:45am-3:30pm</span>
+        </div>
+        <div class="lift-status">
+        	<img src="/concrete/themes/default/images/status/open.png" alt="open" />        </div>
+        <div id="lift-desc-10" class="lift-desc" >
+        	        </div>
+    </div>
+    
+            <div class="lift-item lift-color ">
+    	<div class="lift-title">
+        	<!--
+        	<a href="" onclick="return lift(13,this);" class="lift-opened">Mega Snow Coaster Lift 1 - <span style="font-weight:normal">4pm-9pm </span></a>
+            -->
+           	Mega Snow Coaster Lift 1 - <span style="font-weight:normal">4pm-9pm </span>
+        </div>
+        <div class="lift-status">
+        	<img src="/concrete/themes/default/images/status/open.png" alt="open" />        </div>
+        <div id="lift-desc-13" class="lift-desc" style="display:block">
+        	<p>2pm-9pm on all weekends, Christmas holidays &amp; President's week.</p>        </div>
+    </div>
+    
+            <div class="lift-item  ">
+    	<div class="lift-title">
+        	<!--
+        	<a href="" onclick="return lift(14,this);" class="lift-opened">Mega Snow Coaster Lift 2 - <span style="font-weight:normal">4pm-9pm</span></a>
+            -->
+           	Mega Snow Coaster Lift 2 - <span style="font-weight:normal">4pm-9pm</span>
+        </div>
+        <div class="lift-status">
+        	<img src="/concrete/themes/default/images/status/open.png" alt="open" />        </div>
+        <div id="lift-desc-14" class="lift-desc" style="display:block">
+        	<p>2pm-9pm on all weekends, Christmas holidays &amp; President's week.</p>        </div>
+    </div>
+    
+            <div class="lift-item lift-color ">
+    	<div class="lift-title">
+        	<!--
+        	<a href="" onclick="return lift(18,this);" class="lift-unopened">Snow Ghost Express 6 Pack - <span style="font-weight:normal">8:45am-3:30pm</span></a>
+            -->
+           	Snow Ghost Express 6 Pack - <span style="font-weight:normal">8:45am-3:30pm</span>
+        </div>
+        <div class="lift-status">
+        	<img src="/concrete/themes/default/images/status/open.png" alt="open" />        </div>
+        <div id="lift-desc-18" class="lift-desc" >
+        	        </div>
+    </div>
+    
+            <div class="lift-item  ">
+    	<div class="lift-title">
+        	<!--
+        	<a href="" onclick="return lift(19,this);" class="lift-opened">TELUS Park Chair - <span style="font-weight:normal">8:45am-4:00pm </span></a>
+            -->
+           	TELUS Park Chair - <span style="font-weight:normal">8:45am-4:00pm </span>
+        </div>
+        <div class="lift-status">
+        	<img src="/concrete/themes/default/images/status/open.png" alt="open" />        </div>
+        <div id="lift-desc-19" class="lift-desc" style="display:block">
+        	<p>(Open for night skiing until 8pm Thursdays-Saturdays)</p>        </div>
+    </div>
+    
+        </div>
+            
+                                    		</div>
+        
+        <div id="rightbar">	
+			
+	    
+    
+    <div class="callout-right">
+    	                    <div class="callout-img-right">
+                                    <a href="/index.php/mountain-info/tickets-and-rentals-pricing/gift-cards/">
+                        <img src="/files/3712/9202/0552/gc-callouts-sm.jpg" alt="" width="168px" border="0"/>
+                    </a>
+                            </div>
+                
+        <div class="callout-text-right">
+        <input type="hidden" value="end|now" />
+        <input type="hidden" value="msg|" />
+        <input type="hidden" value="msg|0" />
+        
+        <input type="hidden" value="server_time|18:50:12" />
+        <input type="hidden" value="server_time|America/Los_Angeles" />
+        
+                        </div>
+                            <div class="callout-link-right"><a href="/index.php/mountain-info/tickets-and-rentals-pricing/gift-cards/" class="call-to-action" title="Learn More">Learn More</a></div>
+               	
+    </div>
+   
+		</div>
+	</div>
+
+	<div id="footer">
+        <div id="footer-top">
+            <div id="footer-top-left">
+            <p>Official Website of Big White Ski Resort Limited: Call us at: 250.765.3101<br />Central Reservations: 1.800.663.2772 or <a href="maito:cenres@bigwhite.com">cenres@bigwhite.com</a></p>
+<p><a title="Awards" href="/mountain-info/general/awards/"><img style="margin: 10px 25px;" src="/files/cache/8d84d3bb1afd7c21be591d267916c0c5.png" alt="award.png" width="80" height="80" /><img style="margin: 10px 25px;" src="/files/cache/43448dbcd6c56e8b195f5c0823dad2ec.png" alt="best.png" width="85" height="75" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="http://www.bigwhitepropertygroup.com" target="_blank"><img style="margin-top: 10px; margin-bottom: 10px;" src="/files/2912/9720/4295/BW-property-logo.png" alt="Big White Property" width="154" height="80" /></a> &nbsp;&nbsp;&nbsp;</p>
+<p>&nbsp;&nbsp;<img style="vertical-align: top; margin-top: 20px; margin-bottom: 20px;" src="/files/cache/60894d2a27cf2711d1bc9f46413aae15.jpg" alt="canadas-favorite-family-resort.jpg" width="170" height="43" />&nbsp;&nbsp;&nbsp;&nbsp;<a title="Passholders" href="/passholders/"><img src="/files/1113/4393/4988/Gold_Pass_homepage_175x80px.png" alt="Gold_Pass_homepage_175x80px.png" width="276" height="81" /></a></p>                        </div>
+            
+            <div id="footer-top-right">
+                <div id="footer-top-right-content">
+                    <p style="text-align: left;"><a title="General" href="/mountain-info/general/">About Big White</a> | <a title="Daily Snow Report" href="/mountain-info/mountain-reports/daily-snow-report/">Weather Report</a> | <a title="Activities" href="/events-and-activities/adventure-winter-activities/">Activities</a> &amp; <a title="Special Events" href="/events-and-activities/resort-events/events-calendar/">Events</a>&nbsp;| <a title="Feedback" href="/feedback/">Feedback</a><br /><a href="http://www.bigwhitepropertygroup.com" target="_blank">Real Estate</a>&nbsp;| <a title="Vacation Specials" href="http://www.bigwhite.com/plan-your-trip/specials-and-airfares/">Specials/Airfares</a> | <a title="Employment Info" href="/contact-us/employment-info/">Employment Centre</a>&nbsp;|&nbsp;<a title="Contact Us" href="/contact-us/">Contact Us</a></p>
+<p><a title="Deutsch" href="/mountain-info/deutsch/"><img src="/files/5312/9590/9752/german-flag.gif" alt="german-flag.gif" width="47" height="32" /></a><a title="Francais" href="/mountain-info/francais/"><img src="/files/4712/9590/9812/quebec-flag.gif" alt="quebec-flag.gif" width="40" height="32" /></a><a title="Espanol" href="/mountain-info/espanol/"><img src="/files/9312/9590/9829/mexico-flag.gif" alt="mexico-flag.gif" width="53" height="32" /></a>&nbsp;</p>                                    </div>
+                <div id="footer-top-right-links">
+                	<div id="social">
+                        <img src="/concrete/themes/default/images/join.jpg" alt="Join Out Community" />
+                        <a href="http://www.youtube.com/user/bigwhiteskiresort/" title="YouTube" style="float:left;margin:0px 9px 0px 29px;" target="_blank"><img src="/concrete/themes/default/images/youtube.jpg" border="0" alt="YouTube" /></a>
+                        <a href="http://twitter.com/bigwhite" title="Twitter" style="float:left;margin-right:9px;" target="_blank"><img src="/concrete/themes/default/images/twitter.jpg" border="0" alt="YouTube" /></a>
+                        <a href="http://www.facebook.com/pages/Big-White-Ski-Resort/7296168274" title="Facebook" style="float:left;" target="_blank"><img src="/concrete/themes/default/images/facebook.jpg" border="0" alt="YouTube" /></a>
+                    </div>
+                    
+                    <div id="site">
+                    	<img src="/concrete/themes/default/images/email.jpg" alt="Email Updates" />
+                        <a href="/contact-us/email-updates/" id="snow_report" class="site-link" title="Snow Report">Snow Report</a>
+                        <a href="/special-offers/" id="special_offers" class="site-link" title="Special Offers">Special Offers</a>
+                        <a href="/contact-us/email-updates/" id="snowghosts" class="site-link" title="Snowghosts">Snowghosts</a>
+                    </div>
+                </div>
+            </div>
+		</div>   
+	</div>
+    <div id="footer-bottom">
+    	<div id="footer-bottom-in">
+            <div id="footer-bottom-left">
+            <p style="text-align: left;"><a title="Request Access" href="/">Photo Credits &amp; Media Site</a> | <a title="Trademark/Privacy Policy" href="/mountain-info/trademark-privacy-policy/">Trademark/Privacy Policy</a> | <a href="http://www.dataanywhere.net/" target="_blank">Hosted by DataAnywhere</a> |</p>                        </div>
+            <div id="footer-bottom-right">
+            	<a href="http://www.artistechnewmedia.com/" title="Artistech Newmedia" target="_blank">custom website design</a> by: <a href="http://www.artistechnewmedia.com/" title="Artistech Newmedia" target="_blank">Artistech Newmedia</a>
+            </div>
+		</div>           
+    </div>
+</div>
+<div class="backgroundPopup"></div>
+
+<div id="pop" style="display:none">
+    <a onclick="return closePop();" class="pop-close" href="##"> </a>
+    <div id="pop-body">
+    </div>
+    <div id="pop-foot">
+    </div>
+</div>
+
+
+<script type="text/javascript">
+adroll_adv_id = "H2LRQRZUCBHC5DOOWFDQBR";
+adroll_pix_id = "BDMYUTPRKRDFLLH7SWWO5A";
+(function () {
+var oldonload = window.onload;
+window.onload = function(){
+   __adroll_loaded=true;
+   var scr = document.createElement("script");
+   var host = (("https:" == document.location.protocol) ? "https://s.adroll.com" : "http://a.adroll.com");
+   scr.setAttribute('async', 'true');
+   scr.type = "text/javascript";
+   scr.src = host + "/j/roundtrip.js";
+   ((document.getElementsByTagName('head') || [null])[0] ||
+    document.getElementsByTagName('script')[0].parentNode).appendChild(scr);
+   if(oldonload){oldonload()}};
+}());
+</script>
+
+<script type="text/javascript" id="DoubleClickFloodlightTag1154332">
+//<![CDATA[
+var axel = Math.random() + "";
+var a = axel * 10000000000000;
+
+var newIFrame=document.createElement('iframe');
+newIFrame.src='http://3857135.fls.doubleclick.net/activityi;src=3857135;type=totab510;cat=bigwh829;ord=1;num=' + a + '?';
+newIFrame.width="1";
+newIFrame.frameborder="0";
+newIFrame.height="1";
+var scriptNode=document.getElementById('DoubleClickFloodlightTag1154332');
+scriptNode.parentNode.insertBefore(newIFrame,scriptNode);
+//]]>
+</script>
+<noscript>
+<iframe src="http://3857135.fls.doubleclick.net/activityi;src=3857135;type=totab510;cat=bigwh829;ord=1;num=1?" width="1" height="1" frameborder="0" 
+
+style="display:none"></iframe>
+</noscript>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(
+    ['_setAccount', 'UA-23993404-1'],
+    ['_trackPageview'],
+    ['_trackPageLoadTime'],
+    ['_setDomainName', 'bigwhite.com'],
+    ['b._setAccount', 'UA-32245-1'],
+    ['b._trackPageview']
+  );
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+<!-- Google Code for Remarketing tag -->
+<!-- Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. For 
+
+instructions on adding this tag and more information on the above requirements, read the setup guide: google.com/ads/remarketingsetup -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 1070608126;
+var google_conversion_label = "H9lXCICcgQMQ_t3A_gM";
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/1070608126/?
+
+value=0&label=H9lXCICcgQMQ_t3A_gM&guid=ON&script=0"/>
+</div>
+</noscript>
+</body>
+</html>
