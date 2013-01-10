@@ -19,6 +19,25 @@ Clean, simple, easy to read, fast ski resort lift status.
 - Status is cached on a server side. Regardless of the number of browser request, server will
 retrieve (and parse) the resort pages only once per minute.
 
+## How to run liftie locally
+
+Clone this repo (or your fork)
+
+    git clone git@github.com:code42day/liftie.git && cd liftie
+
+Install dependencies with npm:
+
+    npm install
+
+Build client side scripts: liftie is using [component](https://github.com/component/component) -
+make will install all external components and trigger component build for you.
+
+    make
+
+Run and profit (liftie binds to port 3000 by default)
+
+    node app
+
 ## How to add your favorite  ```acme.com``` resort
 
 The easiest way to start working on a new resort is to run `generate` script.
