@@ -1,4 +1,15 @@
 
+1.5.0 / 2013-01-10 
+==================
+
+  * Explain how to run liftie locally
+  * 301 redirect to canonical form of the tag
+  * Convert tag names to URL friendly form
+  * Support dataUrl in resort descriptor
+  * Whistler-Blackcomb
+  * Grouse Mountain
+  * Big White, BC
+
 1.4.1 / 2013-01-09 
 ==================
 
