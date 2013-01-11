@@ -8,9 +8,10 @@
     "index.js"
   ],
   "local": [
-  	"nodelist",
-  	"minimax",
-  	"resort",
-    "state"
+    "nodelist",
+    "minimax",
+    "resort",
+    "state",
+    "tag"
   ]
 }

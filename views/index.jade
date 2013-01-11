@@ -13,6 +13,8 @@ mixin resort(resort)
       != decorateResort(resort)
       a.right.icon-alone.minimax(href='#')
         span.ls-minimax
+      a.right.icon-alone.star(href='#')
+        span.ls-star
     ul.lifts.expandable
       for status, name in resort.status
         li.lift
@@ -33,9 +35,16 @@ block content
 
   .content(class='content-#{ resorts.length + 1}')
     ui.tags
+      li.starred
+        a(href='/stars')
+          span Starred
+          span.count
+      li.all
+        a(href='/')
+          span All
+          span.count (#{ all.length })
       for obj, tag in tags
-        - var href = (tag === 'all') ? '/' : '/tag/' + tag;
         li
-          a(href=href)
+          a(href='/tag/' + tag)
             span= obj.label
-            span (#{ obj.members.length })
+            span.count (#{ obj.members.length })

@@ -1,0 +1,11 @@
+{
+  "name": "tag",
+  "dependencies": {
+    "component/classes": "*"
+  },
+  "scripts": [
+    "index.js"
+  ],
+  "local": [
+  ]
+}
