@@ -1,4 +1,14 @@
 
+1.6.1 / 2013-01-11 
+==================
+
+  * Aspen Mountain
+  * Aspen Highlands
+  * Buttermilk
+  * Extract aspen status parsing to a separate module
+  * Snowmass
+  * Big Sky
+
 1.6.0 / 2013-01-10 
 ==================
 
