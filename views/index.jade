@@ -35,6 +35,9 @@ block content
 
   .content(class='content-#{ resorts.length + 1}')
     ui.tags
+      li
+        a(href='/stars')
+          span Starred
       for obj, tag in tags
         - var href = (tag === 'all') ? '/' : '/tag/' + tag;
         li

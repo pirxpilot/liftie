@@ -50,6 +50,7 @@ app.configure('development', function(){
 app.get('/', routes.index);
 app.get('/resort/:resort', routes.index);
 app.get('/tag/:tag', routes.tag);
+app.get('/stars', routes.stars);
 app.get('/api/resort/:resort', routes.api);
 app.get('/sitemap.xml', routes.sitemap);
 
