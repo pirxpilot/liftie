@@ -1,4 +1,15 @@
 
+1.6.0 / 2013-01-10 
+==================
+
+  * Preserve 'open' state for resorts
+  * tag component can update the tag counter
+  * Remove 'all' from tags structure
+  * /stars URL displays stars resorts only
+  * Properly update starred items cookie
+  * Allow users to star resorts
+  * Add star to icon font
+
 1.5.0 / 2013-01-10 
 ==================
 
