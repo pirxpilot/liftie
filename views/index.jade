@@ -35,16 +35,16 @@ block content
 
   .content(class='content-#{ resorts.length + 1}')
     ui.tags
-      li
+      li.starred
         a(href='/stars')
           span Starred
-          span.starred-count
-      li
+          span.count
+      li.all
         a(href='/')
           span All
-          span (#{ all.length })
+          span.count (#{ all.length })
       for obj, tag in tags
         li
           a(href='/tag/' + tag)
             span= obj.label
-            span (#{ obj.members.length })
+            span.count (#{ obj.members.length })
