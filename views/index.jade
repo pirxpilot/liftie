@@ -38,9 +38,13 @@ block content
       li
         a(href='/stars')
           span Starred
+          span.starred-count
+      li
+        a(href='/')
+          span All
+          span (#{ all.length })
       for obj, tag in tags
-        - var href = (tag === 'all') ? '/' : '/tag/' + tag;
         li
-          a(href=href)
+          a(href='/tag/' + tag)
             span= obj.label
             span (#{ obj.members.length })
