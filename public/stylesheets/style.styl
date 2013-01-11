@@ -83,6 +83,13 @@ a
     padding-top 2px
     border-bottom solid 1px transparent
 
+    a.left
+      margin-right .3em
+
+    a.right
+      margin-left .3em
+
+
   footer
     border-top solid 1px transparent
     font-size .8em
@@ -130,7 +137,6 @@ a
       padding 2px
 
 .minimax
-  display block
   padding-right 2px
 
 .ls-minimax:before
@@ -140,8 +146,12 @@ a
   .ls-minimax:before
     content "\e032" // minus
 
-.resort-name
-  margin 0 .3em
+.ls-star:before
+  content "\e036" // outline star
+
+.starred
+  .ls-star:before
+    content "\e035" // full star
 
 .resort-link
   font-size .9em
