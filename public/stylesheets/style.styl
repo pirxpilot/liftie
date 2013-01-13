@@ -176,6 +176,27 @@ a
     [class*=" ls-"]:before
       margin-right 2px
 
+.summary-color-bar
+  clearfix()
+  width 100%
+  margin-bottom .5em
+
+  .open,
+  .hold,
+  .scheduled,
+  .closed
+    height .3em
+    float left
+
+  .open
+    background-color $green
+  .hold
+    background-color $yellow
+  .scheduled
+    background-color $blue
+  .closed
+    background-color $red
+
 .tags
   list-style none
   display block

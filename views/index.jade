@@ -25,10 +25,13 @@ mixin resort(resort)
           span.name #{name}
           span.status(class='ls-#{status}')
     footer.expandable
+      .summary-color-bar
+        for key in ['open', 'hold', 'scheduled', 'closed']
+          div(class='#{key}', style='width:#{ resort.stats.percentage[key] }%;')
       ul.summary
-        for value, key in resort.stats
+        for key in ['open', 'hold', 'scheduled', 'closed']
           li
-            span(class='ls-#{key}')= value
+            span(class='ls-#{key}')= resort.stats[key]
             span #{key}
       .auto-refresh-reminder
         span Next update in&nbsp;
