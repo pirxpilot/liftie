@@ -1,7 +1,11 @@
 extends layout
 
 mixin resort(resort)
-  section.resort(data-resort=resort.id, class=resort.open ? 'open' : '')
+  section.resort(
+    data-resort=resort.id,
+    data-timestamp=resort.timestamp,
+    class=resort.open ? 'open' : ''
+  )
     header
       a.left.icon-alone.resort-link(
         href=resort.href,
