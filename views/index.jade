@@ -30,6 +30,10 @@ mixin resort(resort)
           li
             span(class='ls-#{key}') &nbsp;#{value}&nbsp;
             span #{key}
+      .auto-refresh-reminder
+        span Next update in&nbsp;
+        span.time-to-refresh 60
+        span &nbsp;seconds
 
 
 block content
