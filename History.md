@@ -1,4 +1,10 @@
 
+1.7.0 / 2013-01-12 
+==================
+
+  * Display 'next update' indicator for each resort
+  * Add timestamp to lift status
+
 1.6.3 / 2013-01-12 
 ==================
 
