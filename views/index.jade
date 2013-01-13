@@ -28,7 +28,7 @@ mixin resort(resort)
       ul.summary
         for value, key in resort.stats
           li
-            span(class='ls-#{key}') &nbsp;#{value}&nbsp;
+            span(class='ls-#{key}')= value
             span #{key}
       .auto-refresh-reminder
         span Next update in&nbsp;
