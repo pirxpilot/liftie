@@ -81,7 +81,7 @@ a
     font-size 1.2em
     line-height 1em
     padding-top 2px
-    border-bottom solid 1px transparent
+    border-bottom solid 2px transparent
 
     a.left
       margin-right .3em
@@ -91,7 +91,6 @@ a
 
 
   footer
-    border-top solid 1px transparent
     font-size .8em
 
   &.open
@@ -99,19 +98,10 @@ a
       border-color rgba(0,0,0,.5)
       padding-bottom .5em
 
-    footer
-      border-color rgba(0,0,0,.5)
-      padding-top .5em
-
 .open
   .expandable
     opacity 1
-
-  .lifts.expandable
     max-height 3000px
-
-  footer.expandable
-    max-height 300px
 
 .expandable
   transition all .4s ease
@@ -139,6 +129,7 @@ a
 .auto-refresh-reminder
   font-style italic
   float right
+  padding-right 2px
 
 .minimax
   padding-right 2px
@@ -185,7 +176,7 @@ a
   .hold,
   .scheduled,
   .closed
-    height .3em
+    height 2px
     float left
 
   .open
