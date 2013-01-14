@@ -6,7 +6,7 @@ $red=#ff1e00
 $yellow=#ffa200
 $green=#00bf32
 $link-color=#00B7FF
-$background-color=GhostWhite
+$background-color=#F8F8FF
 
 $column-width=320px
 $column-gutter=16px
@@ -188,23 +188,6 @@ a
   .closed
     background-color $red
 
-.tags
-  list-style none
-  display block
-  margin 0 ($column-gutter / 2)
-
-  li
-    font-size .9em
-    font-weight bold
-    float left
-    margin-right 1em
-    margin-bottom .2em
-    padding .5em
-    background-color $background-color
-
-    &:last-child
-      margin-right 0
-
 body > footer
   clear both
   padding-top 1em
@@ -218,6 +201,8 @@ body > footer
 
     &:hover
       color black
+
+@import './tags'
 
 contentWidth(n)
   return n == 1 ? $column-width : n * ($column-width + $column-gutter)
