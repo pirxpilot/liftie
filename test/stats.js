@@ -9,7 +9,13 @@ describe('stats', function() {
       open: 0,
       closed: 0,
       hold: 0,
-      scheduled: 0
+      scheduled: 0,
+      percentage: {
+        open: 0,
+        closed: 0,
+        hold: 0,
+        scheduled: 0
+      }
     });
   });
   it('should count all status', function() {
@@ -33,7 +39,13 @@ describe('stats', function() {
       open: 5,
       closed: 4,
       hold: 2,
-      scheduled: 3
+      scheduled: 3,
+      percentage: {
+        open: 35.7,
+        closed: 28.5,
+        hold: 14.2,
+        scheduled: 21.4
+      }
     });
 
   });

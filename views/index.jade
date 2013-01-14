@@ -19,21 +19,25 @@ mixin resort(resort)
         span.ls-minimax
       a.right.icon-alone.star(href='#')
         span.ls-star
-    ul.lifts.expandable
-      for status, name in resort.status
-        li.lift
-          span.name #{name}
-          span.status(class='ls-#{status}')
-    footer.expandable
-      ul.summary
-        for value, key in resort.stats
-          li
-            span(class='ls-#{key}') &nbsp;#{value}&nbsp;
-            span #{key}
-      .auto-refresh-reminder
-        span Next update in&nbsp;
-        span.time-to-refresh 60
-        span &nbsp;seconds
+    .expandable
+      ul.lifts.expandable
+        for status, name in resort.status
+          li.lift
+            span.name #{name}
+            span.status(class='ls-#{status}')
+      footer
+        .summary-color-bar
+          for key in ['open', 'hold', 'scheduled', 'closed']
+            div(class='#{key}', style='width:#{ resort.stats.percentage[key] }%;')
+        ul.summary
+          for key in ['open', 'hold', 'scheduled', 'closed']
+            li
+              span(class='ls-#{key}')= resort.stats[key]
+              span #{key}
+        .auto-refresh-reminder
+          span Next update in&nbsp;
+          span.time-to-refresh 60
+          span &nbsp;seconds
 
 
 block content
