@@ -120,8 +120,6 @@ BSD
 
 ## TODO
 
-- config UI - add/remove resorts on the index page
-- refresh indicators - page refreshes approx. once per minute but it's hard to notice
 - refresh on change only (web sockets?)
 - detect changes and enable change notifications (HTML5 notifications)
 - tweet on change support

@@ -1,4 +1,14 @@
 
+1.8.0 / 2013-01-13 
+==================
+
+  * Display status-color bar instead of footer border
+  * Percentage color bar for each resort
+  * Calculate percentage as part of stats
+  * Add margins to summary counters
+  * Stevens Pass
+  * Sun Valley
+
 1.7.0 / 2013-01-12 
 ==================
 
