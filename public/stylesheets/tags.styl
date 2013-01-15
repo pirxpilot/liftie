@@ -1,4 +1,4 @@
-$tagsDefaultColor=$link-color
+$tagColor=$link-color
 $tagPadding=5px
 
 .tags
@@ -7,8 +7,9 @@ $tagPadding=5px
   margin 0 ($column-gutter / 2)
 
   li
-    position relative
+    display block
     float left
+    position relative
     font-size .9em
     margin-right 1.2em
     margin-bottom .6em
@@ -23,17 +24,9 @@ $tagPadding=5px
 
   a
     color $link-color
-    text-decoration none
     text-shadow 0 1px white
-    background $background-color
-    // background linear-gradient(top, lighten($background-color, 5%), darken($background-color, 5%))
-    border-width 1px 0 1px 1px
-    border-style solid
-    border-color  $link-color
-    border-color: darken($background-color, 8%) darken($background-color, 10%) darken($background-color, 12%);
-    padding $tagPadding
-    box-shadow inset 0 0 0 1px rgba(white, .7), 0 1px 2px rgba(black, .05)
-
+    padding $tagPadding ($tagPadding + 1) $tagPadding ($tagPadding + 2)
+    gradient-background()
 
     .count
       position absolute
@@ -45,15 +38,12 @@ $tagPadding=5px
       padding $tagPadding 0 $tagPadding 2px
       color white
       text-shadow 0 -1px rgba(black, .3)
-      background $tagsDefaultColor
-      background linear-gradient(top, lighten($tagsDefaultColor, 5%), darken($tagsDefaultColor, 5%))
-      border 1px solid
-      border-color darken($tagsDefaultColor, 8%) darken($tagsDefaultColor, 10%) darken($tagsDefaultColor, 12%)
+      gradient-background($tagColor)
       opacity: .95
       transition .3s ease-out
       transition-property padding max-width
 
     &:hover .count
-      padding $tagPadding 7px $tagPadding 6px
+      padding $tagPadding ($tagPadding + 2) $tagPadding ($tagPadding + 1)
       max-width 40px
-      box-shadow inset 0 0 0 1px rgba(white, .15), 1px 1px 2px rgba(black, .2)
+      box-shadow 1px 1px 2px rgba(black, .2)
