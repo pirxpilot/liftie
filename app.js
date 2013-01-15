@@ -19,6 +19,7 @@ app.configure(function(){
   app.locals.min = '.min';
   app.locals.cachify = cachify.cachify; // needed since our cachify middleware is below router
   app.locals.decorateResort = function() {};
+  app.locals.decorateAbout = function() {};
   app.locals.siteUrl = process.env.SITE_URL || 'http://liftie.info';
   app.locals.siteDescription = 'Clean, simple, easy to read, fast ski resort lift status.';
   app.locals.og= {
@@ -53,7 +54,7 @@ app.get('/tag/:tag', routes.tag);
 app.get('/stars', routes.stars);
 app.get('/api/resort/:resort', routes.api);
 app.get('/sitemap.xml', routes.sitemap);
-
+app.get('/about', routes.about);
 
 if (!module.parent) {
   http.createServer(app).listen(app.get('port'), function(){
