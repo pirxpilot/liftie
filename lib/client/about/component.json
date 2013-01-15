@@ -1,0 +1,13 @@
+{
+  "name": "about",
+  "dependencies": {
+    "component/classes": "*",
+    "component/cookie": "*",
+    "component/event": "*"
+  },
+  "scripts": [
+    "index.js"
+  ],
+  "local": [
+  ]
+}
