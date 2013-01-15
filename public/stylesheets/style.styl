@@ -1,15 +1,22 @@
 @import 'nib'
 
 // colors: http://colorschemedesigner.com/#0542cw0w0w0w0
-$blue=#104ba9
-$red=#ff1e00
-$yellow=#ffa200
-$green=#00bf32
-$link-color=#00B7FF
-$background-color=GhostWhite
+$blue=hsl(217, 83, 36)
+$red=hsl(7, 100, 50)
+$yellow=hsl(38, 100, 50)
+$green=hsl(136, 100, 36)
+
+$link-color=hsl(197, 100, 43)
+$background-color=hsl(220, 96, 98)
+$text-color=hsl(0, 0, 20)
 
 $column-width=320px
 $column-gutter=16px
+
+
+gradient-background($color = $background-color, $lighten = 5%, $darken = 5%)
+  background-color $color
+  background linear-gradient(top, lighten($color, $lighten), darken($color, $darken))
 
 @import './icons'
 
@@ -51,14 +58,16 @@ $column-gutter=16px
 body
   font-size: 1em
   font-family: Ubuntu, "Lucida Grande", Helvetica, Arial, sans-serif
+  color $text-color
 
 a
   color $link-color
+  text-shadow 0 1px white
   transition color .3s ease
   text-decoration none
 
   &:hover
-    color saturate($link-color, 40%)
+    color saturate($link-color, 20%)
 
 .resort
   clearfix()
@@ -67,7 +76,7 @@ a
   width $column-width
   padding .8em
   float left
-  background-color $background-color
+  gradient-background()
 
   &:last-child
     margin-bottom 0
@@ -95,7 +104,7 @@ a
 
   &.open
     header
-      border-color rgba(0,0,0,.5)
+      border-color rgba(black,.3)
       padding-bottom .5em
 
 .open
@@ -123,10 +132,11 @@ a
     .status
       font-size 1.1em
       float right
-      text-shadow 1px 1px 2px rgba(0,0,0,.3)
+      text-shadow 1px 1px white
       padding 2px
 
 .auto-refresh-reminder
+  color lighten($text-color, 30%)
   font-style italic
   float right
   padding-right 2px
@@ -167,6 +177,10 @@ a
     [class*=" ls-"]:before
       margin-right 2px
 
+    [class^="ls-"]:before,
+    [class*=" ls-"]:before
+      text-shadow 1px 1px white
+
 .summary-color-bar
   clearfix()
   width 100%
@@ -188,23 +202,6 @@ a
   .closed
     background-color $red
 
-.tags
-  list-style none
-  display block
-  margin 0 ($column-gutter / 2)
-
-  li
-    font-size .9em
-    font-weight bold
-    float left
-    margin-right 1em
-    margin-bottom .2em
-    padding .5em
-    background-color $background-color
-
-    &:last-child
-      margin-right 0
-
 body > footer
   clear both
   padding-top 1em
@@ -218,6 +215,8 @@ body > footer
 
     &:hover
       color black
+
+@import './tags'
 
 contentWidth(n)
   return n == 1 ? $column-width : n * ($column-width + $column-gutter)
