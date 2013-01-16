@@ -1,0 +1,31 @@
+.about
+  h1
+    font-size 1.2em
+
+  clearfix()
+  gradient-background()
+  box-sizing border-box
+  padding 1em
+
+  p
+    margin .5em 0
+    line-height 1.5em
+
+    [class^="ls-"]:before,
+    [class*=" ls-"]:before
+      color $link-color
+      text-shadow 1px 1px white
+      margin-right .2em
+
+  footer
+    a
+      font-size .9em
+      color white
+      text-shadow 0 -1px rgba(black, .3)
+      display block
+      float right
+      padding .3em .5em
+      gradient-background($link-color)
+
+      &:hover
+        gradient-background(lighten($link-color, 10%))

@@ -1,5 +1,7 @@
 extends layout
 
+include about-section
+
 mixin resort(resort)
   section.resort(
     data-resort=resort.id,
@@ -41,6 +43,7 @@ mixin resort(resort)
 
 
 block content
+  mixin about('hidden')
   .content(class='content-#{ resorts.length }')
     for resort in resorts
       mixin resort(resort)

@@ -9,6 +9,7 @@
   ],
   "local": [
     "analytics",
+    "about",
     "nodelist",
     "minimax",
     "resort",
