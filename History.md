@@ -1,4 +1,24 @@
 
+1.9.0 / 2013-01-16 
+==================
+
+  * Loveland
+  * Client side of about component
+  * Include /about link in the sitemap
+  * About page for liftie
+  * Google Analytics
+
+1.8.1 / 2013-01-15 
+==================
+
+  * Minor color adjustment (darker links, blue background)
+  * Auto-hiding tags counters
+  * Remove parens around tag count
+  * Waterville Valley
+  * Gunstock
+  * Wildcat
+  * Attitash
+
 1.8.0 / 2013-01-13 
 ==================
 
