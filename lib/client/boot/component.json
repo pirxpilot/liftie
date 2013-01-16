@@ -8,6 +8,7 @@
     "index.js"
   ],
   "local": [
+    "analytics",
     "nodelist",
     "minimax",
     "resort",
