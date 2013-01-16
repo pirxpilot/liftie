@@ -1,0 +1,11 @@
+{
+  "name": "analytics",
+  "dependencies": {
+  },
+  "scripts": [
+    "index.js"
+  ],
+  "local": [
+  	"dataset"
+  ]
+}
