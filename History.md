@@ -1,8 +1,12 @@
 
-1.9.0 / 2013-01-16 
+1.9.1 / 2013-01-16 
 ==================
 
   * Loveland
+
+1.9.0 / 2013-01-16 
+==================
+
   * Client side of about component
   * Include /about link in the sitemap
   * About page for liftie
