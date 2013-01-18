@@ -15,7 +15,7 @@ describe('parse wildcat', function() {
         'Snowcat Triple': 'open',
         'Snowbelt': 'open',
         'Tomcat Triple': 'closed',
-        'Wildcat Express Quad': 'open'
+        'Wildcat Express Quad': 'hold'
       };
       assert.deepEqual(status, expected);
       done(err);
