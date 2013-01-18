@@ -1,4 +1,11 @@
 
+1.9.5 / 2013-01-18 
+==================
+
+ * Mount Snow
+ * Jiminy Peak
+ * Typo in google analytics queue name (qaq -> gaq)
+
 1.9.4 / 2013-01-17 
 ==================
 
