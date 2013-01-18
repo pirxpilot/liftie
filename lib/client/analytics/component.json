@@ -1,11 +1,11 @@
 {
   "name": "analytics",
   "dependencies": {
+  	"code42day/dataset": "*"
   },
   "scripts": [
     "index.js"
   ],
   "local": [
-  	"dataset"
   ]
 }
