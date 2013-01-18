@@ -1,4 +1,12 @@
 
+1.9.4 / 2013-01-17 
+==================
+
+ * Prevent parsing errors from breaking liftie
+ * Use code42day/dataset component instead of defining our own
+ * Kirkwood
+ * Let resort recalculate URL before status request
+
 1.9.2 / 2013-01-17 
 ==================
 
