@@ -1,6 +1,7 @@
 {
   "name": "resort",
   "dependencies": {
+    "code42day/dataset": "*",
     "component/classes": "*",
     "visionmedia/superagent": "*"
   },
@@ -8,6 +9,5 @@
     "index.js"
   ],
   "local": [
-    "dataset"
   ]
 }

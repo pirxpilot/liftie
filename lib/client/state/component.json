@@ -1,6 +1,7 @@
 {
   "name": "state",
   "dependencies": {
+    "code42day/dataset": "*",
     "component/cookie": "*",
     "component/classes": "*"
   },
@@ -8,6 +9,5 @@
     "index.js"
   ],
   "local": [
-    "dataset"
   ]
 }
