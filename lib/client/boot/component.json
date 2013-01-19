@@ -3,14 +3,14 @@
   "description": "Main app boot component",
   "dependencies": {
     "a-sk/domready": "*",
-    "code42day/ga": "*"
+    "code42day/ga": "*",
+    "component/enumerable": "*"
   },
   "scripts": [
     "index.js"
   ],
   "local": [
     "about",
-    "nodelist",
     "minimax",
     "resort",
     "state",
