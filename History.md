@@ -1,4 +1,11 @@
 
+1.9.6 / 2013-01-19 
+==================
+
+ * Brian Head
+ * Snowbasin
+ * Use code42day/ga component for Google Analytics
+
 1.9.5 / 2013-01-18 
 ==================
 
