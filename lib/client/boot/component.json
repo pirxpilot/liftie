@@ -2,13 +2,13 @@
   "name": "boot",
   "description": "Main app boot component",
   "dependencies": {
-    "a-sk/domready": "*"
+    "a-sk/domready": "*",
+    "code42day/ga": "*"
   },
   "scripts": [
     "index.js"
   ],
   "local": [
-    "analytics",
     "about",
     "nodelist",
     "minimax",
