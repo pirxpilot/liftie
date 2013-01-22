@@ -5,7 +5,7 @@ SRC = $(wildcard lib/client/*/*.js)
 all: lint test build
 
 %.min.js: %.js
-	$(NODE_BIN)/uglifyjs $< --output $@
+	$(NODE_BIN)/uglifyjs $< --mangle --output $@
 
 lint:
 	$(NODE_BIN)/jshint *.js lib test
