@@ -1,4 +1,10 @@
 
+1.9.7 / 2013-01-22 
+==================
+
+ * Whiteface
+ * Use component/enumerable instead of local/nodelist
+
 1.9.6 / 2013-01-19 
 ==================
 
