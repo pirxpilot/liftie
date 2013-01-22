@@ -1,4 +1,10 @@
 
+1.9.8 / 2013-01-22 
+==================
+
+ * Allow uglify to mangle source
+ * Fix issue with disappearing stars
+
 1.9.7 / 2013-01-22 
 ==================
 
