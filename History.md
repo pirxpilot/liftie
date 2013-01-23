@@ -1,4 +1,11 @@
 
+1.9.9 / 2013-01-22 
+==================
+
+ * Fix parsing Aspen resorts
+ * Compile style.css before launching liftie
+ * Beaver Creek
+
 1.9.8 / 2013-01-22 
 ==================
 
