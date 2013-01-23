@@ -7,7 +7,7 @@ var tags = require('../../lib/routes/tags');
 describe('tags', function() {
   it('should classify object according to tags', function() {
     var objs = {
-      'a': 't1,t2,t3',
+      'a': 't3,t2,t1',
       'b': 't2',
       'c': 't1,t2',
       'd': ''
@@ -25,7 +25,7 @@ describe('tags', function() {
     assert.deepEqual(tt.t1.members, ['a', 'c']);
     assert.deepEqual(tt.t2.members, ['a', 'b', 'c']);
     assert.deepEqual(tt.t3.members, ['a']);
-    assert.equal(Object.keys(tt).length, 3);
+    assert.deepEqual(Object.keys(tt), ['t1', 't2', 't3']);
   });
 
   it('should conver names to cannonical form', function() {
@@ -47,5 +47,6 @@ describe('tags', function() {
     assert.deepEqual(tt['nice-tag'].label, 'Nice Tag');
     assert.deepEqual(tt['another-tag'].members, ['a', 'b']);
     assert.deepEqual(tt['another-tag'].label, 'Another Tag');
+    assert.deepEqual(Object.keys(tt), ['another-tag', 'nice-tag']);
   });
 });
