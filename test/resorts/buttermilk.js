@@ -12,13 +12,13 @@ describe('parse buttermilk', function() {
     stream.pipe(parser(parse, function(err, status) {
       var expected = {
         'Summit Express': 'open',
-        'Panda Peak': 'open',
-        'Mitey Mite': 'open',
+        'Panda Peak': 'closed',
+        'Mitey Mite': 'closed',
         'West Buttermilk Express': 'open',
-        'Summit Handle-Tow': 'closed',
+        'Summit Handle-Tow': 'open',
         'Tiehack Express': 'open',
-        'Panda Carpet': 'open',
-        'Mitey Carpet': 'open'
+        'Panda Carpet': 'closed',
+        'Mitey Carpet': 'closed'
       };
       assert.deepEqual(status, expected);
       done(err);
