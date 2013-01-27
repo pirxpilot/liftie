@@ -1,4 +1,12 @@
 
+1.10.3 / 2013-01-27 
+==================
+
+ * Use kirkwood mobile website
+ * Add precomposed icon for older Androids
+ * Link 57 icon to base icon
+ * Optimize png files
+
 1.10.2 / 2013-01-26 
 ==================
 
