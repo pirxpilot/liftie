@@ -11,18 +11,19 @@ describe('parse kirkwood', function() {
     stream.on('error', done);
     stream.pipe(parser(parse, function(err, status) {
       var expected = {
-        'SnowKirk': 'scheduled',
-        'Caples Crest': 'scheduled',
-        'Iron Horse': 'scheduled',
-        'Sunrise': 'scheduled',
-        'Solitude': 'scheduled',
-        'Cornice Express': 'scheduled',
-        'TC Express': 'scheduled',
-        'Bunny': 'scheduled',
-        'Wagon Wheel': 'scheduled',
-        'The Reut': 'scheduled',
-        'Vista': 'scheduled',
-        'Covered Wagon': 'scheduled'
+        'SnowKirk': 'open',
+        'Caples Crest': 'open',
+        'Iron Horse': 'open',
+        'Sunrise': 'open',
+        'Solitude': 'open',
+        'Cornice Express': 'open',
+        'TC Express': 'open',
+        'Slide Mountain': 'closed',
+        'Bunny': 'open',
+        'Wagon Wheel': 'open',
+        'The Reut': 'open',
+        'Vista': 'open',
+        'Covered Wagon': 'open'
       };
       assert.deepEqual(status, expected);
       done(err);
