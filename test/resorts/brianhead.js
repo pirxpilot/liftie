@@ -12,12 +12,12 @@ describe('parse brianhead', function() {
     stream.pipe(parser(parse, function(err, status) {
       var expected = {
         'Wildflower': 'open',
-        'Giant Steps': 'open',
+        'Giant Steps': 'hold',
         'Blackfoot': 'open',
         'Navajo': 'open',
-        'Roulette': 'open',
+        'Roulette': 'hold',
         'Pioneer': 'open',
-        'The Dunes': 'open',
+        'The Dunes': 'hold',
         'Alpen Glow': 'open'
       };
       assert.deepEqual(status, expected);
