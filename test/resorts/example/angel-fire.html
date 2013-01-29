@@ -1,0 +1,604 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--[if IE 6]><html id="ie6" dir="ltr" lang="en-US"><![endif]-->
+<!--[if IE 7]><html id="ie7" dir="ltr" lang="en-US"><![endif]-->
+<!--[if IE 8]><html id="ie8" dir="ltr" lang="en-US"><![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!--><html dir="ltr" lang="en-US"><!--<![endif]-->
+
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width" />
+
+<script src="http://widgets.twimg.com/j/2/widget.js"></script>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-20945049-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+	<title>Angel Fire Resort | Snow, Trails, Grooming &amp; Lifts</title>
+
+	<link rel="profile" href="http://gmpg.org/xfn/11" />
+	<link rel="stylesheet" type="text/css" media="all" href="http://www.angelfireresort.com/wp-content/themes/twentyeleven-afr/style.css" />
+	<link rel="stylesheet" type="text/css" media="all" href="http://www.angelfireresort.com/wp-content/themes/twentyeleven-afr/js/jquery.fancybox-1.3.4.css" />
+	<link rel="stylesheet" type="text/css" href="http://www.angelfireresort.com/wp-content/themes/twentyeleven-afr/css/dateinput.css"/>
+
+	<!--[if lt IE 9]>
+		<script src="http://www.angelfireresort.com/wp-content/themes/twentyeleven-afr/js/html5.js" type="text/javascript"></script>
+	<![endif]-->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+	<script src="http://cloud.github.com/downloads/malsup/cycle/jquery.cycle.all.latest.js"></script>
+	<script src="http://www.angelfireresort.com/wp-content/themes/twentyeleven-afr/js/ts_picker.js"></script>
+	<script src="http://www.angelfireresort.com/wp-content/themes/twentyeleven-afr/js/jquery.fancybox-1.3.4.pack.js"></script>
+
+        <script src="http://www.angelfireresort.com/wp-content/themes/twentyeleven-afr/js/jquery.tools.min.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+		    $('#winter-home, #summer-home').before('<div id="progress">').cycle({
+				fx: 'fade',
+				speed: 6000,
+				speedIn: 500,
+				speedOut: 500,
+				pager: '#progress',
+				pagerAnchorBuilder: function(idx, slide) {
+			        return '<a id="progress' + idx + '" href="#"></a>';
+			    }
+			});
+
+
+		    $('#cc-cycle').cycle({
+				fx: 'fade',
+				speed: 3000,
+				speedIn: 500,
+				speedOut: 500
+			});
+
+			$("a.enlarge").fancybox({
+				'hideOnContentClick': false,
+				'titlePosition': 'inside',
+				'titleFormat': function(title, currentArray, currentIndex, currentOpts) {
+					return (title && title.length ? '<b>' + title + '</b>' : '' )+ '<br/>Image ' + (currentIndex + 1) + ' of ' + currentArray.length;
+				}
+			});
+
+	        $('#home nav > ul > li, #winter nav > ul > li, #summer nav > ul > li').hover(function() {
+				  $(this).children('ul').show();
+				}, function() {
+				  $(this).children('ul').hide();
+			});
+
+
+			var content = $('#months_info > div');
+	        content.hide().filter(':first').show();
+
+	        $('#months_nav a').click(function () {
+	                content.hide();
+	                content.filter(this.hash).show();
+	                $('#months_nav a').removeClass('selected');
+	                $(this).addClass('selected');
+	                return false;
+	        }).filter(':first').click();
+
+			var social_content = $('#fb_tw > div');
+	        social_content.hide().filter(':first').show();
+
+	        $('#fb_tw_nav a').click(function () {
+	                social_content.hide();
+	                social_content.filter(this.hash).show();
+	                $('#fb_tw_nav a').removeClass('selected');
+	                $(this).addClass('selected');
+	                return false;
+	        }).filter(':first').click();
+
+
+			var media_content = $('#media_content > div');
+	        media_content.hide().filter(':last').show();
+
+	        $('#media_nav a').click(function () {
+	                media_content.hide();
+	                media_content.filter(this.hash).show();
+	                $('#media_nav a').removeClass('selected');
+	                $(this).addClass('selected');
+	                return false;
+	        }).filter(':last').click();
+
+		var pathname = location.pathname;
+		var highlight;
+
+	    	var pathArray = window.location.pathname.split( '/' );
+	    	var secondLevelLocation = pathArray[2];
+	    	var thirdLevelLocation = pathArray[3];
+
+	        if (secondLevelLocation) {
+	            highlight = $('nav > ul > li a[href$="/' + secondLevelLocation + '/"]');
+	        }
+		if (typeof highlight != 'undefined') {
+		        highlight.parent().addClass('active');
+		}
+
+	        if (thirdLevelLocation) {
+	            highlight = $('nav > ul > li> ul > li > a[href$="/' + thirdLevelLocation + '/"]')
+		}
+		if (typeof highlight != 'undefined') {
+			highlight.parent().addClass('active');
+		}
+		});
+	</script>
+
+	<script type="text/javascript">
+		function checkCondoLodgeHome(selection)
+			{
+				if( selection >= "7" || selection == "10")
+				{
+					document.getElementById('condo_lodge_home').value = "02";
+				}
+				else
+				{
+					document.getElementById('condo_lodge_home').value = "01";
+				}
+			}
+	</script>
+
+	<link rel="alternate" type="application/rss+xml" title="Angel Fire Resort &raquo; Feed" href="http://www.angelfireresort.com/feed" />
+<link rel="alternate" type="application/rss+xml" title="Angel Fire Resort &raquo; Comments Feed" href="http://www.angelfireresort.com/comments/feed" />
+<link rel="alternate" type="application/rss+xml" title="Angel Fire Resort &raquo; Snow, Trails, Grooming &amp; Lifts Comments Feed" href="http://www.angelfireresort.com/winter/mountain/snow-report/feed" />
+<link rel='stylesheet' id='NextGEN-css'  href='http://www.angelfireresort.com/wp-content/plugins/nextgen-gallery/css/ngg_shadow2.css?ver=1.0.0' type='text/css' media='screen' />
+<link rel='stylesheet' id='shutter-css'  href='http://www.angelfireresort.com/wp-content/plugins/nextgen-gallery/shutter/shutter-reloaded.css?ver=1.3.4' type='text/css' media='screen' />
+<link rel='stylesheet' id='page-list-style-css'  href='http://www.angelfireresort.com/wp-content/plugins/sitemap/css/page-list.css?ver=4.0' type='text/css' media='all' />
+<script type='text/javascript' src='http://www.angelfireresort.com/wp-includes/js/jquery/jquery.js?ver=1.7.2'></script>
+<script type='text/javascript' src='http://www.angelfireresort.com/wp-content/plugins/mailman-widget/js/mailman-widget-min.js?ver=3.4.2'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var shutterSettings = {"msgLoading":"L O A D I N G","msgClose":"Click to Close","imageCount":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.angelfireresort.com/wp-content/plugins/nextgen-gallery/shutter/shutter-reloaded.js?ver=1.3.3'></script>
+<script type='text/javascript' src='http://www.angelfireresort.com/wp-content/plugins/nextgen-gallery/js/jquery.cycle.all.min.js?ver=2.9995'></script>
+<script type='text/javascript' src='http://www.angelfireresort.com/wp-content/plugins/nextgen-gallery/js/ngg.slideshow.min.js?ver=1.06'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.angelfireresort.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.angelfireresort.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='Live Webcams' href='http://www.angelfireresort.com/winter/whats-happening/webcams' />
+<link rel='next' title='Just the facts!' href='http://www.angelfireresort.com/winter/mountain/map' />
+<link rel='canonical' href='http://www.angelfireresort.com/winter/mountain/snow-report' />
+<!-- <meta name="NextGEN" version="1.9.6" /> -->
+<script charset="utf-8" type="text/javascript">var switchTo5x=false;</script><script charset="utf-8" type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script><script type="text/javascript">stLight.options({publisher:'wp.b74e6275-1a6c-4ed9-aee0-cc9b37ae6dae'});var st_type='wordpress3.2.1';</script>
+</head>
+
+<body class="page page-id-278 page-child parent-pageid-103 page-template page-template-snow-report-php singular ancestor-of-103 two-column right-sidebar" id="snow-report">
+
+
+
+
+	<div id="page">
+
+		<header>
+
+			<div id="planner">
+
+				<form name="form1" method="get" action="http://pan.angelfireresort.com/irmnet/res/resmain.aspx">
+
+					<h3>Book Now</h3>
+
+					<div class="arrival">
+
+						<h4>Arrival:</h4>
+						<input type="date" name="Arrival"/>
+						<script>
+							$(":date").dateinput({format: 'mm/dd/yyyy', min: 2});
+						</script>
+					</div>
+
+
+					<div class="depart">
+						<h4># of Nights:</h4>
+						<select name="Nights" id="nights" class="dropdown" >
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+							<option value="6">6</option>
+							<option value="7">7</option>
+							<option value="8">8</option>
+							<option value="9">9</option>
+							<option value="10">10</option>
+						</select>
+
+
+					</div>
+
+					<div class="adults">
+						<h4># of Guests:</h4>
+						<select name="People1" id="select3" class="dropdown" onchange="checkCondoLodgeHome(this.value)">
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+							<option value="6">6</option>
+							<option value="7">7</option>
+							<option value="8">8</option>
+							<option value="9">9</option>
+							<option value="10">10</option>
+						</select>
+					</div>
+
+                        <div class="resort">
+                        <h4>Where:</h4>
+                        <select name="resort" id="condo_lodge_home" class="dropdown" >
+                            <option value="01">Lodge</option>
+                            <option value="02">Condo/Home</option>
+
+                        </select>
+                    </div>
+
+					<div class="submit">
+						<input name="Submit" type="image" value="Go!" src="http://www.angelfireresort.com/wp-content/themes/twentyeleven-afr/img/btn-submit.gif" border="0" />
+					</div>
+
+				</form>
+
+			</div>
+
+
+
+
+
+
+			<div id="weather">
+
+            
+				<div class="details">
+					<p class="today">Jan 29, 2013</p>
+					<p class="his"><span class="hi">Hi: 21</span> <span class="lo">Lo: -5</span></p>
+					<p class="forecast"><a href="http://www.angelfireresort.com/winter/weather-report/">Detailed forecast</a></p>
+				</div>
+
+				<div class="temp">
+					<h2>17<span class="deg">&deg;</span></h2>
+				</div>
+
+				<div class="days">
+					<div class="day0">
+						<img src=/accuweather/accuweather_images/06.png><span class='day'>TUE</span>					</div>
+
+					<div class="day1">
+						<img src=/accuweather/accuweather_images/02.png><span class='day'>WED</span>					</div>
+
+					<div class="day20">
+						<img src=/accuweather/accuweather_images/02.png><span class='day'>THU</span>					</div>
+				</div>
+
+			</div>
+
+			<div id="webcams_link">
+				<a href="http://www.angelfireresort.com/winter/whats-happening/webcams/">Webcams</a>
+			</div>
+
+			<div id="search_form">
+					<form method="get" id="searchform" action="http://www.angelfireresort.com/">
+		<label for="s" class="assistive-text">Search</label>
+		<input type="text" class="field" name="s" id="s" placeholder="Search" />
+		<input type="submit" class="submit" name="submit" id="searchsubmit" value="Search" />
+	</form>
+			</div>
+
+		</header>
+
+		<div id="sidebar">
+			<div class="site_toggle" id="winter_toggle">
+				<a id="winter_link" href="http://www.angelfireresort.com/winter/">Winter</a>
+				<a id="summer_link" href="http://www.angelfireresort.com/summer/">Summer</a>
+
+			</div>
+
+			<h1 id="logo"><a href="http://www.angelfireresort.com/winter/">Angel Fire Resort</a></h1>
+
+			<nav>
+				<ul>
+					<li id="plan_mainnav">
+						<a href="http://www.angelfireresort.com/winter/plan/">Plan Your Trip</a>
+						<ul>
+							<li><a href="http://www.angelfireresort.com/winter/plan/lodging/">Lodging</a></li>
+							<li><a href="http://www.angelfireresort.com/winter/plan/dining/">Dining</a></li>
+							<li><a href="http://www.angelfireresort.com/winter/plan/hot-deals/">Hot Deals</a></li>
+							<li><a href="http://www.angelfireresort.com/winter/plan/family-programs/">Family Programs</a></li>
+							<li><a href="http://www.angelfireresort.com/winter/plan/activities-and-calendar/">Activities &amp; Calendar</a></li>
+							<li><a href="http://www.angelfireresort.com/winter/plan/getting-here/">Getting Here</a></li>
+						</ul>
+					</li>
+					<li id="lodge_mainnav">
+						<a href="http://www.angelfireresort.com/winter/lodge/">The Lodge</a>
+						<ul>
+							<li><a href="http://www.angelfireresort.com/winter/lodge/lodging/">Lodging</a></li>
+							<li><a href="http://www.angelfireresort.com/winter/lodge/lodge-dining/">Dining</a></li>
+							<li><a href="http://www.angelfireresort.com/winter/lodge/amenities/">Amenities</a></li>
+							<li><a href="http://www.angelfireresort.com/winter/lodge/hot-deals/">Hot Deals</a></li>
+						</ul>
+					</li>
+					<li id="mountain_mainnav">
+						<a href="http://www.angelfireresort.com/winter/mountain/">Mountain</a>
+						<ul>
+							<li><a href="http://www.angelfireresort.com/winter/mountain/snow-report/">Snow Report</a></li>
+							<li><a href="http://www.angelfireresort.com/winter/mountain/map/">Trail Map, Stats &amp; Info</a></li>
+							<li><a href="http://www.angelfireresort.com/winter/mountain/lift-tickets/">Lift Tickets &amp; Passes</a></li>
+							<li><a href="http://www.angelfireresort.com/winter/mountain/gear-rental/">Gear Rental &amp; Retail</a></li>
+							<li><a href="http://www.angelfireresort.com/winter/mountain/ski-snowboard-school/">Ski &amp; Snowboard School</a></li>
+							<li><a href="http://www.angelfireresort.com/winter/mountain/terrain-parks/">Terrain Parks</a></li>
+							<li><a href="http://www.angelfireresort.com/winter/mountain/night-skiing/">Night Skiing</a></li>
+							<li><a href="http://www.angelfireresort.com/winter/mountain/tubing/">Tubing</a></li>
+							<li><a href="http://www.angelfireresort.com/winter/mountain/nastar-racing/">Nastar Racing</a></li>
+							<li><a href="http://www.angelfireresort.com/winter/country-club/nordic-center/">Nordic Center</a></li>
+
+						</ul>
+					</li>
+					<li id="cc_mainnav">
+						<a href="http://www.angelfireresort.com/winter/country-club/">Country Club</a>
+						<ul>
+							<li><a href="http://www.angelfireresort.com/winter/country-club/country-club-dining/">Dining</a></li>
+							<li><a href="http://www.angelfireresort.com/winter/country-club/country-club-amenities/">Amenities</a></li>
+							<li><a href="http://www.angelfireresort.com/winter/country-club/nordic-center/">Nordic Center</a></li>
+							<li><a href="http://www.angelfireresort.com/winter/country-club/country-club-events/">Events at the Club</a></li>
+							<li><a href="http://www.angelfireresort.com/summer/country-club/golf/">Golf</a></li>
+						</ul>
+					</li>
+					<li id="wh_mainnav">
+						<a href="http://www.angelfireresort.com/winter/whats-happening/">What's Happening</a>
+						<ul>
+							<li><a href="http://www.angelfireresort.com/winter/whats-happening/events-calendar/">Calendar of Events</a></li>
+							<li><a href="http://www.angelfireresort.com/winter/whats-happening/webcams/">Live Webcams</a></li>
+							<li><a href="http://www.angelfireresort.com/winter/whats-happening/winter-activities/">Winter Activities</a></li>
+							<li><a href="http://www.angelfireresort.com/winter/whats-happening/summer-activities/">Summer Activities</a></li>
+						</ul>
+					</li>
+					<li id="groups_mainnav">
+						<a href="http://www.angelfireresort.com/winter/groups/">Groups</a>
+						<ul>
+							<li><a href="http://www.angelfireresort.com/winter/groups/testimonials/">Group Testimonials</a></li>
+							<li><a href="http://www.angelfireresort.com/winter/groups/business-conferences/">Business/Conferences</a></li>
+							<li><a href="http://www.angelfireresort.com/winter/groups/recreation-leisure/">Recreation/Leisure</a></li>
+							<li><a href="http://www.angelfireresort.com/winter/groups/weddings/">Weddings</a></li>
+							<li><a href="http://www.angelfireresort.com/winter/groups/reunions/">Reunions</a></li>
+							<li><a href="http://www.angelfireresort.com/winter/groups/facilities/">Facilities</a></li>
+							<li><a href="http://www.angelfireresort.com/winter/groups/transportation/">Transportation</a></li>
+							<li><a href="http://www.angelfireresort.com/winter/groups/lift-tickets/">Group Lift Tickets</a></li>
+							<li><a href="http://www.angelfireresort.com/winter/groups/rfp/">Request for Proposal</a></li>
+						</ul>
+					</li>
+					<li id="member_mainnav">
+						<a href="http://www.angelfireresort.com/winter/membership/">Membership</a>
+						<ul>
+							<li><a href="http://www.angelfireresort.com/winter/membership/types/">Types</a></li>
+							<li><a href="http://www.angelfireresort.com/winter/membership/team/">Team</a></li>
+							<li><a href="http://www.angelfireresort.com/winter/membership/information/">Information</a></li>
+						</ul>
+					</li>
+					<li id="re_mainnav">
+						<a href="http://www.angelfireresort.com/winter/real-estate/">Real Estate</a>
+						<ul>
+							<li><a href="http://www.angelfireresort.com/winter/real-estate/property-listings/">Property Listings</a>
+	 						<li><a href="http://www.angelfireresort.com/winter/real-estate/valley-of-the-utes/">Valley of the Utes</a></li>
+						</ul>
+					</li>
+					<li id="re_mainnav">
+						<a href="http://www.angelfireresort.com/winter/property-management/">Property Management</a>
+						<ul>
+							<li><a href="http://www.angelfireresort.com/winter/property-management/association-management/">Association Management</a>
+	 						<li><a href="http://www.angelfireresort.com/winter/property-management/home-care-services/">Home Care Services</a>
+							<li><a href="http://www.angelfireresort.com/winter/property-management/vacation-ownership/">Vacation Ownership</a></li>
+							<li><a href="http://www.angelfireresort.com/winter/plan/lodging/condos-homes/">Nightly Rentals</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+
+			<div id="newsletter_signup">
+				<h2>Join our newsletter</h2>
+				<h3>Just type your email address:</h3>
+
+				  <form action="http://visitor.constantcontact.com/d.jsp" method="post" name="ccoptin" target="_blank" id="ccoptin">
+				  	<input type="hidden" name="m" value="1102612802371" />
+				  	<input type="hidden" name="p" value="oi" />
+
+	                <input type="text" class="email" name="ea" value="" />
+	                <input type="submit" name="go" value="" class="submit" />
+	              </form>
+			</div>
+
+			<div id="phone_callout">
+				<h1>1-800-633-PINE</h1>
+			</div>
+
+				<ul id="sub_pages_social_links">
+					<li class="soc_fb"><a href="https://www.facebook.com/angelfireresort/" target="_blank">Facebook</a></li>
+					<li class="soc_tw"><a href="http://www.twitter.com/AngelFireResort/" target="_blank">Twitter</a></li>
+					<li class="soc_em"><a href="http://www.angelfireresort.com/contact" target="_blank">Email</a></li>
+					<li class="soc_yt"><a href="http://www.youtube.com/user/AngelFireResort/" target="_blank">YouTube</a></li>
+				</ul>
+
+		</div>
+
+		<div id="main">
+
+	
+	<img width="1258" height="304" src="http://www.angelfireresort.com/wp-content/uploads/2011/10/SnowReport1.jpg" class="featured-img wp-post-image" alt="SnowReport" title="SnowReport" />
+	<article id="post-278" class="post-278 page type-page status-publish hentry">
+
+		<h1 class="entry-title">Snow, Trails, Grooming &#038; Lifts</h1>
+
+		<div class="entry-content">
+
+
+			<div id="announcements">
+				<p>
+For daily emails of the snow report, just enter
+your email address below and click submit.
+<form action="http://mailman.swcp.com/mailman/subscribe/snowreport" method="POST" target="_blank">
+<input name="email" /><input type="submit" value="Submit!" />
+</form></p>
+				<h2>Announcements</h2>
+				<div class="container">
+					<p>Last night's snowmaking efforts focused on Malpais and Gusto Grande. While you are here, be sure to visit the Nordic Center at the Country Club with over 15km of groomed trails for cross-country skiing and snowshoeing.</p>
+				</div>
+			</div>
+
+			<div class="clear"></div>
+
+			<div id="snow-report-wrapper">
+				<h2>Snow Report</h2>
+
+				<div class="container">
+
+					<div class="col">
+						<h4>Snow Fall</h4>
+						<p>Last 24 Hours: 6&quot;<br />
+						Last 5 Days: 6&quot;<br />
+						Year to Date: 70&quot;<br />
+						Avg Base Depth: 29&quot;</p>
+					</div>
+
+					<div class="col">
+						<h4>Weather</h4>
+						<p>Low: 0&deg;F<br />
+						High: 24&deg;F</p>
+					</div>
+
+					<div class="col">
+						<h4>Surface Conditions</h4>
+						<p>Machine groomed snow.</p>
+					</div>
+
+				</div>
+
+			</div>
+
+			<div class="clear"></div>
+
+			<div id="lifts">
+
+				<h2>Lifts</h2>
+
+				<div class="container">
+
+					<div class="col">
+						<h4>Lift Status</h4>
+						<p>
+							Dreamcatcher is Open<br/>Lift #2 is Open<br/>Chile Express is Open<br/>Lift #3 is Closed<br/>Southwest Flyer is Open<br/>Ski School Wondercarpet is Open<br/>Tubing Wondercarpet is Open<br/>						</p>
+					</div>
+
+					<div class="col">
+						<h4>Ticket Prices</h4>
+						<p><strong>Adult</strong> &mdash; $66<br />
+		                <strong>Teen </strong>&mdash; $56<br />
+		                <strong>Junior</strong> &mdash; $46</p>
+                	</div>
+				</div>
+
+			</div>
+
+			<div class="clear"></div>
+
+			<div id="trails">
+				<table class="table_middle" style="width:500px">
+				<tr>
+						<td><h2>Trails</h2></td>
+						<td>53 of 77 Trails Open // 79.17%</td>
+						<td><img src="http://www.angelfireresort.com/snowreport/images/trails-open.png" alt="Open"/></td>
+						<td>Open</td>
+						<td><img src="http://www.angelfireresort.com/snowreport/images/trails-groomed.png" alt="Groomed"/></td>
+						<td>Groomed</td>
+						<td><img src="http://www.angelfireresort.com/snowreport/images/trails-closed.png" alt="Closed"/></td>
+						<td>Closed</td>
+				</tr>
+				</table>
+				<div class="clear"></div>
+
+				<div class="container">
+
+					<h3>Front Side</h3>
+
+					<div class="col">
+						<h4>Easy</h4>
+						<img src="http://www.angelfireresort.com/snowreport/images/trails-closed.png" alt="Closed"/>&nbsp;Bominable<br/><img src="http://www.angelfireresort.com/snowreport/images/trails-open.png" alt="Open"/>&nbsp;Crossover<br/><img src="http://www.angelfireresort.com/snowreport/images/trails-groomed.png" alt="Groomed"/>&nbsp;Headin' Home<br/><img src="http://www.angelfireresort.com/snowreport/images/trails-groomed.png" alt="Groomed"/>&nbsp;High Road<br/><img src="http://www.angelfireresort.com/snowreport/images/trails-open.png" alt="Open"/>&nbsp;Lower Leon's Lane<br/><img src="http://www.angelfireresort.com/snowreport/images/trails-groomed.png" alt="Groomed"/>&nbsp;Old Bo'<br/><img src="http://www.angelfireresort.com/snowreport/images/trails-groomed.png" alt="Groomed"/>&nbsp;Ridge Run<br/><img src="http://www.angelfireresort.com/snowreport/images/trails-groomed.png" alt="Groomed"/>&nbsp;Valley<br/>					</div>
+
+					<div class="col">
+
+						<h4>Intermediate</h4>
+
+					    <img src="http://www.angelfireresort.com/snowreport/images/trails-open.png" alt="Open"/>&nbsp;Aspen Lane<br/><img src="http://www.angelfireresort.com/snowreport/images/trails-groomed.png" alt="Groomed"/>&nbsp;Bodacious<br/><img src="http://www.angelfireresort.com/snowreport/images/trails-groomed.png" alt="Groomed"/>&nbsp;Domingo<br/><img src="http://www.angelfireresort.com/snowreport/images/trails-groomed.png" alt="Groomed"/>&nbsp;Exhibition<br/><img src="http://www.angelfireresort.com/snowreport/images/trails-open.png" alt="Open"/>&nbsp;Free Flight<br/><img src="http://www.angelfireresort.com/snowreport/images/trails-groomed.png" alt="Groomed"/>&nbsp;Gusto Grande<br/><img src="http://www.angelfireresort.com/snowreport/images/trails-open.png" alt="Open"/>&nbsp;I-25<br/><img src="http://www.angelfireresort.com/snowreport/images/trails-open.png" alt="Open"/>&nbsp;Index<br/><img src="http://www.angelfireresort.com/snowreport/images/trails-closed.png" alt="Closed"/>&nbsp;Jasper's<br/><img src="http://www.angelfireresort.com/snowreport/images/trails-closed.png" alt="Closed"/>&nbsp;Leon's Lane<br/><img src="http://www.angelfireresort.com/snowreport/images/trails-groomed.png" alt="Groomed"/>&nbsp;Lower Domingo<br/><img src="http://www.angelfireresort.com/snowreport/images/trails-groomed.png" alt="Groomed"/>&nbsp;Lower Free Flight<br/><img src="http://www.angelfireresort.com/snowreport/images/trails-open.png" alt="Open"/>&nbsp;Lower I-25<br/><img src="http://www.angelfireresort.com/snowreport/images/trails-groomed.png" alt="Groomed"/>&nbsp;Lower Jasper's<br/><img src="http://www.angelfireresort.com/snowreport/images/trails-open.png" alt="Open"/>&nbsp;Lower Prospector<br/><img src="http://www.angelfireresort.com/snowreport/images/trails-closed.png" alt="Closed"/>&nbsp;Lucky #7<br/><img src="http://www.angelfireresort.com/snowreport/images/trails-groomed.png" alt="Groomed"/>&nbsp;Malpais<br/><img src="http://www.angelfireresort.com/snowreport/images/trails-open.png" alt="Open"/>&nbsp;Mick's<br/><img src="http://www.angelfireresort.com/snowreport/images/trails-open.png" alt="Open"/>&nbsp;Middle<br/><img src="http://www.angelfireresort.com/snowreport/images/trails-open.png" alt="Open"/>&nbsp;Pinky<br/><img src="http://www.angelfireresort.com/snowreport/images/trails-groomed.png" alt="Groomed"/>&nbsp;Prospector<br/><img src="http://www.angelfireresort.com/snowreport/images/trails-open.png" alt="Open"/>&nbsp;Ring<br/><img src="http://www.angelfireresort.com/snowreport/images/trails-open.png" alt="Open"/>&nbsp;Thumb<br/>
+					</div>
+
+					<div class="col">
+
+						<h4>Expert</h4>
+						<img src="http://www.angelfireresort.com/snowreport/images/trails-open.png" alt="Open"/>&nbsp;Elk Glade<br/><img src="http://www.angelfireresort.com/snowreport/images/trails-open.png" alt="Open"/>&nbsp;Glory Hole<br/><img src="http://www.angelfireresort.com/snowreport/images/trails-closed.png" alt="Closed"/>&nbsp;Maxwell's Grant<br/><img src="http://www.angelfireresort.com/snowreport/images/trails-groomed.png" alt="Groomed"/>&nbsp;Moe's Road<br/><img src="http://www.angelfireresort.com/snowreport/images/trails-closed.png" alt="Closed"/>&nbsp;Nightrider Park<br/><img src="http://www.angelfireresort.com/snowreport/images/trails-closed.png" alt="Closed"/>&nbsp;Silver Chute<br/><img src="http://www.angelfireresort.com/snowreport/images/trails-closed.png" alt="Closed"/>&nbsp;Sluice Box<br/><img src="http://www.angelfireresort.com/snowreport/images/trails-closed.png" alt="Closed"/>&nbsp;Upper Domingo<br/>
+					</div>
+
+				</div>
+
+				<div class="clear"></div>
+
+				<div class="container">
+
+					<h3>Back Side</h3>
+
+					<div class="col">
+						<h4>Easy</h4>
+	                      <img src="http://www.angelfireresort.com/snowreport/images/trails-groomed.png" alt="Groomed"/>&nbsp;Fly Home<br/><img src="http://www.angelfireresort.com/snowreport/images/trails-groomed.png" alt="Groomed"/>&nbsp;Fly Way<br/><img src="http://www.angelfireresort.com/snowreport/images/trails-closed.png" alt="Closed"/>&nbsp;Go Round<br/><img src="http://www.angelfireresort.com/snowreport/images/trails-open.png" alt="Open"/>&nbsp;Gully Cut-Off<br/><img src="http://www.angelfireresort.com/snowreport/images/trails-groomed.png" alt="Groomed"/>&nbsp;Hallelujah<br/><img src="http://www.angelfireresort.com/snowreport/images/trails-groomed.png" alt="Groomed"/>&nbsp;Highway<br/><img src="http://www.angelfireresort.com/snowreport/images/trails-closed.png" alt="Closed"/>&nbsp;La Bajada<br/><img src="http://www.angelfireresort.com/snowreport/images/trails-closed.png" alt="Closed"/>&nbsp;Short Fuse<br/>					</div>
+
+					<div class="col">
+
+						<h4>Intermediate</h4>
+
+
+					  	<img src="http://www.angelfireresort.com/snowreport/images/trails-closed.png" alt="Closed"/>&nbsp;Arriba<br/><img src="http://www.angelfireresort.com/snowreport/images/trails-closed.png" alt="Closed"/>&nbsp;Baa-Da-Boom<br/><img src="http://www.angelfireresort.com/snowreport/images/trails-open.png" alt="Open"/>&nbsp;El Sol<br/><img src="http://www.angelfireresort.com/snowreport/images/trails-open.png" alt="Open"/>&nbsp;Fat City<br/><img src="http://www.angelfireresort.com/snowreport/images/trails-open.png" alt="Open"/>&nbsp;Fire Escape<br/><img src="http://www.angelfireresort.com/snowreport/images/trails-open.png" alt="Open"/>&nbsp;Heck No<br/><img src="http://www.angelfireresort.com/snowreport/images/trails-open.png" alt="Open"/>&nbsp;Hully Gully<br/><img src="http://www.angelfireresort.com/snowreport/images/trails-closed.png" alt="Closed"/>&nbsp;Joe's Road<br/><img src="http://www.angelfireresort.com/snowreport/images/trails-closed.png" alt="Closed"/>&nbsp;Lower Fat City<br/><img src="http://www.angelfireresort.com/snowreport/images/trails-open.png" alt="Open"/>&nbsp;Lower Hari Kari<br/><img src="http://www.angelfireresort.com/snowreport/images/trails-open.png" alt="Open"/>&nbsp;Lower Minder Binder<br/><img src="http://www.angelfireresort.com/snowreport/images/trails-open.png" alt="Open"/>&nbsp;Lower Nice Day<br/><img src="http://www.angelfireresort.com/snowreport/images/trails-closed.png" alt="Closed"/>&nbsp;Motherlode<br/><img src="http://www.angelfireresort.com/snowreport/images/trails-open.png" alt="Open"/>&nbsp;Rip Cord<br/><img src="http://www.angelfireresort.com/snowreport/images/trails-open.png" alt="Open"/>&nbsp;Short Cut<br/>					</div>
+
+					<div class="col">
+
+						<h4>Expert</h4>
+
+						<img src="http://www.angelfireresort.com/snowreport/images/trails-closed.png" alt="Closed"/>&nbsp;Angel's Plunge<br/><img src="http://www.angelfireresort.com/snowreport/images/trails-closed.png" alt="Closed"/>&nbsp;Baa-Da-Bing<br/><img src="http://www.angelfireresort.com/snowreport/images/trails-closed.png" alt="Closed"/>&nbsp;Bear Glade<br/><img src="http://www.angelfireresort.com/snowreport/images/trails-closed.png" alt="Closed"/>&nbsp;C-4<br/><img src="http://www.angelfireresort.com/snowreport/images/trails-open.png" alt="Open"/>&nbsp;Charisma<br/><img src="http://www.angelfireresort.com/snowreport/images/trails-closed.png" alt="Closed"/>&nbsp;Detonator<br/><img src="http://www.angelfireresort.com/snowreport/images/trails-open.png" alt="Open"/>&nbsp;Eagle Glade<br/><img src="http://www.angelfireresort.com/snowreport/images/trails-open.png" alt="Open"/>&nbsp;Hari Kari<br/><img src="http://www.angelfireresort.com/snowreport/images/trails-open.png" alt="Open"/>&nbsp;Hell's Bells<br/><img src="http://www.angelfireresort.com/snowreport/images/trails-groomed.png" alt="Groomed"/>&nbsp;Liberation Park<br/><img src="http://www.angelfireresort.com/snowreport/images/trails-open.png" alt="Open"/>&nbsp;Minder Binder<br/><img src="http://www.angelfireresort.com/snowreport/images/trails-open.png" alt="Open"/>&nbsp;Nice Day<br/><img src="http://www.angelfireresort.com/snowreport/images/trails-closed.png" alt="Closed"/>&nbsp;Nitro<br/><img src="http://www.angelfireresort.com/snowreport/images/trails-open.png" alt="Open"/>&nbsp;Nose Dive<br/><img src="http://www.angelfireresort.com/snowreport/images/trails-closed.png" alt="Closed"/>&nbsp;Shane's Glade<br/>					</div>
+				</div>
+
+			</div><span class='st_facebook' st_title='Snow, Trails, Grooming &#038; Lifts' st_url='http://www.angelfireresort.com/winter/mountain/snow-report' ></span><span class='st_twitter' st_title='Snow, Trails, Grooming &#038; Lifts' st_url='http://www.angelfireresort.com/winter/mountain/snow-report' ></span><span class='st_digg' st_title='Snow, Trails, Grooming &#038; Lifts' st_url='http://www.angelfireresort.com/winter/mountain/snow-report' ></span><span class='st_stumbleupon' st_title='Snow, Trails, Grooming &#038; Lifts' st_url='http://www.angelfireresort.com/winter/mountain/snow-report' ></span><span class='st_blogger' st_title='Snow, Trails, Grooming &#038; Lifts' st_url='http://www.angelfireresort.com/winter/mountain/snow-report' ></span><span class='st_fblike' st_title='Snow, Trails, Grooming &#038; Lifts' st_url='http://www.angelfireresort.com/winter/mountain/snow-report' ></span><span class='st_plusone' st_title='Snow, Trails, Grooming &#038; Lifts' st_url='http://www.angelfireresort.com/winter/mountain/snow-report' ></span>
+
+
+		</div>
+
+
+	</article>
+
+
+	</div><!-- #main -->
+
+	<footer>
+
+		<ul>
+			<li><a href="http://www.angelfireresort.com/careers/">Careers</a></li>
+			<li><a href="http://www.angelfireresort.com/contact/">Contact Us</a></li>
+			<li><a href="http://www.angelfireresort.com/press/">Press</a></li>
+			<li><a href="http://www.angelfireresort.com/partners/">Partners</a></li>
+			<li><a href="http://www.angelfireresort.com/privacy-policy/">Privacy Policy</a></li>
+			<li><a href="http://www.angelfireresort.com/donations/">Donations</a></li>
+			<li class="last"><a href="http://www.angelfireresort.com/site-map/">Site Map</a></li>
+		</ul>
+
+		<p id="copyright">&copy; 2011 Angel Fire Resort</p>
+
+	</footer>
+
+</div><!-- #page -->
+
+
+</body>
+</html>
