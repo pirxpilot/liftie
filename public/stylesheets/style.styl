@@ -208,13 +208,20 @@ body > footer
   line-height 1.4em
   text-align center
   a
-    color #444444
     font-size 1.3em
     margin 0 .2em
-    transition color .5s ease
-
+    span
+      color #666666
+      transition color .3s ease
     &:hover
-      color black
+      span
+        color black
+      .ls-google-plus
+        color #D34836
+      .ls-twitter
+        color #20C7FF
+      .ls-facebook
+        color #3B5998
 
 @import './about'
 @import './tags'
