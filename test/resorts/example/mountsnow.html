@@ -8,11 +8,12 @@
 <link href="http://mountsnow.com/wp-content/themes/NEWMOUNTSNOW/ie7.css" rel="stylesheet" type="text/css" />
 <link rel='stylesheet' id='frm-forms0-css'  href='http://mountsnow.com/wp-content/uploads/formidable/css/formidablepro.css?ver=1.06.08' type='text/css' media='all' />
 <link rel='stylesheet' id='collapseomatic-css-css'  href='http://mountsnow.com/wp-content/plugins/jquery-collapse-o-matic/light_style.css?ver=1.5.2' type='text/css' media='all' />
-<link rel='stylesheet' id='flexslider-css-css'  href='http://mountsnow.com/wp-content/plugins/wordpress-slider/views/ssp_skins/default/lib/flexslider.css?ver=3.5' type='text/css' media='all' />
+<link rel='stylesheet' id='flexslider-css-css'  href='http://mountsnow.com/wp-content/plugins/wordpress-slider/views/ssp_skins/default/lib/flexslider.css?ver=3.5.1' type='text/css' media='all' />
 <link rel='stylesheet' id='NextGEN-css'  href='http://mountsnow.com/wp-content/plugins/nextgen-gallery/css/nggallery.css?ver=1.0.0' type='text/css' media='screen' />
 <link rel='stylesheet' id='shutter-css'  href='http://mountsnow.com/wp-content/plugins/nextgen-gallery/shutter/shutter-reloaded.css?ver=1.3.4' type='text/css' media='screen' />
+<link rel='stylesheet' id='tablepress-default-css'  href='http://mountsnow.com/wp-content/plugins/tablepress/css/default.css?ver=0.9-RC' type='text/css' media='all' />
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<meta name="generator" content="WordPress 3.5" />
+<meta name="generator" content="WordPress 3.5.1" />
 <title>Snow Report | Mount Snow</title>
 <!-- CSS Files -->
 <!--[if IE 7]><![endif]-->
@@ -21,6 +22,30 @@
 <!-- End Alternative
 -->
 <link rel="alternate" type="application/rss+xml" title="Mount Snow &raquo; Snow Report Comments Feed" href="http://mountsnow.com/snow-report/feed/" />
+<style type='text/css'>
+.tablepress .odd td {
+background-color: #fff;
+padding:2px;
+}
+.tablepress .even td {
+background-color: #fff;
+padding:2px;
+}
+.tablepress th {
+background-color: #4a86b7;
+border: 1px solid white;
+color: #FFF !important;
+font-weight: bold;
+padding: 4px;
+}
+img{
+align: center;
+}
+.tablepress .sorting {
+    background: #0067B1 url(../img/bg.gif) no-repeat center right;
+    cursor: pointer;
+}
+</style>
 <style>/*Twenty Twelve fixes and other theme fixes and styles :( */
 .flex-caption {
   background: #000;   
@@ -147,7 +172,6 @@
             vertical-align: bottom;
             border: none;
           }
-          
           .printfriendly a:hover {
             cursor: pointer;
           }
@@ -155,6 +179,7 @@
             border: none;
             padding:0;
             margin-right: 6px;
+            display:inline-block;
             box-shadow: none;
             -webkit-box-shadow: none;
             -moz-box-shadow: none;
@@ -180,40 +205,12 @@
             display: none;
           }
         </style>
-<style type="text/css" media="all">
-/* <![CDATA[ */
-@import url("http://mountsnow.com/wp-content/plugins/wp-table-reloaded/css/plugin.css?ver=1.9.3");
-@import url("http://mountsnow.com/wp-content/plugins/wp-table-reloaded/css/datatables.css?ver=1.9.3");
-.wp-table-reloaded .odd td {
-background-color: #fff;
-padding:2px;
-}
-.wp-table-reloaded .even td {
-background-color: #fff;
-padding:2px;
-}
-.wp-table-reloaded th {
-background-color: #4a86b7;
-border: 1px solid white;
-color: #FFF !important;
-font-weight: bold;
-padding: 4px;
-}
-img{
-align: center;
-}
-.wp-table-reloaded .sorting {
-    background: #0067B1 url(../img/bg.gif) no-repeat center right;
-    cursor: pointer;
-}
-/* ]]> */
-</style>
 <style type="text/css">#featured ul { height: 300px; }a.banner-wrapper { height: 110px; }a.thumb-wrapper { height: 110px; width: 110px; }</style>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js?ver=3.5" type="text/javascript"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js?ver=3.5.1" type="text/javascript"></script>
 <script src="http://mountsnow.com/wp-content/plugins/jquery-collapse-o-matic/js/collapse.min.js?ver=1.5.1" type="text/javascript"></script>
 <script src="http://mountsnow.com/wp-content/plugins/jquery-collapse-o-matic/js/jquery.livequery.min.js?ver=1.0" type="text/javascript"></script>
-<script src="http://mountsnow.com/wp-content/plugins/wordpress-slider/views/ssp_skins/default/lib/jquery.flexslider-min.js?ver=3.5" type="text/javascript"></script>
-<script src="http://mountsnow.com/wp-includes/js/comment-reply.js?ver=3.5" type="text/javascript"></script>
+<script src="http://mountsnow.com/wp-content/plugins/wordpress-slider/views/ssp_skins/default/lib/jquery.flexslider-min.js?ver=3.5.1" type="text/javascript"></script>
+<script src="http://mountsnow.com/wp-includes/js/comment-reply.js?ver=3.5.1" type="text/javascript"></script>
 <script src="http://mountsnow.com/wp-content/plugins/nextgen-gallery/shutter/shutter-reloaded.js?ver=1.3.3" type="text/javascript"></script>
 <script src="http://mountsnow.com/wp-content/plugins/nextgen-gallery/js/jquery.cycle.all.min.js?ver=2.9995" type="text/javascript"></script>
 <script src="http://mountsnow.com/wp-content/plugins/nextgen-gallery/js/ngg.slideshow.min.js?ver=1.06" type="text/javascript"></script>
@@ -271,10 +268,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         
       </td> 
     <td width="50"><strong>ACRES</strong><br />
-      294/588</td>
-       <td width="50"><strong>NEW</strong><br />0''</td>
-       <td width="50"><strong>TRAILS</strong><br />44/80</td>
-      <td width="50"><strong>LIFTS</strong><br />9/20</td>
+      499/588</td>
+       <td width="50"><strong>NEW</strong><br />0"</td>
+       <td width="50"><strong>TRAILS</strong><br />62/80</td>
+      <td width="50"><strong>LIFTS</strong><br />8/20</td>
 	</tr>
 </table><a class="snowreportmini" href="http://mountsnow.com/snow-report/">View Full Report</a>
 
@@ -474,42 +471,48 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <table style="font:Arial, Helvetica, sans-serif; font-size:11px;" width="100%" border="0" cellpadding="0" cellspacing="0">
     <tr height="20">
       <td colspan="4" ><h9 style="margin-bottom: 0px;">Current Weather</h9>
-   	  <p>Temps reaching the high teens up top and mid 20's down in the base with variable winds at 12-50 mph. Chance of flurries in the a.m. then partly sunny.</p>
+   	  <p>Cloudy with highs reaching the upper 40's top-to-bottom with fog in the morning.  Winds 12-60 mph out of the southwest.</p>
 </td>
     </tr>
     <tr height="20">
 		<td width="25%" valign="top" >
-        <strong>ACRES:</strong> 294/588<br />
-        <strong>% OPEN (ACR):</strong> 63<br>
-        <strong>MILES OPEN:</strong> 23
+        <strong>ACRES:</strong> 499/588<br />
+        <strong>% OPEN (ACR):</strong> 85<br>
+        <strong>MILES OPEN:</strong> 29
 		</td>
        
 	  <td width="25%" valign="top" style="border-left: 1px dotted #ccc; padding-left: 15px;" >
-      <strong>TRAILS:</strong> 44/80<br>
-      <strong>% OPEN (TRL)</strong>: 55<br />
-        <strong>LIFTS:</strong> 9/20<br />
+      <strong>TRAILS:</strong> 62/80<br>
+      <strong>% OPEN (TRL)</strong>: 78<br />
+        <strong>LIFTS:</strong> 8/20<br />
       </td>
       
       <td width="25%" valign="top" style="border-left: 1px dotted #ccc; padding-left: 15px;" >
-     <strong>NEW SNOW (24 hrs):</strong> 0''<br />
-      <strong>NEW SNOW (7 days):</strong> 4-5"<br>
-<strong>SEASON TOTAL:</strong> 60-61"<br />
-      <strong>BASE:</strong> 20-36'' <br /></td>
+     <strong>NEW SNOW (24 hrs):</strong> 0"<br />
+      <strong>NEW SNOW (7 days):</strong> 5"<br>
+<strong>SEASON TOTAL:</strong> 70-71"<br />
+      <strong>BASE:</strong> 24-38'' <br /></td>
       
       <td width="25%" valign="top" style="border-left: 1px dotted #ccc; padding-left: 15px;" >
-        <strong>GROOMED:</strong> 34/80<br />
-        <strong>SNOWMAKING:</strong> 14/80<br />
-      <strong>CONDITIONS:</strong> Packed Powder / Machine Groomed </td>
+        <strong>GROOMED:</strong> 37/80<br />
+        <strong>SNOWMAKING:</strong> 0/80<br />
+      <strong>CONDITIONS:</strong> Machine Groomed / Wet Pack </td>
   </tr>        
    </table>
 <br />
-Updated at: <em>Jan 17, 2013 at 3:27 pm</em><br /><br /><strong></strong>
-<p>Tons of packed powder out there today folks! Conditions are getting better every day with the help of Mother Nature and our hard working snowmaking crew. If you’re not here already, you need to be because there are a ton of turns to be had!</p>
-<p>If all goes to plan, we’ll have 45 trails opening up for turns at 9 a.m. across all four mountain faces. Plan on joining us tomorrow? Dress warm because it’s going to be cold! The forecast has temps maxing out in the low teens under partly sunny skies. Hand warmers anyone? This is great news for our snowmaking crew because they’ll be able to continue laying down some serious snow on a bunch of trails including Chute, Ripcord, Inferno and Nitro to name a few. On that note, Nitro will be closed again tomorrow so our park crew can finish their re-build. I just got the confirmation that it will be ready to go for Saturday morning. Check the morning report for the full list of snowmaking and groomer trails.</p>
-<p>Lift ticket rates for tomorrow will be $75 for adults (19-64), $57 for youth and seniors (6-18, 65+) and kids 5 and under always ski for FREE!</p>
-<p>As always, we have a bunch of stuff happening around the mountain. College week continues tonight at The Silo on Rt. 100 from 7 – 10 p.m. with a party featuring a DJ from Red Bull. Tomorrow at 1 p.m., we have the DC Pop Up Rail Jam over at Carinthia. Tomorrow night, the live music scene continues with The Edd rocking the night away at The Snow Barn. Sunday we have our third Torchlight Parade and Fireworks starting at 5:30 p.m! So much to do, so little time! <a href="http://mountsnow.com/event-calendar/"> Get your schedule in order!</a></p>
-<p>SNOW</p>
-<p>-Andy</p>
+Updated at: <em>Jan 30, 2013 at 9:18 am</em><br /><br /><strong></strong>
+<p>Hello everyone and happy hump day!  Apparently Ma Nature had her grumpy pants on last night and delivered a small amount of freezing rain but don’t fret…our groomers are some of the best in the business and will have 37 trails groomed out for you this morning.  We are looking at a total of 499 acres open for skiing and riding with 62 trails spread across our four mountain faces.  On groomed terrain, expect a machine groomed wet pack.  As for the ungroomed stuff, there is likely a thin glaze over top of wet packed snow.  Patrol will be out there first thing evaluating ungroomed terrain, but with the mild temps in the forecast things should soften up.</p>
+<p>We can expect some delayed lift openings today due to icing but our crews are out there getting things cleaned up.  Also, Charlie's Chase will be closed today for Valley League.</p>
+<p>Weather for today is a bit out of character for this time of year with temps expected to reach the upper-40’s top-to-bottom under cloudy skies.  It is foggy out there to start the day and we are expecting that to stick around for a little bit but not all day.  Wind gusts are forecasted to reach up to 60 mph out of the SW today which may affect lift service.  Be sure to check back here for the latest.</p>
+<p>With that said, we are anticipating cold temps to make their return by late Thursday evening.  Our snowmakers will be charging the system as soon as possible in an effort to make some more of the best manmade snow on the planet for the weekend!</p>
+<p>Lifts start spinning right at 9am so get here to claim the first tracks on your favorite trail!  Lift ticket rates for today are $75 for adults (19-64), $58 for youth and seniors (18 and under, 65+) and as always kids 5 and under ski for FREE.</p>
+<p>Sunday is The Big Game and we’ve got some crazy lift ticket deals for ya!  </p>
+<p>$99 2-day Super Sunday Plus ticket – valid Sunday Feb 3 and Monday Feb 4</p>
+<p>$59 Super Morning Ticket – valid from 8am til 12:30pm</p>
+<p>$25 “I Hate Football” Ticket – Sunday afternoon 1/2 day</p>
+<p>All deals available at the ticket window. No price changes for Youth / Senior.</p>
+<p>Cheers,</p>
+<p>-Dave</p>
 </p>
 <p>Get the Snow Report in your email inbox every day! <a href="http://mountsnow.com/email-list-subscribe/">Sign up by clicking here.</a></p>
 <p><!-- Main Face --></p>
@@ -535,7 +538,7 @@ Updated at: <em>Jan 17, 2013 at 3:27 pm</em><br /><br /><strong></strong>
 </td>
 <td width="30"><img src="http://mountsnow.com/lib/images/snowreport/open.gif" alt="" /></td>
 <td width="30"><img src="http://mountsnow.com/lib/images/snowreport/groomed.gif" alt="" /></td>
-<td width="30"><img src="http://mountsnow.com/lib/images/snowreport/snowmaking.gif" alt="" /></td>
+<td width="30"></td>
 <td width="30"></td>
 </tr>
 <tr>
@@ -553,8 +556,8 @@ Updated at: <em>Jan 17, 2013 at 3:27 pm</em><br /><br /><strong></strong>
 <td width="35%">
 <h8>Charlie&#8217;s Chase</h8>
 </td>
-<td width="30"><img src="http://mountsnow.com/lib/images/snowreport/closed.gif" alt="" /></td>
-<td width="30"></td>
+<td width="30"><img src="http://mountsnow.com/lib/images/snowreport/closed.gif" alt="" /><img src="http://mountsnow.com/lib/images/snowreport/race.gif" alt="" width="16" height="16" /></td>
+<td width="30"><img src="http://mountsnow.com/lib/images/snowreport/groomed.gif" alt="" /></td>
 <td width="30"></td>
 <td width="30"></td>
 </tr>
@@ -563,7 +566,7 @@ Updated at: <em>Jan 17, 2013 at 3:27 pm</em><br /><br /><strong></strong>
 <td width="35%">
 <h8>Choke</h8>
 </td>
-<td width="30"><img src="http://mountsnow.com/lib/images/snowreport/closed.gif" alt="" /></td>
+<td width="30"><img src="http://mountsnow.com/lib/images/snowreport/open.gif" alt="" /></td>
 <td width="30"></td>
 <td width="30"></td>
 <td width="30"></td>
@@ -574,7 +577,7 @@ Updated at: <em>Jan 17, 2013 at 3:27 pm</em><br /><br /><strong></strong>
 <h8>Committed</h8>
 </td>
 <td width="30"><img src="http://mountsnow.com/lib/images/snowreport/open.gif" alt="" /></td>
-<td width="30"><img src="http://mountsnow.com/lib/images/snowreport/groomed.gif" alt="" /></td>
+<td width="30"></td>
 <td width="30"></td>
 <td width="30"></td>
 </tr>
@@ -585,7 +588,7 @@ Updated at: <em>Jan 17, 2013 at 3:27 pm</em><br /><br /><strong></strong>
 </td>
 <td width="30"><img src="http://mountsnow.com/lib/images/snowreport/open.gif" alt="" /></td>
 <td width="30"><img src="http://mountsnow.com/lib/images/snowreport/groomed.gif" alt="" /></td>
-<td width="30"><img src="http://mountsnow.com/lib/images/snowreport/snowmaking.gif" alt="" /></td>
+<td width="30"></td>
 <td width="30"></td>
 </tr>
 <tr>
@@ -593,7 +596,7 @@ Updated at: <em>Jan 17, 2013 at 3:27 pm</em><br /><br /><strong></strong>
 <td width="35%">
 <h8>Cut-Off</h8>
 </td>
-<td width="30"><img src="http://mountsnow.com/lib/images/snowreport/closed.gif" alt="" /></td>
+<td width="30"><img src="http://mountsnow.com/lib/images/snowreport/open.gif" alt="" /></td>
 <td width="30"></td>
 <td width="30"></td>
 <td width="30"></td>
@@ -604,7 +607,7 @@ Updated at: <em>Jan 17, 2013 at 3:27 pm</em><br /><br /><strong></strong>
 <h8>Deer Run</h8>
 </td>
 <td width="30"><img src="http://mountsnow.com/lib/images/snowreport/open.gif" alt="" /></td>
-<td width="30"></td>
+<td width="30"><img src="http://mountsnow.com/lib/images/snowreport/groomed.gif" alt="" /></td>
 <td width="30"></td>
 <td width="30"></td>
 </tr>
@@ -613,7 +616,7 @@ Updated at: <em>Jan 17, 2013 at 3:27 pm</em><br /><br /><strong></strong>
 <td width="35%">
 <h8>Drifter</h8>
 </td>
-<td width="30"><img src="http://mountsnow.com/lib/images/snowreport/closed.gif" alt="" /></td>
+<td width="30"><img src="http://mountsnow.com/lib/images/snowreport/open.gif" alt="" /></td>
 <td width="30"></td>
 <td width="30"></td>
 <td width="30"></td>
@@ -625,7 +628,7 @@ Updated at: <em>Jan 17, 2013 at 3:27 pm</em><br /><br /><strong></strong>
 </td>
 <td width="30"><img src="http://mountsnow.com/lib/images/snowreport/open.gif" alt="" /></td>
 <td width="30"></td>
-<td width="30"><img src="http://mountsnow.com/lib/images/snowreport/snowmaking.gif" alt="" /></td>
+<td width="30"></td>
 <td width="30"></td>
 </tr>
 <tr>
@@ -634,7 +637,7 @@ Updated at: <em>Jan 17, 2013 at 3:27 pm</em><br /><br /><strong></strong>
 <h8>Ego Alley</h8>
 </td>
 <td width="30"><img src="http://mountsnow.com/lib/images/snowreport/open.gif" alt="" /></td>
-<td width="30"></td>
+<td width="30"><img src="http://mountsnow.com/lib/images/snowreport/groomed.gif" alt="" /></td>
 <td width="30"></td>
 <td width="30"></td>
 </tr>
@@ -645,7 +648,7 @@ Updated at: <em>Jan 17, 2013 at 3:27 pm</em><br /><br /><strong></strong>
 </td>
 <td width="30"><img src="http://mountsnow.com/lib/images/snowreport/open.gif" alt="" /></td>
 <td width="30"><img src="http://mountsnow.com/lib/images/snowreport/groomed.gif" alt="" /></td>
-<td width="30"><img src="http://mountsnow.com/lib/images/snowreport/snowmaking.gif" alt="" /></td>
+<td width="30"></td>
 <td width="30"></td>
 </tr>
 <tr>
@@ -673,7 +676,7 @@ Updated at: <em>Jan 17, 2013 at 3:27 pm</em><br /><br /><strong></strong>
 <td width="35%">
 <h8>Illusion</h8>
 </td>
-<td width="30"><img src="http://mountsnow.com/lib/images/snowreport/closed.gif" alt="" /></td>
+<td width="30"><img src="http://mountsnow.com/lib/images/snowreport/open.gif" alt="" /></td>
 <td width="30"></td>
 <td width="30"></td>
 <td width="30"></td>
@@ -693,7 +696,7 @@ Updated at: <em>Jan 17, 2013 at 3:27 pm</em><br /><br /><strong></strong>
 <td width="35%">
 <h8>Ledge</h8>
 </td>
-<td width="30"><img src="http://mountsnow.com/lib/images/snowreport/closed.gif" alt="" /></td>
+<td width="30"><img src="http://mountsnow.com/lib/images/snowreport/open.gif" alt="" /></td>
 <td width="30"></td>
 <td width="30"></td>
 <td width="30"></td>
@@ -714,7 +717,7 @@ Updated at: <em>Jan 17, 2013 at 3:27 pm</em><br /><br /><strong></strong>
 <h8>Little John</h8>
 </td>
 <td width="30"><img src="http://mountsnow.com/lib/images/snowreport/open.gif" alt="" /></td>
-<td width="30"></td>
+<td width="30"><img src="http://mountsnow.com/lib/images/snowreport/groomed.gif" alt="" /></td>
 <td width="30"></td>
 <td width="30"></td>
 </tr>
@@ -725,7 +728,7 @@ Updated at: <em>Jan 17, 2013 at 3:27 pm</em><br /><br /><strong></strong>
 </td>
 <td width="30"><img src="http://mountsnow.com/lib/images/snowreport/open.gif" alt="" /></td>
 <td width="30"><img src="http://mountsnow.com/lib/images/snowreport/groomed.gif" alt="" /></td>
-<td width="30"><img src="http://mountsnow.com/lib/images/snowreport/snowmaking.gif" alt="" /></td>
+<td width="30"></td>
 <td width="30"></td>
 </tr>
 <tr>
@@ -764,7 +767,7 @@ Updated at: <em>Jan 17, 2013 at 3:27 pm</em><br /><br /><strong></strong>
 <h8>Overbrook</h8>
 </td>
 <td width="30"><img src="http://mountsnow.com/lib/images/snowreport/open.gif" alt="" /></td>
-<td width="30"><img src="http://mountsnow.com/lib/images/snowreport/groomed.gif" alt="" /></td>
+<td width="30"></td>
 <td width="30"></td>
 <td width="30"></td>
 </tr>
@@ -785,7 +788,7 @@ Updated at: <em>Jan 17, 2013 at 3:27 pm</em><br /><br /><strong></strong>
 </td>
 <td width="30"><img src="http://mountsnow.com/lib/images/snowreport/open.gif" alt="" /></td>
 <td width="30"><img src="http://mountsnow.com/lib/images/snowreport/groomed.gif" alt="" /></td>
-<td width="30"><img src="http://mountsnow.com/lib/images/snowreport/snowmaking.gif" alt="" /></td>
+<td width="30"></td>
 <td width="30"></td>
 </tr>
 <tr>
@@ -794,7 +797,7 @@ Updated at: <em>Jan 17, 2013 at 3:27 pm</em><br /><br /><strong></strong>
 <h8>Roller Coaster</h8>
 </td>
 <td width="30"><img src="http://mountsnow.com/lib/images/snowreport/open.gif" alt="" /></td>
-<td width="30"><img src="http://mountsnow.com/lib/images/snowreport/groomed.gif" alt="" /></td>
+<td width="30"></td>
 <td width="30"></td>
 <td width="30"></td>
 </tr>
@@ -813,7 +816,7 @@ Updated at: <em>Jan 17, 2013 at 3:27 pm</em><br /><br /><strong></strong>
 <td width="35%">
 <h8>Shootout</h8>
 </td>
-<td width="30"><img src="http://mountsnow.com/lib/images/snowreport/closed.gif" alt="" /></td>
+<td width="30"><img src="http://mountsnow.com/lib/images/snowreport/open.gif" alt="" /></td>
 <td width="30"></td>
 <td width="30"></td>
 <td width="30"></td>
@@ -823,7 +826,7 @@ Updated at: <em>Jan 17, 2013 at 3:27 pm</em><br /><br /><strong></strong>
 <td width="35%">
 <h8>Short Fuse</h8>
 </td>
-<td width="30"><img src="http://mountsnow.com/lib/images/snowreport/closed.gif" alt="" /></td>
+<td width="30"><img src="http://mountsnow.com/lib/images/snowreport/open.gif" alt="" /></td>
 <td width="30"></td>
 <td width="30"></td>
 <td width="30"></td>
@@ -864,7 +867,7 @@ Updated at: <em>Jan 17, 2013 at 3:27 pm</em><br /><br /><strong></strong>
 <h8>Sweet Sixteen</h8>
 </td>
 <td width="30"><img src="http://mountsnow.com/lib/images/snowreport/open.gif" alt="" /></td>
-<td width="30"></td>
+<td width="30"><img src="http://mountsnow.com/lib/images/snowreport/groomed.gif" alt="" /></td>
 <td width="30"></td>
 <td width="30"></td>
 </tr>
@@ -916,7 +919,7 @@ Updated at: <em>Jan 17, 2013 at 3:27 pm</em><br /><br /><strong></strong>
 <td width="30"><img src="http://mountsnow.com/lib/images/snowreport/open.gif" alt="" /></td>
 <td width="30"></td>
 <td width="30"></td>
-<td width="30"></td>
+<td width="30"><img src="http://mountsnow.com/lib/images/snowreport/moguls.gif" alt="" /></td>
 </tr>
 </tbody>
 </table>
@@ -953,9 +956,8 @@ Updated at: <em>Jan 17, 2013 at 3:27 pm</em><br /><br /><strong></strong>
 <tr>
 <td width="95" align="center"><img src="http://mountsnow.com/lib/images/snowreport/quad.png" alt="" /></td>
 <td width="611"><h8>#11 Grand Summit Express</h8></td>
-<td width="394">
-        <img src="http://mountsnow.com/lib/images/snowreport/closed.gif" />
-        </td>
+<td width="394"><img src="http://mountsnow.com/lib/images/snowreport/open.gif" /></p>
+</td>
 </tr>
 <tr>
 <td width="95" align="center"><img src="http://mountsnow.com/lib/images/snowreport/triple.png" alt="" /></td>
@@ -974,14 +976,15 @@ Updated at: <em>Jan 17, 2013 at 3:27 pm</em><br /><br /><strong></strong>
 <tr>
 <td width="95" align="center"><img src="http://mountsnow.com/lib/images/snowreport/sixpack.png" alt="" /></td>
 <td width="611"><h8>#17 Bluebird Express</h8></td>
-<td width="394"><img src="http://mountsnow.com/lib/images/snowreport/open.gif" /></p>
-</td>
+<td width="394">
+<p>        <img src="http://mountsnow.com/lib/images/snowreport/hold.png" /></td>
 </tr>
 <tr>
 <td width="95" align="center"><img src="http://mountsnow.com/lib/images/snowreport/rope.png" alt="" /></td>
 <td width="611"><h8>#24 Voyager</h8></td>
-<td width="394"><img src="http://mountsnow.com/lib/images/snowreport/open.gif" /></p>
-</td>
+<td width="394">
+        <img src="http://mountsnow.com/lib/images/snowreport/closed.gif" />
+        </td>
 </tr>
 <tr>
 <td width="95" align="center"><img src="http://mountsnow.com/lib/images/snowreport/surface.png" alt="" /></td>
@@ -1014,7 +1017,8 @@ Updated at: <em>Jan 17, 2013 at 3:27 pm</em><br /><br /><strong></strong>
 <h2>Legend</h2>
 <p><img src="http://mountsnow.com/lib/images/snowreport/open.gif" alt="" align="top" /> = Lift or Trail Open<br />
 <img src="http://mountsnow.com/lib/images/snowreport/closed.gif" alt="" align="top" /> = Lift or Trail Closed<br />
-<img src="http://mountsnow.com/lib/images/snowreport/hold.png" alt="" align="top" /> = Lift or Trail on Hold</p>
+<img src="http://mountsnow.com/lib/images/snowreport/hold.png" alt="" align="top" /> = Lift or Trail on Hold<br />
+<img src="http://mountsnow.com/lib/images/snowreport/race.gif" alt="" align="top" /> = Trail Closed (partially or fully) due to Racing or Competition</p>
 <p><img src="http://mountsnow.com/lib/images/snowreport/green.gif" alt="" align="top" /> = Our easier terrain<br />
 <img src="http://mountsnow.com/lib/images/snowreport/blue.gif" alt="" align="top" /> = Advanced terrain<br />
 <img src="http://mountsnow.com/lib/images/snowreport/black.gif" alt="" align="top" /> = More Advanced terrain<br />
@@ -1058,7 +1062,7 @@ Weekend and holidays: 8am &#8211; 4pm</p>
 <td width="30"><img src="http://mountsnow.com/lib/images/snowreport/open.gif" /></td>
 <td width="30"></td>
 <td width="30"><img src="http://mountsnow.com/lib/images/snowreport/groomed.gif" /></td>
-<td width="30"><img src="http://mountsnow.com/lib/images/snowreport/snowmaking.gif" /></td>
+<td width="30"></td>
 </tr>
 <tr>
 <td width="33" align="center"><img src="http://mountsnow.com/lib/images/snowreport/park-M.gif" alt="" /></td>
@@ -1072,17 +1076,17 @@ Weekend and holidays: 8am &#8211; 4pm</p>
 <td width="33" align="center"><img src="http://mountsnow.com/lib/images/snowreport/park-L.gif" alt="" /></td>
 <td width="35%"><h8>Mineshaft</h8></td>
 <td width="30"><img src="http://mountsnow.com/lib/images/snowreport/open.gif" /></td>
-<td width="30"></td>
+<td width="30"><img src="http://mountsnow.com/lib/images/snowreport/features.png" /></td>
 <td width="30"><img src="http://mountsnow.com/lib/images/snowreport/groomed.gif" /></td>
 <td width="30"></td>
 </tr>
 <tr>
 <td width="33" align="center"><img src="http://mountsnow.com/lib/images/snowreport/park-S.gif" alt="" /></td>
 <td width="35%"><h8>Nitro</h8></td>
-<td width="30"><img src="http://mountsnow.com/lib/images/snowreport/closed.gif" /></td>
+<td width="30"><img src="http://mountsnow.com/lib/images/snowreport/open.gif" /></td>
 <td width="30"><img src="http://mountsnow.com/lib/images/snowreport/features.png" /></td>
 <td width="30"><img src="http://mountsnow.com/lib/images/snowreport/groomed.gif" /></td>
-<td width="30"><img src="http://mountsnow.com/lib/images/snowreport/snowmaking.gif" /></td>
+<td width="30"></td>
 </tr>
 <tr>
 <td width="33" align="center"><img src="http://mountsnow.com/lib/images/snowreport/park-M.gif" alt="" /></td>
@@ -1097,7 +1101,7 @@ Weekend and holidays: 8am &#8211; 4pm</p>
 <td width="35%"><h8>The Pit</h8></td>
 <td width="30"><img src="http://mountsnow.com/lib/images/snowreport/open.gif" /></td>
 <td width="30"></td>
-<td width="30"></td>
+<td width="30"><img src="http://mountsnow.com/lib/images/snowreport/groomed.gif" /></td>
 <td width="30"></td>
 </tr>
 <tr>
@@ -1127,7 +1131,7 @@ Weekend and holidays: 8am &#8211; 4pm</p>
 <tr>
 <td width="33" align="center"><img src="http://mountsnow.com/lib/images/snowreport/park-blank.gif" alt="" /></td>
 <td width="35%"><h8>Rusty Nail</h8></td>
-<td width="30"><img src="http://mountsnow.com/lib/images/snowreport/closed.gif" /></td>
+<td width="30"><img src="http://mountsnow.com/lib/images/snowreport/open.gif" /></td>
 <td width="30"></td>
 <td width="30"></td>
 <td width="30"></td>
@@ -1135,10 +1139,10 @@ Weekend and holidays: 8am &#8211; 4pm</p>
 <tr>
 <td width="33" align="center"><img src="http://mountsnow.com/lib/images/snowreport/park-XL.gif" alt="" /></td>
 <td width="35%"><h8>Superpipe</h8></td>
-<td width="30"><img src="http://mountsnow.com/lib/images/snowreport/closed.gif" /></td>
+<td width="30"><img src="http://mountsnow.com/lib/images/snowreport/open.gif" /></td>
 <td width="30">&nbsp;</td>
+<td width="30"><img src="http://mountsnow.com/lib/images/snowreport/groomed.gif" /></td>
 <td width="30"></td>
-<td width="30"><img src="http://mountsnow.com/lib/images/snowreport/snowmaking.gif" /></td>
 </tr>
 <tr>
 <td width="33" align="center"><img src="http://mountsnow.com/lib/images/snowreport/park-blank.gif" alt="" /></td>
@@ -1203,10 +1207,10 @@ Weekend and holidays: 8am &#8211; 4pm</p>
 <tr>
 <td width="33" height="20" align="center"><img src="http://mountsnow.com/lib/images/snowreport/black.gif" alt="" /></td>
 <td width="35%" height="20"><h8>Challenger</h8></td>
-<td width="30" height="20"><img src="http://mountsnow.com/lib/images/snowreport/closed.gif" /></td>
+<td width="30" height="20"><img src="http://mountsnow.com/lib/images/snowreport/open.gif" /></td>
 <td width="30" height="20"></td>
 <td width="30" height="20"></td>
-<td width="30" height="20"></td>
+<td width="30" height="20"><img src="http://mountsnow.com/lib/images/snowreport/moguls.gif" /></td>
 </tr>
 <tr>
 <td width="33" align="center"><img src="http://mountsnow.com/lib/images/snowreport/black.gif" alt="" /></td>
@@ -1219,9 +1223,9 @@ Weekend and holidays: 8am &#8211; 4pm</p>
 <tr>
 <td width="33" align="center"><img src="http://mountsnow.com/lib/images/snowreport/black.gif" alt="" /></td>
 <td width="35%"><h8>Fallen Timbers</h8></td>
-<td width="30"><img src="http://mountsnow.com/lib/images/snowreport/closed.gif" /></td>
+<td width="30"><img src="http://mountsnow.com/lib/images/snowreport/open.gif" /></td>
+<td width="30"><img src="http://mountsnow.com/lib/images/snowreport/groomed.gif" /></td>
 <td width="30"></td>
-<td width="30"><img src="http://mountsnow.com/lib/images/snowreport/snowmaking.gif" /></td>
 <td width="30"></td>
 </tr>
 <tr>
@@ -1230,7 +1234,7 @@ Weekend and holidays: 8am &#8211; 4pm</p>
 <td width="30"><img src="http://mountsnow.com/lib/images/snowreport/open.gif" /></td>
 <td width="30"></td>
 <td width="30"></td>
-<td width="30"></td>
+<td width="30"><img src="http://mountsnow.com/lib/images/snowreport/moguls.gif" /></td>
 </tr>
 <tr>
 <td width="33" align="center"><img src="http://mountsnow.com/lib/images/snowreport/black.gif" alt="" /></td>
@@ -1243,7 +1247,7 @@ Weekend and holidays: 8am &#8211; 4pm</p>
 <tr>
 <td width="33" align="center"><img src="http://mountsnow.com/lib/images/snowreport/black.gif" alt="" /></td>
 <td width="35%"><h8>Little Steep</h8></td>
-<td width="30"><img src="http://mountsnow.com/lib/images/snowreport/closed.gif" /></td>
+<td width="30"><img src="http://mountsnow.com/lib/images/snowreport/open.gif" /></td>
 <td width="30"></td>
 <td width="30"></td>
 <td width="30"></td>
@@ -1267,7 +1271,7 @@ Weekend and holidays: 8am &#8211; 4pm</p>
 <tr>
 <td width="33" align="center"><img src="http://mountsnow.com/lib/images/snowreport/black.gif" alt="" /></td>
 <td width="35%"><h8>Plummet</h8></td>
-<td width="30"><img src="http://mountsnow.com/lib/images/snowreport/closed.gif" /></td>
+<td width="30"><img src="http://mountsnow.com/lib/images/snowreport/open.gif" /></td>
 <td width="30"></td>
 <td width="30"></td>
 <td width="30"></td>
@@ -1275,10 +1279,10 @@ Weekend and holidays: 8am &#8211; 4pm</p>
 <tr>
 <td width="33" align="center"><img src="http://mountsnow.com/lib/images/snowreport/dbl-blk.gif" alt="" /></td>
 <td width="35%"><h8>Ripcord</h8></td>
-<td width="30"><img src="http://mountsnow.com/lib/images/snowreport/closed.gif" /></td>
-<td width="30"><img src="http://mountsnow.com/lib/images/snowreport/groomed.gif" /></td>
+<td width="30"><img src="http://mountsnow.com/lib/images/snowreport/open.gif" /></td>
 <td width="30"></td>
 <td width="30"></td>
+<td width="30"><img src="http://mountsnow.com/lib/images/snowreport/moguls.gif" /></td>
 </tr>
 <tr>
 <td width="33" align="center"><img src="http://mountsnow.com/lib/images/snowreport/blue.gif" alt="" /></td>
@@ -1290,7 +1294,7 @@ Weekend and holidays: 8am &#8211; 4pm</p>
 <tr>
 <td width="33" align="center"><img src="http://mountsnow.com/lib/images/snowreport/blue.gif" alt="" /></td>
 <td width="35%"><h8>Second Thoughts</h8></td>
-<td width="30"><img src="http://mountsnow.com/lib/images/snowreport/closed.gif" /></td>
+<td width="30"><img src="http://mountsnow.com/lib/images/snowreport/open.gif" /></td>
 <td width="30"></td>
 <td width="30"></td>
 </tr>
@@ -1325,8 +1329,8 @@ Weekend and holidays: 8am &#8211; 4pm</p>
 <td width="35%"><h8>Bear Trap</h8></td>
 <td width="30"><img src="http://mountsnow.com/lib/images/snowreport/open.gif"/></td>
 <td width="30"></td>
-<td width="30"><img src="http://mountsnow.com/lib/images/snowreport/snowmaking.gif"/></td>
 <td width="30"></td>
+<td width="30"><img src="http://mountsnow.com/lib/images/snowreport/moguls.gif"/></td>
 </tr>
 <tr>
 <td width="33" align="center"><img src="http://mountsnow.com/lib/images/snowreport/blue.gif"alt="" /></td>
@@ -1340,7 +1344,7 @@ Weekend and holidays: 8am &#8211; 4pm</p>
 <td width="33" align="center"><img src="http://mountsnow.com/lib/images/snowreport/blue.gif"alt="" /></td>
 <td width="35%"><h8>Cloud Nine</h8></td>
 <td width="30"><img src="http://mountsnow.com/lib/images/snowreport/open.gif"/></td>
-<td width="30"><img src="http://mountsnow.com/lib/images/snowreport/groomed.gif"/></td>
+<td width="30"></td>
 <td width="30"></td>
 <td width="30"></td>
 </tr>
@@ -1357,7 +1361,7 @@ Weekend and holidays: 8am &#8211; 4pm</p>
 <td width="35%"><h8>Milky Way</h8></td>
 <td width="30"><img src="http://mountsnow.com/lib/images/snowreport/open.gif"/></td>
 <td width="30"><img src="http://mountsnow.com/lib/images/snowreport/groomed.gif"/></td>
-<td width="30"><img src="http://mountsnow.com/lib/images/snowreport/snowmaking.gif"/></td>
+<td width="30"></td>
 <td width="30"></td>
 </tr>
 <tr>
@@ -1371,7 +1375,7 @@ Weekend and holidays: 8am &#8211; 4pm</p>
 <tr>
 <td width="33" align="center"><img src="http://mountsnow.com/lib/images/snowreport/blue.gif"alt="" /></td>
 <td width="35%"><h8>Moonwalk</h8></td>
-<td width="30"><img src="http://mountsnow.com/lib/images/snowreport/closed.gif"/></td>
+<td width="30"><img src="http://mountsnow.com/lib/images/snowreport/open.gif"/></td>
 <td width="30"></td>
 <td width="30"></td>
 <td width="30"></td>
@@ -1403,7 +1407,7 @@ Weekend and holidays: 8am &#8211; 4pm</p>
 <tr>
 <td width="33" align="center"><img src="http://mountsnow.com/lib/images/snowreport/blue.gif"alt="" /></td>
 <td width="35%"><h8>Sunspot</h8></td>
-<td width="30"><img src="http://mountsnow.com/lib/images/snowreport/closed.gif"/></td>
+<td width="30"><img src="http://mountsnow.com/lib/images/snowreport/open.gif"/></td>
 <td width="30"></td>
 <td width="30"></td>
 <td width="30"></td>
@@ -1413,7 +1417,7 @@ Weekend and holidays: 8am &#8211; 4pm</p>
 <td width="35%"><h8>Thanks Walt</h8></td>
 <td width="30"><img src="http://mountsnow.com/lib/images/snowreport/open.gif"/></td>
 <td width="30"><img src="http://mountsnow.com/lib/images/snowreport/groomed.gif"/></td>
-<td width="30"><img src="http://mountsnow.com/lib/images/snowreport/snowmaking.gif"/></td>
+<td width="30"></td>
 <td width="30"></td>
 </tr>
 </table>
