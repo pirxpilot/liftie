@@ -1,9 +1,9 @@
 {
   "name": "liftie",
-  "version": "1.2.0",
+  "version": "1.10.9",
   "dependencies": {
     "express": {
-      "version": "3.0.6",
+      "version": "3.1.0",
       "dependencies": {
         "connect": {
           "version": "2.7.2",
@@ -57,7 +57,7 @@
       }
     },
     "jade": {
-      "version": "0.27.7",
+      "version": "0.28.1",
       "dependencies": {
         "commander": {
           "version": "0.6.1"
@@ -82,7 +82,7 @@
       }
     },
     "superagent": {
-      "version": "0.12.0",
+      "version": "0.12.1",
       "dependencies": {
         "qs": {
           "version": "0.5.2"
@@ -105,10 +105,26 @@
       }
     },
     "cheerio-soupselect": {
-      "version": "0.1.1"
+      "version": "0.1.1",
+      "dependencies": {
+        "htmlparser2": {
+          "version": "2.5.1",
+          "dependencies": {
+            "domhandler": {
+              "version": "2.0.1"
+            },
+            "domutils": {
+              "version": "1.0.1"
+            },
+            "domelementtype": {
+              "version": "1.1.0"
+            }
+          }
+        }
+      }
     },
     "htmlparser2": {
-      "version": "2.5.0",
+      "version": "2.5.1",
       "dependencies": {
         "domhandler": {
           "version": "2.0.1"
@@ -117,7 +133,7 @@
           "version": "1.0.1"
         },
         "domelementtype": {
-          "version": "1.0.1"
+          "version": "1.1.0"
         }
       }
     },
@@ -128,7 +144,7 @@
       "version": "0.0.12",
       "dependencies": {
         "underscore": {
-          "version": "1.4.3"
+          "version": "1.4.4"
         }
       }
     },
@@ -138,11 +154,35 @@
     "debug": {
       "version": "0.7.0"
     },
+    "dirty": {
+      "version": "0.9.6"
+    },
     "commander": {
       "version": "1.1.1",
       "dependencies": {
         "keypress": {
           "version": "0.1.0"
+        }
+      }
+    },
+    "uglify-js": {
+      "version": "2.2.3",
+      "dependencies": {
+        "source-map": {
+          "version": "0.1.8",
+          "dependencies": {
+            "amdefine": {
+              "version": "0.0.4"
+            }
+          }
+        },
+        "optimist": {
+          "version": "0.3.5",
+          "dependencies": {
+            "wordwrap": {
+              "version": "0.0.2"
+            }
+          }
         }
       }
     },
@@ -171,27 +211,6 @@
         },
         "ms": {
           "version": "0.3.0"
-        }
-      }
-    },
-    "uglify-js": {
-      "version": "2.2.3",
-      "dependencies": {
-        "source-map": {
-          "version": "0.1.8",
-          "dependencies": {
-            "amdefine": {
-              "version": "0.0.4"
-            }
-          }
-        },
-        "optimist": {
-          "version": "0.3.5",
-          "dependencies": {
-            "wordwrap": {
-              "version": "0.0.2"
-            }
-          }
         }
       }
     },
