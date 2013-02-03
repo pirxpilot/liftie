@@ -1,4 +1,10 @@
 
+1.11.0 / 2013-02-02 
+==================
+
+ * Update dependencies
+ * Persistent cache for status to limit requests on restart
+
 1.10.9 / 2013-02-01 
 ==================
 
