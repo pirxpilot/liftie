@@ -11,19 +11,18 @@ describe('parse alpine', function() {
     stream.on('error', done);
     stream.pipe(parser(parseAlpine, function(err, status) {
       var expected = {
-        'Summit Six Chair': 'hold',
-        'Roundhouse Chair': 'closed',
-        'Hot Wheels Chair': 'open',
-        'Sherwood Express': 'closed',
-        'Scott Chair': 'closed',
-        'Lakeview Chair': 'closed',
-        'Yellow Chair': 'hold',
-        'Meadow Chair': 'open',
-        'Subway Chair': 'open',
+        'Summit Six Chair': 'scheduled',
+        'Roundhouse Chair': 'scheduled',
+        'Hot Wheels': 'scheduled',
+        'Sherwood Express Chair': 'scheduled',
+        'Scott Chair': 'scheduled',
+        'Lakeview Chair': 'scheduled',
+        'Yellow Chair': 'closed',
+        'Meadow Chair': 'scheduled',
+        'Subway Chair': 'scheduled',
         'Kangaroo Chair': 'closed',
         'Alpine Bowl Chair': 'closed',
-        'Big Carpet': 'scheduled',
-        'Kids Camp Little Carpet': 'open'
+        'Big Carpet': 'scheduled'
       };
       assert.deepEqual(status, expected);
       done(err);
