@@ -14,7 +14,7 @@ describe('parse sugarbowl', function() {
         'Lincoln Express': 'open',
         'Judah Express': 'open',
         'Disney Express': 'open',
-        'Summit Chair': 'open',
+        'Summit Chair': 'closed',
         'Christmas Tree Express': 'open',
         'Crow\'s Nest': 'closed',
         'Jerome Hill Express': 'open',
