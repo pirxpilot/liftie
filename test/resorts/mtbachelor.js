@@ -11,17 +11,16 @@ describe('parse mtbachelor', function() {
     stream.on('error', done);
     stream.pipe(parser(parse, function(err, status) {
       var expected = {
-        'Pine Marten Express': 'scheduled',
-        'Skyliner Express': 'scheduled',
-        'Sunrise Express': 'scheduled',
-        'Sunshine Accelerator': 'scheduled',
-        'Carrousel': 'scheduled',
-        'Rainbow Chair': 'scheduled',
+        'Pine Marten Express': 'open',
+        'Skyliner Express': 'open',
+        'Sunrise Express': 'open',
+        'Sunshine Accelerator': 'open',
+        'Carrousel Chair': 'closed',
+        'Rainbow Chair': 'open',
         'Red Chair': 'closed',
-        'Northwest Express': 'scheduled',
-        'Outback Express': 'scheduled',
-        'Summit Express': 'scheduled',
-        'Snowblast Tow': 'scheduled'
+        'Northwest Express': 'open',
+        'Outback Express': 'open',
+        'Summit Express': 'open'
       };
       assert.deepEqual(status, expected);
       done(err);
