@@ -1,4 +1,5 @@
 [![Build Status](https://secure.travis-ci.org/code42day/liftie.png)](http://travis-ci.org/code42day/liftie)
+[![Dependency Status](https://gemnasium.com/code42day/liftie.png)](https://gemnasium.com/code42day/liftie)
 
 #liftie.info
 
