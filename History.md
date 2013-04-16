@@ -1,4 +1,10 @@
 
+1.11.14 / 2013-04-16 
+==================
+
+ * add apple-mobile-web-app-capable declaration
+ * Add Gemnasium dependency status
+
 1.11.13 / 2013-03-12 
 ==================
 
