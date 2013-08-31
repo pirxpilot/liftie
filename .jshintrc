@@ -2,7 +2,6 @@
   "undef": "true",
   "unused": "true",
   "laxbreak": "true",
-  "es5": "true",
   "globals": {
     "console": false,
     "exports": false,
