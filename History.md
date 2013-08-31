@@ -1,4 +1,11 @@
 
+1.12.0 / 2013-08-31 
+==================
+
+ * Update dependencies
+ * npmignore test directory
+ * Add npm version from badge.fury.io
+
 1.11.14 / 2013-04-16 
 ==================
 
