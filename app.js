@@ -1,5 +1,5 @@
 var express = require('express'),
-  cachify = require('connect-cachify'),
+  cachify = require('connect-cachify-static'),
   http = require('http'),
   path = require('path'),
   stylus = require('stylus'),
@@ -37,9 +37,7 @@ app.configure(function(){
     src: __dirname + '/public',
     compile: compileCss
   }));
-  app.use(cachify.setup({}, {
-    root: path.join(__dirname, 'public')
-  }));
+  app.use(cachify(path.join(__dirname, 'public')));
   app.use(express.static(path.join(__dirname, 'public')));
 });
 
