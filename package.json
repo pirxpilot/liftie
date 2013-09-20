@@ -14,7 +14,8 @@
     "cheerio-soupselect": "~0",
     "htmlparser2": "~2",
     "nib": "~0",
-    "connect-cachify-static": "~0.1.0",
+    "connect-cachify-static": "~0",
+    "connect-gzip-static": "~0",
     "lodash": "~1",
     "debug": "~0",
     "dirty": "~0"

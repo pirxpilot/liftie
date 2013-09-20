@@ -1,5 +1,6 @@
 var express = require('express'),
   cachify = require('connect-cachify-static'),
+  gzip = require('connect-gzip-static'),
   http = require('http'),
   path = require('path'),
   stylus = require('stylus'),
@@ -28,6 +29,7 @@ app.configure(function(){
   app.set('port', process.env.PORT || 3000);
   app.set('views', __dirname + '/views');
   app.set('view engine', 'jade');
+
   app.use(express.favicon(__dirname + '/public/favicon.ico'));
   app.use(express.logger('dev'));
   app.use(express.cookieParser());
@@ -38,7 +40,7 @@ app.configure(function(){
     compile: compileCss
   }));
   app.use(cachify(path.join(__dirname, 'public')));
-  app.use(express.static(path.join(__dirname, 'public')));
+  app.use(gzip(path.join(__dirname, 'public')));
 });
 
 app.configure('development', function(){
