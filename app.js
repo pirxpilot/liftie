@@ -1,5 +1,6 @@
 var express = require('express'),
-  cachify = require('connect-cachify'),
+  cachify = require('connect-cachify-static'),
+  gzip = require('connect-gzip-static'),
   http = require('http'),
   path = require('path'),
   stylus = require('stylus'),
@@ -15,32 +16,34 @@ function compileCss(str, path) {
 
 var app = module.exports = express();
 
-app.configure(function(){
-  app.locals.min = '.min';
-  app.locals.cachify = cachify.cachify; // needed since our cachify middleware is below router
-  app.locals.decorateResort = function() {};
-  app.locals.decorateAbout = function() {};
-  app.locals.siteUrl = process.env.SITE_URL || 'http://liftie.info';
-  app.locals.siteDescription = 'Clean, simple, easy to read, fast ski resort lift status.';
-  app.locals.og= {
-    image: app.locals.siteUrl + '/img/snowflake-256.png',
-  };
+app.configure(function() {
+  var root = path.join(__dirname, 'public');
+  app.locals({
+    min: '.min',
+    decorateResort: function() {},
+    decorateAbout: function() {},
+    siteUrl: process.env.SITE_URL || 'http://liftie.info',
+    siteDescription: 'Clean, simple, easy to read, fast ski resort lift status.',
+    og: {
+      image: app.locals.siteUrl + '/img/snowflake-256.png',
+    }
+  });
   app.set('port', process.env.PORT || 3000);
   app.set('views', __dirname + '/views');
   app.set('view engine', 'jade');
-  app.use(express.favicon(__dirname + '/public/favicon.ico'));
+
+  app.use(express.favicon(path.join(root, 'favicon.ico')));
   app.use(express.logger('dev'));
   app.use(express.cookieParser());
-  app.use(express.bodyParser());
+  app.use(express.json());
+  app.use(express.urlencoded());
+  app.use(cachify(root));
   app.use(app.router);
   app.use(stylus.middleware({
     src: __dirname + '/public',
     compile: compileCss
   }));
-  app.use(cachify.setup({}, {
-    root: path.join(__dirname, 'public')
-  }));
-  app.use(express.static(path.join(__dirname, 'public')));
+  app.use(gzip(root));
 });
 
 app.configure('development', function(){
