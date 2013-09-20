@@ -1,3 +1,5 @@
+PROJECT=liftie
+
 NODE_BIN=./node_modules/.bin
 BUILD_DIR=public/scripts
 CSS_DIR=public/stylesheets
@@ -5,11 +7,16 @@ SRC = $(wildcard lib/client/*/*.js)
 
 all: lint test build
 
+# common rules
+
+%.gz: %
+	gzip --best --stdout $< > $@
+
 %.min.js: %.js
-	$(NODE_BIN)/uglifyjs $< --mangle --output $@
+	$(NODE_BIN)/uglifyjs $< --mangle --no-copyright --compress --output $@
 
 %.css: %.styl
-	$(NODE_BIN)/stylus --compress --use ./node_modules/nib/lib/nib.js $<
+	$(NODE_BIN)/stylus --include-css --compress --use ./node_modules/nib/lib/nib.js $<
 
 lint:
 	$(NODE_BIN)/jshint *.js lib test
@@ -17,18 +24,35 @@ lint:
 test:
 	$(NODE_BIN)/mocha --recursive
 
-$(BUILD_DIR):
-	mkdir -p $(BUILD_DIR)
-
-$(BUILD_DIR)/liftie.js: $(BUILD_DIR) components $(SRC)
-	$(NODE_BIN)/component build --out $(BUILD_DIR) --name liftie
-
-build: $(BUILD_DIR)/liftie.min.js $(CSS_DIR)/style.css
-
 components: component.json
 	$(NODE_BIN)/component install
 
-clean:
-	rm -rf $(BUILD_DIR) components $(CSS_DIR)/style.css
+$(BUILD_DIR):
+	mkdir -p $(BUILD_DIR)
 
-.PHONY: all lint test build clean
+# component build to create .js and .css
+
+$(BUILD_DIR)/$(PROJECT).js: components $(SRC)
+	$(NODE_BIN)/component build --out $(BUILD_DIR) --name $(PROJECT)
+
+# stylus for CSS
+
+$(CSS_DIR)/style.css: $(wildcard $(CSS_DIR)/*.styl)
+
+build: $(BUILD_DIR)/$(PROJECT).js $(CSS_DIR)/style.css
+
+# minized and compressed version for deployment
+
+.PRECIOUS: $(BUILD_DIR)/$(PROJECT).min.js
+dist: $(BUILD_DIR)/$(PROJECT).min.js.gz $(CSS_DIR)/style.css.gz
+
+# cleaning
+
+clean:
+	rm -rf $(BUILD_DIR) $(CSS_DIR)/style.css*
+
+distclean: clean
+distclean:
+	rm -rf components
+
+.PHONY: all lint test build dist clean distclean
