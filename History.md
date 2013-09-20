@@ -1,4 +1,13 @@
 
+1.13.0 / 2013-09-20 
+==================
+
+ * update component 0.17 -> 0.17.6
+ * express 3.3.7 -> 3.4
+ * connect-gzip-static middleware
+ * Generate gzipped files for gzip-static
+ * replace `connect-cachify` with `connect-cachify-static`
+
 1.12.0 / 2013-08-31 
 ==================
 
