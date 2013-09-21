@@ -11,7 +11,7 @@
     "jade": "*",
     "stylus": "*",
     "superagent": "~0",
-    "cheerio-soupselect": "~0",
+    "CSSselect": "~0",
     "htmlparser2": "~2",
     "nib": "~0",
     "connect-cachify-static": "~0",
