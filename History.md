@@ -1,4 +1,11 @@
 
+0.13.1 / 2013-09-21 
+==================
+
+ * Update htmlparser2 2.x -> 3.2
+ * Replace cheerio-select with CSSselect
+ * switch to common select method for all parsing
+
 1.13.0 / 2013-09-20 
 ==================
 
