@@ -128,28 +128,20 @@
       "dependencies": {
         "CSSwhat": {
           "version": "0.4.0"
-        },
-        "domutils": {
-          "version": "1.1.5",
-          "dependencies": {
-            "domelementtype": {
-              "version": "1.1.1"
-            }
-          }
         }
       }
     },
     "htmlparser2": {
-      "version": "2.6.0",
+      "version": "3.2.5",
       "dependencies": {
         "domhandler": {
           "version": "2.0.3"
         },
-        "domutils": {
-          "version": "1.0.1"
-        },
         "domelementtype": {
           "version": "1.1.1"
+        },
+        "readable-stream": {
+          "version": "1.0.17"
         }
       }
     },
@@ -184,11 +176,11 @@
     "fresh": {
       "version": "0.2.0"
     },
-    "cookie-signature": {
-      "version": "1.0.1"
-    },
     "methods": {
       "version": "0.0.1"
+    },
+    "cookie-signature": {
+      "version": "1.0.1"
     },
     "buffer-crc32": {
       "version": "0.2.1"
@@ -218,6 +210,14 @@
       "dependencies": {
         "mime": {
           "version": "1.2.11"
+        }
+      }
+    },
+    "domutils": {
+      "version": "1.1.5",
+      "dependencies": {
+        "domelementtype": {
+          "version": "1.1.1"
         }
       }
     },
@@ -273,44 +273,6 @@
         }
       }
     },
-    "jshint": {
-      "version": "2.0.1",
-      "dependencies": {
-        "shelljs": {
-          "version": "0.1.4"
-        },
-        "underscore": {
-          "version": "1.4.4"
-        },
-        "cli": {
-          "version": "0.4.5",
-          "dependencies": {
-            "glob": {
-              "version": "3.2.6",
-              "dependencies": {
-                "inherits": {
-                  "version": "2.0.1"
-                }
-              }
-            }
-          }
-        },
-        "minimatch": {
-          "version": "0.2.12",
-          "dependencies": {
-            "lru-cache": {
-              "version": "2.3.1"
-            },
-            "sigmund": {
-              "version": "1.0.0"
-            }
-          }
-        },
-        "console-browserify": {
-          "version": "0.1.6"
-        }
-      }
-    },
     "mocha": {
       "version": "1.12.1",
       "dependencies": {
@@ -352,6 +314,44 @@
               "version": "1.0.0"
             }
           }
+        }
+      }
+    },
+    "jshint": {
+      "version": "2.0.1",
+      "dependencies": {
+        "shelljs": {
+          "version": "0.1.4"
+        },
+        "underscore": {
+          "version": "1.4.4"
+        },
+        "cli": {
+          "version": "0.4.5",
+          "dependencies": {
+            "glob": {
+              "version": "3.2.6",
+              "dependencies": {
+                "inherits": {
+                  "version": "2.0.1"
+                }
+              }
+            }
+          }
+        },
+        "minimatch": {
+          "version": "0.2.12",
+          "dependencies": {
+            "lru-cache": {
+              "version": "2.3.1"
+            },
+            "sigmund": {
+              "version": "1.0.0"
+            }
+          }
+        },
+        "console-browserify": {
+          "version": "0.1.6"
         }
       }
     },
