@@ -34,6 +34,7 @@ $(BUILD_DIR):
 
 $(BUILD_DIR)/$(PROJECT).js: components $(SRC)
 	$(NODE_BIN)/component build --out $(BUILD_DIR) --name $(PROJECT)
+	echo "require('boot');" >> $(BUILD_DIR)/$(PROJECT).js
 
 # stylus for CSS
 
