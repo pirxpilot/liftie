@@ -1,9 +1,9 @@
 {
   "name": "about",
   "dependencies": {
-    "component/classes": "*",
-    "component/cookie": "*",
-    "component/event": "*"
+    "component/classes": "1.1.3",
+    "component/cookie": "1.0.1",
+    "component/event": "0.1.1"
   },
   "scripts": [
     "index.js"

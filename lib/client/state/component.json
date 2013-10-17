@@ -1,9 +1,9 @@
 {
   "name": "state",
   "dependencies": {
-    "code42day/dataset": "*",
-    "component/cookie": "*",
-    "component/classes": "*"
+    "code42day/dataset": "0.2.2",
+    "component/cookie": "1.0.1",
+    "component/classes": "1.1.3"
   },
   "scripts": [
     "index.js"
