@@ -25,7 +25,8 @@
     "jshint": "~2",
     "component": "~0",
     "uglify-js": "~2",
-    "commander": "~1"
+    "commander": "~1",
+    "component-shrinkwrap": "~0"
   },
   "main": "app.js",
   "directories": {
