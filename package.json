@@ -26,7 +26,8 @@
     "component": "~0",
     "uglify-js": "~2",
     "commander": "~1",
-    "component-shrinkwrap": "~0"
+    "component-shrinkwrap": "~0",
+    "component-autoboot": "~0"
   },
   "main": "app.js",
   "directories": {

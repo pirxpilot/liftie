@@ -33,8 +33,7 @@ $(BUILD_DIR):
 # component build to create .js and .css
 
 $(BUILD_DIR)/$(PROJECT).js: components $(SRC)
-	$(NODE_BIN)/component build --out $(BUILD_DIR) --name $(PROJECT)
-	echo "require('boot');" >> $(BUILD_DIR)/$(PROJECT).js
+	$(NODE_BIN)/component build --out $(BUILD_DIR) --use component-autoboot --name $(PROJECT)
 
 # stylus for CSS
 
