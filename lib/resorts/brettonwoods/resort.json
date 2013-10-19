@@ -1,0 +1,11 @@
+{
+  "name": "Bretton Woods",
+  "url": {
+    "host": "http://brettonwoods.com",
+    "pathname": "/alpine_trails/trail_report"
+  },
+  "tags": [
+    "New Hampshire",
+    "New England"
+  ]
+}

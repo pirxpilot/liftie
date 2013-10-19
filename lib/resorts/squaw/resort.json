@@ -1,0 +1,11 @@
+{
+  "name": "Squaw Valley",
+  "url": {
+    "host": "http://www.squaw.com",
+    "pathname": "/the-mountain/conditions"
+  },
+  "tags": [
+    "California",
+    "Lake Tahoe"
+  ]
+}

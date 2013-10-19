@@ -1,0 +1,10 @@
+{
+  "name": "Snowbasin",
+  "url": {
+    "host": "http://www.snowbasin.com",
+    "pathname": "/mountain/mountain-report/"
+  },
+  "tags": [
+    "Utah"
+  ]
+}

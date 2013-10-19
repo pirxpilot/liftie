@@ -1,0 +1,10 @@
+{
+  "name": "Mountain High",
+  "url": {
+    "host": "http://www.mthigh.com",
+    "pathname": "/trails-conditions/trails"
+  },
+  "tags": [
+    "California"
+  ]
+}

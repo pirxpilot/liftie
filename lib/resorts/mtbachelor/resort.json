@@ -1,0 +1,10 @@
+{
+  "name": "Mount Bachelor",
+  "url": {
+    "host": "http://www.mtbachelor.com",
+    "pathname": "/winter/mountain/snow_report"
+  },
+  "tags": [
+    "Oregon"
+  ]
+}

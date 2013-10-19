@@ -1,0 +1,10 @@
+{
+  "name": "Grand Targhee",
+  "url": {
+    "host": "http://www.grandtarghee.com",
+    "pathname": "/the-mountain/conditions/index.php"
+  },
+  "tags": [
+    "Wyoming"
+  ]
+}

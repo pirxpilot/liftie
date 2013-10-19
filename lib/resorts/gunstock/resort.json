@@ -1,0 +1,11 @@
+{
+  "name": "Gunstock",
+  "url": {
+    "host": "http://www.gunstock.com",
+    "pathname": "/winter/conditions/"
+  },
+  "tags": [
+    "New Hampshire",
+    "New England"
+  ]
+}

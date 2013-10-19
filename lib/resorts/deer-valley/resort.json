@@ -1,0 +1,10 @@
+{
+  "name": "Deer Valley",
+  "url": {
+    "host": "http://www.deervalley.com",
+    "pathname": "/OnTheMountain/Mountain/LiftStatus"
+  },
+  "tags": [
+    "Utah"
+  ]
+}

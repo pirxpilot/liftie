@@ -1,0 +1,10 @@
+{
+  "name": "Solitude",
+  "url": {
+    "host": "http://www.skisolitude.com",
+    "pathname": "/mountain/mountain_report.php"
+  },
+  "tags": [
+    "Utah"
+  ]
+}

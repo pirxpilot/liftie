@@ -1,0 +1,11 @@
+{
+  "name": "Killington",
+  "url": {
+    "host": "http://www.killington.com",
+    "pathname": "/winter/mountain/conditions/lifts"
+  },
+  "tags": [
+    "New England",
+    "Vermont"
+  ]
+}

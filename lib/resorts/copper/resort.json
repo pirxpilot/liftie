@@ -1,0 +1,10 @@
+{
+  "name": "Copper Mountain",
+  "url": {
+    "host": "http://www.coppercolorado.com",
+    "pathname": "/winter/the_mountain/dom/snow.html"
+  },
+  "tags": [
+    "Colorado"
+  ]
+}

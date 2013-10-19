@@ -1,0 +1,10 @@
+{
+  "name": "Schweitzer Mountain",
+  "url": {
+    "host": "http://www.schweitzer.com",
+    "pathname": "/mountain/snow-report/"
+  },
+  "tags": [
+    "Idaho"
+  ]
+}

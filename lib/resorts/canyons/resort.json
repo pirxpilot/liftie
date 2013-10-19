@@ -1,0 +1,10 @@
+{
+  "name": "Canyons",
+  "url": {
+    "host": "http://canyonsresort.com",
+    "pathname": "/lifts.html"
+  },
+  "tags": [
+    "Utah"
+  ]
+}

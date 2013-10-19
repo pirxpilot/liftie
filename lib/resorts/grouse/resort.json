@@ -1,0 +1,10 @@
+{
+  "name": "Grouse Mountain",
+  "url": {
+    "host": "http://www.grousemountain.com",
+    "pathname": "/current_conditions"
+  },
+  "tags": [
+    "British Columbia"
+  ]
+}

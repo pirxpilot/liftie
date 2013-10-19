@@ -1,0 +1,10 @@
+{
+  "name": "Mount Hood",
+  "url": {
+    "host": "http://www.skihood.com",
+    "pathname": ""
+  },
+  "tags": [
+    "Oregon"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "name": "Winterplace",
+  "url": {
+    "host": "http://www.winterplace.com",
+    "pathname": "/the_snow_report.php"
+  },
+  "tags": [
+    "West Virginia"
+  ]
+}

@@ -1,7 +1,7 @@
 var assert = require('assert');
 var fs = require('fs');
 var parser = require('../../lib/parser');
-var parseAlpine = require('../../lib/resorts/alpine').parse;
+var parseAlpine = require('../../lib/resorts/alpine');
 
 /*global describe, it */
 describe('parse alpine', function() {

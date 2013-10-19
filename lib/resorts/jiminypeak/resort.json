@@ -1,0 +1,11 @@
+{
+  "name": "Jiminy Peak",
+  "url": {
+    "host": "http://www.jiminypeak.com",
+    "pathname": "/snow-report"
+  },
+  "tags": [
+    "Massachusetts",
+    "New England"
+  ]
+}

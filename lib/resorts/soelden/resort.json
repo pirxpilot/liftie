@@ -1,0 +1,10 @@
+{
+  "name": "Sölden",
+  "url": {
+    "host": "http://www.soelden.com",
+    "pathname": "/main/EN/SD/WI/Wetter/heute/index.html"
+  },
+  "tags": [
+    "Austria"
+  ]
+}

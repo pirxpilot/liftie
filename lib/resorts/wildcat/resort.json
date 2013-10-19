@@ -1,0 +1,11 @@
+{
+  "name": "Wildcat",
+  "url": {
+    "host": "http://www.skiwildcat.com",
+    "pathname": "/snow-report.html"
+  },
+  "tags": [
+    "New Hampshire",
+    "New England"
+  ]
+}

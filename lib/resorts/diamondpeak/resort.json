@@ -1,0 +1,11 @@
+{
+  "name": "Diamond Peak",
+  "url": {
+    "host": "http://diamondpeak.com",
+    "pathname": "/conditions"
+  },
+  "tags": [
+    "Lake Tahoe",
+    "Nevada"
+  ]
+}

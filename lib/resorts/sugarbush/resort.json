@@ -1,0 +1,11 @@
+{
+  "name": "Sugarbush",
+  "url": {
+    "host": "http://www.sugarbush.com",
+    "pathname": "/snow-trails-conditions/live-lift-status"
+  },
+  "tags": [
+    "New England",
+    "Vermont"
+  ]
+}

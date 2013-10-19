@@ -1,0 +1,10 @@
+{
+  "name": "Big White",
+  "url": {
+    "host": "http://www.bigwhite.com",
+    "pathname": "/mountain-info/mountain-reports/lift-status"
+  },
+  "tags": [
+    "British Columbia"
+  ]
+}

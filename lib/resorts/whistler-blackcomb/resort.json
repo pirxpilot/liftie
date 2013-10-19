@@ -1,0 +1,14 @@
+{
+  "name": "Whistler Blackcomb",
+  "dataUrl": {
+    "host": "https://secure.whistlerblackcomb.com",
+    "pathname": "/ls/lifts.aspx"
+  },
+  "url": {
+    "host": "http://www.whistlerblackcomb.com",
+    "pathname": "/the-mountain/lifts-and-grooming/index.aspx"
+  },
+  "tags": [
+    "British Columbia"
+  ]
+}

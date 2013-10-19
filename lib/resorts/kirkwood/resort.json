@@ -1,0 +1,11 @@
+{
+  "name": "Kirkwood",
+  "url": {
+    "host": "http://winter.kirkwood.com",
+    "pathname": "/site/mountain/snow-report"
+  },
+  "tags": [
+    "California",
+    "Lake Tahoe"
+  ]
+}
