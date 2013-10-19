@@ -1,6 +1,6 @@
 {
   "name": "liftie",
-  "version": "1.13.0",
+  "version": "1.13.1",
   "dependencies": {
     "express": {
       "version": "3.4.0",
@@ -176,14 +176,17 @@
     "fresh": {
       "version": "0.2.0"
     },
-    "methods": {
-      "version": "0.0.1"
-    },
     "cookie-signature": {
       "version": "1.0.1"
     },
+    "methods": {
+      "version": "0.0.1"
+    },
     "buffer-crc32": {
       "version": "0.2.1"
+    },
+    "component-autoboot": {
+      "version": "0.1.0"
     },
     "range-parser": {
       "version": "0.0.4"
@@ -196,6 +199,9 @@
     },
     "qs": {
       "version": "0.6.5"
+    },
+    "component-shrinkwrap": {
+      "version": "0.1.0"
     },
     "commander": {
       "version": "1.3.2",

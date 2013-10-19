@@ -1,8 +1,8 @@
 {
   "name": "minimax",
   "dependencies": {
-    "component/event": "*",
-    "component/classes": "*"
+    "component/classes": "1.1.3",
+    "component/event": "0.1.1"
   },
   "scripts": [
     "index.js"

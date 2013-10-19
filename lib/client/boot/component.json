@@ -2,9 +2,9 @@
   "name": "boot",
   "description": "Main app boot component",
   "dependencies": {
-    "a-sk/domready": "*",
-    "code42day/ga": "*",
-    "component/enumerable": "*"
+    "pirxpilot/domready": "0.1.0",
+    "code42day/ga": "1.0.0",
+    "component/enumerable": "0.3.1"
   },
   "scripts": [
     "index.js"

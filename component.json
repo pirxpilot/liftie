@@ -2,6 +2,9 @@
   "name": "liftie",
   "description": "Client side of liftie.info",
   "version": "1.13.1",
+  "dependencies": {
+    "component/emitter": "1.0.1"
+  },
   "local": ["boot"],
   "paths": ["lib/client"]
 }
