@@ -1,4 +1,11 @@
 
+1.13.2 / 2013-10-19 
+==================
+
+ * change listen message
+ * generate self-executing script
+ * pin component versions
+
 0.13.1 / 2013-09-21 
 ==================
 
