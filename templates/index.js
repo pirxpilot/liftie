@@ -1,5 +1,5 @@
-var select = require('../select');
-var coerce = require('../tools/coerce');
+var select = require('../../select');
+var coerce = require('../../tools/coerce');
 var debug = require('debug')('liftie:resort:${ id }');
 
 function parse(dom) {
@@ -16,12 +16,4 @@ function parse(dom) {
   return liftStatus;
 }
 
-module.exports = {
-  name: '${ name }',
-  url: {
-    host: '${ host }',
-    pathname: '${ pathname }'
-  },
-  tags: [],
-  parse: parse
-};
+module.exports = parse;

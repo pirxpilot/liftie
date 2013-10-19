@@ -19,7 +19,7 @@ all: lint test build
 	$(NODE_BIN)/stylus --include-css --compress --use ./node_modules/nib/lib/nib.js $<
 
 lint:
-	$(NODE_BIN)/jshint *.js lib test
+	$(NODE_BIN)/jshint *.js bin/generate lib test
 
 test:
 	$(NODE_BIN)/mocha --recursive
