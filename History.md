@@ -1,4 +1,13 @@
 
+2.0.0 / 2013-10-20 
+==================
+
+ * add resort opening dates
+ * fix Steve's pass status for new season
+ * fix SugarLoaf status for new season
+ * fix invalid og:image property
+ * switch to 2 file (json descriptor + js parser) format to describe resorts
+
 1.13.2 / 2013-10-19 
 ==================
 
