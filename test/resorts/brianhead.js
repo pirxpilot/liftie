@@ -1,4 +1,4 @@
-var assert = require('assert');
+var should = require('should');
 var fs = require('fs');
 var parser = require('../../lib/parser');
 var parse = require('../../lib/resorts/brianhead');
@@ -11,16 +11,16 @@ describe('parse brianhead', function() {
     stream.on('error', done);
     stream.pipe(parser(parse, function(err, status) {
       var expected = {
-        'Wildflower': 'open',
-        'Giant Steps': 'hold',
-        'Blackfoot': 'open',
-        'Navajo': 'open',
-        'Roulette': 'hold',
-        'Pioneer': 'open',
-        'The Dunes': 'hold',
-        'Alpen Glow': 'open'
+        'Wildflower': 'closed',
+        'Giant Steps': 'closed',
+        'Blackfoot': 'closed',
+        'Navajo': 'closed',
+        'Roulette': 'closed',
+        'Pioneer': 'closed',
+        'The Dunes': 'closed',
+        'Alpen Glow': 'closed'
       };
-      assert.deepEqual(status, expected);
+      status.should.eql(expected);
       done(err);
     }));
   });
