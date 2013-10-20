@@ -1,4 +1,4 @@
-var assert = require('assert');
+var should = require('should');
 var fs = require('fs');
 var parser = require('../../lib/parser');
 var parse = require('../../lib/resorts/copper');
@@ -12,30 +12,32 @@ describe('parse copper', function() {
     stream.pipe(parser(parse, function(err, status) {
       var expected = {
         'Alpine': 'closed',
-        'American Eagle': 'open',
-        'American Flyer': 'open',
+        'American Eagle': 'closed',
+        'American Flyer': 'closed',
         'Black Jack': 'closed',
-        'Easy Rider': 'open',
-        'Excelerator': 'open',
+        'Celebrity Ridge': 'closed',
+        'Easy Rider': 'closed',
+        'Excelerator': 'closed',
         'Gem': 'closed',
-        'Kokomo': 'open',
-        'Lumberjack': 'open',
+        'Kokomo': 'closed',
+        'Lumberjack': 'closed',
         'Mountain Chief': 'closed',
-        'Pitchfork': 'open',
-        'Rendezvous': 'open',
+        'Pitchfork': 'closed',
+        'Rendezvous': 'closed',
         'Resolution': 'closed',
-        'Rugrat': 'open',
-        'Sierra': 'open',
-        'Slingshot': 'open',
-        'Stinger': 'open',
-        'Storm King': 'open',
-        'Super Bee': 'open',
-        'The Glide': 'open',
-        'Timberline Express': 'open',
+        'Rugrat': 'closed',
+        'Sierra': 'closed',
+        'Slingshot': 'closed',
+        'Stinger': 'closed',
+        'Storm King': 'closed',
+        'Super Bee': 'closed',
+        'The Glide': 'closed',
+        'Timberline Express': 'closed',
         'Tucker Cat': 'closed',
-        'Union Creek High Speed Quad': 'open'
+        'Union Creek High Speed Quad': 'closed'
       };
-      assert.deepEqual(status, expected);
+      should.exist(status);
+      status.should.eql(expected);
       done(err);
     }));
   });
