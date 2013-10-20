@@ -1,5 +1,5 @@
 var assert = require('assert');
-var parse = require('../../lib/resorts/steamboat').parse;
+var parse = require('../../lib/resorts/steamboat');
 
 var data = [{
   "HighSpeed": "False",

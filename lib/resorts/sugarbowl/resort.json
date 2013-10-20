@@ -1,0 +1,11 @@
+{
+  "name": "Sugar Bowl",
+  "url": {
+    "host": "http://www.sugarbowl.com",
+    "pathname": "/conditions"
+  },
+  "tags": [
+    "California",
+    "Lake Tahoe"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "Smugglers' Notch",
+  "url": {
+    "host": "http://www.smuggs.com",
+    "pathname": "/pages/winter/snowReport/"
+  },
+  "tags": [
+    "New England",
+    "Vermont"
+  ]
+}

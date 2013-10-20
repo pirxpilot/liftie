@@ -1,0 +1,11 @@
+{
+  "name": "Boreal",
+  "url": {
+    "host": "http://www.rideboreal.com",
+    "pathname": "/winter/mountain_info/snow-report"
+  },
+  "tags": [
+    "California",
+    "Lake Tahoe"
+  ]
+}

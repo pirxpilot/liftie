@@ -1,0 +1,10 @@
+{
+  "name": "Park City",
+  "url": {
+    "host": "http://www.parkcitymountain.com",
+    "pathname": "/site/mountain-info/conditions/snow-report/snow_report"
+  },
+  "tags": [
+    "Utah"
+  ]
+}

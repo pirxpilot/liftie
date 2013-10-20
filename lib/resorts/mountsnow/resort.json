@@ -1,0 +1,11 @@
+{
+  "name": "Mount Snow",
+  "url": {
+    "host": "http://mountsnow.com",
+    "pathname": "/snow-report/"
+  },
+  "tags": [
+    "Vermont",
+    "New England"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "name": "Loveland",
+  "url": {
+    "host": "http://www.skiloveland.com",
+    "pathname": "/themountain/reports/runstats.aspx"
+  },
+  "tags": [
+    "Colorado"
+  ]
+}

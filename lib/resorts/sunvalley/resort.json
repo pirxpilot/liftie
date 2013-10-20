@@ -1,0 +1,10 @@
+{
+  "name": "Sun Valley",
+  "url": {
+    "host": "http://www.sunvalley.com",
+    "pathname": "/mountain/report/"
+  },
+  "tags": [
+    "Idaho"
+  ]
+}

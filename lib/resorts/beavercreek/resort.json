@@ -1,0 +1,10 @@
+{
+  "name": "Beaver Creek",
+  "url": {
+    "host": "http://www.beavercreek.com",
+    "pathname": "/the-mountain/terrain-status.aspx"
+  },
+  "tags": [
+    "Colorado"
+  ]
+}

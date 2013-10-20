@@ -3,6 +3,7 @@
 var program = require('commander');
 var url = require('url');
 var fs = require('fs');
+var path = require('path');
 var request = require('superagent');
 var _ = require('lodash');
 
@@ -42,19 +43,32 @@ function params(resort, name, statusUrl) {
   });
 }
 
-function resolve(path) {
-  return fs.realpathSync(__dirname + '/' + path);
-}
 
 function generate(resort) {
   console.log('Generating files for %s', resort.name);
-  var templates = resolve('../templates'),
-    lib = resolve('../lib/resorts'),
-    test = resolve('../test/resorts');
+  var templates = path.resolve(__dirname, '../templates'),
+    lib = path.resolve(__dirname, '../lib/resorts'),
+    test = path.resolve(__dirname, '../test/resorts'),
+    resortDir = path.join(lib, resort.id);
 
-  copy(templates + '/resort.js', lib + '/' + resort.id + '.js', resort);
-  copy(templates + '/test.js', test + '/' + resort.id + '.js', resort);
-  curl(resort.host + resort.pathname, test + '/example/' + resort.id + '.html');
+  fs.mkdirSync(resortDir);
+  copy(path.join(templates, 'index.js'), path.join(resortDir, 'index.js'), resort);
+  write(path.join(resortDir, 'resort.json'), {
+    name: resort.name,
+    url: {
+      host: resort.host,
+      pathname: resort.pathname
+    },
+    tags: []
+  });
+  copy(path.join(templates, 'test.js'), path.join(test, resort.id + '.js'), resort);
+  curl(resort.host + resort.pathname, path.join(test, 'example', resort.id + '.html'));
+}
+
+
+function write(dst, json) {
+  console.log('Generating %s...', dst);
+  fs.writeFile(dst, JSON.stringify(json, null, 1));
 }
 
 function copy(src, dst, params) {

@@ -1,0 +1,10 @@
+{
+  "name": "Alta",
+  "url": {
+    "host": "http://www.alta.com",
+    "pathname": "/pages/report.php"
+  },
+  "tags": [
+    "Utah"
+  ]
+}

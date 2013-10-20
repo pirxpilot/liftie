@@ -1,0 +1,10 @@
+{
+  "name": "Brighton",
+  "url": {
+    "host": "http://www.brightonresort.com",
+    "pathname": "/skireport-main.html"
+  },
+  "tags": [
+    "Utah"
+  ]
+}

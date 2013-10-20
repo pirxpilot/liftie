@@ -1,0 +1,10 @@
+{
+  "name": "Winter Park",
+  "url": {
+    "host": "http://www.winterparkresort.com",
+    "pathname": "/the-mountain/lift-and-trail-report.aspx"
+  },
+  "tags": [
+    "Colorado"
+  ]
+}

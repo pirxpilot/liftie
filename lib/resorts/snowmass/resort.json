@@ -1,0 +1,11 @@
+{
+  "name": "Snowmass",
+  "url": {
+    "host": "http://www.aspensnowmass.com",
+    "pathname": "/snowmass/grooming"
+  },
+  "tags": [
+    "Colorado",
+    "Aspen"
+  ]
+}

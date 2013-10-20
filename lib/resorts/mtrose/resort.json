@@ -1,0 +1,11 @@
+{
+  "name": "Mount Rose",
+  "url": {
+    "host": "http://www.skirose.com",
+    "pathname": "/on-the-mountain/snow-report"
+  },
+  "tags": [
+    "Nevada",
+    "Lake Tahoe"
+  ]
+}

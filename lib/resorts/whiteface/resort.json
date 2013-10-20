@@ -1,0 +1,10 @@
+{
+  "name": "Whiteface",
+  "url": {
+    "host": "http://www.whiteface.com",
+    "pathname": "/mountain/conditions"
+  },
+  "tags": [
+    "New York"
+  ]
+}
