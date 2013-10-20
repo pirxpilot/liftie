@@ -1,1187 +1,737 @@
-<!doctype html>
 
-<!--[if IE 7 ]>    <html lang="en" class="no-js ie7">
-	<style>
-	    label.radio { margin: 11px 0 0 !important; }
-        #formbuttons { position:relative; left:-235px;; }
-        label#calendar { position:relative; top:-35px !important;}
-        .required { color: #f00 !important; }
-    </style>
+
+
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js ie-test gt-ie8"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Trails &amp; Lifts | Sugarloaf</title>
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+
+        <link rel="shortcut icon" href="/Content/favicon.ico" />
+
+        <link rel="stylesheet" href="/Content/css/main.min.css">
+
+        <script src="/Content/js/vendor/modernizr-2.6.2.min.js"></script>
+
+            <base href="http://sugarloaf.com/" />
+
+        
     
-<![endif]-->
-<!--[if IE 8 ]>    <html lang="en" class="no-js ie8">
-	<style>
-	    label.radio { margin: 11px 0 0 !important; }
-        .pie { behavior: url("/GlobalAssets/css3pie/PIE.htc"); }
-    </style>
-<![endif]-->
-<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
 
-<head>
-	    
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    
-	<meta http-equiv="Cache-Control" content="max-age=86400, must-revalidate" />	
-	<meta name="description"
-    	content="Official site featuring mountain description and statistics, snow reports, travel suggestions, mountain cams and kid's center information." />
-	<meta name="keywords"
-    	content="ski maine, maine skiing, maine ski resort, four season resort, ski, skiing, snowboard, snowboarding,			sugarloaf, sugarloaf usa, resort, maine, golf, golf course, golf club, resorts, ski, skiing,  snow, winter,			vacation, vacations, sugarloaf mountain hotel, inn, ski school" />
-	
-    
-	
-	<link rel="shortcut icon" href="/favicon.ico">
-	<link rel="stylesheet" href="../../Sugarloaf2011/GlobalAssets/css/style.css?v=2" media="screen">
-	<link rel="stylesheet" href="../../Sugarloaf2011/GlobalAssets/css/print.css" media="print">
-    <link href="../../Sugarloaf2011/GlobalAssets/css/jquery-ui.css" rel="stylesheet" type="text/css" media="screen" />
-    <link rel="stylesheet" href="../../Sugarloaf2011/GlobalAssets/css/validationEngine.jquery.css" media="screen">
-    <link rel="stylesheet" href="../../Sugarloaf2011/GlobalAssets/css/nivo-slider.css" media="screen">
-    <link rel="stylesheet" href="../../Sugarloaf2011/GlobalAssets/css/font-awesome.css">
-    
-    <!--<link href="http://webfonts.fontslive.com/css/c9ea9e6b-ec99-4ac5-b23a-4fdc33e1d05f.css" rel="stylesheet" type="text/css" />-->
-    <script type="text/javascript" src="http://fast.fonts.com/jsapi/b9add8cb-0dc2-4471-aea8-1c86baa87072.js"></script>
-	
-	<!-- Google+ Page thing. No idea what it does -->
-	<link href="https://plus.google.com/100495811257273464479/" rel="publisher" />
-    
-	<script src="../../Sugarloaf2011/GlobalAssets/js/libs/modernizr-1.7.min.js"></script>
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
-	<script>!window.jQuery && document.write(unescape('%3Cscript src="../js/libs/jquery-1.5.1.min.js"%3E%3C/script%3E'))</script>
-	<script src="../../Sugarloaf2011/GlobalAssets/js/cookie.js"></script>
+    </head>
+    <body data-controller="trailsLifts" data-action="">
 
-	
-	
-	<script type='text/javascript'>
-	
-		function seasonSwitch(forceTo) {
-			var currentPage = window.location.pathname;
-			var season;
-
-			if (currentPage === '/index.html' || currentPage === '/summer.html') {
-				season = (currentPage === '/index.html') ? 'winter' : 'summer';
-				setCookie('season',season); // Cookie expires at the end of session
-			}
-			else if (forceTo && forceTo !== 'neither') {
-				// There is a third case "neither". We want to send this case to the ELSE
-				season = (forceTo === 'winter') ? 'winter' : 'summer';
-			}
-			else {
-				season = (!getCookie('season')) ? 'winter' : getCookie('season');
-			}
-			
-			return season;
-		}
-	
-
-		var _gaq = _gaq || [];
-		_gaq.push(
-			['_setAccount', 'UA-2548802-2'],
-			['_trackPageview'],
-			['b._setAccount', 'UA-23690911-1'],
-			['b._trackPageview']
-		);
-
-		(function() {
-			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-		})();
-
-	</script>
-	
-	<script type='text/javascript'>season = seasonSwitch('winter');</script>
-	<script type="text/javascript">
-		$('head').append('<link rel="stylesheet" href="http://www.sugarloaf.com/Sugarloaf2011/GlobalAssets/css/' + season + '.css" media="screen">');
-	</script>
-	
-
-    <title>Sugarloaf | Trails &amp; Lifts</title>
-	
-	<style>
-		.smalltext { 
-			font: 10px/15px verdana;
-			color: #666;
-			background: url("/TheMountain/DailyReport/images/mobile-icon-21x25.png") no-repeat 177px 5px;
-		}
-		
-		#hours-icon {
-			border: 0 !important;
-			padding:0 !important;
-			margin: 0 !important;
-			position:relative;
-			top:4px;
-			left:3px;
-		}
-		
-		#lift-hours:hover { text-decoration:none; }
-		
-		#lift-hours {
-			font:bold 13px 'Gill Sans';
-			text-decoration:none;
-			color:#f8981d;
-			cursor:pointer;
-			position:absolute;
-			top:5px;
-			right:20px;
-		}
-		
-		#lift-hours:hover { text-decoration:underline; }
-		
-		#liftHoursPopup {
-			width:260px;
-			padding:10px;
-			background:#000;
-			background:rgba(0,0,0,0.8);
-			position:absolute;
-			top:80px;
-			left:712px;
-			z-index:1000;
-			display:none;
-		}
-		.liftsHoursHeader {
-			font: bold 13px/13px 'Gill Sans';
-			color:#fff;
-			margin:0 auto 5px;
-		}
-		.liftColumn {
-			width:86px;
-			font:10px/17px verdana;
-			color:#fff;
-		}
-	</style>
-</head>
-
-<body>
-
-    <!-- BEGIN LivePerson Monitor. -->
-    <script type="text/javascript">
-    window.lpTag={site:'79546898', lpSrv:'server.iad.liveperson.net', _v:'1.0',protocol:location.protocol,events:{bind:function(app,ev,fn){lpTag.defer(function(){lpTag.events.bind(app,ev,fn)})},trigger:function(app,ev,json){lpTag.defer(function(){lpTag.events.trigger(app,ev,json)})}},defer:function(fn){this._defL=this._defL||[];this._defL.push(fn)},load:function(src,chr,id){if(!src){src=this.protocol+'//'+((this.ovr&&this.ovr.domain)?this.ovr.domain:'lptag.liveperson.net')+'/tag/tag.js?site='+this.site}var s=document.createElement('script');s.setAttribute('charset',chr?chr:'UTF-8');if(id){s.setAttribute('id',id)}s.setAttribute('src',src);document.getElementsByTagName('head').item(0).appendChild(s)},init:function(){this._timing=this._timing||{};this._timing.start=(new Date()).getTime();var that=this;if(window.attachEvent){window.attachEvent('onload',function(){that._domReady('domReady')})}else{window.addEventListener('DOMContentLoaded',function(){that._domReady('contReady')},false);window.addEventListener('load',function(){that._domReady('domReady')},false)}if(typeof(_lptStop)=='undefined'){this.load()}},_domReady:function(n){this.isDom=true;this._timing[n]=(new Date()).getTime();this.events.trigger('LPT','DOM_READY')}};lpTag.init();
-    </script>
-    <!-- END LivePerson Monitor. -->
-
-	<script type='text/javascript'>
-		var ebRand = Math.random()+'';
-		ebRand = ebRand * 1000000;
-		//<![CDATA[ 
-		document.write('<scr'+'ipt src="HTTP://bs.serving-sys.com/BurstingPipe/ActivityServer.bs?cn=as&amp;ActivityID=140919&amp;rnd=' + ebRand + '"></scr' + 'ipt>');
-		//]]>
-	</script>
-	<noscript>
-		<img width="1" height="1" style="border:0" src="HTTP://bs.serving-sys.com/BurstingPipe/ActivityServer.bs?cn=as&amp;ActivityID=140919&amp;ns=1"/>
-	</noscript>
-
-	<div id="container">
-		<header>
-			<div id="utility">
-				<ul class="season-switch nav-ul clearfix">
-					<li class="winter-switch"><a href="/index.html">Winter</a></li>
-					<li class="summer-switch"><a href="/summer.html">Summer</a></li>
-					<li class="mobile-switch"><a href="/TheMountain/Mobile.html">Mobile</a></li>
-                    <li class="mobile-switch"><a href="http://www.sugarloaf.com/quebec"><img src="/GlobalAssets/images/quebec-flag-icon.gif" width="25" /></a></li>
-				</ul>
-				
-				<form action="/search.html">
-					<input type="hidden" name="cx" value="013653897123796309119:yqfxmidsxwo" />
-					<input type="hidden" name="cof" value="FORID:11" />
-					<input id="search-box" name="q" type="text" placeholder="Search" class="searchbox">
-				</form>
-				<script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&lang=en"></script>
-
-				
-				<ul class="social-buttons nav-ul clearfix">
-					<li>
-                    	<a href="https://www.facebook.com/sugarloaf" class="sprite-facebook" title="Facebook" target="_blank">
-                    		<span class="hidetext">Facebook</span>
-                        </a>
-                    </li>
-					<li>
-                    	<a href="https://twitter.com/#!/SugarloafMaine" class="sprite-twitter" title="Twitter" target="_blank">
-                        	<span class="hidetext">Twitter</span>
-                        </a>
-                    </li>
-					<li>
-                    	<a href="http://www.youtube.com/user/Sugarloafers" class="sprite-youtube" title="YouTube" target="_blank">
-                        	<span class="hidetext">YouTube</span>
-                        </a>
-                    </li>
-					<li>
-                    	<a href="http://www.flickr.com/photos/sugarloafmaine/" class="sprite-flickr" title="Flickr" target="_blank">
-                        	<span class="hidetext">Flickr</span>
-                        </a>
-                    </li>
-					<li>
-                    	<a href="http://www.sugarloaf.com/blueroom" class="sprite-community" title="Community" target="_blank">
-                        	<span class="hidetext">The Blue Room</span>
-                        </a>
-                    </li>
-					<li>
-                    	<a href="/Email_Lists.html" class="sprite-email" title="Email/Newsletter">
-                        	<span class="hidetext">Email</span>
-                        </a>
-                    </li>
-                    <li>
-                        <div id="liveChatTop" style='width:140px;height:40px;' class="live-chat-top"></div>
-                    </li>
-
-				</ul>
-			</div>			
-		</header>
-
-            
-   		<nav class="pie">
-						
-			<a href="/"><img src="../../Sugarloaf2011/GlobalAssets/images/nav_sl_logo.png" alt="Sugarloaf" title="Sugarloaf Ski Resort Logo" class="nav-sl-logo"/></a>
-			<!--<a href="/"><img src="../../Sugarloaf2011/GlobalAssets/images/nav_kos_logo.png" alt="Sugarloaf" title="Sugarloaf Ski Resort Logo" class="nav-sl-logo winter"/></a>-->
-			<a href="/"><img src="../../Sugarloaf2011/GlobalAssets/images/nav_sl_logo.png" alt="Sugarloaf" title="Sugarloaf Ski Resort Logo" class="nav-sl-logo summer"/></a>
-			
-			<!--<span class="kingOfSpring winter">King of Spring&trade;</span>-->
-			
-			<ul class="nav-ul top-nav dropdown winter">
-				<li><a href="/VacationPlanning/index.html" class="sprite-vacplaning"><span class="hidetext">Vacation Planning</span></a>
-					<div class="sub_menu vacation">
-						<div>
-							<span class="navh7"><a href="/VacationPlanning/index.html">Deals &amp; Packages</a></span>
-							<ul>
-								<li><a href="/VacationPlanning/Ski_Stay_Packages.html">Ski &amp; Stay Packages</a></li>
-                                <li><a href="/VacationPlanning/SkiStayRates.html">Ski &amp; Stay Rates</a></li>
-                                <li><a href="/VacationPlanning/ZoomRooms.html">Zoom Rooms</a></li>
-                                <li><a href="/VacationPlanning/hot-deals.html">Hot Deals</a></li>
-								<li><a href="https://www.sugarloaf.com/reservations">Check Availability</a></li>
-							</ul>
-						</div>
-						
-						<div>
-							<span class="navh7"><a href="/VacationPlanning/Lodging/LodgingOptions.html">Lodging Options</a></span>
-							<ul>
-								<li><a href="/VacationPlanning/Lodging/LodgingDescriptions/SugarloafMtnHotel.html">Sugarloaf Mountain Hotel</a></li>
-								<li><a href="/VacationPlanning/Lodging/LodgingDescriptions/SugarloafInn.html">Sugarloaf Inn</a></li>
-								<li><a href="/VacationPlanning/Lodging/LodgingOptions.html">Condominiums</a></li>
-								<li><a href="/VacationPlanning/Lodging/BoyneStars.html">Boyne Resorts Star Ratings</a></li>
-								<li><a href="/VacationPlanning/Lodging/BoyneBed.html">Boyne Bed</a></li>
-							</ul>
-						</div>
-
-						<div>
-							<span class="navh7"><a href="/VacationPlanning/confirmation.html">Confirmation</a></span>
-                            <span class="navh7"><a href="/VacationPlanning/First_Timers_Guide.html">First Timer's Guide</a></span>
-							<span class="navh7"><a href="/VacationPlanning/child_care.html">Child Care</a></span>
-							<span class="navh7"><a href="/Email_Lists.html">E-Newsletter</a></span>
-							<span class="navh7"><a href="/VacationPlanning/directions.html">Directions</a></span>
-						</div>
-							
-        			</div>
-				</li>
-				<li><a href="/PricingProducts/index.html" class="sprite-pricingprod"><span class="hidetext">Pricing & Products</span></a>
-					<div class="sub_menu pricing">
-						<div>
-							<span class="navh7"><a href="/PricingProducts/ticketguide.html">Tickets & Passes</a></span>
-							<ul>
-								<li><a href="/PricingProducts/index.html">Lift Tickets</a></li>
-								<li><a href="/PricingProducts/Season_Passes.html">Season Passes</a></li>
-								<li><a href="/PricingProducts/Spring_Pack.html">Spring Pack</a></li>
-								<li><a href="/PricingProducts/frequentskier.html">Frequent Skier Card</a></li>
-								<li><a href="/PricingProducts/eTickets.html">eTickets</a></li>
-                                <li><a href="http://www.sugarloaf.com/eStore/Default.aspx" target="_blank">Online Store</a></li>
-							</ul>
-						</div>
-
-						<div>
-							<span class="navh7"><a href="/PricingProducts/RetailShops/index.html">Retail Shops</a></span>
-							<ul>
-								<li><a href="/PricingProducts/RetailShops/index.html">Downhill Supply Company</a></li>
-								<li><a href="/PricingProducts/RetailShops/sugarshop.html">The Sugarloafer Shop</a></li>
-                                <li><a href="http://boynecountrysports.com/c-294-sugarloaf.aspx">Online Logo Store</a></li>
-							</ul>
-						</div>
-						<div>
-							<span class="navh7"><a href="/PricingProducts/rentals.html">Rentals</a></span>
-							<span class="navh7"><a href="/PricingProducts/giftcertificates.html">Gift Cards</a></span>
-							<span class="navh7"><a href="/PricingProducts/BoyneRewards.html">Boyne Rewards</a></span>
-							<span class="navh7"><a href="/PricingProducts/military_benefits.html">Military Benefits</a></span>
-                            <span class="navh7"><a href="/VacationPlanning/Groups/CorpDiscProg.html">Corporate Discount</a></span>
-						</div>
-							
-        			</div>
-				</li>
-				<li><a href="/EventsActivities/index.html" class="sprite-events"><span class="hidetext">Events &amp; Activities</span></a>
-					<div class="sub_menu events">
-						<div>
-							<span class="navh7"><a href="/EventsActivities/index.html">Events</a></span>
-							<ul>
-								<li><a href="/EventsActivities/index.html">Events Calendar</a></li>
-								<li><a href="/EventsActivities/concerts.html">Concerts</a></li>
-								<li><a href="/EventsActivities/reggae.html">Reggae Festival</a></li>
-								<li><a href="/EventsActivities/marathon.html">Sugarloaf Marathon</a></li>
-							</ul>
-						</div>
-
-						<div>
-							<span class="navh7"><a href="/EventsActivities/WinterActivities/index.html">Activities</a></span>
-							<ul>
-								<li><a href="/EventsActivities/WinterActivities/index.html">Activity Guide</a></li>
-								<li><a href="/EventsActivities/WinterActivities/zip_lines.html">Ziplines</a></li>
-								<li><a href="/EventsActivities/turbo_tubing.html">Tubing</a></li>
-								<li><a href="/EventsActivities/kids.html">Kids Activities</a></li>
-							</ul>
-						</div>
-						<div>
-							<span class="navh7"><a href="/EventsActivities/DiningNightlife/index.html">Dining &amp; Nightlife</a></span>
-							<span class="navh7"><a href="/EventsActivities/SportsFitnessCenter/index.html">Sports &amp; Fitness Center</a></span>
-							<span class="navh7"><a href="/EventsActivities/agc.html">Anti-Gravity Complex</a></span>
-							<span class="navh7"><a href="/EventsActivities/SportsFitnessCenter/shear_peak.html">Shear Peak Salon</a></span>
-                        </div>
-        			</div>
-				</li>
-				<li><a href="/SkiSchool/index.html" class="sprite-skischool"><span class="hidetext">Ski School</span></a>
-					<div class="sub_menu skischool">
-						<div>
-							<span class="navh7"><a href="/SkiSchool/learn_to.html">Learn to Ski &amp; Ride</a></span>
-							<ul>
-								<li><a href="/SkiSchool/group_clinics.html">Group Clinics</a></li>
-								<li><a href="/SkiSchool/private_clinics.html">Private Clinics</a></li>
-								<li><a href="/SkiSchool/adult_seasonal.html">Adult Seasonal</a></li>
-								<li><a href="/SkiSchool/kids_programs.html">Kids Programs</a></li>
-                                <li><a href="/SkiSchool/kids_seasonal.html">Kids Seasonal</a></li>
-								<li><a href="/SkiSchool/SCVA_Program.html">SCVA Programs</a></li>
-							</ul>
-						</div>
-						<div>
-							<span class="navh7"><a href="/SkiSchool/pricing.html">Pricing</a></span>
-							<span class="navh7"><a href="/SkiSchool/maine_card.html">Learn to Ski &amp; Ride Card</a></span>
-							<span class="navh7"><a href="/SkiSchool/Bring_a_Friend.html">Bring a Friend!</a></span>
-							<span class="navh7"><a href="/SkiSchool/what2wear.html">What to Wear</a></span>
-							<span class="navh7"><a href="/SkiSchool/where2meet.html">Where to Meet</a></span>
-                            <span class="navh7"><a href="/SkiSchool/MHS.html">Adaptive Ski Programs</a></span>
-						</div>
-							
-        			</div>
-				</li>
-				<li><a href="/TheMountain/index.html" class="sprite-themount"><span class="hidetext">The Mountain</span></a>
-					<div class="sub_menu mountain">
-						<div>
-							<span class="navh7"><a href="/TheMountain/DailyReport/index.html">Daily Report</a></span>
-							<ul>
-								<li><a href="/TheMountain/DailyReport/trail_lifts.html">Trails &amp; Lifts</a></li>
-								<li><a href="/TheMountain/livecam.html">Live Web Cam</a></li>
-								<li><a href="/TheMountain/DailyReport/camshot.html">Camshot</a></li>
-								<li><a href="/TheMountain/Video/index.html">Videos</a></li>
-								<li><a href="/TheMountain/Mobile.html">Sugarloaf Mobile</a></li>
-							</ul>
-						</div>
-
-						<div>
-							<span class="navh7"><a href="/TheMountain/index.html">Mountain Info</a></span>
-							<ul>
-								<li><a href="/TheMountain/terrain.html">Terrain</a></li>
-								<li><a href="/TheMountain/brackett_basin.html">Brackett Basin</a></li>
-								<li><a href="/TheMountain/Maps/index.html">Resort Maps</a></li>
-                                <li><a href="/TheMountain/UphillPolicy.html">Uphill Policy</a></li>
-								<!--<li><a href="/TheMountain/Sugarloaf_Replay.html">Sugarloaf Replay App</a></li>-->
-							</ul>
-						</div>
-						<div>
-                            <span class="navh7"><a href="http://www.sugarloaf.com/blueroom">The Blue Room</a></span>
-							<span class="navh7"><a href="/TerrainParks/index.html">Terrain Parks</a></span>
-							<span class="navh7"><a href="/OutdoorCenter/index.html">Outdoor Center</a></span>
-							<span class="navh7"><a href="/TheMountain/environment.html">Environment</a></span>
-							<span class="navh7"><a href="/TheMountain/safe_slopes.html">Slope Safety</a></span>
-                            <span class="navh7"><a href="/Email_Lists.html">E-Newsletter</a></span>
-						</div>
-							
-        			</div>
-				</li>
-				<li><a href="/VacationPlanning/Groups/index.html" class="sprite-groups"><span class="hidetext">Groups & Weddings</span></a>
-					<div class="sub_menu groups">
-						<div>
-							<span class="navh7"><a href="/GroupsConferences/index.html">Conferences</a></span>
-							<ul>
-								<li><a href="/GroupsConferences/conferencecenter.html">Conference Center</a></li>
-								<li><a href="/GroupsConferences/SugarloafHotel.html">Sugarloaf Mountain Hotel</a></li>
-								<li><a href="/GroupsConferences/SugarloafInn.html">Sugarloaf Inn</a></li>
-								<li><a href="/GroupsConferences/OutdoorCenter.html">Outdoor Center</a></li>
-								<li><a href="/GroupsConferences/conference-inquiry.html">Request a Quote</a></li>
-							</ul>
-						</div>
-						<div>
-							<span class="navh7"><a href="/VacationPlanning/Groups/day_groups.html">Day Groups</a></span>
-							<span class="navh7"><a href="/VacationPlanning/Groups/overnight_groups.html">Overnight Groups</a></span>
-							<span class="navh7"><a href="/GroupsConferences/Weddings.html">Weddings</a></span>
-						</div>
-        			</div>
-				</li>
-				<li><a href="http://www.sugarloafmountainside.com/" class="sprite-realestate"><span class="hidetext">Real Estate</span></a></li>
-			</ul>
-			<ul class="nav-ul top-nav dropdown summer">
-				<li><a href="/VacationPlanning/summer.html" class="sprite-vacplaning"><span class="hidetext">Vacation Planning</span></a>
-					<div class="sub_menu vacation">						
-						<div>
-							<span class="navh7"><a href="/VacationPlanning/Lodging/LodgingOptions.html">Lodging Options</a></span>
-							<ul>
-								<li><a href="/VacationPlanning/Lodging/LodgingDescriptions/SugarloafMtnHotel.html">Sugarloaf Mountain Hotel</a></li>
-								<li><a href="/VacationPlanning/Lodging/LodgingDescriptions/SugarloafInn.html">Sugarloaf Inn</a></li>
-								<li><a href="/VacationPlanning/Lodging/LodgingOptions.html">Condominiums</a></li>
-								<li><a href="/VacationPlanning/Lodging/BoyneStars.html">Boyne Resorts Star Ratings</a></li>
-								<li><a href="/VacationPlanning/Lodging/BoyneBed.html">Boyne Bed</a></li>
-							</ul>
-						</div>
-
-						<div>
-							<span class="navh7"><a href="/VacationPlanning/Vacation_Packages_Summer.html">Vacation Packages</a></span>
-                            <span class="navh7"><a href="http://www.sugarloafmountainside.com/Search/Results?neighborhood=All&propertyType=7&bedrooms=All&rangeLow=0&rangeHigh=500">Seasonal Rentals</a></span>
-							<span class="navh7"><a href="/VacationPlanning/directions.html">Directions</a></span>
-							<span class="navh7"><a href="/Email_Lists.html">E-Newsletter</a></span>
-                            <span class="navh7"><a href="https://www.sugarloaf.com/reservations">Check Availability</a></span>
-						</div>
-							
-        			</div>
-				</li>
-
-				<li><a href="/PricingProducts/course_rates.html" class="sprite-pricingprod"><span class="hidetext">Pricing &amp; Products</span></a>
-					<div class="sub_menu pricing">
-						<div>
-							<span class="navh7"><a href="/PricingProducts/course_rates.html">Course Rates</a></span>
-							<ul>
-								<li><a href="/PricingProducts/hot_deals_summer.html">Golf Hot Deals</a></li>
-								<li><a href="/PricingProducts/fore_packs.html">Fore Packs</a></li>
-								<li><a href="/PricingProducts/memberships.html">Golf Memberships</a></li>
-                                
-							</ul>
-						</div>
-
-						<div>
-							<span class="navh7"><a href="http://book.golfswitch.com/Course/courseList.asp?custid=SLG&courseid=RTP1209">Book A Tee Time</a></span>
-							<span class="navh7"><a href="/PricingProducts/RetailShops/retail_shops_summer.html">Retail Shops</a></span>
-							<span class="navh7"><a href="http://www.sugarloaf.com/eStore/Default.aspx">Online Store</a></span>
-						</div>
-							
-        			</div>
-				</li>
-				<li><a href="/EventsActivities/index.html" class="sprite-events"><span class="hidetext">Events &amp; Activities</span></a>
-					<div class="sub_menu events">
-						<div>
-							<span class="navh7"><a href="/EventsActivities/SummerActivities/index.html">Activity Guide</a></span>
-							<ul>
-								<li><a href="/EventsActivities/index.html">Events Calendar</a></li>
-								<li><a href="/EventsActivities/SummerActivities/scenic_lift_rides.html">Scenic Chairlift Rides</a></li>
-								<li><a href="/EventsActivities/SummerActivities/zip_lines.html">Ziplines</a></li>
-								<li><a href="/EventsActivities/GuidedAdventures/index.html">Sugarloaf Guided Adventures</a></li>
-								<li><a href="/EventsActivities/camp.html">Outdoor Adventure Camp</a></li>
-							</ul>
-						</div>
-
-						<div>
-							<span class="navh7"><a href="/EventsActivities/marathon.html">Sugarloaf Marathon</a></span>
-							<span class="navh7"><a href="/EventsActivities/DiningNightlife/Summer.html">Dining &amp; Nightlife</a></span>
-							<span class="navh7"><a href="/EventsActivities/SportsFitnessCenter/index.html">Sports &amp; Fitness Center</a></span>
-						</div>
-							
-        			</div>
-				</li>
-				<li><a href="/GolfCourse/Course_Report.html" class="sprite-thecourse"><span class="hidetext">The Course</span></a>
-					<div class="sub_menu skischool">
-						<div>
-							<span class="navh7"><a href="/GolfCourse/Course_Report.html">Course Report</a></span>
-							<span class="navh7"><a href="/GolfCourse/index.html">Interactive Course Guide</a></span>
-							<span class="navh7"><a href="/GolfCourse/golf_clubhouse.html">The Clubhouse</a></span>
-							<span class="navh7"><a href="/GolfCourse/accolades.html">Course Accolades</a></span>
-							<span class="navh7"><a href="/GolfCourse/maintenance.html">Maintenance Initiatives</a></span>
-                            <span class="navh7"><a href="/GolfCourse/Sister_Courses.html">Sister Courses</a></span>
-							<span class="navh7"><a href="/Email_Lists.html">E-Newsletter</a></span>
-						</div>
-							
-        			</div>
-				</li>
-				<li><a href="/GolfSchool/index.html" class="sprite-golfschool"><span class="hidetext">Golf School</span></a>
-					<div class="sub_menu mountain">
-						<div>
-							<span class="navh7"><a href="/GolfSchool/index.html">Golf School Programs</a></span>
-							<span class="navh7"><a href="/GolfSchool/Womens_Golf_School.html">Theme Weeks</a></span>
-							<span class="navh7"><a href="/GolfSchool/junior_golf_school.html">Nike Junior Golf School</a></span>
-							<span class="navh7"><a href="/GolfSchool/Nike_Fitting_Center.html">Nike Club Fitting Center</a></span>
-						</div>
-        			</div>
-				</li>
-				<li><a href="/VacationPlanning/Groups/summer.html" class="sprite-groups"><span class="hidetext">Groups &amp; Weddings</span></a>
-					<div class="sub_menu groups">
-						<div>
-							<span class="navh7"><a href="/GroupsConferences/index.html">Conferences</a></span>
-							<ul>
-								<li><a href="/GroupsConferences/conferencecenter.html">Conference Center</a></li>
-								<li><a href="/GroupsConferences/SugarloafHotel.html">Sugarloaf Mountain Hotel</a></li>
-								<li><a href="/GroupsConferences/SugarloafInn.html">Sugarloaf Inn</a></li>
-								<li><a href="/GroupsConferences/OutdoorCenter.html">Outdoor Center</a></li>
-								<li><a href="/GroupsConferences/conference-inquiry.html">Request a Quote</a></li>
-							</ul>
-						</div>
-						<div>
-							<span class="navh7"><a href="/VacationPlanning/Groups/summer.html">Groups</a></span>
-							<span class="navh7"><a href="/GroupsConferences/Weddings.html">Weddings</a></span>
-						</div>
-        			</div>
-				</li>
-				<li><a href="http://www.sugarloafmountainside.com/" class="sprite-realestate"><span class="hidetext">Real Estate</span></a></li>
-			</ul>
-            
-					<div id="content-header">
-						<!-- Get Winter Header -->
-						
-												
-										
-												<img src="/GlobalAssets/images/ContentHeaders/themountain1_hdr.jpg" alt="" class="winter" />
-											
-									
-							
-						<!-- Get Summer Header -->
-						
-
-								
-										<img src="/GlobalAssets/images/ContentHeaders/summer-numberten-1.jpg" alt="" class="summer" />
-									
-
-							
-
-					</div>
-           			<div id="content-title">
-						
-	                    <h1>
-                    		
-                            		Trails &amp; Lifts
-								
-                        </h1>
-						
-					</div>
-                
-            
-		</nav>
-
-		
-        <div id="maintainer">
-            <div id="content-main" role="main" class="clearfix">
-            	<div id="content" class="clearfix">
-	            	
-
- 
-	<h2>Status as of January 2, 2013 at 3:53 PM EST</h2>
+        <!-- BEGIN LivePerson Monitor. -->
+        <script type="text/javascript">
+            window.lpTag = { site: '79546898', lpSrv: 'server.iad.liveperson.net', _v: '1.0', protocol: location.protocol, events: { bind: function (app, ev, fn) { lpTag.defer(function () { lpTag.events.bind(app, ev, fn) }) }, trigger: function (app, ev, json) { lpTag.defer(function () { lpTag.events.trigger(app, ev, json) }) } }, defer: function (fn) { this._defL = this._defL || []; this._defL.push(fn) }, load: function (src, chr, id) { if (!src) { src = this.protocol + '//' + ((this.ovr && this.ovr.domain) ? this.ovr.domain : 'lptag.liveperson.net') + '/tag/tag.js?site=' + this.site } var s = document.createElement('script'); s.setAttribute('charset', chr ? chr : 'UTF-8'); if (id) { s.setAttribute('id', id) } s.setAttribute('src', src); document.getElementsByTagName('head').item(0).appendChild(s) }, init: function () { this._timing = this._timing || {}; this._timing.start = (new Date()).getTime(); var that = this; if (window.attachEvent) { window.attachEvent('onload', function () { that._domReady('domReady') }) } else { window.addEventListener('DOMContentLoaded', function () { that._domReady('contReady') }, false); window.addEventListener('load', function () { that._domReady('domReady') }, false) } if (typeof (_lptStop) == 'undefined') { this.load() } }, _domReady: function (n) { this.isDom = true; this._timing[n] = (new Date()).getTime(); this.events.trigger('LPT', 'DOM_READY') } }; lpTag.init();
+        </script>
+        <!-- END LivePerson Monitor. -->
 
 
+        <div id="outer-wrapper">
+            <!--[if lt IE 7]>
+                <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+            <![endif]-->
 
-	<div id="lifts" class="clearfix">
-		<div id="liftstatus" class="left">
-			<span class="statusheader">
-				Lift Status
-				<span id="lift-hours" class="right">
-					HOURS<img src="images/lift-hours-icon.jpg" id="hours-icon" />
-				</span>
-			</span>
-			<h5 class="lift sprite-speedquad">High Speed Detachable Quads</h5>
-			<div class="clearfix">
-				<span class="sprite-Closed">SuperQuad</span>
-				<span class="sprite-Closed">Whiffletree SuperQuad</span>
-			</div>
-			<hr class="nomargin">
-			<h5 class="lift sprite-fixedgripquad">High Speed Fixed Grip Quad</h5>
-			<div class="clearfix">
-				<span class="sprite-Closed">Skyline</span>
-			</div>
-			<hr class="nomargin">
-			<h5 class="lift sprite-capacityquad">High Capacity Fixed Grip Quads</h5>
-			<div class="clearfix">
-				<span class="sprite-Closed">King Pine</span>
-				<span class="sprite-Closed">Timberline</span>
-			</div>
-			<hr class="nomargin">
-			<h5 class="lift sprite-double">Double Chairs</h5>
-			<div class="clearfix">
-				<span class="sprite-Closed">Bucksaw</span>
-				<span class="sprite-Closed">Skidway</span>
-				<span class="sprite-Closed">Double Runner East</span>
-				<span class="sprite-Closed">Double Runner West</span>
-				<span class="sprite-Closed">Sawduster</span>
-				<span class="sprite-Closed">West Mountain</span>
-			</div>
-			<hr class="nomargin">
-			<h5 class="lift sprite-triple">Triple Chair</h5>
-			<div class="clearfix">
-				<span class="sprite-Closed">Snubber</span>
-			</div>
-			<hr class="nomargin">
-			<div class="clearfix">
-				<h5 class="lift sprite-tbar">T-Bar</h5>
-				<h5 class="lift sprite-carpet">Carpet</h5>
-			</div>
-			<div class="clearfix">
-				<span class="sprite-Closed">#3 T-Bar/Bateau</span>
-				<span class="sprite-Closed">Moose-calator</span>
-			</div>
-		</div>
-		<div id="slsnowfeed" class="left">
-			<h5>Trails &amp; Lifts on Twitter</h5>
-			
-			<hr class="nomargin">
-			<div id="slsnowdiv">
-			</div>
-			<p class="smalltext">Get condition updates on your mobile phone. <a href="/TheMountain/Mobile.html">Learn More &raquo;</a></p>
-			<a href="https://twitter.com/SugarloafSnow" class="twitter-follow-button" data-show-count="false">Follow @SugarloafSnow</a>
-		</div>
-	</div>
-
-
-	<!-- Lift Hours Popup -->
-	<div id="liftHoursPopup" class="clearfix">
-		<p class="liftsHoursHeader">LIFT HOURS</p>
-		<p class="liftColumn left">
-			<strong>Lifts</strong><br />
-			SuperQuad<br />
-			Whiffletree<br />
-			Skyline<br />
-			King Pine<br />
-			Timberline<br />
-			Bucksaw<br />
-			Skidway<br />
-			DRC East<br />
-			DRC West<br />
-			Sawduster<br />
-			W. Mountain<br />
-			Snubber<br />
-			#3 T-Bar<br />
-			Moosecalator<br />
-		</p>
-		<p class="liftColumn left">
-			<strong>Midweek</strong><br />
-			8:30 - 3:50<br />
-			9:00 - 3:50<br />
-			8:30 - 3:50<br />
-			9:00 - 3:50<br />
-			9:00 - 3:50<br />
-			CLOSED<br />
-			8:30 - 3:50<br />
-			8:30 - 3:50<br />
-			ON DEMAND<br />
-			8:30 - 3:50<br />
-			CLOSED<br />
-			8:30 - 3:45<br />
-			ON DEMAND<br />
-			9:00 - 3:30<br />
-		</p>
-		<p class="liftColumn left">
-			<strong>Wknd / Hldy</strong><br />
-			8:30 - 3:50<br />
-			8:30 - 3:50<br />
-			8:30 - 3:50<br />
-			8:30 - 3:50<br />
-			9:00 - 3:50<br />
-			9:00 - 3:50<br />
-			8:30 - 3:50<br />
-			8:30 - 3:50<br />
-			ON DEMAND<br />
-			8:30 - 3:50<br />
-			8:00 - 3:30<br />
-			8:00 - 3:45<br />
-			ON DEMAND<br />
-			9:00 - 3:50<br />
-		</p>
-	</div>
-	<!-- End Lift Hours -->
-
-	<h5>Key</h5>
-	<hr class="nomargin">
-	<div class="clearfix">
-		<span class="key-title"><strong>Lifts</strong></span>
-		<span class="key sprite-Open">Open</span>
-		<span class="key sprite-Closed">Closed</span>
-		<span class="key sprite-hold">On Hold</span>
-		<span class="key sprite-Scheduled">Scheduled</span>
-	</div>
-	<hr class="nomargin">
-	<div class="clearfix">
-		<span class="key-title"><strong>Trails</strong></span>
-		<span class="key sprite-Open">Open</span>
-		<span class="key sprite-Closed">Closed</span>
-		<span class="key sprite-groomed">Groomed</span>
-		<span class="key sprite-opensnow">Open/Snowmaking</span>
-		<span class="key sprite-closedsnow">Closed/Snowmaking</span>
-	</div>
-	<hr class="nomargin">
-	<div class="clearfix">
-		<span class="key-title"><strong>Trail Types</strong></span>
-		<span class="key sprite-green">Beginner</span>
-		<span class="key sprite-blue">Intermediate</span>
-		<span class="key sprite-black">Experts Only</span>
-		<span class="key sprite-doubleblack">Most Difficult</span>
-		<span class="key sprite-parks">Terrain Parks</span>
-	</div>
-	<hr>
-	
-	<p class="fineprint">Updates after 2:00pm reflect tomorrow's projected trail openings.</p>
-	
-	<div id="lifts" class="clearfix">
-		<div id="trailstatus">
-			<span class="statusheader">
-				Trails Status
-				
-				<select class="trailselect">
-					<option>Show All</option>
-					<option>------------------------</option>
-					<option>Open</option>
-					<option>Open, Groomed</option>
-					<option>Open, Ungroomed</option>
-					<option>Snowmaking</option>
-					<option>Closed</option>
-					<option>------------------------</option>
-					<option>Beginner</option>
-					<option>Intermediate</option>
-					<option>Experts Only</option>
-					<option>Most Difficult</option>
-					<option>Terrain Parks</option>
-				</select>
-			</span>
-			
-			<h5 class="trail sprite-open">Base Area</h5>
-			<div class="clearfix">
-			
-				<span class="difficulty sprite-green groomed Open"></span><span class="sprite-groomed Open">Snowbrook</span>
-				<span class="difficulty sprite-green groomed Open"></span><span class="sprite-groomed Open">The Landing</span>
-				<span class="difficulty sprite-green groomed Open"></span><span class="sprite-groomed Open">The Birches</span>
-			</div>
-			<hr class="nomargin">
-			<h5 class="trail sprite-open">Double Runner</h5>
-			<div class="clearfix">
-				<span class="difficulty sprite-green groomed Open"></span><span class="sprite-groomed Open">Boardwalk</span>
-				<span class="difficulty sprite-green ungroomed Open"></span><span class="sprite-ungroomed Open">Schipper's Streak</span>
-				<span class="difficulty sprite-green groomed Open"></span><span class="sprite-groomed Open">Lower Narrow Gauge</span>
-				<span class="difficulty sprite-green groomed Open"></span><span class="sprite-groomed Open">Lower Winters Way</span>
-				<span class="difficulty sprite-blue groomed Open"></span><span class="sprite-groomed Open">Middle Narrow Gauge</span>
-				<span class="difficulty sprite-green ungroomed Open"></span><span class="sprite-ungroomed Open">Picaroon</span>
-				<span class="difficulty sprite-green ungroomed Open"></span><span class="sprite-ungroomed Open">Tote Road X Cut</span>
-			</div>
-			<hr class="nomargin">
-			<h5 class="trail sprite-open">SuperQuad</h5>
-			<div class="clearfix">
-				<span class="difficulty sprite-blue groomed Open"></span><span class="sprite-groomed Open">Bridle Chain</span>
-				<span class="difficulty sprite-blue groomed Open"></span><span class="sprite-groomed Open">Candy Side</span>
-				<span class="difficulty sprite-doubleblack groomed Open"></span><span class="sprite-groomed Open">Chaser</span>
-				<span class="difficulty sprite-black ungroomed Open"></span><span class="sprite-ungroomed Open">Double Bitter</span>
-				<span class="difficulty sprite-blue groomed Open"></span><span class="sprite-groomed Open">Gin Pole</span>
-				<span class="difficulty sprite-black groomed Open"></span><span class="sprite-groomed Open">Hayburner</span>
-				<span class="difficulty sprite-black ungroomed Open"></span><span class="sprite-ungroomed Open">Kickback</span>
-				<span class="difficulty sprite-blue groomed Open"></span><span class="sprite-groomed Open">Kings Landing</span>
-				<span class="difficulty sprite-blue ungroomed Open"></span><span class="sprite-ungroomed Open">Lower Binder</span>
-				<span class="difficulty sprite-blue groomed Open"></span><span class="sprite-groomed Open">Lower Competition Hill</span>
-				<span class="difficulty sprite-black ungroomed Open"></span><span class="sprite-ungroomed Open">Lower Sheerboom</span>
-				<span class="difficulty sprite-doubleblack ungroomed Open"></span><span class="sprite-ungroomed Open">Lower Skidder</span>
-				<span class="difficulty sprite-green groomed Open"></span><span class="sprite-groomed Open">Lower Tote Road</span>
-				<span class="difficulty sprite-green groomed Open"></span><span class="sprite-groomed Open">Peavy X-Cut</span>
-				<span class="difficulty sprite-blue groomed Open"></span><span class="sprite-groomed Open">Pinch</span>
-				<span class="difficulty sprite-black ungroomed Open"></span><span class="sprite-ungroomed Open">Sheerboom</span>
-				<span class="difficulty sprite-blue groomed Open"></span><span class="sprite-groomed Open">Spurline</span>
-				<span class="difficulty sprite-black ungroomed Open"></span><span class="sprite-ungroomed Open">Swedish Fiddle Glade</span>
-				<span class="difficulty sprite-black groomed Open"></span><span class="sprite-groomed Open">Upper Competition Hill</span>
-				<span class="difficulty sprite-doubleblack ungroomed Open"></span><span class="sprite-ungroomed Open">Upper Skidder</span>
-				<span class="difficulty sprite-doubleblack ungroomed Open"></span><span class="sprite-ungroomed Open">Branding Ax Glade</span>
-			</div>
-			<hr class="nomargin">
-			<h5 class="trail sprite-open">Skyline</h5>
-			<div class="clearfix">
-				<span class="difficulty sprite-black ungroomed Open"></span><span class="sprite-ungroomed Open">Blade Glade</span>
-				<span class="difficulty sprite-black ungroomed Open"></span><span class="sprite-ungroomed Open">Cant Hook Glade</span>
-				<span class="difficulty sprite-doubleblack groomed Open"></span><span class="sprite-groomed Open">Cribworks</span>
-				<span class="difficulty sprite-blue ungroomed Open"></span><span class="sprite-ungroomed Open">Gondola Line</span>
-				<span class="difficulty sprite-black ungroomed Open"></span><span class="sprite-ungroomed Open">Kurf Glade</span>
-				<span class="difficulty sprite-black ungroomed Open"></span><span class="sprite-ungroomed Open">Lower Bubblecuffer</span>
-				<span class="difficulty sprite-blue groomed Open"></span><span class="sprite-groomed Open">Lower Spillway</span>
-				<span class="difficulty sprite-blue ungroomed Open"></span><span class="sprite-ungroomed Open">Midstation X-Cut</span>
-				<span class="difficulty sprite-blue ungroomed Open"></span><span class="sprite-ungroomed Open">Pick Pole</span>
-				<span class="difficulty sprite-black groomed Open"></span><span class="sprite-groomed Open">Sluice Chute</span>
-				<span class="difficulty sprite-black groomed Open"></span><span class="sprite-groomed Open">Sluice Headwall</span>
-				<span class="difficulty sprite-blue groomed Open"></span><span class="sprite-groomed Open">Sluice</span>
-				<span class="difficulty sprite-black groomed Open"></span><span class="sprite-groomed Open">Spillway X-Cut</span>
-				<span class="difficulty sprite-black ungroomed Open"></span><span class="sprite-ungroomed Open">Stump Shot</span>
-				<span class="difficulty sprite-blue groomed Open"></span><span class="sprite-groomed Open">Tote Road</span>
-				<span class="difficulty sprite-black ungroomed Open"></span><span class="sprite-ungroomed Open">Upper Binder</span>
-				<span class="difficulty sprite-doubleblack ungroomed Open"></span><span class="sprite-ungroomed Open">Upper Bubblecuffer</span>
-				<span class="difficulty sprite-black groomed Open"></span><span class="sprite-groomed Open">Upper Double Bitter</span>
-				<span class="difficulty sprite-doubleblack ungroomed Open"></span><span class="sprite-ungroomed Open">Upper Gondola Line</span>
-				<span class="difficulty sprite-black groomed Open"></span><span class="sprite-groomed Open">Upper Narrow Gauge</span>
-				<span class="difficulty sprite-black groomed Open"></span><span class="sprite-groomed Open">Upper Spillway</span>
-				<span class="difficulty sprite-doubleblack ungroomed Open"></span><span class="sprite-ungroomed Open">Upper Winters Way</span>
-				<span class="difficulty sprite-black ungroomed Open"></span><span class="sprite-ungroomed Open">Wedge</span>
-				<span class="difficulty sprite-black groomed Open"></span><span class="sprite-groomed Open">West Sluice Chute</span>
-				<span class="difficulty sprite-doubleblack ungroomed Open"></span><span class="sprite-ungroomed Open">White Nitro</span>
-			</div>
-			<hr class="nomargin">
-			<h5 class="trail sprite-open">Whiffletree</h5>
-			<div class="clearfix">
-				
-				<span class="difficulty sprite-blue ungroomed Open"></span><span class="sprite-ungroomed Open">Blueberrys Grove Glade</span>
-				<span class="difficulty sprite-black ungroomed Open"></span><span class="sprite-ungroomed Open">Broccli Garden Glade</span>
-				<span class="difficulty sprite-green ungroomed Open"></span><span class="sprite-ungroomed Open">Condo X-Cut</span>
-				<span class="difficulty sprite-green groomed Open"></span><span class="sprite-groomed Open">Cross Haul</span>
-				<span class="difficulty sprite-blue ungroomed Open"></span><span class="sprite-ungroomed Open">Jill Poke</span>
-				<span class="difficulty sprite-blue groomed Open"></span><span class="sprite-groomed Open">Lombard X-Cut</span>
-				<span class="difficulty sprite-blue groomed Open"></span><span class="sprite-groomed Open">Lower Buckboard</span>
-				<span class="difficulty sprite-blue ungroomed Open"></span><span class="sprite-ungroomed Open">Lower Cruiser</span>
-				<span class="difficulty sprite-blue groomed Open"></span><span class="sprite-groomed Open">Lower Pole Line</span>
-				<span class="difficulty sprite-blue ungroomed Open"></span><span class="sprite-ungroomed Open">Lower Rookie River Glade</span>
-				<span class="difficulty sprite-blue groomed Open"></span><span class="sprite-groomed Open">Lower Springboard</span>
-				<span class="difficulty sprite-green ungroomed Open"></span><span class="sprite-ungroomed Open">Lower Stubs</span>
-				<span class="difficulty sprite-green groomed Open"></span><span class="sprite-groomed Open">Lower Whiffletree</span>
-				<span class="difficulty sprite-blue groomed Open"></span><span class="sprite-groomed Open">Moose Alley</span>
-				<span class="difficulty sprite-green groomed Open"></span><span class="sprite-groomed Open">Rollway (EWD)</span>
-				<span class="difficulty sprite-blue groomed Open"></span><span class="sprite-groomed Open">Slasher</span>
-				<span class="difficulty sprite-black ungroomed Open"></span><span class="sprite-ungroomed Open">Stubs Glade</span>
-				<span class="difficulty sprite-blue groomed Open"></span><span class="sprite-groomed Open">Tohaul</span>
-				<span class="difficulty sprite-blue groomed Open"></span><span class="sprite-groomed Open">Upper Buckboard</span>
-				<span class="difficulty sprite-blue ungroomed Open"></span><span class="sprite-ungroomed Open">Upper Cruiser</span>
-				<span class="difficulty sprite-blue groomed Open"></span><span class="sprite-groomed Open">Upper Pole Line</span>
-				<span class="difficulty sprite-black ungroomed Open"></span><span class="sprite-ungroomed Open">Upper Rookie River Glade</span>
-				<span class="difficulty sprite-blue ungroomed Open"></span><span class="sprite-ungroomed Open">Upper Springboard</span>
-				<span class="difficulty sprite-green ungroomed Open"></span><span class="sprite-ungroomed Open">Upper Stubs</span>
-				<span class="difficulty sprite-blue groomed Open"></span><span class="sprite-groomed Open">Upper Whiffletree</span>
-			</div>
-			<hr class="nomargin">
-			<h5 class="trail sprite-open">King Pine</h5>
-			<div class="clearfix">
-				
-				<span class="difficulty sprite-black ungroomed Open"></span><span class="sprite-ungroomed Open">Boomers Glade</span>
-				<span class="difficulty sprite-black ungroomed Open"></span><span class="sprite-ungroomed Open">Choker</span>
-				<span class="difficulty sprite-black ungroomed Open"></span><span class="sprite-ungroomed Open">Flume</span>
-				<span class="difficulty sprite-black ungroomed Open"></span><span class="sprite-ungroomed Open">Freds Pitch Glade</span>
-				<span class="difficulty sprite-black groomed Open"></span><span class="sprite-groomed Open">Haulback</span>
-				<span class="difficulty sprite-blue ungroomed Open"></span><span class="sprite-ungroomed Open">Lower Boomauger</span>
-				<span class="difficulty sprite-doubleblack ungroomed Open"></span><span class="sprite-ungroomed Open">Misery Whip</span>
-				<span class="difficulty sprite-blue ungroomed Open"></span><span class="sprite-ungroomed Open">Old Winters Way</span>
-				<span class="difficulty sprite-blue groomed Open"></span><span class="sprite-groomed Open">Ramdown</span>
-				<span class="difficulty sprite-doubleblack ungroomed Open"></span><span class="sprite-ungroomed Open">Ripsaw</span>
-				<span class="difficulty sprite-black ungroomed Open"></span><span class="sprite-ungroomed Open">Upper Boomauger</span>
-				<span class="difficulty sprite-black groomed Open"></span><span class="sprite-groomed Open">Widowmaker</span>
-			</div>
-			<hr class="nomargin">
-			<h5 class="trail sprite-open">Snowfields&trade; Summit</h5>
-			<div class="clearfix">
-
-				<span class="difficulty sprite-doubleblack ungroomed Open"></span><span class="sprite-ungroomed Open">Bubblecuffer Ext</span>
-				<span class="difficulty sprite-doubleblack ungroomed Open"></span><span class="sprite-ungroomed Open">Gondola Line Ext</span>
-				<span class="difficulty sprite-black Closed"></span><span class="sprite-Closed">Hard Tack</span>
-				<span class="difficulty sprite-doubleblack Closed"></span><span class="sprite-Closed">High Rigger</span>
-				<span class="difficulty sprite-doubleblack Closed"></span><span class="sprite-Closed">Ignitor</span>
-				<span class="difficulty sprite-doubleblack Closed"></span><span class="sprite-Closed">Jagger</span>
-				<span class="difficulty sprite-doubleblack Closed"></span><span class="sprite-Closed">Powder Keg</span>
-				<span class="difficulty sprite-doubleblack Closed"></span><span class="sprite-Closed">Pure Heat</span>
-				<span class="difficulty sprite-doubleblack Closed"></span><span class="sprite-Closed">White Nitro Ext</span>
-				<span class="difficulty sprite-doubleblack ungroomed Open"></span><span class="sprite-ungroomed Open">Winters Way Ext</span>
-			
-			</div>
-			<hr class="nomargin">
-			<h5 class="trail sprite-open">Timberline</h5>
-			<div class="clearfix">
-			
-				<span class="difficulty sprite-blue ungroomed Open"></span><span class="sprite-ungroomed Open">Buckskin</span>
-				<span class="difficulty sprite-blue groomed Open"></span><span class="sprite-groomed Open">Cinderhoe</span>
-				<span class="difficulty sprite-green groomed Open"></span><span class="sprite-groomed Open">Good Chance X-Cut</span>
-				<span class="difficulty sprite-green groomed Open"></span><span class="sprite-groomed Open">Lower Timberline</span>
-				<span class="difficulty sprite-black ungroomed Open"></span><span class="sprite-ungroomed Open">Narrow Gauge Ext</span>
-				<span class="difficulty sprite-blue ungroomed Open"></span><span class="sprite-ungroomed Open">Tin Pants</span>
-				<span class="difficulty sprite-blue ungroomed Open"></span><span class="sprite-ungroomed Open">Tote Road Ext</span>
-				<span class="difficulty sprite-green groomed Open"></span><span class="sprite-groomed Open">Upper Timberline</span>
-			</div>
-			<hr class="nomargin">
-			<h5 class="trail sprite-open">West Mountain</h5>
-			<div class="clearfix">
-
-				<span class="difficulty sprite-green ungroomed Open"></span><span class="sprite-ungroomed Open">Back Cut</span>
-				<span class="difficulty sprite-green ungroomed Open"></span><span class="sprite-ungroomed Open">Birch Hook</span>
-				<span class="difficulty sprite-blue ungroomed Open"></span><span class="sprite-ungroomed Open">Boom Scooter</span>
-				<span class="difficulty sprite-green groomed Open"></span><span class="sprite-groomed Open">Bucksaw X-Cut</span>
-				<span class="difficulty sprite-green groomed Open"></span><span class="sprite-groomed Open">Horseshoe</span>
-				<span class="difficulty sprite-green ungroomed Open"></span><span class="sprite-ungroomed Open">Lower Glancer</span>
-				<span class="difficulty sprite-green groomed Open"></span><span class="sprite-groomed Open">Lower Scoot</span>
-				<span class="difficulty sprite-green groomed Open"></span><span class="sprite-groomed Open">Lower West Mountain</span>
-				<span class="difficulty sprite-green groomed Open"></span><span class="sprite-groomed Open">Lower Windrow</span>
-				<span class="difficulty sprite-green groomed Open"></span><span class="sprite-groomed Open">Middle Scoot</span>
-				<span class="difficulty sprite-black ungroomed Open"></span><span class="sprite-ungroomed Open">Raker Tooth Glade</span>
-				<span class="difficulty sprite-black ungroomed Open"></span><span class="sprite-ungroomed Open">Ram Pasture Glade</span>
-				<span class="difficulty sprite-green ungroomed Open"></span><span class="sprite-ungroomed Open">Upper Glancer</span>
-				<span class="difficulty sprite-blue groomed Open"></span><span class="sprite-groomed Open">Upper Scoot</span>
-				<span class="difficulty sprite-green ungroomed Open"></span><span class="sprite-ungroomed Open">Upper West Mountain</span>
-				<span class="difficulty sprite-blue groomed Open"></span><span class="sprite-groomed Open">Upper Windrow</span>
-				<span class="difficulty sprite-green ungroomed Open"></span><span class="sprite-ungroomed Open">West Mountain X-Cut</span>
-				<span class="difficulty sprite-green ungroomed Open"></span><span class="sprite-ungroomed Open">Windrow Ext</span>
-				<span class="difficulty sprite-black ungroomed Open"></span><span class="sprite-ungroomed Open">Pulaski</span>
-				<span class="difficulty sprite-blue Closed"></span><span class="sprite-Closed">Greenhorn Glade</span>
-			</div>
-			<hr class="nomargin">
-			<h5 class="trail sprite-open">Brackett Basin</h5>
-			<div class="clearfix">
-			
-				<span class="difficulty sprite-doubleblack ungroomed Open"></span><span class="sprite-ungroomed Open">Birler Glade One</span>
-				<span class="difficulty sprite-doubleblack ungroomed Open"></span><span class="sprite-ungroomed Open">Birler Glade Two</span>
-				<span class="difficulty sprite-doubleblack ungroomed Open"></span><span class="sprite-ungroomed Open">Edger Glade One</span>
-				<span class="difficulty sprite-doubleblack ungroomed Open"></span><span class="sprite-ungroomed Open">Edger Glade Two</span>
-				<span class="difficulty sprite-doubleblack ungroomed Open"></span><span class="sprite-ungroomed Open">Sweeper Glade One</span>
-				<span class="difficulty sprite-doubleblack ungroomed Open"></span><span class="sprite-ungroomed Open">Sweeper Glade Two</span>
-				<span class="difficulty sprite-doubleblack ungroomed Open"></span><span class="sprite-ungroomed Open">Cant Dog Glade One</span>
-				<span class="difficulty sprite-doubleblack ungroomed Open"></span><span class="sprite-ungroomed Open">Cant Dog Glade Two</span>
-				<span class="difficulty sprite-blue ungroomed Open"></span><span class="sprite-ungroomed Open">Rough Cut Glade</span>
-				<span class="difficulty sprite-blue ungroomed Open"></span><span class="sprite-ungroomed Open">Red Horse Glade</span>
-				<span class="difficulty sprite-blue ungroomed Open"></span><span class="sprite-ungroomed Open">Blacksmith Glade</span>
-				<span class="difficulty sprite-blue ungroomed Open"></span><span class="sprite-ungroomed Open">High Ball Glade</span>
-				<span class="difficulty sprite-blue ungroomed Open"></span><span class="sprite-ungroomed Open">Logging Road</span>
-				<span class="difficulty sprite-doubleblack ungroomed Open"></span><span class="sprite-ungroomed Open">Golden Road</span>
-				<span class="difficulty sprite-doubleblack ungroomed Open"></span><span class="sprite-ungroomed Open">Eastern Territory</span>
-			</div>
-			<hr class="nomargin">
-			<h5 class="trail sprite-open">Park Pipe</h5>
-			<div class="clearfix">
-				
-				<span class="difficulty sprite-parks Closed"></span><span class="sprite-Closed">Pipe Dreams Superpipe</span>
-				<span class="difficulty sprite-parks ungroomed Open"></span><span class="sprite-ungroomed Open">Sidewinder</span>
-				<span class="difficulty sprite-parks groomed Open"></span><span class="sprite-groomed Open">Stomping Grounds</span>
-				<span class="difficulty sprite-parks groomed Open"></span><span class="sprite-groomed Open">Haywire</span>
-				<span class="difficulty sprite-parks ungroomed Open"></span><span class="sprite-ungroomed Open">Skybound</span>
-			
-			</div>
-			
-			
-		</div>
-	</div>
-	
-<script>
-
-String.prototype.parseURL = function () {
-	return this.replace(/[A-Za-z]+:\/\/[A-Za-z0-9-_]+\.[A-Za-z0-9-_:%&~\?\/.=]+/g, function (url) {
-		return url.link(url);
-	});
-};
-
-String.prototype.parseUsername = function () {
-	return this.replace(/[@]+[A-Za-z0-9-_]+/g, function (u) {
-		var username = u.replace("@","");
-		return u.link("http://twitter.com/"+username);
-	});
-};
-String.prototype.parseHashtag = function () {
-	return this.replace(/[#]+[A-Za-z0-9-_]+/g, function (t) {
-		var tag = t.replace("#","%23");
-		return t.link("http://search.twitter.com/search?q="+tag);
-	});
-};
-
-function getSlsnow () {
-	$.ajax({ 
-		type: "GET",
-		url: 'http://api.twitter.com/1/statuses/user_timeline/SugarloafSnow.json?count=5',
-		dataType: "jsonp",
-		success: function (json){
-			var time, twid, twet;
-			var results = json;
-			var first = results[0].id_str;
-			$(results).each(function () {
-				time = this.created_at;
-				twid = this.id_str;
-				twet = this.text;
-				
-				var date = time.substr(8, 2);
-				var month = time.substr(4, 3);
-				
-				time = month + " " + date;
-				text = twet.parseURL().parseUsername().parseHashtag();
-				stamp = "<a href=\"https://twitter.com/#!/SugarloafSnow/status/"
-					+ twid + "\" title=\"" + time + "\">" + time + "</a>";
-				
-				$('#slsnowdiv').append("\
-					<div class=\"sltweet\">" + text + " <span class=\"fineprint\">" + stamp + "</span></div>");
-			});
-		}
-	});
-}
-
-// Initialize
-getSlsnow();
-
-
-</script>
-
-
+            <header class="grid grid--full clearfix">
+                <div class="grid__item palm--one-sixth palm--visible">
+                    <a href="#" class="btn__nav-open" title="Open navigation">
+                        <i class="icon-nav-open"></i>
+                    </a>
                 </div>
-
-	            <div id="sidebar">
-    	            <div id="sidenav">
-						
-
-								
-										<div class="winter">
-											
-												<span id="side-title"><a href="/TheMountain/index.html">The Mountain</a></span>
-												<ul type="disc">
-<li><a class="orange-link" href="index.html" target="_self" title="">Daily Report</a> 
-<ul>
-<li><a class="" href="trail_lifts.html" target="_self" title="">Trails &amp; Lifts</a> 
-</li><li><a class="" href="../livecam.html" target="_self" title="">Live Web Cam</a> 
-</li><li><a class="" href="camshot.html" target="_self" title="">Camshot</a> 
-</li><li><a class="" href="../Video/index.html" target="_self" title="">Videos</a> 
-</li><li><a class="" href="../Mobile.html" target="_self" title="">Sugarloaf Mobile</a></li></ul>
-</li><li><a class="orange-link" href="../index.html" target="_self" title="">Mountain Info</a> 
-<ul>
-<li><a class="" href="../index.html" target="_self" title="">Mountain Stats</a> 
-</li><li><a class="" href="../terrain.html" target="_self" title="">Terrain</a> 
-</li><li><a class="" href="../brackett_basin.html" target="_self" title="">Brackett Basin</a> 
-</li><li><a class="" href="../Maps/index.html" target="_self" title="">Resort Maps</a> 
-</li></ul>
-</li><li><a class="orange-link" href="../../OutdoorCenter/index.html" target="_self" title="">Outdoor Center</a> 
-<ul>
-<li><a class="" href="../../OutdoorCenter/conditions.html" target="_self" title="">Outdoor Center Conditions</a> 
-</li><li><a class="" href="../../OutdoorCenter/programs.html" target="_self" title="">Outdoor Center Programs</a> 
-</li><li><a class="" href="../../OutdoorCenter/events.html" target="_self" title="">Outdoor Center Events</a> 
-</li><li><a class="" href="../../OutdoorCenter/nordic_pricing.html" target="_self" title="">Nordic Pricing</a></li></ul>
-</li><li><a class="orange-link" href="../../TerrainParks/index.html" target="_self" title="">Terrain Parks</a> 
-</li><li><a class="orange-link" href="../environment.html" target="_self" title="">Environment</a> 
-</li><li><a class="orange-link" href="../safe_slopes.html" target="_self" title="">Slope Safety</a> 
-</li><li><a class="orange-link" href="../../Email_Lists.html" target="_self" title="">e-newsletter</a></li></ul>
-											
-										</div>
-									
-							
-        			</div>
-                    <div id="sidepromo" class="winter">
-					
-						
-								
-										<a href="/contact.html"class="promo1 sprite-reservations"> </a>
-									
-							
-						
-						<div id='liveChatSide' style='width:210px;height:100px;'></div>
+                <div class="grid__item palm--one-sixth palm--visible">
+                    <a href="tel:18008435623" class="nav__icon" title="Call 1-800-THE-LOAF">
+                        <i class="icon-phone"></i>
+                    </a>
+                </div>
+                <div class="grid__item palm--one-third lap--one-eighth desk--one-fifth logo--wrapper">
+                    <a href="/" class="nav__logo" title="Go to Homepage">
+                        <img src="/Content/img/logo.jpg" alt="Sugarloaf Logo" />
+                    </a>
+                </div>
+                <div class="grid__item palm--one-third lap--one-whole desk--one-whole utility">
+                    <div class="grid grid--full grid--right">
+                        <!-- MOBILE MORE SITES -->
+                        <div class="grid__item palm--one-half lap--one-eighth desk--hidden">
+                            <div class="nav__icon btn__more-sites" title="More Sugarloaf sites">
+                                <i class="icon-windows"></i>
+                                <div class="more-sites">
+                                    <a href="/" class="active">Winter</a>
+                                    <a href="/summer">Summer</a>
+                                    <a href="/quebec">Quebecois</a>
+                                    <a href="http://sugarloaf2020.com">10-Year Plan</a>
+                                    <a href="/blueroom">The Blue Room</a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <!-- DESKTOP MORE SITES -->
+                        <div class="grid__item desk--visible desk--one-half more-sites">
+                            <a href="/" class="active">Winter</a> / <a href="/summer">Summer</a> |
+                            <a href="/quebec">Quebecois</a> | <a href="http://sugarloaf2020.com">10-Year Plan</a> |
+                            <a href="/blueroom">The Blue Room</a>
+                        </div>
+                        <div class="grid__item lap--one-quarter desk--one-fifth palm--hidden">
+                            <span class="search">
+                                <form action="/search">
+					                <input type="hidden" name="cx" value="013653897123796309119:yqfxmidsxwo" />
+					                <input type="hidden" name="cof" value="FORID:11" />
+					                <input id="search-box" name="q" type="text" placeholder="Search" class="searchbox">
+				                </form>
+				                <script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&lang=en"></script>
+                            </span>
+                        </div>
                         
+                        <div class="grid__item palm--one-half lap--one-eighth l--live-chat">
+                            <div id='liveChatTop' style='width:95px;height:22px;'></div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="grid__item lap--seven-eighths desk--seven-tenths nav--container">
+                    <a href="#" class="btn__nav-close palm--visible"><i class="icon-close"></i></a>
+                    <nav class="grid grid--full grid--right nav">
+                        <div class="search palm--visible">
+                            <input type="text" placeholder="Search" />
+                        </div>
+                        <ul class="grid grid--full">
+                            <li class="grid__item lap--one-seventh desk--one-seventh">
+                                <a href="/vacation-planning/winter-packages">
+                                    Vacation <br class="palm--hidden"/>Planning
+                                </a>
+                                <div class="nav__sub grid grid--full">
+                                    <div class="grid__item desk--one-tenth desk--visible"></div>
+                                        <a href="pricing-and-products/kids-ski-free" class="grid__item desk--one-fifth desk--visible nav--special">
+                                            <img src="/xml/Images/Sugarloaf.com/Specials/kid_scream.jpg"/>
+                                            <h3>Kids Ski Free</h3>
+                                            <p>
+                                                Book your reservation by December 16 and kids 12 and under ski free.
+                                            </p>
+                                        </a>
+                                    <ul class="grid__item lap--one-third desk--one-fifth">
+                                        <li>
+                                            <a href="/vacation-planning/winter-packages">
+                                                Ski <abbr title="and">&amp;</abbr> Stay Packages &raquo;
+                                            </a>
+                                        </li>
+                                        <!--<li><a href="#">Ski &amp; Stay Rates</a></li>-->
+                                        <li><a href="/vacation-planning/zoom-rooms">Zoom Rooms</a></li>
+                                        <li><a href="/vacation-planning/hot-deals">Hot Deals</a></li>
+                                        <li><a href="https://www.sugarloaf.com/reservations" target="_blank">Check Availability</a></li>
+                                    </ul>
+                                    <ul class="grid__item lap--one-third desk--one-fifth">
+                                        <li>
+                                            <a href="/vacation-planning/lodging-options">
+                                                Lodging Options &raquo;
+                                            </a>
+                                        </li>
+                                        <li><a href="/vacation-planning/lodging-options/sugarloaf-mountain-hotel">Sugarloaf Mountain Hotel</a></li>
+                                        <li><a href="/vacation-planning/lodging-options/sugarloaf-inn">Sugarloaf Inn</a></li>
+                                        <li><a href="/vacation-planning/lodging-options#condos">Condominiums</a></li>
+                                        <li><a href="/vacation-planning/boyne-resorts-star-ratings">Boyne Resorts Star Ratings</a></li>
+                                        <li><a href="/vacation-planning/boyne-bed">Boyne Bed</a></li>
+                                    </ul>
+                                    <ul class="grid__item lap--one-third desk--one-fifth">
+                                        <li><a href="#">Confirmation &raquo;</a></li>
+                                        <li><a href="/vacation-planning/first-timers-guide">First Timer&rsquo;s Guide &raquo;</a></li>
+                                        <li><a href="/vacation-planning/child-care">Child Care &raquo;</a></li>
+                                        <li><a href="/e-mail-sign-up">E-Newsletter &raquo;</a></li>
+                                        <li><a href="/vacation-planning/directions">Directions &raquo;</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="grid__item lap--one-seventh desk--one-seventh">
+                                <a href="/the-mountain/daily-report">
+                                    The <br class="palm--hidden"/>Mountain
+                                </a>
+                                <div class="nav__sub grid grid--full">
+                                    <div class="grid__item desk--one-tenth desk--visible"></div>
+                                        <a href="http://www.sugarloaf2020.com" class="grid__item desk--one-fifth desk--visible nav--special">
+                                            <img src="/xml/Images/Sugarloaf.com/Specials/purplemountainsm.jpg"/>
+                                            <h3>Sugarloaf 2020</h3>
+                                            <p>
+                                                Take a look at our 10-year plan and see what the future holds for Sugarloaf. 
+                                            </p>
+                                        </a>
+                                    <ul class="grid__item lap--one-third desk--one-fifth">
+                                        <li>
+                                            <a href="/the-mountain/daily-report">
+                                                Daily Report &raquo;
+                                            </a>
+                                        </li>
+                                        <li><a href="/the-mountain/trails-and-lifts">Trails &amp; Lifts</a></li>
+                                        <li><a href="/the-mountain/live-web-cam">Live Web Cam</a></li>
+                                        <li><a href="/the-mountain/photo-of-the-day">Photo of the Day</a></li>
+                                        <li><a href="/the-mountain/videos">Videos</a></li>
+                                    </ul>
+                                    <ul class="grid__item lap--one-third desk--one-fifth">
+                                        <li>
+                                            <a href="/the-mountain">
+                                                Mountain Info &raquo;
+                                            </a>
+                                        </li>
+                                        <li><a href="/the-mountain/terrain">Terrain</a></li>
+                                        <li><a href="/the-mountain/brackett-basin">Brackett Basin</a></li>
+                                        <li><a href="/the-mountain/resort-maps">Resort Maps</a></li>
+                                        <li><a href="/the-mountain/uphill-policy">Uphill Policy</a></li>
+                                    </ul>
+                                    <ul class="grid__item lap--one-third desk--one-fifth">
+                                        <li><a href="/blueroom">The Blue Room &raquo;</a></li>
+                                        <li><a href="/TerrainParks">Terrain Parks &raquo;</a></li>
+                                        <li><a href="/the-mountain/environment">Environment &raquo;</a></li>
+                                        <li><a href="/the-mountain/slope-safety">Slope Safety &raquo;</a></li>
+                                        <li><a href="/e-mail-sign-up">E-Newsletter &raquo;</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="grid__item lap--one-seventh desk--one-seventh">
+                                <a href="/pricing-and-products/lift-tickets">
+                                    Pricing <abbr title="and">&amp;</abbr> <br class="palm--hidden"/>Products
+                                </a>
+                                <div class="nav__sub grid grid--full">
+                                    <div class="grid__item desk--one-tenth desk--visible"></div>
+                                        <a href="http://www.boynecountrysports.com/c-294-sugarloaf.aspx" class="grid__item desk--one-fifth desk--visible nav--special">
+                                            <img src="/xml/Images/Sugarloaf.com/Specials/sweatshirt.jpg"/>
+                                            <h3>Logo Gear</h3>
+                                            <p>
+                                                Shop for Sugarloaf logo gear online and wear your triangle proudly.
+                                            </p>
+                                        </a>
+                                    <ul class="grid__item lap--one-third desk--one-fifth">
+                                        <li>
+                                            <a href="/pricing-and-products/lift-tickets">
+                                                Tickets <abbr title="and">&amp;</abbr> Passes &raquo;
+                                            </a>
+                                        </li>
+                                        <li><a href="/pricing-and-products/lift-tickets">Lift Tickets</a></li>
+                                        <li><a href="/pricing-and-products/season-passes">Season Passes</a></li>
+                                        <li><a href="/pricing-and-products/spring-pack">Spring Pack</a></li>
+                                        <li><a href="/pricing-and-products/frequent-skier-card">Frequent Skier Card</a></li>
+                                        <li><a href="/pricing-and-products/etickets">eTickets</a></li>
+                                        <li><a href="http://www.sugarloaf.com/eStore">Online Store</a></li>
+                                    </ul>
+                                    <ul class="grid__item lap--one-third desk--one-fifth">
+                                        <li>
+                                            <a href="/pricing-and-products/perfect-turn">
+                                                Perfect Turn &raquo;
+                                            </a>
+                                        </li>
+                                        <li><a href="/pricing-and-products/perfect-turn/clinics">Clinics</a></li>
+                                        <li><a href="/pricing-and-products/perfect-turn/adult-seasonal">Adult Seasonal</a></li>
+                                        <li><a href="/pricing-and-products/perfect-turn/kids-seasonal">Kids Seasonal</a></li>
+                                        <li><a href="/pricing-and-products/perfect-turn/kids-programs">Kids Programs</a></li>
+                                        <li><a href="/pricing-and-products/perfect-turn/scva-programs">SCVA Programs</a></li>
+                                        <li><a href="/pricing-and-products/perfect-turn/prepare-for-your-lesson">Prepare For Your Lesson</a></li>
+                                        <li><a href="/pricing-and-products/perfect-turn/adaptive-ski-programs">Adaptive Ski Programs</a></li>
+                                    </ul>
+                                    <ul class="grid__item lap--one-third desk--one-fifth">
+                                        <li><a href="/pricing-and-products/retail-shops">Retail Shops &raquo;</a></li>
+                                        <li><a href="/pricing-and-products/rentals">Rentals &raquo;</a></li>
+                                        <li><a href="http://www.boyneresorts.com/estore/" target="_blank">Gift Cards &raquo;</a></li>
+                                        <li><a href="/pricing-and-products/boyne-rewards">Boyne Rewards &raquo;</a></li>
+                                        <li><a href="/pricing-and-products/military-benefits">Military Benefits &raquo;</a></li>
+                                        <li><a href="/pricing-and-products/corporate-discount-program">Corporate Discount &raquo;</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="grid__item lap--one-seventh desk--one-seventh">
+                                <a href="/activities-and-nightlife/events">
+                                    Events <abbr title="and">&amp;</abbr> <br class="palm--hidden"/>Nightlife
+                                </a>
+                                <div class="nav__sub grid grid--full">
+                                    <div class="grid__item desk--one-tenth desk--visible"></div>
+                                        <a href="activities-and-nightlife/outdoor-center" class="grid__item desk--one-fifth desk--visible nav--special">
+                                            <img src="/xml/Images/Sugarloaf.com/Specials/outdoor center.jpg"/>
+                                            <h3>Outdoor Center</h3>
+                                            <p>
+                                                The Sugarloaf Outdoor Center offers XC skiing, skating, snowshoeing and gourmet.
+                                            </p>
+                                        </a>
+                                    <ul class="grid__item lap--one-third desk--one-fifth">
+                                        <li>
+                                            <a href="/activities-and-nightlife/winter-activities">
+                                                Activities &raquo;
+                                            </a>
+                                        </li>
+                                        <li><a href="/activities-and-nightlife/events">Events Calendar</a></li>
+                                        <li><a href="/activities-and-nightlife/bud-light-uncovered">Bud Light UnCovered</a></li>
+                                        <li><a href="/activities-and-nightlife/reggae-festival">Reggae Festival</a></li>
+                                        <li><a href="/activities-and-nightlife/marathon">Sugarloaf Marathon</a></li>
+                                    </ul>
+                                    <ul class="grid__item lap--one-third desk--one-fifth">
+                                        <li>
+                                            <a href="/activities-and-nightlife/outdoor-center">
+                                                Outdoor Center   &raquo;
+                                            </a>
+                                        </li>
+                                        <li><a href="/activities-and-nightlife/outdoor-center/outdoor-center-conditions">Outdoor Center Conditions</a></li>
+                                        <li><a href="/activities-and-nightlife/outdoor-center/outdoor-center-programs">Outdoor Center Programs</a></li>
+                                        <li><a href="/activities-and-nightlife/outdoor-center/outdoor-center-events">Outdoor Center Events</a></li>
+                                    </ul>
+                                    <ul class="grid__item lap--one-third desk--one-fifth">
+                                        <li><a href="/activities-and-nightlife/dining-and-nightlife">Dining <abbr title="and">&amp;</abbr> Nightlife &raquo;</a></li>
+                                        <li><a href="/activities-and-nightlife/sports-and-fitness-center">Sports <abbr title="and">&amp;</abbr> Fitness Center &raquo;</a></li>
+                                        <li><a href="/activities-and-nightlife/shear-peak-salon">Shear Peak Salon &raquo;</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="grid__item lap--one-seventh desk--one-seventh">
+                                <a href="/groups-and-weddings">
+                                    Groups <abbr title="and">&amp;</abbr> <br class="palm--hidden"/>Weddings
+                                </a>
+                                <div class="nav__sub grid grid--full">
+                                    <div class="grid__item desk--one-tenth desk--visible"></div>
+                                        <a href="http://www.sugarloaf.com/summer" class="grid__item desk--one-fifth desk--visible nav--special">
+                                            <img src="/xml/Images/Sugarloaf.com/Specials/golfcoursesm.jpg"/>
+                                            <h3>Sugarloaf Golf Club</h3>
+                                            <p>
+                                                Play a round at the #1 Course in the State of Maine.
+                                            </p>
+                                        </a>
+                                    <ul class="grid__item lap--one-third desk--one-fifth">
+                                        <li>
+                                            <a href="/groups-and-weddings/conferences">
+                                                Conferences &raquo;
+                                            </a>
+                                        </li>
+                                        <li><a href="/groups-and-weddings/conferences/conference-center">Conference Center</a></li>
+                                        <li><a href="/groups-and-weddings/conferences/sugarloaf-mountain-hotel">Sugarloaf Mountain Hotel</a></li>
+                                        <li><a href="/groups-and-weddings/conferences/sugarloaf-inn">Sugarloaf Inn</a></li>
+                                        <li><a href="/groups-and-weddings/conferences/outdoor-center">Outdoor Center</a></li>
+                                        <li><a href="/groups-and-weddings/conferences/request-information">Request a Quote</a></li>
+                                    </ul>
+                                    <ul class="grid__item lap--one-third desk--one-fifth">
+                                        <li><a href="/groups-and-weddings/day-groups">Day Groups &raquo;</a></li>
+                                        <li><a href="/groups-and-weddings/overnight-groups">Overnight Groups &raquo;</a></li>
+                                        <li><a href="/groups-and-weddings/weddings">Weddings &raquo;</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="grid__item lap--one-seventh desk--one-seventh">
+                                <a href="/kids">
+                                    <br class="palm--hidden"/>
+                                    Kids
+                                </a>
+                                <div class="nav__sub grid grid--full">
+                                    <div class="grid__item desk--one-tenth desk--visible"></div>
+                                        <a href="kids/amos-the-moose" class="grid__item desk--one-fifth desk--visible nav--special">
+                                            <img src="/xml/Images/Sugarloaf.com/Specials/amos cover.jpg"/>
+                                            <h3>Amos the Moose Book</h3>
+                                            <p>
+                                                Purchase your copy of Amos the Moose - a children’s book inspired by Sugarloaf.
+                                            </p>
+                                        </a>
+                                    <ul class="grid__item lap--one-third desk--one-fifth">
+                                        <li>
+                                            <a href="/kids/weekly-kids-activities">
+                                                Weekly Activities &raquo;
+                                            </a>
+                                        </li>
+                                        <li><a href="/kids/kids-tubing">Tubing</a></li>
+                                        <li><a href="/kids/anti-gravity-complex">Anti-Gravity Complex</a></li>
+                                        <li><a href="/kids/base-lair-arcade">Base Lair Arcade</a></li>
+                                    </ul>
+                                    <ul class="grid__item lap--one-third desk--one-fifth">
+                                        <li><a href="/kids/sugarloaf-characters">Sugarloaf Characters &raquo;</a></li>
+                                        <li><a href="/kids/amos-and-pierre-dinners">Amos <abbr title="and">&amp;</abbr> Pierre Dinners  &raquo;</a></li>
+                                        <li><a href="/kids/amos-the-moose">Amos the Moose Book &raquo;</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="grid__item lap--one-seventh desk--one-seventh">
+                                <a href="http://www.sugarloafmountainside.com" target="_blank">
+                                    Real <br class="palm--hidden"/>Estate
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+
+            
+
+
+
+
+
+<!-- Start Page Content -->
+        <div class="content">
+            <div class="content--right">
+                
+                <h1>Trails &amp; Lifts</h1>
+
+                
+
+                <h2>Lift Status</h2>
+                <div class="grid grid--full lift-status">
+                    <div class="grid__item palm--one-half lap--one-quarter desk--one-quarter icon open" data-icon="&#x5e">Open</div>
+                    <div class="grid__item palm--one-half lap--one-quarter desk--one-quarter icon closed" data-icon="&#x5e">Closed</div>
+                    <div class="grid__item palm--one-half lap--one-quarter desk--one-quarter icon hold" data-icon="&#x5e">On Hold</div>
+                    <div class="grid__item palm--one-half lap--one-quarter desk--one-quarter icon scheduled" data-icon="&#x5e">Scheduled</div>
+
+                    <h3 class="grid__item">High Speed Detachable Quads</h3>
+                    <div class="grid__item lap--one-half desk--one-half lift closed" data-icon="&#x5e;">SuperQuad</div>
+                    <div class="grid__item lap--one-half desk--one-half lift closed" data-icon="&#x5e;">Whiffletree SuperQuad</div>
+                    <hr />
+
+                    <h3 class="grid__item">High Speed Fixed Grip Quad</h3>
+                    <div class="grid__item lap--one-half desk--one-half lift closed" data-icon="&#x5e;">Skyline</div>
+                    <hr />
+
+                    <h3 class="grid__item">High Capacity Fixed Grip Quads</h3>
+                    <div class="grid__item lap--one-half desk--one-half lift closed" data-icon="&#x5e;">King Pine</div>
+                    <div class="grid__item lap--one-half desk--one-half lift closed" data-icon="&#x5e;">Timberline</div>
+                    <hr />
+
+                    <h3 class="grid__item">Double Chairs</h3>
+                    <div class="grid__item lap--one-half desk--one-half lift closed" data-icon="&#x5e;">Bucksaw</div>
+                    <div class="grid__item lap--one-half desk--one-half lift closed" data-icon="&#x5e;">Skidway</div>
+                    <div class="grid__item lap--one-half desk--one-half lift closed" data-icon="&#x5e;">Double Runner East</div>
+                    <div class="grid__item lap--one-half desk--one-half lift closed" data-icon="&#x5e;">Double Runner West</div>
+                    <div class="grid__item lap--one-half desk--one-half lift closed" data-icon="&#x5e;">Sawduster</div>
+                    <div class="grid__item lap--one-half desk--one-half lift closed" data-icon="&#x5e;">West Mountain</div>
+                    <hr />
+
+
+                    <div class="grid__item lap--one-third desk--one-third">
+                        <h3>Triple Chair</h3>
+                        <div class=" lift closed" data-icon="&#x5e;">Snubber</div>
                     </div>
                     
-                    <div id="sidepromo" class="summer">
-					
-						<div id='liveChatSideSummer' style='width:210px;height:100px;'></div>
-                        
+                    <div class="grid__item lap--one-third desk--one-third">
+                        <h3>T-Bar</h3>
+                        <div class=" lift closed" data-icon="&#x5e;">#3 T-Bar/Bateau</div>
+                    </div>
+
+                    <div class="grid__item lap--one-third desk--one-third">
+                        <h3>Carpet</h3>
+                        <div class=" lift closed" data-icon="&#x5e;">Moose-calator</div>
                     </div>
                 </div>
+
+                <h2>Trail Status</h2>
+                <div class="grid grid--full trail-status">
+                    <div class="grid__item palm--one-half lap--one-fifth desk--one-fifth icon open" data-icon="&#x5e">Open</div>
+                    <div class="grid__item palm--one-half lap--one-fifth desk--one-fifth icon closed" data-icon="&#x5e">Closed</div>
+                    <div class="grid__item palm--one-half lap--one-fifth desk--one-fifth icon groomed" data-icon="&#xe00b">Groomed</div>
+                    <div class="grid__item palm--one-half lap--one-fifth desk--one-fifth icon snowmaking-open" data-icon="&#xe00a">Snowmaking</div>
+                    <div class="grid__item palm--one-half lap--one-fifth desk--one-fifth icon snowmaking-closed" data-icon="&#xe00a">Snowmaking/Closed</div>
+
+                    <div class="grid__item palm--one-half lap--one-fifth desk--one-fifth diff beginner" data-icon="&#xe00e">Beginner</div>
+                    <div class="grid__item palm--one-half lap--one-fifth desk--one-fifth diff intermediate" data-icon="&#xe009">Intermediate</div>
+                    <div class="grid__item palm--one-half lap--one-fifth desk--one-fifth diff black" data-icon="&#xe00d">Experts Only</div>
+                    <div class="grid__item palm--one-half lap--one-fifth desk--one-fifth diff double-black" data-icon="&#xe00c">Most Difficult</div>
+                    <div class="grid__item palm--one-half lap--one-fifth desk--one-fifth diff terrain-park" data-icon="&#xe008">Terrain Park</div>
+
+                    <form class="grid grid--full trail-filter">
+                        <h5 class="grid__item">Filter Trails</h5>
+                        <div class="grid__item palm--one-half lap--one-fifth desk--one-fifth">
+                            <input type="checkbox" checked  id="open"><label for="open">Open</label>
+                        </div>
+                        <div class="grid__item palm--one-half lap--one-fifth desk--one-fifth">
+                            <input type="checkbox" checked  id="closed"><label for="closed">Closed</label>
+                        </div>
+                        <div class="grid__item palm--one-half lap--one-fifth desk--one-fifth">
+                            <input type="checkbox" checked  id="groomed"><label for="groomed">Groomed</label>
+                        </div>
+                        <div class="grid__item palm--one-half lap--one-fifth desk--one-fifth">
+                            <input type="checkbox" checked  id="snowmaking"><label for="snowmaking">Snowmaking</label>
+                        </div>
+                        <div class="grid__item palm--one-half lap--one-fifth desk--one-fifth">
+                            <input type="checkbox" checked  id="beginner"><label for="beginner">Beginner</label>
+                        </div>
+                        <div class="grid__item palm--one-half lap--one-fifth desk--one-fifth">
+                            <input type="checkbox" checked  id="intermediate"><label for="intermediate">Intermediate</label>
+                        </div>
+                        <div class="grid__item palm--one-half lap--one-fifth desk--one-fifth">
+                            <input type="checkbox" checked  id="black"><label for="black">Experts Only</label>
+                        </div>
+                        <div class="grid__item palm--one-half lap--one-fifth desk--one-fifth">
+                            <input type="checkbox" checked  id="double-black"><label for="double-black">Most Difficult</label>
+                        </div>
+                        <div class="grid__item palm--one-half lap--one-fifth desk--one-fifth">
+                            <input type="checkbox" checked  id="terrain-park"><label for="terrain-park">Terrain Park</label>
+                        </div>
+                    </form>
+
+                    <h3 class="grid__item">Base Area</h3>
+                    <div class="grid__item lap--one-half desk--one-half trail closed beginner" data-icon="&#x5e;">Snowbrook</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed beginner" data-icon="&#x5e;">The Landing</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed beginner" data-icon="&#x5e;">The Birches</div>
+                    <hr />
+
+                    <h3 class="grid__item">Double Runner</h3>
+                    <div class="grid__item lap--one-half desk--one-half trail closed beginner" data-icon="&#x5e;">Boardwalk</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed beginner" data-icon="&#x5e;">Lower Narrow Gauge</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed beginner" data-icon="&#x5e;">Lower Winters Way</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed intermediate" data-icon="&#x5e;">Middle Narrow Gauge</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed beginner" data-icon="&#x5e;">Picaroon</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed beginner" data-icon="&#x5e;">Schipper's Streak</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed beginner" data-icon="&#x5e;">Tote Road X-Cut</div>
+                    <hr />
+                    
+                    <h3 class="grid__item">SuperQuad</h3>
+                    <div class="grid__item lap--one-half desk--one-half trail closed double-black" data-icon="&#x5e;">Branding Ax Glade</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed intermediate" data-icon="&#x5e;">Bridle Chain</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed intermediate" data-icon="&#x5e;">Candy Side</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed double-black" data-icon="&#x5e;">Chaser</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed black" data-icon="&#x5e;">Double Bitter</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed intermediate" data-icon="&#x5e;">Gin Pole</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed black" data-icon="&#x5e;">Hayburner</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed black" data-icon="&#x5e;">Kickback</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed intermediate" data-icon="&#x5e;">Kings Landing</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed intermediate" data-icon="&#x5e;">Lower Binder</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed intermediate" data-icon="&#x5e;">Lower Competition Hill</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed black" data-icon="&#x5e;">Lower Sheerboom</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed double-black" data-icon="&#x5e;">Lower Skidder</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed beginner" data-icon="&#x5e;">Lower Tote Road</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed beginner" data-icon="&#x5e;">Peavy X-Cut</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed intermediate" data-icon="&#x5e;">Pinch</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed black" data-icon="&#x5e;">Sheerboom</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed intermediate" data-icon="&#x5e;">Spurline</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed black" data-icon="&#x5e;">Swedish Fiddle Glade</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed black" data-icon="&#x5e;">Upper Competition Hill</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed double-black" data-icon="&#x5e;">Upper Skidder</div>
+                    <hr />
+                    
+                    <h3 class="grid__item">Skyline</h3>
+                    <div class="grid__item lap--one-half desk--one-half trail closed black" data-icon="&#x5e;">Blade Glade</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed black" data-icon="&#x5e;">Cant Hook Glade</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed double-black" data-icon="&#x5e;">Cribworks</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed intermediate" data-icon="&#x5e;">Gondola Line</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed black" data-icon="&#x5e;">Kurf Glade</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed black" data-icon="&#x5e;">Lower Bubblecuffer</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed intermediate" data-icon="&#x5e;">Lower Spillway</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed intermediate" data-icon="&#x5e;">Midstation X-Cut</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed intermediate" data-icon="&#x5e;">Pick Pole</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed black" data-icon="&#x5e;">Sluice Chute</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed black" data-icon="&#x5e;">Sluice Headwall</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed intermediate" data-icon="&#x5e;">Sluice</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed black" data-icon="&#x5e;">Spillway X-Cut</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed black" data-icon="&#x5e;">Stump Shot</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed intermediate" data-icon="&#x5e;">Tote Road</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed black" data-icon="&#x5e;">Upper Binder</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed double-black" data-icon="&#x5e;">Upper Bubblecuffer</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed black" data-icon="&#x5e;">Upper Double Bitter</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed double-black" data-icon="&#x5e;">Upper Gondola Line</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed black" data-icon="&#x5e;">Upper Narrow Gauge</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed black" data-icon="&#x5e;">Upper Spillway</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed double-black" data-icon="&#x5e;">Upper Winters Way</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed black" data-icon="&#x5e;">Wedge</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed black" data-icon="&#x5e;">West Sluice Chute</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed double-black" data-icon="&#x5e;">White Nitro</div>
+                    <hr />
+                    
+                    <h3 class="grid__item">Whiffletree</h3>
+                    <div class="grid__item lap--one-half desk--one-half trail closed intermediate" data-icon="&#x5e;">Blueberry's Grove Glade</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed black" data-icon="&#x5e;">Broccoli Garden Glade</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed beginner" data-icon="&#x5e;">Condo X-Cut</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed beginner" data-icon="&#x5e;">Cross Haul</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed intermediate" data-icon="&#x5e;">Jill Poke</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed intermediate" data-icon="&#x5e;">Lombard X-Cut</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed intermediate" data-icon="&#x5e;">Lower Buckboard</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed intermediate" data-icon="&#x5e;">Lower Cruiser</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed intermediate" data-icon="&#x5e;">Lower Pole Line</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed intermediate" data-icon="&#x5e;">Lower Rookie River Glade</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed intermediate" data-icon="&#x5e;">Lower Springboard</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed beginner" data-icon="&#x5e;">Lower Stubs</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed beginner" data-icon="&#x5e;">Lower Whiffletree</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed intermediate" data-icon="&#x5e;">Moose Alley</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed beginner" data-icon="&#x5e;">Rollway (EWD)</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed intermediate" data-icon="&#x5e;">Slasher</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed black" data-icon="&#x5e;">Stubs Glade</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed intermediate" data-icon="&#x5e;">Tohaul</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed intermediate" data-icon="&#x5e;">Upper Buckboard</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed intermediate" data-icon="&#x5e;">Upper Cruiser</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed intermediate" data-icon="&#x5e;">Upper Pole Line</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed black" data-icon="&#x5e;">Upper Rookie River Glade</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed intermediate" data-icon="&#x5e;">Upper Springboard</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed beginner" data-icon="&#x5e;">Upper Stubs</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed intermediate" data-icon="&#x5e;">Upper Whiffletree</div>
+                    <hr />
+                    
+                    <h3 class="grid__item">King Pine</h3>
+                    <div class="grid__item lap--one-half desk--one-half trail closed black" data-icon="&#x5e;">Boomers Glade</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed black" data-icon="&#x5e;">Choker</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed black" data-icon="&#x5e;">Flume</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed black" data-icon="&#x5e;">Freds Pitch Glade</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed black" data-icon="&#x5e;">Haulback</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed intermediate" data-icon="&#x5e;">Lower Boomauger</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed double-black" data-icon="&#x5e;">Misery Whip</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed intermediate" data-icon="&#x5e;">Old Winters Way</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed intermediate" data-icon="&#x5e;">Ramdown</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed double-black" data-icon="&#x5e;">Ripsaw</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed black" data-icon="&#x5e;">Upper Boomauger</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed black" data-icon="&#x5e;">Widowmaker</div>
+                    <hr />
+                    
+                    <h3 class="grid__item">Snowfields&trade; Summit</h3>
+                    <div class="grid__item lap--one-half desk--one-half trail closed double-black" data-icon="&#x5e;">Bubblecuffer Ext</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed double-black" data-icon="&#x5e;">Gondola Line Ext</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed black" data-icon="&#x5e;">Hard Tack</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed double-black" data-icon="&#x5e;">High Rigger</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed double-black" data-icon="&#x5e;">Ignitor</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed double-black" data-icon="&#x5e;">Jagger</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed double-black" data-icon="&#x5e;">Powder Keg</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed double-black" data-icon="&#x5e;">Pure Heat</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed double-black" data-icon="&#x5e;">White Nitro Ext</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed double-black" data-icon="&#x5e;">Winters Way Ext</div>
+                    <hr />
+                    
+                    <h3 class="grid__item">Timberline</h3>
+                    <div class="grid__item lap--one-half desk--one-half trail closed intermediate" data-icon="&#x5e;">Buckskin</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed intermediate" data-icon="&#x5e;">Cinderhoe</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed beginner" data-icon="&#x5e;">Good Chance X-Cut</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed beginner" data-icon="&#x5e;">Lower Timberline</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed black" data-icon="&#x5e;">Narrow Gauge Ext</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed intermediate" data-icon="&#x5e;">Tin Pants</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed intermediate" data-icon="&#x5e;">Tote Road Ext</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed beginner" data-icon="&#x5e;">Upper Timberline</div>
+                    <hr />
+                    
+                    <h3 class="grid__item">West Mountain</h3>
+                    <div class="grid__item lap--one-half desk--one-half trail closed beginner" data-icon="&#x5e;">Back Cut</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed beginner" data-icon="&#x5e;">Birch Hook</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed intermediate" data-icon="&#x5e;">Boom Scooter</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed beginner" data-icon="&#x5e;">Bucksaw X-Cut</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed intermediate" data-icon="&#x5e;">Greenhorn Glade</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed beginner" data-icon="&#x5e;">Horseshoe</div>.
+                    <div class="grid__item lap--one-half desk--one-half trail closed beginner" data-icon="&#x5e;">Lower Glancer</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed beginner" data-icon="&#x5e;">Lower Scoot</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed beginner" data-icon="&#x5e;">Lower West Mountain</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed beginner" data-icon="&#x5e;">Lower Windrow</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed beginner" data-icon="&#x5e;">Middle Scoot</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed black" data-icon="&#x5e;">Pulaski</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed black" data-icon="&#x5e;">Raker Tooth Glade</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed black" data-icon="&#x5e;">Ram Pasture Glade</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed beginner" data-icon="&#x5e;">Upper Glancer</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed intermediate" data-icon="&#x5e;">Upper Scoot</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed beginner" data-icon="&#x5e;">Upper West Mountain</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed intermediate" data-icon="&#x5e;">Upper Windrow</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed beginner" data-icon="&#x5e;">West Mountain X-Cut</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed beginner" data-icon="&#x5e;">Windrow Ext</div>
+                    <hr />
+                    
+                    <h3 class="grid__item">Brackett Basin</h3>
+                    <div class="grid__item lap--one-half desk--one-half trail closed double-black" data-icon="&#x5e;">Birler Glade One</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed double-black" data-icon="&#x5e;">Birler Glade Two</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed double-black" data-icon="&#x5e;">Edger Glade One</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed double-black" data-icon="&#x5e;">Edger Glade Two</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed double-black" data-icon="&#x5e;">Sweeper Glade One</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed double-black" data-icon="&#x5e;">Sweeper Glade Two</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed double-black" data-icon="&#x5e;">Cant Dog One</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed double-black" data-icon="&#x5e;">Cant Dog Two</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed intermediate" data-icon="&#x5e;">Rough Cut Glade</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed intermediate" data-icon="&#x5e;">Red Horse Glade</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed intermediate" data-icon="&#x5e;">Blacksmith Glade</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed intermediate" data-icon="&#x5e;">High Ball Glade</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed intermediate" data-icon="&#x5e;">Logging Road</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed double-black" data-icon="&#x5e;">Golden Road</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed double-black" data-icon="&#x5e;">Eastern Territory</div>
+                    <hr />
+                    
+                    <h3 class="grid__item">Terrain Parks</h3>
+                    <div class="grid__item lap--one-half desk--one-half trail closed terrain-park" data-icon="&#x5e;">Haywire</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed terrain-park" data-icon="&#x5e;">Pipe Dreams Superpipe</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed terrain-park" data-icon="&#x5e;">Sidewinder</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed terrain-park" data-icon="&#x5e;">Skybound</div>
+                    <div class="grid__item lap--one-half desk--one-half trail closed terrain-park" data-icon="&#x5e;">Stomping Grounds</div>
+                    
+
+
+                </div>
+
             </div>
+
+            <div class="content--left" style="background-image: url(/xml/Images/Sugarloaf.com/Backgrounds/mountain-aerial.jpg)">
+                
+                <div class="side--twitter">
+                    <div class="label"><span>Live Trail & Lift Updates</span></div>
+
+                    <div class="tweets">
+                        <a class="twitter-timeline" href="https://twitter.com/SugarloafSnow" data-widget-id="374912637634498560" data-tweet-limit="5" data-chrome="noheader nofooter noborders transparent noscrollbar">Tweets by @SugarloafSnow</a>
+                        <script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + "://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); } }(document, "script", "twitter-wjs");</script>
+                    </div>
+
+                    <a href="https://twitter.com/sugarloafsnow" class="twitter-follow-button" data-show-count="false">Follow @sugarloafsnow</a>
+                    <script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + '://platform.twitter.com/widgets.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'twitter-wjs');</script>
+                </div>
+
+            </div>
+
         </div>
-            
+<!-- End Page Content -->
 
-		
-        <footer>
-            <div id="content-footer" class="clearfix">
-                <div id="link-columns" class="winter">
-                    <div class="link-column">
-                        <h5>Popular</h5>
-                        <a href="/TheMountain/DailyReport/index.html">Daily Report</a><br />
-                        <a href="/TheMountain/DailyReport/camshot.html">Latest Photo</a><br />
-                        <a href="/TheMountain/Video/index.html">Latest Video</a><br />
-						<a href="/VacationPlanning/Lodging/LodgingOptions.html">Lodging Options</a><br />
-						<a href="/VacationPlanning/Ski_Stay_Packages.html">Vacation Packages</a><br />
-                        <a href="/PricingProducts/index.html">Ticket Pricing</a><br />
-                        <a href="/TerrainParks/index.html">Terrain Parks</a><br />
-						<a href="http://www.boyneadventures.com/" target="_blank">Boyne Adventures</a><br />
-                        <a href="/VacationPlanning/directions.html">Directions</a><br />
-                        
+
+
+            <footer>
+
+                <h1 class="reverse"><span>Get There From Here</span></h1>
+                <div class="l-margin-bottom grid grid--full">
+                    <a href="https://www.facebook.com/sugarloaf" class="social grid__item one-sixth t-center"><i class="icon-facebook"></i> <span class="palm--hidden">Facebook</span></a>
+                    <a href="https://twitter.com/SugarloafMaine" class="social grid__item one-sixth t-center"><i class="icon-twitter"></i> <span class="palm--hidden">Twitter</span></a>
+                    <a href="http://vimeo.com/sugarloaf" class="social grid__item one-sixth t-center"><i class="icon-vimeo"></i> <span class="palm--hidden">Vimeo</span></a>
+                    <a href="http://instagram.com/sugarloafmountain" class="social grid__item one-sixth t-center"><i class="icon-instagram"></i> <span class="palm--hidden">Instagram</span></a>
+                    <a href="http://www.sugarloaf.com/blueroom/" class="social grid__item one-sixth t-center"><i class="icon-sugarloaf"></i> <span class="palm--hidden">Blue Room</span></a>
+                    <a href="/e-mail-sign-up" class="social grid__item one-sixth t-center"><i class="icon-email"></i> <span class="palm--hidden">Email Signup</span></a>
+                </div>
+
+                <h1 class="reverse"><span>About Sugarloaf</span></h1>
+                <p>
+                    Sugarloaf Mountain Resort in Maine, USA is one of the top year-round destinations in New England. Sugarloaf is the largest ski area east of the Rockies. Our trails and glades spread across Sugarloaf Mountain, Brackett Basin and Burnt Mountain. Additionally, the resort offers many winter activities including skiing, snowboarding, tubing, nordic skiing, snowshoeing, concerts, slopeside lodging and terrain parks. Summer offerings include golf, hiking, mountain biking, moose view tours plus facilities to host conferences and weddings. You can also view Sugarloaf snow reports, web cams, photos, videos and everything you need to plan your Sugarloaf vacation. Sugarloaf.com is the official website of Sugarloaf Mountain Resort.
+                </p>
+
+                <div class="helpful-links grid grid--full">
+                    <div class="grid__item palm--one-half">
+                        <a href="/">Home</a>
+                        <a href="/corporate/company-info">Company Info</a>
+                        <a href="/contact-us">Contact Us</a>
+                        <a href="/Media">Media</a>
+                        <a href="/corporate/employment">Employment</a>
+                        <a href="/corporate/owner-services">Owner Services</a>
                     </div>
-                    <div class="link-column">
-                        <h5>Get Social</h5>
-                        <a href="http://www.sugarloaf.com/blueroom">The Blue Room</a><br />
-                        <a href="http://www.facebook.com/sugarloaf" target="_blank">Facebook</a><br />
-                        <a href="http://twitter.com/#!/SugarloafMaine" target="_blank">Twitter</a><br />
-                        <a href="http://www.youtube.com/sugarloafers" target="_blank">YouTube</a><br />
-                        <a href="http://www.flickr.com/photos/sugarloafmaine" target="_blank">Flickr</a><br />
-						<a href="http://www.sugarloafsticker.com/">SugarloafSticker.com</a><br />
-                        <a href="/Email_Lists.html">Get Email Alerts</a><br />
-                        
-                    </div>
-                    <div class="link-column">
-                        <h5>Resort Info</h5>
-                        <a href="/contact.html">Contact Us</a><br />
-                        <a href="/Corporate/privacy_policy.html">Privacy</a><br />
-                        <a href="/sitemap.html">Site Map</a><br />
-                        <a href="/Corporate/Owner_Services.html">Owner Services</a><br />
-                        <a href="/Corporate/Media/index.html">Media</a><br />
-                        <a href="/Corporate/Employment/index.html">Employment</a><br />
-                        <a href="/EventsActivities/Event_Grants.html">Summer Event Grants</a><br />
-                        <a href="/Corporate/donations.html">Donations Request</a><br />
-                        <a href="/Corporate/index.html">Company Info</a><br />
-						<a href="/Corporate/sponsors.html">Corporate Partners</a><br />
+                    <div class="grid__item palm--one-half">
+                        <a href="#">Summer Event Grants</a>
+                        <a href="/corporate/sugarloaf-charitable-trust">Sugarloaf Charitable Trust</a>
+                        <a href="/corporate/donations-request">Donations Request</a>
                     </div>
                 </div>
-				<div id="link-columns" class="summer">
-				<div class="link-column">
-					<h5>Popular</h5>
-					<a href="/GolfCourse/Course_Report.html">Course Report</a><br />
-					<a href="/VacationPlanning/Vacation_Packages_Summer.html">Vacation Packages</a><br />
-					<a href="/PricingProducts/course_rates.html">Course Rates</a><br />
-					<a href="/PricingProducts/fore_packs.html">Fore Packs</a><br />
-					<a href="/EventsActivities/index.html">Events Calendar</a><br />
-					<a href="/GroupsConferences/Weddings.html">Weddings</a><br />
-					<a href="/GroupsConferences/index.html">Conferences</a><br />
-					<a href="http://www.boyneadventures.com/" target="_blank">Boyne Adventures</a><br />
-					<a href="/VacationPlanning/directions.html">Directions</a><br />
-					
-				</div>
-				<div class="link-column">
-					<h5>Get Social!</h5>
-					<a href="http://www.facebook.com/sugarloaf" target="_blank">Facebook</a><br />
-					<a href="http://twitter.com/#!/SugarloafMaine" target="_blank">Twitter</a><br />
-					<a href="http://www.youtube.com/sugarloafers" target="_blank">YouTube</a><br />
-					<a href="http://www.flickr.com/photos/sugarloafmaine" target="_blank">Flickr</a><br />
-					<a href="http://community.sugarloaf.com/">Sugarloaf Community</a><br />
-					<a href="http://www.sugarloafsticker.com/">SugarloafSticker.com</a><br />
-					<a href="/Email_Lists.html">Get Email Alerts</a><br />
-					
-				</div>
-				<div class="link-column">
-					<h5>Resort Info</h5>
-					<a href="/contact.html">Contact Us</a><br />
-					<a href="/Corporate/privacy_policy.html">Privacy</a><br />
-					<a href="/sitemap.html">Site Map</a><br />
-					<a href="/Corporate/Owner_Services.html">Owner Services</a><br />
-					<a href="/Corporate/Media/index.html">Media</a><br />
-					<a href="/Corporate/Employment/index.html">Employment</a><br />
-					<a href="/Corporate/donations.html">Donations Request</a><br />
-					<a href="/Corporate/index.html">Company Info</a><br />
-				</div>
-			</div>
-            </div>
-            
-            <hr style="width:480px; text-align:left;">
-            <p class="copyright">&copy; 2011 Sugarloaf Mountain Resort</p>
-            
-            <br /><br />
-            <div id="social-like">
-                <div class="facebook-like-box">
-                    <iframe src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fsugarloaf&amp;width=292&amp;colorscheme=light&amp;show_faces=false&amp;border_color&amp;stream=false&amp;header=true&amp;height=62" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:292px; height:62px;" allowTransparency="true" class="facebook-iframe"></iframe>
+
+                <div class="copyright">
+                    &copy; 2013 Sugarloaf Mountain Resort<br />
+                    <a href="/corporate/privacy">Privacy</a><!-- // <a href="#">Site Map</a>-->
                 </div>
-				<div class="twitter-follow">
-					<a href="http://twitter.com/SugarloafMaine" class="twitter-follow-button" data-show-count="false">Follow @SugarloafMaine</a>
-				</div>
-                <div class="google-plus-one"><g:plusone size="medium"></g:plusone></div>
-            </div>
-        </footer>
-            
 
-	</div>
-    
-    <script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.14/jquery-ui.min.js"></script>
-    <script type="text/javascript" src="../../Sugarloaf2011/GlobalAssets/js/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
-	<script type="text/javascript" src="../../Sugarloaf2011/GlobalAssets/js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
-	<link rel="stylesheet" type="text/css" href="../../Sugarloaf2011/GlobalAssets/js/fancybox/jquery.fancybox-1.3.4.css" media="screen" />
-	<script src="../../Sugarloaf2011/GlobalAssets/js/plugins.js"></script>
-	<script src="../../Sugarloaf2011/GlobalAssets/js/script.js"></script>
-	<!--[if lt IE 7 ]>
-	<script src="../../Sugarloaf2011/GlobalAssets/js/libs/dd_belatedpng.js"></script>
-	<script> DD_belatedPNG.fix('img, .png_bg');</script>
-	<![endif]-->
-    
-    
-	<script>
-		$("a.fancybox").fancybox();
-	</script>
-			
+            </footer>
 
-</body>
+        </div>
 
+        <script data-main="/Content/js/app" src="/Content/js/lib/require.js"></script>
+
+
+        <script>
+            var _gaq = [
+                ['_setAccount', 'UA-23690911-1'],
+                ['_trackPageview'],
+                ['_setDomainName', '.sugarloaf.com'],
+                ['_setAllowLinker', true]
+            ];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+
+        
+    
+
+    </body>
 </html>

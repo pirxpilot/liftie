@@ -2,7 +2,7 @@
   "name": "Stevens Pass",
   "url": {
     "host": "http://www.stevenspass.com",
-    "pathname": "/Stevens/lifts-grooming.aspx"
+    "pathname": "/site/mountain/reports/alpine-grooming/@@alpine-grooming"
   },
   "tags": [
     "Washington"

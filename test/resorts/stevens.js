@@ -1,4 +1,4 @@
-var assert = require('assert');
+var should = require('should');
 var fs = require('fs');
 var parser = require('../../lib/parser');
 var parse = require('../../lib/resorts/stevens');
@@ -11,18 +11,18 @@ describe('parse stevens', function() {
     stream.on('error', done);
     stream.pipe(parser(parse, function(err, status) {
       var expected = {
-        'SkyLine Quad': 'open',
-        'Hogsback Quad': 'open',
-        'Daisy': 'open',
-        'Tye Mill': 'open',
-        'Brooks': 'open',
-        'Kehr\'s Chair': 'open',
-        '7th Heaven': 'open',
-        'Double Diamond': 'open',
-        'Jupiter Quad': 'open',
-        'Southern Cross': 'open'
+        '7th Heaven': 'closed',
+        'Brooks': 'closed',
+        'Daisy': 'closed',
+        'Double Diamond': 'closed',
+        'Hogsback Express': 'closed',
+        'Kehr\'s Chair': 'closed',
+        'SkyLine Express': 'closed',
+        'Tye Mill': 'closed',
+        'Jupiter Express': 'closed',
+        'Southern Cross': 'closed'
       };
-      assert.deepEqual(status, expected);
+      status.should.eql(expected);
       done(err);
     }));
   });
