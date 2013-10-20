@@ -1,4 +1,11 @@
 
+2.0.1 / 2013-10-20 
+==================
+
+ * fix hide opening dates when they passed without server restart
+ * fix empty responses problem
+ * fix requery after error
+
 2.0.0 / 2013-10-20 
 ==================
 
