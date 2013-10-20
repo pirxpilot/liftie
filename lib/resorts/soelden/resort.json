@@ -2,10 +2,9 @@
   "name": "Sölden",
   "url": {
     "host": "http://www.soelden.com",
-    "pathname": "/main/EN/SD/WI/Wetter/heute/index.html"
+    "pathname": "/operational-ski-lifts"
   },
   "tags": [
     "Austria"
-  ],
-  "opening": "2013-11-16"
+  ]
 }
