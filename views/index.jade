@@ -22,6 +22,12 @@ mixin resort(resort)
       a.right.icon-alone.star(href='#')
         span.ls-star
     .expandable
+      if resort.opening
+        .opening-date
+          a(href=resort.href,
+            title='Go to official #{ resort.name } page',
+            target='_blank'
+          ) Opens on <b>#{resort.opening}</b>
       ul.lifts.expandable
         for status, name in resort.status
           li.lift
