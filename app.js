@@ -17,15 +17,16 @@ function compileCss(str, path) {
 var app = module.exports = express();
 
 app.configure(function() {
-  var root = path.join(__dirname, 'public');
+  var root = path.join(__dirname, 'public'),
+    siteUrl = process.env.SITE_URL || 'http://liftie.info';
   app.locals({
     min: '.min',
     decorateResort: function() {},
     decorateAbout: function() {},
-    siteUrl: process.env.SITE_URL || 'http://liftie.info',
+    siteUrl: siteUrl,
     siteDescription: 'Clean, simple, easy to read, fast ski resort lift status.',
     og: {
-      image: app.locals.siteUrl + '/img/snowflake-256.png',
+      image: siteUrl + '/img/snowflake-256.png',
     }
   });
   app.set('port', process.env.PORT || 3000);
