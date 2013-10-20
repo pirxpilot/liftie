@@ -6,6 +6,7 @@ mixin resort(resort)
   section.resort(
     data-resort=resort.id,
     data-timestamp=resort.timestamp,
+    data-opening=resort.opening,
     class=resort.open ? 'open' : ''
   )
     header
