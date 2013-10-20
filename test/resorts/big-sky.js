@@ -11,26 +11,23 @@ describe('parse big-sky', function() {
     stream.on('error', done);
     stream.pipe(parser(parse, function(err, status) {
       var expected = {
-        'Adrian\'s Way Carpet': 'open',
-        'Bear Back Poma': 'open',
-        'Cascade': 'open',
-        'Challenger': 'open',
-        'Dakota': 'open',
-        'Explorer': 'open',
-        'Iron Horse': 'open',
-        'Little Thunder': 'open',
-        'Lone Moose': 'open',
-        'Lone Peak Tram': 'open',
-        'Lone Peak Triple': 'open',
-        'Middle Mountain Carpet': 'open',
-        'Pony Express': 'open',
-        'Ramcharger': 'open',
-        'Shedhorn': 'open',
-        'Small Fry Carpet': 'open',
-        'Southern Comfort': 'open',
-        'Swift Current': 'open',
-        'Thunder Wolf': 'open',
-        'White Otter': 'open'
+        'Cascade Triple': 'closed',
+        'Little Thunder': 'closed',
+        'Challenger Double': 'closed',
+        'Explorer Double': 'closed',
+        'Bear Back': 'closed',
+        'Iron Horse Quad': 'closed',
+        'Lone Moose Triple': 'closed',
+        'Lone Peak Tram': 'closed',
+        'Dakota Lift Triple': 'closed',
+        'Lone Peak Triple': 'closed',
+        'Pony Express Triple': 'closed',
+        'Ramcharger': 'closed',
+        'Shedhorn Double': 'closed',
+        'Southern Comfort': 'closed',
+        'Swift Current': 'closed',
+        'Thunder Wolf': 'closed',
+        'White Otter Double': 'closed'
       };
       assert.deepEqual(status, expected);
       done(err);
