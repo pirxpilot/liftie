@@ -1,4 +1,4 @@
-var assert = require('assert');
+var should = require('should');
 var fs = require('fs');
 var parser = require('../../lib/parser');
 var parse = require('../../lib/resorts/schweitzer');
@@ -11,17 +11,18 @@ describe('parse schweitzer', function() {
     stream.on('error', done);
     stream.pipe(parser(parse, function(err, status) {
       var expected = {
-        'Basin Express Quad': 'open',
-        'Great Escape Quad': 'open',
-        'Idyle Our T-Bar': 'closed',
-        'Lakeview Triple': 'open',
-        'Musical Carpet': 'open',
-        'Musical Chairs Double': 'open',
-        'Snow Ghost Double': 'open',
-        'Stella Express Six Pack': 'open',
+        'Basin Express Quad': 'closed',
+        'Great Escape Quad': 'closed',
+        'Idyle Our T-Bar': 'open',
+        'Lakeview Triple': 'closed',
+        'Musical Carpet': 'closed',
+        'Musical Chairs Double': 'closed',
+        'Snow Ghost Double': 'closed',
+        'Stella Express Six Pack': 'closed',
         'Sunnyside Double': 'closed'
       };
-      assert.deepEqual(status, expected);
+      should.exist(status);
+      status.should.eql(expected);
       done(err);
     }));
   });
