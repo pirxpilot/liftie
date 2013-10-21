@@ -4,6 +4,10 @@
     "host": "http://winter.kirkwood.com",
     "pathname": "/site/mountain/snow-report"
   },
+  "dataUrl": {
+    "host": "http://winter.kirkwood.com",
+    "pathname": "/site/snow-report/print"
+  },
   "tags": [
     "California",
     "Lake Tahoe"

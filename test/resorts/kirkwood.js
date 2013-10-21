@@ -1,4 +1,4 @@
-var assert = require('assert');
+var should = require('should');
 var fs = require('fs');
 var parser = require('../../lib/parser');
 var parse = require('../../lib/resorts/kirkwood');
@@ -11,20 +11,21 @@ describe('parse kirkwood', function() {
     stream.on('error', done);
     stream.pipe(parser(parse, function(err, status) {
       var expected = {
-        'SnowKirk': 'scheduled',
-        'Caples Crest': 'scheduled',
-        'Iron Horse': 'scheduled',
-        'Sunrise': 'scheduled',
-        'Solitude': 'scheduled',
-        'Cornice Express': 'scheduled',
-        'TC Express': 'scheduled',
-        'Bunny': 'scheduled',
-        'Wagon Wheel': 'scheduled',
-        'The Reut': 'scheduled',
-        'Vista': 'scheduled',
-        'Covered Wagon': 'scheduled'
+        'SnowKirk': 'closed',
+        'Caples Crest': 'closed',
+        'Iron Horse': 'closed',
+        'Sunrise': 'closed',
+        'Solitude': 'closed',
+        'Cornice Express': 'closed',
+        'TC Express': 'closed',
+        'Bunny': 'closed',
+        'Wagon Wheel': 'closed',
+        'The Reut': 'closed',
+        'Vista': 'closed',
+        'Covered Wagon': 'closed'
       };
-      assert.deepEqual(status, expected);
+      should.exist(status);
+      status.should.eql(expected);
       done(err);
     }));
   });
