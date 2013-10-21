@@ -1,4 +1,4 @@
-var assert = require('assert');
+var should = require('should');
 var fs = require('fs');
 var parser = require('../../lib/parser');
 var parse = require('../../lib/resorts/soelden');
@@ -11,41 +11,41 @@ describe('parse soelden', function() {
     stream.on('error', done);
     stream.pipe(parser(parse, function(err, status) {
       var expected = {
-        '8EUB Gaislachkogl I': 'open',
-        '3S Gaislachkogl II': 'open',
-        'SL Gaislachalm': 'open',
-        '4SK Heidebahn': 'open',
-        '3SB Wasserkar': 'open',
-        'DSB Mittelstation': 'open',
-        'DSB Gratlbahn': 'open',
-        '6SK Stabele': 'open',
-        'Zentrum Shuttle': 'open',
-        'SL Innerwald I': 'open',
-        'SL Innerwald II': 'open',
-        '8EUB Giggijoch': 'open',
-        '6SK Langegg': 'open',
-        'Minilift Giggijoch': 'open',
-        '4SK Hainbachkar': 'open',
-        '4SK Silberbrünnl': 'open',
-        '8SB Giggijoch': 'open',
-        '4SK Roßkirpl': 'open',
-        'DSB Rotkogl': 'open',
-        '4SL Seekogl': 'open',
-        '4SK Einzeiger': 'open',
-        '4SK Schwarzkogl': 'open',
-        '8EUB Gletscherexpress': 'open',
-        '4SK Rettenbachjoch': 'closed',
+        '8EUB Gaislachkogl I': 'closed',
+        '3S Gaislachkogl II': 'closed',
+        'SL Gaislachalm': 'closed',
+        '4SB Heidebahn': 'closed',
+        '3SB Wasserkar': 'closed',
+        '2SB Mittelstation': 'closed',
+        '2SB Gratlbahn': 'closed',
+        '6SB Stabele': 'closed',
+        'Zentrum Shuttle': 'closed',
+        'SL Innerwald I': 'closed',
+        'SL Innerwald II': 'closed',
+        '8EUB Giggijoch': 'closed',
+        '6SB Langegg': 'closed',
+        'Minilift Giggijoch': 'closed',
+        '4SB Hainbachkar': 'closed',
+        '4SB Silberbrünnl': 'closed',
+        '8SB Giggijoch': 'closed',
+        '4SB Roßkirpl': 'closed',
+        '2SB Rotkogl': 'closed',
+        '4SB Seekogl': 'closed',
+        '4SB Einzeiger': 'closed',
+        '4SB Schwarzkogl': 'closed',
+        '8EUB Gletscherexpress': 'closed',
+        '4SB Rettenbachjoch': 'closed',
         '8EUB Schwarze Schneid I': 'open',
         '8EUB Schwarze Schneid II': 'open',
-        'SL Karleskogl': 'closed',
+        'SL Karleskogl': 'open',
         'SL Seiterjöchl': 'open',
-        '6SK Seiterkar': 'open',
+        '6SB Seiterkar': 'open',
         '8EUB Tiefenbach': 'open',
         'SL Mutkogl': 'open',
-        'SL Panorama': 'closed',
-        'Minilift Tiefenbach': 'closed'
+        'SL Panorama': 'open',
+        'Minilift Tiefenbach': 'open'
       };
-      assert.deepEqual(status, expected);
+      status.should.eql(expected);
       done(err);
     }));
   });

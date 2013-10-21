@@ -2,7 +2,7 @@
   "name": "Crested Butte",
   "url": {
     "host": "http://www.skicb.com",
-    "pathname": "/cbmr/lift-status.aspx"
+    "pathname": "/the-mountain/grooming-lift-status"
   },
   "tags": [
     "Colorado"

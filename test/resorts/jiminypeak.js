@@ -1,4 +1,4 @@
-var assert = require('assert');
+var should = require('should');
 var fs = require('fs');
 var parser = require('../../lib/parser');
 var parse = require('../../lib/resorts/jiminypeak');
@@ -13,15 +13,16 @@ describe('parse jiminypeak', function() {
       var expected = {
         'Alex\'s Park Carpet Lift': 'closed',
         'Triple Chair': 'closed',
-        'Grand Slam': 'hold',
-        'Novice Triple': 'open',
-        'Berkshire Express': 'open',
-        'Cricket Triple': 'open',
+        'Grand Slam': 'closed',
+        'Novice Triple': 'closed',
+        'Berkshire Express': 'closed',
+        'Cricket Triple': 'closed',
         'Q1 Quad': 'closed',
-        'Carpet Lift': 'open',
-        'Whites Quad': 'open'
+        'Carpet Lift': 'closed',
+        'Whites Quad': 'closed'
       };
-      assert.deepEqual(status, expected);
+      should.exist(status);
+      status.should.eql(expected);
       done(err);
     }));
   });
