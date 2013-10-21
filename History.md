@@ -1,4 +1,20 @@
 
+2.0.2 / 2013-10-20 
+==================
+
+ * fix Schweitzer for the new season
+ * fix Kirkwood for the new season
+ * fix Jiminy Peak for the new season
+ * fix Mt Rose status for new season
+ * fix Crested Butte for the new season
+ * fix Copper for the new season
+ * fix Big Sky for the new season
+ * fix Beaver Creek for the new season
+ * fix Soelden for the new season
+ * fix Brian Head for the new season
+ * Removed Moonlight Basin after it merged with Big Sky
+ * Page description more detailed and more specific
+
 2.0.1 / 2013-10-20 
 ==================
 
