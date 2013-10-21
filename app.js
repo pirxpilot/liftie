@@ -23,10 +23,10 @@ app.configure(function() {
     min: '.min',
     decorateResort: function() {},
     decorateAbout: function() {},
+    decorateDescription: function() { return ''; },
     siteUrl: siteUrl,
-    siteDescription: 'Clean, simple, easy to read, fast ski resort lift status.',
     og: {
-      image: siteUrl + '/img/snowflake-256.png',
+      image: siteUrl + '/img/snowflake-256.png'
     }
   });
   app.set('port', process.env.PORT || 3000);
