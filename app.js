@@ -5,7 +5,8 @@ var express = require('express'),
   path = require('path'),
   stylus = require('stylus'),
   nib = require('nib'),
-  routes = require('./lib/routes');
+  resorts = require('./lib/loader')(),
+  routes = require('./lib/routes')(resorts);
 
 function compileCss(str, path) {
   return stylus(str)

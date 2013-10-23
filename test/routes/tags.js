@@ -20,7 +20,13 @@ describe('tags', function() {
       };
     }
 
-    var tt = tags(Object.keys(objs), load);
+    Object.keys(objs).forEach(function (n) {
+      objs[n] = load(n);
+    });
+    var tt = tags({
+      names: Object.keys(objs),
+      data: objs
+    });
 
     assert.deepEqual(tt.t1.members, ['a', 'c']);
     assert.deepEqual(tt.t2.members, ['a', 'b', 'c']);
@@ -31,7 +37,7 @@ describe('tags', function() {
   it('should conver names to cannonical form', function() {
     var objs = {
       'a': 'Nice Tag,Another Tag',
-      'b': 'Another Tag',
+      'b': 'Another Tag'
     };
 
     function load(name){
@@ -41,7 +47,13 @@ describe('tags', function() {
       };
     }
 
-    var tt = tags(Object.keys(objs), load);
+    Object.keys(objs).forEach(function (n) {
+      objs[n] = load(n);
+    });
+    var tt = tags({
+      names: Object.keys(objs),
+      data: objs
+    });
 
     assert.deepEqual(tt['nice-tag'].members, ['a']);
     assert.deepEqual(tt['nice-tag'].label, 'Nice Tag');
