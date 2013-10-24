@@ -1,0 +1,11 @@
+extends layout
+
+include resort
+
+block content
+  .widget
+    +resort(resorts[0], true)
+
+block footer
+  footer
+    p Lift status by <a href='http://liftie.info' target='_blank'>Liftie</a>
