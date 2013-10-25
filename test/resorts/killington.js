@@ -1,4 +1,4 @@
-var assert = require('assert');
+var should = require('should');
 var fs = require('fs');
 var parser = require('../../lib/parser');
 var parse = require('../../lib/resorts/killington');
@@ -11,30 +11,30 @@ describe('parse killington', function() {
     stream.on('error', done);
     stream.pipe(parser(parse, function(err, status) {
       var expected = {
-        'Bear Mountain Quad': 'scheduled',
-        'Canyon Quad': 'scheduled',
-        'K-1 Express Gondola': 'scheduled',
-        'North Ridge Triple': 'scheduled',
-        'Ramshead Express Quad': 'scheduled',
-        'Snowplay Carpet I': 'scheduled',
+        'Bear Mountain Quad': 'closed',
+        'Canyon Quad': 'closed',
+        'K-1 Express Gondola': 'closed',
+        'North Ridge Triple': 'closed',
+        'Ramshead Express Quad': 'closed',
+        'Snowplay Carpet I': 'closed',
         'Snowplay Carpet II': 'closed',
-        'Snowplay Rope Tow': 'closed',
-        'Needle\'s Eye Express Quad': 'scheduled',
-        'Northbrook Quad': 'scheduled',
-        'Skye Peak Express': 'scheduled',
-        'Skyeship Express Gondola Stage I': 'scheduled',
-        'Skyeship Express Gondola Stage II': 'scheduled',
-        'Superstar Express Quad': 'scheduled',
-        'Snowdon Poma': 'scheduled',
-        'Snowdon Quad': 'scheduled',
+        'Needle\'s Eye Express Quad': 'closed',
+        'Northbrook Quad': 'closed',
+        'Skye Peak Express': 'closed',
+        'Skyeship Express Gondola Stage I': 'closed',
+        'Skyeship Express Gondola Stage II': 'closed',
+        'Superstar Express Quad': 'closed',
+        'Snowdon Poma': 'closed',
+        'Snowdon Quad': 'closed',
         'Snowdon Triple': 'closed',
-        'Learn to Snowboard Carpet': 'scheduled',
+        'Learn to Snowboard Carpet': 'closed',
         'Snowshed 1': 'closed',
         'Snowshed 2': 'closed',
-        'Snowshed Express Quad': 'scheduled',
-        'Sunrise Village Triple': 'scheduled'
+        'Snowshed Express Quad': 'closed',
+        'Sunrise Village Triple': 'closed'
       };
-      assert.deepEqual(status, expected);
+      should.exist(status);
+      status.should.eql(expected);
       done(err);
     }));
   });
