@@ -1,7 +1,10 @@
+bin
+components
 public/stylesheets/style.css*
 public/scripts/
-components
+meta
 test
+templates
 History.md
 .travis.yml
 .jshintrc
