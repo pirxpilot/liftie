@@ -260,6 +260,21 @@ maxContent(n)
   width contentWidth(7)
 
 
+.widget
+  .resort
+    width 100%
+    min-width 200px
+    margin 0
+    display block
+    float none
+
+.widget + footer
+  font-size .8em
+  margin .4em 0 .2em
+
+  a
+    margin 0
+
 for col in 4 3 2 1
   maxContent(col)
 
@@ -281,3 +296,8 @@ for col in 4 3 2 1
 
     .text
       display none
+
+
+@media screen and (max-width: 280px)
+  body
+    font-size .8em

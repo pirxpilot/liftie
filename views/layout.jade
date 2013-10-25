@@ -21,17 +21,18 @@ html(lang='en-US')
     link(rel='publisher', href='https://plus.google.com/107555641794612264233')
   body(data-ga-property-id=settings.gaPropertyId)
     block content
-    footer
-      a.icon-alone(href='http://furkot.com', title='Plan your ski trip with Furkot.')
-        span.ls-furkot
-        span.text Plan your trip
-      a.icon-alone(href='https://github.com/code42day/liftie', title='Fork Liftie.')
-        span.ls-github
-        span.text Add your resort
-      a.icon-alone(href='https://twitter.com/liftieinfo', title='Follow Liftie.')
-        span.ls-twitter
-      a.icon-alone(href='https://facebook.com/liftie.info', title='Like Liftie.')
-        span.ls-facebook
-      a.icon-alone(href='https://plus.google.com/107555641794612264233', title='+1 Liftie.')
-        span.ls-google-plus
+    block footer
+      footer
+        a.icon-alone(href='http://furkot.com', title='Plan your ski trip with Furkot.')
+          span.ls-furkot
+          span.text Plan your trip
+        a.icon-alone(href='https://github.com/code42day/liftie', title='Fork Liftie.')
+          span.ls-github
+          span.text Add your resort
+        a.icon-alone(href='https://twitter.com/liftieinfo', title='Follow Liftie.')
+          span.ls-twitter
+        a.icon-alone(href='https://facebook.com/liftie.info', title='Like Liftie.')
+          span.ls-facebook
+        a.icon-alone(href='https://plus.google.com/107555641794612264233', title='+1 Liftie.')
+          span.ls-google-plus
     script(src=cachify('/scripts/liftie#{min}.js'), defer)

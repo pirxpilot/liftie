@@ -1,0 +1,46 @@
+mixin resort(resort, widget)
+  section.resort(
+    data-resort=resort.id,
+    data-timestamp=resort.timestamp,
+    data-opening=resort.opening,
+    class=resort.open ? 'open' : ''
+  )
+    header
+      a.left.icon-alone.resort-link(
+        href=resort.href,
+        title='Go to official #{ resort.name } page',
+        target='_blank'
+      )
+        span.ls-external
+      a.left.resort-name(href='/resort/#{ resort.id }')= resort.name
+      if !widget
+        != decorateResort(resort)
+        a.right.icon-alone.minimax(href='#')
+          span.ls-minimax
+        a.right.icon-alone.star(href='#')
+          span.ls-star
+    .expandable
+      if resort.opening
+        .opening-date
+          a(href=resort.href,
+            title='Go to official #{ resort.name } page',
+            target='_blank'
+          ) Opens on <b>#{resort.opening}</b>
+      ul.lifts.expandable
+        for status, name in resort.status
+          li.lift
+            span.name #{name}
+            span.status(class='ls-#{status}')
+      footer
+        .summary-color-bar
+          for key in ['open', 'hold', 'scheduled', 'closed']
+            div(class='#{key}', style='width:#{ resort.stats.percentage[key] }%;')
+        ul.summary
+          for key in ['open', 'hold', 'scheduled', 'closed']
+            li
+              span(class='ls-#{key}')= resort.stats[key]
+              span #{key}
+        .auto-refresh-reminder
+          span Next update in&nbsp;
+          span.time-to-refresh 60
+          span &nbsp;seconds
