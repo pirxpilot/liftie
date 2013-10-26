@@ -1,4 +1,11 @@
 
+2.0.3 / 2013-10-26 
+==================
+
+ * fix Killington for the new season
+ * add widget jade and style
+ * add explicit text to footer
+
 2.0.2 / 2013-10-20 
 ==================
 
