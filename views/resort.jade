@@ -1,3 +1,10 @@
+mixin overlay(resort, text)
+  .opening-date
+    a(href=resort.href,
+      title='Go to official #{ resort.name } page',
+      target='_blank'
+    )!= text
+
 mixin resort(resort, widget)
   section.resort(
     data-resort=resort.id,
@@ -24,24 +31,23 @@ mixin resort(resort, widget)
     .expandable
       .lifts-status
         if resort.opening
-          .opening-date
-            a(href=resort.href,
-              title='Go to official #{ resort.name } page',
-              target='_blank'
-            ) Opens on <b>#{resort.opening}</b>
+          +overlay(resort, 'Opens on <b>' + resort.opening + '</b>')
+        else if !resort.status
+          +overlay(resort, 'Lift status coming soon')
         ul.lifts.expandable
-          for status, name in resort.status
-            li.lift
-              span.name #{name}
-              span.status(class='ls-#{status}')
+          if resort.status
+            for status, name in resort.status
+              li.lift
+                span.name #{name}
+                span.status(class='ls-#{status}')
         footer
           .summary-color-bar
             for key in ['open', 'hold', 'scheduled', 'closed']
-              div(class='#{key}', style='width:#{ resort.stats.percentage[key] }%;')
+              div(class='#{key}', style='width:#{ resort.stats ? resort.stats.percentage[key] : 25 }%;')
           ul.summary
             for key in ['open', 'hold', 'scheduled', 'closed']
               li
-                span(class='ls-#{key}')= resort.stats[key]
+                span(class='ls-#{key}')= resort.stats ? resort.stats[key] : 0
                 span #{key}
           .auto-refresh-reminder
             span Next update in&nbsp;
