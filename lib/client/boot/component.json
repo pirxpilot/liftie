@@ -14,6 +14,7 @@
     "minimax",
     "resort",
     "state",
-    "tag"
+    "tag",
+    "trip"
   ]
 }

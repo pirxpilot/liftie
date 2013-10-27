@@ -8,5 +8,9 @@
     "New England",
     "New Hampshire"
   ],
-  "opening": "2013-11-29"
+  "opening": "2013-11-29",
+  "ll": [
+    -71.698418,
+    44.156452
+  ]
 }
