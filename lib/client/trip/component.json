@@ -1,0 +1,13 @@
+{
+  "name": "trip",
+  "dependencies": {
+    "code42day/dataset": "0.2.2",
+    "code42day/furkot-trip": "0.1.0",
+    "component/event": "0.1.1"
+  },
+  "scripts": [
+    "index.js"
+  ],
+  "local": [
+  ]
+}
