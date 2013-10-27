@@ -28,7 +28,8 @@ app.configure(function() {
     siteUrl: siteUrl,
     og: {
       image: siteUrl + '/img/snowflake-256.png'
-    }
+    },
+    resorts: resorts
   });
   app.set('port', process.env.PORT || 3000);
   app.set('views', __dirname + '/views');
