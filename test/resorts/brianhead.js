@@ -1,6 +1,6 @@
 var should = require('should');
 var fs = require('fs');
-var parser = require('../../lib/parser');
+var parser = require('../../lib/lifts/parser');
 var parse = require('../../lib/resorts/brianhead');
 
 /*global describe, it */
