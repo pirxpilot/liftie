@@ -1,4 +1,10 @@
 
+2.1.0 / 2013-10-28 
+==================
+
+ * generate sitemap with all resorts
+ * add basic support for resorts without lift status or official website
+
 2.0.4 / 2013-10-27 
 ==================
 
