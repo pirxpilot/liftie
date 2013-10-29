@@ -1,12 +1,13 @@
-var express = require('express'),
-  cachify = require('connect-cachify-static'),
-  gzip = require('connect-gzip-static'),
-  http = require('http'),
-  path = require('path'),
-  stylus = require('stylus'),
-  nib = require('nib'),
-  resorts = require('./lib/loader')(),
-  routes = require('./lib/routes')(resorts);
+var express = require('express');
+var cachify = require('connect-cachify-static');
+var gzip = require('connect-gzip-static');
+var http = require('http');
+var path = require('path');
+var stylus = require('stylus');
+var nib = require('nib');
+var resorts = require('./lib/loader')();
+var routes = require('./lib/routes')(resorts);
+var plugins = require('./lib/plugins');
 
 function compileCss(str, path) {
   return stylus(str)
@@ -53,6 +54,9 @@ app.configure('development', function(){
   app.locals.min = '';
   app.use(express.errorHandler());
 });
+
+app.plugins = plugins;
+app.plugins.register('lifts', require('./lib/lifts'));
 
 app.get('/', routes.index);
 app.get('/resort/:resort', routes.index);
