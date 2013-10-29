@@ -8,7 +8,7 @@ describe('stats', function() {
     valid.forEach(function (v) {
       valid[v] = true;
     });
-    check(null, valid).should.eql(valid);
+    check(null, valid, valid).should.eql(valid);
   });
   it('should filter out invalid names', function() {
     var valid = ['a', 'b', 'c'];
