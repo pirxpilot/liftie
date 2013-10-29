@@ -19,6 +19,7 @@ describe('parse mtrose', function() {
         'Ponderosa': 'closed',
         'Flying Jenny': 'closed'
       };
+      should.exist(status);
       status.should.eql(expected);
       done(err);
     }));

@@ -36,6 +36,7 @@ describe('parse beavercreek', function() {
         'Strawberry Park Express': 'closed',
         'Upper Beaver Creek Mountain': 'closed'
       };
+      should.exist(status);
       status.should.eql(expected);
       done(err);
     }));

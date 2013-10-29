@@ -22,6 +22,7 @@ describe('parse stevens', function() {
         'Jupiter Express': 'closed',
         'Southern Cross': 'closed'
       };
+      should.exist(status);
       status.should.eql(expected);
       done(err);
     }));
