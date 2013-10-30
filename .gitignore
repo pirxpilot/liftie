@@ -4,3 +4,4 @@ public/scripts/
 components
 .project
 .settings
+.DS_Store
