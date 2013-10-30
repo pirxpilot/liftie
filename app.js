@@ -22,9 +22,7 @@ app.configure(function() {
     siteUrl = process.env.SITE_URL || 'http://liftie.info';
   app.locals({
     min: '.min',
-    decorateResort: function() {},
     decorateAbout: function() {},
-    decorateDescription: function() { return ''; },
     siteUrl: siteUrl,
     og: {
       image: siteUrl + '/img/snowflake-256.png'
