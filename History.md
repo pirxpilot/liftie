@@ -1,4 +1,10 @@
 
+2.1.1 / 2013-10-30 
+==================
+
+ * add Vail / Epic tag
+ * fix Mt Rose for the new season, again
+
 2.1.0 / 2013-10-28 
 ==================
 
