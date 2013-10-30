@@ -20,6 +20,7 @@ describe('parse brianhead', function() {
         'The Dunes': 'closed',
         'Alpen Glow': 'closed'
       };
+      should.exist(status);
       status.should.eql(expected);
       done(err);
     }));

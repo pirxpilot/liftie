@@ -1,4 +1,3 @@
-var should = require('should');
 var check = require('../lib/checker');
 
 /*global describe, it*/

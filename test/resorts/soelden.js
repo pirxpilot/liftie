@@ -45,6 +45,7 @@ describe('parse soelden', function() {
         'SL Panorama': 'open',
         'Minilift Tiefenbach': 'open'
       };
+      should.exist(status);
       status.should.eql(expected);
       done(err);
     }));

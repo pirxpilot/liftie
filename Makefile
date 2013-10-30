@@ -22,7 +22,7 @@ lint:
 	$(NODE_BIN)/jshint *.js bin/generate lib test
 
 test:
-	$(NODE_BIN)/mocha --recursive
+	$(NODE_BIN)/mocha --recursive --require should
 
 components: component.json
 	$(NODE_BIN)/component install
