@@ -1,6 +1,7 @@
 [![Build Status](https://secure.travis-ci.org/code42day/liftie.png)](http://travis-ci.org/code42day/liftie)
 [![Dependency Status](https://gemnasium.com/code42day/liftie.png)](https://gemnasium.com/code42day/liftie)
 [![NPM version](https://badge.fury.io/js/liftie.png)](http://badge.fury.io/js/liftie)
+[![Code Climate](https://codeclimate.com/github/code42day/liftie.png)](https://codeclimate.com/github/code42day/liftie)
 
 #liftie.info
 
