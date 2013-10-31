@@ -1,0 +1,15 @@
+{
+  "name": "Arapaho Basin",
+  "url": {
+    "host": "http://www.arapahoebasin.com",
+    "pathname": "/ABasin/snow-conditions/default.aspx"
+  },
+  "tags": [
+    "Colorado",
+    "Vail Epic"
+  ],
+  "ll": [
+    -105.871872,
+    39.642464
+  ]
+}
