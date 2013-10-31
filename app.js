@@ -56,7 +56,7 @@ app.loaders.register(require('./lib/loader'));
 
 app.plugins = plugins;
 app.plugins.register('lifts', require('./lib/lifts'));
-
+app.plugins.register('opening', require('./lib/opening'));
 
 app.data = require('./lib/routes/data')();
 
