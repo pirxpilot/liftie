@@ -1,6 +1,6 @@
 {
   "name": "liftie",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "dependencies": {
     "express": {
       "version": "3.4.0",
@@ -236,9 +236,6 @@
     "uglify-js": {
       "version": "2.4.0",
       "dependencies": {
-        "async": {
-          "version": "0.2.9"
-        },
         "source-map": {
           "version": "0.1.29",
           "dependencies": {
@@ -330,7 +327,7 @@
       }
     },
     "jshint": {
-      "version": "2.0.1",
+      "version": "2.3.0",
       "dependencies": {
         "shelljs": {
           "version": "0.1.4"
