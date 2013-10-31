@@ -1,5 +1,5 @@
 var assert = require('assert');
-var stats = require('../lib/stats');
+var stats = require('../../lib/lifts/stats');
 
 /*global describe, it*/
 

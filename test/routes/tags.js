@@ -23,10 +23,7 @@ describe('tags', function() {
     Object.keys(objs).forEach(function (n) {
       objs[n] = load(n);
     });
-    var tt = tags({
-      names: Object.keys(objs),
-      data: objs
-    });
+    var tt = tags(objs);
 
     assert.deepEqual(tt.t1.members, ['a', 'c']);
     assert.deepEqual(tt.t2.members, ['a', 'b', 'c']);
@@ -50,10 +47,7 @@ describe('tags', function() {
     Object.keys(objs).forEach(function (n) {
       objs[n] = load(n);
     });
-    var tt = tags({
-      names: Object.keys(objs),
-      data: objs
-    });
+    var tt = tags(objs);
 
     assert.deepEqual(tt['nice-tag'].members, ['a']);
     assert.deepEqual(tt['nice-tag'].label, 'Nice Tag');

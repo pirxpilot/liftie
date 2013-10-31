@@ -1,12 +1,12 @@
-var express = require('express'),
-  cachify = require('connect-cachify-static'),
-  gzip = require('connect-gzip-static'),
-  http = require('http'),
-  path = require('path'),
-  stylus = require('stylus'),
-  nib = require('nib'),
-  resorts = require('./lib/loader')(),
-  routes = require('./lib/routes')(resorts);
+var express = require('express');
+var cachify = require('connect-cachify-static');
+var gzip = require('connect-gzip-static');
+var http = require('http');
+var path = require('path');
+var stylus = require('stylus');
+var nib = require('nib');
+var loaders = require('./lib/loaders');
+var plugins = require('./lib/plugins');
 
 function compileCss(str, path) {
   return stylus(str)
@@ -28,8 +28,7 @@ app.configure(function() {
     siteUrl: siteUrl,
     og: {
       image: siteUrl + '/img/snowflake-256.png'
-    },
-    resorts: resorts
+    }
   });
   app.set('port', process.env.PORT || 3000);
   app.set('views', __dirname + '/views');
@@ -54,17 +53,30 @@ app.configure('development', function(){
   app.use(express.errorHandler());
 });
 
-app.get('/', routes.index);
-app.get('/resort/:resort', routes.index);
-app.get('/widget/resort/:resort', routes.widget);
-app.get('/tag/:tag', routes.tag);
-app.get('/stars', routes.stars);
-app.get('/api/resort/:resort', routes.api);
-app.get('/sitemap.xml', routes.sitemap);
-app.get('/about', routes.about);
+app.loaders = loaders;
+app.loaders.register(require('./lib/loader'));
+
+app.plugins = plugins;
+app.plugins.register('lifts', require('./lib/lifts'));
+
+
+app.data = require('./lib/routes/data')();
+
+require('./lib/routes')(app);
+
+app.run = function run() {
+  app.data.init(function(err) {
+    if (err) {
+      console.error(err);
+      process.exit(1);
+      return;
+    }
+    http.createServer(app).listen(app.get('port'), function(){
+      console.log("Running on: " + "http://localhost:" + app.get('port'));
+    });
+  });
+};
 
 if (!module.parent) {
-  http.createServer(app).listen(app.get('port'), function(){
-    console.log("Running on: " + "http://localhost:" + app.get('port'));
-  });
+  app.run();
 }

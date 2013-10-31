@@ -1,6 +1,6 @@
 var assert = require('assert');
 var fs = require('fs');
-var parser = require('../../lib/parser');
+var parser = require('../../lib/lifts/parser');
 var parseAlpine = require('../../lib/resorts/alpine');
 
 /*global describe, it */

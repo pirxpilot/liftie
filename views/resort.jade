@@ -36,22 +36,22 @@ mixin resort(resort, widget)
       .lifts-status
         if resort.opening
           +overlay(resort, 'Opens on <b>' + resort.opening + '</b>')
-        else if !resort.status
+        else if !resort.lifts
           +overlay(resort, 'Lift status coming soon')
         ul.lifts.expandable
-          if resort.status
-            for status, name in resort.status
+          if resort.lifts
+            for status, name in resort.lifts.status
               li.lift
                 span.name #{name}
                 span.status(class='ls-#{status}')
         footer
           .summary-color-bar
             for key in ['open', 'hold', 'scheduled', 'closed']
-              div(class='#{key}', style='width:#{ resort.stats ? resort.stats.percentage[key] : 25 }%;')
+              div(class='#{key}', style='width:#{ resort.lifts ? resort.lifts.stats.percentage[key] : 25 }%;')
           ul.summary
             for key in ['open', 'hold', 'scheduled', 'closed']
               li
-                span(class='ls-#{key}')= resort.stats ? resort.stats[key] : 0
+                span(class='ls-#{key}')= resort.lifts ? resort.lifts.stats[key] : 0
                 span #{key}
           .auto-refresh-reminder
             span Next update in&nbsp;
