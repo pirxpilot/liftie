@@ -1,4 +1,15 @@
 
+3.0.0 / 2013-10-30 
+==================
+
+ * add `absent` listing all resorts that should but don't have lift status
+ * updated jshint: 2.0 -> 2.3
+ * add Arapahoe Basin
+ * add Geo position of Beaver Creek & Kirkwood
+ * add support for lift ticket deals plugin
+ * add plugins for fetching data and loaders for loading/finding resorts
+ * change data format in resort API from respose.status to response.lifts.status
+
 2.1.1 / 2013-10-30 
 ==================
 
