@@ -1,6 +1,6 @@
 {
   "name": "liftie",
-  "version": "2.1.1",
+  "version": "3.0.2",
   "dependencies": {
     "express": {
       "version": "3.4.0",
@@ -175,6 +175,9 @@
     },
     "async": {
       "version": "0.2.9"
+    },
+    "limiter": {
+      "version": "1.0.4"
     },
     "fresh": {
       "version": "0.2.0"

@@ -19,7 +19,8 @@
     "lodash": "~1",
     "debug": "~0",
     "dirty": "~0",
-    "async": "~0"
+    "async": "~0",
+    "limiter": "~1"
   },
   "devDependencies": {
     "mocha": "~1",
