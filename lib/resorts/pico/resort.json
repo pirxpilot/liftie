@@ -1,0 +1,16 @@
+{
+  "name": "Pico Mountain",
+  "url": {
+    "host": "http://www.picomountain.com",
+    "pathname": "/winter/the_mountain/conditions"
+  },
+  "tags": [
+    "Vermont",
+    "New England"
+  ],
+  "opening": "2013-12-14",
+  "ll": [
+    -72.842613,
+    43.663277
+  ]
+}
