@@ -1,4 +1,10 @@
 
+3.0.3 / 2013-11-01 
+==================
+
+ * add Pico Mountain
+ * rewrite opening as a liftie plugin
+
 3.0.2 / 2013-10-31 
 ==================
 
