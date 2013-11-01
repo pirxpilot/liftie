@@ -15,9 +15,6 @@ var today = iso(now);
 var future = iso(now + 2 * day);
 var past = iso(now - 2 * day);
 
-
-console.log(past, today, future);
-
 describe('opening', function() {
   it('should be empty for missing dates', function(done) {
     opening({}, function(err, od) {
