@@ -12,5 +12,10 @@
   "ll": [
     -72.802879,
     43.619675
-  ]
+  ],
+  "webcams": [{
+    "name": "Killington Mountain View",
+    "source": "http://www.killington.com/winter/multimedia/webcam/mountainviewcam.html",
+    "image": "http://www.killington.com/winter/multimedia/webcam/mountainviewcam.html/axis-mountain_view"
+  }]
 }

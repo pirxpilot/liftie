@@ -85,6 +85,21 @@ mixin addToTrip(resort)
       span.ls-furkot
       span Plan trip to #{resort.name}
 
+mixin webcam(mobile)
+  div(class='webcam ' + (mobile ? 'mobile' : 'desktop'))
+    a(target="_blank")
+      .title
+      img.active(src="")
+      img.inactive(src="")
+    .notice
+
+mixin webcams(resort)
+  .webcams(class= resort.webcams ? 'visible' : 'hidden')
+    ul
+      li
+        +webcam()
+        +webcam(true)
+
 mixin resort(resort, widget)
   section.panel.resort(
     data-resort=resort.id,
@@ -93,7 +108,8 @@ mixin resort(resort, widget)
     data-name=resort.name,
     data-ll=resort.ll && resort.ll.join(),
     data-weather=single && resort.weather,
-    data-twitter= single && JSON.stringify(resort.twitter),
+    data-twitter=single && JSON.stringify(resort.twitter),
+    data-webcams=single && resort.webcams
     class=resort.open ? 'open' : ''
   )
     header
@@ -109,4 +125,5 @@ mixin resort(resort, widget)
     section.panel.extras(class= single ? 'visible' : 'hidden' )
       +addToTrip(resort)
       +weather(resort)
+      +webcams(resort)
       +twitter(resort)
