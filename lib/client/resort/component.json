@@ -6,7 +6,8 @@
     "visionmedia/superagent": "0.15.4"
   },
   "scripts": [
-    "index.js"
+    "index.js",
+    "lifts.js"
   ],
   "local": [
   ]

@@ -70,6 +70,7 @@ a
     color saturate($link-color, 20%)
 
 .resort
+.extras
   clearfix()
   box-sizing border-box
   margin 0 ($column-gutter/2) $column-gutter
@@ -81,6 +82,7 @@ a
   &:last-child
     margin-bottom 0
 
+.resort
   header,
   footer
     transition all .4s ease
@@ -226,6 +228,47 @@ a
     background-color $blue
   .closed
     background-color $red
+
+
+.extras
+  .weather,
+  .twitter-timeline
+    font-size .9em
+    margin-top .5em
+
+  .weather
+    img
+      float left
+    .temperature
+      float right
+      font-size 1.5em
+    .conditions
+      clear right
+      float right
+      font-size 1.1em
+    .text
+      clear both
+
+  .twitter-timeline
+
+    .tweet
+      display block
+      padding 0.7em 0
+      border-bottom dashed 1px $blue
+      line-height 1.4
+
+      &:last-child
+        border 0
+
+    .date
+      font-size .9em
+      display block
+      margin-bottom 0.5em
+      font-style italic
+      float right
+
+    .text
+      clear both
 
 body > footer
   clear both
