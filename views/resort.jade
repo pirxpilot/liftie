@@ -21,8 +21,9 @@ mixin header(resort, widget)
     if resort.deals
       a.left.icon-alone(title=resort.deals.title, href=resort.deals.href, target="_blank")
         span.ls-deal
-    a.right.icon-alone.minimax(href='#')
-      span.ls-minimax
+    if !single
+      a.right.icon-alone.minimax(href='#')
+        span.ls-minimax
     a.right.icon-alone.star(href='#')
       span.ls-star
 
