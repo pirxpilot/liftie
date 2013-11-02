@@ -1,4 +1,9 @@
 
+3.0.4 / 2013-11-02 
+==================
+
+ * fix problem with host that require Accept header
+
 3.0.3 / 2013-11-01 
 ==================
 
