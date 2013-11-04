@@ -77,7 +77,8 @@ mixin resort(resort, widget)
         +lifts(resort)
         footer
           +stats(resort)
-        if !widget
+        if !widget && !single
           +addToTrip(resort)
   if !widget
     section.extras(class= single ? 'visible' : 'hidden' )
+      +addToTrip(resort)
