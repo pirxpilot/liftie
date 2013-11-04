@@ -80,4 +80,4 @@ mixin resort(resort, widget)
         if !widget
           +addToTrip(resort)
   if !widget
-    section.extras(class= (resorts.length == 1) ? 'visible' : 'hidden' )
+    section.extras(class= single ? 'visible' : 'hidden' )

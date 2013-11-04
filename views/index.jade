@@ -6,11 +6,14 @@ include resort
 
 block content
   +about('hidden')
-  .content(class='content-#{ resorts.length }')
+
+  numberOfColumns = resorts.length + (single ? 1 : 0)
+
+  .content(class='content-#{ numberOfColumns }')
     for resort in resorts
       +resort(resort)
 
-  .content(class='content-#{ resorts.length + 1}')
+  .content(class='content-#{ numberOfColumns + 1}')
     ui.tags
       li.starred
         a(href='/stars') Starred
