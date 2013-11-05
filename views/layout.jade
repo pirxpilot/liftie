@@ -1,9 +1,10 @@
 mixin description(type)
   meta(name=type, content="\
-Clean, simple, easy to read, fast ski resort lift status. Liftie monitors lift status for \
-#{(resorts && title.indexOf('Stars') === -1 && title.split(' | ')[1]) || 'selected'} ski resort#{(!resorts || resorts.length !== 1) ? 's' : ''}. \
+Clean, simple, easy to read, fast ski resort lift status. Liftie monitors lifts of \
+#{(resorts && title.indexOf('Stars') === -1 && title.split(' | ')[1]) || 'selected'} ski resort#{(!resorts || resorts.length !== 1) ? 's' : ''}\
+#{(single && resorts[0].lifts) ? ': ' + Object.keys(resorts[0].lifts.status).join(', ') : ''}. \
 When the ski lift status changes, so will the display. No need to hit browser's Refresh button. Liftie remembers which \
-resorts you are interested in and will show their lift status when you come back. Liftie may even help you find the latest \
+resorts you are interested in and will show their lift status when you come back. Liftie can even help you find the latest \
 ski resort deals and score discount lift tickets.")
 
 doctype 5
