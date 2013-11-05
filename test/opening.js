@@ -6,7 +6,9 @@ var day = require('../lib/tools/millis').day;
 
 
 function iso(millis) {
-  var date = new Date(millis);
+  var date;
+  millis -= (new Date().getTimezoneOffset()) * 60 * 1000;
+  date = new Date(millis);
   return date.toISOString().slice(0, 10);
 }
 
@@ -41,7 +43,7 @@ describe('opening', function() {
     });
   });
 
-  it('should be empty for past dates', function(done) {
+  it('should be empty for today', function(done) {
     opening({
       opening: today
     }, function(err, od) {
