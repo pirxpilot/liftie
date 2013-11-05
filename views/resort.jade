@@ -80,7 +80,7 @@ mixin addToTrip(resort)
       span Plan trip to #{resort.name}
 
 mixin resort(resort, widget)
-  section.resort(
+  section.panel.resort(
     data-resort=resort.id,
     data-timestamp=resort.timestamp,
     data-opening=resort.opening,
@@ -100,7 +100,7 @@ mixin resort(resort, widget)
         if !widget && !single
           +addToTrip(resort)
   if !widget
-    section.extras(class= single ? 'visible' : 'hidden' )
+    section.panel.extras(class= single ? 'visible' : 'hidden' )
       +addToTrip(resort)
       +weather(resort)
       +twitter(resort)
