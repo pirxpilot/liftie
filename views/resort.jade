@@ -55,6 +55,19 @@ mixin stats(resort)
     span.time-to-refresh 60
     span &nbsp;seconds
 
+mixin weather(resort)
+  .weather(class= resort.weather ? 'visible' : 'hidden')
+    img
+    .temperature
+    .conditions
+    .text
+    refkey = process.env.WUND_REF_KEY;
+    if refkey
+      weatherQuery = resort.ll ? '&query=' + resort.ll[1] + ',' + resort.ll[0] : ''
+      .notice Forecast by&nbsp;
+        a(href="http://www.wunderground.com/cgi-bin/findweather/getForecast?apiref=#{refkey}#{weatherQuery}", target="_blank")
+          img(src="http://icons.wxug.com/logos/PNG/wundergroundLogo_black_horz.png")
+
 mixin addToTrip(resort)
   if resort.ll
     a.add-to-trip
@@ -68,6 +81,7 @@ mixin resort(resort, widget)
     data-opening=resort.opening,
     data-name=resort.name,
     data-ll=resort.ll && resort.ll.join(),
+    data-weather=single && resort.weather,
     class=resort.open ? 'open' : ''
   )
     header
@@ -82,3 +96,4 @@ mixin resort(resort, widget)
   if !widget
     section.extras(class= single ? 'visible' : 'hidden' )
       +addToTrip(resort)
+      +weather(resort)
