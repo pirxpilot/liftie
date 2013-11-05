@@ -72,8 +72,7 @@ a
   &:hover
     color saturate($link-color, 20%)
 
-.resort
-.extras
+.panel
   clearfix()
   box-sizing border-box
   margin 0 ($column-gutter/2) $column-gutter
@@ -85,6 +84,8 @@ a
   &:last-child
     margin-bottom 0
 
+.resort
+.extras
   .add-to-trip
     display block
     margin-top .3em
@@ -332,7 +333,7 @@ maxContent(n)
 
 
 .widget
-  .resort
+  .panel
     width 100%
     min-width 200px
     margin 0
@@ -355,7 +356,7 @@ for col in 4 3 2 1
     .content
       width contentWidth(col)
     if col == 1
-      .resort
+      .panel
         margin-right 0
         margin-left 0
       .tags
