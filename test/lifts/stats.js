@@ -1,20 +1,19 @@
-var assert = require('assert');
 var stats = require('../../lib/lifts/stats');
 
 /*global describe, it*/
 
 describe('stats', function() {
   it('should report 0 for empty', function() {
-    assert.deepEqual(stats({}), {
+    stats({}).should.eql({
       open: 0,
       closed: 0,
       hold: 0,
       scheduled: 0,
       percentage: {
-        open: 0,
-        closed: 0,
-        hold: 0,
-        scheduled: 0
+        open: 25,
+        closed: 25,
+        hold: 25,
+        scheduled: 25
       }
     });
   });
@@ -35,7 +34,7 @@ describe('stats', function() {
       'n14': 'scheduled',
       'n17': 'scheduled'
     };
-    assert.deepEqual(stats(status), {
+    stats(status).should.eql({
       open: 5,
       closed: 4,
       hold: 2,
