@@ -1,4 +1,18 @@
 
+3.1.0 / 2013-11-05 
+==================
+
+ * add list of lifts to the page description of a single resort page
+ * stop qurying lift status immediately after an error
+ * fixed opening date test after certain time
+ * add twitter plugin
+ * add twitter handles to resort data
+ * add weather plugin using wunderground API
+ * display resort extras in a second column
+ * disable closing of single resort
+ * add client side plugin support
+ * extract common dom related methods
+
 3.0.4 / 2013-11-02 
 ==================
 
