@@ -11,7 +11,8 @@
     "index.js",
     "dom.js",
     "lifts.js",
-    "trip.js"
+    "trip.js",
+    "weather.js"
   ],
   "local": [
   ]
