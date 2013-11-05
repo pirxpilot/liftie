@@ -5,13 +5,15 @@
     "code42day/furkot-trip": "0.1.0",
     "component/classes": "1.1.3",
     "component/event": "0.1.1",
+    "component/moment": "2.0.0",
     "visionmedia/superagent": "0.15.4"
   },
   "scripts": [
     "index.js",
     "dom.js",
     "lifts.js",
-    "trip.js"
+    "trip.js",
+    "twitter.js"
   ],
   "local": [
   ]

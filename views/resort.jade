@@ -55,6 +55,11 @@ mixin stats(resort)
     span.time-to-refresh 60
     span &nbsp;seconds
 
+mixin twitter(resort)
+  .twitter-timeline(class= resort.twitter ? 'visible' : 'hidden')
+    .follow
+    ul.timeline
+
 mixin addToTrip(resort)
   if resort.ll
     a.add-to-trip
@@ -68,6 +73,7 @@ mixin resort(resort, widget)
     data-opening=resort.opening,
     data-name=resort.name,
     data-ll=resort.ll && resort.ll.join(),
+    data-twitter= single && JSON.stringify(resort.twitter),
     class=resort.open ? 'open' : ''
   )
     header
@@ -82,3 +88,4 @@ mixin resort(resort, widget)
   if !widget
     section.extras(class= single ? 'visible' : 'hidden' )
       +addToTrip(resort)
+      +twitter(resort)
