@@ -68,6 +68,11 @@ mixin weather(resort)
         a(href="http://www.wunderground.com/cgi-bin/findweather/getForecast?apiref=#{refkey}#{weatherQuery}", target="_blank")
           img(src="http://icons.wxug.com/logos/PNG/wundergroundLogo_black_horz.png")
 
+mixin twitter(resort)
+  .twitter-timeline(class= resort.twitter ? 'visible' : 'hidden')
+    .follow
+    ul.timeline
+
 mixin addToTrip(resort)
   if resort.ll
     a.add-to-trip
@@ -82,6 +87,7 @@ mixin resort(resort, widget)
     data-name=resort.name,
     data-ll=resort.ll && resort.ll.join(),
     data-weather=single && resort.weather,
+    data-twitter= single && JSON.stringify(resort.twitter),
     class=resort.open ? 'open' : ''
   )
     header
@@ -97,3 +103,4 @@ mixin resort(resort, widget)
     section.extras(class= single ? 'visible' : 'hidden' )
       +addToTrip(resort)
       +weather(resort)
+      +twitter(resort)
