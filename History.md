@@ -1,4 +1,12 @@
 
+3.1.1 / 2013-11-06 
+==================
+
+ * query Wunderground less often
+ * Special handling of Loveland Chair 2
+ * add Twitter follow button
+ * add more twitter handles
+
 3.1.0 / 2013-11-05 
 ==================
 
