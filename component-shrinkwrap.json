@@ -45,6 +45,10 @@
       "version": "0.1.0"
     },
     {
+      "name": "component/moment",
+      "version": "2.0.0"
+    },
+    {
       "name": "visionmedia/superagent",
       "version": "0.15.4"
     },
