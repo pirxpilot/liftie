@@ -1,4 +1,15 @@
 
+3.2.0 / 2013-11-06 
+==================
+
+ * add webcam plugin that queries webcams.travel
+ * update Twitter handles
+ * fix Twitter date format string when parsing
+ * renderPlugins is now responsible for showing/hiding plugin section
+ * refactor client plugins: pass specific section to client plugin
+ * Change '.twitter-timeline' to '.twitter'
+ * Bretton Woods opening date
+
 3.1.1 / 2013-11-06 
 ==================
 
