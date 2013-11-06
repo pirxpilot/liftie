@@ -1,4 +1,4 @@
-var assert = require('assert');
+var should = require('should');
 var fs = require('fs');
 var parser = require('../../lib/lifts/parser');
 var parse = require('../../lib/resorts/loveland');
@@ -11,16 +11,17 @@ describe('parse loveland', function() {
     stream.on('error', done);
     stream.pipe(parser(parse, function(err, status) {
       var expected = {
-        'Chair 2': 'open',
+        'Chair 2 Midway Only': 'open',
         'Chair 9': 'closed',
         'Chair 8': 'closed',
-        'Chair 7': 'open',
+        'Chair 7': 'closed',
         'Chair 6': 'open',
-        'Chair 4': 'open',
-        'Chair 3': 'open',
+        'Chair 4': 'closed',
+        'Chair 3': 'closed',
         'Chair 1': 'open'
       };
-      assert.deepEqual(status, expected);
+      should.exist(status);
+      status.should.eql(expected);
       done(err);
     }));
   });
