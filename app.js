@@ -59,6 +59,7 @@ app.plugins.register('lifts', require('./lib/lifts'));
 app.plugins.register('opening', require('./lib/opening'));
 app.plugins.register('twitter', require('./lib/twitter'));
 app.plugins.register('weather', require('./lib/weather'));
+app.plugins.register('webcams', require('./lib/webcams'));
 
 app.data = require('./lib/routes/data')();
 

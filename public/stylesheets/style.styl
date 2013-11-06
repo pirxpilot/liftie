@@ -296,6 +296,43 @@ a
       img
         width 100%
 
+  .webcams
+    margin-top .5em
+
+    li
+      list-style none
+
+    .webcam
+      >a
+        display block
+        max-width 100%
+
+        img
+          margin 0 auto
+          max-width 100%
+
+        .title
+          margin-bottom .5em
+          text-align center
+
+      .notice
+        margin-top .5em
+        font-size .8em
+        text-align right
+        font-style italic
+
+      &.desktop
+        display block
+
+        img
+          display block
+
+      &.mobile
+        display none
+
+        img
+          display none
+
 body > footer
   clear both
   margin-top 1em
@@ -379,3 +416,17 @@ for col in 4 3 2 1
 @media screen and (max-width: 280px)
   body
     font-size .8em
+
+@media screen and (max-width: 400px)
+  .extras .webcams .webcam
+    &.desktop
+      display none
+
+      img
+        display none
+
+    &.mobile
+      display block
+
+      img
+        display block

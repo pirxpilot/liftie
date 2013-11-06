@@ -14,7 +14,8 @@
     "lifts.js",
     "trip.js",
     "twitter.js",
-    "weather.js"
+    "weather.js",
+    "webcams.js"
   ],
   "local": [
   ]
