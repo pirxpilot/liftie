@@ -69,7 +69,7 @@ mixin weather(resort)
           img(src="http://icons.wxug.com/logos/PNG/wundergroundLogo_black_horz.png")
 
 mixin twitter(resort)
-  .twitter-timeline(class= resort.twitter ? 'visible' : 'hidden')
+  .twitter(class= resort.twitter ? 'visible' : 'hidden')
     .follow
       if resort.twitter && single
         a.twitter-follow-button(
