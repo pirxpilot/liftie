@@ -71,7 +71,7 @@ mixin weather(resort)
 mixin twitter(resort)
   .twitter-timeline(class= resort.twitter ? 'visible' : 'hidden')
     .follow
-      if resort.twitter
+      if resort.twitter && single
         a.twitter-follow-button(
           href="https://twitter.com/#{resort.twitter.user}",
           data-show-count="false",
