@@ -93,18 +93,24 @@ a
     >span
       margin-right .3em
 
-.resort
+.resort,
+.stats
   header,
   footer
     transition all .4s ease
     clearfix()
-
   header
     font-size 1.2em
     line-height 1em
     padding-top 2px
     border-bottom solid 2px transparent
+  &.open
+    header
+      border-color rgba(black,.3)
+      padding-bottom .5em
 
+.resort
+  header
     a.left
       margin-right .3em
 
@@ -113,11 +119,6 @@ a
 
   footer
     font-size .8em
-
-  &.open
-    header
-      border-color rgba(black,.3)
-      padding-bottom .5em
 
 .open
   .expandable
@@ -191,6 +192,7 @@ a
 
 .resort-link
   font-size .9em
+
 .summary
   list-style none
   clearfix()
@@ -337,6 +339,26 @@ a
 
         img
           display none
+
+.stats
+  canvas
+    margin 1em 0
+
+  footer
+    .summary li
+      float none
+      clear both
+      line-height 2
+      text-align right
+      width 55%
+      margin 0 auto
+
+      span:first-child
+        float left
+      span:first-child:before
+        margin-right .5em
+      span: last-child
+        float right
 
 body > footer
   clear both

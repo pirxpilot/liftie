@@ -1,4 +1,26 @@
 extends layout
 
+mixin stats($stats)
+  states = ['open', 'hold', 'scheduled', 'closed']
+  .summary-color-bar
+    for key in states
+      div(class='#{key}', style='width:#{ $stats.percentage[key] }%;')
+  ul.summary
+    for key in states
+      li
+        span(class='ls-#{key}')= $stats[key]
+        span #{key}
+
 block content
-  canvas.stats.panel(data-stats=stats)
+  .content.content-1
+    size = '294px'
+    section.panel.stats.open
+      header
+        a(href='/') All Lifts
+      canvas(
+        data-stats=stats,
+        width=size,
+        height=size
+      )
+      footer
+        +stats(stats)
