@@ -1,4 +1,11 @@
 
+3.2.1 / 2013-11-07 
+==================
+
+ * add section borders in extras panel
+ * rewrite tweet entity parsing to reduce code duplication
+ * rewrite resort parsing using new domutil
+
 3.2.0 / 2013-11-06 
 ==================
 
