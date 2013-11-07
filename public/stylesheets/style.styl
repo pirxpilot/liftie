@@ -236,9 +236,15 @@ a
 
 .extras
   .weather,
-  .twitter
+  .twitter,
+  .webcams
     font-size .9em
     margin-top .5em
+    padding .5em 0
+    border-top solid 2px rgba(black, .3)
+
+    &:last-child
+      padding-bottom 0
 
   .weather
     img
@@ -272,8 +278,8 @@ a
 
     .tweet
       display block
-      padding .7em 0
-      border-bottom dashed 1px $blue
+      padding .5em 0
+      border-bottom dashed 1px rgba(black, .3)
       line-height 1.4
 
       &:last-child
@@ -297,7 +303,6 @@ a
         width 100%
 
   .webcams
-    margin-top .5em
 
     li
       list-style none
@@ -317,7 +322,7 @@ a
 
       .notice
         margin-top .5em
-        font-size .8em
+        font-size .9em
         text-align right
         font-style italic
 
