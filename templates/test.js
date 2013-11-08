@@ -1,6 +1,6 @@
-var assert = require('assert');
+var should = require('should');
 var fs = require('fs');
-var parser = require('../../lib/parser');
+var parser = require('../../lib/lifts/parser');
 var parse = require('../../lib/resorts/${ id }');
 
 /*global describe, it */
@@ -13,7 +13,8 @@ describe('parse ${ id }', function() {
       var expected = {
         'lift 1': 'open',
       };
-      assert.deepEqual(status, expected);
+      should.exist(status);
+      status.should.eql(expected);
       done(err);
     }));
   });
