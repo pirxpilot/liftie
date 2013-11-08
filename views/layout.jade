@@ -37,4 +37,7 @@ html(lang='en-US')
           span.ls-facebook
         a.icon-alone(href='https://plus.google.com/107555641794612264233', title='+1 Liftie.')
           span.ls-google-plus
+        slug = tag ? '/' + tag : ''
+        a.icon-alone(href='/stats#{slug}', title='Check statistics')
+          span.ls-pie
     script(src=cachify('/scripts/liftie#{min}.js'), defer)
