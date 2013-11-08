@@ -1,4 +1,11 @@
 
+3.2.2 / 2013-11-08 
+==================
+
+ * fix long lift names overflow
+ * fix Smuggler's Notch for the new season
+ * add lift stats fpr all resorts and per tag
+
 3.2.1 / 2013-11-07 
 ==================
 
