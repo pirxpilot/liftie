@@ -1,0 +1,12 @@
+{
+  "name": "stats",
+  "dependencies": {
+    "code42day/dataset": "0.2.2",
+    "component/chart": "*"
+  },
+  "scripts": [
+    "index.js"
+  ],
+  "local": [
+  ]
+}
