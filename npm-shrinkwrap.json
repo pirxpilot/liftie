@@ -1,6 +1,6 @@
 {
   "name": "liftie",
-  "version": "3.0.2",
+  "version": "3.2.2",
   "dependencies": {
     "express": {
       "version": "3.4.0",
@@ -364,6 +364,76 @@
         },
         "console-browserify": {
           "version": "0.1.6"
+        }
+      }
+    },
+    "prompt": {
+      "version": "0.2.11",
+      "dependencies": {
+        "pkginfo": {
+          "version": "0.3.0"
+        },
+        "read": {
+          "version": "1.0.5",
+          "dependencies": {
+            "mute-stream": {
+              "version": "0.0.4"
+            }
+          }
+        },
+        "revalidator": {
+          "version": "0.1.5"
+        },
+        "utile": {
+          "version": "0.2.0",
+          "dependencies": {
+            "async": {
+              "version": "0.1.22"
+            },
+            "deep-equal": {
+              "version": "0.1.0"
+            },
+            "i": {
+              "version": "0.3.2"
+            },
+            "ncp": {
+              "version": "0.2.7"
+            },
+            "rimraf": {
+              "version": "2.2.2",
+              "dependencies": {
+                "graceful-fs": {
+                  "version": "2.0.1"
+                }
+              }
+            }
+          }
+        },
+        "winston": {
+          "version": "0.6.2",
+          "dependencies": {
+            "async": {
+              "version": "0.1.22"
+            },
+            "colors": {
+              "version": "0.6.2"
+            },
+            "cycle": {
+              "version": "1.0.2"
+            },
+            "eyes": {
+              "version": "0.1.8"
+            },
+            "pkginfo": {
+              "version": "0.2.3"
+            },
+            "request": {
+              "version": "2.9.203"
+            },
+            "stack-trace": {
+              "version": "0.0.7"
+            }
+          }
         }
       }
     },
