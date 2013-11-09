@@ -1,4 +1,12 @@
 
+3.2.3 / 2013-11-09 
+==================
+
+ * add Taos Ski Valley
+ * add Monarch Mountain
+ * extract common XML parsing code to tools/rixml
+ * modernize generate script
+
 3.2.2 / 2013-11-08 
 ==================
 
