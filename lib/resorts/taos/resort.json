@@ -1,0 +1,22 @@
+{
+  "name": "Taos Ski Valley",
+  "url": {
+    "host": "http://www.skitaos.org",
+    "pathname": "/grooming-report"
+  },
+  "dataUrl": {
+    "host": "http://us4.resorts-interactive.com",
+    "pathname": "/vicomap/getMapDetails.php",
+    "query": {
+      "mapID": 1472
+    }
+  },
+  "tags": [
+    "New Mexico"
+  ],
+  "ll": [
+    -105.450699,
+    36.596199
+  ],
+  "twitter": "TaosSkiValley"
+}
