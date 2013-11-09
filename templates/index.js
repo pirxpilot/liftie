@@ -1,15 +1,12 @@
-var select = require('../../select');
-var coerce = require('../../tools/coerce');
+var domutil = require('../../tools/domutil');
 var debug = require('debug')('liftie:resort:${ id }');
 
 function parse(dom) {
-  var liftStatus = {};
-
-  // add parsing code here
-  select(dom, '.lift').forEach(function(node) {
-    var name = node.children[0].data,
-      status = node.children[1].data;
-    liftStatus[name] = coerce(status);
+  var liftStatus = domutil.collect(dom, '.lift', function(node) {
+    return {
+      name: node.children[0].data,
+      status: node.children[1].data
+    };
   });
 
   debug('${ name } Lift Status:', liftStatus);

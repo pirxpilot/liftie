@@ -1,0 +1,15 @@
+{
+  "name": "Monarch Mountain",
+  "url": {
+    "host": "http://www.skimonarch.com",
+    "pathname": "/snow-report"
+  },
+  "tags": [
+    "Colorado"
+  ],
+  "ll": [
+    -106.331696,
+    38.512714
+  ],
+  "twitter": "MonarchMountain"
+}

@@ -1,11 +1,12 @@
 #!/usr/bin/env node
 
 var program = require('commander');
+var prompt = require('prompt');
 var url = require('url');
 var fs = require('fs');
 var path = require('path');
 var request = require('superagent');
-var _ = require('lodash');
+var template = require('lodash').template;
 
 program
   .option('-r, --resort <resort>', 'Short name of the resort', String)
@@ -13,54 +14,75 @@ program
   .option('-u, --url <url>', 'URL of the resort lift status page', String)
   .parse(process.argv);
 
-function params(resort, name, statusUrl) {
-  if(!resort) {
-    program.prompt('Short name of the resort [acme]: ', function(resort) {
-      params(resort || 'acme', name, statusUrl);
-    });
-    return;
-  }
-  if (!name) {
-    program.prompt('Human readable name of the resort [Acme Ski]: ', function(name) {
-      params(resort, name || 'Acme Ski', statusUrl);
-    });
-    return;
-  }
-  if (!statusUrl) {
-    program.prompt('URL of the page with lift status [http://acme.com/lift/status]: ', function(statusUrl) {
-      params(resort, name, statusUrl || 'http://acme.com/lift/status');
-    });
-    return;
-  }
+var conf = {
+  id: program.resort,
+  name: program.name,
+  url: program.url
+};
 
-  var resortUrl = url.parse(statusUrl);
-  process.stdin.destroy();
-  generate({
-    id: resort,
-    name: name,
-    host: [resortUrl.protocol, '//', resortUrl.host].join(''),
-    pathname: [resortUrl.pathname, resortUrl.search, resortUrl.hash].join('')
-  });
-}
+prompt.override = conf;
 
+var schema = [
+  {
+    name: 'id',
+    description: 'Short name of the resort [acme]',
+    type: 'string',
+    required: true
+  },
+  {
+    name: 'name',
+    description: 'Human readable name of the resort [Acme Ski]',
+    type: 'string',
+    required: true
+  },
+  {
+    name: 'url',
+    description: 'URL of the page with lift status [http://acme.com/lift/status]',
+    type: 'string',
+    required: true
+  },
+  {
+    name: 'tags',
+    description: 'Comma separated list of tags [Colorado, Vail, New Hampshire]',
+    type: 'string',
+    default: ''
+  },
+  {
+    name: 'twitter',
+    description: 'Twitter handle (without @) [acme]',
+    type: 'string'
+  },
+  {
+    name: 'coordinates',
+    description: 'Resort location [latitude, longitude]',
+    type: 'string',
+    default: ''
+  }
+];
 
 function generate(resort) {
   console.log('Generating files for %s', resort.name);
   var templates = path.resolve(__dirname, '../templates'),
     lib = path.resolve(__dirname, '../lib/resorts'),
     test = path.resolve(__dirname, '../test/resorts'),
-    resortDir = path.join(lib, resort.id);
+    resortDir = path.join(lib, resort.id),
+    json;
 
   fs.mkdirSync(resortDir);
   copy(path.join(templates, 'index.js'), path.join(resortDir, 'index.js'), resort);
-  write(path.join(resortDir, 'resort.json'), {
+  json = {
     name: resort.name,
     url: {
       host: resort.host,
       pathname: resort.pathname
     },
-    tags: []
-  });
+    tags: resort.tags,
+    ll: resort.coordinates
+  };
+  if (resort.twitter) {
+    json.twitter = resort.twitter;
+  }
+  write(path.join(resortDir, 'resort.json'), json);
   copy(path.join(templates, 'test.js'), path.join(test, resort.id + '.js'), resort);
   curl(resort.host + resort.pathname, path.join(test, 'example', resort.id + '.html'));
 }
@@ -68,13 +90,13 @@ function generate(resort) {
 
 function write(dst, json) {
   console.log('Generating %s...', dst);
-  fs.writeFile(dst, JSON.stringify(json, null, 1));
+  fs.writeFile(dst, JSON.stringify(json, null, 2));
 }
 
 function copy(src, dst, params) {
   console.log('Generating %s...', dst);
   fs.readFile(src, 'utf8', function(err, data) {
-    data = _.template(data, params);
+    data = template(data, params);
     fs.writeFile(dst, data);
   });
 }
@@ -85,4 +107,19 @@ function curl(url, dst) {
   request.get(url).pipe(dstStream);
 }
 
-params(program.resort, program.name, program.url);
+prompt.addProperties(conf, schema, function(err) {
+  if (err) {
+    console.error(err);
+    process.exit(-1);
+  }
+  var resortUrl = url.parse(conf.url);
+
+  conf.tags = conf.tags.split(/\s*,\s*/);
+  conf.coordinates = conf.coordinates.split(/\s*,\s*/).map(parseFloat);
+  conf.host = [resortUrl.protocol, '//', resortUrl.host].join('');
+  conf.pathname = [resortUrl.pathname, resortUrl.search, resortUrl.hash].join('');
+  process.stdin.destroy();
+  generate(conf);
+});
+
+
