@@ -242,7 +242,8 @@ a
 .extras
   .weather,
   .twitter,
-  .webcams
+  .webcams,
+  .snow
     font-size .9em
     margin-top .5em
     padding .5em 0
@@ -250,6 +251,12 @@ a
 
     &:last-child
       padding-bottom 0
+
+  .notice
+    margin-top .5em
+    font-size .8em
+    text-align right
+    font-style italic
 
   .weather
     img
@@ -264,10 +271,6 @@ a
     .text
       clear both
     .notice
-      margin-top .5em
-      float right
-      font-size .8em
-      font-style italic
       img
         float none
         width 126px
@@ -325,12 +328,6 @@ a
           margin-bottom .5em
           text-align center
 
-      .notice
-        margin-top .5em
-        font-size .9em
-        text-align right
-        font-style italic
-
       &.desktop
         display block
 
@@ -342,6 +339,12 @@ a
 
         img
           display none
+
+  .snow
+    .value
+      display inline-block
+      min-width 2em
+      text-align right
 
 .stats
   canvas

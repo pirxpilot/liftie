@@ -12,6 +12,7 @@
     "index.js",
     "dom.js",
     "lifts.js",
+    "snow.js",
     "trip.js",
     "twitter.js",
     "weather.js",
