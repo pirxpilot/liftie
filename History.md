@@ -1,4 +1,10 @@
 
+3.2.4 / 2013-11-11 
+==================
+
+ * updated opening dates
+ * add geo coordinates of Hochfuegen resort
+
 3.2.3 / 2013-11-09 
 ==================
 
