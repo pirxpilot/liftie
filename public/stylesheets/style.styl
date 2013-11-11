@@ -238,12 +238,12 @@ a
   .closed
     background-color $red
 
-
 .extras
   .weather,
   .twitter,
   .webcams,
-  .snow
+  .snow,
+  .deals
     font-size .9em
     margin-top .5em
     padding .5em 0
@@ -345,6 +345,31 @@ a
       display inline-block
       min-width 2em
       text-align right
+
+  .deals
+    padding-bottom 0
+
+    .deal
+      clear both
+      float none
+      span
+        float left
+      a
+        float right
+        margin-bottom .5em
+
+        &:last-child
+          margin-bottom 0
+
+.resort
+  .deal
+    font-size .9em
+    margin-bottom .5em
+    padding .5em 0
+    border-bottom solid 2px rgba(black, .3)
+
+    a
+      float right
 
 .stats
   canvas
