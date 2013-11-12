@@ -68,6 +68,21 @@ mixin weather(resort)
         a(href="http://www.wunderground.com/cgi-bin/findweather/getForecast?apiref=#{refkey}#{weatherQuery}", target="_blank")
           img(src="http://icons.wxug.com/logos/PNG/wundergroundLogo_black_horz.png")
 
+mixin snow(resort)
+  .snow(class= resort.snow ? 'visible' : 'hidden')
+    .snowfall
+      span.value
+      span "
+      span &nbsp;snowfall in the last 48 hours
+    .depth
+      span.value
+      span "
+      span &nbsp;snow base
+      span.condition
+        span &nbsp;-&nbsp;
+        span.value
+    .notice
+
 mixin twitter(resort)
   .twitter(class= resort.twitter ? 'visible' : 'hidden')
     .follow
@@ -109,7 +124,8 @@ mixin resort(resort, widget)
     data-ll=resort.ll && resort.ll.join(),
     data-weather=single && resort.weather,
     data-twitter=single && JSON.stringify(resort.twitter),
-    data-webcams=single && resort.webcams
+    data-webcams=single && resort.webcams,
+    data-snow=single && resort.snow,
     class=resort.open ? 'open' : ''
   )
     header
@@ -125,5 +141,6 @@ mixin resort(resort, widget)
     section.panel.extras(class= single ? 'visible' : 'hidden' )
       +addToTrip(resort)
       +weather(resort)
+      +snow(resort)
       +webcams(resort)
       +twitter(resort)
