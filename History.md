@@ -1,4 +1,10 @@
 
+3.3.0 / 2013-11-12 
+==================
+
+ * change okemo opening date
+ * add support for the client side snow conditions plugin
+
 3.2.4 / 2013-11-11 
 ==================
 
