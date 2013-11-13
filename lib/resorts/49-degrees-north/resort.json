@@ -1,0 +1,15 @@
+{
+  "name": "49 Degrees North",
+  "url": {
+    "host": "http://www.ski49n.com",
+    "pathname": "/grooming.php"
+  },
+  "tags": [
+    "Washington"
+  ],
+  "ll": [
+    -117.564011,
+    48.302353
+  ],
+  "twitter": "49DegreesNorth"
+}
