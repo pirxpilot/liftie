@@ -1,0 +1,429 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Snow Report</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="Description" content="" />
+  <meta name="Keywords" content="" />
+  <link href='http://fonts.googleapis.com/css?family=Quattrocento+Sans:400,700' rel='stylesheet' type='text/css' />
+  <link rel="stylesheet" href="/css/main.css" />
+  <link rel="stylesheet" href="/css/jquery-ui.css" />
+  <script type="text/javascript" language="JavaScript1.2" src="/js/search.js" ></script>
+  <link rel="stylesheet" href="/css/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
+  <script type="text/javascript" src="/js/jquery.js"></script>
+  <script type="text/javascript" src="/js/jquery.tcycle.js"></script>
+  <script type="text/javascript" src="/js/jquery-ui.js"></script>
+  <script type="text/javascript" src="/js/jquery.fancybox-1.3.4.pack.js"></script>
+  <script type="text/javascript">
+$(document).ready(function() {
+  $('#leftnavscbox').hover(function() {
+    $('#snowconditions').show();
+  }, function() {
+    $('#snowconditions').hide();
+  });
+});
+  </script>
+</head>
+<body>
+<div class="container">
+  <div id="leftnav">
+  <p class="center"><a href="/"><img src="/images/dhlogowhite.png" border="0" alt="Home" /></a></p>
+  <ul>
+    <li><a href="/themountain" class="curpage">The Mountain</a>
+      <ul class="accordian">
+        <li><a href="/themountain/lifttickets">Lift Tickets and Passes</a></li>
+        <li><a href="/themountain/rentals">Gear Rental</a></li>
+        <li><a href="/themountain/proshop">Ski Pro Shop</a>
+        </li>
+        <li><a href="/themountain/skirideschool">Ski &amp; Ride School</a></li>
+        <li><a href="/themountain/kidsprograms">Kids Programs and Lessons</a>
+        </li>
+        <li><a href="/themountain/snowmonsters">Snow Monsters</a></li>
+        <li><a href="/themountain/snowreport">Snow Report</a></li>
+        <li><a href="/themountain/trailmap">Trail Map</a></li>
+        <li><a href="/themountain/snowcam">Snow Cam</a></li>
+        <li><a href="/themountain/terrainpark">Terrain Park</a></li>
+        <li><a href="/themountain/stats">Mountain Stats</a></li>
+        <li><a href="/themountain/photogallery">Photo Gallery</a></li>
+      </ul>
+    </li>
+    <li><a href="/planyourtrip">Plan Your Trip</a>
+      <ul class="subnav">
+        <li><a href="/planyourtrip/lodging">Lodging</a></li>
+        <li><a href="/planyourtrip/winter/packages">Packages</a></li>
+        <li><a href="/planyourtrip/winter/dining">Dining</a></li>
+        <li><a href="/planyourtrip/winter/nightlife">Night Life</a></li>
+        <li><a href="/planyourtrip/guide">First Timers Guide</a></li>
+        <li><a href="/planyourtrip/storage">Ski Storage</a></li>
+        <li><a href="/planyourtrip/requestbrochure">Request a Brochure</a></li>
+        <li><a href="https://reservations.devilsheadresort.com/">Book Lodging</a></li>
+        <li><a href="https://reservations.devilsheadresort.com/giftcards/buy">Buy Gift Cards</a></li>
+      </ul>
+    </li>
+    <li><a href="/groups/winter">Groups</a>
+      <ul class="subnav">
+        <li><a href="/groups/winter/lodging">Group Lodging</a></li>
+        <li><a href="/groups/lifttickets">Group Lift Tickets</a></li>
+        <li><a href="/groups/skimenus">Apres Ski Menus</a></li>
+        <li><a href="/groups/minorreleaseform">Minor Release Form</a></li>
+        <li><a href="/groups/requestproposal">Request a Proposal</a></li>
+      </ul>
+    </li>
+    <li><a href="/activities">Activities &amp; Events</a>
+      <ul class="subnav">
+        <li><a href="/activities/winter/outdoor">Outdoor Activities</a></li>
+        <li><a href="/activities/indoor">Indoor Activities</a></li>
+        <li><a href="/activities/area">Area Activities</a></li>
+        <li><a href="/upcomingevents">Upcoming Events</a></li>
+      </ul>
+    </li>
+    <li><a href="/realestate">Real Estate</a>
+      <ul class="subnav">
+        <li><a href="/realestate/devilsheadquarters">Devils Head Quarters</a></li>
+        <li><a href="/realestate/currentlistings">View Current Listings</a></li>
+        <li><a href="/realestate/glacierridge">Glacier Ridge Condominiums</a></li>
+      </ul>
+    </li>
+    <li><a href="/aboutus">About Us</a>
+      <ul class="subnav">
+        <li><a href="/aboutus/resortmap">Resort Map</a></li>
+        <li><a href="/aboutus/newprojects">New Projects</a></li>
+        <li><a href="/aboutus/employment">Employment</a></li>
+        <li><a href="/aboutus/contactus">Contact Us</a></li>
+        <li><a href="/aboutus/directions">Directions</a></li>
+      </ul>
+    </li>
+  </ul>
+  <form action="https://reservations.devilsheadresort.com">
+  <p><span class="heading">Plan Your Trip</span><br />
+  Arrival<br /><input type="date" name="arrival" value="2013-11-13" style="width: 120px;" /><br />
+  Nights<br /><input type="number" name="nights" value="2" style="width: 30px;" /> <input type="submit" value="Go" /></p>
+  </form>
+  <hr />
+  <p><div id="leftnavscbox"><a href="/themountain/snowreport"><img src="/images/snowconditionsicon.png" align="left" border="0" /></a><div style="padding-top: 10px;"><a href="/themountain/snowreport"><span class="heading">&nbsp;&nbsp;&nbsp;&nbsp;Snow<br />
+  &nbsp;&nbsp;&nbsp;&nbsp;Conditions</span></a></div>
+<div id="snowconditions">
+  <p>Devil's Head Snow Conditions</p>
+  <table border="0" cellspacing="2">
+  <tr>
+    <td colspan="2" align="center">Nov 13</td>
+    <td rowspan="2" width="5">&nbsp;</td>
+    <td rowspan="2" width="85">Closed - Tentative Open Date: 11/29/13</td>
+    <td rowspan="2"><img src="/images/snowconditionsboxdivrules.png" /></td>
+    <td colspan="2" align="center">Nov 14</td>
+    <td rowspan="2" width="5">&nbsp;</td>
+    <td rowspan="2" width="85">Closed - Tentative Open Date: 11/29/13</td>
+    <td rowspan="2"><img src="/images/snowconditionsboxdivrules.png" /></td>
+    <td colspan="2" align="center">Nov 15</td>
+    <td rowspan="2" width="5">&nbsp;</td>
+    <td rowspan="2" width="85">Closed - Tentative Open Date: 11/29/13</td>
+  </tr>
+  <tr>
+    <td valign="center"><img src="/images/partlycloudy.png" alt="Partly Cloudy" /></td>
+    <td><span class="underline">31&deg;</span><br />21&deg;</td>
+    <td valign="center"><img src="/images/partlycloudy.png" alt="Partly Cloudy" /></td>
+    <td><span class="underline">31&deg;</span><br />21&deg;</td>
+    <td valign="center"><img src="/images/partlycloudy.png" alt="Partly Cloudy" /></td>
+    <td><span class="underline">31&deg;</span><br />21&deg;</td>
+  </tr>
+  </table>
+</div>
+  </div></p>
+  <hr />
+  <p><span class="heading"><a href="/themountain/snowcam">Snow Cam</a></span></p>
+  <p class="center"><a href="/themountain/snowcam"><img src="http://apps.devilsheadresort.com/snowcam/snowcam.jpg" width="160" border="0" /></a></p>
+  <p><span class="heading">Search Our Site</span></p>
+  <form action="/search" onsubmit="return goSearch();">
+  <p><input type="text" name="search" id="searchText" style="width: 120px;" /> <img src="/images/search.png" onclick="goSearch();" /></p>
+  </form>
+  <p>&nbsp;</p>
+  </div>
+  <div id="rightcontent">
+    <img src="/images/backgrounds/themountain_background1.jpg" />
+    <div class="pagecontent">
+<h1>Snow Report</h1>
+
+<h3>RESORT CLOSED - TENTATIVE OPENING DATE: NOVEMBER 29TH, 2013!</h3>
+
+<p><span>Updated: Tuesday, March 26, 20139:30 AM</span><br />
+<br />
+<span>Lift Status Report:&nbsp;</span><br />
+<span>Soft power-tilled and groomed slopes. Sunny Blue Skies! Sweet Spring skiing/snowboarding!</span></p>
+
+<table border="1" class="liftTable" style="border-collapse: collapse; width: 600px; background-color: rgb(255, 255, 255);">
+	<tbody>
+		<tr>
+			<td class="title" colspan="8" style="padding: 5px; text-align: center; color: rgb(255, 255, 255); background-color: rgb(64, 47, 29);">Devil&#39;s Head Resort Lift Status</td>
+		</tr>
+		<tr>
+			<td class="header" style="padding: 5px; text-align: center; background-color: rgb(228, 230, 234);">Lift</td>
+			<td class="header" style="padding: 5px; text-align: center; background-color: rgb(228, 230, 234);">Type</td>
+			<td class="header" style="padding: 5px; text-align: center; background-color: rgb(228, 230, 234);">Open</td>
+			<td class="header" style="padding: 5px; text-align: center; background-color: rgb(228, 230, 234);">Comments</td>
+			<td class="header" style="padding: 5px; text-align: center; background-color: rgb(228, 230, 234);">Lift</td>
+			<td class="header" style="padding: 5px; text-align: center; background-color: rgb(228, 230, 234);">Type</td>
+			<td class="header" style="padding: 5px; text-align: center; background-color: rgb(228, 230, 234);">Open</td>
+			<td class="header" style="padding: 5px; text-align: center; background-color: rgb(228, 230, 234);">Comments</td>
+		</tr>
+		<tr>
+			<td class="data" style="padding: 5px;">Wonder Carpet 400 feet</td>
+			<td class="data" style="padding: 5px;"><img alt="surface" src="/images/lift-surface.jpg" style="border-width: 0px; border-style: solid; width: 35px; height: 25px;" /></td>
+			<td class="data" style="padding: 5px;">No</td>
+			<td class="data" style="padding: 5px;">For our beginner skiers</td>
+			<td class="data" style="padding: 5px;">Wonder Carpet 300 feet</td>
+			<td class="data" style="padding: 5px;"><img alt="surface" src="/images/lift-surface.jpg" style="border-width: 0px; border-style: solid; width: 35px; height: 20px;" /></td>
+			<td class="data" style="padding: 5px;">No</td>
+			<td class="data" style="padding: 5px;">For our beginner skiers</td>
+		</tr>
+		<tr>
+			<td class="data" style="padding: 5px;">0</td>
+			<td class="data" style="padding: 5px;"><img alt="triple" src="/images/lift-triple.jpg" style="border-width: 0px; border-style: solid; width: 35px; height: 20px;" /></td>
+			<td class="data" style="padding: 5px;">No</td>
+			<td class="data" style="padding: 5px;">Triple</td>
+			<td class="data" style="padding: 5px;">00</td>
+			<td class="data" style="padding: 5px;"><img alt="double" src="/images/lift-double.jpg" style="border-width: 0px; border-style: solid; width: 35px; height: 20px;" /></td>
+			<td class="data" style="padding: 5px;">No</td>
+			<td class="data" style="padding: 5px;">Double</td>
+		</tr>
+		<tr>
+			<td class="data" style="padding: 5px;">000</td>
+			<td class="data" style="padding: 5px;"><img alt="quad" src="/images/lift-quad.jpg" style="border-width: 0px; border-style: solid; width: 35px; height: 20px;" /></td>
+			<td class="data" style="padding: 5px;">No</td>
+			<td class="data" style="padding: 5px;">Quad</td>
+			<td class="data" style="padding: 5px;">Quicksilver Express</td>
+			<td class="data" style="padding: 5px;"><img alt="quad" src="/images/lift-quad.jpg" style="border-width: 0px; border-style: solid; width: 35px; height: 20px;" /></td>
+			<td class="data" style="padding: 5px;">No</td>
+			<td class="data" style="padding: 5px;">Quad</td>
+		</tr>
+		<tr>
+			<td class="data" style="padding: 5px;">3 ~ Glacial Express</td>
+			<td class="data" style="padding: 5px;"><img alt="quad" src="/images/lift-quad.jpg" style="border-width: 0px; border-style: solid; width: 35px; height: 25px;" /></td>
+			<td class="data" style="padding: 5px;"><span>No</span></td>
+			<td class="data" style="padding: 5px;">Quad</td>
+			<td class="data" style="padding: 5px;">3 1/4</td>
+			<td class="data" style="padding: 5px;"><img alt="quad" src="/images/lift-quad.jpg" style="border-width: 0px; border-style: solid; width: 35px; height: 20px;" /></td>
+			<td class="data" style="padding: 5px;">No</td>
+			<td class="data" style="padding: 5px;">Quad</td>
+		</tr>
+		<tr>
+			<td class="data" style="padding: 5px;">3 1/2</td>
+			<td class="data" style="padding: 5px;"><img alt="double" src="/images/lift-double.jpg" style="border-width: 0px; border-style: solid; width: 35px; height: 20px;" /></td>
+			<td class="data" style="padding: 5px;">No</td>
+			<td class="data" style="padding: 5px;">Double</td>
+			<td class="data" style="padding: 5px;">4</td>
+			<td class="data" style="padding: 5px;"><img alt="double" src="/images/lift-double.jpg" style="border-width: 0px; border-style: solid; width: 35px; height: 20px;" /></td>
+			<td class="data" style="padding: 5px;">No</td>
+			<td class="data" style="padding: 5px;">Double</td>
+		</tr>
+		<tr>
+			<td class="data" style="padding: 5px;">4 1/4</td>
+			<td class="data" style="padding: 5px;"><img alt="quad" src="/images/lift-quad.jpg" style="border-width: 0px; border-style: solid; width: 35px; height: 20px;" /></td>
+			<td class="data" style="padding: 5px;">No</td>
+			<td class="data" style="padding: 5px;">Quad</td>
+			<td class="data" style="padding: 5px;">&nbsp;</td>
+			<td class="data" style="padding: 5px;">&nbsp;</td>
+			<td class="data" style="padding: 5px;">&nbsp;</td>
+			<td class="data" style="padding: 5px;">&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+<br />
+<br />
+<span>Trail Status Report:&nbsp;</span><br />
+<span>Soft, light groomed corduroy powder! Super sweet conditions!</span>
+
+<table border="1" class="trailTable" style="border-collapse: collapse; width: 600px; background-color: rgb(255, 255, 255);">
+	<tbody>
+		<tr>
+			<td class="title" colspan="6" style="padding: 5px; text-align: center; color: rgb(255, 255, 255); background-color: rgb(64, 47, 29);">Easier Trails</td>
+		</tr>
+		<tr>
+			<td class="header" style="padding: 5px; text-align: center; background-color: rgb(228, 230, 234);">Trail</td>
+			<td class="header" style="padding: 5px; text-align: center; background-color: rgb(228, 230, 234);">Open</td>
+			<td class="header" style="padding: 5px; text-align: center; background-color: rgb(228, 230, 234);">Groomed</td>
+			<td class="header" style="padding: 5px; text-align: center; background-color: rgb(228, 230, 234);">Trail</td>
+			<td class="header" style="padding: 5px; text-align: center; background-color: rgb(228, 230, 234);">Open</td>
+			<td class="header" style="padding: 5px; text-align: center; background-color: rgb(228, 230, 234);">Groomed</td>
+		</tr>
+		<tr>
+			<td class="data" style="padding: 5px;"><img alt="green" src="/images/green.gif" style="border-width: 0px; border-style: solid; width: 16px; height: 12px;" />Pete&#39;s Dragon</td>
+			<td class="data" style="padding: 5px;"><span>No</span></td>
+			<td class="data" style="padding: 5px;">Yes</td>
+			<td class="data" style="padding: 5px;"><img alt="green" src="/images/green.gif" style="border-width: 0px; border-style: solid; width: 16px; height: 12px;" />Pete&#39;s Dragon II</td>
+			<td class="data" style="padding: 5px;"><span>No</span></td>
+			<td class="data" style="padding: 5px;">Yes</td>
+		</tr>
+		<tr>
+			<td class="data" style="padding: 5px;"><img alt="green" src="/images/green.gif" style="border-width: 0px; border-style: solid; width: 16px; height: 12px;" />Devil&#39;s Playground</td>
+			<td class="data" style="padding: 5px;"><span>No</span></td>
+			<td class="data" style="padding: 5px;">Yes</td>
+			<td class="data" style="padding: 5px;"><img alt="green" src="/images/green.gif" style="border-width: 0px; border-style: solid; width: 16px; height: 12px;" />Cirque</td>
+			<td class="data" style="padding: 5px;">No</td>
+			<td class="data" style="padding: 5px;">No</td>
+		</tr>
+		<tr>
+			<td class="data" style="padding: 5px;"><img alt="green" src="/images/green.gif" style="border-width: 0px; border-style: solid; width: 16px; height: 12px;" />The Burns</td>
+			<td class="data" style="padding: 5px;">No</td>
+			<td class="data" style="padding: 5px;">No</td>
+			<td class="data" style="padding: 5px;"><img alt="green" src="/images/green.gif" style="border-width: 0px; border-style: solid; width: 16px; height: 12px;" />Meadows</td>
+			<td class="data" style="padding: 5px;">No</td>
+			<td class="data" style="padding: 5px;">No</td>
+		</tr>
+		<tr>
+			<td class="data" style="padding: 5px;"><img alt="green" src="/images/green.gif" style="border-width: 0px; border-style: solid; width: 16px; height: 12px;" />X Country/Snowshoe Trail</td>
+			<td class="data" style="padding: 5px;"><span>No</span></td>
+			<td class="data" style="padding: 5px;">Yes</td>
+		</tr>
+	</tbody>
+</table>
+&nbsp;
+
+<table border="1" class="trailTable" style="border-collapse: collapse; width: 600px; background-color: rgb(255, 255, 255);">
+	<tbody>
+		<tr>
+			<td class="title" colspan="6" style="padding: 5px; text-align: center; color: rgb(255, 255, 255); background-color: rgb(64, 47, 29);">More Difficult Trails</td>
+		</tr>
+		<tr>
+			<td class="header" style="padding: 5px; text-align: center; background-color: rgb(228, 230, 234);">Trail</td>
+			<td class="header" style="padding: 5px; text-align: center; background-color: rgb(228, 230, 234);">Open</td>
+			<td class="header" style="padding: 5px; text-align: center; background-color: rgb(228, 230, 234);">Groomed</td>
+			<td class="header" style="padding: 5px; text-align: center; background-color: rgb(228, 230, 234);">Trail</td>
+			<td class="header" style="padding: 5px; text-align: center; background-color: rgb(228, 230, 234);">Open</td>
+			<td class="header" style="padding: 5px; text-align: center; background-color: rgb(228, 230, 234);">Groomed</td>
+		</tr>
+		<tr>
+			<td class="data" style="padding: 5px;"><img alt="blue" src="/images/blue.gif" style="border-width: 0px; border-style: solid; width: 16px; height: 12px;" />Chicken Ridge</td>
+			<td class="data" style="padding: 5px;"><span>No</span></td>
+			<td class="data" style="padding: 5px;">Yes</td>
+			<td class="data" style="padding: 5px;"><img alt="blue" src="/images/blue.gif" style="border-width: 0px; border-style: solid; width: 16px; height: 12px;" />Cauldron&#39;s Cutoff</td>
+			<td class="data" style="padding: 5px;"><span>No</span></td>
+			<td class="data" style="padding: 5px;">Yes</td>
+		</tr>
+		<tr>
+			<td class="data" style="padding: 5px;"><img alt="blue" src="/images/blue.gif" style="border-width: 0px; border-style: solid; width: 16px; height: 12px;" />Dante&#39;s Inferno</td>
+			<td class="data" style="padding: 5px;"><span>No</span></td>
+			<td class="data" style="padding: 5px;">Yes</td>
+			<td class="data" style="padding: 5px;"><img alt="blue" src="/images/blue.gif" style="border-width: 0px; border-style: solid; width: 16px; height: 12px;" />The Cauldron</td>
+			<td class="data" style="padding: 5px;"><span>No</span></td>
+			<td class="data" style="padding: 5px;">Yes</td>
+		</tr>
+		<tr>
+			<td class="data" style="padding: 5px;"><img alt="blue" src="/images/blue.gif" style="border-width: 0px; border-style: solid; width: 16px; height: 12px;" />Dante&#39;s Cutoff</td>
+			<td class="data" style="padding: 5px;"><span>No</span></td>
+			<td class="data" style="padding: 5px;">Yes</td>
+		</tr>
+	</tbody>
+</table>
+&nbsp;
+
+<table border="1" class="trailTable" style="border-collapse: collapse; width: 600px; background-color: rgb(255, 255, 255);">
+	<tbody>
+		<tr>
+			<td class="title" colspan="6" style="padding: 5px; text-align: center; color: rgb(255, 255, 255); background-color: rgb(64, 47, 29);">Most Difficult Trails</td>
+		</tr>
+		<tr>
+			<td class="header" style="padding: 5px; text-align: center; background-color: rgb(228, 230, 234);">Trail</td>
+			<td class="header" style="padding: 5px; text-align: center; background-color: rgb(228, 230, 234);">Open</td>
+			<td class="header" style="padding: 5px; text-align: center; background-color: rgb(228, 230, 234);">Groomed</td>
+			<td class="header" style="padding: 5px; text-align: center; background-color: rgb(228, 230, 234);">Trail</td>
+			<td class="header" style="padding: 5px; text-align: center; background-color: rgb(228, 230, 234);">Open</td>
+			<td class="header" style="padding: 5px; text-align: center; background-color: rgb(228, 230, 234);">Groomed</td>
+		</tr>
+		<tr>
+			<td class="data" style="padding: 5px;"><img alt="black" src="/images/black.gif" style="border-width: 0px; border-style: solid; width: 16px; height: 12px;" />Devil&#39;s Alley</td>
+			<td class="data" style="padding: 5px;"><span>No</span></td>
+			<td class="data" style="padding: 5px;">Yes</td>
+			<td class="data" style="padding: 5px;"><img alt="black" src="/images/black.gif" style="border-width: 0px; border-style: solid; width: 16px; height: 12px;" />Devil&#39;s Air Park</td>
+			<td class="data" style="padding: 5px;"><span>No</span></td>
+			<td class="data" style="padding: 5px;">Yes</td>
+		</tr>
+		<tr>
+			<td class="data" style="padding: 5px;"><img alt="black" src="/images/black.gif" style="border-width: 0px; border-style: solid; width: 16px; height: 12px;" />Cyclops</td>
+			<td class="data" style="padding: 5px;"><span>No</span></td>
+			<td class="data" style="padding: 5px;">Yes</td>
+			<td class="data" style="padding: 5px;"><img alt="black" src="/images/black.gif" style="border-width: 0px; border-style: solid; width: 16px; height: 12px;" />Cyclops Chute</td>
+			<td class="data" style="padding: 5px;"><span>No</span></td>
+			<td class="data" style="padding: 5px;">Yes</td>
+		</tr>
+		<tr>
+			<td class="data" style="padding: 5px;"><img alt="black" src="/images/black.gif" style="border-width: 0px; border-style: solid; width: 16px; height: 12px;" />Lower Cyclops</td>
+			<td class="data" style="padding: 5px;"><span>No</span></td>
+			<td class="data" style="padding: 5px;">Yes</td>
+			<td class="data" style="padding: 5px;"><img alt="black" src="/images/black.gif" style="border-width: 0px; border-style: solid; width: 16px; height: 12px;" />The Serpent&#39;s Mogul</td>
+			<td class="data" style="padding: 5px;"><span>No</span></td>
+			<td class="data" style="padding: 5px;">Yes</td>
+		</tr>
+		<tr>
+			<td class="data" style="padding: 5px;"><img alt="black" src="/images/black.gif" style="border-width: 0px; border-style: solid; width: 16px; height: 12px;" />Lower Serpent</td>
+			<td class="data" style="padding: 5px;"><span>No</span></td>
+			<td class="data" style="padding: 5px;">Yes</td>
+			<td class="data" style="padding: 5px;"><img alt="black" src="/images/black.gif" style="border-width: 0px; border-style: solid; width: 16px; height: 12px;" />The Serpent</td>
+			<td class="data" style="padding: 5px;"><span>No</span></td>
+			<td class="data" style="padding: 5px;">Yes</td>
+		</tr>
+		<tr>
+			<td class="data" style="padding: 5px;"><img alt="black" src="/images/black.gif" style="border-width: 0px; border-style: solid; width: 16px; height: 12px;" />The Serpent&#39;s Escape</td>
+			<td class="data" style="padding: 5px;"><span>No</span></td>
+			<td class="data" style="padding: 5px;">Yes</td>
+			<td class="data" style="padding: 5px;"><img alt="black" src="/images/black.gif" style="border-width: 0px; border-style: solid; width: 16px; height: 12px;" />Revenge</td>
+			<td class="data" style="padding: 5px;"><span>No</span></td>
+			<td class="data" style="padding: 5px;">Yes</td>
+		</tr>
+		<tr>
+			<td class="data" style="padding: 5px;"><img alt="black" src="/images/black.gif" style="border-width: 0px; border-style: solid; width: 16px; height: 12px;" />The Way Over</td>
+			<td class="data" style="padding: 5px;"><span>No</span></td>
+			<td class="data" style="padding: 5px;">Yes</td>
+			<td class="data" style="padding: 5px;"><img alt="black" src="/images/black.gif" style="border-width: 0px; border-style: solid; width: 16px; height: 12px;" />Roundabout</td>
+			<td class="data" style="padding: 5px;"><span>No</span></td>
+			<td class="data" style="padding: 5px;">Yes</td>
+		</tr>
+		<tr>
+			<td class="data" style="padding: 5px;"><img alt="black" src="/images/black.gif" style="border-width: 0px; border-style: solid; width: 16px; height: 12px;" />Outer Limits</td>
+			<td class="data" style="padding: 5px;"><span>No</span></td>
+			<td class="data" style="padding: 5px;">Yes</td>
+			<td class="data" style="padding: 5px;"><img alt="black" src="/images/black.gif" style="border-width: 0px; border-style: solid; width: 16px; height: 12px;" />The Zone</td>
+			<td class="data" style="padding: 5px;"><span>No</span></td>
+			<td class="data" style="padding: 5px;">Yes</td>
+		</tr>
+		<tr>
+			<td class="data" style="padding: 5px;"><img alt="black" src="/images/black.gif" style="border-width: 0px; border-style: solid; width: 16px; height: 12px;" />Revenge Runout</td>
+			<td class="data" style="padding: 5px;"><span>No</span></td>
+			<td class="data" style="padding: 5px;">Yes</td>
+			<td class="data" style="padding: 5px;"><img alt="black" src="/images/black.gif" style="border-width: 0px; border-style: solid; width: 16px; height: 12px;" />Sidewinder</td>
+			<td class="data" style="padding: 5px;"><span>No</span></td>
+			<td class="data" style="padding: 5px;">Yes<br />
+			&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+      <p>&nbsp;</p>
+    </div>
+  </div>
+</div>
+<div style="clear: both;"></div>
+<div id="footer">
+  <div id="leftfooter"><a href="/emailsignup">Join Our Email List</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/realestate">Real Estate Opportunities</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/aboutus/contactus">Contact Us</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/sitemap">Site Map</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/">Home</a></div>
+  <div id="rightfooter">
+  <a href="mailto:info@devilsheadresort.com"><img src="/images/emailicon.png" alt="Email" border="0" /></a>
+  <a href="http://www.facebook.com/pages/Merrimac-WI/Devils-Head-Resort/129264143794" target="_blank"><img src="/images/facebookicon.png" alt="Facebook" border="0" /></a>
+  <a href="http://twitter.com/DevilsHead" target="_blank"><img src="/images/twittericon.png" alt="Twitter" border="0" /></a>
+  <a href="http://www.linkedin.com/companies/devil's-head-resort-%26-convention-center" target="_blank"><img src="/images/linkedinicon.png" alt="LinkedIn" border="0" /></a>
+  <a href="http://foursquare.com/venue/1350153" target="_blank"><img src="/images/foursquareicon.png" alt="Foursquare" border="0" /></a>
+  </div>
+</div>
+<p style="padding-left: 10px;">&copy; 2013 Ski Enterprise Corp. of Wisconsin | S6330 Bluff Road | Merrimac, WI 53561 | 800-472-6670 | 608-493-2251</p>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-3123765-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>
