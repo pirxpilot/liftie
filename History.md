@@ -1,4 +1,11 @@
 
+3.3.3 / 2013-11-13 
+==================
+
+ * add Bromley Mountain resort
+ * add 49 Degrees North resort
+ * Webcam image larger and up-to-date
+
 3.3.2 / 2013-11-13 
 ==================
 
