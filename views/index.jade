@@ -7,7 +7,9 @@ include resort
 block content
   +about('hidden')
 
-  numberOfColumns = resorts.length + (single ? 1 : 0)
+  - var numberOfColumns = resorts.length;
+  - numberOfColumns += single ? 1 : 0;
+  - numberOfColumns += single && resorts[0].deals && resorts[0].deals.deals ? 1 : 0;
 
   .content(class='content-#{ numberOfColumns }')
     for resort in resorts
