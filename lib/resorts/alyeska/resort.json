@@ -1,0 +1,16 @@
+{
+  "name": "Alyeska",
+  "url": {
+    "host": "http://www.alyeskaresort.com",
+    "pathname": "/mountain-status.aspx"
+  },
+  "tags": [
+    "Alaska"
+  ],
+  "ll": [
+    -149.102676,
+    60.961445
+  ],
+  "twitter": "resortalyeska",
+  "opening": "2013-11-28"
+}
