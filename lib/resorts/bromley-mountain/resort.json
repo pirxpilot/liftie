@@ -1,0 +1,17 @@
+{
+  "name": "Bromley Mountain",
+  "url": {
+    "host": "http://www.bromley.com",
+    "pathname": "/mountain/snowreport/"
+  },
+  "tags": [
+    "Vermont",
+    "New England"
+  ],
+  "ll": [
+    -72.935013,
+    43.213402
+  ],
+  "twitter": "BromleyMountain",
+  "opening": "2013-11-16"
+}
