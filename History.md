@@ -1,4 +1,10 @@
 
+3.3.2 / 2013-11-13 
+==================
+
+ * add Alyeska resort
+ * change bin/generate: create resort parser skeleton from json descriptor
+
 3.3.1 / 2013-11-12 
 ==================
 
