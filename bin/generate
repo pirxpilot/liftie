@@ -9,18 +9,40 @@ var request = require('superagent');
 var template = require('lodash').template;
 
 program
-  .option('-r, --resort <resort>', 'Short name of the resort', String)
-  .option('-n, --name <name>', 'Human readable name of the resort', String)
-  .option('-u, --url <url>', 'URL of the resort lift status page', String)
+  .option('-j, --json <file>', 'JSON file with resort data', String)
   .parse(process.argv);
 
-var conf = {
-  id: program.resort,
-  name: program.name,
-  url: program.url
-};
+var fname;
 
-prompt.override = conf;
+if (program.json) {
+  fname = path.resolve(program.json);
+  fs.readFile(fname, function (err, data) {
+    var conf;
+    if (err) {
+      console.error(err);
+      process.exit(-1);
+    }
+    conf = JSON.parse(data);
+    conf.id = path.basename(fname, '.json');
+    if (conf.url) {
+      conf.host = conf.url.host;
+      conf.pathname = conf.url.pathname;
+      if (conf.host && !conf.pathname) {
+        console.log('Resort website:', conf.host);
+      }
+    }
+    if (Array.isArray(conf.tags)) {
+      conf.tags = conf.tags.join(',');
+    }
+    if (Array.isArray(conf.ll)) {
+      conf.coordinates = conf.ll.join(',');
+    }
+    execute(conf);
+  });
+}
+else {
+  execute();
+}
 
 var schema = [
   {
@@ -36,8 +58,14 @@ var schema = [
     required: true
   },
   {
-    name: 'url',
-    description: 'URL of the page with lift status [http://acme.com/lift/status]',
+    name: 'host',
+    description: 'URL of the resort website [http://acme.com]',
+    type: 'string',
+    required: true
+  },
+  {
+    name: 'pathname',
+    description: 'Relative URL of the page with lift status [/lift/status]',
     type: 'string',
     required: true
   },
@@ -57,6 +85,11 @@ var schema = [
     description: 'Resort location [latitude, longitude]',
     type: 'string',
     default: ''
+  },
+  {
+    name: 'opening',
+    description: 'Opening date [YYYY-MM-DD]',
+    type: 'string'
   }
 ];
 
@@ -81,6 +114,9 @@ function generate(resort) {
   };
   if (resort.twitter) {
     json.twitter = resort.twitter;
+  }
+  if (resort.opening) {
+    json.opening = resort.opening;
   }
   write(path.join(resortDir, 'resort.json'), json);
   copy(path.join(templates, 'test.js'), path.join(test, resort.id + '.js'), resort);
@@ -107,19 +143,21 @@ function curl(url, dst) {
   request.get(url).pipe(dstStream);
 }
 
-prompt.addProperties(conf, schema, function(err) {
-  if (err) {
-    console.error(err);
-    process.exit(-1);
-  }
-  var resortUrl = url.parse(conf.url);
-
-  conf.tags = conf.tags.split(/\s*,\s*/);
-  conf.coordinates = conf.coordinates.split(/\s*,\s*/).map(parseFloat);
-  conf.host = [resortUrl.protocol, '//', resortUrl.host].join('');
-  conf.pathname = [resortUrl.pathname, resortUrl.search, resortUrl.hash].join('');
-  process.stdin.destroy();
-  generate(conf);
-});
-
-
+function execute(conf) {
+  conf = conf || {};
+  prompt.override = conf;
+  prompt.addProperties(conf, schema, function(err) {
+    if (err) {
+      console.error(err);
+      process.exit(-1);
+    }
+    var resortUrl = url.parse(conf.host + conf.pathname);
+  
+    conf.tags = conf.tags.split(/\s*,\s*/);
+    conf.coordinates = conf.coordinates.split(/\s*,\s*/).map(parseFloat);
+    conf.host = [resortUrl.protocol, resortUrl.host].join('//');
+    conf.pathname = [resortUrl.pathname, resortUrl.search, resortUrl.hash].join('');
+    process.stdin.destroy();
+    generate(conf);
+  });
+}
