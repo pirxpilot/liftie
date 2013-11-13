@@ -1,4 +1,11 @@
 
+3.3.1 / 2013-11-12 
+==================
+
+ * stop displaying deals in single resort header
+ * move deals to a separate panel
+ * add more detailed listing of discounted lift tickets
+
 3.3.0 / 2013-11-12 
 ==================
 
