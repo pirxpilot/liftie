@@ -1,0 +1,15 @@
+{
+  "name": "Caberfae Peaks",
+  "url": {
+    "host": "http://caberfaepeaks.com",
+    "pathname": "/the-mountain/snow-report/"
+  },
+  "tags": [
+    "Michigan"
+  ],
+  "ll": [
+    -85.719765,
+    44.245014
+  ],
+  "twitter": "Caberfae"
+}
