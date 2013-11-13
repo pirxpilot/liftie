@@ -84,17 +84,17 @@ a
   &:last-child
     margin-bottom 0
 
-.resort
-.extras
-  .add-to-trip
-    display block
-    margin-top .3em
-    cursor pointer
-    >span
-      margin-right .3em
+.add-to-trip
+  cursor pointer
+  display block
 
-.resort,
-.stats
+.resort
+  .add-to-trip
+    margin-top .3em
+    span + span
+      margin-left .3em
+
+.panel
   header,
   footer
     transition all .4s ease
@@ -104,6 +104,12 @@ a
     line-height 1em
     padding-top 2px
     border-bottom solid 2px transparent
+    overflow ellipsis
+
+    a
+      span + span
+        margin-left .3em
+
   &.open
     header
       border-color rgba(black,.3)
@@ -239,18 +245,16 @@ a
     background-color $red
 
 .extras
-  .weather,
-  .twitter,
-  .webcams,
-  .snow,
-  .deals
+  .tile
     font-size .9em
-    margin-top .5em
     padding .5em 0
-    border-top solid 2px rgba(black, .3)
+
+  .tile
+    border-bottom solid 2px rgba(black, .3)
 
     &:last-child
       padding-bottom 0
+      border-bottom none
 
   .notice
     margin-top .5em
@@ -350,16 +354,13 @@ a
     padding-bottom 0
 
     .deal
-      clear both
-      float none
+      clearfix()
+      padding .4em 0
+      line-height 1.5
       span
         float left
       a
         float right
-        margin-bottom .5em
-
-        &:last-child
-          margin-bottom 0
 
 .resort
   .deal
