@@ -1,0 +1,16 @@
+{
+  "name": "Shawnee Peak",
+  "url": {
+    "host": "http://www.shawneepeak.com",
+    "pathname": "/mountain/ski-report/"
+  },
+  "tags": [
+    "Maine",
+    "New England"
+  ],
+  "ll": [
+    -70.817528,
+    44.053791
+  ],
+  "twitter": "ShawneePeakME"
+}
