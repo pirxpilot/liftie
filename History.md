@@ -1,4 +1,22 @@
 
+3.3.4 / 2013-11-14 
+==================
+
+ * add Tahoe Donner resort
+ * add Hoodoo resort
+ * add Crystal Mountain resort
+ * add Bolton Valley resort
+ * add Silver Star resort
+ * add Shawnee Mountain resort
+ * add Red Mountain resort
+ * add Red Lodge Mountain resort
+ * add King Pine resort
+ * add Pats Peak resort
+ * add Devils Head resort
+ * add Cataloochee resort
+ * enhance generate script
+ * parse entities in status before coercing
+
 3.3.3 / 2013-11-13 
 ==================
 
