@@ -1,0 +1,16 @@
+{
+  "name": "Red Mountain",
+  "url": {
+    "host": "http://www.redresort.com",
+    "pathname": "/mountain/report/"
+  },
+  "tags": [
+    "British Columbia"
+  ],
+  "ll": [
+    -117.819099,
+    49.105343
+  ],
+  "twitter": "redresort",
+  "opening": "2013-12-14"
+}
