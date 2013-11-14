@@ -1,4 +1,4 @@
-var assert = require('assert');
+var should = require('should');
 var fs = require('fs');
 var parser = require('../../lib/lifts/parser');
 var parse = require('../../lib/resorts/big-sky');
@@ -14,22 +14,27 @@ describe('parse big-sky', function() {
         'Cascade Triple': 'closed',
         'Little Thunder': 'closed',
         'Challenger Double': 'closed',
+        'Derringer Quad Chair': 'closed',
         'Explorer Double': 'closed',
         'Bear Back': 'closed',
+        'Headwaters Double Chair': 'closed',
         'Iron Horse Quad': 'closed',
         'Lone Moose Triple': 'closed',
         'Lone Peak Tram': 'closed',
         'Dakota Lift Triple': 'closed',
         'Lone Peak Triple': 'closed',
+        'Lone Tree Quad Chair': 'closed',
         'Pony Express Triple': 'closed',
         'Ramcharger': 'closed',
         'Shedhorn Double': 'closed',
+        'Six Shooter Chair': 'closed',
         'Southern Comfort': 'closed',
-        'Swift Current': 'closed',
+        'Swift Current': 'open',
         'Thunder Wolf': 'closed',
         'White Otter Double': 'closed'
       };
-      assert.deepEqual(status, expected);
+      should.exist(status);
+      status.should.eql(expected);
       done(err);
     }));
   });
