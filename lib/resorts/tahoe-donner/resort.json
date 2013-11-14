@@ -1,0 +1,17 @@
+{
+  "name": "Tahoe Donner",
+  "url": {
+    "host": "http://www.tahoedonner.com",
+    "pathname": "/downhill-ski/conditions/"
+  },
+  "tags": [
+    "California",
+    "Lake Tahoe"
+  ],
+  "ll": [
+    -120.257957,
+    39.354725
+  ],
+  "twitter": "tahoedonner",
+  "opening": "2013-12-13"
+}
