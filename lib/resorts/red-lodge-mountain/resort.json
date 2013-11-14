@@ -1,0 +1,16 @@
+{
+  "name": "Red Lodge Mountain",
+  "url": {
+    "host": "http://www.redlodgemountain.com",
+    "pathname": "/snow-report/"
+  },
+  "tags": [
+    "Montana"
+  ],
+  "ll": [
+    -109.335037,
+    45.191021
+  ],
+  "twitter": "RedLodgeMntn",
+  "opening": "2013-11-29"
+}
