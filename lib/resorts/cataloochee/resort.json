@@ -1,0 +1,16 @@
+{
+  "name": "Cataloochee",
+  "url": {
+    "host": "http://www.cataloochee.com",
+    "pathname": "/report/index.php"
+  },
+  "tags": [
+    "North Carolina"
+  ],
+  "ll": [
+    -83.090027,
+    35.562656
+  ],
+  "twitter": "skicataloochee",
+  "opening": "2013-11-14"
+}
