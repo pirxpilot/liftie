@@ -1,4 +1,11 @@
 
+3.3.5 / 2013-11-14 
+==================
+
+ * adjust Whiteface opening day
+ * fix Big Sky resort
+ * add Shawnee Peak resort
+
 3.3.4 / 2013-11-14 
 ==================
 
