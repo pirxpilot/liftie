@@ -144,6 +144,18 @@ function curl(url, dst) {
 }
 
 function execute(conf) {
+  function splitHost(v) {
+    var resortUrl = url.parse(v, true);
+    if (resortUrl.pathname) {
+      conf.pathname = resortUrl.pathname;
+    }
+    return url.format({
+      protocol: resortUrl.protocol,
+      hostname: resortUrl.hostname
+    });
+  }
+
+  schema[2].before = splitHost;
   conf = conf || {};
   prompt.override = conf;
   prompt.addProperties(conf, schema, function(err) {
@@ -152,7 +164,7 @@ function execute(conf) {
       process.exit(-1);
     }
     var resortUrl = url.parse(conf.host + conf.pathname);
-  
+
     conf.tags = conf.tags.split(/\s*,\s*/);
     conf.coordinates = conf.coordinates.split(/\s*,\s*/).map(parseFloat);
     conf.host = [resortUrl.protocol, resortUrl.host].join('//');
