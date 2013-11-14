@@ -1,0 +1,16 @@
+{
+  "name": "Hoodoo",
+  "url": {
+    "host": "http://www.hoodoo.com",
+    "pathname": "/status/"
+  },
+  "tags": [
+    "Oregon"
+  ],
+  "ll": [
+    -121.871513,
+    44.408646
+  ],
+  "twitter": "HoodooSki",
+  "opening": "2013-11-29"
+}
