@@ -1,0 +1,17 @@
+{
+  "name": "Bolton Valley",
+  "url": {
+    "host": "http://www.boltonvalley.com",
+    "pathname": "/the-mountain/snow-report-and-maps"
+  },
+  "tags": [
+    "Vermont",
+    "New England"
+  ],
+  "ll": [
+    -72.84948,
+    44.421673
+  ],
+  "twitter": "boltonvalley",
+  "opening": "2013-12-14"
+}
