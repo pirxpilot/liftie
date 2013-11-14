@@ -1,0 +1,16 @@
+{
+  "name": "Crystal Mountain",
+  "url": {
+    "host": "http://crystalmountainresort.com",
+    "pathname": "/The-Mountain/mountain_report"
+  },
+  "tags": [
+    "Washington"
+  ],
+  "ll": [
+    -121.5802,
+    46.9459
+  ],
+  "twitter": "crystalmt",
+  "opening": "2013-11-21"
+}
