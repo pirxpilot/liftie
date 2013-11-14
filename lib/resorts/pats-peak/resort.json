@@ -1,0 +1,16 @@
+{
+  "name": "Pats Peak",
+  "url": {
+    "host": "http://www.patspeak.com",
+    "pathname": "/snow_report.html"
+  },
+  "tags": [
+    "New Hampshire",
+    "New England"
+  ],
+  "ll": [
+    -71.833412,
+    43.180679
+  ],
+  "twitter": "patspeak"
+}

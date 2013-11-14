@@ -1,0 +1,16 @@
+{
+  "name": "King Pine",
+  "url": {
+    "host": "http://www.kingpine.com",
+    "pathname": "/snow-conditions.html"
+  },
+  "tags": [
+    "New Hampshire",
+    "New England"
+  ],
+  "ll": [
+    -71.088127,
+    43.86063
+  ],
+  "twitter": "KingPineSkiarea"
+}
