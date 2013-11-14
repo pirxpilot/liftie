@@ -1,0 +1,14 @@
+{
+  "name": "Silver Star",
+  "url": {
+    "host": "http://winter.skisilverstar.com",
+    "pathname": "/my-mountain-info/mountain-conditions/lift-status"
+  },
+  "tags": [
+    "British Columbia"
+  ],
+  "ll": [
+    -119.208603,
+    50.438702
+  ]
+}
