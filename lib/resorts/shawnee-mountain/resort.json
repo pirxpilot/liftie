@@ -1,0 +1,15 @@
+{
+  "name": "Shawnee Mountain",
+  "url": {
+    "host": "http://www.shawneemt.com",
+    "pathname": "/mountain/snowreport.html"
+  },
+  "tags": [
+    "Pennsylvania"
+  ],
+  "ll": [
+    -75.078117,
+    41.03688
+  ],
+  "twitter": "skishawnee"
+}
