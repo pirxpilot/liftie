@@ -4,6 +4,13 @@
     "host": "http://www.okemo.com",
     "pathname": "/activities/snowsports/dailyreport.asp"
   },
+  "dataUrl": {
+    "host": "http://us1.resorts-interactive.com",
+    "pathname": "/vicomap/getMapDetails.php",
+    "query": {
+      "mapID": 1362
+    }
+  },
   "tags": [
     "New England",
     "Vermont"
