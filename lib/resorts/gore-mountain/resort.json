@@ -1,0 +1,16 @@
+{
+  "name": "Gore Mountain",
+  "url": {
+    "host": "http://www.goremountain.com",
+    "pathname": "/mountain/snow-report"
+  },
+  "tags": [
+    "New York"
+  ],
+  "ll": [
+    -74.007172,
+    43.672653
+  ],
+  "twitter": "GoreMountain",
+  "opening": "2013-11-16"
+}
