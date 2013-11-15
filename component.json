@@ -1,7 +1,7 @@
 {
   "name": "liftie",
   "description": "Client side of liftie.info",
-  "version": "3.3.2",
+  "version": "3.3.6",
   "dependencies": {
     "component/emitter": "1.0.1"
   },
