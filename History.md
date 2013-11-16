@@ -1,4 +1,13 @@
 
+3.3.7 / 2013-11-16 
+==================
+
+ * ask for more tweets - filter later
+ * fix header margin nad padding
+ * update opening day for Snowmass
+ * update opening day for Aspen Mountain
+ * switch to XML parsing for Aspen Mountain
+
 3.3.6 / 2013-11-15 
 ==================
 
