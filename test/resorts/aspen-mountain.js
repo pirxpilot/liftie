@@ -6,7 +6,7 @@ var parse = require('../../lib/resorts/aspen-mountain');
 /*global describe, it */
 describe('parse aspen-mountain', function() {
 
-  it.only('should return lift status', function(done) {
+  it('should return lift status', function(done) {
     var stream = fs.createReadStream(__dirname + '/example/aspen-mountain.html');
     stream.on('error', done);
     stream.pipe(parser(parse, function(err, status) {
