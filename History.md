@@ -1,4 +1,10 @@
 
+3.3.9 / 2013-11-16 
+==================
+
+ * shorten Schweitzer resorn name
+ * remove ellipsis - breaks Firefox
+
 3.3.8 / 2013-11-16 
 ==================
 
