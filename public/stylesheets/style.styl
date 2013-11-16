@@ -77,12 +77,15 @@ a
   box-sizing border-box
   margin 0 ($column-gutter/2) $column-gutter
   width $column-width
-  padding .8em
+  padding .7em .8em
   float left
   gradient-background()
 
   &:last-child
     margin-bottom 0
+
+header .ls-furkot
+  font-size .9em
 
 .add-to-trip
   cursor pointer
@@ -101,14 +104,14 @@ a
     clearfix()
   header
     font-size 1.2em
-    line-height 1em
     padding-top 2px
     border-bottom solid 2px transparent
     overflow ellipsis
+    vertical-align middle
 
-    a
-      span + span
-        margin-left .3em
+    a + a
+      margin-left .2em
+
 
   &.open
     header
@@ -116,13 +119,6 @@ a
       padding-bottom .5em
 
 .resort
-  header
-    a.left
-      margin-right .3em
-
-    a.right
-      margin-left .3em
-
   footer
     font-size .8em
 
@@ -180,9 +176,6 @@ a
   color lighten($text-color, 30%)
   font-style italic
   float right
-  padding-right 2px
-
-.minimax
   padding-right 2px
 
 .ls-minimax:before
