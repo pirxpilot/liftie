@@ -1,4 +1,9 @@
 
+3.3.8 / 2013-11-16 
+==================
+
+ * check openning once an hour for active resorts
+
 3.3.7 / 2013-11-16 
 ==================
 
