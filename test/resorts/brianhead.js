@@ -13,7 +13,7 @@ describe('parse brianhead', function() {
       var expected = {
         'Wildflower': 'closed',
         'Giant Steps': 'closed',
-        'Blackfoot': 'closed',
+        'Blackfoot': 'open',
         'Navajo': 'closed',
         'Roulette': 'closed',
         'Pioneer': 'closed',
