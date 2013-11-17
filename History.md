@@ -1,4 +1,17 @@
 
+3.3.10 / 2013-11-17 
+==================
+
+ * Big White is open
+ * Stevens Pass is open
+ * keyboard shortcuts
+ * add /confused route
+ * add /closed page
+ * fix Brian Head parser
+ * simplify routes module
+ * switch to non-gradient background
+ * header/footer padding fix
+
 3.3.9 / 2013-11-16 
 ==================
 
