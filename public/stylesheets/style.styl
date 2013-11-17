@@ -77,9 +77,9 @@ a
   box-sizing border-box
   margin 0 ($column-gutter/2) $column-gutter
   width $column-width
-  padding .7em .8em
+  padding 0 .8em
   float left
-  gradient-background()
+  background-color $background-color
 
   &:last-child
     margin-bottom 0
@@ -90,21 +90,27 @@ header .ls-furkot
 .add-to-trip
   cursor pointer
   display block
+  span + span
+    margin-left .2em
 
 .resort
-  .add-to-trip
-    margin-top .3em
-    span + span
-      margin-left .3em
+  footer
+    .add-to-trip
+      margin-top .3em
 
 .panel
   header,
   footer
     transition all .4s ease
     clearfix()
+
+  header
+    padding .7em 0 .5em
+  footer
+    padding .5em 0 .7em
+
   header
     font-size 1.2em
-    padding-top 2px
     border-bottom solid 2px transparent
     vertical-align middle
 
@@ -116,11 +122,6 @@ header .ls-furkot
   &.open
     header
       border-color rgba(black,.3)
-      padding-bottom .5em
-
-.resort
-  footer
-    font-size .8em
 
 .open
   .expandable
@@ -136,7 +137,7 @@ header .ls-furkot
         width 100%
         height 100%
         z-index 1
-        gradient-background(rgba($background-color, .9))
+        background-color rgba($background-color, .9)
 
         a
           position absolute
@@ -175,7 +176,8 @@ header .ls-furkot
 .auto-refresh-reminder
   color lighten($text-color, 30%)
   font-style italic
-  float right
+  text-align right
+  font-size .8em
   padding-right 2px
 
 .ls-minimax:before
@@ -198,6 +200,7 @@ header .ls-furkot
 .summary
   list-style none
   clearfix()
+  font-size .8em
 
   li
     float left
@@ -238,6 +241,8 @@ header .ls-furkot
     background-color $red
 
 .extras
+  padding-bottom .7em
+
   .tile
     font-size .9em
     padding .5em 0

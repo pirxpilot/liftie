@@ -150,8 +150,8 @@ mixin resort(resort, widget)
         +lifts(resort)
         footer
           +stats(resort)
-        if !widget && !single
-          +addToTrip(resort)
+          if !widget && !single
+            +addToTrip(resort)
   if !widget
     section.panel.extras.open(class= single ? 'visible' : 'hidden' )
       header
