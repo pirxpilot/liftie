@@ -1,4 +1,10 @@
 
+3.3.11 / 2013-11-17 
+==================
+
+ * adjust opening date for Crystal Mtn
+ * fix Crystal Mountain parser
+
 3.3.10 / 2013-11-17 
 ==================
 
