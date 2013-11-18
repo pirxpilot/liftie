@@ -1,4 +1,10 @@
 
+3.3.12 / 2013-11-18 
+==================
+
+ * remove extra footer padding
+ * support instagram photos in twitter feeds
+
 3.3.11 / 2013-11-17 
 ==================
 
