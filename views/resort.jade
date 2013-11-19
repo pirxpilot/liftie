@@ -89,6 +89,7 @@ mixin twitter(resort)
       if resort.twitter && single
         a.twitter-follow-button(
           href="https://twitter.com/#{resort.twitter.user}",
+          target='_blank',
           data-show-count="false",
           data-size="large"
         ) Follow @#{resort.twitter.user}
