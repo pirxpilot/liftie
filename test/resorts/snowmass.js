@@ -1,4 +1,4 @@
-var assert = require('assert');
+var should = require('should');
 var fs = require('fs');
 var parser = require('../../lib/lifts/parser');
 var parse = require('../../lib/resorts/snowmass');
@@ -11,29 +11,29 @@ describe('parse snowmass', function() {
     stream.on('error', done);
     stream.pipe(parser(parse, function(err, status) {
       var expected = {
-       'Coney Glade': 'open',
-       'Sam\'s Knob': 'open',
-       'Big Burn': 'open',
-       'Alpine Springs': 'open',
-       'High Alpine': 'open',
-       'Campground': 'open',
-       'Elk Camp': 'open',
-       'Two Creeks': 'open',
-       'Assay Hill': 'open',
-       'Treehouse Carpet': 'open',
-       'Scooper': 'closed',
+       'Assay Hill': 'closed',
+       'Alpine Springs': 'closed',
+       'Two Creeks': 'closed',
+       'Elk Camp': 'closed',
+       'Meadows Lift': 'closed',
+       'High Alpine': 'closed',
+       'Sky Cab': 'closed',
+       'Elk Camp Gondola': 'closed',
+       'Village Express': 'closed',
        'Burlingame': 'closed',
-       'Sheer Bliss': 'open',
+       'Coney Glade': 'closed',
+       'Sam\'s Knob': 'closed',
+       'Campground': 'closed',
+       'Big Burn': 'closed',
+       'Sheer Bliss': 'closed',
+       'Scooper': 'closed',
        'Cirque Surface Lift': 'closed',
-       'Village Express': 'open',
-       'Sky Cab': 'open',
        'Burlingame Carpet': 'closed',
-       'Elk Camp Gondola': 'open',
-       'Meadows Carpet': 'open',
-       'Sun Kids Carpet #2': 'closed',
-       'Meadows Lift': 'open'
+       'Meadows Carpet': 'closed',
+       'Treehouse Carpet': 'closed'
       };
-      assert.deepEqual(status, expected);
+      should.exist(status);
+      status.should.eql(expected);
       done(err);
     }));
   });

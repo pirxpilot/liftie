@@ -4,6 +4,13 @@
     "host": "http://www.aspensnowmass.com",
     "pathname": "/snowmass/grooming"
   },
+  "dataUrl": {
+    "host": "http://us4.resorts-interactive.com",
+    "pathname": "/vicomap/getMapDetails.php",
+    "query": {
+      "mapID": 1632
+    }
+  },
   "tags": [
     "Colorado",
     "Aspen"
