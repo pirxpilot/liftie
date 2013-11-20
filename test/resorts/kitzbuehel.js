@@ -6,7 +6,7 @@ var parse = require('../../lib/resorts/kitzbuehel');
 /*global describe, it */
 describe('parse kitzbuehel', function() {
 
-  it.only('should return lift status', function(done) {
+  it('should return lift status', function(done) {
     var stream = fs.createReadStream(__dirname + '/example/kitzbuehel.html');
     stream.on('error', done);
     stream.pipe(parser(parse, function(err, status) {
