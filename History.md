@@ -1,4 +1,12 @@
 
+3.3.14 / 2013-11-19 
+==================
+
+ * add 'application-name' to make IE happy
+ * disable onclick wait on touch enabled platforms
+ * make external `social` links to open a new window/tab
+ * external link to Furkot trips
+
 3.3.13 / 2013-11-19 
 ==================
 
