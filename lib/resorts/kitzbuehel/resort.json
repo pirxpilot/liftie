@@ -1,0 +1,14 @@
+{
+  "name": "Kitzbühel",
+  "url": {
+    "host": "http://www.kitzbuehel.com",
+    "pathname": "/en/sports_leisure/winter/skiing/lift_status"
+  },
+  "tags": [
+    "Austria"
+  ],
+  "ll": [
+    12.3908,
+    47.446602
+  ]
+}
