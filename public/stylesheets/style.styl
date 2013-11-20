@@ -55,6 +55,7 @@ a, input, button
 // Chrome 19 was weird with clickability without this: http://css-tricks.com/examples/IconFont
 .icon-alone
   display inline-block
+  cursor pointer
 
 .left
   float left
@@ -73,7 +74,8 @@ a
   transition color .3s ease
   text-decoration none
 
-  &:hover
+  &:hover,
+  &:active
     color saturate($link-color, 20%)
 
 .panel
@@ -122,6 +124,8 @@ header .ls-furkot
     span + span
       margin-left .2em
 
+    a
+      outline none
 
   &.open
     header
