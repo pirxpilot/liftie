@@ -1,0 +1,16 @@
+{
+  "name": "Sun Peaks",
+  "url": {
+    "host": "http://www.sunpeaksresort.com",
+    "pathname": "/weather-and-cams/lift-status"
+  },
+  "tags": [
+    "British Columbia"
+  ],
+  "ll": [
+    -119.9132,
+    50.877369
+  ],
+  "twitter": "SunPeaksResort",
+  "opening": "2013-11-23"
+}
