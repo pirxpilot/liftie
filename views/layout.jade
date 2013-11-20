@@ -13,7 +13,8 @@ html(lang='en-US')
     title= title
     +description('description')
     meta(name='apple-mobile-web-app-capable', content='yes')
-    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(name='application-name', content='Liftie')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0, user-scalable=no')
     meta(property='og:type', content='website')
     meta(property='og:image', content=og.image)
     meta(property='og:title', content=title)
@@ -25,17 +26,17 @@ html(lang='en-US')
     block content
     block footer
       footer
-        a.icon-alone(href='http://furkot.com', title='Plan your ski trip with Furkot.')
+        a.icon-alone(href='http://furkot.com', title='Plan your ski trip with Furkot.', target='_blank')
           span.ls-furkot
           span.text Plan your trip
-        a.icon-alone(href='https://github.com/code42day/liftie', title='Fork Liftie.')
+        a.icon-alone(href='https://github.com/code42day/liftie', title='Fork Liftie.', target='_blank')
           span.ls-github
           span.text Add your resort
-        a.icon-alone(href='https://twitter.com/liftieinfo', title='Follow Liftie.')
+        a.icon-alone(href='https://twitter.com/liftieinfo', title='Follow Liftie.', target='_blank')
           span.ls-twitter
-        a.icon-alone(href='https://facebook.com/liftie.info', title='Like Liftie.')
+        a.icon-alone(href='https://facebook.com/liftie.info', title='Like Liftie.', target='_blank')
           span.ls-facebook
-        a.icon-alone(href='https://plus.google.com/107555641794612264233', title='+1 Liftie.')
+        a.icon-alone(href='https://plus.google.com/+LiftieInfo', title='+1 Liftie.', target='_blank')
           span.ls-google-plus
         slug = tag ? '/' + tag : ''
         a.icon-alone(href='/stats#{slug}', title='Check statistics')

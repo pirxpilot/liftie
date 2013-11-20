@@ -24,6 +24,10 @@ gradient-background($color = $background-color, $lighten = 5%, $darken = 5%)
   padding 0
   margin 0
 
+// fast click on Windows: see - http://bit.ly/1aPOfxR
+a, input, button
+  -ms-touch-action: none !important
+
 /*
  * Hide from both screenreaders and browsers: h5bp.com/u
  */
