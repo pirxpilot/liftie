@@ -1,4 +1,12 @@
 
+3.3.15 / 2013-11-20 
+==================
+
+ * fix Snowmass for the new season
+ * remove ugly outline
+ * add Kitzbühel resort
+ * add Sun Peaks resort
+
 3.3.14 / 2013-11-19 
 ==================
 
