@@ -1,4 +1,9 @@
 
+3.3.16 / 2013-11-22 
+==================
+
+ * adjust opening days for attitash, smuggs, and wildcat
+
 3.3.15 / 2013-11-20 
 ==================
 
