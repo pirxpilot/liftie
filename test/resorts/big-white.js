@@ -1,4 +1,4 @@
-var assert = require('assert');
+var should = require('should');
 var fs = require('fs');
 var parser = require('../../lib/lifts/parser');
 var parse = require('../../lib/resorts/big-white');
@@ -15,20 +15,21 @@ describe('parse big-white', function() {
         'Ridge Rocket Express Quad': 'open',
         'Bullet Express Quad': 'open',
         'Black Forest Express Quad': 'open',
-        'Gem Lake Express Quad': 'open',
+        'Gem Lake Express Quad': 'closed',
         'Plaza Quad Chair': 'open',
-        'Powder Triple Chair': 'open',
+        'Powder Triple Chair': 'closed',
         'Falcon Double Chair': 'closed',
-        'Cliff Chair': 'open',
-        'Alpine T-bar': 'open',
+        'Cliff Chair': 'closed',
+        'Alpine T-bar': 'closed',
         'Magic Carpet': 'open',
         'Kids Carpet': 'open',
-        'Mega Snow Coaster Lift 1': 'open',
-        'Mega Snow Coaster Lift 2': 'open',
-        'Snow Ghost Express 6 Pack': 'open',
-        'TELUS Park Chair': 'open'
+        'Mega Snow Coaster Lift 1': 'closed',
+        'Mega Snow Coaster Lift 2': 'closed',
+        'Snow Ghost Express 6 Pack': 'closed',
+        'TELUS Park Chair': 'closed'
       };
-      assert.deepEqual(status, expected);
+      should.exist(status);
+      status.should.eql(expected);
       done(err);
     }));
   });
