@@ -1,10 +1,10 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-  <title>Snow Report</title>
+  <title>Devil's Head Resort</title>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <meta name="Description" content="" />
-  <meta name="Keywords" content="" />
+  <meta name="Description" content="Devil's Head Resort" />
+  <meta name="Keywords" content="Devil's Head Resort" />
   <link href='http://fonts.googleapis.com/css?family=Quattrocento+Sans:400,700' rel='stylesheet' type='text/css' />
   <link rel="stylesheet" href="/css/main.css" />
   <link rel="stylesheet" href="/css/jquery-ui.css" />
@@ -21,6 +21,7 @@ $(document).ready(function() {
   }, function() {
     $('#snowconditions').hide();
   });
+  $('#arrival').datepicker({dateFormat: 'yy-mm-dd'});
 });
   </script>
 </head>
@@ -96,7 +97,7 @@ $(document).ready(function() {
   </ul>
   <form action="https://reservations.devilsheadresort.com">
   <p><span class="heading">Plan Your Trip</span><br />
-  Arrival<br /><input type="date" name="arrival" value="2013-11-13" style="width: 120px;" /><br />
+  Arrival<br /><input type="date" id="arrival" name="arrival" value="2013-11-27" style="width: 120px;" /><br />
   Nights<br /><input type="number" name="nights" value="2" style="width: 30px;" /> <input type="submit" value="Go" /></p>
   </form>
   <hr />
@@ -106,25 +107,31 @@ $(document).ready(function() {
   <p>Devil's Head Snow Conditions</p>
   <table border="0" cellspacing="2">
   <tr>
-    <td colspan="2" align="center">Nov 13</td>
+    <td colspan="2" align="center">Nov 27</td>
     <td rowspan="2" width="5">&nbsp;</td>
-    <td rowspan="2" width="85">Closed - Tentative Open Date: 11/29/13</td>
+    <td rowspan="2" width="85">Closed -<br />
+Opening Friday<br />
+11/29 at 10am</td>
     <td rowspan="2"><img src="/images/snowconditionsboxdivrules.png" /></td>
-    <td colspan="2" align="center">Nov 14</td>
+    <td colspan="2" align="center">Nov 28</td>
     <td rowspan="2" width="5">&nbsp;</td>
-    <td rowspan="2" width="85">Closed - Tentative Open Date: 11/29/13</td>
+    <td rowspan="2" width="85">Closed -<br />
+Opening Friday<br />
+11/29 at 10am</td>
     <td rowspan="2"><img src="/images/snowconditionsboxdivrules.png" /></td>
-    <td colspan="2" align="center">Nov 15</td>
+    <td colspan="2" align="center">Nov 29</td>
     <td rowspan="2" width="5">&nbsp;</td>
-    <td rowspan="2" width="85">Closed - Tentative Open Date: 11/29/13</td>
+    <td rowspan="2" width="85">Open @ 10am<br />
+Trails: 8<br />
+Lifts: 4</td>
   </tr>
   <tr>
-    <td valign="center"><img src="/images/partlycloudy.png" alt="Partly Cloudy" /></td>
-    <td><span class="underline">31&deg;</span><br />21&deg;</td>
-    <td valign="center"><img src="/images/partlycloudy.png" alt="Partly Cloudy" /></td>
-    <td><span class="underline">31&deg;</span><br />21&deg;</td>
-    <td valign="center"><img src="/images/partlycloudy.png" alt="Partly Cloudy" /></td>
-    <td><span class="underline">31&deg;</span><br />21&deg;</td>
+    <td valign="center"><img src="/images/sunnyicon.png" /></td>
+    <td><span class="underline">26&deg;</span><br />17&deg;</td>
+    <td valign="center"><img src="/images/sunnyicon.png" /></td>
+    <td><span class="underline">29&deg;</span><br />16&deg;</td>
+    <td valign="center"><img src="/images/sunnyicon.png" /></td>
+    <td><span class="underline">31&deg;</span><br />22&deg;</td>
   </tr>
   </table>
 </div>
@@ -141,260 +148,204 @@ $(document).ready(function() {
   <div id="rightcontent">
     <img src="/images/backgrounds/themountain_background1.jpg" />
     <div class="pagecontent">
-<h1>Snow Report</h1>
-
-<h3>RESORT CLOSED - TENTATIVE OPENING DATE: NOVEMBER 29TH, 2013!</h3>
-
-<p><span>Updated: Tuesday, March 26, 20139:30 AM</span><br />
-<br />
-<span>Lift Status Report:&nbsp;</span><br />
-<span>Soft power-tilled and groomed slopes. Sunny Blue Skies! Sweet Spring skiing/snowboarding!</span></p>
-
-<table border="1" class="liftTable" style="border-collapse: collapse; width: 600px; background-color: rgb(255, 255, 255);">
-	<tbody>
-		<tr>
-			<td class="title" colspan="8" style="padding: 5px; text-align: center; color: rgb(255, 255, 255); background-color: rgb(64, 47, 29);">Devil&#39;s Head Resort Lift Status</td>
-		</tr>
-		<tr>
-			<td class="header" style="padding: 5px; text-align: center; background-color: rgb(228, 230, 234);">Lift</td>
-			<td class="header" style="padding: 5px; text-align: center; background-color: rgb(228, 230, 234);">Type</td>
-			<td class="header" style="padding: 5px; text-align: center; background-color: rgb(228, 230, 234);">Open</td>
-			<td class="header" style="padding: 5px; text-align: center; background-color: rgb(228, 230, 234);">Comments</td>
-			<td class="header" style="padding: 5px; text-align: center; background-color: rgb(228, 230, 234);">Lift</td>
-			<td class="header" style="padding: 5px; text-align: center; background-color: rgb(228, 230, 234);">Type</td>
-			<td class="header" style="padding: 5px; text-align: center; background-color: rgb(228, 230, 234);">Open</td>
-			<td class="header" style="padding: 5px; text-align: center; background-color: rgb(228, 230, 234);">Comments</td>
-		</tr>
-		<tr>
-			<td class="data" style="padding: 5px;">Wonder Carpet 400 feet</td>
-			<td class="data" style="padding: 5px;"><img alt="surface" src="/images/lift-surface.jpg" style="border-width: 0px; border-style: solid; width: 35px; height: 25px;" /></td>
-			<td class="data" style="padding: 5px;">No</td>
-			<td class="data" style="padding: 5px;">For our beginner skiers</td>
-			<td class="data" style="padding: 5px;">Wonder Carpet 300 feet</td>
-			<td class="data" style="padding: 5px;"><img alt="surface" src="/images/lift-surface.jpg" style="border-width: 0px; border-style: solid; width: 35px; height: 20px;" /></td>
-			<td class="data" style="padding: 5px;">No</td>
-			<td class="data" style="padding: 5px;">For our beginner skiers</td>
-		</tr>
-		<tr>
-			<td class="data" style="padding: 5px;">0</td>
-			<td class="data" style="padding: 5px;"><img alt="triple" src="/images/lift-triple.jpg" style="border-width: 0px; border-style: solid; width: 35px; height: 20px;" /></td>
-			<td class="data" style="padding: 5px;">No</td>
-			<td class="data" style="padding: 5px;">Triple</td>
-			<td class="data" style="padding: 5px;">00</td>
-			<td class="data" style="padding: 5px;"><img alt="double" src="/images/lift-double.jpg" style="border-width: 0px; border-style: solid; width: 35px; height: 20px;" /></td>
-			<td class="data" style="padding: 5px;">No</td>
-			<td class="data" style="padding: 5px;">Double</td>
-		</tr>
-		<tr>
-			<td class="data" style="padding: 5px;">000</td>
-			<td class="data" style="padding: 5px;"><img alt="quad" src="/images/lift-quad.jpg" style="border-width: 0px; border-style: solid; width: 35px; height: 20px;" /></td>
-			<td class="data" style="padding: 5px;">No</td>
-			<td class="data" style="padding: 5px;">Quad</td>
-			<td class="data" style="padding: 5px;">Quicksilver Express</td>
-			<td class="data" style="padding: 5px;"><img alt="quad" src="/images/lift-quad.jpg" style="border-width: 0px; border-style: solid; width: 35px; height: 20px;" /></td>
-			<td class="data" style="padding: 5px;">No</td>
-			<td class="data" style="padding: 5px;">Quad</td>
-		</tr>
-		<tr>
-			<td class="data" style="padding: 5px;">3 ~ Glacial Express</td>
-			<td class="data" style="padding: 5px;"><img alt="quad" src="/images/lift-quad.jpg" style="border-width: 0px; border-style: solid; width: 35px; height: 25px;" /></td>
-			<td class="data" style="padding: 5px;"><span>No</span></td>
-			<td class="data" style="padding: 5px;">Quad</td>
-			<td class="data" style="padding: 5px;">3 1/4</td>
-			<td class="data" style="padding: 5px;"><img alt="quad" src="/images/lift-quad.jpg" style="border-width: 0px; border-style: solid; width: 35px; height: 20px;" /></td>
-			<td class="data" style="padding: 5px;">No</td>
-			<td class="data" style="padding: 5px;">Quad</td>
-		</tr>
-		<tr>
-			<td class="data" style="padding: 5px;">3 1/2</td>
-			<td class="data" style="padding: 5px;"><img alt="double" src="/images/lift-double.jpg" style="border-width: 0px; border-style: solid; width: 35px; height: 20px;" /></td>
-			<td class="data" style="padding: 5px;">No</td>
-			<td class="data" style="padding: 5px;">Double</td>
-			<td class="data" style="padding: 5px;">4</td>
-			<td class="data" style="padding: 5px;"><img alt="double" src="/images/lift-double.jpg" style="border-width: 0px; border-style: solid; width: 35px; height: 20px;" /></td>
-			<td class="data" style="padding: 5px;">No</td>
-			<td class="data" style="padding: 5px;">Double</td>
-		</tr>
-		<tr>
-			<td class="data" style="padding: 5px;">4 1/4</td>
-			<td class="data" style="padding: 5px;"><img alt="quad" src="/images/lift-quad.jpg" style="border-width: 0px; border-style: solid; width: 35px; height: 20px;" /></td>
-			<td class="data" style="padding: 5px;">No</td>
-			<td class="data" style="padding: 5px;">Quad</td>
-			<td class="data" style="padding: 5px;">&nbsp;</td>
-			<td class="data" style="padding: 5px;">&nbsp;</td>
-			<td class="data" style="padding: 5px;">&nbsp;</td>
-			<td class="data" style="padding: 5px;">&nbsp;</td>
-		</tr>
-	</tbody>
+<h1>Snow Report for Nov 27th, 2013</h1>
+<table border="0">
+<tr>
+<td valign="top">
+<h3>Last Updated: Nov 25th, 2013 @ 9:29 AM</h3>
+<p>Weather Forecast: <strong>37&deg; / 23&deg; Cloudy</strong></p>
+<p>Snow base: <strong>Up to 18 inches</strong></p>
+<p>Snow Conditions: <strong>Closed</strong></p>
+<p>Snowmaking in the past 24 hours: <strong>Yes</strong></p>
+<p>New Snow in the past 24 hours: <strong>0 inches</strong></p>
+<p>Notes: <strong>Closed - Opening Friday, November 29th at 10am!</strong></p>
+<h3>Lift Status</h3>
+<table border="1" cellpadding="1" cellspacing="1" style="border-collapse: collapse;">
+<tr>
+  <th>Lift</th>
+  <th>Status</th>
+</tr>
+<tr>
+  <td><img src="/images/lift-surface.jpg" width="35" height="20" /> Sunkid (Short)</td>
+  <td>Closed</td>
+</tr>
+<tr>
+  <td><img src="/images/lift-surface.jpg" width="35" height="20" /> Sunkid (Long)</td>
+  <td>Closed</td>
+</tr>
+<tr>
+  <td><img src="/images/lift-triple.jpg" width="35" height="20" /> 0</td>
+  <td>Closed</td>
+</tr>
+<tr>
+  <td><img src="/images/lift-double.jpg" width="35" height="20" /> 00</td>
+  <td>Closed</td>
+</tr>
+<tr>
+  <td><img src="/images/lift-quad.jpg" width="35" height="20" /> 000 **</td>
+  <td>Closed</td>
+</tr>
+<tr>
+  <td><img src="/images/lift-quad.jpg" width="35" height="20" /> 1 Quicksilver Express</td>
+  <td>Closed</td>
+</tr>
+<tr>
+  <td><img src="/images/lift-quad.jpg" width="35" height="20" /> 3 Glacial Express</td>
+  <td>Closed</td>
+</tr>
+<tr>
+  <td><img src="/images/lift-quad.jpg" width="35" height="20" /> 3 &frac14;</td>
+  <td>Closed</td>
+</tr>
+<tr>
+  <td><img src="/images/lift-double.jpg" width="35" height="20" /> 3 &frac12;</td>
+  <td>Closed</td>
+</tr>
+<tr>
+  <td><img src="/images/lift-double.jpg" width="35" height="20" /> 4</td>
+  <td>Closed</td>
+</tr>
+<tr>
+  <td><img src="/images/lift-quad.jpg" width="35" height="20" /> 4 &frac14; **</td>
+  <td>Closed</td>
+</tr>
 </table>
-<br />
-<br />
-<span>Trail Status Report:&nbsp;</span><br />
-<span>Soft, light groomed corduroy powder! Super sweet conditions!</span>
-
-<table border="1" class="trailTable" style="border-collapse: collapse; width: 600px; background-color: rgb(255, 255, 255);">
-	<tbody>
-		<tr>
-			<td class="title" colspan="6" style="padding: 5px; text-align: center; color: rgb(255, 255, 255); background-color: rgb(64, 47, 29);">Easier Trails</td>
-		</tr>
-		<tr>
-			<td class="header" style="padding: 5px; text-align: center; background-color: rgb(228, 230, 234);">Trail</td>
-			<td class="header" style="padding: 5px; text-align: center; background-color: rgb(228, 230, 234);">Open</td>
-			<td class="header" style="padding: 5px; text-align: center; background-color: rgb(228, 230, 234);">Groomed</td>
-			<td class="header" style="padding: 5px; text-align: center; background-color: rgb(228, 230, 234);">Trail</td>
-			<td class="header" style="padding: 5px; text-align: center; background-color: rgb(228, 230, 234);">Open</td>
-			<td class="header" style="padding: 5px; text-align: center; background-color: rgb(228, 230, 234);">Groomed</td>
-		</tr>
-		<tr>
-			<td class="data" style="padding: 5px;"><img alt="green" src="/images/green.gif" style="border-width: 0px; border-style: solid; width: 16px; height: 12px;" />Pete&#39;s Dragon</td>
-			<td class="data" style="padding: 5px;"><span>No</span></td>
-			<td class="data" style="padding: 5px;">Yes</td>
-			<td class="data" style="padding: 5px;"><img alt="green" src="/images/green.gif" style="border-width: 0px; border-style: solid; width: 16px; height: 12px;" />Pete&#39;s Dragon II</td>
-			<td class="data" style="padding: 5px;"><span>No</span></td>
-			<td class="data" style="padding: 5px;">Yes</td>
-		</tr>
-		<tr>
-			<td class="data" style="padding: 5px;"><img alt="green" src="/images/green.gif" style="border-width: 0px; border-style: solid; width: 16px; height: 12px;" />Devil&#39;s Playground</td>
-			<td class="data" style="padding: 5px;"><span>No</span></td>
-			<td class="data" style="padding: 5px;">Yes</td>
-			<td class="data" style="padding: 5px;"><img alt="green" src="/images/green.gif" style="border-width: 0px; border-style: solid; width: 16px; height: 12px;" />Cirque</td>
-			<td class="data" style="padding: 5px;">No</td>
-			<td class="data" style="padding: 5px;">No</td>
-		</tr>
-		<tr>
-			<td class="data" style="padding: 5px;"><img alt="green" src="/images/green.gif" style="border-width: 0px; border-style: solid; width: 16px; height: 12px;" />The Burns</td>
-			<td class="data" style="padding: 5px;">No</td>
-			<td class="data" style="padding: 5px;">No</td>
-			<td class="data" style="padding: 5px;"><img alt="green" src="/images/green.gif" style="border-width: 0px; border-style: solid; width: 16px; height: 12px;" />Meadows</td>
-			<td class="data" style="padding: 5px;">No</td>
-			<td class="data" style="padding: 5px;">No</td>
-		</tr>
-		<tr>
-			<td class="data" style="padding: 5px;"><img alt="green" src="/images/green.gif" style="border-width: 0px; border-style: solid; width: 16px; height: 12px;" />X Country/Snowshoe Trail</td>
-			<td class="data" style="padding: 5px;"><span>No</span></td>
-			<td class="data" style="padding: 5px;">Yes</td>
-		</tr>
-	</tbody>
+</td>
+<td width="30">&nbsp;</td>
+<td valign="top">
+<h3>Slope Status</h3>
+<table border="1" cellpadding="1" cellspacing="1" style="border-collapse: collapse;">
+<tr>
+  <th>Slope</th>
+  <th>Status</th>
+</tr>
+<tr>
+  <td><img src="/images/green.gif" /> Pete's Dragon</td>
+  <td>Closed</td>
+</tr>
+<tr>
+  <td><img src="/images/green.gif" /> Pete's Dragon II</td>
+  <td>Closed</td>
+</tr>
+<tr>
+  <td><img src="/images/green.gif" /> Devil's Playground</td>
+  <td>Closed</td>
+</tr>
+<tr>
+  <td><img src="/images/black.gif" /> Devil's Alley</td>
+  <td>Closed</td>
+</tr>
+<tr>
+  <td><img src="/images/green.gif" /> Cirque</td>
+  <td>Closed</td>
+</tr>
+<tr>
+  <td><img src="/images/green.gif" /> The Burns **</td>
+  <td>Closed</td>
+</tr>
+<tr>
+  <td><img src="/images/green.gif" /> The Meadows **</td>
+  <td>Closed</td>
+</tr>
+<tr>
+  <td><img src="/images/blue.gif" /> Chicken Ridge</td>
+  <td>Closed</td>
+</tr>
+<tr>
+  <td><img src="/images/blue.gif" /> Dante's Inferno</td>
+  <td>Closed</td>
+</tr>
+<tr>
+  <td><img src="/images/blue.gif" /> Cauldron's Cutoff</td>
+  <td>Closed</td>
+</tr>
+<tr>
+  <td><img src="/images/blue.gif" /> The Cauldron</td>
+  <td>Closed</td>
+</tr>
+<tr>
+  <td><img src="/images/orange.gif" /> Dante's Cutoff</td>
+  <td>Closed</td>
+</tr>
+<tr>
+  <td><img src="/images/black.gif" /> Devil's Air Park</td>
+  <td>Closed</td>
+</tr>
+<tr>
+  <td><img src="/images/black.gif" /> Sidewinder</td>
+  <td>Closed</td>
+</tr>
+<tr>
+  <td><img src="/images/black.gif" /> Cyclops</td>
+  <td>Closed</td>
+</tr>
+<tr>
+  <td><img src="/images/black.gif" /> Lower Cyclops</td>
+  <td>Closed</td>
+</tr>
+<tr>
+  <td><img src="/images/black.gif" /> Cyclop's Chute</td>
+  <td>Closed</td>
+</tr>
+<tr>
+  <td><img src="/images/orange.gif" /> The Serpent's Mogul</td>
+  <td>Closed</td>
+</tr>
+<tr>
+  <td><img src="/images/orange.gif" /> Lower Serpent</td>
+  <td>Closed</td>
+</tr>
+<tr>
+  <td><img src="/images/orange.gif" /> Half Pipe</td>
+  <td>Closed</td>
+</tr>
+<tr>
+  <td><img src="/images/orange.gif" /> The Zone</td>
+  <td>Closed</td>
+</tr>
+<tr>
+  <td><img src="/images/orange.gif" /> The Serpent</td>
+  <td>Closed</td>
+</tr>
+<tr>
+  <td><img src="/images/black.gif" /> Revenge **</td>
+  <td>Closed</td>
+</tr>
+<tr>
+  <td><img src="/images/black.gif" /> Serpent's Escape</td>
+  <td>Closed</td>
+</tr>
+<tr>
+  <td><img src="/images/black.gif" /> Lower Revenge **</td>
+  <td>Closed</td>
+</tr>
+<tr>
+  <td><img src="/images/black.gif" /> Way Back **</td>
+  <td>Closed</td>
+</tr>
+<tr>
+  <td><img src="/images/black.gif" /> Way Over **</td>
+  <td>Closed</td>
+</tr>
+<tr>
+  <td><img src="/images/black.gif" /> Roundabout **</td>
+  <td>Closed</td>
+</tr>
+<tr>
+  <td><img src="/images/black.gif" /> The Glade **</td>
+  <td>Closed</td>
+</tr>
+<tr>
+  <td><img src="/images/black.gif" /> The Outer Limits **</td>
+  <td>Closed</td>
+</tr>
+<tr>
+  <td><img src="/images/green.gif" /> Snowshoe Trail **</td>
+  <td>Closed</td>
+</tr>
 </table>
-&nbsp;
-
-<table border="1" class="trailTable" style="border-collapse: collapse; width: 600px; background-color: rgb(255, 255, 255);">
-	<tbody>
-		<tr>
-			<td class="title" colspan="6" style="padding: 5px; text-align: center; color: rgb(255, 255, 255); background-color: rgb(64, 47, 29);">More Difficult Trails</td>
-		</tr>
-		<tr>
-			<td class="header" style="padding: 5px; text-align: center; background-color: rgb(228, 230, 234);">Trail</td>
-			<td class="header" style="padding: 5px; text-align: center; background-color: rgb(228, 230, 234);">Open</td>
-			<td class="header" style="padding: 5px; text-align: center; background-color: rgb(228, 230, 234);">Groomed</td>
-			<td class="header" style="padding: 5px; text-align: center; background-color: rgb(228, 230, 234);">Trail</td>
-			<td class="header" style="padding: 5px; text-align: center; background-color: rgb(228, 230, 234);">Open</td>
-			<td class="header" style="padding: 5px; text-align: center; background-color: rgb(228, 230, 234);">Groomed</td>
-		</tr>
-		<tr>
-			<td class="data" style="padding: 5px;"><img alt="blue" src="/images/blue.gif" style="border-width: 0px; border-style: solid; width: 16px; height: 12px;" />Chicken Ridge</td>
-			<td class="data" style="padding: 5px;"><span>No</span></td>
-			<td class="data" style="padding: 5px;">Yes</td>
-			<td class="data" style="padding: 5px;"><img alt="blue" src="/images/blue.gif" style="border-width: 0px; border-style: solid; width: 16px; height: 12px;" />Cauldron&#39;s Cutoff</td>
-			<td class="data" style="padding: 5px;"><span>No</span></td>
-			<td class="data" style="padding: 5px;">Yes</td>
-		</tr>
-		<tr>
-			<td class="data" style="padding: 5px;"><img alt="blue" src="/images/blue.gif" style="border-width: 0px; border-style: solid; width: 16px; height: 12px;" />Dante&#39;s Inferno</td>
-			<td class="data" style="padding: 5px;"><span>No</span></td>
-			<td class="data" style="padding: 5px;">Yes</td>
-			<td class="data" style="padding: 5px;"><img alt="blue" src="/images/blue.gif" style="border-width: 0px; border-style: solid; width: 16px; height: 12px;" />The Cauldron</td>
-			<td class="data" style="padding: 5px;"><span>No</span></td>
-			<td class="data" style="padding: 5px;">Yes</td>
-		</tr>
-		<tr>
-			<td class="data" style="padding: 5px;"><img alt="blue" src="/images/blue.gif" style="border-width: 0px; border-style: solid; width: 16px; height: 12px;" />Dante&#39;s Cutoff</td>
-			<td class="data" style="padding: 5px;"><span>No</span></td>
-			<td class="data" style="padding: 5px;">Yes</td>
-		</tr>
-	</tbody>
-</table>
-&nbsp;
-
-<table border="1" class="trailTable" style="border-collapse: collapse; width: 600px; background-color: rgb(255, 255, 255);">
-	<tbody>
-		<tr>
-			<td class="title" colspan="6" style="padding: 5px; text-align: center; color: rgb(255, 255, 255); background-color: rgb(64, 47, 29);">Most Difficult Trails</td>
-		</tr>
-		<tr>
-			<td class="header" style="padding: 5px; text-align: center; background-color: rgb(228, 230, 234);">Trail</td>
-			<td class="header" style="padding: 5px; text-align: center; background-color: rgb(228, 230, 234);">Open</td>
-			<td class="header" style="padding: 5px; text-align: center; background-color: rgb(228, 230, 234);">Groomed</td>
-			<td class="header" style="padding: 5px; text-align: center; background-color: rgb(228, 230, 234);">Trail</td>
-			<td class="header" style="padding: 5px; text-align: center; background-color: rgb(228, 230, 234);">Open</td>
-			<td class="header" style="padding: 5px; text-align: center; background-color: rgb(228, 230, 234);">Groomed</td>
-		</tr>
-		<tr>
-			<td class="data" style="padding: 5px;"><img alt="black" src="/images/black.gif" style="border-width: 0px; border-style: solid; width: 16px; height: 12px;" />Devil&#39;s Alley</td>
-			<td class="data" style="padding: 5px;"><span>No</span></td>
-			<td class="data" style="padding: 5px;">Yes</td>
-			<td class="data" style="padding: 5px;"><img alt="black" src="/images/black.gif" style="border-width: 0px; border-style: solid; width: 16px; height: 12px;" />Devil&#39;s Air Park</td>
-			<td class="data" style="padding: 5px;"><span>No</span></td>
-			<td class="data" style="padding: 5px;">Yes</td>
-		</tr>
-		<tr>
-			<td class="data" style="padding: 5px;"><img alt="black" src="/images/black.gif" style="border-width: 0px; border-style: solid; width: 16px; height: 12px;" />Cyclops</td>
-			<td class="data" style="padding: 5px;"><span>No</span></td>
-			<td class="data" style="padding: 5px;">Yes</td>
-			<td class="data" style="padding: 5px;"><img alt="black" src="/images/black.gif" style="border-width: 0px; border-style: solid; width: 16px; height: 12px;" />Cyclops Chute</td>
-			<td class="data" style="padding: 5px;"><span>No</span></td>
-			<td class="data" style="padding: 5px;">Yes</td>
-		</tr>
-		<tr>
-			<td class="data" style="padding: 5px;"><img alt="black" src="/images/black.gif" style="border-width: 0px; border-style: solid; width: 16px; height: 12px;" />Lower Cyclops</td>
-			<td class="data" style="padding: 5px;"><span>No</span></td>
-			<td class="data" style="padding: 5px;">Yes</td>
-			<td class="data" style="padding: 5px;"><img alt="black" src="/images/black.gif" style="border-width: 0px; border-style: solid; width: 16px; height: 12px;" />The Serpent&#39;s Mogul</td>
-			<td class="data" style="padding: 5px;"><span>No</span></td>
-			<td class="data" style="padding: 5px;">Yes</td>
-		</tr>
-		<tr>
-			<td class="data" style="padding: 5px;"><img alt="black" src="/images/black.gif" style="border-width: 0px; border-style: solid; width: 16px; height: 12px;" />Lower Serpent</td>
-			<td class="data" style="padding: 5px;"><span>No</span></td>
-			<td class="data" style="padding: 5px;">Yes</td>
-			<td class="data" style="padding: 5px;"><img alt="black" src="/images/black.gif" style="border-width: 0px; border-style: solid; width: 16px; height: 12px;" />The Serpent</td>
-			<td class="data" style="padding: 5px;"><span>No</span></td>
-			<td class="data" style="padding: 5px;">Yes</td>
-		</tr>
-		<tr>
-			<td class="data" style="padding: 5px;"><img alt="black" src="/images/black.gif" style="border-width: 0px; border-style: solid; width: 16px; height: 12px;" />The Serpent&#39;s Escape</td>
-			<td class="data" style="padding: 5px;"><span>No</span></td>
-			<td class="data" style="padding: 5px;">Yes</td>
-			<td class="data" style="padding: 5px;"><img alt="black" src="/images/black.gif" style="border-width: 0px; border-style: solid; width: 16px; height: 12px;" />Revenge</td>
-			<td class="data" style="padding: 5px;"><span>No</span></td>
-			<td class="data" style="padding: 5px;">Yes</td>
-		</tr>
-		<tr>
-			<td class="data" style="padding: 5px;"><img alt="black" src="/images/black.gif" style="border-width: 0px; border-style: solid; width: 16px; height: 12px;" />The Way Over</td>
-			<td class="data" style="padding: 5px;"><span>No</span></td>
-			<td class="data" style="padding: 5px;">Yes</td>
-			<td class="data" style="padding: 5px;"><img alt="black" src="/images/black.gif" style="border-width: 0px; border-style: solid; width: 16px; height: 12px;" />Roundabout</td>
-			<td class="data" style="padding: 5px;"><span>No</span></td>
-			<td class="data" style="padding: 5px;">Yes</td>
-		</tr>
-		<tr>
-			<td class="data" style="padding: 5px;"><img alt="black" src="/images/black.gif" style="border-width: 0px; border-style: solid; width: 16px; height: 12px;" />Outer Limits</td>
-			<td class="data" style="padding: 5px;"><span>No</span></td>
-			<td class="data" style="padding: 5px;">Yes</td>
-			<td class="data" style="padding: 5px;"><img alt="black" src="/images/black.gif" style="border-width: 0px; border-style: solid; width: 16px; height: 12px;" />The Zone</td>
-			<td class="data" style="padding: 5px;"><span>No</span></td>
-			<td class="data" style="padding: 5px;">Yes</td>
-		</tr>
-		<tr>
-			<td class="data" style="padding: 5px;"><img alt="black" src="/images/black.gif" style="border-width: 0px; border-style: solid; width: 16px; height: 12px;" />Revenge Runout</td>
-			<td class="data" style="padding: 5px;"><span>No</span></td>
-			<td class="data" style="padding: 5px;">Yes</td>
-			<td class="data" style="padding: 5px;"><img alt="black" src="/images/black.gif" style="border-width: 0px; border-style: solid; width: 16px; height: 12px;" />Sidewinder</td>
-			<td class="data" style="padding: 5px;"><span>No</span></td>
-			<td class="data" style="padding: 5px;">Yes<br />
-			&nbsp;</td>
-		</tr>
-	</tbody>
+</td>
+</tr>
 </table>
       <p>&nbsp;</p>
     </div>
