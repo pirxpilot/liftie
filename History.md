@@ -1,5 +1,11 @@
 
-3.17 / 2013-11-27 
+3.3.18 / 2013-11-28 
+==================
+
+ * fix Mad River Glen; add opening day
+ * fix `Object.keys called on non-object` error in stats calculation
+
+3.3.17 / 2013-11-27 
 ==================
 
  * fix Devil's Head
