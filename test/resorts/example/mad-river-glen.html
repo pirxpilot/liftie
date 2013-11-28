@@ -1,793 +1,617 @@
+<!DOCTYPE html>
+<html lang="en-US">
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
-<title> Mad River Glen Snow Report : Conditions</title>	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="title" content="MRG Snow Report Tuesday, October 15, 2013" />
-<meta name="description" content='Temp: 37 &deg; F   Windchill: 37   Trails Open: 0 Lifts Open: 0 New Snow: 0-0"     Surface: Grass ' />
-<meta name="medium" content="image" />
-<link rel="image_src" href="http://www.madriverglen.com/todayimage.php" />
 
-<BASE HREF="http://www.madriverglen.com/">
-<META name="AUTHOR" content="mrg web team">
-<meta name="title" content="MRG Snow Report Tuesday, October 15, 2013" />
-<meta name="description" content='Temp: 37 &deg; F   Windchill: 37   Trails Open: 0 Lifts Open: 0 New Snow: 0-0"     Surface: Grass ' />
-<meta name="medium" content="image" />
-<link rel="image_src" href="http://www.madriverglen.com/todayimage.php" />    
-    <!-- Mad River Glen style sheets for web and print -->
-	<link media="screen" rel="stylesheet" type="text/css" href="/css/all.css" />
-	<link media="print" rel="stylesheet" type="text/css" href="/css/print.css" />
-	
-	<!-- Sub menu style sheet and javascript -->
-<link href="css/p7pmm/p7PMMv08.css" rel="stylesheet" type="text/css" media="all" />
-<script type="text/javascript" src="js/p7pmm/p7PMMscripts.js"></script>
+	<title>
+		Ski Conditions and Snow Report | Mad River Glen, VT				
+	</title>
+	<meta charset="UTF-8" />
+	<meta content="" name="keywords">
+			<meta content="Mad River Glen, Fayston, Vermont : High in the mountains of Vermont, there is a ski area like no other. A place where skiing is still a sport, not an industry. A place where skiing remains an outdoor adventure in a pristine, natural setting. A place so perfect, its loyal skiers banded together to preserve and protect it forever." name="description">
+		
+	<link rel="stylesheet" href="/stylesheets/main.css?1385649211" type="text/css" />
+	<link rel="stylesheet" href="/stylesheets/mrg.css?1385649211" type="text/css" />
+	<link rel="stylesheet" href="/stylesheets/store/store.css?1385649211" type="text/css" />	
+	<script type="text/javascript" src="/scripts/jquery-1.7.1.min.js" ></script>
+	<script type="text/javascript" src="/scripts/jquery-ui-1.8.16.custom.min.js" ></script>
+	<script type="text/javascript" src="/scripts/passapp.js" ></script>
+	<script type="text/javascript" src="/scripts/handlebars-1.0.rc.1.js" ></script>
+	<script type="text/javascript" src="/scripts/jquery.numeric.js" ></script>
+	<link href="/scripts/dropdown/style.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="/scripts/dropdown/script.js"></script>
+	<script type="text/javascript" src="/scripts/store/store.js" ></script>
 
-	<!-- Favicon -->
-    <link rel="shortcut icon" href="/favicon.ico">
-	<link href='/css-include/jquery-ui-1.8.10.custom.css' media='screen' rel='stylesheet' type='text/css' />
-
-
-	<script type="text/javascript" src="/js-include/jquery-1.7.2.min.js"></script>
-	<script type="text/javascript" src="/js-include/jquery-ui-1.8.16.custom.min.js"></script>
-
-    <!-- clear inputs for modern browsers -->
-	<script type="text/javascript" src="/js/clear-inputs.js"></script>
-	<script type="text/javascript" src="/js/ie-hover-ns-pack.js"></script>
-	<!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="css/ie.css" /><![endif]-->
-	<!--[if lt IE 7]><script type="text/javascript" src="js/ie-png.js"></script><![endif]-->
-   
+	<!-- Function to load handlebar templates -->
 	<script type="text/javascript">
-	function visib(obj) {
-		if (document.getElementById(obj).style.display != "block") {
-			document.getElementById(obj).style.display = "block";
-		} else {
-			document.getElementById(obj).style.display = "none";
-		}
+	function cleanText(text){
+		return text;
+	}
+		function loadTemplate(path) {
+		var template = null;
+	    $.ajax({
+	        url: path,
+	        cache: false,
+	        async: false,
+	        success: function(data) {
+	            source    = data;
+	            template  = Handlebars.compile(source);
+	        }               
+	    });
+	    return template;
 	}
 	</script>
-   
-   <!-- BEGIN Google Analytics asynchronous -->
-    <script type="text/javascript">
-		  var _gaq = _gaq || [];
-			_gaq.push(['_setAccount', 'UA-28762768-1']);
-			_gaq.push(['_setDomainName', "madriverglen.com"]);
-			_gaq.push(['_setAllowLinker', true]);
-			_gaq.push(['_trackPageview']);
-		
-		  (function() {
-			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-		  })();
-	</script>
-	<!-- END Google Analytics -->     
+	
+	<!-- <link rel="stylesheet" href="/stylesheets/jquery-ui-1.8.16.custom.css" type="text/css" /> -->
+	<link rel="stylesheet" href="/stylesheets/css/smoothness/jquery-ui-1.9.2.custom.min.css" />
+	<STYLE TYPE="text/css">
+		.badValue {background:red; color:white}
+		#sidebar {display:none;}
+		#refundablee { background-color: #990; padding: 8px; border-right: inset 3pt black; border-bottom: outset 3pt black;  padding: 8px; border-right: inset 3pt black; border-bottom: outset 3pt black;  width: 84px; display: none ; }
+		</style>
+<meta name="google-site-verification" content="mSuJWt2ss7IABnYg81qh3k2rBW9tKHrW55P4-fhuQk4" /> 
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-28762768-1']);
+  _gaq.push(['_setDomainName', 'madriverglen.com']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+	
+			
 
 </head>
+
 <body>
-<div class="wrapper">
-  <div class="wrapper">
-    <div class="w1">
-      <div class="w2 vcard">
-        <!-- header sub-->
-        <div id="header-sub">
-          <!-- header logo and home link -->
-          <h1> <span><a class="fn org url" href="http://www.madriverglen.com">Mad River Glen. Ski It If You Can</a></span> <img src="/images/bg-logo-print.gif" alt="Mad River Glen. Ski It If You Can" width="404" height="111" /></h1>
-          <!-- intro -->
-          <div class="intro">
-            <div>
-              <ul>
-                <li><img src="/images/sub-header-01.jpg" alt="image description" width="960" height="285" /></li>
-                <li><img src="/images/sub-header-01.jpg" alt="image description" width="960" height="285" /></li>
-                <li><img src="/images/sub-header-01.jpg" alt="image description" width="960" height="285" /></li>
-              </ul>
-            </div>
-            
-            
-    <!-- Page Title -->
 
-            	<div id="pagetitle">
-<span class="TAG_PROP1">Conditions</span>				</div>
-          </div>
+<div id="pop1" class="popbox">
+   
+</div>
 
-        <div>
+<div id="container">
+	<div id="banner-logo"></div>
+		<div id="banner-sub">
+	<div id="banner-sub-info">
+		
+		<table width="100%" cellpadding="0" cellspacing="0">
+			<tr>
+				<td align="left"><div class="pagetitle"><h1 class="pagetitle" style="margin: 0px;">
+				SKI CONDITIONS AND SNOW REPORT</h1></div></td>
+				<td align="right">
+					<table width="290px;" cellpadding="0" cellspacing="0" id="whats-new" border="0">
+						<tr>
+							<td width="20"><div class="whats-new-l"></div></td>
+							<td class="full" width="125"><a href="/whats-new" class="whats-new">WHAT'S NEW?</a></td>
+							<td class="full" align="left">
+							<div style="padding-top: 5px;">
+								<a href=""><img src="/images/arrow.png" border="0" /></a>
+							</div>
+							</td>
+						</tr>
+					</table>
+					
+				</td>
+			</tr>
+		</table>
+	</div>	
+	</div>
+	
+	<div id="banner-menu">
+		<div id="nav">
+ <div class="box">
 
-          <div class="title">
-            <!-- h2 header -->
-            <a href="/?Page=whatsnew.php" ><h2>What&rsquo;s&nbsp;New?<img src="/images/arrow.png" STYLE="position:relative;top:10px;left:5px;" /></h2></a>
-            <span class="l">&nbsp;</span></div>
-        </div>
-        
-		</div>
-	    <div style="clear:both"></div>
-        
-        
-        
-        <!-- main -->
-        <div class="main">
-          <!-- content -->
-          <div id="contentwide">
-            <h3><span>
-			</span></h3>
-<title>Conditions</title>
-<script language="javascript">
-	function visib(obj) {
-		if (document.getElementById(obj).style.display != "block") {
-			document.getElementById(obj).style.display = "block";
-		} else {
-			document.getElementById(obj).style.display = "none";
-		}
-	}
-	document.getElementById('submen').style.display = "none";
-</script>
+ 	  	<ul class="menu" id="menu" style="float:left; width: 700px;">
+			<li><a href="/" class="menulink">HOME</a></li><li><a href="" onclick="return false;" class="menulink">SKIING</a><ul><li><div><a href="/skiing/conditions">Conditions</a></div><div class="title-container"><div class="menu-break" ></div></div></li><li><div><a href="/skiing/lift-tickets">Lift Tickets</a></div><div class="title-container"><div class="menu-break" ></div></div></li><li><div><a href="/skiing/weather">Weather</a></div><div class="title-container"><div class="menu-break" ></div></div></li><li><div><a href="/skiing/ski-school">Ski School</a></div><div class="title-container"><div class="menu-break" ></div></div></li><li><div><a href="/skiing/season-passes">Season Passes</a></div><div class="title-container"><div class="menu-break" ></div></div></li><li><div><a href="/skiing/lift-ticket-deals">Lift Ticket Deals</a></div><div class="title-container"><div class="menu-break" ></div></div></li><li><div><a href="/skiing/trail-map">Trail Maps</a></div><div class="title-container"><div class="menu-break" ></div></div></li><li><div><a href="/skiing/ski-rental">Ski Rental and Repair</a></div><div class="title-container"><div class="menu-break" ></div></div></li><li><div><a href="/skiing/telemark-skiing">Telemark Skiing</a></div><div class="title-container"></div></li></ul></li><li><a href="" onclick="return false;" class="menulink">VISITING</a><ul><li><div><a href="/visit/event-calendar">Event Calendar</a></div><div class="title-container"><div class="menu-break" ></div></div></li><li><div><a href="/visit/lodging">Lodging</a></div><div class="title-container"><div class="menu-break" ></div></div></li><li><div><a href="/visit/local-business">Local Businesses</a></div><div class="title-container"><div class="menu-break" ></div></div></li><li><div><a href="/visit/groups">Groups</a></div><div class="title-container"><div class="menu-break" ></div></div></li><li><div><a href="/visit/directions">Directions</a></div><div class="title-container"><div class="menu-break" ></div></div></li><li><div><a href="/images/resources/MRG_2014_Area_Guide.pdf">MRG Area Guide</a></div><div class="title-container"><div class="menu-break" ></div></div></li><li><div><a href="/visit/ride-share">Directions</a></div><div class="title-container"></div></li></ul></li><li><a href="" onclick="return false;" class="menulink">MOUNTAIN</a><ul><li><div><a href="https://secure.madriverglen.com/store">Mad River General Store</a></div><div class="title-container"><div class="menu-break" ></div></div></li><li><div><a href="/mountain/day-care">Daycare</a></div><div class="title-container"><div class="menu-break" ></div></div></li><li><div><a href="/mountain/restaurants">Restaurants</a></div><div class="title-container"><div class="menu-break" ></div></div></li><li><div><a href="/mountain/naturalist-programs">Naturalist Programs</a></div><div class="title-container"><div class="menu-break" ></div></div></li><li><div><a href="/mountain/catering-and-events">Catering and Events</a></div><div class="title-container"><div class="menu-break" ></div></div></li><li><div><a href="/mountain/ski-clubs">Ski Clubs</a></div><div class="title-container"><div class="menu-break" ></div></div></li><li><div><a href="/mountain/ski-racing">Racing</a></div><div class="title-container"><div class="menu-break" ></div></div></li><li><div><a href="/mountain/history">MRG History</a></div><div class="title-container"></div></li></ul></li><li><a href="" onclick="return false;" class="menulink">THE CO-OP</a><ul><li><div><a href="/coop/about-the-coop">About The Co-op</a></div><div class="title-container"><div class="menu-break" ></div></div></li><li><div><a href="/coop/buy-a-share-today">Buy A Share Today!</a></div><div class="title-container"><div class="menu-break" ></div></div></li><li><div><a href="http://www.madriverglen.coop/" target="_blank">Co-op Website</a></div><div class="title-container"></div></li></ul></li><li><a href="" onclick="return false;" class="menulink">CONTACT US</a><ul><li><div><a href="/contact/send-a-message">Send A Message</a></div><div class="title-container"><div class="menu-break" ></div></div></li><li><div><a href="/contact/employment-opportunities">Employment</a></div><div class="title-container"><div class="menu-break" ></div></div></li><li><div><a href="/contact/forms-and-documents">Forms and Applications</a></div><div class="title-container"></div></li></ul></li>			
+		</ul>
+  		<ul class="socials">
+              <li class="twitter"><a href="http://twitter.com/madriverglen" target="_blank" title='Follow us on Twitter'><span><em>twitter</em></span></a></li>
+              <li class="facebook"><a href="http://www.facebook.com/home.php#!/pages/Mad-River-Glen/90212840431" target="_blank" title='Like us on Facebook'><span><em>facebook</em></span></a></li>
+              <li class="you-tube"><a href="http://www.youtube.com/user/madriverglenvermont" target="_blank" title='Watch us on YouTube'><span><em>you tube</em></span></a></li>
+              <li class="flicker"><a href="http://www.flickr.com/groups/madriverglen/" target="_blank" title='Look at us on Flikr'><span><em>flickr</em></span></a></li>
+  		</ul>
+ </div>
+</div>
+      	
+	</div>
+	
+	<div id="banner-conditions">
+	<div>
+	      <table width="" cellpadding="0" cellspacing="0" border=0>
+	      <tr>
+	      	<td colspan="2"><div class="banner-conditions-top"></div></td>
+	      </tr>
+	      	<tr>
+	      	
+	      		<td class="banner-conditions-content">
+	      			<ul>
+	      				<a href="/skiing/conditions/" >
+						<li><span>Trails Open:</span> 0</li>
+						<li><span>Lifts Open:</span> 0</li>
+						<li><span>New Snow:</span> 0-0"</li>
+						<li>Click for more...</li>
+						</a>
+					</ul>
+	      		</td>
+	      		<td class="banner-conditions-content">
+	      		
+		      		<ul>
+		      			<a href="/skiing/weather" >
+						<li><span>Surface:</span> Wet Snow...</li>
+						<li><span>Temp:</span> 13</li>
+						<li><span>Windchill:</span> 13</li>
+						<li>More Weather...</li>
+						</a>
+	              </ul>
+	              
+	      		</td>
+	      	</tr>
+	      	<tr>
+	      	<td colspan="2"><div class="banner-conditions-bottom"></div></td>
+	      </tr>
+	      </table>
+	      
+	        
+	      
+      </div>
+    </div>
+
+	<div id="pagecontentcontainer">
+	<table width="960" cellpadding="0" cellspacing="0">
+		<tr>
+			<td class="pagecontent-cell">
+			<table width="100%" cellpadding="0" cellspacing="0" border=0>
+				<tr>
+								<td valign="top" width="700" style="padding-right: 20px;">
+								<div id="pagecontent">
+
+
+
+
+
+<div>
 <script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script>
-
 <script>function fbs_click() {u='http://www.madriverglen.com/conditions/';t=document.title;window.open('http://www.facebook.com/sharer.php?u='+encodeURIComponent(u)+'&t='+encodeURIComponent(t),'sharer','toolbar=0,status=0,width=626,height=436');return false;}</script><style> html .fb_share_button { display: -moz-inline-block; display:inline-block; padding:1px 20px 2px 5px; height:12px; border:1px solid #d8dfea; background:url(http://www.madriverglen.com/4273uaqa.gif) no-repeat top right; } html .fb_share_button:hover { color:#fff; border-color:#295582; background:#3b5998 url(http://www.madriverglen.com/4273uaqa.gif) no-repeat top right; text-decoration:none; } </style> <a href="http://www.facebook.com/share.php?u=http://www.madriverglen.com/conditions/" class="fb_share_button" onclick="return fbs_click()" target="_blank" style="text-decoration:none;">Share</a><div id='cond-top'>
-<div id='cond-today'>
-<h3>Mad River Today <a href="snowreport1.php"><img src='/images/printericon.jpg' alt='Click here for a printer-friendly version of this report' style='float:right;'></a></h3>
-	<div align="center"></div>
-	<p align="left">Updated on <b>Tuesday, October 15, 2013</b> at <b>08:00:00</b></p>
-	<div align="left"><p style="text-align: center">
-	&nbsp;</p>
-<p style="text-align: center">
-	<span style="font-size:18px;"><strong><a href="http://madriverglen.com/deals/">Capitalize on Mad River Glen&#39;s Best Values of the Season&nbsp;<br />
-	Get Your Mad Card Today</a></strong></span></p>
-<p style="text-align: center">
-	<strong style="font-size: 18px;">The Mad Card gets you;</strong></p>
-<ul style="color: rgb(58, 39, 31); font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; line-height: 18px;">
-	<li class="todaybodytext">
-		3 transferable day tickets good any time during the ski season</li>
-	<li class="todaybodytext">
-		$5 off any additional regularly priced full day lift ticket purchased throughout the season (Limit: 1 per Mad Card/Day)</li>
-	<li class="todaybodytext">
-		<strong>Mad Cards are sold until December 15.</strong></li>
+</div>
+<table width="100%">
+	<tr>
+		<td><h3>Mad River Today</h3></td>
+		<td align="right"><a href="/printable/conditions" target="_blank"><img src="/images/print.jpg" height="30" border="0" /></a></td>
+	</tr>
+</table>
+<div style="margin-bottom: 20px;">Updated on <b>Monday, September 23, 2013</b> at <b>13:00:00</b></div>
+
+<div style="margin-bottom: 20px;">
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<p style="text-align: center;"><span style="text-decoration: underline; font-size: 14pt;"><strong>Happy Thanksgiving Eve</strong></span><span style="font-family: 'comic sans ms', sans-serif;"><br />&nbsp;<br />We picked up another 5" or so overnight after the rain changed to snow yesterday afternoon. This on top of maybe 2-4" the night before and the 6-8" from the past weekend, it's starting to look legitimately winter-like here for ThanksgivinGl . While we have projected opening for the December 14-15 weekend we will crank things up sooner if Mother Nature allows. So be sure to keep an eye on the latest from The Single Chair Weather Blog and to this snow report.<br /></span></p>
+</body>
+</html></div>
+
+<div>
+<h3>General Conditions</h3>
+<div style="margin-top: 10px">
+Tuesday November 26, 2013 
+07:11:04</div> 
+
+
+<table width="100%" cellspacing="10">
+	<tr>
+		<td valign="top" width="50%">
+		<b>Today's Weather</b>
+		<div>Current Base Temp: 30&#8457;</div> 
+		<div>Current Summit Temp: 24&#8457;</div> 
+		
+		<div>New Snow: 0" - 0"</div>
+		
+		<div>Snowfall to Date: 14" - 18"</div>
+		</td>
+		<td valign="top">
+		<b>Lifts & Trails</b>
+		<div>Trails Open Today: 0 </div>
+		<div>Lifts Open Today: 0</div>
+		<div>Lifts Open Today At: </div>	
+		<div>Lifts Close Today At: </div>	
+		Weekend Hours:	8:30 to 4:30
+		</td>
+	</tr>
+	<tr>
+		<td>
+		<b>Surface Conditions</b>
+		<div>Primary: Wet Snow</div>
+		<div>Secondary: </div>
+		</td>
+		<td></td>
+	</tr>
+</table>
+
+<h3>Trail Conditions and Lift Information</h3>
+
+<style type="text/css">
+.black-trail{ background-color: black; color: white; font-weight: bold; }
+.black-sign{ background-image: url(/images/blackdiamond.gif); background-position: 5px; center; background-repeat: no-repeat; padding-left: 25px; }
+.blue-sign{ background-image: url(/images/bluesquare.gif); background-position: 5px; center; background-repeat: no-repeat; padding-left: 25px; }
+.green-sign{ background-image: url(/images/greencircle.gif); background-position: 5px; center; background-repeat: no-repeat; padding-left: 25px; }
+</style>
+<table width="100%" cellpadding="0" cellspacing="0" style="margin-top: 10px;">
+	<tr>
+		<td valign="top" width="50%">
+			<table width="100%" cellpadding="5" cellspacing="0" border="1" style="color: black;">
+			<tr><td width="50%"></td><td width="25%" align="center">Open</td><td align="center">Groomed</td>
+						<tr><td class="black-trail">Upper Single Chair</td><td bgcolor="gray">&nbsp;</td><td bgcolor="gray">&nbsp;</td></tr>
+							<tr><td 
+										class="blue-sign"									>Catamount</td>
+				<td align="center" style="font-size: 24px;"></td>
+				<td align="center" style="font-size: 24px;"></td></tr>
+							<tr><td 
+															class="black-sign"				>Catamount Bowl</td>
+				<td align="center" style="font-size: 24px;"></td>
+				<td align="center" style="font-size: 24px;"></td></tr>
+							<tr><td 
+															class="black-sign"				>Chute</td>
+				<td align="center" style="font-size: 24px;"></td>
+				<td align="center" style="font-size: 24px;"></td></tr>
+							<tr><td 
+															class="black-sign"				>Creamery</td>
+				<td align="center" style="font-size: 24px;"></td>
+				<td align="center" style="font-size: 24px;"></td></tr>
+							<tr><td 
+															class="black-sign"				>Fall Line</td>
+				<td align="center" style="font-size: 24px;"></td>
+				<td align="center" style="font-size: 24px;"></td></tr>
+							<tr><td 
+															class="black-sign"				>Lower Antelope</td>
+				<td align="center" style="font-size: 24px;"></td>
+				<td align="center" style="font-size: 24px;"></td></tr>
+							<tr><td 
+															class="black-sign"				>Paradise</td>
+				<td align="center" style="font-size: 24px;"></td>
+				<td align="center" style="font-size: 24px;"></td></tr>
+							<tr><td 
+										class="blue-sign"									>Upper Antelope</td>
+				<td align="center" style="font-size: 24px;"></td>
+				<td align="center" style="font-size: 24px;"></td></tr>
+									<tr><td class="black-trail">Lower Single Chair</td><td bgcolor="gray">&nbsp;</td><td bgcolor="gray">&nbsp;</td></tr>
+							<tr><td 
+															class="black-sign"				>Beaver</td>
+				<td align="center" style="font-size: 24px;"></td>
+				<td align="center" style="font-size: 24px;"></td></tr>
+							<tr><td 
+															class="black-sign"				>Lift Line</td>
+				<td align="center" style="font-size: 24px;"></td>
+				<td align="center" style="font-size: 24px;"></td></tr>
+							<tr><td 
+															class="black-sign"				>Lynx</td>
+				<td align="center" style="font-size: 24px;"></td>
+				<td align="center" style="font-size: 24px;"></td></tr>
+							<tr><td 
+															class="black-sign"				>Upper Glades</td>
+				<td align="center" style="font-size: 24px;"></td>
+				<td align="center" style="font-size: 24px;"></td></tr>
+									<tr><td class="black-trail">Lower Mountain</td><td bgcolor="gray">&nbsp;</td><td bgcolor="gray">&nbsp;</td></tr>
+							<tr><td 
+					class="green-sign"														>Broadway</td>
+				<td align="center" style="font-size: 24px;"></td>
+				<td align="center" style="font-size: 24px;"></td></tr>
+							<tr><td 
+										class="blue-sign"									>Bunny</td>
+				<td align="center" style="font-size: 24px;"></td>
+				<td align="center" style="font-size: 24px;"></td></tr>
+							<tr><td 
+										class="blue-sign"									>Chipmunk</td>
+				<td align="center" style="font-size: 24px;"></td>
+				<td align="center" style="font-size: 24px;"></td></tr>
+							<tr><td 
+					class="green-sign"														>Easy Way</td>
+				<td align="center" style="font-size: 24px;"></td>
+				<td align="center" style="font-size: 24px;"></td></tr>
+							<tr><td 
+															class="black-sign"				>Ferret</td>
+				<td align="center" style="font-size: 24px;"></td>
+				<td align="center" style="font-size: 24px;"></td></tr>
+							<tr><td 
+															class="black-sign"				>Grand Canyon</td>
+				<td align="center" style="font-size: 24px;"></td>
+				<td align="center" style="font-size: 24px;"></td></tr>
+							<tr><td 
+															class="black-sign"				>Lower Glades</td>
+				<td align="center" style="font-size: 24px;"></td>
+				<td align="center" style="font-size: 24px;"></td></tr>
+							<tr><td 
+															class="black-sign"				>Moody's</td>
+				<td align="center" style="font-size: 24px;"></td>
+				<td align="center" style="font-size: 24px;"></td></tr>
+							<tr><td 
+															class="black-sign"				>One Way</td>
+				<td align="center" style="font-size: 24px;"></td>
+				<td align="center" style="font-size: 24px;"></td></tr>
+							<tr><td 
+										class="blue-sign"									>Periwinkle</td>
+				<td align="center" style="font-size: 24px;"></td>
+				<td align="center" style="font-size: 24px;"></td></tr>
+							<tr><td 
+										class="blue-sign"									>Porcupine</td>
+				<td align="center" style="font-size: 24px;"></td>
+				<td align="center" style="font-size: 24px;"></td></tr>
+							<tr><td 
+										class="blue-sign"									>Race Hill</td>
+				<td align="center" style="font-size: 24px;"></td>
+				<td align="center" style="font-size: 24px;"></td></tr>
+							<tr><td 
+										class="blue-sign"									>Rockefellers</td>
+				<td align="center" style="font-size: 24px;"></td>
+				<td align="center" style="font-size: 24px;"></td></tr>
+							<tr><td 
+										class="blue-sign"									>Snail</td>
+				<td align="center" style="font-size: 24px;"></td>
+				<td align="center" style="font-size: 24px;"></td></tr>
+							<tr><td 
+															class="black-sign"				>Upper Canyon</td>
+				<td align="center" style="font-size: 24px;"></td>
+				<td align="center" style="font-size: 24px;"></td></tr>
+							<tr><td 
+										class="blue-sign"									>Waterfall</td>
+				<td align="center" style="font-size: 24px;"></td>
+				<td align="center" style="font-size: 24px;"></td></tr>
+									</table>
+		</td>
+		<td valign="top">
+		<table width="100%" cellpadding="5" cellspacing="0" border="1" style="color: black;">
+			<tr><td width="50%"></td><td width="25%" align="center">Open</td><td align="center">Groomed</td>
+						<tr><td class="black-trail">Upper Double Chair</td><td bgcolor="gray">&nbsp;</td><td bgcolor="gray">&nbsp;</td></tr>
+							<tr><td 
+					class="green-sign"														>Fox</td>
+				<td align="center" style="font-size: 24px;"></td>
+				<td align="center" style="font-size: 24px;"></td></tr>
+							<tr><td 
+															class="black-sign"				>Gazelle</td>
+				<td align="center" style="font-size: 24px;"></td>
+				<td align="center" style="font-size: 24px;"></td></tr>
+							<tr><td 
+															class="black-sign"				>Gazelle Glades</td>
+				<td align="center" style="font-size: 24px;"></td>
+				<td align="center" style="font-size: 24px;"></td></tr>
+							<tr><td 
+															class="black-sign"				>Panther</td>
+				<td align="center" style="font-size: 24px;"></td>
+				<td align="center" style="font-size: 24px;"></td></tr>
+							<tr><td 
+															class="black-sign"				>Partridge</td>
+				<td align="center" style="font-size: 24px;"></td>
+				<td align="center" style="font-size: 24px;"></td></tr>
+							<tr><td 
+										class="blue-sign"									>Quacky</td>
+				<td align="center" style="font-size: 24px;"></td>
+				<td align="center" style="font-size: 24px;"></td></tr>
+							<tr><td 
+															class="black-sign"				>Slalom Hill</td>
+				<td align="center" style="font-size: 24px;"></td>
+				<td align="center" style="font-size: 24px;"></td></tr>
+							<tr><td 
+					class="green-sign"														>Vixen</td>
+				<td align="center" style="font-size: 24px;"></td>
+				<td align="center" style="font-size: 24px;"></td></tr>
+									<tr><td class="black-trail">Birdland Chair</td><td bgcolor="gray">&nbsp;</td><td bgcolor="gray">&nbsp;</td></tr>
+							<tr><td 
+					class="green-sign"														>Duck</td>
+				<td align="center" style="font-size: 24px;"></td>
+				<td align="center" style="font-size: 24px;"></td></tr>
+							<tr><td 
+					class="green-sign"														>Lark</td>
+				<td align="center" style="font-size: 24px;"></td>
+				<td align="center" style="font-size: 24px;"></td></tr>
+							<tr><td 
+					class="green-sign"														>Loon</td>
+				<td align="center" style="font-size: 24px;"></td>
+				<td align="center" style="font-size: 24px;"></td></tr>
+							<tr><td 
+										class="blue-sign"									>Robin</td>
+				<td align="center" style="font-size: 24px;"></td>
+				<td align="center" style="font-size: 24px;"></td></tr>
+							<tr><td 
+					class="green-sign"														>Robin</td>
+				<td align="center" style="font-size: 24px;"></td>
+				<td align="center" style="font-size: 24px;"></td></tr>
+							<tr><td 
+										class="blue-sign"									>Wren</td>
+				<td align="center" style="font-size: 24px;"></td>
+				<td align="center" style="font-size: 24px;"></td></tr>
+							<tr><td 
+					class="green-sign"														>Wren</td>
+				<td align="center" style="font-size: 24px;"></td>
+				<td align="center" style="font-size: 24px;"></td></tr>
+									<tr><td class="black-trail">Practice Slope Chair</td><td bgcolor="gray">&nbsp;</td><td bgcolor="gray">&nbsp;</td></tr>
+							<tr><td 
+										class="blue-sign"									>Cricket</td>
+				<td align="center" style="font-size: 24px;"></td>
+				<td align="center" style="font-size: 24px;"></td></tr>
+							<tr><td 
+										class="blue-sign"									>Eaton's Run</td>
+				<td align="center" style="font-size: 24px;"></td>
+				<td align="center" style="font-size: 24px;"></td></tr>
+							<tr><td 
+										class="blue-sign"									>Grasshopper</td>
+				<td align="center" style="font-size: 24px;"></td>
+				<td align="center" style="font-size: 24px;"></td></tr>
+									<tr><td class="black-trail">Callie's Corner</td><td bgcolor="gray">&nbsp;</td><td bgcolor="gray">&nbsp;</td></tr>
+							<tr><td 
+					class="green-sign"														>Callie's Corner</td>
+				<td align="center" style="font-size: 24px;"></td>
+				<td align="center" style="font-size: 24px;"></td></tr>
+									<tr><td class="black-trail">Lifts</td><td bgcolor="gray">&nbsp;</td><td bgcolor="gray">&nbsp;</td></tr>
+						<tr><td>Single Chair</td>
+				<td align="center" style="font-size: 24px;"></td>
+				<td align="center"  bgcolor="gray">&nbsp;</td></tr>
+							<tr><td>Sunnyside Double Chair</td>
+				<td align="center" style="font-size: 24px;"></td>
+				<td align="center"  bgcolor="gray">&nbsp;</td></tr>
+							<tr><td>Birdland Double Chair</td>
+				<td align="center" style="font-size: 24px;"></td>
+				<td align="center"  bgcolor="gray">&nbsp;</td></tr>
+							<tr><td>Practice Slope Chair</td>
+				<td align="center" style="font-size: 24px;"></td>
+				<td align="center"  bgcolor="gray">&nbsp;</td></tr>
+							<tr><td>Callie's Corner Handle Tow</td>
+				<td align="center" style="font-size: 24px;"></td>
+				<td align="center"  bgcolor="gray">&nbsp;</td></tr>
+							</table>
+		</td>
+	</tr>
+</table>
+
+</div>
+
+
+				</div>
+				</td>	
+							
+				<td valign="top" align="left">
+				<div id="sub-nav-list">
+				
+									
+					
+					
+					<div class="active"><a href="/conditions"><div class="linktext">Conditions</div></a></div>
+<div><a href="/weather"><div class="linktext" >Weather</div></a></div>
+<div><a target="_blank" href="http://madriverglenweather.blogspot.com/feeds/posts/default"><div class="linktext" >Single Chair Weather Blog</div></a></div>
+
+
+					
+				</div>
+				
+				<div id="newsletter">
+              	<h3>SIGNUP FOR SNOW REPORTS &amp; NEWS</h3>
+	              <form action="http://ui.constantcontact.com/d.jsp" target="_blank" method="post">
+	              <input type="hidden" name="m" value="1101885002608">
+	                <table width="200" cellpadding="0" cellspacing="0" style="border: 1px solid #683300;">
+	                	<tr>
+	                		<td width="175"><input style="width: 100%;" name="ea" class="txt" type="text" value="" title="ENTER EMAIL" /></td>
+	                		<td width="25" style="background-color: #683300;"><input name="go" class="btn" type="submit" title="GO" value="GO" /></td>
+	                	</tr>
+	                </table>
+                
+	              </form>
+           		 </div>
+           		 <div id="webcam">
+           		 	<a href="/live-web-cams"><h3>LIVE WEB CAM</h3></a>
+           		 </div>
+            	<div>
+              	<div> 
+              		<a href="/live-web-cams">
+              			<img src="/site/static_pic" alt="Live Web Cams" width="196" height="147" border="0" />
+              		</a></div>
+            	</div>
+            	
+
+
+
+
+<ul class="ad-list">
+<ul class="ad-list">
+<li><a href="../../skiing/lift-ticket-deals"><img src="../../images/resources/madcard.jpg" alt="" width="191" height="94" /></a></li>
+<li><a href="https://secure.madriverglen.com/store"><img src="../../images/ad02.jpg" alt="Mad river glen. general store" width="200" height="99" /></a></li>
 </ul>
-</div> </div>
-</div>
-<div id='cond-bottom'>
-<div id='cond-gen'>
-
-	<span class='page-heading'>General Conditions</span>
-	<p class=bodytext><b>Tuesday, October 15, 2013</b>
-	<br>08:00:00
-	<br>Today's snow reporter: Eric
-	</p>
-	<p class=bodytext><b>Today&acute;s Weather</b><br>
-	
-	</p>
-	<p class=bodytext><b>Current Temperature</b><br>
-	Base: <br>
-	Summit: 
-	</p>
-	<p class=bodytext><b>New Snow</font></b><br>
-	0 " - 0 "
-	</p>
-	<p class=bodytext><b>Snowfall to Date This Season</font></b><br>
-	0 " - 0 "
-	</p>
-	<p class=bodytext><b>Lifts & Trails</b><br>Trails Open Today: 0 <br>Lifts Open Today: 0</p>
-	<p class=bodytext><b>Surface Conditions</b><br>Primary: 
-	Grass
-	<br>Secondary: 
-	Moss & Rocks
-	</p>
-	<p class=bodytext>
-	<b>Other</b><br>&nbsp;&nbsp;&nbsp;&nbsp;
-	
-	</p>
-	<p class=bodytext></p>
-	<table>
-		<tr><th class=body align=left valign=top>Lifts Open Today At: </th><td  class=body align=left valign=top> </td></tr>
-		<tr><th class=body align=left valign=top>Lifts Close Today At: </th><td  class=body align=left valign=top></td></tr>
-		<tr><th class=body align=left valign=top>Weekend Hours: </th><td  class=body align=left valign=top>8:30 to 4:30</td></tr>
-	</table>
-</div>
-<div id='cond-trails'>
-
-	<!-- TRAIL INFORMATION -->     
-	<span class='page-heading'>Trail Conditions and Lift Information</span>
-	<table border="1" bgcolor="white">
-		<tr>
-		<td width="28%" align="center">&nbsp;</td>
-		<td width="11%" align="center"><font face="Arial" size="-2" color="black"><b>Open</b></font></td>
-		<td width="11%" align="center"><font face="Arial" size="-2" align="center" color="black"><b>Groomed</b></font></td>
-		<td width="28%" align="center">&nbsp;</td>
-		<td width="11%" align="center"><font face="Arial" size="-2" align="center" color="black"><b>Open</b></font></td>
-		<td width="11%" align="center"><font face="Arial" size="-2" align="center" color="black"><b>Groomed</b></font></td>
-		</tr>
-		<tr>
-		<td bgcolor="black"><font face="Arial" size="-2" color="white"><b>Upper Single Chair</b></font></td>
-		<td bgcolor="gray"><font face="Arial" size="-2" color=black>&nbsp;</font></td>
-		<td bgcolor="gray"><font face="Arial" size="-2" color=black>&nbsp;</font></td>
-		<td bgcolor="black"><font face="Arial" size="-2" color="white"><b>Upper Double Chair</b></font></td>
-		<td bgcolor="gray"><font face="Arial" size="-2" color=black>&nbsp;</font></td>
-		<td bgcolor="gray"><font face="Arial" size="-2" color=black>&nbsp;</font></td>
-		</tr>
-		<tr>
-		<td><font face="Arial" size="-2" color=black><img src="/icon/smallsquare.gif"> Antelope (Upper)</font></td>
-		<td align="center"><font face="Arial" size="-2" color=black>
-			&nbsp;
-		</font></td>
-		<td align="center"><font face="Arial" size="-2" color=black>
-			&nbsp;
-		</font></td>
-		<td><font face="Arial" size="-2" color=black><img src="/icon/smallcircle.gif"> Fox</font></td>
-		<td align="center"><font face="Arial" size="-2" color=black>
-			&nbsp;
-		</font></td>
-		<td align="center"><font face="Arial" size="-2" color=black>
-			&nbsp;
-		</font></td>
-		</tr>
-		<tr>
-		<td><font face="Arial" size="-2" color=black><img src="/icon/smalldiamond.gif"> Antelope (Lower)</font></td>
-		<td align="center"><font face="Arial" size="-2" color=black>
-			&nbsp;
-		</font></td>
-		<td align="center"><font face="Arial" size="-2" color=black>
-			&nbsp;
-		</font></td>
-		<td><font face="Arial" size="-2" color=black><img src="/icon/smallcircle.gif"> Vixen</font></td>
-		<td align="center"><font face="Arial" size="-2" color=black>
-			&nbsp;
-		</font></td>
-		<td align="center"><font face="Arial" size="-2" color=black>
-			&nbsp;
-		</font></td>
-		</tr>
-		<tr>
-		<td><font face="Arial" size="-2" color=black><img src="/icon/smalldiamond.gif"> Catamount Bowl</font></td>
-		<td align="center"><font face="Arial" size="-2" color=black>
-			&nbsp;
-		</font></td>
-		<td align="center"><font face="Arial" size="-2" color=black>
-			&nbsp;
-		</font></td>
-		<td><font face="Arial" size="-2" color=black><img src="/icon/smallsquare.gif"> Quacky</font></td>
-		<td align="center"><font face="Arial" size="-2" color=black>
-			&nbsp;
-		</font></td>
-		<td align="center"><font face="Arial" size="-2" color=black>
-			&nbsp;
-		</font></td>
-		</tr>
-		<tr>
-		<td><font face="Arial" size="-2" color=black><img src="/icon/smallsquare.gif"> Catamount</font></td>
-		<td align="center"><font face="Arial" size="-2" color=black>
-			&nbsp;
-		</font></td>
-		<td align="center"><font face="Arial" size="-2" color=black>
-			&nbsp;
-		</font></td>
-		<td><font face="Arial" size="-2" color=black><img src="/icon/smalldiamond.gif"> Gazelle</font></td>
-		<td align="center"><font face="Arial" size="-2" color=black>
-			&nbsp;
-		</font></td>
-		<td align="center"><font face="Arial" size="-2" color=black>
-			&nbsp;
-		</font></td>
-		</tr>
-		<tr>
-		<td><font face="Arial" size="-2" color=black><img src="/icon/smalldiamond.gif"> Chute</font></td>
-		<td align="center"><font face="Arial" size="-2" color=black>
-			&nbsp;
-		</font></td>
-		<td align="center"><font face="Arial" size="-2" color=black>
-			&nbsp;
-		</font></td>
-		<td><font face="Arial" size="-2" color=black><img src="/icon/smalldiamond.gif"> Gazelle Glades</font></td>
-		<td align="center"><font face="Arial" size="-2" color=black>
-			&nbsp;
-		</font></td>
-		<td align="center"><font face="Arial" size="-2" color=black>
-			&nbsp;
-		</font></td>
-		</tr>
-		<tr>
-		<td><font face="Arial" size="-2" color=black><img src="/icon/smalldiamond.gif"> Fall Line</font></td>
-		<td align="center"><font face="Arial" size="-2" color=black>
-			&nbsp;
-		</font></td>
-		<td align="center"><font face="Arial" size="-2" color=black>
-			&nbsp;
-		</font></td>
-		<td><font face="Arial" size="-2" color=black><img src="/icon/smalldiamond.gif"> Panther</font></td>
-		<td align="center"><font face="Arial" size="-2" color=black>
-			&nbsp;
-		</font></td>
-		<td align="center"><font face="Arial" size="-2" color=black>
-			&nbsp;
-		</font></td>
-		</tr>
-		<tr>
-		<td><font face="Arial" size="-2" color=black><img src="/icon/smalldiamond.gif"> Paradise</font></td>
-		<td align="center"><font face="Arial" size="-2" color=black>
-			&nbsp;
-		</font></td>
-		<td align="center"><font face="Arial" size="-2" color=black>
-			&nbsp;
-		</font></td>
-		<td><font face="Arial" size="-2" color=black><img src="/icon/smalldiamond.gif"> Slalom Hill</font></td>
-		<td align="center"><font face="Arial" size="-2" color=black>
-			&nbsp;
-		</font></td>
-		<td align="center"><font face="Arial" size="-2" color=black>
-			&nbsp;
-		</font></td>
-		</tr>
-		<tr>
-		<td><font face="Arial" size="-2" color=black><img src="/icon/smalldiamond.gif"> Creamery</font></td>
-		<td align="center"><font face="Arial" size="-2" color=black>
-			&nbsp;
-		</font></td>
-		<td align="center"><font face="Arial" size="-2" color=black>
-			&nbsp;
-		</font></td>
-		<td><font face="Arial" size="-2" color=black><img src="/icon/smalldiamond.gif"> Partridge</font></td>
-		<td align="center"><font face="Arial" size="-2" color=black>
-			&nbsp;
-		</font></td>
-		<td align="center"><font face="Arial" size="-2" color=black>
-			&nbsp;
-		</font></td>
-		</tr>
-		<tr>
-		<td bgcolor="black"><font face="Arial" size="-2" color="white"><b>Lower Single Chair</b></font></td>
-		<td bgcolor="gray"><font face="Arial" size="-2" color=black>&nbsp;</font></td>
-		<td bgcolor="gray"><font face="Arial" size="-2" color=black>&nbsp;</font></td>
-		<td bgcolor="black"><font face="Arial" size="-2" color="white"><b>Birdland Chair</b></font></td>
-		<td bgcolor="gray"><font face="Arial" size="-2" color=black>&nbsp;</font></td>
-		<td bgcolor="gray"><font face="Arial" size="-2" color=black>&nbsp;</font></td>
-		</tr>
-		<tr>
-		<td><font face="Arial" size="-2" color=black><img src="/icon/smalldiamond.gif"> Lynx</font></td>
-		<td align="center"><font face="Arial" size="-2" color=black>
-			&nbsp;
-		</font></td>
-		<td align="center"><font face="Arial" size="-2" color=black>
-			&nbsp;
-		</font></td>
-		<td><font face="Arial" size="-2" color=black><img src="/icon/smallcircle.gif"> Lark</font></td>
-		<td align="center"><font face="Arial" size="-2" color=black>
-			&nbsp;
-		</font></td>
-		<td align="center"><font face="Arial" size="-2" color=black>
-			&nbsp;
-		</font></td>
-		</tr>
-		<tr>
-		<td><font face="Arial" size="-2" color=black><img src="/icon/smalldiamond.gif"> Beaver</font></td>
-		<td align="center"><font face="Arial" size="-2" color=black>
-			&nbsp;
-		</font></td>
-		<td align="center"><font face="Arial" size="-2" color=black>
-			&nbsp;
-		</font></td>
-		<td><font face="Arial" size="-2" color=black><img src="/icon/smallcircle.gif"> Loon</font></td>
-		<td align="center"><font face="Arial" size="-2" color=black>
-			&nbsp;
-		</font></td>
-		<td align="center"><font face="Arial" size="-2" color=black>
-			&nbsp;
-		</font></td>
-		</tr>
-		<tr>
-		<td><font face="Arial" size="-2" color=black><img src="/icon/smalldiamond.gif"> Lift Line</font></td>
-		<td align="center"><font face="Arial" size="-2" color=black>
-			&nbsp;
-		</font></td>
-		<td align="center"><font face="Arial" size="-2" color=black>
-			&nbsp;
-		</font></td>
-		<td><font face="Arial" size="-2" color=black><img src="/icon/smallsquare.gif"> Robin</font></td>
-		<td align="center"><font face="Arial" size="-2" color=black>
-			&nbsp;
-		</font></td>
-		<td align="center"><font face="Arial" size="-2" color=black>
-			&nbsp;
-		</font></td>
-		</tr>
-		<tr>
-		<td><font face="Arial" size="-2" color=black><img src="/icon/smalldiamond.gif"> Upper Glade</font></td>
-		<td align="center"><font face="Arial" size="-2" color=black>
-			&nbsp;
-		</font></td>
-		<td align="center"><font face="Arial" size="-2" color=black>
-			&nbsp;
-		</font></td>
-		<td><font face="Arial" size="-2" color=black><img src="/icon/smallsquare.gif"> Wren</font></td>
-		<td align="center"><font face="Arial" size="-2" color=black>
-			&nbsp;
-		</font></td>
-		<td align="center"><font face="Arial" size="-2" color=black>
-			&nbsp;
-		</font></td>
-		</tr>
-		<tr>
-		<td bgcolor="black"><font face="Arial" size="-2" color="white"><b>Lower Mountain</b></font></td>
-		<td bgcolor="gray"><font face="Arial" size="-2" color=black>&nbsp;</font></td>
-		<td bgcolor="gray"><font face="Arial" size="-2" color=black>&nbsp;</font></td>
-		<td><font face="Arial" size="-2" color=black><img src="/icon/smallcircle.gif"> Duck</font></td>
-		<td align="center"><font face="Arial" size="-2" color=black>
-			&nbsp;
-		</font></td>
-		<td align="center"><font face="Arial" size="-2" color=black>
-			&nbsp;
-		</font></td>
-		</tr>
-		<tr>
-		<td><font face="Arial" size="-2" color=black><img src="/icon/smalldiamond.gif"> Upper Grand Canyon</font></td>
-		<td align="center"><font face="Arial" size="-2" color=black>
-			&nbsp;
-		</font></td>
-		<td align="center"><font face="Arial" size="-2" color=black>
-			&nbsp;
-		</font></td>
-		<td><font face="Arial" size="-2" color=black><img src="/icon/smallsquare.gif"> Periwinkle</font></td>
-		<td align="center"><font face="Arial" size="-2" color=black>
-			&nbsp;
-		</font></td>
-		<td align="center"><font face="Arial" size="-2" color=black>
-			&nbsp;
-		</font></td>
-		</tr>
-		<tr>
-		<td><font face="Arial" size="-2" color=black><img src="/icon/smalldiamond.gif"> Lower Grand Canyon</font></td>
-		<td align="center"><font face="Arial" size="-2" color=black>
-			&nbsp;
-		</font></td>
-		<td align="center"><font face="Arial" size="-2" color=black>
-			&nbsp;
-		</font></td>
-		<td bgcolor="black"><font face="Arial" size="-2" color="white"><b>Practice Slope Chair</b></font></td>
-		<td bgcolor="gray"><font face="Arial" size="-2" color=black>&nbsp;</font></td>
-		<td bgcolor="gray"><font face="Arial" size="-2" color=black>&nbsp;</font></td>
-		</tr>
-		<tr>
-		<td><font face="Arial" size="-2" color=black><img src="/icon/smallcircle.gif"> Broadway</font></td>
-		<td align="center"><font face="Arial" size="-2" color=black>
-			&nbsp;
-		</font></td>
-		<td align="center"><font face="Arial" size="-2" color=black>
-			&nbsp;
-		</font></td>
-		<td><font face="Arial" size="-2" color=black><img src="/icon/smallsquare.gif"> Race Hill</font></td>
-		<td align="center"><font face="Arial" size="-2" color=black>
-			&nbsp;
-		</font></td>
-		<td align="center"><font face="Arial" size="-2" color=black>
-			&nbsp;
-		</font></td>
-		</tr>
-		<tr>
-		<td><font face="Arial" size="-2" color=black><img src="/icon/smallsquare.gif"> Bunny</font></td>
-		<td align="center"><font face="Arial" size="-2" color=black>
-			&nbsp;
-		</font></td>
-		<td align="center"><font face="Arial" size="-2" color=black>
-			&nbsp;
-		</font></td>
-		<td><font face="Arial" size="-2" color=black><img src="/icon/smallsquare.gif"> Cricket</font></td>
-		<td align="center"><font face="Arial" size="-2" color=black>
-			&nbsp;
-		</font></td>
-		<td align="center"><font face="Arial" size="-2" color=black>
-			&nbsp;
-		</font></td>
-		</tr>
-		<tr>
-		<td><font face="Arial" size="-2" color=black><img src="/icon/smalldiamond.gif"> Lower Glade</font></td>
-		<td align="center"><font face="Arial" size="-2" color=black>
-			&nbsp;
-		</font></td>
-		<td align="center"><font face="Arial" size="-2" color=black>
-			&nbsp;
-		</font></td>
-		<td><font face="Arial" size="-2" color=black><img src="/icon/smallsquare.gif"> Eaton&acute;s Run</font></td>
-		<td align="center"><font face="Arial" size="-2" color=black>
-			&nbsp;
-		</font></td>
-		<td align="center"><font face="Arial" size="-2" color=black>
-			&nbsp;
-		</font></td>
-		</tr>
-		<tr>
-		<td><font face="Arial" size="-2" color=black><img src="/icon/smallsquare.gif"> Porcupine</font></td>
-		<td align="center"><font face="Arial" size="-2" color=black>
-			&nbsp;
-		</font></td>
-		<td align="center"><font face="Arial" size="-2" color=black>
-			&nbsp;
-		</font></td>
-		<td><font face="Arial" size="-2" color=black><img src="/icon/smallsquare.gif"> Grasshopper</font></td>
-		<td align="center"><font face="Arial" size="-2" color=black>
-			&nbsp;
-		</font></td>
-		<td align="center"><font face="Arial" size="-2" color=black>
-			&nbsp;
-		</font></td>
-		</tr>
-		<tr>
-		<td><font face="Arial" size="-2" color=black><img src="/icon/smallsquare.gif"> Chipmunk</font></td>
-		<td align="center"><font face="Arial" size="-2" color=black>
-			&nbsp;
-		</font></td>
-		<td align="center"><font face="Arial" size="-2" color=black>
-			&nbsp;
-		</font></td>
-		<td bgcolor="black"><font face="Arial" size="-2" color="white"><b>Callie&acute;s Corner</b></font></td>
-		<td bgcolor="gray"><font face="Arial" size="-2" color=black>&nbsp;</font></td>
-		<td bgcolor="gray"><font face="Arial" size="-2" color=black>&nbsp;</font></td>
-		</tr>
-		<tr>
-		<td><font face="Arial" size="-2" color=black><img src="/icon/smallsquare.gif"> Snail</font></td>
-		<td align="center"><font face="Arial" size="-2" color=black>
-			&nbsp;
-		</font></td>
-		<td align="center"><font face="Arial" size="-2" color=black>
-			&nbsp;
-		</font></td>
-		<td><font face="Arial" size="-2" color=black><img src="/icon/smallcircle.gif"> Callie's Corner</font></td>
-		<td align="center"><font face="Arial" size="-2" color=black>
-			&nbsp;
-		</font></td>
-		<td align="center"><font face="Arial" size="-2" color=black>
-			&nbsp;
-		</font></td>
-		</tr>
-		<tr>
-		<td><font face="Arial" size="-2" color=black><img src="/icon/smallsquare.gif"> Waterfall</font></td>
-		<td align="center"><font face="Arial" size="-2" color=black>
-			&nbsp;
-		</font></td>
-		<td align="center"><font face="Arial" size="-2" color=black>
-			&nbsp;
-		</font></td>
-		<td bgcolor="black"><font face="Arial" size="-2" color="white"><b>Lifts</b></font></td>
-		<td bgcolor="gray"><font face="Arial" size="-2" color=black>&nbsp;</font></td>
-		<td bgcolor="gray"><font face="Arial" size="-2" color=black>&nbsp;</font></td>
-		</tr>
-		<tr>
-		<td><font face="Arial" size="-2" color=black><img src="/icon/smallcircle.gif"> Easy Way</font></td>
-		<td align="center"><font face="Arial" size="-2" color=black>
-			&nbsp;
-		</font></td>
-		<td align="center"><font face="Arial" size="-2" color=black>
-			&nbsp;
-		</font></td>
-		<td><font face="Arial" size="-2" color=black>Single Chair</font></td>
-		<td align="center"><font face="Arial" size="-2" color=black>
-			&nbsp;
-		</font></td>
-		<td bgcolor="gray"><font face="Arial" size="-2" color=black>&nbsp;</font></td>
-		</tr>
-		<tr>
-		<td><font face="Arial" size="-2" color=black><img src="/icon/smallsquare.gif"> Rockefellers</font></td>
-		<td align="center"><font face="Arial" size="-2" color=black>
-			&nbsp;
-		</font></td>
-		<td align="center"><font face="Arial" size="-2" color=black>
-			&nbsp;
-		</font></td>
-		<td><font face="Arial" size="-2" color=black>Sunnyside Double Chair</font></td>
-		<td align="center"><font face="Arial" size="-2" color=black>
-			&nbsp;
-		</font></td>
-		<td bgcolor="gray"><font face="Arial" size="-2" color=black>&nbsp;</font></td>
-		</tr>
-		<tr>
-		<td><font face="Arial" size="-2" color=black><img src="/icon/smalldiamond.gif"> Moody&acute;s</font></td>
-		<td align="center"><font face="Arial" size="-2" color=black>
-			&nbsp;
-		</font></td>
-		<td align="center"><font face="Arial" size="-2" color=black>
-			&nbsp;
-		</font></td>
-		<td><font face="Arial" size="-2" color=black>Birdland Double Chair</font></td>
-		<td align="center"><font face="Arial" size="-2" color=black>
-			&nbsp;
-		</font></td>
-		<td bgcolor="gray"><font face="Arial" size="-2" color=black>&nbsp;</font></td>
-		</tr>
-		<tr>
-		<td><font face="Arial" size="-2" color=black><img src="/icon/smalldiamond.gif"> Ferret</font></td>
-		<td align="center"><font face="Arial" size="-2" color=black>
-			&nbsp;
-		</font></td>
-		<td align="center"><font face="Arial" size="-2" color=black>
-			&nbsp;
-		</font></td>
-		<td><font face="Arial" size="-2" color=black>Practice Slope Chair</font></td>
-		<td align="center"><font face="Arial" size="-2" color=black>
-			&nbsp;
-		</font></td>
-		<td bgcolor="gray"><font face="Arial" size="-2" color=black>&nbsp;</font></td>
-		</tr>
-		<tr>
-		<td><font face="Arial" size="-2" color=black><img src="/icon/smalldiamond.gif"> One Way</font></td>
-		<td align="center"><font face="Arial" size="-2" color=black>
-			&nbsp;
-		</font></td>
-		<td align="center"><font face="Arial" size="-2" color=black>
-			&nbsp;
-		</font></td>
-		<td><font face="Arial" size="-2" color=black>Callie&acute;s Corner Handle Tow</font></td>
-		<td align="center"><font face="Arial" size="-2" color=black>
-			&nbsp;
-		</font></td>
-		<td bgcolor="gray"><font face="Arial" size="-2" color=black>&nbsp;</font></td>
-		</tr>
-		<tr>
-		<td colspan="6"><p align="center"><font face="Arial" size="-1"><b>This is a projected report - Call 802-496-3551 for up-to-date conditions</b></font></p></td>
-		</tr>
-		<tr>
-		<td colspan="6" bgcolor="black"><p align="center"><font face="Arial" color="white" size="-1"><b>w w w . m a d r i v e r g l e n . c o m</b></font></p></td>
-		</tr>
-	</table>
-	<!-- INDIVIDUAL TRAIL STATUS END -->
-</div>
-</div>
-<br clear=all>          </div>
-          <!-- aside -->
-          <!-- div class="aside"-->
-          
-          
-          
-          
-          
-          
-          <!-- /div -->
-          <!-- sidebar -->
-          <div id="sidebar">
-          <!-- Start Sub Navigation Unordered list -->
-
-          
-            <div id="sub-nav">
-           
-              <div id="p7PMM_1" class="p7PMMv08 p7PMMnoscript">
-                <ul class="p7PMM">
-<li><A HREF="/conditions/../conditions/" class="TAG_PROP1">Conditions</a>
-</li>
-<li><A HREF="/conditions/?Page=weather.php" class="TAG_PROP1">Weather</a>
-</li>
-<li><A HREF="http://madriverglenweather.blogspot.com/" class="TAG_PROP1">Single Chair Weather Blog</a>
-
-                </ul>
-                <!--[if lte IE 7]>
-					<style>.p7PMMv08, .p7PMMv08 a, .p7PMMv08 ul {height:1%;}.p7PMMv08 li{float:left;clear:both;width:100%;}</style>
-					<![endif]-->
-                <!--[if IE 5.500]>
-					<style>.p7PMMv08 {position: relative; z-index: 9999999;}</style>
-					<![endif]-->
-                <!--[if IE 5]>
-					<style>.p7PMMv08 a, .p7PMMv08 ul {height: 1%; overflow: visible !important;}</style>
-					<![endif]-->
-                <script type="text/javascript">
-					<!--
-					P7_PMMop('p7PMM_1',0,2,-5,-5,0,0,0,0,0,3,1,1,0,0,0);
-					//-->
-					</script>
-              </div>
-              
-			</div>
-          <!-- End Sub Navigation Unordered list here-->
-             <div class="newsletter">
-              <h3>SNOW REPORTS &amp; NEWS</h3>
-              <form action="http://ui.constantcontact.com/d.jsp" target="_blank" method="post">
-                <fieldset>
-                  <legend>Newsletter</legend>
-				  <input type="hidden" name="m" value="1101885002608">
-                  <input name="ea" class="txt" type="text" value="ENTER EMAIL" title="ENTER EMAIL" />
-                  <input name="go" class="btn" type="submit" title="GO" value="&nbsp;" />
-                </fieldset>
-              </form>
-            </div>            
-            <a href="/?Page=cams.html"><h3>LIVE WEB CAM</h3></a>
-            <div class="webcam" id="webcam">
-              <div> <a href="/?Page=cams.html"><img src="/static_pic.php" alt="image description" width="196" height="146" border="0" /></a></div>
-              </div>
-          </div>
-        </div>
-        <!-- conditions -->
-        <div class="conditions-hold">
-          <div class="t">&nbsp;</div>
-          <div class="c">
-            <div class="c-add">
-              <ul>
-              	<a href='/conditions/'>
-<li><span>Trails Open:</span> 0</li>
-<li><span>Lifts Open:</span> 0</li>
-<li><span>New Snow:</span> 0-0"</li>
-<li>Click for more...</li>
 </ul>
-<ul>
-<li><span>Surface:</span> Grass</li>				</a>
-              	<a href='/conditions/?Page=weather.php'>
-<li><span>Temp:</span> 37 &deg; F </li> 
-<li><span>Windchill:</span> 37</li>	 						<li>More Weather...</li>
-			</a>
-              </ul>
-             </div>
-          </div>
-          <div class="b">&nbsp;</div>
-        </div>
-        <!-- navigation -->
-<div id="nav">
-           <div class="box">
-             <ul class="navigation">
- 				<li><a  class="nav-home" href="./"><span>HOME</span></a></li>
- 				<li><a  href="#" class="nav-skiing" ><span>Skiing</span></a>
- 					<ul>
- 						<li><a href="/conditions/">Conditions</a></li>
- 						<li><a href="/deals/?Page=tickets.php">Lift Tickets</a></li>
- 						<li><a href="/conditions/?Page=weather.php">Weather</a></li>
- 						<li><a href="/skischool/">Ski School</a></li>
- 						<li><a href="/deals/?Page=price.php">Season Passes</a></li>
- 						<li><a href="/deals/">Deals</a></li>
- 						<li><a href="/maps/">Trail Maps</a></li>
- 						<li><a href="/rental/">Rental &amp; Repair Shop </a></li>
- 						<li><a href="/telemark/">Telemark Skiing </a></li>
- 					</ul>
- 				</li>
-               		<li><a href="#" class="nav-visiting"><span>VISITING</span></a>
- 					<ul >
- 						<li><a href="?Page=calendar.php">Event Calendar </a></li>
- 						<li><a href="/lodging/">Lodging </a></li>
- 						<li><a href="/localbus/">Restaurants &amp; Local  Businesses</a></li>
- 						<li><a href="?Page=groups.html">Groups     </a></li>
- 						<li><a href="/visit/">Directions</a></li>
- 						<li><a href="/visit/?Page=sendbrochure.html">Request a MRG Area Guide</a></li>
- 						<li><a href="/visit/rideshare">Ride Share</a></li>
- 					</ul>
- 				</li>
-               <li> <a href="#" class="nav-on-mountain"><span>on mountain</span></a>
- 					<ul >
- 						<li><a href="?Page=store.php">MRG General Store & Ski Shop </a></li>
- 						<li><a href="?Page=daycare.html">Cricket Club Daycare </a></li>
- 						<li><a href="/eat/">Eat &amp; Drink </a></li>
- 						<li><a href="/naturalist/">Naturalist Programs </a></li>
- 						<li><a href="/basebox/">Catering &amp; Events</a></li>
- 						<li><a href="/skiclubs/">Ski Clubs</a></li>
- 						<li><a href="/skiclub/">Racing</a></li>
- 						<li><a href="/ski_museum/">History   </a></li>
- 					</ul>
- 				</li>
-               <li><a href="#" class="nav-the-coop"><span>the co-op</span></a>
- 					<ul >
- 						<li><a href="coop/">About The Co-op </a></li>
- 						<li><a href="coop/?Page=6coopapp.html">Buy A Share Today! </a></li>
- 						<li><a href="http://www.madriverglen.coop" target='coop'>Co-op Website </a></li>
- 					</ul>
- 				</li>
-               <li><a href="#" class="nav-contact-us"><span>contact us</span></a>
- 					<ul >
- 						<li><a href="https://www.madriverglen.com/contact">Send a message </a></li>
- 						<li><a href="?Page=employment.html">Employment Opportunities </a></li>
- 						<li><a href="/forms/">Forms & Documents</a></li>
- 					</ul>
- 				</li>
- 			</ul>
-             <ul class="socials">
-               <li class="twitter"><a href="http://twitter.com/madriverglen" target="_blank" title='Follow us on Twitter'><span><em>twitter</em></span></a></li>
-               <li class="facebook"><a href="http://www.facebook.com/home.php#!/pages/Mad-River-Glen/90212840431" target="_blank" title='Like us on Facebook'><span><em>facebook</em></span></a></li>
-               <li class="you-tube"><a href="http://www.youtube.com/user/madriverglenvermont" target="_blank" title='Watch us on YouTube'><span><em>you tube</em></span></a></li>
-               <li class="flicker"><a href="http://www.flickr.com/groups/madriverglen/" target="_blank" title='Look at us on Flikr'><span><em>flickr</em></span></a></li>
-             </ul>
-           </div>
-         </div>        <!-- footer -->
-        <div id="footer">
+<p>&nbsp;<a href="../../coop/about-the-coop"><img src="../../images/resources/preserve_button.jpg" alt="" width="195" height="102" /></a></p>
+
+            	
+            	</td>
+								</tr>
+			</table>
+
+</td>
+			
+			
+		</tr>
+		<tr>
+			<td align="center"></td>
+		</tr>
+		</table>
+	</div>
+	
+</div>
+
+<div id="footer">
           <ul>
             <li><a href="/?Page=PrivacyStatement.html">Privacy Statement</a></li>
             <li><span class="fn org">Mad River Glen Cooperative</span></li>
             <li><span class="street-address">57 Schuss Pass Road</span></li>
             <li><span class="street-address">PO Box 1089</span></li>
             <li><span class="region">Waitsfield</span>, <span class="postal-code">VT 05673</span></li>
-             <li><span class="region">(802) 496-3551</span></li>
-           <li><a class="email" href="mailto:&#115;&#107;&#105;&#064;&#109;&#097;&#100;&#114;&#105;&#118;&#101;&#114;&#103;&#108;&#101;&#110;&#046;&#099;&#111;&#109;">&#115;&#107;&#105;&#064;&#109;&#097;&#100;&#114;&#105;&#118;&#101;&#114;&#103;&#108;&#101;&#110;&#046;&#099;&#111;&#109;</a></li>
+            <li><span class="region">(802) 496-3551</span></li>
+            <li><a class="email" href="mailto:&#115;&#107;&#105;&#064;&#109;&#097;&#100;&#114;&#105;&#118;&#101;&#114;&#103;&#108;&#101;&#110;&#046;&#099;&#111;&#109;">&#115;&#107;&#105;&#064;&#109;&#097;&#100;&#114;&#105;&#118;&#101;&#114;&#103;&#108;&#101;&#110;&#046;&#099;&#111;&#109;</a></li>
+         	<li><a href="/userlogin">Login</a></li>
           </ul>
-        </div>
-      </div>
-    </div>
-  </div>
 </div>
+
+<script type="text/javascript">
+	var menu=new menu.dd("menu");
+	menu.init("menu","menuhover");
+</script>
+
+	
+
+
+
+<script type="text/javascript">
+$(function() {
+    var moveLeft = 0;
+    var moveDown = 0;
+    $('a.popper').hover(function(e) {
+   
+        var target = '#' + ($(this).attr('data-popbox'));
+         
+        $(target).show();
+        moveLeft = $(this).outerWidth();
+        moveDown = ($(target).outerHeight() / 2);
+    }, function() {
+        var target = '#' + ($(this).attr('data-popbox'));
+        $(target).hide();
+    });
+ 
+    $('a.popper').mousemove(function(e) {
+        var target = '#' + ($(this).attr('data-popbox'));
+         
+        leftD = e.pageX + parseInt(moveLeft);
+        maxRight = leftD + $(target).outerWidth();
+        windowLeft = $(window).width() - 40;
+        windowRight = 0;
+        maxLeft = e.pageX - (parseInt(moveLeft) + $(target).outerWidth() + 20);
+         
+        if(maxRight > windowLeft && maxLeft > windowRight)
+        {
+            leftD = maxLeft;
+        }
+     
+        topD = e.pageY - parseInt(moveDown);
+        maxBottom = parseInt(e.pageY + parseInt(moveDown) + 20);
+        windowBottom = parseInt(parseInt($(document).scrollTop()) + parseInt($(window).height()));
+        maxTop = topD;
+        windowTop = parseInt($(document).scrollTop());
+        if(maxBottom > windowBottom)
+        {
+            topD = windowBottom - $(target).outerHeight() - 20;
+        } else if(maxTop < windowTop){
+            topD = windowTop + 20;
+        }
+     
+        $(target).css('top', topD).css('left', leftD);
+     
+     
+    });
+ 
+});
+</script>
+
 </body>
+
 </html>
