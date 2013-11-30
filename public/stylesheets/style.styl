@@ -10,6 +10,9 @@ $link-color=hsl(197, 100, 43)
 $background-color=hsl(220, 96, 98)
 $text-color=hsl(0, 0, 20)
 
+$powder-color=hsl(197, 80, 43)
+$snow-color=hsl(211, 51, 91)
+
 $column-width=320px
 $column-gutter=16px
 
@@ -174,6 +177,7 @@ header .ls-furkot
       float left
       overflow ellipsis
       max-width 90%
+      cursor default
 
     .status
       font-size 1.1em
@@ -362,6 +366,24 @@ header .ls-furkot
       display inline-block
       min-width 2em
       text-align right
+
+  .powder-rating
+    width 5em
+    font-family lift-status
+    font-size 2em
+    margin 0 auto
+    .rating
+      display inline-block
+      position relative
+      cursor default
+      .shadow
+        color $snow-color
+      .stars
+        color $powder-color
+        position absolute
+        top 0
+        left 0
+        overflow hidden
 
   .deals
     padding-bottom 0
