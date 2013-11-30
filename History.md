@@ -1,4 +1,11 @@
 
+3.3.19 / 2013-11-30 
+==================
+
+ * display youtube videos in twitter feed
+ * add Caberfae Peaks resort
+ * fix Pats Peak - and other prism resorts
+
 3.3.18 / 2013-11-28 
 ==================
 
