@@ -57,7 +57,10 @@ mixin stats(resort)
 
 mixin weather(resort)
   .weather.tile(class= resort.weather ? 'visible' : 'hidden')
-    img
+    .weather-icon
+      ul
+        li(class= resort.weather ? resort.weather.icon[0] : '')
+        li(class= resort.weather ? resort.weather.icon[1] : '')
     .temperature
     .conditions
     .text
