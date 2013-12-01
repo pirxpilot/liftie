@@ -128,7 +128,6 @@ BSD
 - refresh on change only (web sockets?)
 - detect changes and enable change notifications (HTML5 notifications)
 - tweet on change support
-- add conditions, snow information, resort twitter feeds
 
 [1]: http://dribbble.com/shots/587469-Free-16px-Broccolidryiconsaniconsetitisfullof-icons
 [2]: http://licence.visualidiot.com
