@@ -61,12 +61,9 @@ mixin weather(resort)
     .temperature
     .conditions
     .text
-    refkey = process.env.WUND_REF_KEY;
-    if refkey
-      weatherQuery = resort.ll ? '&query=' + resort.ll[1] + ',' + resort.ll[0] : ''
-      .notice Forecast by&nbsp;
-        a(href="http://www.wunderground.com/cgi-bin/findweather/getForecast?apiref=#{refkey}#{weatherQuery}", target="_blank")
-          img(src="http://icons.wxug.com/logos/PNG/wundergroundLogo_black_horz.png")
+    .notice Forecast by&nbsp;
+      a(target="_blank")
+        img
 
 mixin snow(resort)
   .snow.tile(class= resort.snow ? 'visible' : 'hidden')
