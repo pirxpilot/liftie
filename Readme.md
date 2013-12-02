@@ -117,6 +117,8 @@ Icon Font generated with [IconMoon App](http://icomoon.io)
 - Icon Set: [IcoMoon - Free][3] -- License: [CC BY-SA 3.0][4]
 - Icon Set: [Dollar][5] by [The Morning Son][6] from The Noun Project -- License: [CC BY-SA 3.0][4]
 
+Forecast Font from [Icon Vault][9] -- SIL Open Font License
+
 Tags CSS (stylus) is a simplified version of [Sliding Tags][7] by [Thibaut Courouble][8] -- License MIT
 
 ## License
@@ -128,7 +130,6 @@ BSD
 - refresh on change only (web sockets?)
 - detect changes and enable change notifications (HTML5 notifications)
 - tweet on change support
-- add conditions, snow information, resort twitter feeds
 
 [1]: http://dribbble.com/shots/587469-Free-16px-Broccolidryiconsaniconsetitisfullof-icons
 [2]: http://licence.visualidiot.com
@@ -138,3 +139,4 @@ BSD
 [6]: http://thenounproject.com/The%20Morning%20Son
 [7]: http://www.webinterfacelab.com/snippets/sliding-tags
 [8]: http://thibaut.me
+[9]: http://forecastfont.iconvau.lt
