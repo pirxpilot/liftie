@@ -1,4 +1,10 @@
 
+3.4.0 / 2013-12-02
+==================
+
+ * add link to 'Embed Liftie' in the footer
+ * display powder rating from Where Should I Ski
+
 3.3.19 / 2013-11-30 
 ==================
 
