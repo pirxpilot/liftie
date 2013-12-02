@@ -20,7 +20,8 @@
     "debug": "~0",
     "dirty": "~0",
     "async": "~0",
-    "limiter": "~1"
+    "limiter": "~1",
+    "moment": "~2"
   },
   "devDependencies": {
     "mocha": "~1",
