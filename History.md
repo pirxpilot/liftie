@@ -1,4 +1,10 @@
 
+3.4.1 / 2013-12-02
+==================
+
+ * add weather forecast from OpenSnow
+ * use forecast font from icon vault instead of weather icon set from wunderground
+
 3.4.0 / 2013-12-02
 ==================
 
