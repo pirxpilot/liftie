@@ -24,7 +24,7 @@ describe('weather', function() {
       }, function(err, forecast) {
         should.not.exist(err);
         should.exist(forecast);
-        forecast.should.have.property('icon').with.type('string');
+        forecast.should.have.property('icon').with.length(2);
         forecast.should.have.property('date').with.match(/\d{4}-\d{2}-\d{2}/);
         forecast.should.have.property('text').with.type('string');
         forecast.should.have.property('conditions').with.type('string');
