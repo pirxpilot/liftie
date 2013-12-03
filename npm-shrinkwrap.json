@@ -226,6 +226,10 @@
       "from": "https://registry.npmjs.org/moment/-/moment-2.4.0.tgz",
       "resolved": "https://registry.npmjs.org/moment/-/moment-2.4.0.tgz"
     },
+    "stylus-font-face": {
+      "version": "0.1.0",
+      "from": "stylus-font-face@"
+    },
     "fresh": {
       "version": "0.2.0",
       "from": "fresh@0.2.0"
@@ -371,57 +375,6 @@
         }
       }
     },
-    "jshint": {
-      "version": "2.3.0",
-      "from": "https://registry.npmjs.org/jshint/-/jshint-2.3.0.tgz",
-      "resolved": "https://registry.npmjs.org/jshint/-/jshint-2.3.0.tgz",
-      "dependencies": {
-        "shelljs": {
-          "version": "0.1.4",
-          "from": "https://registry.npmjs.org/shelljs/-/shelljs-0.1.4.tgz",
-          "resolved": "https://registry.npmjs.org/shelljs/-/shelljs-0.1.4.tgz"
-        },
-        "underscore": {
-          "version": "1.4.4",
-          "from": "https://registry.npmjs.org/underscore/-/underscore-1.4.4.tgz",
-          "resolved": "https://registry.npmjs.org/underscore/-/underscore-1.4.4.tgz"
-        },
-        "cli": {
-          "version": "0.4.5",
-          "from": "cli@0.4.5",
-          "dependencies": {
-            "glob": {
-              "version": "3.2.6",
-              "from": "glob@3.2.6",
-              "dependencies": {
-                "inherits": {
-                  "version": "2.0.1",
-                  "from": "inherits@2.0.1"
-                }
-              }
-            }
-          }
-        },
-        "minimatch": {
-          "version": "0.2.12",
-          "from": "minimatch@0.2.12",
-          "dependencies": {
-            "lru-cache": {
-              "version": "2.3.1",
-              "from": "lru-cache@2.3.1"
-            },
-            "sigmund": {
-              "version": "1.0.0",
-              "from": "sigmund@1.0.0"
-            }
-          }
-        },
-        "console-browserify": {
-          "version": "0.1.6",
-          "from": "console-browserify@0.1.6"
-        }
-      }
-    },
     "mocha": {
       "version": "1.12.1",
       "from": "mocha@1.12.1",
@@ -475,6 +428,57 @@
               "from": "inherits@1.0.0"
             }
           }
+        }
+      }
+    },
+    "jshint": {
+      "version": "2.3.0",
+      "from": "https://registry.npmjs.org/jshint/-/jshint-2.3.0.tgz",
+      "resolved": "https://registry.npmjs.org/jshint/-/jshint-2.3.0.tgz",
+      "dependencies": {
+        "shelljs": {
+          "version": "0.1.4",
+          "from": "https://registry.npmjs.org/shelljs/-/shelljs-0.1.4.tgz",
+          "resolved": "https://registry.npmjs.org/shelljs/-/shelljs-0.1.4.tgz"
+        },
+        "underscore": {
+          "version": "1.4.4",
+          "from": "https://registry.npmjs.org/underscore/-/underscore-1.4.4.tgz",
+          "resolved": "https://registry.npmjs.org/underscore/-/underscore-1.4.4.tgz"
+        },
+        "cli": {
+          "version": "0.4.5",
+          "from": "cli@0.4.5",
+          "dependencies": {
+            "glob": {
+              "version": "3.2.6",
+              "from": "glob@3.2.6",
+              "dependencies": {
+                "inherits": {
+                  "version": "2.0.1",
+                  "from": "inherits@2.0.1"
+                }
+              }
+            }
+          }
+        },
+        "minimatch": {
+          "version": "0.2.12",
+          "from": "minimatch@0.2.12",
+          "dependencies": {
+            "lru-cache": {
+              "version": "2.3.1",
+              "from": "lru-cache@2.3.1"
+            },
+            "sigmund": {
+              "version": "1.0.0",
+              "from": "sigmund@1.0.0"
+            }
+          }
+        },
+        "console-browserify": {
+          "version": "0.1.6",
+          "from": "console-browserify@0.1.6"
         }
       }
     },
