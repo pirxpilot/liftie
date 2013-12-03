@@ -3,17 +3,8 @@ var cachify = require('connect-cachify-static');
 var gzip = require('connect-gzip-static');
 var http = require('http');
 var path = require('path');
-var stylus = require('stylus');
-var nib = require('nib');
 var loaders = require('./lib/loaders');
 var plugins = require('./lib/plugins');
-
-function compileCss(str, path) {
-  return stylus(str)
-    .set('filename', path)
-    .set('compress', true)
-    .use(nib());
-}
 
 var app = module.exports = express();
 
@@ -39,10 +30,6 @@ app.configure(function() {
   app.use(express.urlencoded());
   app.use(cachify(root));
   app.use(app.router);
-  app.use(stylus.middleware({
-    src: __dirname + '/public',
-    compile: compileCss
-  }));
   app.use(gzip(root));
 });
 
