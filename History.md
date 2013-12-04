@@ -1,4 +1,10 @@
 
+3.4.2 / 2013-12-03
+==================
+
+ * add snow forecast to weather display
+ * use common limiter API
+
 3.4.1 / 2013-12-02
 ==================
 
