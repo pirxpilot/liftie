@@ -9,11 +9,11 @@
   "dependencies": {
     "express": "~3",
     "jade": "*",
-    "stylus": "*",
+    "stylus": "> 0.38",
     "superagent": "~0",
     "CSSselect": "~0",
     "htmlparser2": "~3.2",
-    "nib": "~0",
+    "nib": "~1",
     "connect-cachify-static": "~0",
     "connect-gzip-static": "~0",
     "lodash": "~1",
