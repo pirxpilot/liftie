@@ -62,7 +62,9 @@ mixin weather(resort)
         li(class= resort.weather ? resort.weather.icon[0] : '')
         li(class= resort.weather ? resort.weather.icon[1] : '')
     .temperature
-    .conditions
+    .snow-conditions
+      span.conditions
+      span.snowforecast
     .text
     .notice Forecast by&nbsp;
       a(target="_blank")
