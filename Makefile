@@ -35,16 +35,21 @@ $(BUILD_DIR):
 $(BUILD_DIR)/$(PROJECT).js: components $(SRC)
 	$(NODE_BIN)/component build --out $(BUILD_DIR) --use component-autoboot --name $(PROJECT)
 
+$(BUILD_DIR)/$(PROJECT)-embed.js: lib/embed/index.js
+	echo '(function(){' > $@
+	cat $< >> $@
+	echo '}());' >> $@
+
 # stylus for CSS
 
 $(CSS_DIR)/style.css: $(wildcard $(CSS_DIR)/*.styl)
 
-build: $(BUILD_DIR)/$(PROJECT).js $(CSS_DIR)/style.css
+build: $(BUILD_DIR)/$(PROJECT).js $(CSS_DIR)/style.css $(BUILD_DIR)/$(PROJECT)-embed.js
 
 # minized and compressed version for deployment
 
-.PRECIOUS: $(BUILD_DIR)/$(PROJECT).min.js
-dist: $(BUILD_DIR)/$(PROJECT).min.js.gz $(CSS_DIR)/style.css.gz
+.PRECIOUS: $(BUILD_DIR)/$(PROJECT).min.js $(BUILD_DIR)/$(PROJECT)-embed.min.js
+dist: $(BUILD_DIR)/$(PROJECT).min.js.gz $(CSS_DIR)/style.css.gz $(BUILD_DIR)/$(PROJECT)-embed.min.js.gz
 
 # cleaning
 
