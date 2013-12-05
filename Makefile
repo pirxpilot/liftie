@@ -16,7 +16,7 @@ all: lint test build
 	$(NODE_BIN)/uglifyjs $< --mangle --no-copyright --compress --output $@
 
 %.css: %.styl
-	$(NODE_BIN)/stylus --include-css --compress --use ./node_modules/nib/lib/nib.js $<
+	$(NODE_BIN)/stylus --include-css --compress --use ./node_modules/stylus-font-face --use ./node_modules/nib $<
 
 lint:
 	$(NODE_BIN)/jshint *.js bin/generate lib test

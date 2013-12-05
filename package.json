@@ -9,11 +9,11 @@
   "dependencies": {
     "express": "~3",
     "jade": "*",
-    "stylus": "*",
+    "stylus": "> 0.38",
     "superagent": "~0",
     "CSSselect": "~0",
     "htmlparser2": "~3.2",
-    "nib": "~0",
+    "nib": "~1",
     "connect-cachify-static": "~0",
     "connect-gzip-static": "~0",
     "lodash": "~1",
@@ -21,7 +21,8 @@
     "dirty": "~0",
     "async": "~0",
     "limiter": "~1",
-    "moment": "~2"
+    "moment": "~2",
+    "stylus-font-face": "~0"
   },
   "devDependencies": {
     "mocha": "~1",
