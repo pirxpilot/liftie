@@ -1,4 +1,14 @@
 
+3.4.3 / 2013-12-05
+==================
+
+ * make resort link in a widget external
+ * add script that allows to embed liftie widgets
+ * add widget support for iframe resizing
+ * use stylus-font-face to properly define and embed fonts
+ * all fonts formats are kept as external files
+ * updated stylus and nib
+
 3.4.2 / 2013-12-03
 ==================
 
