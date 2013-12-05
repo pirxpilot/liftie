@@ -16,7 +16,7 @@ mixin header(resort, widget)
       target='_blank'
     )
       span.ls-external
-  a.resort-name(href='/resort/#{ resort.id }')= resort.name
+  a.resort-name(href='/resort/#{ resort.id }' target=widget && "_blank")= resort.name
   if !widget
     if !single
       if resort.deals
