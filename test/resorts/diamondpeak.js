@@ -1,4 +1,4 @@
-var assert = require('assert');
+var should = require('should');
 var fs = require('fs');
 var parser = require('../../lib/lifts/parser');
 var parse = require('../../lib/resorts/diamondpeak');
@@ -11,15 +11,15 @@ describe('parse diamondpeak', function() {
     stream.on('error', done);
     stream.pipe(parser(parse, function(err, status) {
       var expected = {
-        'Crystal Express': 'open',
-        'Lakeview': 'open',
-        'Lodgepole': 'open',
-        'Red Fox': 'closed',
-        'Ridge': 'closed',
-        'Schoolhouse': 'open',
-        'Surface Lift': 'open'
+        'Crystal Express Lift': 'closed',
+        'Lakeview Lift': 'closed',
+        'Lodgepole Lift': 'closed',
+        'Red Fox Lift': 'closed',
+        'Ridge Lift': 'closed',
+        'Schoolhouse Lift': 'closed'
       };
-      assert.deepEqual(status, expected);
+      should.exist(status);
+      status.should.eql(expected);
       done(err);
     }));
   });
