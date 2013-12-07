@@ -2,7 +2,7 @@
   "name": "Diamond Peak",
   "url": {
     "host": "http://diamondpeak.com",
-    "pathname": "/conditions"
+    "pathname": "/mountain/conditions"
   },
   "tags": [
     "Lake Tahoe",
@@ -13,5 +13,12 @@
     -119.930199,
     39.249599
   ],
-  "twitter": "diamondpeak"
+  "twitter": "diamondpeak",
+  "webcams": [
+    {
+      "name": "Snowflake Lodge",
+      "source": "http://diamondpeak.com/mountain/mountain-cam",
+      "image": "http://diamondpeak.com/resources/web_cams/snowflakelake.php"
+    }
+  ]
 }
