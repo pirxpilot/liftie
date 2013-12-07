@@ -1,0 +1,15 @@
+{
+  "name": "Mt Spokane",
+  "url": {
+    "host": "http://www.mtspokane.com",
+    "pathname": "/trail-report"
+  },
+  "tags": [
+    "Washington"
+  ],
+  "ll": [
+    -117.096107,
+    47.921261
+  ],
+  "twitter": "mtspokane"
+}

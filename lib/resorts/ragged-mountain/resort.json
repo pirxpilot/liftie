@@ -1,0 +1,16 @@
+{
+  "name": "Ragged Mountain",
+  "url": {
+    "host": "http://raggedmountainresort.com",
+    "pathname": "/snow-report/"
+  },
+  "tags": [
+    "New Hampshire",
+    "New England"
+  ],
+  "ll": [
+    -71.842003,
+    43.486305
+  ],
+  "twitter": "raggedmtnNH"
+}

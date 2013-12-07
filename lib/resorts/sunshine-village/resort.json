@@ -1,0 +1,15 @@
+{
+  "name": "Sunshine Village",
+  "url": {
+    "host": "http://www.skibanff.com",
+    "pathname": "/conditions/"
+  },
+  "tags": [
+    "Alberta"
+  ],
+  "ll": [
+    -115.682602,
+    51.174175
+  ],
+  "twitter": "sunshinevillage"
+}
