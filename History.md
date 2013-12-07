@@ -1,4 +1,10 @@
 
+3.4.5 / 2013-12-07
+==================
+
+ * display vimeo videos in twitter feed
+ * update Diamond Peak resort for the new season
+
 3.4.4 / 2013-12-06
 ==================
 
