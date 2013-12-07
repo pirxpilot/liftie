@@ -1,4 +1,12 @@
 
+3.4.4 / 2013-12-06
+==================
+
+ * liftie link is now rendered outside of the widget iframe
+ * add Ragged Mountain resort
+ * add Sunshine Village resort
+ * add Mt. Spokane resort
+
 3.4.3 / 2013-12-05
 ==================
 
