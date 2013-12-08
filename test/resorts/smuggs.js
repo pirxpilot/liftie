@@ -11,11 +11,11 @@ describe('parse smuggs', function() {
     stream.on('error', done);
     stream.pipe(parser(parse, function(err, status) {
       var expected = {
-        'Mogul Mouse\'s Magic': 'closed',
+        'Mogul Mouse\'s Magic': 'open',
         'Morse Highlands': 'closed',
-        'Sir Henry\'s Glider': 'closed',
+        'Sir Henry\'s Glider': 'open',
         'Village': 'closed',
-        'Sterling Summit': 'closed',
+        'Sterling Summit': 'open',
         'Sterling T-Bar': 'closed',
         'Madonna I Summit': 'closed',
         'Madonna II': 'closed'
