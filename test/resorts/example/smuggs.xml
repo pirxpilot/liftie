@@ -34,7 +34,7 @@
 				<trail id="110" trail_type="3" rating="5" trail_status="0" snowmaking="0" makingsnow="0" groomed="0" video_file="">
 			<description><![CDATA[<span class="title">Knight's Revenge Gladed Park</span><br>Freestyle skiers and riders in this natural park will find over 30 features - log slides, quarter pipes, bank turns, rock jumps, and more!]]></description>
 		</trail>
-				<trail id="57" trail_type="1" rating="2" trail_status="0" snowmaking="1" makingsnow="0" groomed="0" video_file="">
+				<trail id="57" trail_type="1" rating="2" trail_status="0" snowmaking="1" makingsnow="1" groomed="0" video_file="">
 			<description><![CDATA[<span class="title">Link</span><span class="closed"> - CLOSED</span><br><span class="subtitle">Length: 3650'</span><br><br>A wonderful cruiser, regularly groomed, that "links" you to an incredible smorgasbord of options from bumps to race courses to glades.]]></description>
 		</trail>
 				<trail id="58" trail_type="1" rating="2" trail_status="0" snowmaking="0" makingsnow="0" groomed="0" video_file="">
@@ -49,7 +49,7 @@
 				<trail id="61" trail_type="1" rating="2" trail_status="0" snowmaking="1" makingsnow="0" groomed="0" video_file="">
 			<description><![CDATA[<span class="title">Lower F.I.S.</span><span class="closed"> - CLOSED</span><br><span class="subtitle">Length: 2400'</span><br><br>If you're ever feeling the need for speed, this will probably do. This blue banks right off Link on Madonna to offer steeper wide pitches and natural rollers.]]></description>
 		</trail>
-				<trail id="62" trail_type="1" rating="2" trail_status="0" snowmaking="1" makingsnow="0" groomed="0" video_file="">
+				<trail id="62" trail_type="1" rating="2" trail_status="0" snowmaking="1" makingsnow="1" groomed="0" video_file="">
 			<description><![CDATA[<span class="title">Lower Liftline</span><span class="closed"> - CLOSED</span><br><span class="subtitle">Length: 2200'</span><br><br>Home of the Family Fun Race Course, this blue trail has "Last one to the lift is a rotten egg" written all over it. The "Horse can really see the barn" on this one. It's "down the homestretch they come!" Or how about... naw, you get the idea.]]></description>
 		</trail>
 				<trail id="63" trail_type="1" rating="2" trail_status="0" snowmaking="1" makingsnow="0" groomed="0" video_file="">
@@ -103,26 +103,26 @@
 				<trail id="78" trail_type="1" rating="2" trail_status="0" snowmaking="1" makingsnow="0" groomed="0" video_file="">
 			<description><![CDATA[<span class="title">Waterfall</span><span class="closed"> - CLOSED</span><br><span class="subtitle">Length: 1100'</span><br><br>Picture yourself on a boat on a river, taking lazy turns down a peaceful consistent trail when you decide to make a right turn - Whoa! Wake up! Hello Waterfall!]]></description>
 		</trail>
-				<trail id="18" trail_type="3" rating="2" trail_status="0" snowmaking="1" makingsnow="0" groomed="0" video_file="">
-			<description><![CDATA[<span class="title">Birch Run</span><span class="closed"> - CLOSED</span><br><span class="subtitle">Length: 1222'</span><br><br>A short little blue that brings you out at the Sterling Lift. Home to our intermediate Birch Run Terrain Park - Play or pass through!]]></description>
+				<trail id="18" trail_type="3" rating="2" trail_status="1" snowmaking="1" makingsnow="0" groomed="1" video_file="">
+			<description><![CDATA[<span class="title">Birch Run</span><span class="open"> - OPEN</span><br><span class="subtitle">Length: 1222'</span><br><br>A short little blue that brings you out at the Sterling Lift. Home to our intermediate Birch Run Terrain Park - Play or pass through!]]></description>
 		</trail>
-				<trail id="93" trail_type="3" rating="5" trail_status="0" snowmaking="1" makingsnow="0" groomed="0" video_file="">
+				<trail id="93" trail_type="3" rating="5" trail_status="1" snowmaking="1" makingsnow="0" groomed="1" video_file="">
 			<description><![CDATA[<span class="title">Birch Run Terrain Park</span><br>The Birch Run Terrain Park is the place to find intermediate level terrain park features. A perfect practice playground aimed at getting you used to and psyched abut playing in the parks. Tune up your game before heading over to "The Zone".]]></description>
 		</trail>
 				<trail id="19" trail_type="1" rating="3" trail_status="0" snowmaking="0" makingsnow="0" groomed="0" video_file="">
 			<description><![CDATA[<span class="title">Black Bear</span><span class="closed"> - CLOSED</span><br><span class="subtitle">Length: 1805'</span><br><br>Your typical Smuggs black diamond.  Kind of narrow, bumped, some double fall lines, pretty cool.  Oh, except in the middle of this one, there's this little cliff you have to leap over!]]></description>
 		</trail>
-				<trail id="20" trail_type="1" rating="2" trail_status="0" snowmaking="1" makingsnow="0" groomed="0" video_file="">
-			<description><![CDATA[<span class="title">Black Snake</span><span class="closed"> - CLOSED</span><br><span class="subtitle">Length: 3200'</span><br><br>Now before all you intermediates start jumping to conclusions about the name, it's not like it sounds. Like its counterpart Chilcoot on Madonna, this blue winder offers stunning views of the Champlain Valley especially towards day's end. Don't get caught daydreaming because while it is a preferred blue groomer, it also has a healthy pitch at the end before the Practice Slope.]]></description>
+				<trail id="20" trail_type="1" rating="2" trail_status="1" snowmaking="1" makingsnow="0" groomed="1" video_file="">
+			<description><![CDATA[<span class="title">Black Snake</span><span class="open"> - OPEN</span><br><span class="subtitle">Length: 3200'</span><br><br>Now before all you intermediates start jumping to conclusions about the name, it's not like it sounds. Like its counterpart Chilcoot on Madonna, this blue winder offers stunning views of the Champlain Valley especially towards day's end. Don't get caught daydreaming because while it is a preferred blue groomer, it also has a healthy pitch at the end before the Practice Slope.]]></description>
 		</trail>
 				<trail id="21" trail_type="1" rating="3" trail_status="0" snowmaking="1" makingsnow="0" groomed="0" video_file="">
 			<description><![CDATA[<span class="title">Bootlegger</span><span class="closed"> - CLOSED</span><br><span class="subtitle">Length: 985'</span><br><br>This steep bumped, black beauty was cut by an expert telemark skier and true local Vermonter named Crusty.  We probably don't need to tell you anything else, do we?]]></description>
 		</trail>
-				<trail id="23" trail_type="1" rating="3" trail_status="0" snowmaking="1" makingsnow="0" groomed="0" video_file="">
-			<description><![CDATA[<span class="title">Chute</span><span class="closed"> - CLOSED</span><br><span class="subtitle">Length: 800'</span><br><br>If Hangman's Drop reminds you of your favorite roller coaster then this one will send you right off the tracks.  Only a true local will know the original name of this trail... just ask, but the answer you get might be B.S.!]]></description>
+				<trail id="23" trail_type="1" rating="3" trail_status="1" snowmaking="1" makingsnow="0" groomed="0" video_file="">
+			<description><![CDATA[<span class="title">Chute</span><span class="open"> - OPEN</span><br><span class="subtitle">Length: 800'</span><br><br>If Hangman's Drop reminds you of your favorite roller coaster then this one will send you right off the tracks.  Only a true local will know the original name of this trail... just ask, but the answer you get might be B.S.!]]></description>
 		</trail>
-				<trail id="22" trail_type="1" rating="2" trail_status="0" snowmaking="1" makingsnow="0" groomed="0" video_file="">
-			<description><![CDATA[<span class="title">Crossover</span><span class="closed"> - CLOSED</span><br><span class="subtitle">Length: 1070'</span><br><br>Crossover is quite a big skill to master in snow sports. What does that have to do with the name of this blue groomer that connects you gently to slightly steeper groomers or cool blue glades? Nothing really. Enjoy anyway.]]></description>
+				<trail id="22" trail_type="1" rating="2" trail_status="1" snowmaking="1" makingsnow="0" groomed="1" video_file="">
+			<description><![CDATA[<span class="title">Crossover</span><span class="open"> - OPEN</span><br><span class="subtitle">Length: 1070'</span><br><br>Crossover is quite a big skill to master in snow sports. What does that have to do with the name of this blue groomer that connects you gently to slightly steeper groomers or cool blue glades? Nothing really. Enjoy anyway.]]></description>
 		</trail>
 				<trail id="24" trail_type="2" rating="3" trail_status="0" snowmaking="0" makingsnow="0" groomed="0" video_file="">
 			<description><![CDATA[<span class="title">Deer Run Glades</span><span class="closed"> - CLOSED</span><br><span class="subtitle">Length: 400'</span><br><br>The White-Tailed Deer of Northern Vermont are graceful, agile, and quite nimble as they bound through our forests. You'll need all of those qualities to get down this short but steep section of glades on Sterling.]]></description>
@@ -145,14 +145,14 @@
 				<trail id="30" trail_type="1" rating="2" trail_status="0" snowmaking="0" makingsnow="0" groomed="0" video_file="">
 			<description><![CDATA[<span class="title">Jolly Rodger</span><span class="closed"> - CLOSED</span><br><span class="subtitle">Length: 800'</span><br><br>In the spirit of the pirate flag it's named for, it's a mildly challenging access run to Treasure Run, with some little trap doors like "Pipeline Escape", "Lower Harvey's" and "Lower Black Bear" awaiting you. ]]></description>
 		</trail>
-				<trail id="31" trail_type="1" rating="2" trail_status="0" snowmaking="1" makingsnow="0" groomed="0" video_file="">
-			<description><![CDATA[<span class="title">Lower Exhibition</span><span class="closed"> - CLOSED</span><br><span class="subtitle">Length: 1950'</span><br><br>Although you're still on display here(Sterling lift riders are watching your moves!), you can relax and let 'em run as the terrain mellows a bit for you to take it the rest of the way home!]]></description>
+				<trail id="31" trail_type="1" rating="2" trail_status="1" snowmaking="1" makingsnow="0" groomed="1" video_file="">
+			<description><![CDATA[<span class="title">Lower Exhibition</span><span class="open"> - OPEN</span><br><span class="subtitle">Length: 1950'</span><br><br>Although you're still on display here(Sterling lift riders are watching your moves!), you can relax and let 'em run as the terrain mellows a bit for you to take it the rest of the way home!]]></description>
 		</trail>
 				<trail id="32" trail_type="1" rating="2" trail_status="0" snowmaking="0" makingsnow="0" groomed="0" video_file="">
 			<description><![CDATA[<span class="title">Lower Pipeline</span><span class="closed"> - CLOSED</span><br><span class="subtitle">Length: 2650'</span><br><br>Two parts tight and plummeting(Upper and Escape), one part milder but still narrow(Lower), Pipeline serves up a tasty test piece for upper intermediates to experts every time.]]></description>
 		</trail>
-				<trail id="33" trail_type="1" rating="2" trail_status="0" snowmaking="1" makingsnow="0" groomed="0" video_file="">
-			<description><![CDATA[<span class="title">Lower Rumrunner</span><span class="closed"> - CLOSED</span><br><span class="subtitle">Length: 5300'</span><br><br>Like baseball and hot dogs are to America, Rumrunner is to Smuggs.  This regularly groomed cruiser is one of the "bread and butter" trails for intermediates on Sterling.  Also one of the original trails, this classic was named after those that thought Prohibition was a bad idea and used the Notch as a bootlegging route.]]></description>
+				<trail id="33" trail_type="1" rating="2" trail_status="1" snowmaking="1" makingsnow="0" groomed="1" video_file="">
+			<description><![CDATA[<span class="title">Lower Rumrunner</span><span class="open"> - OPEN</span><br><span class="subtitle">Length: 5300'</span><br><br>Like baseball and hot dogs are to America, Rumrunner is to Smuggs.  This regularly groomed cruiser is one of the "bread and butter" trails for intermediates on Sterling.  Also one of the original trails, this classic was named after those that thought Prohibition was a bad idea and used the Notch as a bootlegging route.]]></description>
 		</trail>
 				<trail id="34" trail_type="1" rating="3" trail_status="0" snowmaking="0" makingsnow="0" groomed="0" video_file="">
 			<description><![CDATA[<span class="title">Pipeline Escape</span><span class="closed"> - CLOSED</span><br><span class="subtitle">Length: 1800'</span><br><br>Two parts tight and plummeting(Upper and Escape), one part milder but still narrow(Lower), Pipeline Escape serves up a tasty test piece for upper intermediates to experts every time.]]></description>
@@ -166,14 +166,14 @@
 				<trail id="37" trail_type="2" rating="3" trail_status="0" snowmaking="0" makingsnow="0" groomed="0" video_file="">
 			<description><![CDATA[<span class="title">Powder Keg</span><span class="closed"> - CLOSED</span><br><span class="subtitle">Length: 775'</span><br><br>Another trail named for that "piratey" thing, but this glade on Sterling will light your fuse and give you the big bang.]]></description>
 		</trail>
-				<trail id="38" trail_type="1" rating="2" trail_status="0" snowmaking="1" makingsnow="0" groomed="0" video_file="">
-			<description><![CDATA[<span class="title">Practice Slope</span><span class="closed"> - CLOSED</span><br><span class="subtitle">Length: 1600'</span><br><br>One of the originals from '56.  These days this trail is home to some of New England's best young up & coming racers on the college & high school scene.  If it's a race day it's worth watching. Don't worry, with over 11 wide open acres there's still plenty off the race course.]]></description>
+				<trail id="38" trail_type="1" rating="2" trail_status="1" snowmaking="1" makingsnow="0" groomed="0" video_file="">
+			<description><![CDATA[<span class="title">Practice Slope</span><span class="open"> - OPEN</span><br><span class="subtitle">Length: 1600'</span><br><br>One of the originals from '56.  These days this trail is home to some of New England's best young up & coming racers on the college & high school scene.  If it's a race day it's worth watching. Don't worry, with over 11 wide open acres there's still plenty off the race course.]]></description>
 		</trail>
 				<trail id="39" trail_type="2" rating="2" trail_status="0" snowmaking="0" makingsnow="0" groomed="0" video_file="">
 			<description><![CDATA[<span class="title">Sherwood Forest</span><span class="closed"> - CLOSED</span><br><span class="subtitle">Length: 950'</span><br><br>It used to be the Sheriff of Nottingham would throw you in the slammer for poaching these awesome blue glades.  Now they're open, so you and your merry band of skiers and riders can enjoy conveniently dropping out at parking lot 1 at the end of the day or go round again for another!]]></description>
 		</trail>
-				<trail id="40" trail_type="1" rating="3" trail_status="0" snowmaking="1" makingsnow="0" groomed="0" video_file="">
-			<description><![CDATA[<span class="title">Smugglers' Alley</span><span class="closed"> - CLOSED</span><br><span class="subtitle">Length: 1800'</span><br><br>There's the low diving board, and then there's the high diving board. When skiers and riders are ready to try the "high dive," this is usually the trail. Steep, but wide open, bumped but predictable, this favorite black diamond has been the confidence booster for countless trying to clear the next hurdle.]]></description>
+				<trail id="40" trail_type="1" rating="3" trail_status="1" snowmaking="1" makingsnow="0" groomed="1" video_file="">
+			<description><![CDATA[<span class="title">Smugglers' Alley</span><span class="open"> - OPEN</span><br><span class="subtitle">Length: 1800'</span><br><br>There's the low diving board, and then there's the high diving board. When skiers and riders are ready to try the "high dive," this is usually the trail. Steep, but wide open, bumped but predictable, this favorite black diamond has been the confidence booster for countless trying to clear the next hurdle.]]></description>
 		</trail>
 				<trail id="41" trail_type="1" rating="3" trail_status="0" snowmaking="1" makingsnow="0" groomed="0" video_file="">
 			<description><![CDATA[<span class="title">Snake Bite</span><span class="closed"> - CLOSED</span><br><span class="subtitle">Length: 1275'</span><br><br>It sneaks up on you lighting fast and is mean and unpredictable.  Sometimes it's steep and flat.  Sometimes it's steep and bumped.  Sometimes high school and college kids go forty miles per hour down it on a sanctioned race course.  Don't mess with this one or it will strike.]]></description>
@@ -181,14 +181,14 @@
 				<trail id="92" trail_type="3" rating="5" trail_status="0" snowmaking="1" makingsnow="0" groomed="0" video_file="">
 			<description><![CDATA[<span class="title">The Zone Terrain Park</span><br>The Zone is home to the biggest hits at Smuggs. You've got to be on your game to tackle this park. Spectators and participants alike should check out our Gravity Control event series with Rail Jam, Slopestyle, and Big Air competitions.]]></description>
 		</trail>
-				<trail id="42" trail_type="1" rating="2" trail_status="0" snowmaking="1" makingsnow="0" groomed="0" video_file="">
-			<description><![CDATA[<span class="title">Thomke's</span><span class="closed"> - CLOSED</span><br><span class="subtitle">Length: 2500'</span><br><br>Horst Thomke was a local restaurateur and raconteur.  A superb chef, skier, pianist, yodler (native of Switzerland), and part time ski patroller, he enjoyed running the Top of the Notch Cafe as well as his Chez Moustache restaurant on the mountain road. The unpredictable terrain of Thomke's trail reminds us of his zany personality.]]></description>
+				<trail id="42" trail_type="1" rating="2" trail_status="1" snowmaking="1" makingsnow="0" groomed="0" video_file="">
+			<description><![CDATA[<span class="title">Thomke's</span><span class="open"> - OPEN</span><br><span class="subtitle">Length: 2500'</span><br><br>Horst Thomke was a local restaurateur and raconteur.  A superb chef, skier, pianist, yodler (native of Switzerland), and part time ski patroller, he enjoyed running the Top of the Notch Cafe as well as his Chez Moustache restaurant on the mountain road. The unpredictable terrain of Thomke's trail reminds us of his zany personality.]]></description>
 		</trail>
-				<trail id="94" trail_type="1" rating="2" trail_status="0" snowmaking="1" makingsnow="0" groomed="0" video_file="">
-			<description><![CDATA[<span class="title">Thomke's Express</span><span class="closed"> - CLOSED</span><br><span class="subtitle">Length: 2500'</span><br><br>Use this trail off Smugglers' Alley to access Thomkes, a winding blue & connect with Rumrunner.]]></description>
+				<trail id="94" trail_type="1" rating="2" trail_status="1" snowmaking="1" makingsnow="0" groomed="0" video_file="">
+			<description><![CDATA[<span class="title">Thomke's Express</span><span class="open"> - OPEN</span><br><span class="subtitle">Length: 2500'</span><br><br>Use this trail off Smugglers' Alley to access Thomkes, a winding blue & connect with Rumrunner.]]></description>
 		</trail>
-				<trail id="43" trail_type="1" rating="2" trail_status="0" snowmaking="1" makingsnow="0" groomed="0" video_file="">
-			<description><![CDATA[<span class="title">Treasure Run</span><span class="closed"> - CLOSED</span><br><span class="subtitle">Length: 2656'</span><br><br>1000 paces to the right off the top of Sterling on Rumrunner. 500 paces left on the blue section of Pipeline. 300 paces right through the woods, and "X" marks the spot for skiing/riding treasure. Sweet easy bumps at the top, then a nice groomed cruising section bringing you back to Lower Exhibition to Sterling base.]]></description>
+				<trail id="43" trail_type="1" rating="2" trail_status="1" snowmaking="1" makingsnow="0" groomed="1" video_file="">
+			<description><![CDATA[<span class="title">Treasure Run</span><span class="open"> - OPEN</span><br><span class="subtitle">Length: 2656'</span><br><br>1000 paces to the right off the top of Sterling on Rumrunner. 500 paces left on the blue section of Pipeline. 300 paces right through the woods, and "X" marks the spot for skiing/riding treasure. Sweet easy bumps at the top, then a nice groomed cruising section bringing you back to Lower Exhibition to Sterling base.]]></description>
 		</trail>
 				<trail id="44" trail_type="1" rating="3" trail_status="0" snowmaking="0" makingsnow="0" groomed="0" video_file="">
 			<description><![CDATA[<span class="title">Upper Exhibition</span><span class="closed"> - CLOSED</span><br><span class="subtitle">Length: 2500'</span><br><br>You'll want to have your best turns on display for those in the overhead Sterling Lift as you drop down double fall lines, small ledges, and sweet bump lines.]]></description>
@@ -196,8 +196,8 @@
 				<trail id="45" trail_type="1" rating="3" trail_status="0" snowmaking="1" makingsnow="0" groomed="0" video_file="">
 			<description><![CDATA[<span class="title">Upper Pipeline</span><span class="closed"> - CLOSED</span><br><span class="subtitle">Length: 550'</span><br><br>Two parts tight and plummeting(Upper and Escape), one part milder but still narrow(Lower), serves up a tasty test piece for upper intermediates to experts every time.]]></description>
 		</trail>
-				<trail id="46" trail_type="1" rating="2" trail_status="0" snowmaking="1" makingsnow="0" groomed="0" video_file="">
-			<description><![CDATA[<span class="title">Upper Rumrunner</span><span class="closed"> - CLOSED</span><br><span class="subtitle">Length: 2700'</span><br><br>This regularly groomed cruiser is one of the "bread and butter" trails for intermediates on Sterling. One of the original trails from 1957, this classic was named after those that thought Prohibition was a bad idea and used the Notch as a bootlegging route.]]></description>
+				<trail id="46" trail_type="1" rating="2" trail_status="1" snowmaking="1" makingsnow="0" groomed="1" video_file="">
+			<description><![CDATA[<span class="title">Upper Rumrunner</span><span class="open"> - OPEN</span><br><span class="subtitle">Length: 2700'</span><br><br>This regularly groomed cruiser is one of the "bread and butter" trails for intermediates on Sterling. One of the original trails from 1957, this classic was named after those that thought Prohibition was a bad idea and used the Notch as a bootlegging route.]]></description>
 		</trail>
 				<trail id="107" trail_type="3" rating="5" trail_status="0" snowmaking="1" makingsnow="0" groomed="0" video_file="">
 			<description><![CDATA[<span class="title">Burton Riglet Park</span><br>The first Burton Riglet Park in the Northeast, our park features a central treehouse with ramps for sliding down to a variety of features sized for teaching youngsters 3-6 years old how to snowboard.]]></description>
@@ -211,7 +211,7 @@
 				<trail id="4" trail_type="1" rating="2" trail_status="0" snowmaking="0" makingsnow="0" groomed="0" video_file="">
 			<description><![CDATA[<span class="title">Evaporator</span><span class="closed"> - CLOSED</span><br><span class="subtitle">Length: 1052'</span><br><br>While some of our trails have the smuggling theme, several have the maple sugaring theme. Located on Morse Highlands, and like a darker grade syrup, this trail's a little bolder than its Grade A fancy counterparts on Morse but still relatively sweet.]]></description>
 		</trail>
-				<trail id="79" trail_type="1" rating="1" trail_status="0" snowmaking="1" makingsnow="0" groomed="0" video_file="">
+				<trail id="79" trail_type="1" rating="1" trail_status="0" snowmaking="1" makingsnow="1" groomed="0" video_file="">
 			<description><![CDATA[<span class="title">Garden Path</span><span class="closed"> - CLOSED</span><br><span class="subtitle">Length: 3115'</span><br><br>The quest for confidence in those early turns can be found here on this wide gentle gem. Follow the path to enlightened skiing & riding.]]></description>
 		</trail>
 				<trail id="5" trail_type="1" rating="1" trail_status="0" snowmaking="1" makingsnow="0" groomed="0" video_file="">
@@ -223,8 +223,8 @@
 				<trail id="111" trail_type="1" rating="5" trail_status="0" snowmaking="1" makingsnow="0" groomed="0" video_file="">
 			<description><![CDATA[<span class="title">Log Jam Terrain Park</span><br>Our park designed just for newbies with a few rails and hits and lots of room on a gentle slope to play!]]></description>
 		</trail>
-				<trail id="7" trail_type="3" rating="1" trail_status="0" snowmaking="1" makingsnow="0" groomed="0" video_file="">
-			<description><![CDATA[<span class="title">Lower Morse Liftline</span><span class="closed"> - CLOSED</span><br><span class="subtitle">Length: 2500'</span><br><br>With the Village Lift overhead, this wonderfully wide novice trail provides a stage to show off those great new turns. Easily accessed from mid-station, this green eventually slides skiers and riders gently to the lift line to do it all over again.]]></description>
+				<trail id="7" trail_type="3" rating="1" trail_status="1" snowmaking="1" makingsnow="0" groomed="1" video_file="">
+			<description><![CDATA[<span class="title">Lower Morse Liftline</span><span class="open"> - OPEN</span><br><span class="subtitle">Length: 2500'</span><br><br>With the Village Lift overhead, this wonderfully wide novice trail provides a stage to show off those great new turns. Easily accessed from mid-station, this green eventually slides skiers and riders gently to the lift line to do it all over again.]]></description>
 		</trail>
 				<trail id="8" trail_type="1" rating="1" trail_status="0" snowmaking="1" makingsnow="0" groomed="0" video_file="">
 			<description><![CDATA[<span class="title">Magic Learning Trail</span><span class="closed"> - CLOSED</span><br><span class="subtitle">Length: 2250'</span><br><br>It would be neat to see all of the names of every kid, from all over the world that got their start on this favorite beginners' trail. On any given day, you can see the faces of "big" kids and little kids alike learning to ski & ride here. There isn't an adjective wonderful enough to describe the magic.]]></description>
@@ -235,11 +235,11 @@
 				<trail id="10" trail_type="1" rating="1" trail_status="0" snowmaking="1" makingsnow="0" groomed="0" video_file="">
 			<description><![CDATA[<span class="title">Midway</span><span class="closed"> - CLOSED</span><br><span class="subtitle">Length: 4900'</span><br><br>Your connecting trail to Upper Mountain Adventures. A perfect warm-up for the day. Don't forget to "let em run" over the flats. There's an awesome view of the Notch just before the last pitch that drops down to the Madonna/Sterling base, a great photo opportunity.]]></description>
 		</trail>
-				<trail id="12" trail_type="1" rating="1" trail_status="0" snowmaking="1" makingsnow="0" groomed="0" video_file="">
+				<trail id="12" trail_type="1" rating="1" trail_status="0" snowmaking="1" makingsnow="1" groomed="0" video_file="">
 			<description><![CDATA[<span class="title">Sam's Run</span><span class="closed"> - CLOSED</span><br><span class="subtitle">Length: 1670'</span><br><br>Placed perfectly in the soft pines of Morse Mountain, Sam's offers gentle green terrain with just enough adventure to make any novice smile.  It also offers access to both Morse Highlands and Lower Morse Mountain to the heart of the Resort.]]></description>
 		</trail>
-				<trail id="11" trail_type="1" rating="1" trail_status="0" snowmaking="1" makingsnow="0" groomed="0" video_file="">
-			<description><![CDATA[<span class="title">Sir Henry's Learning Hill</span><span class="closed"> - CLOSED</span><br><span class="subtitle">Length: 450'</span><br><br>Sir Henry's is a huge wide open area for beginner skiers & riders. It's also the location of our Burton Riglet Park, an innovative snow playground for snowboarder as young as 3 and home of the First Timer Program.]]></description>
+				<trail id="11" trail_type="1" rating="1" trail_status="1" snowmaking="1" makingsnow="0" groomed="1" video_file="">
+			<description><![CDATA[<span class="title">Sir Henry's Learning Hill</span><span class="open"> - OPEN</span><br><span class="subtitle">Length: 450'</span><br><br>Sir Henry's is a huge wide open area for beginner skiers & riders. It's also the location of our Burton Riglet Park, an innovative snow playground for snowboarder as young as 3 and home of the First Timer Program.]]></description>
 		</trail>
 				<trail id="13" trail_type="1" rating="2" trail_status="0" snowmaking="1" makingsnow="0" groomed="0" video_file="">
 			<description><![CDATA[<span class="title">Snow Snake</span><span class="closed"> - CLOSED</span><br><span class="subtitle">Length: 2200'</span><br><br>The perfect measuring stick to see if you're ready to graduate from Morse to Sterling & Madonna. Like the serpent it's named for, it slithers and rolls out true blue fun. And there's a great view of Smugglers' Village too!]]></description>
@@ -333,17 +333,17 @@
 				<lift id="9" lift_status="0">
 			<description><![CDATA[<span class="title">Madonna II</span><span class="closed"> - CLOSED</span><br><span class="subtitle">Length: 4700'</span><br><br>Servicing Madonna to mid-mountain with unloading at the end of Doc Dempsey's Glades. This lift accesses excellent intermediate terrain found on the lower half of Madonna and is also the gateway to access "Gary B's Northwest Passage" the return trail to the Resort Village.]]></description>
 		</lift>
-				<lift id="3" lift_status="0">
-			<description><![CDATA[<span class="title">Mogul Mouse's Magic Lift</span><span class="closed"> - CLOSED</span><br><span class="subtitle">Length: 4595'</span><br><br>Servicing Morse Mountain and featuring chairs that are close to the ground and run at slower speeds, it's especially suited for young children and new skiers/riders. Summit and mid-station unloading offer access to all terrain on Morse Mountain and the connecting trail to Madonna & Sterling.]]></description>
+				<lift id="3" lift_status="1">
+			<description><![CDATA[<span class="title">Mogul Mouse's Magic Lift</span><br><span class="subtitle">Length: 4595'</span><br><br>Servicing Morse Mountain and featuring chairs that are close to the ground and run at slower speeds, it's especially suited for young children and new skiers/riders. Summit and mid-station unloading offer access to all terrain on Morse Mountain and the connecting trail to Madonna & Sterling.]]></description>
 		</lift>
 				<lift id="5" lift_status="0">
 			<description><![CDATA[<span class="title">Morse Highlands Lift</span><span class="closed"> - CLOSED</span><br><span class="subtitle">Length: 1400'</span><br><br>Servicing the Morse Highlands Trail Network, this lift is easily accessed from Sam's Run or from Mid-station on Mogul Mouse's Magic Lift.]]></description>
 		</lift>
-				<lift id="4" lift_status="0">
-			<description><![CDATA[<span class="title">Sir Henry's Glider Lift</span><span class="closed"> - CLOSED</span><br><span class="subtitle">Length: 400'</span><br><br>Night School for Boarding.]]></description>
+				<lift id="4" lift_status="1">
+			<description><![CDATA[<span class="title">Sir Henry's Glider Lift</span><br><span class="subtitle">Length: 400'</span><br><br>Night School for Boarding.]]></description>
 		</lift>
-				<lift id="6" lift_status="0">
-			<description><![CDATA[<span class="title">Sterling Summit Lift</span><span class="closed"> - CLOSED</span><br><span class="subtitle">Length: 5700'</span><br><br>Servicing all terrain on Sterling Mountain and 1500' of vertical rise.]]></description>
+				<lift id="6" lift_status="1">
+			<description><![CDATA[<span class="title">Sterling Summit Lift</span><br><span class="subtitle">Length: 5700'</span><br><br>Servicing all terrain on Sterling Mountain and 1500' of vertical rise.]]></description>
 		</lift>
 				<lift id="7" lift_status="0">
 			<description><![CDATA[<span class="title">Sterling T-Bar</span><span class="closed"> - CLOSED</span><br><span class="subtitle">Length: 1298'</span><br><br>Servicing The Practice Slope and The Zone terrain park this lift is also great for a quick "first run of the day" or "one last one" on your way back to parking lot #1!]]></description>
@@ -774,8 +774,8 @@
 			</services>
 
 	<conditions>
-		<condition id="1"><![CDATA[<span class="title_snow_report">Snow Report for Thursday, November 07, 2013 - 10:58 am:</span><br>0 Trails, 0 Parks Open and 0 Lifts Operating -- NEW SNOW: Fresh daily<br>Comments: The most affordable skiing and riding in VT is at Smuggs. Opening Day is Fri, Nov 29. SAVE everyday with a Smuggs Pass or Badge!  ]]></condition>
-		<condition id="2"><![CDATA[<span class="title_grooming_report">Grooming Report for Thursday, November 07, 2013 - 10:58 am:</span><br><b>Current Weather:</b> Showers, mainly before 2pm. Temperature falling to around 41 by 5pm. Northwest wind 6 to 10 mph. <br><b>Forecast:</b> A slight chance of snow showers, mixing with rain after 10am, then gradually ending. Mostly cloudy, with a high near 39.<br><b>Base Depths - Trails w/ Snowmaking:</b> <br><b>Base Depths - Trails w/ Natural Snow:</b> <br><b>Snow Surface - Primary:</b> <br><b>Snow Surface - Secondary:</b> ]]></condition>
+		<condition id="1"><![CDATA[<span class="title_snow_report">Snow Report for Saturday, December 07, 2013 - 4:18 pm:</span><br>14 Trails, 1 Parks Open and 3 Lifts Operating <br>Comments: Birch Run Terrain Park is open with 15 features! The Mogul Mouse Magical Lift is open to mid station. Presently making snow on Madonna and Morse!  ]]></condition>
+		<condition id="2"><![CDATA[<span class="title_grooming_report">Grooming Report for Saturday, December 07, 2013 - 4:18 pm:</span><br><b>Current Weather:</b> Partly sunny and 12 degrees at the summit of Sterling with winds of 5 to 15 mph<br><b>Forecast:</b> Sun: Partly sunny with temps of 10 to 22 degrees<br><b>Base Depths - Trails w/ Snowmaking:</b> 12"-24"<br><b>Base Depths - Trails w/ Natural Snow:</b> 8" - 16"<br><b>Snow Surface - Primary:</b> Machine Groomed<br><b>Snow Surface - Secondary:</b> Variable]]></condition>
 		<condition id="3">http://www.smuggs.com/pages/winter/snowReport/images/current_view1.jpg</condition>
 		<condition id="4">http://www.smuggs.com/pages/winter/snowReport/images/current_view2.jpg</condition>
 		<condition id="5">http://www.smuggs.com/pages/winter/snowReport/images/current_view3.jpg</condition>
