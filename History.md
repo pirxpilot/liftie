@@ -1,4 +1,10 @@
 
+3.4.6 / 2013-12-08
+==================
+
+ * add Mount Sunapee resort
+ * update Smuggler's Notch status indication
+
 3.4.5 / 2013-12-07
 ==================
 
