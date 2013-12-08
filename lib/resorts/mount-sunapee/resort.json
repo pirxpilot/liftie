@@ -1,0 +1,20 @@
+{
+  "name": "Mount Sunapee",
+  "url": {
+    "host": "http://www.mountsunapee.com",
+    "pathname": "/mtsunapeewinter/onthemountain/sunapeesnowreport.asp"
+  },
+  "dataUrl": {
+    "host": "http://www.mountsunapee.com",
+    "pathname": "/sr/default_2013.aspx"
+  },
+  "tags": [
+    "New Hampshire",
+    "New England"
+  ],
+  "ll": [
+    -72.075394,
+    43.341194
+  ],
+  "twitter": "mountsunapee"
+}
