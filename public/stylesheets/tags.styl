@@ -40,8 +40,9 @@ $tagPadding=5px
       text-shadow 0 -1px rgba(black, .3)
       gradient-background($tagColor)
       opacity: .95
-      transition .3s ease-out
-      transition-property padding max-width
+      transition-duration .3s
+      transition-timing-function ease-out
+      transition-property padding, max-width
 
     &:hover .count
       padding $tagPadding ($tagPadding + 2) $tagPadding ($tagPadding + 1)
