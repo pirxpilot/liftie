@@ -1,4 +1,11 @@
 
+3.4.7 / 2013-12-10
+==================
+
+ * fix CSS syntax errors
+ * add vine videos in twitter feed
+ * improve embedding youtube videos
+
 3.4.6 / 2013-12-08
 ==================
 
