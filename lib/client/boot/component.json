@@ -3,7 +3,7 @@
   "description": "Main app boot component",
   "dependencies": {
     "pirxpilot/domready": "0.1.0",
-    "code42day/ga": "1.0.0",
+    "code42day/ua": "1.0.0",
     "code42day/load": "1.0.0",
     "component/enumerable": "0.3.1"
   },
