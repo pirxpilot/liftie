@@ -1,4 +1,10 @@
 
+3.4.9 / 2013-12-12
+==================
+
+ * add multicolumn widget
+ * add naked widget (no padding, transparent background)
+
 3.4.8 / 2013-12-11
 ==================
 
