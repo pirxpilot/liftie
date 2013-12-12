@@ -5,6 +5,8 @@
     "pirxpilot/domready": "0.1.0",
     "code42day/ua": "1.0.0",
     "code42day/load": "1.0.0",
+    "component/debounce": "0.0.3",
+    "component/event": "0.1.1",
     "component/enumerable": "0.3.1"
   },
   "scripts": [
