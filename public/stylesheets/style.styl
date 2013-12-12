@@ -479,19 +479,18 @@ maxContent(n)
 
 
 .widget
+  font-size .8em
+
   .panel
     width 100%
-    min-width 200px
     margin 0
     display block
     float none
 
-.widget + footer
-  font-size .8em
-  margin .4em 0 .2em
-
-  a
-    margin 0
+  &.naked
+    .panel
+      background-color transparent
+      padding 0
 
 for col in 4 3 2 1
   maxContent(col)
@@ -515,11 +514,6 @@ for col in 4 3 2 1
     .text
       display none
 
-
-@media screen and (max-width: 280px)
-  body
-    font-size .8em
-
 @media screen and (max-width: 400px)
   .extras .webcams .webcam
     &.desktop
@@ -533,3 +527,31 @@ for col in 4 3 2 1
 
       img
         display block
+
+@media screen and (min-width: 500px)
+  .widget
+    .lift
+      float left
+      margin-right 3%
+
+@media screen and (min-width: 500px) and (max-width: 749px)
+  .widget
+    .lift
+      width 48.5%
+      &:nth-child(2n)
+        margin-right 0
+
+
+@media screen and (min-width: 750px) and (max-width: 999px)
+  .widget
+    .lift
+      width 31.333%
+      &:nth-child(3n)
+        margin-right 0
+
+@media screen and (min-width: 1000px)
+  .widget
+    .lift
+      width 22.75%
+      &:nth-child(4n)
+        margin-right 0
