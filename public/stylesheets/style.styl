@@ -481,10 +481,14 @@ maxContent(n)
 .widget
   .panel
     width 100%
-    min-width 200px
     margin 0
     display block
     float none
+
+  &.naked
+    .panel
+      background-color transparent
+      padding 0
 
 .widget + footer
   font-size .8em
@@ -514,7 +518,6 @@ for col in 4 3 2 1
 
     .text
       display none
-
 
 @media screen and (max-width: 280px)
   body
