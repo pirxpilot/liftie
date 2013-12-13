@@ -1,0 +1,16 @@
+{
+  "name": "Cranmore",
+  "url": {
+    "host": "http://www.cranmore.com",
+    "pathname": "/winter/snow-grooming-report"
+  },
+  "tags": [
+    "New Hampshire",
+    "New England"
+  ],
+  "ll": [
+    -71.116783,
+    44.055382
+  ],
+  "twitter": "CranmoreMtn"
+}
