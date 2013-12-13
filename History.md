@@ -1,4 +1,11 @@
 
+3.4.11 / 2013-12-13
+==================
+
+ * fix Alpine Meadows resort
+ * fix Cataloochee resort
+ * update Mount Rose resort
+
 3.4.10 / 2013-12-13
 ==================
 
