@@ -1,4 +1,4 @@
-var assert = require('assert');
+var should = require('should');
 var fs = require('fs');
 var parser = require('../../lib/lifts/parser');
 var parseAlpine = require('../../lib/resorts/alpine');
@@ -11,20 +11,21 @@ describe('parse alpine', function() {
     stream.on('error', done);
     stream.pipe(parser(parseAlpine, function(err, status) {
       var expected = {
-        'Summit Six Chair': 'scheduled',
-        'Roundhouse Chair': 'scheduled',
-        'Hot Wheels': 'scheduled',
-        'Sherwood Express Chair': 'scheduled',
-        'Scott Chair': 'scheduled',
-        'Lakeview Chair': 'scheduled',
+        'Summit Six Chair': 'open',
+        'Roundhouse Chair': 'open',
+        'Hot Wheels': 'closed',
+        'Sherwood Express Chair': 'closed',
+        'Scott Chair': 'closed',
+        'Lakeview Chair': 'closed',
         'Yellow Chair': 'closed',
-        'Meadow Chair': 'scheduled',
-        'Subway Chair': 'scheduled',
+        'Meadow Chair': 'open',
+        'Subway Chair': 'closed',
         'Kangaroo Chair': 'closed',
         'Alpine Bowl Chair': 'closed',
-        'Big Carpet': 'scheduled'
+        'Big Carpet': 'hold'
       };
-      assert.deepEqual(status, expected);
+      should.exist(expected);
+      status.should.eql(expected);
       done(err);
     }));
   });
