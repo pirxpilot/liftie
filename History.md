@@ -1,4 +1,11 @@
 
+3.4.10 / 2013-12-13
+==================
+
+ * update Bolton Valley opening date
+ * add Cranmore resort
+ * widget: send height on window resize
+
 3.4.9 / 2013-12-12
 ==================
 
