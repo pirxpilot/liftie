@@ -1,5 +1,6 @@
 @import 'nib'
 @import 'font-face'
+@import '../scripts/liftie.css'
 
 // colors: http://colorschemedesigner.com/#0542cw0w0w0w0
 $blue=hsl(217, 83, 36)
@@ -17,6 +18,8 @@ $snow-color=hsl(211, 51, 91)
 $column-width=320px
 $column-gutter=16px
 
+$panel-padding = 12px
+$column-content-width = $column-width - 2 * $panel-padding
 
 gradient-background($color = $background-color, $lighten = 5%, $darken = 5%)
   background-color $color
@@ -78,6 +81,9 @@ a
   text-shadow 0 1px white
   transition color .3s ease
   text-decoration none
+  user-select none
+  -webkit-tap-highlight-color rgba(0,0,0,0)
+  -webkit-tap-highlight-color transparent
 
   &:hover,
   &:active
@@ -88,7 +94,7 @@ a
   box-sizing border-box
   margin 0 ($column-gutter/2) $column-gutter
   width $column-width
-  padding 0 .8em
+  padding 0 $panel-padding
   float left
   background-color $background-color
 
@@ -273,6 +279,7 @@ header .ls-furkot
     font-size .8em
     text-align right
     font-style italic
+    padding-right .3em
 
   .weather
     .weather-icon
@@ -337,38 +344,58 @@ header .ls-furkot
       min-height 170px
 
     .video.vine
-      min-height 294px
+      min-height $column-content-width
 
   .webcams
 
+    .swipe
+      overflow hidden
+
+    .pager
+      text-align center
+      font-weight: bold;
+      line-height 1.3
+
+      a
+        margin 0 2px
+        padding 0 .3em
+      .active:before
+        content '●'
+      .inactive:before
+        content '○'
+
     li
       list-style none
+      display inline-block
+      max-width $column-content-width
+      vertical-align top
 
     .webcam
+      max-width 100%
+
       >a
         display block
-        max-width 100%
         position relative
         overflow-x hidden
 
         img
           margin 0 auto
+          user-select none
+          pointer-events none
+
+          &.active
+            display block
+          &.inactive
+            display none
 
         .title
           margin-bottom .5em
           text-align center
 
       &.desktop
-        display block
-
-        img
-          display block
-
+        display inline-block
       &.mobile
         display none
-
-        img
-          display none
 
   .snow
     .value
