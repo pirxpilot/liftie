@@ -19,6 +19,16 @@
       "name": "Snowflake Lodge",
       "source": "http://diamondpeak.com/mountain/mountain-cam",
       "image": "http://diamondpeak.com/resources/web_cams/snowflakelake.php"
+    },
+    {
+      "name": "Ridge Run",
+      "source": "http://diamondpeak.com/mountain/mountain-cam",
+      "image": "http://diamondpeak.com/resources/web_cams/snowflakerun.php"
+    },
+    {
+      "name": "Base Lodge",
+      "source": "http://diamondpeak.com/mountain/mountain-cam",
+      "image": "http://diamondpeak.com/resources/web_cams/lodge.php"
     }
   ]
 }
