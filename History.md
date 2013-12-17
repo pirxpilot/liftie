@@ -1,4 +1,12 @@
 
+3.5.0 / 2013-12-17
+==================
+
+ * set size and style of the video
+ * hack: escape apos in the camera titles
+ * add swipe and pager components for webcams
+ * allow for multiple webcams to be returned by the API
+
 3.4.11 / 2013-12-13
 ==================
 
