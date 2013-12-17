@@ -119,10 +119,12 @@ mixin webcam(mobile)
 
 mixin webcams(resort)
   .tile.webcams(class= resort.webcams ? 'visible' : 'hidden')
-    ul
-      li
-        +webcam()
-        +webcam(true)
+    .swipe
+      ul
+        li
+          +webcam()
+          +webcam(true)
+    .pager
 
 mixin bestDeal(resort)
   if resort.deals && resort.deals.discount
