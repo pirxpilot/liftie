@@ -1,0 +1,16 @@
+{
+  "name": "Burke Mountain",
+  "url": {
+    "host": "http://www.skiburke.com",
+    "pathname": "/the-mountain/winter/snow-report/"
+  },
+  "tags": [
+    "Vermont",
+    "New England"
+  ],
+  "ll": [
+    -71.91745,
+    44.587898
+  ],
+  "twitter": "skiburke"
+}
