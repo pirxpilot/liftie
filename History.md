@@ -1,4 +1,11 @@
 
+3.5.2 / 2013-12-21
+==================
+
+ * fix Jiminy Peak resort
+ * migrate to tweet-html component
+ * add Burke resort
+
 3.5.1 / 2013-12-18
 ==================
 
