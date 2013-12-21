@@ -14,11 +14,11 @@ describe('parse jiminypeak', function() {
         'Alex\'s Park Carpet Lift': 'closed',
         'Triple Chair': 'closed',
         'Grand Slam': 'closed',
-        'Novice Triple': 'closed',
-        'Berkshire Express': 'closed',
-        'Cricket Triple': 'closed',
+        'Novice Triple': 'open',
+        'Berkshire Express': 'open',
+        'Cricket Triple': 'open',
         'Q1 Quad': 'closed',
-        'Carpet Lift': 'closed',
+        'Carpet Lift': 'open',
         'Whites Quad': 'closed'
       };
       should.exist(status);
