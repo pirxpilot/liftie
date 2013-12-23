@@ -1,4 +1,11 @@
 
+3.5.3 / 2013-12-23
+==================
+
+ * remove date parameter from Where Should I Ski links
+ * generate static links to referenced services
+ * reduce size of main page by removing hidden panels
+
 3.5.2 / 2013-12-21
 ==================
 
