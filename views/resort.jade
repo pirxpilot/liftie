@@ -67,8 +67,8 @@ mixin weather(resort)
       span.snowforecast
     .text
     .notice Forecast by&nbsp;
-      a(target="_blank")
-        img
+      a(target="_blank", href=resort.weather && resort.weather.notice && resort.weather.notice.href)
+        img(src=resort.weather && resort.weather.notice && resort.weather.notice.img)
 
 mixin snow(resort)
   .snow.tile(class= resort.snow ? 'visible' : 'hidden')
@@ -84,12 +84,14 @@ mixin snow(resort)
         span &nbsp;-&nbsp;
         span.value
     .notice
+      != resort.snow && resort.snow.notice
 
 mixin powder(resort)
   .powder.tile(class= resort.powder ? 'visible' : 'hidden')
     .powder-rating
     .notice Powder rating by&nbsp;
-      a(target="_blank") Where Should I Ski
+      a(target="_blank", href=resort.powder && resort.powder.id
+        && ("http://whereshouldiski.com/resorts?resort=" + resort.powder.id)) Where Should I Ski
 
 mixin twitter(resort)
   .twitter.tile(class= resort.twitter ? 'visible' : 'hidden')
@@ -109,21 +111,22 @@ mixin addToTrip(resort)
       span.ls-furkot
       span Plan trip to #{resort.name}
 
-mixin webcam(mobile)
+mixin webcam(webcam, mobile)
   div(class='webcam ' + (mobile ? 'mobile' : 'desktop'))
     a(target="_blank")
       .title
       img.active(src="")
       img.inactive(src="")
     .notice
+      != webcam && ((mobile && webcam.mobile) ? webcam.mobile.notice : webcam.notice)
 
 mixin webcams(resort)
   .tile.webcams(class= resort.webcams ? 'visible' : 'hidden')
     .swipe
       ul
         li
-          +webcam()
-          +webcam(true)
+          +webcam(resort.webcams && resort.webcams[0])
+          +webcam(resort.webcams && resort.webcams[0], true)
     .pager
 
 mixin bestDeal(resort)
@@ -164,7 +167,7 @@ mixin resort(resort, widget)
           +stats(resort)
           if !widget && !single
             +addToTrip(resort)
-  if !widget
+  if !widget && single
     section.panel.extras.open(class= single ? 'visible' : 'hidden' )
       header
         +addToTrip(resort)
