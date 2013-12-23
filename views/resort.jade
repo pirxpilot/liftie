@@ -164,7 +164,7 @@ mixin resort(resort, widget)
           +stats(resort)
           if !widget && !single
             +addToTrip(resort)
-  if !widget
+  if !widget && single
     section.panel.extras.open(class= single ? 'visible' : 'hidden' )
       header
         +addToTrip(resort)
