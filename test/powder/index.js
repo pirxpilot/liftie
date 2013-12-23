@@ -23,7 +23,6 @@ describe('powder', function() {
       should.not.exist(err);
       should.exist(rating);
       rating.should.have.property('id', 'hoodoo');
-      rating.should.have.property('date').with.match(/\d{4}-\d\d-\d\d/);
       rating.should.have.property('rating').with.within(0, 100);
       done(err);
     });
