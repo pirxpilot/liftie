@@ -1,6 +1,6 @@
 {
   "name": "liftie",
-  "version": "3.5.3",
+  "version": "3.5.4",
   "dependencies": {
     "express": {
       "version": "3.4.0",

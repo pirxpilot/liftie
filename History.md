@@ -1,4 +1,10 @@
 
+3.5.4 / 2013-12-29
+==================
+
+ * stop using furkot-trip component
+ * add generating `plan trips` links directly to jade
+
 3.5.3 / 2013-12-23
 ==================
 
