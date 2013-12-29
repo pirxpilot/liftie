@@ -22,7 +22,8 @@
     "async": "~0",
     "limiter": "~1",
     "moment": "~2",
-    "stylus-font-face": "~0"
+    "stylus-font-face": "~0",
+    "qs": "~0"
   },
   "devDependencies": {
     "mocha": "~1",

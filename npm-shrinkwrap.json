@@ -1,6 +1,6 @@
 {
   "name": "liftie",
-  "version": "3.4.1",
+  "version": "3.5.3",
   "dependencies": {
     "express": {
       "version": "3.4.0",
@@ -172,11 +172,11 @@
     },
     "nib": {
       "version": "1.0.1",
-      "from": "nib@1",
+      "from": "nib@1.0.1",
       "dependencies": {
         "stylus": {
           "version": "0.35.1",
-          "from": "stylus@~0.35.1"
+          "from": "stylus@0.35.1"
         }
       }
     },
@@ -228,23 +228,27 @@
     },
     "stylus-font-face": {
       "version": "0.1.0",
-      "from": "stylus-font-face@"
+      "from": "stylus-font-face@0.1.0"
     },
-    "fresh": {
-      "version": "0.2.0",
-      "from": "fresh@0.2.0"
+    "qs": {
+      "version": "0.6.5",
+      "from": "qs@0.6.5"
     },
     "should": {
       "version": "2.0.1",
       "from": "should@2.0.1"
     },
-    "domelementtype": {
-      "version": "1.1.1",
-      "from": "domelementtype@1.1.1"
+    "fresh": {
+      "version": "0.2.0",
+      "from": "fresh@0.2.0"
     },
     "cookie-signature": {
       "version": "1.0.1",
       "from": "cookie-signature@1.0.1"
+    },
+    "domelementtype": {
+      "version": "1.1.1",
+      "from": "domelementtype@1.1.1"
     },
     "methods": {
       "version": "0.0.1",
@@ -273,10 +277,6 @@
     "cookie": {
       "version": "0.1.0",
       "from": "cookie@0.1.0"
-    },
-    "qs": {
-      "version": "0.6.5",
-      "from": "qs@0.6.5"
     },
     "cssom": {
       "version": "0.2.5",
@@ -614,7 +614,7 @@
                 },
                 "extend": {
                   "version": "1.2.1",
-                  "from": "extend@1.2.1",
+                  "from": "https://registry.npmjs.org/extend/-/extend-1.2.1.tgz",
                   "resolved": "https://registry.npmjs.org/extend/-/extend-1.2.1.tgz"
                 }
               }
@@ -629,7 +629,7 @@
                 },
                 "extend": {
                   "version": "1.2.1",
-                  "from": "extend@1.2.1",
+                  "from": "https://registry.npmjs.org/extend/-/extend-1.2.1.tgz",
                   "resolved": "https://registry.npmjs.org/extend/-/extend-1.2.1.tgz"
                 }
               }
@@ -680,7 +680,7 @@
         },
         "utile": {
           "version": "0.2.0",
-          "from": "utile@0.2.0",
+          "from": "https://registry.npmjs.org/utile/-/utile-0.2.0.tgz",
           "resolved": "https://registry.npmjs.org/utile/-/utile-0.2.0.tgz",
           "dependencies": {
             "async": {
