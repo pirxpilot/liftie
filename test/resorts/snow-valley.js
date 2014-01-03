@@ -1,4 +1,4 @@
-var assert = require('assert');
+var should = require('should');
 var fs = require('fs');
 var parser = require('../../lib/lifts/parser');
 var parse = require('../../lib/resorts/snow-valley');
@@ -12,7 +12,7 @@ describe('parse snow-valley', function() {
     stream.pipe(parser(parse, function(err, status) {
       var expected = {
         '(1) Double Chair': 'open',
-        '(2) Triple Chair': 'closed',
+        '(2) Triple Chair': 'hold',
         '(3) Triple Chair': 'open',
         '(4) Triple Chair': 'closed',
         '(6) Double Chair': 'open',
@@ -20,11 +20,12 @@ describe('parse snow-valley', function() {
         '(9) Double Chair': 'closed',
         '(10) Double Chair': 'closed',
         '(11) Triple Chair': 'closed',
-        '(12) Double Chair': 'open',
+        '(12) Double Chair': 'scheduled',
         '(13) Triple Chair': 'open',
         '(14) Conveyor': 'open'
       };
-      assert.deepEqual(status, expected);
+      should.exist(status);
+      status.should.eql(expected);
       done(err);
     }));
   });
