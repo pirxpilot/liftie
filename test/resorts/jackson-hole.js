@@ -1,4 +1,4 @@
-var assert = require('assert');
+var should = require('should');
 var fs = require('fs');
 var parser = require('../../lib/lifts/parser');
 var parse = require('../../lib/resorts/jackson-hole');
@@ -11,20 +11,21 @@ describe('parse jackson-hole', function() {
     stream.on('error', done);
     stream.pipe(parser(parse, function(err, status) {
       var expected = {
-        'Aerial Tram': 'closed',
-        'Apres Vous High Speed Quad': 'closed',
-        'Bridger Gondola': 'closed',
-        'Casper Bowl High Speed Quad': 'closed',
-        'Eagle\'s Rest Double Chair': 'closed',
-        'Marmot Chair': 'closed',
-        'Moose Creek Quad Chair': 'closed',
+        'Aerial Tram': 'open',
+        'Apres Vous High Speed Quad': 'open',
+        'Bridger Gondola': 'open',
+        'Casper Bowl High Speed Quad': 'open',
+        'Eagle\'s Rest Double Chair': 'open',
+        'Marmot Chair': 'open',
+        'Moose Creek Quad Chair': 'open',
         'Sublette Quad Chair': 'closed',
-        'Sweetwater Triple Chair': 'closed',
-        'Teewinot High Speed Quad': 'closed',
-        'Thunder Quad Chair': 'closed',
-        'Union Pass Quad Chair': 'closed'
+        'Sweetwater Triple Chair': 'open',
+        'Teewinot High Speed Quad': 'open',
+        'Thunder Quad Chair': 'open',
+        'Union Pass Quad Chair': 'open'
       };
-      assert.deepEqual(status, expected);
+      should.exist(status);
+      status.should.eql(expected);
       done(err);
     }));
   });
