@@ -1,4 +1,11 @@
 
+3.5.6 / 2014-01-03
+==================
+
+ * fix Snow Valley resort
+ * fix Jackson Hole resort
+ * fix Sunday River resort
+
 3.5.5 / 2014-01-03
 ==================
 
