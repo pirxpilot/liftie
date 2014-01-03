@@ -1,4 +1,4 @@
-var assert = require('assert');
+var should = require('should');
 var fs = require('fs');
 var parser = require('../../lib/lifts/parser');
 var parse = require('../../lib/resorts/sunday-river');
@@ -11,23 +11,24 @@ describe('parse sunday-river', function() {
     stream.on('error', done);
     stream.pipe(parser(parse, function(err, status) {
       var expected = {
-        'Little White Cap Quad': 'scheduled',
-        'White Heat Quad': 'scheduled',
-        'White Cap Quad': 'scheduled',
-        'Locke Mountain Triple': 'scheduled',
-        'Barker Mountain Express': 'scheduled',
-        'Spruce Peak Triple': 'scheduled',
-        'Chondola': 'scheduled',
-        'South Ridge Express': 'scheduled',
-        'Sundance Surface Lift': 'scheduled',
-        'North Peak Express': 'scheduled',
-        'Quantum Leap Triple': 'scheduled',
-        'Aurora Peak Quad': 'scheduled',
-        'OZ Quad': 'scheduled',
-        'Jordan Bowl Express': 'scheduled',
-        'Jordan Mountain Double': 'scheduled'
+        'Little White Cap Quad': 'open',
+        'White Heat Quad': 'hold',
+        'White Cap Quad': 'open',
+        'Locke Mountain Triple': 'closed',
+        'Barker Mountain Express': 'open',
+        'Spruce Peak Triple': 'open',
+        'Chondola': 'open',
+        'South Ridge Express': 'open',
+        'Sundance Surface Lift': 'open',
+        'North Peak Express': 'open',
+        'Quantum Leap Triple': 'closed',
+        'Aurora Peak Quad': 'open',
+        'OZ Quad': 'closed',
+        'Jordan Bowl Express': 'open',
+        'Jordan Mountain Double': 'closed'
       };
-      assert.deepEqual(status, expected);
+      should.exist(status);
+      status.should.eql(expected);
       done(err);
     }));
   });
