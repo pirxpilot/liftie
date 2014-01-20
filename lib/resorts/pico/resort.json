@@ -13,5 +13,14 @@
     -72.842613,
     43.663277
   ],
-  "twitter": "PicoMountain"
+  "twitter": "PicoMountain",
+  "webcams": [{
+    "name": "Pico Mountain",
+    "source": "http://www.picomountain.com/winter/the_mountain/web_cam/index.html",
+    "image": "http://b1.hdrelay.com/cameras/84943abb-01cd-4907-8cc2-a9a7680d7529/GetOneShot?size=320x180"
+  }, {
+    "name": "Pico Horizon",
+    "source": "http://www.picomountain.com/winter/the_mountain/web_cam/picopeak.html",
+    "image": "http://b1.hdrelay.com/cameras/2a8b98fa-994e-4e36-9c61-d62e00a500b0/GetOneShot?size=320x180"
+  }]
 }
