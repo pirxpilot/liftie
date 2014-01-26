@@ -1,4 +1,11 @@
 
+3.5.7 / 2014-01-26
+==================
+
+ * fix Hoodoo lift status
+ * fix Mount Snow lift status
+ * webcams for Killington and Pico
+
 3.5.6 / 2014-01-03
 ==================
 
