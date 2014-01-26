@@ -15,8 +15,7 @@ describe('powder', function() {
     });
   });
 
-
-  it('should return powder rating for valid resort', function(done) {
+  it.skip('should return powder rating for valid resort', function(done) {
     powder({
       id: 'hoodoo'
     }, function(err, rating) {

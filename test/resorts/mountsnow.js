@@ -1,4 +1,4 @@
-var assert = require('assert');
+var should = require('should');
 var fs = require('fs');
 var parser = require('../../lib/lifts/parser');
 var parse = require('../../lib/resorts/mountsnow');
@@ -11,28 +11,29 @@ describe('parse mountsnow', function() {
     stream.on('error', done);
     stream.pipe(parser(parse, function(err, status) {
       var expected = {
-        'Covered Bridge': 'closed',
+        'Covered Bridge': 'open',
         'Sundance': 'closed',
         'Tumbleweed': 'open',
         'Canyon Express': 'open',
         'Grand Summit Express': 'open',
         'Ego Alley': 'closed',
-        'Seasons': 'closed',
-        'Bluebird Express': 'hold',
-        'Voyager': 'closed',
-        'Gemini': 'closed',
-        'Apollo': 'open',
+        'Seasons': 'open',
+        'Bluebird Express': 'open',
+        'Voyager': 'open',
+        'Gemini': 'open',
+        'Apollo': 'closed',
         'Discovery Shuttle': 'open',
-        'Mercury': 'closed',
-        'Ski Baba': 'closed',
+        'Mercury': 'open',
+        'Ski Baba': 'open',
         'Nitro Express': 'open',
-        'Heavy Metal': 'closed',
+        'Heavy Metal': 'open',
         'Outpost': 'open',
-        'Challenger': 'closed',
+        'Challenger': 'hold',
         'Beartrap': 'open',
-        'Sunbrook': 'closed'
+        'Sunbrook': 'open'
       };
-      assert.deepEqual(status, expected);
+      should.exist(status);
+      status.should.eql(expected);
       done(err);
     }));
   });
