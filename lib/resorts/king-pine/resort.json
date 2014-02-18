@@ -1,8 +1,15 @@
 {
   "name": "King Pine",
+  "dataUrl": {
+    "host": "http://us1.resorts-interactive.com",
+    "pathname": "/vicomap/getMapDetails.php",
+    "query": {
+      "mapID": 821
+    }
+  },
   "url": {
     "host": "http://www.kingpine.com",
-    "pathname": "/snow-conditions.html"
+    "pathname": "/snow-report-conditions"
   },
   "tags": [
     "New Hampshire",
