@@ -1,4 +1,11 @@
 
+3.5.8 / 2014-02-18
+==================
+
+ * fix Cataloochee parser
+ * fix Brian Head parser
+ * swich King Pine resort to XML parser
+
 3.5.7 / 2014-01-26
 ==================
 
