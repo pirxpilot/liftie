@@ -13,7 +13,7 @@ describe('parse hoodoo', function() {
       var expected = {
         'Manzanita': 'closed',
         'Easy Rider': 'closed',
-        'Ed': 'closed',
+        'Ed': 'open',
         'Big Green Machine': 'closed',
         'Hodag': 'closed'
       };
