@@ -12,10 +12,10 @@ describe('parse cataloochee', function() {
     stream.pipe(parser(parse, function(err, status) {
       var expected = {
         'Easy Way': 'open',
-        'Omigosh': 'closed',
+        'Omigosh': 'open',
         'Rock Island': 'open',
-        'Wolf Creek Hollow': 'closed',
-        'Beginner\'s Luck Hollow': 'open'
+        'Wolf Creek Hollow': 'open',
+        'Beginners Luck': 'open'
       };
       should.exist(status);
       status.should.eql(expected);
