@@ -11,27 +11,28 @@ describe('parse big-sky', function() {
     stream.on('error', done);
     stream.pipe(parser(parse, function(err, status) {
       var expected = {
-        'Cascade Triple': 'closed',
-        'Little Thunder': 'closed',
-        'Challenger Double': 'closed',
-        'Derringer Quad Chair': 'closed',
-        'Explorer Double': 'closed',
-        'Bear Back': 'closed',
-        'Headwaters Double Chair': 'closed',
-        'Iron Horse Quad': 'closed',
-        'Lone Moose Triple': 'closed',
-        'Lone Peak Tram': 'closed',
-        'Dakota Lift Triple': 'closed',
-        'Lone Peak Triple': 'closed',
-        'Lone Tree Quad Chair': 'closed',
-        'Pony Express Triple': 'closed',
-        'Ramcharger': 'closed',
-        'Shedhorn Double': 'closed',
-        'Six Shooter Chair': 'closed',
-        'Southern Comfort': 'closed',
+        'Cascade Triple': 'open',
+        'Little Thunder': 'open',
+        'Challenger Double': 'open',
+        'Derringer Quad Chair': 'open',
+        'Explorer Double': 'open',
+        'Headwaters Double Chair': 'open',
+        'Iron Horse Quad': 'open',
+        'Lone Moose Triple': 'open',
+        'Lone Peak Tram': 'open',
+        'Dakota Lift Triple': 'open',
+        'Lone Peak Triple': 'open',
+        'Lone Tree Quad Chair': 'open',
+        'Pony Express Triple': 'open',
+        'Ramcharger': 'open',
+        'Shedhorn Double': 'open',
+        'Six Shooter Chair': 'open',
+        'Southern Comfort': 'open',
+        'Lewis and Clark': 'open',
+        'Sacajawea': 'open',
         'Swift Current': 'open',
-        'Thunder Wolf': 'closed',
-        'White Otter Double': 'closed'
+        'Thunder Wolf': 'open',
+        'White Otter Double': 'open'
       };
       should.exist(status);
       status.should.eql(expected);
