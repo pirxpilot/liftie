@@ -1,4 +1,4 @@
-var assert = require('assert');
+var should = require('should');
 var fs = require('fs');
 var parser = require('../../lib/lifts/parser');
 var parse = require('../../lib/resorts/boreal');
@@ -15,15 +15,12 @@ describe('parse boreal', function() {
         'Accelerator Express Quad': 'open',
         'Nugget Chair': 'open',
         '49\'er Triple': 'closed',
-        'Lost Dutchman Triple': 'open',
+        'Flying Dutchman Triple': 'open',
         'Cedar Ridge Triple': 'open',
-        'Kids Club': 'open',
-        'Superpipe': 'open',
-        'Boardercross': 'closed',
-        'Bag Jump': 'closed',
-        'Playland Tubing Park': 'open'
+        'Snowsports School Carpet': 'open'
       };
-      assert.deepEqual(status, expected);
+      should.exist(status);
+      status.should.eql(expected);
       done(err);
     }));
   });
