@@ -10,8 +10,5 @@
   ],
   "paths": [
     "lib/client"
-  ],
-  "remotes": [
-    "https://raw.githubusercontent.com"
   ]
 }
