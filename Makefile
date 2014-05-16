@@ -24,8 +24,14 @@ lint:
 test:
 	$(NODE_BIN)/mocha --recursive --require should
 
-components: component.json
+component-install:
 	$(NODE_BIN)/component install
+
+components: $(COMPONENT_JSON)
+	$(NODE_BIN)/component-shrinkwrap --install $(COMPONENT_REMOTES)
+
+shrinkwrap:
+	$(NODE_BIN)/component-shrinkwrap --save --check $(COMPONENT_REMOTES)
 
 $(BUILD_DIR):
 	mkdir -p $(BUILD_DIR)
