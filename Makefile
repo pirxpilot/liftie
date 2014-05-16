@@ -4,8 +4,12 @@ NODE_BIN=./node_modules/.bin
 BUILD_DIR=public/scripts
 CSS_DIR=public/stylesheets
 SRC = $(wildcard lib/client/*/*.js)
+LINT_SRC = app.js bin/generate lib test
 
 all: lint test build
+
+include ./node_modules/make-jshint/index.mk
+include ./node_modules/make-component-shrinkwrap/index.mk
 
 # common rules
 
@@ -18,28 +22,8 @@ all: lint test build
 %.css: %.styl
 	$(NODE_BIN)/stylus --include-css --compress --use ./node_modules/stylus-font-face --use ./node_modules/nib $<
 
-lint:
-	$(NODE_BIN)/jshint *.js bin/generate lib test
-
 test:
 	$(NODE_BIN)/mocha --recursive --require should
-
-component-install:
-	$(NODE_BIN)/component install
-
-components: $(COMPONENT_JSON)
-	$(NODE_BIN)/component-shrinkwrap --install $(COMPONENT_REMOTES)
-
-shrinkwrap:
-	$(NODE_BIN)/component-shrinkwrap --save --check $(COMPONENT_REMOTES)
-
-$(BUILD_DIR):
-	mkdir -p $(BUILD_DIR)
-
-# component build to create .js and .css
-
-$(BUILD_DIR)/$(PROJECT).js: components $(SRC)
-	$(NODE_BIN)/component build --out $(BUILD_DIR) --use component-autoboot --name $(PROJECT)
 
 $(BUILD_DIR)/$(PROJECT)-embed.js: lib/embed/index.js
 	echo '(function(){' > $@
@@ -66,4 +50,4 @@ distclean: clean
 distclean:
 	rm -rf components
 
-.PHONY: all lint test build dist clean distclean
+.PHONY: all test build dist clean distclean
