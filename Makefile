@@ -9,6 +9,7 @@ LINT_SRC = app.js bin/generate lib test
 all: lint test build
 
 include ./node_modules/make-jshint/index.mk
+include ./node_modules/make-component-shrinkwrap/index.mk
 
 # common rules
 
@@ -23,23 +24,6 @@ include ./node_modules/make-jshint/index.mk
 
 test:
 	$(NODE_BIN)/mocha --recursive --require should
-
-component-install:
-	$(NODE_BIN)/component install
-
-components: $(COMPONENT_JSON)
-	$(NODE_BIN)/component-shrinkwrap --install $(COMPONENT_REMOTES)
-
-shrinkwrap:
-	$(NODE_BIN)/component-shrinkwrap --save --check $(COMPONENT_REMOTES)
-
-$(BUILD_DIR):
-	mkdir -p $(BUILD_DIR)
-
-# component build to create .js and .css
-
-$(BUILD_DIR)/$(PROJECT).js: components $(SRC)
-	$(NODE_BIN)/component build --out $(BUILD_DIR) --use component-autoboot --name $(PROJECT)
 
 $(BUILD_DIR)/$(PROJECT)-embed.js: lib/embed/index.js
 	echo '(function(){' > $@
