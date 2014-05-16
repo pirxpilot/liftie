@@ -1,4 +1,11 @@
 
+3.5.13 / 2014-05-16
+==================
+
+ * use component-shrinkwrap to install components
+ * update component and component-shrinkwrap
+ * fix Alta twitter handle
+
 3.5.12 / 2014-02-25
 ==================
 
