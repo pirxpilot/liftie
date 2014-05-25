@@ -1,7 +1,7 @@
-[![Build Status](https://secure.travis-ci.org/code42day/liftie.png)](http://travis-ci.org/code42day/liftie)
-[![Dependency Status](https://gemnasium.com/code42day/liftie.png)](https://gemnasium.com/code42day/liftie)
-[![NPM version](https://badge.fury.io/js/liftie.png)](http://badge.fury.io/js/liftie)
-[![Code Climate](https://codeclimate.com/github/code42day/liftie.png)](https://codeclimate.com/github/code42day/liftie)
+[![Build Status](https://img.shields.io/travis/code42day/liftie.svg)](http://travis-ci.org/code42day/liftie)
+[![Dependency Status](https://img.shields.io/gemnasium/code42day/liftie.svg)](https://gemnasium.com/code42day/liftie)
+[![NPM version](https://img.shields.io/npm/v/liftie.svg)](http://badge.fury.io/js/liftie)
+[![Code Climate](https://img.shields.io/codeclimate/github/code42day/liftie.svg)](https://codeclimate.com/github/code42day/liftie)
 
 #liftie.info
 
