@@ -20,7 +20,7 @@ mixin header(resort, widget)
   if !widget
     if !single
       if resort.deals
-        a.icon-alone(title=resort.deals.title, href=resort.deals.href, target="_blank")
+        a.icon-alone(title=resort.deals.title, href=resort.deals.href, target="_blank", rel="nofollow")
           span.ls-deal
       a.right.icon-alone.minimax
         span.ls-minimax
@@ -133,14 +133,14 @@ mixin bestDeal(resort)
   if resort.deals && resort.deals.discount
     .deal
       span= resort.deals.title
-      a(title=resort.deals.title, href=resort.deals.href, target="_blank")= resort.deals.discount
+      a(title=resort.deals.title, href=resort.deals.href, target="_blank", rel="nofollow")= resort.deals.discount
 
 mixin deals(resort)
   .deals.tile.visible
     for deal in resort.deals.deals
       .deal
         span= deal.title
-        a(title=resort.deals.title, href=resort.deals.href, target="_blank")= deal.discount
+        a(title=resort.deals.title, href=resort.deals.href, target="_blank", rel="nofollow")= deal.discount
 
 mixin resort(resort, widget)
   section.panel.resort(
@@ -179,7 +179,7 @@ mixin resort(resort, widget)
     if resort.deals && resort.deals.deals
       section.panel.extras.open(class= single ? 'visible' : 'hidden' )
         header
-          a(href=resort.deals.href, target="_blank")
+          a(href=resort.deals.href, target="_blank", rel="nofollow")
             span.ls-deal
             span= resort.deals.title
         +deals(resort)

@@ -26,22 +26,27 @@ html(lang='en-US')
     block content
     block footer
       footer
-        a.icon-alone(href='http://furkot.com', title='Plan your ski trip with Furkot.', target='_blank')
+        a.icon-alone(href='/about', rel='nofollow')
+          span.ls-liftie
+          span.text About
+        a.icon-alone(href='http://furkot.com', title='Plan your ski trip with Furkot.', target='_blank', rel='nofollow')
           span.ls-furkot
           span.text Plan your trip
-        a.icon-alone(href='https://github.com/code42day/liftie', title='Fork Liftie.', target='_blank')
+        a.icon-alone(href='https://github.com/code42day/liftie', title='Fork Liftie.', target='_blank', rel='nofollow')
           span.ls-github
           span.text Add your resort
-        a.icon-alone(href='http://codepen.io/pirxpilot/pen/EwdLc', title='Embed Liftie.', target='_blank')
+        a.icon-alone(href='http://codepen.io/pirxpilot/pen/EwdLc', title='Embed Liftie.', target='_blank', rel='nofollow')
           span.ls-html
           span.text Embed Liftie
-        a.icon-alone(href='https://twitter.com/liftieinfo', title='Follow Liftie.', target='_blank')
+        a.icon-alone(href='https://twitter.com/liftieinfo', title='Follow Liftie.', target='_blank', rel='nofollow')
           span.ls-twitter
-        a.icon-alone(href='https://facebook.com/liftie.info', title='Like Liftie.', target='_blank')
+        a.icon-alone(href='https://facebook.com/liftie.info', title='Like Liftie.', target='_blank', rel='nofollow')
           span.ls-facebook
-        a.icon-alone(href='https://plus.google.com/+LiftieInfo', title='+1 Liftie.', target='_blank')
+        a.icon-alone(href='https://plus.google.com/+LiftieInfo', title='+1 Liftie.', target='_blank', rel='nofollow')
           span.ls-google-plus
+        a.icon-alone(href='mailto:liftie@code42day.com' title='E-mail us')
+          span.ls-email
         slug = tag ? '/' + tag : ''
-        a.icon-alone(href='/stats#{slug}', title='Check statistics')
+        a.icon-alone(href='/stats#{slug}', title='Check statistics', rel='nofollow')
           span.ls-pie
     script(src=cachify('/scripts/liftie#{min}.js'), defer)
