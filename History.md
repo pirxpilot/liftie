@@ -1,4 +1,13 @@
 
+3.5.15 / 2014-07-15
+==================
+
+ * update components to remove moment dependency
+ * link to about page and mailto: in footer
+ * no follow deal links
+ * no follow footer links
+ * shieldify badges in Readme
+
 3.5.14 / 2014-05-16
 ==================
 
