@@ -23,7 +23,7 @@
     "limiter": "~1",
     "moment": "~2",
     "stylus-font-face": "~0",
-    "qs": "~0"
+    "qs": "~1"
   },
   "devDependencies": {
     "mocha": "~1",

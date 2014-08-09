@@ -8,35 +8,34 @@ var plugins = require('./lib/plugins');
 
 var app = module.exports = express();
 
-app.configure(function() {
-  var root = path.join(__dirname, 'public'),
-    siteUrl = process.env.SITE_URL || 'http://liftie.info';
-  app.locals({
-    min: '.min',
-    decorateAbout: function() {},
-    siteUrl: siteUrl,
-    og: {
-      image: siteUrl + '/img/snowflake-256.png'
-    }
-  });
-  app.set('port', process.env.PORT || 3000);
-  app.set('views', __dirname + '/views');
-  app.set('view engine', 'jade');
+var root = path.join(__dirname, 'public'),
+  siteUrl = process.env.SITE_URL || 'http://liftie.info';
 
-  app.use(express.favicon(path.join(root, 'favicon.ico')));
-  app.use(express.logger('dev'));
-  app.use(express.cookieParser());
-  app.use(express.json());
-  app.use(express.urlencoded());
-  app.use(cachify(root));
-  app.use(app.router);
-  app.use(gzip(root));
+app.locals({
+  min: '.min',
+  decorateAbout: function() {},
+  siteUrl: siteUrl,
+  og: {
+    image: siteUrl + '/img/snowflake-256.png'
+  }
 });
+app.set('port', process.env.PORT || 3000);
+app.set('views', __dirname + '/views');
+app.set('view engine', 'jade');
 
-app.configure('development', function(){
+app.use(express.favicon(path.join(root, 'favicon.ico')));
+app.use(express.logger('dev'));
+app.use(express.cookieParser());
+app.use(express.json());
+app.use(express.urlencoded());
+app.use(cachify(root));
+app.use(app.router);
+app.use(gzip(root));
+
+if (app.get('env') === 'development') {
   app.locals.min = '';
   app.use(express.errorHandler());
-});
+}
 
 app.loaders = loaders;
 app.loaders.register(require('./lib/loader'));
