@@ -1,4 +1,11 @@
 
+3.6.0 / 2014-08-09
+==================
+
+ * remove deprecated app.configure
+ * remove deprecated jade doctype
+ * update qs and other libraries
+
 3.5.16 / 2014-07-21
 ==================
 
