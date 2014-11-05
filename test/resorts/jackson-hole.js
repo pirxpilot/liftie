@@ -11,18 +11,18 @@ describe('parse jackson-hole', function() {
     stream.on('error', done);
     stream.pipe(parser(parse, function(err, status) {
       var expected = {
-        'Aerial Tram': 'open',
-        'Apres Vous High Speed Quad': 'open',
-        'Bridger Gondola': 'open',
-        'Casper Bowl High Speed Quad': 'open',
-        'Eagle\'s Rest Double Chair': 'open',
-        'Marmot Chair': 'open',
-        'Moose Creek Quad Chair': 'open',
+        'Aerial Tram': 'closed',
+        'Apres Vous High Speed Quad': 'closed',
+        'Bridger Gondola': 'closed',
+        'Casper Bowl High Speed Quad': 'closed',
+        'Eagle\'s Rest Double Chair': 'closed',
+        'Marmot Chair': 'closed',
+        'Moose Creek Quad Chair': 'closed',
         'Sublette Quad Chair': 'closed',
-        'Sweetwater Triple Chair': 'open',
-        'Teewinot High Speed Quad': 'open',
-        'Thunder Quad Chair': 'open',
-        'Union Pass Quad Chair': 'open'
+        'Sweetwater Triple Chair': 'closed',
+        'Teewinot High Speed Quad': 'closed',
+        'Thunder Quad Chair': 'closed',
+        'Union Pass Quad Chair': 'closed'
       };
       should.exist(status);
       status.should.eql(expected);
