@@ -1,4 +1,10 @@
 
+3.6.1 / 2014-11-05
+==================
+
+ * fix opensnow API after updrade to 1.0
+ * use new official twitter account for Squaw & Alpine
+
 3.6.0 / 2014-08-09
 ==================
 
