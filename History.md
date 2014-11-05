@@ -1,4 +1,12 @@
 
+3.6.2 / 2014-11-05
+==================
+
+ * fix Loon for new season
+ * fix Jackson Hole for new season
+ * fix Mammoth Lakes for new season
+ * add typical colors to be coerced as status
+
 3.6.1 / 2014-11-05
 ==================
 
