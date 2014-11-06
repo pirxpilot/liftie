@@ -4,6 +4,7 @@
 [![Code Climate](https://img.shields.io/codeclimate/github/code42day/liftie.svg)](https://codeclimate.com/github/code42day/liftie)
 
 #liftie.info
+[![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/code42day/liftie?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 Clean, simple, easy to read, fast ski resort lift status.
 
