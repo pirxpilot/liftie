@@ -1,4 +1,11 @@
 
+3.6.4 / 2014-11-06
+==================
+
+ * fix Mt. Tremblant for new season
+ * fix Hoodoo for new season
+ * fix Mount Snow for new season
+
 3.6.3 / 2014-11-06
 ==================
 
