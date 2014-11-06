@@ -11,26 +11,23 @@ describe('parse mountsnow', function() {
     stream.on('error', done);
     stream.pipe(parser(parse, function(err, status) {
       var expected = {
-        'Covered Bridge': 'open',
+        'Covered Bridge/Tubing': 'closed',
         'Sundance': 'closed',
-        'Tumbleweed': 'open',
-        'Canyon Express': 'open',
-        'Grand Summit Express': 'open',
+        'Tumbleweed': 'closed',
+        'Canyon Express': 'closed',
+        'Grand Summit Express': 'closed',
         'Ego Alley': 'closed',
-        'Seasons': 'open',
-        'Bluebird Express': 'open',
-        'Voyager': 'open',
-        'Gemini': 'open',
+        'Seasons': 'closed',
+        'Bluebird Express': 'closed',
+        'Voyager': 'closed',
+        'Gemini': 'closed',
         'Apollo': 'closed',
-        'Discovery Shuttle': 'open',
-        'Mercury': 'open',
-        'Ski Baba': 'open',
-        'Nitro Express': 'open',
-        'Heavy Metal': 'open',
-        'Outpost': 'open',
-        'Challenger': 'hold',
-        'Beartrap': 'open',
-        'Sunbrook': 'open'
+        'Discovery Shuttle': 'closed',
+        'Mercury': 'closed',
+        'Outpost': 'closed',
+        'Challenger': 'closed',
+        'Beartrap': 'closed',
+        'Sunbrook': 'closed'
       };
       should.exist(status);
       status.should.eql(expected);
