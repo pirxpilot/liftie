@@ -2,7 +2,7 @@
   "name": "Hoodoo",
   "url": {
     "host": "http://www.hoodoo.com",
-    "pathname": "/status/"
+    "pathname": "/ski-area-status/"
   },
   "tags": [
     "Oregon"
