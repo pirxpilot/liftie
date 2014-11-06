@@ -11,13 +11,13 @@ describe('parse red-mountain', function() {
     stream.on('error', done);
     stream.pipe(parser(parse, function(err, status) {
       var expected = {
+        'Grey Mountain Chair (Quad)': 'closed',
         'Silverlode Chair (Quad)': 'closed',
         'Motherlode Chair (Triple)': 'closed',
         'Paradise Chair (Triple)': 'closed',
         'Red Chair (Double)': 'closed',
         'T-Bar': 'closed',
-        'Red Carpet': 'closed',
-        'Cat Skiing*': 'closed'
+        'Red Carpet': 'closed'
       };
       should.exist(status);
       status.should.eql(expected);
