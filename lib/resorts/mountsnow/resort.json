@@ -2,7 +2,7 @@
   "name": "Mount Snow",
   "url": {
     "host": "http://mountsnow.com",
-    "pathname": "/snow-report/"
+    "pathname": "/ski-ride/snow-report/"
   },
   "tags": [
     "Vermont",
