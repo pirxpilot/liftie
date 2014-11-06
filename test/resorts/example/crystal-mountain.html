@@ -1,925 +1,1157 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE >
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en-US"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en-US"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en-US"> <![endif]-->
+<!-- Consider adding a manifest.appcache: h5bp.com/d/Offline -->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en-US"> <!--<![endif]-->
 
-<html>
-<!--[if IE 8]>     <html class="ie8"><![endif]-->
-<!--[if lte IE 7]>     <html class="ie7"><![endif]-->
+
 <head>
-  <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=9">
-<meta property="og:image" content="{}"/>
-<!--
+	<meta charset="UTF-8" />
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-  Site Designed and Developed by The Superformula Corp.
+	<title>Daily Report | Crystal Mountain Resort</title>
+	<meta http-equiv="cleartype" content="on">
 
-  Web: www.superformula.com
-  Email: info@superformula.com
-  Date: 12/23/10
-  (c) 2010 Crystal
+	<!-- Responsive and mobile friendly stuff -->
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-  -->
-  <title>
-    Mountain Report - Crystal Mountain Washington
-  </title>
+	<link rel="profile" href="http://gmpg.org/xfn/11" />
+	<link rel="pingback" href="http://crystalmountainresort.com/xmlrpc.php" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,800,800italic,600italic,400italic,300italic,300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Changa+One:400,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Sonsie+One' rel='stylesheet' type='text/css'>
 
-  <link rel="Shortcut Icon" href="/favicon.ico" />
-  
-  <!-- css -->
-  <link rel="stylesheet" type="text/css" href="/styles/screen.css?rev=9" media="screen, projection" title="main CSS" />
-  <link rel="stylesheet" type="text/css" href="/styles/print.css?rev=2" media="print" title="main CSS" />
-<link href="/styles/style.css" rel="stylesheet" type="text/css" />
-  <link href="http://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet" type="text/css">
-
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:600' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Lobster+Two:700' rel='stylesheet' type='text/css'>
-<link href="/styles/accordian_core.css" type="text/css" />
-<!--<link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>-->
-
-  <!--[if IE 8]>
-  <style type="text/css">
-  #main-content #home-right #home-right-tabs-shadow-hide {border-bottom:solid 1px #ddd};
-
-  </style>
-  <![endif]-->
-  <!--[if lt IE 7]>
-  <style type="text/css">
- #main-content #home-left #tabs-panel {
-margin-left:10px; }
-
-  </style>
-  <![endif]-->
-
-  <!-- jQuery -->
-<!-- <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>-->
-  <script type="text/javascript" src="/js/modernizr-1.5.min.js"></script>
-<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>-->
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
-<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/jquery-ui.min.js"></script>
-<script type="text/javascript" src="/js/accordian.js"></script>
-<script type="text/javascript" src="/js/jquery.easing.min.js"></script>
-<script src="/js/css_browser_selector.js"></script>
-<script type="text/javascript" src="/js/jquery.defaultvalue.source.js"></script>
-<!--<script src="http://gsgd.co.uk/sandbox/jquery/easing/jquery.easing.1.3.js"></script>-->
-
-<script src="/js/slides.min.jquery.js"></script>
-	<script>
-		$(function(){
-			$('#slides').slides({
-				preload: true,
-				preloadImage: '/images/loading.gif',
-				play: 5000,
-				pause: 2500,
-				hoverPause: true
-			});
-		});
-	</script>
-
-
-  
-  <!-- Crystal Vision -->
-  <script type="text/javascript" src="/js/jquery.scrollTo-min.js"></script>
-  <script type="text/javascript" src="/js/jquery.ba-outside-events.min.js"></script>
-  <script type="text/javascript" src="/js/jquery.hashchange.js"></script>
-  <script type="text/javascript" src="/js/jquery.pngfix.js"></script>
-  <script type="text/javascript" src="/js/crystal_vision.js"></script>
- <script type="text/javascript" src="/ZoomifyImageViewer.js"></script>
-        <style type="text/css"> #myContainer { width: 877px; height: 450px } </style>
-        <script type="text/javascript"> Z.showImage("myContainer", "http://crystalmountainresort.com/summit", "zInitialX=9500&zInitialZoom=6.5&zLogoVisible=0&zToolbarVisible=1&zNavigatorWidth=0&zNavigatorHeight=0&zSkinPath=http://crystalmountainresort.com/Assets/Skins/Default"); </script>
-
-<!-- jQuery Cookie plugin -->
-<script src="/js/jquery.cookies.js"></script>
-
-<!--New Javascript Files-->
-<script src="/js/jquery.corner.js"></script>
-<script src="/js/ss.slider.js"></script>
-<script src="/js/scripts.js"></script>
-
-
-  
-  <!-- Cufon -->
- <!-- <script type="text/javascript" src="/js/cufon-yui.js"></script>
-  <script type="text/javascript" src="/js/DIN-Medium_500.font.js"></script>
-  <script type="text/javascript" src="/js/DIN_700.font.js"></script>
-  <script type="text/javascript" src="/js/DIN-Regular_500.font.js"></script>-->
  
-  <!-- Javascript -->
+	<link rel="alternate" type="application/rss+xml" title="Crystal Mountain Resort &raquo; Feed" href="http://crystalmountainresort.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Crystal Mountain Resort &raquo; Comments Feed" href="http://crystalmountainresort.com/comments/feed/" />
+<link rel='stylesheet' id='ai1ec_style-css'  href='http://crystalmountainresort.com/wp-content/plugins/all-in-one-event-calendar/cache/8848bd8a_ai1ec_parsed_css.css?ver=2.1.5' type='text/css' media='all' />
+<link rel='stylesheet' id='nextgen_gallery_related_images-css'  href='http://crystalmountainresort.com/wp-content/plugins/nextgen-gallery/products/photocrati_nextgen/modules/nextgen_gallery_display/static/nextgen_gallery_related_images.css?ver=4.0' type='text/css' media='all' />
+<link rel='stylesheet' id='tubepress-css'  href='http://crystalmountainresort.com/wp-content/plugins/tubepress/src/main/web/css/tubepress.css?ver=4.0' type='text/css' media='all' />
+<link rel='stylesheet' id='contact-form-7-css'  href='http://crystalmountainresort.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=4.0.1' type='text/css' media='all' />
+<link rel='stylesheet' id='sb_instagram_styles-css'  href='http://crystalmountainresort.com/wp-content/plugins/instagram-feed/css/sb-instagram.css?3&#038;ver=4.0' type='text/css' media='all' />
+<link rel='stylesheet' id='wprmenu.css-css'  href='http://crystalmountainresort.com/wp-content/plugins/wp-responsive-menu/css/wprmenu.css?ver=4.0' type='text/css' media='all' />
+<link rel='stylesheet' id='wprmenu-font-css'  href='//fonts.googleapis.com/css?family=Open+Sans%3A400%2C300%2C600&#038;ver=4.0' type='text/css' media='all' />
+<link rel='stylesheet' id='wpsm_wpsm-css'  href='http://crystalmountainresort.com/wp-content/plugins/wp-site-mapping/css/wpsm.css?ver=0.2.2' type='text/css' media='all' />
+<link rel='stylesheet' id='kamn-css-easy-twitter-feed-widget-css'  href='http://crystalmountainresort.com/wp-content/plugins/easy-twitter-feed-widget/easy-twitter-feed-widget.css?ver=4.0' type='text/css' media='all' />
+<link rel='stylesheet' id='normalize-css'  href='http://crystalmountainresort.com/wp-content/themes/crystalmountain/css/normalize.css?ver=2.1.3' type='text/css' media='all' />
+<link rel='stylesheet' id='fontawesome-css'  href='http://crystalmountainresort.com/wp-content/themes/crystalmountain/css/font-awesome.min.css?ver=4.0.3' type='text/css' media='all' />
+<link rel='stylesheet' id='gridsystem-css'  href='http://crystalmountainresort.com/wp-content/themes/crystalmountain/css/grid.css?ver=1.0.0' type='text/css' media='all' />
+<link rel='stylesheet' id='quark-fonts-css'  href='http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic|Arvo:400&#038;subset=latin' type='text/css' media='all' />
+<link rel='stylesheet' id='style-css'  href='http://crystalmountainresort.com/wp-content/themes/crystalmountain/style.css?ver=1.2.3' type='text/css' media='all' />
+<link rel='stylesheet' id='tablepress-default-css'  href='http://crystalmountainresort.com/wp-content/tablepress-combined.min.css?ver=66' type='text/css' media='all' />
+<link rel='stylesheet' id='wpgmaps-style-css'  href='http://crystalmountainresort.com/wp-content/plugins/wp-google-maps/css/wpgmza_style.css?ver=4.0' type='text/css' media='all' />
+<link rel='stylesheet' id='lightboxStyle-css'  href='http://crystalmountainresort.com/wp-content/lbp-css/simple-dark/colorbox.css?ver=2.7' type='text/css' media='screen' />
+<!-- This site uses the Yoast Google Analytics plugin v5.1 - Universal disabled - https://yoast.com/wordpress/plugins/google-analytics/ -->
+<script type="text/javascript">
 
-  <script type="text/javascript" src="/js/crystal_mountain.js?rev=1"></script>
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-24637675-2']);
+	_gaq.push(['_gat._forceSSL']);
+	_gaq.push(['_trackPageview']);
+
+	(function () {
+		var ga = document.createElement('script');
+		ga.type = 'text/javascript';
+		ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0];
+		s.parentNode.insertBefore(ga, s);
+	})();
+
+</script>
+<!-- / Yoast Google Analytics -->
+<!--[if !IE]><!-->
+<link rel='stylesheet' id='tablepress-responsive-css'  href='http://crystalmountainresort.com/wp-content/plugins/tablepress-responsive-tables/tablepress-responsive.min.css?ver=1.1' type='text/css' media='all' />
+<!--<![endif]-->
+<script type='text/javascript'>
+/* <![CDATA[ */
+var photocrati_ajax = {"url":"http:\/\/crystalmountainresort.com\/photocrati_ajax","wp_home_url":"http:\/\/crystalmountainresort.com","wp_site_url":"http:\/\/crystalmountainresort.com","wp_root_url":"http:\/\/crystalmountainresort.com","wp_plugins_url":"http:\/\/crystalmountainresort.com\/wp-content\/plugins","wp_content_url":"http:\/\/crystalmountainresort.com\/wp-content","wp_includes_url":"http:\/\/crystalmountainresort.com\/wp-includes\/"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="http://crystalmountainresort.com/wp-content/cache/minify/000000/rVFLEoIwDL2QNYMeiCkl1jD0QxIEb29VYOOMC2WX5n0nrSDirB6j8bbvke-QObWjU4F8TZocW6V64UAoUI8CtrMziBbIvebDGbphLOptMIF8keIxUDxUf4dkZCHRHZxEE-MOPtH7evUaTtPZXGjG1kzUelTo5HO5nELHBjOjCAg7CJYiTNg8FRvyY72e_FWbtFVc37VLUQu32E7ZlICcotANTcA4PoPfX3ZUtmW_9vxKFWr5AQ.js"></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wprmenu = {"zooming":"yes","from_width":"650","swipe":"yes"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="http://crystalmountainresort.com/wp-content/cache/minify/000000/FclBDoAwCADBD0mxXnxPoxwwAg20Gn299raZzXhXcIpqGnwRCGnHI371kdOMmz_RyinWtRXWMcV2cuXXYUlryiCsHw.js"></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://crystalmountainresort.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://crystalmountainresort.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.0" />
+<link rel='canonical' href='http://crystalmountainresort.com/the-mountain/about/current-conditions/' />
+<link rel='shortlink' href='http://crystalmountainresort.com/?p=71' />
+<!-- <meta name="NextGEN" version="2.0.66.29" /> -->
+
+<script type="text/javascript">var TubePressJsConfig = {"urls":{"base":"http:\/\/crystalmountainresort.com\/wp-content\/plugins\/tubepress","usr":"http:\/\/crystalmountainresort.com\/wp-content\/tubepress-content"}};</script>
+		<style id="wprmenu_css" type="text/css" >
+			/* apply appearance settings */
+			#wprmenu_bar {
+				background: #00b8ff;
+			}
+			#wprmenu_bar .menu_title, #wprmenu_bar .wprmenu_icon_menu {
+				color: #F2F2F2;
+			}
+			#wprmenu_menu {
+				background: #2E2E2E!important;
+			}
+			#wprmenu_menu.wprmenu_levels ul li {
+				border-bottom:1px solid #131212;
+				border-top:1px solid #0D0D0D;
+			}
+			#wprmenu_menu ul li a {
+				color: #CFCFCF;
+			}
+			#wprmenu_menu ul li a:hover {
+				color: #606060;
+			}
+			#wprmenu_menu.wprmenu_levels a.wprmenu_parent_item {
+				border-left:1px solid #0D0D0D;
+			}
+			#wprmenu_menu .wprmenu_icon_par {
+				color: #CFCFCF;
+			}
+			#wprmenu_menu .wprmenu_icon_par:hover {
+				color: #606060;
+			}
+			#wprmenu_menu.wprmenu_levels ul li ul {
+				border-top:1px solid #131212;
+			}
+			#wprmenu_bar .wprmenu_icon span {
+				background: #FFFFFF;
+			}
+			
+			#wprmenu_menu.left {
+				width:80%;
+				left: -80%;
+			    right: auto;
+			}
+			#wprmenu_menu.right {
+				width:80%;
+			    right: -80%;
+			    left: auto;
+			}
 
 
+			
+						/* show the bar and hide othere navigation elements */
+			@media only screen and (max-width: 650px) {
+				html { padding-top: 42px!important; }
+				#wprmenu_bar { display: block!important; }
+				div#wpadminbar { position: fixed; }
+				#site-menu, #main-menu-toggle { display:none!important; }			}
+		</style>
+		
+<style>
+#bannercontainer { background: #ececec url('') no-repeat scroll top center; }
+#footercontainer { background-color: #000000; }
+.smallprint { text-align: left; }
+</style>
+			<!-- Easy Columns 2.1.1 by Pat Friedl http://www.patrickfriedl.com -->
+			<link rel="stylesheet" href="http://crystalmountainresort.com/wp-content/plugins/easy-columns/css/easy-columns.css" type="text/css" media="screen, projection" />
+			   
+<script type="text/javascript">
+jQuery(document).ready(function($) {
+  $(".tog-content").hide();
+  //toggle the componenet with class msg_body
+  $(".tog-heading").click(function()
+  {
+    $(this).next(".tog-content").slideToggle(500);
+	$( this ).toggleClass( "arrow" );
+  });
+
+  
+  
+$(".social-media-icons li a img").hover(function(){
+    $(this).attr("src", function(index, attr){
+        return attr.replace("-white.png", ".png");
+    });
+}, function(){
+    $(this).attr("src", function(index, attr){
+        return attr.replace(".png", "-white.png");
+    });
+});  
+  
+  $(".breadcrumbs span a.post.post-page:first").removeAttr("href").css({
+	"color" : "#000000",
+	"text-decoration" : "none",
+	"outline": "none",
+	"font-weight":"700",
+	
+  });
+  
+   $(".single-ai1ec_event span a:first").removeAttr("href").css({
+	"color" : "#000000",
+	"text-decoration" : "none",
+	"outline": "none",
+	"font-weight":"700",
+	
+  });
+  
+});
+</script>    
+    
+<!--[if lte IE 8]>
+<link href='http://crystalmountainresort.com/wp-content/themes/crystalmountain/css/ie8.css' rel='stylesheet' type='text/css'>
+<![endif]-->   
 </head>
 
+<body class="page page-id-71 page-child parent-pageid-130 page-template page-template-page-templatesfull-width-php custom-background">
 
-<body>
+<div id="wrapper" class="hfeed site">
 
-<div id="outside_wrapper">
-<div id="wrapper">
-<div id="header">
-    <div id="top">
-    	<div id="top_right">
-        <div id="social_media">
-        <span id="search">
-		<form action="http://crystalmountainresort.com/Search" method="get"><p><input type="text" name="q" value="" size="15" placeholder="Search" class="search"  /><button type="submit" value="submit" id="submit" style='width:0px;height:0px;background:white;border:0px'></button></p></form>
+	<div class="visuallyhidden skip-link"><a href="#primary" title="Skip to main content">Skip to main content</a></div>
 
-        </span><!--end of search-->
-        
-       <span id="social_icons">
-        <a href="https://www.facebook.com/CrystalMountainWashington"><img src="http://crystalmountainresort.com//images/facebook.png" width="20" height="23" border="0" /></a>
-        <a href="http://twitter.com/crystalmt"><img src="http://crystalmountainresort.com//images/twitter_06.png" width="18" height="23" border="0" /></a>
-        <a href=" http://www.flickr.com/photos/crystalmountainwashington/"><img src="http://crystalmountainresort.com//images/flicker_07.png" width="19" height="23" border="0" /></a>
-        <a href="http://www.youtube.com/skicrystalmtn"><img src="http://crystalmountainresort.com//images/you_tube_08.png"  width="19" height="23" border="0" /></a>
-        <a href="http://vimeo.com/crystalmountainresort"><img src="http://crystalmountainresort.com//images/vimeo_09.png" width="19" height="23" border="0" /></a>
-        <a href="http://followgram.me/crystalmountain"><img src="http://crystalmountainresort.com//images/instagram-icon.png" width="20" height="23" border="0" /></a>
-        <a href="http://crystalmountainresort.com/RSS-Feeds" style=" margin-right: -4px;"><img src="http://crystalmountainresort.com//images/rss_11.png" width="20" height="23" border="0" /></a>
-<a href="http://www.blogcrystal.com/"><img src="http://crystalmountainresort.com//images/blogger_2.png" width="20" height="23" border="0" /></a>
-        </span><!--end of social_icons-->
+	<div id="headercontainer">
+        <div id="topbar"> 
+        <div class="site-header row">
+        <nav class="col grid_9_of_12">
+        <div class="topbar-menu-container"><ul id="menu-topbar-menu" class="topbar"><li id="menu-item-4670" class="small-menu menu-item menu-item-type-custom menu-item-object-custom menu-item-4670"><a href="https://www.tixforskicrystal.com/e-commerceWTP/WTPLoad.aspx" onclick="_gaq.push(['_trackEvent', 'outbound-widget', 'https://www.tixforskicrystal.com/e-commerceWTP/WTPLoad.aspx', 'Reload GO Card']);" target="_blank">Reload GO Card</a></li>
+<li id="menu-item-1705" class="small-menu menu-item menu-item-type-post_type menu-item-object-page menu-item-1705"><a href="http://crystalmountainresort.com/the-mountain/about/webcams/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/the-mountain/about/webcams/', 'Webcams']);" >Webcams</a></li>
+<li id="menu-item-1707" class="small-menu menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-71 current_page_item menu-item-1707"><a href="http://crystalmountainresort.com/the-mountain/about/current-conditions/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/the-mountain/about/current-conditions/', 'Conditions']);" >Conditions</a></li>
+<li id="menu-item-2452" class="full-first big-menu tablet-menu menu-item menu-item-type-post_type menu-item-object-page menu-item-2452"><a href="http://crystalmountainresort.com/hours/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/hours/', 'Hours']);" >Hours</a></li>
+<li id="menu-item-402" class="big-menu tablet-menu menu-item menu-item-type-post_type menu-item-object-page menu-item-402"><a href="http://crystalmountainresort.com/photo-gallery/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/photo-gallery/', 'Photos']);" >Photos</a></li>
+<li id="menu-item-403" class="big-menu tablet-menu menu-item menu-item-type-post_type menu-item-object-page menu-item-403"><a href="http://crystalmountainresort.com/video-gallery/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/video-gallery/', 'Videos']);" >Videos</a></li>
+<li id="menu-item-411" class="big-menu menu-item menu-item-type-post_type menu-item-object-page menu-item-411"><a href="http://crystalmountainresort.com/mobile-app/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/mobile-app/', 'Mobile App']);" >Mobile App</a></li>
+<li id="menu-item-1309" class="big-menu tablet-menu menu-item menu-item-type-post_type menu-item-object-page menu-item-1309"><a href="http://crystalmountainresort.com/news/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/news/', 'News']);" >News</a></li>
+<li id="menu-item-1298" class="big-menu tablet-menu menu-item menu-item-type-post_type menu-item-object-page menu-item-1298"><a href="http://crystalmountainresort.com/events/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/events/', 'Events']);" >Events</a></li>
+<li id="menu-item-412" class="big-menu tablet-menu menu-item menu-item-type-post_type menu-item-object-page menu-item-412"><a href="http://crystalmountainresort.com/employment/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/employment/', 'Employment']);" >Employment</a></li>
+<li id="menu-item-2448" class="big-menu menu-item menu-item-type-post_type menu-item-object-page menu-item-2448"><a href="http://crystalmountainresort.com/mt-rainier-gondola/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/mt-rainier-gondola/', 'Mt Rainier Gondola']);" >Mt Rainier Gondola</a></li>
+</ul></div>        </nav>
+        <div class="col grid_3_of_12">
+        <form role="search" method="get" id="searchform" action="http://crystalmountainresort.com/">
+        <input type="text" value="" name="s" id="s" />
+        <INPUT type="image" src="http://crystalmountainresort.com/wp-content/themes/crystalmountain/images/search-btn.png" value="">
+</form>        </div>
+        </div>
+        </div>
+		<header id="masthead" class="site-header row" role="banner">
+			<div class="site-title">
+				<h1>
+					<a href="http://crystalmountainresort.com/" title="Crystal Mountain Resort" rel="home">
+						
+						<img src="http://crystalmountainresort.com/wp-content/themes/crystalmountain/images/logo-crystalmountain.png" alt="Crystal Mountain Resort" id="full-site-banner" />                           
 
-        </div><!--end of social_media-->
-        <div id="top_links">
-<a class="links1" href="/">Home</a> | <a class="links1" href="/media-gallery">Gallery</a> | <a class="links1" href="/Sign-Up">Email Alerts</a><!-- | <a class="links1" href="http://m.skicrystal.com/">Mobile</a>--> | <!--<a href="/magento" target="_new"> <img src="/images/shoppingcart.png">Shop</a> |--> <a href="/employment">Employment</a> | <a href="/summermode/on/" >Summer</a>
-        </div><!--end of top_links-->
-        </div><!--end of top right-->
-<div id="photos_videos_webcam">
-		<div id="photos">
-			<a class="camera" href="/media-gallery">Camera<!--<img src="http://crystalmountainresort.com//images/camera_03.png" width="27" height="25" border="0" />--></a>
-            <a class ="videos_red" href="/media-gallery#videos">Videos<!--<img src="http://crystalmountainresort.com//images/video_camera_15.png" width="25" height="25" border="0" /><--></a>
-            <a class="webcam" href="/the-mountain/webcams">Webcam<!--<img src="http://crystalmountainresort.com//images/web_cam_16.png" width="18" height="25" border="0" />--></a>
-                       
-<a class="top_weather" href="/the-mountain/mountain_report">Weather</a>
-
-		</div><!--end of photos-->
-<div id="photos_videos_webcam_dropdown">
-        <div id="photos_dropdown">
-		<span class="dropdown_photo_display"><a href="/Media-Gallery#Photos/Most-Recent"><!--<img id="recent-image" style="width:600px; height:480px;" src="http://farm6.static.flickr.com/5519/9459559377_0585a7e20d.jpg" border="0" alt="" />-->
-<img src="/gallery_cache/907/400_400/rain-sun.jpg"> 
-<!--<img src="/gallery_cache/907/511_382c/Wasit-Deep2.jpg" />--></a></span><span class="close_camera"><img src="http://crystalmountainresort.com//images/close_button_1.png" width="30" height="27" border="0" align="close" /></span>
-        <br clear="all" />
-<div class="redbox_dropdown_text">
-        <!--<span class="text6">Photo of the Day</span>-->        
-<hr class="hr3" />
-        <div class="text5"><a href="/Media-Gallery">View Full Gallery</a>
-</div></div><!--end of redbox_dropdown_text"-->
-        </div><!--end of photos_dropdown-->
-
-<div id="videos_dropdown">
-		<span class="dropdown_video_display" id="latest-video-container-drop"></span><span class="close_video"><img src="http://crystalmountainresort.com//images/close_button_1.png" width="30" height="27" border="0" align="close" /></span>
-        <br clear="all" />
-<div class="redbox_dropdown_text">
-        <!--<span class="text6">Video of the Day</span>-->
-        <hr class="hr3" />
-        <div class="text5"><a href="/Media-Gallery#Videos">View More Videos</a></div></div><!--end of redbox_dropdown_text-->
-        </div><!--end of videos_dropdown-->
-        
-        <div id="webcam_dropdown">
-		<span class="dropdown_webcam_display"><a href="">
-<img id=webcam-img src="http://wwc.instacam.com/instacamimg/CRYMB/CRYMB_l.jpg?_ck=201211211400" alt=""  border="0" /> </a></span><span class ="close_webcam"> <img src="http://crystalmountainresort.com//images/close_button_1.png" width="30" height="27" border="0" align="close" /></span>
-        <br clear="all" />
-<div class="redbox_dropdown_text">
-        <!--<span class="text6">Webcam</span>-->
-        <hr class="hr3" />
-        <div class="text5"><a href="/The-Mountain/Webcams">More Webcams</a></div></div><!--end of redbox_dropdown_text-->
-        </div><!--end of webcam_dropdown-->
-		
-		<div id="weather_dropdown">
-
-		
-    	<!--weather conditions table redone in divs-->
-        <div id="weather_wrap">
-		
-			<!-- Column 1 -->
-<div style="float: left; width: 202px;">
-
-<div style="height: 102px; background:url(/images/blue_bg_1.png) no-repeat; margin: 0; padding: 0;"><span style="display:block; margin-left:15px; padding-top:10px;" class="text9"><img style="margin-left:40px; padding-bottom:10px;" align="middle" src="/images/weather_small/old/lightly-snowing.png" width="40" height="42" border="0" alt='' /></span><span class="weather_text">lightly snowing</span></div>
-
-<div style="height:37px; background:url(/images/grey_bg_1.png) no-repeat; margin-top:2px;"><span class="text_13">Summit <span class="standard">24<sup>0</sup> F</span><span style="display:none" class="metric">-6<sup>0</sup> C</span>&nbsp;&nbsp;&nbsp;&nbsp; Base <span class="standard">33<sup>0</sup> F</span><span style="display:none" class="metric">-2<sup>0</sup> C</span></span></div>
-
-</div>   <!-- End of Column 1 -->
-
-
-<!-- Column 2 -->
-<div style="float:left; width: 237px;">
-
-<div style="height: 35px; background:url(/images/grey_bg_2_04.png) no-repeat;"><span class="text_13">Snowfall Totals &nbsp; &nbsp;6,230' &nbsp; &nbsp;4,570'</span></div>
-
-<div style="height: 104px; background: url(/images/white_back.png) no-repeat;">
-        <table class="text_11" align="center" cellpadding="0" cellspacing="0" style="margin:0 auto; width:220px; height:100px;">
-        <tr>
-        <td class="time_frame">Overnight</td>
-        <td><span class="standard">3"</span><span style="display:none" class="metric">7  cm</span></td>
-        <td><span class="standard">2"</span><span style="display:none" class="metric">10 cm</span></td>
-        </tr>
-        <tr>
-        <td class="time_frame">24 Hour</td>
-        <td><span class="standard">3"</span><span style="display:none" class="metric">10 cm</span></td>
-        <td><span class="standard">2"</span><span style="display:none" class="metric">10 cm</span></td>
-        </tr>
-        <tr>
-        <td class="time_frame">48 Hour</td>
-        <td><span class="standard">15"</span><span style="display:none" class="metric">22 cm</span></td>
-        <td><span class="standard">8"</span><span style="display:none" class="metric">10 cm</span></td>
-        </tr>
-        <tr>
-        <td class="time_frame">72 Hour</td>
-        <td><span class="standard">15"</span><span style="display:none" class="metric">71 cm</span></td>
-        <td><span class="standard">8"</span><span style="display:none" class="metric">40 cm</span></td>
-        </tr>
-        
-        </table>
+                        <!--<img src="/images/swerve-driving-school-mobile.png" id="mobile-site-banner" alt="" />-->
+					</a>
+				</h1>        
+			</div> <!-- /.col.grid_5_of_12 -->
+            <div id="header-menus">
+                <div id="headlinks">
+                    <div class="social-media-icons">
+                        <div id="text-10" class="widget widget_text">			<div class="textwidget"><h3>Stay Connected</h3>
+<ul>
+<li  class="first vimeo"><a href="https://www.youtube.com/user/skiCrystalMtn" onclick="_gaq.push(['_trackEvent', 'outbound-widget', 'https://www.youtube.com/user/skiCrystalMtn', '']);"   target="_blank"><img src="http://crystalmountainresort.com/wp-content/themes/crystalmountain/images/new-round-icons/youtube-white.png" alt="YouTube" /></a></li>
+<li><a href="http://vimeo.com/crystalmountainresort" onclick="_gaq.push(['_trackEvent', 'outbound-widget', 'http://vimeo.com/crystalmountainresort', '']);"   target="_blank"><img src="http://crystalmountainresort.com/wp-content/themes/crystalmountain/images/new-round-icons/vimeo-white.png" alt="Vimeo" /></a></li>
+<li><a href="http://instagram.com/crystalmountain" onclick="_gaq.push(['_trackEvent', 'outbound-widget', 'http://instagram.com/crystalmountain', '']);"   target="_blank"><img src="http://crystalmountainresort.com/wp-content/themes/crystalmountain/images/new-round-icons/instagram-white.png" alt="Instagram" /></a></li>
+<li><a href="https://twitter.com/crystalmt" onclick="_gaq.push(['_trackEvent', 'outbound-widget', 'https://twitter.com/crystalmt', '']);"   target="_blank"><img src="http://crystalmountainresort.com/wp-content/themes/crystalmountain/images/new-round-icons/twitter-white.png" alt="Twitter" /></a></li>
+<li><a href="https://www.facebook.com/CrystalMountainWashington" onclick="_gaq.push(['_trackEvent', 'outbound-widget', 'https://www.facebook.com/CrystalMountainWashington', '']);"   target="_blank"><img src="http://crystalmountainresort.com/wp-content/themes/crystalmountain/images/new-round-icons/facebook-white.png" alt="Facebook" /></a></li>
+<li><a href="http://crystalmountainresort.com/sign-up/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/sign-up/', '']);" ><img src="http://crystalmountainresort.com/wp-content/themes/crystalmountain/images/new-round-icons/email-white.png" alt="Email" /></a></li>
+</ul></div>
+		</div>                    </div>
+                    <div class="tickets">
+                        <div id="text-11" class="widget widget_text">			<div class="textwidget"><a href="https://www.tixforskicrystal.com/e-commerceWTP/WTPLoad.aspx" alt="Reload GO Card" target="_blank"><h3>Reload <br><img src="http://crystalmountainresort.com/wp-content/uploads/2014/08/GO1.png" target="_blank"/><br><span>Card</span></h3>
+</a></div>
+		</div>                    </div> 
+                    <div class="snow">
+                        <div id="text-12" class="widget widget_text">			<div class="textwidget"><a href="http://crystalmountainresort.com/the-mountain/about/current-conditions/" alt="Snow" ><h3>Snowfall</h3>
+<div class="left">
+<p class="bold-header">0"</p>
+<p class="small-header">24 HRS</p>
 </div>
-
-</div><!-- End of Column 2 -->
-	
-</div><!-- End of weather_wrap -->
-   
-        <br />
+<div class="left">
+<p class="bold-header">0"</p>
+<p class="small-header">Season</p>
+</div>
+</a></div>
+		</div>                    </div> 
+                    <div class="weather">
+                        <div id="text-13" class="widget widget_text">			<div class="textwidget"><a href="http://crystalmountainresort.com/the-mountain/about/current-conditions/" alt="Weather" ><h3>Weather</h3>
+<p class="bold-header">45&#176;
+<img src="http://crystalmountainresort.com/wp-content/themes/crystalmountain/images/weather-icons/sm-rain.png" alt="sm-rain" width="30" height="20" /></p>
+<p class="small-header">Rain</p>
+</a></div>
+		</div>                    </div>  
+                    <div class="webcams">
+                        <div id="text-14" class="widget widget_text">			<div class="textwidget"><a href="http://crystalmountainresort.com/the-mountain/about/webcams/" alt="Webcams" ><h3>Web<br><img src="http://crystalmountainresort.com/wp-content/uploads/2014/09/webcam-icon-20.png" /><br>
+<span>Cams</span></h3>
+</a></div>
+		</div>                    </div>                                       
+                    <div id="main-menu-toggle" class="main-menu-toggle">
+                        <img src="http://crystalmountainresort.com/wp-content/themes/crystalmountain/images/menu.png" alt="Toggle Menu" id="full-site-toggle" />
+                        <!--<img src="/images/menu-mobile.png" alt="Toggle Menu" id="mobile-site-toggle" />-->
+                    </div>
+                </div>
+            </div> 
+		</header> <!-- /#masthead.site-header.row -->
         
-      
-
-    
-
-
-<!--weather display ends here-->
-<span class ="close_weather"><img src="http://crystalmountainresort.com//images/close_button_1.png" width="30" height="27" border="0" align="close" /></span>
-        <br clear="all" />
-<div class="redbox_dropdown_text">
-        <!--<span class="text6">Weather</span>-->        
-        <hr class="hr3" />
-
-<div class="text56"><a href="/The-Mountain/mountain_report">View Full Report</a></div>
-
-<!--<div class="text56"><a href="http://www.nwac.us/forecast/weather/current/">NWAC Detailed Mountain Forecast</a></div>-->
-<div class="text56"><a href="http://forecast.weather.gov/MapClick.php?lat=46.92912043955674&lon=-121.50098133017309&site=sew&unit=0&lg=en&FcstType=text">View NOAA Weather Forecast</a></div>
-</div><!--end of redbox_dropdown_text-->
-        </div><!--end of weather_dropdown-->
-</div>
-</div>
-        <div id="top_reload_card">
-
-        <p><a href="/Tickets-and-Passes/reload_go-card">Reload Go Card</a></p>
-
-        </div><!--end of top_reload_card-->
-       </div><!--end of top-->
-	</div><!--end of header-->
-    <div id="logo">
-    <a href="/"><img src="/images/logo_03.png" width="141" height="174" border="0" /></a>
-    </div><!--end of logo-->
-<script>
-<!--
-// Refresh page every 15 minutes if we're on webcams
-
--->
-</script>
-<div id="main-content" >
-  <!--  <nav>
-  <div class="nav-header" id="The-Mountain_mountain_report">	
-  </div>
-  
-
-  <!-- <div id="season-toggle">
-	<a href="/summermode/on/" >Summer</a>
-</div>
--->
-  
-  <h1 class="hidden">Mountain Report</h1>
-
-
-
-  
-<div id="menu_div">
-    <div id="menu">
-	<ul id="nav">
-  <li class="first"><a href="#" rel="/the-mountain">Mountain</a>
-  	 <ul>
-        <li><a href="/the-mountain/hours-of-operation">Hours</a></li>
-        <li><a href="/the-mountain/mountain_report">Mountain report</a></li>
-        <li><a href="/the-mountain/webcams">Webcams</a></li>
-        <li><a href="/the-mountain/our-trailmaps">Trail Maps</a></li>
-        <li><a href="/the-mountain/whats-new">What's New</a></li>
-
-        <li><a href="/the-mountain/mountain-stats">Facts &amp; Statistics</a></li>
-        <li><a href="/the-mountain/safety">Safety Information</a></li>
-        <li><a href="/the-mountain/testimonials">Testimonials</a></li>
-        <li><a href="/the-mountain/other_services">Other Services</a></li>
-        <li><a href="/the-mountain/environment">Environment</a></li>
-        <li><a href="/the-mountain/history">History</a></li>
-<!--        <li><a href="/summer-the-mountain">Summer</a></li>-->
-        <li><a href="/the-mountain/freeride_ambassadors">Ambassadors</a></li>
-        <li><a href="/the-mountain/mobile_app">Mobile App</a></li>
-        </ul>
-  </li>
-  <li class = "tickets_menu"><a href="#"  rel="/tickets-and-passes">Tickets + Passes</a>
-     <ul>
-        <li><a href="/tickets-and-passes/reload_go-card">Reload Go Card</a></li>
-        <li><a href="/tickets-and-passes/daily_tickets">Daily Tickets</a></li>
-        <li><a href="/tickets-and-passes/5day">5 Day Go Card</a></li>
-        <li><a href="/tickets-and-passes/season-passes">Season Passes</a></li>
-        <li><a href="/tickets-and-passes/gift-certificates">Gift Certificates</a></li>
-        <li><a href="/tickets-and-passes/corporate-tickets">Corporate Tickets</a></li>
-        <li><a href="/tickets-and-passes/military">Military Discounts</a></li>
-        <li><a href="/tickets-and-passes/rfid">About RFID</a></li>
-        </ul>
-  </li>
-   <li class = "snowsports_menu"><a href="#" rel="/snowsports-school">Learning</a>
-        <ul>
-        <li><a href="/snowsports-school/beginners_specials">Beginner Specials</a></li>
-        <li><a href="/snowsports-school/kids_club">Kids Club</a></li>
-        <li><a href="/snowsports-school/private_lessons">Private Lessons</a></li>
-        <li><a href="/snowsports-school/group_lessons">Group Lessons</a></li>
-        <li><a href="/snowsports-school/multi_week_lessons">Multi Week
-Lessons</a></li>
-        <li><a href="/snowsports-school/team_freeride">Team Freeride</a></li>
-        <li><a href="/snowsports-school/camps_and_clinics">Adult Clinic Series</a></li>
-       <li><a href="/snowsports-school/specialty_camps">Specialty Camps</a></li>
-        <li><a href="/snowsports-school/avalanche_safety_courses">Avalanche Safety
-Courses</a></li>	
-        <li><a href="/snowsports-school/ability_levels">Ability Levels</a></li>
-       </ul>
-
-
-
-
-
-
-  </li>
-    <li class = "eat_menu"><a href="#" rel="/activities">Eat + Play</a>
-        <ul>
-        <li><a href="/activities/where_to_eat">Where to Eat</a></li>
-<li><a href="/activities/first-tracks">First Tracks Breakfast</a></li>
-        <li><a href="/activities/dining/78/summit-house-restaurant">Summit House</a></li>
-        <li><a href="/activities/scenicrides">Scenic Gondola Rides</a></li>
-<li><a href="/activities/sasquatch-jib-park">Sasquatch Jib park</a></li>
-<!--<li><a href="/activities/airbag">Airbag</a></li>-->
-<li><a href="/activities/guided-snowshoe-tours">Snowshoe Tours</a></li>
-<li><a href="/activities/entertainment">Entertainment</a></li>
-<!--<li><a href="/activities/shopping">Shopping</a></li>-->
-
-       </ul>
-
-
-
-
-
-
-   </li>
-    <li class = "equipment_menu"><a href="#" rel="/lessons-and-equipment">Equipment</a>
-        <ul>
-        <li><a href="/lessons-and-equipment/rdl">RDL Test Center
-</a></li>
-        <li><a href="/lessons-and-equipment//mountain-shop">Mountain Shop
-</a></li>
-        <li><a href="/lessons-and-equipment/bootworks">Bootworks</a></li>
-        <li><a href="/lessons-and-equipment/rental_equipment">Rental Equipment</a></li>
-        <li><a href="/lessons-and-equipment/rightangle">Right Angle
-Sports</a></li>
-<li><a href="/lessons-and-equipment/ski_check">Ski Check</a></li>
-<li><a href="/lessons-and-equipment/service_center">Service Center</a></li>
-        <!--<li><a href="/lessons-and-equipment/repairs">Tuning
-& Repairs</a></li>-->
-        </ul>
-
-   </li>
-    <li class = "groups_menu"><a href="#" rel="/summer-groups-and-weddings">Groups + Weddings</a>
-        <ul>
-        <li><a href="/groups-and-weddings/group_discounts">Group Discounts</a></li>
-        <li><a href="/groups-and-weddings/group_faq">Group FAQs</a></li>
-        <li><a href="/summer-groups-and-weddings/weddings">Summer Weddings</a></li>
-        <!--<li><a href="/summer-groups-and-weddings/meetings-special-gatherings">Meetings &amp; Gatherings</a></li>-->
-      <!--  <li><a href="/summer-groups-and-weddings/request-information">Request Information</a></li>-->
-
-        </ul>
-   </li>
-    <li class = "trip_menu"><a href="#" rel="/plan-your-trip">Trip Planning</a>
-        <ul>
-        <li><a href="/plan-your-trip/getting-here">Driving Directions</a></li>
-        <li><a href="/plan-your-trip/transportation">Transportation</a></li>
-<li><a href="/plan-your-trip/snow-bus">Snow Bus</a></li>
-        <li><a href="/plan-your-trip/lodging-partners">Lodging Partners</a></li>
-        <li><a href="/summer-plan-your-trip/vacation-rentals ">Nearby Vacation Rentals</a></li>
-        <li><a href="/plan-your-trip/rv-overnightparking">RV's &amp; Overnight Parking</a></li>
-        <li><a href="/plan-your-trip/helpful-hints">Helpful Hints</a></li>
-        
-        </ul>
-    </li>
-    <li class="last"><a href="/events" rel="/events">Events</a>
-   </li>
+     <div id="site-menu">
+        <nav id="site-navigation" class="main-navigation" role="navigation">
+             <div class="main-menu-toggle x-menu-toggle">
+                 <img src="http://crystalmountainresort.com/wp-content/themes/crystalmountain/images/close.png" alt="Toggle Menu"  class="close" />
+              </div>
+            <div class="menu-main-navigation-container col grid_5_of_12 first"><ul id="menu-first-navigation" class="nav-menu"><li id="menu-item-68" class="menu-header left_col menu-item menu-item-type-custom menu-item-object-custom menu-item-68"><a>The Mountain</a></li>
+<li id="menu-item-2665" class="menu-header right_col menu-item menu-item-type-custom menu-item-object-custom menu-item-2665"><a>Services &#038; Activities</a></li>
+<li id="menu-item-178" class="menu-subheader left menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor current-menu-ancestor current-menu-parent current-page-parent current_page_parent current_page_ancestor menu-item-has-children menu-parent-item menu-item-178"><a href="http://crystalmountainresort.com/the-mountain/about/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/the-mountain/about/', 'About']);" >About</a>
+<ul class="sub-menu">
+	<li id="menu-item-3729" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3729"><a href="http://crystalmountainresort.com/hours/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/hours/', 'Hours']);" >Hours</a></li>
+	<li id="menu-item-92" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-71 current_page_item menu-item-92"><a href="http://crystalmountainresort.com/the-mountain/about/current-conditions/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/the-mountain/about/current-conditions/', 'Daily Report']);" >Daily Report</a></li>
+	<li id="menu-item-91" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-91"><a href="http://crystalmountainresort.com/the-mountain/about/grooming-report/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/the-mountain/about/grooming-report/', 'Grooming']);" >Grooming</a></li>
+	<li id="menu-item-90" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-90"><a href="http://crystalmountainresort.com/the-mountain/about/webcams/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/the-mountain/about/webcams/', 'Webcams']);" >Webcams</a></li>
+	<li id="menu-item-2653" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2653"><a href="http://crystalmountainresort.com/the-mountain/about/trail-maps/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/the-mountain/about/trail-maps/', 'Trail Maps']);" >Trail Maps</a></li>
+	<li id="menu-item-2743" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2743"><a href="http://crystalmountainresort.com/the-mountain/about/milestones/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/the-mountain/about/milestones/', 'Milestones']);" >Milestones</a></li>
+	<li id="menu-item-89" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-89"><a href="http://crystalmountainresort.com/the-mountain/about/statistics/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/the-mountain/about/statistics/', 'Statistics']);" >Statistics</a></li>
+	<li id="menu-item-87" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-87"><a href="http://crystalmountainresort.com/the-mountain/about/ambassadors/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/the-mountain/about/ambassadors/', 'Ambassadors']);" >Ambassadors</a></li>
+	<li id="menu-item-4088" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4088"><a href="http://crystalmountainresort.com/the-mountain/about/meet-the-staff/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/the-mountain/about/meet-the-staff/', 'Meet The Staff']);" >Meet The Staff</a></li>
+	<li id="menu-item-2654" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2654"><a href="http://crystalmountainresort.com/the-mountain/about/contact/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/the-mountain/about/contact/', 'Contact Us']);" >Contact Us</a></li>
 </ul>
-    </div><!--end of menu-->
-</div><!--end of menu_div-->
+</li>
+<li id="menu-item-2656" class="menu-subheader right menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-parent-item menu-item-2656"><a href="http://crystalmountainresort.com/services/dining/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/services/dining/', 'Dining']);" >Dining</a>
+<ul class="sub-menu">
+	<li id="menu-item-2657" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2657"><a href="http://crystalmountainresort.com/services/dining/summit-house-restaurant/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/services/dining/summit-house-restaurant/', 'Summit House']);" >Summit House</a></li>
+	<li id="menu-item-2658" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2658"><a href="http://crystalmountainresort.com/services/dining/campbell-basin-lodge/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/services/dining/campbell-basin-lodge/', 'Campbell Basin']);" >Campbell Basin</a></li>
+	<li id="menu-item-3406" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3406"><a href="http://crystalmountainresort.com/services/dining/bullwheel-resaurant-bar/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/services/dining/bullwheel-resaurant-bar/', 'Bullwheel']);" >Bullwheel</a></li>
+	<li id="menu-item-2660" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2660"><a href="http://crystalmountainresort.com/services/dining/chinook-cafe/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/services/dining/chinook-cafe/', 'Chinook ExpressO']);" >Chinook ExpressO</a></li>
+	<li id="menu-item-2661" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2661"><a href="http://crystalmountainresort.com/services/dining/cascade-grill/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/services/dining/cascade-grill/', 'Cascade Grill']);" >Cascade Grill</a></li>
+	<li id="menu-item-2662" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2662"><a href="http://crystalmountainresort.com/services/dining/schuss-hut/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/services/dining/schuss-hut/', 'Schuss']);" >Schuss</a></li>
+	<li id="menu-item-2663" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2663"><a href="http://crystalmountainresort.com/services/dining/taco-truck/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/services/dining/taco-truck/', 'Taco Truck']);" >Taco Truck</a></li>
+	<li id="menu-item-2664" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2664"><a href="http://crystalmountainresort.com/services/dining/mountain-market/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/services/dining/mountain-market/', 'Market']);" >Market</a></li>
+</ul>
+</li>
+<li id="menu-item-2667" class="menu-subheader right menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-parent-item menu-item-2667"><a href="http://crystalmountainresort.com/services/equipment/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/services/equipment/', 'Equipment &amp; Shops']);" >Equipment &#038; Shops</a>
+<ul class="sub-menu">
+	<li id="menu-item-2668" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2668"><a href="http://crystalmountainresort.com/services/equipment/rental-equipment/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/services/equipment/rental-equipment/', 'Rentals']);" >Rentals</a></li>
+	<li id="menu-item-2669" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2669"><a href="http://crystalmountainresort.com/services/equipment/high-performance-equipment/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/services/equipment/high-performance-equipment/', 'High-Performance Demo']);" >High-Performance Demo</a></li>
+	<li id="menu-item-2670" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2670"><a href="http://crystalmountainresort.com/services/equipment/mountain-shop/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/services/equipment/mountain-shop/', 'Mountain Shop']);" >Mountain Shop</a></li>
+	<li id="menu-item-2671" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2671"><a href="http://crystalmountainresort.com/services/equipment/right-angle-sports/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/services/equipment/right-angle-sports/', 'Right Angle']);" >Right Angle</a></li>
+	<li id="menu-item-2672" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2672"><a href="http://crystalmountainresort.com/services/equipment/rdl-test-center/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/services/equipment/rdl-test-center/', 'RDL Test Center']);" >RDL Test Center</a></li>
+	<li id="menu-item-2675" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2675"><a href="http://crystalmountainresort.com/services/equipment/bootworks/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/services/equipment/bootworks/', 'Bootworks']);" >Bootworks</a></li>
+	<li id="menu-item-2673" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2673"><a href="http://crystalmountainresort.com/services/equipment/ski-check/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/services/equipment/ski-check/', 'Ski Check']);" >Ski Check</a></li>
+	<li id="menu-item-2674" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2674"><a href="http://crystalmountainresort.com/services/equipment/service-center/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/services/equipment/service-center/', 'Service Center']);" >Service Center</a></li>
+</ul>
+</li>
+<li id="menu-item-179" class="menu-subheader left menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-parent-item menu-item-179"><a href="http://crystalmountainresort.com/the-mountain/tickets-passes/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/the-mountain/tickets-passes/', 'Tickets &amp; Passes']);" >Tickets &#038; Passes</a>
+<ul class="sub-menu">
+	<li id="menu-item-187" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-187"><a href="http://crystalmountainresort.com/the-mountain/tickets-passes/ticket-rates/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/the-mountain/tickets-passes/ticket-rates/', 'Ticket Rates']);" >Ticket Rates</a></li>
+	<li id="menu-item-185" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-185"><a href="http://crystalmountainresort.com/the-mountain/tickets-passes/rfid-technology/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/the-mountain/tickets-passes/rfid-technology/', 'RFID Technology']);" >RFID Technology</a></li>
+	<li id="menu-item-186" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-186"><a href="http://crystalmountainresort.com/the-mountain/tickets-passes/season-passes/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/the-mountain/tickets-passes/season-passes/', 'Season Passes']);" >Season Passes</a></li>
+	<li id="menu-item-184" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-184"><a href="http://crystalmountainresort.com/the-mountain/tickets-passes/military-discounts/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/the-mountain/tickets-passes/military-discounts/', 'Military']);" >Military</a></li>
+	<li id="menu-item-183" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-183"><a href="http://crystalmountainresort.com/the-mountain/tickets-passes/group-rates-15/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/the-mountain/tickets-passes/group-rates-15/', 'Group Rates (15+)']);" >Group Rates (15+)</a></li>
+	<li id="menu-item-182" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-182"><a href="http://crystalmountainresort.com/the-mountain/tickets-passes/gift-cards/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/the-mountain/tickets-passes/gift-cards/', 'Gift Certificates']);" >Gift Certificates</a></li>
+	<li id="menu-item-180" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-180"><a href="http://crystalmountainresort.com/the-mountain/tickets-passes/corporate-discounts/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/the-mountain/tickets-passes/corporate-discounts/', 'Corporate']);" >Corporate</a></li>
+</ul>
+</li>
+<li id="menu-item-4099" class="menu-subheader right menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-parent-item menu-item-4099"><a href="http://crystalmountainresort.com/plan-your-trip/activities/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/plan-your-trip/activities/', 'Activities']);" >Activities</a>
+<ul class="sub-menu">
+	<li id="menu-item-4094" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4094"><a href="http://crystalmountainresort.com/mt-rainier-gondola/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/mt-rainier-gondola/', 'Mt. Rainier Gondola']);" >Mt. Rainier Gondola</a></li>
+	<li id="menu-item-4095" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4095"><a href="http://crystalmountainresort.com/plan-your-trip/activities/sunrise-breakfast-first-tracks/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/plan-your-trip/activities/sunrise-breakfast-first-tracks/', 'First Tracks']);" >First Tracks</a></li>
+	<li id="menu-item-4096" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4096"><a href="http://crystalmountainresort.com/plan-your-trip/activities/snowshoeing-tours/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/plan-your-trip/activities/snowshoeing-tours/', 'Snowshoe Tours']);" >Snowshoe Tours</a></li>
+	<li id="menu-item-2686" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2686"><a href="http://crystalmountainresort.com/plan-your-trip/activities/happy-hour/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/plan-your-trip/activities/happy-hour/', 'Happy Hour']);" >Happy Hour</a></li>
+	<li id="menu-item-2687" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2687"><a href="http://crystalmountainresort.com/plan-your-trip/activities/movie-nights/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/plan-your-trip/activities/movie-nights/', 'Movie Nights']);" >Movie Nights</a></li>
+	<li id="menu-item-2688" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2688"><a href="http://crystalmountainresort.com/plan-your-trip/activities/live-music/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/plan-your-trip/activities/live-music/', 'Live Music']);" >Live Music</a></li>
+</ul>
+</li>
+<li id="menu-item-193" class="menu-subheader left menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-parent-item menu-item-193"><a href="http://crystalmountainresort.com/the-mountain/safety/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/the-mountain/safety/', 'Safety']);" >Safety</a>
+<ul class="sub-menu">
+	<li id="menu-item-2489" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2489"><a href="http://www.blogcrystal.com/" onclick="_gaq.push(['_trackEvent', 'outbound-widget', 'http://www.blogcrystal.com/', 'Ski Patrol Blog']);" target="_blank">Ski Patrol Blog</a></li>
+	<li id="menu-item-915" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-915"><a href="http://crystalmountainresort.com/the-mountain/safety/general-safety/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/the-mountain/safety/general-safety/', 'General Safety']);" >General Safety</a></li>
+	<li id="menu-item-197" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-197"><a href="http://crystalmountainresort.com/the-mountain/safety/family-zones/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/the-mountain/safety/family-zones/', 'Family Zones']);" >Family Zones</a></li>
+	<li id="menu-item-199" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-199"><a href="http://crystalmountainresort.com/the-mountain/safety/deep-snow-safety/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/the-mountain/safety/deep-snow-safety/', 'Deep Snow &amp; Tree Wells']);" >Deep Snow &#038; Tree Wells</a></li>
+	<li id="menu-item-200" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-200"><a href="http://crystalmountainresort.com/the-mountain/safety/uphill-travel/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/the-mountain/safety/uphill-travel/', 'Uphill Travel']);" >Uphill Travel</a></li>
+	<li id="menu-item-196" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-196"><a href="http://crystalmountainresort.com/the-mountain/safety/boundary-policy/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/the-mountain/safety/boundary-policy/', 'Boundary Policy']);" >Boundary Policy</a></li>
+	<li id="menu-item-195" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-195"><a href="http://crystalmountainresort.com/the-mountain/safety/avalanche-safety/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/the-mountain/safety/avalanche-safety/', 'Avalanche Safety']);" >Avalanche Safety</a></li>
+</ul>
+</li>
+</ul></div>            <div class="menu-main-navigation-container col grid_5_of_12 second"><ul id="menu-second-navigation" class="nav-menu"><li id="menu-item-69" class="menu-header left_col menu-item menu-item-type-custom menu-item-object-custom menu-item-69"><a>Snowsports Center</a></li>
+<li id="menu-item-3743" class="menu-header right_col menu-item menu-item-type-custom menu-item-object-custom menu-item-3743"><a>Plan Your Trip</a></li>
+<li id="menu-item-2701" class="menu-subheader left menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-parent-item menu-item-2701"><a href="http://crystalmountainresort.com/snowsports-center/learning/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/snowsports-center/learning/', 'Learning']);" >Learning</a>
+<ul class="sub-menu">
+	<li id="menu-item-2702" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2702"><a href="http://crystalmountainresort.com/snowsports-center/learning/beginner-tips/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/snowsports-center/learning/beginner-tips/', 'Beginner Tips']);" >Beginner Tips</a></li>
+	<li id="menu-item-311" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-311"><a href="http://crystalmountainresort.com/snowsports-center/learning/kids-club-learning-center/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/snowsports-center/learning/kids-club-learning-center/', 'Kids Club']);" >Kids Club</a></li>
+	<li id="menu-item-308" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-308"><a href="http://crystalmountainresort.com/snowsports-center/learning/beginner-lessons/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/snowsports-center/learning/beginner-lessons/', 'Beginner Lessons']);" >Beginner Lessons</a></li>
+	<li id="menu-item-2703" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2703"><a href="http://crystalmountainresort.com/snowsports-center/learning/ability-levels/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/snowsports-center/learning/ability-levels/', 'Ability Levels']);" >Ability Levels</a></li>
+	<li id="menu-item-4103" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4103"><a href="http://crystalmountainresort.com/snowsports-center/learning/instructors/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/snowsports-center/learning/instructors/', 'Snowsports Instructors']);" >Snowsports Instructors</a></li>
+</ul>
+</li>
+<li id="menu-item-4106" class="menu-subheader right menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-parent-item menu-item-4106"><a href="http://crystalmountainresort.com/plan-your-trip/experience/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/plan-your-trip/experience/', 'Experience']);" >Experience</a>
+<ul class="sub-menu">
+	<li id="menu-item-4107" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4107"><a href="http://crystalmountainresort.com/photo-gallery/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/photo-gallery/', 'Photo Gallery']);" >Photo Gallery</a></li>
+	<li id="menu-item-4108" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4108"><a href="http://crystalmountainresort.com/video-gallery/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/video-gallery/', 'Video Gallery']);" >Video Gallery</a></li>
+	<li id="menu-item-4109" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4109"><a href="http://crystalmountainresort.com/news/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/news/', 'News']);" >News</a></li>
+	<li id="menu-item-4110" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4110"><a href="http://crystalmountainresort.com/events/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/events/', 'Events']);" >Events</a></li>
+	<li id="menu-item-4606" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4606"><a href="http://crystalmountainresort.com/mobile-app/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/mobile-app/', 'Mobile App']);" >Mobile App</a></li>
+</ul>
+</li>
+<li id="menu-item-2735" class="menu-subheader right menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-parent-item menu-item-2735"><a href="http://crystalmountainresort.com/plan-your-trip/getting-here/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/plan-your-trip/getting-here/', 'Getting Here']);" >Getting Here</a>
+<ul class="sub-menu">
+	<li id="menu-item-2737" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2737"><a href="http://crystalmountainresort.com/plan-your-trip/getting-here/directions/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/plan-your-trip/getting-here/directions/', 'Directions']);" >Directions</a></li>
+	<li id="menu-item-2738" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2738"><a href="http://crystalmountainresort.com/plan-your-trip/getting-here/weekend-snow-bus/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/plan-your-trip/getting-here/weekend-snow-bus/', 'Weekend Snow Bus']);" >Weekend Snow Bus</a></li>
+	<li id="menu-item-4111" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4111"><a href="http://crystalmountainresort.com/plan-your-trip/getting-here/midweek-bus-transportation/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/plan-your-trip/getting-here/midweek-bus-transportation/', 'Midweek Busses']);" >Midweek Busses</a></li>
+	<li id="menu-item-2739" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2739"><a href="http://crystalmountainresort.com/plan-your-trip/getting-here/other-transportation/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/plan-your-trip/getting-here/other-transportation/', 'Transportation']);" >Transportation</a></li>
+	<li id="menu-item-2740" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2740"><a href="http://crystalmountainresort.com/plan-your-trip/other-information/winter-driving-tips/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/plan-your-trip/other-information/winter-driving-tips/', 'Winter Driving Tips']);" >Winter Driving Tips</a></li>
+	<li id="menu-item-2741" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2741"><a href="http://crystalmountainresort.com/plan-your-trip/planning/parking-guarantee/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/plan-your-trip/planning/parking-guarantee/', 'Parking Guarantee']);" >Parking Guarantee</a></li>
+</ul>
+</li>
+<li id="menu-item-2713" class="menu-subheader left menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-parent-item menu-item-2713"><a href="http://crystalmountainresort.com/snowsports-center/progressing/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/snowsports-center/progressing/', 'Progressing']);" >Progressing</a>
+<ul class="sub-menu">
+	<li id="menu-item-2719" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2719"><a href="http://crystalmountainresort.com/snowsports-center/progressing/private-coaching/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/snowsports-center/progressing/private-coaching/', 'Private Coaching']);" >Private Coaching</a></li>
+	<li id="menu-item-2720" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2720"><a href="http://crystalmountainresort.com/snowsports-center/progressing/group-lessons-14/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/snowsports-center/progressing/group-lessons-14/', 'Group Lessons']);" >Group Lessons</a></li>
+	<li id="menu-item-2721" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2721"><a href="http://crystalmountainresort.com/snowsports-center/progressing/multi-week-lessons-4-18/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/snowsports-center/progressing/multi-week-lessons-4-18/', 'Multi-Week Lessons']);" >Multi-Week Lessons</a></li>
+	<li id="menu-item-2722" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2722"><a href="http://crystalmountainresort.com/snowsports-center/progressing/adult-progression-series-18/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/snowsports-center/progressing/adult-progression-series-18/', 'Progressive Series']);" >Progressive Series</a></li>
+</ul>
+</li>
+<li id="menu-item-2727" class="menu-subheader left menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-parent-item menu-item-2727"><a href="http://crystalmountainresort.com/snowsports-center/freeride-team/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/snowsports-center/freeride-team/', 'Freeride Team']);" >Freeride Team</a>
+<ul class="sub-menu">
+	<li id="menu-item-310" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-310"><a href="http://crystalmountainresort.com/snowsports-center/freeride-team/youth-freeride-team/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/snowsports-center/freeride-team/youth-freeride-team/', 'Youth Freeride']);" >Youth Freeride</a></li>
+	<li id="menu-item-307" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-307"><a href="http://crystalmountainresort.com/snowsports-center/freeride-team/freeride-camps-sessions-9-18/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/snowsports-center/freeride-team/freeride-camps-sessions-9-18/', 'Freeride Camps &amp; Sessions']);" >Freeride Camps &#038; Sessions</a></li>
+	<li id="menu-item-2728" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2728"><a href="http://crystalmountainresort.com/snowsports-center/freeride-team/freeride-events/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/snowsports-center/freeride-team/freeride-events/', 'Freeride Events']);" >Freeride Events</a></li>
+	<li id="menu-item-2754" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2754"><a href="http://crystalmountainresort.com/snowsports-center/freeride-team/freeride-coaches/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/snowsports-center/freeride-team/freeride-coaches/', 'Freeride Coaches']);" >Freeride Coaches</a></li>
+</ul>
+</li>
+<li id="menu-item-2744" class="menu-subheader right menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-parent-item menu-item-2744"><a href="http://crystalmountainresort.com/plan-your-trip/planning/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/plan-your-trip/planning/', 'Planning']);" >Planning</a>
+<ul class="sub-menu">
+	<li id="menu-item-2750" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2750"><a href="http://crystalmountainresort.com/plan-your-trip/planning/lodging-partners/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/plan-your-trip/planning/lodging-partners/', 'Lodging']);" >Lodging</a></li>
+	<li id="menu-item-2751" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2751"><a href="http://crystalmountainresort.com/plan-your-trip/planning/vacation-rentals/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/plan-your-trip/planning/vacation-rentals/', 'Vacation Rentals']);" >Vacation Rentals</a></li>
+	<li id="menu-item-4259" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4259"><a href="http://crystalmountainresort.com/plan-your-trip/planning/base-area-map/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/plan-your-trip/planning/base-area-map/', 'Base Area Map']);" >Base Area Map</a></li>
+	<li id="menu-item-2885" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2885"><a href="http://crystalmountainresort.com/plan-your-trip/planning/rv-parking/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/plan-your-trip/planning/rv-parking/', 'RV &amp; Overnight Parking']);" >RV &#038; Overnight Parking</a></li>
+	<li id="menu-item-2746" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2746"><a href="http://crystalmountainresort.com/plan-your-trip/planning/unloaddrop-off-area/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/plan-your-trip/planning/unloaddrop-off-area/', 'Unload Area']);" >Unload Area</a></li>
+	<li id="menu-item-2747" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2747"><a href="http://crystalmountainresort.com/plan-your-trip/planning/shuttle-service/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/plan-your-trip/planning/shuttle-service/', 'Shuttle Service']);" >Shuttle Service</a></li>
+	<li id="menu-item-2753" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2753"><a href="http://crystalmountainresort.com/plan-your-trip/planning/helpful-hints/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/plan-your-trip/planning/helpful-hints/', 'Helpful Hints']);" >Helpful Hints</a></li>
+</ul>
+</li>
+<li id="menu-item-1652" class="menu-subheader left menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-parent-item menu-item-1652"><a href="http://crystalmountainresort.com/snowsports-center/adventure-center/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/snowsports-center/adventure-center/', 'High Adventure']);" >High Adventure</a>
+<ul class="sub-menu">
+	<li id="menu-item-306" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-306"><a href="http://crystalmountainresort.com/snowsports-center/adventure-center/adult-camp-clinics/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/snowsports-center/adventure-center/adult-camp-clinics/', 'Specialty Camps &amp; Clinics']);" >Specialty Camps &#038; Clinics</a></li>
+	<li id="menu-item-2731" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2731"><a href="http://crystalmountainresort.com/snowsports-center/adventure-center/avalance-education/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/snowsports-center/adventure-center/avalance-education/', 'Avalanche Education']);" >Avalanche Education</a></li>
+	<li id="menu-item-2732" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2732"><a href="http://crystalmountainresort.com/snowsports-center/adventure-center/backcountry-tours-18/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/snowsports-center/adventure-center/backcountry-tours-18/', 'Backcountry Tours']);" >Backcountry Tours</a></li>
+	<li id="menu-item-2733" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2733"><a href="http://crystalmountainresort.com/snowsports-center/adventure-center/sasquatch-terrain-park/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/snowsports-center/adventure-center/sasquatch-terrain-park/', 'Terrain Park']);" >Terrain Park</a></li>
+</ul>
+</li>
+</ul></div>            <div class="menu-main-navigation-container col grid_2_of_12 third"><ul id="menu-third-navigation" class="nav-menu"><li id="menu-item-3742" class="menu-header left_col menu-item menu-item-type-custom menu-item-object-custom menu-item-3742"><a>Summer</a></li>
+<li id="menu-item-2759" class="menu-subheader left menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-parent-item menu-item-2759"><a href="http://crystalmountainresort.com/summer/summer-activities/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/summer/summer-activities/', 'Summer Activities']);" >Summer Activities</a>
+<ul class="sub-menu">
+	<li id="menu-item-2760" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2760"><a href="http://crystalmountainresort.com/summer/summer-activities/scenic-gondola-rides/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/summer/summer-activities/scenic-gondola-rides/', 'Mt. Rainier Gondola']);" >Mt. Rainier Gondola</a></li>
+	<li id="menu-item-2761" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2761"><a href="http://crystalmountainresort.com/summer/summer-activities/hiking-trails/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/summer/summer-activities/hiking-trails/', 'Hiking Trails']);" >Hiking Trails</a></li>
+	<li id="menu-item-2762" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2762"><a href="http://crystalmountainresort.com/summer/summer-activities/horseback-rides/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/summer/summer-activities/horseback-rides/', 'Horseback Rides']);" >Horseback Rides</a></li>
+	<li id="menu-item-2763" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2763"><a href="http://crystalmountainresort.com/summer/summer-activities/mountain-yoga/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/summer/summer-activities/mountain-yoga/', 'Mountain Yoga']);" >Mountain Yoga</a></li>
+	<li id="menu-item-2764" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2764"><a href="http://crystalmountainresort.com/summer/summer-activities/ranger-walks/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/summer/summer-activities/ranger-walks/', 'Ranger Walks']);" >Ranger Walks</a></li>
+	<li id="menu-item-2765" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2765"><a href="http://crystalmountainresort.com/summer/summer-activities/disc-golf/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/summer/summer-activities/disc-golf/', 'Disc Golf']);" >Disc Golf</a></li>
+	<li id="menu-item-2766" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2766"><a href="http://crystalmountainresort.com/summer/summer-activities/gift-shops/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/summer/summer-activities/gift-shops/', 'Gift Shops']);" >Gift Shops</a></li>
+	<li id="menu-item-2767" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2767"><a href="http://crystalmountainresort.com/summer/summer-activities/wildflower-report/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/summer/summer-activities/wildflower-report/', 'Wildflower Report']);" >Wildflower Report</a></li>
+	<li id="menu-item-2768" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2768"><a href="http://crystalmountainresort.com/summer/summer-activities/biking-cycling/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/summer/summer-activities/biking-cycling/', 'Biking &amp; Cycling']);" >Biking &#038; Cycling</a></li>
+	<li id="menu-item-2769" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2769"><a href="http://crystalmountainresort.com/summer/summer-activities/nearby-attractions/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/summer/summer-activities/nearby-attractions/', 'Nearby Attractions']);" >Nearby Attractions</a></li>
+</ul>
+</li>
+<li id="menu-item-2770" class="menu-subheader left menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-parent-item menu-item-2770"><a href="http://crystalmountainresort.com/summer/summer-dining/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/summer/summer-dining/', 'Summer Dining']);" >Summer Dining</a>
+<ul class="sub-menu">
+	<li id="menu-item-2772" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2772"><a href="http://crystalmountainresort.com/summer/summer-dining/summit-house-summer/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/summer/summer-dining/summit-house-summer/', 'Summit House']);" >Summit House</a></li>
+	<li id="menu-item-2771" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2771"><a href="http://crystalmountainresort.com/summer/summer-dining/mountain-market-summer/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/summer/summer-dining/mountain-market-summer/', 'Mountain Market']);" >Mountain Market</a></li>
+	<li id="menu-item-2773" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2773"><a href="http://crystalmountainresort.com/summer/summer-dining/food-truck/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/summer/summer-dining/food-truck/', 'Food Truck']);" >Food Truck</a></li>
+</ul>
+</li>
+<li id="menu-item-3137" class="menu-subheader left menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-parent-item menu-item-3137"><a href="http://crystalmountainresort.com/summer/summer-special-events/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/summer/summer-special-events/', 'Special Events']);" >Special Events</a>
+<ul class="sub-menu">
+	<li id="menu-item-3139" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3139"><a href="http://crystalmountainresort.com/summer/summer-special-events/summer-weddings/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/summer/summer-special-events/summer-weddings/', 'Weddings']);" >Weddings</a></li>
+	<li id="menu-item-3138" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3138"><a href="http://crystalmountainresort.com/summer/summer-special-events/summer-corporate-meetings/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/summer/summer-special-events/summer-corporate-meetings/', 'Corporate Meetings']);" >Corporate Meetings</a></li>
+</ul>
+</li>
+<li id="menu-item-2777" class="menu-subheader left menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-parent-item menu-item-2777"><a href="http://crystalmountainresort.com/summer/summer-planning/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/summer/summer-planning/', 'Summer Planning']);" >Summer Planning</a>
+<ul class="sub-menu">
+	<li id="menu-item-2778" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2778"><a href="http://crystalmountainresort.com/summer/summer-planning/lodging-partners-summer/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/summer/summer-planning/lodging-partners-summer/', 'Summer Lodging']);" >Summer Lodging</a></li>
+	<li id="menu-item-2779" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2779"><a href="http://crystalmountainresort.com/summer/summer-planning/rv-parking-camping/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/summer/summer-planning/rv-parking-camping/', 'RV Parking &amp; Camping']);" >RV Parking &#038; Camping</a></li>
+	<li id="menu-item-2780" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2780"><a href="http://crystalmountainresort.com/plan-your-trip/planning/summer-maps/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/plan-your-trip/planning/summer-maps/', 'Maps']);" >Maps</a></li>
+	<li id="menu-item-2781" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2781"><a href="http://crystalmountainresort.com/summer/summer-planning/helpful-hints-summer/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/summer/summer-planning/helpful-hints-summer/', 'Helpful Hints']);" >Helpful Hints</a></li>
+</ul>
+</li>
+</ul></div>        </nav> <!-- /.site-navigation.main-navigation --> 
+	</div>
+	</div> <!-- /#headercontainer -->   
+
+	        
+<div id="allcontentcontainer"> 
+
+	<div id="maincontentcontainer">
+
+
+
+	<div id="primary" class="site-content row" role="main">   
+		<div class="col grid_12_of_12">
+             <!--<div id="alert-bar">-->
+             <div class="breadcrumbs">
+                <!-- Breadcrumb NavXT 5.1.1 -->
+<span typeof="v:Breadcrumb"><a rel="v:url" property="v:title" title="Go to The Mountain." href="http://crystalmountainresort.com/the-mountain/" class="post post-page">The Mountain</a></span> &gt; <span typeof="v:Breadcrumb"><a rel="v:url" property="v:title" title="Go to About." href="http://crystalmountainresort.com/the-mountain/about/" class="post post-page">About</a></span> &gt; <span typeof="v:Breadcrumb"><span property="v:title">Daily Report</span></span>            </div>         
+<!--              <form role="search" method="get" id="searchform" action="http://crystalmountainresort.com/">
+        <input type="text" value="" name="s" id="s" />
+        <INPUT type="image" src="http://crystalmountainresort.com/wp-content/themes/crystalmountain/images/search-btn.png" value="">
+</form> 
+            </div>  -->
+
+			
+									
+<article id="post-71" class="post-71 page type-page status-publish has-post-thumbnail hentry">
+			<div class="entry-content">
+		<div id="current-indicator"><img class="icon" src="http://beta.curvine.com/crystalmountain/newsite/wp-content/themes/crystalmountain/images/weather-icons/lg-rain.png" alt="lg-rain" width="194" height="129" /></p>
+<h4>Rain</h4>
+</div>
+<p><span class="h1">Daily Mountain Report<br />
+</span></p>
+<p><strong>Tips Up</strong></p>
+<p>The first snow of the season has already coated the peaks, with snow seen in the base area even.  See the <a href="http://crystalmountainresort.com/october-snow/" onclick="_gaq.push(['_trackEvent', 'outbound-article-int', 'http://crystalmountainresort.com/october-snow/', 'October Snowfall']);" title="October SNOW">October Snowfall</a> images on the News Blog.  All departments are busy gearing up for the upcoming ski season and we&#8217;ve got some exciting improvements in store.  Crews are finishing construction on Chair 6 and Quicksilver with load testing scheduled to happen sometime in mid November.</p>
+<p>Join us November 14-16 at the <a href="http://crystalmountainresort.com/event/seattle-ski-dazzle-ski-snowboard-show/" onclick="_gaq.push(['_trackEvent', 'outbound-article-int', 'http://crystalmountainresort.com/event/seattle-ski-dazzle-ski-snowboard-show/', 'Seattle Ski &amp; Snowboard Show']);" title="Seattle Ski Dazzle Ski &amp; Snowboard Show">Seattle Ski &amp; Snowboard Show</a> where we&#8217;ll have great deals on ticket packages, stickers, posters and high-fives for everyone.  It won&#8217;t be long before the mountain is blanketed in white so keep up those snow dances and we&#8217;ll see you soon!</p>
+<p><strong><a href="http://crystalmountainresort.com/wp-content/uploads/2014/05/Hand-with-iphone-small.jpg" onclick="_gaq.push(['_trackEvent', 'outbound-article-int', 'http://crystalmountainresort.com/wp-content/uploads/2014/05/Hand-with-iphone-small.jpg', '']);"   rel="lightbox[71]" title="Daily Report"><img class="alignleft wp-image-4889 size-thumbnail" src="http://crystalmountainresort.com/wp-content/uploads/2014/05/Hand-with-iphone-small-150x150.jpg" alt="Hand with iphone-small" width="127" height="127" /></a>Download the Crystal Mountain Mobile App<br />
+</strong>This is your handy-dandy guide to Crystal Mountain, including GPS tracking and trail maps, web cam images, weather and conditions, lift status, grooming report and more.</p>
+<p>It&#8217;s FREE and available for Apple and Android devices.  <a href="http://crystalmountainresort.com/plan-your-trip/experience/mobile-app/" onclick="_gaq.push(['_trackEvent', 'outbound-article-int', 'http://crystalmountainresort.com/plan-your-trip/experience/mobile-app/', 'Download Now ']);" title="Mobile App">Download Now </a></p>
+<p>&nbsp;</p>
+<div class="row">
+<div class="col grid_6_of_12">
+<h2>Snow Totals</h2>
+<table id="tablepress-15" class="tablepress tablepress-id-15">
+<caption style="caption-side: bottom; text-align: left; border: none; background: none; margin: 0; padding: 0;"><a href="http://crystalmountainresort.com/wp-admin/admin.php?page=tablepress&amp;action=edit&amp;table_id=15" onclick="_gaq.push(['_trackEvent', 'outbound-article-int', 'http://crystalmountainresort.com/wp-admin/admin.php?page=tablepress&amp;action=edit&amp;table_id=15', 'Edit']);" >Edit</a></caption>
+<tbody class="row-hover">
+<tr class="row-1">
+<td class="column-1"><span id="overnight">0”</span><br />
+<span class="td-time">OVERNIGHT</span><br />
+<span class="td-alitude">TOP 6,830&#8242;</span></td>
+<td class="column-2"><span id="hours-24">0”</span><br />
+<span class="td-time">24 HOURS</span><br />
+<span class="td-alitude">TOP 6,830&#8242;</span></td>
+<td class="column-3"><span id="hours-48">0”</span><br />
+<span class="td-time">48 HOURS</span><br />
+<span class="td-alitude">TOP 6,830&#8242;</span></td>
+</tr>
+<tr class="row-2">
+<td class="column-1"><span id="overnight">0”</span><br />
+<span class="td-time">OVERNIGHT</span><br />
+<span class="td-alitude">BOTTOM 4,570’</span></td>
+<td class="column-2"><span id="hours-24">0”</span><br />
+<span class="td-time">24 HOURS</span><br />
+<span class="td-alitude">BOTTOM 4,570’</span></td>
+<td class="column-3"><span id="hours-48">0”</span><br />
+<span class="td-time">48 HOURS</span><br />
+<span class="td-alitude">BOTTOM 4,570’</span></td>
+</tr>
+<tr class="row-3">
+<td class="column-1"><span id="bottom-depth">0”</span><br />
+<span class="td-depth">BOTTOM DEPTH</span><br />
+<span class="td-alitude">4,570’</span></td>
+<td class="column-2"><span id="top-depth">0”</span><br />
+<span class="td-depth">TOP DEPTH</span><br />
+<span class="td-alitude">6,830&#8242;</span></td>
+<td class="column-3"><span id="season-total">0”</span><br />
+<span class="td-depth">SEASON TOTAL</span><br />
+<span class="td-alitude">4,570’-6,830&#8242;</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="col grid_6_of_12">
+<h2>Webcams <span class="h2-small">Click icon for a larger view</span></h2>
+<table class="background2">
+<tbody>
+<tr>
+<td>
+<p style="color: #000000; margin-top: 0px; margin-bottom: 0px;"><a class="lbp-inline-link-5 cboxElement" href="#"><img src="http://wwc.instacam.com/instacamimg/CRYMB/CRYMB_l.jpg?_ck=1332521777" alt="" width="200" border="0" /></a></p>
+<div style="display: none;">
+<div id="lbp-inline-href-5" style="padding: 10px; background: #fff;"><img src="http://wwc.instacam.com/instacamimg/CRYMB/CRYMB_l.jpg?_ck=1332521777" alt="" width="900" border="0" /></div>
+</div>
+<p>Mt. Rainier Gondola</p>
+<div class="web-icon"><a class="lbp-inline-link-5 cboxElement" href="#"><img class="alignleft size-full wp-image-1947" src="http://crystalmountainresort.com/wp-content/uploads/2014/05/webcam-icon-red.png" alt="webcam-icon-red" width="38" height="38" /></a></div>
+</td>
+<td>
+<p style="color: #000000; margin-top: 0px; margin-bottom: 0px;"><a class="lbp-inline-link-7 cboxElement" href="#"><img src="http://wwc.instacam.com/instacamimg/CRYM4/CRYM4_l.jpg?_ck=1332521777.jpg?_ck=1332521777" alt="" width="200" border="0" /></a></p>
+<div style="display: none;">
+<div id="lbp-inline-href-7" style="padding: 10px; background: #fff;"><img src="http://wwc.instacam.com/instacamimg/CRYM4/CRYM4_l.jpg?_ck=1332521777.jpg?_ck=1332521777" alt="" width="900" border="0" /></div>
+</div>
+<p>Rainier Express</p>
+<div class="web-icon"><a class="lbp-inline-link-7 cboxElement" href="#"><img class="alignleft size-full wp-image-1947" src="http://crystalmountainresort.com/wp-content/uploads/2014/05/webcam-icon-red.png" alt="webcam-icon-red" width="38" height="38" /></a></div>
+</td>
+</tr>
+<tr>
+<td>
+<p style="color: #000000; margin-top: 0px; margin-bottom: 0px;"><a class="lbp-inline-link-9 cboxElement" href="#"><img src="//crystalmountainresort.com/webcam/goldhillscam.jpg" alt="Image" width="200" height="120" border="0" /></a></p>
+<div style="display: none;">
+<div id="lbp-inline-href-9" style="padding: 10px; background: #fff;"><img src="//crystalmountainresort.com/webcam/goldhillscam.jpg" alt="Image" width="900" border="0" /></div>
+</div>
+<p>Gold Hills</p>
+<div class="web-icon"><a class="lbp-inline-link-9 cboxElement" href="#"><img class="alignleft size-full wp-image-1947" src="http://crystalmountainresort.com/wp-content/uploads/2014/05/webcam-icon-red.png" alt="webcam-icon-red" width="38" height="38" /></a></div>
+</td>
+<td>
+<p style="color: #000000; margin-top: 0px; margin-bottom: 0px;"><img src="http://crystalmountainresort.com/wp-content/uploads/2014/10/cambell-webcam.jpg" alt="" />High Campbell</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="row" style="margin-top: 20px;">
+<div class="col grid_6_of_12">
+<table class="temp first">
+<tbody>
+<tr>
+<td class="temp-img"><img src="http://crystalmountainresort.com/wp-content/uploads/2014/08/temp-high.png" alt="" /></td>
+<td class="td-degree">45˚</td>
+<td><span class="td-temp">TOP TEMP</span><br />
+<span class="td-small">6,830’</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="col grid_6_of_12">
+<table class="temp">
+<tbody>
+<tr>
+<td class="temp-img"><img src="http://crystalmountainresort.com/wp-content/uploads/2014/08/temp-low.png" alt="" /></td>
+<td class="td-degree">48˚</td>
+<td><span class="td-temp">BOTTOM TEMP</span><br />
+<span class="td-small">4,570’</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="row" style="margin-top: 20px;">
+<div class="col grid_3_of_12 conditions">
+<div class="left-current conditions-tables"><h2 class="tablepress-table-name tablepress-table-name-id-13">Primary Surface Conditions</h2>
+
+<table id="tablepress-13" class="tablepress tablepress-id-13">
+<tbody class="row-hover">
+<tr class="row-1 odd">
+	<td class="column-1"></td><td class="column-2">Spring or soft</td>
+</tr>
+<tr class="row-2 even">
+	<td class="column-1"></td><td class="column-2">Wet Packed</td>
+</tr>
+<tr class="row-3 odd">
+	<td class="column-1"></td><td class="column-2">Firm Packed</td>
+</tr>
+<tr class="row-4 even">
+	<td class="column-1"></td><td class="column-2">Fresh Powder</td>
+</tr>
+<tr class="row-5 odd">
+	<td class="column-1"></td><td class="column-2">Packed Powder</td>
+</tr>
+<tr class="row-6 even">
+	<td class="column-1"></td><td class="column-2">Wide Variety</td>
+</tr>
+<tr class="row-7 odd">
+	<td class="column-1"></td><td class="column-2">Skier Packed</td>
+</tr>
+<tr class="row-8 even">
+	<td class="column-1"></td><td class="column-2">Heavy Snow</td>
+</tr>
+</tbody>
+</table>
+<!-- #tablepress-13 from cache --></div>
+</div>
+<div class="col grid_3_of_12 conditions">
+<div class="left-current conditions-tables"><h2 class="tablepress-table-name tablepress-table-name-id-14">Secondary Surface Conditions</h2>
+
+<table id="tablepress-14" class="tablepress tablepress-id-14">
+<tbody class="row-hover">
+<tr class="row-1 odd">
+	<td class="column-1"></td><td class="column-2">Spring or soft</td>
+</tr>
+<tr class="row-2 even">
+	<td class="column-1"></td><td class="column-2">Wet Packed</td>
+</tr>
+<tr class="row-3 odd">
+	<td class="column-1"></td><td class="column-2">Firm Packed</td>
+</tr>
+<tr class="row-4 even">
+	<td class="column-1"></td><td class="column-2">Fresh Powder</td>
+</tr>
+<tr class="row-5 odd">
+	<td class="column-1"></td><td class="column-2">Packed Powder</td>
+</tr>
+<tr class="row-6 even">
+	<td class="column-1"></td><td class="column-2">Wide Variety</td>
+</tr>
+<tr class="row-7 odd">
+	<td class="column-1"></td><td class="column-2">Skier Packed</td>
+</tr>
+<tr class="row-8 even">
+	<td class="column-1"></td><td class="column-2">Heavy Snow</td>
+</tr>
+</tbody>
+</table>
+<!-- #tablepress-14 from cache --></div>
+</div>
+<div class="col grid_3_of_12 conditions">
+<div class="left-current visibility-table"><h2 class="tablepress-table-name tablepress-table-name-id-21">Visibility</h2>
+
+<table id="tablepress-21" class="tablepress tablepress-id-21">
+<tbody class="row-hover">
+<tr class="row-1">
+	<td class="column-1">Bottom 4,570’</td><td class="column-2"></td><td class="column-3">Top 6,830’</td>
+</tr>
+<tr class="row-2">
+	<td class="column-1">x</td><td class="column-2">GOOD</td><td class="column-3"></td>
+</tr>
+<tr class="row-3">
+	<td class="column-1"></td><td class="column-2">FAIR</td><td class="column-3">x</td>
+</tr>
+<tr class="row-4">
+	<td class="column-1"></td><td class="column-2">LIMITED</td><td class="column-3"></td>
+</tr>
+</tbody>
+</table>
+<!-- #tablepress-21 from cache --></div>
+</div>
+<div class="col grid_3_of_12 conditions">
+<div class="left-current wind-table"><h2 class="tablepress-table-name tablepress-table-name-id-22">Wind</h2>
+
+<table id="tablepress-22" class="tablepress tablepress-id-22">
+<tbody class="row-hover">
+<tr class="row-1">
+	<td class="column-1">Bottom 4,570’</td><td class="column-2"></td><td class="column-3">Top 6,830’</td>
+</tr>
+<tr class="row-2">
+	<td class="column-1">x</td><td class="column-2">Light<br />
+<span class="small">0-20</span></td><td class="column-3">x</td>
+</tr>
+<tr class="row-3">
+	<td class="column-1"></td><td class="column-2">Moderate<br />
+<span class="small">21-35</span></td><td class="column-3"></td>
+</tr>
+<tr class="row-4">
+	<td class="column-1"></td><td class="column-2">Strong<br />
+<span class="small">36+</span></td><td class="column-3"></td>
+</tr>
+</tbody>
+</table>
+<!-- #tablepress-22 from cache --></div>
+</div>
+</div>
+<h2>Lift Status</h2>
+
+<table id="tablepress-12" class="tablepress tablepress-id-12">
+<thead>
+<tr class="row-1">
+	<th class="column-1"><div>type</div></th><th class="column-2"><div>Lift Name</div></th><th class="column-3"><div>Status</div></th><th class="column-4"><div>Hours</div></th><th class="column-5"><div>Special Notices</div></th>
+</tr>
+</thead>
+<tbody class="row-hover">
+<tr class="row-2">
+	<td class="column-1"><img src="http://beta.curvine.com/crystalmountain/newsite/wp-content/themes/crystalmountain/images/lifts/gondola-active.png" alt="lift" /></td><td class="column-2">Mt. Rainier Gondola</td><td class="column-3">2</td><td class="column-4">9:00  - 3:30</td><td class="column-5">Closed until ski season</td>
+</tr>
+<tr class="row-3">
+	<td class="column-1"><img src="http://beta.curvine.com/crystalmountain/newsite/wp-content/themes/crystalmountain/images/lifts/6lift-active.png" alt="lift" /><br />
+</td><td class="column-2">Chinook Express</td><td class="column-3">2</td><td class="column-4">9:00 - 4:00</td><td class="column-5">Closed until ski season</td>
+</tr>
+<tr class="row-4">
+	<td class="column-1"><img src="http://beta.curvine.com/crystalmountain/newsite/wp-content/themes/crystalmountain/images/lifts/6lift-active.png" alt="lift" /><br />
+</td><td class="column-2">Forest Queen</td><td class="column-3">2</td><td class="column-4">9:00 - 4:00</td><td class="column-5">Closed until ski season</td>
+</tr>
+<tr class="row-5">
+	<td class="column-1"><img src="http://beta.curvine.com/crystalmountain/newsite/wp-content/themes/crystalmountain/images/lifts/3lift-active.png" alt="lift" /></td><td class="column-2">Discovery</td><td class="column-3">2</td><td class="column-4">9:00 - 4:00</td><td class="column-5">Closed until ski season</td>
+</tr>
+<tr class="row-6">
+	<td class="column-1"><img src="http://beta.curvine.com/crystalmountain/newsite/wp-content/themes/crystalmountain/images/lifts/4lift-active.png" alt="lift" /><br />
+</td><td class="column-2">Quicksilver</td><td class="column-3">2</td><td class="column-4">9:00 - 4:00</td><td class="column-5">Closed until ski season</td>
+</tr>
+<tr class="row-7">
+	<td class="column-1"><img src="http://beta.curvine.com/crystalmountain/newsite/wp-content/themes/crystalmountain/images/lifts/2lift-active.png" alt="lift" /></td><td class="column-2">Chair 6</td><td class="column-3">2</td><td class="column-4">9:00 - 4:00</td><td class="column-5">Closed until ski season</td>
+</tr>
+<tr class="row-8">
+	<td class="column-1"><img src="http://beta.curvine.com/crystalmountain/newsite/wp-content/themes/crystalmountain/images/lifts/4lift-active.png" alt="lift" /></td><td class="column-2">Rainier Express</td><td class="column-3">2</td><td class="column-4">9:00 - 3:30</td><td class="column-5">Closed until ski season</td>
+</tr>
+<tr class="row-9">
+	<td class="column-1"><img src="http://beta.curvine.com/crystalmountain/newsite/wp-content/themes/crystalmountain/images/lifts/4lift-active.png" alt="lift" /></td><td class="column-2">Green Valley</td><td class="column-3">2</td><td class="column-4">9:00 - 3:30</td><td class="column-5">Closed until ski season</td>
+</tr>
+<tr class="row-10">
+	<td class="column-1"><img src="http://beta.curvine.com/crystalmountain/newsite/wp-content/themes/crystalmountain/images/lifts/2lift-active.png" alt="lift" /></td><td class="column-2">Northway</td><td class="column-3">2</td><td class="column-4">9:00 - 3:00</td><td class="column-5">Closed until ski season</td>
+</tr>
+<tr class="row-11">
+	<td class="column-1"><img src="http://beta.curvine.com/crystalmountain/newsite/wp-content/themes/crystalmountain/images/lifts/3lift-active.png" alt="lift" /></td><td class="column-2">Gold Hills</td><td class="column-3">2</td><td class="column-4">9:00 - 4:00</td><td class="column-5">Closed until ski season</td>
+</tr>
+<tr class="row-12">
+	<td class="column-1"><img src="http://beta.curvine.com/crystalmountain/newsite/wp-content/themes/crystalmountain/images/lifts/1person-magic-carpet-active.png" alt="lift" /><br />
+</td><td class="column-2">Magic Carpet</td><td class="column-3">2</td><td class="column-4">Varies</td><td class="column-5">Closed until ski season</td>
+</tr>
+</tbody>
+</table>
+<!-- #tablepress-12 from cache -->
+<div class="row hints">
+<div class="col grid_6_of_12 links">
+<h3>Helpful Links</h3>
+<p><a href="http://forecast.weather.gov/MapClick.php?lat=46.92912043955674&amp;lon=-121.50098133017309&amp;site=sew&amp;unit=0&amp;lg=en&amp;FcstType=text#.VAelrGMXNKM" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://forecast.weather.gov/MapClick.php?lat=46.92912043955674&amp;lon=-121.50098133017309&amp;site=sew&amp;unit=0&amp;lg=en&amp;FcstType=text#.VAelrGMXNKM', 'NOAA Weather Forecast']);"   target="_blank">NOAA Weather Forecast</a><br />
+<a href="http://www.nwac.us/mountain-weather-forecast/current/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.nwac.us/mountain-weather-forecast/current/', 'NWAC Mountain Forecast']);"   target="_blank">NWAC Mountain Forecast</a><br />
+<a href="http://www.nwac.us/weatherdata/crystalgrnvalley/now/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.nwac.us/weatherdata/crystalgrnvalley/now/', 'Telemetry Data 6,230']);"   target="_blank">Telemetry Data 6,230</a><br />
+<a href="http://www.nwac.us/weatherdata/crystalskiarea/now/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.nwac.us/weatherdata/crystalskiarea/now/', 'Telemetry Data 4,570']);"   target="_blank">Telemetry Data 4,570</a><br />
+<a href="http://www.wsdot.com/traffic/passes/passinformation.aspx" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.wsdot.com/traffic/passes/passinformation.aspx', 'Road Conditions WSDOT']);"   target="_blank">Road Conditions WSDOT</a><br />
+<a href="http://crystalmountainresort.com/the-mountain/about/grooming-report/" onclick="_gaq.push(['_trackEvent', 'outbound-article-int', 'http://crystalmountainresort.com/the-mountain/about/grooming-report/', 'Grooming Report']);" title="Grooming Report">Grooming Report</a></p>
+</div>
+<div class="col grid_6_of_12"></div>
+</div>
+			</div><!-- /.entry-content -->
+	<footer class="entry-meta">
+			</footer><!-- /.entry-meta -->
+</article><!-- /#post -->
+					
+<section id="comments" class="comments-area">
+
+	
+	
+			
+</section> <!-- /#comments.comments-area -->
+				
+			
+		</div> <!-- /.col.grid_12_of_12 -->
+        
+	</div><!-- /#primary.site-content.row -->
+<!--<script>
+jQuery(window).load(function(){
+	
+	setTimeout(
+  function() 
+  {
+    //do something special
+
   
-    
-<!--</nav>-->
   
-
-    <div id="main_content">
-    
-   <div id="interior_slideshow">
-
-    	<img src="http://crystalmountainresort.com//images/eat_play_image.png" width="890" height="250" border="0" align="slideshow" />
-
-
-    </div><!--end of slideshow-->    
-
-
-   
-    
-    <div id="main_content_text">
-	<div id="interior_page_columns">
-        <div id="interior_left_column">
-		<div id="inside_menu">
-
- <ul>
-        <li><a href="/the-mountain/hours-of-operation">Hours</a></li>
-        <li><a href="/the-mountain/mountain_report">Mountain report</a></li>
-        <li><a href="/the-mountain/webcams">Webcams</a></li>
-        <li><a href="/the-mountain/our-trailmaps">Trail Maps</a></li>
-        <li><a href="/the-mountain/whats-new">What's New</a></li>
-
-        <li><a href="/the-mountain/mountain-stats">Facts &amp; Statistics</a></li>
-        <li><a href="/the-mountain/safety">Safety Information</a></li>
-        <li><a href="/the-mountain/testimonials">Testimonials</a></li>
-        <li><a href="/the-mountain/other_services">Other Services</a></li>
-        <li><a href="/the-mountain/environment">Environment</a></li>
-        <li><a href="/the-mountain/history">History</a></li>
-<!--        <li><a href="/summer-the-mountain">Summer</a></li>-->
-        <li><a href="/the-mountain/freeride_ambassadors">Ambassadors</a></li>
-        <li><a href="/the-mountain/mobile_app">Mobile App</a></li>
-        </ul>
-
-        </div><!--end of inside_menu-->
-        
-     <div class="article_left">
- <h4>E NEWS</h4>
-        <p>Join our mailing list for info and great deals!</p>
-        <a href="http://crystalmountainresort.com/sign-up"><img src="http://crystalmountainresort.com//images/signup_07.png" width="112" height="29" border="0" align="Newsletter Signup" /></a>
-</div><!--end of article_left-->
-
-<div class="article_left mountain_ad">
-<img class="article_img" src="http://crystalmountainresort.com//images/the_mountain_ad.png" width="150" height="106" border="0" align="article_img" />
-        <h4>Summer is Fun Too</h4>
-        <p>Seasons change, your destination doesn’t have to.  Enjoy miles of hiking trails, horseback riding, disc golf, scenic gondola rides and so much more.</p>
-        <p class="more"><a href="http://crystalmountainresort.com/summermode/on">more</a></p>
-<br clear="both" />
-
-</div><!--end of article_left-->
-
-
-<div class="article_left stay_connected">
-        <h4>Stay Connected</h4>
-
-<p>
-        <ul>
-        <li><a href="http://www.youtube.com/skicrystalmtn">Youtube</a><img src="/images/you_tube_08.png" width="19" height="23" border="0" alt="You Tube" align="texttop" style="padding-left:10px;" /></li>
-        <li><a href="https://www.facebook.com/CrystalMountainWashington">Facebook</a><img src="/images/facebook.png" width="20" height="23" border="0" alt="Facebook" align="texttop" style="padding-left:10px;" /></li>
-        <li><a href="http://twitter.com/crystalmt">Twitter</a><img src="/images/twitter_06.png" width="20" height="23" border="0" alt="Facebook" align="texttop" style="padding-left:10px;" /></li>
-        <li><a href="http://www.blogcrystal.com/">Ski Patrol Blog</a><img src="/images/blogger.jpg" width="19" height="19" border="0" alt="Blogger" align="middle" style="padding-left:10px;" /></li>
-        </ul>
-        </p>
-
-        </div><!--end of article-->
-
-<div class="article_left">
-        <img src="/images/hotline.png" width="181" height="84" border="0" alt="Hotline" />
-        </div><!--end of article_left-->
-        </div><!--interior_left_column-->
-        
-        <div id="interior_right_column">
-<h1 class="inside_page_title">Mountain Report</h1>
-       <div class="article_right_images">
-<div id="interior_page_images">
-
-
-
-        <img id="lft_interior_img" class="left_image" src="http://crystalmountainresort.com/images/image_1_03.png" width="352" height="223" border="0" align="Crystal Mountain" /><img id="rgt_interior_img"  src="http://crystalmountainresort.com/images/image2_03.png" width="191" height="224" border="0" align="Crystal Mountain" />
-
-
-</div>
-        </div><!--end of article_right_images-->
-        
-
-       <div class="article_right_main">
-                        <div class="section">
-        
-            
-        
-
-          
-        
-            
-              
-                <p><div class="article_right">     
-        <strong class="text1">What&#8217;s Fresh</strong>
-        <div id="weather-fresh"><p>
-Chinook & Cayuse Pass are closed.  Highway 410 is open to the turnoff to Crystal Mountain.
-<p>
-*TWO LIFTS OPEN TODAY!!*  We picked up 3 inches of new snow overnight which has refreshed the conditions for some more fun early-season shredding today. The 8-passenger Mt. Rainier Gondola runs from 9:00am-3pm.  The high-speed quad Green Valley chair is open until 2:30pm.  Last download on the Gondola is 3:00pm. Tickets are only $25. The Cascade Grill and Summit House are open. We will be tapping a keg and showing the Seahawks game on the flat screens in the day lodge so you can ski and watch the game today!  No rentals or lessons available. We'll be closed Monday & Tuesday, possibly reopening on Wednesday.<a href="http://crystalmountainresort.com/News/1668/Early-Season-Operating-Details">Learn More</a>
-</p>  
-<p>Purchase a <a href="http://crystalmountainresort.com/Tickets-and-Passes/5day">5-Day GO Card</a> online now, SAVE $50 and hit the slopes anytime this winter without having to stop at the ticket window! </p>   
-<p>Does your equipment need a wax job, maybe a little edge sharpening or a full tune up for winter? Drop off your gear at the new high-tech <a href="http://crystalmountainresort.com/Lessons-and-Equipment/service_center">Service Center</a> and we'll give it the royal treatment and you can pick it up from our slope-side shop during your next visit. </p> 
-<p> We are currently accepting registration for the 6-week <a href="http://crystalmountainresort.com/SnowSports-School/multi_week_lessons">Multi-Week Lesson</a> programs, and the <a href="http://crystalmountainresort.com/SnowSports-School/team_freeride">Youth Freeride Camps & 8-week Program</a>  . Your kids will improve their skills in a fun and safe learning environment while you get to enjoy the mountain at your own pace. 
-</p></div>
-            	<!--weather conditions table redone in divs-->
-        <div id="weather-conditions2" class="dr_weather" style="width: 560px;">
-<div style="float:right;"><!--Summit = S Base = B--></div>
-<br style="clear: both"/>
-
-<!-- Column 1 -->
-<div style="float: left; width: 202px;">
-
-<div style="height: 102px; background:url(/images/blue_bg_1.png) no-repeat; margin: 0; padding: 0;"><span style="display:block; margin-left:15px; padding-top:10px;" class="text9"><img style="margin-left:40px; padding-bottom:10px;" align="middle" src="/images/weather_small/old/lightly-snowing.png" width="40" height="42" border="0" alt='' /></span><span class="weather_text">lightly snowing</span></div>
-
-<div style="height:37px; background:url(/images/grey_bg_1.png) no-repeat;"><span class="text_13">Summit <span class="standard">24<sup>0</sup> F</span><span style="display:none" class="metric">-5<sup>0</sup> C</span>&nbsp;&nbsp;&nbsp;&nbsp; Base <span class="standard">33<sup>0</sup> F</span><span style="display:none" class="metric">0<sup>0</sup> C</span></span></div>
-
-</div>   <!-- End of Column 1 -->
-
-<!-- Column 2 -->
-<div style="float:left; width: 237px;">
-
-<div style="height: 35px; background:url(/images/grey_bg_2_04.png) no-repeat;"><span class="text_13">Snowfall Totals &nbsp; &nbsp;6,230' &nbsp; &nbsp;4,570'</span></div>
-
-<div style="height: 104px; background: url(/images/light_grey_1_07.png) no-repeat;">
-        <table class="text_11" align="center" cellpadding="0" cellspacing="0" style="margin:0 auto; width:220px; height:100px;">
-        <tr>
-        <td class="time_frame">Overnight</td>
-        <td><span class="standard">3"</span><span style="display:none" class="metric">7 cm</span></td>
-        <td><span class="standard">2"</span><span style="display:none" class="metric">5 cm</span></td>
-        </tr>
-        <tr>
-        <td class="time_frame">24 Hour</td>
-        <td><span class="standard">3"</span><span style="display:none" class="metric">7 cm</span></td>
-        <td><span class="standard">2"</span><span style="display:none" class="metric">5 cm</span></td>
-        </tr>
-        <tr>
-        <td class="time_frame">48 Hour</td>
-        <td><span class="standard">15"</span><span style="display:none" class="metric">38 cm</span></td>
-        <td><span class="standard">8"</span><span style="display:none" class="metric">20 cm</span></td>
-        </tr>
-        <tr>
-        <td class="time_frame">72 Hour</td>
-        <td><span class="standard">15"</span><span style="display:none" class="metric">38 cm</span></td>
-        <td><span class="standard">8"</span><span style="display:none" class="metric">20 cm</span></td>
-        </tr>
-        
-        </table>
-</div>
-
-</div><!-- End of Column 2 -->
-
-<!-- Column 3 -->
-<div style="float: left; width: 121px;">
-
-<div style="height: 70px; background:url(/images/blue_bg_2_05.png) no-repeat;"><span class="text_13" style="">Snow Depth<!--</span>--><br />
-        <!--<span class="text_13">-->&nbsp; &nbsp;Summit <span class="standard">28" </span><span style="display:none" class="metric">71 cm</span><br /> 
-		&nbsp; &nbsp;Base <span class="standard">8" </span><span style="display:none" class="metric">20 cm</span></span>
-</div>
-
-<div style="height:69px; background:url(/images/blue_bg_3_08.png) no-repeat;"><span class="text_13" style="padding-top:15px;">Season<!--</span>--><br />
-        <!--<span class="text_13">-->&nbsp; &nbsp;Total: <span class="standard">45"</span><span style="display:none" class="metric">114 cm</span></span>
-</div>
-
-</div><!-- End of Column 3 -->
-
-<br style="clear: both"/>
-
-</div><!-- End of Weather conditions div -->
-        <!--end of new weather conditions divs-->
-    <!--
-        <table id="weather-conditions2" class="dr_weather" border="0" cellpadding="0" cellspacing="0" width="560">
-        <tr> <td style="margin-right:10px;" class="text8" colspan="3" align="right">Summit = S Base = B</td></tr>
-        <tr>
-        <td class="blue_bg_1" rowspan="5"><span style="display:block; margin-left:15px;" class="text9"><img style="margin-left:40px; padding-bottom:10px;" align="middle" src="/images/weather_small/lightly-snowing.png" width="40" height="42" border="0" alt='' /><br />lightly snowing</span></td>
-        <td class="grey_bg_2"><span class="text_10">Snowfall Totals</span></td>
-        <td class="blue_bg_2" rowspan="3">
-        <span class="text_10">Snow Depth</span><br />
-        <span class="text_10">S <span class="standard">28" </span><span style="display:none" class="metric">71 cm</span> 
-		B <span class="standard">8" </span><span style="display:none" class="metric">20 cm</span></span>
-        </td>
-        </tr>
-        
-        <tr>
-        <td class= "light_grey_1" rowspan="5">
-        
-        <table class="text_11" align="center" cellpadding="0" cellspacing="0" style="margin:0 auto; width:220px">
-        <tr>
-        <td>Overnight</td>
-        <td>S <span class="standard">3"</span><span style="display:none" class="metric">7 cm</span></td>
-        <td>B <span class="standard">2"</span><span style="display:none" class="metric">5 cm</span></td>
-        </tr>
-        <tr>
-        <td>24 Hour</td>
-        <td>S <span class="standard">3"</span><span style="display:none" class="metric">7 cm</span></td>
-        <td>B <span class="standard">2"</span><span style="display:none" class="metric">5 cm</span></td>
-        </tr>
-        <tr>
-        <td>48 Hour</td>
-        <td>S <span class="standard">15"</span><span style="display:none" class="metric">38 cm</span></td>
-        <td>B <span class="standard">8"</span><span style="display:none" class="metric">20 cm</span></td>
-        </tr>
-        <tr>
-        <td>72 Hour</td>
-        <td>S <span class="standard">15"</span><span style="display:none" class="metric">38 cm</span></td>
-        <td>B <span class="standard">8"</span><span style="display:none" class="metric">20 cm</span></td>
-        </tr>
-        
-        </table>
-        
-        </td>
-        </tr>        
-        <tr>
-        </tr>        
-        <tr>
-
-        <td class="blue_bg_3" rowspan="3"><span class="text_10">Season Snow</span><br />
-        <span class="text_10">Total: 				<span class="standard">45 "</span><span style="display:none" class="metric">114 cm</span></span>
-        </td>
-        </tr>        
-        <tr></tr>        
-        <tr>
-        <td class="grey_bg_1"><span class="text_10">Summit <span class="standard">24<sup>0</sup> F</span><span style="display:none" class="metric">-5<sup>0</sup> C</span>&nbsp;&nbsp;&nbsp;&nbsp; Base <span class="standard">33<sup>0</sup> F</span><span style="display:none" class="metric">0<sup>0</sup> C</span></span></td></tr>
-        </table>-->
-        <br />
-        
-        <p class="measurement-type">View the above table in <a class="measure-type standard" href="#standard">US Standard</a> or <a class="measure-type metric" href="#metric">Metric</a> | <!-- Updated 9/9/12 9:03am --> 11/17/13 10:30am</p>	
-
-    
-<!--
-<h2>NOAA Weather Forecast</h2>
-<ul class="forecast">		<li  class="first">
-			<span class="period"></span>
-			<span class="weather unknown"><img src="" /></span>
-			<span class="condition">Unknown</span>
-			<span class="temp">Hi 29&#176;</span>
-		</li>		<li >
-			<span class="period"></span>
-			<span class="weather unknown"><img src="" /></span>
-			<span class="condition">Unknown</span>
-			<span class="temp">Lo &#176;</span>
-		</li>		<li >
-			<span class="period"></span>
-			<span class="weather unknown"><img src="" /></span>
-			<span class="condition">Unknown</span>
-			<span class="temp">Hi &#176;</span>
-		</li>		<li >
-			<span class="period"></span>
-			<span class="weather unknown"><img src="" /></span>
-			<span class="condition">Unknown</span>
-			<span class="temp">Lo &#176;</span>
-		</li>		<li >
-			<span class="period"></span>
-			<span class="weather unknown"><img src="" /></span>
-			<span class="condition">Unknown</span>
-			<span class="temp">Hi &#176;</span>
-		</li></ul>
--->
-</p>
-
-   <strong class="text1"><span class="caps">NWAC</span> Detailed Mountain Forecast</strong>
-        <p><a href="http://www.nwac.us/forecast/weather/current/">View Full Report</a></p>
-        <!--</div>&#8212;&#62;<!--end of article_right-->
-
-    <strong class="text1"><span class="caps">NOAA</span> Central Cascades Forecast</strong>
-        <p><a href="http://forecast.weather.gov/MapClick.php?lat=46.92912043955674&lon=-121.50098133017309&site=sew&unit=0&lg=en&FcstType=text">View Full Report</a></p>
-        </div><!--end of article_right-->
-
- <div class="article_right">  
-
-<p></p></p>
-
- <h5>Webcams</h5><br />
-       
-		<div style="float:left; margin-right:20px;">
-                 <img src="http://wwc.instacam.com/instacamimg/CRYMB/CRYMB_l.jpg?_ck=1332521777" alt=""  border="0" width = "265" /> <br />
-
-        <p class="text4">Mt. Rainier Gondola | <a href="#gondola_webcam_2" name="modal">View Large</a></p>
-        </div>
-
-        <div>        
-        <img style="width: 265px; height:150px; border: 1px dotted #000" src="/images/webcams/cmsnowcam2.jpg" border="0" alt="Image" />
-        <br />
-
-        <p class="text4">Gold Hills | <a href="#gold_hills_webcam_2" name="modal">View Large</a></p>
-        </div>
-        </div><!--end of article_right-->
-
-<p><div class="article_right"></p>
-
-<h2>Rocktoberfest Oct. 1, 2013</h2>
-
-<p><iframe src="//player.vimeo.com/video/75932804?title=0&amp;byline=0&amp;portrait=0" width="550" height="309" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></p>
-
-<h2>Winter Stoke Video</h2>
-
-<p><iframe src="//player.vimeo.com/video/74996565?title=0&amp;byline=0&amp;portrait=0" width="550" height="309" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></p>
-
-              <h5> Mountain Status </h5>        
-
-             <!-- <iframe id="ls_container" frameborder="0" src="/lift_status/status.php" scrolling=no width="310" height="300"></iframe> -->
-	<!------------------------------>
-	
-<table border="0" height="166" cellspacing="0" width="558">
-        <tr>
-        <td colspan="3" class="lifts" style="padding-left:300px;">
-		<div style="float:left">
-        <ul>
-        <li>Open</li>
-        </ul>
-        </div>
-        <div style="float:left">
-        <ul>
-        <li class="lift_closed">Closed</li>
-        </ul>
-        </div>
-		<div style="float:left">
-        <ul>
-        <li class="hold">Hold</li>
-        </ul>
-        </div>
-		<div style="float:left">
-        <ul>
-        <li class="tbd">TBD</li>
-        </ul>
-        </div>
-        
-       </td>       
-        </tr>
-        <tr>
-        <td colspan="3" style="background:#00aedb; background:url(/images/lift_background.png) repeat-x;" width="364" height="37"><span class="text_12">Lifts</span></td>
-        </tr>
-        <!--<tr><td bgcolor="#FFFFFF" height="10" colspan="3">&nbsp;</td></tr>-->
-        <tr style="background:url(/images/light_grey_2_04.png) repeat-y;">
-		        <td class="lifts" style="background:#dcdddd;" valign="top">
-        <ul>
-		            	<li class="lift_4">Chinook Express</li>
-			        	<li class="lift_4">Discovery</li>
-			        	<li class="lift_4">Forest Queen Express</li>
-			        	<li class="lift_4">Gold Hills</li>
-			                        
-        </ul>              
-        </td>
-		        <td class="lifts" style="background:#dcdddd;" valign="top">
-        <ul>
-		            	<li class="">Gondola</li>
-			        	<li class="">Green Valley</li>
-			        	<li class="lift_4">High Campbell</li>
-			        	<li class="lift_4">Northway</li>
-			                        
-        </ul>              
-        </td>
-		        <td class="lifts" style="background:#dcdddd;" valign="top">
-        <ul>
-		            	<li class="lift_4">Quicksilver</li>
-			        	<li class="lift_4">Rainier Express</li>
-			            	<!--		<br />
-						<li class="lift_4">Sasquatch Jib Park</li>
-						<li class="lift_4">Southback</li>
-			-->
-                        
-        </ul>              
-        </td>
-		
-        </tr>
-        <tr><td colspan="3" style="background:url(/images/groomed_runs_bottom_02.png) no-repeat;">&nbsp;</td></tr></table>
-		
-
-
-<!------------------------------------->
-
-
-<table id="other_status" border="0" height="100" cellspacing="0" width="558">
-        <tr>
-        <td colspan="3" style="background:#00aedb; background:url(/images/lift_background.png) repeat-x;" width="364" height="37"><span class="text_12">Other </span></td>
-        </tr>
-        <tr style="background:url(/images/light_grey_2_04.png) repeat-y;">
-		        
-        
-  <td class="lifts special_style" style="background:#dcdddd;" valign="top">
-        <ul>
-                        <li class="lift_4">Sasquatch Jib Park</li>
-		</ul>              
-</td>		   		
-
-                         <td class="lifts special_style" style="background:#dcdddd;" valign="top">
-        <ul>
-                        <li class="lift_4">Southback</li>
-		</ul>              
-</td>		   		
-
-                        <td class="lifts special_style" style="background:#dcdddd;" valign="top">
-&nbsp;
-</td>						
-	
-	
-   							
-        </tr>
-        <tr><td colspan="3" style="background:url(/images/groomed_runs_bottom_02.png) no-repeat;">&nbsp;</td></tr></table>
-
-	
-		            
-
-         
-
-        <br />
-<p class="text4">Grooming list is updated daily at 7:30am. Print our daily conditions report including the grooming list using our interactive trail map.</p>
-        <p class="text4"><a href="http://crystalmountainresort.com/The-Mountain/Our-TrailMaps">Print Grooming Report</a></p>
-
-<p><strong class="text1">Other Helpful Links</strong>
-        <p class="text4"><a href="http://www.nwac.us/weatherdata/crystalskiarea/now/">Base &amp; Summit Telemetry</a><br />
-
-        <a href="http://www.nwac.us/weatherdata/crystalgrnvalley/now/">Green Valley Telemetry</a><br />
-
-        <a href="http://www.wsdot.com/traffic/passes/PassInformation.aspx"><span class="caps">WSDOT</span> Highway Report</a><br />
-
-        <a href="/the-mountain/reporting">Conditions Reporting</a></p>
-        </div></p>
-
-        </div><!--end of article_right-->
-
-        <div class="article_right_last">
-
-<div id="boxes">
-<div id="gondola_webcam_2" class="window">
-<img src="http://wwc.instacam.com/instacamimg/CRYMB/CRYMB_l.jpg?_ck=1332521777" alt=""  border="0" width = "900" /> 
-</div>
-
-<p><div id="gold_hills_webcam_2" class="window"><br />
-<img style="width: 850px; height:500px; border: 1px dotted #000" src="/images/webcams/cmsnowcam2.jpg" border="0" alt="Image" /><br />
-</div><br />
-<!-- Mask to cover the whole screen -->
-  <div id="mask"></div><br />
-</div><!--end of boxes--></p>
-              
-
-
-            
-        </div><!--end of section-->
-        
-        </div><!--end of article_right_main-->
-        
-        </div><!--interior_right_column-->
-        </div><!--end of interior_page_columns-->
-	</div><!--end of main_content_text--> 
-<!--footer Starts here-->
-  
-    <div id="footer">
-	<div id="footer_text_1">
-<div id="footer_text_1_links">
-    <a href="/the-mountain/hours-of-operation">Hours</a> | <a href="/employment">Employment</a> | <a href="/contact">Contact Us</a> | <a href="/press">Press</a> | <a href="/donations">Donations</a> | <a href="/partners">Partners</a> <a href="/sister-resorts">Sister Resorts</a> | <a href="/privacy-policy">Privacy Policy</a> | <a href="/credits ">Credits</a> | <a href="/sitemap">Site Map</a> | <a href="/summer-the-mountain/environment">Environment</a> | <a href="/summer-the-mountain/history">History</a>
-    <br /><br />
-    <!--<a href="">Summer</a><a href="/summermode/on/" >Summer</a> | Seasons Change Your Destination Does Not Have To.-->
-</div><!--end of footer_text_1_links-->
-    </div> <!--end of footer_text_1-->
-    <div id="footer_text_2">
-    <img align="bottom" src="/images/usfs.png" width="41" height="44" border="0" /> <p>Crystal Mountain is located in the Mt. Baker-Snoqualmie National Forest.  Crystal Mountain and the U.S. Forest Service are partners in recreation.<br />
-    </p>
-    </div><!--end of footer_text_2-->
-<script type="text/javascript">
-adroll_adv_id = "O52SB6UH7VG7NN53K37TUW";
-adroll_pix_id = "ZN6PQOOW6NB23NVGEH6F62";
-(function () {
-  var oldonload = window.onload;
-  window.onload = function() {
-    __adroll_loaded=true;
-    var scr = document.createElement("script");
-    var host = (("https:" == document.location.protocol) ? "https://s.adroll.com" : "http://a.adroll.com");
-    scr.setAttribute('async', 'true');
-    scr.type = "text/javascript";
-    scr.src = host + "/j/roundtrip.js";
-    document.documentElement.firstChild.appendChild(scr);
-    if(oldonload){oldonload()}};
-})();
-</script>
-<script type="text/javascript">
-var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-</script>
-
-
-<script type="text/javascript">
-  var axel = Math.random()+"";
-  var a = axel * 10000000000000;
-  document.write('<img src="http://mpp.mxptint.net/1/69/2/p1/?rnd=' + a + '" width="1" height="1" border="0" alt="" />');
-</script>
-<noscript>
-  <img src="http://mpp.mxptint.net/1/69/2/p1/?rnd=1" width="1" height="1" border="0" alt="" />
-</noscript>
-
-<!-- "Invite RM" c/o "MaxPoint Interactive",  segment: 'Crystal Mountain Home' - DO NOT MODIFY THIS PIXEL IN ANY WAY -->
-<img src="http://segment-pixel.invitemedia.com/pixel?pixelID=57617&partnerID=51&clientID=1042&key=segment" width="1" height="1" />
-<!-- End of pixel tag -->
-
-
-<script type="text/javascript">
-var pageTracker = _gat._getTracker("UA-1096491-2");
- pageTracker._trackPageview();
-</script>
-
-<script type="text/javascript">
-jQuery('header').removeClass('cufon-loading-hidden');
-jQuery('*').removeClass('cufon-loading-indent');
-</script>
-    </div><!--footer-->       
-    </div><!--end of main_content-->
-<div class="clear" ></div>
+jQuery("#addressInput").attr({
+       placeholder: "Your Zip Code"  
+});
+
+var zip = getUrlVars()["locZip"];
+
+if (zip) {
+jQuery('input#addressInput').val(zip);
+cslmap.searchLocations();
+}
+/*jQuery('#searchForm').submit();*/
+
+
+function getUrlVars()
+{
+    var vars = [], hash;
+    var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+    for(var i = 0; i < hashes.length; i++)
+    {
+        hash = hashes[i].split('=');
+        vars.push(hash[0]);
+        vars[hash[0]] = hash[1];
+    }
+    return vars;
+}
+  }, 500);
+});
+http://beta.curvine.com/crystalmountain/newsite/wp-content/themes/crystalmountain
+</script>-->
  
+<script>
+jQuery( ".tablepress-id-12 td.column-3:contains('1')" ).html( '<span class="green">Open</span>' );
+jQuery( ".tablepress-id-12 td.column-3:contains('2')" ).html( '<span class="red">Closed</span>' );
+jQuery( ".tablepress-id-12 td.column-3:contains('3')" ).html( '<span class="yellow2">Windhold</span>' );
+jQuery( ".tablepress-id-12 td.column-3:contains('4')" ).html( '<span class="yellow3">Hold</span>' );
+jQuery( ".tablepress-id-12 td.column-3:contains('5')" ).html( '<span class="blue">TBD</span>' );
 
+
+jQuery( ".conditions-tables td.column-1:contains('x')" ).html( '' ).css("background", "url(http://crystalmountainresort.com/wp-content/themes/crystalmountain/images/red-bar.gif) center center no-repeat");
+
+jQuery( ".visibility-table .row-2 td.column-1:contains('x')" ).html( '' ).css("background", "url(http://crystalmountainresort.com/wp-content/themes/crystalmountain/images/high-visibility-active.png) center center no-repeat");
+jQuery( ".visibility-table .row-2 td.column-3:contains('x')" ).html( '' ).css("background", "url(http://crystalmountainresort.com/wp-content/themes/crystalmountain/images/high-visibility-active.png) center center no-repeat");
+
+jQuery( ".visibility-table .row-3 td.column-1:contains('x')" ).html( '' ).css("background", "url(http://crystalmountainresort.com/wp-content/themes/crystalmountain/images/medium-visibility-active.png) center center no-repeat");
+jQuery( ".visibility-table .row-3 td.column-3:contains('x')" ).html( '' ).css("background", "url(http://crystalmountainresort.com/wp-content/themes/crystalmountain/images/medium-visibility-active.png) center center no-repeat");
+
+jQuery( ".visibility-table .row-4 td.column-1:contains('x')" ).html( '' ).css("background", "url(http://crystalmountainresort.com/wp-content/themes/crystalmountain/images/low-visibility-active.png) center center no-repeat");
+jQuery( ".visibility-table .row-4 td.column-3:contains('x')" ).html( '' ).css("background", "url(http://crystalmountainresort.com/wp-content/themes/crystalmountain/images/low-visibility-active.png) center center no-repeat");
+
+jQuery( ".wind-table .row-2 td.column-1:contains('x')" ).html( '' ).css("background", "url(http://crystalmountainresort.com/wp-content/themes/crystalmountain/images/calm-wind-active.png) center center no-repeat");
+jQuery( ".wind-table .row-2 td.column-3:contains('x')" ).html( '' ).css("background", "url(http://crystalmountainresort.com/wp-content/themes/crystalmountain/images/calm-wind-active.png) center center no-repeat");
+
+jQuery( ".wind-table .row-3 td.column-1:contains('x')" ).html( '' ).css("background", "url(http://crystalmountainresort.com/wp-content/themes/crystalmountain/images/moderate-wind-active.png) center center no-repeat");
+jQuery( ".wind-table .row-3 td.column-3:contains('x')" ).html( '' ).css("background", "url(http://crystalmountainresort.com/wp-content/themes/crystalmountain/images/moderate-wind-active.png) center center no-repeat");
+
+jQuery( ".wind-table .row-4 td.column-1:contains('x')" ).html( '' ).css("background", "url(http://crystalmountainresort.com/wp-content/themes/crystalmountain/images/strong-wind-active.png) center center no-repeat");
+jQuery( ".wind-table .row-4 td.column-3:contains('x')" ).html( '' ).css("background", "url(http://crystalmountainresort.com/wp-content/themes/crystalmountain/images/strong-wind-active.png) center center no-repeat");
+
+
+jQuery( ".page-id-73 .tablepress td.column-1:contains('1 2')" ).html( '<img src="http://crystalmountainresort.com/wp-content/themes/crystalmountain/images/green-circle.png" alt="green" /> <img src="http://crystalmountainresort.com/wp-content/themes/crystalmountain/images/blue-square.png" alt="blue" />');
+jQuery( ".page-id-73 .tablepress td.column-1:contains('1')" ).html( '<img src="http://crystalmountainresort.com/wp-content/themes/crystalmountain/images/green-circle.png" alt="green" />');
+jQuery( ".page-id-73 .tablepress td.column-1:contains('2')" ).html( '<img src="http://crystalmountainresort.com/wp-content/themes/crystalmountain/images/blue-square.png" alt="blue" />');
+jQuery( ".page-id-73 .tablepress td.column-1:contains('3')" ).html( '<img src="http://crystalmountainresort.com/wp-content/themes/crystalmountain/images/black-diamond.png" alt="single black" />');
+jQuery( ".page-id-73 .tablepress td.column-1:contains('4')" ).html( '<img src="http://crystalmountainresort.com/wp-content/themes/crystalmountain/images/double-black-diamond.png" alt="double black" />');
+
+jQuery( ".page-id-73 .tablepress td.column-4:contains('1')" ).html( '<span class="green">Open</span>' );
+jQuery( ".page-id-73 .tablepress td.column-4:contains('2')" ).html( '<span class="red">Closed</span>' );
+jQuery( ".page-id-73 .tablepress td.column-4:contains('3')" ).html( '<span class="yellow">TBD</span>' );
+
+jQuery( ".page-id-73 .tablepress td.column-3:contains('1')" ).html( '<img src="http://crystalmountainresort.com/wp-content/themes/crystalmountain/images/snowcat-active.png" alt="Groomed" />Groomed' );
+jQuery( ".page-id-73 .tablepress td.column-3:contains('2')" ).html( '<img src="http://crystalmountainresort.com/wp-content/themes/crystalmountain/images/snowcat-default.png" alt="Ungroomed" />Ungroomed' );
+jQuery( ".page-id-73 .tablepress td.column-3:contains('3')" ).html( '<img src="http://crystalmountainresort.com/wp-content/themes/crystalmountain/images/winched-snowcat-active.png" class="wenched" alt="Winched" />Winched' );
+
+</script>
+	</div> <!-- /#maincontentcontainer -->    
+	      
+    
+    
+</div> <!-- /#allcontentcontainer -->    
+
+	<div id="footercontainer">
+
+		<footer class="site-footer row" role="contentinfo">
+        
+        <div id="footer-top" class="row">
+        <div class="col grid_6_of_12">
+ 
+        </div>      
+        <div class="col grid_6_of_12">
+
+        </div> 
+        </div>          
+		
+        <div id="footer-bottom">
+        	<div class="row first-row">
+            	<div class="col grid_7_of_12" >
+                	<p class="info" id="more-information-toggle">MORE INFORMATION<img src="http://crystalmountainresort.com/wp-content/themes/crystalmountain/images/arrow-toogle-down.png" id="more-information-image" /></p>
+                    
+                </div>
+                <div class="col grid_5_of_12">
+                	<p class="e-news"><a href="//beta.curvine.com/crystalmountain/newsite/sign-up/" alt="e-mail sign-up">E-NEWS SIGN-UP</a></p>
+                </div>
+             </div>  <!-- /.row --> 
+             <div class="row initially-hidden" id="more-information">
+                <div class="col grid_7_of_12">
+                    <div class="footer-menu-container"><ul id="menu-footer-left" class="footer-menu"><li id="menu-item-62" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62"><a href="http://crystalmountainresort.com/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/', 'Home']);" >Home</a></li>
+<li id="menu-item-61" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-61"><a href="http://crystalmountainresort.com/employment/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/employment/', 'Employment']);" >Employment</a></li>
+<li id="menu-item-60" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-60"><a href="http://crystalmountainresort.com/the-mountain/about/contact/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/the-mountain/about/contact/', 'Contact Us']);" >Contact Us</a></li>
+<li id="menu-item-766" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-766"><a href="http://crystalmountainresort.com/media-requests/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/media-requests/', 'Press']);" >Press</a></li>
+<li id="menu-item-58" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-58"><a href="http://crystalmountainresort.com/donations/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/donations/', 'Donations']);" >Donations</a></li>
+<li id="menu-item-57" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-57"><a href="http://crystalmountainresort.com/partners/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/partners/', 'Partners']);" >Partners</a></li>
+<li id="menu-item-56" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-56"><a href="http://crystalmountainresort.com/sister-resorts/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/sister-resorts/', 'Sister Resorts']);" >Sister Resorts</a></li>
+</ul></div>                    <div class="footer-menu-container"><ul id="menu-footer-right" class="footer-menu"><li id="menu-item-67" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-67"><a href="http://crystalmountainresort.com/privacy-policy/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/privacy-policy/', 'Privacy Policy']);" >Privacy Policy</a></li>
+<li id="menu-item-66" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-66"><a href="http://crystalmountainresort.com/credits/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/credits/', 'Credits']);" >Credits</a></li>
+<li id="menu-item-65" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65"><a href="http://crystalmountainresort.com/site-map/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/site-map/', 'Site Map']);" >Site Map</a></li>
+<li id="menu-item-64" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-64"><a href="http://crystalmountainresort.com/environment/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/environment/', 'Environment']);" >Environment</a></li>
+<li id="menu-item-734" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-734"><a href="http://crystalmountainresort.com/history/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/history/', 'History']);" >History</a></li>
+</ul></div> 
+                </div>      
+                <div class="col grid_5_of_12">
+                    <p><img src="//crystalmountainresort.com/wp-content/uploads/2014/05/usfs.png" alt="USFS" style="float:left;margin-right:10px;margin-top:4px" />Crystal Mountain is located in the Mt. Baker-Snoqualmie National Forest. Crystal Mountain and the U.S. Forest Service are partners in recreation.</p>
+                </div>  <!-- /.col grid_5_of_12 --> 
+           </div>  <!-- /.row --> 
+        </div>  <!-- /#footer-bottom -->    
+                     
+                
+		</footer> <!-- /.site-footer.row -->
+
+
+              
+
+	</div> <!-- /.footercontainer -->
+
+</div> <!-- /.#wrapper.hfeed.site -->
+
+<!-- ngg_resource_manager_marker --><!--[if !IE]><!-->
+<!--<![endif]-->
+<script type="text/javascript" src="http://crystalmountainresort.com/wp-content/cache/minify/000000/M9RPzs8rSUwu0U3LL8rVNdfPzEvOKU1JLdbPAqLC0tSiSj2QjF5uZh4A.js"></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var _wpcf7 = {"loaderUrl":"http:\/\/crystalmountainresort.com\/wp-content\/plugins\/contact-form-7\/images\/ajax-loader.gif","sending":"Sending ...","cached":"1"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="http://crystalmountainresort.com/wp-content/cache/minify/000000/M9RPzs8rSUwu0U3LL8rVNdfPzEvOKU1JLdbPKtYvTi7KLCgpBgA.js"></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var sb_instagram_js_options = {"sb_instagram_at":"26819328.3a81a9f.117c28215809461587d9cf788aa20f51"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://crystalmountainresort.com/wp-content/plugins/instagram-feed/js/sb-instagram.js?5&#038;ver=1.8'></script>
+<script type="text/javascript" src="http://crystalmountainresort.com/wp-content/cache/minify/000000/dcpBCoAwDAXRCxlCjxRtLClaQvMxeHsX7gSXw5vC6RQGpVPcbTTuckls0xxfWgqrxE1IA3TSrloprTYFH7ZyD36L_rYH.js"></script>
+<script type='text/javascript' src='http://crystalmountainresort.com/wp-content/plugins/lightbox-plus/js/jquery.colorbox.1.5.9.js?ver=1.5.9'></script>
+<!-- Lightbox Plus Colorbox v2.7/1.5.9 - 2013.01.24 - Message: 0-->
+<script type="text/javascript">
+jQuery(document).ready(function($){
+  $("a[rel*=lightbox]").colorbox({speed:0,width:false,height:false,innerWidth:false,innerHeight:false,initialWidth:false,initialHeight:false,maxWidth:false,maxHeight:false,scalePhotos:false,opacity:0,preloading:false,current:" {current}  {total}",previous:"",next:"",close:"",overlayClose:false,loop:false,scrolling:false,escKey:false,arrowKey:false,top:false,right:false,bottom:false,left:false});
+  $(".lbp-inline-link-1").colorbox({transition:"elastic", speed:"300", width:"60%", height:"100%", innerWidth:false, innerHeight:false, maxWidth:"80%", maxHeight:"100%", top:false, right:false, bottom:false, left:false, fixed:false, open:false, opacity:"0.8", inline:true, href:"#lbp-inline-href-1"});
+  $(".lbp-inline-link-2").colorbox({transition:"elastic", speed:"300", width:"60%", height:"100%", innerWidth:false, innerHeight:false, maxWidth:"80%", maxHeight:"100%", top:false, right:false, bottom:false, left:false, fixed:false, open:false, opacity:"0.8", inline:true, href:"#lbp-inline-href-2"});
+  $(".lbp-inline-link-3").colorbox({transition:"elastic", speed:"300", width:"60%", height:"100%", innerWidth:false, innerHeight:false, maxWidth:"80%", maxHeight:"100%", top:false, right:false, bottom:false, left:false, fixed:false, open:false, opacity:"0.8", inline:true, href:"#lbp-inline-href-3"});
+  $(".lbp-inline-link-4").colorbox({transition:"elastic", speed:"300", width:"60%", height:"90%", innerWidth:false, innerHeight:false, maxWidth:"80%", maxHeight:"90%", top:false, right:false, bottom:false, left:false, fixed:false, open:false, opacity:"0.8", inline:true, href:"#lbp-inline-href-4"});
+  $(".lbp-inline-link-5").colorbox({transition:"elastic", speed:"300", width:"70%", height:"90%", innerWidth:false, innerHeight:false, maxWidth:"80%", maxHeight:"90%", top:false, right:false, bottom:false, left:false, fixed:false, open:false, opacity:"0.8", inline:true, href:"#lbp-inline-href-5"});
+  $(".lbp-inline-link-6").colorbox({transition:"elastic", speed:"0", width:"70%", height:"90%", innerWidth:false, innerHeight:false, maxWidth:"80%", maxHeight:"90%", top:false, right:false, bottom:false, left:false, fixed:false, open:false, opacity:"0.8", inline:true, href:"#lbp-inline-href-6"});
+  $(".lbp-inline-link-7").colorbox({transition:"elastic", speed:"0", width:"70%", height:"90%", innerWidth:false, innerHeight:false, maxWidth:"80%", maxHeight:"90%", top:false, right:false, bottom:false, left:false, fixed:false, open:false, opacity:"0.8", inline:true, href:"#lbp-inline-href-7"});
+  $(".lbp-inline-link-8").colorbox({transition:"elastic", speed:"0", width:"70%", height:"90%", innerWidth:false, innerHeight:false, maxWidth:"80%", maxHeight:"90%", top:false, right:false, bottom:false, left:false, fixed:false, open:false, opacity:"0.8", inline:true, href:"#lbp-inline-href-8"});
+  $(".lbp-inline-link-9").colorbox({transition:"elastic", speed:"0", width:"70%", height:"90%", innerWidth:false, innerHeight:false, maxWidth:"80%", maxHeight:"90%", top:false, right:false, bottom:false, left:false, fixed:false, open:false, opacity:"0.8", inline:true, href:"#lbp-inline-href-9"});
+  $(".lbp-inline-link-10").colorbox({transition:"elastic", speed:"0", width:"70%", height:"90%", innerWidth:false, innerHeight:false, maxWidth:"80%", maxHeight:"90%", top:false, right:false, bottom:false, left:false, fixed:false, open:false, opacity:"0.8", inline:true, href:"#lbp-inline-href-10"});
+});
+</script>
+		<div id="wprmenu_bar" class="wprmenu_bar">
+			<div class="wprmenu_icon">
+				<span class="wprmenu_ic_1"></span>
+				<span class="wprmenu_ic_2"></span>
+				<span class="wprmenu_ic_3"></span>
+			</div>
+			<div class="menu_title">
+				MENU							</div>
+		</div>
+
+		<div id="wprmenu_menu" class="wprmenu_levels top wprmenu_custom_icons">
+			 
+			<div class="wpr_search">
+				<form role="search" method="get" class="wpr-search-form" action="http://crystalmountainresort.com"><label><input type="search" class="wpr-search-field" placeholder="Search ..." value="" name="s" title="Search for:"></label></form>			</div>
+						<ul id="wprmenu_menu_ul">
+				<li id="menu-item-4478" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4478"><a href="http://crystalmountainresort.com/mobile-app/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/mobile-app/', 'Download Mobile App']);" >Download Mobile App</a></li>
+<li id="menu-item-4479" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4479"><a href="http://crystalmountainresort.com/hours/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/hours/', 'Hours of Operation']);" >Hours of Operation</a></li>
+<li id="menu-item-4480" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4480"><a href="https://www.tixforskicrystal.com/e-commerceWTP/" onclick="_gaq.push(['_trackEvent', 'outbound-widget', 'https://www.tixforskicrystal.com/e-commerceWTP/', 'Reload GO Card']);" target="_blank">Reload GO Card</a></li>
+<li id="menu-item-4481" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-71 current_page_item menu-item-4481"><a href="http://crystalmountainresort.com/the-mountain/about/current-conditions/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/the-mountain/about/current-conditions/', 'Daily Report']);" >Daily Report</a></li>
+<li id="menu-item-4482" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4482"><a href="http://crystalmountainresort.com/the-mountain/about/grooming-report/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/the-mountain/about/grooming-report/', 'Grooming']);" >Grooming</a></li>
+<li id="menu-item-4483" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4483"><a href="http://crystalmountainresort.com/the-mountain/tickets-passes/ticket-rates/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/the-mountain/tickets-passes/ticket-rates/', 'Ticket Rates']);" >Ticket Rates</a></li>
+<li id="menu-item-4484" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4484"><a href="http://crystalmountainresort.com/the-mountain/tickets-passes/season-passes/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/the-mountain/tickets-passes/season-passes/', 'Season Passes']);" >Season Passes</a></li>
+<li id="menu-item-4485" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4485"><a href="http://crystalmountainresort.com/services/dining/summit-house-restaurant/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/services/dining/summit-house-restaurant/', 'Summit House']);" >Summit House</a></li>
+<li id="menu-item-4667" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4667"><a href="http://crystalmountainresort.com/mt-rainier-gondola/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/mt-rainier-gondola/', 'Mt. Rainier Gondola']);" >Mt. Rainier Gondola</a></li>
+<li id="menu-item-4488" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4488"><a href="http://crystalmountainresort.com/plan-your-trip/planning/lodging-partners/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/plan-your-trip/planning/lodging-partners/', 'Lodging']);" >Lodging</a></li>
+<li id="menu-item-4489" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4489"><a href="http://crystalmountainresort.com/plan-your-trip/getting-here/directions/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/plan-your-trip/getting-here/directions/', 'Directions']);" >Directions</a></li>
+<li id="menu-item-4490" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4490"><a href="http://crystalmountainresort.com/the-mountain/about/contact/" onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://crystalmountainresort.com/the-mountain/about/contact/', 'Contact Us']);" >Contact Us</a></li>
+<li id="menu-item-4491" class="mobile-toggle menu-item menu-item-type-custom menu-item-object-custom menu-item-4491"><a href="#">View Full Menu</a></li>
+			</ul>
+					</div>
+		<script>
+/*jQuery('#lightbox').live('click', function() {
+    jQuery('#lightbox, #site-menu').hide();
+	jQuery( "#headercontainer" ).css("position", "fixed");
+});*/
+
+jQuery( document ).on( "click", "#lightbox", function() {
+    jQuery('#lightbox, #site-menu').hide();
+	jQuery( "#headercontainer" ).css("position", "fixed");
+});
+
+jQuery("#wprmenu_bar .wprmenu_icon ").click(function() {
+if (jQuery( "#wprmenu_menu").is(":visible") ) { 
+jQuery( "#allcontentcontainer" ).css("margin-top", "");
+jQuery( "#headercontainer" ).removeClass('importantRule2');
+}
+else {
+jQuery( "#allcontentcontainer" ).css("margin-top", "0");	
+}
+}); 
+
+jQuery( document ).on( "click", "#wprmenu_menu li.mobile-toggle a", function() {
+    jQuery('#wprmenu_menu').hide();
+	jQuery( "#wprmenu_bar" ).hide();
+	jQuery('#site-menu').addClass('importantRule');
+	jQuery( "#headercontainer" ).css("position", "static");	
+});
+
+jQuery(".x-menu-toggle").click(function() {
+jQuery( "#site-menu").removeClass('importantRule');
+jQuery( "#headercontainer" ).addClass('importantRule2');
+});
+
+jQuery(".main-menu-toggle").click(function() {
+jQuery( "#site-menu").toggle();
+if (jQuery( "#site-menu").is(":visible") ) {	
+	if (jQuery('#lightbox').length > 0) { // #lightbox exists
+		jQuery('#lightbox').show();
+	}
+	else { //#lightbox does not exist
+		 
+		//create HTML markup for lightbox window
+		var lightbox =
+		'<div id="lightbox">' +
+			'' +
+			'<div id="content">' + //insert clicked link's href into img src
+				'' +
+			'</div>' +   
+		'</div>';
+			 
+		//insert lightbox HTML into page
+		jQuery('body').append(lightbox);
+	}
+
+	jQuery( "#headercontainer" ).css("position", "static");
+}
+else {
+	 jQuery('#lightbox').hide();
+	 jQuery( "#headercontainer" ).css("position", "fixed"); 
+}
+
+jQuery('html, body').animate({ scrollTop: 0 }, "slow");
+
+}); 
+
+/*jQuery( "#headercontainer" ).css("position", "static");
+jQuery( "#headercontainer" ).css("position", "fixed");*/	
+</script> 
+
+<script>
+/*jQuery("#more-information-toggle").click(function() {
+jQuery( "#more-information").toggle();
+
+// when the hidden field is shown
+if (jQuery( "#more-information").is(":visible") ) {
+// down arrow gets replaced by up arrow 
+jQuery("#more-information-image").attr("src","http://crystalmountainresort.com/wp-content/themes/crystalmountain/images/arrow-toogle-up.png")
+} else {
+// go back to old image
+jQuery("#more-information-image").attr("src","http://crystalmountainresort.com/wp-content/themes/crystalmountain/images/arrow-toogle-down.png")
+}
+
+});*/ 
+
+
+    jQuery(function($) {
+        var slide = false;
+        var height = $('#more-information').height();
+        $('#more-information-toggle').click(function() {
+            var docHeight = $(document).height();
+            var windowHeight = $(window).height();
+            var scrollPos = docHeight - windowHeight + height;
+            $('#more-information').animate({ height: "toggle"}, 1000);
+            if(slide == false) {
+                if($.browser.opera) { //Fix opera double scroll bug by targeting only HTML.
+                    /*$('html').animate({scrollTop: scrollPos+'px'}, 1000);*/
+					$('html').animate({scrollTop: $("#more-information").position().top
+            }, 1000);
+                } else {
+                    /*$('html, body').animate({scrollTop: scrollPos+'px'}, 1000);*/
+					
+					$('html, body').animate({scrollTop: $("#more-information").position().top
+            }, 1000);
+                }
+                                slide = true;
+            } else {
+                                slide = false;
+                        }
+        });
+    });
+	
+	  jQuery(function($) {
+        var slide = false;
+
+        $('#fancybox-wrap, .ngg-galleryoverview').click(function() {
+            if(slide == false) {
+                if($.browser.opera) { //Fix opera double scroll bug by targeting only HTML.			
+				$('html').animate({scrollTop: 900}, 1000);								
+                } else {			
+				$('html, body').animate({scrollTop: 900}, 1000);
+                }
+             slide = true;
+            } else {
+             slide = false;
+            }
+        });
+    });	
+
+
+
+</script>
+
+
+ 
 </body>
+
 </html>
+
+<!-- Performance optimized by W3 Total Cache. Learn more: http://www.w3-edge.com/wordpress-plugins/
+
+Minified using disk
+Database Caching 92/96 queries in 0.020 seconds using disk
+
+ Served from: crystalmountainresort.com @ 2014-11-06 02:51:07 by W3 Total Cache -->
