@@ -11,13 +11,12 @@ describe('parse boreal', function() {
     stream.on('error', done);
     stream.pipe(parser(parse, function(err, status) {
       var expected = {
-        'Castle Peak Quad': 'open',
-        'Accelerator Express Quad': 'open',
-        'Nugget Chair': 'open',
-        '49\'er Triple': 'closed',
-        'Flying Dutchman Triple': 'open',
-        'Cedar Ridge Triple': 'open',
-        'Snowsports School Carpet': 'open'
+        'Castle Peak Quad': 'closed',
+        'Accelerator Express Quad': 'closed',
+        'Nugget': 'closed',
+        '49er Triple': 'closed',
+        'Flying Dutchman Triple': 'closed',
+        'Cedar Ridge Triple': 'closed',
       };
       should.exist(status);
       status.should.eql(expected);
