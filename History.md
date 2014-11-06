@@ -1,4 +1,12 @@
 
+3.6.3 / 2014-11-06
+==================
+
+ * fix Crystal Mountain for new season
+ * fix Bromley Mountain for new season
+ * fix Red Mountain for new season
+ * fix Boreal for new season
+
 3.6.2 / 2014-11-05
 ==================
 
