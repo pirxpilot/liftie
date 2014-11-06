@@ -1,4 +1,4 @@
-var assert = require('assert');
+var should = require('should');
 var fs = require('fs');
 var parser = require('../../lib/lifts/parser');
 var parse = require('../../lib/resorts/tremblant');
@@ -11,20 +11,23 @@ describe('parse tremblant', function() {
     stream.on('error', done);
     stream.pipe(parser(parse, function(err, status) {
       var expected = {
-        'Gondola': 'open',
-        'Cabriolet': 'open',
-        'Flying Mile': 'open',
-        'TGV': 'open',
-        'Porte du Soleil': 'open',
-        'Tapis magique': 'open',
-        'Le Soleil': 'open',
-        'Destination': 'open',
-        'Duncan': 'open',
-        'Expo': 'open',
-        'Lowell Thomas': 'open',
-        'Edge': 'open'
+        'Express Gondola': 'open',
+        'Cabriolet': 'closed',
+        'Flying Mile': 'closed',
+        'TGV': 'closed',
+        'Porte du Soleil': 'closed',
+        'Le Soleil': 'closed',
+        'Casino Express Gondola': 'closed',
+        'Duncan Express': 'closed',
+        'Expo Express': 'closed',
+        'Lowell Thomas': 'closed',
+        'Edge': 'closed',
+        'Magic Carpet Equilibre 1': 'closed',
+        'Magic Carpet Equilibre 2': 'closed',
+        'Magic Carpet Onesime': 'closed'
       };
-      assert.deepEqual(status, expected);
+      should.exist(status);
+      status.should.eql(expected);
       done(err);
     }));
   });
