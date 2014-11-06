@@ -11,16 +11,17 @@ describe('parse crystal-mountain', function() {
     stream.on('error', done);
     stream.pipe(parser(parse, function(err, status) {
       var expected = {
+        'Mt. Rainier Gondola': 'closed',
         'Chinook Express': 'closed',
         'Discovery': 'closed',
-        'Forest Queen Express': 'closed',
+        'Forest Queen': 'closed',
         'Gold Hills': 'closed',
-        'Gondola': 'open',
-        'Green Valley': 'open',
-        'High Campbell': 'closed',
+        'Green Valley': 'closed',
+        'Chair 6': 'closed',
         'Northway': 'closed',
         'Quicksilver': 'closed',
-        'Rainier Express': 'closed'
+        'Rainier Express': 'closed',
+        'Magic Carpet': 'closed'
       };
       should.exist(status);
       status.should.eql(expected);

@@ -7,1285 +7,1139 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   
-<title>Bromley Mountain Resort:: Snow Report, Ski Report</title>
+<title>Snow Report</title>
 <meta name="keywords" content="">
 <meta name="description" content="">
   <meta name="copyright" content="Source Code Copyright 2012 Propeller Media Works" />
   <meta name="viewport" content="width=device-width">
-	<script type="text/javascript" src="//use.typekit.net/sgz8yad.js"></script>
-	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-	<link href='http://fonts.googleapis.com/css?family=Rokkitt:400,700' rel='stylesheet' type='text/css'>
-	<link href="/themes/winter2012/styles/style.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="/themes/winter2012/styles/print.css" rel="stylesheet" type="text/css" media="print" />
-    	<link href="/themes/winter2012/styles/fancybox.css" rel="stylesheet" type="text/css" />
-	<link href="/themes/winter2012/styles/superfish.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="//use.typekit.net/sgz8yad.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  <link href='http://fonts.googleapis.com/css?family=Rokkitt:400,700' rel='stylesheet' type='text/css'>
+  <link href="/themes/bromley2014/assets/css/vendors.min.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="/themes/bromley2014/assets/css/style.min.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="/themes/bromley2014/styles/fancybox.css" rel="stylesheet" type="text/css" />
+  <link href="/themes/bromley2014/styles/superfish.css" rel="stylesheet" type="text/css" />
 
-  <script src="/scripts/modernizr-2.6.1.min.js"></script> 
-	
-	<script type="text/javascript">
-			
-	</script>
-	
-	<!-- Grab Google CDN's jQuery. fall back to local if necessary -->
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"></script>
-	<script>!window.jQuery && document.write('<script src="/scripts/jquery-1.4.1.min.js"><\/script>')</script>
-	<script type="text/javascript" src="/scripts/jquery-1.3.2.min.js"></script>
-	<script type="text/javascript" src="/scripts/jquery.fancybox-1.3.1.pack.js"></script>
-	<script type="text/javascript" src="/scripts/jquery.superfish.js"></script>
-	<script type="text/javascript" src="/scripts/jcaption.js"></script>
-	<script type="text/javascript" src="/scripts/jcarousellite_1.0.1.min.js"></script>
-	<script type="text/javascript" src="/scripts/global.js"></script>
-			
-	<script type="text/javascript">
-	  var _gaq = _gaq || [];
-	  _gaq.push(['_setAccount', 'UA-21512940-1']);
-	  _gaq.push(['_trackPageview']);
-	
-	  (function() {
-	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-	  })();	
-	</script>
+  <script src="/scripts/modernizr-2.6.1.min.js"></script>
+
+  <!-- Grab Google CDN's jQuery. fall back to local if necessary -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write('<script src="/scripts/jquery-1.7.1.min.js"><\/script>')</script>
+<!--
+  <script type="text/javascript" src="/scripts/jquery.fancybox-1.3.1.pack.js"></script>
+  <script type="text/javascript" src="/scripts/jquery.superfish.js"></script>
+  <script type="text/javascript" src="/media/js/jquery.blockUI.js"></script>
+  <script type="text/javascript" src="/scripts/jcaption.js"></script>
+  <script type="text/javascript" src="/scripts/jcarousellite_1.0.1.min.js"></script>
+  <script type="text/javascript" src="/scripts/global.js"></script>
+-->
+    <script src="/themes/bromley2014/assets/js/vendors.js"></script>
+    <script src="/themes/bromley2014/assets/js/app.js"></script>
+    <script src=""></script>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  <script>
+    $(document).ready(function(){
+    	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+       // some code..
+      } else {
+        $('.callout').hover(
+          function() {
+            $( this ).find('.detail').slideDown('fast');
+            $( this ).find('.caption').addClass('open');
+          }, function() {
+            $( this ).find('.detail').slideUp('fast');
+            $( this ).find('.caption').removeClass('open');
+          }
+        );
+      }
+      $('.show-sidenav-mobile ').click(function(e) {
+        $(this).hide();
+        $('#sidenav-mobile').slideDown('fast');
+    		e.preventDefault();
+    	});
+          
+    });
+  </script>
+
+  
+  <script>
+   function showGeoAwareContent(position) {
+     var latitude = position.coords.latitude;
+     var longitude = position.coords.longitude;
+
+     var url = '/_includes/geocontent.php';
+
+     var data = { 'latitude': latitude, 'longitude': longitude, 'ForeignKeyID': '255', 'TextID': '1434', 'contexts': [] };
+
+     $('.geo-aware').each(function() {
+       var context;
+
+       if (context = $(this).data('geo-context')) {
+         data.contexts.push(context);
+       }
+     });
+
+     $.ajax({ type: "POST",
+             url: url,
+             dataType: "json",
+             async: false,
+             data: data,
+             success: function(json) {
+         $('.geo-aware').each(function() {
+           var context = $(this).data('geo-context');
+           var content = json[context];
+
+           $(this).html(content);
+
+           if ($(this).get(0).tagName.toLowerCase() == 'script') {
+             $.globalEval(content);
+           }
+
+           $(this).show();
+         });
+       }
+             });
+   }
+
+   function handleGeoAwareContentError(err) {
+     $('.geo-aware').show();
+   }
+  </script>
+
+  <script type="text/javascript">
+   var _gaq = _gaq || [];
+   _gaq.push(['_setAccount', 'UA-21512940-1']);
+   _gaq.push(['_setDomainName', 'bromley.com']);
+   _gaq.push(['_setAllowLinker', true]);
+   _gaq.push(['_trackPageview']);
+
+   (function() {
+	 var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	 ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+   })();
+  </script>
 </head>
 
 <body>
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=164060410403562";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+    <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) return;
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=164060410403562";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));</script>
 
-
-<div id="background">
-<img src="/themes/winter2012/images/bg/body.jpg" width="100%"/>
-</div>
-
-<div id="underlay">
-
-
-<div id="masthead" class="clearfix">
-
-	<h1><a href="/" >Bromley - Vermont's Sun Mountain</a></h1>
-	
-	<ul id="header-links">
-		<li class="title"><a href="/online-sales" title="Buy Online and Save">Buy Online and Save</a></li>
-<!-- 		<li class="cart"><a href="https://store.bromley.com/e-commerce/CartShow.aspx" title="View Cart">View Cart</a></li> -->
-		<li class="ecoupons"><a href="/ecoupons" title="e-coupons">e-coupons</a></li>
-	</ul><!-- #header-links -->
-	
-	<ul id="social-links">
-		<li><a href="/contact" title="Contact Us"><img src="/themes/winter2012/images/header/contact.png" alt="Contact Us"></a></li>
-		<li><a href="/news/email/email-sign-up" title="E-News"><img src="/themes/winter2012/images/header/enews.png" alt="E-News"></a></li>
-
-		<li class="social"><a href="http://twitter.com/BromleyMountain" title="Twitter"><img src="/themes/winter2012/images/header/twitter.png" alt="Twitter"></a></li>
-		<li class="social"><a href="http://www.facebook.com/Bromleymountain" title="Facebook"><img src="/themes/winter2012/images/header/facebook.png" alt="Facebook"></a></li>
-		<li class="social"><a href="http://instagram.com/BromleyMountain" title="Instagram"><img src="/themes/winter2012/images/header/instagram.png" alt="Instagram"></a></li>
-		<li class="social"><a href="http://www.youtube.com/user/BromleyMountain" title="Youtube"><img src="/themes/winter2012/images/header/youtube.png" alt="Youtube"></a></li>
-
-		<li class="season"><a href="http://summer.bromley.com" title="Summer"><img src="/themes/winter2012/images/header/summer.png" alt="Summer"></a></li>
-	</ul><!-- #social-links -->
-
-
-
-	
-	<ul id="nav" class="clearfix">
-		    <li><a href="/mountain/" id="nav-mountain" class="on" title="The Mountain">The Mountain</a>
-	    			<ul>
-						
-			    <li><a href="/mountain/getting-here/" title="Directions">Directions</a>
-						
-			    <li><a href="/mountain/hours/" title="Hours of Operation">Hours of Operation</a>
-						
-			    <li><a href="/mountain/snowreport/" title="Snow Report">Snow Report</a>
-						
-			    <li><a href="/mountain/vermont-new-ski-resorts/" title="What's New">What's New</a>
-						
-			    <li><a href="/mountain/snowmaking/" title="Snowmaking at Bromley">Snowmaking at Bromley</a>
-						
-			    <li><a href="/mountain/trail-map/" title="Trail Maps">Trail Maps</a>
-						
-			    <li><a href="/mountain/terrain-parks/" title="Terrain Parks">Terrain Parks</a>
-						
-			    <li><a href="/mountain/family-ski-vacation/" title="Family Activities">Family Activities</a>
-						
-			    <li><a href="/mountain/vermont-ski-resort-46_trails/" title="Mountain Facts">Mountain Facts</a>
-						</ul>
-				</li>
-		    <li><a href="/tickets/" id="nav-tickets" class="" title="Tickets &amp; Passes">Tickets &amp; Passes</a>
-	    			<ul>
-						
-			    <li><a href="/tickets/lifttickets/" title="Lift Tickets">Lift Tickets</a>
-						
-			    <li><a href="/tickets/season-passes/" title="Season Passes">Season Passes</a>
-						
-			    <li><a href="/tickets/discount-ski-deals/" title="Value Tickets">Value Tickets</a>
-						
-			    <li><a href="/tickets/vermont-discount-ski-card/" title="Sun Mountain Card">Sun Mountain Card</a>
-						
-			    <li><a href="/tickets/vermont-ski-packages-deals-specials/" title="Deals &amp; Specials">Deals &amp; Specials</a>
-						
-			    <li><a href="/tickets/gift-certificate/" title="Gift Certificates">Gift Certificates</a>
-						
-			    <li><a href="/tickets/valet-parking/" title="Valet Parking Pass">Valet Parking Pass</a>
-						</ul>
-				</li>
-		    <li><a href="/groups/" id="nav-groups" class="" title="Groups">Groups</a>
-	    			<ul>
-						
-			    <li><a href="/groups/rates/" title="Rates &amp; Policies">Rates &amp; Policies</a>
-						
-			    <li><a href="/groups/hints/" title="Helpful Hints">Helpful Hints</a>
-						</ul>
-				</li>
-		    <li><a href="/lodging/" id="nav-lodging" class="" title="Lodging">Lodging</a>
-	    			<ul>
-						
-			    <li><a href="/lodging/condos/" title="Bromley Village Rentals">Bromley Village Rentals</a>
-						
-			    <li><a href="/lodging/packages/" title="Area Lodging">Area Lodging</a>
-						</ul>
-				</li>
-		    <li><a href="/real-estate/" id="nav-real-estate" class="" title="Real Estate">Real Estate</a>
-	    			<ul>
-						
-			    <li><a href="/real-estate/listings/" title="Listings">Listings</a>
-						
-			    <li><a href="/real-estate/contact/" title="Contact ">Contact </a>
-						
-			    <li><a href="/real-estate/about-real-estate/" title="About Bromley Real Estate">About Bromley Real Estate</a>
-						</ul>
-				</li>
-		    <li><a href="/school/" id="nav-school" class="" title="Ski/Board School">Ski/Board School</a>
-	    			<ul>
-						
-			    <li><a href="/school/kids_programs/" title="Kids Programs">Kids Programs</a>
-						
-			    <li><a href="/school/adult_programs/" title="Adult Programs">Adult Programs</a>
-						
-			    <li><a href="/school/childcare/" title="Child Care">Child Care</a>
-						
-			    <li><a href="/school/seasonal/" title="Seasonal Programs">Seasonal Programs</a>
-						
-			    <li><a href="/school/telemark/" title="Telemark Programs">Telemark Programs</a>
-						
-			    <li><a href="/school/adaptive/" title="Adaptive Lessons">Adaptive Lessons</a>
-						
-			    <li><a href="/school/deals/" title="Deals &amp; Specials">Deals &amp; Specials</a>
-						
-			    <li><a href="/school/tips/" title="Helpful Tips">Helpful Tips</a>
-						</ul>
-				</li>
-		    <li><a href="/equipment/" id="nav-equipment" class="" title="Equipment">Equipment</a>
-	    			<ul>
-						
-			    <li><a href="/equipment/rentals/" title="Rentals">Rentals</a>
-						
-			    <li><a href="/equipment/repair/" title="Tuning &amp; Repairs">Tuning &amp; Repairs</a>
-						
-			    <li><a href="/equipment/shop/" title="Bromley Shop by Potter Brothers">Bromley Shop by Potter Brothers</a>
-						</ul>
-				</li>
-		    <li><a href="/news/" id="nav-news" class="" title="News &amp; Events">News &amp; Events</a>
-	    			<ul>
-						
-			    <li><a href="/news/calendar/" title="Events Calendar">Events Calendar</a>
-						
-			    <li><a href="/news/innkeepers/" title="Innkeepers Race Series">Innkeepers Race Series</a>
-						
-			    <li><a href="/news/wild-boar/" title="Wild Boar Tavern">Wild Boar Tavern</a>
-						
-			    <li><a href="/news/video-gallery/" title="Video Gallery">Video Gallery</a>
-						
-			    <li><a href="/news/press-releases/" title="Press Releases">Press Releases</a>
-						
-			    <li><a href="/news/magazine/" title="Bromley Magazine">Bromley Magazine</a>
-						</ul>
-				</li>
-		</ul>
-
-</div><!-- #masthead -->
-
-
-
-
-<div id="wrapper-inner">
-
-<div id="sidebar">
-
-<h2 id="mountain-label" class="category-label">The Mountain</h2>
-
-
-
-
-
-<ul id="sidenav">
-
-
-    
-<li  ><a class="" href="/mountain/getting-here/" >Directions</a>
-	</li>
-
-    
-<li  ><a class="" href="/mountain/hours/" >Hours of Operation</a>
-	</li>
-
-    
-<li  ><a class="on" href="/mountain/snowreport/" >Snow Report</a>
-	</li>
-
-    
-<li  ><a class="" href="/mountain/vermont-new-ski-resorts/" >What's New</a>
-	</li>
-
-    
-<li  ><a class="" href="/mountain/snowmaking/" >Snowmaking at Bromley</a>
-	</li>
-
-    
-<li  ><a class="" href="/mountain/trail-map/" >Trail Maps</a>
-	</li>
-
-    
-<li  ><a class="" href="/mountain/terrain-parks/" >Terrain Parks</a>
-	</li>
-
-    
-<li  ><a class="" href="/mountain/family-ski-vacation/" >Family Activities</a>
-	</li>
-
-    
-<li  ><a class="" href="/mountain/vermont-ski-resort-46_trails/" >Mountain Facts</a>
-	</li>
-</ul><!-- #sidenav -->
-
-	
-<section class="socialbar">
-<nav class="tabs clearfix">
-  <ul class="clearfix">
-    <li class="clearfix"><a class="on" href="#facebook-tab" ><img src="/themes/winter2012/images/sidebar/facebook.png" alt="Facebook"></a></li>
-    <li class="clearfix"><a href="#twitter-tab" ><img src="/themes/winter2012/images/sidebar/twitter.png" alt="Twitter"></a></li>
-    <li class="clearfix"><a href="#video-tab" ><img src="/themes/winter2012/images/sidebar/video.png" alt="Video"></a></li>
-    <li class="clearfix"><a href="#instagram-tab" ><img src="/themes/winter2012/images/sidebar/instagram.png" alt="Instagram"></a></li>
-  </ul>
-</nav>
-<div id="facebook-tab" class="tix tab-content on">
-  <div class="fb-like-box" data-href="https://www.facebook.com/Bromleymountain" data-width="331" data-show-faces="true" data-stream="true" data-header="true" data-border-color="#f4f1ec"></div>
-</div>
-<div id="twitter-tab" class="tix tab-content">
-  <div id="tweet">
-   <div class="item"><img src="/themes/winter2012/images/ajax-loader.gif" /></div>
-  </div>
-</div>
-<div id="video-tab" class="tix tab-content">
-  	<iframe width="335" height="251" src="http://www.youtube.com/embed/?rel=0" frameborder="0" allowfullscreen></iframe>
-	<br />
-	<iframe width="335" height="251" src="http://www.youtube.com/embed/?rel=0" frameborder="0" allowfullscreen></iframe>
-
-</div>
-<div id="instagram-tab" class="tix tab-content">
-</div>
-</section>
-
-</div><!-- #sidebar -->
-
-<div id="content">
-
-<img src="/upload/photos/banner_images_1_28_12_snow_report_header.jpg" alt="mountain" class="bannerimg" />
-
-
-
-<div id="inner-content-wrapper">
-<div id="inner-content">
-
-
-<ul class="snow-report-link">
-  <li class="printable"><a href="?print" target="_blank">Printer Friendly</a></li>
-  <li class="email"><a href="/news/email/">Newsletter Signup</a></li>
-</ul>
-
-<div class="report-weather">
-	<h1 class="report">Snow Report <i>updated 2013-11-13 10:02:18</i></h1>
-	<span class="current"><img class="icon" src="/themes/winter2012/images/accuweather/3.png" />it is currently <strong>27&deg;&nbsp;&nbsp;Partly sunny</strong></span>
-	<a class="red" href="http://www.accuweather.com/us/vt/peru/05152/city-weather-forecast.asp?partner=accuweather&u=1&traveler=0" target="_blank">5 Day Forecast</a>
-</div>
-
-<nav class="snowtabs clearfix">
-  <ul class="clearfix">
-            <li class="clearfix"><a class="snowtab-content-link on" href="#snowtab-content-46" >Written Report</a></li>
-                        <li class="clearfix"><a class="snowtab-content-link" href="#snowtab-content-45" >Snow Data</a></li>
+  
+  <!-- HEADER -->
+  <header>
+    <div class="navbar" role="navigation">
+      <div class="container">
+        <div class="clearfix">
+        <div class="header-links">
+          <ul>
+            <li><a href="/contact/newsletter/stay-connected/" title="Stay Connected">Stay Connected</a></li>
+            <li><a href="/contact/" title="Contact Us">Contact Us</a></li>
+            <li class="visible-xs" id="head-map"><a href="/plan/directions/" title="Directions"><img src="/themes/bromley2014/images/location.png" alt="location"></a></li>
+            <li><a href="/search/search/site-search/" title="Search" class="search"><i class="glyphicon glyphicon-search"></i></a></li>
+            <li class="buy-early"><a href="/online-sales" title="Buy Early and Save" class="btn btn-sm btn-default">Buy Early &amp; Save</a></li>
           </ul>
-</nav>
-<div id="snowtab-content-46" class="snowtab-content on">
-		<section class="reportblock">
-  <p>November 13, 2013</p>
-<p>Snowmaking has been productive... VERY productive! &nbsp;So much so that... that.... wait for it... <strong>WE'RE OPENING THIS WEEKEND! &nbsp;</strong>Yes, you heard me correctly. &nbsp;We'll open this Saturday from 9am-4pm with skiing top-to-bottom on Upper and Lower Twister. &nbsp;This is the earliest opening in a long time and we couldn't be more excited. &nbsp;Welcome to winter!</p>
-<p>Details, details, details. &nbsp;The Sun Mountain Express will spin from 9am-4pm both Saturday and Sunday. &nbsp;Skiing/riding will be for intermediate/advanced skiers and riders only (there is no easy way down). &nbsp;Lift ticket rates will be $49 for the day, and there will be no 1/2 day option (although we will offer the Sunday PM Passport for $32). &nbsp;The Kids' Center will be open for day care, but we will not be giving any Ski School Lessons. &nbsp;All Season Passes will be valid this weekend.</p>
-<p>The operating plan at this point (of course this is weather permitting) is to operate weekends only through November 24th, and then open for full-time operations on Friday, November 29th. &nbsp;</p>
-<p>The weather for the weekend is looking perfect. &nbsp;Temps are expected to climb back into the 40's both days with sunshine for Saturday and Partly cloudy skies for Sunday. &nbsp;Sounds like the perfect weekend to dust off that gear, find that snowsuit, whatever it takes to enjoy our opening winter weekend. &nbsp;</p>
-<p>Can you tell that we're excited!? &nbsp;Hope to see you soon.</p>
-<p>-Michael</p>	</section>
-  </div>
-<div id="snowtab-content-50" class="snowtab-content">
-		</div>
-<div id="snowtab-content-45" class="snowtab-content">
-			<section class="trailblocks conds">
-
-        <div class="condsblock">
-          <table cellpadding="0" cellspacing="0" border="0">
-            <thead>
-              <tr class="title">
-                <th><span class="nobreak">Base Depth</span></th>
-                <th><span class="nobreak">Open Trails</span></th>
-                <th>Open Terrain Parks</th>
-                <th><span class="nobreak">Open Lifts</span></th>
-                <th>Primary Surface</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>0"&nbsp;-&nbsp;0"</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>Variable Conditions</td>
-              </tr>
-            </tbody>
-          </table>
         </div>
-
-                <div class="rowcolor">Snow Fall</div>
-
-        <div class="condsblock">
-          <table cellpadding="0" cellspacing="0" border="0">
-            <thead>
-              <tr class="title">
-                <th>Last 24 Hours</th>
-                <th>Last 48 Hours</th>
-                <th>Last 72 Hours</th>
-                <th>Last 7 Days</th>
-                <th>Season Total</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>0</td>
-                <td>1</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-              </tr>
-            </tbody>
-          </table>
         </div>
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-detail">Menu</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/"><img src="/themes/bromley2014/images/logo.png" alt="Bromley"></a>
+        </div>
+        <div class="navbar-collapse collapse">
         
-	</section>
+        
+        
+        <ul class="nav navbar-nav">
+          
+	    	  <li class=" dropdown">
+    	    <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">Plan</a>
+            <ul class="dropdown-menu" role="menu">
+    	          	      <li>
+                <a href="/plan/directions/" title="Directions">Directions</a>
+                                <ul class="nav-pages">
+                                  </ul>
+                              </li>
+                  	      <li>
+                <a href="/plan/hours/" title="Hours of Operation">Hours of Operation</a>
+                                <ul class="nav-pages">
+                                  </ul>
+                              </li>
+                  	      <li>
+                <a href="/winter/tickets-passes/" title="Tickets &amp; Passes">Tickets &amp; Passes</a>
+                                <ul class="nav-pages">
+                                  </ul>
+                              </li>
+                  	      <li>
+                <a href="/plan/gift-cards/" title="Gift Certificates">Gift Certificates</a>
+                                <ul class="nav-pages">
+                                  </ul>
+                              </li>
+                  	      <li>
+                <a href="/plan/lodging/" title="Lodging">Lodging</a>
+                                <ul class="nav-pages">
+                                    <li>
+                    <a href="/plan/lodging/bromley-village-rentals/"  title="Bromley Village Rentals">Bromley Village Rentals</a>
+                  </li>
+                                    <li>
+                    <a href="/plan/lodging/area-lodging/"  title="Area Lodging">Area Lodging</a>
+                  </li>
+                                  </ul>
+                              </li>
+                  	      <li>
+                <a href="/plan/child-care/" title="Child Care">Child Care</a>
+                                <ul class="nav-pages">
+                                  </ul>
+                              </li>
+                  	      <li>
+                <a href="/plan/family-activities/" title="Family Activities">Family Activities</a>
+                                <ul class="nav-pages">
+                                  </ul>
+                              </li>
+                  	      <li>
+                <a href="/plan/dining/" title="Dining">Dining</a>
+                                <ul class="nav-pages">
+                                  </ul>
+                              </li>
+                  	      <li>
+                <a href="/plan/valet/" title="Valet Parking">Valet Parking</a>
+                                <ul class="nav-pages">
+                                  </ul>
+                              </li>
+                  	      <li>
+                <a href="/plan/hints/" title="Helpful Hints">Helpful Hints</a>
+                                <ul class="nav-pages">
+                                  </ul>
+                              </li>
+                  	      <li>
+                <a href="/winter/equipment/bromley-shop/" title="Bromley Shop">Bromley Shop</a>
+                                <ul class="nav-pages">
+                                  </ul>
+                              </li>
+                          </ul>
+  	  </li>
+                    
+	    	  <li class="active dropdown">
+    	    <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">Winter</a>
+            <ul class="dropdown-menu" role="menu">
+    	          	      <li>
+                <a href="/winter/snow-report/" title="Snow Report">Snow Report</a>
+                                <ul class="nav-pages">
+                                  </ul>
+                              </li>
+                  	      <li>
+                <a href="/winter/explore/" title="Explore The Mountain">Explore The Mountain</a>
+                                <ul class="nav-pages">
+                                    <li>
+                    <a href="/winter/explore/trail-map/"  title="Trail Map">Trail Map</a>
+                  </li>
+                                    <li>
+                    <a href="/winter/explore/terrain-parks/"  title="Terrain Parks">Terrain Parks</a>
+                  </li>
+                                    <li>
+                    <a href="/winter/explore/snowmaking-info/"  title="Snowmaking Info">Snowmaking Info</a>
+                  </li>
+                                    <li>
+                    <a href="/winter/explore/snowmaking-blog/"  title="Snowmaking Blog">Snowmaking Blog</a>
+                  </li>
+                                    <li>
+                    <a href="/winter/explore/whats-new/"  title="What's New">What's New</a>
+                  </li>
+                                    <li>
+                    <a href="/winter/explore/mountain-facts/"  title="Mountain Facts">Mountain Facts</a>
+                  </li>
+                                  </ul>
+                              </li>
+                  	      <li>
+                <a href="/winter/kids-lessons/" title="Kids Lessons">Kids Lessons</a>
+                                <ul class="nav-pages">
+                                    <li>
+                    <a href="/winter/kids-lessons/kids-ski-snowboard-lessons-learning-the-fun-way-/"  title="Overview">Overview</a>
+                  </li>
+                                    <li>
+                    <a href="/winter/kids-lessons/kidsrule-mountain-camps/"  title="Kidsrule Mountain Camps">Kidsrule Mountain Camps</a>
+                  </li>
+                                    <li>
+                    <a href="/winter/kids-lessons/the-superduper-ski-package/"  title="The Super Duper Ski Package">The Super Duper Ski Package</a>
+                  </li>
+                                    <li>
+                    <a href="/winter/kids-lessons/private-lessons/"  title="Private Lessons">Private Lessons</a>
+                  </li>
+                                    <li>
+                    <a href="/winter/kids-lessons/seasonal-programs/"  title="Seasonal Programs">Seasonal Programs</a>
+                  </li>
+                                    <li>
+                    <a href="/winter/kids-lessons/daycare-w-skiing/"  title="Daycare w/ Skiing">Daycare w/ Skiing</a>
+                  </li>
+                                    <li>
+                    <a href="/winter/kids-lessons/adaptive-lessons/"  title="Adaptive Lessons - Bart Center">Adaptive Lessons - Bart Center</a>
+                  </li>
+                                  </ul>
+                              </li>
+                  	      <li>
+                <a href="/winter/adult-lessons/" title="Adult Lessons">Adult Lessons</a>
+                                <ul class="nav-pages">
+                                    <li>
+                    <a href="/winter/adult-lessons/ski-snowboard-school-learn-to-ski-and-ride-today-/"  title="Overview">Overview</a>
+                  </li>
+                                    <li>
+                    <a href="/winter/adult-lessons/get-guaranteed-easy-turns/"  title="GET - Guaranteed Easy Turns">GET - Guaranteed Easy Turns</a>
+                  </li>
+                                    <li>
+                    <a href="/winter/adult-lessons/group-lessons/"  title="Group Lessons">Group Lessons</a>
+                  </li>
+                                    <li>
+                    <a href="/winter/adult-lessons/adults/"  title="Private Lessons">Private Lessons</a>
+                  </li>
+                                    <li>
+                    <a href="/winter/adult-lessons/telemark/"  title="Telemark">Telemark</a>
+                  </li>
+                                    <li>
+                    <a href="/winter/adult-lessons/adaptive/"  title="Adaptive Lessons - Bart Center">Adaptive Lessons - Bart Center</a>
+                  </li>
+                                  </ul>
+                              </li>
+                  	      <li>
+                <a href="/winter/tickets-passes/" title="Tickets &amp; Passes">Tickets &amp; Passes</a>
+                                <ul class="nav-pages">
+                                    <li>
+                    <a href="/winter/tickets-passes/lift-tickets/"  title="Lift Tickets">Lift Tickets</a>
+                  </li>
+                                    <li>
+                    <a href="/winter/tickets-passes/season-passes/"  title="Season Passes">Season Passes</a>
+                  </li>
+                                    <li>
+                    <a href="/winter/tickets-passes/value-tickets/"  title="Value Tickets">Value Tickets</a>
+                  </li>
+                                    <li>
+                    <a href="/winter/tickets-passes/discount-cards/"  title="Sun Mountain Card">Sun Mountain Card</a>
+                  </li>
+                                  </ul>
+                              </li>
+                  	      <li>
+                <a href="/winter/deals/" title="Deals &amp; Specials">Deals &amp; Specials</a>
+                                <ul class="nav-pages">
+                                  </ul>
+                              </li>
+                  	      <li>
+                <a href="/winter/equipment/" title="Equipment">Equipment</a>
+                                <ul class="nav-pages">
+                                    <li>
+                    <a href="/winter/equipment/rentals/"  title="Rentals">Rentals</a>
+                  </li>
+                                    <li>
+                    <a href="/winter/equipment/tuning-repair/"  title="Tuning & Repair">Tuning & Repair</a>
+                  </li>
+                                    <li>
+                    <a href="/winter/equipment/bromley-shop/"  title="The Bromley Shop by Potter Brothers">The Bromley Shop by Potter Brothers</a>
+                  </li>
+                                  </ul>
+                              </li>
+                  	      <li>
+                <a href="/winter/groups/" title="Groups">Groups</a>
+                                <ul class="nav-pages">
+                                    <li>
+                    <a href="/winter/groups/rates-details/"  title="Day Group Rates & Details">Day Group Rates & Details</a>
+                  </li>
+                                    <li>
+                    <a href="/winter/groups/overnight-groups/"  title="Overnight Groups">Overnight Groups</a>
+                  </li>
+                                    <li>
+                    <a href="/winter/groups/helpful-hints/"  title="Helpful Hints">Helpful Hints</a>
+                  </li>
+                                  </ul>
+                              </li>
+                  	      <li>
+                <a href="/winter/events/" title="Events">Events</a>
+                                <ul class="nav-pages">
+                                  </ul>
+                              </li>
+                  	      <li>
+                <a href="/winter/innkeepers/" title="Innkeeper's Race Series">Innkeeper's Race Series</a>
+                                <ul class="nav-pages">
+                                  </ul>
+                              </li>
+                          </ul>
+  	  </li>
+                    
+	    	  <li class=" dropdown">
+    	    <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">Summer</a>
+            <ul class="dropdown-menu" role="menu">
+    	          	      <li>
+                <a href="/summer/attractions/" title="Attractions">Attractions</a>
+                                <ul class="nav-pages">
+                                    <li>
+                    <a href="/summer/attractions/summer-adventure/"  title="Overview">Overview</a>
+                  </li>
+                                    <li>
+                    <a href="/summer/attractions/mountain-adventure-park/"  title="Mountain Adventure Park">Mountain Adventure Park</a>
+                  </li>
+                                    <li>
+                    <a href="/summer/attractions/aerial-adventure-park/"  title="Aerial Adventure Park">Aerial Adventure Park</a>
+                  </li>
+                                    <li>
+                    <a href="/summer/attractions/sun-mountain-flyer/"  title="Sun Mountain Flyer">Sun Mountain Flyer</a>
+                  </li>
+                                  </ul>
+                              </li>
+                  	      <li>
+                <a href="/summer/rates-hours/" title="Rates &amp; Hours">Rates &amp; Hours</a>
+                                <ul class="nav-pages">
+                                  </ul>
+                              </li>
+                  	      <li>
+                <a href="/summer/groups/" title="Groups">Groups</a>
+                                <ul class="nav-pages">
+                                    <li>
+                    <a href="/summer/groups/great-group-discounts-at-vermonts-summer-adventure/"  title="Great Group Discounts at Vermont's Summer Adventure">Great Group Discounts at Vermont's Summer Adventure</a>
+                  </li>
+                                    <li>
+                    <a href="/summer/groups/rates-details/"  title="Summer Group Rates & Details">Summer Group Rates & Details</a>
+                  </li>
+                                    <li>
+                    <a href="/summer/groups/helpful-hints/"  title="Helpful Hints">Helpful Hints</a>
+                  </li>
+                                  </ul>
+                              </li>
+                          </ul>
+  	  </li>
+                    
+	    	  <li class=" dropdown">
+    	    <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">Galleries</a>
+            <ul class="dropdown-menu" role="menu">
+    	          	      <li>
+                <a href="/galleries/mysunmountain/" title="#mysunmountain">#mysunmountain</a>
+                                <ul class="nav-pages">
+                                  </ul>
+                              </li>
+                  	      <li>
+                <a href="/galleries/videos/" title="Video Gallery">Video Gallery</a>
+                                <ul class="nav-pages">
+                                  </ul>
+                              </li>
+                          </ul>
+  	  </li>
+                            </ul>
+
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+  </header>
+
+  <div id="underlay">
+
+
+<div class="container">
+  <div class="row">
+    <div id="sidebar" class="col-sm-3 hidden-xs">
+      <nav>
+        <h2>Winter</h2>
+                <ul id="sidenav">
+      
+                    
+          
+          <li class="on"><a href="/winter/snow-report/" >Snow Report</a>
+          	          </li>
+                              
+          
+          <li class=""><a href="/winter/explore/" >Explore The Mountain</a>
+          	          </li>
+                              
+          
+          <li class=""><a href="/winter/kids-lessons/" >Kids Lessons</a>
+          	          </li>
+                              
+          
+          <li class=""><a href="/winter/adult-lessons/" >Adult Lessons</a>
+          	          </li>
+                              
+          
+          <li class=""><a href="/winter/tickets-passes/" >Tickets &amp; Passes</a>
+          	          </li>
+                              
+          
+          <li class=""><a href="/winter/deals/" >Deals &amp; Specials</a>
+          	          </li>
+                              
+          
+          <li class=""><a href="/winter/equipment/" >Equipment</a>
+          	          </li>
+                              
+          
+          <li class=""><a href="/winter/groups/" >Groups</a>
+          	          </li>
+                              
+          
+          <li class=""><a href="/winter/events/" >Events</a>
+          	          </li>
+                              
+          
+          <li class=""><a href="/winter/innkeepers/" >Innkeeper's Race Series</a>
+          	          </li>
+                            </ul><!-- #sidenav -->
+      </nav>
+      <div id="callouts" class="geo-aware" data-geo-context="callouts">
+      	<div class="callout-int">
+<div id="callout_276" class="callout">
+    <div class="cms_html">      
+        
+        
+               <a class="calloutlink" href="http://www.bromley.com/winter/events/" title="November 22 - Colonie Center, Albany - FREE indoor snowboarding event!">
+                
+                <img src="/upload/photos/callout_colonie_center_event_2014.png" alt="November 22 - Colonie Center, Albany - FREE indoor snowboarding event!" />
+                
+                
+        </a>
+                
+                <section class="caption">
+        <h3>November 22 - Colonie Center, Albany - FREE indoor snowboarding event!</h3>
+        <div class="detail">
+            <p>Bromley Mountain joins forces with Jiminy Peak Mountain Resort and Burton Snowboards to bring your 3-6 year olds a super fun indoor snowboarding event! No experience necessary, snowsports school staff on hand!</p>
+            <p><a href="http://www.bromley.com/winter/events/" class="readmore">Check out the Events Calendar for full details...</a></p>
         </div>
-
-
-
-
-
-<h1>Trail report</h1>
-<ul class="traillegend clearfix">
-	<li>open = <img src="/themes/winter2012/images/snowreport/icon_open.png" align="absmiddle"></li>
-	<li>closed = <img src="/themes/winter2012/images/snowreport/icon_closed.png"></li>
-	<li>snowmaking ability = <img src="/themes/winter2012/images/snowreport/icon_snowmakingability.png"></li>
-	<li>snowmaking in progress = <img src="/themes/winter2012/images/snowreport/icon_snowmaking.png"></li>
-	<li>moguls = <img src="/themes/winter2012/images/snowreport/icon_moguls.png"></li>
-	<li>groomed = <img src="/themes/winter2012/images/snowreport/icon_groomed.png"></li>
-	<li>race course = <img src="/themes/winter2012/images/snowreport/icon_race_course.png"></li>
-	<li>open late = <img src="/themes/winter2012/images/snowreport/icon_nightskiing.png"></li>
-	<li>wind delay = <img src="/themes/winter2012/images/snowreport/icon_wind_delay.png"></li>
-</ul>
-
-<section class='trailblock'>
-  <div class='rowcolor'>Easier<img src='/themes/winter2012/images/snowreport/title_easier.png' alt='Easier'/></div>
-  <table border='0' cellpadding='0' cellspacing='2' width="100%" class='trailtable'>
-            <tr bgcolor="#FFF">
-                  <td align='left' valign='middle' height='25' width='200' style='background: #FFF;'>
-                Learning Zone        <span>
-                    <img src="/themes/winter2012/images/snowreport/icon_snowmakingability.png" alt="Snowmaking Ability">
-          
-          
-          
-          
-          
-          
-                    <img src="/themes/winter2012/images/snowreport/icon_closed.png" alt="Closed Trail">
-          
-        </span>
-              </td>
-                  <td align='left' valign='middle' height='25' width='200' style='background: #FFF;'>
-                Woods Run        <span>
-          
-          
-          
-          
-          
-          
-                    <img src="/themes/winter2012/images/snowreport/icon_closed.png" alt="Closed Trail">
-          
-        </span>
-              </td>
-          </tr>
-          <tr bgcolor="#FFF">
-                  <td align='left' valign='middle' height='25' width='200' style=''>
-                Lower East Meadow        <span>
-                    <img src="/themes/winter2012/images/snowreport/icon_snowmakingability.png" alt="Snowmaking Ability">
-          
-          
-          
-          
-          
-          
-                    <img src="/themes/winter2012/images/snowreport/icon_closed.png" alt="Closed Trail">
-          
-        </span>
-              </td>
-                  <td align='left' valign='middle' height='25' width='200' style=''>
-                Chase It        <span>
-                    <img src="/themes/winter2012/images/snowreport/icon_snowmakingability.png" alt="Snowmaking Ability">
-          
-          
-          
-          
-          
-          
-                    <img src="/themes/winter2012/images/snowreport/icon_closed.png" alt="Closed Trail">
-          
-        </span>
-              </td>
-          </tr>
-          <tr bgcolor="#FFF">
-                  <td align='left' valign='middle' height='25' width='200' style='background: #FFF;'>
-                Prouty Pass        <span>
-          
-          
-          
-          
-          
-          
-                    <img src="/themes/winter2012/images/snowreport/icon_closed.png" alt="Closed Trail">
-          
-        </span>
-              </td>
-                  <td align='left' valign='middle' height='25' width='200' style='background: #FFF;'>
-                Run-Around #4        <span>
-          
-          
-          
-          
-          
-          
-                    <img src="/themes/winter2012/images/snowreport/icon_closed.png" alt="Closed Trail">
-          
-        </span>
-              </td>
-          </tr>
-          <tr bgcolor="#FFF">
-                  <td align='left' valign='middle' height='25' width='200' style=''>
-                Run-Around #3        <span>
-                    <img src="/themes/winter2012/images/snowreport/icon_snowmakingability.png" alt="Snowmaking Ability">
-          
-          
-          
-          
-          
-          
-                    <img src="/themes/winter2012/images/snowreport/icon_closed.png" alt="Closed Trail">
-          
-        </span>
-              </td>
-                  <td align='left' valign='middle' height='25' width='200' style=''>
-                Run-Around #2        <span>
-                    <img src="/themes/winter2012/images/snowreport/icon_snowmakingability.png" alt="Snowmaking Ability">
-          
-          
-          
-          
-          
-          
-                    <img src="/themes/winter2012/images/snowreport/icon_closed.png" alt="Closed Trail">
-          
-        </span>
-              </td>
-          </tr>
-          <tr bgcolor="#FFF">
-                  <td align='left' valign='middle' height='25' width='200' style='background: #FFF;'>
-                Run-Around #1        <span>
-                    <img src="/themes/winter2012/images/snowreport/icon_snowmakingability.png" alt="Snowmaking Ability">
-          
-          
-          
-          
-          
-          
-                    <img src="/themes/winter2012/images/snowreport/icon_closed.png" alt="Closed Trail">
-          
-        </span>
-              </td>
-                  <td align='left' valign='middle' height='25' width='200' style='background: #FFF;'>
-                Lower Boulevard        <span>
-                    <img src="/themes/winter2012/images/snowreport/icon_snowmakingability.png" alt="Snowmaking Ability">
-          
-          
-          
-          
-          
-          
-                    <img src="/themes/winter2012/images/snowreport/icon_closed.png" alt="Closed Trail">
-          
-        </span>
-              </td>
-          </tr>
-          <tr bgcolor="#FFF">
-                  <td align='left' valign='middle' height='25' width='200' style=''>
-                Lower Thruway        <span>
-                    <img src="/themes/winter2012/images/snowreport/icon_snowmakingability.png" alt="Snowmaking Ability">
-          
-          
-          
-          
-          
-          
-                    <img src="/themes/winter2012/images/snowreport/icon_closed.png" alt="Closed Trail">
-          
-        </span>
-              </td>
-                  <td align='left' valign='middle' height='25' width='200' style=''>
-                Plaza        <span>
-                    <img src="/themes/winter2012/images/snowreport/icon_snowmakingability.png" alt="Snowmaking Ability">
-          
-          
-          
-          
-          
-          
-                    <img src="/themes/winter2012/images/snowreport/icon_closed.png" alt="Closed Trail">
-          
-        </span>
-              </td>
-          </tr>
-          <tr bgcolor="#FFF">
-                  <td align='left' valign='middle' height='25' width='200' style='background: #FFF;'>
-                School Slope        <span>
-                    <img src="/themes/winter2012/images/snowreport/icon_snowmakingability.png" alt="Snowmaking Ability">
-          
-          
-          
-          
-          
-          
-                    <img src="/themes/winter2012/images/snowreport/icon_closed.png" alt="Closed Trail">
-          
-        </span>
-              </td>
-                  <td align='left' valign='middle' height='25' width='200' style='background: #FFF;'>
-              </td>
-          </tr>
-    </table>
-</section>
-<br/>
-
-<section class='trailblock'>
-  <div class='rowcolor'>More Difficult<img src='/themes/winter2012/images/snowreport/title_moredifficult.png' alt='More Difficult'/></div>
-  <table border='0' cellpadding='0' cellspacing='2' width="100%" class='trailtable'>
-            <tr bgcolor="#FFF">
-                  <td align='left' valign='middle' height='25' width='200' style='background: #FFF;'>
-                Ridge        <span>
-                    <img src="/themes/winter2012/images/snowreport/icon_snowmakingability.png" alt="Snowmaking Ability">
-          
-          
-          
-          
-          
-          
-                    <img src="/themes/winter2012/images/snowreport/icon_closed.png" alt="Closed Trail">
-          
-        </span>
-              </td>
-                  <td align='left' valign='middle' height='25' width='200' style='background: #FFF;'>
-                Yodeler        <span>
-                    <img src="/themes/winter2012/images/snowreport/icon_snowmakingability.png" alt="Snowmaking Ability">
-          
-          
-          
-          
-          
-          
-                    <img src="/themes/winter2012/images/snowreport/icon_closed.png" alt="Closed Trail">
-          
-        </span>
-              </td>
-          </tr>
-          <tr bgcolor="#FFF">
-                  <td align='left' valign='middle' height='25' width='200' style=''>
-                Pushover        <span>
-          
-          
-          
-          
-          
-          
-                    <img src="/themes/winter2012/images/snowreport/icon_closed.png" alt="Closed Trail">
-          
-        </span>
-              </td>
-                  <td align='left' valign='middle' height='25' width='200' style=''>
-                Lift Line        <span>
-                    <img src="/themes/winter2012/images/snowreport/icon_snowmakingability.png" alt="Snowmaking Ability">
-          
-          
-          
-          
-          
-          
-                    <img src="/themes/winter2012/images/snowreport/icon_closed.png" alt="Closed Trail">
-          
-        </span>
-              </td>
-          </tr>
-          <tr bgcolor="#FFF">
-                  <td align='left' valign='middle' height='25' width='200' style='background: #FFF;'>
-                Snow Ranger        <span>
-                    <img src="/themes/winter2012/images/snowreport/icon_snowmakingability.png" alt="Snowmaking Ability">
-          
-          
-          
-          
-          
-          
-                    <img src="/themes/winter2012/images/snowreport/icon_closed.png" alt="Closed Trail">
-          
-        </span>
-              </td>
-                  <td align='left' valign='middle' height='25' width='200' style='background: #FFF;'>
-                Upper Twister        <span>
-                    <img src="/themes/winter2012/images/snowreport/icon_snowmakingability.png" alt="Snowmaking Ability">
-          
-                    <img src="/themes/winter2012/images/snowreport/icon_snowmaking.png" alt="Snowmaking In Progress">
-          
-          
-          
-          
-          
-                    <img src="/themes/winter2012/images/snowreport/icon_closed.png" alt="Closed Trail">
-          
-        </span>
-              </td>
-          </tr>
-          <tr bgcolor="#FFF">
-                  <td align='left' valign='middle' height='25' width='200' style=''>
-                Route 100        <span>
-                    <img src="/themes/winter2012/images/snowreport/icon_snowmakingability.png" alt="Snowmaking Ability">
-          
-          
-          
-          
-          
-          
-                    <img src="/themes/winter2012/images/snowreport/icon_closed.png" alt="Closed Trail">
-          
-        </span>
-              </td>
-                  <td align='left' valign='middle' height='25' width='200' style=''>
-                Upper East Meadow        <span>
-                    <img src="/themes/winter2012/images/snowreport/icon_snowmakingability.png" alt="Snowmaking Ability">
-          
-          
-          
-          
-          
-          
-                    <img src="/themes/winter2012/images/snowreport/icon_closed.png" alt="Closed Trail">
-          
-        </span>
-              </td>
-          </tr>
-          <tr bgcolor="#FFF">
-                  <td align='left' valign='middle' height='25' width='200' style='background: #FFF;'>
-                Sunset Pass        <span>
-                    <img src="/themes/winter2012/images/snowreport/icon_snowmakingability.png" alt="Snowmaking Ability">
-          
-          
-          
-          
-          
-          
-                    <img src="/themes/winter2012/images/snowreport/icon_closed.png" alt="Closed Trail">
-          
-        </span>
-              </td>
-                  <td align='left' valign='middle' height='25' width='200' style='background: #FFF;'>
-                Lords Prayer        <span>
-                    <img src="/themes/winter2012/images/snowreport/icon_snowmakingability.png" alt="Snowmaking Ability">
-          
-          
-          
-          
-          
-          
-                    <img src="/themes/winter2012/images/snowreport/icon_closed.png" alt="Closed Trail">
-          
-        </span>
-              </td>
-          </tr>
-          <tr bgcolor="#FFF">
-                  <td align='left' valign='middle' height='25' width='200' style=''>
-                Lower Twister        <span>
-                    <img src="/themes/winter2012/images/snowreport/icon_snowmakingability.png" alt="Snowmaking Ability">
-          
-                    <img src="/themes/winter2012/images/snowreport/icon_snowmaking.png" alt="Snowmaking In Progress">
-          
-          
-          
-          
-          
-                    <img src="/themes/winter2012/images/snowreport/icon_closed.png" alt="Closed Trail">
-          
-        </span>
-              </td>
-                  <td align='left' valign='middle' height='25' width='200' style=''>
-                Spring Trail        <span>
-          
-          
-          
-          
-          
-          
-                    <img src="/themes/winter2012/images/snowreport/icon_closed.png" alt="Closed Trail">
-          
-        </span>
-              </td>
-          </tr>
-          <tr bgcolor="#FFF">
-                  <td align='left' valign='middle' height='25' width='200' style='background: #FFF;'>
-                West Meadow        <span>
-                    <img src="/themes/winter2012/images/snowreport/icon_snowmakingability.png" alt="Snowmaking Ability">
-          
-          
-          
-          
-          
-          
-                    <img src="/themes/winter2012/images/snowreport/icon_closed.png" alt="Closed Trail">
-          
-        </span>
-              </td>
-                  <td align='left' valign='middle' height='25' width='200' style='background: #FFF;'>
-                Upper Thruway        <span>
-                    <img src="/themes/winter2012/images/snowreport/icon_snowmakingability.png" alt="Snowmaking Ability">
-          
-          
-          
-          
-          
-          
-                    <img src="/themes/winter2012/images/snowreport/icon_closed.png" alt="Closed Trail">
-          
-        </span>
-              </td>
-          </tr>
-          <tr bgcolor="#FFF">
-                  <td align='left' valign='middle' height='25' width='200' style=''>
-                Shincracker        <span>
-          
-          
-          
-          
-          
-          
-                    <img src="/themes/winter2012/images/snowreport/icon_closed.png" alt="Closed Trail">
-          
-        </span>
-              </td>
-                  <td align='left' valign='middle' height='25' width='200' style=''>
-                Upper Boulevard        <span>
-          
-          
-          
-          
-          
-          
-                    <img src="/themes/winter2012/images/snowreport/icon_closed.png" alt="Closed Trail">
-          
-        </span>
-              </td>
-          </tr>
-    </table>
-</section>
-<br/>
-
-<section class='trailblock'>
-  <div class='rowcolor'>Most Difficult<img src='/themes/winter2012/images/snowreport/title_mostdifficult.png' alt='Most Difficult'/></div>
-  <table border='0' cellpadding='0' cellspacing='2' width="100%" class='trailtable'>
-            <tr bgcolor="#FFF">
-                  <td align='left' valign='middle' height='25' width='200' style='background: #FFF;'>
-                Little Dipper        <span>
-                    <img src="/themes/winter2012/images/snowreport/icon_snowmakingability.png" alt="Snowmaking Ability">
-          
-          
-          
-          
-          
-          
-                    <img src="/themes/winter2012/images/snowreport/icon_closed.png" alt="Closed Trail">
-          
-        </span>
-              </td>
-                  <td align='left' valign='middle' height='25' width='200' style='background: #FFF;'>
-                No-Name Chute        <span>
-          
-          
-          
-          
-          
-          
-                    <img src="/themes/winter2012/images/snowreport/icon_closed.png" alt="Closed Trail">
-          
-        </span>
-              </td>
-          </tr>
-          <tr bgcolor="#FFF">
-                  <td align='left' valign='middle' height='25' width='200' style=''>
-                Avalanche        <span>
-          
-          
-          
-          
-          
-          
-                    <img src="/themes/winter2012/images/snowreport/icon_closed.png" alt="Closed Trail">
-          
-        </span>
-              </td>
-                  <td align='left' valign='middle' height='25' width='200' style=''>
-                Havoc        <span>
-                    <img src="/themes/winter2012/images/snowreport/icon_snowmakingability.png" alt="Snowmaking Ability">
-          
-          
-          
-          
-          
-          
-                    <img src="/themes/winter2012/images/snowreport/icon_closed.png" alt="Closed Trail">
-          
-        </span>
-              </td>
-          </tr>
-          <tr bgcolor="#FFF">
-                  <td align='left' valign='middle' height='25' width='200' style='background: #FFF;'>
-                Lower Stargazer        <span>
-                    <img src="/themes/winter2012/images/snowreport/icon_snowmakingability.png" alt="Snowmaking Ability">
-          
-          
-          
-          
-          
-          
-                    <img src="/themes/winter2012/images/snowreport/icon_closed.png" alt="Closed Trail">
-          
-        </span>
-              </td>
-                  <td align='left' valign='middle' height='25' width='200' style='background: #FFF;'>
-                Stargazer        <span>
-                    <img src="/themes/winter2012/images/snowreport/icon_snowmakingability.png" alt="Snowmaking Ability">
-          
-          
-          
-          
-          
-          
-                    <img src="/themes/winter2012/images/snowreport/icon_closed.png" alt="Closed Trail">
-          
-        </span>
-              </td>
-          </tr>
-          <tr bgcolor="#FFF">
-                  <td align='left' valign='middle' height='25' width='200' style=''>
-                Blue Ribbon        <span>
-                    <img src="/themes/winter2012/images/snowreport/icon_snowmakingability.png" alt="Snowmaking Ability">
-          
-          
-          
-          
-          
-          
-                    <img src="/themes/winter2012/images/snowreport/icon_closed.png" alt="Closed Trail">
-          
-        </span>
-              </td>
-                  <td align='left' valign='middle' height='25' width='200' style=''>
-                Pabst Panic        <span>
-                    <img src="/themes/winter2012/images/snowreport/icon_snowmakingability.png" alt="Snowmaking Ability">
-          
-          
-          
-          
-          
-          
-                    <img src="/themes/winter2012/images/snowreport/icon_closed.png" alt="Closed Trail">
-          
-        </span>
-              </td>
-          </tr>
-          <tr bgcolor="#FFF">
-                  <td align='left' valign='middle' height='25' width='200' style='background: #FFF;'>
-                Pabst Peril        <span>
-                    <img src="/themes/winter2012/images/snowreport/icon_snowmakingability.png" alt="Snowmaking Ability">
-          
-          
-          
-          
-          
-          
-                    <img src="/themes/winter2012/images/snowreport/icon_closed.png" alt="Closed Trail">
-          
-        </span>
-              </td>
-                  <td align='left' valign='middle' height='25' width='200' style='background: #FFF;'>
-                Corkscrew        <span>
-                    <img src="/themes/winter2012/images/snowreport/icon_snowmakingability.png" alt="Snowmaking Ability">
-          
-          
-          
-          
-          
-          
-                    <img src="/themes/winter2012/images/snowreport/icon_closed.png" alt="Closed Trail">
-          
-        </span>
-              </td>
-          </tr>
-          <tr bgcolor="#FFF">
-                  <td align='left' valign='middle' height='25' width='200' style=''>
-                Sunder        <span>
-          
-          
-          
-          
-          
-          
-                    <img src="/themes/winter2012/images/snowreport/icon_closed.png" alt="Closed Trail">
-          
-        </span>
-              </td>
-                  <td align='left' valign='middle' height='25' width='200' style=''>
-              </td>
-          </tr>
-    </table>
-</section>
-<br/>
-
-<section class='trailblock'>
-  <div class='rowcolor'>Glade Skiing<img src='/themes/winter2012/images/snowreport/title_gladeskiing.png' alt='Glade Skiing'/></div>
-  <table border='0' cellpadding='0' cellspacing='2' width="100%" class='trailtable'>
-            <tr bgcolor="#FFF">
-                  <td align='left' valign='middle' height='25' width='200' style='background: #FFF;'>
-                The Glade        <span>
-                            <img style="width: 20px;" src='/themes/winter2012/images/snowreport/title_moredifficult.png' alt='More Difficult'/>
-                  
-          
-          
-          
-          
-          
-          
-                    <img src="/themes/winter2012/images/snowreport/icon_closed.png" alt="Closed Trail">
-          
-        </span>
-              </td>
-                  <td align='left' valign='middle' height='25' width='200' style='background: #FFF;'>
-                The Everglade        <span>
-                            <img style="width: 20px;" src='/themes/winter2012/images/snowreport/title_mostdifficult.png' alt='Most Difficult'/>
-                  
-          
-          
-          
-          
-          
-          
-                    <img src="/themes/winter2012/images/snowreport/icon_closed.png" alt="Closed Trail">
-          
-        </span>
-              </td>
-          </tr>
-          <tr bgcolor="#FFF">
-                  <td align='left' valign='middle' height='25' width='200' style=''>
-                Orion        <span>
-                            <img style="width: 20px;" src='/themes/winter2012/images/snowreport/title_mostdifficult.png' alt='Most Difficult'/>
-                  
-          
-          
-          
-          
-          
-          
-                    <img src="/themes/winter2012/images/snowreport/icon_closed.png" alt="Closed Trail">
-          
-        </span>
-              </td>
-                  <td align='left' valign='middle' height='25' width='200' style=''>
-                Spring Fling        <span>
-                            <img style="width: 20px;" src='/themes/winter2012/images/snowreport/title_mostdifficult.png' alt='Most Difficult'/>
-                  
-          
-          
-          
-          
-          
-          
-                    <img src="/themes/winter2012/images/snowreport/icon_closed.png" alt="Closed Trail">
-          
-        </span>
-              </td>
-          </tr>
-          <tr bgcolor="#FFF">
-                  <td align='left' valign='middle' height='25' width='200' style='background: #FFF;'>
-                The Avalanche Glade        <span>
-                            <img style="width: 20px;" src='/themes/winter2012/images/snowreport/title_mostdifficult.png' alt='Most Difficult'/>
-                  
-          
-          
-          
-          
-          
-          
-                    <img src="/themes/winter2012/images/snowreport/icon_closed.png" alt="Closed Trail">
-          
-        </span>
-              </td>
-                  <td align='left' valign='middle' height='25' width='200' style='background: #FFF;'>
-                The Plunge        <span>
-                            <img style="width: 20px;" src='/themes/winter2012/images/snowreport/title_mostdifficult.png' alt='Most Difficult'/>
-
-                               <img style="width: 20px;" src='/themes/winter2012/images/snowreport/title_mostdifficult.png' alt='Most Difficult'/>
-                  
-          
-          
-          
-          
-          
-          
-                    <img src="/themes/winter2012/images/snowreport/icon_closed.png" alt="Closed Trail">
-          
-        </span>
-              </td>
-          </tr>
-    </table>
-</section>
-<br/>
-
-<section class='trailblock'>
-  <div class='rowcolor'>Free Style Terrain Parks<img src='/themes/winter2012/images/snowreport/title_freestyleterrainparks.png' alt='Free Style Terrain Parks'/></div>
-  <table border='0' cellpadding='0' cellspacing='2' width="100%" class='trailtable'>
-            <tr bgcolor="#FFF">
-                  <td align='left' valign='middle' height='25' width='200' style='background: #FFF;'>
-                Riglet Park for kids! (Base Area)        <span>
-                            <img style="width: 20px;" src='/themes/winter2012/images/snowreport/title_easier.png' alt='Easier'/>
-                  
-          
-          
-          
-          
-          
-          
-                    <img src="/themes/winter2012/images/snowreport/icon_closed.png" alt="Closed Trail">
-          
-        </span>
-              </td>
-                  <td align='left' valign='middle' height='25' width='200' style='background: #FFF;'>
-                Bonanza Terrain Park        <span>
-                            <img style="width: 20px;" src='/themes/winter2012/images/snowreport/title_easier.png' alt='Easier'/>
-                  
-                    <img src="/themes/winter2012/images/snowreport/icon_snowmakingability.png" alt="Snowmaking Ability">
-          
-          
-          
-          
-          
-          
-                    <img src="/themes/winter2012/images/snowreport/icon_closed.png" alt="Closed Trail">
-          
-        </span>
-              </td>
-          </tr>
-          <tr bgcolor="#FFF">
-                  <td align='left' valign='middle' height='25' width='200' style=''>
-                Exhibition Terrain Park        <span>
-                            <img style="width: 20px;" src='/themes/winter2012/images/snowreport/title_moredifficult.png' alt='More Difficult'/>
-                  
-                    <img src="/themes/winter2012/images/snowreport/icon_snowmakingability.png" alt="Snowmaking Ability">
-          
-          
-          
-          
-          
-          
-                    <img src="/themes/winter2012/images/snowreport/icon_closed.png" alt="Closed Trail">
-          
-        </span>
-              </td>
-                  <td align='left' valign='middle' height='25' width='200' style=''>
-                The Garden        <span>
-                            <img style="width: 20px;" src='/themes/winter2012/images/snowreport/title_mostdifficult.png' alt='Most Difficult'/>
-                  
-                    <img src="/themes/winter2012/images/snowreport/icon_snowmakingability.png" alt="Snowmaking Ability">
-          
-          
-          
-          
-          
-          
-                    <img src="/themes/winter2012/images/snowreport/icon_closed.png" alt="Closed Trail">
-          
-        </span>
-              </td>
-          </tr>
-    </table>
-</section>
-<br/>
-
-<section class='trailblock'>
-  <div class='rowcolor'>Lifts<img src='/themes/winter2012/images/snowreport/title_liftsopen.png' alt='Lifts'/></div>
-  <table border='0' cellpadding='0' cellspacing='2' width="100%" class='trailtable'>
-            <tr bgcolor="#FFF">
-                  <td align='left' valign='middle' height='25' style='background: #FFF;'>
-                #1 Sun Mountain Express Quad        <span>
-          
-          
-                    <img src="/themes/winter2012/images/snowreport/icon_closed.png" alt="Closed Lift">
-                  </span>
-              </td>
-                  <td align='left' valign='middle' height='25' style='background: #FFF;'>
-                #2 Plaza Chairlift        <span>
-          
-          
-                    <img src="/themes/winter2012/images/snowreport/icon_closed.png" alt="Closed Lift">
-                  </span>
-              </td>
-          </tr>
-          <tr bgcolor="#FFF">
-                  <td align='left' valign='middle' height='25' style=''>
-                #4 Sun Chairlift        <span>
-          
-          
-                    <img src="/themes/winter2012/images/snowreport/icon_closed.png" alt="Closed Lift">
-                  </span>
-              </td>
-                  <td align='left' valign='middle' height='25' style=''>
-                #5 Alpine Chairlift        <span>
-          
-          
-                    <img src="/themes/winter2012/images/snowreport/icon_closed.png" alt="Closed Lift">
-                  </span>
-              </td>
-          </tr>
-          <tr bgcolor="#FFF">
-                  <td align='left' valign='middle' height='25' style='background: #FFF;'>
-                #6 East Meadow Chairlift        <span>
-          
-          
-                    <img src="/themes/winter2012/images/snowreport/icon_closed.png" alt="Closed Lift">
-                  </span>
-              </td>
-                  <td align='left' valign='middle' height='25' style='background: #FFF;'>
-                #7 Star Carpet        <span>
-          
-          
-                    <img src="/themes/winter2012/images/snowreport/icon_closed.png" alt="Closed Lift">
-                  </span>
-              </td>
-          </tr>
-          <tr bgcolor="#FFF">
-                  <td align='left' valign='middle' height='25' style=''>
-                #8 Lords Prayer T-Bar        <span>
-          
-          
-                    <img src="/themes/winter2012/images/snowreport/icon_closed.png" alt="Closed Lift">
-                  </span>
-              </td>
-                  <td align='left' valign='middle' height='25' style=''>
-                #10 Blue Ribbon Quad        <span>
-          
-          
-                    <img src="/themes/winter2012/images/snowreport/icon_closed.png" alt="Closed Lift">
-                  </span>
-              </td>
-          </tr>
-    </table>
-</section>
-
-<p>&nbsp;</p>
-					
-	
-
-
-
-</div><!-- #inner-content -->
-</div><!-- #inner-content-wrapper -->
-
-</div><!-- #content -->
-<br class="clearfloat" />
-
-
-</div><!-- #wrapper-inner -->
-
-<div id="footer" class="clearfix">
-
-<ul id="footer-nav">
-<li><a href="/mountain" title="The Mountain" class="mountain">The Mountain</a></li> 
-<li><a href="/tickets" title="Tickets & Passes" class="tickets">Tickets & Passes</a></li> 
-<li><a href="/groups" title="Groups" class="groups">Groups</a></li> 
-<li><a href="/lodging" title="Lodging" class="lodging">Lodging</a></li> 
-<li><a href="/real-estate" title="Real Estate" class="real-estate">Real Estate</a></li> 
-<li><a href="/school" title="Ski/Board School" class="school">Ski/Board School</a></li> 
-<li><a href="/equipment" title="Equipment" class="equipment">Equipment</a></li> 
-<li><a href="/news" title="News & Events" class="news">News & Events</a></li>
-</ul><!-- #footer-nav -->
-
-
-   		
-<ul id="footer-sponsors">
-<li><a title="USDA" target="_blank" href="http://www.fs.fed.us/"><img src="/upload/photos/sponsor_usda.gif" title="USDA" /></a></li>
-<li><a title="Sustainable Slopes" target="_blank" href="http://www.nsaa.org/nsaa/environment/sustainable_slopes/"><img src="/upload/photos/sponsor_sustainable_slopes.gif" title="Sustainable Slopes" /></a></li>
-<li><a title="Bromley Outing Club" target="_blank" href="http://www.bromleyoutingclub.com/"><img src="/upload/photos/sponsor_boc.gif" title="Bromley Outing Club" /></a></li>
-<li><a title="Cranmore" target="_blank" href="http://www.cranmore.com/"><img src="/upload/photos/sponsor_cmr_grey_bigger.jpg" title="" /></a></li>
-<li><a title="Jiminy Peak" target="_blank" href="http://www.jiminypeak.com/"><img src="/upload/photos/sponsor_jpmtn_rgb_large_grey.jpg" title="" /></a></li>
-<li><a title="Bart Center" target="_blank" href="http://www.bartcenter.com/"><img src="/upload/photos/sponsor_bart_center_small_greyscale.jpg" title="" /></a></li>
-</ul>
-
-<div id="seo-text">
-<p>Of Vermont ski resorts, Bromley offers great ski deals and ski packages for family ski vacations. Close to Manchester Vermont, Bromley offers top skiing and snowboarding, plus plenty of shopping and other activities for a memorable family ski vacation at a great value. Ski Magazine agrees, voting Bromley #1 for Family Programs and #3 for Value in the East! </p>
-<p style="text-align: left;">While Bromley gets stars for family ski resorts for winter ski holidays, summer is packed with summer vacation activities. For Vermont family vacations, Bromley's Sun Mountain Adventure Park is Vermont's premier amusement park. Featuring the half mile long Sun Mountain Flyer ziprider - the longest zip line in New England. More fun with our Alpine Slide, 18 HoleMiniature Golf, and Big Splash Water Slide Ride, along with the Kids Fun Parkand many more attractions. Bromley is the Vermont amusement park to be at this summer. </p>
-<p style="text-align: left;">Whether you&rsquo;re looking for great ski deals and packages at the best Vermont ski resorts in winter, or summer holiday deals for summer vacation activities, Bromley Mountain is the Vermont family resort of choice.</p></div><!-- #seo-text -->
-<div class="footer-col">
-	<h4>Get In Touch</h4>
-		<p><strong>Snow Conditions Hotline</strong><br>
-		(866) 856-2201</p>
-		<p><strong>Bromley Mountain Ski Resort</strong><br>
-			3984 Vermont Route 11<br>
-			Peru, Vermont 05152</p>
+        </section>
+                
+    </div>
+</div>
 </div>
 
-<div class="footer-col">
-	<h4>Quick Links</h4>
-		<ul>
-		<li><a href="/about">About Us</a></li>
-		<li><a href="/contact">Contact Us</a></li>
-		<li><a href="http://summer.bromley.com/">Summer</a></li>
-		<li><a href="/about/employment/" >Employment Opportunities</a></li>
-		<li><a href="/employees">Employee Login</a></li>
+
+      </div>
+      
+            <section class="socialbar">
+        <nav class="tabs">
+          <ul class="nav nav-tabs">
+            <li class="active"><a class="on" href="#facebook-tab" ><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#twitter-tab" ><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#video-tab" ><i class="fa fa-film"></i></a></li>
+            <li><a href="#instagram-tab" ><i class="fa fa-instagram"></i></a></li>
+          </ul>
+        </nav>
+        <div class="tab-header"></div>
+        <div class="tab-content">
+          <div id="facebook-tab" class="tab-pane active">
+            <div class="fb-like-box" data-href="https://www.facebook.com/Bromleymountain" data-width="254" data-height="585" data-show-faces="true" data-stream="true" data-header="true" data-show-border="false"></div>
+          </div>
+          <div id="twitter-tab" class="tab-pane">
+            <div id="tweet">
+                          <a class="twitter-timeline"  href="https://twitter.com/BromleyMountain" data-widget-id="522011899068551168">Tweets by @BromleyMountain</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+          
+            </div>
+          </div>
+          <div id="video-tab" class="tab-pane">
+                        <div class="youtube-container embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" width="256" height="251" src="http://www.youtube.com/embed/KCCAOQu7iew?rel=0" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="youtube-container embed-responsive embed-responsive-16by9">
+      	      <iframe class="embed-responsive-item" width="256" height="251" src="http://www.youtube.com/embed/ONlt_Az8cKc?rel=0" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div id="instagram-tab" class="tab-pane">
+            <div class="instagram-content col-xs-12"><div class="clearfix"></div>
+          </div>
+        </div>
+      </section>
+        
+    </div><!-- #sidebar -->
+    
+    <div class="main col-sm-9">
+      
+        <img src="/upload/photos/banner_images_snow_report.png" alt="winter" class="bannerimg noprint" />
+<div class="visible-xs" id="side-nav-mobile">
+  <a href="#" class="sidenav-mobile-link noprint">Section Nav</a><i class="sidenav-icon glyphicon glyphicon-plus"></i>
+  <ul id="sidenav-mobile" class="collapse">
+  
+        
+    
+    <li class="on"><a href="/winter/snow-report/" >Snow Report</a>
+    	    </li>
+            
+    
+    <li class=""><a href="/winter/explore/" >Explore The Mountain</a>
+    	    </li>
+            
+    
+    <li class=""><a href="/winter/kids-lessons/" >Kids Lessons</a>
+    	    </li>
+            
+    
+    <li class=""><a href="/winter/adult-lessons/" >Adult Lessons</a>
+    	    </li>
+            
+    
+    <li class=""><a href="/winter/tickets-passes/" >Tickets &amp; Passes</a>
+    	    </li>
+            
+    
+    <li class=""><a href="/winter/deals/" >Deals &amp; Specials</a>
+    	    </li>
+            
+    
+    <li class=""><a href="/winter/equipment/" >Equipment</a>
+    	    </li>
+            
+    
+    <li class=""><a href="/winter/groups/" >Groups</a>
+    	    </li>
+            
+    
+    <li class=""><a href="/winter/events/" >Events</a>
+    	    </li>
+            
+    
+    <li class=""><a href="/winter/innkeepers/" >Innkeeper's Race Series</a>
+    	    </li>
+          </ul><!-- #sidenav -->
 </div>
 
-<p class="note">Please be aware that all purchases on this site include tax, except for season passes.</p>
-</div><!-- #footer -->
+                 
+        <section class="sr-wrap sr-conditions">
+  <div class="clearfix">
+  <h2 class="title">Snow Report</h2>
+  <span><em>updated 2014-10-20 10:55:55</em></span>
+  </div>
+  <ul class="snow-report-link pull-right clearfix">
+    <li class="printable"><a href="?print" target="_blank">Printer Friendly</a></li>
+    <li class="email"><a href="/contact/newsletter/stay-connected/">Newsletter Signup</a></li>
+  </ul>
+  <div class="clearfix"></div>
+</section>
 
-<p id="copyright">&copy; 2013 Bromley Mountain <a href="http://www.propellermediaworks.com" title=" Custom Web Design & Development by Propeller Media Works" class="credit"> Custom Web Design &amp; Development by Propeller Media Works</a></p>
+<div class="report-weather current clearfix">
+  <div class="pull-left"><i class="wi wi-cloudy"></i></div><div id="sr_weather" class="pull-left">Cloudy<br>37&deg;</div>
+  <a class="btn btn-primary pull-left" href="http://www.accuweather.com/us/vt/peru/05152/city-weather-forecast.asp?partner=accuweather&u=1&traveler=0" target="_blank">5 Day Forecast</a>
+</div>
+
+<section class="sr-wrap">
+  <div id="sr-groupings">
+    <!--<ul class="nav nav-stacked visible-xs visible-sm">
+                <li class="active"><a href="#sr-tab-content-46" data-toggle="tab"><span>Written Report</span></a></li>
+                      <li><a href="#sr-tab-content-47" data-toggle="tab"><span>Snow Making</span></a></li>
+              </ul>-->  
+
+    <ul class="nav nav-tabs">
+                <li class="active"><a href="#sr-tab-content-46" data-toggle="tab"><span>Written Report</span></a></li>
+                      <li><a href="#sr-tab-content-47" data-toggle="tab"><span>Snow Making</span></a></li>
+              </ul>  
+  </div>
+
+  <div class="tab-content">
+
+        <div id="sr-tab-content-46" class="sr-tab-content tab-pane active">
+            <p>Hello!</p>
+<p>Opening day has been set for November 28, 2014. &nbsp;Snowmaking is scheduled to begin November 1, 2014. &nbsp;Both of these exciting dates are weather permitting, which means that all offerings of early season snow dances are welcome and accepted! &nbsp;</p>
+<p>We have some exciting snowmaking upgrades this season, not the least of which includes 78 new tower guns. &nbsp;Check out <a href="/winter/explore/whats-new/" target="_blank">what's new</a> and the <a href="/winter/explore/snowmaking-blog/" target="_blank">snowmaking blog</a>, and think winter. &nbsp;See you soon.</p>
+<p>Janessa</p>          </div>
+        <div id="sr-tab-content-47" class="sr-tab-content tab-pane">
+            <p>August 12, 2014</p>
+<p>Is there a better time of year than August to talk snowmaking?&nbsp; I don&rsquo;t think so.&nbsp; Actually, a tradition around here is to talk deer hunting every day, followed closely by snowmaking. The snowmaking discussions, however, are definitely held within a smaller but equally passionate group.&nbsp; In our continuing efforts to bring the Bromley skier the very best in snow conditions we have developed an exciting multifaceted &ldquo;game plan&rdquo; to this year&rsquo;s upcoming snowmaking season.</p>
+<p>Last Spring, Efficiency Vermont launched a onetime project with all Vermont ski areas:&nbsp; &ldquo;The Great Snow Gun Round Up.&rdquo;&nbsp; The thought behind the program is to have Vermont be the leading state in snow country when it comes to energy efficient snowmaking.&nbsp; Ski areas that turned in older air/energy consuming ground snow guns this year, and exchanged them for new energy efficient snow guns, were eligible for additional assistance and financial incentives to complete their projects before the winter ski season. Bromley has decided to take this initiative a step further as we have chosen to turn in all of our ground guns (some of these guns are 25+ years old). That means&nbsp; we&rsquo;ll be one of the first ski areas in Vermont to enter this season with 100% energy efficient snow guns.&nbsp; The end result is that we are trading in 63 ground guns and receiving 78 HKD Tower guns complete with snow hose&hellip;a big investment to deliver a great experience for our visitors!&nbsp; With the advances in snow gun technology and the corresponding efficient use of compressed air (see below), Bromley will not be renting any diesel air compressors this year.&nbsp;&nbsp; This is definitely a first in the history of Bromley snowmaking.</p>
+<p>Our second snowmaking initiative that we are quite excited about also involves a first for Vermont and the US - the installation of a system called Snowmaking Energy Index (SEI).&nbsp; SEI is being developed under the direction of Yaroslav Stanchek of Mountain View Technologies; Yaroslav has been the overall system designer of Bromley&rsquo;s snowmaking, dating back to the mid-1990&rsquo;s.&nbsp; The origin of the SEI metric was brought about by the simple question &ldquo;how does one compare various snowmaking systems and their effective productivity in a simple way.&rdquo; Each ski area has a unique snowmaking situation with respect to size, weather, trail numbers, etc., and the SEI method allows an across-the-board comparison as to the effectiveness and energy productivity that can be predicted over a wide range of temperatures.&nbsp; Energy consumption and efficiency, with the goal of lowering and controlling energy demand, is on everyone&rsquo;s radar.&nbsp;&nbsp; Bromley and Efficiency Vermont are funding the installation of the first SEI system in the United States.&nbsp; This sophisticated computer control/display system will allow the snowmaking system operator to monitor the energy consumption status of the snowmaking system and adjust system parameters for maximum effective use of available energy in real time.</p>
+<p>A third investment being made this fall involves the purchase of an Ingersoll-Rand Intelli-Flow controller.&nbsp; This device will allow the system operator to raise and lower the hill air pressure as temperature conditions warrant.&nbsp; The best way to explain this new device may be by example: say it rains on a given day in January and that night it will be extremely cold (not that we get these type of scenarios&hellip;but just in case!).&nbsp; The situation calls for the running of as many snow guns as possible over as many trails as possible before the next day.&nbsp; The Intelli-Flow will protect our two new Centac air compressors on one side (the Centacs don&rsquo;t like to go below 83 psi) by holding the air at 90 psi, but on the other side of the Controller we can safely run the hill pressure down to 65 psi.&nbsp; What does this mean?&nbsp; Lowering the hill pressure in this scenario allows us to turn on more guns than we would normally be able to before running out of air.&nbsp; Instead of operating 80 guns at 90 psi we will operate upwards of 120+ guns at 65 psi thus covering more terrain with fresh powder&hellip;.resulting in a quicker turnaround to excellent snow conditions, with a more efficient use of available air! &nbsp;</p>
+<p>All of the above is a result of our continuing commitment to providing the best snow in the most prudent and cost effective manner.&nbsp; We are quite excited about these changes&hellip;some philosophical&hellip;some state of the art&hellip;but all designed to give you great skiing and riding to the best of our abilities.&nbsp; Recently we posted pictures of our new guns that arrived just this week.&nbsp; We will keep you updated through the fall with our progress as we ready the system for November 1.</p>
+<p>Bill Cairns<br />President/GM</p>          </div>
+    
+    <div id="trail-lift-data">
+      <h4>Trail Report</h4>
+      <ul class="sr-key">
+        <li><span>Open = </span><img src="/themes/bromley2014/images/snow-report/icon-open.png" alt="Open"></li>
+        <li><span>Closed = </span><img src="/themes/bromley2014/images/snow-report/icon-closed.png" alt="Closed"></li>
+        <li><span>Snowmaking in Progress= </span><img src="/themes/bromley2014/images/snow-report/icon-snow-making.png" alt="Snowmaking"></li>
+        <li><span>Moguls = </span><img src="/themes/bromley2014/images/snow-report/icon-moguls.png" alt="Moguls"></li>
+        <li><span>Groomed = </span><img src="/themes/bromley2014/images/snow-report/icon-groomed.png" alt="Groomed"></li>
+        <li><span>Race Course = </span><img src="/themes/bromley2014/images/snow-report/icon-race-course.png" alt="Race Course"></li>
+        <li><span>Open Late = </span><img src="/themes/bromley2014/images/snow-report/icon-night-skiing.png" alt="Open Late"></li>
+        <li><span>Wind Delay = </span><img src="/themes/bromley2014/images/snow-report/icon-wind-delay.png" alt="Wind Delay"></li>
+      </ul>
+
+                      <ul class="sr-status">
+          <li class="col-xs-12 difficulty">Easier <img src="/themes/bromley2014/images/snow-report/icon-trail-easier.png"></li>
+
+                    <li class="col-xs-12 col-sm-6">
+             <em>Learning Zone</em>
+             <br>
+                            <img src="/themes/bromley2014/images/snow-report/icon-closed.png" alt="Closed" class="currently">
+              
+                                                                                </li>
+                    <li class="col-xs-12 col-sm-6">
+             <em>Woods Run</em>
+             <br>
+                            <img src="/themes/bromley2014/images/snow-report/icon-closed.png" alt="Closed" class="currently">
+              
+                                                                                </li>
+                    <li class="col-xs-12 col-sm-6">
+             <em>Lower East Meadow</em>
+             <br>
+                            <img src="/themes/bromley2014/images/snow-report/icon-closed.png" alt="Closed" class="currently">
+              
+                                                                                </li>
+                    <li class="col-xs-12 col-sm-6">
+             <em>Chase It</em>
+             <br>
+                            <img src="/themes/bromley2014/images/snow-report/icon-closed.png" alt="Closed" class="currently">
+              
+                                                                                </li>
+                    <li class="col-xs-12 col-sm-6">
+             <em>Prouty Pass</em>
+             <br>
+                            <img src="/themes/bromley2014/images/snow-report/icon-closed.png" alt="Closed" class="currently">
+              
+                                                                                </li>
+                    <li class="col-xs-12 col-sm-6">
+             <em>Run-Around #4</em>
+             <br>
+                            <img src="/themes/bromley2014/images/snow-report/icon-closed.png" alt="Closed" class="currently">
+              
+                                                                                </li>
+                    <li class="col-xs-12 col-sm-6">
+             <em>Run-Around #3</em>
+             <br>
+                            <img src="/themes/bromley2014/images/snow-report/icon-closed.png" alt="Closed" class="currently">
+              
+                                                                                </li>
+                    <li class="col-xs-12 col-sm-6">
+             <em>Run-Around #2</em>
+             <br>
+                            <img src="/themes/bromley2014/images/snow-report/icon-closed.png" alt="Closed" class="currently">
+              
+                                                                                </li>
+                    <li class="col-xs-12 col-sm-6">
+             <em>Run-Around #1</em>
+             <br>
+                            <img src="/themes/bromley2014/images/snow-report/icon-closed.png" alt="Closed" class="currently">
+              
+                                                                                </li>
+                    <li class="col-xs-12 col-sm-6">
+             <em>Lower Boulevard</em>
+             <br>
+                            <img src="/themes/bromley2014/images/snow-report/icon-closed.png" alt="Closed" class="currently">
+              
+                                                                                </li>
+                    <li class="col-xs-12 col-sm-6">
+             <em>Lower Thruway</em>
+             <br>
+                            <img src="/themes/bromley2014/images/snow-report/icon-closed.png" alt="Closed" class="currently">
+              
+                                                                                </li>
+                    <li class="col-xs-12 col-sm-6">
+             <em>Plaza</em>
+             <br>
+                            <img src="/themes/bromley2014/images/snow-report/icon-closed.png" alt="Closed" class="currently">
+              
+                                                                                </li>
+                    <li class="col-xs-12 col-sm-6">
+             <em>School Slope</em>
+             <br>
+                            <img src="/themes/bromley2014/images/snow-report/icon-closed.png" alt="Closed" class="currently">
+              
+                                                                                </li>
+                  </ul>
+                              <ul class="sr-status">
+          <li class="col-xs-12 difficulty">More Difficult <img src="/themes/bromley2014/images/snow-report/icon-trail-more-difficult.png"></li>
+
+                    <li class="col-xs-12 col-sm-6">
+             <em>Ridge</em>
+             <br>
+                            <img src="/themes/bromley2014/images/snow-report/icon-closed.png" alt="Closed" class="currently">
+              
+                                                                                </li>
+                    <li class="col-xs-12 col-sm-6">
+             <em>Yodeler</em>
+             <br>
+                            <img src="/themes/bromley2014/images/snow-report/icon-closed.png" alt="Closed" class="currently">
+              
+                                                                                </li>
+                    <li class="col-xs-12 col-sm-6">
+             <em>Pushover</em>
+             <br>
+                            <img src="/themes/bromley2014/images/snow-report/icon-closed.png" alt="Closed" class="currently">
+              
+                                                                                </li>
+                    <li class="col-xs-12 col-sm-6">
+             <em>Lift Line</em>
+             <br>
+                            <img src="/themes/bromley2014/images/snow-report/icon-closed.png" alt="Closed" class="currently">
+              
+                                                                                </li>
+                    <li class="col-xs-12 col-sm-6">
+             <em>Snow Ranger</em>
+             <br>
+                            <img src="/themes/bromley2014/images/snow-report/icon-closed.png" alt="Closed" class="currently">
+              
+                                                                                </li>
+                    <li class="col-xs-12 col-sm-6">
+             <em>Upper Twister</em>
+             <br>
+                            <img src="/themes/bromley2014/images/snow-report/icon-closed.png" alt="Closed" class="currently">
+              
+                                                                                </li>
+                    <li class="col-xs-12 col-sm-6">
+             <em>Route 100</em>
+             <br>
+                            <img src="/themes/bromley2014/images/snow-report/icon-closed.png" alt="Closed" class="currently">
+              
+                                                                                </li>
+                    <li class="col-xs-12 col-sm-6">
+             <em>Upper East Meadow</em>
+             <br>
+                            <img src="/themes/bromley2014/images/snow-report/icon-closed.png" alt="Closed" class="currently">
+              
+                                                                                </li>
+                    <li class="col-xs-12 col-sm-6">
+             <em>Sunset Pass</em>
+             <br>
+                            <img src="/themes/bromley2014/images/snow-report/icon-closed.png" alt="Closed" class="currently">
+              
+                                                                                </li>
+                    <li class="col-xs-12 col-sm-6">
+             <em>Lords Prayer</em>
+             <br>
+                            <img src="/themes/bromley2014/images/snow-report/icon-closed.png" alt="Closed" class="currently">
+              
+                                                                                </li>
+                    <li class="col-xs-12 col-sm-6">
+             <em>Lower Twister</em>
+             <br>
+                            <img src="/themes/bromley2014/images/snow-report/icon-closed.png" alt="Closed" class="currently">
+              
+                                                                                </li>
+                    <li class="col-xs-12 col-sm-6">
+             <em>Spring Trail</em>
+             <br>
+                            <img src="/themes/bromley2014/images/snow-report/icon-closed.png" alt="Closed" class="currently">
+              
+                                                                                </li>
+                    <li class="col-xs-12 col-sm-6">
+             <em>West Meadow</em>
+             <br>
+                            <img src="/themes/bromley2014/images/snow-report/icon-closed.png" alt="Closed" class="currently">
+              
+                                                                                </li>
+                    <li class="col-xs-12 col-sm-6">
+             <em>Upper Thruway</em>
+             <br>
+                            <img src="/themes/bromley2014/images/snow-report/icon-closed.png" alt="Closed" class="currently">
+              
+                                                                                </li>
+                    <li class="col-xs-12 col-sm-6">
+             <em>Shincracker</em>
+             <br>
+                            <img src="/themes/bromley2014/images/snow-report/icon-closed.png" alt="Closed" class="currently">
+              
+                                                                                </li>
+                    <li class="col-xs-12 col-sm-6">
+             <em>Upper Boulevard</em>
+             <br>
+                            <img src="/themes/bromley2014/images/snow-report/icon-closed.png" alt="Closed" class="currently">
+              
+                                                                                </li>
+                  </ul>
+                              <ul class="sr-status">
+          <li class="col-xs-12 difficulty">Most Difficult <img src="/themes/bromley2014/images/snow-report/icon-trail-most-difficult.png"></li>
+
+                    <li class="col-xs-12 col-sm-6">
+             <em>Little Dipper</em>
+             <br>
+                            <img src="/themes/bromley2014/images/snow-report/icon-closed.png" alt="Closed" class="currently">
+              
+                                                                                </li>
+                    <li class="col-xs-12 col-sm-6">
+             <em>No-Name Chute</em>
+             <br>
+                            <img src="/themes/bromley2014/images/snow-report/icon-closed.png" alt="Closed" class="currently">
+              
+                                                                                </li>
+                    <li class="col-xs-12 col-sm-6">
+             <em>Avalanche</em>
+             <br>
+                            <img src="/themes/bromley2014/images/snow-report/icon-closed.png" alt="Closed" class="currently">
+              
+                                                                                </li>
+                    <li class="col-xs-12 col-sm-6">
+             <em>Havoc</em>
+             <br>
+                            <img src="/themes/bromley2014/images/snow-report/icon-closed.png" alt="Closed" class="currently">
+              
+                                                                                </li>
+                    <li class="col-xs-12 col-sm-6">
+             <em>Lower Stargazer</em>
+             <br>
+                            <img src="/themes/bromley2014/images/snow-report/icon-closed.png" alt="Closed" class="currently">
+              
+                                                                                </li>
+                    <li class="col-xs-12 col-sm-6">
+             <em>Stargazer</em>
+             <br>
+                            <img src="/themes/bromley2014/images/snow-report/icon-closed.png" alt="Closed" class="currently">
+              
+                                                                                </li>
+                    <li class="col-xs-12 col-sm-6">
+             <em>Blue Ribbon</em>
+             <br>
+                            <img src="/themes/bromley2014/images/snow-report/icon-closed.png" alt="Closed" class="currently">
+              
+                                                                                </li>
+                    <li class="col-xs-12 col-sm-6">
+             <em>Pabst Panic</em>
+             <br>
+                            <img src="/themes/bromley2014/images/snow-report/icon-closed.png" alt="Closed" class="currently">
+              
+                                                                                </li>
+                    <li class="col-xs-12 col-sm-6">
+             <em>Pabst Peril</em>
+             <br>
+                            <img src="/themes/bromley2014/images/snow-report/icon-closed.png" alt="Closed" class="currently">
+              
+                                                                                </li>
+                    <li class="col-xs-12 col-sm-6">
+             <em>Corkscrew</em>
+             <br>
+                            <img src="/themes/bromley2014/images/snow-report/icon-closed.png" alt="Closed" class="currently">
+              
+                                                                                </li>
+                    <li class="col-xs-12 col-sm-6">
+             <em>Sunder</em>
+             <br>
+                            <img src="/themes/bromley2014/images/snow-report/icon-closed.png" alt="Closed" class="currently">
+              
+                                                                                </li>
+                  </ul>
+              
+      <ul class="sr-status">
+        <li class="col-xs-12 difficulty">Glade Skiing <img src="/themes/bromley2014/images/snow-report/icon-glade-skiing.png" /></li>
+
+                <li class="col-xs-12 col-sm-6">
+          <em>The Glade</em><br>
+                        <img src="/themes/bromley2014/images/snow-report/icon-closed.png" alt="Closed" class="currently">
+            
+            <img src="/themes/bromley2014/images/snow-report/icon-trail-more-difficult.png">
+
+                                                                    </li>
+                <li class="col-xs-12 col-sm-6">
+          <em>The Everglade</em><br>
+                        <img src="/themes/bromley2014/images/snow-report/icon-closed.png" alt="Closed" class="currently">
+            
+            <img src="/themes/bromley2014/images/snow-report/icon-trail-most-difficult.png">
+
+                                                                    </li>
+                <li class="col-xs-12 col-sm-6">
+          <em>The Avalanche Glade</em><br>
+                        <img src="/themes/bromley2014/images/snow-report/icon-closed.png" alt="Closed" class="currently">
+            
+            <img src="/themes/bromley2014/images/snow-report/icon-trail-most-difficult.png">
+
+                                                                    </li>
+                <li class="col-xs-12 col-sm-6">
+          <em>Orion</em><br>
+                        <img src="/themes/bromley2014/images/snow-report/icon-closed.png" alt="Closed" class="currently">
+            
+            <img src="/themes/bromley2014/images/snow-report/icon-trail-most-difficult.png">
+
+                                                                    </li>
+                <li class="col-xs-12 col-sm-6">
+          <em>Spring Fling</em><br>
+                        <img src="/themes/bromley2014/images/snow-report/icon-closed.png" alt="Closed" class="currently">
+            
+            <img src="/themes/bromley2014/images/snow-report/icon-trail-most-difficult.png">
+
+                                                                    </li>
+                <li class="col-xs-12 col-sm-6">
+          <em>The Plunge</em><br>
+                        <img src="/themes/bromley2014/images/snow-report/icon-closed.png" alt="Closed" class="currently">
+            
+            <img src="/themes/bromley2014/images/snow-report/icon-trail-expert-only.png">
+
+                                                                    </li>
+              </ul>
+
+      <ul class="sr-status">
+        <li class="col-xs-12 difficulty">Free Style Terrain Parks<img src="/themes/bromley2014/images/snow-report/icon-terrain-park.png" /></li>
+
+                <li class="col-xs-12 col-sm-6">
+          <em>Riglet Park for kids! (Weekends & Holidays)</em><br>
+                        <img src="/themes/bromley2014/images/snow-report/icon-closed.png" alt="Closed" class="currently">
+            
+            <img src="/themes/bromley2014/images/snow-report/icon-trail-easier.png">
+
+                                                                    </li>
+                <li class="col-xs-12 col-sm-6">
+          <em>Bonanza</em><br>
+                        <img src="/themes/bromley2014/images/snow-report/icon-closed.png" alt="Closed" class="currently">
+            
+            <img src="/themes/bromley2014/images/snow-report/icon-trail-more-difficult.png">
+
+                                                                    </li>
+                <li class="col-xs-12 col-sm-6">
+          <em>Halo Terrain Park</em><br>
+                        <img src="/themes/bromley2014/images/snow-report/icon-closed.png" alt="Closed" class="currently">
+            
+            <img src="/themes/bromley2014/images/snow-report/icon-trail-most-difficult.png">
+
+                                                                    </li>
+                <li class="col-xs-12 col-sm-6">
+          <em>The Garden</em><br>
+                        <img src="/themes/bromley2014/images/snow-report/icon-closed.png" alt="Closed" class="currently">
+            
+            <img src="/themes/bromley2014/images/snow-report/icon-trail-most-difficult.png">
+
+                                                                    </li>
+              </ul>
+
+      <ul class="sr-status">
+          <li class="col-xs-12 difficulty">Lifts<img src="/themes/bromley2014/images/snow-report/icon-lift.png" /></li>
+                <li class="col-xs-12 col-sm-6">
+          <em>#1 Sun Mountain Express Quad</em> <br>
+                        <img src="/themes/bromley2014/images/snow-report/icon-closed.png" alt="Closed" class="currently">
+            
+                                </li>
+                <li class="col-xs-12 col-sm-6">
+          <em>#2 Plaza Chairlift</em> <br>
+                        <img src="/themes/bromley2014/images/snow-report/icon-closed.png" alt="Closed" class="currently">
+            
+                                </li>
+                <li class="col-xs-12 col-sm-6">
+          <em>#4 Sun Chairlift</em> <br>
+                        <img src="/themes/bromley2014/images/snow-report/icon-closed.png" alt="Closed" class="currently">
+            
+                                </li>
+                <li class="col-xs-12 col-sm-6">
+          <em>#5 Alpine Chairlift</em> <br>
+                        <img src="/themes/bromley2014/images/snow-report/icon-closed.png" alt="Closed" class="currently">
+            
+                                </li>
+                <li class="col-xs-12 col-sm-6">
+          <em>#6 East Meadow Chairlift</em> <br>
+                        <img src="/themes/bromley2014/images/snow-report/icon-closed.png" alt="Closed" class="currently">
+            
+                                </li>
+                <li class="col-xs-12 col-sm-6">
+          <em>#7 Star Carpet</em> <br>
+                        <img src="/themes/bromley2014/images/snow-report/icon-closed.png" alt="Closed" class="currently">
+            
+                                </li>
+                <li class="col-xs-12 col-sm-6">
+          <em>#8 Lords Prayer T-Bar</em> <br>
+                        <img src="/themes/bromley2014/images/snow-report/icon-closed.png" alt="Closed" class="currently">
+            
+                                </li>
+                <li class="col-xs-12 col-sm-6">
+          <em>#10 Blue Ribbon Quad</em> <br>
+                        <img src="/themes/bromley2014/images/snow-report/icon-closed.png" alt="Closed" class="currently">
+            
+                                </li>
+              </ul>
+    </div>
+  </div>
+</section>
+                
+      	    </div><!-- .main -->
+  </div><!-- .row -->
+  
+  
+  
+  
+  
+    
+</div><!-- .container -->
+
+<footer class="noprint">
+  <nav class="primary">
+    <div class="container">
+      <ul>
+                  <li><a href="/plan/" title="Plan">Plan</a></li>
+                  <li><a href="/winter/" title="Winter">Winter</a></li>
+                  <li><a href="/summer/" title="Summer">Summer</a></li>
+                  <li><a href="/galleries/" title="Galleries">Galleries</a></li>
+              </ul>
+    </div>
+  </nav>
+    <nav class="secondary">
+    <div class="container">
+      <ul>
+                  <li><a href="/press/" title="Press Room">Press Room</a></li>
+                  <li><a href="/real-estate/" title="Real Estate">Real Estate</a></li>
+                  <li><a href="/employment/" title="Employment">Employment</a></li>
+                  <li><a href="/employees/" title="Employee Login">Employee Login</a></li>
+                  <li><a href="/forum/" title="Ski School Forum">Ski School Forum</a></li>
+                  <li><a href="/privacy/" title="Privacy">Privacy</a></li>
+              </ul>
+    </div>
+  </nav>
+  
+  <div class="container contact-info">
+    <div class="row">
+      <div class="col-sm-7 contact">
+    		<div class="org">Bromley Mountain Ski Resort</div>
+  			<div class="street-address">3984 Vermont Route 11</div>
+  			<div class="adr">
+  			  <span class="locality">Peru</span>, <abbr class="region" title="Vermont">VT</abbr> <span class="postal-code">05152</span>
+  			</div>
+    		<p>General Information
+    		<a href="tel:18028245522" class="tel">802.824.5522</a>
+    		</p>
+    		<p><a href="/contact/">Contact Us</a></p>
+      </div>
+      <div class="col-sm-5 socials">
+          <ul>
+            <li><a href="https://plus.google.com/115855039070544338253/posts"><img src="/themes/bromley2014/images/social/google.png" alt="Google"></a></li>
+            <li><a href="http://twitter.com/BromleyMountain"><img src="/themes/bromley2014/images/social/twitter.png" alt="twitter"></a></li>
+            <li><a href="http://www.facebook.com/Bromleymountain"><img src="/themes/bromley2014/images/social/facebook.png" alt="facebook"></a></li>
+            <li><a href="http://instagram.com/BromleyMountain"><img src="/themes/bromley2014/images/social/instagram.png" alt="instagram"></a></li>
+            <li><a href="http://www.youtube.com/user/BromleyMountain"><img src="/themes/bromley2014/images/social/youtube.png" alt="youtube"></a></li>
+          </ul>
+        <p><a href="/contact/newsletter/stay-connected/" class="btn btn-primary"><i class="glyphicon glyphicon-envelope"></i> Subscribe to our newsletter</a></p>
+      </div>
+
+      
+    </div>     
+  </div>
+  
+  <section class="partners"> 
+    <div class="container">
+      <p>Partners and sister resorts:</p>
+      <ul>
+              <li><a title="USDA" target="_blank" href="http://www.fs.fed.us/"><img src="/upload/photos/sponsor_usda.gif" title="USDA" /></a></li>
+                <li><a title="Sustainable Slopes" target="_blank" href="http://www.nsaa.org/environment/sustainable-slopes/"><img src="/upload/photos/sponsor_sustainable_slopes.gif" title="Sustainable Slopes" /></a></li>
+                <li><a title="Bromley Outing Club" target="_blank" href="http://www.bromleyoutingclub.com/"><img src="/upload/photos/sponsor_boc.gif" title="Bromley Outing Club" /></a></li>
+                <li><a title="Cranmore" target="_blank" href="http://www.cranmore.com/"><img src="/upload/photos/sponsor_cmr_grey_bigger.jpg" title="" /></a></li>
+                <li><a title="Jiminy Peak" target="_blank" href="http://www.jiminypeak.com/"><img src="/upload/photos/sponsor_jpmtn_rgb_large_grey.jpg" title="" /></a></li>
+                <li><a title="Bart Center" target="_blank" href="http://www.bartcenter.com/"><img src="/upload/photos/sponsor_bart_center_small_greyscale.jpg" title="" /></a></li>
+              </ul>
+    </div>
+  </section>
+
+  <section class="credits"> 
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-5 copyright">
+          2014 &copy; Bromley Mountain Ski Resort <a href="/plan/directions/"><img src="/themes/bromley2014/images/location.png" alt="location"></a>
+        </div>
+        <div class="col-sm-7 author">
+          <a href="http://www.propellermediaworks.com" title="Mobile friendly responsive web designers: Propeller Media Works" class="credit">Mobile friendly responsive web designers: Propeller Media Works</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</footer>
+
 
 </div><!-- #underlay -->
 
