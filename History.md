@@ -1,4 +1,10 @@
 
+3.6.6 / 2014-11-08
+==================
+
+ * fix Brighton for new season
+ * fix Snowbasin for new season
+
 3.6.5 / 2014-11-07
 ==================
 
