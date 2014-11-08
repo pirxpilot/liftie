@@ -1,4 +1,4 @@
-var assert = require('assert');
+var should = require('should');
 var fs = require('fs');
 var parser = require('../../lib/lifts/parser');
 var parse = require('../../lib/resorts/brighton');
@@ -11,16 +11,16 @@ describe('parse brighton', function() {
     stream.on('error', done);
     stream.pipe(parser(parse, function(err, status) {
       var expected = {
-        'Crest Express': 'open',
-        'Explorer': 'open',
-        'Great Western Express': 'open',
-        'Milly Express': 'open',
-        'Snake Creek Express': 'open',
-        'Majestic Quad': 'open',
-        'Terrain Park': 'open',
-        'Half Pipe': 'open'
+        'Crest Express': 'closed',
+        'Explorer': 'closed',
+        'Great Western Express': 'closed',
+        'Milly Express': 'closed',
+        'Snake Creek Express': 'closed',
+        'Majestic Quad': 'closed',
+        'Terrain Park': 'closed'
       };
-      assert.deepEqual(status, expected);
+      should.exist(status);
+      status.should.eql(expected);
       done(err);
     }));
   });
