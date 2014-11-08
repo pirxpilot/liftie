@@ -1,8 +1,8 @@
 {
   "name": "Snowbasin",
   "url": {
-    "host": "http://www.snowbasin.com",
-    "pathname": "/mountain/mountain-report/"
+    "host": "https://www.snowbasin.com",
+    "pathname": "/the-mountain/conditions"
   },
   "tags": [
     "Utah"
@@ -11,5 +11,6 @@
     -111.859703,
     41.214596
   ],
-  "twitter": "snowbasinresort"
+  "twitter": "snowbasinresort",
+  "opening": "2014-11-26"
 }
