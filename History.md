@@ -1,4 +1,10 @@
 
+3.6.7 / 2014-11-08
+==================
+
+ * fix twitter account for Brighton Resort
+ * stop checking SSL certs
+
 3.6.6 / 2014-11-08
 ==================
 

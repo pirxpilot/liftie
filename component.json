@@ -1,7 +1,7 @@
 {
   "name": "liftie",
   "description": "Client side of liftie.info",
-  "version": "3.6.6",
+  "version": "3.6.7",
   "local": [
     "boot"
   ],
