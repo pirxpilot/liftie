@@ -1,4 +1,4 @@
-var assert = require('assert');
+var should = require('should');
 var fs = require('fs');
 var parser = require('../../lib/lifts/parser');
 var parse = require('../../lib/resorts/snowbasin');
@@ -11,17 +11,18 @@ describe('parse snowbasin', function() {
     stream.on('error', done);
     stream.pipe(parser(parse, function(err, status) {
       var expected = {
-        'Strawberry Express': 'open',
-        'Becker': 'open',
-        'Little Cat Express': 'open',
-        'Middle Bowl Triple': 'open',
-        'Needles Express': 'open',
+        'Strawberry Express': 'closed',
+        'Becker': 'closed',
+        'Little Cat Express': 'closed',
+        'Middle Bowl Triple': 'closed',
+        'Needles Express': 'closed',
         'Wild Cat': 'closed',
-        'Porcupine': 'open',
-        'John Paul Express': 'open',
-        'Mt. Allen Tram': 'open'
+        'Porcupine': 'closed',
+        'John Paul Express': 'closed',
+        'Mt. Allen Tram': 'closed'
       };
-      assert.deepEqual(status, expected);
+      should.exist(status);
+      status.should.eql(expected);
       done(err);
     }));
   });
