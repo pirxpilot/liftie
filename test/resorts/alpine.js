@@ -11,18 +11,16 @@ describe('parse alpine', function() {
     stream.on('error', done);
     stream.pipe(parser(parseAlpine, function(err, status) {
       var expected = {
-        'Summit Six Chair': 'open',
-        'Roundhouse Chair': 'open',
-        'Hot Wheels': 'closed',
-        'Sherwood Express Chair': 'closed',
+        'Summit Express': 'closed',
+        'Roundhouse Express': 'closed',
+        'Hot Wheels Chair': 'closed',
         'Scott Chair': 'closed',
         'Lakeview Chair': 'closed',
         'Yellow Chair': 'closed',
-        'Meadow Chair': 'open',
+        'Meadow Chair': 'closed',
         'Subway Chair': 'closed',
         'Kangaroo Chair': 'closed',
-        'Alpine Bowl Chair': 'closed',
-        'Big Carpet': 'hold'
+        'Alpine Bowl Chair': 'closed'
       };
       should.exist(expected);
       status.should.eql(expected);

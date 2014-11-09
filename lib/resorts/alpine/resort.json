@@ -4,6 +4,10 @@
     "host": "http://www.skialpine.com",
     "pathname": "/mountain/snow-report"
   },
+  "dataUrl": {
+    "host": "http://squawalpine.com",
+    "pathname": "/sites/all/themes/squaw/trail-maps/alpine-mainmap/routes.js"
+  },
   "tags": [
     "California",
     "Lake Tahoe"
