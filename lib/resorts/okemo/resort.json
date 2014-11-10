@@ -2,14 +2,7 @@
   "name": "Okemo",
   "url": {
     "host": "http://www.okemo.com",
-    "pathname": "/activities/snowsports/dailyreport.asp"
-  },
-  "dataUrl": {
-    "host": "http://us1.resorts-interactive.com",
-    "pathname": "/vicomap/getMapDetails.php",
-    "query": {
-      "mapID": 1362
-    }
+    "pathname": "/mountain-info/trail-lift-report/"
   },
   "tags": [
     "New England",
@@ -20,5 +13,5 @@
     43.401806
   ],
   "twitter": "okemomountain",
-  "opening": "2013-11-13"
+  "opening": "2014-11-15"
 }
