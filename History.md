@@ -1,4 +1,12 @@
 
+3.6.10 / 2014-11-18
+==================
+
+ * fix Heavenly opening day
+ * update Beaver Creek for the new season
+ * update Northstar for new season
+ * update vail parser
+
 3.6.8 / 2014-11-09
 ==================
 
