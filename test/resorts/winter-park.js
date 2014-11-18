@@ -1,4 +1,4 @@
-var assert = require('assert');
+var should = require('should');
 var fs = require('fs');
 var parser = require('../../lib/lifts/parser');
 var parse = require('../../lib/resorts/winter-park');
@@ -37,7 +37,8 @@ describe('parse winter-park', function() {
         'Village Cabriolet': 'open',
         'Zephyr Express': 'open'
       };
-      assert.deepEqual(status, expected);
+      should.exist(status);
+      status.should.eql(expected);
       done(err);
     }));
   });
