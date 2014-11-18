@@ -1,8 +1,8 @@
 {
   "name": "Mount Hood",
   "url": {
-    "host": "http://www.skihood.com",
-    "pathname": ""
+    "host": "https://www.skihood.com",
+    "pathname": "/the-mountain/conditions"
   },
   "tags": [
     "Oregon"
