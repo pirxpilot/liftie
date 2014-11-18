@@ -1,4 +1,4 @@
-var assert = require('assert');
+var should = require('should');
 var fs = require('fs');
 var parser = require('../../lib/lifts/parser');
 var parse = require('../../lib/resorts/northstar');
@@ -11,28 +11,31 @@ describe('parse northstar', function() {
     stream.on('error', done);
     stream.pipe(parser(parse, function(err, status) {
       var expected = {
-        'Promised Land Express': 'open',
+        'Promised Land Express': 'closed',
         'Backside Express': 'open',
-        'Martis Camp Express': 'open',
-        'Lookout Link': 'open',
-        'Vista Express': 'open',
+        'Martis Camp Express': 'closed',
+        'Lookout Link': 'closed',
+        'Vista Express': 'closed',
         'Comstock Express': 'open',
-        'Rendezvous': 'open',
+        'Rendezvous': 'closed',
+        'Arrow Bahn Express (#17)': 'open',
         'Arrow Express': 'open',
-        'The Big Easy': 'open',
-        'Tahoe Zephyr Express': 'open',
-        'Ursa Major': 'open',
-        'Big Dipper': 'open',
+        'The Big Easy': 'closed',
+        'Tahoe Zephyr Express': 'closed',
+        'Ursa Major': 'closed',
+        'Big Dipper': 'closed',
         'Little Dipper': 'closed',
-        'Tubing Tow': 'open',
-        'Pegasus': 'open',
+        'Ritz Bahn': 'closed',
+        'Pegasus': 'closed',
         'Big Springs Express': 'open',
-        'Highlands Gondola': 'open',
-        'Village Express': 'open',
-        'Orion\'s Belt': 'open',
-        'Timberline Triple': 'closed'
+        'Highlands Gondola': 'closed',
+        'Village Express': 'closed',
+        'Orion\'s Belt': 'closed',
+        'Timberline Triple': 'closed',
+        'Z Lift': 'closed'
       };
-      assert.deepEqual(status, expected);
+      should.exist(status);
+      status.should.eql(expected);
       done(err);
     }));
   });
