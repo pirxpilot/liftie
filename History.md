@@ -1,4 +1,12 @@
 
+3.6.11 / 2014-11-18
+==================
+
+ * fix Mount Hood for the new season
+ * fix Brian Head for the new season
+ * fix Snowshoe Mountain for new season
+ * intrawest resorts: switch to common parser
+
 3.6.10 / 2014-11-18
 ==================
 
