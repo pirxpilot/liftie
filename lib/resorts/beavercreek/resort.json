@@ -2,13 +2,13 @@
   "name": "Beaver Creek",
   "url": {
     "host": "http://www.beavercreek.com",
-    "pathname": "/the-mountain/terrain-status.aspx"
+    "pathname": "/the-mountain/terrain-status.aspx#/Lifts"
   },
   "tags": [
     "Colorado",
     "Vail Epic"
   ],
-  "opening": "2013-11-27",
+  "opening": "2014-11-26",
   "ll": [
     -106.517899,
     39.600464
