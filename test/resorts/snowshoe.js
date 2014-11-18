@@ -1,4 +1,4 @@
-var assert = require('assert');
+var should = require('should');
 var fs = require('fs');
 var parser = require('../../lib/lifts/parser');
 var parse = require('../../lib/resorts/snowshoe');
@@ -11,22 +11,23 @@ describe('parse snnowshoe', function() {
     stream.on('error', done);
     stream.pipe(parser(parse, function(err, status) {
       var expected = {
-       'Flying Eagle': 'open',
-       'Cascade': 'open',
-       'Mountaineer': 'open',
-       'Cubb Run': 'open',
-       'Magic Carpet': 'open',
+       'Flying Eagle': 'closed',
+       'Cascade': 'closed',
+       'Mountaineer': 'closed',
+       'Cubb Run': 'closed',
+       'Magic Carpet': 'closed',
        'Tow Rope': 'closed',
-       'Ballhooter': 'open',
-       'Grabhammer': 'open',
-       'Skidder': 'open',
-       'Powder Monkey': 'open',
-       'Powderidge': 'open',
-       'Soaring Eagle Express': 'open',
-       'Western Express': 'open',
-       'Wonder Carpet': 'open'
+       'Ballhooter': 'closed',
+       'Grabhammer': 'closed',
+       'Skidder': 'closed',
+       'Powder Monkey': 'closed',
+       'Powderidge': 'closed',
+       'Soaring Eagle Express': 'closed',
+       'Western Express': 'closed',
+       'Wonder Carpet': 'closed'
       };
-      assert.deepEqual(status, expected);
+      should.exist(status);
+      status.should.eql(expected);
       done(err);
     }));
   });
