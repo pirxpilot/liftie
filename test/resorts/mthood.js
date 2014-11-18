@@ -1,4 +1,4 @@
-var assert = require('assert');
+var should = require('should');
 var fs = require('fs');
 var parser = require('../../lib/lifts/parser');
 var parse = require('../../lib/resorts/mthood');
@@ -11,20 +11,21 @@ describe('parse mthood', function() {
     stream.on('error', done);
     stream.pipe(parser(parse, function(err, status) {
       var expected = {
-        'Ballroom Carpet': 'hold',
-        'Buttercup': 'hold',
-        'Daisy': 'hold',
-        'Mt. Hood Express': 'hold',
-        'Shooting Star Express': 'hold',
-        'Hood River Express': 'hold',
-        'Cascade Express': 'hold',
-        'Heather Canyon': 'hold',
-        'Easy Rider': 'hold',
-        'Stadium Express': 'hold',
-        'Blue': 'hold',
-        'Vista Express': 'hold'
+        'Ballroom Carpet': 'closed',
+        'Buttercup': 'closed',
+        'Daisy': 'closed',
+        'Mt Hood Express': 'closed',
+        'Shooting Star Express': 'closed',
+        'Hood River Express': 'closed',
+        'Cascade Express': 'closed',
+        'Heather Canyon': 'closed',
+        'Easy Rider': 'closed',
+        'Stadium Express': 'closed',
+        'Blue': 'closed',
+        'Vista Express': 'closed'
       };
-      assert.deepEqual(status, expected);
+      should.exist(status);
+      status.should.eql(expected);
       done(err);
     }));
   });

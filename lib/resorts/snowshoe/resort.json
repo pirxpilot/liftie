@@ -2,7 +2,7 @@
   "name": "Snowshoe Mountain",
   "url": {
     "host": "http://www.snowshoemtn.com",
-    "pathname": "/the-mountain/slope-report/slope-report.aspx"
+    "pathname": "/the-mountain/trail-and-weather-report.aspx"
   },
   "tags": [
     "West Virginia"
