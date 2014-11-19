@@ -46,7 +46,7 @@ html(lang='en-US')
           span.ls-google-plus
         a.icon-alone(href='mailto:liftie@code42day.com' title='E-mail us')
           span.ls-email
-        slug = tag ? '/' + tag : ''
+        - var slug = tag ? '/' + tag : ''
         a.icon-alone(href='/stats#{slug}', title='Check statistics', rel='nofollow')
           span.ls-pie
     script(src=cachify('/scripts/liftie#{min}.js'), defer)
