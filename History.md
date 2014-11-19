@@ -1,4 +1,10 @@
 
+3.6.12 / 2014-11-19
+==================
+
+ * fix Bretton Woods for the new season
+ * fix Hunter for new season
+
 3.6.11 / 2014-11-18
 ==================
 
