@@ -1,4 +1,4 @@
-var assert = require('assert');
+var should = require('should');
 var fs = require('fs');
 var parser = require('../../lib/lifts/parser');
 var parse = require('../../lib/resorts/brettonwoods');
@@ -12,17 +12,18 @@ describe('parse brettonwoods', function() {
     stream.pipe(parser(parse, function(err, status) {
       var expected = {
         'B-Lift Double': 'closed',
-        'Rosebrook Summit Express': 'open',
-        'Bethlehem Express': 'open',
+        'Rosebrook Summit Express': 'closed',
+        'Bethlehem Express': 'closed',
         'Telegraph T-Bar': 'closed',
-        'Fabyan\'s Express Triple': 'open',
-        'West Mountain Express': 'open',
-        'Learning Center Quad': 'open',
-        'Wonder Carpet': 'open',
-        'Red Carpet': 'open',
+        'Fabyan\'s Express Triple': 'closed',
+        'West Mountain Express': 'closed',
+        'Learning Center Quad': 'closed',
+        'Wonder Carpet': 'closed',
+        'Red Carpet': 'closed',
         'Zephyr': 'open'
       };
-      assert.deepEqual(status, expected);
+      should.exist(status);
+      status.should.eql(expected);
       done(err);
     }));
   });
