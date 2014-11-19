@@ -1,4 +1,4 @@
-var assert = require('assert');
+var should = require('should');
 var fs = require('fs');
 var parser = require('../../lib/lifts/parser');
 var parse = require('../../lib/resorts/hunter');
@@ -11,18 +11,21 @@ describe('parse hunter', function() {
     stream.on('error', done);
     stream.pipe(parser(parse, function(err, status) {
       var expected = {
-        'Kaatskill Flyer': 'open',
-        'B-Lift': 'open',
-        'C-Lift': 'open',
+        'Kaatskill Flyer': 'closed',
+        'B-Lift': 'closed',
+        'C-Lift': 'closed',
         'D-Lift': 'closed',
         'E-Lift': 'closed',
-        'F-Lift': 'scheduled',
-        'G-Lift': 'open',
+        'F-Lift': 'closed',
+        'Carpet Lift': 'closed',
+        'Frosty Land Carpet 1': 'closed',
+        'Frosty Land Carpet 2': 'closed',
         'H-Lift': 'closed',
-        'Zephyr Express': 'open',
-        'Pony Lift': 'open'
+        'Zephyr Express': 'closed',
+        'Pony Lift': 'closed'
       };
-      assert.deepEqual(status, expected);
+      should.exist(status);
+      status.should.eql(expected);
       done(err);
     }));
   });

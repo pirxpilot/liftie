@@ -2,7 +2,7 @@
   "name": "Hunter Mountain",
   "url": {
     "host": "http://www.huntermtn.com",
-    "pathname": "/huntermtn/snow-report.aspx"
+    "pathname": "/winter/snow-report/"
   },
   "tags": [
     "New York"
@@ -11,5 +11,6 @@
     -74.20874,
     42.205029
   ],
-  "twitter": "huntermtn"
+  "twitter": "huntermtn",
+  "opening": "2014-11-21"
 }
