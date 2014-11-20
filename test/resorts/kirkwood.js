@@ -4,7 +4,7 @@ var parser = require('../../lib/lifts/parser');
 var parse = require('../../lib/resorts/kirkwood');
 
 /*global describe, it */
-describe('parse kirkwood', function() {
+describe.skip('parse kirkwood', function() {
 
   it('should return lift status', function(done) {
     var stream = fs.createReadStream(__dirname + '/example/kirkwood.html');

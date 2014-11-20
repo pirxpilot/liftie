@@ -4,7 +4,7 @@ var parser = require('../../lib/lifts/parser');
 var parse = require('../../lib/resorts/canyons');
 
 /*global describe, it */
-describe('parse canyons', function() {
+describe.skip('parse canyons', function() {
 
   it('should return lift status', function(done) {
     var stream = fs.createReadStream(__dirname + '/example/canyons.html');
