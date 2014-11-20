@@ -2,18 +2,14 @@
   "name": "Kirkwood",
   "url": {
     "host": "http://winter.kirkwood.com",
-    "pathname": "/site/mountain/snow-report"
-  },
-  "dataUrl": {
-    "host": "http://winter.kirkwood.com",
-    "pathname": "/site/snow-report/print"
+    "pathname": "/mountain/snow-and-weather-report.aspx"
   },
   "tags": [
     "California",
     "Lake Tahoe",
     "Vail Epic"
   ],
-  "opening": "2013-11-22",
+  "opening": "2014-11-22",
   "ll": [
     -120.066856,
     38.683231

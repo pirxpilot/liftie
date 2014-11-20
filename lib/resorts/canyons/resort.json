@@ -1,14 +1,14 @@
 {
   "name": "Canyons",
   "url": {
-    "host": "http://canyonsresort.com",
-    "pathname": "/lifts.html"
+    "host": "http://www.canyonsresort.com",
+    "pathname": "/mountain/snow-weather-report.aspx"
   },
   "tags": [
     "Utah",
     "Vail Epic"
   ],
-  "opening": "2013-11-29",
+  "opening": "2014-11-28",
   "ll": [
     -111.544472,
     40.687668
