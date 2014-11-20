@@ -1,4 +1,10 @@
 
+3.6.14 / 2014-11-20
+==================
+
+ * temporarily switch off canyons and kirkwood tests
+ * switch Canyouns and Kirkwood to vail parser
+
 3.6.13 / 2014-11-19
 ==================
 
