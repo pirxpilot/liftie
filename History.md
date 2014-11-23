@@ -1,4 +1,11 @@
 
+3.6.15 / 2014-11-23
+==================
+
+ * update resort URL for Canyons
+ * fix Kirkwood tests
+ * trim resort names in vail parser
+
 3.6.14 / 2014-11-20
 ==================
 
