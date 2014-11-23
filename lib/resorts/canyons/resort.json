@@ -2,7 +2,7 @@
   "name": "Canyons",
   "url": {
     "host": "http://www.canyonsresort.com",
-    "pathname": "/mountain/snow-weather-report.aspx"
+    "pathname": "/mountain/terrain-status.aspx#/Lifts"
   },
   "tags": [
     "Utah",

@@ -1,8 +1,8 @@
 {
   "name": "Kirkwood",
   "url": {
-    "host": "http://winter.kirkwood.com",
-    "pathname": "/mountain/snow-and-weather-report.aspx"
+    "host": "http://www.kirkwood.com",
+    "pathname": "/mountain/terrain-status.aspx#/Lifts"
   },
   "tags": [
     "California",
