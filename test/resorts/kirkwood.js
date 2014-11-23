@@ -4,7 +4,7 @@ var parser = require('../../lib/lifts/parser');
 var parse = require('../../lib/resorts/kirkwood');
 
 /*global describe, it */
-describe.skip('parse kirkwood', function() {
+describe('parse kirkwood', function() {
 
   it('should return lift status', function(done) {
     var stream = fs.createReadStream(__dirname + '/example/kirkwood.html');
@@ -17,12 +17,16 @@ describe.skip('parse kirkwood', function() {
         'Sunrise': 'closed',
         'Solitude': 'closed',
         'Cornice Express': 'closed',
-        'TC Express': 'closed',
+        'T.C. Express': 'closed',
         'Bunny': 'closed',
-        'Wagon Wheel': 'closed',
+        'No Name': 'closed',
         'The Reut': 'closed',
-        'Vista': 'closed',
-        'Covered Wagon': 'closed'
+        'The Wall': 'closed',
+        'Look Out Vista': 'closed',
+        'Covered Wagon 1': 'closed',
+        'Covered Wagon 2': 'closed',
+        'Magic Carpet 1': 'closed',
+        'Magic Carpet 2': 'closed'
       };
       should.exist(status);
       status.should.eql(expected);
