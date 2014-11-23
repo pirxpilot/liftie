@@ -1,4 +1,4 @@
-var assert = require('assert');
+var should = require('should');
 var fs = require('fs');
 var parser = require('../../lib/lifts/parser');
 var parseHeavenly = require('../../lib/resorts/heavenly');
@@ -21,7 +21,7 @@ describe('parse heavenly', function() {
         'Galaxy': 'open',
         'Gondola': 'open',
         'Groove': 'open',
-        'Gunbarrel Express ': 'open',
+        'Gunbarrel Express': 'open',
         'Mott Canyon': 'open',
         'North Bowl': 'open',
         'Olympic Express': 'open',
@@ -35,7 +35,8 @@ describe('parse heavenly', function() {
         'Tubing Lift (skiing and riding only)': 'open',
         'World Cup': 'closed'
       };
-      assert.deepEqual(status, expected);
+      should.exist(status);
+      status.should.eql(expected);
       done(err);
     }));
   });
