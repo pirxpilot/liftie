@@ -8,42 +8,7 @@ var path = require('path');
 var request = require('superagent');
 var template = require('lodash').template;
 
-program
-  .option('-j, --json <file>', 'JSON file with resort data', String)
-  .parse(process.argv);
-
 var fname;
-
-if (program.json) {
-  fname = path.resolve(program.json);
-  fs.readFile(fname, function (err, data) {
-    var conf;
-    if (err) {
-      console.error(err);
-      process.exit(-1);
-    }
-    conf = JSON.parse(data);
-    conf.id = path.basename(fname, '.json');
-    if (conf.url) {
-      conf.host = conf.url.host;
-      conf.pathname = conf.url.pathname;
-      if (conf.host && !conf.pathname) {
-        console.log('Resort website:', conf.host);
-      }
-    }
-    if (Array.isArray(conf.tags)) {
-      conf.tags = conf.tags.join(',');
-    }
-    if (Array.isArray(conf.ll)) {
-      conf.coordinates = conf.ll.join(',');
-    }
-    execute(conf);
-  });
-}
-else {
-  execute();
-}
-
 var schema = [
   {
     name: 'id',
@@ -92,6 +57,40 @@ var schema = [
     type: 'string'
   }
 ];
+
+program
+  .option('-j, --json <file>', 'JSON file with resort data', String)
+  .parse(process.argv);
+
+if (program.json) {
+  fname = path.resolve(program.json);
+  fs.readFile(fname, function (err, data) {
+    var conf;
+    if (err) {
+      console.error(err);
+      process.exit(-1);
+    }
+    conf = JSON.parse(data);
+    conf.id = path.basename(fname, '.json');
+    if (conf.url) {
+      conf.host = conf.url.host;
+      conf.pathname = conf.url.pathname;
+      if (conf.host && !conf.pathname) {
+        console.log('Resort website:', conf.host);
+      }
+    }
+    if (Array.isArray(conf.tags)) {
+      conf.tags = conf.tags.join(',');
+    }
+    if (Array.isArray(conf.ll)) {
+      conf.coordinates = conf.ll.join(',');
+    }
+    execute(conf);
+  });
+}
+else {
+  execute();
+}
 
 function generate(resort) {
   console.log('Generating files for %s', resort.name);
