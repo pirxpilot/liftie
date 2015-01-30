@@ -1,0 +1,21 @@
+{
+  "name": "Crans-Montana",
+  "url": {
+    "host": "http://www.crans-montana.ch",
+    "pathname": "/"
+  },
+  "dataUrl": {
+    "host": "http://opendata.crans-montana.ch",
+    "pathname": "/opendata.php?clef=cmtcodk54ca0000bdc39&mod=cablecar"
+  },
+  "tags": [
+    "Switzerland",
+    "Swiss Alps",
+    "Valais (CH)"
+  ],
+  "ll": [
+    46.3087,
+    7.4674
+  ],
+  "twitter": "cransmontana"
+}
