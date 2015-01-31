@@ -1,4 +1,11 @@
 
+3.6.17 / 2015-01-30
+==================
+
+ * fix Crans-Montana location
+ * add `Alps` tag
+ * fix Kitzbuehel link
+
 3.6.16 / 2015-01-30
 ==================
 
