@@ -1,4 +1,12 @@
 
+3.6.16 / 2015-01-30
+==================
+
+ * increase lift container max-height
+ * add European Resorts: courchevel, laplagne, lesmenuires, megeve, meribel
+ * fix generate script
+ * fix npm-shrinkwrap again
+
 3.6.15 / 2014-11-23
 ==================
 
