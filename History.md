@@ -1,4 +1,9 @@
 
+3.6.18 / 2015-01-31
+==================
+
+ * hack: work around for invalid opensnow API response
+
 3.6.17 / 2015-01-30
 ==================
 
