@@ -2,7 +2,7 @@
   "name": "La Plagne",
   "url": {
     "host": "http://www.la-plagne.com",
-    "pathname": "/"
+    "pathname": "/fr/hiver/actus/bulletin-neige/bulletin-meteo-complet.html"
   },
   "dataUrl": {
     "host": "http://www.skiplan.com",
@@ -14,5 +14,6 @@
   ],
   "ll": [
     6.6772, 45.5064
-  ]
+  ],
+  "twitter": "laplagne"
 }
