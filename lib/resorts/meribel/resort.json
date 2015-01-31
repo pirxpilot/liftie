@@ -2,7 +2,7 @@
   "name": "Meribel",
   "url": {
     "host": "http://www.meribel.net",
-    "pathname": ""
+    "pathname": "/ski-2011/outils/ouvertures-pistes.html"
   },
   "dataUrl": {
     "host": "http://www.skiplan.com",
@@ -14,5 +14,6 @@
   ],
   "ll": [
     6.5655, 45.3967
-  ]
+  ],
+  "twitter": "meribel3vallees"
 }

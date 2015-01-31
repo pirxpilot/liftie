@@ -2,7 +2,7 @@
   "name": "Les Menuires",
   "url": {
     "host": "http://www.lesmenuires.com",
-    "pathname": "/"
+    "pathname": "/pistes"
   },
   "dataUrl": {
     "host": "http://www.skiplan.com",
@@ -14,5 +14,6 @@
   ],
   "ll": [
     6.5375, 45.3236
-  ]
+  ],
+  "twitter": "lesmenuires"
 }
