@@ -2,7 +2,7 @@
   "name": "Crans-Montana",
   "url": {
     "host": "http://www.crans-montana.ch",
-    "pathname": "/"
+    "pathname": "/hiver/fr/etat_des_pistes_et_installations/"
   },
   "dataUrl": {
     "host": "http://opendata.crans-montana.ch",
