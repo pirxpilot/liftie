@@ -1,4 +1,11 @@
 
+3.6.19 / 2015-02-01
+==================
+
+ * fix parser for Crans Montana
+ * updated url for french resorts
+ * fix whereshouldiski links
+
 3.6.18 / 2015-01-31
 ==================
 
