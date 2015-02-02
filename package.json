@@ -30,7 +30,7 @@
     "uglify-js": "~2",
     "commander": "~2",
     "component-autoboot": "~0",
-    "should": "~2",
+    "should": "~4",
     "prompt": "~0",
     "make-jshint": "~1",
     "make-component-shrinkwrap": "~1"

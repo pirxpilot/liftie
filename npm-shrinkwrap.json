@@ -2267,8 +2267,22 @@
       "from": "qs@~1"
     },
     "should": {
-      "version": "2.1.1",
-      "from": "should@~2"
+      "version": "4.6.3",
+      "from": "should@4.6.3",
+      "dependencies": {
+        "should-equal": {
+          "version": "0.3.1",
+          "from": "should-equal@0.3.1"
+        },
+        "should-format": {
+          "version": "0.0.7",
+          "from": "should-format@0.0.7"
+        },
+        "should-type": {
+          "version": "0.0.4",
+          "from": "should-type@0.0.4"
+        }
+      }
     },
     "stylus": {
       "version": "0.47.3",
