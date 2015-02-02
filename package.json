@@ -15,7 +15,7 @@
     "htmlparser2": "~3.2",
     "nib": "~1",
     "connect-cachify-static": "~1",
-    "connect-gzip-static": "~0",
+    "connect-gzip-static": "~1",
     "lodash": "~1",
     "debug": "~0",
     "dirty": "~0",
