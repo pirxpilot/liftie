@@ -175,8 +175,14 @@
       }
     },
     "debug": {
-      "version": "0.8.1",
-      "from": "debug@~0"
+      "version": "2.1.1",
+      "from": "debug@2.1.1",
+      "dependencies": {
+        "ms": {
+          "version": "0.6.2",
+          "from": "ms@0.6.2"
+        }
+      }
     },
     "dirty": {
       "version": "0.9.9",
@@ -974,7 +980,7 @@
     },
     "make-component-shrinkwrap": {
       "version": "1.0.0",
-      "from": "make-component-shrinkwrap@~1",
+      "from": "make-component-shrinkwrap@",
       "dependencies": {
         "component": {
           "version": "0.19.9",
@@ -992,7 +998,7 @@
             },
             "mkdirp": {
               "version": "0.3.5",
-              "from": "mkdirp@0.3.x"
+              "from": "mkdirp@~0.3.4"
             },
             "superagent": {
               "version": "0.15.7",
@@ -1077,7 +1083,7 @@
               }
             },
             "batch": {
-              "version": "0.5.1",
+              "version": "0.5.2",
               "from": "batch@~0.5.0"
             },
             "win-fork": {
@@ -1149,7 +1155,7 @@
                   }
                 },
                 "pac-proxy-agent": {
-                  "version": "0.1.2",
+                  "version": "0.2.0",
                   "from": "pac-proxy-agent@0",
                   "dependencies": {
                     "agent-base": {
@@ -1161,7 +1167,7 @@
                       "from": "extend@~1.2.1"
                     },
                     "pac-resolver": {
-                      "version": "1.2.2",
+                      "version": "1.2.4",
                       "from": "pac-resolver@~1.2.1",
                       "dependencies": {
                         "co": {
@@ -1169,17 +1175,17 @@
                           "from": "co@~3.0.6"
                         },
                         "netmask": {
-                          "version": "1.0.4",
+                          "version": "1.0.5",
                           "from": "netmask@~1.0.4"
                         },
                         "degenerator": {
-                          "version": "0.0.3",
-                          "from": "degenerator@~0.0.3",
+                          "version": "1.0.0",
+                          "from": "degenerator@~1.0.0",
                           "dependencies": {
                             "esprima": {
                               "version": "1.1.0-dev-harmony",
                               "from": "esprima@git://github.com/ariya/esprima.git#harmony",
-                              "resolved": "git://github.com/ariya/esprima.git#c8d226bf709353ccff9d9064fc3f864382ac9338"
+                              "resolved": "git://github.com/ariya/esprima.git#9263985490ee08e556e6c89b9565f761a61092f8"
                             },
                             "escodegen": {
                               "version": "1.3.3",
@@ -1198,7 +1204,7 @@
                                   "from": "esprima@~1.1.1"
                                 },
                                 "source-map": {
-                                  "version": "0.1.38",
+                                  "version": "0.1.43",
                                   "from": "source-map@~0.1.33",
                                   "dependencies": {
                                     "amdefine": {
@@ -1214,7 +1220,7 @@
                               "from": "ast-types@~0.3.22",
                               "dependencies": {
                                 "private": {
-                                  "version": "0.1.5",
+                                  "version": "0.1.6",
                                   "from": "private@~0.1.2"
                                 }
                               }
@@ -1232,7 +1238,7 @@
                             "esprima": {
                               "version": "1.1.0-dev-harmony",
                               "from": "esprima@git://github.com/ariya/esprima.git#harmony",
-                              "resolved": "git://github.com/ariya/esprima.git#c8d226bf709353ccff9d9064fc3f864382ac9338"
+                              "resolved": "git://github.com/ariya/esprima.git#9263985490ee08e556e6c89b9565f761a61092f8"
                             },
                             "recast": {
                               "version": "0.6.10",
@@ -1241,7 +1247,7 @@
                                 "esprima": {
                                   "version": "1.1.0-dev-harmony",
                                   "from": "esprima@git+https://github.com/ariya/esprima.git#harmony",
-                                  "resolved": "git+https://github.com/ariya/esprima.git#c8d226bf709353ccff9d9064fc3f864382ac9338"
+                                  "resolved": "git+https://github.com/ariya/esprima.git#9263985490ee08e556e6c89b9565f761a61092f8"
                                 },
                                 "source-map": {
                                   "version": "0.1.32",
@@ -1258,13 +1264,19 @@
                                   "from": "cls@~0.1.3"
                                 },
                                 "ast-types": {
-                                  "version": "0.4.9",
-                                  "from": "ast-types@~0.4.7"
+                                  "version": "0.4.13",
+                                  "from": "ast-types@~0.4.7",
+                                  "dependencies": {
+                                    "depd": {
+                                      "version": "1.0.0",
+                                      "from": "depd@~1.0.0"
+                                    }
+                                  }
                                 }
                               }
                             },
                             "private": {
-                              "version": "0.1.5",
+                              "version": "0.1.6",
                               "from": "private@~0.1.5"
                             },
                             "defs": {
@@ -1332,7 +1344,7 @@
                           "from": "data-uri-to-buffer@0"
                         },
                         "ftp": {
-                          "version": "0.3.7",
+                          "version": "0.3.8",
                           "from": "ftp@~0.3.5",
                           "dependencies": {
                             "xregexp": {
@@ -1340,7 +1352,7 @@
                               "from": "xregexp@2.0.0"
                             },
                             "readable-stream": {
-                              "version": "1.1.13-1",
+                              "version": "1.1.13",
                               "from": "readable-stream@1.1.x",
                               "dependencies": {
                                 "core-util-is": {
@@ -1352,7 +1364,7 @@
                                   "from": "isarray@0.0.1"
                                 },
                                 "string_decoder": {
-                                  "version": "0.10.25-1",
+                                  "version": "0.10.31",
                                   "from": "string_decoder@~0.10.x"
                                 },
                                 "inherits": {
@@ -1363,12 +1375,16 @@
                             }
                           }
                         },
+                        "debug": {
+                          "version": "0.8.1",
+                          "from": "debug@0"
+                        },
                         "file-uri-to-path": {
                           "version": "0.0.2",
                           "from": "file-uri-to-path@0"
                         },
                         "readable-stream": {
-                          "version": "1.0.27-1",
+                          "version": "1.0.33",
                           "from": "readable-stream@~1.0.26-4",
                           "dependencies": {
                             "core-util-is": {
@@ -1380,7 +1396,7 @@
                               "from": "isarray@0.0.1"
                             },
                             "string_decoder": {
-                              "version": "0.10.25-1",
+                              "version": "0.10.31",
                               "from": "string_decoder@~0.10.x"
                             },
                             "inherits": {
@@ -1429,12 +1445,12 @@
                 },
                 "lru-cache": {
                   "version": "2.5.0",
-                  "from": "lru-cache@2"
+                  "from": "lru-cache@~2.5.0"
                 }
               }
             },
             "superagent-proxy": {
-              "version": "0.3.0",
+              "version": "0.3.1",
               "from": "superagent-proxy@~0.3.0",
               "dependencies": {
                 "debug": {
@@ -1488,12 +1504,12 @@
           "from": "component-shrinkwrap@~0",
           "dependencies": {
             "batch": {
-              "version": "0.5.1",
+              "version": "0.5.2",
               "from": "batch@~0.5.0"
             },
             "component-package": {
               "version": "0.0.4",
-              "from": "component-package@~0",
+              "from": "component-package@~0.0.4",
               "dependencies": {
                 "mkdirp": {
                   "version": "0.3.4",
@@ -1608,7 +1624,7 @@
                       }
                     },
                     "pac-proxy-agent": {
-                      "version": "0.1.2",
+                      "version": "0.2.0",
                       "from": "pac-proxy-agent@0",
                       "dependencies": {
                         "agent-base": {
@@ -1620,7 +1636,7 @@
                           "from": "extend@~1.2.1"
                         },
                         "pac-resolver": {
-                          "version": "1.2.2",
+                          "version": "1.2.4",
                           "from": "pac-resolver@~1.2.1",
                           "dependencies": {
                             "co": {
@@ -1628,17 +1644,17 @@
                               "from": "co@~3.0.6"
                             },
                             "netmask": {
-                              "version": "1.0.4",
+                              "version": "1.0.5",
                               "from": "netmask@~1.0.4"
                             },
                             "degenerator": {
-                              "version": "0.0.3",
-                              "from": "degenerator@~0.0.3",
+                              "version": "1.0.0",
+                              "from": "degenerator@~1.0.0",
                               "dependencies": {
                                 "esprima": {
                                   "version": "1.1.0-dev-harmony",
                                   "from": "esprima@git://github.com/ariya/esprima.git#harmony",
-                                  "resolved": "git://github.com/ariya/esprima.git#c8d226bf709353ccff9d9064fc3f864382ac9338"
+                                  "resolved": "git://github.com/ariya/esprima.git#9263985490ee08e556e6c89b9565f761a61092f8"
                                 },
                                 "escodegen": {
                                   "version": "1.3.3",
@@ -1657,7 +1673,7 @@
                                       "from": "esprima@~1.1.1"
                                     },
                                     "source-map": {
-                                      "version": "0.1.38",
+                                      "version": "0.1.43",
                                       "from": "source-map@~0.1.33",
                                       "dependencies": {
                                         "amdefine": {
@@ -1673,7 +1689,7 @@
                                   "from": "ast-types@~0.3.22",
                                   "dependencies": {
                                     "private": {
-                                      "version": "0.1.5",
+                                      "version": "0.1.6",
                                       "from": "private@~0.1.2"
                                     }
                                   }
@@ -1691,7 +1707,7 @@
                                 "esprima": {
                                   "version": "1.1.0-dev-harmony",
                                   "from": "esprima@git://github.com/ariya/esprima.git#harmony",
-                                  "resolved": "git://github.com/ariya/esprima.git#c8d226bf709353ccff9d9064fc3f864382ac9338"
+                                  "resolved": "git://github.com/ariya/esprima.git#9263985490ee08e556e6c89b9565f761a61092f8"
                                 },
                                 "recast": {
                                   "version": "0.6.10",
@@ -1700,7 +1716,7 @@
                                     "esprima": {
                                       "version": "1.1.0-dev-harmony",
                                       "from": "esprima@git+https://github.com/ariya/esprima.git#harmony",
-                                      "resolved": "git+https://github.com/ariya/esprima.git#c8d226bf709353ccff9d9064fc3f864382ac9338"
+                                      "resolved": "git+https://github.com/ariya/esprima.git#9263985490ee08e556e6c89b9565f761a61092f8"
                                     },
                                     "source-map": {
                                       "version": "0.1.32",
@@ -1717,13 +1733,19 @@
                                       "from": "cls@~0.1.3"
                                     },
                                     "ast-types": {
-                                      "version": "0.4.9",
-                                      "from": "ast-types@~0.4.7"
+                                      "version": "0.4.13",
+                                      "from": "ast-types@~0.4.7",
+                                      "dependencies": {
+                                        "depd": {
+                                          "version": "1.0.0",
+                                          "from": "depd@~1.0.0"
+                                        }
+                                      }
                                     }
                                   }
                                 },
                                 "private": {
-                                  "version": "0.1.5",
+                                  "version": "0.1.6",
                                   "from": "private@~0.1.5"
                                 },
                                 "defs": {
@@ -1791,7 +1813,7 @@
                               "from": "data-uri-to-buffer@0"
                             },
                             "ftp": {
-                              "version": "0.3.7",
+                              "version": "0.3.8",
                               "from": "ftp@~0.3.5",
                               "dependencies": {
                                 "xregexp": {
@@ -1799,7 +1821,7 @@
                                   "from": "xregexp@2.0.0"
                                 },
                                 "readable-stream": {
-                                  "version": "1.1.13-1",
+                                  "version": "1.1.13",
                                   "from": "readable-stream@1.1.x",
                                   "dependencies": {
                                     "core-util-is": {
@@ -1811,7 +1833,7 @@
                                       "from": "isarray@0.0.1"
                                     },
                                     "string_decoder": {
-                                      "version": "0.10.25-1",
+                                      "version": "0.10.31",
                                       "from": "string_decoder@~0.10.x"
                                     },
                                     "inherits": {
@@ -1822,12 +1844,16 @@
                                 }
                               }
                             },
+                            "debug": {
+                              "version": "0.8.1",
+                              "from": "debug@0"
+                            },
                             "file-uri-to-path": {
                               "version": "0.0.2",
                               "from": "file-uri-to-path@0"
                             },
                             "readable-stream": {
-                              "version": "1.0.27-1",
+                              "version": "1.0.33",
                               "from": "readable-stream@~1.0.26-4",
                               "dependencies": {
                                 "core-util-is": {
@@ -1839,7 +1865,7 @@
                                   "from": "isarray@0.0.1"
                                 },
                                 "string_decoder": {
-                                  "version": "0.10.25-1",
+                                  "version": "0.10.31",
                                   "from": "string_decoder@~0.10.x"
                                 },
                                 "inherits": {
@@ -1888,12 +1914,12 @@
                     },
                     "lru-cache": {
                       "version": "2.5.0",
-                      "from": "lru-cache@2"
+                      "from": "lru-cache@~2.5.0"
                     }
                   }
                 },
                 "superagent-proxy": {
-                  "version": "0.3.0",
+                  "version": "0.3.1",
                   "from": "superagent-proxy@~0.3.0",
                   "dependencies": {
                     "debug": {

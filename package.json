@@ -17,7 +17,7 @@
     "connect-cachify-static": "~1",
     "connect-gzip-static": "~1",
     "lodash": "~1",
-    "debug": "~0",
+    "debug": "~2",
     "dirty": "~0",
     "async": "~0",
     "limiter": "~1",
