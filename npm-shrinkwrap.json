@@ -43,11 +43,21 @@
       "from": "component-autoboot@~0"
     },
     "connect-cachify-static": {
-      "version": "0.2.0",
-      "from": "connect-cachify-static@~0",
+      "version": "1.0.0",
+      "from": "connect-cachify-static@1.0.0",
       "dependencies": {
+        "debug": {
+          "version": "2.1.1",
+          "from": "debug@~2",
+          "dependencies": {
+            "ms": {
+              "version": "0.6.2",
+              "from": "ms@0.6.2"
+            }
+          }
+        },
         "find": {
-          "version": "0.1.5",
+          "version": "0.1.7",
           "from": "find@~0",
           "dependencies": {
             "traverse-chain": {
@@ -56,9 +66,13 @@
             }
           }
         },
+        "on-headers": {
+          "version": "1.0.0",
+          "from": "on-headers@^1.0.0"
+        },
         "parseurl": {
-          "version": "1.2.0",
-          "from": "parseurl@~1.2.0"
+          "version": "1.3.0",
+          "from": "parseurl@~1"
         }
       }
     },

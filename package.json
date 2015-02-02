@@ -14,7 +14,7 @@
     "CSSselect": "~0",
     "htmlparser2": "~3.2",
     "nib": "~1",
-    "connect-cachify-static": "~0",
+    "connect-cachify-static": "~1",
     "connect-gzip-static": "~0",
     "lodash": "~1",
     "debug": "~0",
