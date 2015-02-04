@@ -1,0 +1,20 @@
+{
+  "name": "Verbier",
+  "url": {
+    "host": "http://www.verbier.ch",
+    "pathname": "/mountain-report"
+  },
+  "dataUrl": {
+    "host": "http://www.infosnow.ch",
+    "pathname": "/~apgmontagne/?lang=en&pid=31&tab=web-wi"
+  },
+  "tags": [
+    "Alps",
+    "Switzerland"
+  ],
+  "ll": [
+    7.233,
+    46.0935
+  ],
+  "twitter": "verbier4vallees"
+}
