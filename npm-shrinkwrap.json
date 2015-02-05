@@ -2266,6 +2266,10 @@
         }
       }
     },
+    "qs": {
+      "version": "1.2.2",
+      "from": "qs@~1"
+    },
     "should": {
       "version": "4.6.3",
       "from": "should@4.6.3",
