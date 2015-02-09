@@ -2449,6 +2449,10 @@
           "from": "uglify-to-browserify@~1.0.0"
         }
       }
+    },
+    "entities": {
+      "version": "1.1.1",
+      "from": "entities@"
     }
   }
 }

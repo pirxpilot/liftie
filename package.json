@@ -7,22 +7,23 @@
     "install": "make dist"
   },
   "dependencies": {
-    "express": "~3",
-    "jade": "*",
-    "stylus": "> 0.38",
-    "superagent": "~0",
     "CSSselect": "~0",
-    "htmlparser2": "~3.2",
-    "nib": "~1",
+    "async": "~0",
     "connect-cachify-static": "~1",
     "connect-gzip-static": "~1",
-    "lodash": "~1",
     "debug": "~2",
     "dirty": "~0",
-    "async": "~0",
+    "entities": "~1",
+    "express": "~3",
+    "htmlparser2": "~3.2",
+    "jade": "*",
     "limiter": "~1",
+    "lodash": "~1",
     "moment": "~2",
-    "stylus-font-face": "~0"
+    "nib": "~1",
+    "stylus": "> 0.38",
+    "stylus-font-face": "~0",
+    "superagent": "~0"
   },
   "devDependencies": {
     "mocha": "~2",
