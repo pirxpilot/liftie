@@ -1,4 +1,23 @@
 
+3.7.0 / 2015-02-08
+==================
+
+ * add /api/meta end point for listing all resorts
+ * replace in-house entities module with external lib
+ * add verbier resort
+ * add infosnow module for swiss resorts
+ * upgrade qs 1.2.1 -> 1.2.2
+ * commander 2.3.0 → 2.6.0
+ * should 2.1.1 → 4.6.3
+ * mocha 1.21.4 → 2.1.0
+ * debug 0.8.1 → 2.1.1
+ * express 3.16.3 → 3.19.2
+ * connect-gzip-static 0.3.1 → 1.0.0
+ * connect-cachify-static 0.2.0 → 1.0.0
+ * jade 1.5.0 → 1.9.1
+ * fix laplagne
+ * fix laplagne
+
 3.6.19 / 2015-02-01
 ==================
 
