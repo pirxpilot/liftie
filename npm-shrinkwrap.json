@@ -1,6 +1,6 @@
 {
   "name": "liftie",
-  "version": "3.5.16",
+  "version": "3.7.2",
   "dependencies": {
     "CSSselect": {
       "version": "0.7.0",
