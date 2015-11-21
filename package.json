@@ -27,12 +27,13 @@
     "superagent": "~0"
   },
   "devDependencies": {
-    "mocha": "~2",
-    "uglify-js": "~2",
+    "browserify": "^12.0.1",
     "commander": "~2",
-    "should": "~4",
+    "make-jshint": "~1",
+    "mocha": "~2",
     "prompt": "~0",
-    "make-jshint": "~1"
+    "should": "~4",
+    "uglify-js": "~2"
   },
   "main": "app.js",
   "directories": {
