@@ -2102,6 +2102,131 @@
           "version": "4.0.1"
         }
       }
+    },
+    "domready": {
+      "version": "1.0.8"
+    },
+    "dataset": {
+      "version": "0.3.1"
+    },
+    "code42day-load": {
+      "version": "1.0.1"
+    },
+    "code42day-ua": {
+      "version": "1.1.1"
+    },
+    "debounce": {
+      "version": "1.0.0",
+      "dependencies": {
+        "date-now": {
+          "version": "1.0.1"
+        }
+      }
+    },
+    "component-event": {
+      "version": "0.1.4"
+    },
+    "component-classes": {
+      "version": "1.2.4"
+    },
+    "component-indexof": {
+      "version": "0.0.3"
+    },
+    "component-cookie": {
+      "version": "1.1.2"
+    },
+    "yields-k": {
+      "version": "0.7.2",
+      "dependencies": {
+        "component-bind": {
+          "version": "1.0.0"
+        },
+        "component-os": {
+          "version": "0.0.1"
+        },
+        "yields-k-sequence": {
+          "version": "0.1.0"
+        },
+        "yields-keycode": {
+          "version": "1.1.0"
+        }
+      }
+    },
+    "code42day-rating": {
+      "version": "1.0.1"
+    },
+    "el-component": {
+      "version": "1.0.0"
+    },
+    "swipe": {
+      "version": "1.7.7",
+      "dependencies": {
+        "component-emitter": {
+          "version": "1.2.0"
+        },
+        "component-events": {
+          "version": "1.0.9",
+          "dependencies": {
+            "component-delegate": {
+              "version": "0.2.3",
+              "dependencies": {
+                "component-closest": {
+                  "version": "1.0.0",
+                  "dependencies": {
+                    "component-matches-selector": {
+                      "version": "0.1.5",
+                      "dependencies": {
+                        "component-query": {
+                          "version": "0.0.3"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "has-translate3d": {
+          "version": "0.0.3"
+        },
+        "touchaction-property": {
+          "version": "0.0.1"
+        },
+        "transform-property": {
+          "version": "0.0.1"
+        },
+        "transitionend-property": {
+          "version": "0.0.2"
+        },
+        "computed-style-component": {
+          "version": "0.1.0"
+        }
+      }
+    },
+    "code42day-pager": {
+      "version": "0.2.1",
+      "dependencies": {
+        "el-component": {
+          "version": "0.1.1"
+        },
+        "component-emitter": {
+          "version": "1.2.0"
+        }
+      }
+    },
+    "tweet-html": {
+      "version": "1.1.1",
+      "dependencies": {
+        "yields-ago": {
+          "version": "0.1.0",
+          "dependencies": {
+            "approximate-time": {
+              "version": "0.0.1"
+            }
+          }
+        }
+      }
     }
   }
 }
