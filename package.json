@@ -30,11 +30,9 @@
     "mocha": "~2",
     "uglify-js": "~2",
     "commander": "~2",
-    "component-autoboot": "~0",
     "should": "~4",
     "prompt": "~0",
-    "make-jshint": "~1",
-    "make-component-shrinkwrap": "~1"
+    "make-jshint": "~1"
   },
   "main": "app.js",
   "directories": {

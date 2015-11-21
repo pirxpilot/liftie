@@ -9,7 +9,6 @@ LINT_SRC = app.js bin/generate lib test
 all: lint test build
 
 include ./node_modules/make-jshint/index.mk
-include ./node_modules/make-component-shrinkwrap/index.mk
 
 # common rules
 
