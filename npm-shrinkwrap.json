@@ -2124,9 +2124,6 @@
     "swipe": {
       "version": "1.7.7",
       "dependencies": {
-        "component-emitter": {
-          "version": "1.2.0"
-        },
         "component-events": {
           "version": "1.0.9",
           "dependencies": {
@@ -2172,9 +2169,6 @@
       "dependencies": {
         "el-component": {
           "version": "0.1.1"
-        },
-        "component-emitter": {
-          "version": "1.2.0"
         }
       }
     },
@@ -2193,6 +2187,9 @@
     },
     "chart.js": {
       "version": "1.0.2"
+    },
+    "component-emitter": {
+      "version": "1.2.0"
     }
   }
 }
