@@ -1405,16 +1405,16 @@
       "from": "stylus-font-face@~0"
     },
     "superagent": {
-      "version": "0.18.2",
+      "version": "1.4.0",
       "dependencies": {
         "qs": {
-          "version": "0.6.6"
+          "version": "2.3.3"
         },
         "formidable": {
           "version": "1.0.14"
         },
         "mime": {
-          "version": "1.2.11"
+          "version": "1.3.4"
         },
         "component-emitter": {
           "version": "1.1.2"
@@ -1425,14 +1425,6 @@
         "cookiejar": {
           "version": "2.0.1"
         },
-        "debug": {
-          "version": "1.0.4",
-          "dependencies": {
-            "ms": {
-              "version": "0.6.2"
-            }
-          }
-        },
         "reduce-component": {
           "version": "1.0.1"
         },
@@ -1440,13 +1432,21 @@
           "version": "1.2.1"
         },
         "form-data": {
-          "version": "0.1.3",
+          "version": "0.2.0",
           "dependencies": {
             "combined-stream": {
               "version": "0.0.7",
               "dependencies": {
                 "delayed-stream": {
                   "version": "0.0.5"
+                }
+              }
+            },
+            "mime-types": {
+              "version": "2.0.14",
+              "dependencies": {
+                "mime-db": {
+                  "version": "1.12.0"
                 }
               }
             }
