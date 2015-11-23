@@ -9,6 +9,7 @@
   "dependencies": {
     "CSSselect": "~0",
     "async": "~0",
+    "chart.js": "^1.0.2",
     "code42day-load": "^1.0.1",
     "code42day-pager": "^0.2.1",
     "code42day-rating": "^1.0.1",
@@ -50,6 +51,7 @@
     "uglify-js": "~2"
   },
   "browser": {
+    "chart": "chart.js",
     "classes": "component-classes",
     "cookie": "component-cookie",
     "el": "el-component",
