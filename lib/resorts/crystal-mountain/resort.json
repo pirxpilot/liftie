@@ -2,7 +2,7 @@
   "name": "Crystal Mountain",
   "url": {
     "host": "http://crystalmountainresort.com",
-    "pathname": "/the-mountain/about/current-conditions/"
+    "pathname": "/the-mountain/lift-mountain-status/"
   },
   "tags": [
     "Washington"
