@@ -1327,36 +1327,89 @@
       }
     },
     "uglify-js": {
-      "version": "2.4.15",
-      "from": "uglify-js@~2",
+      "version": "2.6.1",
       "dependencies": {
         "async": {
-          "version": "0.2.10",
-          "from": "async@~0.2.9"
+          "version": "0.2.10"
         },
         "source-map": {
-          "version": "0.1.34",
-          "from": "source-map@0.1.34",
-          "dependencies": {
-            "amdefine": {
-              "version": "0.1.0",
-              "from": "amdefine@>=0.0.4"
-            }
-          }
-        },
-        "optimist": {
-          "version": "0.3.7",
-          "from": "optimist@~0.3.5",
-          "dependencies": {
-            "wordwrap": {
-              "version": "0.0.2",
-              "from": "wordwrap@~0.0.2"
-            }
-          }
+          "version": "0.5.3"
         },
         "uglify-to-browserify": {
-          "version": "1.0.2",
-          "from": "uglify-to-browserify@~1.0.0"
+          "version": "1.0.2"
+        },
+        "yargs": {
+          "version": "3.10.0",
+          "dependencies": {
+            "camelcase": {
+              "version": "1.2.1"
+            },
+            "cliui": {
+              "version": "2.1.0",
+              "dependencies": {
+                "center-align": {
+                  "version": "0.1.2",
+                  "dependencies": {
+                    "align-text": {
+                      "version": "0.1.3",
+                      "dependencies": {
+                        "kind-of": {
+                          "version": "2.0.1",
+                          "dependencies": {
+                            "is-buffer": {
+                              "version": "1.1.0"
+                            }
+                          }
+                        },
+                        "longest": {
+                          "version": "1.0.1"
+                        },
+                        "repeat-string": {
+                          "version": "1.5.2"
+                        }
+                      }
+                    },
+                    "lazy-cache": {
+                      "version": "0.2.4"
+                    }
+                  }
+                },
+                "right-align": {
+                  "version": "0.1.3",
+                  "dependencies": {
+                    "align-text": {
+                      "version": "0.1.3",
+                      "dependencies": {
+                        "kind-of": {
+                          "version": "2.0.1",
+                          "dependencies": {
+                            "is-buffer": {
+                              "version": "1.1.0"
+                            }
+                          }
+                        },
+                        "longest": {
+                          "version": "1.0.1"
+                        },
+                        "repeat-string": {
+                          "version": "1.5.2"
+                        }
+                      }
+                    }
+                  }
+                },
+                "wordwrap": {
+                  "version": "0.0.2"
+                }
+              }
+            },
+            "decamelize": {
+              "version": "1.1.1"
+            },
+            "window-size": {
+              "version": "0.1.0"
+            }
+          }
         }
       }
     },
