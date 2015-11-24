@@ -1,7 +1,7 @@
 extends layout
 
 mixin stats($stats)
-  states = ['open', 'hold', 'scheduled', 'closed']
+  - var states = ['open', 'hold', 'scheduled', 'closed'];
   .summary-color-bar
     for key in states
       div(class='#{key}', style='width:#{ $stats.percentage[key] }%;')
@@ -13,7 +13,7 @@ mixin stats($stats)
 
 block content
   .content.content-1
-    size = '294px'
+    - var size = '294px';
     section.panel.stats.open
       header
         a(href=sectionLink)= sectionTitle
