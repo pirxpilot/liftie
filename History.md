@@ -1,4 +1,14 @@
 
+3.8.0 / 2015-11-23
+==================
+
+ * jade 1.9.1 → 1.11.0
+ * superagent 0.18.2 → 1.4.0
+ * fix template issues on sitemap
+ * fix template issues on stats page
+ * switch to browserify build
+ * remove component related build tools
+
 3.7.2 / 2015-06-17
 ==================
 
