@@ -28,7 +28,7 @@
     "entities": "~1",
     "express": "~3",
     "htmlparser2": "~3.2",
-    "jade": "*",
+    "jade": "^1.11.0",
     "limiter": "~1",
     "lodash": "~1",
     "moment": "~2",
