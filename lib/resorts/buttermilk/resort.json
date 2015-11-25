@@ -1,14 +1,20 @@
 {
   "name": "Buttermilk",
   "url": {
-    "host": "http://www.aspensnowmass.com",
-    "pathname": "/buttermilk/grooming"
+    "host": "https://www.aspensnowmass.com",
+    "pathname": "/our-mountains/buttermilk/lift-status"
+  },
+  "api": {
+    "host": "https://www.aspensnowmass.com",
+    "pathname": "/aspensnowmass/liftstatus/feed",
+    "query": {
+      "mountain": "Buttermilk"
+    }
   },
   "tags": [
     "Colorado",
     "Aspen"
   ],
-  "opening": "2013-12-14",
   "ll": [
     -106.860474,
     39.206944

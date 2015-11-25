@@ -1,0 +1,85 @@
+{
+  "lastUpdated": "10:04 AM Nov 25, 2015",
+  "liftStatuses": [
+    {
+      "status": "Open",
+      "liftName": "Ajax Express",
+      "type": "Quad HS",
+      "area": "Upper Mountain",
+      "hoursOfOperation": "9:00 AM - 3:30 PM",
+      "elevationGainFeet": "1,102",
+      "elevationGainMeters": "336",
+      "time": "5"
+    },
+    {
+      "status": "Open",
+      "liftName": "Gent's Ridge",
+      "type": "Quad Fixed",
+      "area": "Upper Mountain",
+      "hoursOfOperation": "9:00 AM - 3:30 PM",
+      "elevationGainFeet": "1,103",
+      "elevationGainMeters": "336",
+      "time": "13"
+    },
+    {
+      "status": "Closed",
+      "liftName": "Ruthies",
+      "type": "Triple Fixed",
+      "area": "Upper Mountain",
+      "hoursOfOperation": "9:00 AM - 3:30 PM",
+      "elevationGainFeet": "1,364",
+      "elevationGainMeters": "416",
+      "time": "5"
+    },
+    {
+      "status": "Closed",
+      "liftName": "F.I.S.",
+      "type": "Double Fixed",
+      "area": "Upper Mountain",
+      "hoursOfOperation": "9:00 AM - 3:45 PM",
+      "elevationGainFeet": "591",
+      "elevationGainMeters": "180",
+      "time": "4"
+    },
+    {
+      "status": "Open",
+      "liftName": "Silver Queen Gondola",
+      "type": "Gondola 6",
+      "area": "Lower Mountain",
+      "hoursOfOperation": "9:00 AM - 3:30 PM",
+      "elevationGainFeet": "3,267",
+      "elevationGainMeters": "996",
+      "time": "14"
+    },
+    {
+      "status": "Closed",
+      "liftName": "Bell Mountain",
+      "type": "Double Fixed",
+      "area": "Lower Mountain",
+      "hoursOfOperation": "Varies - ",
+      "elevationGainFeet": "2,150",
+      "elevationGainMeters": "655",
+      "time": "13"
+    },
+    {
+      "status": "Closed",
+      "liftName": "Little Nell",
+      "type": "Quad Fixed",
+      "area": "Lower Mountain",
+      "hoursOfOperation": "Varies - ",
+      "elevationGainFeet": "550",
+      "elevationGainMeters": "168",
+      "time": "5"
+    },
+    {
+      "status": "Closed",
+      "liftName": "Shadow Mountain",
+      "type": "Double Fixed",
+      "area": "Lower Mountain",
+      "hoursOfOperation": "9:00 AM - 3:30 PM",
+      "elevationGainFeet": "1,392",
+      "elevationGainMeters": "424",
+      "time": "7"
+    }
+  ]
+}

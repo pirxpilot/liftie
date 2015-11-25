@@ -1,0 +1,175 @@
+{
+  "lastUpdated": "10:04 AM Nov 25, 2015",
+  "liftStatuses": [
+    {
+      "status": "Closed",
+      "liftName": "Elk Camp",
+      "type": "Quad HS",
+      "area": "Elk Camp",
+      "hoursOfOperation": "9:00 am - 3:30 pm - ",
+      "elevationGainFeet": "1,368",
+      "elevationGainMeters": "417",
+      "time": "8.7"
+    },
+    {
+      "status": "Open",
+      "liftName": "Elk Camp Gondola",
+      "type": "Gondola 8",
+      "area": "Elk Camp",
+      "hoursOfOperation": "9:00 am - 3:30 pm - ",
+      "elevationGainFeet": "1,386",
+      "elevationGainMeters": "422",
+      "time": "8.7"
+    },
+    {
+      "status": "Open",
+      "liftName": "Meadows Carpet",
+      "type": "Surface",
+      "area": "Elk Camp",
+      "hoursOfOperation": "9:00 AM - 3:30 PM",
+      "elevationGainFeet": "55",
+      "elevationGainMeters": "17",
+      "time": "3.7"
+    },
+    {
+      "status": "Open",
+      "liftName": "Meadows Lift",
+      "type": "Quad Fixed",
+      "area": "Elk Camp",
+      "hoursOfOperation": "9:00 AM - 3:30 PM",
+      "elevationGainFeet": "125",
+      "elevationGainMeters": "38",
+      "time": "4.3"
+    },
+    {
+      "status": "Closed",
+      "liftName": "Two Creeks",
+      "type": "Quad HS",
+      "area": "Two Creeks",
+      "hoursOfOperation": "9:00 am - 3:30 pm - ",
+      "elevationGainFeet": "1,711",
+      "elevationGainMeters": "522",
+      "time": "8.9"
+    },
+    {
+      "status": "Closed",
+      "liftName": "Alpine Springs",
+      "type": "Quad HS",
+      "area": "Alpine Springs",
+      "hoursOfOperation": "9:00 am - 3:00 pm - ",
+      "elevationGainFeet": "1,529",
+      "elevationGainMeters": "466",
+      "time": "8"
+    },
+    {
+      "status": "Closed",
+      "liftName": "High Alpine",
+      "type": "Double Fixed",
+      "area": "Alpine Springs",
+      "hoursOfOperation": "9:00 am - 3:30 pm - ",
+      "elevationGainFeet": "1,667",
+      "elevationGainMeters": "508",
+      "time": "6"
+    },
+    {
+      "status": "Closed",
+      "liftName": "Assay Hill",
+      "type": "Quad Fixed",
+      "area": "Alpine Springs",
+      "hoursOfOperation": "9:00 am - 3:30 pm - ",
+      "elevationGainFeet": "210",
+      "elevationGainMeters": "64",
+      "time": "6"
+    },
+    {
+      "status": "Closed",
+      "liftName": "Sheer Bliss",
+      "type": "Quad HS",
+      "area": "Alpine Springs",
+      "hoursOfOperation": "9:00 am - 3:30 pm - ",
+      "elevationGainFeet": "2,212",
+      "elevationGainMeters": "674",
+      "time": "9.2"
+    },
+    {
+      "status": "Open",
+      "liftName": "Big Burn",
+      "type": "Quad HS",
+      "area": "Big Burn",
+      "hoursOfOperation": "9:00 am - 3:30 pm - ",
+      "elevationGainFeet": "1,993",
+      "elevationGainMeters": "607",
+      "time": "8"
+    },
+    {
+      "status": "Closed",
+      "liftName": "Cirque Surface Lift",
+      "type": "Surface",
+      "area": "Big Burn",
+      "hoursOfOperation": "Variable - ",
+      "elevationGainFeet": "806",
+      "elevationGainMeters": "246",
+      "time": "5"
+    },
+    {
+      "status": "Closed",
+      "liftName": "Coney Glade",
+      "type": "Quad HS",
+      "area": "Sam's Knob",
+      "hoursOfOperation": "9:00 am - 3:30 pm - ",
+      "elevationGainFeet": "1,224",
+      "elevationGainMeters": "373",
+      "time": "5"
+    },
+    {
+      "status": "Open",
+      "liftName": "Sam's Knob",
+      "type": "Quad HS",
+      "area": "Sam's Knob",
+      "hoursOfOperation": "9:00 AM - 3:30 PM",
+      "elevationGainFeet": "1,200",
+      "elevationGainMeters": "366",
+      "time": "4"
+    },
+    {
+      "status": "Open",
+      "liftName": "Treehouse Carpet",
+      "type": "Surface",
+      "area": "Sam's Knob",
+      "hoursOfOperation": "9:00 am - 3:30 pm - ",
+      "elevationGainFeet": "5",
+      "elevationGainMeters": "2",
+      "time": ".6"
+    },
+    {
+      "status": "Open",
+      "liftName": "Village Express",
+      "type": "Six HS",
+      "area": "Sam's Knob",
+      "hoursOfOperation": "8:30 am - 3:30 pm - ",
+      "elevationGainFeet": "2,713",
+      "elevationGainMeters": "827",
+      "time": "9.6"
+    },
+    {
+      "status": "Open",
+      "liftName": "Sky Cab",
+      "type": "Gondola 6",
+      "area": "Sam's Knob",
+      "hoursOfOperation": "8:00 AM - 4:00 PM",
+      "elevationGainFeet": "160",
+      "elevationGainMeters": "49",
+      "time": "1.1"
+    },
+    {
+      "status": "Closed",
+      "liftName": "Campground",
+      "type": "Double Fixed",
+      "area": "Campground",
+      "hoursOfOperation": "9:00 am - 3:30 pm - ",
+      "elevationGainFeet": "1,427",
+      "elevationGainMeters": "435",
+      "time": "8.5"
+    }
+  ]
+}

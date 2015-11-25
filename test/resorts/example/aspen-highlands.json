@@ -1,0 +1,55 @@
+{
+  "lastUpdated": "10:04 AM Nov 25, 2015",
+  "liftStatuses": [
+    {
+      "status": "Closed",
+      "liftName": "Deep Temerity",
+      "type": "Triple Fixed",
+      "area": "Temerity",
+      "hoursOfOperation": "9:00am - 3:30pm - ",
+      "elevationGainFeet": "1,690",
+      "elevationGainMeters": "515",
+      "time": "7.3"
+    },
+    {
+      "status": "Closed",
+      "liftName": "Loge Peak",
+      "type": "Quad HS",
+      "area": "Upper Mountain",
+      "hoursOfOperation": "9:00am - 3:30pm - ",
+      "elevationGainFeet": "1,800",
+      "elevationGainMeters": "549",
+      "time": "8"
+    },
+    {
+      "status": "Closed",
+      "liftName": "Cloud Nine",
+      "type": "Quad HS",
+      "area": "Mid Mountain",
+      "hoursOfOperation": "9:00am - 3:30pm - ",
+      "elevationGainFeet": "1,116",
+      "elevationGainMeters": "340",
+      "time": "5"
+    },
+    {
+      "status": "Closed",
+      "liftName": "Exhibition",
+      "type": "Quad HS",
+      "area": "Lower Mountain",
+      "hoursOfOperation": "9:00am - 3:30pm - ",
+      "elevationGainFeet": "",
+      "elevationGainMeters": "",
+      "time": ""
+    },
+    {
+      "status": "Closed",
+      "liftName": "Thunderbowl",
+      "type": "Triple Fixed",
+      "area": "Lower Mountain",
+      "hoursOfOperation": "12:00pm - 3:30pm - ",
+      "elevationGainFeet": "1,478",
+      "elevationGainMeters": "450",
+      "time": "8.5"
+    }
+  ]
+}
