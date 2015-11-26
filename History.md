@@ -1,4 +1,14 @@
 
+3.8.2 / 2015-11-25
+==================
+
+ * fix Peak resorts
+ * fix Pico
+ * fix Mt. Rose
+ * fix Loveland
+ * fix Alta
+ * fix Aspen
+
 3.8.1 / 2015-11-23
 ==================
 
