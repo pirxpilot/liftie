@@ -1,4 +1,3 @@
-var assert = require('assert');
 var fs = require('fs');
 var parser = require('../../lib/lifts/parser');
 var parse = require('../../lib/resorts/alta');
@@ -12,14 +11,14 @@ describe('parse alta', function() {
     stream.pipe(parser(parse, function(err, status) {
       var expected = {
         Albion: 'closed',
-        Cecret: 'open',
+        Cecret: 'closed',
         Collins: 'open',
-        Sugarloaf: 'open',
+        Sugarloaf: 'closed',
         Sunnyside: 'open',
-        Supreme: 'open',
+        Supreme: 'closed',
         Wildcat: 'open'
       };
-      assert.deepEqual(status, expected);
+      status.should.eql(expected);
       done(err);
     }));
   });
