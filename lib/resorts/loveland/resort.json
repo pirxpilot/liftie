@@ -1,8 +1,8 @@
 {
   "name": "Loveland",
   "url": {
-    "host": "http://www.skiloveland.com",
-    "pathname": "/themountain/reports/runstats.aspx"
+    "host": "http://skiloveland.com",
+    "pathname": "/trail-lift-report/"
   },
   "tags": [
     "Colorado"
