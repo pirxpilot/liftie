@@ -1,4 +1,3 @@
-var assert = require('assert');
 var fs = require('fs');
 var parser = require('../../lib/lifts/parser');
 var parse = require('../../lib/resorts/attitash');
@@ -11,19 +10,19 @@ describe('parse attitash', function() {
     stream.on('error', done);
     stream.pipe(parser(parse, function(err, status) {
       var expected = {
-        'Learning Center Triple': 'open',
-        'Snowbelt': 'open',
-        'Abenaki Quad': 'open',
-        'Kachina Triple': 'open',
-        'Flying Bear': 'open',
-        'SnowTow': 'closed',
-        'Top Notch Double': 'closed',
-        'Flying Yankee': 'open',
-        'Summit Triple': 'open',
-        'East Double': 'open',
-        'West Double': 'closed'
+        'L-1 Top Notch Double': 'closed',
+        'L-10 Snowtow': 'closed',
+        'L-11 Kachina Triple': 'closed',
+        'L-12 Flying Bear D-Quad': 'closed',
+        'L-2 Flying Yankee D-Quad': 'closed',
+        'L-3 Summit Triple': 'closed',
+        'L-4 East Borvig Double': 'closed',
+        'L-5 West Borvig Double': 'closed',
+        'L-6 Learning Center Triple': 'closed',
+        'L-7 Snowbelt': 'closed',
+        'L-8 Abenaki Quad': 'closed'
       };
-      assert.deepEqual(status, expected);
+      status.should.eql(expected);
       done(err);
     }));
   });

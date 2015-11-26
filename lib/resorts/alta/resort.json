@@ -2,12 +2,11 @@
   "name": "Alta",
   "url": {
     "host": "http://www.alta.com",
-    "pathname": "/pages/report.php"
+    "pathname": "/conditions/daily-mountain-report/snow-report"
   },
   "tags": [
     "Utah"
   ],
-  "opening": "2013-11-22",
   "ll": [
     -111.63726,
     40.583828

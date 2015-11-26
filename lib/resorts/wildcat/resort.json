@@ -2,14 +2,13 @@
   "name": "Wildcat",
   "url": {
     "host": "http://www.skiwildcat.com",
-    "pathname": "/snow-report.html"
+    "pathname": "/the-mountain/snow-report/"
   },
   "tags": [
     "New Hampshire",
     "New England",
     "Peak Resorts"
   ],
-  "opening": "2013-11-23",
   "ll": [
     -71.236725,
     44.264626

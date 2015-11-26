@@ -1,0 +1,55 @@
+{
+  "lastUpdated": "10:04 AM Nov 25, 2015",
+  "liftStatuses": [
+    {
+      "status": "Closed",
+      "liftName": "Summit Express",
+      "type": "Quad Fixed",
+      "area": "Main",
+      "hoursOfOperation": "9am - 3pm - ",
+      "elevationGainFeet": "1,834",
+      "elevationGainMeters": "559",
+      "time": "9.5"
+    },
+    {
+      "status": "Closed",
+      "liftName": "West Buttermilk Express",
+      "type": "Quad HS",
+      "area": "Main",
+      "hoursOfOperation": "9am - 3pm - ",
+      "elevationGainFeet": "1,180",
+      "elevationGainMeters": "360",
+      "time": "5.7"
+    },
+    {
+      "status": "Closed",
+      "liftName": "Tiehack Express",
+      "type": "Quad HS",
+      "area": "Main",
+      "hoursOfOperation": "9am - 3pm - ",
+      "elevationGainFeet": "1,660",
+      "elevationGainMeters": "506",
+      "time": "6.8"
+    },
+    {
+      "status": "Closed",
+      "liftName": "Panda Carpet",
+      "type": "Surface",
+      "area": "Main",
+      "hoursOfOperation": " - ",
+      "elevationGainFeet": "",
+      "elevationGainMeters": "",
+      "time": ""
+    },
+    {
+      "status": "Closed",
+      "liftName": "Mitey Carpet",
+      "type": "Surface",
+      "area": "Main",
+      "hoursOfOperation": " - ",
+      "elevationGainFeet": "",
+      "elevationGainMeters": "",
+      "time": ""
+    }
+  ]
+}

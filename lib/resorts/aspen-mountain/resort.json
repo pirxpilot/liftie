@@ -1,21 +1,20 @@
 {
   "name": "Aspen Mountain",
   "url": {
-    "host": "http://www.aspensnowmass.com",
-    "pathname": "/aspen-mountain/grooming"
+    "host": "https://www.aspensnowmass.com",
+    "pathname": "/our-mountains/aspen-mountain/lift-status"
   },
-  "dataUrl": {
-    "host": "http://us4.resorts-interactive.com",
-    "pathname": "/vicomap/getMapDetails.php",
+  "api": {
+    "host": "https://www.aspensnowmass.com",
+    "pathname": "/aspensnowmass/liftstatus/feed",
     "query": {
-      "mapID": 1622
+      "mountain": "AspenMountain"
     }
   },
   "tags": [
     "Colorado",
     "Aspen"
   ],
-  "opening": "2013-11-16",
   "ll": [
     -106.819275,
     39.186714
