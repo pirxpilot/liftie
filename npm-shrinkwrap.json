@@ -1196,20 +1196,16 @@
       "from": "qs@~1"
     },
     "should": {
-      "version": "4.6.3",
-      "from": "should@4.6.3",
+      "version": "7.1.1",
       "dependencies": {
         "should-equal": {
-          "version": "0.3.1",
-          "from": "should-equal@0.3.1"
+          "version": "0.5.0"
         },
         "should-format": {
-          "version": "0.0.7",
-          "from": "should-format@0.0.7"
+          "version": "0.3.1"
         },
         "should-type": {
-          "version": "0.0.4",
-          "from": "should-type@0.0.4"
+          "version": "0.2.0"
         }
       }
     },
