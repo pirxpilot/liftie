@@ -1,4 +1,14 @@
 
+3.8.3 / 2015-11-27
+==================
+
+ * fix Crested Butte
+ * fix Sugarbush
+ * fix Wildcat url
+ * fix Mt Bachelor
+ * mocha 2.1.0 → 2.3.4
+ * should 4.6.3 → 7.1.1
+
 3.8.2 / 2015-11-25
 ==================
 
