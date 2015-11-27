@@ -1,4 +1,3 @@
-var assert = require('assert');
 var fs = require('fs');
 var parser = require('../../lib/lifts/parser');
 var parse = require('../../lib/resorts/sugarbush');
@@ -11,24 +10,24 @@ describe('parse sugarbush', function() {
     stream.on('error', done);
     stream.pipe(parser(parse, function(err, status) {
       var expected = {
-       'Valley House Double': 'closed',
-       'Super Bravo Express Quad': 'hold',
-       'Heaven\'s Gate Triple': 'hold',
-       'Castle Rock Double': 'open',
-       'North Lynx Triple': 'open',
-       'Gate House Express': 'open',
-       'Village Double': 'open',
-       'Sunkid': 'open',
-       'Welcome Mat': 'open',
-       'Summit Quad': 'open',
-       'North Ridge Express Quad': 'open',
-       'Green Mountain Express Quad': 'open',
+       'Valley House Quad': 'closed',
+       'Super Bravo Express Quad': 'scheduled',
+       'Heaven\'s Gate Triple': 'scheduled',
+       'Castlerock Double': 'closed',
+       'North Lynx Triple': 'closed',
+       'Gate House Express Quad': 'closed',
+       'Village Double': 'closed',
+       'Schoolhouse Lift': 'closed',
+       'Welcome Mat': 'closed',
+       'Summit Quad': 'closed',
+       'North Ridge Express Quad': 'closed',
+       'Green Mountain Express Quad': 'closed',
        'Inverness Quad': 'closed',
-       'Sunny D Double': 'open',
+       'Sunshine Double': 'closed',
        'Tommy\'s Toy': 'closed',
-       'Slide Brook Express': 'open'
+       'Slide Brook Express Quad': 'closed'
       };
-      assert.deepEqual(status, expected);
+      status.should.eql(expected);
       done(err);
     }));
   });
