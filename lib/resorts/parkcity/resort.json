@@ -2,10 +2,11 @@
   "name": "Park City",
   "url": {
     "host": "http://www.parkcitymountain.com",
-    "pathname": "/site/mountain-info/conditions/snow-report/snow_report"
+    "pathname": "/mountain/terrain-status.aspx"
   },
   "tags": [
-    "Utah"
+    "Utah",
+    "Vail Epic"
   ],
   "opening": "2013-11-23",
   "ll": [
