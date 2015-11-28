@@ -1,4 +1,12 @@
 
+3.8.4 / 2015-11-28
+==================
+
+ * remove Canyons as its own resort (merged with Park City)
+ * fix Park City - it joined the Vail mothership
+ * fix Winterplace
+ * fix BrianHead
+
 3.8.3 / 2015-11-27
 ==================
 
