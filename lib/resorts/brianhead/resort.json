@@ -2,13 +2,12 @@
   "name": "Brian Head",
   "url": {
     "host": "http://brianhead.com",
-    "pathname": "/winter/conditions/"
+    "pathname": "/Current-Weather"
   },
   "tags": [
     "Utah"
   ],
   "twitter": "brianheadresort",
-  "opening": "2013-11-15",
   "ll": [
     -112.848129,
     37.692753
