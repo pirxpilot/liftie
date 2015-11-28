@@ -11,16 +11,16 @@ describe('parse winterplace', function() {
     stream.on('error', done);
     stream.pipe(parser(parse, function(err, status) {
       var expected = {
-        '#1 Double Chairlift': 'open',
+        '#1 Double Chairlift': 'closed',
         '#2 Triple Chairlift': 'closed',
-        '#3 Triple Chairlift': 'open',
-        '#4 Triple Chairlift': 'open',
+        '#3 Triple Chairlift': 'closed',
+        '#4 Triple Chairlift': 'closed',
         '#5 Double Chairlift': 'closed',
-        '#6 Carpet Lift': 'open',
+        '#6 Carpet Lift': 'closed',
         '#7 Carpet Lift': 'closed',
         '#8 Quad Chairlift': 'closed',
         '#9 Quad Chairlift': 'closed',
-        '#10 Tubing Carpet Lift': 'open',
+        '#10 Tubing Carpet Lift': 'closed',
         '#11 Tubing Carpet Lift': 'closed'
       };
       assert.deepEqual(status, expected);

@@ -11,12 +11,12 @@ describe('parse brianhead', function() {
     stream.on('error', done);
     stream.pipe(parser(parse, function(err, status) {
       var expected = {
-        'Wildflower': 'closed',
-        'Giant Steps': 'closed',
-        'Blackfoot': 'closed',
-        'Navajo': 'closed',
+        'Wild Flower': 'closed',
+        'Giant Steps Express': 'open',
+        'Blackfoot': 'open',
+        'Navajo': 'open',
         'Roulette': 'closed',
-        'Pioneer': 'closed',
+        'Pioneer': 'open',
         'The Dunes': 'closed',
         'Alpen Glow': 'closed'
       };
