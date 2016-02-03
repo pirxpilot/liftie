@@ -1,7 +1,7 @@
 {
   "name": "liftie",
   "description": "Clean, simple, easy to read, fast ski resort lift status",
-  "version": "3.7.2",
+  "version": "3.8.4",
   "scripts": {
     "test": "make lint test",
     "install": "make dist"
@@ -9,14 +9,26 @@
   "dependencies": {
     "CSSselect": "~0",
     "async": "~0",
+    "chart.js": "^1.0.2",
+    "code42day-load": "^1.0.1",
+    "code42day-pager": "^0.2.1",
+    "code42day-rating": "^1.0.1",
+    "code42day-ua": "^1.1.1",
+    "component-classes": "^1.2.4",
+    "component-cookie": "^1.1.2",
+    "component-event": "^0.1.4",
     "connect-cachify-static": "~1",
     "connect-gzip-static": "~1",
+    "dataset": "^0.3.1",
+    "debounce": "^1.0.0",
     "debug": "~2",
     "dirty": "~0",
+    "domready": "^1.0.8",
+    "el-component": "^1.0.0",
     "entities": "~1",
     "express": "~3",
     "htmlparser2": "~3.2",
-    "jade": "*",
+    "jade": "^1.11.0",
     "limiter": "~1",
     "lodash": "~1",
     "moment": "~2",
@@ -24,17 +36,31 @@
     "qs": "~1",
     "stylus": "> 0.38",
     "stylus-font-face": "~0",
-    "superagent": "~0"
+    "superagent": "^1.4.0",
+    "swipe": "^1.7.7",
+    "tweet-html": "^1.1.1",
+    "yields-k": "^0.7.2"
   },
   "devDependencies": {
-    "mocha": "~2",
-    "uglify-js": "~2",
+    "browserify": "^12.0.1",
     "commander": "~2",
-    "component-autoboot": "~0",
-    "should": "~4",
-    "prompt": "~0",
     "make-jshint": "~1",
-    "make-component-shrinkwrap": "~1"
+    "mocha": "^2.3.4",
+    "prompt": "~0",
+    "should": "^7.1.1",
+    "uglify-js": "~2"
+  },
+  "browser": {
+    "chart": "chart.js",
+    "classes": "component-classes",
+    "cookie": "component-cookie",
+    "el": "el-component",
+    "event": "component-event",
+    "k": "yields-k",
+    "load": "code42day-load",
+    "pager": "code42day-pager",
+    "rating": "code42day-rating",
+    "ua": "code42day-ua"
   },
   "main": "app.js",
   "directories": {

@@ -11,14 +11,16 @@ describe('parse loveland', function() {
     stream.on('error', done);
     stream.pipe(parser(parse, function(err, status) {
       var expected = {
-        'Chair 2 Midway Only': 'open',
-        'Chair 9': 'closed',
-        'Chair 8': 'closed',
-        'Chair 7': 'closed',
-        'Chair 6': 'open',
-        'Chair 4': 'closed',
-        'Chair 3': 'closed',
-        'Chair 1': 'open'
+        'Lift 1': 'open',
+        'Lift 2': 'open',
+        'Lift 3': 'closed',
+        'Lift 4': 'closed',
+        'Lift 6': 'open',
+        'Lift 7': 'open',
+        'Lift 8': 'closed',
+        'Lift 9': 'closed',
+        'Magic Carpet': 'closed',
+        'PTARMIGAN LIFT': 'open'
       };
       should.exist(status);
       status.should.eql(expected);

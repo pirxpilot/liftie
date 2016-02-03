@@ -1,14 +1,20 @@
 {
   "name": "Aspen Highlands",
   "url": {
-    "host": "http://www.aspensnowmass.com",
-    "pathname": "/aspen-highlands/grooming"
+    "host": "https://www.aspensnowmass.com",
+    "pathname": "/our-mountains/aspen-highlands/lift-status"
+  },
+  "api": {
+    "host": "https://www.aspensnowmass.com",
+    "pathname": "/aspensnowmass/liftstatus/feed",
+    "query": {
+      "mountain": "AspenHighlands"
+    }
   },
   "tags": [
     "Colorado",
     "Aspen"
   ],
-  "opening": "2013-12-14",
   "ll": [
     -106.855904,
     39.182522

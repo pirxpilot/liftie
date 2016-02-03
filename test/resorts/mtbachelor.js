@@ -1,4 +1,3 @@
-var assert = require('assert');
 var fs = require('fs');
 var parser = require('../../lib/lifts/parser');
 var parse = require('../../lib/resorts/mtbachelor');
@@ -11,18 +10,19 @@ describe('parse mtbachelor', function() {
     stream.on('error', done);
     stream.pipe(parser(parse, function(err, status) {
       var expected = {
-        'Pine Marten Express': 'open',
-        'Skyliner Express': 'open',
-        'Sunrise Express': 'open',
-        'Sunshine Accelerator': 'open',
+        'Pine Marten Express': 'closed',
+        'Skyliner Express': 'closed',
+        'Sunrise Express': 'closed',
+        'Sunshine Accelerator': 'closed',
         'Carrousel Chair': 'closed',
-        'Rainbow Chair': 'open',
+        'Rainbow Chair': 'closed',
         'Red Chair': 'closed',
-        'Northwest Express': 'open',
-        'Outback Express': 'open',
-        'Summit Express': 'open'
+        'Northwest Express': 'closed',
+        'Outback Express': 'closed',
+        'Summit Express': 'closed',
+        'Hike Zone': 'closed'
       };
-      assert.deepEqual(status, expected);
+      status.should.eql(expected);
       done(err);
     }));
   });

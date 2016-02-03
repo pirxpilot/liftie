@@ -2,7 +2,7 @@
   "name": "Mount Bachelor",
   "url": {
     "host": "http://www.mtbachelor.com",
-    "pathname": "/winter/mountain/snow_report"
+    "pathname": "/conditions-report/"
   },
   "tags": [
     "Oregon"
@@ -11,6 +11,5 @@
     -121.67865,
     44.003559
   ],
-  "twitter": "mtbachelor",
-  "opening": "2013-11-23"
+  "twitter": "mtbachelor"
 }

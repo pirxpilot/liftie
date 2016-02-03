@@ -1,4 +1,47 @@
 
+3.8.4 / 2015-11-28
+==================
+
+ * remove Canyons as its own resort (merged with Park City)
+ * fix Park City - it joined the Vail mothership
+ * fix Winterplace
+ * fix BrianHead
+
+3.8.3 / 2015-11-27
+==================
+
+ * fix Crested Butte
+ * fix Sugarbush
+ * fix Wildcat url
+ * fix Mt Bachelor
+ * mocha 2.1.0 → 2.3.4
+ * should 4.6.3 → 7.1.1
+
+3.8.2 / 2015-11-25
+==================
+
+ * fix Peak resorts
+ * fix Pico
+ * fix Mt. Rose
+ * fix Loveland
+ * fix Alta
+ * fix Aspen
+
+3.8.1 / 2015-11-23
+==================
+
+ * uglify-js 2.4.15 → 2.6.1
+
+3.8.0 / 2015-11-23
+==================
+
+ * jade 1.9.1 → 1.11.0
+ * superagent 0.18.2 → 1.4.0
+ * fix template issues on sitemap
+ * fix template issues on stats page
+ * switch to browserify build
+ * remove component related build tools
+
 3.7.2 / 2015-06-17
 ==================
 

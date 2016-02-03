@@ -1,7 +1,6 @@
 node_modules
 public/stylesheets/style.css*
 public/scripts/
-components
 .project
 .settings
 .DS_Store

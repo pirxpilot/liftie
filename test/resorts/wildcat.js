@@ -1,4 +1,3 @@
-var assert = require('assert');
 var fs = require('fs');
 var parser = require('../../lib/lifts/parser');
 var parse = require('../../lib/resorts/wildcat');
@@ -11,13 +10,13 @@ describe('parse wildcat', function() {
     stream.on('error', done);
     stream.pipe(parser(parse, function(err, status) {
       var expected = {
-        'Bobcat Triple': 'open',
-        'Snowcat Triple': 'open',
-        'Snowbelt': 'open',
+        'Bobcat Triple': 'closed',
+        'Snowcat Triple': 'closed',
+        'Snowbelt': 'closed',
         'Tomcat Triple': 'closed',
-        'Wildcat Express Quad': 'hold'
+        'Wildcat Express Quad': 'open'
       };
-      assert.deepEqual(status, expected);
+      status.should.eql(expected);
       done(err);
     }));
   });

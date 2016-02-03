@@ -1,21 +1,20 @@
 {
   "name": "Snowmass",
   "url": {
-    "host": "http://www.aspensnowmass.com",
-    "pathname": "/snowmass/grooming"
+    "host": "https://www.aspensnowmass.com",
+    "pathname": "/our-mountains/snowmass/lift-status"
   },
-  "dataUrl": {
-    "host": "http://us4.resorts-interactive.com",
-    "pathname": "/vicomap/getMapDetails.php",
+  "api": {
+    "host": "https://www.aspensnowmass.com",
+    "pathname": "/aspensnowmass/liftstatus/feed",
     "query": {
-      "mapID": 1632
+      "mountain": "Snowmass"
     }
   },
   "tags": [
     "Colorado",
     "Aspen"
   ],
-  "opening": "2013-11-23",
   "ll": [
     -106.949158,
     39.198471
