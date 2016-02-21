@@ -20,6 +20,7 @@ html(lang='en-US')
     meta(property='og:title', content=title)
     +description('og:description')
 
+    link(rel='dns-prefetch', href='//cdn.polyfill.io')
     link(rel='stylesheet', href=cachify('/stylesheets/style.css'))
     link(rel='publisher', href='https://plus.google.com/107555641794612264233')
   body(data-ga-property-id=settings.gaPropertyId)
@@ -49,4 +50,5 @@ html(lang='en-US')
         - var slug = tag ? '/' + tag : ''
         a.icon-alone(href='/stats#{slug}', title='Check statistics', rel='nofollow')
           span.ls-pie
+    script(src='https://cdn.polyfill.io/v2/polyfill#{min}.js?features=fetch', defer)
     script(src=cachify('/scripts/liftie#{min}.js'), defer)

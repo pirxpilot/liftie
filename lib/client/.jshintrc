@@ -2,5 +2,6 @@
   "undef": true,
   "unused": true,
   "laxbreak": true,
-  "node": true
+  "browser": true,
+  "browserify": true
 }
