@@ -19,7 +19,7 @@ app.locals({
     image: siteUrl + '/img/snowflake-256.png'
   }
 });
-app.set('port', process.env.PORT || 3000);
+app.set('port', process.env.PORT || 3001);
 app.set('views', __dirname + '/views');
 app.set('view engine', 'jade');
 

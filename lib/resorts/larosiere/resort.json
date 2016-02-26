@@ -1,0 +1,18 @@
+{
+  "name": "La Rosiere",
+  "url": {
+    "host": "http://www.skilarosiere1850.com",
+    "pathname": "/GB_ouverture-des-pistes.html"
+  },
+  "tags": [
+    "La Rosiere",
+    "La Thuile",
+    "France",
+    "Espace san Bernardo"
+  ],
+  "ll": [
+    47.9081,
+    6.6258
+  ],
+  "twitter": "DSRLaRosiere"
+}
