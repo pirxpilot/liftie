@@ -16,7 +16,7 @@ app.locals({
   decorateAbout: function() {},
   siteUrl: siteUrl,
   og: {
-    image: siteUrl + '/img/snowflake-256.png'
+    image: siteUrl + '/img/snowflake-256.png' 
   }
 });
 app.set('port', process.env.PORT || 3000);
