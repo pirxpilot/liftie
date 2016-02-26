@@ -14,7 +14,7 @@ describe('parse larosiere', function() {
         'TK Clarines 1': 'open',
         'TK Clarines 2': 'open',
         'TK Lièvre blanc 1': 'open',
-        'TK Lièvre blanc 1': 'open',
+        'TK Lièvre blanc 2': 'open',
         'TK Manessier': 'open',
         'TK Poletta': 'open',
         'TK Sevoliere': 'open',
