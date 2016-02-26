@@ -11,23 +11,23 @@ describe('parse larosiere', function() {
     stream.on('error', done);
     stream.pipe(parser(parse, function(err, status) {
       var expected = {
-        'TK Clarines 1': 'open',
-        'TK Clarines 2': 'open',
-        'TK Lièvre blanc 1': 'open',
-        'TK Lièvre blanc 2': 'open',
-        'TK Manessier': 'open',
-        'TK Poletta': 'open',
-        'TK Sevoliere': 'open',
-        'ES Ecudets': 'open',
-        'TSD Roches noires': 'open',
-        'TK Dahu': 'open',
-        'TK Plan du repos': 'open',
-        'TS Petit bois': 'open',
-        'TSD Les Eucherts': 'open',
-        'TK Bellecombe': 'open',
-        'TK Bellecombe 1': 'open',
-        'TK Bellecombe 2': 'open',
-        'TS Chardonnet': 'open'
+        'TK Bellecombe': 'scheduled',
+        'TK Bellecombe 1': 'scheduled',
+        'TK Bellecombe 2': 'scheduled',
+        'TK Clarines 1': 'scheduled',
+        'TK Clarines 2': 'scheduled',
+        'TK Dahu': 'scheduled',
+        'TK Lièvre blanc 1': 'scheduled',
+        'TK Lièvre blanc 2': 'scheduled',
+        'TK Manessier': 'scheduled',
+        'TK Plan du repos': 'scheduled',
+        'TK Poletta': 'scheduled',
+        'TK Sevoliere': 'scheduled',
+        'TS Chardonnet': 'scheduled',
+        'TS Ecudets': 'scheduled',
+        'TS Petit bois': 'scheduled',
+        'TSD Les Eucherts': 'scheduled',
+        'TSD Roches noires': 'scheduled'
       };
       should.exist(status);
       status.should.eql(expected);
