@@ -1,0 +1,16 @@
+{
+  "name": "La Rosière",
+  "url": {
+    "host": "http://www.skilarosiere1850.com",
+    "pathname": "/GB_ouverture-des-pistes.html"
+  },
+  "tags": [
+    "Alps",
+    "France"
+  ],
+  "ll": [
+    6.8492,
+    45.6272
+  ],
+  "twitter": "DSRLaRosiere"
+}
