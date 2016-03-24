@@ -1,4 +1,9 @@
 
+3.10.2 / 2016-03-24
+===================
+
+ * fix invalid height of embedded widgets when using https
+
 3.10.0 / 2016-02-26
 ===================
 
