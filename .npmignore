@@ -8,3 +8,4 @@ templates
 History.md
 .travis.yml
 .jshintrc
+yarn.lock
