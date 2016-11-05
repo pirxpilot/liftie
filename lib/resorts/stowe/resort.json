@@ -1,7 +1,7 @@
 {
   "name": "Stowe",
   "url": {
-    "host": "http://www.stowe.com",
+    "host": "https://www.stowe.com",
     "pathname": "/ski-ride/conditions/"
   },
   "tags": [
