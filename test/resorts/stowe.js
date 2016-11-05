@@ -11,19 +11,18 @@ describe('parse stowe', function() {
     stream.on('error', done);
     stream.pipe(parser(parse, function(err, status) {
       var expected = {
-        'FourRunner Quad': 'open',
-         Gondola: 'open',
+        'Adventure Center Carpet': 'closed',
+        'Adventure Triple': 'closed',
+        'FourRunner Quad': 'closed',
+        'Gondola': 'closed',
         'Lookout Double': 'closed',
-        'Mountain Triple': 'open',
-        'Toll House Double': 'open',
-        'Midway Surface': 'closed',
-        'Over Easy Transfer Gondola': 'open',
-        'Alpine Double': 'open',
-        'Sensation Quad': 'open',
-        'Easy Street Double': 'open',
-        'Sunny Spruce Quad': 'open',
-        'Adventure Triple': 'open',
-        'Carpet Lift': 'open'
+        'Meadows Carpet': 'closed',
+        'Meadows Quad': 'closed',
+        'Mountain Triple': 'closed',
+        'Over Easy Transfer Gondola': 'closed',
+        'Sensation Quad': 'closed',
+        'Sunny Spruce Quad': 'closed',
+        'Toll House Double': 'closed'
       };
       assert.deepEqual(status, expected);
       done(err);
