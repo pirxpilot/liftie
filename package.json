@@ -42,7 +42,7 @@
     "yields-k": "^0.7.2"
   },
   "devDependencies": {
-    "browserify": "^12.0.1",
+    "browserify": "^13.1.1",
     "commander": "~2",
     "make-jshint": "~1",
     "mocha": "^2.3.4",
