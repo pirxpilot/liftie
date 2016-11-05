@@ -33,7 +33,7 @@
     "lodash": "~1",
     "moment": "~2",
     "nib": "~1",
-    "qs": "~1",
+    "qs": "^6.3.0",
     "stylus": "> 0.38",
     "stylus-font-face": "~0",
     "superagent": "^2.3.0",
