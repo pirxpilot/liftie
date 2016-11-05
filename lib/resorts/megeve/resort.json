@@ -1,8 +1,8 @@
 {
   "name": "Megève",
   "url": {
-    "host": "http://www.megeve.com",
-    "pathname": "/hiver/enneigement.html"
+    "host": "http://megeve.com",
+    "pathname": ""
   },
   "dataUrl": {
     "host": "http://www.skiplan.com",
@@ -15,5 +15,5 @@
   "ll": [
     6.6181, 45.8578
   ],
-  "twitter": "megeve_tourisme"
+  "twitter": "megeve"
 }
