@@ -36,7 +36,7 @@
     "qs": "~1",
     "stylus": "> 0.38",
     "stylus-font-face": "~0",
-    "superagent": "^1.4.0",
+    "superagent": "^2.3.0",
     "swipe": "^1.7.7",
     "tweet-html": "^1.1.1",
     "yields-k": "^0.7.2"
