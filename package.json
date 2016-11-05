@@ -45,9 +45,9 @@
     "browserify": "^13.1.1",
     "commander": "~2",
     "make-jshint": "~1",
-    "mocha": "^2.3.4",
+    "mocha": "~3",
     "prompt": "~0",
-    "should": "^7.1.1",
+    "should": "~11",
     "uglify-js": "~2"
   },
   "browser": {
