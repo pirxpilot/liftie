@@ -1,4 +1,11 @@
 
+3.11.0 / 2016-11-05
+===================
+
+ * update invalid twitter handles
+ * fix stowe resort
+ * switch from npm to yarn
+
 3.10.4 / 2016-04-10
 ===================
 
