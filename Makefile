@@ -10,8 +10,6 @@ PLUGINS = lifts twitter weather webcams snow powder
 
 all: lint test build
 
-include ./node_modules/make-jshint/index.mk
-
 # common rules
 
 %.gz: %
@@ -22,6 +20,9 @@ include ./node_modules/make-jshint/index.mk
 
 %.css: %.styl
 	$(NODE_BIN)/stylus --include-css --compress --use ./node_modules/stylus-font-face --use ./node_modules/nib $<
+
+lint:
+	$(NODE_BIN)/jshint $(LINT_SRC)
 
 test:
 	$(NODE_BIN)/mocha --recursive --require should

@@ -1262,7 +1262,7 @@ jade@^1.11.0:
     void-elements "~2.0.1"
     with "~4.0.0"
 
-jshint@*:
+jshint:
   version "2.9.4"
   resolved "https://registry.yarnpkg.com/jshint/-/jshint-2.9.4.tgz#5e3ba97848d5290273db514aee47fe24cf592934"
   dependencies:
@@ -1397,12 +1397,6 @@ lodash@3.7.x:
 longest@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/longest/-/longest-1.0.1.tgz#30a0b2da38f73770e8294a0d22e6625ed77d0097"
-
-make-jshint@~1:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/make-jshint/-/make-jshint-1.0.0.tgz#0cd6d95abdeaaa9abd565c64c28e53256c75985f"
-  dependencies:
-    jshint "*"
 
 media-typer@0.3.0:
   version "0.3.0"
