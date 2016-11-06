@@ -121,7 +121,7 @@ mixin webcam(webcam, mobile)
       != webcam && ((mobile && webcam.mobile) ? webcam.mobile.notice : webcam.notice)
 
 mixin webcams(resort)
-  .tile.webcams(class= resort.webcams ? 'visible' : 'hidden')
+  .tile.webcams(class= resort.webcams && resort.webcams.length ? 'visible' : 'hidden')
     .swipe
       ul
         li
