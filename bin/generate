@@ -131,7 +131,7 @@ function write(dst, json) {
 function copy(src, dst, params) {
   console.log('Generating %s...', dst);
   fs.readFile(src, 'utf8', function(err, data) {
-    data = template(data, params);
+    data = template(data)(params);
     fs.writeFile(dst, data);
   });
 }
