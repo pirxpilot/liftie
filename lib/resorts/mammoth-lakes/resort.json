@@ -1,13 +1,13 @@
 {
   "name": "Mammoth Lakes",
   "url": {
-    "host": "http://www.mammothmountain.com",
+    "host": "https://www.mammothmountain.com",
     "pathname": "/winter/ski-ride/mountain-information/lift-status"
   },
   "tags": [
     "California"
   ],
-  "opening": "2013-11-07",
+  "opening": "2016-11-10",
   "ll": [
     -119.037346,
     37.651772
