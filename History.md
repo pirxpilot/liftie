@@ -1,4 +1,10 @@
 
+3.12.2 / 2016-11-06
+===================
+
+ * hide webcams tile if there are no webcams to display
+ * upgrade webcams.travel API
+
 3.12.1 / 2016-11-06
 ===================
 
