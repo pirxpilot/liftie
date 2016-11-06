@@ -1,0 +1,16 @@
+{
+  "name": "June Mountain",
+  "url": {
+    "host": "https://www.junemountain.com",
+    "pathname": "/winter/mountain-information/mountain-information/lift-status"
+  },
+  "tags": [
+    "California"
+  ],
+  "ll": [
+    -119.090721,
+    37.767796
+  ],
+  "twitter": "JuneMountain",
+  "opening": "2016-12-10"
+}
