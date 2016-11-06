@@ -1,4 +1,11 @@
 
+3.12.0 / 2016-11-05
+===================
+
+ * add Mammoth opening day
+ * add June Mountain resort
+ * fix generate script after lodash upgrade
+
 3.11.0 / 2016-11-05
 ===================
 
