@@ -1,6 +1,10 @@
-@import 'nib'
 @import 'font-face'
-// @import '../scripts/liftie.css' FIXME: replaced by browserify?
+
+clearfix()
+  &:after
+    content " "
+    display block
+    clear both
 
 // colors: http://colorschemedesigner.com/#0542cw0w0w0w0
 $blue=hsl(217, 83, 36)
@@ -23,7 +27,7 @@ $column-content-width = $column-width - 2 * $panel-padding
 
 gradient-background($color = $background-color, $lighten = 5%, $darken = 5%)
   background-color $color
-  background linear-gradient(top, lighten($color, $lighten), darken($color, $darken))
+  background linear-gradient(to bottom, lighten($color, $lighten), darken($color, $darken))
 
 @import './icons'
 @import './weather'
