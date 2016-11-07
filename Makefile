@@ -19,9 +19,11 @@ all: lint test build
 	$(NODE_BIN)/uglifyjs $< --mangle --no-copyright --compress --output $@
 
 %.css: %.styl
-	$(NODE_BIN)/stylus \
-		--use ./node_modules/stylus-font-face $<
+	$(NODE_BIN)/stylus $<
 	$(NODE_BIN)/postcss \
+		--use postcss-cachify \
+		--postcss-cachify.baseUrl /stylesheets \
+		--postcss-cachify.basePath public \
 		--use autoprefixer \
 		--autoprefixer.browsers 'last 2 versions, Explorer >= 11, Safari >= 8, Firefox ESR' \
 		--output $@ $@

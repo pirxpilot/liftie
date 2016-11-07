@@ -578,7 +578,7 @@ concat-stream@~1.5.0, concat-stream@~1.5.1:
     readable-stream "~2.0.0"
     typedarray "~0.0.5"
 
-connect-cachify-static@~1:
+connect-cachify-static@^1.3.0, connect-cachify-static@~1:
   version "1.4.1"
   resolved "https://registry.yarnpkg.com/connect-cachify-static/-/connect-cachify-static-1.4.1.tgz#d40f424db56a69772afd884b155133cca6cd16f3"
   dependencies:
@@ -808,7 +808,7 @@ debounce@^1.0.0:
   dependencies:
     date-now "1.0.1"
 
-debug@*, debug@^2.2.0, debug@~2, debug@~2.2.0, debug@2.2.0:
+debug@*, debug@^2.1.2, debug@^2.2.0, debug@~2, debug@~2.2.0, debug@2.2.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/debug/-/debug-2.2.0.tgz#f87057e995b1a1f6ae6a4960664137bc56f039da"
   dependencies:
@@ -1730,6 +1730,14 @@ pkginfo@0.x.x:
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/pkginfo/-/pkginfo-0.4.0.tgz#349dbb7ffd38081fcadc0853df687f0c7744cd65"
 
+postcss-cachify:
+  version "1.3.1"
+  resolved "https://registry.yarnpkg.com/postcss-cachify/-/postcss-cachify-1.3.1.tgz#0e84b0aec037362add05fba4c561ed78c6eacd56"
+  dependencies:
+    connect-cachify-static "^1.3.0"
+    debug "^2.1.2"
+    postcss "^5.0.0"
+
 postcss-cli-simple:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/postcss-cli-simple/-/postcss-cli-simple-1.0.1.tgz#4fc77650f7550abfbcdf4efad6d1275c9fc012f4"
@@ -2195,12 +2203,6 @@ strip-ansi@^3.0.0, strip-ansi@^3.0.1:
 strip-json-comments@1.0.x:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/strip-json-comments/-/strip-json-comments-1.0.4.tgz#1e15fbcac97d3ee99bf2d73b4c656b082bbafb91"
-
-stylus-font-face@~0:
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/stylus-font-face/-/stylus-font-face-0.1.0.tgz#e154a9f1b7f83a6aa15233ce65cd6173c9395bca"
-  dependencies:
-    stylus "> 0.38"
 
 "stylus@> 0.38":
   version "0.54.5"
