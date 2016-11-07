@@ -1,4 +1,11 @@
 
+3.12.4 / 2016-11-07
+===================
+
+ * fix Gunstock resort
+ * fix Cranmore resort
+ * fix Cannon resort
+
 3.12.3 / 2016-11-06
 ===================
 
