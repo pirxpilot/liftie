@@ -28,6 +28,9 @@ all: lint test build
 		--autoprefixer.browsers 'last 2 versions, Explorer >= 11, Safari >= 8, Firefox ESR' \
 		--output $@ $@
 
+%.min.css: %.css
+	$(NODE_BIN)/cleancss --skip-import --skip-rebase --s0 --output $@ $<
+
 lint:
 	$(NODE_BIN)/jshint $(LINT_SRC)
 
@@ -62,8 +65,8 @@ build: $(BUILD_DIR)/$(PROJECT).js $(CSS_DIR)/style.css $(BUILD_DIR)/$(PROJECT)-e
 
 # minized and compressed version for deployment
 
-.PRECIOUS: $(BUILD_DIR)/$(PROJECT).min.js $(BUILD_DIR)/$(PROJECT)-embed.min.js
-dist: $(BUILD_DIR)/$(PROJECT).min.js.gz $(CSS_DIR)/style.css.gz $(BUILD_DIR)/$(PROJECT)-embed.min.js.gz
+.PRECIOUS: $(BUILD_DIR)/$(PROJECT).min.js $(CSS_DIR)/style.min.css $(BUILD_DIR)/$(PROJECT)-embed.min.js
+dist: $(BUILD_DIR)/$(PROJECT).min.js.gz $(CSS_DIR)/style.min.css.gz $(BUILD_DIR)/$(PROJECT)-embed.min.js.gz
 
 # cleaning
 
