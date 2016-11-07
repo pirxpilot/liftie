@@ -19,7 +19,17 @@ all: lint test build
 	$(NODE_BIN)/uglifyjs $< --mangle --no-copyright --compress --output $@
 
 %.css: %.styl
-	$(NODE_BIN)/stylus --include-css --compress --use ./node_modules/stylus-font-face --use ./node_modules/nib $<
+	$(NODE_BIN)/stylus $<
+	$(NODE_BIN)/postcss \
+		--use postcss-cachify \
+		--postcss-cachify.baseUrl /stylesheets \
+		--postcss-cachify.basePath public \
+		--use autoprefixer \
+		--autoprefixer.browsers 'last 2 versions, Explorer >= 11, Safari >= 8, Firefox ESR' \
+		--output $@ $@
+
+%.min.css: %.css
+	$(NODE_BIN)/cleancss --skip-import --skip-rebase --s0 --output $@ $<
 
 lint:
 	$(NODE_BIN)/jshint $(LINT_SRC)
@@ -55,8 +65,8 @@ build: $(BUILD_DIR)/$(PROJECT).js $(CSS_DIR)/style.css $(BUILD_DIR)/$(PROJECT)-e
 
 # minized and compressed version for deployment
 
-.PRECIOUS: $(BUILD_DIR)/$(PROJECT).min.js $(BUILD_DIR)/$(PROJECT)-embed.min.js
-dist: $(BUILD_DIR)/$(PROJECT).min.js.gz $(CSS_DIR)/style.css.gz $(BUILD_DIR)/$(PROJECT)-embed.min.js.gz
+.PRECIOUS: $(BUILD_DIR)/$(PROJECT).min.js $(CSS_DIR)/style.min.css $(BUILD_DIR)/$(PROJECT)-embed.min.js
+dist: $(BUILD_DIR)/$(PROJECT).min.js.gz $(CSS_DIR)/style.min.css.gz $(BUILD_DIR)/$(PROJECT)-embed.min.js.gz
 
 # cleaning
 

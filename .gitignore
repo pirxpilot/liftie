@@ -1,5 +1,6 @@
 node_modules
-public/stylesheets/style.css*
+public/stylesheets/*css
+public/stylesheets/*css.gz
 public/scripts/
 .project
 .settings
