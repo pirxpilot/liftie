@@ -1,4 +1,12 @@
 
+3.12.3 / 2016-11-06
+===================
+
+ * remove 'npm install' script
+ * use clean-css to minimize stylesheets
+ * use modern font-style syntax
+ * replace stylus nib with postcss prefixer
+
 3.12.2 / 2016-11-06
 ===================
 
