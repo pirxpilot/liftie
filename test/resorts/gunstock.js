@@ -11,13 +11,13 @@ describe('parse gunstock', function() {
     stream.on('error', done);
     stream.pipe(parser(parse, function(err, status) {
       var expected = {
-        'Flying Carpet': 'open',
-        'Panorama High Speed Quad': 'open',
-        'Penny Pitou Silver Medal Quad': 'open',
-        'Pistol Triple': 'open',
-        'Ramrod Quad': 'open',
-        'Tiger Triple': 'open',
-        'Wonder Carpet': 'open'
+        'Flying Carpet': 'closed',
+        'Panorama High Speed Quad': 'closed',
+        'Penny Pitou Silver Medal Quad': 'closed',
+        'Pistol Triple': 'closed',
+        'Ramrod Quad': 'closed',
+        'Tiger Triple': 'closed',
+        'Wonder Carpet': 'closed'
       };
       assert.deepEqual(status, expected);
       done(err);
