@@ -14,13 +14,13 @@ describe('parse silver-star', function() {
         'Comet Six Pack Express': 'closed',
         'Powder Gulch Express': 'closed',
         'Silver Woods Express': 'closed',
-        'Silver Queen Quad Chair.': 'closed',
+        'Silver Queen Quad Chair': 'closed',
         'Alpine Meadows Quad Chair': 'closed',
         'Summit Chair': 'closed',
-        'Home-Run Tee': 'closed',
+        'Home Run Tee': 'closed',
         'Discovery Park Wonder Carpet': 'closed',
         'Star Kids 80\' Wonder Carpet': 'closed',
-        'Tube Town Lift # 1': 'closed',
+        'Tube Town Lift #1': 'closed',
         'Tube Town Lift #2': 'closed',
         'Star Kids 180\' Wonder Carpet': 'closed'
       };
