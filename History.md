@@ -1,4 +1,12 @@
 
+3.12.5 / 2016-11-12
+===================
+
+ * fix Silver Star resort
+ * use fastclick to help with iOS responsiveness
+ * update user agent string for Liftie crawler
+ * add fetch script used to retrieve HTML examples
+
 3.12.4 / 2016-11-07
 ===================
 
