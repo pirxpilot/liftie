@@ -1,0 +1,29 @@
+{
+  "short_name": "Liftie",
+  "name": "Liftie - Clean, simple, easy to read, fast ski resort lift status.",
+  "description": "Liftie monitors lift status for selected ski resorts. When the lift status changes, so will the display. No need to hit browser's Refresh button. Liftie remembers which resorts you are interested in and will show their lift status when you come back.",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#f5f8ff",
+  "background_color": "#f5f8ff",
+  "icons": [
+    {
+      "src": "/img/snowflake-96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "density": "2.0"
+    },
+    {
+      "src": "/img/snowflake-144.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "density": "3.0"
+    },
+    {
+      "src": "/img/snowflake-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "density": "4.0"
+    }
+  ]
+}
