@@ -8,7 +8,10 @@ resorts you are interested in and will show their lift status when you come back
 ski resort deals and score discount lift tickets.")
 
 doctype html
-html(lang='en-US')
+html(
+  lang='en-US'
+  data-service-worker=serviceWorker
+)
   head
     title= title
     +description('description')
