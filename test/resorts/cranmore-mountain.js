@@ -11,16 +11,16 @@ describe('parse cranmore-mountain', function() {
     stream.on('error', done);
     stream.pipe(parser(parse, function(err, status) {
       var expected = {
-        'Skimobile Express Quad ': 'closed',
-        'C-more Double ': 'closed',
-        'South Quad ': 'closed',
-        'Flying Carpet ': 'closed',
-        'Lucky Loop Lift ': 'closed',
-        'Lookout Triple ': 'closed',
-        'Magic Carpet ': 'closed',
-        'Schneider Triple ': 'closed',
-        'Tubing Rope Tow ': 'closed',
-        'Tubing Carpet ': 'closed'
+        'Skimobile Express Quad': 'closed',
+        'C-more Double': 'closed',
+        'South Quad': 'closed',
+        'Flying Carpet': 'closed',
+        'Lucky Loop Lift': 'closed',
+        'Lookout Triple': 'closed',
+        'Magic Carpet': 'closed',
+        'Schneider Triple': 'closed',
+        'Tubing Rope Tow': 'closed',
+        'Tubing Carpet': 'closed'
       };
       should.exist(status);
       status.should.eql(expected);
