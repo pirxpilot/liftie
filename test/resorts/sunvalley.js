@@ -11,19 +11,23 @@ describe('parse sunvalley', function() {
     stream.on('error', done);
     stream.pipe(parser(parse, function(err, status) {
       var expected = {
-        'River Run': 'open',
-        'Christmas': 'open',
-        'Sunnyside': 'closed',
-        'Greyhawk': 'open',
-        'Challenger': 'open',
-        'Frenchman\'s': 'open',
-        'Lookout': 'open',
-        'Roundhouse Express': 'open',
-        'Lookout Express': 'open',
-        'Flying Squirrel': 'closed',
-        'Seattle Ridge': 'open',
-        'Cold Springs': 'open',
-        'Mayday': 'open'
+        '#01 River Run': 'closed',
+        '#02 Roundhouse Express': 'closed',
+        '#03 Christmas': 'closed',
+        '#04 Cold Springs': 'closed',
+        '#05 Lookout Express': 'closed',
+        '#07 Greyhawk': 'closed',
+        '#08 Frenchman\'s': 'closed',
+        '#10 Challenger': 'closed',
+        '#11 Lookout': 'closed',
+        '#12 Seattle Ridge': 'closed',
+        '#14 Mayday': 'closed',
+        'Dollar': 'closed',
+        'Elkhorn': 'closed',
+        'Half Dollar': 'closed',
+        'Kinderspielplatz': 'closed',
+        'Quarter Dollar': 'closed',
+        'The Accelerator': 'closed'
       };
       assert.deepEqual(status, expected);
       done(err);

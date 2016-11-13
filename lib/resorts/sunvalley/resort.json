@@ -1,8 +1,8 @@
 {
   "name": "Sun Valley",
   "url": {
-    "host": "http://www.sunvalley.com",
-    "pathname": "/mountain/report/"
+    "host": "https://www.sunvalley.com",
+    "pathname": "/mountain-snow-report"
   },
   "tags": [
     "Idaho"
