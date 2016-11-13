@@ -11,12 +11,12 @@ describe('parse monarch', function() {
     stream.on('error', done);
     stream.pipe(parser(parse, function(err, status) {
       var expected = {
-        'Garfield ': 'closed',
-        'Panorama ': 'closed',
-        'Breezeway ': 'closed',
-        'Pioneer ': 'closed',
-        'Tumbelina ': 'closed',
-        'Caterpillar ': 'closed'
+        'Garfield': 'closed',
+        'Panorama': 'closed',
+        'Breezeway': 'closed',
+        'Pioneer': 'closed',
+        'Tumbelina': 'closed',
+        'Caterpillar': 'closed'
       };
       should.exist(status);
       status.should.eql(expected);

@@ -84,7 +84,7 @@ describe('parse laplagne', function() {
   'TK PONEY': 'scheduled',
   'TK PRACONDUIT': 'scheduled',
   'TK STADES': 'scheduled',
-  ' PLAGNE >  ARCS': 'scheduled',
+  'PLAGNE >  ARCS': 'scheduled',
   'CHAMP > PLA-BELLEC': 'scheduled',
   'CHAMP>PLA/VERDONS': 'closed',
   'LA PLAGNE > MTALBE': 'scheduled',
