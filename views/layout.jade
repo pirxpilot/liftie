@@ -8,7 +8,10 @@ resorts you are interested in and will show their lift status when you come back
 ski resort deals and score discount lift tickets.")
 
 doctype html
-html(lang='en-US')
+html(
+  lang='en-US'
+  data-service-worker=serviceWorker
+)
   head
     title= title
     +description('description')
@@ -21,6 +24,7 @@ html(lang='en-US')
     +description('og:description')
 
     link(rel='dns-prefetch', href='//cdn.polyfill.io')
+    link(rel='manifest', href='/manifest.json')
     link(rel='stylesheet', href=cachify('/stylesheets/style#{min}.css'))
     link(rel='publisher', href='https://plus.google.com/107555641794612264233')
   body(data-ga-property-id=settings.gaPropertyId)

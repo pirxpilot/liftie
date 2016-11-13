@@ -26,7 +26,6 @@
     "el-component": "^1.0.0",
     "entities": "~1",
     "express": "~3",
-    "fastclick": "^1.0.6",
     "htmlparser2": "~3.2",
     "jade": "^1.11.0",
     "limiter": "~1",

@@ -8,13 +8,20 @@ var plugins = require('./lib/plugins');
 
 var app = module.exports = express();
 
-var root = path.join(__dirname, 'public'),
-  siteUrl = process.env.SITE_URL || 'http://liftie.info';
+if (!process.env.SITE_URL) {
+  process.env.SITE_URL =  (app.get('env') === 'development')
+    ? 'https://liftie.info'
+    : 'http://locahost:3000';
+}
+
+var root = path.join(__dirname, 'public');
+var siteUrl = process.env.SITE_URL;
 
 app.locals({
   min: '.min',
   decorateAbout: function() {},
   siteUrl: siteUrl,
+  serviceWorker: true,
   og: {
     image: siteUrl + '/img/snowflake-256.png'
   }
