@@ -1,4 +1,10 @@
 
+3.13.1 / 2016-11-13
+===================
+
+ * prevent proxy caching for API calls and sw script
+ * fix default SITE_URL value
+
 3.13.0 / 2016-11-13
 ===================
 
