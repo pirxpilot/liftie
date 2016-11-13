@@ -1,4 +1,14 @@
 
+3.13.0 / 2016-11-13
+===================
+
+ * update SunValley resort
+ * trim lift names in domutils.collect
+ * add basic service worker script
+ * add hi-res apple icon
+ * add web app manifest
+ * Revert "use fastclick to help with iOS responsiveness"
+
 3.12.5 / 2016-11-12
 ===================
 
