@@ -6,7 +6,14 @@ var path = require('path');
 var loaders = require('./lib/loaders');
 var plugins = require('./lib/plugins');
 
+var favicon = require('serve-favicon');
+
+var cookieParser = require('cookie-parser');
+var logger = require('morgan');
+var errorHandler = require('errorhandler');
+
 var app = module.exports = express();
+
 
 if (!process.env.SITE_URL) {
   process.env.SITE_URL =  (app.get('env') === 'production')
@@ -17,7 +24,7 @@ if (!process.env.SITE_URL) {
 var root = path.join(__dirname, 'public');
 var siteUrl = process.env.SITE_URL;
 
-app.locals({
+Object.assign(app.locals, {
   min: '.min',
   decorateAbout: function() {},
   siteUrl: siteUrl,
@@ -30,18 +37,16 @@ app.set('port', process.env.PORT || 3000);
 app.set('views', __dirname + '/views');
 app.set('view engine', 'jade');
 
-app.use(express.favicon(path.join(root, 'favicon.ico')));
-app.use(express.logger('dev'));
-app.use(express.cookieParser());
-app.use(express.json());
-app.use(express.urlencoded());
+app.use(favicon(path.join(root, 'favicon.ico')));
+app.use(logger('dev'));
+app.use(cookieParser());
 app.use(cachify(root));
-app.use(app.router);
+
 app.use(gzip(root));
 
 if (app.get('env') === 'development') {
   app.locals.min = '';
-  app.use(express.errorHandler());
+  app.use(errorHandler());
 }
 
 app.loaders = loaders;
