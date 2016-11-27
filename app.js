@@ -9,7 +9,6 @@ var plugins = require('./lib/plugins');
 var favicon = require('serve-favicon');
 
 var cookieParser = require('cookie-parser');
-var bodyParser = require('body-parser');
 var logger = require('morgan');
 var errorHandler = require('errorhandler');
 
@@ -41,8 +40,6 @@ app.set('view engine', 'jade');
 app.use(favicon(path.join(root, 'favicon.ico')));
 app.use(logger('dev'));
 app.use(cookieParser());
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cachify(root));
 
 app.use(gzip(root));
