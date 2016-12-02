@@ -1,4 +1,9 @@
 
+3.13.3 / 2016-12-02
+===================
+
+ * properly detect weather hold condition in Mammoth Lakes
+
 3.13.2 / 2016-11-27
 ===================
 
