@@ -2,7 +2,7 @@
   "name": "Killington",
   "url": {
     "host": "http://www.killington.com",
-    "pathname": "/winter/mountain/conditions/lifts"
+    "pathname": "/site/mountain/conditions/trails"
   },
   "tags": [
     "New England",
