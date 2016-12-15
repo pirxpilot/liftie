@@ -15,18 +15,17 @@ describe('parse big-white', function() {
         'Ridge Rocket Express Quad': 'open',
         'Bullet Express Quad': 'open',
         'Black Forest Express Quad': 'open',
-        'Gem Lake Express Quad': 'closed',
+        'Gem Lake Express Quad': 'scheduled',
         'Plaza Quad Chair': 'open',
-        'Powder Triple Chair': 'closed',
-        'Falcon Double Chair': 'closed',
-        'Cliff Chair': 'closed',
-        'Alpine T-bar': 'closed',
+        'Powder Triple Chair': 'open',
+        'Falcon Double Chair': 'scheduled',
+        'Cliff Chair': 'open',
+        'Alpine T-bar': 'open',
         'Magic Carpet': 'open',
         'Kids Carpet': 'open',
-        'Mega Snow Coaster Lift 1': 'closed',
-        'Mega Snow Coaster Lift 2': 'closed',
-        'Snow Ghost Express 6 Pack': 'closed',
-        'TELUS Park Chair': 'closed'
+        'Snow Ghost Express 6 Pack': 'scheduled',
+        'TELUS Park Chair': 'open',
+        'Tube Park Lift': "open"
       };
       should.exist(status);
       status.should.eql(expected);

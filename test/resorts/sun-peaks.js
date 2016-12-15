@@ -11,16 +11,17 @@ describe('parse sun-peaks', function() {
     stream.on('error', done);
     stream.pipe(parser(parse, function(err, status) {
       var expected = {
-        'Sunburst Express Chairlift': 'closed',
-        'Sundance Express Chairlift': 'closed',
-        'Morrisey Express Chairlift': 'closed',
-        'Burfield Chairlift': 'closed',
-        'Crystal Chairlift': 'closed',
-        'Elevation Chairlift': 'closed',
+        'Sunburst Express Chairlift': 'open',
+        'Sundance Express Chairlift': 'open',
+        'Morrisey Express Chairlift': 'open',
+        'Learning Zone Carpet': 'open',
+        'Burfield Chairlift': 'open',
+        'Crystal Chairlift': 'open',
+        'Elevation Chairlift': 'open',
         'West Bowl T-Bar': 'closed',
-        'Morrisey Platter Lift': 'closed',
-        'Village Platter Lift': 'closed',
-        'Village Carpet': 'closed',
+        'Morrisey Platter': 'open',
+        'Village Platter': 'open',
+        'Village Carpet': 'open',
         'Tube Time Carpet': 'closed'
       };
       should.exist(status);

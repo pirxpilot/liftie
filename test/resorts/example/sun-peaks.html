@@ -1,404 +1,4166 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" xmlns:article="http://ogp.me/ns/article#" xmlns:book="http://ogp.me/ns/book#" xmlns:product="http://ogp.me/ns/product#" xmlns:profile="http://ogp.me/ns/profile#" xmlns:video="http://ogp.me/ns/video#" prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema# ">
+<head>
+  <meta charset="utf-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[(new Date).getTime()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit"],l="api-",p=l+"ixn-";a(s,function(e,t){f[t]=o(l+t,!0,"api")}),f.addPageAction=o(l+"addPageAction",!0),f.setCurrentRouteName=o(l+"routeName",!0),t.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(p+"tracer",[Date.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return t.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){d[t]=o(p+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o){if(!p.aborted){e&&e(n,r,o);for(var i=t(o),a=v(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var f=s[w[n]];return f&&f.push([y,n,r,i]),i}}function d(e,t){b[e]=v(e).concat(t)}function v(e){return b[e]||[]}function g(e){return l[e]=l[e]||o(n)}function m(e,t){f(e,function(e,n){t=t||"feature",w[n]=t,t in s||(s[t]=[])})}var b={},w={},y={on:d,emit:n,get:g,listeners:v,context:t,buffer:m,abort:a,aborted:!1};return y}function i(){return new r}function a(){(s.api||s.feature)&&(p.aborted=!0,s=p.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},l={},p=t.exports=o();p.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!h++){var e=y.info=NREUM.info,t=l.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return f.abort();c(b,function(t,n){e[t]||(e[t]=n)}),u("mark",["onload",a()],null,"api");var n=l.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===l.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=e("ee"),s=window,l=s.document,p="addEventListener",d="attachEvent",v=s.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:v,REQ:s.Request,EV:s.Event,PR:s.Promise,MO:s.MutationObserver},e(1);var m=""+location,b={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-998.min.js"},w=v&&g&&g[p]&&!/CriOS/.test(navigator.userAgent),y=t.exports={offset:a(),origin:m,features:{},xhrWrappable:w};l[p]?(l[p]("DOMContentLoaded",i,!1),s[p]("load",r,!1)):(l[d]("onreadystatechange",o),s[d]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
+<meta name="title" content="Lifts &amp; Trail Status | Sun Peaks Resort" />
+<meta name="description" content="view Grooming Report: Dec. 15   " />
+<meta property="og:description" content="view Grooming Report: Dec. 15   " />
+<meta property="og:site_name" content="Sun Peaks Resort" />
+<meta property="og:title" content="Lifts &amp; Trail Status" />
+<meta name="Generator" content="Drupal 8 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+<link rel="shortcut icon" href="/core/misc/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="canonical" href="/ski-ride/weather-conditions-cams/lifts-trail-status" />
+<link rel="shortlink" href="/node/74" />
+<link rel="revision" href="/ski-ride/weather-conditions-cams/lifts-trail-status" />
 
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml"><!-- InstanceBegin template="/Templates/Secondary_No_Widget.dwt" codeOutsideHTMLIsLocked="false" -->
-<head><link rel="shortcut icon" href="/assets/favicon.ico" /><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<!-- InstanceBeginEditable name="meta" -->
-<meta name="title" content="Lift Status | Sun Peaks Resort"><meta name="description" content="View the current status and notes of all lifts at Sun Peaks Resort."><meta name="keywords" content="sun peaks resort lift status"><meta name="robots" content="index,follow">
-<!-- InstanceEndEditable -->
-<meta name="author" content="Sun Peaks Resort www.sunpeaksresort.com"><meta name="cache-control" content="no-cache"><meta http-equiv="Pragma" content="no-cache">
-<!-- InstanceBeginEditable name="doctitle" -->
-<title>
-	Lift Status | Sun Peaks Resort
-</title>
-<!-- InstanceEndEditable -->
-<link href="/css/global-2012.css" rel="stylesheet" type="text/css" media="screen" /><link href="http://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet" type="text/css" /><link href="/css/prettyPhoto.css" rel="stylesheet" type="text/css" media="screen" charset="utf-8" />
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script>
-<script src="/scripts/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
-<script src="/scripts/global.js" type="text/javascript"></script>
-<!-- InstanceBeginEditable name="head" -->
-<!-- InstanceEndEditable -->
- <script type="text/javascript">
- var _gaq = _gaq || [];
-_gaq.push(['_setAccount', 'UA-4969264-1']);
-_gaq.push(['_trackPageview']);
-_gaq.push(['_setDomainName', 'none']);
-_gaq.push(['_setAllowLinker', true]);
-(function() {
-	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-})();
-</script>
+    <title>Lifts &amp; Trail Status | Sun Peaks Resort</title>
+    <link rel="stylesheet" href="/sites/default/files/css/css_5iheivZFmvAS2akPVixPuQ8m0CC6PHRX_9_K5uRXJlc.css?oi77xu" media="all" />
+<link rel="stylesheet" href="https://s3.amazonaws.com/icomoon.io/42560/SunPeaksResort/style.css?sovnqs" media="all" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" media="all" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" media="all" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/formstone/1.2.0/css/dropdown.css" media="all" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/formstone/1.2.0/css/checkbox.css" media="all" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/formstone/1.2.0/css/themes/light.css" media="all" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.nanoscroller/0.8.7/css/nanoscroller.min.css" media="all" />
+<link rel="stylesheet" href="/sites/default/files/css/css_uzzn4VuKLP-dMo7jvik8vIQ-rg-YYwApfPXCfhjePKA.css?oi77xu" media="all" />
+
+    
+<!--[if lte IE 8]>
+<script src="/sites/default/files/js/js_VtafjXmRvoUgAzqzYTA3Wrjkx9wcWhjP0G4ZnnqRamA.js"></script>
+<![endif]-->
+<script src="/core/assets/vendor/modernizr/modernizr.min.js?v=3.3.1"></script>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/themes/sunpeaksresort/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="/themes/sunpeaksresort/images/favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/themes/sunpeaksresort/images/favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/themes/sunpeaksresort/images/favicon/manifest.json">
+    <link rel="mask-icon" href="/themes/sunpeaksresort/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/themes/sunpeaksresort/images/favicon/favicon.ico">
+    <meta name="msapplication-config" content="/themes/sunpeaksresort/images/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
 </head>
+<body class="path-node page-node-type-page section-ski-ride">
 
-<body>
-<div class="container">
+<!-- Google Tag Manager -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N89LP4" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-N89LP4');</script>
+<!-- End Google Tag Manager -->
 
-<div class="header-container-outer">
-<div class="header-container">
-<div class="header-top">
- <div id="central">Call Central Reservations 1.800.807.3257</div>
- <div class="search-container">
- <table width="100%" border="0" cellspacing="0" cellpadding="0">
- <tr>
- <form action="/search" method="get" name="form1" id="form1">
- <input type="hidden" name="site" value="default_collection"/>
- <input type="hidden" name="client" value="my_frontend"/>
- <input type="hidden" name="output" value="xml_no_dtd"/>
- <td><input name="q" type="text" onclick="if (this.value='Enter your search here') this.value='';" class="template_search_box" value="Enter your search here" /></td>
- <td style="padding-left:2px"><input name="image" type="image" src="/assets/buttons/btn-search.png" alt="Search" width="34" height="21" /></td>
- </form>
- </tr>
- </table>
- </div>
- <div id="social">
- <ul>
- <li><a href="https://www.facebook.com/SunPeaksResort" target="_blank"><img src="/assets/master/facebook.png" width="16" height="16" alt=""></a></li>
- <li><a href="http://twitter.com/SunPeaksResort" target="_blank"><img src="/assets/master/twitter.png" width="16" height="16" alt=""></a></li>
- <li><a href="http://instagram.com/sunpeaksresort" target="_blank"><img src="/assets/buttons/Sun-Peaks-Instagram.png" width="16" height="16" alt=""></a></li>
- <li><a href="http://www.youtube.com/SunPeaksResortTV" target="_blank"><img src="/assets/buttons/yt.gif" width="16" height="16" alt=""></a></li>
- <li><a href="http://www.tripadvisor.com/Tourism-g499150-Sun_Peaks_British_Columbia-Vacations.html" target="_blank"><img src="/assets/master/tripadvisor.png" width="16" height="16" alt="" /></a></li>
-  <li>
- <g:plusone size="small" annotation="none"></g:plusone>
- </li>
- </ul>
- </div>
- <div id="why-book">
-  <ul>
-    <li><a href="http://www.sunpeaksresort.com/plan-your-trip/why-sun-peaks"><img src="/assets/buttons/why-sun-peaks-resort.png" width="126" height="16" alt=""></a></li>
-    <li><a href="/plan-your-trip/packages"><img src="/assets/buttons/book-sun-peaks-vacation.png" width="103" height="16" alt=""></a></li>
-  </ul>
-</div>
- <div class="clearfloat"></div>
-</div>
-<div class="header">
-<div id="logospr"><a href="/"><img src="/assets/master/Sun-Peaks-Resort-BC.png" width="251" height="113" alt="Sun Peaks Resort"></a></div>
-<div class="weather-container">
- <div id="webcams"><span>Webcams</span><a href="http://www.sunpeaksresort.com/webcams/morrisey.jpg" rel="prettyPhoto[webcams]" title="Mt. Tod, View from Mt. Morrisey"><img src="/webcams/morrisey.jpg" width="125" height="70" alt="Sun Peaks Resort Webcams"></a></div>
- <div style="display:none;"><a href="http://www.sunpeaksresort.com/webcams/masas_cam.jpg" rel="prettyPhoto[webcams]" title="Platter Lift"><img src="/webcams/masas_cam.jpg" alt="Sun Peaks Resort Webcams"></a><a href="http://www.sunpeaksresort.com/webcams/golf.jpg" rel="prettyPhoto[webcams]" title="Golf Course"><img src="/webcams/golf.jpg" alt="Sun Peaks Resort Webcams"></a><a href="http://www.sunpeaksresort.com/webcams/remax.jpg" rel="prettyPhoto[webcams]" title="Mt. Tod, View from Village"><img src="/webcams/remax.jpg" alt="Sun Peaks Resort Webcams"></a><a href="http://www.sunpeaksresort.com/webcams/sundance.jpg" rel="prettyPhoto[webcams]" title="Sundance"><img src="/webcams/sundance.jpg" alt="Sun Peaks Resort Webcams"></a><a href="http://www.sunpeaksresort.com/webcams/umbrella1.jpg" rel="prettyPhoto[webcams]" title="Elevation Chairlift"><img src="/webcams/umbrella1.jpg" alt="Sun Peaks Resort Webcams"></a><a href="http://www.sunpeaksresort.com/webcams/umbrella2.jpg" rel="prettyPhoto[webcams]" title="Base Area"><img src="/webcams/umbrella2.jpg" alt="Sun Peaks Resort Webcams"></a><a href="http://www.sunpeaksresort.com/webcams/residences.jpg" rel="prettyPhoto[webcams]" title="Residences"><img src="/webcams/residences.jpg" width="125" height="70" alt="Sun Peaks Resort Webcams"></a></div>
- <div class="conditions-title-container">
- <div id="current"><a href="/weather-and-cams/conditions" style="color:#FFF;text-decoration:none;">Current Conditions&nbsp;&nbsp;&gt;</a></div>
- <div id="convert"> <span class="units hideit"><a href="#" onclick="$('.units').toggle();document.cookie = 'Units=;expires=-1;path=/'" title="Metric">Convert to Metric</a></span> <span class="units "><a href="#" onclick="$('.units').toggle();document.cookie = 'Units=Imperial;expires= GMT;path=/'" title="Imperial">Convert to Imperial</a></span> </div>
- <div class="clearfloat"></div>
- <div class="conditions-data-container">
- <table width="100%" border="0" cellspacing="0" cellpadding="0">
- <tr>
- <td class="stat-tl">Village<br>
-   Temperature</td>
- <td class="data-tl"><div class="units ">
- <!--0
- cm-->-1.6&deg;C</div>
- <div class="units hideit">
- <!--0in-->29.1&deg;F
- </div></td>
- <td class="stat-tr">Mid-Mountain<br>
-   Snow Base</td>
- <td class="data-tr"><div class="units ">
- 36
- cm</div>
- <div class="units hideit">
- 14
- in</div></td>
- </tr>
- <tr>
- <td class="stat-bl">Mid-Mountain<br>
- Temperature</td>
- <td class="data-bl"><div class="units ">
- -5.9
- C</div>
- <div class="units hideit">
- 21.5
- F</div></td>
- <td class="stat-br">Alpine<br>
-   Snow Base</td>
- <td class="data-br"><div class="units ">
- 48
- cm</div>
- <div class="units hideit">
- 19
- in</div></td>
- </tr>
- </table>
- </div>
- </div>
-</div>
-<div class="clearfloat"></div>
-<div id="nav-container"><div id="PLHIMFDdbObBDiv" style="position:relative;width:979px;z-index:50;white-space:nowrap;direction:ltr;">
-  <div id="PLHIMFDdbObBMain" style="width:979px;height:48px">
-    <ul style="margin:0px;padding:0px;font:normal normal normal 11px Arial,Helvetica,sans-serif;">
-  <li style="float:left;list-style:none;text-align:left;width:141px;height:48px;font-size:1px;background-image:url(/assets/nav12/plan-your-trip.png);"><a href="/plan-your-trip" title="Plan&nbsp;Your&nbsp;Trip" style="display:block;height:48px;"></a></li><li style="float:left;list-style:none;text-align:left;width:80px;height:48px;font-size:1px;background-image:url(/assets/nav12/winter.png);"><a href="/winter" title="Winter" style="display:block;height:48px;"></a></li><li style="float:left;list-style:none;text-align:left;width:142px;height:48px;font-size:1px;background-image:url(/assets/nav12/sports-school.png);"><a href="/sports-school" title="Sports&nbsp;School" style="display:block;height:48px;"></a></li><li style="float:left;list-style:none;text-align:left;width:86px;height:48px;font-size:1px;background-image:url(/assets/nav12/summer.png);"><a href="/summer" title="Summer" style="display:block;height:48px;"></a></li><li style="float:left;list-style:none;text-align:left;width:169px;height:48px;font-size:1px;background-image:url(/assets/nav12/events-festivals.png);"><a href="/events-and-festivals" title="Events&nbsp;and&nbsp;Festivals" style="display:block;height:48px;"></a></li><li style="float:left;list-style:none;text-align:left;width:114px;height:48px;font-size:1px;background-image:url(/assets/nav12/village.png);"><a href="/the-village" title="The&nbsp;Village" style="display:block;height:48px;"></a></li><li style="float:left;list-style:none;text-align:left;width:151px;height:48px;font-size:1px;background-image:url(/assets/nav12/weather-cams.png);"><a href="/weather-and-cams" title="Weather&nbsp;and&nbsp;Cams" style="display:block;height:48px;"></a></li><li style="float:left;list-style:none;text-align:left;width:96px;height:48px;font-size:1px;background-image:url(/assets/nav12/the-hub.png);"><a href="/the-hub" title="The&nbsp;Hub" style="display:block;height:48px;"></a></li></ul></div><script type="text/javascript" src="/Pluginlab/Scripts/SP13.js">/* PLHIMMenu script ID:PLHIMFDdbObB */</script></div>
-</div>
 
- <div id="banner"><img width="978" height="325" src="/assets/headers/165572/93bf4666-e080-425a-b0c2-71dcf56426d9.jpg"></div>
-</div></div>
-<div class="content-container">
- <div class="content">
- <div class="leftnav">
- <div id="sidenav-title"><!-- InstanceBeginEditable name="SidebarTitle" -->Weather &amp; Cams<!-- InstanceEndEditable --></div>
- <div id="navigation"><!-- InstanceBeginEditable name="LeftNav" -->
-        <ul>
-          <li><a href="/weather-and-cams/conditions">Conditions &amp; Snow Report</a></li>
-          <li><a href="/weather-and-cams/forecast">Forecast</a></li>
-          <li><a href="/weather-and-cams/web-cams">Web Cams </a></li>
-          <li id="nav-on"><a href="/weather-and-cams/lift-status">Lift Status </a></li>
-          <li><a href="/weather-and-cams/alpine-trail-status">Alpine Trail Status </a></li>
-          <li><a href="/weather-and-cams/nordic-trail-status">Nordic Trail Status </a></li>
-          <li><a href="/weather-and-cams/bike-park-status">Bike Park Lift &amp; Trail Status</a></li>
-          <li><a href="/weather-and-cams/snow-history">Snow History</a></li>
-        </ul>
-        <!-- InstanceEndEditable --></div>
- <div id="left-banner"><!-- InstanceBeginRepeat name="LeftIcon" --><!-- InstanceEndRepeat --></div>
- <div id="closer"></div>
- </div>
- <div class="main-container-wide">
- <div><!-- InstanceBeginEditable name="PageTitle" -->
-        <h1>Lift Status </h1>
-        <!-- InstanceEndEditable --></div>
- <div id="main-content"><!-- InstanceBeginEditable name="Content" -->
+      
+  
+      
+
+
+
+<header id="header" >
+
+    <a href="#main" class="skip-to-content" tabindex="0">Skip to main content</a>
+
+    
+
+    <div class="inner">
+
+        <div class="container">
+
+            <a href="/" title="Home" rel="home" class="logo">
+                <img src="/themes/sunpeaksresort/images/logo.svg" />
+            </a>
+
+            <div id="main-nav">
+                <nav role="navigation" aria-labelledby="block-sunpeaksresort-main-menu-menu" id="block-sunpeaksresort-main-menu" class="block block-menu navigation menu--main">
+            
+  <h2 class="visually-hidden" id="block-sunpeaksresort-main-menu-menu">Main navigation</h2>
+  
+
         
-<h2>Updated at 3:01 PM on September 18, 2013</h2>
-										
+        <ul class="menu">
+                  <li class="menu-item menu-item-explore menu-item--collapsed">
 
-		<table width="100%" border="0" cellspacing="0" cellpadding="0">
-		<tr>
-			<td class="price-grid-header-dark" style="text-align:left; width:180px;">Lift Name </td>
-			<td class="price-grid-header-dark" style="width:80px;">Status</td>
-			<td class="price-grid-header-dark" style="text-align:left;">Notes</td>
-		</tr>
-	
-		<tr>
-			<td valign="top" class="price-grid-text-bold" style="padding-left:2px;">Sunburst Express Chairlift</td>
-			<td align="center" valign="top" class="run-status" id="Closed">Closed</td>
-			<td valign="top" class="price-grid-text"><strong>Opens November 23, 2013</strong><br>
-Operates daily, 9:00am to 3:30pm&nbsp;</td>
-		</tr>
-	
-		<tr>
-			<td valign="top" class="price-grid-text-bold" style="padding-left:2px;">Sundance Express Chairlift</td>
-			<td align="center" valign="top" class="run-status" id="Closed">Closed</td>
-			<td valign="top" class="price-grid-text"><strong>Opens November 23, 2013</strong><br>
-Operates daily, 8:30am to 3:30pm*<br>
-<i>*4:00pm after February 1, 2014</i>&nbsp;</td>
-		</tr>
-	
-		<tr>
-			<td valign="top" class="price-grid-text-bold" style="padding-left:2px;">Morrisey Express Chairlift</td>
-			<td align="center" valign="top" class="run-status" id="Closed">Closed</td>
-			<td valign="top" class="price-grid-text"><strong>Opens November 30, 2013</strong><br>
-Operates daily, 8:30am to 3:30pm*<br>
-<i>*4:00pm after February 1, 2014</i>&nbsp;</td>
-		</tr>
-	
-		<tr>
-			<td valign="top" class="price-grid-text-bold" style="padding-left:2px;">Burfield Chairlift</td>
-			<td align="center" valign="top" class="run-status" id="Closed">Closed</td>
-			<td valign="top" class="price-grid-text"><strong>Opens November 30, 2013</strong><br>
-Operates daily, 9:00am to 3:30pm&nbsp;</td>
-		</tr>
-	
-		<tr>
-			<td valign="top" class="price-grid-text-bold" style="padding-left:2px;">Crystal Chairlift</td>
-			<td align="center" valign="top" class="run-status" id="Closed">Closed</td>
-			<td valign="top" class="price-grid-text"><strong>Opens November 23, 2013</strong><br>
-Operates daily, 9:00am to 3:30pm&nbsp;</td>
-		</tr>
-	
-		<tr>
-			<td valign="top" class="price-grid-text-bold" style="padding-left:2px;">Elevation Chairlift</td>
-			<td align="center" valign="top" class="run-status" id="Closed">Closed</td>
-			<td valign="top" class="price-grid-text"><strong>Opens November 23, 2013</strong><br>
-Operates daily, 9:00am to 3:30pm&nbsp;</td>
-		</tr>
-	
-		<tr>
-			<td valign="top" class="price-grid-text-bold" style="padding-left:2px;">West Bowl T-Bar</td>
-			<td align="center" valign="top" class="run-status" id="Closed">Closed</td>
-			<td valign="top" class="price-grid-text"><strong>Opens December 13, 2013</strong><br>
-Operates Saturdays, Sundays, & holidays; 
-10:00am to 2:00pm&nbsp;</td>
-		</tr>
-	
-		<tr>
-			<td valign="top" class="price-grid-text-bold" style="padding-left:2px;">Morrisey Platter Lift</td>
-			<td align="center" valign="top" class="run-status" id="Closed">Closed</td>
-			<td valign="top" class="price-grid-text"><strong>Opens November 30, 2013</strong><br>
-Operates daily, 8:30am to 3:30pm&nbsp;</td>
-		</tr>
-	
-		<tr>
-			<td valign="top" class="price-grid-text-bold" style="padding-left:2px;">Village Platter Lift</td>
-			<td align="center" valign="top" class="run-status" id="Closed">Closed</td>
-			<td valign="top" class="price-grid-text"><strong>Opens November 23, 2013</strong><br>
-Operates daily, 8:30am to 4:30pm*<br>
-<i>*8:30am to 7:00pm weekends & holidays</i>&nbsp;</td>
-		</tr>
-	
-		<tr>
-			<td valign="top" class="price-grid-text-bold" style="padding-left:2px;">Village Carpet</td>
-			<td align="center" valign="top" class="run-status" id="Closed">Closed</td>
-			<td valign="top" class="price-grid-text"><strong>Opens November 23, 2013</strong><br>
-Operates daily, 8:30am to 7:00pm&nbsp;</td>
-		</tr>
-	
-		<tr>
-			<td valign="top" class="price-grid-text-bold" style="padding-left:2px;">Tube Time Carpet</td>
-			<td align="center" valign="top" class="run-status" id="Closed">Closed</td>
-			<td valign="top" class="price-grid-text"><strong>Opens December 13, 2013</strong><br>
-Operates daily, 12:00pm to 7:00pm&nbsp;</td>
-		</tr>
-	</table>
+                  <a href="/explore" data-drupal-link-system-path="node/1">Explore</a>
+        
+      </li>
+                <li class="menu-item menu-item-ski-&amp;-ride menu-item--collapsed menu-item--active-trail">
 
-        <!-- InstanceEndEditable --></div>
- </div>
- 
- <div class="clearfloat"></div>
- </div>
+                  <a href="/ski-ride" data-drupal-link-system-path="node/2">Ski &amp; Ride</a>
+        
+      </li>
+                <li class="menu-item menu-item-bike-&amp;-hike menu-item--collapsed">
+
+                  <a href="/bike-hike" data-drupal-link-system-path="node/3">Bike &amp; Hike</a>
+        
+      </li>
+                <li class="menu-item menu-item-golf menu-item--collapsed">
+
+                  <a href="/golf" data-drupal-link-system-path="node/4">Golf</a>
+        
+      </li>
+                <li class="menu-item menu-item-events-&amp;-things-to-do menu-item--collapsed">
+
+                  <a href="/events-things-to-do" data-drupal-link-system-path="node/5">Events &amp; Things To Do</a>
+        
+      </li>
+                <li class="menu-item menu-item-places-to-stay menu-item--collapsed">
+
+                  <a href="/places-to-stay" data-drupal-link-system-path="node/6">Places To Stay</a>
+        
+      </li>
+      </ul>
+    
+
+
+  </nav>
+
+            </div>
+
+            
+
+<div id="menu-overlay" class="overlay" tabindex="0">
+<div class="container">
+    <div id="menu-explore" class="sub-menu nano">
+    <div class="nano-content">
+
+        <div class="inner">
+
+            
+            <!-- Print Menus -->
+            <nav role="navigation" aria-labelledby="block-explore-menu-menu" id="block-explore-menu" class="block block-menu navigation menu--main">
+            
+  <h2 class="visually-hidden" id="block-explore-menu-menu">Explore Menu</h2>
+  
+
+        
+        <ul class="menu">
+                  <li class="menu-item menu-item-sun-peaks-in-winter">
+
+                  <a href="/explore/sun-peaks-in-winter" data-drupal-link-system-path="node/102">Sun Peaks in Winter</a>
+        
+      </li>
+                <li class="menu-item menu-item-sun-peaks-in-summer">
+
+                  <a href="/explore/sun-peaks-in-summer" data-drupal-link-system-path="node/103">Sun Peaks in Summer</a>
+        
+      </li>
+                <li class="menu-item menu-item-sun-peaks-for-families">
+
+                  <a href="/explore/sun-peaks-for-families" data-drupal-link-system-path="node/104">Sun Peaks for Families</a>
+        
+      </li>
+                <li class="menu-item menu-item-groups-&amp;-weddings menu-item--expanded">
+
+                  <a class="title" tabindex="0">Groups &amp; Weddings</a>
+                    <ul class="menu">
+                    <li class="menu-item menu-item-meetings,-conferences-&amp;-retreats">
+
+                  <a href="/explore/groups-weddings/meetings-conferences-retreats" title="Meetings, Conferences &amp; Retreats" data-drupal-link-system-path="node/106">Meetings, Conferences &amp; Retreats</a>
+        
+      </li>
+                <li class="menu-item menu-item-general-groups">
+
+                  <a href="/explore/groups-weddings/general-groups" data-drupal-link-system-path="node/107">General Groups</a>
+        
+      </li>
+                <li class="menu-item menu-item-school-groups">
+
+                  <a href="/explore/groups-weddings/school-groups" data-drupal-link-system-path="node/108">School Groups</a>
+        
+      </li>
+                <li class="menu-item menu-item-weddings">
+
+                  <a href="/explore/groups-weddings/weddings" data-drupal-link-system-path="node/109">Weddings</a>
+        
+      </li>
+      </ul>
+    
+        
+      </li>
+                <li class="menu-item menu-item-getting-here menu-item--expanded">
+
+                  <a class="title" tabindex="0">Getting Here</a>
+                    <ul class="menu">
+                    <li class="menu-item menu-item-driving-to-sun-peaks">
+
+                  <a href="/explore/getting-here/driving-to-sun-peaks" title="Driving to Sun Peaks" data-drupal-link-system-path="node/585">Driving to Sun Peaks</a>
+        
+      </li>
+                <li class="menu-item menu-item-flying-to-sun-peaks">
+
+                  <a href="/explore/getting-here/flying-to-sun-peaks" title="Flying to Sun Peaks" data-drupal-link-system-path="node/587">Flying to Sun Peaks</a>
+        
+      </li>
+                <li class="menu-item menu-item-airport-shuttles">
+
+                  <a href="/explore/getting-here/airport-shuttles" title="Airport Shuttles" data-drupal-link-system-path="node/588">Airport Shuttles</a>
+        
+      </li>
+                <li class="menu-item menu-item-inter-resort-shuttles">
+
+                  <a href="/explore/getting-here/inter-resort-shuttles" title="Inter Resort Shuttles" data-drupal-link-system-path="node/608">Inter Resort Shuttles</a>
+        
+      </li>
+                <li class="menu-item menu-item-kamloops-ski-&amp;-ride-bus">
+
+                  <a href="/explore/getting-here/kamloops-ski-ride-bus" title="Kamloops Ski &amp; Ride Bus" data-drupal-link-system-path="node/609">Kamloops Ski &amp; Ride Bus</a>
+        
+      </li>
+                <li class="menu-item menu-item-resort-transit-service">
+
+                  <a href="/explore/getting-here/resort-transit-service" title="Resort Transit Service" data-drupal-link-system-path="node/798">Resort Transit Service</a>
+        
+      </li>
+      </ul>
+    
+        
+      </li>
+                <li class="menu-item menu-item-stories-&amp;-inspiration">
+
+                  <a href="/explore/stories-inspiration" data-drupal-link-system-path="node/28">Stories &amp; Inspiration</a>
+        
+      </li>
+                <li class="menu-item menu-item-news-&amp;-updates">
+
+                  <a href="/explore/news-updates" data-drupal-link-system-path="node/30">News &amp; Updates</a>
+        
+      </li>
+                <li class="menu-item menu-item-galleries menu-item--expanded">
+
+                  <a class="title" tabindex="0">Galleries</a>
+                    <ul class="menu">
+                    <li class="menu-item menu-item-photo-gallery">
+
+                  <a href="/explore/galleries/photo-gallery" data-drupal-link-system-path="node/111">Photo Gallery</a>
+        
+      </li>
+                <li class="menu-item menu-item-video-gallery">
+
+                  <a href="/explore/video-gallery" data-drupal-link-system-path="node/192">Video Gallery</a>
+        
+      </li>
+      </ul>
+    
+        
+      </li>
+                <li class="menu-item menu-item-village-map">
+
+                  <a href="/explore/village-map" data-drupal-link-system-path="node/193">Village Map</a>
+        
+      </li>
+      </ul>
+    
+
+
+  </nav>
+
+
+            <!-- Print Booking Links -->
+            
+
+        </div>
+
+        <a class="close" href="#">Close</a>
+
+    </div>
+    </div>
+
+    <div id="menu-ski-ride" class="sub-menu nano">
+    <div class="nano-content">
+
+        <div class="inner">
+
+            
+            <!-- Print Menus -->
+            <nav role="navigation" aria-labelledby="block-ski-ride-menu-menu" id="block-ski-ride-menu" class="block block-menu navigation menu--main">
+            
+  <h2 class="visually-hidden" id="block-ski-ride-menu-menu">Ski &amp; Ride Menu</h2>
+  
+
+        
+        <ul class="menu">
+                  <li class="menu-item menu-item-the-mountain menu-item--expanded">
+
+                  <a class="title" tabindex="0">The Mountain</a>
+                    <ul class="menu">
+                    <li class="menu-item menu-item-trail-maps-&amp;-terrain">
+
+                  <a href="/ski-ride/the-mountain/trail-maps-terrain" data-drupal-link-system-path="node/120">Trail Maps &amp; Terrain</a>
+        
+      </li>
+                <li class="menu-item menu-item-terrain-parks">
+
+                  <a href="/ski-ride/the-mountain/terrain-parks" data-drupal-link-system-path="node/121">Terrain Parks</a>
+        
+      </li>
+                <li class="menu-item menu-item-mountain-tours">
+
+                  <a href="/ski-ride/the-mountain/mountain-tours" data-drupal-link-system-path="node/122">Mountain Tours</a>
+        
+      </li>
+                <li class="menu-item menu-item-race-centre">
+
+                  <a href="/ski-ride/the-mountain/race-centre" title="Race Centre" data-drupal-link-system-path="node/124">Race Centre</a>
+        
+      </li>
+                <li class="menu-item menu-item-mountain-safety">
+
+                  <a href="/ski-ride/the-mountain/mountain-safety" data-drupal-link-system-path="node/125">Mountain Safety</a>
+        
+      </li>
+                <li class="menu-item menu-item-hours-of-operation">
+
+                  <a href="/ski-ride/the-mountain/hours-of-operation" data-drupal-link-system-path="node/126">Hours of Operation</a>
+        
+      </li>
+      </ul>
+    
+        
+      </li>
+                <li class="menu-item menu-item-weather,-conditions-&amp;-cams menu-item--expanded menu-item--active-trail">
+
+                  <a class="title" tabindex="0">Weather, Conditions &amp; Cams</a>
+                    <ul class="menu">
+                    <li class="menu-item menu-item-weather-&amp;-snow-report">
+
+                  <a href="/ski-ride/weather-conditions-cams/weather-snow-report" data-drupal-link-system-path="node/118">Weather &amp; Snow Report</a>
+        
+      </li>
+                <li class="menu-item menu-item-webcams">
+
+                  <a href="/ski-ride/weather-conditions-cams/webcams" data-drupal-link-system-path="node/119">Webcams</a>
+        
+      </li>
+                <li class="menu-item menu-item-lifts-&amp;-trail-status menu-item--active-trail">
+
+                  <a href="/ski-ride/weather-conditions-cams/lifts-trail-status" data-drupal-link-system-path="node/74" class="is-active">Lifts &amp; Trail Status</a>
+        
+      </li>
+                <li class="menu-item menu-item-updates">
+
+                  <a href="/ski-ride/weather-conditions-cams/updates" data-drupal-link-system-path="node/177">Updates</a>
+        
+      </li>
+      </ul>
+    
+        
+      </li>
+                <li class="menu-item menu-item-tickets-&amp;-passes menu-item--expanded">
+
+                  <a class="title" tabindex="0">Tickets &amp; Passes</a>
+                    <ul class="menu">
+                    <li class="menu-item menu-item-day-tickets">
+
+                  <a href="/ski-ride/tickets-passes/day-tickets" data-drupal-link-system-path="node/113">Day Tickets</a>
+        
+      </li>
+                <li class="menu-item menu-item-peaks-snow-cards">
+
+                  <a href="/ski-ride/tickets-passes/peaks-snow-cards" data-drupal-link-system-path="node/115">Peaks Snow Cards</a>
+        
+      </li>
+                <li class="menu-item menu-item-season-passes">
+
+                  <a href="/ski-ride/tickets-passes/season-passes" data-drupal-link-system-path="node/114">Season Passes</a>
+        
+      </li>
+      </ul>
+    
+        
+      </li>
+                <li class="menu-item menu-item-sports-school-&amp;-rentals menu-item--expanded">
+
+                  <a class="title" tabindex="0">Sports School &amp; Rentals</a>
+                    <ul class="menu">
+                    <li class="menu-item menu-item-explore-sports-school">
+
+                  <a href="/ski-ride/sports-school-rentals/explore-sports-school" data-drupal-link-system-path="node/153">Explore Sports School</a>
+        
+      </li>
+                <li class="menu-item menu-item-lessons,-camps-&amp;-programs">
+
+                  <a href="/ski-ride/sports-school-rentals/lessons-camps-programs" data-drupal-link-system-path="node/38">Lessons, Camps &amp; Programs</a>
+        
+      </li>
+                <li class="menu-item menu-item-childminding-&amp;-daycare">
+
+                  <a href="/ski-ride/sports-school-rentals/childminding-daycare" data-drupal-link-system-path="node/154">Childminding &amp; Daycare</a>
+        
+      </li>
+                <li class="menu-item menu-item-rental-equipment">
+
+                  <a href="/ski-ride/sports-school-rentals/rental-equipment" data-drupal-link-system-path="node/128">Rental Equipment</a>
+        
+      </li>
+                <li class="menu-item menu-item-adaptive-sports">
+
+                  <a href="/ski-ride/sports-school-rentals/adaptive-sports" data-drupal-link-system-path="node/129">Adaptive Sports</a>
+        
+      </li>
+      </ul>
+    
+        
+      </li>
+                <li class="menu-item menu-item-nordic-skiing menu-item--expanded">
+
+                  <a class="title" tabindex="0">Nordic Skiing</a>
+                    <ul class="menu">
+                    <li class="menu-item menu-item-explore-nordic-skiing">
+
+                  <a href="/ski-ride/nordic-skiing/explore-nordic-skiing" data-drupal-link-system-path="node/152">Explore Nordic Skiing</a>
+        
+      </li>
+                <li class="menu-item menu-item-tickets-&amp;-passes">
+
+                  <a href="/ski-ride/nordic-skiing/tickets-passes" data-drupal-link-system-path="node/157">Tickets &amp; Passes</a>
+        
+      </li>
+                <li class="menu-item menu-item-trail-maps-&amp;-status">
+
+                  <a href="/ski-ride/nordic-skiing/trail-maps-status" data-drupal-link-system-path="node/158">Trail Maps &amp; Status</a>
+        
+      </li>
+                <li class="menu-item menu-item-lessons,-camps-&amp;-events">
+
+                  <a href="/ski-ride/nordic-skiing/lessons-camps-events" data-drupal-link-system-path="node/159">Lessons, Camps &amp; Events</a>
+        
+      </li>
+      </ul>
+    
+        
+      </li>
+      </ul>
+    
+
+
+  </nav>
+
+
+            <!-- Print Booking Links -->
+                            <div class="buttons">
+                    <a href="http://sunpeaksresort.ltibooking.com/" target="_blank" class="btn-solid">Buy Lift Tickets</a>
+                </div>
+
+            
+
+        </div>
+
+        <a class="close" href="#">Close</a>
+
+    </div>
+    </div>
+
+    <div id="menu-bike-hike" class="sub-menu nano">
+    <div class="nano-content">
+
+        <div class="inner">
+
+            
+            <!-- Print Menus -->
+            <nav role="navigation" aria-labelledby="block-bike-hike-menu-menu" id="block-bike-hike-menu" class="block block-menu navigation menu--main">
+            
+  <h2 class="visually-hidden" id="block-bike-hike-menu-menu">Bike &amp; Hike Menu</h2>
+  
+
+        
+        <ul class="menu">
+                  <li class="menu-item menu-item-bike menu-item--expanded">
+
+                  <a class="title" tabindex="0">Bike</a>
+                    <ul class="menu">
+                    <li class="menu-item menu-item-explore-biking">
+
+                  <a href="/bike-hike/bike/explore-biking" data-drupal-link-system-path="node/132">Explore Biking</a>
+        
+      </li>
+                <li class="menu-item menu-item-bike-park">
+
+                  <a href="/bike-hike/bike/bike-park" data-drupal-link-system-path="node/36">Bike Park</a>
+        
+      </li>
+                <li class="menu-item menu-item-lift-&amp;-trail-status">
+
+                  <a href="/bike-hike/bike/lift-trail-status" data-drupal-link-system-path="node/99">Lift &amp; Trail Status</a>
+        
+      </li>
+                <li class="menu-item menu-item-cross-country">
+
+                  <a href="/bike-hike/bike/cross-country" data-drupal-link-system-path="node/134">Cross Country</a>
+        
+      </li>
+                <li class="menu-item menu-item-camps,-lessons-&amp;-tours">
+
+                  <a href="/bike-hike/bike/camps-lessons-tours" data-drupal-link-system-path="node/42">Camps, Lessons &amp; Tours</a>
+        
+      </li>
+                <li class="menu-item menu-item-rentals-&amp;-gear">
+
+                  <a href="/bike-hike/bike/rentals-gear" data-drupal-link-system-path="node/135">Rentals &amp; Gear</a>
+        
+      </li>
+                <li class="menu-item menu-item-responsibility-code">
+
+                  <a href="/bike-hike/bike/responsibility-code" data-drupal-link-system-path="node/197">Responsibility Code</a>
+        
+      </li>
+      </ul>
+    
+        
+      </li>
+                <li class="menu-item menu-item-hike menu-item--expanded">
+
+                  <a class="title" tabindex="0">Hike</a>
+                    <ul class="menu">
+                    <li class="menu-item menu-item-explore-hiking">
+
+                  <a href="/bike-hike/hike/explore-hiking" data-drupal-link-system-path="node/136">Explore Hiking</a>
+        
+      </li>
+                <li class="menu-item menu-item-hiking-trail-map-&amp;-status">
+
+                  <a href="/bike-hike/hike/hiking-trail-map-status" data-drupal-link-system-path="node/138">Hiking Trail Map &amp; Status</a>
+        
+      </li>
+                <li class="menu-item menu-item-guided-hiking-tours">
+
+                  <a href="/bike-hike/hike/guided-hiking-tours" data-drupal-link-system-path="node/137">Guided Hiking Tours</a>
+        
+      </li>
+                <li class="menu-item menu-item-flora-&amp;-fauna">
+
+                  <a href="/bike-hike/hike/flora-fauna" data-drupal-link-system-path="node/139">Flora &amp; Fauna</a>
+        
+      </li>
+      </ul>
+    
+        
+      </li>
+                <li class="menu-item menu-item-alpine-sightseeing">
+
+                  <a href="/bike-hike/alpine-sightseeing" data-drupal-link-system-path="node/131">Alpine Sightseeing</a>
+        
+      </li>
+                <li class="menu-item menu-item-tickets-&amp;-passes">
+
+                  <a href="/bike-hike/tickets-passes" data-drupal-link-system-path="node/155">Tickets &amp; Passes</a>
+        
+      </li>
+      </ul>
+    
+
+
+  </nav>
+
+
+            <!-- Print Booking Links -->
+                            <div class="buttons">
+                    <a href="/bike-hike/tickets-passes" class="btn-solid">Buy Bike Park Tickets</a>
+                    <a href="/bike-hike/tickets-passes" class="btn-solid">Buy Hiking &amp; Sightseeing Tickets</a>
+                </div>
+
+            
+
+        </div>
+
+        <a class="close" href="#">Close</a>
+
+    </div>
+    </div>
+
+    <div id="menu-golf" class="sub-menu nano">
+    <div class="nano-content">
+
+        <div class="inner">
+
+            
+            <!-- Print Menus -->
+            <nav role="navigation" aria-labelledby="block-golf-menu-menu" id="block-golf-menu" class="block block-menu navigation menu--main">
+            
+  <h2 class="visually-hidden" id="block-golf-menu-menu">Golf Menu</h2>
+  
+
+        
+        <ul class="menu">
+                  <li class="menu-item menu-item-explore-golf">
+
+                  <a href="/golf/explore-golf" data-drupal-link-system-path="node/140">Explore Golf</a>
+        
+      </li>
+                <li class="menu-item menu-item-rates-&amp;-membership">
+
+                  <a href="/golf/rates-membership" data-drupal-link-system-path="node/141">Rates &amp; Membership</a>
+        
+      </li>
+                <li class="menu-item menu-item-weekly-events-&amp;-specials">
+
+                  <a href="/golf/weekly-events-specials" data-drupal-link-system-path="node/156">Weekly Events &amp; Specials</a>
+        
+      </li>
+                <li class="menu-item menu-item-course-info">
+
+                  <a href="/golf/golf-course-info" data-drupal-link-system-path="node/34">Course Info</a>
+        
+      </li>
+                <li class="menu-item menu-item-course-layout">
+
+                  <a href="/golf/course-layout" data-drupal-link-system-path="node/142">Course Layout</a>
+        
+      </li>
+                <li class="menu-item menu-item-lessons">
+
+                  <a href="/golf/lessons" data-drupal-link-system-path="node/44">Lessons</a>
+        
+      </li>
+                <li class="menu-item menu-item-groups-&amp;-tournaments">
+
+                  <a href="/golf/groups-tournaments" data-drupal-link-system-path="node/143">Groups &amp; Tournaments</a>
+        
+      </li>
+      </ul>
+    
+
+
+  </nav>
+
+
+            <!-- Print Booking Links -->
+                            <div class="buttons">
+                    <a href="/golf/rates-membership" class="btn-solid">Book A Tee Time</a>
+                </div>
+
+            
+
+        </div>
+
+        <a class="close" href="#">Close</a>
+
+    </div>
+    </div>
+
+    <div id="menu-events-things-to-do" class="sub-menu nano">
+    <div class="nano-content">
+
+        <div class="inner">
+
+                            <nav id="block-events-extra-menu">
+                    <ul class="menu">
+                        <li class="menu-item"><a href="/events-things-to-do/activities?season=winter">Winter Activities</a></li>
+                        <li class="menu-item"><a href="/events-things-to-do/activities?season=summer">Summer Activities</a></li>
+                    </ul>
+                </nav>
+            
+            <!-- Print Menus -->
+            <nav role="navigation" aria-labelledby="block-events-menu-menu" id="block-events-menu" class="block block-menu navigation menu--main">
+            
+  <h2 class="visually-hidden" id="block-events-menu-menu">Events Menu</h2>
+  
+
+        
+        <ul class="menu">
+                  <li class="menu-item menu-item-event-calendar">
+
+                  <a href="/events-things-to-do/events" data-drupal-link-system-path="node/69">Event Calendar</a>
+        
+      </li>
+                <li class="menu-item menu-item-activities">
+
+                  <a href="/events-things-to-do/activities" data-drupal-link-system-path="node/22">Activities</a>
+        
+      </li>
+                <li class="menu-item menu-item-dining-&amp;-apres">
+
+                  <a href="/events-things-do/dining-apres" data-drupal-link-system-path="node/46">Dining &amp; Apres</a>
+        
+      </li>
+                <li class="menu-item menu-item-shopping">
+
+                  <a href="/events-things-do/shopping" data-drupal-link-system-path="node/47">Shopping</a>
+        
+      </li>
+                <li class="menu-item menu-item-spa-&amp;-wellness">
+
+                  <a href="/events-things-do/spa-wellness" data-drupal-link-system-path="node/48">Spa &amp; Wellness</a>
+        
+      </li>
+      </ul>
+    
+
+
+  </nav>
+
+
+            <!-- Print Booking Links -->
+            
+
+        </div>
+
+        <a class="close" href="#">Close</a>
+
+    </div>
+    </div>
+
+    <div id="menu-places-to-stay" class="sub-menu nano">
+    <div class="nano-content">
+
+        <div class="inner">
+
+            
+            <!-- Print Menus -->
+            <nav role="navigation" aria-labelledby="block-places-to-stay-menu-menu" id="block-places-to-stay-menu" class="block block-menu navigation menu--main">
+            
+  <h2 class="visually-hidden" id="block-places-to-stay-menu-menu">Places To Stay Menu</h2>
+  
+
+        
+        <ul class="menu">
+                  <li class="menu-item menu-item-winter-lodging-packages">
+
+                  <a href="/places-to-stay/winter-lodging-packages" data-drupal-link-system-path="node/67">Winter Lodging Packages</a>
+        
+      </li>
+                <li class="menu-item menu-item-summer-lodging-packages">
+
+                  <a href="/places-to-stay/summer-lodging-packages" data-drupal-link-system-path="node/68">Summer Lodging Packages</a>
+        
+      </li>
+                <li class="menu-item menu-item-hotels-&amp;-lodging">
+
+                  <a href="/places-to-stay/hotels-lodging" data-drupal-link-system-path="node/49">Hotels &amp; Lodging</a>
+        
+      </li>
+                <li class="menu-item menu-item-condos-&amp;-townhomes">
+
+                  <a href="/places-to-stay/condos-townhomes" data-drupal-link-system-path="node/50">Condos &amp; Townhomes</a>
+        
+      </li>
+                <li class="menu-item menu-item-chalets">
+
+                  <a href="/places-to-stay/chalets" data-drupal-link-system-path="node/51">Chalets</a>
+        
+      </li>
+                <li class="menu-item menu-item-hostels-&amp;-speciality-lodging">
+
+                  <a href="/places-to-stay/specialty-lodging" data-drupal-link-system-path="node/52">Hostels &amp; Speciality Lodging</a>
+        
+      </li>
+                <li class="menu-item menu-item-rving-&amp;-camping">
+
+                  <a href="/places-to-stay/rving-camping" data-drupal-link-system-path="node/53">RVing &amp; Camping</a>
+        
+      </li>
+      </ul>
+    
+
+
+  </nav>
+
+
+            <!-- Print Booking Links -->
+                            <div class="buttons">
+                    <a href="https://www.inntopia.travel/ecomm/Shop/Lodging/593730" target="_blank" class="btn-solid">Book Lodging</a>
+                </div>
+
+            
+
+        </div>
+
+        <a class="close" href="#">Close</a>
+
+    </div>
+    </div>
+
 </div>
-<div class="footer-container">
- <div id="content" style="padding-top:23px;"><a href="/corporate/contact-us">Contact Us</a><span>|</span><a href="/real-estate">Real Estate</a><span>|</span><a href="/corporate">Corporate</a><span>|</span><a href="/tourism-sun-peaks">Tourism Sun Peaks</a><span>|</span><a href="/media-centre">Media Centre</a><span>|</span><a href="/corporate/work-and-play/opportunities">Employment</a><span>|</span><a href="/corporate/partners">Thanks to our Corporate Partners</a><span>|</span><a href="/site-map">Site Map</a></div>
- <div id="iso" style="margin:5px auto;">As a leader in protecting the environment, Sun Peaks Resort Corporation Management System has been certified to ISO 14001 (Certificate #026082).</div>
- <div id="map">
- <div style="padding-bottom:10px;"><img src="/assets/master/footer-top.png"></div>
- <div id="col1">
- <ul>
- <li><a href="/plan-your-trip/">Plan Your Trip</a></li>
- <li><a href="/plan-your-trip/why-sun-peaks/">Why Sun Peaks?</a></li>
- <li><a href="/plan-your-trip/packages">Packages &amp; Deals</a></li>
- <li><a href="/plan-your-trip/accommodations">Accommodations</a></li>
- <li><a href="/plan-your-trip/entering-canada">Entering Canada</a></li>
- <li><a href="/plan-your-trip/getting-here"> Getting Here</a></li>
- <li><a href="/plan-your-trip/group-bookings">Group Bookings</a></li>
- <li><a href="/plan-your-trip/weddings">Weddings</a></li>
- <li><a href="/plan-your-trip/tour-operators">Tour Operators</a></li>
- <li><a href="/plan-your-trip/sun-peaks-gift-cards">Sun Peaks Gift Cards</a></li>
- </ul>
- </div>
- <div id="col2">
- <ul>
- <li><a href="/winter/">Winter</a></li>
- <li><a href="/winter/mountain-stats">Mountain Stats</a></li>
- <li><a href="/winter/hours">Hours of Operation</a></li>
- <li><a href="/winter/tickets">Tickets &amp; Passes</a></li>
- <li><a href="/winter/interactive-maps">Interactive Maps</a></li>
- <li><a href="/winter/guided-tours">Guided  Tours</a></li>
- <li><a href="/winter/nordic">Nordic Skiing</a></li>
- <li><a href="/winter/terrain-park">Terrain Park</a></li>
- <li><a href="/winter/equipment-rentals">Equipment Rentals</a></li>
- <li><a href="/winter/race-centre">Race Centre</a></li>
- <li><a href="/winter/activities">Winter Activities</a></li>
- <li><a href="/winter/mountain-safety">Mountain Safety</a></li>
- </ul>
- </div>
- <div id="col3">
-   <ul>
-     <li><a href="/sports-school">Sports School</a></li>
-     <li><a href="/sports-school/who-we-are">Who We Are</a></li>
-     <li><a href="/sports-school/sun-tots">Sun Tots (3-5 yrs)</a></li>
-     <li><a href="/sports-school/sun-kids">Sun Kids (6-12 yrs)</a></li>
-     <li><a href="/sports-school/sundance-kids-centre"> Kids Centre (18 mo-5 yrs)</a></li>
-     <li><a href="/sports-school/group-lessons-and-camps">Group Lessons &amp; Camps</a></li>
-     <li><a href="/sports-school/private-lessons">Private Lessons</a></li>
-     <li><a href="/sports-school/freestyle-programs">Freestyle Programs</a></li>
-     <li><a href="/sports-school/nordic-clinics">Nordic Clinics</a></li>
-     <li><a href="/sports-school/local-programs">Local Programs</a></li>
-     <li><a href="/sports-school/adaptive-sports">Adaptive Sports</a></li>
-     <li><a href="/sports-school/instructor-training">Instructor Training</a></li>
-     <li><a href="/sports-school/ladies-programs">Ladies Programs</a></li>
-   </ul>
- </div>
- <div id="col4">
- <ul>
- <li><a href="/summer/">Summer</a></li>
- <li><a href="/summer/mountain-stats">Mountain Stats</a></li>
- <li><a href="/summer/hours">Hours of Operation</a></li>
- <li><a href="/summer/tickets-and-passes">Tickets &amp; Passes </a></li>
- <li><a href="/summer/experience-packages">Experience Packages </a></li>
- <li><a href="/summer/interactive-maps">Interactive Maps</a></li>
- <li><a href="/summer/golf">Golf</a></li>
- <li><a href="/summer/bike-park">Bike Park</a></li>
- <li><a href="/summer/hiking">Hiking</a></li>
- <li><a href="/summer/activities">Summer Activities</a></li>
- <li><a href="/summer/camping-and-rving">Camping &amp; RVing</a></li>
- </ul>
- </div>
- <div id="col5">
- <ul>
- <li><a href="/events-and-festivals/">Events &amp; Festivals</a></li>
- <li><a href="/events-and-festivals/featured-events">Featured Events</a></li>
- <li><a href="/events-and-festivals/events-calendar">Events Calendar</a></li>
- <li><a href="/events-and-festivals/winter-festival-of-wine"> Winter Festival of Wine</a></li>
- <li><a href="/events-and-festivals/farmers-market">Farmers' Market</a></li>
- </ul>
- </div>
- <div id="col6">
- <ul>
- <li><a href="/the-village/">The Village</a></li>
- <li><a href="/the-village/village-map">Village Map</a></li>
- <li><a href="/the-village/resort-transit-service">Resort Transit Service</a></li>
- <li><a href="/the-village/accommodations">Accommodations</a></li>
- <li><a href="/the-village/shopping">Shopping</a></li>
- <li><a href="/the-village/dining-and-night-life">Dining &amp; Night Life</a></li>
- <li><a href="/the-village/spas">Spas</a></li>
- <li><a href="/the-village/services">Services</a></li>
- </ul>
- </div>
- <div id="col7">
- <ul>
- <li><a href="/weather-and-cams/">Weather &amp; Cams</a></li>
- <li><a href="/weather-and-cams/conditions">Conditions &amp; Snow Report</a></li>
- <li><a href="/weather-and-cams/forecast">Forecast</a></li>
- <li><a href="/weather-and-cams/web-cams">Web Cams</a></li>
- <li><a href="/weather-and-cams/lift-status">Lift Status</a></li>
- <li><a href="/weather-and-cams/alpine-trail-status">Alpine Trail Status</a></li>
- <li><a href="/weather-and-cams/nordic-trail-status">Nordic Trail Status</a></li>
- <li><a href="/weather-and-cams/bike-park-status">Bike Park Lift &amp; Trail Status</a></li>
- <li><a href="/weather-and-cams/snow-history">Snow History</a></li>
- </ul>
- </div>
- <div id="col8">
- <ul>
- <li><a href="/the-hub/">The Hub</a></li>
- <li><a href="/the-hub/social-media">Social Media</a></li>
- <li><a href="/the-hub/photo-share">Photo Share</a></li>
- <li><a href="/the-hub/video-share">Video Share</a></li>
- <li><a href="/the-hub/whats-new">What's New</a></li>
- <li><a href="/311/">Email Signup</a></li>
- <li><a href="/the-hub/desktop-calendar">Desk Calendar</a></li>
- </ul>
- </div>
- <div class="clearfloat"></div>
- </div>
- <div id="bottom">Copyright 2013 Sun Peaks Resort Corporation.&nbsp;&nbsp;&nbsp; <a href="/privacy-policy">Privacy Policy</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/terms-of-use">Terms of Use</a> </div>
- </div> 
+</div>
+            <div class="utility">
 
-<!-- InstanceBeginEditable name="tracking" --><!-- InstanceEndEditable -->
-<div id="fb-root"></div>
-<script>
- window.fbAsyncInit = function() {
- FB.init({appId: '175816272436638', status: true, cookie: true,
- xfbml: true});
- };
- (function() {
- var e = document.createElement('script');
- e.type = 'text/javascript';
- e.src = document.location.protocol +
- '//connect.facebook.net/en_US/all.js';
- e.async = true;
- document.getElementById('fb-root').appendChild(e);
- }());
- </script> 
-<script type="text/javascript" charset="utf-8">
-$(document).ready(function()
-{
-$("a[rel^='prettyPhoto']").prettyPhoto({social_tools: false});
-});
-</script>
-<script type="text/javascript">
- (function() {
- var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
- po.src = 'https://apis.google.com/js/plusone.js';
- var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
- })();
-</script>
-</body>
-<!-- InstanceEnd --></html>
+                <a href="#" class="toggle search" data-type="search"><span>Search</span></a>
+
+                <a href="#" class="toggle weather" data-type="weather" style="visibility:hidden">
+                    <span class="icon icon-sunny_clear_skies"></span>
+                    <span class="temp">-13</span>
+                    <span class="degree">&deg;C</span>
+                </a>
+
+                <div id="nav-toggle">
+                    <a href="#"></a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<div id="page" role="document">
+
+        <div id="background">
+        <div class="background"></div>
+        <div class="foreground">
+            <img src="/themes/sunpeaksresort/images/hero-foreground-winter-1200.png"
+                 srcset="
+                                    /themes/sunpeaksresort/images/hero-foreground-winter-320.png 320w,                                     /themes/sunpeaksresort/images/hero-foreground-winter-480.png 480w,                                     /themes/sunpeaksresort/images/hero-foreground-winter-640.png 640w,                                     /themes/sunpeaksresort/images/hero-foreground-winter-768.png 768w,                                     /themes/sunpeaksresort/images/hero-foreground-winter-1024.png 1024w,                                     /themes/sunpeaksresort/images/hero-foreground-winter-1200.png 1200w,                                     /themes/sunpeaksresort/images/hero-foreground-winter-1600.png 1600w,                                     /themes/sunpeaksresort/images/hero-foreground-winter-2048.png 2048w,                                     /themes/sunpeaksresort/images/hero-foreground-winter-2700.png 2700w                            " sizes="100vw"
+            />
+        </div>
+    </div>
+    
+            <header id="page-title">
+            <h1><span property="schema:name" class="field field--name-title field--type-string field--label-hidden">Lifts &amp; Trail Status</span>
+</h1>
+        </header>
+    
+    <div id="main-wrap" class="clearfix">
+
+        <main id="main"  role="main">
+
+            <section id="content">
+
+                
+                  <div class="">
+    
+
+
+<div id="block-sunpeaksresort-content" class="block block-system block-system-main-block">
+  
+    
+      
+
+<article id="node-74"  data-history-node-id="74" role="article" about="/ski-ride/weather-conditions-cams/lifts-trail-status" typeof="schema:WebPage" class="node node-view-full node-type-page"  data-history-node-id="74" role="article" about="/ski-ride/weather-conditions-cams/lifts-trail-status" typeof="schema:WebPage" class="node node-view-full node-type-page">
+
+    <!-- Thankyou message for weather alerts signup -->
+    
+    <!-- Thankyou message for newsletter signup -->
+    
+    
+    
+
+        
+
+        
+
+        
+
+        
+
+        
+        
+
+        
+
+
+
+
+
+
+
+
+
+
+            <div property="schema:text" class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><p><a class="btn blue" data-entity-type="file" data-entity-uuid="256bce60-a333-4af8-89c3-77c32895ed0b" href="/sites/default/files/inline-files/grooming_conditions_weather_report_December_15_2016%20%5BCompatibility%20Mode%5D_0.pdf" target="_blank">view Grooming Report: Dec. 15 </a>  </p></div>
+      
+
+
+        
+
+                
+
+
+        
+
+        
+
+
+
+        
+
+
+        
+            <div class="listing lifts-trails">
+                <div class="container">
+
+                    <h2 class="line"><span>Lift Status</span></h2>
+            <div class="node-view-row lift-trail-header">
+                <div class="row-cell name">Lift Name</div>
+                <div class="row-cell status">Status</div>
+            </div>
+        
+
+
+<article id="node-77"  data-history-node-id="77" role="article" about="/node/77" class="node node-view-row iso-item cat-&lt;a-href=&quot;/winter&quot;-hreflang=&quot;en&quot;&gt;winter&lt;/a&gt;"  data-history-node-id="77" role="article" about="/node/77" class="node node-view-row iso-item cat-&lt;a-href=&quot;/winter&quot;-hreflang=&quot;en&quot;&gt;winter&lt;/a&gt;">
+
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Burfield Chairlift</span>
+
+                    <span class="notes"> Open daily 9:00am to 3:30pm. </span>
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-78"  data-history-node-id="78" role="article" about="/node/78" class="node node-view-row iso-item cat-&lt;a-href=&quot;/winter&quot;-hreflang=&quot;en&quot;&gt;winter&lt;/a&gt;"  data-history-node-id="78" role="article" about="/node/78" class="node node-view-row iso-item cat-&lt;a-href=&quot;/winter&quot;-hreflang=&quot;en&quot;&gt;winter&lt;/a&gt;">
+
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Crystal Chairlift</span>
+
+                    <span class="notes"> Open daily 9:00am to 3:30pm. </span>
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-79"  data-history-node-id="79" role="article" about="/node/79" class="node node-view-row iso-item cat-&lt;a-href=&quot;/winter&quot;-hreflang=&quot;en&quot;&gt;winter&lt;/a&gt;"  data-history-node-id="79" role="article" about="/node/79" class="node node-view-row iso-item cat-&lt;a-href=&quot;/winter&quot;-hreflang=&quot;en&quot;&gt;winter&lt;/a&gt;">
+
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Elevation Chairlift</span>
+
+                    <span class="notes"> Open daily 9:00am to 3:30pm. </span>
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-350"  data-history-node-id="350" role="article" about="/node/350" class="node node-view-row iso-item cat-&lt;a-href=&quot;/winter&quot;-hreflang=&quot;en&quot;&gt;winter&lt;/a&gt;"  data-history-node-id="350" role="article" about="/node/350" class="node node-view-row iso-item cat-&lt;a-href=&quot;/winter&quot;-hreflang=&quot;en&quot;&gt;winter&lt;/a&gt;">
+
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Learning Zone Carpet</span>
+
+                    <span class="notes"> Open daily 9:00am to 3:30pm. </span>
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-76"  data-history-node-id="76" role="article" about="/node/76" class="node node-view-row iso-item cat-&lt;a-href=&quot;/winter&quot;-hreflang=&quot;en&quot;&gt;winter&lt;/a&gt;"  data-history-node-id="76" role="article" about="/node/76" class="node node-view-row iso-item cat-&lt;a-href=&quot;/winter&quot;-hreflang=&quot;en&quot;&gt;winter&lt;/a&gt;">
+
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Morrisey Express Chairlift</span>
+
+                    <span class="notes"> Open daily 8:30am to 3:30pm (Open until 4:00pm after February 1, 2017) </span>
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-81"  data-history-node-id="81" role="article" about="/node/81" class="node node-view-row iso-item cat-&lt;a-href=&quot;/winter&quot;-hreflang=&quot;en&quot;&gt;winter&lt;/a&gt;"  data-history-node-id="81" role="article" about="/node/81" class="node node-view-row iso-item cat-&lt;a-href=&quot;/winter&quot;-hreflang=&quot;en&quot;&gt;winter&lt;/a&gt;">
+
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Morrisey Platter</span>
+
+                    <span class="notes"> Open daily 8:30am to 3:30pm (Open until 4:00pm after February 1, 2017) </span>
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-72"  data-history-node-id="72" role="article" about="/node/72" class="node node-view-row iso-item cat-&lt;a-href=&quot;/winter&quot;-hreflang=&quot;en&quot;&gt;winter&lt;/a&gt;"  data-history-node-id="72" role="article" about="/node/72" class="node node-view-row iso-item cat-&lt;a-href=&quot;/winter&quot;-hreflang=&quot;en&quot;&gt;winter&lt;/a&gt;">
+
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Sunburst Express Chairlift</span>
+
+                    <span class="notes"> Open daily 9:00am to 3:30pm. </span>
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-75"  data-history-node-id="75" role="article" about="/node/75" class="node node-view-row iso-item cat-&lt;a-href=&quot;/winter&quot;-hreflang=&quot;en&quot;&gt;winter&lt;/a&gt;"  data-history-node-id="75" role="article" about="/node/75" class="node node-view-row iso-item cat-&lt;a-href=&quot;/winter&quot;-hreflang=&quot;en&quot;&gt;winter&lt;/a&gt;">
+
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Sundance Express Chairlift</span>
+
+                    <span class="notes"> Open daily 8:30am to 3:30pm (Open until 4:00pm after February 1, 2017) </span>
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-84"  data-history-node-id="84" role="article" about="/node/84" class="node node-view-row iso-item cat-&lt;a-href=&quot;/winter&quot;-hreflang=&quot;en&quot;&gt;winter&lt;/a&gt;"  data-history-node-id="84" role="article" about="/node/84" class="node node-view-row iso-item cat-&lt;a-href=&quot;/winter&quot;-hreflang=&quot;en&quot;&gt;winter&lt;/a&gt;">
+
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Tube Time Carpet</span>
+
+                    <span class="notes"> Opens daily December 16, 12:00pm to 7:00pm. </span>
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-close"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-83"  data-history-node-id="83" role="article" about="/node/83" class="node node-view-row iso-item cat-&lt;a-href=&quot;/winter&quot;-hreflang=&quot;en&quot;&gt;winter&lt;/a&gt;"  data-history-node-id="83" role="article" about="/node/83" class="node node-view-row iso-item cat-&lt;a-href=&quot;/winter&quot;-hreflang=&quot;en&quot;&gt;winter&lt;/a&gt;">
+
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Village Carpet</span>
+
+                    <span class="notes"> Opens daily December 16, 8:30am to 7:00pm. </span>
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-82"  data-history-node-id="82" role="article" about="/node/82" class="node node-view-row iso-item cat-&lt;a-href=&quot;/winter&quot;-hreflang=&quot;en&quot;&gt;winter&lt;/a&gt;"  data-history-node-id="82" role="article" about="/node/82" class="node node-view-row iso-item cat-&lt;a-href=&quot;/winter&quot;-hreflang=&quot;en&quot;&gt;winter&lt;/a&gt;">
+
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Village Platter</span>
+
+                    <span class="notes"> Open Sunday to Thursday 8:30am to 4:30pm; Fridays, Saturdays, and holidays from 8:30am to 7:00pm (Dec. 10 &amp; 11, open 8:30am - 4:30pm) </span>
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-80"  data-history-node-id="80" role="article" about="/node/80" class="node node-view-row iso-item cat-&lt;a-href=&quot;/winter&quot;-hreflang=&quot;en&quot;&gt;winter&lt;/a&gt;"  data-history-node-id="80" role="article" about="/node/80" class="node node-view-row iso-item cat-&lt;a-href=&quot;/winter&quot;-hreflang=&quot;en&quot;&gt;winter&lt;/a&gt;">
+
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">West Bowl T-Bar</span>
+
+                    <span class="notes"> Opens December 17, weekends and holidays 10:00am to 2:00pm. </span>
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-close"></span>    </div>
+
+
+    
+
+</article>
+
+                </div>
+            </div>
+
+        
+
+
+        
+
+
+        
+            <div class="listing">
+                <div class="container">
+
+                                            <div class="filter-isotope">
+                            <h2 class="line"><span>Alpine Trail Status</span></h2><form class="filterform" data-drupal-selector="filterform" action="/ski-ride/weather-conditions-cams/lifts-trail-status" method="post" id="filterform" accept-charset="UTF-8">
+  <input data-drupal-selector="form-tdsgqzogdhjl8yuooletg-d-04hzb66hz2siw29x-da" type="hidden" name="form_build_id" value="form-tdSGqzogdhjl8YuOOletG-D-04HZB66hz2sIw29X_dA" />
+<input data-drupal-selector="edit-filterform" type="hidden" name="form_id" value="filterForm" />
+<div class="row filter-count-1"><div class="js-form-item form-item js-form-type-select form-type-select js-form-item- form-item- form-no-label">
+        <select id="select" class="dropdown form-select" data-filter-group="zone"><option value="">Select a Zone</option><option value=".cat-burfield">Burfield</option><option value=".cat-crystal">Crystal</option><option value=".cat-mid-mountain">Mid-Mountain</option><option value=".cat-morrisey">Morrisey</option><option value=".cat-morrisey-platter">Morrisey Platter</option><option value=".cat-orient-ridge">Orient Ridge</option><option value=".cat-sunburst">Sunburst</option><option value=".cat-sundance">Sundance</option><option value=".cat-village-platter">Village Platter</option><option value=".cat-west-bowl">West Bowl</option></select>
+        </div>
+<div class="clear-filters"><a href="#">Clear filters</a></div></div>
+</form>
+
+                        </div>
+                    
+                    <div class="inner-listing isoGrid">
+                        
+            <div class="node-view-row lift-trail-header">
+                <div class="row-cell name">Trail Name</div>
+                <div class="row-cell status">Status</div>
+            </div>
+        
+
+
+<article id="node-209"  data-history-node-id="209" role="article" about="/node/209" class="node node-view-row iso-item cat-sunburst"  data-history-node-id="209" role="article" about="/node/209" class="node node-view-row iso-item cat-sunburst">
+
+        <div class="row-cell level"><span class="icon-trail_1-beginner"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">5 Mile</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-288"  data-history-node-id="288" role="article" about="/node/288" class="node node-view-row iso-item cat-morrisey-platter"  data-history-node-id="288" role="article" about="/node/288" class="node node-view-row iso-item cat-morrisey-platter">
+
+        <div class="row-cell level"><span class="icon-trail_1-beginner"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Anticipation</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-211"  data-history-node-id="211" role="article" about="/node/211" class="node node-view-row iso-item cat-sunburst"  data-history-node-id="211" role="article" about="/node/211" class="node node-view-row iso-item cat-sunburst">
+
+        <div class="row-cell level"><span class="icon-trail_1-beginner"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Burfield Outrun</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-85"  data-history-node-id="85" role="article" about="/node/85" class="node node-view-row iso-item cat-sunburst"  data-history-node-id="85" role="article" about="/node/85" class="node node-view-row iso-item cat-sunburst">
+
+        <div class="row-cell level"><span class="icon-trail_1-beginner"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Cahilty</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-210"  data-history-node-id="210" role="article" about="/node/210" class="node node-view-row iso-item cat-sunburst"  data-history-node-id="210" role="article" about="/node/210" class="node node-view-row iso-item cat-sunburst">
+
+        <div class="row-cell level"><span class="icon-trail_1-beginner"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Connector</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-311"  data-history-node-id="311" role="article" about="/node/311" class="node node-view-row iso-item cat-village-platter"  data-history-node-id="311" role="article" about="/node/311" class="node node-view-row iso-item cat-village-platter">
+
+        <div class="row-cell level"><span class="icon-trail_1-beginner"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Cowabunga</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-212"  data-history-node-id="212" role="article" about="/node/212" class="node node-view-row iso-item cat-mid-mountain"  data-history-node-id="212" role="article" about="/node/212" class="node node-view-row iso-item cat-mid-mountain">
+
+        <div class="row-cell level"><span class="icon-trail_1-beginner"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Crystal Lane</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-289"  data-history-node-id="289" role="article" about="/node/289" class="node node-view-row iso-item cat-morrisey-platter"  data-history-node-id="289" role="article" about="/node/289" class="node node-view-row iso-item cat-morrisey-platter">
+
+        <div class="row-cell level"><span class="icon-trail_1-beginner"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Downtown</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-317"  data-history-node-id="317" role="article" about="/node/317" class="node node-view-row iso-item cat-orient-ridge"  data-history-node-id="317" role="article" about="/node/317" class="node node-view-row iso-item cat-orient-ridge">
+
+        <div class="row-cell level"><span class="icon-trail_1-beginner"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">East Village Ski Way</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-286"  data-history-node-id="286" role="article" about="/node/286" class="node node-view-row iso-item cat-morrisey"  data-history-node-id="286" role="article" about="/node/286" class="node node-view-row iso-item cat-morrisey">
+
+        <div class="row-cell level"><span class="icon-trail_1-beginner"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Fairways Ski Back</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-312"  data-history-node-id="312" role="article" about="/node/312" class="node node-view-row iso-item cat-village-platter"  data-history-node-id="312" role="article" about="/node/312" class="node node-view-row iso-item cat-village-platter">
+
+        <div class="row-cell level"><span class="icon-trail_1-beginner"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Gentle Giant</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-314"  data-history-node-id="314" role="article" about="/node/314" class="node node-view-row iso-item cat-sundance"  data-history-node-id="314" role="article" about="/node/314" class="node node-view-row iso-item cat-sundance">
+
+        <div class="row-cell level"><span class="icon-trail_1-beginner"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Home Instead</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-290"  data-history-node-id="290" role="article" about="/node/290" class="node node-view-row iso-item cat-morrisey"  data-history-node-id="290" role="article" about="/node/290" class="node node-view-row iso-item cat-morrisey">
+
+        <div class="row-cell level"><span class="icon-trail_1-beginner"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Home Run</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-313"  data-history-node-id="313" role="article" about="/node/313" class="node node-view-row iso-item cat-sundance"  data-history-node-id="313" role="article" about="/node/313" class="node node-view-row iso-item cat-sundance">
+
+        <div class="row-cell level"><span class="icon-trail_1-beginner"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Homesteader</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-318"  data-history-node-id="318" role="article" about="/node/318" class="node node-view-row iso-item cat-orient-ridge"  data-history-node-id="318" role="article" about="/node/318" class="node node-view-row iso-item cat-orient-ridge">
+
+        <div class="row-cell level"><span class="icon-trail_1-beginner"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Mt. Morrisey Connector</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-310"  data-history-node-id="310" role="article" about="/node/310" class="node node-view-row iso-item cat-sundance"  data-history-node-id="310" role="article" about="/node/310" class="node node-view-row iso-item cat-sundance">
+
+        <div class="row-cell level"><span class="icon-trail_1-beginner"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Rambler</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-315"  data-history-node-id="315" role="article" about="/node/315" class="node node-view-row iso-item cat-village-platter"  data-history-node-id="315" role="article" about="/node/315" class="node node-view-row iso-item cat-village-platter">
+
+        <div class="row-cell level"><span class="icon-trail_1-beginner"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Sunbeam</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-750"  data-history-node-id="750" role="article" about="/node/750" class="node node-view-row iso-item cat-sundance"  data-history-node-id="750" role="article" about="/node/750" class="node node-view-row iso-item cat-sundance">
+
+        <div class="row-cell level"><span class="icon-trail_1-beginner"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Sundance Return</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-337"  data-history-node-id="337" role="article" about="/node/337" class="node node-view-row iso-item cat-sundance"  data-history-node-id="337" role="article" about="/node/337" class="node node-view-row iso-item cat-sundance">
+
+        <div class="row-cell level"><span class="icon-trail_1-beginner"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Terrain Park - Green Zone</span>
+
+                    <span class="notes">              </span>
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-287"  data-history-node-id="287" role="article" about="/node/287" class="node node-view-row iso-item cat-morrisey"  data-history-node-id="287" role="article" about="/node/287" class="node node-view-row iso-item cat-morrisey">
+
+        <div class="row-cell level"><span class="icon-trail_1-beginner"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">The Sticks</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-751"  data-history-node-id="751" role="article" about="/node/751" class="node node-view-row iso-item cat-sundance"  data-history-node-id="751" role="article" about="/node/751" class="node node-view-row iso-item cat-sundance">
+
+        <div class="row-cell level"><span class="icon-trail_1-beginner"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">To Sundance Estates</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-89"  data-history-node-id="89" role="article" about="/node/89" class="node node-view-row iso-item cat-mid-mountain"  data-history-node-id="89" role="article" about="/node/89" class="node node-view-row iso-item cat-mid-mountain">
+
+        <div class="row-cell level"><span class="icon-trail_2-intermediate"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Alley</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-319"  data-history-node-id="319" role="article" about="/node/319" class="node node-view-row iso-item cat-orient-ridge"  data-history-node-id="319" role="article" about="/node/319" class="node node-view-row iso-item cat-orient-ridge">
+
+        <div class="row-cell level"><span class="icon-trail_2-intermediate"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Ausfahrt</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-301"  data-history-node-id="301" role="article" about="/node/301" class="node node-view-row iso-item cat-morrisey"  data-history-node-id="301" role="article" about="/node/301" class="node node-view-row iso-item cat-morrisey">
+
+        <div class="row-cell level"><span class="icon-trail_2-intermediate"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Back In Time</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-218"  data-history-node-id="218" role="article" about="/node/218" class="node node-view-row iso-item cat-sunburst"  data-history-node-id="218" role="article" about="/node/218" class="node node-view-row iso-item cat-sunburst">
+
+        <div class="row-cell level"><span class="icon-trail_2-intermediate"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Blazer</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-226"  data-history-node-id="226" role="article" about="/node/226" class="node node-view-row iso-item cat-crystal"  data-history-node-id="226" role="article" about="/node/226" class="node node-view-row iso-item cat-crystal">
+
+        <div class="row-cell level"><span class="icon-trail_2-intermediate"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Blue Line</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-295"  data-history-node-id="295" role="article" about="/node/295" class="node node-view-row iso-item cat-morrisey"  data-history-node-id="295" role="article" about="/node/295" class="node node-view-row iso-item cat-morrisey">
+
+        <div class="row-cell level"><span class="icon-trail_2-intermediate"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">C.C. Riders</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-324"  data-history-node-id="324" role="article" about="/node/324" class="node node-view-row iso-item cat-orient-ridge"  data-history-node-id="324" role="article" about="/node/324" class="node node-view-row iso-item cat-orient-ridge">
+
+        <div class="row-cell level"><span class="icon-trail_2-intermediate"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Ça M&#039;a Fait Plaisir</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-321"  data-history-node-id="321" role="article" about="/node/321" class="node node-view-row iso-item cat-orient-ridge"  data-history-node-id="321" role="article" about="/node/321" class="node node-view-row iso-item cat-orient-ridge">
+
+        <div class="row-cell level"><span class="icon-trail_2-intermediate"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Carpe Diem</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-323"  data-history-node-id="323" role="article" about="/node/323" class="node node-view-row iso-item cat-orient-ridge"  data-history-node-id="323" role="article" about="/node/323" class="node node-view-row iso-item cat-orient-ridge">
+
+        <div class="row-cell level"><span class="icon-trail_2-intermediate"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Chikamichi</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-217"  data-history-node-id="217" role="article" about="/node/217" class="node node-view-row iso-item cat-sunburst"  data-history-node-id="217" role="article" about="/node/217" class="node node-view-row iso-item cat-sunburst">
+
+        <div class="row-cell level"><span class="icon-trail_2-intermediate"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Cruiser</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-225"  data-history-node-id="225" role="article" about="/node/225" class="node node-view-row iso-item cat-crystal"  data-history-node-id="225" role="article" about="/node/225" class="node node-view-row iso-item cat-crystal">
+
+        <div class="row-cell level"><span class="icon-trail_2-intermediate"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Crystal Run</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-320"  data-history-node-id="320" role="article" about="/node/320" class="node node-view-row iso-item cat-orient-ridge"  data-history-node-id="320" role="article" about="/node/320" class="node node-view-row iso-item cat-orient-ridge">
+
+        <div class="row-cell level"><span class="icon-trail_2-intermediate"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Cześć</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-215"  data-history-node-id="215" role="article" about="/node/215" class="node node-view-row iso-item cat-sunburst"  data-history-node-id="215" role="article" about="/node/215" class="node node-view-row iso-item cat-sunburst">
+
+        <div class="row-cell level"><span class="icon-trail_2-intermediate"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Distributor</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-216"  data-history-node-id="216" role="article" about="/node/216" class="node node-view-row iso-item cat-sunburst"  data-history-node-id="216" role="article" about="/node/216" class="node node-view-row iso-item cat-sunburst">
+
+        <div class="row-cell level"><span class="icon-trail_2-intermediate"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Exhibition</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-325"  data-history-node-id="325" role="article" about="/node/325" class="node node-view-row iso-item cat-orient-ridge"  data-history-node-id="325" role="article" about="/node/325" class="node node-view-row iso-item cat-orient-ridge">
+
+        <div class="row-cell level"><span class="icon-trail_2-intermediate"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Fair Dinkum</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-234"  data-history-node-id="234" role="article" about="/node/234" class="node node-view-row iso-item cat-west-bowl"  data-history-node-id="234" role="article" about="/node/234" class="node node-view-row iso-item cat-west-bowl">
+
+        <div class="row-cell level"><span class="icon-trail_2-intermediate"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Fall Line</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-299"  data-history-node-id="299" role="article" about="/node/299" class="node node-view-row iso-item cat-morrisey"  data-history-node-id="299" role="article" about="/node/299" class="node node-view-row iso-item cat-morrisey">
+
+        <div class="row-cell level"><span class="icon-trail_2-intermediate"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Grand Return</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-334"  data-history-node-id="334" role="article" about="/node/334" class="node node-view-row iso-item cat-sundance"  data-history-node-id="334" role="article" about="/node/334" class="node node-view-row iso-item cat-sundance">
+
+        <div class="row-cell level"><span class="icon-trail_2-intermediate"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Grannie Greene&#039;s</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-232"  data-history-node-id="232" role="article" about="/node/232" class="node node-view-row iso-item cat-west-bowl"  data-history-node-id="232" role="article" about="/node/232" class="node node-view-row iso-item cat-west-bowl">
+
+        <div class="row-cell level"><span class="icon-trail_2-intermediate"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Harry&#039;s Run</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-227"  data-history-node-id="227" role="article" about="/node/227" class="node node-view-row iso-item cat-crystal"  data-history-node-id="227" role="article" about="/node/227" class="node node-view-row iso-item cat-crystal">
+
+        <div class="row-cell level"><span class="icon-trail_2-intermediate"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Hot Shot</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-237"  data-history-node-id="237" role="article" about="/node/237" class="node node-view-row iso-item cat-crystal"  data-history-node-id="237" role="article" about="/node/237" class="node node-view-row iso-item cat-crystal">
+
+        <div class="row-cell level"><span class="icon-trail_2-intermediate"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Hully Gully</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-close"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-297"  data-history-node-id="297" role="article" about="/node/297" class="node node-view-row iso-item cat-morrisey"  data-history-node-id="297" role="article" about="/node/297" class="node node-view-row iso-item cat-morrisey">
+
+        <div class="row-cell level"><span class="icon-trail_2-intermediate"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">I&#039;Dunno</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-230"  data-history-node-id="230" role="article" about="/node/230" class="node node-view-row iso-item cat-crystal"  data-history-node-id="230" role="article" about="/node/230" class="node node-view-row iso-item cat-crystal">
+
+        <div class="row-cell level"><span class="icon-trail_2-intermediate"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Last Chance</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-327"  data-history-node-id="327" role="article" about="/node/327" class="node node-view-row iso-item cat-sundance"  data-history-node-id="327" role="article" about="/node/327" class="node node-view-row iso-item cat-sundance">
+
+        <div class="row-cell level"><span class="icon-trail_2-intermediate"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Lone Fir Centre</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-326"  data-history-node-id="326" role="article" about="/node/326" class="node node-view-row iso-item cat-sundance"  data-history-node-id="326" role="article" about="/node/326" class="node node-view-row iso-item cat-sundance">
+
+        <div class="row-cell level"><span class="icon-trail_2-intermediate"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Lone Fir West</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-233"  data-history-node-id="233" role="article" about="/node/233" class="node node-view-row iso-item cat-west-bowl"  data-history-node-id="233" role="article" about="/node/233" class="node node-view-row iso-item cat-west-bowl">
+
+        <div class="row-cell level"><span class="icon-trail_2-intermediate"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Long Draw</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-228"  data-history-node-id="228" role="article" about="/node/228" class="node node-view-row iso-item cat-crystal"  data-history-node-id="228" role="article" about="/node/228" class="node node-view-row iso-item cat-crystal">
+
+        <div class="row-cell level"><span class="icon-trail_2-intermediate"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Lunch Time</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-224"  data-history-node-id="224" role="article" about="/node/224" class="node node-view-row iso-item cat-burfield"  data-history-node-id="224" role="article" about="/node/224" class="node node-view-row iso-item cat-burfield">
+
+        <div class="row-cell level"><span class="icon-trail_2-intermediate"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Mid Mountain</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-296"  data-history-node-id="296" role="article" about="/node/296" class="node node-view-row iso-item cat-morrisey"  data-history-node-id="296" role="article" about="/node/296" class="node node-view-row iso-item cat-morrisey">
+
+        <div class="row-cell level"><span class="icon-trail_2-intermediate"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Mid-Life Crisis</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-220"  data-history-node-id="220" role="article" about="/node/220" class="node node-view-row iso-item cat-sunburst"  data-history-node-id="220" role="article" about="/node/220" class="node node-view-row iso-item cat-sunburst">
+
+        <div class="row-cell level"><span class="icon-trail_2-intermediate"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Munro Ridge</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-214"  data-history-node-id="214" role="article" about="/node/214" class="node node-view-row iso-item cat-sunburst"  data-history-node-id="214" role="article" about="/node/214" class="node node-view-row iso-item cat-sunburst">
+
+        <div class="row-cell level"><span class="icon-trail_2-intermediate"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">OSV</span>
+
+                    <span class="notes"> Race training in progress </span>
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-close"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-291"  data-history-node-id="291" role="article" about="/node/291" class="node node-view-row iso-item cat-morrisey"  data-history-node-id="291" role="article" about="/node/291" class="node node-view-row iso-item cat-morrisey">
+
+        <div class="row-cell level"><span class="icon-trail_2-intermediate"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Out Of The Woods</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-222"  data-history-node-id="222" role="article" about="/node/222" class="node node-view-row iso-item cat-burfield"  data-history-node-id="222" role="article" about="/node/222" class="node node-view-row iso-item cat-burfield">
+
+        <div class="row-cell level"><span class="icon-trail_2-intermediate"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Round A Bout</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-219"  data-history-node-id="219" role="article" about="/node/219" class="node node-view-row iso-item cat-sunburst"  data-history-node-id="219" role="article" about="/node/219" class="node node-view-row iso-item cat-sunburst">
+
+        <div class="row-cell level"><span class="icon-trail_2-intermediate"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Runaway Lane</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-300"  data-history-node-id="300" role="article" about="/node/300" class="node node-view-row iso-item cat-morrisey"  data-history-node-id="300" role="article" about="/node/300" class="node node-view-row iso-item cat-morrisey">
+
+        <div class="row-cell level"><span class="icon-trail_2-intermediate"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Second Growth</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-292"  data-history-node-id="292" role="article" about="/node/292" class="node node-view-row iso-item cat-morrisey"  data-history-node-id="292" role="article" about="/node/292" class="node node-view-row iso-item cat-morrisey">
+
+        <div class="row-cell level"><span class="icon-trail_2-intermediate"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Shiner</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-236"  data-history-node-id="236" role="article" about="/node/236" class="node node-view-row iso-item cat-west-bowl"  data-history-node-id="236" role="article" about="/node/236" class="node node-view-row iso-item cat-west-bowl">
+
+        <div class="row-cell level"><span class="icon-trail_2-intermediate"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Short Draw</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-744"  data-history-node-id="744" role="article" about="/node/744" class="node node-view-row iso-item cat-sunburst"  data-history-node-id="744" role="article" about="/node/744" class="node node-view-row iso-item cat-sunburst">
+
+        <div class="row-cell level"><span class="icon-trail_2-intermediate"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Shortcut</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-298"  data-history-node-id="298" role="article" about="/node/298" class="node node-view-row iso-item cat-morrisey"  data-history-node-id="298" role="article" about="/node/298" class="node node-view-row iso-item cat-morrisey">
+
+        <div class="row-cell level"><span class="icon-trail_2-intermediate"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Showboat</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-293"  data-history-node-id="293" role="article" about="/node/293" class="node node-view-row iso-item cat-morrisey"  data-history-node-id="293" role="article" about="/node/293" class="node node-view-row iso-item cat-morrisey">
+
+        <div class="row-cell level"><span class="icon-trail_2-intermediate"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Still Smokin&#039;</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-329"  data-history-node-id="329" role="article" about="/node/329" class="node node-view-row iso-item cat-sundance"  data-history-node-id="329" role="article" about="/node/329" class="node node-view-row iso-item cat-sundance">
+
+        <div class="row-cell level"><span class="icon-trail_2-intermediate"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Sun Catcher</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-328"  data-history-node-id="328" role="article" about="/node/328" class="node node-view-row iso-item cat-sundance"  data-history-node-id="328" role="article" about="/node/328" class="node node-view-row iso-item cat-sundance">
+
+        <div class="row-cell level"><span class="icon-trail_2-intermediate"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Sun Downer</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-331"  data-history-node-id="331" role="article" about="/node/331" class="node node-view-row iso-item cat-sundance"  data-history-node-id="331" role="article" about="/node/331" class="node node-view-row iso-item cat-sundance">
+
+        <div class="row-cell level"><span class="icon-trail_2-intermediate"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Sundance</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-335"  data-history-node-id="335" role="article" about="/node/335" class="node node-view-row iso-item cat-sundance"  data-history-node-id="335" role="article" about="/node/335" class="node node-view-row iso-item cat-sundance">
+
+        <div class="row-cell level"><span class="icon-trail_2-intermediate"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Sunrise</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-294"  data-history-node-id="294" role="article" about="/node/294" class="node node-view-row iso-item cat-morrisey"  data-history-node-id="294" role="article" about="/node/294" class="node node-view-row iso-item cat-morrisey">
+
+        <div class="row-cell level"><span class="icon-trail_2-intermediate"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Telly Gram</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-747"  data-history-node-id="747" role="article" about="/node/747" class="node node-view-row iso-item cat-sundance"  data-history-node-id="747" role="article" about="/node/747" class="node node-view-row iso-item cat-sundance">
+
+        <div class="row-cell level"><span class="icon-trail_2-intermediate"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Terrain Park - Blue Zone</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-close"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-231"  data-history-node-id="231" role="article" about="/node/231" class="node node-view-row iso-item cat-crystal"  data-history-node-id="231" role="article" about="/node/231" class="node node-view-row iso-item cat-crystal">
+
+        <div class="row-cell level"><span class="icon-trail_2-intermediate"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">The Other Way</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-235"  data-history-node-id="235" role="article" about="/node/235" class="node node-view-row iso-item cat-west-bowl"  data-history-node-id="235" role="article" about="/node/235" class="node node-view-row iso-item cat-west-bowl">
+
+        <div class="row-cell level"><span class="icon-trail_2-intermediate"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">The Spine</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-333"  data-history-node-id="333" role="article" about="/node/333" class="node node-view-row iso-item cat-sundance"  data-history-node-id="333" role="article" about="/node/333" class="node node-view-row iso-item cat-sundance">
+
+        <div class="row-cell level"><span class="icon-trail_2-intermediate"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Three Bears</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-221"  data-history-node-id="221" role="article" about="/node/221" class="node node-view-row iso-item cat-mid-mountain"  data-history-node-id="221" role="article" about="/node/221" class="node node-view-row iso-item cat-mid-mountain">
+
+        <div class="row-cell level"><span class="icon-trail_2-intermediate"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Trans Canada</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-229"  data-history-node-id="229" role="article" about="/node/229" class="node node-view-row iso-item cat-crystal"  data-history-node-id="229" role="article" about="/node/229" class="node node-view-row iso-item cat-crystal">
+
+        <div class="row-cell level"><span class="icon-trail_2-intermediate"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">West Bushwacker</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-745"  data-history-node-id="745" role="article" about="/node/745" class="node node-view-row iso-item cat-burfield"  data-history-node-id="745" role="article" about="/node/745" class="node node-view-row iso-item cat-burfield">
+
+        <div class="row-cell level"><span class="icon-trail_2-intermediate"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Westsyde</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-242"  data-history-node-id="242" role="article" about="/node/242" class="node node-view-row iso-item cat-sunburst"  data-history-node-id="242" role="article" about="/node/242" class="node node-view-row iso-item cat-sunburst">
+
+        <div class="row-cell level"><span class="icon-trail_3-advanced"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">5th Avenue</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-302"  data-history-node-id="302" role="article" about="/node/302" class="node node-view-row iso-item cat-morrisey"  data-history-node-id="302" role="article" about="/node/302" class="node node-view-row iso-item cat-morrisey">
+
+        <div class="row-cell level"><span class="icon-trail_3-advanced"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Agitator</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-246"  data-history-node-id="246" role="article" about="/node/246" class="node node-view-row iso-item cat-burfield"  data-history-node-id="246" role="article" about="/node/246" class="node node-view-row iso-item cat-burfield">
+
+        <div class="row-cell level"><span class="icon-trail_3-advanced"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Back Door</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-240"  data-history-node-id="240" role="article" about="/node/240" class="node node-view-row iso-item cat-sunburst"  data-history-node-id="240" role="article" about="/node/240" class="node node-view-row iso-item cat-sunburst">
+
+        <div class="row-cell level"><span class="icon-trail_3-advanced"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Bluff</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-244"  data-history-node-id="244" role="article" about="/node/244" class="node node-view-row iso-item cat-sunburst"  data-history-node-id="244" role="article" about="/node/244" class="node node-view-row iso-item cat-sunburst">
+
+        <div class="row-cell level"><span class="icon-trail_3-advanced"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Broadway</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-238"  data-history-node-id="238" role="article" about="/node/238" class="node node-view-row iso-item cat-sunburst"  data-history-node-id="238" role="article" about="/node/238" class="node node-view-row iso-item cat-sunburst">
+
+        <div class="row-cell level"><span class="icon-trail_3-advanced"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Cariboo</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-251"  data-history-node-id="251" role="article" about="/node/251" class="node node-view-row iso-item cat-burfield"  data-history-node-id="251" role="article" about="/node/251" class="node node-view-row iso-item cat-burfield">
+
+        <div class="row-cell level"><span class="icon-trail_3-advanced"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Chief</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-252"  data-history-node-id="252" role="article" about="/node/252" class="node node-view-row iso-item cat-burfield"  data-history-node-id="252" role="article" about="/node/252" class="node node-view-row iso-item cat-burfield">
+
+        <div class="row-cell level"><span class="icon-trail_3-advanced"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Chief Shoulder</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-746"  data-history-node-id="746" role="article" about="/node/746" class="node node-view-row iso-item cat-sunburst"  data-history-node-id="746" role="article" about="/node/746" class="node node-view-row iso-item cat-sunburst">
+
+        <div class="row-cell level"><span class="icon-trail_3-advanced"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Coquihalla</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-259"  data-history-node-id="259" role="article" about="/node/259" class="node node-view-row iso-item cat-crystal"  data-history-node-id="259" role="article" about="/node/259" class="node node-view-row iso-item cat-crystal">
+
+        <div class="row-cell level"><span class="icon-trail_3-advanced"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Crystal Bowl</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-260"  data-history-node-id="260" role="article" about="/node/260" class="node node-view-row iso-item cat-crystal"  data-history-node-id="260" role="article" about="/node/260" class="node node-view-row iso-item cat-crystal">
+
+        <div class="row-cell level"><span class="icon-trail_3-advanced"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">East Bushwacker</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-250"  data-history-node-id="250" role="article" about="/node/250" class="node node-view-row iso-item cat-burfield"  data-history-node-id="250" role="article" about="/node/250" class="node node-view-row iso-item cat-burfield">
+
+        <div class="row-cell level"><span class="icon-trail_3-advanced"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Father Tom&#039;s</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-263"  data-history-node-id="263" role="article" about="/node/263" class="node node-view-row iso-item cat-crystal"  data-history-node-id="263" role="article" about="/node/263" class="node node-view-row iso-item cat-crystal">
+
+        <div class="row-cell level"><span class="icon-trail_3-advanced"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Hat Trick</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-261"  data-history-node-id="261" role="article" about="/node/261" class="node node-view-row iso-item cat-crystal"  data-history-node-id="261" role="article" about="/node/261" class="node node-view-row iso-item cat-crystal">
+
+        <div class="row-cell level"><span class="icon-trail_3-advanced"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Headwalls</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-256"  data-history-node-id="256" role="article" about="/node/256" class="node node-view-row iso-item cat-crystal"  data-history-node-id="256" role="article" about="/node/256" class="node node-view-row iso-item cat-crystal">
+
+        <div class="row-cell level"><span class="icon-trail_3-advanced"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Highway 22</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-258"  data-history-node-id="258" role="article" about="/node/258" class="node node-view-row iso-item cat-crystal"  data-history-node-id="258" role="article" about="/node/258" class="node node-view-row iso-item cat-crystal">
+
+        <div class="row-cell level"><span class="icon-trail_3-advanced"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Highway 22a</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-257"  data-history-node-id="257" role="article" about="/node/257" class="node node-view-row iso-item cat-crystal"  data-history-node-id="257" role="article" about="/node/257" class="node node-view-row iso-item cat-crystal">
+
+        <div class="row-cell level"><span class="icon-trail_3-advanced"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Highway 22b</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-243"  data-history-node-id="243" role="article" about="/node/243" class="node node-view-row iso-item cat-sunburst"  data-history-node-id="243" role="article" about="/node/243" class="node node-view-row iso-item cat-sunburst">
+
+        <div class="row-cell level"><span class="icon-trail_3-advanced"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Intimidator</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-249"  data-history-node-id="249" role="article" about="/node/249" class="node node-view-row iso-item cat-burfield"  data-history-node-id="249" role="article" about="/node/249" class="node node-view-row iso-item cat-burfield">
+
+        <div class="row-cell level"><span class="icon-trail_3-advanced"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Juniper Ridge</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-303"  data-history-node-id="303" role="article" about="/node/303" class="node node-view-row iso-item cat-morrisey"  data-history-node-id="303" role="article" about="/node/303" class="node node-view-row iso-item cat-morrisey">
+
+        <div class="row-cell level"><span class="icon-trail_3-advanced"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Lint Trap</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-close"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-253"  data-history-node-id="253" role="article" about="/node/253" class="node node-view-row iso-item cat-burfield"  data-history-node-id="253" role="article" about="/node/253" class="node node-view-row iso-item cat-burfield">
+
+        <div class="row-cell level"><span class="icon-trail_3-advanced"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Nose Of The Chief</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-336"  data-history-node-id="336" role="article" about="/node/336" class="node node-view-row iso-item cat-sundance"  data-history-node-id="336" role="article" about="/node/336" class="node node-view-row iso-item cat-sundance">
+
+        <div class="row-cell level"><span class="icon-trail_3-advanced"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Peak-A-Boo</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-267"  data-history-node-id="267" role="article" about="/node/267" class="node node-view-row iso-item cat-crystal"  data-history-node-id="267" role="article" about="/node/267" class="node node-view-row iso-item cat-crystal">
+
+        <div class="row-cell level"><span class="icon-trail_3-advanced"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Pink Flamingos</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-266"  data-history-node-id="266" role="article" about="/node/266" class="node node-view-row iso-item cat-crystal"  data-history-node-id="266" role="article" about="/node/266" class="node node-view-row iso-item cat-crystal">
+
+        <div class="row-cell level"><span class="icon-trail_3-advanced"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Rice Bowl</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-255"  data-history-node-id="255" role="article" about="/node/255" class="node node-view-row iso-item cat-burfield"  data-history-node-id="255" role="article" about="/node/255" class="node node-view-row iso-item cat-burfield">
+
+        <div class="row-cell level"><span class="icon-trail_3-advanced"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Roller Coaster</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-close"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-262"  data-history-node-id="262" role="article" about="/node/262" class="node node-view-row iso-item cat-crystal"  data-history-node-id="262" role="article" about="/node/262" class="node node-view-row iso-item cat-crystal">
+
+        <div class="row-cell level"><span class="icon-trail_3-advanced"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Sacred Line</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-265"  data-history-node-id="265" role="article" about="/node/265" class="node node-view-row iso-item cat-crystal"  data-history-node-id="265" role="article" about="/node/265" class="node node-view-row iso-item cat-crystal">
+
+        <div class="row-cell level"><span class="icon-trail_3-advanced"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Spillway</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-241"  data-history-node-id="241" role="article" about="/node/241" class="node node-view-row iso-item cat-sunburst"  data-history-node-id="241" role="article" about="/node/241" class="node node-view-row iso-item cat-sunburst">
+
+        <div class="row-cell level"><span class="icon-trail_3-advanced"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Sting</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-247"  data-history-node-id="247" role="article" about="/node/247" class="node node-view-row iso-item cat-burfield"  data-history-node-id="247" role="article" about="/node/247" class="node node-view-row iso-item cat-burfield">
+
+        <div class="row-cell level"><span class="icon-trail_3-advanced"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Sunny Side</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-245"  data-history-node-id="245" role="article" about="/node/245" class="node node-view-row iso-item cat-sunburst"  data-history-node-id="245" role="article" about="/node/245" class="node node-view-row iso-item cat-sunburst">
+
+        <div class="row-cell level"><span class="icon-trail_3-advanced"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Tighten Yer Boots</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-248"  data-history-node-id="248" role="article" about="/node/248" class="node node-view-row iso-item cat-burfield"  data-history-node-id="248" role="article" about="/node/248" class="node node-view-row iso-item cat-burfield">
+
+        <div class="row-cell level"><span class="icon-trail_3-advanced"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Toilet Bowl</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-304"  data-history-node-id="304" role="article" about="/node/304" class="node node-view-row iso-item cat-morrisey"  data-history-node-id="304" role="article" about="/node/304" class="node node-view-row iso-item cat-morrisey">
+
+        <div class="row-cell level"><span class="icon-trail_3-advanced"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Tumble Dry</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-close"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-268"  data-history-node-id="268" role="article" about="/node/268" class="node node-view-row iso-item cat-crystal"  data-history-node-id="268" role="article" about="/node/268" class="node node-view-row iso-item cat-crystal">
+
+        <div class="row-cell level"><span class="icon-trail_3-advanced"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">White Rabbit</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-752"  data-history-node-id="752" role="article" about="/node/752" class="node node-view-row iso-item cat-morrisey"  data-history-node-id="752" role="article" about="/node/752" class="node node-view-row iso-item cat-morrisey">
+
+        <div class="row-cell level"><span class="icon-trail_3-advanced"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Wringer</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-close"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-272"  data-history-node-id="272" role="article" about="/node/272" class="node node-view-row iso-item cat-burfield"  data-history-node-id="272" role="article" about="/node/272" class="node node-view-row iso-item cat-burfield">
+
+        <div class="row-cell level"><span class="icon-trail_4-expert"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Challenger</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-close"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-264"  data-history-node-id="264" role="article" about="/node/264" class="node node-view-row iso-item cat-crystal"  data-history-node-id="264" role="article" about="/node/264" class="node node-view-row iso-item cat-crystal">
+
+        <div class="row-cell level"><span class="icon-trail_4-expert"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Chute</span>
+
+                    <span class="notes"> Race training in progress on lower Chute </span>
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-306"  data-history-node-id="306" role="article" about="/node/306" class="node node-view-row iso-item cat-morrisey"  data-history-node-id="306" role="article" about="/node/306" class="node node-view-row iso-item cat-morrisey">
+
+        <div class="row-cell level"><span class="icon-trail_4-expert"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Cover Shot</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-271"  data-history-node-id="271" role="article" about="/node/271" class="node node-view-row iso-item cat-burfield"  data-history-node-id="271" role="article" about="/node/271" class="node node-view-row iso-item cat-burfield">
+
+        <div class="row-cell level"><span class="icon-trail_4-expert"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Expo</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-close"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-273"  data-history-node-id="273" role="article" about="/node/273" class="node node-view-row iso-item cat-burfield"  data-history-node-id="273" role="article" about="/node/273" class="node node-view-row iso-item cat-burfield">
+
+        <div class="row-cell level"><span class="icon-trail_4-expert"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Freddy&#039;s</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-close"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-274"  data-history-node-id="274" role="article" about="/node/274" class="node node-view-row iso-item cat-crystal"  data-history-node-id="274" role="article" about="/node/274" class="node node-view-row iso-item cat-crystal">
+
+        <div class="row-cell level"><span class="icon-trail_4-expert"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Green Door</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-305"  data-history-node-id="305" role="article" about="/node/305" class="node node-view-row iso-item cat-morrisey"  data-history-node-id="305" role="article" about="/node/305" class="node node-view-row iso-item cat-morrisey">
+
+        <div class="row-cell level"><span class="icon-trail_4-expert"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">In Tatters</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-close"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-270"  data-history-node-id="270" role="article" about="/node/270" class="node node-view-row iso-item cat-burfield"  data-history-node-id="270" role="article" about="/node/270" class="node node-view-row iso-item cat-burfield">
+
+        <div class="row-cell level"><span class="icon-trail_4-expert"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Kookamungas</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-269"  data-history-node-id="269" role="article" about="/node/269" class="node node-view-row iso-item cat-crystal"  data-history-node-id="269" role="article" about="/node/269" class="node node-view-row iso-item cat-crystal">
+
+        <div class="row-cell level"><span class="icon-trail_4-expert"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Offset</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-307"  data-history-node-id="307" role="article" about="/node/307" class="node node-view-row iso-item cat-morrisey"  data-history-node-id="307" role="article" about="/node/307" class="node node-view-row iso-item cat-morrisey">
+
+        <div class="row-cell level"><span class="icon-trail_4-expert"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Spin Cycle</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-close"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-308"  data-history-node-id="308" role="article" about="/node/308" class="node node-view-row iso-item cat-morrisey"  data-history-node-id="308" role="article" about="/node/308" class="node node-view-row iso-item cat-morrisey">
+
+        <div class="row-cell level"><span class="icon-trail_4-expert"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Static Cling</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-748"  data-history-node-id="748" role="article" about="/node/748" class="node node-view-row iso-item cat-sundance"  data-history-node-id="748" role="article" about="/node/748" class="node node-view-row iso-item cat-sundance">
+
+        <div class="row-cell level"><span class="icon-trail_4-expert"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Terrain Park - Black Zone</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-close"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-283"  data-history-node-id="283" role="article" about="/node/283" class="node node-view-row iso-item cat-sunburst"  data-history-node-id="283" role="article" about="/node/283" class="node node-view-row iso-item cat-sunburst">
+
+        <div class="row-cell level"><span class="icon-trail_6-glades"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Blazer Glades</span>
+
+                    <span class="notes"> Early season conditions persist, please enter with caution. </span>
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-279"  data-history-node-id="279" role="article" about="/node/279" class="node node-view-row iso-item cat-sunburst"  data-history-node-id="279" role="article" about="/node/279" class="node node-view-row iso-item cat-sunburst">
+
+        <div class="row-cell level"><span class="icon-trail_6-glades"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Bluff Glades</span>
+
+                    <span class="notes"> Early season conditions persist, please enter with caution. </span>
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-341"  data-history-node-id="341" role="article" about="/node/341" class="node node-view-row iso-item cat-sundance"  data-history-node-id="341" role="article" about="/node/341" class="node node-view-row iso-item cat-sundance">
+
+        <div class="row-cell level"><span class="icon-trail_6-glades"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Bug Out Glades</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-close"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-282"  data-history-node-id="282" role="article" about="/node/282" class="node node-view-row iso-item cat-sunburst"  data-history-node-id="282" role="article" about="/node/282" class="node node-view-row iso-item cat-sunburst">
+
+        <div class="row-cell level"><span class="icon-trail_6-glades"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Cahilty Glades</span>
+
+                    <span class="notes"> Early season conditions persist, please enter with caution. </span>
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-280"  data-history-node-id="280" role="article" about="/node/280" class="node node-view-row iso-item cat-sunburst"  data-history-node-id="280" role="article" about="/node/280" class="node node-view-row iso-item cat-sunburst">
+
+        <div class="row-cell level"><span class="icon-trail_6-glades"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Cariboo Glades</span>
+
+                    <span class="notes"> Early season conditions persist, please enter with caution. </span>
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-276"  data-history-node-id="276" role="article" about="/node/276" class="node node-view-row iso-item cat-burfield"  data-history-node-id="276" role="article" about="/node/276" class="node node-view-row iso-item cat-burfield">
+
+        <div class="row-cell level"><span class="icon-trail_6-glades"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Challenger Glades</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-close"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-281"  data-history-node-id="281" role="article" about="/node/281" class="node node-view-row iso-item cat-sunburst"  data-history-node-id="281" role="article" about="/node/281" class="node node-view-row iso-item cat-sunburst">
+
+        <div class="row-cell level"><span class="icon-trail_6-glades"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Coquihalla Glades</span>
+
+                    <span class="notes"> Early season conditions persist, please enter with caution. </span>
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-277"  data-history-node-id="277" role="article" about="/node/277" class="node node-view-row iso-item cat-sunburst"  data-history-node-id="277" role="article" about="/node/277" class="node node-view-row iso-item cat-sunburst">
+
+        <div class="row-cell level"><span class="icon-trail_6-glades"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Cruiser Glades</span>
+
+                    <span class="notes"> Early season conditions persist, please enter with caution. </span>
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-278"  data-history-node-id="278" role="article" about="/node/278" class="node node-view-row iso-item cat-sunburst"  data-history-node-id="278" role="article" about="/node/278" class="node node-view-row iso-item cat-sunburst">
+
+        <div class="row-cell level"><span class="icon-trail_6-glades"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Exhibition Glades</span>
+
+                    <span class="notes"> Early season conditions persist, please enter with caution. </span>
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-309"  data-history-node-id="309" role="article" about="/node/309" class="node node-view-row iso-item cat-morrisey"  data-history-node-id="309" role="article" about="/node/309" class="node node-view-row iso-item cat-morrisey">
+
+        <div class="row-cell level"><span class="icon-trail_6-glades"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Grand Return Glades</span>
+
+                    <span class="notes"> Early season conditions persist, please enter with caution. </span>
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-339"  data-history-node-id="339" role="article" about="/node/339" class="node node-view-row iso-item cat-sundance"  data-history-node-id="339" role="article" about="/node/339" class="node node-view-row iso-item cat-sundance">
+
+        <div class="row-cell level"><span class="icon-trail_6-glades"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Grannie Greene&#039;s Glades</span>
+
+                    <span class="notes"> Early season conditions persist, please enter with caution. </span>
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-285"  data-history-node-id="285" role="article" about="/node/285" class="node node-view-row iso-item cat-crystal"  data-history-node-id="285" role="article" about="/node/285" class="node node-view-row iso-item cat-crystal">
+
+        <div class="row-cell level"><span class="icon-trail_6-glades"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Inner Gil&#039;s Glades</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-340"  data-history-node-id="340" role="article" about="/node/340" class="node node-view-row iso-item cat-sundance"  data-history-node-id="340" role="article" about="/node/340" class="node node-view-row iso-item cat-sundance">
+
+        <div class="row-cell level"><span class="icon-trail_6-glades"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Lonesome Fir Glades</span>
+
+                    <span class="notes"> Early season conditions persist, please enter with caution. </span>
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-284"  data-history-node-id="284" role="article" about="/node/284" class="node node-view-row iso-item cat-crystal"  data-history-node-id="284" role="article" about="/node/284" class="node node-view-row iso-item cat-crystal">
+
+        <div class="row-cell level"><span class="icon-trail_6-glades"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Main Face Glades</span>
+
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-275"  data-history-node-id="275" role="article" about="/node/275" class="node node-view-row iso-item cat-sunburst"  data-history-node-id="275" role="article" about="/node/275" class="node node-view-row iso-item cat-sunburst">
+
+        <div class="row-cell level"><span class="icon-trail_6-glades"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Runaway Lane Glades</span>
+
+                    <span class="notes"> Early season conditions persist, please enter with caution. </span>
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+
+
+<article id="node-338"  data-history-node-id="338" role="article" about="/node/338" class="node node-view-row iso-item cat-sundance"  data-history-node-id="338" role="article" about="/node/338" class="node node-view-row iso-item cat-sundance">
+
+        <div class="row-cell level"><span class="icon-trail_6-glades"></span></div>
+    
+    <div class="row-cell name">
+        <span class="field field--name-title field--type-string field--label-hidden">Three Bears Glades</span>
+
+                    <span class="notes"> Early season conditions persist, please enter with caution. </span>
+            </div>
+
+    <div class="row-cell status">
+        <span class="icon-tick"></span>    </div>
+
+
+    
+
+</article>
+                        <div class="no-results">There are no results for your selection, please try again.</div>
+                    </div>
+
+                </div>
+            </div>
+
+        
+
+
+        
+
+
+        
+
+
+        
+
+
+
+        
+
+
+
+
+    <!-- end if front -->
+    
+
+
+    
+        <span class="no-cache"></span>
+
+    
+</article>
+
+
+  </div>
+  </div>
+
+
+            </section>
+
+        </main>
+
+
+        
+            <aside id="sidebar">
+
+                <nav role="navigation" aria-labelledby="block-secondarynavigation-menu" id="block-secondarynavigation" class="block block-menu navigation menu--main">
+            
+  <h2 class="visually-hidden" id="block-secondarynavigation-menu">Secondary Navigation</h2>
+  
+
+        
+        <ul class="menu">
+                  <li class="menu-item menu-item-the-mountain menu-item--expanded">
+
+                  <a class="title" tabindex="0">The Mountain</a>
+                    <ul class="menu">
+                    <li class="menu-item menu-item-trail-maps-&amp;-terrain">
+
+                  <a href="/ski-ride/the-mountain/trail-maps-terrain" data-drupal-link-system-path="node/120">Trail Maps &amp; Terrain</a>
+        
+      </li>
+                <li class="menu-item menu-item-terrain-parks">
+
+                  <a href="/ski-ride/the-mountain/terrain-parks" data-drupal-link-system-path="node/121">Terrain Parks</a>
+        
+      </li>
+                <li class="menu-item menu-item-mountain-tours">
+
+                  <a href="/ski-ride/the-mountain/mountain-tours" data-drupal-link-system-path="node/122">Mountain Tours</a>
+        
+      </li>
+                <li class="menu-item menu-item-race-centre">
+
+                  <a href="/ski-ride/the-mountain/race-centre" title="Race Centre" data-drupal-link-system-path="node/124">Race Centre</a>
+        
+      </li>
+                <li class="menu-item menu-item-mountain-safety">
+
+                  <a href="/ski-ride/the-mountain/mountain-safety" data-drupal-link-system-path="node/125">Mountain Safety</a>
+        
+      </li>
+                <li class="menu-item menu-item-hours-of-operation">
+
+                  <a href="/ski-ride/the-mountain/hours-of-operation" data-drupal-link-system-path="node/126">Hours of Operation</a>
+        
+      </li>
+      </ul>
+    
+        
+      </li>
+                <li class="menu-item menu-item-weather,-conditions-&amp;-cams menu-item--expanded menu-item--active-trail">
+
+                  <a class="title" tabindex="0">Weather, Conditions &amp; Cams</a>
+                    <ul class="menu">
+                    <li class="menu-item menu-item-weather-&amp;-snow-report">
+
+                  <a href="/ski-ride/weather-conditions-cams/weather-snow-report" data-drupal-link-system-path="node/118">Weather &amp; Snow Report</a>
+        
+      </li>
+                <li class="menu-item menu-item-webcams">
+
+                  <a href="/ski-ride/weather-conditions-cams/webcams" data-drupal-link-system-path="node/119">Webcams</a>
+        
+      </li>
+                <li class="menu-item menu-item-lifts-&amp;-trail-status menu-item--active-trail">
+
+                  <a href="/ski-ride/weather-conditions-cams/lifts-trail-status" data-drupal-link-system-path="node/74" class="is-active">Lifts &amp; Trail Status</a>
+        
+      </li>
+                <li class="menu-item menu-item-updates">
+
+                  <a href="/ski-ride/weather-conditions-cams/updates" data-drupal-link-system-path="node/177">Updates</a>
+        
+      </li>
+      </ul>
+    
+        
+      </li>
+                <li class="menu-item menu-item-tickets-&amp;-passes menu-item--expanded">
+
+                  <a class="title" tabindex="0">Tickets &amp; Passes</a>
+                    <ul class="menu">
+                    <li class="menu-item menu-item-day-tickets">
+
+                  <a href="/ski-ride/tickets-passes/day-tickets" data-drupal-link-system-path="node/113">Day Tickets</a>
+        
+      </li>
+                <li class="menu-item menu-item-peaks-snow-cards">
+
+                  <a href="/ski-ride/tickets-passes/peaks-snow-cards" data-drupal-link-system-path="node/115">Peaks Snow Cards</a>
+        
+      </li>
+                <li class="menu-item menu-item-season-passes">
+
+                  <a href="/ski-ride/tickets-passes/season-passes" data-drupal-link-system-path="node/114">Season Passes</a>
+        
+      </li>
+      </ul>
+    
+        
+      </li>
+                <li class="menu-item menu-item-sports-school-&amp;-rentals menu-item--expanded">
+
+                  <a class="title" tabindex="0">Sports School &amp; Rentals</a>
+                    <ul class="menu">
+                    <li class="menu-item menu-item-explore-sports-school">
+
+                  <a href="/ski-ride/sports-school-rentals/explore-sports-school" data-drupal-link-system-path="node/153">Explore Sports School</a>
+        
+      </li>
+                <li class="menu-item menu-item-lessons,-camps-&amp;-programs">
+
+                  <a href="/ski-ride/sports-school-rentals/lessons-camps-programs" data-drupal-link-system-path="node/38">Lessons, Camps &amp; Programs</a>
+        
+      </li>
+                <li class="menu-item menu-item-childminding-&amp;-daycare">
+
+                  <a href="/ski-ride/sports-school-rentals/childminding-daycare" data-drupal-link-system-path="node/154">Childminding &amp; Daycare</a>
+        
+      </li>
+                <li class="menu-item menu-item-rental-equipment">
+
+                  <a href="/ski-ride/sports-school-rentals/rental-equipment" data-drupal-link-system-path="node/128">Rental Equipment</a>
+        
+      </li>
+                <li class="menu-item menu-item-adaptive-sports">
+
+                  <a href="/ski-ride/sports-school-rentals/adaptive-sports" data-drupal-link-system-path="node/129">Adaptive Sports</a>
+        
+      </li>
+      </ul>
+    
+        
+      </li>
+                <li class="menu-item menu-item-nordic-skiing menu-item--expanded">
+
+                  <a class="title" tabindex="0">Nordic Skiing</a>
+                    <ul class="menu">
+                    <li class="menu-item menu-item-explore-nordic-skiing">
+
+                  <a href="/ski-ride/nordic-skiing/explore-nordic-skiing" data-drupal-link-system-path="node/152">Explore Nordic Skiing</a>
+        
+      </li>
+                <li class="menu-item menu-item-tickets-&amp;-passes">
+
+                  <a href="/ski-ride/nordic-skiing/tickets-passes" data-drupal-link-system-path="node/157">Tickets &amp; Passes</a>
+        
+      </li>
+                <li class="menu-item menu-item-trail-maps-&amp;-status">
+
+                  <a href="/ski-ride/nordic-skiing/trail-maps-status" data-drupal-link-system-path="node/158">Trail Maps &amp; Status</a>
+        
+      </li>
+                <li class="menu-item menu-item-lessons,-camps-&amp;-events">
+
+                  <a href="/ski-ride/nordic-skiing/lessons-camps-events" data-drupal-link-system-path="node/159">Lessons, Camps &amp; Events</a>
+        
+      </li>
+      </ul>
+    
+        
+      </li>
+      </ul>
+    
+
+
+  </nav>
+
+                
+                
+
+                                    
+<div id="tickets" class="cta">
+    <div class="inner">
+
+        <h3>Online Tickets</h3>
+
+        <p>Buy online in advance for big savings on lift tickets!</p>
+
+        <footer>
+            <p><a href="http://sunpeaksresort.ltibooking.com/" target="_blank" class="btn-solid">Visit our Store</a></p>
+        </footer>
+
+    </div>
+</div>                
+            </aside>
+
+        
+    </div>
+
+
+</div>
+
+
+
+<footer id="footer" role="contentinfo">
+
+    <section class="shin">
+        <div class="container">
+                            <nav role="navigation" aria-labelledby="block-corporatemenu-menu" id="block-corporatemenu" class="block block-menu navigation menu--corporate-menu">
+            
+  <h2 class="visually-hidden" id="block-corporatemenu-menu">Corporate Menu</h2>
+  
+
+        
+        <ul class="menu">
+                  <li class="menu-item menu-item-travel-trade">
+
+                  <a href="/travel-trade" data-drupal-link-system-path="node/9">Travel Trade</a>
+        
+      </li>
+                <li class="menu-item menu-item-tsp-members menu-item--collapsed">
+
+                  <a href="/tsp-members" data-drupal-link-system-path="node/12">TSP Members</a>
+        
+      </li>
+                <li class="menu-item menu-item-media menu-item--collapsed">
+
+                  <a href="/media" data-drupal-link-system-path="node/11">Media</a>
+        
+      </li>
+                <li class="menu-item menu-item-meeting-planners">
+
+                  <a href="/meeting-planners" data-drupal-link-system-path="node/10">Meeting Planners</a>
+        
+      </li>
+      </ul>
+    
+
+
+  </nav>
+
+                    </div>
+    </section>
+
+    <section class="footer">
+
+        <div class="container">
+
+            <div class="foot clearfix">
+
+                <div class="phone">
+                    <a href="/" title="Home" rel="home" class="logo">
+                        <img src="/themes/sunpeaksresort/images/logo.svg" />
+                    </a>
+                    <p>
+                        Guest Services:<br />
+                        <span>250.578.5474</span>
+                    </p>
+                </div>
+
+                                    <nav role="navigation" aria-labelledby="block-sunpeaksresort-footer-menu" id="block-sunpeaksresort-footer" class="block block-menu navigation menu--footer">
+            
+  <h2 class="visually-hidden" id="block-sunpeaksresort-footer-menu">Footer menu</h2>
+  
+
+        
+        <ul class="menu">
+                  <li class="menu-item menu-item-contact-us">
+
+                  <a href="/contact-us" data-drupal-link-system-path="node/13">Contact Us</a>
+        
+      </li>
+                <li class="menu-item menu-item-hours-of-operation">
+
+                  <a href="/hours-of-operation" data-drupal-link-system-path="node/160">Hours of Operation</a>
+        
+      </li>
+                <li class="menu-item menu-item-employment menu-item--collapsed">
+
+                  <a href="/employment" data-drupal-link-system-path="node/16">Employment</a>
+        
+      </li>
+                <li class="menu-item menu-item-real-estate menu-item--collapsed">
+
+                  <a href="/real-estate" data-drupal-link-system-path="node/14">Real Estate</a>
+        
+      </li>
+                <li class="menu-item menu-item-corporate-partners">
+
+                  <a href="/corporate-partners" data-drupal-link-system-path="node/17">Corporate Partners</a>
+        
+      </li>
+                <li class="menu-item menu-item-corporate-info menu-item--collapsed">
+
+                  <a href="/corporate-info" data-drupal-link-system-path="node/15">Corporate Info</a>
+        
+      </li>
+                <li class="menu-item menu-item-community-of-sun-peaks">
+
+                  <a href="/community-of-sun-peaks" data-drupal-link-system-path="node/18">Community of Sun Peaks</a>
+        
+      </li>
+                <li class="menu-item menu-item-find-a-business">
+
+                  <a href="/find-a-business" data-drupal-link-system-path="node/54">Find A Business</a>
+        
+      </li>
+      </ul>
+    
+
+
+  </nav>
+
+                
+            </div>
+
+            <div class="sole">
+
+                <div class="left address">
+                    <a href="https://www.google.ca/maps/dir//1280+Alpine+Road,+Sun+Peaks,+BC+V0E+5N0/@50.8844311,-119.8881218,17z/data=!4m16!1m7!3m6!1s0x537fb29b1a8c7d09:0xac75c62b1650890f!2s1280+Alpine+Road,+Sun+Peaks,+BC+V0E+5N0!3b1!8m2!3d50.8844311!4d-119.8859331!4m7!1m0!1m5!1m1!1s0x537fb29b1a8c7d09:0xac75c62b1650890f!2m2!1d-119.8859331!2d50.8844311" target="_blank">1280 Alpine Road, Sun Peaks, BC, Canada V0E 5N0</a>
+                </div>
+
+                                    <nav role="navigation" aria-labelledby="block-privacymenu-menu" id="block-privacymenu" class="block block-menu navigation menu--privacy-menu">
+            
+  <h2 class="visually-hidden" id="block-privacymenu-menu">Privacy Menu</h2>
+  
+
+        
+              <ul class="menu">
+                    <li class="menu-item">
+        <a href="/privacy-policy" data-drupal-link-system-path="node/19">Privacy Policy</a>
+              </li>
+                <li class="menu-item">
+        <a href="/terms-of-use" data-drupal-link-system-path="node/20">Terms of Use</a>
+              </li>
+                <li class="menu-item">
+        <a href="/sitemap">Sitemap</a>
+              </li>
+        </ul>
+  
+
+
+  </nav>
+
+                
+            </div>
+
+
+        </div>
+
+    </section>
+
+</footer>
+
+<div id="search-overlay" class="overlay utility-overlay" tabindex="0">
+    <div class="container">
+        <div class="wrapper">
+
+            <div class="inner">
+                <div class="search-block-form block block-search container-inline" data-drupal-selector="search-block-form" id="block-sunpeaksresort-search" role="search">
+  
+    
+      <form action="/search/node" method="get" id="search-block-form" accept-charset="UTF-8">
+  <div class="js-form-item form-item js-form-type-search form-type-search js-form-item-keys form-item-keys form-no-label">
+      <label for="edit-keys" class="visually-hidden">Search</label>
+        <input title="Enter the terms you wish to search for." data-drupal-selector="edit-keys" type="search" id="edit-keys" name="keys" value="" size="15" maxlength="128" class="form-search" />
+
+        </div>
+<div data-drupal-selector="edit-actions" class="form-actions js-form-wrapper form-wrapper" id="edit-actions"><input data-drupal-selector="edit-submit" type="submit" id="edit-submit" value="Search" class="button js-form-submit form-submit" />
+</div>
+
+</form>
+
+  </div>
+
+            </div>
+
+            <a class="close" href="#">Close</a>
+
+        </div>
+
+    </div>
+</div>
+
+
+<div id="weather-overlay" class="overlay utility-overlay" tabindex="0">
+    <div class="container">
+        <div class="wrapper nano">
+            <div class="nano-content">
+
+                <div id="current-conditions" class="inner weather">
+
+    <a class="converter" data-unit="metric" href="#">
+        <span class="metric">&deg;C/cm</span>
+        <span class="imperial">&deg;F/in</span>
+    </a>
+
+    <div class="row">
+
+        <div class="half current-condition">
+            <div class="larger_icon"><span class="icon"></span></div>
+            <p class="today-description"></p>
+        </div>
+
+        <div class="half current-temps">
+            <ul class="list-temps">
+                <li>
+                    <div class="cell">
+                        <h3>Top of the World</h3>
+                        <p>Elevation: <span class="value_switch value_m">2,080</span><span class="unit_switch unit_m">m</span></p>
+                    </div>
+                    <div class="cell">
+                        <div class="weather-value"><span class="value_switch value_deg top-temp"></span></div>
+                        <div class="weather-unit">&deg;<span class="unit_switch unit_deg">C</span></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="cell">
+                        <h3>Mid-mountain</h3>
+                        <p>Elevation: <span class="value_switch value_m">1,855</span><span class="unit_switch unit_m">m</span></p>
+                    </div>
+                    <div class="cell">
+                        <div class="weather-value"><span class="value_switch value_deg mid-mountain-temp"></span></div>
+                        <div class="weather-unit">&deg;<span class="unit_switch unit_deg">C</span></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="cell">
+                        <h3>Valley</h3>
+                        <p>Elevation: <span class="value_switch value_m">1,255</span><span class="unit_switch unit_m">m</span></p>
+                    </div>
+                    <div class="cell">
+                        <div class="weather-value"><span class="value_switch value_deg valley-temp"></span></div>
+                        <div class="weather-unit">&deg;<span class="unit_switch unit_deg">C</span></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+
+    </div>
+
+
+    <div class="row">
+
+        <div class="half stats">
+            <ul class="list-snow">
+                <li>
+                    <h4>24 Hr Snow</h4>
+                    <div class="center-floats">
+                        <div class="inner">
+                            <div class="weather-value"><span class="value_switch value_cm snow-24"></span></div>
+                            <div class="weather-unit"><span class="unit_switch unit_cm">cm</span></div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <h4>7 Day Snow</h4>
+                    <div class="center-floats">
+                        <div class="inner">
+                            <div class="weather-value"><span class="value_switch value_cm snow-7"></span></div>
+                            <div class="weather-unit"><span class="unit_switch unit_cm">cm</span></div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <h4>lifts Open</h4>
+                    <div class="center-floats">
+                        <div class="inner">
+                            <div class="weather-value lifts-open"></div>
+                            <div class="weather-unit">/12</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <h4>Trails Open</h4>
+                    <div class="center-floats">
+                        <div class="inner">
+                            <div class="weather-value trails-open"></div>
+                            <div class="weather-unit">/135</div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="half buttons">
+            <a href="/ski-ride/weather-conditions-cams/weather-snow-report">Weather <span class="hide-mobile">&amp; Conditions</span></a>
+            <a href="/ski-ride/weather-conditions-cams/lifts-trail-status">Lifts &amp; Trails <span class="hide-mobile">Status</span></a>
+            <a href="/ski-ride/weather-conditions-cams/webcams">Webcams</a>
+        </div>
+
+    </div>
+
+
+</div>
+
+<a class="close" href="#">Close</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="gallery-overlay" class="overlay utility-overlay" tabindex="0">
+    <div class="container">
+        <div class="wrapper">
+
+            <div class="inner">
+                <div class="placeholder">
+                </div>
+            </div>
+
+            <a class="overlay-arrow next" href="#" >Next</a>
+            <a class="overlay-arrow prev" href="#" >Previous</a>
+
+            <a class="close" href="#">Close</a>
+
+        </div>
+
+    </div>
+</div>
+
+
+  
+  
+
+  <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/74","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","ajaxTrustedUrl":{"\/search\/node":true,"form_action_cc611e1d":true},"user":{"uid":0,"permissionsHash":"7a89a9a59324a70a01bbcc03f139cfb0c3b48a56d18ac4a45f4466a7a59168c5"}}</script>
+<script src="/sites/default/files/js/js_yUxw8t4Us2oYb7KlckfZbAJeh_xE1tWgCbIsMMrcNG8.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key= AIzaSyCfDOYzsIyzwU5VUHi_vMr93iqdecqe2u0"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.3/TweenMax.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/formstone/1.2.2/js/core.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/formstone/1.2.2/js/dropdown.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/formstone/1.2.2/js/checkbox.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/formstone/1.2.2/js/cookie.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.1/isotope.pkgd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.0/imagesloaded.pkgd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.0/jquery.matchHeight-min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/object-fit/0.4.3/polyfill.object-fit.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nanoscroller/0.8.7/javascripts/jquery.nanoscroller.min.js"></script>
+<script src="/sites/default/files/js/js_ii97Wq0dmJja9xoVXz2hIiaiJqp39eUu6Y3S8lWWgEI.js"></script>
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"acbbf8652c","applicationID":"31146550","transactionName":"NFRaZ0MEXUcEARBcWg0eeVBFDFxaSiYWQEUCXWRwXhdWaCMNFlhpJV5KXnMQWlgBBxYYCxFUVldUF2NYBAEBXVoPVV1BdwpBWSQBEFxaDQ==","queueTime":0,"applicationTime":1540,"atts":"GBNZEQseTkk=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>
