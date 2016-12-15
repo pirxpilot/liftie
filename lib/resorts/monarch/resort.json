@@ -2,7 +2,7 @@
   "name": "Monarch Mountain",
   "url": {
     "host": "http://www.skimonarch.com",
-    "pathname": "/snow-report"
+    "pathname": "/daily-snow-report/"
   },
   "tags": [
     "Colorado"
