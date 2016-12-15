@@ -1,4 +1,12 @@
 
+3.13.6 / 2016-12-15
+===================
+
+ * fix monarch resort
+ * fix big-white resort
+ * fix sun-peaks resort
+ * ignore lifts with undefined name or status
+
 3.13.5 / 2016-12-14
 ===================
 
