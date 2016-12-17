@@ -1,8 +1,8 @@
 {
   "name": "Mont Tremblant",
   "url": {
-    "host": "http://www.tremblant.ca",
-    "pathname": "/ski-and-golf/mountain/snow-report.aspx"
+    "host": "https://www.tremblant.ca",
+    "pathname": "/snow-weather-report"
   },
   "tags": [
     "Quebec"

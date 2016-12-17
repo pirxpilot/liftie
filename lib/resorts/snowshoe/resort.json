@@ -1,8 +1,8 @@
 {
   "name": "Snowshoe Mountain",
   "url": {
-    "host": "http://www.snowshoemtn.com",
-    "pathname": "/the-mountain/trail-and-weather-report.aspx"
+    "host": "https://www.snowshoemtn.com",
+    "pathname": "/the-mountain/weather-and-trails"
   },
   "tags": [
     "West Virginia"

@@ -11,16 +11,17 @@ describe('parse stratton', function() {
     stream.on('error', done);
     stream.pipe(parser(parse, function(err, status) {
       var expected = {
-        'Gondola': 'open',
-        'Am. Express': 'open',
+        'Gondola': 'scheduled',
+        'American Express': 'open',
         'URSA Express': 'open',
         'Cub Carpet': 'open',
-        'Sunrise Express': 'open',
+        'Sunrise Express': 'closed',
         'Shooting Star': 'open',
-        'Snow Bowl': 'closed',
+        'Snow Bowl': 'scheduled',
         'Solstice': 'closed',
-        'S. American': 'closed',
+        'South American': 'closed',
         'Tamarack': 'open',
+        'Teddy Bear': 'open',
         'Villager': 'open'
       };
       assert.deepEqual(status, expected);

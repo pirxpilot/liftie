@@ -11,20 +11,20 @@ describe('parse tremblant', function() {
     stream.on('error', done);
     stream.pipe(parser(parse, function(err, status) {
       var expected = {
-        'Express Gondola': 'open',
-        'Cabriolet': 'closed',
-        'Flying Mile': 'closed',
-        'TGV': 'closed',
+        'Flying Mile': 'open',
+        'Tapis Magique Équilibre 2': 'closed',
         'Porte du Soleil': 'closed',
-        'Le Soleil': 'closed',
-        'Casino Express Gondola': 'closed',
-        'Duncan Express': 'closed',
-        'Expo Express': 'closed',
-        'Lowell Thomas': 'closed',
+        'Tapis Magique Onésime': 'open',
+        'Tapis Magique Équilibre 1': 'open',
+        'Cabriolet': 'open',
+        'Télécabine Express': 'open',
+        'TGV': 'open',
+        'Duncan Express': 'open',
+        'Expo Express': 'open',
+        'Lowell Thomas': 'open',
         'Edge': 'closed',
-        'Magic Carpet Equilibre 1': 'closed',
-        'Magic Carpet Equilibre 2': 'closed',
-        'Magic Carpet Onesime': 'closed'
+        'Télécabine Casino Express': 'closed',
+        'Le Soleil': 'open'
       };
       should.exist(status);
       status.should.eql(expected);
