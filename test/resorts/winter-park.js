@@ -13,7 +13,7 @@ describe('parse winter-park', function() {
       var expected = {
         'Arrow': 'open',
         'Challenger': 'open',
-        'Comet': 'closed',
+        'Comet': 'open',
         'Discovery': 'open',
         'Eagle Wind': 'closed',
         'Endeavour': 'closed',
@@ -21,20 +21,19 @@ describe('parse winter-park', function() {
         'Galloping Goose': 'open',
         'Gemini Express': 'open',
         'Hi-Lonesome Express': 'open',
-        'Iron Horse': 'closed',
+        'Iron Horse': 'open',
         'Lariat': 'open',
         'Looking Glass': 'open',
         'Meteor': 'open',
-        'Mt. Maury': 'open',
         'Olympia Express': 'open',
-        'Panoramic Express': 'open',
+        'Panoramic Express': 'closed',
         'Pioneer Express': 'open',
         'Pony Express': 'closed',
         'Prospector Express': 'open',
         'Spirit': 'open',
         'Sunnyside': 'open',
         'Super Gauge Express': 'open',
-        'Village Cabriolet': 'open',
+        'Cabriolet': 'open',
         'Zephyr Express': 'open'
       };
       should.exist(status);

@@ -1,8 +1,8 @@
 {
   "name": "Stratton",
   "url": {
-    "host": "http://www.stratton.com",
-    "pathname": "/the-mountain/lift-and-trail-report.aspx"
+    "host": "https://www.stratton.com",
+    "pathname": "/the-mountain/conditions-report"
   },
   "tags": [
     "New England",

@@ -12,19 +12,19 @@ describe('parse snnowshoe', function() {
     stream.pipe(parser(parse, function(err, status) {
       var expected = {
        'Flying Eagle': 'closed',
-       'Cascade': 'closed',
-       'Mountaineer': 'closed',
-       'Cubb Run': 'closed',
-       'Magic Carpet': 'closed',
+       'Cascade': 'open',
+       'Mountaineer': 'open',
+       'Cubb Run': 'open',
+       'Magic Carpet': 'open',
        'Tow Rope': 'closed',
-       'Ballhooter': 'closed',
+       'Ballhooter': 'open',
        'Grabhammer': 'closed',
-       'Skidder': 'closed',
-       'Powder Monkey': 'closed',
-       'Powderidge': 'closed',
+       'Skidder': 'open',
+       'Powder Monkey': 'open',
+       'Powderidge': 'open',
        'Soaring Eagle Express': 'closed',
-       'Western Express': 'closed',
-       'Wonder Carpet': 'closed'
+       'Western Express': 'open',
+       'Wonder Carpet': 'open'
       };
       should.exist(status);
       status.should.eql(expected);
