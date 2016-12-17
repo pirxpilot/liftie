@@ -1,4 +1,11 @@
 
+3.13.7 / 2016-12-17
+===================
+
+ * fixes for intrawest resorts
+ * stop decoding entities in resort parsers
+ * make domutil.collect decode HTML entities in names
+
 3.13.6 / 2016-12-15
 ===================
 
