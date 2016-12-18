@@ -1,4 +1,11 @@
 
+3.13.8 / 2016-12-17
+===================
+
+ * fix solitude resort
+ * fix mthigh resort
+ * fix chinapeak resort
+
 3.13.7 / 2016-12-17
 ===================
 
