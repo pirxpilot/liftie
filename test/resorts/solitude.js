@@ -13,11 +13,11 @@ describe('parse solitude', function() {
       var expected = {
         'Apex Express': 'open',
         'Eagle Express': 'open',
-        'Honeycomb': 'open',
+        'Honeycomb Return': 'closed',
         'Link': 'open',
         'Moonbeam Express': 'open',
-        'Powderhorn': 'open',
-        'Summit': 'open',
+        'Powderhorn II': 'open',
+        'Summit Express': 'open',
         'Sunrise': 'open'
       };
       assert.deepEqual(status, expected);

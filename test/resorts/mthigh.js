@@ -11,19 +11,19 @@ describe('parse mthigh', function() {
     stream.on('error', done);
     stream.pipe(parser(parse, function(err, status) {
       var expected = {
-        'Blue Ridge Express': 'open',
+        'Blue Ridge Express': 'closed',
         'Conquest': 'closed',
-        'Coyote': 'open',
+        'Coyote': 'closed',
         'Exhibition': 'closed',
-        'Moving Carpet West Long': 'open',
-        'Moving Carpet West Short': 'open',
+        'Moving Carpet West Long': 'closed',
+        'Moving Carpet West Short': 'closed',
         'Roadrunner': 'closed',
-        'Snowflake': 'open',
+        'Snowflake': 'closed',
         'Competition': 'closed',
         'Discovery': 'closed',
         'Easy Rider': 'closed',
         'Moving Carpet East': 'closed',
-        'Mtn High Express': 'closed',
+        'Mountain High Express': 'closed',
         'Sunrise Quad': 'closed'
       };
       assert.deepEqual(status, expected);

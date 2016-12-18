@@ -1,4 +1,4 @@
-var assert = require('assert');
+var should = require('should');
 var fs = require('fs');
 var parser = require('../../lib/lifts/parser');
 var parse = require('../../lib/resorts/chinapeak');
@@ -11,20 +11,21 @@ describe('parse chinapeak', function() {
     stream.on('error', done);
     stream.pipe(parser(parse, function(err, status) {
       var expected = {
-        'Chair 1': 'open',
+        'Chair 1': 'scheduled',
         'Chair 2': 'open',
         'Chair 3': 'closed',
-        'Chair 4': 'open',
-        'Chair 5': 'open',
+        'Chair 4': 'closed',
+        'Chair 5': 'closed',
         'Chair 6': 'open',
-        'Chair 7': 'open',
-        'Kids Carpet': 'open',
-        'Boulder Carpet': 'open',
+        'Chair 7': 'closed',
+        'Kids Carpet': 'closed',
+        'Boulder Carpet': 'closed',
         'Juniper Carpet': 'open',
         'Tubing Hill': 'closed',
-        'Tbar': 'closed'
+        'T-Bar': 'closed'
       };
-      assert.deepEqual(status, expected);
+      should.exist(status);
+      status.should.eql(expected);
       done(err);
     }));
   });

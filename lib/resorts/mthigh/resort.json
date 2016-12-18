@@ -2,7 +2,7 @@
   "name": "Mountain High",
   "url": {
     "host": "http://www.mthigh.com",
-    "pathname": "/trails-conditions/trails"
+    "pathname": "/site/trails-and-conditions/conditions/alpine-grooming/@@alpine-grooming"
   },
   "tags": [
     "California"
