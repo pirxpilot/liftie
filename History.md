@@ -1,4 +1,10 @@
 
+3.14.0 / 2017-01-22
+===================
+
+ * fix parkcity lift status
+ * add support for POST rest requests
+
 3.13.9 / 2017-01-10
 ===================
 
