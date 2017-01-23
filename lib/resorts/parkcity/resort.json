@@ -4,6 +4,12 @@
     "host": "http://www.parkcitymountain.com",
     "pathname": "/mountain/terrain-status.aspx"
   },
+  "api": {
+    "host": "http://m.parkcitymountain.com/x4/website",
+    "pathname": "/content_vri_grooming.php",
+    "body": "avs=1sl&cI=9055",
+    "html": true
+  },
   "tags": [
     "Utah",
     "Vail Epic"
