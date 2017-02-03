@@ -12,7 +12,7 @@ describe('parse stanton', function() {
     stream.pipe(parser(parse, function(err, status) {
       var expected = {
         'Galzigbahn': 'open',
-        'Vallugabahn I': 'open',
+        'Vallugabahn I': 'closed',
         'Rendlbahn': 'open'
       };
       should.exist(status);
