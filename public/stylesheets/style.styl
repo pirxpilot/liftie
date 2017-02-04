@@ -4,6 +4,11 @@ clearfix()
     display block
     clear both
 
+ellipsis()
+  text-overflow ellipsis
+  overflow hidden
+  white-space nowrap
+
 // colors: http://colorschemedesigner.com/#0542cw0w0w0w0
 $blue=hsl(217, 83, 36)
 $red=hsl(7, 100, 50)
@@ -109,6 +114,7 @@ header .ls-furkot
 .add-to-trip
   cursor pointer
   display block
+  ellipsis()
   span + span
     margin-left .2em
 
@@ -185,9 +191,9 @@ header .ls-furkot
 
     .name
       float left
-      overflow ellipsis
       max-width 90%
       cursor default
+      ellipsis()
 
     .status
       font-size 1.1em

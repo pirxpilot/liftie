@@ -1,0 +1,16 @@
+{
+  "name": "St. Anton Am Arlberg",
+  "url": {
+    "host": "http://www.stantonamarlberg.com",
+    "pathname": "/en/service/lifts-and-pistes"
+  },
+  "tags": [
+    "Alps",
+    "Austria"
+  ],
+  "ll": [
+    10.264,
+    47.127499
+  ],
+  "twitter": "StantonReview"
+}
