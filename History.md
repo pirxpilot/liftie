@@ -1,4 +1,10 @@
 
+3.15.0 / 2017-02-04
+===================
+
+ * fix ellipsis styling
+ * add St Anton Am Arlberg (thanks @srocki)
+
 3.14.0 / 2017-01-22
 ===================
 
