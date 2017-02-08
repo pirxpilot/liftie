@@ -547,9 +547,9 @@ connect-cachify-static@^1.3.0, connect-cachify-static@^1.5.0:
     on-headers "^1.0.0"
     parseurl "~1"
 
-connect-gzip-static@~1:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/connect-gzip-static/-/connect-gzip-static-1.0.0.tgz#70d67eb226b65635feb558c687b02a1f4c388cb4"
+connect-gzip-static@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/connect-gzip-static/-/connect-gzip-static-2.0.0.tgz#3c04cdd6bd844e3f6f09b6289790a92e8cac7d23"
   dependencies:
     debug "~2"
     find "~0"
