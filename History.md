@@ -1,4 +1,10 @@
 
+3.15.1 / 2017-02-08
+===================
+
+ * upgrade connect-gzip-static to support brotli
+ * upgrade connect-cachify-static to add `immutable` support
+
 3.15.0 / 2017-02-04
 ===================
 
