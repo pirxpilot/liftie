@@ -12,6 +12,9 @@ all: lint test build
 
 # common rules
 
+%.br: %
+	bro --input $< --output $@
+
 %.gz: %
 	gzip --best --stdout $< > $@
 
@@ -64,9 +67,11 @@ $(CSS_DIR)/style.css: $(wildcard $(CSS_DIR)/*.styl)
 build: $(BUILD_DIR)/$(PROJECT).js $(CSS_DIR)/style.css $(BUILD_DIR)/$(PROJECT)-embed.js
 
 # minized and compressed version for deployment
+DIST = $(BUILD_DIR)/$(PROJECT).min.js $(CSS_DIR)/style.min.css $(BUILD_DIR)/$(PROJECT)-embed.min.js
 
-.PRECIOUS: $(BUILD_DIR)/$(PROJECT).min.js $(CSS_DIR)/style.min.css $(BUILD_DIR)/$(PROJECT)-embed.min.js
-dist: $(BUILD_DIR)/$(PROJECT).min.js.gz $(CSS_DIR)/style.min.css.gz $(BUILD_DIR)/$(PROJECT)-embed.min.js.gz
+.PRECIOUS: $(DIST)
+dist: $(DIST:%=%.gz)
+dist: $(DIST:%=%.br)
 
 # cleaning
 
