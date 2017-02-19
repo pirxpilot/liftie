@@ -71,11 +71,11 @@
   "directories": {
     "test": "test"
   },
-  "repository": "git://github.com/code42day/liftie.git",
+  "repository": "git://github.com/liftie/liftie.git",
   "keywords": [
     "ski",
     "snowboard"
   ],
-  "author": "Damian Krzeminski <pirxpilot@code42day.com>",
+  "author": "Damian Krzeminski <pirxpilot@furkot.com>",
   "license": "BSD-3-Clause"
 }

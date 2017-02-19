@@ -1,7 +1,7 @@
-[![Build Status](https://img.shields.io/travis/code42day/liftie.svg)](http://travis-ci.org/code42day/liftie)
-[![Dependency Status](https://img.shields.io/gemnasium/code42day/liftie.svg)](https://gemnasium.com/code42day/liftie)
+[![Build Status](https://img.shields.io/travis/pirxpilot/liftie.svg)](http://travis-ci.org/pirxpilot/liftie)
+[![Dependency Status](https://img.shields.io/gemnasium/pirxpilot/liftie.svg)](https://gemnasium.com/pirxpilot/liftie)
 [![NPM version](https://img.shields.io/npm/v/liftie.svg)](http://badge.fury.io/js/liftie)
-[![Code Climate](https://img.shields.io/codeclimate/github/code42day/liftie.svg)](https://codeclimate.com/github/code42day/liftie)
+[![Code Climate](https://img.shields.io/codeclimate/github/pirxpilot/liftie.svg)](https://codeclimate.com/github/pirxpilot/liftie)
 
 #liftie.info
 
@@ -26,7 +26,7 @@ retrieve (and parse) the resort pages only once per minute.
 
 Clone this repo (or your fork)
 
-    git clone git@github.com:code42day/liftie.git && cd liftie
+    git clone git@github.com:pirxpilot/liftie.git && cd liftie
 
 Install dependencies with npm:
 
@@ -107,7 +107,7 @@ available through REST API. In such cases you need to specify `api` element in r
 
 If `api` is specified Liftie will retrieve status info through HTTP GET. The resort `parse` function
 will receive parsed json instead of the dom tree. Please note that you still need to configure `url` -
-it is used on Liftie pages to send users to official resort page. Check out [Steamboat](https://github.com/code42day/liftie/blob/master/lib/resorts/steamboat.js) implementation, if you are looking for an example.
+it is used on Liftie pages to send users to official resort page. Check out [Steamboat](https://github.com/pirxpilot/liftie/blob/master/lib/resorts/steamboat.js) implementation, if you are looking for an example.
 
 ## Credits
 
