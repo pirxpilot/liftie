@@ -397,29 +397,6 @@ code-point-at@^1.0.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/code-point-at/-/code-point-at-1.1.0.tgz#0d070b4d043a5bea33a2f1a40e2edb3d9a4ccf77"
 
-code42day-load@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/code42day-load/-/code42day-load-1.0.1.tgz#fede6990021d9186673f90634e9046a92bc1431d"
-
-code42day-pager@^0.2.1:
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/code42day-pager/-/code42day-pager-0.2.1.tgz#5c2425380c6e84fca7e60290a25037a009227a47"
-  dependencies:
-    component-emitter "^1.1.1"
-    component-event "^0.1.2"
-    el-component "^0.1.0"
-
-code42day-rating@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/code42day-rating/-/code42day-rating-1.0.1.tgz#584bbb892482b569a50c76234f86d8e79e86b428"
-
-code42day-ua@^1.1.1:
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/code42day-ua/-/code42day-ua-1.3.0.tgz#2d1a919fa3737e6b39c3a3e1f2826b162fdb063b"
-  dependencies:
-    code42day-load "^1.0.1"
-    dataset "^0.3.1"
-
 colors@0.6.x:
   version "0.6.2"
   resolved "https://registry.yarnpkg.com/colors/-/colors-0.6.2.tgz#2423fe6678ac0c5dae8852e5d0e5be08c997abcc"
@@ -537,9 +514,9 @@ concat-stream@~1.5.0, concat-stream@~1.5.1:
     readable-stream "~2.0.0"
     typedarray "~0.0.5"
 
-connect-cachify-static@^1.3.0, connect-cachify-static@^1.5.0:
-  version "1.5.0"
-  resolved "https://registry.yarnpkg.com/connect-cachify-static/-/connect-cachify-static-1.5.0.tgz#5b0968a6c5c42c5c80d5997a161e4555ae080ab0"
+connect-cachify-static@^1.3.0, connect-cachify-static@^1.5.1:
+  version "1.5.1"
+  resolved "https://registry.yarnpkg.com/connect-cachify-static/-/connect-cachify-static-1.5.1.tgz#0450f9979ebc6df4a998941a831ef39b6d59e94e"
   dependencies:
     debug "~2"
     find "~0"
@@ -547,9 +524,9 @@ connect-cachify-static@^1.3.0, connect-cachify-static@^1.5.0:
     on-headers "^1.0.0"
     parseurl "~1"
 
-connect-gzip-static@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/connect-gzip-static/-/connect-gzip-static-2.0.0.tgz#3c04cdd6bd844e3f6f09b6289790a92e8cac7d23"
+connect-gzip-static@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/connect-gzip-static/-/connect-gzip-static-2.0.1.tgz#2e37f9f4bb2f1370191407e7b1e4abd3e29b25ad"
   dependencies:
     debug "~2"
     find "~0"
@@ -669,9 +646,9 @@ cycle@1.0.x:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/cycle/-/cycle-1.0.3.tgz#21e80b2be8580f98b468f379430662b046c34ad2"
 
-dataset@^0.3.1:
-  version "0.3.1"
-  resolved "https://registry.yarnpkg.com/dataset/-/dataset-0.3.1.tgz#191ccbf3be6d281a6b3ff4bf0698800bd0367cb7"
+dataset@^0.3.1, dataset@^0.3.2:
+  version "0.3.2"
+  resolved "https://registry.yarnpkg.com/dataset/-/dataset-0.3.2.tgz#c7541247f5daf2bafd54d95d0be80036f5fbc811"
 
 date-now@1.0.1:
   version "1.0.1"
@@ -816,17 +793,17 @@ duplexer2@^0.1.2, duplexer2@~0.1.0, duplexer2@~0.1.2:
   dependencies:
     readable-stream "^2.0.2"
 
+dynload@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/dynload/-/dynload-1.0.2.tgz#c6493d76d1f3cf86a9232abc7c4c258c41bf72df"
+
 ee-first@1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/ee-first/-/ee-first-1.1.1.tgz#590c61156b0ae2f4f0255732a158b266bc56b21d"
 
-el-component@^0.1.0:
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/el-component/-/el-component-0.1.1.tgz#5fe513ee56d54b9604c53e3374d8eec2ec3d44d9"
-
-el-component@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/el-component/-/el-component-1.0.0.tgz#7de703df9bc989fd36c33349f587f98b64410b10"
+el-component@^1.0.0, el-component@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/el-component/-/el-component-1.0.1.tgz#ef4ba9d8b5aa9faf1e2491d483aac8e4470b381b"
 
 elliptic@^6.0.0:
   version "6.3.2"
@@ -996,6 +973,13 @@ glob@^7.0.5, glob@^7.1.1:
     minimatch "^3.0.2"
     once "^1.3.0"
     path-is-absolute "^1.0.0"
+
+google-ua@^1.4.1:
+  version "1.4.1"
+  resolved "https://registry.yarnpkg.com/google-ua/-/google-ua-1.4.1.tgz#f824c5ecb89673bc35f5c1aae2437799ceb8c21b"
+  dependencies:
+    dataset "^0.3.1"
+    dynload "^1.0.2"
 
 "graceful-readlink@>= 1.0.0":
   version "1.0.1"
@@ -1540,9 +1524,9 @@ pkginfo@0.x.x:
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/pkginfo/-/pkginfo-0.4.0.tgz#349dbb7ffd38081fcadc0853df687f0c7744cd65"
 
-postcss-cachify@^1.3.1:
-  version "1.3.1"
-  resolved "https://registry.yarnpkg.com/postcss-cachify/-/postcss-cachify-1.3.1.tgz#0e84b0aec037362add05fba4c561ed78c6eacd56"
+postcss-cachify@^1.3.2:
+  version "1.3.2"
+  resolved "https://registry.yarnpkg.com/postcss-cachify/-/postcss-cachify-1.3.2.tgz#2c34282244ee50ba217cc2959305f6198453f139"
   dependencies:
     connect-cachify-static "^1.3.0"
     debug "^2.1.2"
@@ -1728,6 +1712,10 @@ rimraf@2.x.x:
 ripemd160@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/ripemd160/-/ripemd160-1.0.1.tgz#93a4bbd4942bc574b69a8fa57c71de10ecca7d6e"
+
+ro-rating@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/ro-rating/-/ro-rating-1.0.2.tgz#2d5fd01371664ecdead112d6d7ad9933bfd74e43"
 
 sax@0.5.x:
   version "0.5.8"
@@ -1992,6 +1980,14 @@ timers-browserify@^1.0.1:
   dependencies:
     process "~0.11.0"
 
+tiny-pager@^0.2.3:
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/tiny-pager/-/tiny-pager-0.2.3.tgz#876e56ed1183aa8ace7368804043ee22ad520f3c"
+  dependencies:
+    component-emitter "^1.1.1"
+    component-event "^0.1.2"
+    el-component "^1.0.1"
+
 to-arraybuffer@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/to-arraybuffer/-/to-arraybuffer-1.0.1.tgz#7d229b1fcc637e466ca081180836a7aabff83f43"
@@ -2024,9 +2020,9 @@ tty-browserify@~0.0.0:
   version "0.0.0"
   resolved "https://registry.yarnpkg.com/tty-browserify/-/tty-browserify-0.0.0.tgz#a157ba402da24e9bf957f9aa69d524eed42901a6"
 
-tweet-html@^1.1.1:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/tweet-html/-/tweet-html-1.1.1.tgz#31b2a15d4f0a5560f78ed8f768131872ce23db83"
+tweet-html@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/tweet-html/-/tweet-html-1.2.1.tgz#9cfae32df7bc816e8d3d6395f07a04d3174f4158"
   dependencies:
     el-component "^1.0.0"
     yields-ago "~0"
