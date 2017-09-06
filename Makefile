@@ -32,7 +32,7 @@ all: lint test build
 		--output $@ $@
 
 %.min.css: %.css
-	$(NODE_BIN)/cleancss --skip-import --skip-rebase --s0 --output $@ $<
+	$(NODE_BIN)/cleancss --skip-rebase -O1 --output $@ $<
 
 lint:
 	$(NODE_BIN)/jshint $(LINT_SRC)
@@ -75,10 +75,10 @@ dist: $(DIST:%=%.br)
 # cleaning
 
 clean:
-	rm -rf $(BUILD_DIR) $(CSS_DIR)/style.css*
+	rm -rf $(BUILD_DIR) $(CSS_DIR)/style.css* $(CSS_DIR)/style.min.css*
 
 distclean: clean
 distclean:
-	rm -rf components
+	rm -rf node_modules
 
 .PHONY: all test build dist clean distclean

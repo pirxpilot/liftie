@@ -42,16 +42,16 @@
     "yields-k": "^0.7.2"
   },
   "devDependencies": {
-    "autoprefixer": "^6.5.2",
-    "browserify": "^13.1.1",
-    "clean-css": "^3.4.20",
+    "autoprefixer": "~7",
+    "browserify": "^14.4.0",
+    "clean-css-cli": "^4.1.9",
     "commander": "~2",
     "jshint": "^2.9.4",
-    "mocha": "~3",
+    "mocha": "^3.5.0",
     "postcss-cachify": "^1.3.2",
     "postcss-cli-simple": "^1.0.4",
     "prompt": "~0",
-    "should": "~11",
+    "should": "^13.0.0",
     "stylus": "> 0.38",
     "uglify-js": "~2"
   },
