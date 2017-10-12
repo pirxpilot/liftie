@@ -6,7 +6,7 @@ CSS_DIR=public/stylesheets
 SRC = $(wildcard lib/client/*/*.js)
 LINT_SRC = app.js bin/generate lib test
 
-PLUGINS = lifts twitter weather webcams snow powder
+PLUGINS = lifts twitter weather webcams snow
 
 all: lint test build
 
@@ -51,7 +51,6 @@ $(BUILD_DIR)/$(PROJECT).js: $(SRC) node_modules | $(BUILD_DIR)
 	--require resort/weather \
 	--require resort/webcams \
 	--require resort/snow \
-	--require resort/powder \
 	--entry lib/client/boot/index.js \
 	--outfile $@
 

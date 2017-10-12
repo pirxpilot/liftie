@@ -86,13 +86,6 @@ mixin snow(resort)
     .notice
       != resort.snow && resort.snow.notice
 
-mixin powder(resort)
-  .powder.tile(class= resort.powder ? 'visible' : 'hidden')
-    .powder-rating
-    .notice Powder rating by&nbsp;
-      a(target="_blank", href=resort.powder && resort.powder.id
-        && ("http://whereshouldiski.com/resorts?resort=" + resort.powder.id)) Where Should I Ski
-
 mixin twitter(resort)
   .twitter.tile(class= resort.twitter ? 'visible' : 'hidden')
     .follow
@@ -153,7 +146,6 @@ mixin resort(resort, widget)
     data-twitter=single && JSON.stringify(resort.twitter),
     data-webcams=single && resort.webcams,
     data-snow=single && resort.snow,
-    data-powder=single && resort.powder,
     class=resort.open ? 'open' : ''
   )
     header
@@ -173,7 +165,6 @@ mixin resort(resort, widget)
         +addToTrip(resort)
       +weather(resort)
       +snow(resort)
-      +powder(resort)
       +webcams(resort)
       +twitter(resort)
     if resort.deals && resort.deals.deals
