@@ -1,4 +1,15 @@
 
+3.16.0 / 2017-10-12
+===================
+
+ * upgrade express and related libs
+ * upgrade uglify-js
+ * upgrade dev dependencies
+ * fix deprecated function name
+ * fix: avoid ugly text overflow in tweets
+ * fix Twitter account for larosiere
+ * remove defunct WhereShouldISki plugin
+
 3.15.5 / 2017-03-09
 ===================
 
