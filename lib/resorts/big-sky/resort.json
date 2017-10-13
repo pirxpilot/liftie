@@ -1,13 +1,13 @@
 {
   "name": "Big Sky",
   "url": {
-    "host": "http://www.bigskyresort.com",
-    "pathname": "/the-mountain/snow-report-and-conditions"
+    "host": "https://bigskyresort.com",
+    "pathname": "/the-mountain/current-conditions/lifts-and-trails"
   },
   "tags": [
     "Montana"
   ],
-  "opening": "2016-11-24",
+  "opening": "2017-11-23",
   "ll": [
     -111.321503,
     45.273602
