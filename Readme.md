@@ -13,11 +13,11 @@ Clean, simple, easy to read, fast ski resort lift status.
 - Refreshes automatically every 65 seconds.
 - Index page displays all supported resorts but it's possible to specify (and bookmark) a subset:
 
-        http://liftie.info?resorts=alpine,squaw
+        https://liftie.info?resorts=alpine,squaw
 
 - REST type API returns a status of each resort.
 
-        GET http://liftie.info/api/resort/<resort>
+        GET https://liftie.info/api/resort/<resort>
 
 - Status is cached on a server side. Regardless of the number of browser request, server will
 retrieve (and parse) the resort pages only once per minute.
