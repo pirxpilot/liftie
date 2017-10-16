@@ -1,4 +1,10 @@
 
+3.16.3 / 2017-10-15
+===================
+
+ * update opening dates for 2017/18 season
+ * fix Mammoth Mountain resort name
+
 3.16.2 / 2017-10-13
 ===================
 
