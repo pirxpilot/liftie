@@ -1,8 +1,8 @@
 {
   "name": "Grand Targhee",
   "url": {
-    "host": "http://www.grandtarghee.com",
-    "pathname": "/the-mountain/conditions/index.php"
+    "host": "https://www.grandtarghee.com",
+    "pathname": "/the-mountain/snow-report/"
   },
   "tags": [
     "Wyoming"
