@@ -1,4 +1,10 @@
 
+3.17.0 / 2017-10-20
+===================
+
+ * add support for Twitter native videos and animated gifs
+ * fix Instagram photos in Twitter feed
+
 3.16.3 / 2017-10-15
 ===================
 
