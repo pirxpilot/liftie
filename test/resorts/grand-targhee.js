@@ -1,4 +1,3 @@
-var assert = require('assert');
 var fs = require('fs');
 var parser = require('../../lib/lifts/parser');
 var parse = require('../../lib/resorts/grand-targhee');
@@ -11,14 +10,13 @@ describe('parse grand-targhee', function() {
     stream.on('error', done);
     stream.pipe(parser(parse, function(err, status) {
       var expected = {
-        'Mary\'s Nipple': 'closed',
-        'Dreamcatcher': 'scheduled',
-        'Sacajawea': 'scheduled',
-        'Blackfoot': 'scheduled',
-        'Shoshone': 'scheduled',
-        'Papoose Conveyor': 'scheduled'
+        'Dreamcatcher': 'closed',
+        'Sacajawea': 'closed',
+        'Blackfoot': 'closed',
+        'Shoshone': 'closed',
+        'Papoose': 'closed'
       };
-      assert.deepEqual(status, expected);
+      status.should.eql(expected);
       done(err);
     }));
   });

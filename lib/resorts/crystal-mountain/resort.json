@@ -1,8 +1,8 @@
 {
   "name": "Crystal Mountain",
   "url": {
-    "host": "http://crystalmountainresort.com",
-    "pathname": "/the-mountain/lift-mountain-status/"
+    "host": "https://crystalmountainresort.com",
+    "pathname": "/the-mountain/mountain-report/lift-status/"
   },
   "tags": [
     "Washington"
