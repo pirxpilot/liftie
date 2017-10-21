@@ -1,4 +1,15 @@
 
+3.17.1 / 2017-10-20
+===================
+
+ * fix Brianhead for 2017/18
+ * fix Boreal for 2017/18
+ * fix Steamboat for 2017/18
+ * fix Crystal Mountain for 2017/18
+ * fix Grand Targhee for 2017/18
+ * fix deprecated usage for moment.add
+ * fix webcams test
+
 3.17.0 / 2017-10-20
 ===================
 
