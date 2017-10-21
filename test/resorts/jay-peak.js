@@ -12,14 +12,14 @@ describe('parse jay-peak', function() {
     stream.pipe(parser(parse, function(err, status) {
       var expected = {
         'Aerial Tram': 'open',
-        'Bonaventure Quad': 'open',
-        'Flyer Express Quad': 'open',
-        'Jet Triple Chair': 'open',
-        'Metro Quad': 'open',
-        'Stateside Moving Carpet': 'open',
-        'Taxi Quad': 'open',
-        'Tramside Moving Carpet': 'open',
-        'Village Chair': 'open'
+        'Bonaventure Quad': 'closed',
+        'Flyer Express Quad': 'closed',
+        'Jet Triple Chair': 'closed',
+        'Metro Quad': 'closed',
+        'Stateside Moving Carpet': 'closed',
+        'Taxi Quad': 'closed',
+        'Tramside Moving Carpet': 'closed',
+        'Village Chair': 'closed'
       };
       assert.deepEqual(status, expected);
       done(err);
