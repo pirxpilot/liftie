@@ -1,4 +1,10 @@
 
+3.17.2 / 2017-10-21
+===================
+
+ * ensure https links for all webcams
+ * fix coordinates for Big Sky resort
+
 3.17.1 / 2017-10-20
 ===================
 
