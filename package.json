@@ -31,7 +31,7 @@
     "limiter": "~1",
     "lodash": "^4.16.6",
     "moment": "~2",
-    "morgan": "^1.7.0",
+    "morgan": "^1.9.0",
     "qs": "^6.3.0",
     "ro-rating": "^1.0.2",
     "serve-favicon": "^2.4.5",
