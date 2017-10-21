@@ -2,7 +2,15 @@
   "name": "Boreal",
   "url": {
     "host": "http://www.rideboreal.com",
-    "pathname": "/winter/mountain_info/snow-report"
+    "pathname": "/the-mountain/trail-lift-info/lifts-hours"
+  },
+  "api": {
+    "host": "http://api.rideboreal.com",
+    "pathname": "/api/v2",
+    "query": {
+      "location": "/the-mountain/trail-lift-info/lifts-hours",
+      "level": 1
+    }
   },
   "tags": [
     "California",
