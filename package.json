@@ -35,7 +35,7 @@
     "qs": "^6.3.0",
     "ro-rating": "^1.0.2",
     "serve-favicon": "^2.4.5",
-    "superagent": "^2.3.0",
+    "superagent": "^3.7.0",
     "swipe": "^1.7.7",
     "tiny-pager": "^0.2.3",
     "tweet-html": "^1.3.1",
