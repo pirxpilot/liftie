@@ -1,12 +1,8 @@
 {
   "name": "Steamboat",
-  "api": {
-    "host": "http://app.steamboat.com",
-    "pathname": "/data/winterlifts"
-  },
   "url": {
-    "host": "http://www.steamboat.com",
-    "pathname": "/the-mountain/lift-status.aspx"
+    "host": "https://www.steamboat.com",
+    "pathname": "/the-mountain/conditions-report"
   },
   "tags": [
     "Colorado"
