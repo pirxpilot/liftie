@@ -1,4 +1,18 @@
 
+3.17.3 / 2017-10-22
+===================
+
+ * fix Burke Mountain for 2017/18
+ * fix Mount Sunapee for 2017/18
+ * fix Jiminy Peak for 2017/18
+ * fix Gore Mountain for 2017/18
+ * fix Snow Valley for 2017/18
+ * fix Alyeska for 2017/18
+ * fix Pats Peak for 2017/18
+ * fix Jay Peak for 2017/18
+ * fix Twitter handle for Northstar
+ * fix Twitter handle for Silver Star
+
 3.17.2 / 2017-10-21
 ===================
 
