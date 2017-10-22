@@ -11,11 +11,11 @@ describe('parse burke-mountain', function() {
     stream.on('error', done);
     stream.pipe(parser(parse, function(err, status) {
       var expected = {
-        "Mid Burke Express": "open",
-        "Mountain Poma": "open",
+        "MidBurke Express": "closed",
+        "Poma": "closed",
         "Willoughby Quad": "closed",
-        "Sherburne Express": "open",
-        "J-Bar": "closed",
+        "Sherburne Express": "closed",
+        "JBar": "closed",
         "Magic Carpet": "closed"
       };
       should.exist(status);

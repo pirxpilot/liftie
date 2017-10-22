@@ -1,8 +1,12 @@
 {
   "name": "Pats Peak",
   "url": {
-    "host": "http://www.patspeak.com",
-    "pathname": "/snow_report.html"
+    "host": "https://www.patspeak.com",
+    "pathname": "/Plan-Your-Visit/Snow-Report.aspx"
+  },
+  "api": {
+    "host": "https://services.patspeak.com",
+    "pathname": "/api/SnowReport/Status"
   },
   "tags": [
     "New Hampshire",

@@ -2,7 +2,7 @@
   "name": "Gore Mountain",
   "url": {
     "host": "http://www.goremountain.com",
-    "pathname": "/mountain/snow-report"
+    "pathname": "/snow-reports"
   },
   "tags": [
     "New York"

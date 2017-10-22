@@ -1,8 +1,8 @@
 {
   "name": "Jay Peak",
   "url": {
-    "host": "http://www.jaypeakresort.com",
-    "pathname": "/skiing-riding/the-mountain/trail-map"
+    "host": "https://jaypeakresort.com",
+    "pathname": "/skiing-riding/mountain/lifts-trails"
   },
   "tags": [
     "New England",

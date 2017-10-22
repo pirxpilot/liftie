@@ -11,18 +11,18 @@ describe('parse snow-valley', function() {
     stream.on('error', done);
     stream.pipe(parser(parse, function(err, status) {
       var expected = {
-        '(1) Double Chair': 'open',
-        '(2) Triple Chair': 'hold',
-        '(3) Triple Chair': 'open',
+        '(1) Double Chair': 'closed',
+        '(2) Triple Chair': 'closed',
+        '(3) Triple Chair': 'closed',
         '(4) Triple Chair': 'closed',
-        '(6) Double Chair': 'open',
+        '(6) Double Chair': 'closed',
         '(8) Double Chair': 'closed',
         '(9) Double Chair': 'closed',
         '(10) Double Chair': 'closed',
         '(11) Triple Chair': 'closed',
-        '(12) Double Chair': 'scheduled',
-        '(13) Triple Chair': 'open',
-        '(14) Conveyor': 'open'
+        '(12) Double Chair': 'closed',
+        '(13) Triple Chair': 'closed',
+        '(14) Conveyor': 'closed'
       };
       should.exist(status);
       status.should.eql(expected);

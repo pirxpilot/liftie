@@ -17,8 +17,7 @@ describe('parse alyeska', function() {
         'Glacier Bowl Express': 'closed',
         'Chair 7': 'closed',
         'Wade\'s Way Magic Carpet': 'closed',
-        'Finnland Magic Carpet': 'closed',
-        'Tanaka': 'closed'
+        'Finnland Magic Carpet': 'closed'
       };
       should.exist(status);
       status.should.eql(expected);

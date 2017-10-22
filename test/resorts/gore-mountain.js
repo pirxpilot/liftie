@@ -15,7 +15,7 @@ describe('parse gore-mountain', function() {
         'Topridge Triple': 'closed',
         'Straight Brook Quad': 'closed',
         'Sunway Chair': 'closed',
-        'Adirondack Express': 'closed',
+        'Adirondack Express II': 'closed',
         'Burnt Ridge Quad': 'closed',
         'High Peaks Chair': 'closed',
         'North Quad': 'closed',
@@ -24,8 +24,7 @@ describe('parse gore-mountain', function() {
         'Greenway Conveyor': 'closed',
         'The Snow Train': 'closed',
         'Village Chair': 'closed',
-        'Hudson Chair': 'closed',
-        'Little Gore Tubing Tow': 'closed'
+        'Hudson Chair': 'closed'
       };
       should.exist(status);
       status.should.eql(expected);

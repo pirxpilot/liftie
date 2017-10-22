@@ -2,7 +2,7 @@
   "name": "Snow Valley",
   "url": {
     "host": "http://www.snow-valley.com",
-    "pathname": "/current_conditions/snow_report.html"
+    "pathname": "/current-conditions/snow-report/"
   },
   "tags": [
     "California"

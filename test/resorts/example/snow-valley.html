@@ -1,260 +1,1506 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html><!-- InstanceBegin template="/Templates/svtemplatewithpush.dwt" codeOutsideHTMLIsLocked="false" -->
+
+
+
+
+
+<!DOCTYPE html>
+<!--[if IE 9]><html class="no-js ie9" lang="en-US" prefix="og: http://ogp.me/ns#"><![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="en-US" prefix="og: http://ogp.me/ns#"><!--<![endif]-->
+
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<!-- InstanceBeginEditable name="doctitle" -->
-<title>Snow Report | Current Conditions | Snow Valley Mountain Resort</title>
-<!-- InstanceEndEditable -->
-<!-- InstanceBeginEditable name="head" -->
-<META NAME="keywords" CONTENT="Snow Valley Mountain Resort, Snow Report, Hours of Operation, Current Snow Information, Weather, Road Conditions, Restaurants and Bars, Lifts, Trails">
-<META NAME="description" CONTENT="Snow Valley Mountain Resort Snow Report - Daily report of current snow conditions, weather, road conditions, open trails, open lifts and available restaurants and bars."> 
-<META NAME="rating" CONTENT="General">
-<META NAME="revisit-after" CONTENT="14 days"> 
-<META NAME="ROBOTS" CONTENT="ALL">
-<META NAME="DC.Subject" CONTENT="Snow Valley Mountain Resort Snow Report"> 
-<META NAME="DC.Description" CONTENT="Snow Valley Mountain Resort Snow Report - Daily report of current snow conditions, weather, road conditions, open trails, and open lifts.">
-<META NAME="Author.Corporate" CONTENT="Snow Valley Mountain Resort"> 
-<LINK REL="Author.Corporate" HREF="http://www.snow-valley.com">
-<!-- InstanceEndEditable -->
-<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
-<link href="../sitecontent.css" rel="stylesheet" type="text/css">
-<script src="../SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
-<link href="../SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css">
-<script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-40197802-5']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
   
-  function MM_validateForm() { //v4.0
-  var i,p,q,nm,test,num,min,max,errors='',args=MM_validateForm.arguments;
-  for (i=0; i<(args.length-2); i+=3) { test=args[i+2]; val=MM_findObj(args[i]);
-    if (val) { nm=val.name; if ((val=val.value)!="") {
-      if (test.indexOf('isEmail')!=-1) { p=val.indexOf('@');
-        if (p<1 || p==(val.length-1)) errors+='- '+nm+' must contain an e-mail address.\n';
-      } else if (test!='R') { num = parseFloat(val);
-        if (isNaN(val)) errors+='- '+nm+' must contain a number.\n';
-        if (test.indexOf('inRange') != -1) { p=test.indexOf(':');
-          min=test.substring(8,p); max=test.substring(p+1);
-          if (num<min || max<num) errors+='- '+nm+' must contain a number between '+min+' and '+max+'.\n';
-    } } } else if (test.charAt(0) == 'R') errors += '- '+nm+' is required.\n'; }
-  } if (errors) alert('The following error(s) occurred:\n'+errors);
-  document.MM_returnValue = (errors == '');
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Snow Report - Snow Valley</title>
+<link rel="pingback" href="http://www.snow-valley.com/xmlrpc.php"><link rel="shortcut icon" href="/wp-content/uploads/2016/11/favicon.ico"><link rel="stylesheet" id="wp-forecast-css" href="http://20324-presscdn.pagely.netdna-cdn.com/wp-content/plugins/wp-forecast/wp-forecast-default.css" type="text/css" media="screen" />
+
+<!-- This site is optimized with the Yoast SEO plugin v5.6.1 - https://yoast.com/wordpress/plugins/seo/ -->
+<link rel="canonical" href="http://www.snow-valley.com/current-conditions/snow-report/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Snow Report - Snow Valley" />
+<meta property="og:url" content="http://www.snow-valley.com/current-conditions/snow-report/" />
+<meta property="og:site_name" content="Snow Valley" />
+<meta property="og:image" content="http://20324-presscdn.pagely.netdna-cdn.com/wp-content/uploads/2016/11/sym-easiest.png" />
+<meta property="og:image" content="http://20324-presscdn.pagely.netdna-cdn.com/wp-content/uploads/2016/11/sym-moredifficult.png" />
+<meta property="og:image" content="http://20324-presscdn.pagely.netdna-cdn.com/wp-content/uploads/2016/11/sym-mostdifficult.png" />
+<meta property="og:image" content="http://20324-presscdn.pagely.netdna-cdn.com/wp-content/uploads/2016/11/sym-mostdifficult-experts.png" />
+<meta property="og:image" content="http://20324-presscdn.pagely.netdna-cdn.com/wp-content/uploads/2016/11/sym-freestyle-terrain.png" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Snow Report - Snow Valley" />
+<meta name="twitter:image" content="http://20324-presscdn.pagely.netdna-cdn.com/wp-content/uploads/2016/11/sym-easiest.png" />
+<script type='application/ld+json'>{"@context":"http:\/\/schema.org","@type":"WebSite","@id":"#website","url":"http:\/\/www.snow-valley.com\/","name":"Snow Valley","potentialAction":{"@type":"SearchAction","target":"http:\/\/www.snow-valley.com\/?s={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<!-- / Yoast SEO plugin. -->
+
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Snow Valley &raquo; Feed" href="http://www.snow-valley.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Snow Valley &raquo; Comments Feed" href="http://www.snow-valley.com/comments/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/20324-presscdn.pagely.netdna-cdn.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.8.2"}};
+			!function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,56826,8203,55356,56819),0,0),c=j.toDataURL(),b!==c&&(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55358,56794,8205,9794,65039),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55358,56794,8203,9794,65039),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&&j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
 }
-//-->
+</style>
+<link rel='stylesheet' id='srzmpcss-css'  href='http://20324-presscdn.pagely.netdna-cdn.com/wp-content/plugins/srizon-facebook-album-pro/resources/css/mag-popup.min.css?ver=4.8.2' type='text/css' media='all' />
+<link rel='stylesheet' id='srzelastislidercss-css'  href='http://20324-presscdn.pagely.netdna-cdn.com/wp-content/plugins/srizon-facebook-album-pro/resources/css/elastislide.min.css?ver=4.8.2' type='text/css' media='all' />
+<link rel='stylesheet' id='srzcustomcss-css'  href='http://20324-presscdn.pagely.netdna-cdn.com/wp-content/plugins/srizon-facebook-album-pro/resources/css/srizon.custom.min.css?ver=2.3' type='text/css' media='all' />
+<link rel='stylesheet' id='x-stack-css'  href='http://20324-presscdn.pagely.netdna-cdn.com/wp-content/themes/x/framework/css/dist/site/stacks/integrity-light.css?ver=4.6.4' type='text/css' media='all' />
+<link rel='stylesheet' id='x-child-css'  href='http://20324-presscdn.pagely.netdna-cdn.com/wp-content/themes/x-child/style.css?ver=4.6.4' type='text/css' media='all' />
+<link rel='stylesheet' id='x-gravity-forms-css'  href='http://20324-presscdn.pagely.netdna-cdn.com/wp-content/themes/x/framework/css/dist/site/gravity_forms/integrity-light.css?ver=4.6.4' type='text/css' media='all' />
+<link rel='stylesheet' id='x-google-fonts-css'  href='//fonts.googleapis.com/css?family=Open+Sans%3A300%2C300italic%2C700%2C700italic%7CMontserrat%3A700%7CLato%3A700&#038;subset=latin%2Clatin-ext&#038;ver=4.6.4' type='text/css' media='all' />
+<script type='text/javascript' src='http://20324-presscdn.pagely.netdna-cdn.com/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='http://20324-presscdn.pagely.netdna-cdn.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript' src='http://20324-presscdn.pagely.netdna-cdn.com/wp-content/plugins/wp-forecast/wpf_update.js?ver=9999'></script>
+<script type='text/javascript' src='http://20324-presscdn.pagely.netdna-cdn.com/wp-content/plugins/srizon-facebook-album-pro/resources/js/modernizr.js?ver=4.8.2'></script>
+<script type='text/javascript' src='http://20324-presscdn.pagely.netdna-cdn.com/wp-content/plugins/srizon-facebook-album-pro/resources/js/mag-popup.js?ver=4.8.2'></script>
+<script type='text/javascript' src='http://20324-presscdn.pagely.netdna-cdn.com/wp-content/plugins/srizon-facebook-album-pro/resources/js/jquery.collagePlus.min.js?ver=4.8.2'></script>
+<script type='text/javascript' src='http://20324-presscdn.pagely.netdna-cdn.com/wp-content/plugins/srizon-facebook-album-pro/resources/js/jquery.elastislide.min.js?ver=4.8.2'></script>
+<script type='text/javascript' src='http://20324-presscdn.pagely.netdna-cdn.com/wp-content/plugins/srizon-facebook-album-pro/resources/js/srizon.custom.min.js?ver=2.3.2'></script>
+<script type='text/javascript' src='http://20324-presscdn.pagely.netdna-cdn.com/wp-content/themes/x/framework/js/dist/site/x-head.min.js?ver=4.6.4'></script>
+<script type='text/javascript' src='http://www.snow-valley.com/wp-content/plugins/cornerstone/assets/dist/js/site/cs-head.js?ver=2.1.3'></script>
+<script type='text/javascript' src='http://20324-presscdn.pagely.netdna-cdn.com/wp-content/plugins/constant-contact-api/lib/form-designer/js/cc-widget.js?ver=4.8.2'></script>
+<link rel='https://api.w.org/' href='http://www.snow-valley.com/wp-json/' />
+<link rel='shortlink' href='http://www.snow-valley.com/?p=29' />
+<link rel="alternate" type="application/json+oembed" href="http://www.snow-valley.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.snow-valley.com%2Fcurrent-conditions%2Fsnow-report%2F" />
+<link rel="alternate" type="text/xml+oembed" href="http://www.snow-valley.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.snow-valley.com%2Fcurrent-conditions%2Fsnow-report%2F&#038;format=xml" />
+<!-- <meta name="NextGEN" version="2.2.14" /> -->
+<script src="//ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+<script src="//manage.hdrelay.com/js/hdrelay.js" type="text/javascript"></script>
+<!-- Google Tracking Code -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-40197802-5', 'auto');
+  ga('send', 'pageview');
+
 </script>
 
-</head>
 
-<body>
-        <div class="wrapper">
-            <div id="headertop">
-              <div class="logo"><a href="http://www.snow-valley.com"><img src="../template-images/sv-logo.png" width="385" height="120" alt="Snow Valley" border="0"></a><form name="form1" method="get" action="http://www.snow-valley.com/forms/process.asp" enctype="multipart/form-data" id="SV_EMAIL" style="margin: 0px; padding: 5px 0px 0px 0px;">
-                <INPUT NAME="form_ref" TYPE="hidden" ID="form_ref" VALUE="SV_EMAIL" >
-                    <img src="../template-images/nav-spacertransparent.png" width="15" height="10" alt=""><input name="email" type="text" id="email" ONBLUR="MM_validateForm('email','','NisEmail');return document.MM_returnValue" value="Email Sign Up" onfocus="this.select();" size="20"><input type="submit" name="submit" id="submit" value="Submit"><img src="../template-images/nav-spacertransparent.png" width="10" height="10" alt=""><a href="http://www.snow-valley.com/forms/changee_mail.html" target="_blank" class="changeemail">Change E-mail</a>
-                  </form></div><div id="vvsgraphics"><!-- #BeginLibraryItem "/Library/vvs.lbi" -->
-<div class="graphicone"><a href="../rates/valley_values.html#ffp"><img src="../template-images/vvg-family-fun-pack.png" width="126" height="140" alt="Family Fun Pack" border="0"></a></div><div class="graphictwo"><a href="../sv_highlights/snow_play.html"><img src="../template-images/vvg-snow-play.png" width="126" height="140" alt="Snow Play" border="0"></a></div><div class="graphicthree"><a href="../rates/season_passes.html"><img src="../template-images/vvg-season-passes.png" alt="Season Passes On-Sale" width="126" height="140" border="0"></a></div><div class="graphicfour"><a href="https://www.isalessite.com/snow-valley-tickets/Catalog/Ticket" target="_blank"><img src="../template-images/buy-now.png" width="126" height="96" alt="Buy Now" border="0"></a><a href="https://www.facebook.com/SnowValleyMtnResortCA" target="_blank"><img src="../template-images/facebook.png" width="40" height="44" alt="Facebook" border="0"></a><a href="https://twitter.com/snow_valley_ca" target="_blank"><img src="../template-images/twitter.png" width="46" height="44" alt="Twitter" border="0"></a><a href="http://www.youtube.com/snowvalleyca" target="_blank"><img src="../template-images/youtube.png" width="40" height="44" alt="YouTube" border="0"></a></div><!-- #EndLibraryItem --></div>
-                  </div>
-            <div id="header"><div id="nav">
-              <div class="navholder"><img src="../template-images/nav-spacertransparent.png" width="960" height="10" alt=""><ul id="MenuBar1" class="MenuBarHorizontal">
-            <li class="home"><a href="http://www.snow-valley.com"><img src="../template-images/nav-spacertransparent.png" width="15" height="25" alt="" align="absmiddle" border="0">HOME</a></li>
-            
-            <li class="currentconditions"><a class="MenuBarItemSubmenu" href="#"><img src="../template-images/nav-spacer.png" width="1" height="25" alt="" align="absmiddle" border="0"><img src="../template-images/nav-spacertransparent.png" width="10" height="10" alt="" align="absmiddle" border="0">CURRENT CONDITIONS</a>
-                <ul>
-                  <li><a href="snow_report.html">Snow Report</a></li>
-                  <li><a href="terrain_report.html">Terrain Park Report</a></li>
-                  <li><a href="../daily-photo-gallery/daily-photo-gallery-index.html">Daily Photos</a></li>
-                  <li><a href="live_webcams.html">Live Webcams</a></li>
-                  <li><a href="real_time_weather.html">Real Time Weather</a></li>
-                  <li><a href="videos.html">Videos</a></li>
-                  <li><a href="newsnevents.html">News &amp; Events</a></li>
-                </ul>
-              </li>
-            
-            <li class="exploresv"><a href="#" class="MenuBarItemSubmenu"><img src="../template-images/nav-spacer.png" width="1" height="25" alt="" align="absmiddle" border="0"><img src="../template-images/nav-spacertransparent.png" width="10" height="10" alt="" align="absmiddle" border="0">EXPLORE SV</a>
-                <ul>
-                  <li><a href="../explore_sv/trail_map.html">Trail Map</a></li>
-                  <li><a href="../explore_sv/photo_gallery.html">Photo Gallery</a></li>
-                  <li><a href="../explore_sv/beginners_guide.html">Beginners Guide</a></li>
-                  <li><a href="../explore_sv/rentals_guide.html">Rentals Guide</a></li>
-                  <li><a href="../explore_sv/mountain_safety.html">Mountain Safety</a></li>
-                </ul></li>
-                
-                <li class="rates"><a class="MenuBarItemSubmenu" href="#"><img src="../template-images/nav-spacer.png" width="1" height="25" alt="" align="absmiddle" border="0"><img src="../template-images/nav-spacertransparent.png" width="10" height="10" alt="" align="absmiddle" border="0">RATES</a>
-                  <ul>
-                  <li><a href="../rates/valley_values.html">Valley Values</a></li>
-                  <li><a href="../rates/lift_tickets.html">Lift Tickets</a></li>
-                  <li><a href="../rates/season_passes.html">Season Passes</a></li>
-                  <li><a href="../rates/rentals.html">Rentals</a></li>
-                  <li><a href="../rates/lessons.html">Lessons</a></li>
-                  <li><a href="../rates/learning_packages.html">Learning Packages</a></li>
-                  <li><a href="../rates/snow_play.html">Snow Play</a></li>
-                  <li><a href="../rates/group_rates.html">Groups</a></li>
-                </ul>
-              </li>
-            
-              <li class="learningcenters"><a href="#" class="MenuBarItemSubmenu"><img src="../template-images/nav-spacer.png" width="1" height="25" alt="" align="absmiddle" border="0"><img src="../template-images/nav-spacertransparent.png" width="10" height="10" alt="" align="absmiddle" border="0">LEARNING CENTERS</a>
-                <ul>
-<li><a href="../learning_centers/childrens_learning_center.html">Children's Learning Center</a></li>
-<li><a href="../learning_centers/learning_center.html">Learning Center</a></li>
-<li><a href="../explore_sv/beginners_guide.html">Beginners Guide</a></li>
-<li><a href="../explore_sv/rentals_guide.html">Rentals Guide</a></li>
-                </ul>
-              </li>
-                        
-              <li class="svhighlights"><a href="#" class="MenuBarItemSubmenu"><img src="../template-images/nav-spacer.png" width="1" height="25" alt="" align="absmiddle" border="0"><img src="../template-images/nav-spacertransparent.png" width="10" height="10" alt="" align="absmiddle" border="0">SV HIGHLIGHTS</a>
-              <ul>
-<li><a href="../sv_highlights/night_sessions.html">Night Sessions</a></li>
-<li><a href="../sv_highlights/the_edge.html">The Edge</a></li>
-<li><a href="../sv_highlights/slide_peak.html">Slide Peak</a></li>
-<li><a href="../sv_highlights/snow_play.html">Snow Play</a></li>
-<li><a href="../sv_highlights/sport_shop.html">Sport Shop</a></li>
-<li><a href="../sv_highlights/restaurants_bars.html">Restaurants &amp; Bars</a></li>
-                </ul>
-              </li>
-              
-              <li class="groupsales"><a href="#" class="MenuBarItemSubmenu"><img src="../template-images/nav-spacer.png" width="1" height="25" alt="" align="absmiddle" border="0"><img src="../template-images/nav-spacertransparent.png" width="10" height="10" alt="" align="absmiddle" border="0">GROUP SALES</a>
-              <ul>
-<li><a href="../group_sales/packages.html">Packages</a></li>
-<li><a href="../group_sales/merit_program.html">Merit Program</a></li>
-<li><a href="../group_sales/after_school_program.html">After School Program</a></li>
-<li><a href="../group_sales/rim_youth_program.html">Rim Youth Program</a></li>
-                </ul>
-              </li>
-              
-          </ul></div></div></div><div id="contentarea"><!-- InstanceBeginEditable name="ContentArea" --><div id="sitepagetitle">
-            <h1>Snow Report</h1>
-        </div><div id="sitepagesubtitle">
-          <h2>Updated: Friday, January 3, 2014 at 6:24 a.m.</h2>
-        </div><div class="grayline"><img src="../template-images/gray930px-line.png" width="930" height="15" alt=""></div>
-        <div id="sitepagetextarea"><span class="bold">Visit the Slopes for Your Friday!</span><br> 
-         Stop by Snow Valley today to get a taste of winter and take your first runs of 2014 with us! In addition to skiing/boarding, we've got lessons and snowplay in the daytime, and even a skiing/boarding session under the lights planned for this evening. We'll see you soon! <br>
-<br>
-<span class="bold">Night Sessions</span><br>
-Holiday Night sessions will be available nightly through December 30 and January 2 through January 4. Night session hours are 3-9 p.m. Enjoy an evening of skiing and/or snowboarding under the lights!</div><div class="grayline"><img src="../template-images/gray930px-line.png" width="930" height="15" alt=""></div>
-<div id="sitepagesubtitle"><h2>Hours of Operation and Snow Conditions</h2></div>
-<div id="honsctwocolumn"><div id="snowreporttwocolumnone">Today's Lift Hours of Operation:</div>
-<div id="snowreporttwocolumntwo">8:00 a.m. - 9:00 p.m.</div>
-<div id="snowreporttwocolumnone">Today's Snow Play Hours of Operation:</div>
-<div id="snowreporttwocolumntwo">10:00 a.m. - 4:00 p.m.</div>
-<div id="snowreporttwocolumnone">Today's Snow Surface:</div>
-<div id="snowreporttwocolumntwo">Machine Groomed Packed Powder</div>
-<div id="snowreporttwocolumnone">Today's Average Base Depth:</div>
-<div id="snowreporttwocolumntwo">12-14 Inches</div>
-<div id="snowreporttwocolumnone">Snowmaking in the Past 24 Hours:</div>
-<div id="snowreporttwocolumntwo">Yes, in the base area overnight! </div>
-<div id="snowreporttwocolumnone">Snowfall in the Past 24 Hours:</div>
-<div id="snowreporttwocolumntwo">None</div>
-<div id="snowreporttwocolumnone">2013/2014 Season Snowfall Total:</div>
-<div id="snowreporttwocolumntwo">20-25 Inches</div>
-</div>
-<div id="sitepagesubtitle"><h2>Weather Forecast</h2></div>
-<div id="wftwocolumn"><div id="snowreporttwocolumnone">Today's Forecast:</div>
-<div id="snowreporttwocolumntwo">Mostly Sunny</div>
-<div id="snowreporttwocolumnone">Today's High Temperature:</div>
-<div id="snowreporttwocolumntwo">Lower  50's</div>
-<div id="snowreporttwocolumnone">Overnight Low This Morning:</div>
-<div id="snowreporttwocolumntwo">26</div>
-<div id="snowreporttwocolumnone">Today's Winds:</div>
-<div id="snowreporttwocolumntwo">Northwest 5-10 MPH</div>
-<div id="snowreporttwocolumnone">National Weather Service Forecast:</div><div id="snowreporttwocolumntwo"><a href="http://forecast.weather.gov/MapClick.php?lat=34.222022507488326&lon=-117.03460693359375&site=sgx&smap=1&unit=0&lg=en&FcstType=text" target="_blank" class="textlink">Click Here</a></div>
-<div id="snowreporttwocolumnone">Snow Valley Real Time Weather Data:</div><div id="snowreporttwocolumntwo"><a href="http://mtnweb.com/svweather/svweather.htm" target="_blank" class="textlink">Top of Lift 1</a> &bull; <a href="http://snowvalley.asslserver.com/svweather/bottom/svbaseweather.html" target="_blank" class="textlink">Base Area</a></div>
-</div>
-<div id="sitepagesubtitle"><h2>Road Conditions</h2></div>
-<div id="rctwocolumn"><div id="snowreportrctwocolumnone">Current Road Conditions:</div><div id="snowreportrctwocolumntwo">Call (800) 427-ROAD (7623) or <a href="http://www.dot.ca.gov/dist8/tmc/index.htm#" target="_blank" class="textlink">Click Here</a><br>then click on &quot;Chain Control Map&quot; on the left side of the page</div>
-<div id="snowreportrctwocolumnone">Highway 18: <a href="http://www.dot.ca.gov/hq/roadinfo/sr18" target="_blank" class="textlink">(click here for conditions)</a></div>
-<div id="snowreportrctwocolumntwo">Open with no chain restrictions</div>
-<div id="snowreportrctwocolumnone">Highway 330: <a href="http://www.dot.ca.gov/hq/roadinfo/sr330" target="_blank" class="textlink">(click here for conditions)</a></div>
-<div id="snowreportrctwocolumntwo">Open with no chain restrictions</div>
-</div>
-<div id="sitepagesubtitle"><h2>Lift Status <span class="symbolkey"><img src="../explore_sv/images/sym-easiest.png" alt="Easiest" width="20" height="19" align="absmiddle"> Easiest <img src="../explore_sv/images/sym-moredifficult.png" alt="More Difficult" width="20" height="19" align="absmiddle"> More Difficult <img src="../explore_sv/images/sym-mostdifficult.png" alt="Most Difficult" width="20" height="19" align="absmiddle"> Most Difficult <img src="../explore_sv/images/sym-mostdifficult-experts.png" alt="Most Difficult - Expert Only" width="20" height="19" align="absmiddle"> Most Difficult Expert <img src="../explore_sv/images/sym-freestyle-terrain.png" alt="freestyle" width="20" height="19" align="absmiddle"> Freestyle Terrain</span></h2></div>
-<div id="subtochange">Lift status is subject to change without notice due to changes in weather and terrain conditions.</div>
-<div id="lstwocolumn"><div id="snowreportlstwocolumnone"><img src="../explore_sv/images/sym-moredifficult.png" alt="More Difficult" width="20" height="19" align="absmiddle"> <img src="../explore_sv/images/sym-mostdifficult.png" alt="Most Difficult" width="20" height="19" align="absmiddle"> <img src="../explore_sv/images/sym-mostdifficult-experts.png" alt="Most Difficult - Expert Only" width="20" height="19" align="absmiddle"> <img src="../explore_sv/images/sym-freestyle-terrain.png" alt="freestyle" width="20" height="19" align="absmiddle"> (1) Double Chair - 4,701 ft.</div>
-<div id="snowreportlstwocolumntwo">Open</div>
-<div id="snowreportlstwocolumnone"><img src="../explore_sv/images/sym-moredifficult.png" alt="More Difficult" width="20" height="19" align="absmiddle"> <img src="../explore_sv/images/sym-mostdifficult.png" alt="Most Difficult" width="20" height="19" align="absmiddle"> <img src="../explore_sv/images/sym-mostdifficult-experts.png" alt="Most Difficult - Expert Only" width="20" height="19" align="absmiddle"> <img src="../explore_sv/images/sym-freestyle-terrain.png" alt="freestyle" width="20" height="19" align="absmiddle"> (2) Triple Chair - 3,688 ft.</div>
-<div id="snowreportlstwocolumntwo">standby</div>
-<div id="snowreportlstwocolumnone"><img src="../explore_sv/images/sym-moredifficult.png" alt="More Difficult" width="20" height="19" align="absmiddle"> <img src="../explore_sv/images/sym-mostdifficult.png" alt="Most Difficult" width="20" height="19" align="absmiddle"> <img src="../explore_sv/images/sym-mostdifficult-experts.png" alt="Most Difficult - Expert Only" width="20" height="19" align="absmiddle"> <img src="../explore_sv/images/sym-freestyle-terrain.png" alt="freestyle" width="20" height="19" align="absmiddle"> (3) Triple Chair - 3,240 ft.</div>
-<div id="snowreportlstwocolumntwo">Open</div>
-<div id="snowreportlstwocolumnone"><img src="../explore_sv/images/sym-moredifficult.png" alt="More Difficult" width="20" height="19" align="absmiddle"> <img src="../explore_sv/images/sym-mostdifficult.png" alt="Most Difficult" width="20" height="19" align="absmiddle"> (4) Triple Chair - 1,137 ft.</div>
-<div id="snowreportlstwocolumntwo">Closed</div>
-<div id="snowreportlstwocolumnone"><img src="../explore_sv/images/sym-easiest.png" alt="Easiest" width="20" height="19" align="absmiddle"> (6) Double Chair - 1,197 ft.</div>
-<div id="snowreportlstwocolumntwo">Open</div>
-<div id="snowreportlstwocolumnone"><img src="../explore_sv/images/sym-moredifficult.png" alt="More Difficult" width="20" height="19" align="absmiddle"> (8) Double Chair - 825 ft.</div>
-<div id="snowreportlstwocolumntwo">Closed</div>
-<div id="snowreportlstwocolumnone"><img src="../explore_sv/images/sym-moredifficult.png" alt="More Difficult" width="20" height="19" align="absmiddle"> (9) Double Chair - 1,927 ft.</div>
-<div id="snowreportlstwocolumntwo">Closed</div>
-<div id="snowreportlstwocolumnone"><img src="../explore_sv/images/sym-mostdifficult.png" alt="Most Difficult" width="20" height="19" align="absmiddle"> <img src="../explore_sv/images/sym-mostdifficult-experts.png" alt="Most Difficult - Expert Only" width="20" height="19" align="absmiddle"> (10) Double Chair - 1,006 ft.</div>
-<div id="snowreportlstwocolumntwo">Closed</div>
-<div id="snowreportlstwocolumnone"><img src="../explore_sv/images/sym-moredifficult.png" alt="More Difficult" width="20" height="19" align="absmiddle"> <img src="../explore_sv/images/sym-mostdifficult.png" alt="Most Difficult" width="20" height="19" align="absmiddle"> <img src="../explore_sv/images/sym-mostdifficult-experts.png" alt="Most Difficult - Expert Only" width="20" height="19" align="absmiddle"> (11) Triple Chair - 1,270 ft.</div>
-<div id="snowreportlstwocolumntwo">Closed</div>
-<div id="snowreportlstwocolumnone">(12) Double Chair - 668 ft.<img src="../home-images/spacer.gif" width="20" height="19" align="absmiddle"></div>
-<div id="snowreportlstwocolumntwo">Open (10 a.m. - 4 p.m.)</div>
-<div id="snowreportlstwocolumnone"><img src="../explore_sv/images/sym-easiest.png" alt="Easiest" width="20" height="19" align="absmiddle"> <img src="../explore_sv/images/sym-moredifficult.png" alt="More Difficult" width="20" height="19" align="absmiddle"> <img src="../explore_sv/images/sym-freestyle-terrain.png" alt="freestyle" width="20" height="19" align="absmiddle"> (13) Triple Chair - 1,235 ft.</div>
-<div id="snowreportlstwocolumntwo">Open</div>
-<div id="snowreportlstwocolumnone"><img src="../explore_sv/images/sym-easiest.png" alt="Easiest" width="20" height="19" align="absmiddle"> (14) Conveyor - 80 ft.</div>
-<div id="snowreportlstwocolumntwo">Open</div>
-</div>
-<div id="sitepagesubtitle"><h2>Trail Status <span class="symbolkey"><img src="../explore_sv/images/sym-easiest.png" alt="Easiest" width="20" height="19" align="absmiddle"> Easiest <img src="../explore_sv/images/sym-moredifficult.png" alt="More Difficult" width="20" height="19" align="absmiddle"> More Difficult <img src="../explore_sv/images/sym-mostdifficult.png" alt="Most Difficult" width="20" height="19" align="absmiddle"> Most Difficult <img src="../explore_sv/images/sym-mostdifficult-experts.png" alt="Most Difficult - Expert Only" width="20" height="19" align="absmiddle"> Most Difficult Expert <img src="../explore_sv/images/sym-freestyle-terrain.png" alt="freestyle" width="20" height="19" align="absmiddle"> Freestyle Terrain</span></h2></div>
-<div id="subtochange">Trail status is subject to change without notice due to changes in weather and terrain conditions.</div>
-<div id="tsfourcolumn"><div id="snowreporttsfourcolumnone">Snow Play<img src="../home-images/spacer.gif" width="20" height="19" align="absmiddle"></div>
-<div id="snowreporttsfourcolumntwo">Open (10 a.m. - 4 p.m.)</div><div id="snowreporttsfourcolumnthree"><img src="../explore_sv/images/sym-moredifficult.png" alt="More Difficult" width="20" height="19" align="absmiddle"> West Slide</div>
-<div id="snowreporttsfourcolumnfour">Closed</div>
-<div id="snowreporttsfourcolumnone"><img src="../explore_sv/images/sym-easiest.png" alt="Easiest" width="20" height="19" align="absmiddle"> Thunder Mountain</div>
-<div id="snowreporttsfourcolumntwo">Open</div><div id="snowreporttsfourcolumnthree"><img src="../explore_sv/images/sym-moredifficult.png" alt="More Difficult" width="20" height="19" align="absmiddle"> Nord Valley</div>
-<div id="snowreporttsfourcolumnfour">Closed</div>
-<div id="snowreporttsfourcolumnone"><img src="../explore_sv/images/sym-easiest.png" alt="Easiest" width="20" height="19" align="absmiddle"> Coyote Flats</div>
-<div id="snowreporttsfourcolumntwo">Closed</div><div id="snowreporttsfourcolumnthree"><img src="../explore_sv/images/sym-mostdifficult.png" alt="Most Difficult" width="20" height="19" align="absmiddle"> Little Bowl</div>
-<div id="snowreporttsfourcolumnfour">Open</div>
-<div id="snowreporttsfourcolumnone"><img src="../explore_sv/images/sym-easiest.png" alt="Easiest" width="20" height="19" align="absmiddle"> <img src="../explore_sv/images/sym-freestyle-terrain.png" alt="freestyle" width="20" height="19" align="absmiddle"> Eagle Flats</div>
-<div id="snowreporttsfourcolumntwo">Open</div><div id="snowreporttsfourcolumnthree"><img src="../explore_sv/images/sym-mostdifficult.png" alt="Most Difficult" width="20" height="19" align="absmiddle"> Show Off</div>
-<div id="snowreporttsfourcolumnfour">Closed</div>
-<div id="snowreporttsfourcolumnone"><img src="../explore_sv/images/sym-moredifficult.png" alt="More Difficult" width="20" height="19" align="absmiddle"> <img src="../explore_sv/images/sym-freestyle-terrain.png" alt="freestyle" width="20" height="19" align="absmiddle"> The EDGE</div>
-<div id="snowreporttsfourcolumntwo">Open with 10 Features</div><div id="snowreporttsfourcolumnthree"><img src="../explore_sv/images/sym-mostdifficult.png" alt="Most Difficult" width="20" height="19" align="absmiddle"> Big Bowl</div>
-<div id="snowreporttsfourcolumnfour">Open</div>
-<div id="snowreporttsfourcolumnone"><img src="../explore_sv/images/sym-moredifficult.png" alt="More Difficult" width="20" height="19" align="absmiddle"> <img src="../explore_sv/images/sym-freestyle-terrain.png" alt="freestyle" width="20" height="19" align="absmiddle"> East Bowl</div>
-<div id="snowreporttsfourcolumntwo">Open</div><div id="snowreporttsfourcolumnthree"><img src="../explore_sv/images/sym-mostdifficult.png" alt="Most Difficult" width="20" height="19" align="absmiddle"> Quickie</div>
-<div id="snowreporttsfourcolumnfour">Closed</div>
-<div id="snowreporttsfourcolumnone"><img src="../explore_sv/images/sym-moredifficult.png" alt="More Difficult" width="20" height="19" align="absmiddle"> Mambo Alley</div>
-<div id="snowreporttsfourcolumntwo">Open</div><div id="snowreporttsfourcolumnthree"><img src="../explore_sv/images/sym-mostdifficult.png" alt="Most Difficult" width="20" height="19" align="absmiddle"> Race Peak</div>
-<div id="snowreporttsfourcolumnfour">Closed</div>
-<div id="snowreporttsfourcolumnone"><img src="../explore_sv/images/sym-moredifficult.png" alt="More Difficult" width="20" height="19" align="absmiddle"> Upper Wine Rock</div>
-<div id="snowreporttsfourcolumntwo">Open</div><div id="snowreporttsfourcolumnthree"><img src="../explore_sv/images/sym-mostdifficult.png" alt="Most Difficult" width="20" height="19" align="absmiddle"> Lake Run</div>
-<div id="snowreporttsfourcolumnfour">Closed</div>
-<div id="snowreporttsfourcolumnone"><img src="../explore_sv/images/sym-moredifficult.png" alt="More Difficult" width="20" height="19" align="absmiddle"> Lower Wine Rock</div>
-<div id="snowreporttsfourcolumntwo">Open</div><div id="snowreporttsfourcolumnthree"><img src="../explore_sv/images/sym-mostdifficult.png" alt="Most Difficult" width="20" height="19" align="absmiddle"> Surprise Run</div>
-<div id="snowreporttsfourcolumnfour">Closed</div>
-<div id="snowreporttsfourcolumnone"><img src="../explore_sv/images/sym-moredifficult.png" alt="More Difficult" width="20" height="19" align="absmiddle"> Graduation</div>
-<div id="snowreporttsfourcolumntwo">Closed</div><div id="snowreporttsfourcolumnthree"><img src="../explore_sv/images/sym-mostdifficult.png" alt="Most Difficult" width="20" height="19" align="absmiddle"> West Run</div>
-<div id="snowreporttsfourcolumnfour">Closed</div>
-<div id="snowreporttsfourcolumnone"><img src="../explore_sv/images/sym-moredifficult.png" alt="More Difficult" width="20" height="19" align="absmiddle"> The Chute</div>
-<div id="snowreporttsfourcolumntwo">Closed</div><div id="snowreporttsfourcolumnthree"><img src="../explore_sv/images/sym-mostdifficult.png" alt="Most Difficult" width="20" height="19" align="absmiddle"> East Slide</div>
-<div id="snowreporttsfourcolumnfour">Closed</div>
-<div id="snowreporttsfourcolumnone"><img src="../explore_sv/images/sym-moredifficult.png" alt="More Difficult" width="20" height="19" align="absmiddle"> Bubble Gum</div>
-<div id="snowreporttsfourcolumntwo">Closed</div><div id="snowreporttsfourcolumnthree"><img src="../explore_sv/images/sym-mostdifficult.png" alt="Most Difficult" width="20" height="19" align="absmiddle"> The Face</div>
-<div id="snowreporttsfourcolumnfour">Closed</div>
-<div id="snowreporttsfourcolumnone"><img src="../explore_sv/images/sym-moredifficult.png" alt="More Difficult" width="20" height="19" align="absmiddle"> Snow Bowl</div>
-<div id="snowreporttsfourcolumntwo">Closed</div><div id="snowreporttsfourcolumnthree"><img src="../explore_sv/images/sym-mostdifficult-experts.png" alt="Most Difficult - Expert Only" width="20" height="19" align="absmiddle"> The Ladder</div>
-<div id="snowreporttsfourcolumnfour">Closed</div>
-<div id="snowreporttsfourcolumnone"><img src="../explore_sv/images/sym-moredifficult.png" alt="More Difficult" width="20" height="19" align="absmiddle"> Richard's</div>
-<div id="snowreporttsfourcolumntwo">Closed</div><div id="snowreporttsfourcolumnthree"><img src="../explore_sv/images/sym-mostdifficult-experts.png" alt="Most Difficult - Expert Only" width="20" height="19" align="absmiddle"> Show Me</div><div id="snowreporttsfourcolumnfour">closed</div>
-<div id="snowreporttsfourcolumnone"><img src="../explore_sv/images/sym-moredifficult.png" alt="More Difficult" width="20" height="19" align="absmiddle"> Bobcat Alley</div>
-<div id="snowreporttsfourcolumntwo">Closed</div><div id="snowreporttsfourcolumnthree"><img src="../explore_sv/images/sym-mostdifficult-experts.png" alt="Most Difficult - Expert Only" width="20" height="19" align="absmiddle"> Snake Run</div>
-<div id="snowreporttsfourcolumnfour">Closed</div>
-</div>
+<script src='https://www.google.com/recaptcha/api.js'></script>
 
-<!-- InstanceEndEditable --></div>
-            <div class="push"></div>
+<script type="text/javascript" src="https://pm.geniusmonkey.com/gm.js?id=1028348077"></script><script src="https://t.ztsrv.com/1/l/0.5.0/gmk3387895/1028348077/100/loader.js"></script>
+<style id="x-generated-css" type="text/css">a,h1 a:hover,h2 a:hover,h3 a:hover,h4 a:hover,h5 a:hover,h6 a:hover,.x-topbar .p-info a:hover,.x-breadcrumb-wrap a:hover,.widget ul li a:hover,.widget ol li a:hover,.widget.widget_text ul li a,.widget.widget_text ol li a,.widget_nav_menu .current-menu-item > a,.x-widgetbar .widget ul li a:hover,.x-accordion-heading .x-accordion-toggle:hover,.x-comment-author a:hover,.x-comment-time:hover,.x-recent-posts a:hover .h-recent-posts{color:#f57c33;}a:hover,.widget.widget_text ul li a:hover,.widget.widget_text ol li a:hover,.x-twitter-widget ul li a:hover{color:hsl(23,74%,45%);}.rev_slider_wrapper,a.x-img-thumbnail:hover,.x-slider-container.below,.page-template-template-blank-3-php .x-slider-container.above,.page-template-template-blank-6-php .x-slider-container.above{border-color:#f57c33;}.entry-thumb:before,.x-pagination span.current,.flex-direction-nav a,.flex-control-nav a:hover,.flex-control-nav a.flex-active,.mejs-time-current,.x-dropcap,.x-skill-bar .bar,.x-pricing-column.featured h2,.h-comments-title small,.x-entry-share .x-share:hover,.x-highlight,.x-recent-posts .x-recent-posts-img:after{background-color:#f57c33;}.x-nav-tabs > .active > a,.x-nav-tabs > .active > a:hover{box-shadow:inset 0 3px 0 0 #f57c33;}.x-main{width:69.536945%;}.x-sidebar{width:25.536945%;}.x-topbar .p-info,.x-topbar .p-info a,.x-navbar .desktop .x-nav > li > a,.x-navbar .desktop .sub-menu a,.x-navbar .mobile .x-nav li > a,.x-breadcrumb-wrap a,.x-breadcrumbs .delimiter{color:#999999;}.x-navbar .desktop .x-nav > li > a:hover,.x-navbar .desktop .x-nav > .x-active > a,.x-navbar .desktop .x-nav > .current-menu-item > a,.x-navbar .desktop .sub-menu a:hover,.x-navbar .desktop .sub-menu .x-active > a,.x-navbar .desktop .sub-menu .current-menu-item > a,.x-navbar .desktop .x-nav .x-megamenu > .sub-menu > li > a,.x-navbar .mobile .x-nav li > a:hover,.x-navbar .mobile .x-nav .x-active > a,.x-navbar .mobile .x-nav .current-menu-item > a{color:#272727;}.x-navbar .desktop .x-nav > li > a:hover,.x-navbar .desktop .x-nav > .x-active > a,.x-navbar .desktop .x-nav > .current-menu-item > a{box-shadow:inset 0 4px 0 0 #f57c33;}.x-navbar .desktop .x-nav > li > a{height:90px;padding-top:37px;}.x-navbar-fixed-top-active .x-navbar-wrap{margin-bottom:1px;}.x-navbar .desktop .x-nav > li ul{top:75px;;}.x-comment-author,.x-comment-time,.comment-form-author label,.comment-form-email label,.comment-form-url label,.comment-form-rating label,.comment-form-comment label,.widget_calendar #wp-calendar caption,.widget.widget_rss li .rsswidget{font-family:Montserrat;font-weight:700;}.p-landmark-sub,.p-meta,input,button,select,textarea{font-family:Open Sans;}.widget ul li a,.widget ol li a,.x-comment-time{color:hsl(0,0%,39%);}.widget_text ol li a,.widget_text ul li a{color:#f57c33;}.widget_text ol li a:hover,.widget_text ul li a:hover{color:hsl(23,74%,45%);}.comment-form-author label,.comment-form-email label,.comment-form-url label,.comment-form-rating label,.comment-form-comment label,.widget_calendar #wp-calendar th,.p-landmark-sub strong,.widget_tag_cloud .tagcloud a:hover,.widget_tag_cloud .tagcloud a:active,.entry-footer a:hover,.entry-footer a:active,.x-breadcrumbs .current,.x-comment-author,.x-comment-author a{color:#272727;}.widget_calendar #wp-calendar th{border-color:#272727;}.h-feature-headline span i{background-color:#272727;}@media (max-width:979px){.x-navbar-fixed-top-active .x-navbar-wrap{margin-bottom:0;}}body{font-size:18px;font-style:normal;font-weight:300;color:hsl(0,0%,39%);background-color:#f3f3f3;}a:focus,select:focus,input[type="file"]:focus,input[type="radio"]:focus,input[type="submit"]:focus,input[type="checkbox"]:focus{outline:thin dotted #333;outline:5px auto #f57c33;outline-offset:-1px;}h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{font-family:"Montserrat",sans-serif;font-style:normal;font-weight:700;}h1,.h1{letter-spacing:-0.025em;}h2,.h2{letter-spacing:-0.025em;}h3,.h3{letter-spacing:-0.025em;}h4,.h4{letter-spacing:-0.025em;}h5,.h5{letter-spacing:-0.025em;}h6,.h6{letter-spacing:-0.025em;}.w-h{font-weight:700 !important;}.x-container.width{width:88%;}.x-container.max{max-width:1200px;}.x-main.full{float:none;display:block;width:auto;}@media (max-width:979px){.x-main.full,.x-main.left,.x-main.right,.x-sidebar.left,.x-sidebar.right{float:none;display:block;width:auto !important;}}.entry-header,.entry-content{font-size:18px;}body,input,button,select,textarea{font-family:"Open Sans",sans-serif;}h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6,h1 a,h2 a,h3 a,h4 a,h5 a,h6 a,.h1 a,.h2 a,.h3 a,.h4 a,.h5 a,.h6 a,blockquote{color:#272727;}.cfc-h-tx{color:#272727 !important;}.cfc-h-bd{border-color:#272727 !important;}.cfc-h-bg{background-color:#272727 !important;}.cfc-b-tx{color:hsl(0,0%,39%) !important;}.cfc-b-bd{border-color:hsl(0,0%,39%) !important;}.cfc-b-bg{background-color:hsl(0,0%,39%) !important;}body.x-navbar-fixed-top-active .x-navbar-wrap{height:90px;}.x-navbar-inner{min-height:90px;}.x-brand{margin-top:22px;font-family:"Lato",sans-serif;font-size:42px;font-style:normal;font-weight:700;letter-spacing:-0.035em;color:#272727;}.x-brand:hover,.x-brand:focus{color:#272727;}.x-navbar .x-nav-wrap .x-nav > li > a{font-family:"Lato",sans-serif;font-style:normal;font-weight:700;letter-spacing:0.085em;text-transform:uppercase;}.x-navbar .desktop .x-nav > li > a{font-size:13px;}.x-navbar .desktop .x-nav > li > a:not(.x-btn-navbar-woocommerce){padding-left:20px;padding-right:20px;}.x-navbar .desktop .x-nav > li > a > span{margin-right:-0.085em;}.x-btn-navbar{margin-top:20px;}.x-btn-navbar,.x-btn-navbar.collapsed{font-size:24px;}@media (max-width:979px){body.x-navbar-fixed-top-active .x-navbar-wrap{height:auto;}.x-widgetbar{left:0;right:0;}}.x-btn,.button,[type="submit"]{color:#ffffff;border-color:hsla(6,100%,34%,0);background-color:rgb(0,75,141);text-shadow:0 0.075em 0.075em rgba(0,0,0,0.5);}.x-btn:hover,.button:hover,[type="submit"]:hover{color:#ffffff;border-color:hsla(6,100%,19%,0);background-color:rgb(0,75,141);text-shadow:0 0.075em 0.075em rgba(0,0,0,0.5);}.x-btn.x-btn-real,.x-btn.x-btn-real:hover{margin-bottom:0.25em;text-shadow:0 0.075em 0.075em rgba(0,0,0,0.65);}.x-btn.x-btn-real{box-shadow:0 0.25em 0 0 #a71000,0 4px 9px rgba(0,0,0,0.75);}.x-btn.x-btn-real:hover{box-shadow:0 0.25em 0 0 #a71000,0 4px 9px rgba(0,0,0,0.75);}.x-btn.x-btn-flat,.x-btn.x-btn-flat:hover{margin-bottom:0;text-shadow:0 0.075em 0.075em rgba(0,0,0,0.65);box-shadow:none;}.x-btn.x-btn-transparent,.x-btn.x-btn-transparent:hover{margin-bottom:0;border-width:3px;text-shadow:none;text-transform:uppercase;background-color:transparent;box-shadow:none;}body .gform_wrapper .gfield_required,body .gform_wrapper span.ginput_total{color:#f57c33;}body .gform_wrapper h2.gsection_title,body .gform_wrapper h3.gform_title{font-weight:700;}body .gform_wrapper h2.gsection_title{letter-spacing:-0.025em !important;}body .gform_wrapper h3.gform_title{letter-spacing:-0.025em !important;}body .gform_wrapper .top_label .gfield_label,body .gform_wrapper .left_label .gfield_label,body .gform_wrapper .right_label .gfield_label{font-weight:300;}/* Template Changes */
+.x-brand img {
+    width: 400px;
+    position: relative;
+    bottom: 15px;
+    left: 13%;
+  	transition:1.0s ease;
+}
+@media (max-width:1200px) {
+  .x-brand img {
+    width: 330px;
+    position: relative;
+    bottom: 15px;
+  }
+}
+.x-brand {
+    margin-top: 0px;
+}
+  .x-topbar .x-social-global a {
+    color:#416FA4;
+  }
+ .x-topbar .x-social-global a:hover {
+    color:#F57C33;
+  }
+.x-topbar .x-social-global {
+  margin-top:4px;
+}
+@media (max-width:767px) {
+  .x-brand {
+    float:none;
+  }
+  .x-brand img {
+    width: 250px;
+    position: relative;
+    bottom: -6px;
+    left: 0;
+}
+  .x-topbar .x-social-global {
+   	float:right;
+    display:none;
+    width: 100px;
+    margin-bottom: 8px;
+}
+  .x-topbar {
+    min-height: 100px;
+  }
+}
+
+/* Gradient Nav Background
+.x-topbar {
+    border-bottom: none;
+    z-index: 1021;
+  	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#dbdbdb+0,ffffff+17,dbdbdb+100 */
+		background: #dbdbdb; /* Old browsers */
+		background: -moz-linear-gradient(left,  #dbdbdb 0%, #ffffff 17%, #dbdbdb 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(left,  #dbdbdb 0%,#ffffff 17%,#dbdbdb 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to right,  #dbdbdb 0%,#ffffff 17%,#dbdbdb 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dbdbdb', endColorstr='#dbdbdb',GradientType=1 ); /* IE6-9 */
+}
+*/
+
+.x-navbar {
+      box-shadow: rgba(0, 0, 0, 0.133333) 0px 0.21em 0.35em 0px;
+}
+.masthead-inline .x-navbar .desktop .sub-menu {
+    top: 50px;
+    left: 0px;
+  	border-radius: 0px;
+}
+.x-navbar-inner {
+    min-height: 50px;
+    background-color: #004a8d;
+}
+.x-navbar .desktop .x-nav > li > a {
+    height: 50px;
+    padding-top: 19px;
+}
+.x-navbar .mobile .x-nav li > a {
+  color:white;
+}
+.x-navbar .mobile .x-nav .current-menu-item > a {
+  color:#F57C33;
+}
+.x-navbar .mobile .x-nav li > a:hover {
+  color:#F57C33;
+}
+.masthead-inline .desktop .x-nav {
+    display: block;
+    float: none;
+}
+body.x-navbar-fixed-top-active .x-navbar-wrap {
+    height: 50px;
+  	margin-bottom:0px;
+}
+.x-navbar {
+      border-bottom: 0px;
+}
+@media (max-width:767px){
+body.x-navbar-fixed-top-active .x-navbar-wrap {
+    height: 66px;
+}
+}
+body {
+  background-color:white;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  margin:0 0 0 0;
+}
+
+/* Header */
+/* Increase Pixels of Main Menu Before Mobile */
+@media (max-width: 979px) {
+.x-nav-wrap.desktop {
+    display: block;
+  }
+.masthead-inline .x-btn-navbar {
+    display: none;
+}
+}
+/* Change 800 to whatever needs 
+pixel you want the menu to 
+hide and the mobile menu to appear */
+@media (max-width: 767px) {
+.x-nav-wrap.desktop {
+    display: none;
+}
+.masthead-inline .x-btn-navbar {
+    display: inline-block;
+  margin-bottom:10px;
+  margin-top:10px;
+}
+}
+.x-topbar-inner {
+  position:relative;
+	height: 0px;
+}
+.x-topbar .p-info {
+  display:none;
+}
+.form-search {
+display: inline-block;
+    float: right;
+  position: absolute;
+    right: 110px;
+    top: 24px;
+}
+.form-search .search-query {
+	width:210px;
+}
+/* Menu */
+.menu-item img {
+    position: absolute;
+    max-width: none;
+    width: 126px;
+  	transition:0.7s ease;
+ 	 	filter: drop-shadow(0px 0px 13px rgba(0,0,0,0.3));
+    -ms-transform: rotate(12deg);
+    -webkit-transform: rotate(12deg);
+    transform: rotate(12deg);
+    margin-top: -37px;
+}
+.menu-item img:hover {
+    width: 176px;
+}
+.x-navbar .desktop .x-nav > li.menu-item-68 > a:hover {
+  box-shadow:none;
+}
+.x-navbar .desktop .x-nav > li > a:not(.x-btn-navbar-woocommerce) {
+    padding-left: 48px;
+    padding-right: 48px;
+    color: white;
+}
+@media (max-width:1350px){
+.x-navbar .desktop .x-nav > li > a:not(.x-btn-navbar-woocommerce) {
+    padding-left: 40px;
+    padding-right: 40px;
+    color: white;
+}
+}
+@media (max-width:1240px){
+.x-navbar .desktop .x-nav > li > a:not(.x-btn-navbar-woocommerce) {
+    padding-left: 31px;
+    padding-right: 31px;
+    color: white;
+}
+  
+}
+@media (max-width:1080px){
+.x-navbar .desktop .x-nav > li > a:not(.x-btn-navbar-woocommerce) {
+    padding-left: 28px;
+    padding-right: 28px;
+    color: white;
+}
+  @media (max-width:1000px){
+.x-navbar .desktop .x-nav > li > a:not(.x-btn-navbar-woocommerce) {
+    padding-left: 27px;
+    padding-right: 27px;
+    color: white;
+}
+  }
+  
+@media (max-width:980px){
+  .x-navbar .desktop .x-nav > li > a:not(.x-btn-navbar-woocommerce) {
+    padding-left: 14px;
+    padding-right: 14px;
+    color: white;
+}
+     #menu-item-17 a {
+       margin-left:30px;
+     }
+  }
+  @media (max-width:860px){
+     #menu-item-17 a {
+       margin-left:0px;
+     }
+  }
+  .menu-item img {
+    	width:90px;
+    	margin-top:-26px;
+}
+   .menu-item img:hover {
+    	width:120px;
+}
+}
+@media (max-width:840px){
+  .x-navbar .desktop .x-nav > li > a:not(.x-btn-navbar-woocommerce) {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+}
+.x-navbar-fixed-top .menu-item img {
+    -ms-transform: rotate(5deg);
+    -webkit-transform: rotate(5deg);
+    transform: rotate(5deg);
+    margin-top: -26px;
+}
+
+.buyTickets {
+  	display:none;
+  	top: 0px;
+    position: absolute;
+    max-width: none;
+    width: 126px;
+    transition: 0.7s ease;
+    filter: drop-shadow(0px 0px 13px rgba(0,0,0,0.3));
+    -ms-transform: rotate(12deg);
+    -webkit-transform: rotate(12deg);
+    transform: rotate(-7deg);
+}
+
+#menu-item-86 {
+  display:none;
+}
+
+.x-navbar .desktop .x-nav > .menu-item-68 > a {
+  box-shadow: inset 0 4px 0 0 #416FA4;
+}
+
+@media (max-width:767px) {
+.buyTickets {
+  	display:block;
+}
+  .menu-item-68 {
+    display:none;
+  }
+  .menu-item-type-custom .search-query {
+    width:100%;
+    margin-bottom:0px;
+  }
+  .menu-item-type-custom #searchform {
+    margin-bottom: 0px;
+  }
+  .x-navbar .x-nav>.menu-item-object-custom>a>span {
+    display: block;
+}
+  .form-search {
+    display:none;
+  }
+}
+
+.desktop .sub-menu a {
+  font-size: 16px;
+}
+
+.x-navbar .desktop .sub-menu a:hover {
+  background-color:#F57C33;
+  color:white;
+}
+.x-navbar .desktop .sub-menu .current-menu-item > a {
+  border-bottom:2px solid #F57C33;
+}
+/* End of Header */
+/* Home Page */
+
+/* Home Page Banner */
+.currentReports {
+  	text-align:center; 
+  	background-color:white;
+		width: 300px;
+  	margin-bottom: 20px;
+  	margin-left: 18%;
+}
+
+.currentSnow.x-column.x-1-2, .currentSnow.x-column.x-1-2 {
+  width:50%;
+}
+
+.currentReports.currentDesktop {
+  box-shadow: 0px 6px 32px #151515;
+}
+.mainBanner .h5 {
+  background-color:#F57C33; 
+  color:white;
+	font-size:28px;
+  margin-left:-100%;
+  padding: 6px;
+  text-shadow: 1px 1px 4px #000;
+}
+@media (min-width:1500px) {
+}
+.currentSnow {
+    border-right: 1px solid;
+    padding-right: 5px;
+    margin-right: 0px;
+  	padding-left: 10px;
+}
+.currentTemperature {
+  padding-left:10px;
+}
+.currentTemperature h6 {
+  margin:17.5px 0px;
+}
+@media (max-width:767px) {
+.currentTemperature h6 {
+  margin:0px 0px;
+}
+}
+@media (max-width:416px) {
+.currentTemperature h6 {
+  margin:17.5px 0px;
+}
+}
+.headerClass {
+  padding-bottom:30px;
+}
+.currentReports h4 {
+    font-size: 40px;
+}
+
+.currentReports p {
+    margin-top: 10px;
+    border-top: 1px solid;
+  	margin-bottom:10px;
+}
+@media (max-width:767px) {
+.currentReports p {
+    margin-top: 10px;
+    border-top: 1px solid;
+  	margin-bottom:10px;
+  	margin-right: -20px;
+    margin-left: -20px;
+    font-size: 15px;
+}
+  .currentReports {
+		width: 100%;
+}
+}
+.currentMobile {
+  display:none;
+}
+@media (min-width:768px) {
+.currentReports .currentTemperature p {
+    margin-top: 10px;
+    border-top: 1px solid;
+    margin-bottom: 10px;
+    margin-left: -10px;
+    padding-left: 10px;
+    margin-right: -6px;
+    padding-right: 6px;
+}
+.currentReports .currentSnow p {
+    margin-top: 10px;
+    border-top: 1px solid;
+    margin-bottom: 10px;
+    margin-left: -10px;
+    padding-left: 10px;
+    margin-right: -6px;
+    padding-right: 10px;
+}
+}
+
+@media (max-width:1100px) {
+  .page .h3, .page .h5 {
+    font-size:25px;
+  }
+}
+
+@media (max-width:991px) {
+  .page .h3, .page .h5 {
+    font-size:25px;
+  }
+}
+@media (max-width:767px){
+	.currentDesktop {
+  	display:none;
+}
+  .currentMobile {
+  	display:block;
+    height: 127px;
+    border-bottom: 1px solid;
+    margin-bottom: 20px!important;
+    box-shadow: 0px 8px 12px #888888;
+}
+  .x-column.x-sm.seasonPasses {
+    width: 50.66666%;
+}
+  .currentReports {
+    margin-bottom:0px;
+    margin-left: 0px;
+  }
+}
+@media (max-width:960px) {
+  .seasonPasses h2 {
+    font-size: 40px;
+}
+}
+
+@media (max-width:991px) {
+  .seasonPasses .h5 {font-size:21px;}
+}
+
+@media (max-width:580px) {
+  .seasonPasses h2 {font-size:30px;}
+  .mainBanner .h5 {
+    font-size:18px;
+  }
+  h4.current {
+    font-size:27px;
+  }
+}
+
+
+/* Three Promo Sections */
+
+@media (min-width:768px) {
+  .threeDeals {padding-top:25px!important;}
+}
+.threeDeals .x-btn {
+margin-top:-25px;
+}
+
+@media (max-width:767px) {
+  .threeDeals .x-btn {
+margin-bottom:20px;
+}
+}
+
+.threeDeals img {
+  margin:auto;
+  display:block;
+}
+
+/* Media Section */
+
+.backgroundGradient {
+    background: rgb(200, 214, 230);
+    background: -webkit-linear-gradient(left, rgb(200, 214, 230), #fff, rgb(200, 214, 230));
+    background: -o-linear-gradient(right,rgb(200, 214, 230), #fff, rgb(200, 214, 230));
+    background: -moz-linear-gradient(right, rgb(200, 214, 230), #fff, rgb(200, 214, 230));
+    background: linear-gradient(to right, rgb(200, 214, 230), #fff, rgb(200, 214, 230));
+}
+
+#media .x-btn {
+  margin-top:-100px;
+}
+
+/* Photo of the Day Section */
+
+
+/* News Section */
+#news .x-column.x-1-3 {
+    border: 1px solid gray;
+    padding: 10px!important;
+    display: block;
+    box-shadow: 0px 0px 14px #888888;
+}
+@media (max-width: 767px) {
+  #news .x-column.x-1-3 {
+    margin-bottom:15px;
+  }
+}
+
+/* Newsletter */
+#newsletter {
+  box-shadow: 0px 1px 20px #888888;
+}
+#newsletter #input_2_1 {
+  border-radius:0px;
+}
+#newsletter, #newsletter .h3 {
+  color:White;
+  text-shadow: 1px 1px 4px #000;
+}
+#newsletter .gform_body {
+    width: 250px;
+    display: inline-block;
+}
+
+#newsletter .gform_wrapper .top_label input.medium {
+  width:100%;
+}
+#newsletter .gform_wrapper .top_label div.ginput_container {
+  margin-top:-2px;
+}
+
+#newsletter .gform_footer {
+  display: inline-block;
+  width: 20%;
+}
+#newsletter #gform_submit_button_2 {
+  	margin-bottom: -6px;
+    padding: 7.55px 19px;
+  	width:100px;
+}
+@media (max-width:767px) {
+#newsletter #gform_submit_button_2 {
+  	margin:auto;
+}
+}
+#newsletter .x-text p {
+			margin:0px;
+}
+
+#newsletter img {
+    position: absolute;
+  	transition:1.0s ease;
+    bottom: 0px;
+    margin: 0px;
+    margin-left: -70px;
+}
+@media (max-width:1285px) {
+  #newsletter img {
+  	width:400px;
+  }
+}
+
+@media (max-width:1070px) {
+  #newsletter img {
+  	width:350px;
+  }
+  #newsletter .h3 {
+    font-size:25px;
+  }
+}
+
+@media (max-width:930px) {
+  #newsletter img {
+  	width:320px;
+  }
+}
+@media (max-width:820px) {
+  #newsletter img {
+  	width:300px;
+  }
+}
+@media (max-width:767px) {
+  #newsletter img {
+  	display:None;
+  }
+  #newsletter .x-2-3 {
+    text-align:center;
+}
+  #newsletter .gform_body {
+    width: 250px;
+    display: block;
+    margin: auto;
+}
+  #newsletter .gform_footer {
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+}
+#newsletter .x-2-3 {
+		float:right;
+}
+
+/* Restaraunt & Bars */
+.restaraunt {
+  border:solid 1px;
+  box-shadow:0px 4px 8px;
+}
+
+/* Footer */
+.x-colophon.bottom {
+  border-top:none;
+	background-color:#004a8d;
+}
+.x-colophon.bottom, .x-colophon.bottom h1, .x-colophon.bottom a {
+  color:white;
+}
+
+.x-colophon.bottom a:hover {
+  color:#004a8d;
+}
+.x-colophon.bottom ul {
+    list-style: none;
+    font-size: 15px;
+  	margin:0px;
+  	text-align:left;
+}
+.x-colophon.bottom h1 {
+		text-align: left;
+    font-size: 35px;
+}
+
+@media (max-width:767px) {
+  .x-colophon.bottom h1 {
+    text-align:center;
+    margin-bottom: 20px;
+    margin-top: 150px;
+  }
+  .x-colophon.bottom ul {
+    font-size:13px;
+}
+  .x-colophon.bottom .iconsFoote {
+	display:block;
+  margin:auto;
+  max-width:60%;
+  }
+.x-colophon.bottom .x-feature-box-content {
+  font-size:12px;
+  vertical-align: middle!important;
+}
+}
+.x-colophon.bottom .x-feature-box-text {
+  margin-top:2px;
+}
+a {
+  cursor:pointer;
+}
+
+
+
+/* Table */
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+.tg th{  line-height: 22px; border: 1px solid black; font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+.tg .tg-wc1u{background-color:#9b9b9b;color:#ffffff}
+.tg .tg-x387{background-color:#9b9b9b;color:#ffffff;vertical-align:top}
+.tg .tg-yw4l{vertical-align:top}
+.tg .tg-016x{color:#ffffff;vertical-align:top}
+
+.tg tr:nth-child(odd) {
+		background-color: #e4e4e4;
+}
+.tg tr:first-of-type {
+    background-color: #416fa4;
+    color: white;
+}
+
+.tg th:first-of-type {
+  width:55%;
+}
+
+.tg th {
+  width:15%;
+}
+
+.liftTickets .tg th:first-of-type {
+  width:48%;
+}
+.liftTickets .tg th {
+  width:13%;
+}
+  
+/* hide photo gallery image names*/
+.ngg-imagebrowser h3 {
+    text-align: center;
+    display: none;
+}
+
+body .gform_wrapper textarea {
+font-size:20px;
+}
+
+
+.gform_body input[type="text"],
+.gform_body textarea {
+    border: 1px solid #383838;
+}
+/* Content Pages */
+.page .h3, .page .h5 {
+  margin-bottom:15px;
+}
+
+.home .h3, .home .h5 {
+  margin-bottom:0px;
+}
+
+.buyOnline {
+  	padding: 5px;
+    color: white;
+    margin: 5px;
+    background-color: #f57c33;
+}
+.buyOnline:hover {
+  	padding: 5px;
+    color: white;
+    margin: 5px;
+    background-color: #bb754a;
+}
+.tg-yw4l img, .liftStatus img {
+margin-right:5px;
+}
+
+.newThisSeason {
+  border-top:5px solid #F57C33;
+  border-bottom:5px solid #F57C33;
+
+}
+
+.underline {
+text-decoration:underline;
+}
+
+
+@media (max-width:400px) {
+  .mainBanner{
+      background-size: cover!important;
+    background-position-x: 61%!important;
+        padding-bottom: 0px!important;
+    	padding-top: 20px!important;
+  }}  
+
+/* Hide Renew Prices */
+/*
+.hideColumns {display:none;}
+*/
+.hideContent {display:none;}
+.freestyleWorkshops {display:none;}
+
+.desktop .sub-menu {
+  min-width:230px;
+}
+.x-sub-toggle {
+    width: 35px;
+    padding-left: 100%;
+    margin-right: 57%;
+}
+
+@media (max-width:500px) {
+#news h3, #news .h3 {
+  font-size:30px;
+  padding:0px!important;
+  padding-bottom:20px!important;
+}
+}
+
+.skipNavigation {
+    position: absolute;
+    top: auto;
+    left: -10000px;
+}
+@media (max-width:500px) {
+.page .seasonPasses .h5 {
+    width: 170px;
+    font-size: 20px;
+    margin-left: 31%;
+    float: right;
+}
+}
+
+.x-entry-share .x-share:hover {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+@media (max-width: 767px) {
+.menu-item-type-custom .search-query {
+    font-size:16px;
+}
+}
+#wp-forecast-2 {
+  position:relative;
+  height: 86px;
+}
+div.wp-forecast-curr-head {
+  display:none;
+}
+div.wp-forecast-curr-right {
+  	font-size: 40px;
+    position: absolute;
+    right: 7px;
+    top: -24px;
+}
+div.wp-forecast-curr-left {
+    padding: 3px;
+    float: left;
+    position: absolute;
+    left: -6px;
+    top: -10px;
+}
+div.wp-forecast-fc {
+  display:none;
+}
+div.wp-forecast-curr-details {
+  position:absolute;
+  bottom:0px;
+  font-size:20px;
+  
+}
+
+@media (max-width:767px) {
+  div.wp-forecast-curr-left {
+    padding: 3px;
+    float: left;
+    position: absolute;
+    left: 0px;
+    top: -23px;
+}
+  #wp-forecast-2 {
+    position: relative;
+    height: 35px;
+}
+  div.wp-forecast-curr-right {
+    font-size: 20px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: auto;
+    text-align: center;
+    top: -24px;
+}
+  div.wp-forecast-curr-details {
+    position: absolute;
+    bottom: -8px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    color: black;
+}
+}
+
+@media (max-width:419px) {
+    #wp-forecast-2 {
+    position: relative;
+    height: 60px;
+}
+}
+
+@media (max-width:767px) {
+  .x-column.x-sm.seasonPasses {
+      width: 60%;
+  }
+}
+
+</style><style id="cornerstone-custom-page-css" type="text/css">#snowreporttwocolumnone{width:50%;float:left;font:bold 12px Verdana,Geneva,sans-serif;text-align:left;color:#000000;padding:5px 0 5px 10px;background-color:#CCC;border-bottom:solid 3px #FFFFFF;}#snowreporttwocolumntwo{width:50%;float:left;font:12px Verdana,Geneva,sans-serif;text-align:left;color:#000000;padding:5px 0 5px 10px;background-color:#BFD2E2;border-bottom:solid 3px #FFFFFF;}#snowreporttwocolumnonetall{width:50%;height:48px;float:left;font:bold 12px Verdana,Geneva,sans-serif;text-align:left;color:#000000;padding:5px 0 5px 10px;background-color:#CCC;border-bottom:solid 3px #FFFFFF;}#snowreporttwocolumntwotall{width:50%;height:48px;float:left;font:12px Verdana,Geneva,sans-serif;text-align:left;color:#000000;padding:5px 0 5px 10px;background-color:#BFD2E2;border-bottom:solid 3px #FFFFFF;}#tsfourcolumn div{width:25%;height:30px;float:left;text-align:left;color:#000000;}#snowreporttsfourcolumnone{font-weight:600;font:bold 12px Verdana,Geneva,sans-serif;padding:5px 0 5px 10px;background-color:#CCC;border-bottom:solid 3px #FFFFFF;}#snowreporttsfourcolumntwo{padding:7px 0 3px 10px;background-color:#BFD2E2;font:12px Verdana,Geneva,sans-serif;border-bottom:solid 3px #FFFFFF;border-right:solid 3px #FFFFFF;}#snowreporttsfourcolumnthree{font:bold;padding:5px 0 5px 10px;font:bold 12px Verdana,Geneva,sans-serif;background-color:#CCC;border-bottom:solid 3px #FFFFFF;}#snowreporttsfourcolumnfour{padding:7px 0 3px 10px;font:12px Verdana,Geneva,sans-serif;background-color:#BFD2E2;border-bottom:solid 3px #FFFFFF;}#snowreportlstwocolumnone{width:50%;height:30px;float:left;font:bold 12px Verdana,Geneva,sans-serif;text-align:left;color:#000000;padding:5px 0 5px 10px;background-color:#CCC;border-bottom:solid 3px #FFFFFF;}#snowreportlstwocolumntwo{width:50%;height:30px;float:left;font:12px Verdana,Geneva,sans-serif;text-align:left;color:#000000;padding:7px 0 3px 10px;background-color:#BFD2E2;border-bottom:solid 3px #FFFFFF;}#snowreportrctwocolumnone{width:50%;height:150px;float:left;font:bold 12px Verdana,Geneva,sans-serif;text-align:left;color:#000000;padding:5px 0 5px 10px;background-color:#CCC;border-bottom:solid 3px #FFFFFF;}#snowreportrctwocolumntwo{width:50%;height:150px;float:left;font:12px Verdana,Geneva,sans-serif;text-align:left;color:#000000;padding:5px 0 5px 10px;background-color:#BFD2E2;border-bottom:solid 3px #FFFFFF;}#sitepagesubtitle{width:100%;}</style></head>
+
+<body class="page-template page-template-template-blank-4 page-template-template-blank-4-php page page-id-29 page-child parent-pageid-9 x-integrity x-integrity-light x-navbar-fixed-top-active x-full-width-layout-active x-content-sidebar-active x-post-meta-disabled x-v4_6_4 x-child-theme-active cornerstone-v2_1_3">
+
+
+  
+  <div id="top" class="site">
+
+  
+  
+  <header class="masthead masthead-inline" role="banner">
+    
+
+  <div class="x-topbar">
+    <div class="x-topbar-inner x-container max width">
+            <p class="p-info"><form method="get" id="searchform" class="form-search center-text" action="/">
+              <input placeholder="Search and Press Enter" type="text" id="s" class="search-query cfc-h-tx center-text tt-upper" name="s">
+            </form> </p>
+            <div class="x-social-global"><a href="https://www.facebook.com/SnowValleyMtnResortCA/" class="facebook" title="Facebook" target="_blank"><i class="x-icon-facebook-square" data-x-icon="&#xf082;" aria-hidden="true"></i></a><a href="https://twitter.com/snow_valley_ca?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="twitter" title="Twitter" target="_blank"><i class="x-icon-twitter-square" data-x-icon="&#xf081;" aria-hidden="true"></i></a><a href="https://www.youtube.com/channel/UCURP8JLMPsm9H6hX3E1LI3A" class="youtube" title="YouTube" target="_blank"><i class="x-icon-youtube-square" data-x-icon="&#xf166;" aria-hidden="true"></i></a><a href="https://www.instagram.com/snowvalleymtnresort/" class="instagram" title="Instagram" target="_blank"><i class="x-icon-instagram" data-x-icon="&#xf16d;" aria-hidden="true"></i></a></div>      <a class="skipNavigation" href="/site-map/">Click Here to Skip to the Navigation</a>
+    </div>
+          
+<h1 class="visually-hidden">Snow Valley</h1>
+<a href="http://www.snow-valley.com/" class="x-brand img" title="Snow Valley Mountain Resort">
+  <img src="//20324-presscdn.pagely.netdna-cdn.com/wp-content/uploads/2017/10/snow-valley-logo-80th.png" alt="Snow Valley Mountain Resort"></a>  </div>
+
+    
+
+  <div class="x-navbar-wrap">
+    <div class="x-navbar">
+      <div class="x-navbar-inner">
+        <div class="x-container max width">
+           
+<a href="#" class="x-btn-navbar collapsed" data-toggle="collapse" data-target=".x-nav-wrap.mobile">
+  <i class="x-icon-bars" data-x-icon="&#xf0c9;"></i>
+  <span class="visually-hidden">Navigation</span>
+</a>
+
+<nav class="x-nav-wrap desktop" role="navigation">
+  <ul id="menu-main-menu" class="x-nav"><li id="menu-item-17" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-17"><a href="http://www.snow-valley.com/"><span>Home</span></a></li>
+<li id="menu-item-388" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-388"><a href="#"><span>Current Conditions</span></a>
+<ul  class="sub-menu">
+	<li id="menu-item-162" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-29 current_page_item menu-item-162"><a href="http://www.snow-valley.com/current-conditions/snow-report/"><span>Snow Report</span></a></li>
+	<li id="menu-item-163" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-163"><a href="http://www.snow-valley.com/current-conditions/terrain-parks-report/"><span>Terrain Parks Report</span></a></li>
+	<li id="menu-item-158" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-158"><a href="http://www.snow-valley.com/current-conditions/daily-photos/"><span>Daily Photos</span></a></li>
+	<li id="menu-item-159" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-159"><a href="http://www.snow-valley.com/current-conditions/live-webcams/"><span>Live Webcams</span></a></li>
+	<li id="menu-item-161" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-161"><a href="http://www.snow-valley.com/current-conditions/real-time-weather/"><span>Real-time Weather</span></a></li>
+	<li id="menu-item-164" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-164"><a href="http://www.snow-valley.com/current-conditions/videos/"><span>Videos</span></a></li>
+	<li id="menu-item-160" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-160"><a href="http://www.snow-valley.com/current-conditions/news-events/"><span>News &#038; Events</span></a></li>
+</ul>
+</li>
+<li id="menu-item-389" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-389"><a href="#"><span>Explore SV</span></a>
+<ul  class="sub-menu">
+	<li id="menu-item-177" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-177"><a href="http://www.snow-valley.com/explore-sv/trail-map/"><span>Trail Map</span></a></li>
+	<li id="menu-item-175" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-175"><a href="http://www.snow-valley.com/explore-sv/photos/"><span>Photo Gallery</span></a></li>
+	<li id="menu-item-174" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-174"><a href="http://www.snow-valley.com/explore-sv/mountain-safety/"><span>Mountain Safety</span></a></li>
+	<li id="menu-item-396" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-396"><a href="http://www.snow-valley.com/night-sessions/"><span>Night Sessions</span></a></li>
+	<li id="menu-item-397" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-397"><a href="http://www.snow-valley.com/explore-sv/restaurants-bars/"><span>Restaurants &#038; Bars</span></a></li>
+	<li id="menu-item-393" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-393"><a href="http://www.snow-valley.com/explore-sv/snow-play/"><span>Snow Play</span></a></li>
+	<li id="menu-item-392" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-392"><a href="http://www.snow-valley.com/explore-sv/slide-peak/"><span>Slide Peak</span></a></li>
+	<li id="menu-item-394" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-394"><a href="http://www.snow-valley.com/explore-sv/sport-shop/"><span>Sport Shop</span></a></li>
+	<li id="menu-item-395" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-395"><a href="http://www.snow-valley.com/explore-sv/the-edge/"><span>The EDGE</span></a></li>
+</ul>
+</li>
+<li id="menu-item-390" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-390"><a href="#"><span>Rates</span></a>
+<ul  class="sub-menu">
+	<li id="menu-item-172" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-172"><a href="http://www.snow-valley.com/rates/valley-values/"><span>Valley Values</span></a></li>
+	<li id="menu-item-168" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-168"><a href="http://www.snow-valley.com/rates/lift-tickets/"><span>Lift Tickets</span></a></li>
+	<li id="menu-item-170" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-170"><a href="http://www.snow-valley.com/rates/season-passes/"><span>Season Passes</span></a></li>
+	<li id="menu-item-169" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-169"><a href="http://www.snow-valley.com/rates/rental-equipment/"><span>Rental Equipment</span></a></li>
+	<li id="menu-item-167" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-167"><a href="http://www.snow-valley.com/rates/lessons/"><span>Lessons</span></a></li>
+	<li id="menu-item-166" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-166"><a href="http://www.snow-valley.com/rates/learning-packages/"><span>Learning Packages</span></a></li>
+	<li id="menu-item-171" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-171"><a href="http://www.snow-valley.com/rates/snow-play/"><span>Snow Play</span></a></li>
+	<li id="menu-item-165" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-165"><a href="http://www.snow-valley.com/rates/group/"><span>Groups</span></a></li>
+	<li id="menu-item-479" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-479"><a href="http://www.snow-valley.com/group-sales/rim-youth-program/"><span>Rim Youth Program</span></a></li>
+</ul>
+</li>
+<li id="menu-item-391" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-391"><a href="#"><span>Learning Centers</span></a>
+<ul  class="sub-menu">
+	<li id="menu-item-179" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-179"><a href="http://www.snow-valley.com/learning-center/childrens-learning-center/"><span>Children&#8217;s Learning Center</span></a></li>
+	<li id="menu-item-178" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-178"><a href="http://www.snow-valley.com/learning-center/adaptive-sports-center/"><span>Adaptive Sports Center</span></a></li>
+	<li id="menu-item-180" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-180"><a href="http://www.snow-valley.com/learning-center/learning-center/"><span>Learning Center</span></a></li>
+	<li id="menu-item-173" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-173"><a href="http://www.snow-valley.com/explore-sv/beginners-guide/"><span>Beginners Guide</span></a></li>
+	<li id="menu-item-176" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-176"><a href="http://www.snow-valley.com/explore-sv/rentals-guide/"><span>Rentals Guide</span></a></li>
+</ul>
+</li>
+<li id="menu-item-68" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-68"><a href="/shop-sv"><span><img src="/wp-content/uploads/2016/11/ShopSV-Final.png"></span></a></li>
+<li id="menu-item-86" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-86"><a href="#"><span><form method="get" id="searchform" class="center-text" action="/">               <input placeholder="Search and Press Enter" type="text" id="s" class="search-query cfc-h-tx center-text tt-upper" name="s">             </form></span></a></li>
+</ul></nav>
+
+<div class="x-nav-wrap mobile collapse">
+  <ul id="menu-main-menu-1" class="x-nav"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-17"><a href="http://www.snow-valley.com/"><span>Home</span></a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-388"><a href="#"><span>Current Conditions</span></a>
+<ul  class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-29 current_page_item menu-item-162"><a href="http://www.snow-valley.com/current-conditions/snow-report/"><span>Snow Report</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-163"><a href="http://www.snow-valley.com/current-conditions/terrain-parks-report/"><span>Terrain Parks Report</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-158"><a href="http://www.snow-valley.com/current-conditions/daily-photos/"><span>Daily Photos</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-159"><a href="http://www.snow-valley.com/current-conditions/live-webcams/"><span>Live Webcams</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-161"><a href="http://www.snow-valley.com/current-conditions/real-time-weather/"><span>Real-time Weather</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-164"><a href="http://www.snow-valley.com/current-conditions/videos/"><span>Videos</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-160"><a href="http://www.snow-valley.com/current-conditions/news-events/"><span>News &#038; Events</span></a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-389"><a href="#"><span>Explore SV</span></a>
+<ul  class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-177"><a href="http://www.snow-valley.com/explore-sv/trail-map/"><span>Trail Map</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-175"><a href="http://www.snow-valley.com/explore-sv/photos/"><span>Photo Gallery</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-174"><a href="http://www.snow-valley.com/explore-sv/mountain-safety/"><span>Mountain Safety</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-396"><a href="http://www.snow-valley.com/night-sessions/"><span>Night Sessions</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-397"><a href="http://www.snow-valley.com/explore-sv/restaurants-bars/"><span>Restaurants &#038; Bars</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-393"><a href="http://www.snow-valley.com/explore-sv/snow-play/"><span>Snow Play</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-392"><a href="http://www.snow-valley.com/explore-sv/slide-peak/"><span>Slide Peak</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-394"><a href="http://www.snow-valley.com/explore-sv/sport-shop/"><span>Sport Shop</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-395"><a href="http://www.snow-valley.com/explore-sv/the-edge/"><span>The EDGE</span></a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-390"><a href="#"><span>Rates</span></a>
+<ul  class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-172"><a href="http://www.snow-valley.com/rates/valley-values/"><span>Valley Values</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-168"><a href="http://www.snow-valley.com/rates/lift-tickets/"><span>Lift Tickets</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-170"><a href="http://www.snow-valley.com/rates/season-passes/"><span>Season Passes</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-169"><a href="http://www.snow-valley.com/rates/rental-equipment/"><span>Rental Equipment</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-167"><a href="http://www.snow-valley.com/rates/lessons/"><span>Lessons</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-166"><a href="http://www.snow-valley.com/rates/learning-packages/"><span>Learning Packages</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-171"><a href="http://www.snow-valley.com/rates/snow-play/"><span>Snow Play</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-165"><a href="http://www.snow-valley.com/rates/group/"><span>Groups</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-479"><a href="http://www.snow-valley.com/group-sales/rim-youth-program/"><span>Rim Youth Program</span></a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-391"><a href="#"><span>Learning Centers</span></a>
+<ul  class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-179"><a href="http://www.snow-valley.com/learning-center/childrens-learning-center/"><span>Children&#8217;s Learning Center</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-178"><a href="http://www.snow-valley.com/learning-center/adaptive-sports-center/"><span>Adaptive Sports Center</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-180"><a href="http://www.snow-valley.com/learning-center/learning-center/"><span>Learning Center</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-173"><a href="http://www.snow-valley.com/explore-sv/beginners-guide/"><span>Beginners Guide</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-176"><a href="http://www.snow-valley.com/explore-sv/rentals-guide/"><span>Rentals Guide</span></a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-68"><a href="/shop-sv"><span><img src="/wp-content/uploads/2016/11/ShopSV-Final.png"></span></a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-86"><a href="#"><span><form method="get" id="searchform" class="center-text" action="/">               <input placeholder="Search and Press Enter" type="text" id="s" class="search-query cfc-h-tx center-text tt-upper" name="s">             </form></span></a></li>
+</ul></div>
+
+          <a href="/shop-sv"><span><img class="buyTickets" src="/wp-content/uploads/2016/11/ShopSV-Final.png"></span></a>
+
         </div>
-        <div class="footer"><div id="footercontent"><img src="../template-images/nav-spacertransparent.png" width="960" height="16" alt=""><div class="footernav"><a href="../about_us.html" class="footertextlink">About Us</a> | <a href="../contact_us.html" class="footertextlink">Contact Us</a> | <a href="../partners.html" class="footertextlink">Partners</a> | <a href="../lodging.html" class="footertextlink">Lodging</a> | <a href="../jobs.html" class="footertextlink">Jobs</a> | <a href="../environment.html" class="footertextlink">Environment</a> | <a href="../media_center.html" class="footertextlink">Media Center</a> | <a href="../mountain_patrol.html" class="footertextlink">Mountain Patrol</a> | <a href="../ada_compliance_policy.html" class="footertextlink">ADA</a> | <a href="../explore_sv/mountain_safety.html" class="footertextlink">Mountain Safety</a> | <a href="../site_map.html" class="footertextlink">Site Map</a></div>
-        <div class="copyright"><a href="../legal.html" class="footertextlink">LEGAL</a> | Copyright&copy; 2013 Snow Valley Mountain Resort, LLC. All Rights Reserved.</div></div></div>
-        <script type="text/javascript">
-var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgDown:"../SpryAssets/SpryMenuBarDownHover.gif", imgRight:"../SpryAssets/SpryMenuBarRightHover.gif"});
-</script>
-    </body>
-<!-- InstanceEnd --></html>
+      </div>
+    </div>
+  </div>
+
+    
+  
+    <div class="x-breadcrumb-wrap">
+      <div class="x-container max width">
+
+        <div class="x-breadcrumbs"><a href="http://www.snow-valley.com"><span class="home"><i class="x-icon-home" data-x-icon="&#xf015;"></i></span></a> <span class="delimiter"><i class="x-icon-angle-right" data-x-icon="&#xf105;"></i></span> <a href="http://www.snow-valley.com/current-conditions/">Current Conditions</a> <span class="delimiter"><i class="x-icon-angle-right" data-x-icon="&#xf105;"></i></span> <span class="current">Snow Report</span></div>
+        
+      </div>
+    </div>
+
+    </header>
+
+    
+
+  <div class="x-main full" role="main">
+
+    
+      <article id="post-29" class="post-29 page type-page status-publish hentry no-post-thumbnail">
+        
+
+<div class="entry-content content">
+
+
+  <div id="cs-content" class="cs-content"><div id="x-section-1"  class="x-section"  style="margin: 0px;padding: 45px 0px; background-color: transparent;"   ><div  class="x-container max width"  style="margin: 0px auto;padding: 0px;"   ><div  class="x-column x-sm x-1-1" style="padding: 0px;" ><h3  class="h-custom-headline h3" ><span>SNOW REPORT<br />
+</span></h3></div></div><div  class="x-container max width"  style="margin: 0px auto;padding: 0px;"   ><div  class="x-column x-sm x-1-1" style="padding: 0px;" ><h5  class="h-custom-headline h5" ><span>Updated: Sunday, April 9, 2017</span></h5><div  class="x-text"    ><p><strong>Now Closed for the 2016-2017 Winter Season&#8211;Thanks for a Fantastic Season!</strong></p>
+<p>Thanks to our Guests for a fantastic winter season.  We appreciate your business and hope to see everyone during the 2017-2018 winter season.  In the meantime we have exciting plans for Snow Valley, so be sure to keep in touch with us for the latest updates as we move forward towards the upcoming winter season.</p>
+<p><strong>2017-2018 Season Passes On Sale Now</strong>  </p>
+<p>2017-2018 Season Passes are on sale now!<br />
+The  best part&#8211;we kept prices the same as last year!</p>
+<p>Prices will go up May 1, so purchase your pass today!</p>
+<p>For pricing info and to purchase your pass online please<br />
+<a href="https://www.isalessite.com/snow-valley-passes/Catalog/Default"> Click Here.</a></p>
+</div></div></div><div  class="x-container max width"  style="margin: 0px auto;padding: 0px;"   ><div  class="x-column x-sm x-1-1" style="padding: 0px;" >&nbsp;</div></div><div  class="x-container max width"  style="margin: 0px auto;padding: 0px;"   ><div  class="x-column x-sm x-1-1" style="padding: 0px;" ><div  class="x-text"    ></div></div></div><div  class="x-container max width"  style="margin: 0px auto;padding: 0px;"   ><div  class="x-column x-sm x-1-1" style="padding: 0px;" ><h2  class="h-custom-headline h5" ><span></span></h2></div></div><div  class="x-container max width"  style="margin: 0px auto;padding: 0px;"   ><div  class="x-column x-sm x-1-1" style="padding: 0px;" ><div  class="x-text"    ></div></div></div><div  class="x-container max width"  style="margin: 0px auto;padding: 0px;"   ><div  class="x-column x-sm x-1-1" style="padding: 0px;" ><div  class="x-raw-content" ><table class="tg">
+  <tr>
+    <th class="tg-yw4l">Today's Lift Hours of Operation:</th>
+    <th class="tg-yw4l">Closed </th>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Today's Snow Play Hours of Operation:</td>
+    <td class="tg-yw4l">Closed
+</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Today's Lesson Times*Children's Learning Center (ages 4-12):Today's Lesson Times*Children's Learning Center (ages 4-12):</td>
+    <td class="tg-yw4l">-</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Today's Lesson Times*Adult Learning Center (ages 13+):</td>
+    <td class="tg-yw4l">-</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Today's Snow Surface: </td>
+    <td class="tg-yw4l">-</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Today's Average Base Depth:</td>
+    <td class="tg-yw4l">-</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Snowmaking in the Past 24 Hours:</td>
+    <td class="tg-yw4l">-</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Snowfall in the Past 48 Hours:</td>
+    <td class="tg-yw4l">-</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">2016/2017 Season Snowfall Total:</td>
+    <td class="tg-yw4l">118-142 inches</td>
+  </tr>
+</table> </div><div  class="x-raw-content" ><div id="lessondisclaimer">*Private Lessons available daily. Please contact the Learning Center to schedule a time.</div>
+</div><h2  class="h-custom-headline h3" ><span>WEATHER FORECAST<br />
+</span></h2><div  class="x-raw-content" ><table class="weatherForecast tg">
+  <tr>
+    <th class="tg-yw4l">Today's Forecast:</th>
+    <th class="tg-yw4l">-</th>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Today's High Temperature:</td>
+    <td class="tg-yw4l">-</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Overnight Low This Morning:</td>
+    <td class="tg-yw4l">-</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Today's Winds:</td>
+    <td class="tg-yw4l">- </td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">National Weather Service Forecast:</td>
+    <td class="tg-yw4l"><a href="http://forecast.weather.gov/MapClick.php?lat=34.222022507488326&amp;lon=-117.03460693359375&amp;site=sgx&amp;smap=1&amp;unit=0&amp;lg=en&amp;FcstType=text" target="_blank" class="textlink">Click Here</a></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Snow Valley Real Time Weather Data:</td>
+    <td class="tg-yw4l"><a class="textlink" target="_blank" href="/current-conditions/real-time-weather/">Top of Lift 1</a> - <a href="/current-conditions/real-time-weather/" target="_blank" class="textlink">Base Area</a></td>
+  </tr>
+</table></div><h2  class="h-custom-headline h3" ><span>ROAD CONDITIONS<br />
+</span></h2><div  class="x-raw-content" ><table class="tg">
+  <tr>
+    <th class="tg-yw4l">Current Road Conditions:</th>
+    <th class="tg-yw4l">Call (800) 427-ROAD (7623) or <a href="http://www.dot.ca.gov/dist8/tmc/index.htm#" target="_blank" class="textlink">Click Here</a> then click on "Chain Control Map" on the left side of the page</th>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Highway 18: <a href="http://www.dot.ca.gov/hq/roadinfo/sr18" target="_blank" class="textlink">(click here for conditions)</a></td>
+    <td class="tg-yw4l">Open and clear with no chain restrictions.  
+
+Please stay in touch with Road Conditions at 1(800) 427-ROAD (7623) for the most up to date information </td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Highway 330: <a href="http://www.dot.ca.gov/hq/roadinfo/sr330" target="_blank" class="textlink">(click here for conditions)</a></td>
+    <td class="tg-yw4l">Open and clear with no chain restrictions. Always carry tire chains in your vehicle when traveling into the mountains. Please stay in touch with Road Conditions at 1(800) 427-ROAD (7623) for the most up to date information</td>
+  </tr>
+</table></div><h2  class="h-custom-headline h3" ><span>LIFT STATUS</span></h2><div  class="x-text"    ><p><img src="/wp-content/uploads/2016/11/sym-easiest.png" alt="Easiest" width="20" height="19" align="absmiddle"> Easiest  <img src="/wp-content/uploads/2016/11/sym-moredifficult.png" alt="More Difficult" width="20" height="19" align="absmiddle">More Difficult   <img src="/wp-content/uploads/2016/11/sym-mostdifficult.png" alt="Most Difficult" width="20" height="19" align="absmiddle">Most Difficult   <img src="/wp-content/uploads/2016/11/sym-mostdifficult-experts.png" alt="Most Difficult - Expert Only" width="20" height="19" align="absmiddle">Most Difficult Expert  <img src="/wp-content/uploads/2016/11/sym-freestyle-terrain.png" alt="freestyle" width="20" height="19" align="absmiddle">Freestyle Terrain</p>
+</div><div  class="x-text"    ><p>Lift status is subject to change without notice due to changes in weather and terrain conditions.</p>
+</div><div  class="x-raw-content" ><table class="liftStatus tg">
+  <tr>
+    <th class="tg-yw4l"><img src="/wp-content/uploads/2016/11/sym-moredifficult.png" alt="More Difficult" width="20" height="19" align="absmiddle"> <img src="/wp-content/uploads/2016/11/sym-mostdifficult.png" alt="Most Difficult" width="20" height="19" align="absmiddle"> <img src="/wp-content/uploads/2016/11/sym-mostdifficult-experts.png" alt="Most Difficult - Expert Only" width="20" height="19" align="absmiddle"> <img src="/wp-content/uploads/2016/11/sym-freestyle-terrain.png" alt="freestyle" width="20" height="19" align="absmiddle">(1) Double Chair - 4,701 ft.</th>
+    <th class="tg-yw4l">Closed</th>
+  </tr>
+  <tr>
+    <td class="tg-yw4l"><img src="/wp-content/uploads/2016/11/sym-moredifficult.png" alt="More Difficult" width="20" height="19" align="absmiddle"> <img src="/wp-content/uploads/2016/11/sym-mostdifficult.png" alt="Most Difficult" width="20" height="19" align="absmiddle"> <img src="/wp-content/uploads/2016/11/sym-mostdifficult-experts.png" alt="Most Difficult - Expert Only" width="20" height="19" align="absmiddle"> <img src="/wp-content/uploads/2016/11/sym-freestyle-terrain.png" alt="freestyle" width="20" height="19" align="absmiddle">(2) Triple Chair - 3,688 ft.</td>
+    <td class="tg-yw4l">Closed</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l"><img src="/wp-content/uploads/2016/11/sym-moredifficult.png" alt="More Difficult" width="20" height="19" align="absmiddle"> <img src="/wp-content/uploads/2016/11/sym-mostdifficult.png" alt="Most Difficult" width="20" height="19" align="absmiddle"> <img src="/wp-content/uploads/2016/11/sym-mostdifficult-experts.png" alt="Most Difficult - Expert Only" width="20" height="19" align="absmiddle"> <img src="/wp-content/uploads/2016/11/sym-freestyle-terrain.png" alt="freestyle" width="20" height="19" align="absmiddle">(3) Triple Chair - 3,240 ft.</td>
+    <td class="tg-yw4l">Closed</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l"><img src="/wp-content/uploads/2016/11/sym-moredifficult.png" alt="More Difficult" width="20" height="19" align="absmiddle"><img src="/wp-content/uploads/2016/11/sym-mostdifficult.png" alt="Most Difficult" width="20" height="19" align="absmiddle">(4) Triple Chair - 1,137 ft.</td>
+    <td class="tg-yw4l">Closed</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l"><img src="/wp-content/uploads/2016/11/sym-easiest.png" alt="Easiest" width="20" height="19" align="absmiddle">(6) Double Chair - 1,197 ft.</td>
+    <td class="tgyw4l">Closed</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l"><img src="/wp-content/uploads/2016/11/sym-moredifficult.png" alt="More Difficult" width="20" height="19" align="absmiddle">(8) Double Chair - 825 ft.</td>
+    <td class="tg-yw4l">Closed</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l"><img src="/wp-content/uploads/2016/11/sym-moredifficult.png" alt="More Difficult" width="20" height="19" align="absmiddle">(9) Double Chair - 1,927 ft.</td>
+    <td class="tg-yw4l">Closed</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l"><img src="/wp-content/uploads/2016/11/sym-mostdifficult.png" alt="Most Difficult" width="20" height="19" align="absmiddle"><img src="/wp-content/uploads/2016/11/sym-mostdifficult-experts.png" alt="Most Difficult - Expert Only" width="20" height="19" align="absmiddle">(10) Double Chair - 1,006 ft.</td>
+    <td class="tg-yw4l">Closed</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l"><img src="/wp-content/uploads/2016/11/sym-moredifficult.png" alt="More Difficult" width="20" height="19" align="absmiddle"><img src="/wp-content/uploads/2016/11/sym-mostdifficult.png" alt="Most Difficult" width="20" height="19" align="absmiddle"><img src="/wp-content/uploads/2016/11/sym-mostdifficult-experts.png" alt="Most Difficult - Expert Only" width="20" height="19" align="absmiddle">(11) Triple Chair - 1,270 ft.</td>
+     <td class="tg-yw4l">Closed</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">(12) Double Chair - 668 ft.</td>
+    <td class="tg-yw4l">Closed</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l"><img src="/wp-content/uploads/2016/11/sym-easiest.png" alt="Easiest" width="20" height="19" align="absmiddle"><img src="/wp-content/uploads/2016/11/sym-moredifficult.png" alt="More Difficult" width="20" height="19" align="absmiddle"><img src="/wp-content/uploads/2016/11/sym-freestyle-terrain.png" alt="freestyle" width="20" height="19" align="absmiddle">(13) Triple Chair - 1,235 ft.</td>
+    <td class="tg-yw4l">Closed</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l"><img src="/wp-content/uploads/2016/11/sym-easiest.png" alt="Easiest" width="20" height="19" align="absmiddle">(14) Conveyor - 80 ft.</td>
+    <td class="tg-yw4l">Closed</td>
+  </tr>
+</table></div><h2  class="h-custom-headline h3" ><span>TRAIL STATUS<br />
+</span></h2><div  class="x-text"    ><p><img src="/wp-content/uploads/2016/11/sym-easiest.png" alt="Easiest" width="20" height="19" align="absmiddle"> Easiest <img src="/wp-content/uploads/2016/11/sym-moredifficult.png" alt="More Difficult" width="20" height="19" align="absmiddle">More Difficult   <img src="/wp-content/uploads/2016/11/sym-mostdifficult.png" alt="Most Difficult" width="20" height="19" align="absmiddle">Most Difficult   <img src="/wp-content/uploads/2016/11/sym-mostdifficult-experts.png" alt="Most Difficult - Expert Only" width="20" height="19" align="absmiddle">Most Difficult Expert  <img src="/wp-content/uploads/2016/11/sym-freestyle-terrain.png" alt="freestyle" width="20" height="19" align="absmiddle">Freestyle Terrain</p>
+</div><div  class="x-text"    ><p>Trail status is subject to change without notice due to changes in weather and terrain conditions.</p>
+</div></div></div><div  class="x-container max width"  style="margin: 0px auto;padding: 0px;"   ><div  class="x-column x-sm x-1-2" style="padding: 0px;" ><div  class="x-raw-content" ><table class="snowPlay tg">
+  <tr>
+    <th class="tg-yw4l">Snow Play</th>
+    <th class="tg-yw4l">Closed</th>
+  </tr>
+  <tr>
+    <td class="tg-yw4l"><img src="/wp-content/uploads/2016/11/sym-easiest.png" alt="Easiest" width="20" height="19" align="absmiddle">Thunder Mountain</td>
+    <td class="tg-yw4l">Closed</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l"><img src="/wp-content/uploads/2016/11/sym-easiest.png" alt="Easiest" width="20" height="19" align="absmiddle">Coyote Flats</td>
+    <td class="tg-yw4l">Closed</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l"><img src="/wp-content/uploads/2016/11/sym-easiest.png" alt="Easiest" width="20" height="19" align="absmiddle"><img src="/wp-content/uploads/2016/11/sym-freestyle-terrain.png" alt="freestyle" width="20" height="19" align="absmiddle">Eagle Flats</td>
+    <td class="tg-yw4l">Closed</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l"><img src="/wp-content/uploads/2016/11/sym-moredifficult.png" alt="More Difficult" width="20" height="19" align="absmiddle"><img src="/wp-content/uploads/2016/11/sym-freestyle-terrain.png" alt="freestyle" width="20" height="19" align="absmiddle">The EDGE</td>
+    <td class="tg-yw4l">Closed</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l"><img src="/wp-content/uploads/2016/11/sym-moredifficult.png" alt="More Difficult" width="20" height="19" align="absmiddle"><img src="/wp-content/uploads/2016/11/sym-freestyle-terrain.png" alt="freestyle" width="20" height="19" align="absmiddle">East Bowl</td>
+    <td class="tg-yw4l">Closed</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l"><img src="/wp-content/uploads/2016/11/sym-moredifficult.png" alt="More Difficult" width="20" height="19" align="absmiddle">Mambo Alley</td>
+    <td class="tg-yw4l">Closed</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l"><img src="/wp-content/uploads/2016/11/sym-moredifficult.png" alt="More Difficult" width="20" height="19" align="absmiddle">Upper Wine Rock</td>
+    <td class="tg-yw4l">Closed</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l"><img src="/wp-content/uploads/2016/11/sym-moredifficult.png" alt="More Difficult" width="20" height="19" align="absmiddle">Lower Wine Rock</td>
+    <td class="tg-yw4l">Closed</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l"><img src="/wp-content/uploads/2016/11/sym-moredifficult.png" alt="More Difficult" width="20" height="19" align="absmiddle">Graduation</td>
+    <td class="tg-yw4l">Closed</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l"><img src="/wp-content/uploads/2016/11/sym-moredifficult.png" alt="More Difficult" width="20" height="19" align="absmiddle">The Chute</td>
+    <td class="tg-yw4l">Closed</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l"><img src="/wp-content/uploads/2016/11/sym-moredifficult.png" alt="More Difficult" width="20" height="19" align="absmiddle">Bubble Gum</td>
+    <td class="tg-yw4l">Closed</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l"><img src="/wp-content/uploads/2016/11/sym-moredifficult.png" alt="More Difficult" width="20" height="19" align="absmiddle">Snow Bowl</td>
+    <td class="tg-yw4l">Closed</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l"><img src="/wp-content/uploads/2016/11/sym-moredifficult.png" alt="More Difficult" width="20" height="19" align="absmiddle">Richard's</td>
+    <td class="tg-yw4l">Closed</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l"><img src="/wp-content/uploads/2016/11/sym-moredifficult.png" alt="More Difficult" width="20" height="19" align="absmiddle">Bobcat Alley</td>
+    <td class="tg-yw4l">Closed</td>
+  </tr>
+</table></div></div><div  class="x-column x-sm x-1-2" style="padding: 0px;" ><div  class="x-raw-content" ><table class="trailStatus tg">
+  <tr>
+    <th class="tg-yw4l"><img src="/wp-content/uploads/2016/11/sym-moredifficult.png" alt="More Difficult" width="20" height="19" align="absmiddle">West Slide</th>
+    <th class="tg-yw4l">Closed</th>
+  </tr>
+  <tr>
+    <td class="tg-yw4l"><img src="/wp-content/uploads/2016/11/sym-moredifficult.png" alt="More Difficult" width="20" height="19" align="absmiddle">Nord Valley</td>
+    <td class="tg-yw4l">Closed</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l"><img src="/wp-content/uploads/2016/11/sym-mostdifficult.png" alt="Most Difficult" width="20" height="19" align="absmiddle">Little Bowl</td>
+    <td class="tg-yw4l">Closed</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l"><img src="/wp-content/uploads/2016/11/sym-mostdifficult.png" alt="Most Difficult" width="20" height="19" align="absmiddle">Show Off</td>
+    <td class="tg-yw4l">Closed</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l"><img src="/wp-content/uploads/2016/11/sym-mostdifficult.png" alt="Most Difficult" width="20" height="19" align="absmiddle">Big Bowl</td>
+    <td class="tg-yw4l">Closed</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l"><img src="/wp-content/uploads/2016/11/sym-mostdifficult.png" alt="Most Difficult" width="20" height="19" align="absmiddle">Quickie</td>
+    <td class="tg-yw4l">Closed</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l"><img src="/wp-content/uploads/2016/11/sym-mostdifficult.png" alt="Most Difficult" width="20" height="19" align="absmiddle">Race Peak</td>
+    <td class="tg-yw4l">Closed</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l"><img src="/wp-content/uploads/2016/11/sym-mostdifficult.png" alt="Most Difficult" width="20" height="19" align="absmiddle">Lake Run</td>
+    <td class="tg-yw4l">Closed</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l"><img src="/wp-content/uploads/2016/11/sym-mostdifficult.png" alt="Most Difficult" width="20" height="19" align="absmiddle">Surprise Run</td>
+    <td class="tg-yw4l">Closed</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l"><img src="/wp-content/uploads/2016/11/sym-mostdifficult.png" alt="Most Difficult" width="20" height="19" align="absmiddle">West Run</td>
+    <td class="tg-yw4l">Closed</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l"><img src="/wp-content/uploads/2016/11/sym-mostdifficult.png" alt="Most Difficult" width="20" height="19" align="absmiddle">East Slide</td>
+    <td class="tg-yw4l">Closed</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l"><img src="/wp-content/uploads/2016/11/sym-mostdifficult.png" alt="Most Difficult" width="20" height="19" align="absmiddle">The Face</td>
+    <td class="tg-yw4l">Closed</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l"><img src="/wp-content/uploads/2016/11/sym-mostdifficult-experts.png" alt="Most Difficult - Expert Only" width="20" height="19" align="absmiddle">The Ladder</td>
+    <td class="tg-yw4l">Closed</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l"><img src="/wp-content/uploads/2016/11/sym-mostdifficult-experts.png" alt="Most Difficult - Expert Only" width="20" height="19" align="absmiddle">Show Me</td>
+    <td class="tg-yw4l">Closed</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l"><img src="/wp-content/uploads/2016/11/sym-mostdifficult-experts.png" alt="Most Difficult - Expert Only" width="20" height="19" align="absmiddle">Snake Run</td>
+    <td class="tg-yw4l">Closed</td>
+  </tr>
+</table></div></div></div></div></div>
+  
+
+</div>
+
+      </article>
+
+    
+  </div>
+
+
+
+  
+    
+  
+
+  
+    <footer class="x-colophon bottom" role="contentinfo">
+      <div class="x-container max width">
+
+        <div  class="x-entry-share" ><p>Share this Page</p><div class="x-share-options"><a href="#share" data-x-element="extra"  data-x-params="{&quot;type&quot;:&quot;tooltip&quot;,&quot;trigger&quot;:&quot;hover&quot;,&quot;placement&quot;:&quot;bottom&quot;,&quot;title&quot;:&quot;&quot;,&quot;content&quot;:&quot;&quot;}"   class="x-share" title="Share on Facebook" onclick="window.open('http://www.facebook.com/sharer.php?u=http%3A%2F%2Fwww.snow-valley.com%2Fcurrent-conditions%2Fsnow-report%2F&amp;t=Snow+Report', 'popupFacebook', 'width=650, height=270, resizable=0, toolbar=0, menubar=0, status=0, location=0, scrollbars=0'); return false;"><i class="x-icon-facebook-square" data-x-icon="&#xf082;"></i></a><a href="#share" data-x-element="extra"  data-x-params="{&quot;type&quot;:&quot;tooltip&quot;,&quot;trigger&quot;:&quot;hover&quot;,&quot;placement&quot;:&quot;bottom&quot;,&quot;title&quot;:&quot;&quot;,&quot;content&quot;:&quot;&quot;}"   class="x-share" title="Share on Twitter" onclick="window.open('https://twitter.com/intent/tweet?text=Snow+Report&amp;url=http%3A%2F%2Fwww.snow-valley.com%2Fcurrent-conditions%2Fsnow-report%2F', 'popupTwitter', 'width=500, height=370, resizable=0, toolbar=0, menubar=0, status=0, location=0, scrollbars=0'); return false;"><i class="x-icon-twitter-square" data-x-icon="&#xf081;"></i></a><a href="#share" data-x-element="extra"  data-x-params="{&quot;type&quot;:&quot;tooltip&quot;,&quot;trigger&quot;:&quot;hover&quot;,&quot;placement&quot;:&quot;bottom&quot;,&quot;title&quot;:&quot;&quot;,&quot;content&quot;:&quot;&quot;}"   class="x-share" title="Share on Google+" onclick="window.open('https://plus.google.com/share?url=http%3A%2F%2Fwww.snow-valley.com%2Fcurrent-conditions%2Fsnow-report%2F', 'popupGooglePlus', 'width=650, height=226, resizable=0, toolbar=0, menubar=0, status=0, location=0, scrollbars=0'); return false;"><i class="x-icon-google-plus-square" data-x-icon="&#xf0d4;"></i></a><a href="#share" data-x-element="extra"  data-x-params="{&quot;type&quot;:&quot;tooltip&quot;,&quot;trigger&quot;:&quot;hover&quot;,&quot;placement&quot;:&quot;bottom&quot;,&quot;title&quot;:&quot;&quot;,&quot;content&quot;:&quot;&quot;}"   class="x-share" title="Share on LinkedIn" onclick="window.open('http://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Fwww.snow-valley.com%2Fcurrent-conditions%2Fsnow-report%2F&amp;title=Snow+Report&amp;summary=&amp;source=Snow+Valley', 'popupLinkedIn', 'width=610, height=480, resizable=0, toolbar=0, menubar=0, status=0, location=0, scrollbars=0'); return false;"><i class="x-icon-linkedin-square" data-x-icon="&#xf08c;"></i></a><a href="#share" data-x-element="extra"  data-x-params="{&quot;type&quot;:&quot;tooltip&quot;,&quot;trigger&quot;:&quot;hover&quot;,&quot;placement&quot;:&quot;bottom&quot;,&quot;title&quot;:&quot;&quot;,&quot;content&quot;:&quot;&quot;}"   class="x-share" title="Share on Pinterest" onclick="window.open('http://pinterest.com/pin/create/button/?url=http%3A%2F%2Fwww.snow-valley.com%2Fcurrent-conditions%2Fsnow-report%2F&amp;media=&amp;description=Snow+Report', 'popupPinterest', 'width=750, height=265, resizable=0, toolbar=0, menubar=0, status=0, location=0, scrollbars=0'); return false;"><i class="x-icon-pinterest-square" data-x-icon="&#xf0d3;"></i></a><a href="#share" data-x-element="extra"  data-x-params="{&quot;type&quot;:&quot;tooltip&quot;,&quot;trigger&quot;:&quot;hover&quot;,&quot;placement&quot;:&quot;bottom&quot;,&quot;title&quot;:&quot;&quot;,&quot;content&quot;:&quot;&quot;}"   class="x-share" title="Share on Reddit" onclick="window.open('http://www.reddit.com/submit?url=http%3A%2F%2Fwww.snow-valley.com%2Fcurrent-conditions%2Fsnow-report%2F', 'popupReddit', 'width=875, height=450, resizable=0, toolbar=0, menubar=0, status=0, location=0, scrollbars=0'); return false;"><i class="x-icon-reddit-square" data-x-icon="&#xf1a2;"></i></a><a href="mailto:?subject=Snow%20Report&#038;body=Hey,%20thought%20you%20might%20enjoy%20this!%20Check%20it%20out%20when%20you%20have%20a%20chance:%20http://www.snow-valley.com/current-conditions/snow-report/" data-x-element="extra"  data-x-params="{&quot;type&quot;:&quot;tooltip&quot;,&quot;trigger&quot;:&quot;hover&quot;,&quot;placement&quot;:&quot;bottom&quot;,&quot;title&quot;:&quot;&quot;,&quot;content&quot;:&quot;&quot;}"   class="x-share email" title="Share via Email"><span><i class="x-icon-envelope-square" data-x-icon="&#xf199;"></i></span></a></div></div>
+        
+        
+                  <div class="x-colophon-content">
+            <div class="x-container max width">
+<div class="x-column x-sm x-1-2">
+  <div style="margin-right:0px" class="x-column x-1-2">
+    <ul class="icons">
+      <a href="/about-us"><li>About Us</li></a>
+      <li><a href="/contact-information-location-map-hours-of-operation/">Contact</a></li>
+      <li><a href="/partners">Partners</a></li>
+      <li><a href="/lodging">Lodging</a></li>
+      <li><a href="/jobs">Jobs</a></li>
+      <li><a href="/environment">Environment</a></li>
+    </ul>
+  </div>
+  <div class="x-column x-1-2">
+    <ul>
+      <li><a href="/media-center/">Media Center</a></li>
+      <li><a href="/mountain-patrol/">Mountain Patrol</a></li>
+      <li><a href="/ada/">ADA</a></li>
+      <li><a href="/explore-sv/mountain-safety/">Mountain Safety</a></li>
+      <li><a href="/site-map/">Site Map</a></li>
+      <li><a href="/rates/group/">Group Deals</a></li>
+    </ul>
+  </div>
+</div>
+
+<div class="x-column x-sm x-1-2">
+  <h1>Snow Valley Mountain Resort</h1>
+  <ul class="iconsFooter">
+  <li class="x-feature-box left-text top-text cf" style=" max-width: none;" data-x-element="feature_box" data-x-params="{"child":true,"graphicAnimation":"none","connectorAnimation":"none","alignH":"left","alignV":"top"}">
+    <div class="x-feature-box-graphic circle" style="display: table-cell; vertical-align: top;">
+      <div class="x-feature-box-graphic-outer circle" style=" margin-right: 20px;">
+        <div class="x-feature-box-graphic-inner circle" style="font-size: 60px;">
+          <i class="x-icon-map-marker circle" data-x-icon="" style="margin: 0 auto; color: hsl(0, 0%, 100%); background-color: hsla(145, 63%, 49%, 0);">
+          </i>
+        </div>
+      </div>
+    </div>
+    <div class="x-feature-box-content" style="display: table-cell; vertical-align: top;">
+      <p class="x-feature-box-text">35100 STATE HWY 18<br>P.O. Box 2337<br>Running Springs, CA. 92382</p>
+    </div>
+  </li>
+
+  <li class="x-feature-box left-text top-text cf" style=" max-width: none;" data-x-element="feature_box" data-x-params="{"child":true,"graphicAnimation":"none","connectorAnimation":"none","alignH":"left","alignV":"top"}">
+      <div class="x-feature-box-graphic circle" style="display: table-cell; vertical-align: top;">
+        <div class="x-feature-box-graphic-outer circle" style=" margin-right: 20px;">
+          <div class="x-feature-box-graphic-inner circle" style="font-size: 60px;">
+            <i class="x-icon-phone-square circle" data-x-icon="" style="margin: 0 auto; color: hsl(0, 0%, 100%); background-color: hsla(145, 63%, 49%, 0);"></i>
+          </div>
+        </div>
+      </div>
+    <div class="x-feature-box-content" style="display: table-cell; vertical-align: top;">
+      <p class="x-feature-box-text">(909) 867-2751</p>
+    </div>
+  </li>
+</ul>
+
+<div class="x-social-global">
+  <a href="https://www.facebook.com/SnowValleyMtnResortCA/" class="facebook" title="Facebook" target="_blank">
+    <i class="x-icon-facebook-square" data-x-icon="" aria-hidden="true"></i></a>
+  <a href="https://twitter.com/snow_valley_ca?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="twitter" title="Twitter" target="_blank">
+    <i class="x-icon-twitter-square" data-x-icon="" aria-hidden="true"></i></a>
+  <a href="https://www.youtube.com/channel/UCURP8JLMPsm9H6hX3E1LI3A" class="youtube" title="YouTube" target="_blank">
+    <i class="x-icon-youtube-square" data-x-icon="" aria-hidden="true"></i></a>
+  <a href="https://www.instagram.com/snowvalleymtnresort/" class="instagram" title="Instagram" target="_blank">
+    <i class="x-icon-instagram" data-x-icon="" aria-hidden="true"></i></a>
+</div>
+
+
+</div>
+<p>©COPYRIGHT© 2016 SNOW VALLEY MOUNTAIN RESORT, LLC. ALL RIGHTS RESERVED</p>
+<p><a href="/legal"><u>LEGAL</u></a></p>
+</div>          </div>
+        
+        
+      </div>
+    </footer>
+
+  
+
+    </div> <!-- END #top.site -->
+
+  
+<!-- ngg_resource_manager_marker --><script type='text/javascript' src='http://20324-presscdn.pagely.netdna-cdn.com/wp-content/themes/x/framework/js/dist/site/x-body.min.js?ver=4.6.4'></script>
+<script type='text/javascript' src='http://20324-presscdn.pagely.netdna-cdn.com/wp-includes/js/comment-reply.min.js?ver=4.8.2'></script>
+<script type='text/javascript' src='http://www.snow-valley.com/wp-content/plugins/cornerstone/assets/dist/js/site/cs-body.js?ver=2.1.3'></script>
+<script type='text/javascript' src='http://20324-presscdn.pagely.netdna-cdn.com/wp-content/plugins/constant-contact-api/lib/form-designer/js/jquery.placeholder.min.js'></script>
+<script type='text/javascript' src='http://20324-presscdn.pagely.netdna-cdn.com/wp-includes/js/wp-embed.min.js?ver=4.8.2'></script>
+
+  
+  
+</body>
+</html>

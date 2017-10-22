@@ -2,7 +2,7 @@
   "name": "Alyeska",
   "url": {
     "host": "http://www.alyeskaresort.com",
-    "pathname": "/mountain-status.aspx"
+    "pathname": "/snow-report/lifts-and-trails-status"
   },
   "tags": [
     "Alaska"
