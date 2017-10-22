@@ -11,17 +11,16 @@ describe('parse mount-sunapee', function() {
     stream.on('error', done);
     stream.pipe(parser(parse, function(err, status) {
       var expected = {
-        "Sunapee Express Quad": "open",
-        "Sunbowl Quad": "open",
-        "North Peak Triple": "open",
+        "Sunapee Express Quad": "closed",
+        "Sunbowl Express Quad": "closed",
+        "North Peak Triple": "closed",
         "Spruce Triple": "closed",
         "Duckling Double": "closed",
-        "Clipper Ship Quad": "open",
+        "Clipper Ship Quad": "closed",
         "Middle Carpet": "closed",
-        "Flying Carpet": "open",
-        "Rope Tow": "closed",
+        "Flying Carpet": "closed",
         "Piggyback": "closed",
-        "Small Carpet": "open"
+        "Small Carpet": "closed"
       };
       should.exist(status);
       status.should.eql(expected);
