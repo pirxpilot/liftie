@@ -1,4 +1,4 @@
-var assert = require('assert');
+var should = require('should');
 var fs = require('fs');
 var parser = require('../../lib/lifts/parser');
 var parse = require('../../lib/resorts/vail');
@@ -11,42 +11,40 @@ describe('parse vail', function() {
     stream.on('error', done);
     stream.pipe(parser(parse, function(err, status) {
       var expected = {
-        'Avanti Express Lift #2': 'open',
-        'Black Forest #27': 'open',
-        'Born Free Express #8': 'open',
-        'Cascade Village #20': 'open',
-        'Eagle Bahn Gondola #19': 'open',
-        'Eagle\'s Nest Carpet #18': 'open',
-        'Eagle\'s Nest Carpet #35': 'open',
-        'Earl\'s Express #38': 'open',
-        'Game Creek Express #7': 'open',
-        'Golden Peak Carpet #25': 'open',
-        'Golden Peak Carpet #29': 'open',
-        'Golden Peak Carpet #33': 'open',
-        'Gopher Hill #12': 'open',
-        'High Noon Express #5': 'open',
-        'Highline #10': 'open',
-        'Lionshead Carpet #34': 'open',
-        'Little Eagle #15': 'open',
+        'Avanti Express Lift #2': 'closed',
+        'Black Forest #27': 'closed',
+        'Born Free Express #8': 'closed',
+        'Cascade Village #20': 'closed',
+        'Eagle Bahn Gondola #19': 'closed',
+        'Eagle\'s Nest Carpet #18': 'closed',
+        'Eagle\'s Nest Carpet #35': 'closed',
+        'Earl\'s Express #38': 'closed',
+        'Game Creek Express #7': 'closed',
+        'Golden Peak Carpet #25': 'closed',
+        'Golden Peak Carpet #29': 'closed',
+        'Golden Peak Carpet #33': 'closed',
+        'Gopher Hill #12': 'closed',
+        'High Noon Express #5': 'closed',
+        'Highline Express #10': 'closed',
+        'Lionshead Carpet #34': 'closed',
+        'Little Eagle #15': 'closed',
         'Mongolia Lift #22': 'closed',
-        'Mountain Top Express #4': 'open',
-        'Northwoods Express #11': 'open',
-        'One': 'open',
-        'Orient Express Lift #21': 'open',
-        'Pete\'s Express #39': 'open',
-        'Pride Express Lift #26': 'open',
-        'Riva Bahn Express #6': 'open',
-        'SkyLine Express #37': 'open',
-        'Sourdough #14': 'open',
-        'Sun Up Lift #17': 'open',
-        'Tea Cup Express #36': 'open',
+        'Mountain Top Express #4': 'closed',
+        'Northwoods Express #11': 'closed',
+        'One': 'closed',
+        'Orient Express Lift #21': 'closed',
+        'Pete\'s Express #39': 'closed',
+        'Pride Express Lift #26': 'closed',
+        'Riva Bahn Express #6': 'closed',
+        'SkyLine Express #37': 'closed',
+        'Sourdough Express #14': 'closed',
+        'Sun Up Express #9': 'closed',
+        'Tea Cup Express #36': 'closed',
         'Wapiti #24': 'closed',
-        'Wildwood Express #3': 'open'
+        'Wildwood Express #3': 'closed'
       };
-      Object.keys(status).forEach(function(lift) {
-        assert.equal(status[lift], expected[lift], lift);
-      });
-      assert.deepEqual(status, expected);
+      should.exist(status);
+      status.should.eql(expected);
       done(err);
     }));
   });

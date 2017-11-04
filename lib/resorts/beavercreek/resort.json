@@ -1,8 +1,8 @@
 {
   "name": "Beaver Creek",
   "url": {
-    "host": "http://www.beavercreek.com",
-    "pathname": "/the-mountain/terrain-status.aspx#/Lifts"
+    "host": "https://www.beavercreek.com",
+    "pathname": "/the-mountain/mountain-conditions/terrain-and-lift-status.aspx"
   },
   "tags": [
     "Colorado",

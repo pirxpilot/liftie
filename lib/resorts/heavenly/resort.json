@@ -1,8 +1,8 @@
 {
   "name": "Heavenly",
   "url": {
-    "host": "http://www.skiheavenly.com",
-    "pathname": "/the-mountain/terrain-and-lift-status.aspx#Lifts#Top"
+    "host": "https://www.skiheavenly.com",
+    "pathname": "/the-mountain/mountain-conditions/terrain-and-lift-status.aspx"
   },
   "tags": [
     "California",

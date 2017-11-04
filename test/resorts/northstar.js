@@ -11,28 +11,26 @@ describe('parse northstar', function() {
     stream.on('error', done);
     stream.pipe(parser(parse, function(err, status) {
       var expected = {
-        'Promised Land Express': 'closed',
-        'Backside Express': 'open',
-        'Martis Camp Express': 'closed',
-        'Lookout Link': 'closed',
-        'Vista Express': 'closed',
-        'Comstock Express': 'open',
-        'Rendezvous': 'closed',
-        'Arrow Bahn Express (#17)': 'open',
-        'Arrow Express': 'open',
-        'The Big Easy': 'closed',
-        'Tahoe Zephyr Express': 'closed',
-        'Ursa Major': 'closed',
-        'Big Dipper': 'closed',
-        'Little Dipper': 'closed',
-        'Ritz Bahn': 'closed',
-        'Pegasus': 'closed',
-        'Big Springs Express': 'open',
+        'Arrow Express': 'closed',
+        'Backside Express': 'closed',
+        'Big Dipper Carpet': 'closed',
+        'Big Springs Express Gondola': 'closed',
+        'Comstock Express': 'closed',
         'Highlands Gondola': 'closed',
-        'Village Express': 'closed',
+        'Little Dipper Carpet': 'closed',
+        'Lookout Link Platter': 'closed',
+        'Martis Camp Express': 'closed',
         'Orion\'s Belt': 'closed',
+        'Pegasus Carpet': 'closed',
+        'Promised Land Express': 'closed',
+        'Rendezvous Triple': 'closed',
+        'Tahoe Zephyr Express': 'closed',
+        'The Big Easy Quad': 'closed',
         'Timberline Triple': 'closed',
-        'Z Lift': 'closed'
+        'Tubing Tow': 'closed',
+        'Ursa Major Carpet': 'closed',
+        'Village Express': 'closed',
+        'Vista Express': 'closed'
       };
       should.exist(status);
       status.should.eql(expected);
