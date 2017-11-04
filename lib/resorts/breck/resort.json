@@ -1,8 +1,8 @@
 {
   "name": "Breckenridge",
   "url": {
-    "host": "http://www.breckenridge.com",
-    "pathname": "/mountain/terrain-status.aspx#Lifts#Top"
+    "host": "https://www.breckenridge.com",
+    "pathname": "/the-mountain/mountain-conditions/terrain-and-lift-status.aspx"
   },
   "tags": [
     "Colorado",

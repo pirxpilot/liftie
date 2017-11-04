@@ -11,30 +11,28 @@ describe('parse beavercreek', function() {
     stream.on('error', done);
     stream.pipe(parser(parse, function(err, status) {
       var expected = {
-        'Arrow Bahn Express': 'closed',
+        'Arrow Bahn': 'closed',
         'Bachelor Gulch Express': 'closed',
         'Bibber Bahn': 'closed',
         'Birds of Prey Express': 'closed',
-        'Bridge Bahn': 'closed',
-        'Buckaroo Express': 'closed',
+        'Buckaroo Express Gondola': 'closed',
         'Centennial Express': 'closed',
         'Cinch Express': 'closed',
-        'Drink of Water': 'closed',
-        'Elkhorn': 'closed',
+        'Elkhorn Lift': 'closed',
         'Gold Bahn': 'closed',
         'Grouse Mountain Express': 'closed',
-        'Highland Bahn': 'closed',
-        'Highlands': 'closed',
+        'Highlands Lift': 'closed',
         'Kerch Bahn': 'closed',
-        'Larkspur': 'closed',
-        'Lower Beaver Creek Mountain': 'closed',
+        'Larkspur Express': 'closed',
+        'Lower Beaver Creek Mountain Express': 'closed',
         'Magic Carpet': 'closed',
+        'Red Buffalo Express': 'closed',
         'Ritz Bahn': 'closed',
         'Riverfront Express Gondola': 'closed',
-        'Rose Bowl': 'closed',
+        'Rose Bowl Express': 'closed',
         'Silver Bahn': 'closed',
         'Strawberry Park Express': 'closed',
-        'Upper Beaver Creek Mountain': 'closed'
+        'Upper Beaver Creek Mountain Express': 'closed'
       };
       should.exist(status);
       status.should.eql(expected);

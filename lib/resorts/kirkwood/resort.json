@@ -1,8 +1,8 @@
 {
   "name": "Kirkwood",
   "url": {
-    "host": "http://www.kirkwood.com",
-    "pathname": "/mountain/terrain-status.aspx#/Lifts"
+    "host": "https://www.kirkwood.com",
+    "pathname": "/the-mountain/mountain-conditions/terrain-and-lift-status.aspx"
   },
   "tags": [
     "California",

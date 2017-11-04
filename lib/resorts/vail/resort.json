@@ -1,8 +1,8 @@
 {
   "name": "Vail",
   "url": {
-    "host": "http://www.vail.com",
-    "pathname": "/mountain/current-conditions/whats-open-today.aspx#Lifts#Top"
+    "host": "https://www.vail.com",
+    "pathname": "/the-mountain/mountain-conditions/terrain-and-lift-status.aspx"
   },
   "tags": [
     "Colorado",
