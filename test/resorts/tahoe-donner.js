@@ -11,11 +11,11 @@ describe('parse tahoe-donner', function() {
     stream.on('error', done);
     stream.pipe(parser(parse, function(err, status) {
       var expected = {
-        'Magic Carpet': 'open',
-        'Caterpillar Conveyor': 'scheduled',
+        'Magic Carpet': 'closed',
+        'Caterpillar Conveyor': 'closed',
         'Snowbird Chairlift': 'closed',
-        'Eagle Rock Chairlift': 'hold',
-        'Learning Center Conveyor Lift': 'closed'
+        'Eagle Rock Chairlift': 'closed',
+        'Learning Center Conveyor': 'closed'
       };
       should.exist(status);
       status.should.eql(expected);
