@@ -16,7 +16,7 @@ describe('parse homewood', function() {
         'Ellis Chair': 'open',
         'Old Homewood Express': 'open',
         'Critter Canyon Surface Lift': 'open',
-        'Happy Platter &amp; Alpine Platter S': 'open'
+        'Happy Platter & Alpine Platter S': 'open'
       };
       assert.deepEqual(status, expected);
       done(err);

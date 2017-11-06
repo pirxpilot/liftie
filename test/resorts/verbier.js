@@ -11,7 +11,7 @@ describe('parse verbier', function() {
     stream.on('error', done);
     stream.pipe(parser(parse, function(err, status) {
       var expected = {
-        'La Chaux  -  Gentianes (Jumbo)': 'open',
+        'La Chaux - Gentianes (Jumbo)': 'open',
         'Tortin - Gentianes': 'open',
         'Gentianes': 'open',
         'Mont - Fort': 'open',
@@ -29,11 +29,11 @@ describe('parse verbier', function() {
         'Les Esserts': 'open',
         'Les Moulins': 'open',
         'Le Rouge': 'open',
-        'Verbier  -  Savoleyres': 'open',
+        'Verbier - Savoleyres': 'open',
         'Savoleyres Sud': 'open',
         'La Tournelle': 'open',
         'Tournelle': 'open',
-        'La Tzoumaz  -  Savoleyres': 'open',
+        'La Tzoumaz - Savoleyres': 'open',
         'Tapis Tzoumaz': 'open',
         'Les Etablons': 'open',
         'Taillay': 'open',
