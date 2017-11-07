@@ -1,4 +1,11 @@
 
+3.17.6 / 2017-11-07
+===================
+
+ * fix Tahoe Donner for 2017/18 season
+ * fix Shawnee Mountain for 2017/18 season
+ * fix Sugarbowl for 2017/18 season
+
 3.17.5 / 2017-11-04
 ===================
 
