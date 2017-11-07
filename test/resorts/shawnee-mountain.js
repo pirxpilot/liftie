@@ -11,15 +11,15 @@ describe('parse shawnee-mountain', function() {
     stream.on('error', done);
     stream.pipe(parser(parse, function(err, status) {
       var expected = {
-        'B. Arrowhead - Quad': 'closed',
-        'C. Tomahawk - Express': 'closed',
-        'D. Tecumseh - Double': 'closed',
-        'E. Lookout - Double': 'closed',
-        'F. Bushkill - Double': 'closed',
-        'G. Little Chief - Double': 'closed',
-        'H. Little Chief - Carpet': 'closed',
-        'I. Learning Center - Carpet': 'closed',
-        'SKIwee - Carpet': 'closed'
+        'B. Arrowhead': 'closed',
+        'C. Tomahawk': 'closed',
+        'D. Tecumseh': 'closed',
+        'E. Lookout': 'closed',
+        'F. Bushkill': 'closed',
+        'G. Little Chief': 'closed',
+        'H. Little Chief': 'closed',
+        'I. Learning Center': 'closed',
+        'Skiwee': 'closed'
       };
       should.exist(status);
       status.should.eql(expected);
