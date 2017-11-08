@@ -1,8 +1,8 @@
 {
   "name": "Hochfügen",
   "url": {
-    "host": "http://hochfuegenski.com",
-    "pathname": "/content/info/liftsinoperation"
+    "host": "https://www.hochfuegenski.com/",
+    "pathname": "skigebiet/geoeffnete-pisten-lifte/"
   },
   "tags": [
     "Alps",
