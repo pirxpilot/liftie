@@ -1,7 +1,7 @@
 var should = require('should');
 var fs = require('fs');
 var parser = require('../../lib/lifts/parser');
-var parse = require('../../lib/resorts/ischgl-silvretta-arena');
+var parse = require('../../lib/lifts/parse')('ischgl-silvretta-arena');
 
 /*global describe, it */
 describe('parse ischgl-silvretta-arena', function() {
