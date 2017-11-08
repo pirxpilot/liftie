@@ -2,7 +2,16 @@
   "name": "Copper Mountain",
   "url": {
     "host": "http://www.coppercolorado.com",
-    "pathname": "/winter/the_mountain/dom/snow.html"
+    "pathname": "/the-mountain/trail-lift-info/winter-lifts-hours"
+  },
+  "api": {
+    "host": "http://api.coppercolorado.com/",
+    "pathname": "/api/v2",
+    "query": {
+      "location": "/the-mountain/trail-lift-info/winter-lifts-hours",
+      "level": 1
+    }
+
   },
   "tags": [
     "Colorado"
