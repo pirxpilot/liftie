@@ -147,7 +147,9 @@ mixin resort(resort, widget)
     data-snow=single && resort.snow,
     class=resort.open ? 'open' : ''
   )
-    header
+    header(
+      class=resort.open ? 'progress' : ''
+    )
       +header(resort, widget)
     .expandable
       .basics

@@ -124,7 +124,7 @@ header .ls-furkot
 .resort
   footer
     .add-to-trip
-      margin-top .3em
+      margin-top .5em
 
 .panel
   header,
@@ -151,7 +151,26 @@ header .ls-furkot
 
   &.open
     header
+      position relative
       border-color rgba(black,.3)
+
+      &.progress::after
+        display block
+        position absolute
+        content ''
+        left 0
+        bottom 0
+        width 0
+        height 0
+        border-left: 5px solid transparent
+        border-right: 5px solid transparent
+        border-bottom: 5px solid rgba(black,.3)
+        animation progress-move 60s linear
+
+
+@keyframes progress-move
+  97%
+    transform translate($column-content-width - 10px, 0)
 
 .open
   .expandable
