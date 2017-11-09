@@ -6,7 +6,6 @@
     "test": "make lint test"
   },
   "dependencies": {
-    "CSSselect": "~0",
     "async": "~2",
     "chart.js": "^1.0.2",
     "component-classes": "^1.2.4",
@@ -15,6 +14,7 @@
     "connect-cachify-static": "^1.5.1",
     "connect-gzip-static": "^2.1.1",
     "cookie-parser": "^1.4.3",
+    "css-select": "~1",
     "dataset": "^0.3.2",
     "debounce": "^1.0.0",
     "debug": "~2",
