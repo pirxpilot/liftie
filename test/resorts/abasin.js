@@ -11,13 +11,12 @@ describe('parse abasin', function() {
     stream.on('error', done);
     stream.pipe(parser(parse, function(err, status) {
       var expected = {
-        'Black Mountain Express': 'open',
-        'Lenawee Mountain': 'open',
-        'Pika Place Carpet': 'open',
-        'Pallavicini': 'closed',
-        'Zuma': 'closed',
-        'Molly Hogan': 'closed',
-        'Norway': 'closed'
+        'Black Mountain Express Lift': 'open',
+        'Lenawee Mountain Lift': 'open',
+        'Pika Place Carpet': 'closed',
+        'Pallavicini Lift': 'closed',
+        'Molly Hogan Lift': 'open',
+        'Molly\'s Magic Carpet': 'closed'
       };
       should.exist(status);
       status.should.eql(expected);
