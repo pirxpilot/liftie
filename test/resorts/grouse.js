@@ -11,11 +11,11 @@ describe('parse grouse', function() {
     stream.on('error', done);
     stream.pipe(parser(parse, function(err, status) {
       var expected = {
-        'Olympic Express High-Speed Quad': 'open',
-        'Peak Quad': 'scheduled',
-        'Screaming Eagle High-Speed Quad': 'open',
-        'Greenway Quad': 'open',
-        'Magic Carpet': 'open'
+        'Olympic Express High-Speed Quad Chair': 'scheduled',
+        'Peak Quad Chair': 'scheduled',
+        'Screaming Eagle High-Speed Quad Chair': 'scheduled',
+        'Greenway Quad Chair': 'scheduled',
+        'Magic Carpet': 'scheduled'
       };
       assert.deepEqual(status, expected);
       done(err);
