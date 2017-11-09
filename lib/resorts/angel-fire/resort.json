@@ -1,8 +1,8 @@
 {
   "name": "Angel Fire",
   "url": {
-    "host": "http://www.angelfireresort.com",
-    "pathname": "/winter/mountain/snow-report"
+    "host": "https://www.angelfireresort.com",
+    "pathname": "/snow-report/"
   },
   "tags": [
     "New Mexico"

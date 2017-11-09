@@ -11,13 +11,13 @@ describe('parse angel-fire', function() {
     stream.on('error', done);
     stream.pipe(parser(parse, function(err, status) {
       var expected = {
-        'Dreamcatcher': 'open',
-        'Lift #2': 'open',
-        'Chile Express': 'open',
-        'Lift #3': 'closed',
-        'Southwest Flyer': 'open',
-        'Ski School Wondercarpet': 'open',
-        'Tubing Wondercarpet': 'open'
+        'Dreamcatcher': 'closed',
+        'Lift #2': 'closed',
+        'Chile Express': 'closed',
+        'Liberation Park Lift': 'closed',
+        'Southwest Flyer': 'closed',
+        'Ski School Wondercarpet': 'closed',
+        'Tubing Hill Wondercarpet': 'closed'
       };
       assert.deepEqual(status, expected);
       done(err);
