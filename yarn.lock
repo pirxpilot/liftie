@@ -757,9 +757,9 @@ diffie-hellman@^5.0.0:
     miller-rabin "^4.0.0"
     randombytes "^2.0.0"
 
-dirty@~0:
-  version "0.9.9"
-  resolved "https://registry.yarnpkg.com/dirty/-/dirty-0.9.9.tgz#f785804c4cf7907220cb10fa576b22329feda545"
+dirty@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/dirty/-/dirty-1.1.0.tgz#70edd2b999541dc9974fd3a8cbd0c670fe236078"
 
 dom-serializer@0:
   version "0.1.0"

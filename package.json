@@ -18,7 +18,7 @@
     "dataset": "^0.3.2",
     "debounce": "^1.0.0",
     "debug": "~2",
-    "dirty": "~0",
+    "dirty": "^1.1.0",
     "domready": "^1.0.8",
     "dynload": "^1.0.2",
     "el-component": "^1.0.1",
