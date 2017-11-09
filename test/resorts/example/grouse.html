@@ -1,46 +1,1003 @@
 <!DOCTYPE html>
-<html>
+<html class='no-js'>
 <head>
+<meta content='281122' name='id'>
+<meta content='http://www.grousemountain.com:80/grids/281122/edit' name='edit_url'>
+
 <meta content='IE=Edge;chrome=1' http_quiv='X-UA-Compatible'>
 <meta charset='utf-8'>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"cc6a81a429","applicationID":"12047315","transactionName":"dQpXRhEOCA8EExpBAEINSh0QCQsU","queueTime":0,"applicationTime":1439,"agent":""}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1044.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
 <meta content='19494168080' property='fb:app_id'>
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport'>
+<meta content='88E0C916EAAC770BC01C36C49E4E72B7' name='msvalidate.01'>
 
 <title>
-Grouse Mountain - The Peak of Vancouver
+Current Conditions
+ | Grouse Mountain - The Peak of Vancouver
 </title>
-<link href='/images/favicon.ico' rel='shortcut icon' type='image/x-icon'>
-<link href="/feed" rel="alternate" title="Grouse Mountain Updates" type="application/atom+xml" />
-<link href="/stylesheets/cached-common.css?1357346170" media="all" rel="stylesheet" type="text/css" />
-<link href="/stylesheets/print.css?1357346167" media="print" rel="stylesheet" type="text/css" />
-<script src="/javascripts/jquery-1.6.1.min.js?1357346139" type="text/javascript"></script>
-<script src="/javascripts/jquery-ui-1.8.23.common.min.js?1357346156" type="text/javascript"></script>
-<script src="/javascripts/cached-common.js?1357346162" type="text/javascript"></script>
+<link href='/assets/favicon.ico' rel='shortcut icon' type='image/x-icon'>
+<link rel="alternate" type="application/atom+xml" title="Grouse Mountain Updates" href="/feed" />
 
-<meta name="csrf-param" content="authenticity_token"/>
-<meta name="csrf-token" content="v9FENqY3fr3rI2Ud2v8tX6S6OEtjb4kA+1dNas38E8g="/>
+<!-- Google Tag Manager -->
 <script>
-  //<![CDATA[
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-3121226-1']);
-    _gaq.push(['_trackPageview']);
-    (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-  //]]>
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PK8RKN7');
 </script>
+<!-- End Google Tag Manager -->
 
-<script type="text/javascript">var NREUMQ=NREUMQ||[];NREUMQ.push(["mark","firstbyte",new Date().getTime()]);</script></head>
+<link rel="stylesheet" media="all" href="/assets/application-38a8fbb693374a77fdf9b3fe093d18d6270975149e015775865831cc095d18a7.css" />
+<link rel="stylesheet" media="print" href="/assets/print-fa73f84d55d1f14f9433d7cd809950484fef80cf37fd339d2dbcd247dec87320.css" />
+<script src="/assets/application-3f9044dbe13e5dc65e05b8d1d106dd219b90b092d1fd7abe71c8876fa8067c85.js"></script>
+<script src="https://w.soundcloud.com/player/api.js"></script>
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="Io3okNkb7yoZs7xzXLeO/zY7pzZS3bNwfFGFRLbyWrb1LFXWj+8VDnLbiDPFMtspUhV5DK+DYok3C3eAlBjuWA==" />
+
+
+</head>
 <body>
-<div id='site_container'>
-<div class='wrapper'>
-<div class='current_conditions' id='main'>
-<div class='content conditions edge'>
-<div class='title red'>
-<h2>Current Conditions</h2>
-<ul class='toggle' id='units_toggle'>
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+<iframe height='0' src='https://www.googletagmanager.com/ns.html?id=GTM-PK8RKN7' style='display:none;visibility:hidden' width='0'></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!--
+Start of DoubleClick Floodlight Tag: Please do not remove
+Activity name of this tag: Grouse Mountain - Site Wide - Retargeting
+URL of the webpage where the tag is expected to be placed: Please place on all pages of the Grouse Mountain site.
+
+This tag must be placed between the <body> and </body> tags, as close as possible to the opening tag.
+Creation Date: 11/15/2016
+-->
+<script type="text/javascript">
+var axel = Math.random() + "";
+var a = axel * 10000000000000;
+document.write('<iframe src="https://5240527.fls.doubleclick.net/activityi;src=5240527;type=grous004;cat=grous0;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;ord=' + a + '?" width="1" height="1" frameborder="0" style="display:none"></iframe>');
+</script>
+<noscript>
+<iframe src="https://5240527.fls.doubleclick.net/activityi;src=5240527;type=grous004;cat=grous0;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;ord=1?" width="1" height="1" frameborder="0" style="display:none"></iframe>
+</noscript>
+<!-- End of DoubleClick Floodlight Tag: Please do not remove -->
+<div class='layout-container' id='site_container'>
+<div class='layout-container-inner'>
+<header class='header' id='header'>
+<div class='header-main'>
+<div class='container-inner'>
+<div class='menu--main__toggle js-menu-main-toggle'>
+<span></span>
+<span></span>
+<span></span>
+</div>
+<div class='logo'>
+<a href='/' title='Grouse Mountain'>
+<img alt='Grouse Mountain logo' src='/assets/grouse-logo.svg'>
+</a>
+</div>
+<div class='menu--main'>
+<form action='/search' class='menu-search' method='get'>
+<input class='placeholder' name='q' size='30' type='text' value='Search'>
+<div class='menu-search__close js-menu-search-close'></div>
+</form>
+<nav class='menu--primary'>
+<ul class='menu-level-1'>
+<li class='menu-item__mountian'>
+<span class='menu-item-container'>
+<a href='/about'>
+The Mountain
+</a>
+<span class='js-menu-item-toggle menu__button-toggle'></span>
+</span>
+<div class='menu-level-2 menu-level-2--mega'>
+<ul>
+<li>
+<a href='/current_conditions'>
+Today's Information
+</a>
+<ul class='menu-level-3'>
+<li>
+<a href='/plan-your-day'>
+Plan Your Day Tool 
+</a>
+</li>
+<li>
+<a href='/current_conditions#weather'>
+Current Weather
+</a>
+</li>
+<li>
+<a href='/web-cams/chalet-cam'>
+Web Cams
+</a>
+</li>
+<li>
+<a href='/current_conditions#conditions'>
+Activities Status
+</a>
+</li>
+<li>
+<a href='/current_conditions#conditions?tab=runs'>
+Run Status
+</a>
+</li>
+<li>
+<a href='/current_conditions#conditions?tab=lifts'>
+Lift Status
+</a>
+</li>
+</ul>
+</li>
+<li>
+<a href='/location-getting-here'>
+Location &amp; Getting here
+</a>
+<ul class='menu-level-3'>
+<li>
+<a href='/hours'>
+Hours of Operation
+</a>
+</li>
+<li>
+<a href='/driving-directions'>
+Driving Directions 
+</a>
+</li>
+<li>
+<a href='/transit'>
+Transit
+</a>
+</li>
+<li>
+<a href='/shuttle'>
+Shuttle
+</a>
+</li>
+<li>
+<a href='/parking'>
+Parking 
+</a>
+</li>
+<li>
+<a href='/mountain-map/winter'>
+Mountain Maps
+</a>
+</li>
+</ul>
+</li>
+<li>
+<a href='/dining'>
+Dining &amp; Food
+</a>
+<ul class='menu-level-3'>
+<li>
+<a href='/the-observatory-restaurant'>
+The Observatory
+</a>
+</li>
+<li>
+<a href='/altitudes-bistro'>
+Altitudes Bistro 
+</a>
+</li>
+<li>
+<a href='/lupins'>
+Lupins
+</a>
+</li>
+<li>
+<a href='/grouse-grind-coffee-bar'>
+Grouse Grind Coffee Bar
+</a>
+</li>
+<li>
+<a href='/potato-shack'>
+The Potato Shack 
+</a>
+</li>
+<li>
+<a href='/beavertails'>
+BeaverTails
+</a>
+</li>
+<li>
+<a href='/starbucks'>
+Starbucks
+</a>
+</li>
+</ul>
+</li>
+<li>
+<a href='/events'>
+Event Calendar
+</a>
+<ul class='menu-level-3'>
+</ul>
+</li>
+<li>
+<a href='/posts'>
+Blog
+</a>
+<ul class='menu-level-3'>
+</ul>
+</li>
+<li>
+<a href='/about'>
+About Us
+</a>
+<ul class='menu-level-3'>
+<li>
+<a href='https://www.houseofgrouse.ca/'>
+#HOUSEOFGROUSE
+</a>
+</li>
+<li>
+<a href='/90'>
+History of Grouse Mountain
+</a>
+</li>
+</ul>
+</li>
+</ul>
+<div class='menu-feature'>
+<h2>#HOUSEOFGROUSE</h2>
+<div class='menu-feature__image'>
+  <div class='media' data-parent-container-class='nilclass' id='container_media_576958'>
+  <img height="350" width="450" gravity="" id="container_image_716140" alt="Your winter lives here." class="" src="/media/W1siZiIsIjIwMTcvMTAvMjUvMDkvNTMvNTIvNWI4ODY3MmQtNGNiMy00NjRhLWI1MjAtZmQ3NjE1NTU4ODg4L3NxdWFyZS1ob3VzZS1vZi1ncm91c2UuanBnIl0sWyJwIiwidGh1bWIiLCI0NTB4MzUwXHUwMDNlIl1d?sha=e2269d0e506c2933" />
+
+
+<!-- - if container.content.try(:description) -->
+<!-- :javascript -->
+<!-- $(document).ready(function(){ -->
+<!-- $('.caption p').html("#{container.content.description}"); -->
+<!-- }); -->
+</div>
+
+
+</div>
+<p>This season we're thrilled to introduce the House of Grouse. Your home for all things winter - the latest info, great memories, pro tips and a whole lot of fun. </p>
+<div class='button'>
+<a href='https://www.houseofgrouse.ca/'>
+Visit houseofgrouse.ca
+</a>
+</div>
+</div>
+</div>
+</li>
+<li class='menu-item__tickets'>
+<span class='menu-item-container'>
+<a href='/tickets-passes'>
+Tickets &amp; Passes
+</a>
+<span class='js-menu-item-toggle menu__button-toggle'></span>
+</span>
+<div class='menu-level-2 menu-level-2--mega'>
+<ul>
+<li>
+<a href='/products/full-day-snow-lift-tickets'>
+Day Ski/Ride Tickets
+</a>
+<ul class='menu-level-3'>
+<li>
+<a href='/products/full-day-snow-lift-tickets'>
+Day Snow Ticket 
+</a>
+</li>
+<li>
+<a href='/night-snow-ticket'>
+Night Snow Ticket
+</a>
+</li>
+</ul>
+</li>
+<li>
+<a href='/products/alpine-experience'>
+Day Skyride Tickets 
+</a>
+<ul class='menu-level-3'>
+<li>
+<a href='/products/alpine-experience'>
+Alpine Experience Ticket 
+</a>
+</li>
+</ul>
+</li>
+<li>
+<a href='/contact-call-centre'>
+Guest Services 
+</a>
+<ul class='menu-level-3'>
+<li>
+<a href='/contact-call-centre'>
+Call Centre / Contact Us
+</a>
+</li>
+<li>
+<a href='/group-rates/corporate-groups'>
+Corporate Passes
+</a>
+</li>
+<li>
+<a href='/group-rates'>
+Group Sales
+</a>
+</li>
+<li>
+<a href='/gift-cards/buy-a-gift-card'>
+Buy Gift Card
+</a>
+</li>
+<li>
+<a href='/gift-cards/check-gift-cards-and-passes'>
+Check Gift Card Balance 
+</a>
+</li>
+</ul>
+</li>
+<li>
+<a href='/season-ski-ride-tickets-grid'>
+Season Ski/Ride Passes
+</a>
+<ul class='menu-level-3'>
+<li>
+<a href='/early-bird'>
+Early Bird Pass
+</a>
+</li>
+<li>
+<a href='/products/5-day-snow-pack'>
+5-Day Snow Packs
+</a>
+</li>
+<li>
+<a href='/products/10-day-snow-pack'>
+10-Day Snow Packs
+</a>
+</li>
+<li>
+<a href='/products/night-pass'>
+Night Snow Pass
+</a>
+</li>
+<li>
+<a href='/products/1-nightweek-snow-pass'>
+1 Night/Week Snow Pass
+</a>
+</li>
+<li>
+<a href='/products/winter-pass'>
+Season Winter Snow Pass
+</a>
+</li>
+</ul>
+</li>
+<li>
+<a href='/annual-skyride-passes'>
+Annual Skyride Passes
+</a>
+<ul class='menu-level-3'>
+<li>
+<a href='/all-mountain-pass'>
+All Mountain Pass
+</a>
+</li>
+<li>
+<a href='/general-admission-membership/buy-1-year-pass'>
+1 Year Annual Local's Pass
+</a>
+</li>
+<li>
+<a href='/general-admission-membership/buy-2-year-pass'>
+2 Year Annual Local's Pass
+</a>
+</li>
+</ul>
+</li>
+<li>
+<a href='/parking'>
+Parking Passes
+</a>
+<ul class='menu-level-3'>
+<li>
+<a href='/products/annual-parking-pass'>
+1 &amp; 2 Year Parking Passes
+</a>
+</li>
+</ul>
+</li>
+</ul>
+<div class='menu-feature'>
+<h2>Alpine Experience Ticket</h2>
+<div class='menu-feature__image'>
+  <div class='media' data-parent-container-class='nilclass' id='container_media_577566'>
+  <img height="350" width="450" gravity="" id="container_image_716141" alt="" class="" src="/media/W1siZiIsIjIwMTcvMDEvMzEvMDAvMzQvNTIvYzA0MWUyMTUtNTZmNi00NzAwLWJkMDMtOWZlNGZiZGYyMzEwL3NreXJpZGUuanBnIl0sWyJwIiwidGh1bWIiLCI0NTB4MzUwIyJdXQ?sha=e6fedd2fd0ac8326" />
+
+
+<!-- - if container.content.try(:description) -->
+<!-- :javascript -->
+<!-- $(document).ready(function(){ -->
+<!-- $('.caption p').html("#{container.content.description}"); -->
+<!-- }); -->
+</div>
+
+
+</div>
+<p>Alpine Experience tickets include a scenic round trip Skyride, access to our 8000 square foot skating pond, Sliding Zone, Light Walk and more!</p>
+<div class='button'>
+<a href='/products/alpine-experience'>
+Learn More
+</a>
+</div>
+</div>
+</div>
+</li>
+<li class='menu-item__activities'>
+<span class='menu-item-container'>
+<a href='/winter-activities'>
+Activities &amp; Attractions
+</a>
+<span class='js-menu-item-toggle menu__button-toggle'></span>
+</span>
+<div class='menu-level-2 menu-level-2--condensed'>
+<ul>
+<li>
+<a href='/ski-board-tickets'>
+Skiing &amp; Snowboarding 
+</a>
+<ul class='menu-level-3'>
+</ul>
+</li>
+<li>
+<a href='/snowshoe'>
+Snowshoeing 
+</a>
+<ul class='menu-level-3'>
+</ul>
+</li>
+<li>
+<a href='/skyride'>
+Skyride
+</a>
+<ul class='menu-level-3'>
+</ul>
+</li>
+<li>
+<a href='/snowshoe-snow-cave'>
+Snowshoe Snow Cave Experience
+</a>
+<ul class='menu-level-3'>
+</ul>
+</li>
+<li>
+<a href='/eye-of-the-wind'>
+The Eye of the Wind
+</a>
+<ul class='menu-level-3'>
+</ul>
+</li>
+<li>
+<a href='/skatingpond'>
+Skating Pond
+</a>
+<ul class='menu-level-3'>
+</ul>
+</li>
+<li>
+<a href='/zipline'>
+Mountain Ziplines
+</a>
+<ul class='menu-level-3'>
+</ul>
+</li>
+<li>
+<a href='/light-walk'>
+Light Walk 
+</a>
+<ul class='menu-level-3'>
+</ul>
+</li>
+<li>
+<a href='/sliding-zone'>
+Sliding Zone
+</a>
+<ul class='menu-level-3'>
+</ul>
+</li>
+<li>
+<a href='/terrain-parks'>
+Terrain Parks
+</a>
+<ul class='menu-level-3'>
+</ul>
+</li>
+<li>
+<a href='/theatre-in-the-sky'>
+Theatre in the Sky
+</a>
+<ul class='menu-level-3'>
+</ul>
+</li>
+<li>
+<a href='/dining'>
+Dining
+</a>
+<ul class='menu-level-3'>
+</ul>
+</li>
+<li>
+<a href='/alpine-shopping'>
+Shopping
+</a>
+<ul class='menu-level-3'>
+</ul>
+</li>
+</ul>
+<div class='menu-feature'>
+<h2>Up, Up &amp; Away</h2>
+<div class='menu-feature__image'>
+  <div class='media' data-parent-container-class='nilclass' id='container_media_578342'>
+  <img height="350" width="450" gravity="" id="container_image_580697" class="" src="/media/W1siZiIsIjIwMTcvMDEvMzAvMjAvMjMvNDUvMmViN2U4ZTktNDkxNy00MTNjLTg4Y2EtZTQ4MjFlYmM0MWM4L1cxc2laaUlzSWpJd01URXZNRFV2TVRVdk1UaGZOVFZmTVRaZk1qZGZaR1JwWDNSelgyZHlYekl3TnpaZmNtVmtMbXB3WnlKZExGc2ljQ0lzSW5Sb2RXMWlJaXdpTkRVd2VETTFNQ01pWFYwLmpwZyJdLFsicCIsInRodW1iIiwiNDUweDM1MCMiXV0?sha=0464552f81640c33" />
+
+
+<!-- - if container.content.try(:description) -->
+<!-- :javascript -->
+<!-- $(document).ready(function(){ -->
+<!-- $('.caption p').html("#{container.content.description}"); -->
+<!-- }); -->
+</div>
+
+
+</div>
+<p>High above towering Douglas firs, breathtaking views of the city of Vancouver, sparkling Pacific Ocean, Gulf Islands, and snowy peaks unfold as you journey up the mountainside.</p>
+<div class='button'>
+<a href='/skyride'>
+Read More
+</a>
+</div>
+</div>
+</div>
+</li>
+<li class='menu-item__lessons'>
+<span class='menu-item-container'>
+<a href='/ski-snowboard-school'>
+Lessons, Training &amp; Rentals
+</a>
+<span class='js-menu-item-toggle menu__button-toggle'></span>
+</span>
+<div class='menu-level-2 menu-level-2--mega'>
+<ul>
+<li>
+<a href='/rentals'>
+Rentals
+</a>
+<ul class='menu-level-3'>
+<li>
+<a href='/rentals'>
+Equipment Rentals
+</a>
+</li>
+<li>
+<a href='/rentals/tuning-service'>
+Equipment Tuning &amp; Servicing
+</a>
+</li>
+</ul>
+</li>
+<li>
+<a href='/winter-activities'>
+Ski &amp; Ride Lessons &amp; Programs
+</a>
+<ul class='menu-level-3'>
+<li>
+<a href='/adult-programs'>
+Adult Ski/Board Clinics
+</a>
+</li>
+<li>
+<a href='/day-lessons'>
+Day &amp; Private Lessons
+</a>
+</li>
+<li>
+<a href='/ski-wee'>
+Ski Wee/Wee Riders (Ages 3-6)
+</a>
+</li>
+<li>
+<a href='/zone-camps'>
+Zone Camps (Ages 5-18)
+</a>
+</li>
+<li>
+<a href='/freeride'>
+Freeride Camps (Ages 10-18)
+</a>
+</li>
+<li>
+<a href='/ski-clubs'>
+Ski &amp; Snowboard Clubs
+</a>
+</li>
+</ul>
+</li>
+<li>
+<a href='/training-grid'>
+Training
+</a>
+<ul class='menu-level-3'>
+<li>
+<a href='/instructor-certification'>
+Ski Instructor Certification
+</a>
+</li>
+<li>
+<a href='/mountain-safety-training'>
+Mountain Top Safety Training
+</a>
+</li>
+<li>
+<a href='/corporate-adventure-training'>
+Corporate Adventure Training
+</a>
+</li>
+</ul>
+</li>
+<li>
+<a href='/snowshoe-clinics'>
+Adult Snowshoe Clinics
+</a>
+<ul class='menu-level-3'>
+</ul>
+</li>
+<li>
+<a href='/adventure-camps-winter'>
+Adventure Day Camps
+</a>
+<ul class='menu-level-3'>
+</ul>
+</li>
+</ul>
+<div class='menu-feature'>
+<h2>2017/18 Winter Program Guide</h2>
+<div class='menu-feature__image'>
+  <div class='media' data-parent-container-class='nilclass' id='container_media_578816'>
+  <img height="350" width="450" gravity="" id="container_image_694626" alt="2017-2018 Program Planning Guide at Grouse Mountain." class="" src="/media/W1siZiIsIjIwMTcvMDkvMDcvMTYvNDgvMDkvNzk4ZTdlZGUtMjMwNi00YmYzLTgyZDUtZmIzNTlhZTgyMjE2L3Byb2dyYW0tZ3VpZGUtMjAxNy0xOC1zbWFsbC5qcGciXSxbInAiLCJ0aHVtYiIsIjQ1MHgzNTAjIl1d?sha=25eddc05f6b1f89c" />
+
+
+<!-- - if container.content.try(:description) -->
+<!-- :javascript -->
+<!-- $(document).ready(function(){ -->
+<!-- $('.caption p').html("#{container.content.description}"); -->
+<!-- }); -->
+</div>
+
+
+</div>
+<p>Discover everything Grouse Mountain has to offer in our Winter Program Guide.</p>
+<div class='button'>
+<a href='http://files.grousemountain.com/Winter%20Program%20Guide/program-guide-2017-18-web.pdf'>
+Click here
+</a>
+</div>
+</div>
+</div>
+</li>
+<li class='menu-item__groups'>
+<span class='menu-item-container'>
+<a href='/private-functions'>
+Groups &amp; Private Events
+</a>
+<span class='js-menu-item-toggle menu__button-toggle'></span>
+</span>
+<div class='menu-level-2 menu-level-2--condensed'>
+<ul>
+<li>
+<a href='/private-functions'>
+Private Functions
+</a>
+<ul class='menu-level-3'>
+</ul>
+</li>
+<li>
+<a href='/group-rates'>
+Group Sales
+</a>
+<ul class='menu-level-3'>
+</ul>
+</li>
+<li>
+<a href='/weddings'>
+Weddings
+</a>
+<ul class='menu-level-3'>
+</ul>
+</li>
+<li>
+<a href='/film-television-production-location'>
+Film and Television Productions 
+</a>
+<ul class='menu-level-3'>
+</ul>
+</li>
+<li>
+<a href='/corporate-adventure-training'>
+Corporate adventure training 
+</a>
+<ul class='menu-level-3'>
+</ul>
+</li>
+<li>
+<a href='/holiday-parties'>
+Holiday Parties
+</a>
+<ul class='menu-level-3'>
+</ul>
+</li>
+</ul>
+<div class='menu-feature'>
+<h2>Mountaintop Weddings</h2>
+<div class='menu-feature__image'>
+  <div class='media' data-parent-container-class='nilclass' id='container_media_579267'>
+  <img height="350" width="450" gravity="" id="container_image_581034" class="" src="/media/W1siZiIsIjIwMTcvMDEvMzAvMjAvMjUvMjkvYmRkMmQ5N2ItOGNmNy00ZmFmLWJjYTgtOGYzNzhjNjk5OWIwL2NhdGVyaW5nLXdlZGRpbmdzLmpwZyJdLFsicCIsInRodW1iIiwiNDUweDM1MCMiXV0?sha=8d9d588b584500d7" />
+
+
+<!-- - if container.content.try(:description) -->
+<!-- :javascript -->
+<!-- $(document).ready(function(){ -->
+<!-- $('.caption p').html("#{container.content.description}"); -->
+<!-- }); -->
+</div>
+
+
+</div>
+<p>A day when every moment is designed to take your breath away. </p>
+<div class='button'>
+<a href='/weddings'>
+Read More
+</a>
+</div>
+</div>
+</div>
+</li>
+<li class='menu-item__wildlife'>
+<span class='menu-item-container'>
+<a href='/wildlife-refuge-grid'>
+Wildlife Refuge
+</a>
+<span class='js-menu-item-toggle menu__button-toggle'></span>
+</span>
+<div class='menu-level-2 menu-level-2--micro'>
+<ul>
+<li>
+<a href='/wildlife-refuge/ranger-blog'>
+Ranger Blog
+</a>
+<ul class='menu-level-3'>
+</ul>
+</li>
+<li>
+<a href='/wildlife-refuge/bear-cam'>
+Bear Cam
+</a>
+<ul class='menu-level-3'>
+</ul>
+</li>
+<li>
+<a href='/owls'>
+Owls
+</a>
+<ul class='menu-level-3'>
+</ul>
+</li>
+<li>
+<a href='/wildlife-refuge'>
+Hummingbird Banding
+</a>
+<ul class='menu-level-3'>
+</ul>
+</li>
+</ul>
+<div class='menu-feature'>
+<h2>Safe Haven</h2>
+<div class='menu-feature__image'>
+  <div class='media' data-parent-container-class='nilclass' id='container_media_579523'>
+  <img height="350" width="450" gravity="" id="container_image_581036" class="" src="/media/W1siZiIsIjIwMTcvMDEvMzAvMjAvMjYvMTAvOTgzYWUwNmQtNzlkOC00NzIxLWFlNWUtNzAxOWU3ZTUyZDNjL2JlYXJzdnNwdW1wa2lucy1vY3QtMzEtMjAxNC0wMDg4LmpwZyJdLFsicCIsInRodW1iIiwiNDUweDM1MCMiXV0?sha=b22834369c824b8f" />
+
+
+<!-- - if container.content.try(:description) -->
+<!-- :javascript -->
+<!-- $(document).ready(function(){ -->
+<!-- $('.caption p').html("#{container.content.description}"); -->
+<!-- }); -->
+</div>
+
+
+</div>
+<p>Imagine a wilderness sanctuary where endangered animals can explore and play, knowing they’re safe and secure. </p>
+<div class='button'>
+<a href='/wildlife-refuge'>
+Read More
+</a>
+</div>
+</div>
+</div>
+</li>
+<li class='menu-item__education'>
+<span class='menu-item-container'>
+<a href='/education-grid'>
+Education Programs
+</a>
+<span class='js-menu-item-toggle menu__button-toggle'></span>
+</span>
+<div class='menu-level-2 menu-level-2--condensed'>
+<ul>
+<li>
+<a href='/educationprograms2016'>
+About Field Trip Programs
+</a>
+<ul class='menu-level-3'>
+</ul>
+</li>
+<li>
+<a href='/educationprograms2016/primary-k-3'>
+Education Primary Field Trips  (Grades K - 3)
+</a>
+<ul class='menu-level-3'>
+</ul>
+</li>
+<li>
+<a href='/educationprograms2016/intermediate-4-7'>
+Educational Intermediate Field trips(Grades 4 - 7)
+</a>
+<ul class='menu-level-3'>
+</ul>
+</li>
+<li>
+<a href='/educationprograms2016/secondary-8-12'>
+Education Secondary Field Trips  (Grades 8-12)
+</a>
+<ul class='menu-level-3'>
+</ul>
+</li>
+<li>
+<a href='/educationprograms2016/faq'>
+Education FAQ
+</a>
+<ul class='menu-level-3'>
+</ul>
+</li>
+<li>
+<a href='/school-group-lessons'>
+Snow School Group Lessons
+</a>
+<ul class='menu-level-3'>
+</ul>
+</li>
+</ul>
+<div class='menu-feature'>
+<h2>Field Trip Programs</h2>
+<div class='menu-feature__image'>
+  <div class='media' data-parent-container-class='nilclass' id='container_media_579731'>
+  <img height="350" width="450" gravity="" id="container_image_581073" class="" src="/media/W1siZiIsIjIwMTcvMDEvMzAvMjAvMjYvNTIvZTUwYmFmMzktZGIzMy00ZDFhLTk3ZDQtOTkwMjM3ZDY3NDY4L2VkdWNhdGlvbi1maWVsZC10cmlwcy5qcGciXSxbInAiLCJ0aHVtYiIsIjQ1MHgzNTAjIl1d?sha=50dd1d8faa1f0247" />
+
+
+<!-- - if container.content.try(:description) -->
+<!-- :javascript -->
+<!-- $(document).ready(function(){ -->
+<!-- $('.caption p').html("#{container.content.description}"); -->
+<!-- }); -->
+</div>
+
+
+</div>
+<p>Field trips made to suit everyone's needs. Build your perfect day at Grouse Mountain.</p>
+<div class='button'>
+<a href='/educationprograms2016'>
+Learn More
+</a>
+</div>
+</div>
+</div>
+</li>
+</ul>
+
+</nav>
+<nav class='menu--secondary'>
+<ul class='menu menu--secondary-level-1'>
+<li class='menu-item__grouse-grind'>
+<a href='/grind_stats?trail=1'>Grouse Grind Stats</a>
+</li>
+<li>
+<a href='/current_conditions#weather'>Weather Forecast</a>
+</li>
+<li>
+<a href='/web-cams/chalet-cam'>Webcams</a>
+</li>
+<li>
+<a href='/news-events'>News & Events</a>
+</li>
+</ul>
+<ul class='menu menu--secondary-level-1'>
+<li class='menu-item__search'>
+<a class='js-menu-search' href='#'>Search</a>
+<li class='menu-item__account'>
+<a href='/login'>My Account</a>
+</li>
+</li>
+<li class='menu-item__cart'>
+<a class='open_grid' href='/cart'>
+My Cart
+<span class='count' id='mini_cart_badge'>
+0
+</span>
+</a>
+</li>
+</ul>
+
+</nav>
+</div>
+<nav class='menu--season'>
+<ul class='menu'>
+<li class='menu-item--active menu-item__winter'>
+<form action='/seasons/set_season' method='POST'>
+<input name='season' type='submit' value='Winter'>
+<!-- %a{:href => '/?season=Winter'} Winter -->
+</form>
+</li>
+<li class='menu-item__summer'>
+<form action='/seasons/set_season' method='POST'>
+<input name='season' type='submit' value='Summer'>
+<!-- %a{:href => '/?season=Summer'} Summer -->
+</form>
+</li>
+</ul>
+
+</nav>
+</div>
+</div>
+</header>
+
+<section class='main'>
+<div class='grid'>
+  <div class='grid' id='281122'>
+<ul class='ac ac-hidden current_conditions grid_layout' data-dom-id='grid_281122' data-vp-add-class='fadeIn animated'>
+  <li class='cell_1' id='container_grid_hero_711479'>
+<div class='feature-block grid_hero'>
+<div class='feature-block__image'>
+  <div class='media' data-parent-container-class='gridhero' id='container_media_711480'>
+  <img height="640" width="1920" gravity="" id="container_image_711483" alt="" class="" src="/media/W1siZiIsIjIwMTcvMTAvMTAvMTUvMTAvMDYvMDg0NjNhNDUtNzU2My00N2VjLWFjZjQtNjhkNjdhMjVjOWNmL3RvZGF5LW9uLWdyb3VzZS5qcGciXSxbInAiLCJ0aHVtYiIsIjE5MjB4NjQwXHUwMDNlIl1d?sha=7b100ba55babb7e3" />
+
+
+<!-- - if container.content.try(:description) -->
+<!-- :javascript -->
+<!-- $(document).ready(function(){ -->
+<!-- $('.caption p').html("#{container.content.description}"); -->
+<!-- }); -->
+</div>
+
+
+</div>
+<div class='feature-block__content'>
+<h1 class='feature-block__title grid_editable' id='container_text_711482'>
+TODAY ON GROUSE MOUNTAIN
+</h1>
+</div>
+</div>
+</li>
+
+
+</ul>
+  <div class='page--current-conditions current_conditions' id='main'>
+<a class='anchor' name='weather'></a>
+<ul class='layout--grid-seamless-3 ac ac-hidden' data-vp-add-class='fadeIn animated'>
+<li>
+<div class='feature-block feature-block--current-temp conditions-temp'>
+<div class='feature-block__content'>
+<div class='container-inner'>
+<h3 class='feature-block__title'>Current Weather</h3>
+<ul class='menu--toggle' id='units_toggle'>
 <li class='t1 show_metric active'>
 <a href='#metric'>&deg;C</a>
 </li>
@@ -48,182 +1005,254 @@ Grouse Mountain - The Peak of Vancouver
 <a href='#imperial'>&deg;F</a>
 </li>
 </ul>
-</div>
-<div class='now'>
-<h4>Today</h4>
 <div class='current_weather'>
-<img src='/images/icons/weather/cloudy.png'>
-<div class='metric'>
--2˚C
+<div class='current-weather__image'>
+<img alt='High overcast skies icon' src='/assets/icons/weather/cloudy-night.svg'>
 </div>
-<div class='imperial'>
-28.4˚F
+<div class='current-weather__content'>
+<h3 class='metric'>
+5˚C
+</h3>
+<h3 class='imperial' style='display: none;'>
+41˚F
+</h3>
+<p>
+High overcast skies
+</p>
 </div>
-Low overcast skies
 </div>
 <div class='current_status'>
 <p>
-Limited
-<span class='label'>
+Unlimited
+<span class='report-label'>
 Visibility
 </span>
 </p>
 <p>
- 9:00 AM
-<span class='time label'>
+ 5:00 PM
+<span class='time report-label'>
 Report
-<img src='/images/conditions/time_icon.gif'>
 </span>
 </p>
 </div>
+<div class='forecast'>
+<div class='forecast__item'>
+<h6 class='forecast__title'>TODAY</h6>
+<p class='forecast__content'>
+Cloudy High 8°C. Low: 4°C
+</p>
 </div>
-<div class='winter season_toggle'>
-<div class='report'>
-<h4>Snow Report</h4>
-<table class='snow' width='169'>
-<tr>
-<td width='64'>
-<div class='metric'>
+<div class='forecast__item'>
+<h6 class='forecast__title'>TOMORROW</h6>
+<p class='forecast__content'>
+Mix of snow and rain by late afternoon.  High 7°C Low: -1°C
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li>
+<a class='anchor' name='webcams'></a>
+<div class='feature-block feature-block--webcam'>
+<div class='feature-block__image'>
+<div class='slideshow--single-item js-slideshow-single-item'>
+<img width="1200" height="860" src="https://relay.ozolio.com/pub.cgi?cmd=img&amp;cid=CID_YBLM00000045" alt="Pub" />
+<img width="1200" height="860" src="https://relay.ozolio.com/pub.cgi?cmd=img&amp;cid=CID_ROCJ0000027C" alt="Pub" />
+</div>
+</div>
+<div class='feature-block__content'>
+<div class='container-inner'>
+<h3 class='feature-block__title'>Web Cams</h3>
+</div>
+</div>
+<a href='/web-cams/chalet-cam'></a>
+<script>
+  $(document).ready(function() {
+    $('.js-slideshow-single-item').slick({
+      dots: true,
+      arrows: false,
+      infinite: true,
+      speed: 500,
+      fade: true,
+      cssEase: 'linear',
+      slidesToShow: 1,
+      autoplay: true,
+    });
+  });
+</script>
+</div>
+</li>
+<li>
+<a class='anchor' name='photos'></a>
+<div class='feature-block feature-block--recent-photos'>
+<div class='feature-block__image'>
+<div class='slideshow--single-item js-slideshow-single-item'>
+<img src="/media/W1siZiIsIjIwMTcvMTEvMDMvMTAvNTIvMjkvNjA2MzA3N2EtYTU1Yy00ZTY1LWJkZDUtODg5OTJkNmFiMjE4L3Nub3ctbm92ZW1iZXIzLmpwZyJdLFsicCIsInRodW1iIiwiMTIwMHg4NjAjIl1d?sha=aee3dfa74cd6da8a" alt="W1siziisijiwmtcvmtevmdmvmtavntivmjkvnja2mza3n2etytu1yy00zty1lwjkzdutodg5otjknmfimje4l3nub3ctbm92zw1izxizlmpwzyjdlfsiccisinrodw1iiiwimtiwmhg4njajil1d?sha=aee3dfa74cd6da8a" />
+<img src="/media/W1siZiIsIjIwMTcvMTAvMjAvMTMvMDgvNTgvMDhiMjNlZWMtM2UxNS00ZWJjLWI2YTItNGU1YWFjMjhkMDA3L3Nub3ctb2N0MjAyMDE3My5qcGciXSxbInAiLCJ0aHVtYiIsIjEyMDB4ODYwIyJdXQ?sha=86aa613d7b431985" alt="W1siziisijiwmtcvmtavmjavmtmvmdgvntgvmdhimjnlzwmtm2uxns00zwjjlwi2ytitngu1ywfjmjhkmda3l3nub3ctb2n0mjaymde3my5qcgcixsxbinailcj0ahvtyiisijeymdb4odywiyjdxq?sha=86aa613d7b431985" />
+<img src="/media/W1siZiIsIjIwMTcvMTAvMjAvMTMvMDgvMzgvZTgxMGYyODgtOTk4MC00YjRlLTliNmItNzBhMTljOTA4OWFlL3Nub3ctb2N0MjAyMDE3Mi5qcGciXSxbInAiLCJ0aHVtYiIsIjEyMDB4ODYwIyJdXQ?sha=71069cdfd17bcb87" alt="W1siziisijiwmtcvmtavmjavmtmvmdgvmzgvztgxmgyyodgtotk4mc00yjrlltlinmitnzbhmtljota4owfll3nub3ctb2n0mjaymde3mi5qcgcixsxbinailcj0ahvtyiisijeymdb4odywiyjdxq?sha=71069cdfd17bcb87" />
+<img src="/media/W1siZiIsIjIwMTcvMTAvMjAvMTMvMDgvMDEvMWI0ZWNjNmQtZDY3Mi00ZWQwLWEzYjgtYzE5YzI3ZDgzYmI3L3Nub3ctb2N0MjAyMDE3LmpwZyJdLFsicCIsInRodW1iIiwiMTIwMHg4NjAjIl1d?sha=cf19be5a421397b6" alt="W1siziisijiwmtcvmtavmjavmtmvmdgvmdevmwi0zwnjnmqtzdy3mi00zwqwlwezyjgtyze5yzi3zdgzymi3l3nub3ctb2n0mjaymde3lmpwzyjdlfsiccisinrodw1iiiwimtiwmhg4njajil1d?sha=cf19be5a421397b6" />
+<img src="/media/W1siZiIsIjIwMTcvMTAvMTIvMTEvMTcvMDIvNmM5MWQyZjAtMTI4Ni00YjY3LThmZDQtNDI1MzkwOGY0ZDVhL3Nub3ctb2N0MTIyMDE3LmpwZyJdLFsicCIsInRodW1iIiwiMTIwMHg4NjAjIl1d?sha=0f4f0858da3187b1" alt="W1siziisijiwmtcvmtavmtivmtevmtcvmdivnmm5mwqyzjatmti4ni00yjy3lthmzdqtndi1mzkwogy0zdvhl3nub3ctb2n0mtiymde3lmpwzyjdlfsiccisinrodw1iiiwimtiwmhg4njajil1d?sha=0f4f0858da3187b1" />
+<img src="/media/W1siZiIsIjIwMTcvMTAvMTIvMTEvMTYvMzQvYWM2YzZjZjctMDI5OC00MzZhLThkMmYtNDkzZGYwNTE1ZTFjL3Nub3ctb2N0MTIzLmpwZyJdLFsicCIsInRodW1iIiwiMTIwMHg4NjAjIl1d?sha=d59cb173757f0faf" alt="W1siziisijiwmtcvmtavmtivmtevmtyvmzqvywm2yzzjzjctmdi5oc00mzzhlthkmmytndkzzgywnte1ztfjl3nub3ctb2n0mtizlmpwzyjdlfsiccisinrodw1iiiwimtiwmhg4njajil1d?sha=d59cb173757f0faf" />
+<img src="/media/W1siZiIsIjIwMTcvMTAvMTIvMTEvMTUvNTkvZDQyMWMyZDMtNzY2ZS00Mjc3LTkzNjctZTI3ZmRkNWU4ZTg3L3Nub3ctb2N0MTIyLmpwZyJdLFsicCIsInRodW1iIiwiMTIwMHg4NjAjIl1d?sha=f6cb93ab705b3250" alt="W1siziisijiwmtcvmtavmtivmtevmtuvntkvzdqymwmyzdmtnzy2zs00mjc3ltkznjctzti3zmrknwu4ztg3l3nub3ctb2n0mtiylmpwzyjdlfsiccisinrodw1iiiwimtiwmhg4njajil1d?sha=f6cb93ab705b3250" />
+<img src="/media/W1siZiIsIjIwMTcvMTAvMTEvMDkvNDIvMDAvNjU5ZjUwZDUtYzYyYi00NzFmLTlmMWItMzhmM2RlOTM4YTEzL3Nub3ctb2N0MTEzLmpwZyJdLFsicCIsInRodW1iIiwiMTIwMHg4NjAjIl1d?sha=6bd81bfbdbf8718c" alt="W1siziisijiwmtcvmtavmtevmdkvndivmdavnju5zjuwzdutyzyyyi00nzfmltlmmwitmzhmm2rlotm4ytezl3nub3ctb2n0mtezlmpwzyjdlfsiccisinrodw1iiiwimtiwmhg4njajil1d?sha=6bd81bfbdbf8718c" />
+<img src="/media/W1siZiIsIjIwMTcvMTAvMTEvMDkvNDEvNDkvOTgzMjAzNGQtZDM5Yy00NTkzLThhZDYtMjc0ZGQ0YzA3NzlkL3Nub3ctb2N0MTEyLmpwZyJdLFsicCIsInRodW1iIiwiMTIwMHg4NjAjIl1d?sha=e4902be61a7ebb62" alt="W1siziisijiwmtcvmtavmtevmdkvndevndkvotgzmjazngqtzdm5yy00ntkzlthhzdytmjc0zgq0yza3nzlkl3nub3ctb2n0mteylmpwzyjdlfsiccisinrodw1iiiwimtiwmhg4njajil1d?sha=e4902be61a7ebb62" />
+<img src="/media/W1siZiIsIjIwMTcvMTAvMTEvMDkvNDEvMzYvYjFjZDlhMTktMmU3My00MTRlLTlmOGEtY2QxYWIxNDFlNmMxL3Nub3ctb2N0MTEuanBnIl0sWyJwIiwidGh1bWIiLCIxMjAweDg2MCMiXV0?sha=63fff3ae142d5dbc" alt="W1siziisijiwmtcvmtavmtevmdkvndevmzyvyjfjzdlhmtktmmu3my00mtrlltlmogety2qxywixndflnmmxl3nub3ctb2n0mteuanbnil0swyjwiiwidgh1bwiilcixmjawedg2mcmixv0?sha=63fff3ae142d5dbc" />
+<img src="/media/W1siZiIsIjIwMTcvMTAvMTAvMTQvMDMvMjUvNTE3MWFmNWUtMTllMy00ZjI0LTlhOGEtM2ZmZWYxMWY2YzU3L2JlYXIuanBnIl0sWyJwIiwidGh1bWIiLCIxMjAweDg2MCMiXV0?sha=81611c906f342800" alt="W1siziisijiwmtcvmtavmtavmtqvmdmvmjuvnte3mwfmnwutmtllmy00zji0ltlhogetm2zmzwyxmwy2yzu3l2jlyxiuanbnil0swyjwiiwidgh1bwiilcixmjawedg2mcmixv0?sha=81611c906f342800" />
+<img src="/media/W1siZiIsIjIwMTcvMDkvMTgvMTMvNTQvMzcvYTQzODc4MWEtM2JmNS00OTdmLTk3MGYtZDk0OTk5OTE0MzI3L3JlY2VudCBwaG90b3MzLmpwZyJdLFsicCIsInRodW1iIiwiMTIwMHg4NjAjIl1d?sha=88df3e5834f66e3c" alt="W1siziisijiwmtcvmdkvmtgvmtmvntqvmzcvytqzodc4mwetm2jmns00otdmltk3mgytzdk0otk5ote0mzi3l3jly2vudcbwag90b3mzlmpwzyjdlfsiccisinrodw1iiiwimtiwmhg4njajil1d?sha=88df3e5834f66e3c" />
+<img src="/media/W1siZiIsIjIwMTcvMDkvMTgvMTMvNTQvMTkvNmYzMTdkZGItNmY0NC00NTg2LTk0NzEtMzRjMTgxNTdlY2Y4L3JlY2VudCBwaG90b3MyLmpwZyJdLFsicCIsInRodW1iIiwiMTIwMHg4NjAjIl1d?sha=11873c8196cc3ef4" alt="W1siziisijiwmtcvmdkvmtgvmtmvntqvmtkvnmyzmtdkzgitnmy0nc00ntg2ltk0nzetmzrjmtgxntdly2y4l3jly2vudcbwag90b3mylmpwzyjdlfsiccisinrodw1iiiwimtiwmhg4njajil1d?sha=11873c8196cc3ef4" />
+<img src="/media/W1siZiIsIjIwMTcvMDkvMTgvMTMvNTMvMzcvZWQyMGQwZjUtNTZiYy00MGI1LWJiMDctMWQwM2ZkMjQxYzNmL3JlY2VudCBwaG90b3MuanBnIl0sWyJwIiwidGh1bWIiLCIxMjAweDg2MCMiXV0?sha=02b74b3e3ef2586e" alt="W1siziisijiwmtcvmdkvmtgvmtmvntmvmzcvzwqymgqwzjutntziyy00mgi1lwjimdctmwqwm2zkmjqxyznml3jly2vudcbwag90b3muanbnil0swyjwiiwidgh1bwiilcixmjawedg2mcmixv0?sha=02b74b3e3ef2586e" />
+<img src="/media/W1siZiIsIjIwMTcvMDgvMjkvMTcvMDkvNDcvNWEwZGUxNmUtNGJmNC00ZjBiLWE3OTgtYmY5M2EwYjk5NDg4L3JlY2VudCBwaG90b3MyLmpwZyJdLFsicCIsInRodW1iIiwiMTIwMHg4NjAjIl1d?sha=189c39f96861b5e1" alt="W1siziisijiwmtcvmdgvmjkvmtcvmdkvndcvnwewzguxnmutngjmnc00zjbilwe3otgtymy5m2ewyjk5ndg4l3jly2vudcbwag90b3mylmpwzyjdlfsiccisinrodw1iiiwimtiwmhg4njajil1d?sha=189c39f96861b5e1" />
+<img src="/media/W1siZiIsIjIwMTcvMDgvMjkvMTcvMDkvMTkvYjJlZTQ3YjYtYjNhYS00MDYxLThiODUtZjAyZGQ0ODJmMjg5L3JlY2VudCBwaG90b3MuanBnIl0sWyJwIiwidGh1bWIiLCIxMjAweDg2MCMiXV0?sha=7929ba41198ffd4a" alt="W1siziisijiwmtcvmdgvmjkvmtcvmdkvmtkvyjjlztq3yjytyjnhys00mdyxlthiodutzjayzgq0odjmmjg5l3jly2vudcbwag90b3muanbnil0swyjwiiwidgh1bwiilcixmjawedg2mcmixv0?sha=7929ba41198ffd4a" />
+<img src="/media/W1siZiIsIjIwMTcvMDgvMjkvMTcvMDEvNTEvODMzYTIzMjAtYmNlNC00MzM2LTk1NGEtNTlkMGJlZmI4YWI2L3JlY2VudCBwaG90b3MyLmpwZyJdLFsicCIsInRodW1iIiwiMTIwMHg4NjAjIl1d?sha=62f76bc3d0b4bc18" alt="W1siziisijiwmtcvmdgvmjkvmtcvmdevntevodmzytizmjatymnlnc00mzm2ltk1ngetntlkmgjlzmi4ywi2l3jly2vudcbwag90b3mylmpwzyjdlfsiccisinrodw1iiiwimtiwmhg4njajil1d?sha=62f76bc3d0b4bc18" />
+<img src="/media/W1siZiIsIjIwMTcvMDgvMjkvMTYvNTgvNTcvZTk3Mjk1N2UtMTAwYy00ZGEzLTg1ZmYtYmE5MGNmMTYwYjEwL3JlY2VudCBwaG90b3MuanBnIl0sWyJwIiwidGh1bWIiLCIxMjAweDg2MCMiXV0?sha=025da714939e7a14" alt="W1siziisijiwmtcvmdgvmjkvmtyvntgvntcvztk3mjk1n2utmtawyy00zgezltg1zmytyme5mgnmmtywyjewl3jly2vudcbwag90b3muanbnil0swyjwiiwidgh1bwiilcixmjawedg2mcmixv0?sha=025da714939e7a14" />
+<img src="/media/W1siZiIsIjIwMTcvMDgvMTcvMTAvMzkvMTYvNTQ3ZDUzZGUtOTNhOS00Yzg5LTljZTEtZWI2MTVlNzY5NmEyL0F1Z3VzdCAxNjIuanBnIl0sWyJwIiwidGh1bWIiLCIxMjAweDg2MCMiXV0?sha=23b8368ec424c2e3" alt="W1siziisijiwmtcvmdgvmtcvmtavmzkvmtyvntq3zduzzgutotnhos00yzg5ltljztetzwi2mtvlnzy5nmeyl0f1z3vzdcaxnjiuanbnil0swyjwiiwidgh1bwiilcixmjawedg2mcmixv0?sha=23b8368ec424c2e3" />
+<img src="/media/W1siZiIsIjIwMTcvMDgvMTcvMTAvMzgvMjYvOWJmNGYwYzQtNWIwNi00YmEyLWE4MDEtZjBjZTBkOTM3ZmZkL0F1Z3VzdCAxNi5qcGciXSxbInAiLCJ0aHVtYiIsIjEyMDB4ODYwIyJdXQ?sha=6426f7ff1f6cafe4" alt="W1siziisijiwmtcvmdgvmtcvmtavmzgvmjyvowjmngywyzqtnwiwni00ymeylwe4mdetzjbjztbkotm3zmzkl0f1z3vzdcaxni5qcgcixsxbinailcj0ahvtyiisijeymdb4odywiyjdxq?sha=6426f7ff1f6cafe4" />
+<img src="/media/W1siZiIsIjIwMTcvMDYvMjcvMTAvMDgvMTYvNTlkYTFkNmYtMzFiMi00NTkyLThkZDUtNDU0OTY4NjJhMzg0L3N0cDIuanBnIl0sWyJwIiwidGh1bWIiLCIxMjAweDg2MCMiXV0?sha=521e42cd920e6d78" alt="W1siziisijiwmtcvmdyvmjcvmtavmdgvmtyvntlkytfknmytmzfimi00ntkylthkzdutndu0oty4njjhmzg0l3n0cdiuanbnil0swyjwiiwidgh1bwiilcixmjawedg2mcmixv0?sha=521e42cd920e6d78" />
+<img src="/media/W1siZiIsIjIwMTcvMDYvMjcvMTAvMDcvMzEvYmUzZjFmMzQtMmMxOC00ODEwLWJlNDYtYWZmNjZkYTM4NjEwL3N0cC5qcGciXSxbInAiLCJ0aHVtYiIsIjEyMDB4ODYwIyJdXQ?sha=73144aefedcf85e2" alt="W1siziisijiwmtcvmdyvmjcvmtavmdcvmzevymuzzjfmmzqtmmmxoc00odewlwjlndytywzmnjzkytm4njewl3n0cc5qcgcixsxbinailcj0ahvtyiisijeymdb4odywiyjdxq?sha=73144aefedcf85e2" />
+<img src="/media/W1siZiIsIjIwMTcvMDYvMjcvMDkvNTUvMTUvY2E5Y2U0M2EtMmQ3My00ZjFiLTlkOGMtZGVjNzFhNTE4ZWE5L011bHRpLWdyaW5kLmpwZyJdLFsicCIsInRodW1iIiwiMTIwMHg4NjAjIl1d?sha=4c0bbb00c7f8249c" alt="W1siziisijiwmtcvmdyvmjcvmdkvntuvmtuvy2e5y2u0m2etmmq3my00zjfiltlkogmtzgvjnzfhnte4zwe5l011bhrplwdyaw5klmpwzyjdlfsiccisinrodw1iiiwimtiwmhg4njajil1d?sha=4c0bbb00c7f8249c" />
+<img src="/media/W1siZiIsIjIwMTcvMDQvMjgvMTQvMjcvMDcvNTVkNTAwYzgtZjBhYy00N2RlLWI0ODgtZDBjNDBmYjA0NmM2L2JlYXJzLWVtZXJnZS1oaWJlcm5hdGlvbi5qcGciXSxbInAiLCJ0aHVtYiIsIjEyMDB4ODYwIyJdXQ?sha=e5d6f1f593b596cf" alt="W1siziisijiwmtcvmdqvmjgvmtqvmjcvmdcvntvkntawyzgtzjbhyy00n2rllwi0odgtzdbjndbmyja0nmm2l2jlyxjzlwvtzxjnzs1oawjlcm5hdglvbi5qcgcixsxbinailcj0ahvtyiisijeymdb4odywiyjdxq?sha=e5d6f1f593b596cf" />
+</div>
+</div>
+<div class='feature-block__content'>
+<div class='container-inner'>
+<h3 class='feature-block__title'>Recent Photos</h3>
+</div>
+</div>
+<a data-target='#gallery_modal' data-toggle='modal' href='#gallery_modal'></a>
+</div>
+</li>
+</ul>
+<div class='conditions-snow-report'>
+<a class='anchor' name='snowreport'></a>
+<div class='conditions-snow-report__title ac ac-hidden' data-vp-add-class='fadeIn animated'>
+<h2>Snow Report</h2>
+</div>
+<div class='conditions-snow-report__content'>
+<div class='winter season_toggle conditions-snow-report__season-toggle'>
+<ul class='conditions-snow-report__stats-day ac ac-hidden' data-vp-add-class='fadeIn animated'>
+<li>
+<p>12hrs</p>
+<h3 class='metric'>
 0cm
-</div>
-<div class='imperial' style='display: none;'>
+</h3>
+<h3 class='imperial' style='display: none;'>
 0in
-</div>
-</td>
-<td width='105'>
-Overnight
-</td>
-</tr>
-<tr>
-<td width='64'>
-<div class='metric'>
-7cm
-</div>
-<div class='imperial' style='display: none;'>
-2in
-</div>
-</td>
-<td width='105'>
-24hrs
-</td>
-</tr>
-<tr>
-<td>
-<div class='metric'>
-14cm
-</div>
-<div class='imperial' style='display: none;'>
+</h3>
+</li>
+<li>
+<p>Overnight</p>
+<h3 class='metric'>
+0cm
+</h3>
+<h3 class='imperial' style='display: none;'>
+0in
+</h3>
+</li>
+<li>
+<p>24hrs</p>
+<h3 class='metric'>
+0cm
+</h3>
+<h3 class='imperial' style='display: none;'>
+0in
+</h3>
+</li>
+<li>
+<p>48hrs</p>
+<h3 class='metric'>
+0cm
+</h3>
+<h3 class='imperial' style='display: none;'>
+0in
+</h3>
+</li>
+</ul>
+<ul class='conditions-snow-report__stats-season ac ac-hidden' data-vp-add-class='fadeIn animated'>
+<li>
+<p>Seven Days</p>
+<h3 class='metric'>
+24cm
+</h3>
+<h3 class='imperial' style='display: none;'>
+9in
+</h3>
+</li>
+<li>
+<p>Total This Season</p>
+<h3 class='metric'>
+24cm
+</h3>
+<h3 class='imperial' style='display: none;'>
+9in
+</h3>
+</li>
+<li>
+<p>Total Snowmaking</p>
+<h3 class='metric'>
+13cm
+</h3>
+<h3 class='imperial' style='display: none;'>
 5in
-</div>
-</td>
-<td>48hrs</td>
-</tr>
-<tr>
-<td>
-<div class='metric'>
-20cm
-</div>
-<div class='imperial' style='display: none;'>
-7in
-</div>
-</td>
-<td>7 days</td>
-</tr>
-<tr>
-<td>
-<div class='metric'>
-550cm
-</div>
-<div class='imperial' style='display: none;'>
-216in
-</div>
-</td>
-<td>Total this season</td>
-</tr>
-<tr>
-<td>
-<div class='metric'>
-30cm
-</div>
-<div class='imperial' style='display: none;'>
-11in
-</div>
-</td>
-<td>Total Snowmaking</td>
-</tr>
-</table>
-</div>
-<div class='mountain'>
-<span class='peak'>
-<div class='metric'>
-322cm
-</div>
-<div class='imperial' style='display: none;'>
-126in
-</div>
-</span>
-<span class='plateau'>
-<div class='metric'>
-240cm
-</div>
-<div class='imperial' style='display: none;'>
-94in
-</div>
-</span>
-</div>
-</div>
-<div class='grid first'>
-<h3>
-<a href="/skyride">Skyride</a>
-<span class='open'>
-Open
-</span>
 </h3>
-<img src='/images/conditions/skyride.jpg'>
-<p class='caption'>
-8:30am - 10:00pm
-</p>
-</div>
-<div class='grid'>
-<h3>
-<a href="/zipline">Ziplines</a>
-<span class='open'>
-Open
-</span>
+</li>
+<li>
+<p>Depth Peak</p>
+<h3 class='metric'>
+24cm
 </h3>
-<img src='/images/conditions/zipline.jpg'>
-<p class='caption'>
-10:00am - 3:00pm
-</p>
-</div>
-<div class='grid'>
-<h3>
-<a href="/eye-of-the-wind">The Eye of the Wind</a>
-<span class='standby'>
-Standby
-</span>
+<h3 class='imperial' style='display: none;'>
+9in
 </h3>
-<img src='/images/conditions/viewpod.jpg'>
-<p class='caption'>
-10:00am - 3:00pm 
-</p>
-</div>
-<div class='grid-last'>
-<h3>
-<a href="/snowshoe-grind">Snowshoe Grind</a>
-<span class='open'>
-Open
-</span>
+</li>
+<li>
+<p>Depth Plateau</p>
+<h3 class='metric'>
+24cm
 </h3>
-<img src='/images/conditions/snowshoe_grind.jpg'>
-<p class='caption'>
-8:30am - dusk
-</p>
+<h3 class='imperial' style='display: none;'>
+9in
+</h3>
+</li>
+</ul>
 </div>
-<div class='conditions_tabs'>
+</div>
+</div>
+<div class='conditions-audio-report ac ac-hidden' data-vp-add-class='fadeIn animated'>
+<h3>Snow Phone</h3>
+<div class='conditions-audio-report__content'>
+<iframe align='left' frameborder='no' height='19' id='audioReport' scrolling='no' src='' width='86%'></iframe>
+</div>
+</div>
+<script>
+  $(document).ready(function(){
+   $.getJSON("https://api.soundcloud.com/users/206749043/tracks?client_id=4252ce9a8569588af79743aa046518e9", function(data){
+     $('#audioReport').attr('src', 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/'+data[0].id+'&color=801429&inverse=false&auto_play=false&show_user=false')
+     $('#audioReportWidget').attr('src', 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/'+data[0].id+'&color=801429&inverse=true&auto_play=false&show_user=false')
+   });
+  }());
+</script>
+<div class='conditions-alert ac ac-hidden' data-vp-add-class='fadeIn animated'>
+<h3>Announcements</h3>
+<div class='conditions-alert__content'>
+<div>Great news - we're excited to announce that we'll be kicking off the 2017.2018 winter season this Friday at 3pm! Skiing and riding will be available on Paradise via the Greenway Chairlift as well as on The Cut to mid-station via the Screaming Eagle Express Chairlift. The Paradise Rookie Park and The Cut Park will be open with features for all abilities. Skiing and riding will be available weekdays 3pm-10pm and weekends &amp; holidays from 9am-10pm. Check back frequently for updates on additional terrain and extended hours. Our 8,000-square foot mountaintop Ice Skating Pond is now open 9am - 10pm! Rentals will be available from Alpine Guest Services.&nbsp;</div>
+</div>
+</div>
+<div class='conditions_tabs' id='conditions'>
 <ul class='tabs'>
 <li>
-<a class='active' href='#lifts'>
+<a class='active' href='#activities'>
+Activities &amp; Attractions
+</a>
+</li>
+<li>
+<a href='#dining'>
+Dining
+</a>
+</li>
+<li>
+<a href='#lifts'>
 Lifts
 </a>
 </li>
@@ -239,3347 +1268,1235 @@ Terrain Parks
 </li>
 <li>
 <a href='#munday'>
-Munday Alpine Park
-</a>
-</li>
-<li>
-<a href='#activities'>
-Activities &amp; Attractions
+Munday Snowshoe Park
 </a>
 </li>
 </ul>
 <div class='tab_container'>
-<div class='tab' id='lifts'>
-<table width='538'>
-<tr>
-<th width='438'>
-<h2>Lift Operations</h2>
-</th>
-<th>Status</th>
-</tr>
-<tr>
-<td>
-Olympic Express High-Speed Quad Chair
-<!-- .note -->
-<!-- This is where a note for this lift could go. -->
-</td>
-<td class='status'>
-<span class='open'>
-Open
+<div class='tab' id='activities'>
+<h2>Activities &amp; Attractions</h2>
+<ul class='data-table'>
+<li>
+<span>
+<a class='button-text button-text--next-primary' href='/skyride'>
+Skyride
+</a>
 </span>
-<img src='/images/conditions/night.png'>
-</td>
-</tr>
-<tr>
-<td>
-Peak Quad Chair
-<!-- .note -->
-<!-- This is where a note for this lift could go. -->
-</td>
-<td class='status'>
-<span class='scheduled to open'>
-Scheduled to Open
-</span>
-<img src='/images/conditions/night.png'>
-</td>
-</tr>
-<tr>
-<td>
-Screaming Eagle High-Speed Quad Chair
-<!-- .note -->
-<!-- This is where a note for this lift could go. -->
-</td>
-<td class='status'>
-<span class='open'>
-Open
-</span>
-<img src='/images/conditions/night.png'>
-</td>
-</tr>
-<tr>
-<td>
-Greenway Quad Chair
-<!-- .note -->
-<!-- This is where a note for this lift could go. -->
-</td>
-<td class='status'>
-<span class='open'>
-Open
-</span>
-<img src='/images/conditions/night.png'>
-</td>
-</tr>
-<tr>
-<td>
-Magic Carpet
-<!-- .note -->
-<!-- This is where a note for this lift could go. -->
-</td>
-<td class='status'>
-<span class='open'>
-Open
-</span>
-<img src='/images/conditions/night.png'>
-</td>
-</tr>
-</table>
-<div class='legend'>
-<span class='scheduled'>Scheduled to Open</span>
-<span class='night'>Night</span>
-</div>
-</div>
-<div class='tab' id='runs' style='display: none'>
-<table width='538'>
-<tr>
-<th width='150'>
-<h2>Run Status</h2>
-</th>
-<th width='113'>
-<br>
-Status
-</th>
-<th width='162'>
-<br>
-</th>
-<th width='113'>
-<br>
-Status
-</th>
-</tr>
-<tr>
-<td>
-Blue Face
-<!-- .note -->
-<!-- This is where a note for this lift could go. -->
-</td>
-<td class='status'>
-<span class='open'>
-Open
-</span>
-</td>
-<td>
-Blazes
-<!-- .note -->
-<!-- This is where a note for this lift could go. -->
-</td>
-<td class='status'>
-<span class='open'>
-Open
-</span>
-</td>
-</tr>
-<tr>
-<td>
-Centennial
-<!-- .note -->
-<!-- This is where a note for this lift could go. -->
-</td>
-<td class='status'>
-<span class='open'>
-Open
-</span>
-<img src='/images/conditions/night.png'>
-</td>
-<td>
-Chalet Road
-<!-- .note -->
-<!-- This is where a note for this lift could go. -->
-</td>
-<td class='status'>
-<span class='open'>
-Open
-</span>
-<img src='/images/conditions/night.png'>
-</td>
-</tr>
-<tr>
-<td>
-Coffin
-<!-- .note -->
-<!-- This is where a note for this lift could go. -->
-</td>
-<td class='status'>
-<span class='open'>
-Open
-</span>
-</td>
-<td>
-Deliverance
-<!-- .note -->
-<!-- This is where a note for this lift could go. -->
-</td>
-<td class='status'>
-<span class='open'>
-Open
-</span>
-<img src='/images/conditions/night.png'>
-</td>
-</tr>
-<tr>
-<td>
-Devil's Advocate
-<!-- .note -->
-<!-- This is where a note for this lift could go. -->
-</td>
-<td class='status'>
-<span class='open'>
-Open
-</span>
-</td>
-<td>
-Dogleg
-<!-- .note -->
-<!-- This is where a note for this lift could go. -->
-</td>
-<td class='status'>
-<span class='open'>
-Open
-</span>
-<img src='/images/conditions/night.png'>
-</td>
-</tr>
-<tr>
-<td>
-Expo
-<!-- .note -->
-<!-- This is where a note for this lift could go. -->
-</td>
-<td class='status'>
-<span class='open'>
-Open
-</span>
-<img src='/images/conditions/night.png'>
-</td>
-<td>
-Hades
-<!-- .note -->
-<!-- This is where a note for this lift could go. -->
-</td>
-<td class='status'>
-<span class='open'>
-Open
-</span>
-</td>
-</tr>
-<tr>
-<td>
-Heaven's Sake
-<!-- .note -->
-<!-- This is where a note for this lift could go. -->
-</td>
-<td class='status'>
-<span class='open'>
-Open
-</span>
-<img src='/images/conditions/night.png'>
-</td>
-<td>
-Inferno
-<!-- .note -->
-<!-- This is where a note for this lift could go. -->
-</td>
-<td class='status'>
-<span class='open'>
-Open
-</span>
-</td>
-</tr>
-<tr>
-<td>
-Lower Buckhorn
-<!-- .note -->
-<!-- This is where a note for this lift could go. -->
-</td>
-<td class='status'>
-<span class='open'>
-Open
-</span>
-</td>
-<td>
-Lower Peak
-<!-- .note -->
-<!-- This is where a note for this lift could go. -->
-</td>
-<td class='status'>
-<span class='open'>
-Open
-</span>
-<img src='/images/conditions/night.png'>
-</td>
-</tr>
-<tr>
-<td>
-Lower Side Cut
-<!-- .note -->
-<!-- This is where a note for this lift could go. -->
-</td>
-<td class='status'>
-<span class='open'>
-Open
-</span>
-<img src='/images/conditions/night.png'>
-</td>
-<td>
-Outer Limits
-<!-- .note -->
-<!-- This is where a note for this lift could go. -->
-</td>
-<td class='status'>
-<span class='open'>
-Open
-</span>
-</td>
-</tr>
-<tr>
-<td>
-Paper Trail
-<!-- .note -->
-<!-- This is where a note for this lift could go. -->
-</td>
-<td class='status'>
-<span class='open'>
-Open
-</span>
-</td>
-<td>
-Paradise
-<!-- .note -->
-<!-- This is where a note for this lift could go. -->
-</td>
-<td class='status'>
-<span class='open'>
-Open
-</span>
-<img src='/images/conditions/night.png'>
-</td>
-</tr>
-<tr>
-<td>
-Peak
-<!-- .note -->
-<!-- This is where a note for this lift could go. -->
-</td>
-<td class='status'>
-<span class='open'>
-Open
-</span>
-<img src='/images/conditions/night.png'>
-</td>
-<td>
-Purgatory
-<!-- .note -->
-<!-- This is where a note for this lift could go. -->
-</td>
-<td class='status'>
-<span class='open'>
-Open
-</span>
-</td>
-</tr>
-<tr>
-<td>
-Side Cut
-<!-- .note -->
-<!-- This is where a note for this lift could go. -->
-</td>
-<td class='status'>
-<span class='open'>
-Open
-</span>
-<img src='/images/conditions/night.png'>
-</td>
-<td>
-Ski Wee
-<!-- .note -->
-<!-- This is where a note for this lift could go. -->
-</td>
-<td class='status'>
-<span class='open'>
-Open
-</span>
-<img src='/images/conditions/night.png'>
-</td>
-</tr>
-<tr>
-<td>
-Skyline
-<!-- .note -->
-<!-- This is where a note for this lift could go. -->
-</td>
-<td class='status'>
-<span class='open'>
-Open
-</span>
-</td>
-<td>
-The Cut
-<!-- .note -->
-<!-- This is where a note for this lift could go. -->
-</td>
-<td class='status'>
-<span class='open'>
-Open
-</span>
-<img src='/images/conditions/night.png'>
-</td>
-</tr>
-<tr>
-<td>
-Tyee Chute
-<!-- .note -->
-<!-- This is where a note for this lift could go. -->
-</td>
-<td class='status'>
-<span class='open'>
-Open
-</span>
-<img src='/images/conditions/night.png'>
-</td>
-<td>
-Upper Buckhorn
-<!-- .note -->
-<!-- This is where a note for this lift could go. -->
-</td>
-<td class='status'>
-<span class='open'>
-Open
-</span>
-</td>
-</tr>
-</table>
-<div class='legend'>
-<span class='scheduled'>Scheduled to Open</span>
-<span class='night'>Night</span>
-</div>
-</div>
-<div class='tab' id='parks' style='display: none'>
-<table width='538'>
-<tr>
-<th width='438'>
-<h2>Terrain Parks</h2>
-</th>
-<th>Status</th>
-</tr>
-<tr>
-<td>
-Quiksilver Terrain Park
+<span>
 <div class='details'>
-• Flat Up - L 
-• Mario Tube - XL 
-• 40’ Jump - L 
-• 25’ Box - M 
-• Lift Tower Tube - M 
-• Down C Rail - L 
-• DFD Box - XL 
-• Showdown Rail - L 
-• DFD Rail - L 
-• Pole Jam - XL 
-• Rain Rail - XL 
-• Pole Jam Tube – XL
+8:45am-10:00pm
 </div>
-</td>
-<td class='status'>
+<div class='note'>
+
+</div>
+</span>
 <span class='open'>
 Open
 </span>
-</td>
-</tr>
-<tr>
-<td>
-The Cut Jump Line
-</td>
-<td class='status'>
+</li>
+<li>
+<span>
+<a class='button-text button-text--next-primary' href='/zipline'>
+Ziplines
+</a>
+</span>
+<span>
+<div class='details'>
+10:00am-4:00pm
+</div>
+<div class='note'>
+
+</div>
+</span>
 <span class='closed'>
 Closed
 </span>
-</td>
-</tr>
-<tr>
-<td>
-Cut Jib Park
-<div class='details'>
-• 5’ Jump - SM 
-• 10’ Jump - SM 
-• 20’ Jump - M 
-• Down Box - M 
-• 8’ Box - S 
-• 16’ Box - S 
-• 20’ Box - M 
-• Hip - M
-</div>
-</td>
-<td class='status'>
-<span class='open'>
-Open
-</span>
-</td>
-</tr>
-</table>
-</div>
-<div class='tab' id='munday' style='display: none'>
-<table width='538'>
-<tr>
-<th width='438'>
-<h2>Munday Alpine Park</h2>
-</th>
-<th>Status</th>
-</tr>
-<tr>
-<td>
-Blue Grouse Loop
-<!-- .note -->
-<!-- This is where a note for this lift could go. -->
-</td>
-<td class='status'>
-<span class='open'>
-Open
-</span>
-</td>
-</tr>
-<tr>
-<td>
-Dam Mountain Loop
-<!-- .note -->
-<!-- This is where a note for this lift could go. -->
-</td>
-<td class='status'>
-<span class='open'>
-Open
-</span>
-</td>
-</tr>
-<tr>
-<td>
-Discovery Loop
-<!-- .note -->
-<!-- This is where a note for this lift could go. -->
-</td>
-<td class='status'>
-<span class='open'>
-Open
-</span>
-</td>
-</tr>
-<tr>
-<td>
-Snowshoe Grind
-<!-- .note -->
-<!-- This is where a note for this lift could go. -->
-</td>
-<td class='status'>
-<span class='open'>
-Open
-</span>
-</td>
-</tr>
-<tr>
-<td>
-Whistler Water Way
-<!-- .note -->
-<!-- This is where a note for this lift could go. -->
-</td>
-<td class='status'>
-<span class='open'>
-Open
-</span>
-</td>
-</tr>
-</table>
-</div>
-<div class='tab' id='activities' style='display: none'>
-<table width='538'>
-<tr>
-<th width='438'>
-<h2>Activities &amp; Attractions</h2>
-</th>
-<th>Status</th>
-</tr>
-<tr>
-<td>
-<strong>
-Skyride
-</strong>
-<div class='details'>
-8:30am - 10:00pm
-</div>
-<div class='note'>
-
-</div>
-</td>
-<td class='status'>
-<span class='open'>
-Open
-</span>
-</td>
-</tr>
-<tr>
-<td>
-<strong>
-Ziplines
-</strong>
-<div class='details'>
-10:00am - 3:00pm
-</div>
-<div class='note'>
-
-</div>
-</td>
-<td class='status'>
-<span class='open'>
-Open
-</span>
-</td>
-</tr>
-<tr>
-<td>
-<strong>
+</li>
+<li>
+<span>
+<a class='button-text button-text--next-primary' href='/eye-of-the-wind'>
 The Eye of the Wind
-</strong>
+</a>
+</span>
+<span>
 <div class='details'>
-10:00am - 3:00pm 
+10:30am-6:00pm
 </div>
 <div class='note'>
 
 </div>
-</td>
-<td class='status'>
+</span>
 <span class='standby'>
 Standby
 </span>
-</td>
-</tr>
-<tr>
-<td>
-<strong>
-Snowshoe Grind
-</strong>
-<div class='details'>
-8:30am - dusk
-</div>
-<div class='note'>
-
-</div>
-</td>
-<td class='status'>
-<span class='open'>
-Open
-</span>
-</td>
-</tr>
-<tr>
-<td>
-<strong>
-Mountaintop Skating Pond
-</strong>
-<div class='details'>
-9:00am - 10:00pm
-</div>
-<div class='note'>
-
-</div>
-</td>
-<td class='status'>
-<span class='open'>
-Open
-</span>
-</td>
-</tr>
-<tr>
-<td>
-<strong>
-Theatre in the Sky
-</strong>
-<div class='details'>
-9:00am - 9:30pm
-</div>
-<div class='note'>
-
-</div>
-</td>
-<td class='status'>
-<span class='open'>
-Open
-</span>
-</td>
-</tr>
-<tr>
-<td>
-<strong>
-Sleigh Ride
-</strong>
-<div class='details'>
-9:00am - 9:00pm
-</div>
-<div class='note'>
-
-</div>
-</td>
-<td class='status'>
-<span class='open'>
-Open
-</span>
-</td>
-</tr>
-<tr>
-<td>
-<strong>
-Ski/Ride
-</strong>
-<div class='details'>
-8:30am - 10:00pm
-</div>
-<div class='note'>
-
-</div>
-</td>
-<td class='status'>
-<span class='open'>
-Open
-</span>
-</td>
-</tr>
-</table>
-<br class='clear'>
-<br>
-<br>
-</div>
-</div>
-<div class='clear'></div>
-</div>
-<div class='clear'></div>
-<div class='clear'></div>
-</div>
-<div class='clear'></div>
-</div>
-
-<div id='background_data' style='display: none;'>
-<ul>
-<li data-gravity='c' data-link_url='' data-url='/media/BAhbCFsHOgZmSSI2MjAxMS8wNS8xMy8wMF8wNV80M182MjJfZGRpX3RzX2dyX3dpbnRlcl8yMjYzLmpwZwY6BkVUWwg6BnA6FHJlc2l6ZV9hbmRfY3JvcHsIOgp3aWR0aGkCeAU6C2hlaWdodGkC6AM6DGdyYXZpdHlJIgAGOwZUWwg6BmU6CGpwZ0kiEC1xdWFsaXR5IDgwBjsGRg'></li>
-</ul>
-</div>
-
-</div>
-<!-- wrapper -->
-<div id='nav'>
-<div class='header'>
-<h1>
-<a href='/' title='Grouse Mountain'>Grouse Mountain - The Peak of Vancouver</a>
-</h1>
-<ul class='acct_options'>
-<li class='n_account_trigger'>
-<a href='#login'>
-<span class='icon'>My Account</span>
-<span class='hover' style='display: none;'>
-<img src='/stylesheets/images/nav_account_hover.png'>
-</span>
-</a>
-</li>
-<li class='n_cart_trigger last'>
-<a href='#cart_preview'>
-<span class='icon'>Cart</span>
-<span class='count' id='mini_cart_badge'>
-0
-</span>
-<span class='hover' style='display: none;'>
-<img src='/stylesheets/images/nav_cart_hover.png'>
-</span>
-</a>
-</li>
-</ul>
-</div>
-
-<div class='nav_content'>
-<div class='user_nav'>
-<a class='user open_grid show_login' href='#login'>Login</a>
-</div>
-<ul class='primary_nav'>
-<li>
-<a href='#tickets-passes'><img src='/media/BAhbBlsHOgZmSSIqMjAxMS8wNS8xMC8xNl80M18xN18xNTRfaWNvbl9wYXNzLnBuZwY6BkVU'>Tickets &amp; Passes
-</a>
 </li>
 <li>
-<a href='#news'><img src='/media/BAhbBlsHOgZmSSIqMjAxMS8wNS8xMC8xNl80M180Ml8yMDVfaWNvbl9pbmZvLnBuZwY6BkVU'>News &amp; Events
-</a>
-</li>
-<li>
-<a href='/current_conditions'><img src='/media/BAhbBlsHOgZmSSItMjAxMS8wNS8xMC8xNl80M181MF81NTRfaWNvbl93ZWF0aGVyLnBuZwY6BkVU'>Current Conditions
-</a>
-</li>
-</ul>
-<!-- /primary_nav -->
-<h2>Explore the Mountain</h2>
-<ul class='secondary_nav'>
-<li>
-<a class='icon' href='#winter-activities'><img src='/media/BAhbBlsHOgZmSSIxMjAxMS8wNi8wMy8xMV80N18xMV81NjBfaWNvbl9hY3Rpdml0aWVzMi5wbmcGOgZFVA'></a>
-<a class='text' href='#winter-activities'>
-Activities Guide
-</a>
-</li>
-<li>
-<a class='icon' href='/mountain-map'><img src='/media/BAhbBlsHOgZmSSIqMjAxMS8wNi8wMy8xMV80N18wMF8xMDNfaWNvbl9tYXAyLnBuZwY6BkVU'></a>
-<a class='text'>
-Mountain Map
-</a>
-</li>
-<li>
-<a class='icon' href='http://www.grousemountain.com/chalet-webcam'><img src='/media/BAhbBlsHOgZmSSItMjAxMi8xMi8wNy8xNi8yMS8xNC80MDQvaWNvbl93ZWJjYW0yLnBuZwY6BkVU'></a>
-<a class='text'>
-Chalet Cam
-</a>
-</li>
-<li>
-<a class='icon' href='#dining'><img src='/media/BAhbBlsHOgZmSSItMjAxMS8wNi8wMy8xMV80Nl81MF84NjVfaWNvbl9kaW5pbmcyLnBuZwY6BkVU'></a>
-<a class='text' href='#dining'>
-Dining
-</a>
-</li>
-<li>
-<a class='icon' href='/ideas-reviews'><img src='/media/BAhbBlsHOgZmSSIxMjAxMi8xMC8yNi8xNy8wMC80OS82MDAvaWNvbl9hY3Rpdml0aWVzMi5wbmcGOgZFVA'></a>
-<a class='text'>
-Ideas &amp; Feedback
-</a>
-</li>
-<li>
-<a class='icon' href='#ski-snowboard-school'><img src='/media/BAhbBlsHOgZmSSItMjAxMS8wNi8wMy8xMV80NV80MF8yNjZfaWNvbl9zY2hvb2wyLnBuZwY6BkVU'></a>
-<a class='text' href='#ski-snowboard-school'>
-Ski/Board School
-</a>
-</li>
-</ul>
-<h2>General Info</h2>
-<ul class='tertiary_nav'>
-<li>
-<a href='/location-hours'>
-Location/Hours
-</a>
-</li>
-<li>
-<a href='#private-functions'>
-Private Functions
-</a>
-</li>
-<li>
-<a href='#blog'>
-Blogs
-</a>
-</li>
-<li>
-<a href='/about'>
-About Us
-</a>
-</li>
-<li>
-<a href='/weddings'>
-Weddings
-</a>
-</li>
-<li>
-<a href='/media-press'>
-Media &amp; Press
-</a>
-</li>
-<li>
-<a href='/wildlife-refuge'>
-Wildlife Refuge
-</a>
-</li>
-<li>
-<a href='/group-rates'>
-Group Rates
-</a>
-</li>
-<li>
-<a href='#education'>
-Education
-</a>
-</li>
-<li>
-<a href='/careers'>
-Careers
-</a>
-</li>
-<li>
-<a href='#balance'>
-Check Gift Card
-</a>
-</li>
-<li>
-<a href='/contact'>
-Contact Us
-</a>
-</li>
-<li>
-<a href='#activities-guide'>
-Activities Guide|Winter|Summer
-</a>
-</li>
-</ul>
-<br class='clear'>
-<div class='copy'>
-<p>
-&copy;
-2013
-All Rights Reserved.
-<a href='/privacy'>Privacy</a>
-|
-<a href='/legal'>Legal</a>
-</p>
-</div>
-</div>
-</div>
-
-<div id='pullout'>
-  <div class='panel' id='winter-activities' style='display: none'>
-<div class='title'>
-<h2>
-Activities Guide - Winter
-</h2>
-<a class='close_panel' href='#'>Close</a>
-</div>
-<!-- /title -->
-<ul class='grid3' data-dom_id='grid_52570'>
-<!-- %li{:id => dom_id(c), :class => "cell_#{i + 1}"} -->
-  <li class='cell_1' id='container_grid_cell_186553'>
-<a class='cell_link' href='/ski-board-tickets' id='container_text_186555'>
-<span class='grid_heading' id='container_text_186554'>
-
-Skiing &amp; Snowboarding
-
-</span>
-  <div class='media' data-parent_container_class='gridcell' id='container_media_186556'>
-  <div class='img' data-url='/media/BAhbB1sHOgZmSSI2MjAxMS8wNS8xMC8yMF80Nl8xN18zOTRfZGRpX3RzX2dyX3dpbnRlcl8wMzE2LmpwZwY6BkVUWwg6BnA6CnRodW1iSSINNDYxeDIxMCMGOwZG'></div>
-
-
-</div>
-
-
-<div class='grid_caption'>
-<div class='caption' id='container_text_186558'>
-See how Vancouver does winter.
-</div>
-</div>
-</a>
-</li>
-
-
-<!-- %li{:id => dom_id(c), :class => "cell_#{i + 1}"} -->
-  <li class='cell_2' id='container_grid_cell_186559'>
-<a class='cell_link' href='/snowshoe' id='container_text_186561'>
-<span class='grid_heading' id='container_text_186560'>
-Snowshoeing
-</span>
-  <div class='media' data-parent_container_class='gridcell' id='container_media_186562'>
-  <div class='img' data-url='/media/BAhbB1sHOgZmSSI2MjAxMS8wNS8xNC8xN18xM181NV81MTlfZGRpX3RzX2dyX3dpbnRlcl8xMDIwLmpwZwY6BkVUWwg6BnA6CnRodW1iSSINMzAweDIxMCMGOwZG'></div>
-
-
-</div>
-
-
-<div class='grid_caption'>
-<div class='caption' id='container_text_186564'>
-See why this is winter's fastest-growing sport.
-</div>
-</div>
-</a>
-</li>
-
-
-<!-- %li{:id => dom_id(c), :class => "cell_#{i + 1}"} -->
-  <li class='cell_3' id='container_grid_cell_186565'>
-<a class='cell_link' href='/peak-of-christmas' id='container_text_186567'>
-<span class='grid_heading' id='container_text_186566'>
-The Peak of Christmas
-</span>
-  <div class='media' data-parent_container_class='gridcell' id='container_media_186568'>
-  <div class='img' data-url='/media/BAhbB1sHOgZmSSIxMjAxMi8xMS8yMC8wOS80OC8xOS8xMzEvR01SX1BPQzIwMTJfVHZhbi5qcGcGOgZFVFsIOgZwOgp0aHVtYkkiDzE1NHgxMjYjc2UGOwZG'></div>
-
-
-</div>
-
-
-<div class='grid_caption'>
-<div class='caption' id='container_text_186570'>
-
-
-
-Our annual month-long holiday festivities.
-</div>
-</div>
-</a>
-</li>
-
-
-<!-- %li{:id => dom_id(c), :class => "cell_#{i + 1}"} -->
-  <li class='cell_4' id='container_grid_cell_186571'>
-<a class='cell_link' href='/sleigh-rides' id='container_text_186573'>
-<span class='grid_heading' id='container_text_186572'>
-Sleigh Rides
-</span>
-  <div class='media' data-parent_container_class='gridcell' id='container_media_186574'>
-  <div class='img' data-url='/media/BAhbB1sHOgZmSSIrMjAxMS8wNS8yNS8yMl8xOV80MV83NzVfZGRpX2ZsXzAwNC5qcGcGOgZFVFsIOgZwOgp0aHVtYkkiDTE1NHgxMjYjBjsGRg'></div>
-
-
-</div>
-
-
-<div class='grid_caption'>
-<div class='caption' id='container_text_186576'>
-
-Cozy up to someone special.
-
-</div>
-</div>
-</a>
-</li>
-
-
-<!-- %li{:id => dom_id(c), :class => "cell_#{i + 1}"} -->
-  <li class='cell_5' id='container_grid_cell_186577'>
-<a class='cell_link' href='/ice-skating' id='container_text_186579'>
-<span class='grid_heading' id='container_text_186578'>
-Ice Skating
-</span>
-  <div class='media' data-parent_container_class='gridcell' id='container_media_186580'>
-  <div class='img' data-url='/media/BAhbB1sHOgZmSSInMjAxMS8wNS8yMC8xOV8zNV8zMl82MjlfU1BfMDEzLmpwZwY6BkVUWwg6BnA6CnRodW1iSSINMTU0eDEyNiMGOwZG'></div>
-
-
-</div>
-
-
-<div class='grid_caption'>
-<div class='caption' id='container_text_186582'>
-Glide on our mountaintop pond.
-</div>
-</div>
-</a>
-</li>
-
-
-<!-- %li{:id => dom_id(c), :class => "cell_#{i + 1}"} -->
-  <li class='cell_6' id='container_grid_cell_186583'>
-<a class='cell_link' href='/snow-limo' id='container_text_186585'>
-<span class='grid_heading' id='container_text_186584'>
-
-Snow-Limo
-
-</span>
-  <div class='media' data-parent_container_class='gridcell' id='container_media_186586'>
-  <div class='img' data-url='/media/BAhbB1sHOgZmSSIuMjAxMS8wNS8yNS8yMl8yMl8yMl8zNjVfc25vX2xpbW9fdGVtcC5qcGcGOgZFVFsIOgZwOgp0aHVtYkkiDTE1NHgxMjYjBjsGRg'></div>
-
-
-</div>
-
-
-<div class='grid_caption'>
-<div class='caption' id='container_text_186588'>
-Let us take you around slopes.
-</div>
-</div>
-</a>
-</li>
-
-
-<!-- %li{:id => dom_id(c), :class => "cell_#{i + 1}"} -->
-  <li class='cell_7' id='container_grid_cell_186589'>
-<a class='cell_link' href='/terrain-parks' id='container_text_186591'>
-<span class='grid_heading' id='container_text_186590'>
-Terrain Parks
-</span>
-  <div class='media' data-parent_container_class='gridcell' id='container_media_186592'>
-  <div class='img' data-url='/media/BAhbB1sHOgZmSSIxMjAxMS8wNS8xNi8xMF8zN18xM183NzBfR01SX1Nub3dib2FyZF9KUy5KUEcGOgZFVFsIOgZwOgp0aHVtYkkiDTE0NngxMjYjBjsGRg'></div>
-
-
-</div>
-
-
-<div class='grid_caption'>
-<div class='caption' id='container_text_186594'>
-Terrain for every level.
-</div>
-</div>
-</a>
-</li>
-
-
-<!-- %li{:id => dom_id(c), :class => "cell_#{i + 1}"} -->
-  <li class='cell_8' id='container_grid_cell_186595'>
-<a class='cell_link' href='/zipline' id='container_text_186597'>
-<span class='grid_heading' id='container_text_186596'>
-Mountain Ziplines
-</span>
-  <div class='media' data-parent_container_class='gridcell' id='container_media_186598'>
-  <div class='img' data-url='/media/BAhbB1sHOgZmSSIsMjAxMS8wNS8xMC8xNl81NF8xNV8yOTZfcHVsbHRpY2tldDUuanBnBjoGRVRbCDoGcDoKdGh1bWJJIg0xNTR4MTI2IwY7BkY'></div>
-
-
-</div>
-
-
-<div class='grid_caption'>
-<div class='caption' id='container_text_186600'>
-Soar at speeds reaching 80km/hr.
-</div>
-</div>
-</a>
-</li>
-
-
-<!-- %li{:id => dom_id(c), :class => "cell_#{i + 1}"} -->
-  <li class='cell_9' id='container_grid_cell_186601'>
-<a class='cell_link' href='/eye-of-the-wind' id='container_text_186603'>
-<span class='grid_heading' id='container_text_186602'>
-The Eye of the Wind
-</span>
-  <div class='media' data-parent_container_class='gridcell' id='container_media_186604'>
-  <div class='img' data-url='/media/BAhbB1sHOgZmSSIuMjAxMS8wNS8xMC8xN18yOF81MF84NjBfcHVsbGFjdGl2aXR5MS5qcGcGOgZFVFsIOgZwOgp0aHVtYkkiDTE1NHgxMjYjBjsGRg'></div>
-
-
-</div>
-
-
-<div class='grid_caption'>
-<div class='caption' id='container_text_186606'>
-Stand inside and be&nbsp;<div>blown away.</div>
-</div>
-</div>
-</a>
-</li>
-
-
-<!-- %li{:id => dom_id(c), :class => "cell_#{i + 1}"} -->
-  <li class='cell_10' id='container_grid_cell_186607'>
-<a class='cell_link' href='/alpine-shopping' id='container_text_186609'>
-<span class='grid_heading' id='container_text_186608'>
-Shopping
-</span>
-  <div class='media' data-parent_container_class='gridcell' id='container_media_186610'>
-  <div class='img' data-url='/media/BAhbB1sHOgZmSSIqMjAxMS8wNS8xMC8xN181Nl8wNV82NjhfcHVsbHNob3AzLmpwZwY6BkVUWwg6BnA6CnRodW1iSSINMTU0eDEyNiMGOwZG'></div>
-
-
-</div>
-
-
-<div class='grid_caption'>
-<div class='caption' id='container_text_186612'>
-Find the perfect gift or the latest gear.
-</div>
-</div>
-</a>
-</li>
-
-
-<!-- %li{:id => dom_id(c), :class => "cell_#{i + 1}"} -->
-  <li class='cell_11' id='container_grid_cell_186613'>
-<a class='cell_link' href='/theatre-in-the-sky' id='container_text_186615'>
-<span class='grid_heading' id='container_text_186614'>
-Theatre in the Sky
-</span>
-  <div class='media' data-parent_container_class='gridcell' id='container_media_186616'>
-  <div class='img' data-url='/media/BAhbB1sHOgZmSSIvMjAxMS8wNS8xMC8xN181OV81Nl8zMzVfcHVsbGFjdGl2aXR5MTEuanBnBjoGRVRbCDoGcDoKdGh1bWJJIg0xNTR4MTI2IwY7BkY'></div>
-
-
-</div>
-
-
-<div class='grid_caption'>
-<div class='caption' id='container_text_186618'>
-Watch shows in our high definition theatre.
-</div>
-</div>
-</a>
-</li>
-
-
-<!-- %li{:id => dom_id(c), :class => "cell_#{i + 1}"} -->
-  <li class='cell_12' id='container_grid_cell_186619'>
-<a class='cell_link' href='/skyride' id='container_text_186621'>
-<span class='grid_heading' id='container_text_186620'>
-Skyride
-</span>
-  <div class='media' data-parent_container_class='gridcell' id='container_media_186622'>
-  <div class='img' data-url='/media/BAhbB1sHOgZmSSI0MjAxMi8wNS8wMy8xNV8wMV8xMF8yNTRfU2t5cmlkZV9XaW50ZXJfY3JvcC5qcGcGOgZFVFsIOgZwOgp0aHVtYkkiDTE0NngxMjYjBjsGRg'></div>
-
-
-</div>
-
-
-<div class='grid_caption'>
-<div class='caption' id='container_text_186624'>
-The first thrill in your&nbsp;<div>day of adventure.</div>
-</div>
-</div>
-</a>
-</li>
-
-
-</ul>
-</div>
-
-
-  <div class='panel' id='tickets-passes' style='display: none'>
-<div class='title'>
-<h2>
-Tickets &amp; Passes
-</h2>
-<a class='close_panel' href='#'>Close</a>
-</div>
-<!-- /title -->
-<ul class='grid6' data-dom_id='grid_53819'>
-<!-- %li{:id => dom_id(c), :class => "cell_#{i + 1}"} -->
-  <li class='cell_1' id='container_grid_cell_191415'>
-<a class='cell_link' href='/ski-board-tickets' id='container_text_191417'>
-<span class='grid_heading' id='container_text_191416'>
-
-
-
-
-
-
-Ski/Ride Lift Tickets &amp; Snow Passes
-
-
-
-
-
-</span>
-  <div class='media' data-parent_container_class='gridcell' id='container_media_191418'>
-  <div class='img' data-url='/media/BAhbB1sHOgZmSSItMjAxMS8wNS8xMC8xNl81Ml8yMl8zMTlfcHVsbHRpY2tldDExLmpwZwY6BkVUWwg6BnA6CnRodW1iSSIOMzgweDIxNCNjBjsGRg'></div>
-
-
-</div>
-
-
-<div class='grid_caption'>
-<div class='caption' id='container_text_191420'>
-
-
-
-
-$58 - Winter Lift Tickets for Adults (inc. Admission)
-
-
-
-<br>$825 - Full Season Winter Pass for Adults
-
-</div>
-</div>
-</a>
-</li>
-
-
-<!-- %li{:id => dom_id(c), :class => "cell_#{i + 1}"} -->
-  <li class='cell_2' id='container_grid_cell_191421'>
-<a class='cell_link' href='/general-admission-membership' id='container_text_191423'>
-<span class='grid_heading' id='container_text_191422'>
-Tickets, Annual Passes &amp; Parking
-</span>
-  <div class='media' data-parent_container_class='gridcell' id='container_media_191424'>
-  <div class='img' data-url='/media/BAhbB1sHOgZmSSIyMjAxMS8wNS8xNS8xOF81NV8xNl8yN19kZGlfdHNfZ3JfMjA3Nl9yZWQuanBnBjoGRVRbCDoGcDoKdGh1bWJJIg0zODF4MjE0IwY7BkY'></div>
-
-
-</div>
-
-
-<div class='grid_caption'>
-<div class='caption' id='container_text_191426'>
-
-
-$39.95 - Alpine Experience for Adults<div>$99 - Annual Local's Pass for Adults</div>
-
-
-
-</div>
-</div>
-</a>
-</li>
-
-
-<!-- %li{:id => dom_id(c), :class => "cell_#{i + 1}"} -->
-  <li class='cell_3' id='container_grid_cell_191427'>
-<a class='cell_link' href='/zipline' id='container_text_191429'>
-<span class='grid_heading' id='container_text_191428'>
-Mountain Ziplines
-
-</span>
-  <div class='media' data-parent_container_class='gridcell' id='container_media_191430'>
-  <div class='img' data-url='/media/BAhbB1sHOgZmSSIwMjAxMS8wNS8xNS8xOF81OF8xMF85Ml9kZGlfdHNfZ3JfMDMwOV8yLmpwZwY6BkVUWwg6BnA6CnRodW1iSSINMjUzeDEyMyMGOwZG'></div>
-
-
-</div>
-
-
-<div class='grid_caption'>
-<div class='caption' id='container_text_191432'>
-
-
-
-$109 (inc. Admission)
-<div>$75 (Members)</div>
-
-</div>
-</div>
-</a>
-</li>
-
-
-<!-- %li{:id => dom_id(c), :class => "cell_#{i + 1}"} -->
-  <li class='cell_4' id='container_grid_cell_191433'>
-<a class='cell_link' href='/eye-of-the-wind' id='container_text_191435'>
-<span class='grid_heading' id='container_text_191434'>
-The Eye of the Wind
-</span>
-  <div class='media' data-parent_container_class='gridcell' id='container_media_191436'>
-  <div class='img' data-url='/media/BAhbB1sHOgZmSSIxMjAxMS8wNS8xNS8xOF81N18wMV8xNzVfZGRpX3RzX2dyXzE3NzJ2Mi5qcGcGOgZFVFsIOgZwOgp0aHVtYkkiDTI1M3gxMjMjBjsGRg'></div>
-
-
-</div>
-
-
-<div class='grid_caption'>
-<div class='caption' id='container_text_191438'>
-<div>$49.95 Ultimate Experience for Adults</div><div>$125.95 Family Ultimate Experience</div>
-
-
-</div>
-</div>
-</a>
-</li>
-
-
-<!-- %li{:id => dom_id(c), :class => "cell_#{i + 1}"} -->
-  <li class='cell_5' id='container_grid_cell_191439'>
-<a class='cell_link' href='/rentals' id='container_text_191441'>
-<span class='grid_heading' id='container_text_191440'>
-Rentals
-</span>
-  <div class='media' data-parent_container_class='gridcell' id='container_media_191442'>
-  <div class='img' data-url='/media/BAhbB1sHOgZmSSIpMjAxMS8wNS8xOS8wMF8yM181N183MDNfX01HXzk3NTEuanBnBjoGRVRbCDoGcDoKdGh1bWJJIg0yNTN4MTIzIwY7BkY'></div>
-
-
-</div>
-
-
-<div class='grid_caption'>
-<div class='caption' id='container_text_191444'>
-Save time and book online.
-
-
-<div>$42 - Ski/Board Package</div>
-</div>
-</div>
-</a>
-</li>
-
-
-<!-- %li{:id => dom_id(c), :class => "cell_#{i + 1}"} -->
-  <li class='cell_6' id='container_grid_cell_191445'>
-<a class='cell_link' href='/day-lessons#ski-snowboard-school' id='container_text_191447'>
-<span class='grid_heading' id='container_text_191446'>
-
-
-
-
-
-Snow School
-</span>
-  <div class='media' data-parent_container_class='gridcell' id='container_media_191448'>
-  <div class='img' data-url='/media/BAhbB1sHOgZmSSI4MjAxMS8wNS8xNS8yMF8xOV80Nl8xNzVfZGRpX3RzX2dyX3dpbnRlcl8wMzQ1XzIuanBnBjoGRVRbCDoGcDoKdGh1bWJJIg4yNTN4MTIzI2MGOwZG'></div>
-
-
-</div>
-
-
-<div class='grid_caption'>
-<div class='caption' id='container_text_191450'>
-
-<div>Learn to ski/ride, or sharpen your skills this season.</div>
-</div>
-</div>
-</a>
-</li>
-
-
-<!-- %li{:id => dom_id(c), :class => "cell_#{i + 1}"} -->
-  <li class='cell_7' id='container_grid_cell_191451'>
-<a class='cell_link' href='/group-rates' id='container_text_191453'>
-<span class='grid_heading' id='container_text_191452'>
-
-Group Rates
-</span>
-  <div class='media' data-parent_container_class='gridcell' id='container_media_191454'>
-  <div class='img' data-url='/media/BAhbB1sHOgZmSSI4MjAxMS8wNS8xOS8xOV81N180MV82MzNfMjAwOTEwMDdfR3JvdXNlTXRuXzE3NzYuanBnBjoGRVRbCDoGcDoKdGh1bWJJIg0yNTN4MTIzIwY7BkY'></div>
-
-
-</div>
-
-
-<div class='grid_caption'>
-<div class='caption' id='container_text_191456'>
-
-Get a group of 15+ people together for special rates.<br>
-
-</div>
-</div>
-</a>
-</li>
-
-
-<!-- %li{:id => dom_id(c), :class => "cell_#{i + 1}"} -->
-  <li class='cell_8' id='container_grid_cell_191457'>
-<a class='cell_link' href='/gift-cards' id='container_text_191459'>
-<span class='grid_heading' id='container_text_191458'>
-
-Gift Cards
-</span>
-  <div class='media' data-parent_container_class='gridcell' id='container_media_191460'>
-  <div class='img' data-url='/media/BAhbB1sHOgZmSSIuMjAxMS8wNS8xOS8xN18zNF80Ml85NF9HaWZ0Q2FyZF9zdGFjay5qcGcGOgZFVFsIOgZwOgp0aHVtYkkiDTI1M3gxMjMjBjsGRg'></div>
-
-
-</div>
-
-
-<div class='grid_caption'>
-<div class='caption' id='container_text_191462'>
-
-Load value of your choice.
-
-</div>
-</div>
-</a>
-</li>
-
-
-</ul>
-</div>
-
-
-  <div class='panel' id='private-functions' style='display: none'>
-<div class='title'>
-<h2>
-Private Functions
-</h2>
-<a class='close_panel' href='#'>Close</a>
-</div>
-<!-- /title -->
-<ul class='grid4' data-dom_id='grid_48963'>
-<!-- %li{:id => dom_id(c), :class => "cell_#{i + 1}"} -->
-  <li class='cell_1' id='container_grid_cell_179470'>
-<a class='cell_link' href='/weddings' id='container_text_179472'>
-<span class='grid_heading' id='container_text_179471'>
-
-Weddings
-</span>
-  <div class='media' data-parent_container_class='gridcell' id='container_media_179473'>
-  <div class='img' data-url='/media/BAhbB1sHOgZmSSIyMjAxMi8wMS8wNS8xM181Ml8zMV84NzNfRXJpbldhbGxpc19jcmVkaXQuanBnBjoGRVRbCDoGcDoKdGh1bWJJIg0zODh4MTU0IwY7BkY'></div>
-
-
-</div>
-
-
-<div class='grid_caption'>
-<div class='caption' id='container_text_179475'>
-
-Every love story deserves a fairy tale setting.
-
-
-</div>
-</div>
-</a>
-</li>
-
-
-<!-- %li{:id => dom_id(c), :class => "cell_#{i + 1}"} -->
-  <li class='cell_2' id='container_grid_cell_179476'>
-<a class='cell_link' href='/venues' id='container_text_179478'>
-<span class='grid_heading' id='container_text_179477'>
-
-Our Venues
-</span>
-  <div class='media' data-parent_container_class='gridcell' id='container_media_179479'>
-  <div class='img' data-url='/media/BAhbB1sHOgZmSSIvMjAxMS8wNS8xNy8wMV8wOF8yOF83MV9DaGFsZXRfSW50ZXJpb3IuanBnBjoGRVRbCDoGcDoKdGh1bWJJIg0yNTN4MTIzIwY7BkY'></div>
-
-
-</div>
-
-
-<div class='grid_caption'>
-<div class='caption' id='container_text_179481'>
-Find a space that fits your event perfectly.
-</div>
-</div>
-</a>
-</li>
-
-
-<!-- %li{:id => dom_id(c), :class => "cell_#{i + 1}"} -->
-  <li class='cell_3' id='container_grid_cell_179482'>
-<a class='cell_link' href='/meetings-events/gallery' id='container_text_179484'>
-<span class='grid_heading' id='container_text_179483'>
-
-Gallery
-</span>
-  <div class='media' data-parent_container_class='gridcell' id='container_media_179485'>
-  <div class='img' data-url='/media/BAhbB1sHOgZmSSIsMjAxMS8wNS8xOC8wMl8zNV8wNV8yNjJfWkNfV2VkZGluZzguanBnBjoGRVRbCDoGcDoKdGh1bWJJIg4xODZ4MTU0I2UGOwZG'></div>
-
-
-</div>
-
-
-<div class='grid_caption'>
-<div class='caption' id='container_text_179487'>
-Imagine the possibilities.
-</div>
-</div>
-</a>
-</li>
-
-
-<!-- %li{:id => dom_id(c), :class => "cell_#{i + 1}"} -->
-  <li class='cell_4' id='container_grid_cell_179488'>
-<a class='cell_link' href='/corporate-adventure-training' id='container_text_179490'>
-<span class='grid_heading' id='container_text_179489'>
-Corporate Adventure Training
-</span>
-  <div class='media' data-parent_container_class='gridcell' id='container_media_179491'>
-  <div class='img' data-url='/media/BAhbB1sHOgZmSSIuMjAxMS8wNS8xMC8yMV8xNV80OF84NzJfcHVsbHByaXZhdGUxNi5qcGcGOgZFVFsIOgZwOgp0aHVtYkkiDTM4OHgxNTQjBjsGRg'></div>
-
-
-</div>
-
-
-<div class='grid_caption'>
-<div class='caption' id='container_text_179493'>
-Get your team as far out of the box as nature allows.
-</div>
-</div>
-</a>
-</li>
-
-
-<!-- %li{:id => dom_id(c), :class => "cell_#{i + 1}"} -->
-  <li class='cell_5' id='container_grid_cell_179494'>
-<a class='cell_link' href='/catering' id='container_text_179496'>
-<span class='grid_heading' id='container_text_179495'>
-Banquet Menus
-</span>
-  <div class='media' data-parent_container_class='gridcell' id='container_media_179497'>
-  <div class='img' data-url='/media/BAhbB1sHOgZmSSIxMjAxMS8wNS8xNS8xNV80Ml8wN183MDJfR3JvdXNlXzEwM184OTk0MS5qcGcGOgZFVFsIOgZwOgp0aHVtYkkiDTE4NngxNTQjBjsGRg'></div>
-
-
-</div>
-
-
-<div class='grid_caption'>
-<div class='caption' id='container_text_179499'>
-Award-winning cuisine.
-</div>
-</div>
-</a>
-</li>
-
-
-<!-- %li{:id => dom_id(c), :class => "cell_#{i + 1}"} -->
-  <li class='cell_6' id='container_grid_cell_179500'>
-<a class='cell_link' href='/film-television-production-location' id='container_text_179502'>
-<span class='grid_heading' id='container_text_179501'>
-Film &amp; Television Productions
-</span>
-  <div class='media' data-parent_container_class='gridcell' id='container_media_179503'>
-  <div class='img' data-url='/media/BAhbB1sHOgZmSSIpMjAxMS8wNS8yMC8xN18yMl8yM18zNzNfX01HXzcyMzQuanBnBjoGRVRbCDoGcDoKdGh1bWJJIg0xODZ4MTU0IwY7BkY'></div>
-
-
-</div>
-
-
-<div class='grid_caption'>
-<div class='caption' id='container_text_179505'>
-Gorgeous from every angle.
-</div>
-</div>
-</a>
-</li>
-
-
-<!-- %li{:id => dom_id(c), :class => "cell_#{i + 1}"} -->
-  <li class='cell_7' id='container_grid_cell_179506'>
-<a class='cell_link' href='/meetings-events' id='container_text_179508'>
-<span class='grid_heading' id='container_text_179507'>
-
-
-
-
-Private Functions &amp; Meetings
-</span>
-  <div class='media' data-parent_container_class='gridcell' id='container_media_179509'>
-  <div class='img' data-url='/media/BAhbB1sHOgZmSSIuMjAxMS8wNS8xMC8yMV8xMl81OF85MDhfcHVsbHByaXZhdGUxMy5qcGcGOgZFVFsIOgZwOgp0aHVtYkkiDTM4OHgxNTQjBjsGRg'></div>
-
-
-</div>
-
-
-<div class='grid_caption'>
-<div class='caption' id='container_text_179511'>
-Our team can make your event one to remember.
-
-</div>
-</div>
-</a>
-</li>
-
-
-<!-- %li{:id => dom_id(c), :class => "cell_#{i + 1}"} -->
-  <li class='cell_8' id='container_grid_cell_179512'>
-<a class='cell_link' href='/#education' id='container_text_179514'>
-<span class='grid_heading' id='container_text_179513'>
-
-Educational Events
-</span>
-  <div class='media' data-parent_container_class='gridcell' id='container_media_179515'>
-  <div class='img' data-url='/media/BAhbB1sHOgZmSSIuMjAxMS8wNS8xMC8yMV8xMl8zOV8xMTVfcHVsbHByaXZhdGUxMi5qcGcGOgZFVFsIOgZwOgp0aHVtYkkiDTE4NngxNTQjBjsGRg'></div>
-
-
-</div>
-
-
-<div class='grid_caption'>
-<div class='caption' id='container_text_179517'>
-
-Take your students outside of the classroom.
-</div>
-</div>
-</a>
-</li>
-
-
-<!-- %li{:id => dom_id(c), :class => "cell_#{i + 1}"} -->
-  <li class='cell_9' id='container_grid_cell_179518'>
-<a class='cell_link' href='/private-event-inquiry' id='container_text_179520'>
-<span class='grid_heading' id='container_text_179519'>
-Private Function Inquiries
-</span>
-  <div class='media' data-parent_container_class='gridcell' id='container_media_179521'>
-  <div class='img' data-url='/media/BAhbB1sHOgZmSSIuMjAxMS8wNS8xMC8yMV8xNl8yNl82NjdfcHVsbHByaXZhdGUxOC5qcGcGOgZFVFsIOgZwOgp0aHVtYkkiDTM4OHgxNTQjBjsGRg'></div>
-
-
-</div>
-
-
-<div class='grid_caption'>
-<div class='caption' id='container_text_179523'>
-Check availability for your&nbsp;<div>event.
-</div>
-</div>
-</div>
-</a>
-</li>
-
-
-</ul>
-</div>
-
-
-  <div class='panel' id='blog' style='display: none'>
-<div class='title'>
-<h2>
-Blogs
-</h2>
-<a class='close_panel' href='#'>Close</a>
-</div>
-<!-- /title -->
-<ul class='' data-dom_id='grid_147'>
-</ul>
-</div>
-
-
-  <div class='news panel panel-news' id='news' style='display: none'>
-<div class='title'>
-<h2>News &amp; Events</h2>
-<a class='close_panel' href='#'>Close</a>
-</div>
-<!-- /title -->
-<div class='news_events'>
-<div class='rotation'>
-  <div class='media' data-parent_container_class='grid' id='container_media_192430'>
-  <div class='img' data-url='/media/BAhbB1sHOgZmSSI/MjAxMS8xMi8yOC8xMl8wMV8zN18xMzhfZHJpdmVyX2xfU25vd3Nob2VHcmluZF82NzlYMjU1LmpwZwY6BkVUWwg6BnA6CnRodW1iSSIPNzYyeDI1NiNzZQY7BkY'></div>
-
-
-</div>
-
-
-</div>
-  <div class='feed news'>
-<div class='header'>
-<a class='more' href='/news'>View All News</a>
-Grouse News
-</div>
-<a href="/news/make-a-resolution-to-be-safe-in-the-snow" class="cell"><div class='snippet'>
-<h3>
-Make a Resolution to Be Safe in the Snow
-</h3>
-<p class='fine'>
-January 03, 2013
--
-Register today for our Avalanche Skills Training Course. Are you interested in understanding how to evaluate avalanche conditions, analyzing forecasts and planning? Let our experienced team help you get some of the basics with our 2-Day Avalanche...
-</p>
-</div>
-</a><a href="/news/visit-us-at-the-vancouver-wedding-fair-this-weekend" class="cell"><div class='snippet'>
-<h3>
-Visit Us at the Vancouver Wedding Fair This Weekend
-</h3>
-<p class='fine'>
-January 03, 2013
--
-Visit our booth at the Wedding Fair - Jan. 5 &amp; 6. Grouse Mountain will be at the 26th Annual Vancouver Wedding Fair this weekend (Jan. 5-6) at the Westin Bayshore Hotel. Brides-to-be can visit our booth for a special treat.Read More
-</p>
-</div>
-</a><a href="/news/carve-your-way-into-2013" class="cell"><div class='snippet'>
-<h3>
-Carve Your Way into 2013
-</h3>
-<p class='fine'>
-January 03, 2013
--
-Grouse Mountain is the home of New Year’s resolutions with a difference.. Make yourself an achievable and fun goal you are sure to keep in 2013 by registering today for skiing or snowboarding lessons here at the Peak of Vancouver.  Our specialized...
-</p>
-</div>
-</a></div>
-
-
-  <div class='feed events'>
-<div class='header'>
-<a class='more' href='/events'>View All Events</a>
-Upcoming Events
-</div>
-<a href="/events/snowshoe-grind-social-nights-2013" class="cell"><div class='snippet'>
-<h3>
 <span>
-January  9, 2013
-</span>
-
-Snowshoe Grind Social Nights 2013
-
-</h3>
-<p class='fine'>
-Join us at Altitudes Wednesday nights this winter. 
-Altitudes Bistro is once again home to Snowshoe Grind Social Nights, the ideal way to celebrate a heart-pumping snowshoe trek through Grouse...
-</p>
-</div>
-</a><a href="/events/park-jams-2013" class="cell"><div class='snippet'>
-<h3>
-<span>
-January 12, 2013
-</span>
-Park Jams 2013&lt;br&gt;
-
-
-
-</h3>
-<p class='fine'>
-
-January 12, 2013 - March 16, 2013
-. 
-
-
-
-Back for another year, the Park Jams, will be happening in our Parks every other saturday of each month from January 12th to March 16th.Whether you are a...
-</p>
-</div>
-</a><a href="/events/snowshoe-grind-social-nights-2013" class="cell"><div class='snippet'>
-<h3>
-<span>
-January 16, 2013
-</span>
-
-Snowshoe Grind Social Nights 2013
-
-</h3>
-<p class='fine'>
-Join us at Altitudes Wednesday nights this winter. 
-Altitudes Bistro is once again home to Snowshoe Grind Social Nights, the ideal way to celebrate a heart-pumping snowshoe trek through Grouse...
-</p>
-</div>
-</a></div>
-
-
-</div>
-</div>
-
-
-  <div class='panel' id='dining' style='display: none'>
-<div class='title'>
-<h2>
-Dining
-</h2>
-<a class='close_panel' href='#'>Close</a>
-</div>
-<!-- /title -->
-<ul class='grid6' data-dom_id='grid_48675'>
-<!-- %li{:id => dom_id(c), :class => "cell_#{i + 1}"} -->
-  <li class='cell_1' id='container_grid_cell_178102'>
-<a class='cell_link' href='/the-observatory-restaurant' id='container_text_178104'>
-<span class='grid_heading' id='container_text_178103'>
-
-The Observatory
-</span>
-  <div class='media' data-parent_container_class='gridcell' id='container_media_178105'>
-  <div class='img' data-url='/media/BAhbB1sHOgZmSSIsMjAxMS8wNS8xMC8xOV8wMV8xNl8yMTRfcHVsbGRpbmluZzEuanBnBjoGRVRbCDoGcDoKdGh1bWJJIg0zNzh4MjE0IwY7BkY'></div>
-
-
-</div>
-
-
-</a>
-</li>
-
-
-<!-- %li{:id => dom_id(c), :class => "cell_#{i + 1}"} -->
-  <li class='cell_2' id='container_grid_cell_178108'>
-<a class='cell_link' href='/altitudes-bistro' id='container_text_178110'>
-<span class='grid_heading' id='container_text_178109'>
-
-Altitudes Bistro
-</span>
-  <div class='media' data-parent_container_class='gridcell' id='container_media_178111'>
-  <div class='img' data-url='/media/BAhbB1sHOgZmSSIsMjAxMS8wNS8xMC8xOV8wMV81MF83OThfcHVsbGRpbmluZzIuanBnBjoGRVRbCDoGcDoKdGh1bWJJIg0zNzl4MjE0IwY7BkY'></div>
-
-
-</div>
-
-
-</a>
-</li>
-
-
-<!-- %li{:id => dom_id(c), :class => "cell_#{i + 1}"} -->
-  <li class='cell_3' id='container_grid_cell_178114'>
-<a class='cell_link' href='/casual-dining' id='container_text_178116'>
-<span class='grid_heading' id='container_text_178115'>
-
-Lupins
-</span>
-  <div class='media' data-parent_container_class='gridcell' id='container_media_178117'>
-  <div class='img' data-url='/media/BAhbB1sHOgZmSSI5MjAxMS8wNS8yMi8xN18zMF81NV82NjBfaVN0b2NrXzAwMDAwMTU5MTQyM0xhcmdlLmpwZwY6BkVUWwg6BnA6CnRodW1iSSINMjUzeDEyMyMGOwZG'></div>
-
-
-</div>
-
-
-</a>
-</li>
-
-
-<!-- %li{:id => dom_id(c), :class => "cell_#{i + 1}"} -->
-  <li class='cell_4' id='container_grid_cell_178120'>
-<a class='cell_link' href='/casual-dining#GGCB' id='container_text_178122'>
-<span class='grid_heading' id='container_text_178121'>
-
-Grouse Grind Coffee Bar
-</span>
-  <div class='media' data-parent_container_class='gridcell' id='container_media_178123'>
-  <div class='img' data-url='/media/BAhbB1sHOgZmSSI4MjAxMS8wNS8yMi8xNl81NF8zM180ODlfZGRpX3RzX2dyX3dpbnRlcl81MDAyXzIuanBnBjoGRVRbCDoGcDoKdGh1bWJJIg8yNTN4MTIzI25lBjsGRg'></div>
-
-
-</div>
-
-
-</a>
-</li>
-
-
-<!-- %li{:id => dom_id(c), :class => "cell_#{i + 1}"} -->
-  <li class='cell_5' id='container_grid_cell_178126'>
-<a class='cell_link' href='/casual-dining#RustyRail' id='container_text_178128'>
-<span class='grid_heading' id='container_text_178127'>
-
-Rusty Rail BBQ &amp; Grill
-</span>
-  <div class='media' data-parent_container_class='gridcell' id='container_media_178129'>
-  <div class='img' data-url='/media/BAhbB1sHOgZmSSIsMjAxMS8wNS8xMC8xOV8wNV8xMF82MjVfcHVsbGRpbmluZzUuanBnBjoGRVRbCDoGcDoKdGh1bWJJIg0yNTN4MTIzIwY7BkY'></div>
-
-
-</div>
-
-
-</a>
-</li>
-
-
-<!-- %li{:id => dom_id(c), :class => "cell_#{i + 1}"} -->
-  <li class='cell_6' id='container_grid_cell_178132'>
-<a class='cell_link' href='/casual-dining#Starbucks' id='container_text_178134'>
-<span class='grid_heading' id='container_text_178133'>
-
-Starbucks
-</span>
-  <div class='media' data-parent_container_class='gridcell' id='container_media_178135'>
-  <div class='img' data-url='/media/BAhbB1sHOgZmSSIvMjAxMS8wNy8xOS8xNF80OF80MF83NDFfc3RhcmJ1Y2tzX2xvZ28ucG5nBjoGRVRbCDoGcDoKdGh1bWJJIg0yNTN4MTIzIwY7BkY'></div>
-
-
-</div>
-
-
-</a>
-</li>
-
-
-<!-- %li{:id => dom_id(c), :class => "cell_#{i + 1}"} -->
-  <li class='cell_7' id='container_grid_cell_178138'>
-<a class='cell_link' href='/casual-dining#BeaverTails' id='container_text_178140'>
-<span class='grid_heading' id='container_text_178139'>
-
-Beaver Tails
-</span>
-  <div class='media' data-parent_container_class='gridcell' id='container_media_178141'>
-  <div class='img' data-url='/media/BAhbB1sHOgZmSSIsMjAxMS8wNS8xMC8xOV8wNV80M184MjNfcHVsbGRpbmluZzYuanBnBjoGRVRbCDoGcDoKdGh1bWJJIg0yNTN4MTIzIwY7BkY'></div>
-
-
-</div>
-
-
-</a>
-</li>
-
-
-<!-- %li{:id => dom_id(c), :class => "cell_#{i + 1}"} -->
-  <li class='cell_8' id='container_grid_cell_178144'>
-<a class='cell_link' href='#private-functions' id='container_text_178146'>
-<span class='grid_heading' id='container_text_178145'>
-
-Private Functions
-</span>
-  <div class='media' data-parent_container_class='gridcell' id='container_media_178147'>
-  <div class='img' data-url='/media/BAhbB1sHOgZmSSI5MjAxMS8wNS8yMC8xOV8xOV8zMF83MTFfamFxa2V2d2VkZGluZ19ocmVzX18xNjU4LmpwZwY6BkVUWwg6BnA6CnRodW1iSSINMjUzeDEyMyMGOwZG'></div>
-
-
-</div>
-
-
-</a>
-</li>
-
-
-</ul>
-</div>
-
-
-  <div class='panel' id='ski-snowboard-school' style='display: none'>
-<div class='title'>
-<h2>
-Ski &amp; Snowboard School
-</h2>
-<a class='close_panel' href='#'>Close</a>
-</div>
-<!-- /title -->
-<ul class='grid6' data-dom_id='grid_49687'>
-<!-- %li{:id => dom_id(c), :class => "cell_#{i + 1}"} -->
-  <li class='cell_1' id='container_grid_cell_181185'>
-<a class='cell_link' href='/private-lessons' id='container_text_181187'>
-<span class='grid_heading' id='container_text_181186'>
-Private Lessons
-</span>
-  <div class='media' data-parent_container_class='gridcell' id='container_media_181188'>
-  <div class='img' data-url='/media/BAhbB1sHOgZmSSJFMjAxMS8wNS8xMi8xM18wMF80Ml8xNDlfU2NyZWVuX3Nob3RfMjAxMV8wNV8xMl9hdF8xLjAyLjE3X1BNLnBuZwY6BkVUWwg6BnA6CnRodW1iSSINMzc4eDIxNCMGOwZG'></div>
-
-
-</div>
-
-
-</a>
-</li>
-
-
-<!-- %li{:id => dom_id(c), :class => "cell_#{i + 1}"} -->
-  <li class='cell_2' id='container_grid_cell_181191'>
-<a class='cell_link' href='/ski-wee' id='container_text_181193'>
-<span class='grid_heading' id='container_text_181192'>
-
-Ski Wee (3-6 years)
-</span>
-  <div class='media' data-parent_container_class='gridcell' id='container_media_181194'>
-  <div class='img' data-url='/media/BAhbB1sHOgZmSSJAMjAxMS8xMC8xOS8xMV81MF80Nl81OTFfZGRpX3RzX2dyX3dpbnRlcl80MzIxX1JFVE9VQ0hFRC5qcGcGOgZFVFsIOgZwOgp0aHVtYkkiDzM4MXgyMTQjbmUGOwZG'></div>
-
-
-</div>
-
-
-</a>
-</li>
-
-
-<!-- %li{:id => dom_id(c), :class => "cell_#{i + 1}"} -->
-  <li class='cell_3' id='container_grid_cell_181197'>
-<a class='cell_link' href='/day-lessons' id='container_text_181199'>
-<span class='grid_heading' id='container_text_181198'>
-
-Day Lessons
-
-</span>
-  <div class='media' data-parent_container_class='gridcell' id='container_media_181200'>
-  <div class='img' data-url='/media/BAhbB1sHOgZmSSI2MjAxMS8wNS8xNS8xOF80OF81OV8yNzRfZGRpX3RzX2dyX3dpbnRlcl8wMzMxLmpwZwY6BkVUWwg6BnA6CnRodW1iSSINMjUzeDEyMyMGOwZG'></div>
-
-
-</div>
-
-
-</a>
-</li>
-
-
-<!-- %li{:id => dom_id(c), :class => "cell_#{i + 1}"} -->
-  <li class='cell_4' id='container_grid_cell_181203'>
-<a class='cell_link' href='/zone-camps' id='container_text_181205'>
-<span class='grid_heading' id='container_text_181204'>
-
-Zone Camps (5-17 years)
-</span>
-  <div class='media' data-parent_container_class='gridcell' id='container_media_181206'>
-  <div class='img' data-url='/media/BAhbB1sHOgZmSSI3MjAxMS8wNS8xNS8yMV8wMF8wMl81NzBfR01SMDFfU1dfMDY2XzkxMTU2X2FkZC5qcGcGOgZFVFsIOgZwOgp0aHVtYkkiDTI1M3gxMjMjBjsGRg'></div>
-
-
-</div>
-
-
-</a>
-</li>
-
-
-<!-- %li{:id => dom_id(c), :class => "cell_#{i + 1}"} -->
-  <li class='cell_5' id='container_grid_cell_181209'>
-<a class='cell_link' href='/freeride' id='container_text_181211'>
-<span class='grid_heading' id='container_text_181210'>
-
-Freeride Program (10-17 years)
-</span>
-  <div class='media' data-parent_container_class='gridcell' id='container_media_181212'>
-  <div class='img' data-url='/media/BAhbB1sHOgZmSSI2MjAxMS8wNS8xMi8wOV81N181M183MjhfZGRpX3RzX2dyX3dpbnRlcl8wMzA4LmpwZwY6BkVUWwg6BnA6CnRodW1iSSINMjUzeDEyMyMGOwZG'></div>
-
-
-</div>
-
-
-</a>
-</li>
-
-
-<!-- %li{:id => dom_id(c), :class => "cell_#{i + 1}"} -->
-  <li class='cell_6' id='container_grid_cell_181215'>
-<a class='cell_link' href='/adult-programs' id='container_text_181217'>
-<span class='grid_heading' id='container_text_181216'>
-
-Adult Clinics
-</span>
-  <div class='media' data-parent_container_class='gridcell' id='container_media_181218'>
-  <div class='img' data-url='/media/BAhbB1sHOgZmSSItMjAxMS8wNS8xMC8xNl81Ml8yMl8zMTlfcHVsbHRpY2tldDExLmpwZwY6BkVUWwg6BnA6CnRodW1iSSINMjUzeDEyMyMGOwZG'></div>
-
-
-</div>
-
-
-</a>
-</li>
-
-
-<!-- %li{:id => dom_id(c), :class => "cell_#{i + 1}"} -->
-  <li class='cell_7' id='container_grid_cell_181221'>
-<a class='cell_link' href='/instructor-certification' id='container_text_181223'>
-<span class='grid_heading' id='container_text_181222'>
-Ski Instructor Certification
-
-</span>
-  <div class='media' data-parent_container_class='gridcell' id='container_media_181224'>
-  <div class='img' data-url='/media/BAhbB1sHOgZmSSIpMjAxMS8wNS8xNS8yMF8zNl8xNV83NTBfX01HXzczNjcuanBnBjoGRVRbCDoGcDoKdGh1bWJJIg8yNTN4MTIzI253BjsGRg'></div>
-
-
-</div>
-
-
-</a>
-</li>
-
-
-<!-- %li{:id => dom_id(c), :class => "cell_#{i + 1}"} -->
-  <li class='cell_8' id='container_grid_cell_181227'>
-<a class='cell_link' href='/ski-clubs' id='container_text_181229'>
-<span class='grid_heading' id='container_text_181228'>
-
-Zone Club &amp; Other Ski Clubs
-</span>
-  <div class='media' data-parent_container_class='gridcell' id='container_media_181230'>
-  <div class='img' data-url='/media/BAhbB1sHOgZmSSI2MjAxMS8wNS8xNC8xNF8xNl8zNF8xODZfZGRpX3RzX2dyX3dpbnRlcl8wOTExLmpwZwY6BkVUWwg6BnA6CnRodW1iSSINMjUzeDEyMyMGOwZG'></div>
-
-
-</div>
-
-
-</a>
-</li>
-
-
-</ul>
-</div>
-
-
-  <div class='panel' id='education' style='display: none'>
-<div class='title'>
-<h2>
-Education
-</h2>
-<a class='close_panel' href='#'>Close</a>
-</div>
-<!-- /title -->
-<ul class='grid6' data-dom_id='grid_20448'>
-<!-- %li{:id => dom_id(c), :class => "cell_#{i + 1}"} -->
-  <li class='cell_1' id='container_grid_cell_80806'>
-<a class='cell_link' href='/education' id='container_text_80808'>
-<span class='grid_heading' id='container_text_80807'>
-
-Adventures in Education
-</span>
-  <div class='media' data-parent_container_class='gridcell' id='container_media_80809'>
-  <div class='img' data-url='/media/BAhbB1sHOgZmSSI5MjAxMS8wOS8xOS8xNl8yNV8zNF82MzlfZWR1Y2F0aW9uX2hpZ2hlcmxlYXJuaW5nLmpwZwY6BkVUWwg6BnA6CnRodW1iSSIOMzgweDIxNCN3BjsGRg'></div>
-
-
-</div>
-
-
-<div class='grid_caption'>
-<div class='caption' id='container_text_80811'>
-Where your curriculum comes alive.
-
-</div>
-</div>
-</a>
-</li>
-
-
-<!-- %li{:id => dom_id(c), :class => "cell_#{i + 1}"} -->
-  <li class='cell_2' id='container_grid_cell_80812'>
-<a class='cell_link' href='/wildlife-education' id='container_text_80814'>
-<span class='grid_heading' id='container_text_80813'>
-Wildlife Education
-</span>
-  <div class='media' data-parent_container_class='gridcell' id='container_media_80815'>
-  <div class='img' data-url='/media/BAhbB1sHOgZmSSIvMjAxMS8wNS8xNi8wMV8yNF8wMF82ODFfSU1HXzk1NzhfODk5MDQuanBnBjoGRVRbCDoGcDoKdGh1bWJJIg0zODF4MjE0IwY7BkY'></div>
-
-
-</div>
-
-
-<div class='grid_caption'>
-<div class='caption' id='container_text_80817'>
-
-
-Innovative educational programs about mountain wildlife.
-</div>
-</div>
-</a>
-</li>
-
-
-<!-- %li{:id => dom_id(c), :class => "cell_#{i + 1}"} -->
-  <li class='cell_3' id='container_grid_cell_80818'>
-<a class='cell_link' href='/sustainability-in-motion' id='container_text_80820'>
-<span class='grid_heading' id='container_text_80819'>
-
-Sustainability in Motion Program
-</span>
-  <div class='media' data-parent_container_class='gridcell' id='container_media_80821'>
-  <div class='img' data-url='/media/BAhbB1sHOgZmSSItMjAxMS8wNS8xMC8xNl81M18xMV8yOTRfcHVsbHRpY2tldDE3LmpwZwY6BkVUWwg6BnA6CnRodW1iSSIOMjUzeDEyMyN3BjsGRg'></div>
-
-
-</div>
-
-
-<div class='grid_caption'>
-<div class='caption' id='container_text_80823'>
-
-Learn about the environment.
-</div>
-</div>
-</a>
-</li>
-
-
-<!-- %li{:id => dom_id(c), :class => "cell_#{i + 1}"} -->
-  <li class='cell_4' id='container_grid_cell_80824'>
-<a class='cell_link' href='/hiwus-first-nations' id='container_text_80826'>
-<span class='grid_heading' id='container_text_80825'>
-
-hiwus First Nations Cultural Program
-
-</span>
-  <div class='media' data-parent_container_class='gridcell' id='container_media_80827'>
-  <div class='img' data-url='/media/BAhbB1sHOgZmSSIuMjAxMS8wNS8xNi8wMl8wMl8yOF82MDVfSU1HXzU2OThfQ01ZSy5qcGcGOgZFVFsIOgZwOgp0aHVtYkkiDTI1M3gxMjMjBjsGRg'></div>
-
-
-</div>
-
-
-<div class='grid_caption'>
-<div class='caption' id='container_text_80829'>
-
-
-Discover the way of life for coastal First Nations people.
-</div>
-</div>
-</a>
-</li>
-
-
-<!-- %li{:id => dom_id(c), :class => "cell_#{i + 1}"} -->
-  <li class='cell_5' id='container_grid_cell_80830'>
-<a class='cell_link' href='/secondary-education' id='container_text_80832'>
-<span class='grid_heading' id='container_text_80831'>
-Teen Programs
-</span>
-  <div class='media' data-parent_container_class='gridcell' id='container_media_80833'>
-  <div class='img' data-url='/media/BAhbB1sHOgZmSSI2MjAxMS8wNS8yNC8yMV8zOF8zMl8yMjlfZGRpX3RzX2dyX3dpbnRlcl8xMTI2LmpwZwY6BkVUWwg6BnA6CnRodW1iSSIOMjUzeDEyMyNlBjsGRg'></div>
-
-
-</div>
-
-
-<div class='grid_caption'>
-<div class='caption' id='container_text_80835'>
-Explore our secondary school programs.
-</div>
-</div>
-</a>
-</li>
-
-
-<!-- %li{:id => dom_id(c), :class => "cell_#{i + 1}"} -->
-  <li class='cell_6' id='container_grid_cell_80836'>
-<a class='cell_link' href='/science-of-snow' id='container_text_80838'>
-<span class='grid_heading' id='container_text_80837'>
-Science of Snow
-</span>
-  <div class='media' data-parent_container_class='gridcell' id='container_media_80839'>
-  <div class='img' data-url='/media/BAhbB1sHOgZmSSI2MjAxMS8wNS8xMy8wMF8wNV80M182MjJfZGRpX3RzX2dyX3dpbnRlcl8yMjYzLmpwZwY6BkVUWwg6BnA6CnRodW1iSSINMjUzeDEyMyMGOwZG'></div>
-
-
-</div>
-
-
-<div class='grid_caption'>
-<div class='caption' id='container_text_80841'>
-
-Combine learning with fun in&nbsp;<div>the snow.</div>
-
-</div>
-</div>
-</a>
-</li>
-
-
-<!-- %li{:id => dom_id(c), :class => "cell_#{i + 1}"} -->
-  <li class='cell_7' id='container_grid_cell_80842'>
-<a class='cell_link' href='/school-group-lessons' id='container_text_80844'>
-<span class='grid_heading' id='container_text_80843'>
-
-School Ski/Board Lessons
-
-</span>
-  <div class='media' data-parent_container_class='gridcell' id='container_media_80845'>
-  <div class='img' data-url='/media/BAhbB1sHOgZmSSI3MjAxMS8wNS8xNS8yMV8wMF8wMl81NzBfR01SMDFfU1dfMDY2XzkxMTU2X2FkZC5qcGcGOgZFVFsIOgZwOgp0aHVtYkkiDTI1M3gxMjMjBjsGRg'></div>
-
-
-</div>
-
-
-<div class='grid_caption'>
-<div class='caption' id='container_text_80847'>
-
-Develop your students' skills.
-</div>
-</div>
-</a>
-</li>
-
-
-<!-- %li{:id => dom_id(c), :class => "cell_#{i + 1}"} -->
-  <li class='cell_8' id='container_grid_cell_80848'>
-<a class='cell_link' href='/mountain-adventures' id='container_text_80850'>
-<span class='grid_heading' id='container_text_80849'>
-Mountain Adventures
-</span>
-  <div class='media' data-parent_container_class='gridcell' id='container_media_80851'>
-  <div class='img' data-url='/media/BAhbB1sHOgZmSSInMjAxMS8wNS8xNi8wMl8wMF81N18zMjJfU1BfMDc3LmpwZwY6BkVUWwg6BnA6CnRodW1iSSINMjUzeDEyMyMGOwZG'></div>
-
-
-</div>
-
-
-<div class='grid_caption'>
-<div class='caption' id='container_text_80853'>
-
-Guided snowshoe tours, ice skating and more.
-</div>
-</div>
-</a>
-</li>
-
-
-</ul>
-</div>
-
-
-  <div class='panel' id='activities-guide' style='display: none'>
-<div class='title'>
-<h2>
-Activities Guide
-</h2>
-<a class='close_panel' href='#'>Close</a>
-</div>
-<!-- /title -->
-<ul class='grid7' data-dom_id='grid_37994'>
-<!-- %li{:id => dom_id(c), :class => "cell_#{i + 1}"} -->
-  <li class='cell_1' id='container_grid_cell_134602'>
-<a class='cell_link' href='/skyride' id='container_text_134604'>
-<span class='grid_heading' id='container_text_134603'>
-
-Skyride
-</span>
-  <div class='media' data-parent_container_class='gridcell' id='container_media_134605'>
-  <div class='img' data-url='/media/BAhbB1sHOgZmSSJEMjAxMS8wNS8xOS8xMl81NF80M183NjlfMjAxMF9Ta3lyaWRlX2RkaV90c19ncl8yMDc2X2Nyb3BwZWQuanBnBjoGRVRbCDoGcDoKdGh1bWJJIg0yNTV4MjE0IwY7BkY'></div>
-
-
-</div>
-
-
-<div class='grid_caption'>
-<div class='caption' id='container_text_134607'>
-
-An unforgettable 1-mile journey.
-
-</div>
-</div>
-</a>
-</li>
-
-
-<!-- %li{:id => dom_id(c), :class => "cell_#{i + 1}"} -->
-  <li class='cell_2' id='container_grid_cell_134608'>
-<a class='cell_link' href='/eye-of-the-wind' id='container_text_134610'>
-<span class='grid_heading' id='container_text_134609'>
-
-The Eye of the Wind
-</span>
-  <div class='media' data-parent_container_class='gridcell' id='container_media_134611'>
-  <div class='img' data-url='/media/BAhbB1sHOgZmSSIuMjAxMS8wNS8xMC8xN18yOF81MF84NjBfcHVsbGFjdGl2aXR5MS5qcGcGOgZFVFsIOgZwOgp0aHVtYkkiDjI1NXgyMTQjZQY7BkY'></div>
-
-
-</div>
-
-
-<div class='grid_caption'>
-<div class='caption' id='container_text_134613'>
-Stand inside and be blown away.<br>
-
-
-
-</div>
-</div>
-</a>
-</li>
-
-
-<!-- %li{:id => dom_id(c), :class => "cell_#{i + 1}"} -->
-  <li class='cell_3' id='container_grid_cell_134614'>
-<a class='cell_link' href='/wildlife-refuge' id='container_text_134616'>
-<span class='grid_heading' id='container_text_134615'>
-
-
-Wildlife Refuge
-</span>
-  <div class='media' data-parent_container_class='gridcell' id='container_media_134617'>
-  <div class='img' data-url='/media/BAhbB1sHOgZmSSJAMjAxMS8wNS8xOS8xMl80N181NV8xNTZfSnVsaWVTY290dF9ncm91c2Vncml6emx5X3NwcmluZy5qcGcGOgZFVFsIOgZwOgp0aHVtYkkiDTI1NXgyMTQjBjsGRg'></div>
-
-
-</div>
-
-
-<div class='grid_caption'>
-<div class='caption' id='container_text_134619'>
-
-
-
-
-
-Visit the Grizzly bears, Timber wolves and other residents of the Refuge.
-</div>
-</div>
-</a>
-</li>
-
-
-<!-- %li{:id => dom_id(c), :class => "cell_#{i + 1}"} -->
-  <li class='cell_4' id='container_grid_cell_134620'>
-<a class='cell_link' href='/zipline' id='container_text_134622'>
-<span class='grid_heading' id='container_text_134621'>
-
-Mountain Ziplines
-</span>
-  <div class='media' data-parent_container_class='gridcell' id='container_media_134623'>
-  <div class='img' data-url='/media/BAhbB1sHOgZmSSIsMjAxMS8wNS8xMC8xNl81NF8xNV8yOTZfcHVsbHRpY2tldDUuanBnBjoGRVRbCDoGcDoKdGh1bWJJIg0xNTR4MTI2IwY7BkY'></div>
-
-
-</div>
-
-
-<div class='grid_caption'>
-<div class='caption' id='container_text_134625'>
-
-
-Soar on dual-circuit ziplines.
-
-
-</div>
-</div>
-</a>
-</li>
-
-
-<!-- %li{:id => dom_id(c), :class => "cell_#{i + 1}"} -->
-  <li class='cell_5' id='container_grid_cell_134626'>
-<a class='cell_link' href='/lumberjack-show' id='container_text_134628'>
-<span class='grid_heading' id='container_text_134627'>
-
-Lumberjack Show
-</span>
-  <div class='media' data-parent_container_class='gridcell' id='container_media_134629'>
-  <div class='img' data-url='/media/BAhbB1sHOgZmSSIvMjAxMS8wNS8xMC8xN181N181NV8xMDJfcHVsbGFjdGl2aXR5MTAuanBnBjoGRVRbCDoGcDoKdGh1bWJJIg0xNTR4MTI2IwY7BkY'></div>
-
-
-</div>
-
-
-<div class='grid_caption'>
-<div class='caption' id='container_text_134631'>
-
-Funny, fast-paced entertainment.
-</div>
-</div>
-</a>
-</li>
-
-
-<!-- %li{:id => dom_id(c), :class => "cell_#{i + 1}"} -->
-  <li class='cell_6' id='container_grid_cell_134632'>
-<a class='cell_link' href='/birds-in-motion' id='container_text_134634'>
-<span class='grid_heading' id='container_text_134633'>
-
-Birds in Motion
-</span>
-  <div class='media' data-parent_container_class='gridcell' id='container_media_134635'>
-  <div class='img' data-url='/media/BAhbB1sHOgZmSSIuMjAxMS8wNS8xMC8xN181NF8yOF84MjhfcHVsbGFjdGl2aXR5Ny5qcGcGOgZFVFsIOgZwOgp0aHVtYkkiDTE1NHgxMjYjBjsGRg'></div>
-
-
-</div>
-
-
-<div class='grid_caption'>
-<div class='caption' id='container_text_134637'>
-
-Majestic birds of prey in flight.
-
-</div>
-</div>
-</a>
-</li>
-
-
-<!-- %li{:id => dom_id(c), :class => "cell_#{i + 1}"} -->
-  <li class='cell_7' id='container_grid_cell_134638'>
-<a class='cell_link' href='/heli-tours' id='container_text_134640'>
-<span class='grid_heading' id='container_text_134639'>
-
-
-Heli Tours
-
-</span>
-  <div class='media' data-parent_container_class='gridcell' id='container_media_134641'>
-  <div class='img' data-url='/media/BAhbB1sHOgZmSSIpMjAxMi8wNS8xOC8xM181Ml80OV80ODVfMDNfQ29weV8uanBnBjoGRVRbCDoGcDoKdGh1bWJJIg0xNTR4MTI2IwY7BkY'></div>
-
-
-</div>
-
-
-<div class='grid_caption'>
-<div class='caption' id='container_text_134643'>
-Soar above the peak.
-
-</div>
-</div>
-</a>
-</li>
-
-
-<!-- %li{:id => dom_id(c), :class => "cell_#{i + 1}"} -->
-  <li class='cell_8' id='container_grid_cell_134644'>
-<a class='cell_link' href='/paragliding' id='container_text_134646'>
-<span class='grid_heading' id='container_text_134645'>
-
-Paragliding
-</span>
-  <div class='media' data-parent_container_class='gridcell' id='container_media_134647'>
-  <div class='img' data-url='/media/BAhbB1sHOgZmSSItMjAxMS8wNS8xMC8xNl81NF81Nl80NjFfcHVsbHRpY2tldDE1LmpwZwY6BkVUWwg6BnA6CnRodW1iSSIOMTQ2eDEyNiN3BjsGRg'></div>
-
-
-</div>
-
-
-<div class='grid_caption'>
-<div class='caption' id='container_text_134649'>
-
-3,100 feet of airborne joy.
-</div>
-</div>
-</a>
-</li>
-
-
-<!-- %li{:id => dom_id(c), :class => "cell_#{i + 1}"} -->
-  <li class='cell_9' id='container_grid_cell_134650'>
-<a class='cell_link' href='/hiking-scenic-activities' id='container_text_134652'>
-<span class='grid_heading' id='container_text_134651'>
-
-Scenic Activities
-</span>
-  <div class='media' data-parent_container_class='gridcell' id='container_media_134653'>
-  <div class='img' data-url='/media/BAhbB1sHOgZmSSIuMjAxMS8wNS8xMC8xN18zM180N182NDRfcHVsbGFjdGl2aXR5NS5qcGcGOgZFVFsIOgZwOgp0aHVtYkkiDTE1NHgxMjYjBjsGRg'></div>
-
-
-</div>
-
-
-<div class='grid_caption'>
-<div class='caption' id='container_text_134655'>
-Hike, ride or tour to the best viewpoints.
-</div>
-</div>
-</a>
-</li>
-
-
-<!-- %li{:id => dom_id(c), :class => "cell_#{i + 1}"} -->
-  <li class='cell_10' id='container_grid_cell_134656'>
-<a class='cell_link' href='/#dining' id='container_text_134658'>
-<span class='grid_heading' id='container_text_134657'>
-
-
-Dining
-</span>
-  <div class='media' data-parent_container_class='gridcell' id='container_media_134659'>
-  <div class='img' data-url='/media/BAhbB1sHOgZmSSIsMjAxMS8wNS8xMC8xOV8wMV8xNl8yMTRfcHVsbGRpbmluZzEuanBnBjoGRVRbCDoGcDoKdGh1bWJJIg0xNTR4MTI2IwY7BkY'></div>
-
-
-</div>
-
-
-<div class='grid_caption'>
-<div class='caption' id='container_text_134661'>
-
-Nachos piled high or fine dining in the sky.
-
-</div>
-</div>
-</a>
-</li>
-
-
-<!-- %li{:id => dom_id(c), :class => "cell_#{i + 1}"} -->
-  <li class='cell_11' id='container_grid_cell_134662'>
-<a class='cell_link' href='/theatre-in-the-sky' id='container_text_134664'>
-<span class='grid_heading' id='container_text_134663'>
-
-Theatre in the Sky
-</span>
-  <div class='media' data-parent_container_class='gridcell' id='container_media_134665'>
-  <div class='img' data-url='/media/BAhbB1sHOgZmSSIvMjAxMS8wNS8xMC8xN181OV81Nl8zMzVfcHVsbGFjdGl2aXR5MTEuanBnBjoGRVRbCDoGcDoKdGh1bWJJIg0xNTR4MTI2IwY7BkY'></div>
-
-
-</div>
-
-
-<div class='grid_caption'>
-<div class='caption' id='container_text_134667'>
-
-
-
-HD documentaries presented everyday.
-
-
-</div>
-</div>
-</a>
-</li>
-
-
-<!-- %li{:id => dom_id(c), :class => "cell_#{i + 1}"} -->
-  <li class='cell_12' id='container_grid_cell_134668'>
-<a class='cell_link' href='/grousegrind' id='container_text_134670'>
-<span class='grid_heading' id='container_text_134669'>
+<a class='button-text button-text--next-primary' href='/grousegrind'>
 Grouse Grind
-</span>
-  <div class='media' data-parent_container_class='gridcell' id='container_media_134671'>
-  <div class='img' data-url='/media/BAhbB1sHOgZmSSI3MjAxMi8wNS8xOC8xNl8yMl8zNF8xMThfZGRpX3RzX2dyX3N1bTExXzA0NjVfMy5qcGcGOgZFVFsIOgZwOgp0aHVtYkkiDTE1NHgxMjYjBjsGRg'></div>
-
-
-</div>
-
-
-<div class='grid_caption'>
-<div class='caption' id='container_text_134673'>
-Local's favourite hiking trail.
-</div>
-</div>
 </a>
-</li>
-
-
-<!-- %li{:id => dom_id(c), :class => "cell_#{i + 1}"} -->
-  <li class='cell_13' id='container_grid_cell_134674'>
-<a class='cell_link' href='/alpine-shopping' id='container_text_134676'>
-<span class='grid_heading' id='container_text_134675'>
-Shopping
 </span>
-  <div class='media' data-parent_container_class='gridcell' id='container_media_134677'>
-  <div class='img' data-url='/media/BAhbB1sHOgZmSSIqMjAxMS8wNS8xMC8xN181Nl8wNV82NjhfcHVsbHNob3AzLmpwZwY6BkVUWwg6BnA6CnRodW1iSSINMTQ2eDEyNiMGOwZG'></div>
-
+<span>
+<div class='details'>
+Regional Parks gate open : 6:15am- 3:30pm Contact Metro Vancouver for more information
+</div>
+<div class='note'>
 
 </div>
-
-
-<div class='grid_caption'>
-<div class='caption' id='container_text_134679'>
-
-Find the perfect gift or&nbsp;<div>the latest gear.
-</div>
-</div>
-</div>
-</a>
+</span>
+<span class='closed'>
+Closed
+</span>
 </li>
+<li>
+<span>
+<a class='button-text button-text--next-primary' href='/ice-skating'>
+Mountaintop Skating Pond
+</a>
+</span>
+<span>
+<div class='details'>
+9:00am-10:00pm 
+</div>
+<div class='note'>
 
+</div>
+</span>
+<span class='open'>
+Open
+</span>
+</li>
+<li>
+<span>
+<a class='button-text button-text--next-primary' href='/theatre-in-the-sky'>
+Theatre in the Sky
+</a>
+</span>
+<span>
+<div class='details'>
+9:30am-9:00pm
+</div>
+<div class='note'>
 
+</div>
+</span>
+<span class='open'>
+Open
+</span>
+</li>
+<li>
+<span>
+<a class='button-text button-text--next-primary' href='/sliding-zone'>
+Sliding Zone 
+</a>
+</span>
+<span>
+<div class='details'>
+Opening Friday at 3:00pm!
+</div>
+<div class='note'>
+
+</div>
+</span>
+<span class='closed'>
+Closed
+</span>
+</li>
+<li>
+<span>
+<a class='button-text button-text--next-primary' href='/bears'>
+Grizzly Bear Habitat
+</a>
+</span>
+<span>
+<div class='details'>
+9:00am-10:00pm
+</div>
+<div class='note'>
+
+</div>
+</span>
+<span class='open'>
+Open
+</span>
+</li>
+<li>
+<span>
+<a class='button-text button-text--next-primary' href='/skyride-surf-adventure'>
+Skyride Surf Adventure
+</a>
+</span>
+<span>
+<div class='details'>
+8:15am-11:00am &amp; 8:00pm-9:30pm
+</div>
+<div class='note'>
+
+</div>
+</span>
+<span class='open'>
+Open
+</span>
+</li>
+<li>
+<span>
+<a class='button-text button-text--next-primary' href='/wildlife-refuge'>
+Ranger Talks
+</a>
+</span>
+<span>
+<div class='details'>
+10:00am, 12:15pm, 2:45pm, 4:00pm
+</div>
+<div class='note'>
+
+</div>
+</span>
+<span class='closed'>
+Closed
+</span>
+</li>
+<li>
+<span>
+<a class='button-text button-text--next-primary' href='/flight'>
+Owl Interpretive Sessions
+</a>
+</span>
+<span>
+<div class='details'>
+10:45am &amp; 1:45pm 
+</div>
+<div class='note'>
+
+</div>
+</span>
+<span class='closed'>
+Closed
+</span>
+</li>
 </ul>
 </div>
-
-
-  <div class='panel panel-blog' id='blog'>
-<div class='title'>
-<h2>Blogs</h2>
-<a class='close_panel' href='#'>Close</a>
-<a class='edit_grid' href='/posts'>View All Posts</a>
-</div>
-<ul class='grid5'>
-<li class='cell_1'>
-<a href='/posts/a-treat-for-brides-grooms-this-weekend'>
-<div class='media'>
-    <div class='img' data-url='/media/BAhbB1sHOgZmSSIxMjAxMy8wMS8wMy8xNC8zMi81NC80NDQvR01faHViYmFyZF9sYW5kcy5qcGcGOgZFVFsIOgZwOgp0aHVtYkkiDjI1NHgyMDAjZQY7BkY'></div>
-
-
-
-
-</div>
-<span class='date'>
-January 03, 2013
-</span>
-<h3>
-It's Time To Start Your Wedding Planning
-</h3>
-<span class='blurb'>
-Visit our Grouse Mountain team this weekend at the 36th Annual Vancouver Wedding Show. 
-
-2013 is here and there is no better time for newly engaged...
-</span>
-<span class='snippet-link'>Read</span>
+<div class='tab' id='dining' style='display: none'>
+<h2>Dining</h2>
+<ul class='data-table'>
+<li>
+<span>
+<a class='button-text button-text--next-primary' href='/lupins'>
+Lupins Café
 </a>
+</span>
+<span>
+<div class='details'>
+11:00am - 10:00pm 
+</div>
+<div class='note'>
+
+</div>
+</span>
+<span class='open'>
+Open
+</span>
 </li>
-<li class='cell_2'>
-<a href='/posts/holiday-greetings-from-grouse-mountain'>
-<div class='media'>
-    <div>
-<img alt="387163988_1280" height="243" src="http://b.vimeocdn.com/ts/387/163/387163988_1280.jpg" />
-</div>
-
-
-
-
-</div>
-<span class='date'>
-December 19, 2012
-</span>
-<h3>
-Merry Christmas!
-</h3>
-<span class='blurb'>
-
-A musical holiday greeting from all of us to you. Enjoy this musical holiday greeting we created for all of you! Wishing you all the best this season...
-</span>
-<span class='snippet-link'>Read</span>
+<li>
+<span>
+<a class='button-text button-text--next-primary' href='/altitudes-bistro'>
+Altitudes Bistro
 </a>
-</li>
-<li class='cell_3'>
-<a href='/posts/jingle-grouse-jingle-grouse'>
-<div class='media'>
-    <div class='img' data-url='/media/BAhbB1sHOgZmSSI5MjAxMi8xMS8xNi8xMS8yMy8yMy8zNDcvaVN0b2NrXzAwMDAxNDc2NTIwMFNtYWxsLmpwZwY6BkVUWwg6BnA6CnRodW1iSSINMjU0eDIwMCMGOwZG'></div>
-
-
-
+</span>
+<span>
+<div class='details'>
+11:00am - 10:00pm service in The Observatory
+</div>
+<div class='note'>
 
 </div>
-<span class='date'>
-December 12, 2012
 </span>
-<h3>
-Jingle Grouse, Jingle Grouse
-</h3>
-<span class='blurb'>
-Tweet your take on the classic Christmas song, Jingle Bells and win.... 
-
-
-Updated LyricsRiding through the snowOn a Peak of Christmas SleighPast the...
+<span class='open'>
+Open
 </span>
-<span class='snippet-link'>Read</span>
-</a>
 </li>
-<li class='cell_4'>
-<a href='/posts/christmas-gift-inspiration'>
-<div class='media'>
-    <div class='img' data-url='/media/BAhbB1sHOgZmSSI0MjAxMi8xMi8xNC8xNC80OS8wMC82MTIvQmxvZ0hlYWRlcl93aW50ZXJHQy5qcGcGOgZFVFsIOgZwOgp0aHVtYkkiDTEwM3gxMDMjBjsGRg'></div>
-
-
-
+<li>
+<span>
+<a class='button-text button-text--next-primary' href='/grouse-grind-coffee-bar'>
+Grouse Grind Coffee Bar
+</a>
+</span>
+<span>
+<div class='details'>
+7:15am - 10:00pm 
+</div>
+<div class='note'>
 
 </div>
-<span class='date'>
-December 03, 2012
 </span>
-<h3>
-The Peak of Christmas Gifts
-</h3>
-<span class='snippet-link'>Read</span>
-</a>
+<span class='open'>
+Open
+</span>
 </li>
-<li class='cell_5'>
-<a href='/posts/grouse-mountain-skyride-inspired-wedding-cake'>
-<div class='media'>
-    <div class='img' data-url='/media/BAhbB1sHOgZmSSIlMjAxMi8xMS8yOS8xMi8xNy80Ny8yNDUvQ2FrZS5qcGcGOgZFVFsIOgZwOgp0aHVtYkkiDTEwM3gxMDMjBjsGRg'></div>
-
-
-
+<li>
+<span>
+<a class='button-text button-text--next-primary' href='/starbucks'>
+Starbucks (base of the Mountain)
+</a>
+</span>
+<span>
+<div class='details'>
+7:00am-8:00pm
+</div>
+<div class='note'>
 
 </div>
-<span class='date'>
-November 29, 2012
 </span>
-<h3>
-
-
-
-Grouse Mountain Skyride Inspired Wedding Cake &nbsp; &nbsp;
-</h3>
-<span class='snippet-link'>Read</span>
-</a>
+<span class='open'>
+Open
+</span>
 </li>
-<li class='cell_6'>
-<a href='/posts/bears-enter-hibernation'>
-<div class='media'>
-    <div class='img' data-url='/media/BAhbB1sHOgZmSSIvMjAxMi8xMS8yMy8xNS81MC8yNi8xMDEvYmVhcnNzbGVlcDIwMTIuanBnBjoGRVRbCDoGcDoKdGh1bWJJIg0xMDN4MTAzIwY7BkY'></div>
-
-
-
+<li>
+<span>
+<a class='button-text button-text--next-primary' href='/the-observatory-restaurant'>
+The Observatory
+</a>
+</span>
+<span>
+<div class='details'>
+5:00pm - 10:00pm
+</div>
+<div class='note'>
 
 </div>
-<span class='date'>
-November 23, 2012
 </span>
-<h3>
-Grinder and Coola Enter Their 11th Hibernation on Grouse Mountain
-</h3>
-<span class='snippet-link'>Read</span>
-</a>
+<span class='open'>
+Open
+</span>
 </li>
-<li class='cell_7'>
-<a href='/posts/a-minnesota-couples-destination-wedding'>
-<div class='media'>
-    <div class='img' data-url='/media/BAhbB1sHOgZmSSI2MjAxMi8xMS8yMS8xMS8xOS8xOC85MTQvX0pLUDIwMTJfc2NobWlkdF80NzZfLmpwZwY6BkVUWwg6BnA6CnRodW1iSSINMTAzeDEwMyMGOwZG'></div>
-
-
-
+<li>
+<span>
+<a class='button-text button-text--next-primary' href='/beavertails'>
+BeaverTails
+</a>
+</span>
+<span>
+<div class='details'>
+11:00am-6:00pm
+</div>
+<div class='note'>
 
 </div>
-<span class='date'>
-November 20, 2012
 </span>
-<h3>
-
-A Minnesota Couple's Destination Wedding
-
-</h3>
-<span class='snippet-link'>Read</span>
-</a>
+<span class='closed'>
+Closed
+</span>
 </li>
-<li class='cell_8'>
-<a href='/posts/winter-engagements'>
-<div class='media'>
-    <div class='img' data-url='/media/BAhbB1sHOgZmSSIzMjAxMi8xMS8yMC8xNi8yNC8wNy8zNjYvTF9DX0VfU2Vzc2lvbl9fMDU4LmpwZwY6BkVUWwg6BnA6CnRodW1iSSINMTAzeDEwMyMGOwZG'></div>
-
-
-
+<li>
+<span>
+<a class='button-text button-text--next-primary' href='/potato-shack'>
+Grizzly Lookout Cafe
+</a>
+</span>
+<span>
+<div class='details'>
+11:00am-6:00pm
+</div>
+<div class='note'>
 
 </div>
-<span class='date'>
-November 09, 2012
 </span>
-<h3>
-Winter Engagements
-</h3>
-<span class='snippet-link'>Read</span>
-</a>
-</li>
-<li class='cell_9'>
-<a href='/posts/sleepy-bears-almost-ready-for-hibernation'>
-<div class='media'>
-    <div class='img' data-url='/media/BAhbB1sHOgZmSSIuMjAxMi8xMS8wOS8xMy8xNy81MS81ODYvXzM2UDIwMDJzbWFsbC5qcGcGOgZFVFsIOgZwOgp0aHVtYkkiDTEwM3gxMDMjBjsGRg'></div>
-
-
-
-
-</div>
-<span class='date'>
-November 09, 2012
+<span class='closed'>
+Closed
 </span>
-<h3>
-Sleepy Bears Almost Ready for Hibernation
-</h3>
-<span class='snippet-link'>Read</span>
-</a>
 </li>
-
 </ul>
-<br class='clear'>
-<div class='popular_topics'>
-<a href="/posts/tags/wildlife" class="">#wildlife</a>
-<a href="/posts/tags/dining" class="">#dining</a>
-<a href="/posts/tags/winter" class="">#winter</a>
-<a href="/posts/tags/ski-board" class="">#ski/board</a>
-<a href="/posts/tags/summer" class="">#summer</a>
-<a href="/posts/tags/hiking" class="">#hiking</a>
-<a href="/posts/tags/private-functions" class="">#private functions</a>
-<a href="/posts/tags/birds" class="">#birds</a>
-<a href="/posts/tags/birds-in-motion" class="">#Birds in Motion</a>
-<a href="/posts/tags/paragliding" class="">#paragliding</a>
-<a href="/posts/tags/wolves" class="">#wolves</a>
-<a href="/posts/tags/shopping" class="">#shopping</a>
-<a href="/posts/tags/grouse-grind" class="">#Grouse Grind</a>
-<a href="/posts/tags/weddings" class="">#weddings</a>
-<a href="/posts/tags/olympics" class="">#Olympics</a>
-<a href="/posts/tags/education" class="">#education</a>
-<a href="/posts/tags/timber-room" class="">#Timber Room</a>
-<a href="/posts/tags/seek-the-peak" class="">#Seek the Peak</a>
-<a href="/posts/tags/y2play" class="">#Y2Play</a>
-<a href="/posts/tags/the-observatory" class="">#The Observatory</a>
 </div>
-</div>
-
-
-
-<div class='panel panel-cart_preview' id='cart_preview' style='display: none'></div>
-<div class='panel panel-login' id='login' style='display: none'>
-<div class='title'>
-<h2>My Account</h2>
-<a class='close_panel' href='#'>Close</a>
-</div>
-<!-- title -->
-<div class='step1'>
-<h3>Login</h3>
-<p>
-Don't have an account?
-<a class='show_new_account' href='#'>Click here</a>
-</p>
-<form accept-charset="UTF-8" action="/user_sessions" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="nXlKnPtNpP7Y9yYh2jX1sRKo2+oGzSKhN/n4koQ9Lt0=" /></div>
-<label>Email</label>
-<input autocapitalize="off" class="email" id="email" name="email" type="text" value="" />
-<label>Password</label>
-<input id="password" name="password" type="password" />
-<a class='forgot nothookedup' href='#'>Forgot?</a>
-<input checked="checked" class="check_box" id="remember" name="remember" type="checkbox" value="true" />
-<label class='inline'>Remember Me</label>
-<button disable_with='Please wait...' name='commit' type='submit'>Login</button>
-</form>
-
-<h3>New Account</h3>
-<h4>Stay in the loop. Save big. Then ride.</h4>
-<ul>
-<li>Passholders will receive membership discounts on purchases – retail, ziplining and more</li>
-<li>Easy online pass renewals and card re-loading</li>
-<li>View your Grind™ Timer stats</li>
+<div class='tab' id='lifts' style='display: none'>
+<h2>Lift Operations</h2>
+<ul class='data-table'>
+<li>
+<span>
+Olympic Express High-Speed Quad Chair
+</span>
+<span class='coming soon!'>
+<span class='legend__night'></span>
+Coming Soon!
+</span>
+</li>
+<li>
+<span>
+Peak Quad Chair
+</span>
+<span class='coming soon!'>
+<span class='legend__night'></span>
+Coming Soon!
+</span>
+</li>
+<li>
+<span>
+Screaming Eagle High-Speed Quad Chair
+</span>
+<span class='coming soon!'>
+<span class='legend__night'></span>
+Coming Soon!
+</span>
+</li>
+<li>
+<span>
+Greenway Quad Chair
+</span>
+<span class='coming soon!'>
+<span class='legend__night'></span>
+Coming Soon!
+</span>
+</li>
+<li>
+<span>
+Magic Carpet
+</span>
+<span class='coming soon!'>
+<span class='legend__night'></span>
+Coming Soon!
+</span>
+</li>
 </ul>
-<a class='show_new_account btn' href='#'>Get Started</a>
-
-</div>
-<div class='step2' style='display: none'>
-<h3>Account Setup</h3>
-<form accept-charset="UTF-8" action="/users" class="new_user" data-remote="true" id="new_user" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="nXlKnPtNpP7Y9yYh2jX1sRKo2+oGzSKhN/n4koQ9Lt0=" /></div>
-<h5>Personal Information</h5>
-<div class='field'>
-<label for="user_first_name">First name</label>
-<input id="user_first_name" name="user[first_name]" size="30" type="text" />
-</div>
-<div class='field'>
-<label for="user_last_name">Last name</label>
-<input id="user_last_name" name="user[last_name]" size="30" type="text" />
-</div>
-<div class='field'>
-<label for="user_email">Email</label>
-<input autocapitalize="off" id="user_email" name="user[email]" size="30" type="text" />
-</div>
-<br class='clear'>
-<div class='field'>
-<label for="user_password">Password</label>
-<input id="user_password" name="user[password]" size="30" type="password" />
-</div>
-<div class='field'>
-<label for="user_password_confirmation">Password confirmation</label>
-<input id="user_password_confirmation" name="user[password_confirmation]" size="30" type="password" />
-</div>
-<div class='field mailing_list'>
-<label for="user_list_member">E-Newsletter</label>
-<input name="user[list_member]" type="hidden" value="0" /><input checked="checked" class="check_box" id="user_list_member" name="user[list_member]" type="checkbox" value="1" />
-<span>I would like to receive important offers and information from Grouse Mountain.</span>
-</div>
-<br class='clear'>
-<h5>Pass Information</h5>
-<p class='caption'>Enter your pass number here to receive eligible discounts and easy renewals.</p>
-<div class='field acct_pass'>
-<label for="user_siriusware_pass_no">Pass Number</label>
-<input id="user_siriusware_pass_no" name="user[siriusware_pass_no]" size="30" type="text" />
-</div>
-<div class='field acct_pass'>
-<label for="user_birth_date">Birth date</label>
-<select class="short" id="user_birth_date_1i" name="user[birth_date(1i)]">
-<option value=""></option>
-<option value="1923">1923</option>
-<option value="1924">1924</option>
-<option value="1925">1925</option>
-<option value="1926">1926</option>
-<option value="1927">1927</option>
-<option value="1928">1928</option>
-<option value="1929">1929</option>
-<option value="1930">1930</option>
-<option value="1931">1931</option>
-<option value="1932">1932</option>
-<option value="1933">1933</option>
-<option value="1934">1934</option>
-<option value="1935">1935</option>
-<option value="1936">1936</option>
-<option value="1937">1937</option>
-<option value="1938">1938</option>
-<option value="1939">1939</option>
-<option value="1940">1940</option>
-<option value="1941">1941</option>
-<option value="1942">1942</option>
-<option value="1943">1943</option>
-<option value="1944">1944</option>
-<option value="1945">1945</option>
-<option value="1946">1946</option>
-<option value="1947">1947</option>
-<option value="1948">1948</option>
-<option value="1949">1949</option>
-<option value="1950">1950</option>
-<option value="1951">1951</option>
-<option value="1952">1952</option>
-<option value="1953">1953</option>
-<option value="1954">1954</option>
-<option value="1955">1955</option>
-<option value="1956">1956</option>
-<option value="1957">1957</option>
-<option value="1958">1958</option>
-<option value="1959">1959</option>
-<option value="1960">1960</option>
-<option value="1961">1961</option>
-<option value="1962">1962</option>
-<option value="1963">1963</option>
-<option value="1964">1964</option>
-<option value="1965">1965</option>
-<option value="1966">1966</option>
-<option value="1967">1967</option>
-<option value="1968">1968</option>
-<option value="1969">1969</option>
-<option value="1970">1970</option>
-<option value="1971">1971</option>
-<option value="1972">1972</option>
-<option value="1973">1973</option>
-<option value="1974">1974</option>
-<option value="1975">1975</option>
-<option value="1976">1976</option>
-<option value="1977">1977</option>
-<option value="1978">1978</option>
-<option value="1979">1979</option>
-<option value="1980">1980</option>
-<option value="1981">1981</option>
-<option value="1982">1982</option>
-<option value="1983">1983</option>
-<option value="1984">1984</option>
-<option value="1985">1985</option>
-<option value="1986">1986</option>
-<option value="1987">1987</option>
-<option value="1988">1988</option>
-<option value="1989">1989</option>
-<option value="1990">1990</option>
-<option value="1991">1991</option>
-<option value="1992">1992</option>
-<option value="1993">1993</option>
-<option value="1994">1994</option>
-<option value="1995">1995</option>
-<option value="1996">1996</option>
-<option value="1997">1997</option>
-<option value="1998">1998</option>
-<option value="1999">1999</option>
-<option value="2000">2000</option>
-<option value="2001">2001</option>
-<option value="2002">2002</option>
-<option value="2003">2003</option>
-<option value="2004">2004</option>
-<option value="2005">2005</option>
-<option value="2006">2006</option>
-<option value="2007">2007</option>
-<option value="2008">2008</option>
-<option value="2009">2009</option>
-<option value="2010">2010</option>
-<option value="2011">2011</option>
-<option value="2012">2012</option>
-<option value="2013">2013</option>
-</select>
-<select class="short" id="user_birth_date_2i" name="user[birth_date(2i)]">
-<option value=""></option>
-<option value="1">January</option>
-<option value="2">February</option>
-<option value="3">March</option>
-<option value="4">April</option>
-<option value="5">May</option>
-<option value="6">June</option>
-<option value="7">July</option>
-<option value="8">August</option>
-<option value="9">September</option>
-<option value="10">October</option>
-<option value="11">November</option>
-<option value="12">December</option>
-</select>
-<select class="short" id="user_birth_date_3i" name="user[birth_date(3i)]">
-<option value=""></option>
-<option value="1">1</option>
-<option value="2">2</option>
-<option value="3">3</option>
-<option value="4">4</option>
-<option value="5">5</option>
-<option value="6">6</option>
-<option value="7">7</option>
-<option value="8">8</option>
-<option value="9">9</option>
-<option value="10">10</option>
-<option value="11">11</option>
-<option value="12">12</option>
-<option value="13">13</option>
-<option value="14">14</option>
-<option value="15">15</option>
-<option value="16">16</option>
-<option value="17">17</option>
-<option value="18">18</option>
-<option value="19">19</option>
-<option value="20">20</option>
-<option value="21">21</option>
-<option value="22">22</option>
-<option value="23">23</option>
-<option value="24">24</option>
-<option value="25">25</option>
-<option value="26">26</option>
-<option value="27">27</option>
-<option value="28">28</option>
-<option value="29">29</option>
-<option value="30">30</option>
-<option value="31">31</option>
-</select>
-
-</div>
-<br class='clear'>
-<div class='field'>
-<button class='btn' data-disable-with='Submitting...' id='user_submit' name='commit' type='submit'>Submit Info</button>
-</div>
-</form>
-
-</div>
-<div class='step_forgot' style='display: none'>
-<h3>Reset Password</h3>
-<form accept-charset="UTF-8" action="/password_resets" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="nXlKnPtNpP7Y9yYh2jX1sRKo2+oGzSKhN/n4koQ9Lt0=" /></div>
-<p style='margin-left: 0'>Enter your email address in the field below:</p>
-<input autocapitalize="off" id="email" name="email" type="text" />
-<button name='commit' type='submit'>Email Password</button>
-<br class='clear'>
-<p class='caption'>
-Don't have an account?
-<a class='show_new_account' href='#'>Create an account here.</a>
-</p>
-<p class='caption'>
-<a class='show_login' href='#'>Return to login</a>
-</p>
-</form>
-
-
-</div>
-<div class='msg_success' style='display: none'>
-<p>Great! We have just emailed you a link to reset your password.</p>
-</div>
-<div class='msg_notfound' style='display: none'>
-<p>
-Unfortunately we couldn't find that email address in our system. Would you like to
-<a href='#'>try another one?</a>
+<p class='legend'>
+<span class='legend__night'>Open at night</span>
 </p>
 </div>
-</div>
-
-<div class='panel panel-balance' id='balance' style='display: none;'>
-<div class='title'>
-<h2>Gift Cards & Passes</h2>
-<a class='close_panel' href='#'>Close</a>
-</div>
-<!-- title -->
-<div class='step1'>
-<br>
-<p>The Grouse Card is a great way to make purchases at The Peak of Vancouver. Leave the cash at home and use your Grouse Card for food and drinks, rental equipment or retail purchases. They also make great gifts!</p>
-<div class='form'>
-<p>Please enter your card/pass number in the field below to check your balance:</p>
-<input class='gift_card_number' type='text'>
-<button class='check_balance'>Check Balance</button>
-<br class='clear'>
-</div>
-<div class='buy_box'>
-<p>Purchase a Grouse Card <br>for a family member or <br>as a great gift for a friend.</p>
-<a class='btn' href='/gift-cards'>Buy Now</a>
-</div>
-</div>
-<div class='step2' style='display: none'>
-<h3>Your Balance</h3>
-<p style='text-align: center; margin-bottom; 12px;'>The balance of your card is:</p>
-<h5 class='result'>$0</h5>
-<p>Remember to always keep your Grouse Card in a safe place. The value remaining on your card is as good as cash at Grouse Mountain.</p>
-<div class='form'>
-<p>Check the balance of another card:</p>
-<input class='gift_card_number' type='text'>
-<button class='check_balance'>Check Balance</button>
-<br class='clear'>
-</div>
-</div>
-</div>
-</div>
-<!-- /pullout -->
-</div>
-<div id='widgets'>
-<div class='widget weather'>
-<h2>Weather</h2>
-<div class='padd'>
-<h5>As of January 06, 2013  9:00 AM</h5>
-<div class='current_weather'>
-<img src='/images/icons/weather/dark_bg/cloudy.png'>
--2˚C
-<br>
-Low overcast skies
-</div>
-<div class='forecast'>
-<p>
-TODAY:
-Overcast skies with scattered flurries, accumulating ~2cm. 
-</p>
-<p>
-TOMORROW:
-Overcast skies with chance of flurries, accumulating ~3cm. 
-</p>
-</div>
-<div class='long_term'>
-<h5>Long Term</h5>
-<div class='three_day'>
-<div class='day'>
-<img src='/images/icons/weather/dark_bg/snow.png'>
-<br>
-Mon
-</div>
-<div class='day'>
-<img src='/images/icons/weather/dark_bg/snow.png'>
-<br>
-Tue
-</div>
-<div class='day'>
-<img src='/images/icons/weather/dark_bg/snow.png'>
-<br>
-Wed
-</div>
-<br class='clear'>
-</div>
-</div>
-<a class='full' href='/current_conditions'>View Full Report</a>
-</div>
-</div>
-<div class='widget weather winter'>
-<h2>Snow</h2>
-<div class='padd'>
-<table width='208'>
-<tr>
-<td width='89'>
-7 cm
-</td>
-<td class='ref' width='119'>24hrs</td>
-</tr>
-<tr>
-<td>
-20 cm
-</td>
-<td class='ref'>7 days</td>
-</tr>
-<tr class='divide'>
-<td>
-550 cm
-</td>
-<td class='ref'>Total this season</td>
-</tr>
-<tr class='post-divide'>
-<td>
-240 cm
-</td>
-<td class='ref'>Depth at Plateau</td>
-</tr>
-<tr class='divide'>
-<td>
-322 cm
-</td>
-<td class='ref'>Depth at Peak</td>
-</tr>
-</table>
-<!-- .driver -->
-<!-- %a{:href => '#'} -->
-<!-- %img{:src => '/images/temp/driver5.gif'} -->
-</div>
-</div>
-
-<div class='widget grind' id='widget_grind'>
-<div class='live_times'></div>
-</div>
-<div class='widget news'>
-<h2>News</h2>
-<div class='padd'>
-<div class='post'>
-<span class='date'>
-January 03, 2013
+<div class='tab' id='runs' style='display: none'>
+<h2>Run Status</h2>
+<ul class='data-table'>
+<li>
+<span>
+<span class='runs-green'></span>
+Chalet Road
 </span>
-<h3>
-<a href="/news/make-a-resolution-to-be-safe-in-the-snow">Make a Resolution to Be Safe in the Snow</a>
-</h3>
-<a href="/news/make-a-resolution-to-be-safe-in-the-snow" class="read">Read</a>
-</div>
-<div class='post'>
-<span class='date'>
-January 03, 2013
+<span class='closed'>
+<span class='legend__night'></span>
+Closed
 </span>
-<h3>
-<a href="/news/visit-us-at-the-vancouver-wedding-fair-this-weekend">Visit Us at the Vancouver Wedding Fair This Weekend</a>
-</h3>
-<a href="/news/visit-us-at-the-vancouver-wedding-fair-this-weekend" class="read">Read</a>
-</div>
-<div class='post'>
-<span class='date'>
-December 25, 2012
+</li>
+<li>
+<span>
+<span class='runs-green'></span>
+Paradise
 </span>
-<h3>
-<a href="/news/stay-warm-with-boxing-day-deals-at-outfitters">Stay Warm with Boxing Day Deals at Outfitters</a>
-</h3>
-<a href="/news/stay-warm-with-boxing-day-deals-at-outfitters" class="read">Read</a>
+<span class='closed'>
+Closed
+</span>
+</li>
+<li>
+<span>
+<span class='runs-green'></span>
+Ski Wee
+</span>
+<span class='closed'>
+Closed
+</span>
+</li>
+<li>
+<span>
+<span class='runs-green'></span>
+The Cut
+</span>
+<span class='closed'>
+Closed
+</span>
+</li>
+<li>
+<span>
+<span class='runs-blue'></span>
+Blue Face
+</span>
+<span class='closed'>
+Closed
+</span>
+</li>
+<li>
+<span>
+<span class='runs-blue'></span>
+Centennial
+</span>
+<span class='closed'>
+Closed
+</span>
+</li>
+<li>
+<span>
+<span class='runs-blue'></span>
+Deliverance
+</span>
+<span class='closed'>
+Closed
+</span>
+</li>
+<li>
+<span>
+<span class='runs-blue'></span>
+Dogleg
+</span>
+<span class='closed'>
+Closed
+</span>
+</li>
+<li>
+<span>
+<span class='runs-blue'></span>
+Expo
+</span>
+<span class='closed'>
+Closed
+</span>
+</li>
+<li>
+<span>
+<span class='runs-blue'></span>
+Heaven's Sake
+</span>
+<span class='closed'>
+Closed
+</span>
+</li>
+<li>
+<span>
+<span class='runs-blue'></span>
+Lower Buckhorn
+</span>
+<span class='closed'>
+Closed
+</span>
+</li>
+<li>
+<span>
+<span class='runs-blue'></span>
+Lower Peak
+</span>
+<span class='closed'>
+Closed
+</span>
+</li>
+<li>
+<span>
+<span class='runs-blue'></span>
+Lower Side Cut
+</span>
+<span class='closed'>
+Closed
+</span>
+</li>
+<li>
+<span>
+<span class='runs-blue'></span>
+Paper Trail       
+</span>
+<span class='closed'>
+Closed
+</span>
+</li>
+<li>
+<span>
+<span class='runs-blue'></span>
+Peak
+</span>
+<span class='closed'>
+Closed
+</span>
+</li>
+<li>
+<span>
+<span class='runs-blue'></span>
+Upper Side Cut
+</span>
+<span class='closed'>
+Closed
+</span>
+</li>
+<li>
+<span>
+<span class='runs-blue'></span>
+Skyline
+</span>
+<span class='closed'>
+Closed
+</span>
+</li>
+<li>
+<span>
+<span class='runs-blue'></span>
+Tyee Chute
+</span>
+<span class='closed'>
+Closed
+</span>
+</li>
+<li>
+<span>
+<span class='runs-blue'></span>
+Upper Buckhorn
+</span>
+<span class='closed'>
+Closed
+</span>
+</li>
+<li>
+<span>
+<span class='runs-diamond'></span>
+Blazes
+</span>
+<span class='closed'>
+Closed
+</span>
+</li>
+<li>
+<span>
+<span class='runs-diamond'></span>
+Coffin
+</span>
+<span class='closed'>
+Closed
+</span>
+</li>
+<li>
+<span>
+<span class='runs-diamond'></span>
+Hades
+</span>
+<span class='closed'>
+Closed
+</span>
+</li>
+<li>
+<span>
+<span class='runs-diamond'></span>
+Inferno
+</span>
+<span class='closed'>
+Closed
+</span>
+</li>
+<li>
+<span>
+<span class='runs-diamond'></span>
+Outer Limits
+</span>
+<span class='closed'>
+Closed
+</span>
+</li>
+<li>
+<span>
+<span class='runs-double-diamond'></span>
+Devil's Advocate
+</span>
+<span class='closed'>
+Closed
+</span>
+</li>
+<li>
+<span>
+<span class='runs-double-diamond'></span>
+Purgatory
+</span>
+<span class='closed'>
+Closed
+</span>
+</li>
+<li>
+<span>
+<span class='runs-double-diamond'></span>
+Peak Glades
+</span>
+<span class='closed'>
+Closed
+</span>
+</li>
+<li>
+<span>
+<span class='runs-blue'></span>
+Grinder Tracks
+</span>
+<span class='closed'>
+Closed
+</span>
+</li>
+<li>
+<span>
+<span class='runs-diamond'></span>
+Expo Glades
+</span>
+<span class='closed'>
+Closed
+</span>
+</li>
+<li>
+<span>
+<span class='runs-blue'></span>
+Coola's Corner
+</span>
+<span class='closed'>
+Closed
+</span>
+</li>
+<li>
+<span>
+<span class='runs-diamond'></span>
+Chimney
+</span>
+<span class='closed'>
+Closed
+</span>
+</li>
+<li>
+<span>
+<span class='runs-blue'></span>
+Lower Peak
+</span>
+<span class='closed'>
+Closed
+</span>
+</li>
+<li>
+<span>
+<span class='runs-diamond'></span>
+Upper Blazes
+</span>
+<span class='closed'>
+Closed
+</span>
+</li>
+<li>
+<span>
+<span class='runs-blue'></span>
+Mountain Highway
+</span>
+<span class='closed'>
+Closed
+</span>
+</li>
+</ul>
+<p class='legend'>
+<span class='legend__night'>Open at night</span>
+</p>
 </div>
-<a class='full' href='/news'>View All News</a>
+<div class='tab' id='parks' style='display: none'>
+<h2>Terrain Parks</h2>
+<ul class='data-table'>
+<li>
+<span>
+Cut Park
+<div class='details'>
+Opening Friday, November 10th 3pm!
+</div>
+</span>
+<span class='closed'>
+Closed
+</span>
+</li>
+<li>
+<span>
+Paradise Jib Park
+<div class='details'>
+Opening Friday, November 10th 3pm!
+</div>
+</span>
+<span class='closed'>
+Closed
+</span>
+</li>
+<li>
+<span>
+Side Cut Terrain Park
+</span>
+<span class='closed'>
+Closed
+</span>
+</li>
+<li>
+<span>
+The Cut Jump Line
+</span>
+<span class='closed'>
+Closed
+</span>
+</li>
+<li>
+<span>
+Cut Rookie Park
+</span>
+<span class='closed'>
+Closed
+</span>
+</li>
+<li>
+<span>
+Grouse Woods
+</span>
+<span class='closed'>
+Closed
+</span>
+</li>
+<li>
+<span>
+Grouse Park
+</span>
+<span class='closed'>
+Closed
+</span>
+</li>
+</ul>
+</div>
+<div class='tab' id='munday' style='display: none'>
+<h2>Munday Snowshoe Park</h2>
+<ul class='data-table'>
+<li>
+<span>
+Blue Grouse Loop
+</span>
+<span class='closed'>
+Closed
+</span>
+</li>
+<li>
+<span>
+Fritz's Way
+</span>
+<span class='closed'>
+Closed
+</span>
+</li>
+<li>
+<span>
+Dam Mountain Loop
+</span>
+<span class='closed'>
+Closed
+</span>
+</li>
+<li>
+<span>
+Discovery Loop
+</span>
+<span class='closed'>
+Closed
+</span>
+</li>
+<li>
+<span>
+Snowshoe Grind
+</span>
+<span class='closed'>
+Closed
+</span>
+</li>
+<li>
+<span>
+Thunderbird Ridge
+</span>
+<span class='closed'>
+Closed
+</span>
+</li>
+</ul>
 </div>
 </div>
-<div class='widget social'>
-<h2>Live Chatter</h2>
-<div class='padd'>
-<div id='twitter_update_list'>
-<script charset='utf-8' src='http://widgets.twimg.com/j/2/widget.js'></script>
+</div>
+</div>
+<div class='modal fade' id='gallery_modal' tabindex='-1'>
+<a class='modal__close' data-dismiss='modal' href='#'>Close</a>
+<div class='modal__content slide_contain'>
+  <div class='media' data-parent-container-class='nilclass' id='container_media_216185'>
+<ul class='js-slideshow'>
+<li>
+  <img height="470" width="960" gravity="" id="container_image_721558" class="" src="/media/W1siZiIsIjIwMTcvMTEvMDMvMTAvNTIvMjkvNjA2MzA3N2EtYTU1Yy00ZTY1LWJkZDUtODg5OTJkNmFiMjE4L3Nub3ctbm92ZW1iZXIzLmpwZyJdLFsicCIsInRodW1iIiwiOTYweDQ3MFx1MDAzZSJdXQ?sha=2182b99b0d54bf6a" />
+
+
+</li>
+<li>
+  <img height="470" width="960" gravity="" id="container_image_714825" alt="" class="" src="/media/W1siZiIsIjIwMTcvMTAvMjAvMTMvMDgvNTgvMDhiMjNlZWMtM2UxNS00ZWJjLWI2YTItNGU1YWFjMjhkMDA3L3Nub3ctb2N0MjAyMDE3My5qcGciXSxbInAiLCJ0aHVtYiIsIjk2MHg0NzBcdTAwM2UiXV0?sha=828ca5c28f52ae70" />
+
+
+</li>
+<li>
+  <img height="470" width="960" gravity="" id="container_image_714824" alt="" class="" src="/media/W1siZiIsIjIwMTcvMTAvMjAvMTMvMDgvMzgvZTgxMGYyODgtOTk4MC00YjRlLTliNmItNzBhMTljOTA4OWFlL3Nub3ctb2N0MjAyMDE3Mi5qcGciXSxbInAiLCJ0aHVtYiIsIjk2MHg0NzBcdTAwM2UiXV0?sha=6b9a6b911dfd50ea" />
+
+
+</li>
+<li>
+  <img height="470" width="960" gravity="" id="container_image_714823" alt="" class="" src="/media/W1siZiIsIjIwMTcvMTAvMjAvMTMvMDgvMDEvMWI0ZWNjNmQtZDY3Mi00ZWQwLWEzYjgtYzE5YzI3ZDgzYmI3L3Nub3ctb2N0MjAyMDE3LmpwZyJdLFsicCIsInRodW1iIiwiOTYweDQ3MFx1MDAzZSJdXQ?sha=ca4ba23e3d05ecbf" />
+
+
+</li>
+<li>
+  <img height="470" width="960" gravity="" id="container_image_712026" alt="" class="" src="/media/W1siZiIsIjIwMTcvMTAvMTIvMTEvMTcvMDIvNmM5MWQyZjAtMTI4Ni00YjY3LThmZDQtNDI1MzkwOGY0ZDVhL3Nub3ctb2N0MTIyMDE3LmpwZyJdLFsicCIsInRodW1iIiwiOTYweDQ3MFx1MDAzZSJdXQ?sha=bc55bdf9d178b48c" />
+
+
+</li>
+<li>
+  <img height="470" width="960" gravity="" id="container_image_712025" alt="" class="" src="/media/W1siZiIsIjIwMTcvMTAvMTIvMTEvMTYvMzQvYWM2YzZjZjctMDI5OC00MzZhLThkMmYtNDkzZGYwNTE1ZTFjL3Nub3ctb2N0MTIzLmpwZyJdLFsicCIsInRodW1iIiwiOTYweDQ3MFx1MDAzZSJdXQ?sha=6aceaa86dd6faa98" />
+
+
+</li>
+<li>
+  <img height="470" width="960" gravity="" id="container_image_712024" alt="" class="" src="/media/W1siZiIsIjIwMTcvMTAvMTIvMTEvMTUvNTkvZDQyMWMyZDMtNzY2ZS00Mjc3LTkzNjctZTI3ZmRkNWU4ZTg3L3Nub3ctb2N0MTIyLmpwZyJdLFsicCIsInRodW1iIiwiOTYweDQ3MFx1MDAzZSJdXQ?sha=8da3296516ae7e9c" />
+
+
+</li>
+<li>
+  <img height="470" width="960" gravity="" id="container_image_711937" alt="First Snow of 2017 - October 11" class="" src="/media/W1siZiIsIjIwMTcvMTAvMTEvMDkvNDIvMDAvNjU5ZjUwZDUtYzYyYi00NzFmLTlmMWItMzhmM2RlOTM4YTEzL3Nub3ctb2N0MTEzLmpwZyJdLFsicCIsInRodW1iIiwiOTYweDQ3MFx1MDAzZSJdXQ?sha=1c2757c1369d1b04" />
+
+
+</li>
+<li>
+  <img height="470" width="960" gravity="" id="container_image_711936" alt="First Snowfall of 2017, October 11." class="" src="/media/W1siZiIsIjIwMTcvMTAvMTEvMDkvNDEvNDkvOTgzMjAzNGQtZDM5Yy00NTkzLThhZDYtMjc0ZGQ0YzA3NzlkL3Nub3ctb2N0MTEyLmpwZyJdLFsicCIsInRodW1iIiwiOTYweDQ3MFx1MDAzZSJdXQ?sha=ba5fb861143d7572" />
+
+
+</li>
+<li>
+  <img height="470" width="960" gravity="" id="container_image_711935" alt="First Snowfall of 2017, October 11!" class="" src="/media/W1siZiIsIjIwMTcvMTAvMTEvMDkvNDEvMzYvYjFjZDlhMTktMmU3My00MTRlLTlmOGEtY2QxYWIxNDFlNmMxL3Nub3ctb2N0MTEuanBnIl0sWyJwIiwidGh1bWIiLCI5NjB4NDcwXHUwMDNlIl1d?sha=ef7dcd20977744a4" />
+
+
+</li>
+<li>
+  <img height="470" width="960" gravity="" id="container_image_711357" alt="" class="" src="/media/W1siZiIsIjIwMTcvMTAvMTAvMTQvMDMvMjUvNTE3MWFmNWUtMTllMy00ZjI0LTlhOGEtM2ZmZWYxMWY2YzU3L2JlYXIuanBnIl0sWyJwIiwidGh1bWIiLCI5NjB4NDcwXHUwMDNlIl1d?sha=f586bf0152ca7ebb" />
+
+
+</li>
+<li>
+  <img height="470" width="960" gravity="" id="container_image_701727" alt="" class="" src="/media/W1siZiIsIjIwMTcvMDkvMTgvMTMvNTQvMzcvYTQzODc4MWEtM2JmNS00OTdmLTk3MGYtZDk0OTk5OTE0MzI3L3JlY2VudCBwaG90b3MzLmpwZyJdLFsicCIsInRodW1iIiwiOTYweDQ3MFx1MDAzZSJdXQ?sha=288e8b2f88f976f0" />
+
+
+</li>
+<li>
+  <img height="470" width="960" gravity="" id="container_image_701726" alt="" class="" src="/media/W1siZiIsIjIwMTcvMDkvMTgvMTMvNTQvMTkvNmYzMTdkZGItNmY0NC00NTg2LTk0NzEtMzRjMTgxNTdlY2Y4L3JlY2VudCBwaG90b3MyLmpwZyJdLFsicCIsInRodW1iIiwiOTYweDQ3MFx1MDAzZSJdXQ?sha=321fd3ee28a3d979" />
+
+
+</li>
+<li>
+  <img height="470" width="960" gravity="" id="container_image_701725" alt="" class="" src="/media/W1siZiIsIjIwMTcvMDkvMTgvMTMvNTMvMzcvZWQyMGQwZjUtNTZiYy00MGI1LWJiMDctMWQwM2ZkMjQxYzNmL3JlY2VudCBwaG90b3MuanBnIl0sWyJwIiwidGh1bWIiLCI5NjB4NDcwXHUwMDNlIl1d?sha=5ff7d55cfe0819ad" />
+
+
+</li>
+<li>
+  <img height="470" width="960" gravity="" id="container_image_692357" alt="" class="" src="/media/W1siZiIsIjIwMTcvMDgvMjkvMTcvMDkvNDcvNWEwZGUxNmUtNGJmNC00ZjBiLWE3OTgtYmY5M2EwYjk5NDg4L3JlY2VudCBwaG90b3MyLmpwZyJdLFsicCIsInRodW1iIiwiOTYweDQ3MFx1MDAzZSJdXQ?sha=f450eb796a69b1a7" />
+
+
+</li>
+<li>
+  <img height="470" width="960" gravity="" id="container_image_692356" alt="" class="" src="/media/W1siZiIsIjIwMTcvMDgvMjkvMTcvMDkvMTkvYjJlZTQ3YjYtYjNhYS00MDYxLThiODUtZjAyZGQ0ODJmMjg5L3JlY2VudCBwaG90b3MuanBnIl0sWyJwIiwidGh1bWIiLCI5NjB4NDcwXHUwMDNlIl1d?sha=3cafb0451e4111c4" />
+
+
+</li>
+<li>
+  <img height="470" width="960" gravity="" id="container_image_692353" alt="Join us this summer for a Hatchet Throwing Experience" class="" src="/media/W1siZiIsIjIwMTcvMDgvMjkvMTcvMDEvNTEvODMzYTIzMjAtYmNlNC00MzM2LTk1NGEtNTlkMGJlZmI4YWI2L3JlY2VudCBwaG90b3MyLmpwZyJdLFsicCIsInRodW1iIiwiOTYweDQ3MFx1MDAzZSJdXQ?sha=5095d652e43d9e02" />
+
+
+</li>
+<li>
+  <img height="470" width="960" gravity="" id="container_image_692352" alt="Photo from the August 21 Solar Eclipse." class="" src="/media/W1siZiIsIjIwMTcvMDgvMjkvMTYvNTgvNTcvZTk3Mjk1N2UtMTAwYy00ZGEzLTg1ZmYtYmE5MGNmMTYwYjEwL3JlY2VudCBwaG90b3MuanBnIl0sWyJwIiwidGh1bWIiLCI5NjB4NDcwXHUwMDNlIl1d?sha=fc4ec98cc86cb7ae" />
+
+
+</li>
+<li>
+  <img height="470" width="960" gravity="" id="container_image_691934" alt="" class="" src="/media/W1siZiIsIjIwMTcvMDgvMTcvMTAvMzkvMTYvNTQ3ZDUzZGUtOTNhOS00Yzg5LTljZTEtZWI2MTVlNzY5NmEyL0F1Z3VzdCAxNjIuanBnIl0sWyJwIiwidGh1bWIiLCI5NjB4NDcwXHUwMDNlIl1d?sha=8a46dc8d9bd8e540" />
+
+
+</li>
+<li>
+  <img height="470" width="960" gravity="" id="container_image_691933" alt="" class="" src="/media/W1siZiIsIjIwMTcvMDgvMTcvMTAvMzgvMjYvOWJmNGYwYzQtNWIwNi00YmEyLWE4MDEtZjBjZTBkOTM3ZmZkL0F1Z3VzdCAxNi5qcGciXSxbInAiLCJ0aHVtYiIsIjk2MHg0NzBcdTAwM2UiXV0?sha=382f0a80d66891da" />
+
+
+</li>
+<li>
+  <img height="470" width="960" gravity="" id="container_image_678997" alt="" class="" src="/media/W1siZiIsIjIwMTcvMDYvMjcvMTAvMDgvMTYvNTlkYTFkNmYtMzFiMi00NTkyLThkZDUtNDU0OTY4NjJhMzg0L3N0cDIuanBnIl0sWyJwIiwidGh1bWIiLCI5NjB4NDcwXHUwMDNlIl1d?sha=b4d55b142ec5aa4e" />
+
+
+</li>
+<li>
+  <img height="470" width="960" gravity="" id="container_image_678996" alt="" class="" src="/media/W1siZiIsIjIwMTcvMDYvMjcvMTAvMDcvMzEvYmUzZjFmMzQtMmMxOC00ODEwLWJlNDYtYWZmNjZkYTM4NjEwL3N0cC5qcGciXSxbInAiLCJ0aHVtYiIsIjk2MHg0NzBcdTAwM2UiXV0?sha=b951030f9636a595" />
+
+
+</li>
+<li>
+  <img height="470" width="960" gravity="" id="container_image_678995" alt="" class="" src="/media/W1siZiIsIjIwMTcvMDYvMjcvMDkvNTUvMTUvY2E5Y2U0M2EtMmQ3My00ZjFiLTlkOGMtZGVjNzFhNTE4ZWE5L011bHRpLWdyaW5kLmpwZyJdLFsicCIsInRodW1iIiwiOTYweDQ3MFx1MDAzZSJdXQ?sha=8c0b196af3eb3c1b" />
+
+
+</li>
+<li>
+  <img height="470" width="960" gravity="" id="container_image_663409" alt="" class="" src="/media/W1siZiIsIjIwMTcvMDQvMjgvMTQvMjcvMDcvNTVkNTAwYzgtZjBhYy00N2RlLWI0ODgtZDBjNDBmYjA0NmM2L2JlYXJzLWVtZXJnZS1oaWJlcm5hdGlvbi5qcGciXSxbInAiLCJ0aHVtYiIsIjk2MHg0NzBcdTAwM2UiXV0?sha=727bb619a663396c" />
+
+
+</li>
+</ul>
 <script>
-  //<![CDATA[
-    new TWTR.Widget({version: 2, type: 'profile', rpp: 2, interval: 30000, width: 274, height: 350, theme: { shell: { background: '#313132', color: '#ffffff'}, tweets: { background: '#313132', color: '#ffffff', links: '#aaaaaa'}},features: { scrollbar: false, loop: true, live: false, behavior: 'default'}}).render().setUser('grousemountain').start();
-  //]]>
+  $(document).ready(function() {
+    if ( $('#container_media_216185').parent().hasClass("gallery-wrapper") ) {
+      // gallery slideshow
+      $('#container_media_216185 .js-slideshow').addClass('slideshow--single-item-with-thumb js-slideshow-single-item-with-thumb');
+      $('#container_media_216185 .js-slideshow-single-item-with-thumb').slick({
+        dots: true,
+        arrows: false,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear',
+        slidesToShow: 1,
+        autoplay: true,
+        customPaging : function(slider, i) {
+          var thumb = $(slider.$slides[i]).find('img').prop('src');
+          return '<a><img src="'+thumb+'"></a>';
+        },
+        responsive: [
+          {
+            breakpoint: 960,
+            settings: {
+              customPaging: function(slider, i) {
+                return '<button type="button" data-role="none" role="button" aria-required="false" tabindex="' + i + '">' + (i + 1) + '</button>';
+              },
+            }
+          },
+        ]
+      });
+    } else {
+      // normal slideshow
+      $('#container_media_216185 .js-slideshow').addClass('slideshow--single-item js-slideshow-single-item');
+      $('#container_media_216185 .js-slideshow-single-item').after('<div class="container_media_216185_rotate_nav rotate_nav">').slick({
+        dots: true,
+        arrows: false,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear',
+        slidesToShow: 1,
+        autoplay: true,
+    	});
+    }
+  
+  });
 </script>
 </div>
-<div class='join'>
-<span>Join our community:</span>
-<a class='rss' href='/rss'>RSS</a>
-<a class='facebook' href='http://www.facebook.com/grousemountain'>Facebook</a>
-<a class='twitter' href='http://twitter.com/grousemountain'>Twitter</a>
-<a class='tripadvisor' href='http://www.tripadvisor.com/Attraction_Review-g154943-d156264-Reviews-Grouse_Mountain-Vancouver_British_Columbia.html'>Trip Advisor</a>
-<a class='googleplus' href='http://grsmtn.ca/zuWrfs'>Google Plus</a>
-<a class='pinterest' href='http://pinterest.com/grousemountain'>Pinterest</a>
+
+
 </div>
-<div class='enews'>
-<p>STAY UP TO DATE: Subscribe to e-newsletter. Please enter your email address below.</p>
-<form action='http://grousemountain.us2.list-manage.com/subscribe/post?u=d038dd8e96dd04afb419252f1&amp;id=df5ba56ea9' class='validate' id='mc-embedded-subscribe-form' method='post' name='mc-embedded-subscribe-form' target='_blank'>
+</div>
+
+
+<div class='save_order'>
+You have changed the order of the grid cells. You can make additional changes then click here to save the order:
+<br>
+<a class="btn" href="#">Save Order</a>
+</div>
+</div>
+
+
+</div>
+
+</section>
+<div class='subscribe-block ac ac-hidden' data-vp-add-class='fadeIn animated'>
+<div class='container-inner'>
+<h2 class='subscribe-block__title'>Stay Up To Date</h2>
+<p>Subscribe to our e-newsletter. Please enter your email address below.</p>
+<form action='https://grousemountain.us2.list-manage.com/subscribe/post?u=d038dd8e96dd04afb419252f1&amp;id=df5ba56ea9' class='validate' id='mc-embedded-subscribe-form' method='post' name='mc-embedded-subscribe-form' target='_blank'>
 <input class='placeholder' id='mce-EMAIL' name='EMAIL' type='text' value='email'>
+<button class='button button--white' id='mc-embedded-subscribe' name='subscribe' type='submit'>Subscribe</button>
 <div id='mce-responses'>
 <div class='response' id='mce-error-response' style='display: none'></div>
 <div class='response' id='mce-success-response' style='display: none'></div>
 </div>
-<button class='btn' id='mc-embedded-subscribe' name='subscribe' type='submit'>Submit</button>
 </form>
 </div>
 </div>
+
+<footer class='footer' id='footer'>
+<div class='container-inner'>
+<div class='footer__left'>
+<div class='logo'>
+<a href='/' title='Grouse Mountain'>
+<img alt='Grouse Mountain logo' src='/assets/grouse-logo-gray.svg'>
+</a>
+</div>
+<div class='awards-container'>
+<h6 class='menu__title'>Awards</h6>
+<div class='awards'>
+<a class='award' href='https://www.tripadvisor.ca/Attraction_Review-g181717-d156264-Reviews-Grouse_Mountain-North_Vancouver_British_Columbia.html' title='Trip Advisor CoE 2016'>
+<img alt='Trip Advisor CoE 2016 award' src='/assets/TA_COE_2016.png'>
+</a>
+<a class='award' href='https://www.straight.com/question/319956?s=bov' title='Trip Advisor CoE 2016'>
+<img alt='Georgia Straight 2016 badge' src='/assets/GS_BOV_2017.png'>
+</a>
+</div>
+
+</div>
+</div>
+<div class='footer__center'>
+<nav class='menu--about'>
+<h6 class='menu__title'>About Us & Corporate</h6>
+<ul class='menu'>
+<li>
+<a href='/about'>About Us</a>
+</li>
+<li>
+<a href='/blue-grouse-sustainability'>Sustainability Practices</a>
+</li>
+<li>
+<a href='/corporate-partners'>Corporate & Charitable Partners</a>
+</li>
+<li>
+<a href='/about/accessibility'>Accessibility</a>
+</li>
+<li>
+<a href='/media-press'>Media Relations</a>
+</li>
+<li>
+<a href='/privacy'>Privacy & Terms</a>
+</li>
+<li>
+<a href='/contact/donation-requests'>Donation Requests</a>
+</li>
+<li>
+<a href='/careers'>Jobs & Careers</a>
+</li>
+<li>
+<a href='/alpine-shopping'>Retail Stores</a>
+</li>
+<li>
+<a href='/contact'>Contact Us</a>
+</li>
+</ul>
+
+</nav>
+</div>
+<div class='footer__right'>
+<nav class='menu--quicklinks'>
+<h6 class='menu__title'>Quick Links</h6>
+<ul class='menu'>
+<li>
+<a href='/plan-your-day'>Plan Your Day Tool</a>
+</li>
+<li>
+<a href='/current_conditions#weather'>Current Weather</a>
+</li>
+<li>
+<a href='/grids/239787'>Tickets & Passes</a>
+</li>
+<li>
+<a href='/location-hours'>Getting Here</a>
+</li>
+</ul>
+
+</nav>
+<nav class='menu--language'>
+<h6 class='menu__title'>Language Pages</h6>
+<ul class='menu'>
+<li>
+<a class='eng' href='/'>
+<img alt='English flag' src='/assets/icons/flags/us.gif'>English</img>
+</a>
+</li>
+<li>
+<a class='eng' href='/grouse-mountain-fr'>
+<img alt='French flag' src='/assets/icons/flags/france.gif'>French</img>
+</a>
+</li>
+<li>
+<a class='eng' href='/grouse-mountain-es'>
+<img alt='Spanish flag' src='/assets/icons/flags/spain.gif'>Spanish</img>
+</a>
+</li>
+<li>
+<a class='man' href='/grouse-mountain-zhcn'>
+<img alt='Chinese flag' src='/assets/icons/flags/china.gif'>Mandarin</img>
+</a>
+</li>
+<li>
+<a class='ger' href='/grouse-mountain-de'>
+<img alt='German flag' src='/assets/icons/flags/germany.gif'>German</img>
+</a>
+</li>
+<li>
+<a class='jap' href='/grouse-mountain-ja'>
+<img alt='Japanese flag' src='/assets/icons/flags/japan.gif'>Japanese</img>
+</a>
+</li>
+</ul>
+
+</nav>
+<nav class='menu--social'>
+<h6 class='menu__title'>Follow Us</h6>
+<ul class='menu'>
+<li class='menu-item__rss'>
+<a class='rss' href='/rss'>RSS</a>
+</li>
+<li class='menu-item__facebook'>
+<a class='facebook' href='http://www.facebook.com/grousemountain'>Facebook</a>
+</li>
+<li class='menu-item__twitter'>
+<a class='twitter' href='http://twitter.com/grousemountain'>Twitter</a>
+</li>
+<li class='menu-item__trip-advisor'>
+<a class='tripadvisor' href='http://www.tripadvisor.com/Attraction_Review-g154943-d156264-Reviews-Grouse_Mountain-Vancouver_British_Columbia.html'>Trip Advisor</a>
+</li>
+<li class='menu-item__instagram'>
+<a class='instagram' href='https://www.instagram.com/grousemountain'>Instagram</a>
+</li>
+<li class='menu-item__pinterest'>
+<a class='pinterest' href='http://pinterest.com/grousemountain'>Pinterest</a>
+</li>
+</ul>
+
+</nav>
+<div class='footer__address'>
+<p>Administration: Grouse Mountain Resorts</p>
+<p>6400 Nancy Greene Way North Vancouver, BC V7R 4K9</p>
+<p>PH: (604) 980-9311</p>
+</div>
+</div>
+</div>
+</footer>
+<div class='conditions-alert conditions-alert--sticky' data-updated='1510186743' id='site_wide_alert'>
+<a class='conditions-alert__close js-conditions-alert-close'></a>
+<h3>Announcements</h3>
+<div class='conditions-alert__content'>
+<div>Great news - we're excited to announce that we'll be kicking off the 2017.2018 winter season this Friday at 3pm! Visit our <a href="https://www.grousemountain.com/current_conditions#weather"><strong>Current Conditions</strong></a> page for more information&nbsp;</div>
+</div>
+</div>
+
 </div>
 </div>
 <br class='clear'>
-<div id='footer'>
-<form action='/search' class='search' method='get'>
-<input class='placeholder' name='q' size='30' type='text' value='Search'>
-</form>
-<div id='widget_triggers'>
-<!-- %a.languages{:href => "#languages"} -->
-<!-- %img{:src => "/images/icons/flags/canada.gif"} -->
-<a class='weather' href='#weather'>
-<img src='/images/icons/weather/footer/cloudy.gif'>
--2˚ 
-Weather
-</a>
-<a class='grind snowshoe-grind' href='#grind'>
-<span class='grind_time'>
-Loading...
-</span>
-</a>
-<a class='news' href='#news'>
-<div id='news_rotate'>
-<div>
-Make a Resolution to Be Safe in the Snow
-</div>
-<div>
-Visit Us at the Vancouver Wedding Fair This Weekend
-</div>
-<div>
-Carve Your Way into 2013
+<span class='timer-countdown hidden'></span>
+<div class='modal fade hide' id='timeout-modal' role='dialog' tabindex='-1'>
+<div class='modal-dialog' role='document'>
+<a class='modal__close' data-dismiss='modal' href='#'>Close</a>
+<div class='modal__content'>
+<div class='modal__content-container'>
+<h4>Session Timed Out</h4>
+<p>
+<strong>Oops, times up.</strong>
+When a product has limited spaces, the time limit helps ensure that inventory is made available to those interested in completing a purchase.
+</p>
+<p>
+<strong>What now?</strong>
+Why not
+<strong>
+<a href="/continue_shopping_activities">return to the store</a>
+</strong>
+to try again, or learn about other
+<strong>
+<a href="/current_conditions">happening on the mountain.</a>
+</strong>
+</p>
 </div>
 </div>
-</a>
-<a class='social' href='#social'>
-Subscribe
-</a>
 </div>
-<!-- /widget_triggers -->
-<!-- /footer -->
 </div>
 
-<script type="text/javascript">if (!NREUMQ.f) { NREUMQ.f=function() {
-NREUMQ.push(["load",new Date().getTime()]);
-var e=document.createElement("script");
-e.type="text/javascript";
-e.src=(("http:"===document.location.protocol)?"http:":"https:") + "//" +
-  "d1ros97qkrwjf5.cloudfront.net/42/eum/rum.js";
-document.body.appendChild(e);
-if(NREUMQ.a)NREUMQ.a();
-};
-NREUMQ.a=window.onload;window.onload=NREUMQ.f;
-};
-NREUMQ.push(["nrfj","beacon-1.newrelic.com","18b568af12",341203,"J1gITEAOCF0GQxoFQxZFA1ZGPgdeDVVcEl8LWRUXWw8AVBs=",0,91,new Date().getTime(),"","","","",""]);</script></body>
+<script>
+  timeout = function(){
+    $('#timeout-modal').modal({backdrop: 'static', keyboard: false});
+    $('#timeout-modal').removeClass('hide');
+    $.get('/cart/timeout');
+  };
+  $('#timeout-modal').on('hidden.bs.modal', function (e) {
+    window.location = '/';
+  })
+</script>
+
+</body>
 </html>
