@@ -1,4 +1,18 @@
 
+3.17.7 / 2017-11-08
+===================
+
+ * fix Grouse Mountain for 2017/18
+ * fix Watervill Valley for 2017/18
+ * fix Angel Fire for 2017/18
+ * fix Bromley Mountain for 2017/18
+ * fix Ischgl for 2017/18 season
+ * fix Hochfügen und Hochzillertal for 2017/18
+ * fix Copper for 2017/18 season
+ * make fetch script to recognize dataUrl and api
+ * allow for ES6 features on the server side
+ * add support for parse descriptor
+
 3.17.6 / 2017-11-07
 ===================
 
