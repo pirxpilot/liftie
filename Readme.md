@@ -3,7 +3,7 @@
 [![NPM version](https://img.shields.io/npm/v/liftie.svg)](http://badge.fury.io/js/liftie)
 [![Code Climate](https://img.shields.io/codeclimate/github/pirxpilot/liftie.svg)](https://codeclimate.com/github/pirxpilot/liftie)
 
-#liftie.info
+# liftie.info
 
 Clean, simple, easy to read, fast ski resort lift status.
 
