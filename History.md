@@ -1,4 +1,11 @@
 
+3.18.0 / 2017-11-09
+===================
+
+ * fix Arapahoe Basin for 2017/18
+ * simplify parse functions
+ * make child descriptors more powerful
+
 3.17.7 / 2017-11-08
 ===================
 
