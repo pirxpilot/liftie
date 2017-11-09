@@ -1,8 +1,8 @@
 {
   "name": "Arapaho Basin",
   "url": {
-    "host": "http://www.arapahoebasin.com",
-    "pathname": "/ABasin/snow-conditions/default.aspx"
+    "host": "https://www.arapahoebasin.com",
+    "pathname": "/snow-conditions/terrain/"
   },
   "tags": [
     "Colorado",
