@@ -1,6 +1,6 @@
 var fs = require('fs');
 var parser = require('../../lib/lifts/parser');
-var parse = require('../../lib/resorts/wildcat');
+var parse = require('../../lib/lifts/parse')('wildcat');
 
 /*global describe, it */
 describe('parse wildcat', function() {

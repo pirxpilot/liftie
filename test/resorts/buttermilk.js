@@ -1,4 +1,4 @@
-var parse = require('../../lib/resorts/buttermilk');
+var parse = require('../../lib/lifts/parse')('buttermilk');
 
 /*global describe, it */
 describe('parse buttermilk', function() {

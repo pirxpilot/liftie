@@ -1,7 +1,7 @@
 var should = require('should');
 var fs = require('fs');
 var parser = require('../../lib/lifts/parser');
-var parse = require('../../lib/resorts/diamondpeak');
+var parse = require('../../lib/lifts/parse')('diamondpeak');
 
 /*global describe, it */
 describe('parse diamondpeak', function() {

@@ -1,7 +1,7 @@
 var assert = require('assert');
 var fs = require('fs');
 var parser = require('../../lib/lifts/parser');
-var parse = require('../../lib/resorts/whistler-blackcomb');
+var parse = require('../../lib/lifts/parse')('whistler-blackcomb');
 
 /*global describe, it */
 describe('parse whistler-blackcomb', function() {
