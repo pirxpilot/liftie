@@ -1,4 +1,4 @@
-var assert = require('assert');
+var should = require('should');
 var fs = require('fs');
 var parser = require('../../lib/lifts/parser');
 var parse = require('../../lib/lifts/parse')('telluride');
@@ -7,29 +7,29 @@ var parse = require('../../lib/lifts/parse')('telluride');
 describe('parse telluride', function() {
 
   it('should return lift status', function(done) {
-    var stream = fs.createReadStream(__dirname + '/example/telluride.xml');
+    var stream = fs.createReadStream(__dirname + '/example/telluride.html');
     stream.on('error', done);
     stream.pipe(parser(parse, function(err, status) {
       var expected = {
-        'Oak Street Lift (8)': 'closed',
-        'Coonskin Lift (7)': 'open',
-        'Free Gondola': 'open',
-        'Free Intercept Gondola': 'open',
-        'Chondola (1)': 'open',
-        '2 Park Lift': 'closed',
-        'Village Express (4)': 'open',
-        'Plunge Lift (9)': 'open',
-        'Apex Lift (6)': 'open',
-        'Polar Queen Express (5)': 'open',
-        'Gold Hill Express (14)': 'open',
-        'Revelation Lift (15)': 'closed',
-        'Prospect Express (12)': 'open',
-        'Lynx (13)': 'open',
-        'UTE Park (11)': 'open',
-        'Sunshine Express (10)': 'open',
-        'Meadows Magic Carpet': 'open',
-        'Gondola Magic Carpet': 'open'      };
-      assert.deepEqual(status, expected);
+        'Adult Magic Carpet': 'closed',
+        'Apex Lift': 'closed',
+        'Children\'s Magic Carpet': 'closed',
+        'Chondola': 'closed',
+        'Coonskin Lift': 'closed',
+        'Free Gondola - Town to MV': 'closed',
+        'Gold Hill Express': 'closed',
+        'Lynx': 'closed',
+        'Oak Street Lift': 'closed',
+        'Plunge Lift': 'closed',
+        'Polar Queen Express': 'closed',
+        'Prospect Express': 'closed',
+        'Revelation Lift': 'closed',
+        'Sunshine Express': 'closed',
+        'UTE Park': 'closed',
+        'Village Express': 'closed'
+      };
+      should.exist(status);
+      status.should.eql(expected);
       done(err);
     }));
   });

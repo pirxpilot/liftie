@@ -12,7 +12,7 @@ describe('parse copper', function() {
       'Black Jack': 'closed',
       'Celebrity Ridge': 'closed',
       'Easy Rider': 'closed',
-      'Excelerator': 'closed',
+      'Excelerator': 'open',
       'Gem': 'closed',
       'Kokomo': 'closed',
       'Lumberjack': 'closed',

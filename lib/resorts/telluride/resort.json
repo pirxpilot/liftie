@@ -1,15 +1,8 @@
 {
   "name": "Telluride",
-  "dataUrl": {
-    "host": "http://us3.resorts-interactive.com",
-    "pathname": "/vicomap/getMapDetails.php",
-    "query": {
-      "mapID": 102
-    }
-  },
   "url": {
-    "host": "http://tellurideskiresort.com",
-    "pathname": "/TellSki/snow-report.aspx"
+    "host": "http://www.tellurideskiresort.com",
+    "pathname": "/the-mountain/snow-report/"
   },
   "tags": [
     "Colorado"
