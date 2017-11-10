@@ -1,4 +1,14 @@
 
+3.18.1 / 2017-11-10
+===================
+
+ * simplify parse functions
+ * fix lint issues
+ * fix Copper for 2017/18
+ * fix Telluride for 2017/18
+ * replace CSSselect with css-select
+ * update dependencies
+
 3.18.0 / 2017-11-09
 ===================
 
