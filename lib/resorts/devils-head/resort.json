@@ -1,8 +1,8 @@
 {
   "name": "Devil's Head",
   "url": {
-    "host": "http://www.devilsheadresort.com",
-    "pathname": "/themountain/snowreport"
+    "host": "https://www.devilsheadresort.com",
+    "pathname": "/the-mountain/snow-report/"
   },
   "tags": [
     "Wisconsin"
