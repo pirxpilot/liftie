@@ -12,16 +12,7 @@ describe('parse snowbird', function() {
     stream.pipe(parser(parse, function(err, status) {
       var expected = {
         'Aerial Tram': 'open',
-        'Baby Thunder': 'open',
-        'Baldy': 'open',
-        'Chickadee': 'open',
-        'Gad 2': 'open',
-        'Gadzoom': 'open',
-        'Little Cloud': 'open',
-        'Mid-Gad': 'open',
-        'Mineral Basin': 'open',
-        'Peruvian': 'open',
-        'Wilbere': 'open'
+        'Chickadee': 'closed'
       };
       assert.deepEqual(status, expected);
       done(err);
