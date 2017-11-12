@@ -33,7 +33,6 @@
     "morgan": "^1.9.0",
     "qs": "^6.3.0",
     "ro-rating": "^1.0.2",
-    "safe-eval": "^0.3.0",
     "serve-favicon": "^2.4.5",
     "superagent": "^3.7.0",
     "swipe": "^1.7.7",
