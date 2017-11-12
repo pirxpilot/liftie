@@ -1,7 +1,7 @@
 var should = require('should');
 var fs = require('fs');
 var parser = require('../../lib/lifts/parser');
-var parseSquaw = require('../../lib/resorts/squaw');
+var parse = require('../../lib/lifts/parse')('squaw');
 
 /*global describe, it */
 describe('parse squaw', function() {
@@ -9,10 +9,10 @@ describe('parse squaw', function() {
   it('should return lift status', function(done) {
     var stream = fs.createReadStream(__dirname + '/example/squaw.html');
     stream.on('error', done);
-    stream.pipe(parser(parseSquaw, function(err, status) {
+    stream.pipe(parser(parse, function(err, status) {
       var expected = {
-        'Tram': 'closed',
-        'Gold Coast Funitel': 'closed',
+        'Aerial Tram': 'closed',
+        'Funitel': 'closed',
         'First Venture': 'closed',
         'SnoVentures Carpet': 'closed',
         'Tucker': 'closed',
@@ -21,9 +21,9 @@ describe('parse squaw', function() {
         'Red Dog': 'closed',
         'Squaw Creek': 'closed',
         'Squaw One Express': 'closed',
-        'KT-22 Express': 'closed',
+        'KT22 Express': 'closed',
         'Olympic Lady': 'closed',
-        'Cornice II': 'closed',
+        'The Pulley': 'closed',
         'Murphy': 'closed',
         'Boon': 'closed',
         'Wylee': 'closed',
@@ -33,13 +33,16 @@ describe('parse squaw', function() {
         'Emigrant': 'closed',
         'Gold Coast Express': 'closed',
         'Big Blue Express': 'closed',
-        'Shirley Lake Express': 'closed',
+        'Shirley Express': 'closed',
         'Siberia Express': 'closed',
         'Solitude': 'closed',
-        'Broken Arrow': 'closed',
-        'Granite Chief': 'closed',
+        'Broken Arrow Lift': 'closed',
+        'Granite Chief Lift': 'closed',
         'Headwall Express': 'closed',
-        'Silverado': 'closed'
+        'Silverado': 'closed',
+        'Shuttle to Alpine Meadows': 'closed',
+        'Mini-snowmobile': 'closed',
+        'Snow Tubing': 'closed'
       };
       should.exist(status);
       status.should.eql(expected);

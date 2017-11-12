@@ -1,7 +1,7 @@
 var should = require('should');
 var fs = require('fs');
 var parser = require('../../lib/lifts/parser');
-var parseAlpine = require('../../lib/resorts/alpine');
+var parse = require('../../lib/lifts/parse')('alpine');
 
 /*global describe, it */
 describe('parse alpine', function() {
@@ -9,18 +9,22 @@ describe('parse alpine', function() {
   it('should return lift status', function(done) {
     var stream = fs.createReadStream(__dirname + '/example/alpine.html');
     stream.on('error', done);
-    stream.pipe(parser(parseAlpine, function(err, status) {
+    stream.pipe(parser(parse, function(err, status) {
       var expected = {
-        'Summit Express': 'closed',
-        'Roundhouse Express': 'closed',
-        'Hot Wheels Chair': 'closed',
-        'Scott Chair': 'closed',
-        'Lakeview Chair': 'closed',
-        'Yellow Chair': 'closed',
-        'Meadow Chair': 'closed',
-        'Subway Chair': 'closed',
-        'Kangaroo Chair': 'closed',
-        'Alpine Bowl Chair': 'closed'
+        'Summit Six': 'closed',
+        'Roundhouse': 'closed',
+        'Hot Wheels': 'closed',
+        'Scott': 'closed',
+        'Lakeview': 'closed',
+        'Yellow': 'closed',
+        'Meadow': 'closed',
+        'Subway': 'closed',
+        'Kangaroo': 'closed',
+        'Alpine Bowl': 'closed',
+        'Sherwood Express': 'closed',
+        'Little Carpet': 'closed',
+        'Big Carpet': 'closed',
+        'Shuttle to Squaw Valley': 'closed'
       };
       should.exist(expected);
       status.should.eql(expected);
