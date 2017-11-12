@@ -22,7 +22,6 @@
     "domready": "^1.0.8",
     "dynload": "^1.0.2",
     "el-component": "^1.0.1",
-    "entities": "~1",
     "errorhandler": "^1.5.0",
     "express": "^4.16.2",
     "google-ua": "^1.4.1",
