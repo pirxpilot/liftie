@@ -1,4 +1,15 @@
 
+3.18.2 / 2017-11-13
+===================
+
+ * fix Snowbird for 2017/18
+ * fix Devil's Head for 2017/18
+ * fix Alpine/Squaw for 2017/18
+ * simplify parse function
+ * stop using safe-eval module
+ * remove explicit entities removal
+ * upgrade htmlparser2
+
 3.18.1 / 2017-11-10
 ===================
 
