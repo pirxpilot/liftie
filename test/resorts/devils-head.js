@@ -13,15 +13,12 @@ describe('parse devils-head', function() {
       var expected = {
         'Sunkid (Short)': 'closed',
         'Sunkid (Long)': 'closed',
-        '0': 'closed',
         '00': 'closed',
-        '000': 'closed',
+        '000**': 'closed',
         '1 Quicksilver Express': 'closed',
         '3 Glacial Express': 'closed',
-        '3 ¼': 'closed',
-        '3 ½': 'closed',
         '4': 'closed',
-        '4 ¼': 'closed'
+        '4 ¼**': 'closed'
       };
       should.exist(status);
       status.should.eql(expected);
