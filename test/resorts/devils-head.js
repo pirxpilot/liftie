@@ -18,10 +18,10 @@ describe('parse devils-head', function() {
         '000': 'closed',
         '1 Quicksilver Express': 'closed',
         '3 Glacial Express': 'closed',
-        '3¼': 'closed',
-        '3½': 'closed',
+        '3 ¼': 'closed',
+        '3 ½': 'closed',
         '4': 'closed',
-        '4¼': 'closed'
+        '4 ¼': 'closed'
       };
       should.exist(status);
       status.should.eql(expected);

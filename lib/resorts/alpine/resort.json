@@ -1,12 +1,8 @@
 {
   "name": "Alpine Meadows",
   "url": {
-    "host": "http://www.skialpine.com",
-    "pathname": "/mountain/snow-report"
-  },
-  "dataUrl": {
     "host": "http://squawalpine.com",
-    "pathname": "/sites/all/themes/squaw/trail-maps/alpine-mainmap/routes.js"
+    "pathname": "/skiing-riding/weather-conditions-webcams/lift-grooming-status"
   },
   "tags": [
     "California",

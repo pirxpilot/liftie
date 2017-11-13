@@ -1,12 +1,8 @@
 {
   "name": "Squaw Valley",
   "url": {
-    "host": "http://www.squaw.com",
-    "pathname": "/the-mountain/conditions"
-  },
-  "dataUrl": {
     "host": "http://squawalpine.com",
-    "pathname": "/sites/all/themes/squaw/trail-maps/squaw-mainmap/routes.js"
+    "pathname": "/skiing-riding/weather-conditions-webcams/lift-grooming-status"
   },
   "tags": [
     "California",
