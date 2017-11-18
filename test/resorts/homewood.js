@@ -11,12 +11,14 @@ describe('parse homewood', function() {
     stream.on('error', done);
     stream.pipe(parser(parse, function(err, status) {
       var expected = {
-        'Madden Chair': 'open',
-        'Quail Chair': 'open',
-        'Ellis Chair': 'open',
-        'Old Homewood Express': 'open',
-        'Critter Canyon Surface Lift': 'open',
-        'Happy Platter & Alpine Platter S': 'open'
+        'Madden Chair': 'closed',
+        'Quail Chair': 'closed',
+        'Ellis Chair': 'closed',
+        'Old Homewood Express': 'closed',
+        'Happy Platter': 'closed',
+        'Alpine Platter': 'closed',
+        'Magic Carpet': 'closed',
+        'South Carpet': 'closed'
       };
       assert.deepEqual(status, expected);
       done(err);
