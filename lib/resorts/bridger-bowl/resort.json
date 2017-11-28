@@ -1,0 +1,15 @@
+{
+  "name": "Bridger Bowl",
+  "url": {
+    "host": "https://bridgerbowl.com",
+    "pathname": "/weather/snow-report"
+  },
+  "tags": [
+    "Montana"
+  ],
+  "ll": [
+    -110.89814,
+    45.817974
+  ],
+  "twitter": "bridgerbowl"
+}
