@@ -451,12 +451,6 @@ component-bind@*:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/component-bind/-/component-bind-1.0.0.tgz#00c608ab7dcd93897c0009651b1d3a8e1e73bbd1"
 
-component-classes@^1.2.4:
-  version "1.2.6"
-  resolved "https://registry.yarnpkg.com/component-classes/-/component-classes-1.2.6.tgz#c642394c3618a4d8b0b8919efccbbd930e5cd691"
-  dependencies:
-    component-indexof "0.0.3"
-
 component-closest@*:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/component-closest/-/component-closest-1.0.1.tgz#1ed0464132fc88a3510a2dabec079695789fb1b5"
@@ -494,10 +488,6 @@ component-events@1.0.9:
   dependencies:
     component-delegate "0.2.3"
     component-event "0.1.4"
-
-component-indexof@0.0.3:
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/component-indexof/-/component-indexof-0.0.3.tgz#11d091312239eb8f32c8f25ae9cb002ffe8d3c24"
 
 component-matches-selector@~0.1.6:
   version "0.1.6"

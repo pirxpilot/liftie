@@ -8,7 +8,6 @@
   "dependencies": {
     "async": "~2",
     "chart.js": "^1.0.2",
-    "component-classes": "^1.2.4",
     "component-cookie": "^1.1.2",
     "component-event": "^0.1.4",
     "connect-cachify-static": "^1.5.1",
@@ -55,7 +54,6 @@
   },
   "browser": {
     "chart": "chart.js",
-    "classes": "component-classes",
     "cookie": "component-cookie",
     "el": "el-component",
     "event": "component-event",
