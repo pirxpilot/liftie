@@ -24,7 +24,6 @@
     "el-component": "^1.0.1",
     "errorhandler": "^1.5.0",
     "express": "^4.16.2",
-    "google-ua": "^2.0.0",
     "htmlparser2": "~3",
     "jade": "^1.11.0",
     "limiter": "~1",
@@ -64,8 +63,7 @@
     "k": "yields-k",
     "load": "dynload",
     "pager": "tiny-pager",
-    "rating": "ro-rating",
-    "ua": "google-ua"
+    "rating": "ro-rating"
   },
   "main": "app.js",
   "directories": {
