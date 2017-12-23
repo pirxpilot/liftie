@@ -58,7 +58,8 @@ html(
       var features = [
         'fetch',
         'Element.prototype.dataset',
-        'Element.prototype.classList'
+        'Element.prototype.classList',
+        'Event'
       ].join(',');
     script(src='https://cdn.polyfill.io/v2/polyfill#{min}.js?features=#{features}', defer)
     script(src=cachify('/scripts/liftie#{min}.js'), defer)
