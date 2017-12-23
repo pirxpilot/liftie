@@ -679,7 +679,7 @@ cycle@1.0.x:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/cycle/-/cycle-1.0.3.tgz#21e80b2be8580f98b468f379430662b046c34ad2"
 
-dataset@^0.3.1, dataset@^0.3.2:
+dataset@^0.3.2:
   version "0.3.2"
   resolved "https://registry.yarnpkg.com/dataset/-/dataset-0.3.2.tgz#c7541247f5daf2bafd54d95d0be80036f5fbc811"
 
@@ -997,11 +997,10 @@ glob@7.1.2, glob@7.x, glob@^7.0.5, glob@^7.1.0, glob@^7.1.1:
     once "^1.3.0"
     path-is-absolute "^1.0.0"
 
-google-ua@^1.4.1:
-  version "1.4.1"
-  resolved "https://registry.yarnpkg.com/google-ua/-/google-ua-1.4.1.tgz#f824c5ecb89673bc35f5c1aae2437799ceb8c21b"
+google-ua@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/google-ua/-/google-ua-2.0.0.tgz#e4e960baf04f03942d8ccc6d4ea0931f7a3935c9"
   dependencies:
-    dataset "^0.3.1"
     dynload "^1.0.2"
 
 "graceful-readlink@>= 1.0.0":
