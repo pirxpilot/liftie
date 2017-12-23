@@ -54,5 +54,13 @@ html(
         - var slug = tag ? '/' + tag : ''
         a.icon-alone(href='/stats#{slug}', title='Check statistics', rel='nofollow')
           span.ls-pie
-    script(src='https://cdn.polyfill.io/v2/polyfill#{min}.js?features=fetch', defer)
+    -
+      var features = [
+        'Element.prototype.classList',
+        'Element.prototype.dataset',
+        'Event',
+        'fetch',
+        'getComputedStyle'
+      ].join(',');
+    script(src='https://cdn.polyfill.io/v2/polyfill#{min}.js?features=#{features}', defer)
     script(src=cachify('/scripts/liftie#{min}.js'), defer)
