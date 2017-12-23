@@ -56,10 +56,11 @@ html(
           span.ls-pie
     -
       var features = [
-        'fetch',
-        'Element.prototype.dataset',
         'Element.prototype.classList',
-        'Event'
+        'Element.prototype.dataset',
+        'Event',
+        'fetch',
+        'getComputedStyle'
       ].join(',');
     script(src='https://cdn.polyfill.io/v2/polyfill#{min}.js?features=#{features}', defer)
     script(src=cachify('/scripts/liftie#{min}.js'), defer)

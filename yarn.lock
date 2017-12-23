@@ -2,6 +2,10 @@
 # yarn lockfile v1
 
 
+"@pirxpilot/events@~1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@pirxpilot/events/-/events-1.0.1.tgz#15068c967573d8b1a1482debd74384fafa1bd2b8"
+
 "@pirxpilot/k@^1.0.0":
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@pirxpilot/k/-/k-1.0.0.tgz#6afdeb6a11d108c88aefa2fb7bf3eb2775f07b97"
@@ -9,6 +13,14 @@
     component-os "*"
     yields-k-sequence "*"
     yields-keycode "*"
+
+"@pirxpilot/swipe@^2.0.1":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@pirxpilot/swipe/-/swipe-2.0.1.tgz#9a4a09f3cb4b830b39b71e54a62d866ec62e35da"
+  dependencies:
+    "@pirxpilot/events" "~1"
+    component-emitter "^1.2.0"
+    has-translate3d "~0"
 
 JSONStream@^1.0.3:
   version "1.3.1"
@@ -455,61 +467,19 @@ commander@~2.6.0:
   version "2.6.0"
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.6.0.tgz#9df7e52fb2a0cb0fb89058ee80c3104225f37e1d"
 
-component-closest@*:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/component-closest/-/component-closest-1.0.1.tgz#1ed0464132fc88a3510a2dabec079695789fb1b5"
-  dependencies:
-    component-matches-selector "~0.1.6"
-
 component-cookie@^1.1.2:
   version "1.1.3"
   resolved "https://registry.yarnpkg.com/component-cookie/-/component-cookie-1.1.3.tgz#053e14a3bd7748154f55724fd39a60c01994ebed"
   dependencies:
     debug "*"
 
-component-delegate@0.2.3:
-  version "0.2.3"
-  resolved "https://registry.yarnpkg.com/component-delegate/-/component-delegate-0.2.3.tgz#523ec3a0538fdc85e25e9b4ae4c5e0606875f7fc"
-  dependencies:
-    component-closest "*"
-    component-event "*"
-
-component-emitter@1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/component-emitter/-/component-emitter-1.2.0.tgz#ccd113a86388d06482d03de3fc7df98526ba8efe"
-
 component-emitter@^1.1.1, component-emitter@^1.2.0:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/component-emitter/-/component-emitter-1.2.1.tgz#137918d6d78283f7df7a6b7c5a63e140e69425e6"
 
-component-event@*, component-event@0.1.4:
-  version "0.1.4"
-  resolved "https://registry.yarnpkg.com/component-event/-/component-event-0.1.4.tgz#3de78fc28782381787e24bf2a7c536bf0142c9b4"
-
-component-events@1.0.9:
-  version "1.0.9"
-  resolved "https://registry.yarnpkg.com/component-events/-/component-events-1.0.9.tgz#cf784541272db71b5b231552df89d805eef62900"
-  dependencies:
-    component-delegate "0.2.3"
-    component-event "0.1.4"
-
-component-matches-selector@~0.1.6:
-  version "0.1.6"
-  resolved "https://registry.yarnpkg.com/component-matches-selector/-/component-matches-selector-0.1.6.tgz#7b630e04e7e0c3b0019f31749fd70af5ed8b972e"
-  dependencies:
-    component-query "*"
-
 component-os@*:
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/component-os/-/component-os-0.0.1.tgz#959343be0d6843bb77712fe278f5ff7b5123296b"
-
-component-query@*:
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/component-query/-/component-query-0.0.3.tgz#07f49dab7071fa9606725df53e607f468acdaacf"
-
-computed-style-component@0.1.0:
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/computed-style-component/-/computed-style-component-0.1.0.tgz#38c2138ec3f108a78eed3163cb6c98a84ddc0a28"
 
 concat-map@0.0.1:
   version "0.0.1"
@@ -1009,7 +979,7 @@ has-flag@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/has-flag/-/has-flag-2.0.0.tgz#e8207af1cc7b30d446cc70b734b5e8be18f88d51"
 
-has-translate3d@0.0.3:
+has-translate3d@~0:
   version "0.0.3"
   resolved "https://registry.yarnpkg.com/has-translate3d/-/has-translate3d-0.0.3.tgz#ee0157ad5b4ca8a1a33514a9e7ef45415a132103"
   dependencies:
@@ -1963,19 +1933,6 @@ supports-color@^3.2.3:
   dependencies:
     has-flag "^1.0.0"
 
-swipe@^1.7.7:
-  version "1.7.7"
-  resolved "https://registry.yarnpkg.com/swipe/-/swipe-1.7.7.tgz#63e287e7f67197f62d920f72956ebe10a8cb63f1"
-  dependencies:
-    component-emitter "1.2.0"
-    component-event "0.1.4"
-    component-events "1.0.9"
-    computed-style-component "0.1.0"
-    has-translate3d "0.0.3"
-    touchaction-property "0.0.1"
-    transform-property "0.0.1"
-    transitionend-property "0.0.2"
-
 syntax-error@^1.1.1:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/syntax-error/-/syntax-error-1.3.0.tgz#1ed9266c4d40be75dc55bf9bb1cb77062bb96ca1"
@@ -2045,10 +2002,6 @@ to-title-case@^1.0.0:
     to-capital-case "^1.0.0"
     to-sentence-case "^1.0.0"
 
-touchaction-property@0.0.1:
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/touchaction-property/-/touchaction-property-0.0.1.tgz#f046a46224776091cacdc63c20ffc737b751f6c6"
-
 transform-property@0.0.1:
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/transform-property/-/transform-property-0.0.1.tgz#4863662f9d5e5bb8f0c00648eff08beb14fd65f2"
@@ -2060,10 +2013,6 @@ transformers@2.1.0:
     css "~1.0.8"
     promise "~2.0"
     uglify-js "~2.2.5"
-
-transitionend-property@0.0.2:
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/transitionend-property/-/transitionend-property-0.0.2.tgz#7f969648f8394d52ba097f126b2b1e79f37b0c6c"
 
 traverse-chain@~0.1.0:
   version "0.1.0"
