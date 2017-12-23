@@ -1,4 +1,15 @@
 
+3.19.1 / 2017-12-23
+===================
+
+ * use @pirxpilot/swipe instead of swipe component
+ * upgrade tiny-pager
+ * replace yields-k with @pirxpilot/k
+ * remvove component-event
+ * remove component-classes
+ * remove dataset component
+ * remove google-ua
+
 3.19.0 / 2017-11-27
 ===================
 
