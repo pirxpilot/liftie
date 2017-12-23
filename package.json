@@ -15,7 +15,6 @@
     "connect-gzip-static": "^2.1.1",
     "cookie-parser": "^1.4.3",
     "css-select": "~1",
-    "dataset": "^0.3.2",
     "debounce": "^1.0.0",
     "debug": "~2",
     "dirty": "^1.1.0",
