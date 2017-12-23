@@ -482,7 +482,7 @@ component-emitter@^1.1.1, component-emitter@^1.2.0:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/component-emitter/-/component-emitter-1.2.1.tgz#137918d6d78283f7df7a6b7c5a63e140e69425e6"
 
-component-event@*, component-event@0.1.4, component-event@^0.1.2:
+component-event@*, component-event@0.1.4:
   version "0.1.4"
   resolved "https://registry.yarnpkg.com/component-event/-/component-event-0.1.4.tgz#3de78fc28782381787e24bf2a7c536bf0142c9b4"
 
@@ -1999,12 +1999,11 @@ timers-browserify@^1.0.1:
   dependencies:
     process "~0.11.0"
 
-tiny-pager@^0.2.3:
-  version "0.2.3"
-  resolved "https://registry.yarnpkg.com/tiny-pager/-/tiny-pager-0.2.3.tgz#876e56ed1183aa8ace7368804043ee22ad520f3c"
+tiny-pager@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/tiny-pager/-/tiny-pager-1.0.0.tgz#e8e04b396106c3ebb84a18dd05e44646366d538c"
   dependencies:
     component-emitter "^1.1.1"
-    component-event "^0.1.2"
     el-component "^1.0.1"
 
 title-case-minors@^1.0.0:
