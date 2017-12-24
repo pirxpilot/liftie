@@ -14,9 +14,9 @@
     yields-k-sequence "*"
     yields-keycode "*"
 
-"@pirxpilot/swipe@^2.0.1":
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/@pirxpilot/swipe/-/swipe-2.0.1.tgz#9a4a09f3cb4b830b39b71e54a62d866ec62e35da"
+"@pirxpilot/swipe@^2.0.2":
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/@pirxpilot/swipe/-/swipe-2.0.2.tgz#f0d8d85dde4119e0b7794ea40084c684294d1570"
   dependencies:
     "@pirxpilot/events" "~1"
     component-emitter "^1.2.0"
