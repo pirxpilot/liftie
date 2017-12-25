@@ -1,0 +1,15 @@
+{
+  "name": "Camelback Mountain",
+  "url": {
+    "host": "https://www.skicamelback.com",
+    "pathname": "/plan-your-trip/trail-map-conditions/"
+  },
+  "tags": [
+    "Pennsylvania"
+  ],
+  "ll": [
+    -75.355,
+    41.051389
+  ],
+  "twitter": "skicamelback"
+}
