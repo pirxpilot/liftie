@@ -1,4 +1,11 @@
 
+3.21.0 / 2018-01-05
+===================
+
+ * add Blue Mountain Ontario resort
+ * fix intrawest resorts
+ * fix solitude URL
+
 3.20.0 / 2017-12-25
 ===================
 
