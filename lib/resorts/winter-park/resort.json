@@ -2,7 +2,11 @@
   "name": "Winter Park",
   "url": {
     "host": "https://www.winterparkresort.com",
-    "pathname": "/the-mountain/weather-dashboard"
+    "pathname": "/the-mountain/weather-dashboard#mountain-status"
+  },
+  "api": {
+    "host": "https://snowreporting.herokuapp.com",
+    "pathname": "/feed/5/lifts"
   },
   "tags": [
     "Colorado"

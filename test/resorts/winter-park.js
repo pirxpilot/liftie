@@ -1,44 +1,36 @@
-var should = require('should');
-var fs = require('fs');
-var parser = require('../../lib/lifts/parser');
 var parse = require('../../lib/lifts/parse')('winter-park');
 
 /*global describe, it */
 describe('parse winter-park', function() {
 
-  it('should return lift status', function(done) {
-    var stream = fs.createReadStream(__dirname + '/example/winter-park.html');
-    stream.on('error', done);
-    stream.pipe(parser(parse, function(err, status) {
-      var expected = {
-        'Arrow': 'open',
-        'Challenger': 'open',
-        'Comet': 'open',
-        'Discovery': 'open',
-        'Eagle Wind': 'closed',
-        'Endeavour': 'closed',
-        'Eskimo Express': 'open',
-        'Galloping Goose': 'open',
-        'Gemini Express': 'open',
-        'Hi-Lonesome Express': 'open',
-        'Iron Horse': 'open',
-        'Lariat': 'open',
-        'Looking Glass': 'open',
-        'Meteor': 'open',
-        'Olympia Express': 'open',
-        'Panoramic Express': 'closed',
-        'Pioneer Express': 'open',
-        'Pony Express': 'closed',
-        'Prospector Express': 'open',
-        'Spirit': 'open',
-        'Sunnyside': 'open',
-        'Super Gauge Express': 'open',
-        'Cabriolet': 'open',
-        'Zephyr Express': 'open'
-      };
-      should.exist(status);
-      status.should.eql(expected);
-      done(err);
-    }));
+  it('should return lift status', function() {
+    var data = require('./example/winter-park.json');
+    var expected = {
+      'Arrow': 'open',
+      'Challenger': 'open',
+      'Comet': 'open',
+      'Discovery': 'open',
+      'Eagle Wind': 'closed',
+      'Endeavour': 'open',
+      'Eskimo Express': 'open',
+      'Galloping Goose': 'open',
+      'Gemini Express': 'open',
+      'Hi-Lonesome Express': 'open',
+      'Iron Horse': 'closed',
+      'Lariat': 'open',
+      'Looking Glass': 'open',
+      'Meteor': 'open',
+      'Olympia Express': 'open',
+      'Panoramic Express': 'open',
+      'Pioneer Express': 'open',
+      'Pony Express': 'open',
+      'Prospector Express': 'open',
+      'Spirit': 'open',
+      'Sunnyside': 'open',
+      'Super Gauge Express': 'open',
+      'Cabriolet': 'open',
+      'Zephyr Express': 'open'
+    };
+    parse(data).should.eql(expected);
   });
 });

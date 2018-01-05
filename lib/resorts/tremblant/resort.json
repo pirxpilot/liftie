@@ -2,7 +2,11 @@
   "name": "Mont Tremblant",
   "url": {
     "host": "https://www.tremblant.ca",
-    "pathname": "/snow-weather-report"
+    "pathname": "/mountain-village/mountain-report#/lifts"
+  },
+  "api": {
+    "host": "https://snowreporting.herokuapp.com",
+    "pathname": "/feed/4/lifts"
   },
   "tags": [
     "Quebec"

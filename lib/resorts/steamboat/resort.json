@@ -2,7 +2,11 @@
   "name": "Steamboat",
   "url": {
     "host": "https://www.steamboat.com",
-    "pathname": "/the-mountain/conditions-report"
+    "pathname": "/the-mountain/mountain-report#/lifts"
+  },
+  "api": {
+    "host": "https://snowreporting.herokuapp.com",
+    "pathname": "/feed/4/lifts"
   },
   "tags": [
     "Colorado"

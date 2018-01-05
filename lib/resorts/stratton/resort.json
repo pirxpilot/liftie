@@ -2,7 +2,11 @@
   "name": "Stratton",
   "url": {
     "host": "https://www.stratton.com",
-    "pathname": "/the-mountain/conditions-report"
+    "pathname": "/the-mountain/conditions-report#mountain-status"
+  },
+  "api": {
+    "host": "https://snowreporting.herokuapp.com",
+    "pathname": "/feed/1/lifts"
   },
   "tags": [
     "New England",
