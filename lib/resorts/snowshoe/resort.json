@@ -2,7 +2,11 @@
   "name": "Snowshoe Mountain",
   "url": {
     "host": "https://www.snowshoemtn.com",
-    "pathname": "/the-mountain/weather-and-trails"
+    "pathname": "/the-mountain/weather-and-trails#mountain-status"
+  },
+  "api": {
+    "host": "https://snowreporting.herokuapp.com",
+    "pathname": "/feed/2/lifts"
   },
   "tags": [
     "West Virginia"

@@ -1,31 +1,23 @@
-var assert = require('assert');
-var fs = require('fs');
-var parser = require('../../lib/lifts/parser');
 var parse = require('../../lib/lifts/parse')('stratton');
 
 /*global describe, it */
 describe('parse stratton', function() {
 
-  it('should return lift status', function(done) {
-    var stream = fs.createReadStream(__dirname + '/example/stratton.html');
-    stream.on('error', done);
-    stream.pipe(parser(parse, function(err, status) {
-      var expected = {
-        'Gondola': 'scheduled',
-        'American Express': 'open',
-        'URSA Express': 'open',
-        'Cub Carpet': 'open',
-        'Sunrise Express': 'closed',
-        'Shooting Star': 'open',
-        'Snow Bowl': 'scheduled',
-        'Solstice': 'closed',
-        'South American': 'closed',
-        'Tamarack': 'open',
-        'Teddy Bear': 'open',
-        'Villager': 'open'
-      };
-      assert.deepEqual(status, expected);
-      done(err);
-    }));
+  it('should return lift status', function() {
+    var data = require('./example/stratton.json');
+    var expected = {
+      'Gondola': 'closed',
+      'American Express': 'closed',
+      'URSA Express': 'closed',
+      'Cub Carpet': 'open',
+      'Sunrise Express': 'closed',
+      'Shooting Star': 'closed',
+      'Snow Bowl': 'closed',
+      'Solstice': 'closed',
+      'South American': 'closed',
+      'Tamarack': 'closed',
+      'Villager': 'closed'
+    };
+    parse(data).should.eql(expected);
   });
 });

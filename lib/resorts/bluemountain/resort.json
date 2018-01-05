@@ -1,0 +1,19 @@
+{
+  "name": "Blue Mountain",
+  "url": {
+    "host": "https://www.bluemountain.ca",
+    "pathname": "/mountain/mountain-report#/lifts"
+  },
+  "api": {
+    "host": "https://snowreporting.herokuapp.com",
+    "pathname": "/feed/3/lifts"
+  },
+  "tags": [
+    "Ontario"
+  ],
+  "ll": [
+    -80.316116,
+    44.50758
+  ],
+  "twitter": "BlueMtnResort"
+}
