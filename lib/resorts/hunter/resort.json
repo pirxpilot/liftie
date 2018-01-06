@@ -1,8 +1,8 @@
 {
   "name": "Hunter Mountain",
   "url": {
-    "host": "http://www.huntermtn.com",
-    "pathname": "/winter/snow-report/",
+    "host": "https://www.huntermtn.com",
+    "pathname": "/mountain-info/lifts-terrain/",
     "ignoreErrors": true
   },
   "tags": [

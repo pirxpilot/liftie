@@ -11,15 +11,15 @@ describe('parse hunter', function() {
     stream.on('error', done);
     stream.pipe(parser(parse, function(err, status) {
       var expected = {
-        'Kaatskill Flyer': 'closed',
-        'B-Lift': 'closed',
-        'C-Lift': 'closed',
+        'Kaatskill Flyer': 'open',
+        'B-Lift': 'open',
+        'C-Lift': 'open',
         'D-Lift': 'closed',
         'E-Lift': 'closed',
-        'F-Lift': 'closed',
-        'Carpet Lift': 'closed',
-        'Frosty Land Carpet 1': 'closed',
-        'Frosty Land Carpet 2': 'closed',
+        'F-Lift': 'hold',
+        'Carpet Lift': 'open',
+        'Frostyland Carpet': 'open',
+        'Discovery Carpet': 'open',
         'H-Lift': 'closed',
         'Zephyr Express': 'closed',
         'Pony Lift': 'closed'

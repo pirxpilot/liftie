@@ -11,13 +11,11 @@ describe('parse ragged-mountain', function() {
     stream.on('error', done);
     stream.pipe(parser(parse, function(err, status) {
       var expected = {
-        "Barnyard Triple": "closed",
-        "Beginners Basin Carpet": "closed",
-        "Six Pack": "open",
-        "Spear Mountain Triple": "open",
-        "Tubing Carpet": "closed",
-        "Village Green": "closed",
-        "Wonder Carpet": "open"
+        'Barnyard Triple': 'open',
+        'Six Pack Summit Express': 'open',
+        'Spear Mountain Quad': 'open',
+        'Wanna Be Wild Carpet': 'open',
+        'Meadows Carpet': 'open'
       };
       should.exist(status);
       status.should.eql(expected);

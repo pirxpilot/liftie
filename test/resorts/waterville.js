@@ -11,17 +11,18 @@ describe('parse waterville', function() {
     stream.on('error', done);
     stream.pipe(parser(parse, function(err, status) {
       var expected = {
-        'High Country Double': 'closed',
-        'Exhibition Poma': 'closed',
-        'Northside Double': 'closed',
-        'Sunnyside Triple': 'closed',
-        'White Peaks Quad': 'closed',
-        'Valley Run Quad': 'closed',
-        'Pasture J-Bar': 'closed',
-        'World Cup T-Bar': 'closed',
-        'Lower Meadows Double': 'closed',
+        'High Country': 'closed',
+        'Exhibition Poma': 'open',
+        'Northside': 'closed',
+        'Sunny Side': 'closed',
+        'White Peaks Express': 'closed',
+        'Valley Run Quad': 'open',
+        'Lower Pasture Carpet': 'closed',
+        'Upper Pasture Carpet': 'open',
+        'World Cup T-Bar': 'open',
+        'Lower Meadows': 'open',
         'Green Peak Triple': 'closed',
-        'Kinderpark Carpet': 'closed'
+        'Kinderpark Lift': 'closed'
       };
       assert.deepEqual(status, expected);
       done(err);

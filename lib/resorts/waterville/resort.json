@@ -4,6 +4,10 @@
     "host": "http://www.waterville.com",
     "pathname": "/snow-report-maps"
   },
+  "dataUrl": {
+    "host": "http://features.waterville.com",
+    "pathname": "/propsnow/"
+  },
   "tags": [
     "New Hampshire",
     "New England"
