@@ -6,7 +6,7 @@
   },
   "api": {
     "host": "https://snowreporting.herokuapp.com",
-    "pathname": "/feed/4/lifts"
+    "pathname": "/feed/6/lifts"
   },
   "tags": [
     "Colorado"
