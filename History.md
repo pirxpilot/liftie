@@ -1,4 +1,17 @@
 
+3.21.2 / 2018-01-06
+===================
+
+ * fix Waterville parser
+ * fix Cataloochee resort
+ * fix Ragged Mountain parser
+ * fix Hunter parser
+ * fix Windham parser
+ * fix Pats Peak API port
+ * fix Monarch URL
+ * fix fetching dataUrl in bin/fetch
+ * add support for negative index in child paths
+
 3.21.1 / 2018-01-05
 ===================
 
