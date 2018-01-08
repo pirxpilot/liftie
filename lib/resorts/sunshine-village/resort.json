@@ -1,8 +1,12 @@
 {
   "name": "Sunshine Village",
   "url": {
-    "host": "http://www.skibanff.com",
+    "host": "https://www.skibanff.com",
     "pathname": "/conditions/"
+  },
+  "api": {
+    "host": "https://www.skibanff.com",
+    "pathname": "/api/data/lifts"
   },
   "tags": [
     "Alberta"

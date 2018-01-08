@@ -7,24 +7,23 @@ var parse = require('../../lib/lifts/parse')('taos');
 describe('parse taos', function() {
 
   it('should return lift status', function(done) {
-    var stream = fs.createReadStream(__dirname + '/example/taos.xml');
+    var stream = fs.createReadStream(__dirname + '/example/taos.html');
     stream.on('error', done);
     stream.pipe(parser(parse, function(err, status) {
       var expected = {
-        'No. 4, Kachina': 'closed',
-        'No. 7, Maxie\'s': 'closed',
-        'No. 5, High Five': 'closed',
-        'No. 1, Al\'s Run': 'closed',
-        'No. 6, Winston': 'closed',
-        'No. 2, Reforma': 'closed',
-        'No. 8, West Basin': 'closed',
-        'No. 7a, 7th Heaven': 'closed',
-        'The Rueggli': 'closed',
-        'Zipper 1': 'closed',
-        'Zipper 2': 'closed',
-        'No. 3, Strawberry Hill': 'closed',
-        'Zipper 3': 'closed',
-        'Pioneers Chair': 'closed'
+        'Lift 1': 'open',
+        'Lift 2': 'open',
+        'Lift 4': 'closed',
+        'Lift 7': 'closed',
+        'Lift 7a': 'closed',
+        'Lift 8': 'open',
+        'Kachina Peak': 'closed',
+        'Pioneer': 'open',
+        'Zipper 1': 'open',
+        'Zipper 2': 'open',
+        'Zipper 3': 'open',
+        'Rueggli': 'open',
+        'Gondolita': 'open'
       };
       should.exist(status);
       status.should.eql(expected);
