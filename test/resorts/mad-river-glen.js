@@ -11,11 +11,11 @@ describe('parse mad-river-glen', function() {
     stream.on('error', done);
     stream.pipe(parser(parse, function(err, status) {
       var expected = {
-        'Single Chair': 'closed',
-        'Sunnyside Double Chair': 'closed',
+        'Single Chair': 'open',
+        'Sunnyside Double Chair': 'open',
         'Birdland Double Chair': 'closed',
         'Practice Slope Chair': 'closed',
-        'Callie\'s Corner Handle Tow': 'closed'
+        'Callie\'s Corner Handle Tow': 'open'
       };
       should.exist(status);
       status.should.eql(expected);
