@@ -1,4 +1,11 @@
 
+3.21.4 / 2018-03-12
+===================
+
+ * fix Okemo resort
+ * fix Mad River Glen resort
+ * fix caberfae Peaks
+
 3.21.3 / 2018-01-08
 ===================
 
