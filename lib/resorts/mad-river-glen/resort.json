@@ -1,8 +1,8 @@
 {
   "name": "Mad River Glen",
   "url": {
-    "host": "http://www.madriverglen.com",
-    "pathname": "/skiing/conditions/"
+    "host": "https://www.madriverglen.com",
+    "pathname": "/conditions/"
   },
   "tags": [
     "Vermont",

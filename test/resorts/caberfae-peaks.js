@@ -11,12 +11,11 @@ describe('parse caberfae-peaks', function() {
     stream.on('error', done);
     stream.pipe(parser(parse, function(err, status) {
       var expected = {
-        'North Peak Quad': 'closed',
-        'Shelter Double': 'closed',
-        'Taxi Surface': 'closed',
-        'South Peak Triple': 'closed',
-        'Clubhouse Double': 'closed',
-        'Lollipop Surface': 'closed'
+        'Vista 1561\' Triple Chairlift': 'open',
+        'Shelter Double Chairlift': 'open',
+        'North Peak Quad Chairlift': 'closed',
+        'South Peak Triple Chairlift': 'open',
+        'Taxi Surface Lift': 'open'
       };
       should.exist(status);
       status.should.eql(expected);
