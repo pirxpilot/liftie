@@ -1,0 +1,21 @@
+{
+  "name": "Mt Brighton",
+  "url": {
+    "host": "https://www.mtbrighton.com",
+    "pathname": ""
+  },
+  "dataUrl": {
+    "host": "https://docs.google.com",
+    "pathname": "/document/d/1zRkcIuJ1E61UeqNpCLpKtuZcCi7izccSI3RtJnK5Cgw/pub?embedded=true"
+  },
+  "tags": [
+    "Michigan",
+    "Vail Epic"
+  ],
+  "ll": [
+    -83.811553,
+    42.540783
+  ],
+  "twitter": "MtBrighton",
+  "opening": "2017-12-09"
+}
