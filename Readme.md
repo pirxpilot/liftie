@@ -1,7 +1,7 @@
-[![Build Status](https://img.shields.io/travis/pirxpilot/liftie.svg)](http://travis-ci.org/pirxpilot/liftie)
-[![Dependency Status](https://img.shields.io/gemnasium/pirxpilot/liftie.svg)](https://gemnasium.com/pirxpilot/liftie)
 [![NPM version](https://img.shields.io/npm/v/liftie.svg)](http://badge.fury.io/js/liftie)
-[![Code Climate](https://img.shields.io/codeclimate/github/pirxpilot/liftie.svg)](https://codeclimate.com/github/pirxpilot/liftie)
+[![Build Status](https://img.shields.io/travis/pirxpilot/liftie.svg)](http://travis-ci.org/pirxpilot/liftie)
+[![Dependency Status](https://img.shields.io/david/pirxpilot/liftie.svg)](https://david-dm.org/pirxpilot/liftie)
+[![Dev Dependency Status](https://img.shields.io/david/dev/pirxpilot/liftie.svg)](https://david-dm.org/pirxpilot/liftie?type=dev)
 
 # liftie.info
 
