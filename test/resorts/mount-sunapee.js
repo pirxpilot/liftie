@@ -11,8 +11,8 @@ describe('parse mount-sunapee', function() {
     stream.on('error', done);
     stream.pipe(parser(parse, function(err, status) {
       var expected = {
-        "Sunapee Express Quad": "closed",
-        "Sunbowl Express Quad": "closed",
+        "Sunapee Express": "closed",
+        "Sunbowl Express": "closed",
         "North Peak Triple": "closed",
         "Spruce Triple": "closed",
         "Duckling Double": "closed",
