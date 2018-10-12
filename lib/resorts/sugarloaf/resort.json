@@ -1,8 +1,8 @@
 {
   "name": "Sugarloaf",
   "url": {
-    "host": "http://www.sugarloaf.com",
-    "pathname": "/the-mountain/trails-and-lifts"
+    "host": "https://www.sugarloaf.com",
+    "pathname": "/conditions-and-cams"
   },
   "tags": [
     "New England",
