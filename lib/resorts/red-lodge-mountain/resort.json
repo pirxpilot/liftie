@@ -1,8 +1,8 @@
 {
   "name": "Red Lodge Mountain",
   "url": {
-    "host": "http://www.redlodgemountain.com",
-    "pathname": "/snow-report/"
+    "host": "https://www.redlodgemountain.com",
+    "pathname": "/mountain/snow-report/"
   },
   "tags": [
     "Montana"
