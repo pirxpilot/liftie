@@ -1,4 +1,17 @@
 
+3.22.1 / 2018-10-11
+===================
+
+ * fix Sugarloaf for new season
+ * fix Red Lodge Mountain for new season
+ * fix Stowe for new season
+ * fix Mount Sunapee for new season
+ * fix BrianHead for new season
+ * fix Big Sky for new season
+ * add support for extracting substring with regex
+ * fix generate script for node >= 7
+ * update dep badges in Readme
+
 3.22.0 / 2018-05-16
 ===================
 
