@@ -1,8 +1,8 @@
 {
   "name": "Brian Head",
   "url": {
-    "host": "http://brianhead.com",
-    "pathname": "/Current-Weather"
+    "host": "https://www.brianhead.com",
+    "pathname": "/winter/current-weather/"
   },
   "tags": [
     "Utah"
