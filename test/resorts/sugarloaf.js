@@ -16,7 +16,6 @@ describe('parse sugarloaf', function() {
         'Skyline': 'closed',
         'King Pine': 'closed',
         'Timberline': 'closed',
-        'Bucksaw': 'closed',
         'Skidway': 'closed',
         'Double Runner East': 'closed',
         'Double Runner West': 'closed',

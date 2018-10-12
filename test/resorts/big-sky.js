@@ -35,12 +35,16 @@ describe('parse big-sky', function() {
         'Homer': 'closed',
         'Pull-Up': 'closed',
         'Tweener': 'closed',
+        'Stagecoach Double': 'closed',
         'Swift Current Quad': 'closed',
-        'Adrian\'s Way': 'closed',
-        'Middle Mountain': 'closed',
         'Small Fry': 'closed',
         'Thunder Wolf Quad': 'closed',
-        'White Otter Double': 'closed'
+        'White Otter Double': 'closed',
+        'Beehive Basin': 'closed',
+        'Bear Basin': 'closed',
+        'Middle Basin': 'closed',
+        'Skiwee': 'closed',
+        'Pea Shooter': 'closed'
       };
       should.exist(status);
       status.should.eql(expected);

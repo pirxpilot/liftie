@@ -11,15 +11,15 @@ describe('parse stowe', function() {
     stream.on('error', done);
     stream.pipe(parser(parse, function(err, status) {
       var expected = {
-        'Adventure Center Carpet': 'closed',
+        'Adventure Carpet': 'closed',
         'Adventure Triple': 'closed',
-        'FourRunner Quad': 'closed',
-        'Gondola': 'closed',
+        'FourRunner Quad': 'open',
+        'Gondola': 'hold',
         'Lookout Double': 'closed',
         'Meadows Carpet': 'closed',
         'Meadows Quad': 'closed',
         'Mountain Triple': 'closed',
-        'Over Easy Transfer Gondola': 'closed',
+        'Over Easy Gondola': 'closed',
         'Sensation Quad': 'closed',
         'Sunny Spruce Quad': 'closed',
         'Toll House Double': 'closed'

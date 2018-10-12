@@ -2,7 +2,7 @@
   "name": "Big Sky",
   "url": {
     "host": "https://bigskyresort.com",
-    "pathname": "/the-mountain/current-conditions/lifts-and-trails"
+    "pathname": "/current-conditions"
   },
   "tags": [
     "Montana"
