@@ -1,20 +1,17 @@
 {
   "name": "Boreal",
   "url": {
-    "host": "http://www.rideboreal.com",
-    "pathname": "/the-mountain/trail-lift-info/lifts-hours"
+    "host": "https://www.rideboreal.com",
+    "pathname": "/the-mountain/the-mountain/trail-lift-info/full-trail-report"
   },
   "api": {
-    "host": "http://api.rideboreal.com",
-    "pathname": "/api/v2",
-    "query": {
-      "location": "/the-mountain/trail-lift-info/lifts-hours",
-      "level": 1
-    }
+    "host": "https://www.rideboreal.com",
+    "pathname": "/api/v1/dor/status"
   },
   "tags": [
     "California",
-    "Lake Tahoe"
+    "Lake Tahoe",
+    "Powdr"
   ],
   "ll": [
     -120.270203,

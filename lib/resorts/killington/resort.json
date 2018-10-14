@@ -1,12 +1,17 @@
 {
   "name": "Killington",
   "url": {
-    "host": "http://www.killington.com",
-    "pathname": "/site/mountain/conditions/trails"
+    "host": "https://www.killington.com/the-mountain",
+    "pathname": "/conditions-weather/lifts-trails-report"
+  },
+  "api": {
+    "host": "https://www.killington.com",
+    "pathname": "/api/v1/dor/status"
   },
   "tags": [
     "New England",
-    "Vermont"
+    "Vermont",
+    "Powdr"
   ],
   "twitter": "KillingtonMtn",
   "ll": [

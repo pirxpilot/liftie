@@ -12,24 +12,24 @@ describe('parse copper', function() {
       'Black Jack': 'closed',
       'Celebrity Ridge': 'closed',
       'Easy Rider': 'closed',
-      'Excelerator': 'open',
+      'Excelerator': 'closed',
       'Gem': 'closed',
-      'Kokomo': 'closed',
+      'KC': 'closed',
+      'Kokomo Express': 'closed',
       'Lumberjack': 'closed',
       'Mountain Chief': 'closed',
-      'Pitchfork': 'closed',
+      'Pitchfork/Gem': 'closed',
       'Rendezvous': 'closed',
       'Resolution': 'closed',
-      'Rugrat': 'closed',
+      'Rugrat/Slingshot/Glide': 'closed',
       'Sierra': 'closed',
       'Slingshot': 'closed',
       'Stinger': 'closed',
       'Storm King': 'closed',
       'Super Bee': 'closed',
-      'The Glide': 'closed',
       'Timberline Express': 'closed',
-      'Tucker Cat': 'closed',
-      'Union Creek High Speed Quad': 'closed'
+      'Tucker Snowcat': 'closed',
+      'Union Creek': 'closed'
     };
     parse(data).should.eql(expected);
   });
