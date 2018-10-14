@@ -1,20 +1,16 @@
 {
   "name": "Copper Mountain",
   "url": {
-    "host": "http://www.coppercolorado.com",
-    "pathname": "/the-mountain/trail-lift-info/winter-lifts-hours"
+    "host": "https://www.coppercolorado.com",
+    "pathname": "/the-mountain/trail-lift-info/winter-trail-report"
   },
   "api": {
-    "host": "http://api.coppercolorado.com/",
-    "pathname": "/api/v2",
-    "query": {
-      "location": "/the-mountain/trail-lift-info/winter-lifts-hours",
-      "level": 1
-    }
-
+    "host": "https://www.coppercolorado.com",
+    "pathname": "/api/v1/dor/status"
   },
   "tags": [
-    "Colorado"
+    "Colorado",
+    "Powdr"
   ],
   "opening": "2017-11-10",
   "ll": [

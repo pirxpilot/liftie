@@ -6,12 +6,14 @@ describe('parse boreal', function() {
   it('should return lift status', function() {
     var data = require('./example/boreal.json');
     var expected = {
-      'Castle Peak Quad': 'closed',
-      'Accelerator Express Quad': 'closed',
+      'Castle Peak': 'closed',
+      'Accelerator Express': 'closed',
       'Nugget': 'closed',
-      '49er Triple': 'closed',
-      'Flying Dutchman Triple': 'closed',
-      'Cedar Ridge Triple': 'closed',
+      '49er': 'closed',
+      'Dutchman': 'closed',
+      'Cedar Ridge': 'closed',
+      'Mountain Explorer': 'closed',
+      'Lil Carpet': 'closed'
     };
     parse(data).should.eql(expected);
   });
