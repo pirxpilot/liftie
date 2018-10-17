@@ -1,8 +1,8 @@
 {
   "name": "Sölden",
   "url": {
-    "host": "http://www.soelden.com",
-    "pathname": "/operational-ski-lifts"
+    "host": "https://www.soelden.com",
+    "pathname": "/winter/live-info/lifts-slopes/lifts-status.html"
   },
   "tags": [
     "Alps",
