@@ -11,21 +11,22 @@ describe('parse sunday-river', function() {
     stream.on('error', done);
     stream.pipe(parser(parse, function(err, status) {
       var expected = {
-        'Little White Cap Quad': 'open',
-        'White Heat Quad': 'hold',
-        'White Cap Quad': 'open',
+        'Little White Cap Quad': 'closed',
+        'White Heat Quad': 'closed',
+        'White Cap Quad': 'closed',
         'Locke Mountain Triple': 'closed',
-        'Barker Mountain Express': 'open',
-        'Spruce Peak Triple': 'open',
-        'Chondola': 'open',
-        'South Ridge Express': 'open',
-        'Sundance Surface Lift': 'open',
-        'North Peak Express': 'open',
+        'Barker Mountain Express': 'closed',
+        'Spruce Peak Triple': 'closed',
+        'Chondola': 'closed',
+        'South Ridge Express': 'closed',
+        'Sundance Surface Lift': 'closed',
+        'North Peak Express': 'closed',
         'Quantum Leap Triple': 'closed',
-        'Aurora Peak Quad': 'open',
+        'Aurora Peak Quad': 'closed',
         'OZ Quad': 'closed',
-        'Jordan Bowl Express': 'open',
-        'Jordan Mountain Double': 'closed'
+        'Jordan Bowl Express': 'closed',
+        'Jordan Mountain Double': 'closed',
+        'Tubing Park': 'closed'
       };
       should.exist(status);
       status.should.eql(expected);

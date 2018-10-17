@@ -1,8 +1,8 @@
 {
   "name": "Sunday River",
   "url": {
-    "host": "http://www.sundayriver.com",
-    "pathname": "/winter/mountain-report/lifts-trails"
+    "host": "https://www.sundayriver.com",
+    "pathname": "/mountain-report"
   },
   "tags": [
     "New England",
