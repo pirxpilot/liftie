@@ -1,4 +1,11 @@
 
+3.22.3 / 2018-10-17
+===================
+
+ * fix Soelden for the new season
+ * fix Ischgl - Silvretta for the new season
+ * fix Sunday River for the new season
+
 3.22.2 / 2018-10-14
 ===================
 

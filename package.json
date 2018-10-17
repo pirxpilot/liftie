@@ -1,7 +1,7 @@
 {
   "name": "liftie",
   "description": "Clean, simple, easy to read, fast ski resort lift status",
-  "version": "3.22.2",
+  "version": "3.22.3",
   "scripts": {
     "test": "make lint test"
   },
