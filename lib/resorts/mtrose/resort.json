@@ -1,8 +1,8 @@
 {
   "name": "Mount Rose",
   "url": {
-    "host": "http://skirose.com",
-    "pathname": "/the-mountain/snow-report/"
+    "host": "https://skirose.com",
+    "pathname": "/snow-report/"
   },
   "tags": [
     "Nevada",
