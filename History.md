@@ -1,4 +1,10 @@
 
+3.22.4 / 2018-10-19
+===================
+
+ * fix Loon for the new season
+ * fix Mount Rose resort for the new season
+
 3.22.3 / 2018-10-17
 ===================
 
