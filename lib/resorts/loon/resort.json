@@ -1,8 +1,8 @@
 {
   "name": "Loon Mountain",
   "url": {
-    "host": "http://www.loonmtn.com",
-    "pathname": "/explore/snow-conditions/trail-lift-report"
+    "host": "https://www.loonmtn.com",
+    "pathname": "/conditions"
   },
   "tags": [
     "New England",

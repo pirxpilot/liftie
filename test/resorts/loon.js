@@ -11,18 +11,15 @@ describe('parse loon', function() {
     stream.on('error', done);
     stream.pipe(parser(parse, function(err, status) {
       var expected = {
-        'East Basin Chair': 'closed',
-        'Gondola - Express': 'closed',
-        'Little Sister Chair': 'closed',
-        'Seven Brothers Chair': 'closed',
-        'North Peak Express Quad': 'closed',
+        'East Basin Double': 'closed',
+        'Gondola': 'closed',
+        'Little Sister Double': 'closed',
+        'Seven Brothers Triple': 'closed',
         'Lincoln Express Quad': 'closed',
-        'Tote Road Quad': 'closed',
-        'Children Center Carpet Lift': 'closed',
+        'Tote Road Connector': 'closed',
         'Kancamagus Express Quad': 'closed',
-        'Kissin\' Cousin Chair': 'closed',
-        'Sarsaparilla Carpet Lift': 'closed',
-        'Sarsaparilla Handle Tow': 'closed'
+        'Kissin\' Cousin Double': 'closed',
+        'Sarsaparilla Carpet': 'closed'
       };
       should.exist(status);
       status.should.eql(expected);
