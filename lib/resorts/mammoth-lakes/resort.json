@@ -2,7 +2,15 @@
   "name": "Mammoth Mountain",
   "url": {
     "host": "https://www.mammothmountain.com",
-    "pathname": "/winter/ski-ride/mountain-information/lift-status"
+    "pathname": "/winter/mountain-information/mountain-information/lift-trail-status"
+  },
+  "api": {
+    "host": "https://www.mammothmountain.com",
+    "pathname": "/mvc/lifttraildata/getliftdata",
+    "query": {
+      "resort": "1",
+      "view": "_mmsa_lift_status"
+    }
   },
   "tags": [
     "California"
