@@ -91,11 +91,11 @@ mixin twitter(resort)
     .follow
       if resort.twitter && single
         a.twitter-follow-button(
-          href="https://twitter.com/#{resort.twitter.user}",
-          target='_blank',
-          data-show-count="false",
-          data-size="large"
-        ) Follow @#{resort.twitter.user}
+          href="https://twitter.com/intent/follow?screen_name=#{resort.twitter.user}&tw_p=followbutton"
+          target='_blank'
+        )
+          span.ls-twitter
+          label Follow @#{resort.twitter.user}
     ul.timeline
 
 mixin addToTrip(resort)

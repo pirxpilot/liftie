@@ -19,6 +19,8 @@ $link-color=hsl(197, 100, 43)
 $background-color=hsl(220, 96, 98)
 $text-color=hsl(0, 0, 20)
 
+$twitter-color=#1b95e0
+
 $column-width=320px
 $column-gutter=16px
 
@@ -313,6 +315,28 @@ header .ls-furkot
     .follow
       padding-top .5em
 
+      .twitter-follow-button
+        color: white
+        background-color: $twitter-color
+        text-shadow: none
+        padding: .4em .6em
+        text-decoration: none
+        font-size: .8rem
+        border-radius: 4px
+
+        &:hover,
+        &:active,
+        &:focus
+          background-color #0c7abf
+
+        span
+          font-size 1.1em
+          vertical-align middle
+
+        label
+          margin-left .3em
+          cursor inherit
+
     .timeline
       clear both
 
@@ -489,7 +513,7 @@ body > footer
       .ls-google-plus
         color #D34836
       .ls-twitter
-        color #20C7FF
+        color $twitter-color
       .ls-facebook
         color #3B5998
 
