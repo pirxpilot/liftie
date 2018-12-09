@@ -15,15 +15,16 @@ describe('parse taos', function() {
         'Lift 2': 'open',
         'Lift 4': 'closed',
         'Lift 7': 'closed',
-        'Lift 7a': 'closed',
-        'Lift 8': 'open',
+        'Lift 7A': 'closed',
+        'Lift 8': 'closed',
         'Kachina Peak': 'closed',
         'Pioneer': 'open',
-        'Zipper 1': 'open',
-        'Zipper 2': 'open',
+        'Zipper 1': 'closed',
+        'Zipper 2': 'closed',
         'Zipper 3': 'open',
-        'Rueggli': 'open',
-        'Gondolita': 'open'
+        'Zipper 4': 'open',
+        'Rueggli': 'closed',
+        'Gondolita': 'closed'
       };
       should.exist(status);
       status.should.eql(expected);
