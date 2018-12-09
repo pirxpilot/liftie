@@ -1,8 +1,12 @@
 {
   "name": "Cranmore",
   "url": {
-    "host": "http://www.cranmore.com",
-    "pathname": "/The-Mountain/Resort-Information/Snow-Report"
+    "host": "https://www.cranmore.com",
+    "pathname": "/The-Mountain/Resort-Information/Resort-Snow-Report"
+  },
+  "dataUrl": {
+    "host": "https://digital.cranmore.com",
+    "pathname": "/conditions/snow-report/propconditions/"
   },
   "tags": [
     "New Hampshire",
