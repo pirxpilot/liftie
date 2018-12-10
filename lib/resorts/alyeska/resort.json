@@ -1,8 +1,15 @@
 {
   "name": "Alyeska",
   "url": {
-    "host": "http://www.alyeskaresort.com",
+    "host": "https://www.alyeskaresort.com",
     "pathname": "/snow-report/lifts-and-trails-status"
+  },
+  "dataUrl": {
+    "host": "https://www.alyeskaresort.com",
+    "pathname": "/snowreport/lifts",
+    "query": {
+      "path": "/lifts"
+    }
   },
   "tags": [
     "Alaska"

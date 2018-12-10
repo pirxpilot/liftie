@@ -2,7 +2,11 @@
   "name": "Jay Peak",
   "url": {
     "host": "https://jaypeakresort.com",
-    "pathname": "/skiing-riding/mountain/lifts-trails"
+    "pathname": "/skiing-riding/snow-report-maps/snow-report"
+  },
+  "dataUrl": {
+    "host": "https://digital.jaypeakresort.com",
+    "pathname": "/conditions/snow-report/snow-report/"
   },
   "tags": [
     "New England",
