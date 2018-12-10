@@ -1,4 +1,14 @@
 
+3.23.1 / 2018-12-09
+===================
+
+ * fix Alyeska for new season
+ * fix Whiteface for new season
+ * fix Jay Peak for new season
+ * fix Taos for new season
+ * fix Cranmore Mountain for new season
+ * fix Cannon Mountain for 2018/19 season
+
 3.23.0 / 2018-11-11
 ===================
 
