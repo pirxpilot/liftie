@@ -11,17 +11,18 @@ describe('parse whiteface', function() {
     stream.on('error', done);
     stream.pipe(parser(parse, function(err, status) {
       var expected = {
-        'Face Lift': 'open',
+        'Facelift': 'open',
         'Bear Lift': 'open',
         'Mixing Bowl Lift': 'open',
-        'Carpet Cruiser': 'open',
+        'Coyote Cruiser': 'closed',
         'Bunny Hutch Triple Chair': 'open',
         'Lookout Mountain Triple Chair': 'closed',
         'Freeway Lift': 'closed',
         'Mountain Run Lift': 'closed',
         'Little Whiteface Lift': 'open',
         'Cloudsplitter Gondola': 'open',
-        'Summit Quad Chair': 'open'
+        'Summit Quad': 'closed',
+        'Cub Carpet': 'closed'
       };
       assert.deepEqual(status, expected);
       done(err);

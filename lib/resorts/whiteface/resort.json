@@ -1,8 +1,12 @@
 {
   "name": "Whiteface",
   "url": {
-    "host": "http://www.whiteface.com",
+    "host": "https://www.whiteface.com",
     "pathname": "/mountain/conditions"
+  },
+  "dataUrl": {
+    "host": "https://map.whiteface.com",
+    "pathname": "/propsnow/"
   },
   "tags": [
     "New York"
