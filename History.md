@@ -1,4 +1,10 @@
 
+3.23.2 / 2018-12-10
+===================
+
+ * fix Mammoth and June for new season
+ * add support for async parse API functions
+
 3.23.1 / 2018-12-09
 ===================
 
