@@ -4,6 +4,14 @@
     "host": "https://www.junemountain.com",
     "pathname": "/winter/mountain-information/mountain-information/lift-status"
   },
+  "api": {
+    "host": "https://www.junemountain.com",
+    "pathname": "/mvc/lifttraildata/getliftdata",
+    "query": {
+      "resort": "2",
+      "view": "_june_lift_status"
+    }
+  },
   "tags": [
     "California"
   ],
