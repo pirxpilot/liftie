@@ -11,11 +11,11 @@ describe('parse hoodoo', function() {
     stream.on('error', done);
     stream.pipe(parser(parse, function(err, status) {
       var expected = {
-        'Manzanita': 'closed',
-        'Easy Rider': 'closed',
-        'Ed': 'closed',
-        'Big Green Machine': 'closed',
-        'Hodag': 'closed'
+        'MANZANITA': 'open',
+        'EASY RIDER': 'open',
+        'ED': 'open',
+        'BIG GREEN MACHINE': 'closed',
+        'HODAG': 'closed'
       };
       should.exist(status);
       status.should.eql(expected);
