@@ -1,4 +1,17 @@
 
+3.24.0 / 2018-12-12
+===================
+
+ * add Mount Buller
+ * fix coordinates order in generate prompt
+ * update example using data driven selector
+ * remove defunct Saddleback resort
+ * fix Mt Spokane for new season
+ * fix Hoodoo for new season
+ * fix Devils Head for new season
+ * add support for 'filter' in parse descriptor
+ * add support for sibling selectors to domutil.child
+
 3.23.3 / 2018-12-11
 ===================
 
