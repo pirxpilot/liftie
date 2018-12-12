@@ -1,0 +1,15 @@
+{
+  "name": "Thredbo",
+  "url": {
+    "host": "https://www.thredbo.com.au",
+    "pathname": "/weather/lifts-trails/"
+  },
+  "tags": [
+    "Australia"
+  ],
+  "ll": [
+    148.305556,
+    -36.504722
+  ],
+  "twitter": "ThredboResort"
+}
