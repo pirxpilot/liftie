@@ -11,23 +11,27 @@ describe('parse larosiere', function() {
     stream.on('error', done);
     stream.pipe(parser(parse, function(err, status) {
       var expected = {
-        'TK Bellecombe': 'scheduled',
-        'TK Bellecombe 1': 'scheduled',
-        'TK Bellecombe 2': 'scheduled',
-        'TK Clarines 1': 'scheduled',
-        'TK Clarines 2': 'scheduled',
-        'TK Dahu': 'scheduled',
-        'TK Lièvre blanc 1': 'scheduled',
-        'TK Lièvre blanc 2': 'scheduled',
-        'TK Manessier': 'scheduled',
-        'TK Plan du repos': 'scheduled',
-        'TK Poletta': 'scheduled',
-        'TK Sevoliere': 'scheduled',
-        'TS Chardonnet': 'scheduled',
-        'TS Ecudets': 'scheduled',
-        'TS Petit bois': 'scheduled',
-        'TSD Les Eucherts': 'scheduled',
-        'TSD Roches noires': 'scheduled'
+        'TSD LES EUCHERTS': 'closed',
+        'TSD PLAN DU REPOS': 'closed',
+        'TSD ROCHES NOIRES': 'closed',
+        'TS ECUDETS': 'closed',
+        'TS PETIT BOIS': 'closed',
+        'TK CLARINES': 'closed',
+        'TK DAHU': 'closed',
+        'TK LIEVRE BLANC 1': 'closed',
+        'TK LIEVRE BLANC 2': 'closed',
+        'TK MANESSIER': 'closed',
+        'TK POLETTA': 'closed',
+        'TK SEVOLIERE': 'closed',
+        'LES LUTINS': 'closed',
+        'TSD FORT': 'scheduled',
+        'TS CHARDONNET': 'scheduled',
+        'TK BELLECOMBE': 'closed',
+        'TK BELLECOMBE 1': 'closed',
+        'TK BELLECOMBE 2': 'closed',
+        'TSD MONT-VALAISAN': 'closed',
+        'TSD MOULINS': 'closed',
+        'FRANCE - ITALIE': 'closed'
       };
       should.exist(status);
       status.should.eql(expected);

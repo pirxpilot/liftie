@@ -11,13 +11,13 @@ describe('parse mtrose', function() {
     stream.on('error', done);
     stream.pipe(parser(parse, function(err, status) {
       var expected = {
-        'Northwest 6': 'closed',
-        'Blazing Zephyr 6*': 'closed',
+        'Northwest Mag 6': 'open',
+        'Blazing Zephyr 6*': 'open',
         'Chuter': 'closed',
-        'Lakeview': 'closed',
-        'Galena': 'closed',
-        'Wizard': 'closed',
-        'Magic East': 'closed',
+        'Lakeview': 'open',
+        'Galena': 'open',
+        'Wizard': 'open',
+        'Magic East': 'open',
         'Magic West': 'closed'
       };
       should.exist(status);
