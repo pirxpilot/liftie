@@ -15,7 +15,10 @@ describe('parse mt-spokane', function() {
         'Chair #2': 'open',
         'Chair #3': 'open',
         'Chair #4': 'closed',
-        'Chair #5': 'open'
+        'Chair #5': 'open',
+        'Chair #6': 'closed',
+        'Surface Lift':  'closed',
+        'Tubing Hill':  'closed'
       };
       should.exist(status);
       status.should.eql(expected);
