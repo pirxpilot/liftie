@@ -1,16 +1,13 @@
-var domutil = require('../../tools/domutil');
-var debug = require('debug')('liftie:resort:${ id }');
-
-function parse(dom) {
-  var liftStatus = domutil.collect(dom, '.lift', function(node) {
-    return {
-      name: node.children[0].data,
-      status: node.children[1].data
-    };
-  });
-
-  debug('${ name } Lift Status:', liftStatus);
-  return liftStatus;
-}
-
-module.exports = parse;
+module.exports = {
+  selector: '.lifts',                // selector for lift information
+  filter: node => node.children,     // optional - skip nodes for which filter retuturns nodes
+  parse: {
+    name: '0/1',            // example of a simple path descriptor - index, ',', '..', '+', '-' are supported
+    status: {               // example of a compound descriptor child. attribute, regex, fn - can be specified
+      child: '+/1',
+      attribute: 'alt',
+      regex: /-([a-z]+)$/,
+      fn: s => s.slice(0, -3)
+    }
+  }
+};
