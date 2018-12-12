@@ -1,8 +1,8 @@
 {
   "name": "Hoodoo",
   "url": {
-    "host": "http://www.hoodoo.com",
-    "pathname": "/ski-area-status/"
+    "host": "https://skihoodoo.com",
+    "pathname": "/the-mountain/mountain-lift-status/"
   },
   "tags": [
     "Oregon"
