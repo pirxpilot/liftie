@@ -6,7 +6,8 @@
   },
   "api": {
     "host": "https://www.skibanff.com",
-    "pathname": "/api/data/lifts"
+    "pathname": "/api/data/lifts",
+    "json": true
   },
   "tags": [
     "Alberta"
