@@ -1,4 +1,14 @@
 
+3.23.3 / 2018-12-11
+===================
+
+ * fix Mount Rose for new season
+ * fix Ragged Mountain for new season
+ * fix La Rosiere for new season
+ * fix Tahoe Donner for new season
+ * add support for API clients with invalid Content-Type
+ * add support for relative path to domutil.child
+
 3.23.2 / 2018-12-10
 ===================
 
