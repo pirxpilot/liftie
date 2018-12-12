@@ -11,12 +11,12 @@ describe('parse devils-head', function() {
     stream.on('error', done);
     stream.pipe(parser(parse, function(err, status) {
       var expected = {
-        'Sunkid (Short)': 'closed',
-        'Sunkid (Long)': 'closed',
-        '00': 'closed',
+        'Sunkid (Short)': 'open',
+        'Sunkid (Long)': 'scheduled',
+        '00': 'scheduled',
         '000**': 'closed',
-        '1 Quicksilver Express': 'closed',
-        '3 Glacial Express': 'closed',
+        '1 Quicksilver Express': 'open',
+        '3 Glacial Express': 'open',
         '4': 'closed',
         '4 ¼**': 'closed'
       };
