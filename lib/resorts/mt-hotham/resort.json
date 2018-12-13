@@ -1,0 +1,21 @@
+{
+  "name": "Mount Hotham",
+  "url": {
+    "host": "https://www.mthotham.com.au",
+    "pathname": "/on-mountain/conditions/lifts-terrain"
+  },
+  "api": {
+    "host": "https://www.mthotham.com.au",
+    "pathname": "/snowreport/LiftStatus.json"
+  },
+  "tags": [
+    "Victoria",
+    "Australia"
+  ],
+  "ll": [
+    147.1328,
+    -36.9752
+  ],
+  "twitter": "_hotham",
+  "opening": "0000-00-00"
+}
