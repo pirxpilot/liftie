@@ -4,13 +4,17 @@
     "host": "https://www.fallscreek.com.au",
     "pathname": "/snowreport/"
   },
+  "api": {
+    "host": "https://www.fallscreek.com.au",
+    "pathname": "/wp-content/uploads/FCSnowReport.json"
+  },
   "tags": [
     "Australia",
     "Victoria"
   ],
   "ll": [
     147.287,
-    36.8659
+    -36.8659
   ],
   "twitter": "fallsaustralia",
   "opening": "0000-00-00"
