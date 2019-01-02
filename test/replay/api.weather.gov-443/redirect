@@ -1,0 +1,29 @@
+GET /points/43.6647,-72.7933/forecast
+accept-encoding: gzip, deflate
+accept: application/geo+json
+
+HTTP/1.1 301 Moved Permanently
+server: nginx/1.12.2
+content-type: application/problem+json
+location: /gridpoints/BTV/107,21/forecast
+access-control-allow-origin: *
+pragma: no-cache
+x-server-id: vm-lnx-nids-apiapp17.ncep.noaa.gov
+x-correlation-id: a210e1b8-35a3-4f02-ab3b-d638132303c5
+x-request-id: a210e1b8-35a3-4f02-ab3b-d638132303c5
+content-length: 349
+cache-control: private, must-revalidate, max-age=68867
+expires: Thu, 03 Jan 2019 16:30:36 GMT
+date: Wed, 02 Jan 2019 21:22:49 GMT
+connection: close
+vary: Accept
+strict-transport-security: max-age=31536000 ; includeSubDomains ; preload
+
+{
+    "correlationId": "a210e1b8-35a3-4f02-ab3b-d638132303c5",
+    "title": "Redirect",
+    "type": "https://api.weather.gov/problems/GridpointRedirect",
+    "status": 301,
+    "detail": "The requested data can be found here: /gridpoints/BTV/107,21/forecast",
+    "instance": "https://api.weather.gov/requests/a210e1b8-35a3-4f02-ab3b-d638132303c5"
+}

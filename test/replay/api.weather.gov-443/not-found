@@ -1,0 +1,28 @@
+GET /points/0,0/forecast
+accept-encoding: gzip, deflate
+accept: application/geo+json
+
+HTTP/1.1 404 Not Found
+server: nginx/1.12.2
+content-type: application/problem+json
+access-control-allow-origin: *
+pragma: no-cache
+x-server-id: vm-lnx-nids-apiapp29.ncep.noaa.gov
+x-correlation-id: e7d568cb-3bcf-48b8-b2b1-0f6700240af1
+x-request-id: e7d568cb-3bcf-48b8-b2b1-0f6700240af1
+content-length: 349
+cache-control: private, must-revalidate, max-age=86400
+expires: Thu, 03 Jan 2019 23:24:47 GMT
+date: Wed, 02 Jan 2019 23:24:47 GMT
+connection: close
+vary: Accept
+strict-transport-security: max-age=31536000 ; includeSubDomains ; preload
+
+{
+    "correlationId": "e7d568cb-3bcf-48b8-b2b1-0f6700240af1",
+    "title": "Data Unavailable For Requested Point",
+    "type": "https://api.weather.gov/problems/InvalidPoint",
+    "status": 404,
+    "detail": "Unable to provide data for requested point 0,0",
+    "instance": "https://api.weather.gov/requests/e7d568cb-3bcf-48b8-b2b1-0f6700240af1"
+}
