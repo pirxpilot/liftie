@@ -1,4 +1,11 @@
 
+3.24.2 / 2019-01-02
+===================
+
+ * upgrade css processing tools
+ * replace jade with @pirxpilot/jade-core
+ * fix Owls Heade resort
+
 3.24.1 / 2018-12-13
 ===================
 
