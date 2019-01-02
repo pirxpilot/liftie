@@ -35,6 +35,7 @@ Object.assign(app.locals, {
 });
 app.set('port', process.env.PORT || 3000);
 app.set('views', __dirname + '/views');
+app.engine('jade', require('@pirxpilot/jade-core').__express);
 app.set('view engine', 'jade');
 
 app.use(favicon(path.join(root, 'favicon.ico')));
