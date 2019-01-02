@@ -1,8 +1,8 @@
 {
   "name": "Owl's Head",
   "url": {
-    "host": "http://www.owlshead.com",
-    "pathname": "/en/the-mountain/ski/snow-report.html"
+    "host": "https://owlshead.com",
+    "pathname": "/en/ski-conditions/"
   },
   "tags": [
     "Quebec"

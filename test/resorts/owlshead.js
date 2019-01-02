@@ -11,15 +11,12 @@ describe('parse owlshead', function() {
     stream.on('error', done);
     stream.pipe(parser(parse, function(err, status) {
       var expected = {
-        'Main Quad': 'open',
-        'Green Chair': 'closed',
-        'Little Quad': 'open',
-        'Little Red': 'closed',
-        'Black Chair': 'open',
-        'Lake Chair': 'open',
-        'Blue Chair': 'open',
-        'Panorama': 'closed',
-        'Magic Carpet': 'open'
+        'Main': 'open',
+        'Baby': 'open',
+        'Black': 'open',
+        'Lake': 'closed',
+        'Blue': 'closed',
+        'Magic carpet': 'open'
       };
       assert.deepEqual(status, expected);
       done(err);
