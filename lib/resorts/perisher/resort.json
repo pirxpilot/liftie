@@ -1,0 +1,15 @@
+{
+  "name": "Perisher",
+  "url": {
+    "host": "https://www.perisher.com.au",
+    "pathname": "/reports-cams/reports/lift-report"
+  },
+  "tags": [
+    "Australia"
+  ],
+  "ll": [
+    148.41,
+    -36.4
+  ],
+  "twitter": "PerisherResort"
+}
