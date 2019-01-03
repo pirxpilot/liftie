@@ -1,0 +1,29 @@
+GET /points/0.0000,0.0000/forecast
+accept-encoding: gzip, deflate
+accept: application/geo+json
+
+HTTP/1.1 301 Moved Permanently
+server: nginx/1.12.2
+content-type: application/problem+json
+location: /points/0,0/forecast
+access-control-allow-origin: *
+pragma: no-cache
+x-server-id: vm-lnx-nids-apiapp16.ncep.noaa.gov
+x-correlation-id: ae8d35eb-bc6c-4c23-9910-8aefd2f907c9
+x-request-id: ae8d35eb-bc6c-4c23-9910-8aefd2f907c9
+content-length: 539
+cache-control: private, must-revalidate, max-age=61593
+expires: Thu, 03 Jan 2019 16:31:20 GMT
+date: Wed, 02 Jan 2019 23:24:47 GMT
+connection: close
+vary: Accept
+strict-transport-security: max-age=31536000 ; includeSubDomains ; preload
+
+{
+    "correlationId": "ae8d35eb-bc6c-4c23-9910-8aefd2f907c9",
+    "title": "Adjusting Precision Of Point Coordinate",
+    "type": "https://api.weather.gov/problems/AdjustPointPrecision",
+    "status": 301,
+    "detail": "The precision of latitude/longitude points is limited to 4 decimal digits for efficiency. The location attribute contains your request mapped to the nearest supported point. If your client supports it, you will be redirected.",
+    "instance": "https://api.weather.gov/requests/ae8d35eb-bc6c-4c23-9910-8aefd2f907c9"
+}
