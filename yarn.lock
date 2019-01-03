@@ -1014,6 +1014,13 @@ get-assigned-identifiers@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/get-assigned-identifiers/-/get-assigned-identifiers-1.2.0.tgz#6dbf411de648cbaf8d9169ebb0d2d576191e2ff1"
 
+getlet@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/getlet/-/getlet-1.1.0.tgz#5849c3ab176ef71a5c3d7ef096c1d56aa39af213"
+  integrity sha512-9e0dpxWBtNqe9bGjbBwyzyeCPEpOxykPE/oPqr4IJHC5iT58oZcKPxqqU97zVgC4jnMnMURmVeK0VKMIXHiWzg==
+  dependencies:
+    debug "*"
+
 glob@7.0.x:
   version "7.0.6"
   resolved "https://registry.yarnpkg.com/glob/-/glob-7.0.6.tgz#211bafaf49e525b8cd93260d14ab136152b3f57a"
