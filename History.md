@@ -1,4 +1,11 @@
 
+3.25.0 / 2019-01-02
+===================
+
+ * replace OpenSnow API with NOAA API
+ * add Perisher resort
+ * add Coronet Peak
+
 3.24.2 / 2019-01-02
 ===================
 
