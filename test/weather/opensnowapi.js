@@ -1,5 +1,5 @@
 var should = require('should');
-var weather = require('../../lib/weather');
+var weather = require('../../lib/weather/opensnowapi');
 
 /*global describe, it*/
 
