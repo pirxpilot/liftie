@@ -11,14 +11,14 @@ describe('parse brianhead', function() {
     stream.on('error', done);
     stream.pipe(parser(parse, function(err, status) {
       var expected = {
-        'Wildflower': 'closed',
-        'Giant Steps Express': 'closed',
-        'Blackfoot': 'closed',
-        'Navajo': 'closed',
-        'Roulette': 'closed',
-        'Pioneer': 'closed',
-        'The Dunes': 'closed',
-        'Alpen Glow': 'closed'
+        'Wildflower': 'open',
+        'Giant Steps Express': 'open',
+        'Blackfoot': 'open',
+        'Navajo': 'open',
+        'Roulette': 'hold',
+        'Pioneer': 'open',
+        'The Dunes': 'hold',
+        'Alpen Glow': 'open'
       };
       should.exist(status);
       status.should.eql(expected);

@@ -13,7 +13,7 @@ describe('parse camelback', function() {
     stream.pipe(parser(parse, function(err, status) {
       var expected = {
         'Bailey': 'closed',
-        'Marc Antony': 'open',
+        'Marc Antony': 'closed',
         'Sunbowl I': 'open',
         'Sunbowl II': 'closed',
         'The Glen': 'open',
@@ -23,10 +23,10 @@ describe('parse camelback', function() {
         'Stevenson Express': 'open',
         'Sullivan Express': 'open',
         'Beginner Carpet I': 'open',
-        'Beginner Carpet II': 'closed',
+        'Beginner Carpet II': 'open',
         'Coolmoor Carpet': 'open',
         'Sunkid Carpet': 'open',
-        'Tubing I': 'closed',
+        'Tubing I': 'open',
         'Tubing II': 'open'
       };
       should.exist(status);
