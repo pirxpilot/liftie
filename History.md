@@ -1,4 +1,12 @@
 
+3.26.1 / 2019-01-05
+===================
+
+ * adjust style for displaying snow conditions
+ * fix Brian Head resort
+ * fix Camelback resort
+ * add falls-creek resort
+
 3.26.0 / 2019-01-04
 ===================
 
