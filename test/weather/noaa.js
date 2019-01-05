@@ -18,7 +18,9 @@ describe('noaa', function() {
 
   it('should return forecast for valid location', function(done) {
     noaa({
-      ll: [-72.7933, 43.6647] // Killington, VT
+      // Killington, VT
+      noaa: 'BTV/107,21',
+      ll: [-72.7933, 43.6647]
     }, function(err, forecast) {
       should.not.exist(err);
       should.exist(forecast);
