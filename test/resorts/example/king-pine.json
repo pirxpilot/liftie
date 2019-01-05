@@ -1,0 +1,1650 @@
+{
+  "xOffset": 0,
+  "yOffset": 0,
+  "client": {
+    "id": 571,
+    "name": "King Pine",
+    "active": true
+  },
+  "id": 821,
+  "name": "King Pine Interactive Trail Map",
+  "menuIcons": [
+    {
+      "id": 9831,
+      "icon": {
+        "id": 9,
+        "stock": true
+      },
+      "name": "Lifts",
+      "description": "King Pine has 3 triple chairs and 3 surface lifts.",
+      "behaviour": "3#10",
+      "onAtStart": false
+    },
+    {
+      "id": 31320,
+      "icon": {
+        "id": 69,
+        "stock": true
+      },
+      "name": "Open Lifts",
+      "description": null,
+      "behaviour": "3#11",
+      "onAtStart": true
+    },
+    {
+      "id": 9841,
+      "icon": {
+        "id": 5,
+        "stock": true
+      },
+      "name": "Easiest Trails",
+      "description": "Gentle groomed slopes for beginners",
+      "behaviour": "3#0",
+      "onAtStart": false
+    },
+    {
+      "id": 9851,
+      "icon": {
+        "id": 6,
+        "stock": true
+      },
+      "name": "More Difficult Trails",
+      "description": "Moderately sloped trails that are challenging in some places",
+      "behaviour": "3#2",
+      "onAtStart": false
+    },
+    {
+      "id": 9861,
+      "icon": {
+        "id": 7,
+        "stock": true
+      },
+      "name": "Advanced Trails",
+      "description": "Steeply sloped trails that are challenging from top to bottom",
+      "behaviour": "3#4",
+      "onAtStart": false
+    },
+    {
+      "id": 9871,
+      "icon": {
+        "id": 8,
+        "stock": true
+      },
+      "name": "Expert Trails",
+      "description": "King Pine double diamond trails",
+      "behaviour": "3#5",
+      "onAtStart": false
+    },
+    {
+      "id": 31321,
+      "icon": {
+        "id": 64,
+        "stock": true
+      },
+      "name": "Open Trails",
+      "description": null,
+      "behaviour": "3#7",
+      "onAtStart": true
+    },
+    {
+      "id": 9921,
+      "icon": {
+        "id": 16,
+        "stock": true
+      },
+      "name": "Groomed Trails",
+      "description": "Trails that have been groomed the past 24 hrs",
+      "behaviour": "3#8",
+      "onAtStart": false
+    },
+    {
+      "id": 9931,
+      "icon": {
+        "id": 15,
+        "stock": true
+      },
+      "name": "Snowmaking",
+      "description": "Areas where man-made snow is generated",
+      "behaviour": "3#9",
+      "onAtStart": false
+    },
+    {
+      "id": 9911,
+      "icon": {
+        "id": 13,
+        "stock": true
+      },
+      "name": "Terrain Park",
+      "description": "Areas designated for freestyle skiing and riding with natural and constructed elements.",
+      "behaviour": "1#0",
+      "onAtStart": false,
+      "mapIcons": [
+        {
+          "id": 18061,
+          "icon": {
+            "id": 13,
+            "stock": true
+          },
+          "description": "Freestyle terrain areas are designated with an orange oval and may contain jumps, hits, ramps, banks, fun boxes, jibs, rails, bump terrain and other constructed or natural terrain features.",
+          "x": 261,
+          "y": 114,
+          "name": "Twisted Pine Terrain Park",
+          "status": "CLOSED",
+          "statusColour": "#FF0000"
+        },
+        {
+          "id": 18071,
+          "icon": {
+            "id": 13,
+            "stock": true
+          },
+          "description": "Freestyle terrain areas are designated with an orange oval and may contain jumps, hits, ramps, banks, fun boxes, jibs, rails, bump terrain and other constructed or natural terrain features.",
+          "x": 352,
+          "y": 215,
+          "name": ""
+        },
+        {
+          "id": 18841,
+          "icon": {
+            "id": 13,
+            "stock": true
+          },
+          "description": "Freestyle terrain areas are designated with an orange oval and may contain jumps, hits, ramps, banks, fun boxes, jibs, rails, bump terrain and other constructed or natural terrain features.",
+          "x": 241,
+          "y": 128,
+          "name": "Twisted Pine Terrain Park",
+          "status": "CLOSED",
+          "statusColour": "#FF0000"
+        },
+        {
+          "id": 18081,
+          "icon": {
+            "id": 13,
+            "stock": true
+          },
+          "description": "Freestyle terrain areas are designated with an orange oval and may contain jumps, hits, ramps, banks, fun boxes, jibs, rails, bump terrain and other constructed or natural terrain features.",
+          "x": 282,
+          "y": 128,
+          "name": ""
+        }
+      ]
+    },
+    {
+      "id": 31250,
+      "icon": {
+        "id": 10,
+        "stock": true
+      },
+      "name": "Detail",
+      "description": "",
+      "behaviour": "3#14",
+      "onAtStart": true
+    },
+    {
+      "id": 10021,
+      "icon": {
+        "id": 11,
+        "stock": true
+      },
+      "name": "Snow Tubing",
+      "description": "Family area designated for inner tube sliding",
+      "behaviour": "1#0",
+      "onAtStart": false,
+      "mapIcons": [
+        {
+          "id": 18101,
+          "icon": {
+            "id": 11,
+            "stock": true
+          },
+          "description": "Experience the fun of lift-serviced snowtubing down exciting snow chutes at our Pine Meadows Snowtubing Park.$15/person for 2-hour sessionFri: 5-7, 7-9pmSat/holidays: 10am-Noon, Noon-2, 2-4, (re-groom 4-5) 5-7, 7-9pm Sun: 10am-Noon, Noon-2, 2-4pmFeb 22-25: Noon-2, 2-4pm",
+          "x": 293,
+          "y": 271,
+          "name": "Pine Meadows Tubing Park"
+        }
+      ]
+    },
+    {
+      "id": 9891,
+      "icon": {
+        "id": 2711,
+        "stock": false
+      },
+      "name": "Nordic Trails",
+      "description": "The Purity Spring XC &amp; Nordic Reserve is open and the entire east side of Rte 153 has been skate groomed.  ",
+      "behaviour": "3#1",
+      "onAtStart": false
+    },
+    {
+      "id": 9901,
+      "icon": {
+        "id": 2721,
+        "stock": false
+      },
+      "name": "Snowshoe Trails",
+      "description": "Snowshoe trails have decent snow coverage in areas however there are spots with no to thin coverage.",
+      "behaviour": "3#3",
+      "onAtStart": false
+    },
+    {
+      "id": 10031,
+      "icon": {
+        "id": 1,
+        "stock": true
+      },
+      "name": "Videos",
+      "description": "Videos of skiers and snowboarders in action from around the resort",
+      "behaviour": "2#0",
+      "onAtStart": false,
+      "mapIcons": [
+        {
+          "id": 7291,
+          "video": {
+            "id": 36591,
+            "duration": "0:18"
+          },
+          "icon": {
+            "id": 1,
+            "stock": true
+          },
+          "name": "Opening day BLISS",
+          "description": "Opening day were treated to packed powder and blue skies @ King Pine!",
+          "x": 350,
+          "y": 106
+        },
+        {
+          "id": 7301,
+          "video": {
+            "id": 36541,
+            "duration": "0:26"
+          },
+          "icon": {
+            "id": 1,
+            "stock": true
+          },
+          "name": "Prep for opening day",
+          "description": "With opening day weekend upon us, King Pine continues its preparation with round-the-clock snowmaking.",
+          "x": 363,
+          "y": 226
+        },
+        {
+          "id": 7311,
+          "video": {
+            "id": 35451,
+            "duration": "0:02"
+          },
+          "icon": {
+            "id": 1,
+            "stock": true
+          },
+          "name": "Twisted Pine Terrain Park",
+          "description": "",
+          "x": 246,
+          "y": 110
+        },
+        {
+          "id": 7461,
+          "video": {
+            "id": 38061,
+            "duration": "0:25"
+          },
+          "icon": {
+            "id": 1,
+            "stock": true
+          },
+          "name": "New Year's Eve firworks over King Pine",
+          "description": "The crowd cheers as the firworks mark the approach of 2010",
+          "x": 336,
+          "y": 157
+        },
+        {
+          "id": 7671,
+          "video": {
+            "id": 38821,
+            "duration": "2:15"
+          },
+          "icon": {
+            "id": 1,
+            "stock": true
+          },
+          "name": "King Pine general information",
+          "description": "General information pertaining to King Pine and Purity Spring Resort.",
+          "x": 174,
+          "y": 326
+        },
+        {
+          "id": 7681,
+          "video": {
+            "id": 38821,
+            "duration": "2:15"
+          },
+          "icon": {
+            "id": 1,
+            "stock": true
+          },
+          "name": "King Pine general information",
+          "description": "General information pertaining to King Pine and Purity Spring Resort.",
+          "x": 174,
+          "y": 335
+        },
+        {
+          "id": 7691,
+          "video": {
+            "id": 38821,
+            "duration": "2:15"
+          },
+          "icon": {
+            "id": 1,
+            "stock": true
+          },
+          "name": "King Pine general information",
+          "description": "General information pertaining to King Pine and Purity Spring Resort.",
+          "x": 171,
+          "y": 329
+        }
+      ]
+    },
+    {
+      "id": 10041,
+      "icon": {
+        "id": 2,
+        "stock": true
+      },
+      "name": "Photos",
+      "description": "Photos of skiers and snowboarders in action from around the resort",
+      "behaviour": "2#1",
+      "onAtStart": false,
+      "mapIcons": [
+        {
+          "id": 15831,
+          "photo": {
+            "id": 71241611
+          },
+          "icon": {
+            "id": 2,
+            "stock": true
+          },
+          "name": "Buddy up...",
+          "description": "Jori, Tayla, Vincent and Cam were having a blast at KP on opening day.",
+          "x": 369,
+          "y": 223
+        },
+        {
+          "id": 15841,
+          "photo": {
+            "id": 56879421
+          },
+          "icon": {
+            "id": 2,
+            "stock": true
+          },
+          "name": "Terrain park 2",
+          "description": "",
+          "x": 260,
+          "y": 106
+        },
+        {
+          "id": 15851,
+          "photo": {
+            "id": 71240941
+          },
+          "icon": {
+            "id": 2,
+            "stock": true
+          },
+          "name": "Opening day @ KP",
+          "description": "Perfect conditions on opening day!",
+          "x": 346,
+          "y": 142
+        },
+        {
+          "id": 16521,
+          "photo": {
+            "id": 75350571
+          },
+          "icon": {
+            "id": 2,
+            "stock": true
+          },
+          "name": "Snow blur",
+          "description": "The snow just keeps falling ... and the smiles keep flying by.",
+          "x": 348,
+          "y": 124
+        },
+        {
+          "id": 16531,
+          "photo": {
+            "id": 71241991
+          },
+          "icon": {
+            "id": 2,
+            "stock": true
+          },
+          "name": "Opening day drills...",
+          "description": "Ski School Director Craig Niiler runs through some opening day drills on day 1 of the 2009/10 season.",
+          "x": 346,
+          "y": 179
+        },
+        {
+          "id": 16541,
+          "photo": {
+            "id": 71241611
+          },
+          "icon": {
+            "id": 2,
+            "stock": true
+          },
+          "name": "Buddy up...",
+          "description": "Jori, Tayla, Vincent and Cam were having a blast at KP on opening day.",
+          "x": 346,
+          "y": 214
+        },
+        {
+          "id": 17161,
+          "photo": {
+            "id": 78906921
+          },
+          "icon": {
+            "id": 2,
+            "stock": true
+          },
+          "name": "Snowboarding January 17th, 2010",
+          "description": "",
+          "x": 368,
+          "y": 170
+        },
+        {
+          "id": 17171,
+          "photo": {
+            "id": 78906921
+          },
+          "icon": {
+            "id": 2,
+            "stock": true
+          },
+          "name": "Snowboarding January 17th, 2010",
+          "description": "",
+          "x": 372,
+          "y": 140
+        },
+        {
+          "id": 17181,
+          "photo": {
+            "id": 78685541
+          },
+          "icon": {
+            "id": 2,
+            "stock": true
+          },
+          "name": "MLK-powder @ KP",
+          "description": "",
+          "x": 357,
+          "y": 92
+        },
+        {
+          "id": 17191,
+          "photo": {
+            "id": 78685511
+          },
+          "icon": {
+            "id": 2,
+            "stock": true
+          },
+          "name": "MLK-powder @ KP",
+          "description": "",
+          "x": 346,
+          "y": 92
+        },
+        {
+          "id": 17201,
+          "photo": {
+            "id": 78685411
+          },
+          "icon": {
+            "id": 2,
+            "stock": true
+          },
+          "name": "MLK-powder @ KP",
+          "description": "",
+          "x": 448,
+          "y": 115
+        },
+        {
+          "id": 17211,
+          "photo": {
+            "id": 78685281
+          },
+          "icon": {
+            "id": 2,
+            "stock": true
+          },
+          "name": "MLK-powder @ KP",
+          "description": "",
+          "x": 424,
+          "y": 116
+        },
+        {
+          "id": 17221,
+          "photo": {
+            "id": 78685291
+          },
+          "icon": {
+            "id": 2,
+            "stock": true
+          },
+          "name": "MLK-powder @ KP",
+          "description": "",
+          "x": 395,
+          "y": 100
+        },
+        {
+          "id": 17231,
+          "photo": {
+            "id": 78685271
+          },
+          "icon": {
+            "id": 2,
+            "stock": true
+          },
+          "name": "MLK-powder @ KP",
+          "description": "",
+          "x": 437,
+          "y": 103
+        },
+        {
+          "id": 17241,
+          "photo": {
+            "id": 78685131
+          },
+          "icon": {
+            "id": 2,
+            "stock": true
+          },
+          "name": "MLK-powder @ KP",
+          "description": "",
+          "x": 378,
+          "y": 117
+        },
+        {
+          "id": 17251,
+          "photo": {
+            "id": 78685101
+          },
+          "icon": {
+            "id": 2,
+            "stock": true
+          },
+          "name": "MLK-powder @ KP",
+          "description": "",
+          "x": 399,
+          "y": 134
+        },
+        {
+          "id": 17261,
+          "photo": {
+            "id": 78505581
+          },
+          "icon": {
+            "id": 2,
+            "stock": true
+          },
+          "name": "",
+          "description": "",
+          "x": 363,
+          "y": 190
+        },
+        {
+          "id": 17271,
+          "photo": {
+            "id": 78504841
+          },
+          "icon": {
+            "id": 2,
+            "stock": true
+          },
+          "name": "",
+          "description": "",
+          "x": 357,
+          "y": 197
+        },
+        {
+          "id": 17281,
+          "photo": {
+            "id": 75798081
+          },
+          "icon": {
+            "id": 2,
+            "stock": true
+          },
+          "name": "",
+          "description": "",
+          "x": 27,
+          "y": 374
+        },
+        {
+          "id": 17681,
+          "photo": {
+            "id": 81022921
+          },
+          "icon": {
+            "id": 2,
+            "stock": true
+          },
+          "name": "Grindin' The Box",
+          "description": "",
+          "x": 281,
+          "y": 125
+        },
+        {
+          "id": 24491,
+          "photo": {
+            "id": 162394681
+          },
+          "icon": {
+            "id": 2,
+            "stock": true
+          },
+          "name": "Opening day at KP",
+          "description": "Airtime on the first run at KP Friday",
+          "x": 348,
+          "y": 122
+        },
+        {
+          "id": 24501,
+          "photo": {
+            "id": 162393921
+          },
+          "icon": {
+            "id": 2,
+            "stock": true
+          },
+          "name": "Opening day has arrived!",
+          "description": "Opening day has arrived at King Pine to the joy of these local riders.",
+          "x": 354,
+          "y": 73
+        },
+        {
+          "id": 25041,
+          "photo": {
+            "id": 165956991
+          },
+          "icon": {
+            "id": 2,
+            "stock": true
+          },
+          "name": "season pass",
+          "description": "",
+          "x": 319,
+          "y": 259
+        },
+        {
+          "id": 25051,
+          "photo": {
+            "id": 164829611
+          },
+          "icon": {
+            "id": 2,
+            "stock": true
+          },
+          "name": "",
+          "description": "",
+          "x": 372,
+          "y": 200
+        },
+        {
+          "id": 25061,
+          "photo": {
+            "id": 164829601
+          },
+          "icon": {
+            "id": 2,
+            "stock": true
+          },
+          "name": "Family Fun Skiing",
+          "description": "",
+          "x": 367,
+          "y": 232
+        },
+        {
+          "id": 25982,
+          "photo": {
+            "id": 172657832
+          },
+          "icon": {
+            "id": 2,
+            "stock": true
+          },
+          "name": "Nordic Trails looking very nice after 14&quot;-15&quot; of snow on 1/12/11",
+          "description": "",
+          "x": 185,
+          "y": 357
+        }
+      ]
+    },
+    {
+      "id": 9941,
+      "icon": {
+        "id": 17,
+        "stock": true
+      },
+      "name": "Purity Springs Lodging",
+      "description": "Lots of family-friendly lodging options from cottages and condos to slope-side at the bottom of King Pine!",
+      "behaviour": "1#0",
+      "onAtStart": false,
+      "mapIcons": [
+        {
+          "id": 18181,
+          "icon": {
+            "id": 17,
+            "stock": true
+          },
+          "description": "Check-in at our main office here.There are seven guest rooms, all with TV and AC. Downstairs are three living room areas, TV, fireplace, laundry facilities and the main office. ",
+          "x": 193,
+          "y": 365,
+          "name": "Millbrook"
+        },
+        {
+          "id": 18191,
+          "icon": {
+            "id": 17,
+            "stock": true
+          },
+          "description": "The Lakeside cottage is next to Purity Lake and has two guest rooms with full bath and locking doors between each unit.",
+          "x": 230,
+          "y": 361,
+          "name": "Lakeside"
+        },
+        {
+          "id": 21521,
+          "icon": {
+            "id": 17,
+            "stock": true
+          },
+          "description": "Overlooking King Pine Ski Area, the King Pine Base Lodge features 17 spacious guest rooms. All rooms have ground level access with full bath and air conditioning. There are also three common rooms with TV and a fireplace in one of them.",
+          "x": 339,
+          "y": 249,
+          "name": "King Pine Lodging"
+        },
+        {
+          "id": 18201,
+          "icon": {
+            "id": 17,
+            "stock": true
+          },
+          "description": "Island View has 2 condo units within it. Each unit is fully furnished with a full kitchen, multiple bedrooms, TV and air conditioning. One unit sleeps 10 and the other sleeps 6.",
+          "x": 302,
+          "y": 319,
+          "name": "Island View"
+        },
+        {
+          "id": 18211,
+          "icon": {
+            "id": 17,
+            "stock": true
+          },
+          "description": "Mountainside has 4 condo units within it. Each unit is fully furnished with a full kitchen, cable TV and multiple bedrooms. Condo units do not include meals.",
+          "x": 428,
+          "y": 196,
+          "name": "Mountainside"
+        },
+        {
+          "id": 18221,
+          "icon": {
+            "id": 17,
+            "stock": true
+          },
+          "description": "Brookside Condo has 3 Bedrooms, 2 baths, with a full kitchen, gas fireplace, airconditioning and television.",
+          "x": 175,
+          "y": 378,
+          "name": "Brookside"
+        },
+        {
+          "id": 21901,
+          "icon": {
+            "id": 17,
+            "stock": true
+          },
+          "description": "This building is located behind Lakeside Cottage and overlooks Purity Lake. It contains an indoor pool, fitness area and locker rooms, three guest rooms with TV and AC, gift shop and common room with TV.",
+          "x": 219,
+          "y": 379,
+          "name": "The Mill"
+        },
+        {
+          "id": 18131,
+          "icon": {
+            "id": 17,
+            "stock": true
+          },
+          "description": "Located above the snowtubing hill during the winter season, the Tecumseh lodge is just a quarter of a mile from the main dining room, indoor pool and adjacent to King Pine Ski Area and ice skating rink. Tecumseh has 8 guest rooms with TV&apos;s, a common room with TV, gas fireplace and a dining room.",
+          "x": 250,
+          "y": 255,
+          "name": "Tecumseh"
+        },
+        {
+          "id": 18141,
+          "icon": {
+            "id": 17,
+            "stock": true
+          },
+          "description": "Located above the snowtubing hill during the winter season, the Osceola lodge is just a quarter of a mile from the main dining room, indoor pool and adjacent to King Pine Ski Area and ice skating rink. Osceola has 8 guest rooms with TV&apos;s, plus a large common room with TV and gas fireplace.",
+          "x": 280,
+          "y": 246,
+          "name": "Osceola"
+        },
+        {
+          "id": 18151,
+          "icon": {
+            "id": 17,
+            "stock": true
+          },
+          "description": "Located above Tecumseh and Osceola, Carrigain has 5 guest rooms with TV&apos;s, a common room with TV and wood fireplace.",
+          "x": 236,
+          "y": 235,
+          "name": "Carrigain"
+        },
+        {
+          "id": 18161,
+          "icon": {
+            "id": 17,
+            "stock": true
+          },
+          "description": "Starr King Lodge has 5 guest rooms with TV&apos;s, a common room with TV and gas fireplace and a small kitchen.",
+          "x": 214,
+          "y": 253,
+          "name": "Starr King"
+        },
+        {
+          "id": 18171,
+          "icon": {
+            "id": 17,
+            "stock": true
+          },
+          "description": "The Inn has ten guest rooms (all with full-baths) on the second and third floors.  The Inn Dining Room and kitchen can be found on the main floor. ",
+          "x": 220,
+          "y": 335,
+          "name": "The Inn"
+        }
+      ]
+    },
+    {
+      "id": 10061,
+      "icon": {
+        "id": 2741,
+        "stock": false
+      },
+      "name": "Purity Springs Main Office",
+      "description": "All lodging arrivals and check-ins here at the Millbrook Lodge and Main Office",
+      "behaviour": "1#0",
+      "onAtStart": false,
+      "mapIcons": [
+        {
+          "id": 18311,
+          "icon": {
+            "id": 2741,
+            "stock": false
+          },
+          "description": "The main office is located in the Millbrook Lodge. Contact the main office by phone 603-367-8896 or 800-373-3754 or by email at info@purityspring.com",
+          "x": 197,
+          "y": 354,
+          "name": "Purity Main Office"
+        }
+      ]
+    },
+    {
+      "id": 10051,
+      "icon": {
+        "id": 2731,
+        "stock": false
+      },
+      "name": "Indoor Pool & Fitness Center",
+      "description": "The Mill is open to the public and resort guests.",
+      "behaviour": "1#0",
+      "onAtStart": false,
+      "mapIcons": [
+        {
+          "id": 18301,
+          "icon": {
+            "id": 2731,
+            "stock": false
+          },
+          "description": "Situated on the same Purity Lake shorefront as the Hoyt family&apos;s original lumber mill is The Mill Indoor Pool &amp; Fitness Center. Open to the public and resort guests.The Mill offers a fitness center, spacious bathrooms with lockers, a 50ft indoor pool, a hot tub, fitness programs and training classes, massage therapy and reiki and The Blue Heron Gift Shop.",
+          "x": 222,
+          "y": 376,
+          "name": "Indoor Pool &amp; Fitness Centre"
+        }
+      ]
+    },
+    {
+      "id": 10001,
+      "icon": {
+        "id": 19,
+        "stock": true
+      },
+      "name": "Dining",
+      "description": "Areas where delicious homemade meals and snacks are found.",
+      "behaviour": "1#0",
+      "onAtStart": false,
+      "mapIcons": [
+        {
+          "id": 18851,
+          "icon": {
+            "id": 19,
+            "stock": true
+          },
+          "description": "The Pine Cone Cafe provides delicious, homestyle meals and snacks at a great value, including giant homemade cookies, a guest favorite!Don&apos;t miss apres ski at the Trail&apos;s End Tavern! ",
+          "x": 341,
+          "y": 252,
+          "name": "The Pine Cone Cafe &amp; Trail&#039;s End Tavern "
+        },
+        {
+          "id": 18861,
+          "icon": {
+            "id": 19,
+            "stock": true
+          },
+          "description": "Classic, New England-style dining prepared by chef Trevor Tasker.Pub adjacent to the dining room serves menu items as well.",
+          "x": 221,
+          "y": 329,
+          "name": "Traditions Restuarant"
+        }
+      ]
+    },
+    {
+      "id": 10011,
+      "icon": {
+        "id": 18,
+        "stock": true
+      },
+      "name": "Ski Shuttle",
+      "description": "Offered for King Pine and Purity Spring lodging guests and is available on weekends and holiday periods.",
+      "behaviour": "1#0",
+      "onAtStart": false,
+      "mapIcons": [
+        {
+          "id": 22281,
+          "icon": {
+            "id": 18,
+            "stock": true
+          },
+          "description": "Our shuttle is offered for the convenience of King Pine and Purity Spring lodging guests and is available on weekends and holiday periods. The shuttle runs continuous loops between The Inn Dining Room, The Mill Fitness Center, Milt&apos;s Place, King Pine base lodge and our lodges above the snowtubing hill. Saturday and holidays: 7:30am-5pmSunday: 7:30am-1:30pm ",
+          "x": 216,
+          "y": 345,
+          "name": "The Inn Dining Room Shuttle Stop"
+        },
+        {
+          "id": 22291,
+          "icon": {
+            "id": 18,
+            "stock": true
+          },
+          "description": "Our shuttle is offered for the convenience of King Pine and Purity Spring lodging guests and is available on weekends and holiday periods. The shuttle runs continuous loops between The Inn Dining Room, The Mill Fitness Center, Milt&apos;s Place, King Pine base lodge and our lodges above the snowtubing hill. Saturday and holidays: 7:30am-5pmSunday: 7:30am-1:30pm ",
+          "x": 221,
+          "y": 367,
+          "name": "The Mill Indoor Pool Shuttle Stop"
+        },
+        {
+          "id": 22301,
+          "icon": {
+            "id": 18,
+            "stock": true
+          },
+          "description": "Our shuttle is offered for the convenience of King Pine and Purity Spring lodging guests and is available on weekends and holiday periods. The shuttle runs continuous loops between The Inn Dining Room, The Mill Fitness Center, Milt&apos;s Place, King Pine base lodge and our lodges above the snowtubing hill. Saturday and holidays: 7:30am-5pmSunday: 7:30am-1:30pm ",
+          "x": 242,
+          "y": 255,
+          "name": "The Hill Lodging Shuttle Stop"
+        },
+        {
+          "id": 22311,
+          "icon": {
+            "id": 18,
+            "stock": true
+          },
+          "description": "Our shuttle is offered for the convenience of King Pine and Purity Spring lodging guests and is available on weekends and holiday periods. The shuttle runs continuous loops between The Inn Dining Room, The Mill Fitness Center, Milt&apos;s Place, King Pine base lodge and our lodges above the snowtubing hill. Saturday and holidays: 7:30am-5pmSunday: 7:30am-1:30pm ",
+          "x": 373,
+          "y": 250,
+          "name": "King Pine Base Lodge Shuttle Stop"
+        },
+        {
+          "id": 22321,
+          "icon": {
+            "id": 18,
+            "stock": true
+          },
+          "description": "Our shuttle is offered for the convenience of King Pine and Purity Spring lodging guests and is available on weekends and holiday periods. The shuttle runs continuous loops between The Inn Dining Room, The Mill Fitness Center, Milt&apos;s Place, King Pine base lodge and our lodges above the snowtubing hill. Saturday and holidays: 7:30am-5pmSunday: 7:30am-1:30pm ",
+          "x": 492,
+          "y": 186,
+          "name": "Milt&#039;s Place Shuttle Stop"
+        }
+      ]
+    },
+    {
+      "id": 9991,
+      "icon": {
+        "id": 27,
+        "stock": true
+      },
+      "name": "Guest Services",
+      "description": "Area where tickets can be purchased and questions and information can be answered.",
+      "behaviour": "1#0",
+      "onAtStart": false,
+      "mapIcons": [
+        {
+          "id": 22331,
+          "icon": {
+            "id": 27,
+            "stock": true
+          },
+          "description": "Resort questions and information can be answered at King Pine&apos;s Guest Service Desk and at our resort information desk, both found in the King Pine Base Lodge.Skiing, snowboarding, snowtubing, ice skating, cross country skiing and snowshoeing tickets can be purchased at the Guest Service Desk.",
+          "x": 370,
+          "y": 239,
+          "name": "Guest Serives"
+        }
+      ]
+    },
+    {
+      "id": 9981,
+      "icon": {
+        "id": 22,
+        "stock": true
+      },
+      "name": "Ski & Snowboard School",
+      "description": "Meeting place for ski and snowboard lessons.",
+      "behaviour": "1#0",
+      "onAtStart": false,
+      "mapIcons": [
+        {
+          "id": 21911,
+          "icon": {
+            "id": 22,
+            "stock": true
+          },
+          "description": "Our PSIA-certified ski and snowboard school has dozens of fun, patient instructors who want nothing more than to see you having fun skiing and riding. Group lessons are available up to four times daily, and private classes are also available.Schedule a lesson at Guest Services when you purchase your lift ticket then meet at the Ski School Building 10 minutes before your lesson.",
+          "x": 336,
+          "y": 232,
+          "name": "Ski and Snowboard School"
+        }
+      ]
+    },
+    {
+      "id": 9961,
+      "icon": {
+        "id": 20,
+        "stock": true
+      },
+      "name": "Rental & Tune Shop",
+      "description": "Ski and snowboard rental and tune shop.",
+      "behaviour": "1#0",
+      "onAtStart": false,
+      "mapIcons": [
+        {
+          "id": 21921,
+          "icon": {
+            "id": 20,
+            "stock": true
+          },
+          "description": "Located on the ground level of the base lodge, King Pineâ€™s rental shop offers the regionâ€™s largest rental inventory of alpine and xc skis, boots, poles, snowboards, helmets, ice skates and more! Many tuning options are available at the Tune Shop, including the exclusive â€œ10/10â€- hot wax and edge sharpening while you wait for only $10!",
+          "x": 345,
+          "y": 251,
+          "name": "King Pine Rental and Tune Shop"
+        }
+      ]
+    },
+    {
+      "id": 9971,
+      "icon": {
+        "id": 26,
+        "stock": true
+      },
+      "name": "Parking",
+      "description": "Parking areas for ski area and resort guests.",
+      "behaviour": "1#0",
+      "onAtStart": false,
+      "mapIcons": [
+        {
+          "id": 22351,
+          "icon": {
+            "id": 26,
+            "stock": true
+          },
+          "description": "Milt&apos;s Place parking lot.",
+          "x": 489,
+          "y": 188,
+          "name": "Parking"
+        },
+        {
+          "id": 22361,
+          "icon": {
+            "id": 26,
+            "stock": true
+          },
+          "description": "The Mill Indoor Pool &amp; Fitness Center parking lot. Park here to snowshoe tours and to access the XC ski trails.",
+          "x": 220,
+          "y": 369,
+          "name": "Parking"
+        },
+        {
+          "id": 21931,
+          "icon": {
+            "id": 26,
+            "stock": true
+          },
+          "description": "Pine Meadows Snowtubing parking lot",
+          "x": 296,
+          "y": 295,
+          "name": "Parking"
+        },
+        {
+          "id": 21941,
+          "icon": {
+            "id": 26,
+            "stock": true
+          },
+          "description": "Parking area for The Inn Dining Room and Millbrook Main Office.",
+          "x": 209,
+          "y": 348,
+          "name": "Parking"
+        },
+        {
+          "id": 21951,
+          "icon": {
+            "id": 26,
+            "stock": true
+          },
+          "description": "Main base lodge parking lot.",
+          "x": 389,
+          "y": 235,
+          "name": "Parking"
+        },
+        {
+          "id": 21961,
+          "icon": {
+            "id": 26,
+            "stock": true
+          },
+          "description": "Overflow parking area and XC ski parking.",
+          "x": 441,
+          "y": 218,
+          "name": "Parking"
+        }
+      ]
+    },
+    {
+      "id": 9951,
+      "icon": {
+        "id": 29,
+        "stock": true
+      },
+      "name": "Ski Patrol",
+      "description": "Basic first aid kits for minor injuries",
+      "behaviour": "1#0",
+      "onAtStart": false,
+      "mapIcons": [
+        {
+          "id": 18111,
+          "icon": {
+            "id": 29,
+            "stock": true
+          },
+          "description": null,
+          "x": 378,
+          "y": 83,
+          "name": null
+        },
+        {
+          "id": 18121,
+          "icon": {
+            "id": 29,
+            "stock": true
+          },
+          "description": null,
+          "x": 356,
+          "y": 244,
+          "name": null
+        }
+      ]
+    }
+  ],
+  "trails": [
+    {
+      "id": 19691,
+      "description": "The Beaver Trail is perfect for wildlife viewing during summer and winter! Great for snowshoeing or back-country XC skiing.",
+      "x": 587.1,
+      "y": 346.95,
+      "name": "Beaver Trail",
+      "snowmaking": false
+    },
+    {
+      "id": 19601,
+      "description": "Very scenic and a blast on XC skis! ",
+      "x": 343.55,
+      "y": 354.25,
+      "name": "Birches Trail",
+      "snowmaking": false
+    },
+    {
+      "id": 19621,
+      "description": "Begins from Purity Spring near laundry building. The Brook Trail winds along a scenic babbling brook.",
+      "x": 330.35,
+      "y": 411.75,
+      "name": "Brook Trail",
+      "snowmaking": false
+    },
+    {
+      "id": 19741,
+      "description": "Trail",
+      "x": 854.9,
+      "y": 284.45,
+      "name": "Christmas Tree Farm",
+      "snowmaking": false
+    },
+    {
+      "id": 19491,
+      "description": "Trail",
+      "x": 454.2,
+      "y": 196.6,
+      "name": "Crooked Pine",
+      "status": "OPEN",
+      "statusColour": "#99CC00",
+      "groomed": true,
+      "snowmaking": false
+    },
+    {
+      "id": 19821,
+      "description": "Trail",
+      "x": 290.7,
+      "y": 263.45,
+      "name": "Deer Trail",
+      "snowmaking": false
+    },
+    {
+      "id": 19461,
+      "description": "Trail",
+      "x": 552,
+      "y": 230.75,
+      "name": "East Slope",
+      "status": "OPEN",
+      "statusColour": "#99CC00",
+      "groomed": true,
+      "snowmaking": false
+    },
+    {
+      "id": 19641,
+      "description": "This trail offers views and winds through old growth forests. Some hilly areas provide a challenge.",
+      "x": 332.8,
+      "y": 465.6,
+      "name": "Enchanted Forest",
+      "snowmaking": false
+    },
+    {
+      "id": 19771,
+      "description": "Beginning at The Mill at Purity Spring, and winding through the NH Audubon property, this ungroomed trail is perfect for snowshoeing.",
+      "x": 435.1,
+      "y": 425.7,
+      "name": "Esker Trail",
+      "snowmaking": false
+    },
+    {
+      "id": 19761,
+      "description": "Great views to the scenic bog areas of Purity Lake. Great for snowshoeing or XC skiing!",
+      "x": 598.95,
+      "y": 365,
+      "name": "Heath View Trail",
+      "snowmaking": false
+    },
+    {
+      "id": 19631,
+      "description": "Trail",
+      "x": 326.85,
+      "y": 371.9,
+      "name": "Inn Path",
+      "snowmaking": false
+    },
+    {
+      "id": 19571,
+      "description": "Trail",
+      "x": 626.25,
+      "y": 143.25,
+      "name": "Jack Pine",
+      "status": "OPEN",
+      "statusColour": "#99CC00",
+      "groomed": true,
+      "snowmaking": false
+    },
+    {
+      "id": 19521,
+      "description": "Trail",
+      "x": 561.5,
+      "y": 147.4,
+      "name": "King Pine",
+      "status": "OPEN",
+      "statusColour": "#99CC00",
+      "groomed": true,
+      "snowmaking": false
+    },
+    {
+      "id": 19471,
+      "description": "Trail",
+      "x": 504,
+      "y": 199,
+      "name": "Knotty Pine",
+      "status": "OPEN",
+      "statusColour": "#99CC00",
+      "groomed": true,
+      "snowmaking": false
+    },
+    {
+      "id": 19751,
+      "description": "The lake crossing is an ungroomed trail which crosses over Purity Lake from the King Pine area to Sunset Beach. Please use care while crossing and be aware of changing ice conditions.",
+      "x": 638.55,
+      "y": 292.5,
+      "name": "Lake Trail",
+      "snowmaking": false
+    },
+    {
+      "id": 19781,
+      "description": "Trail",
+      "x": 492.4,
+      "y": 439.6,
+      "name": "Little Brook Trail",
+      "snowmaking": false
+    },
+    {
+      "id": 19711,
+      "description": "Trail",
+      "x": 712.45,
+      "y": 238.25,
+      "name": "Lodge Connector",
+      "snowmaking": false
+    },
+    {
+      "id": 19651,
+      "description": "Trail",
+      "x": 407.2,
+      "y": 456.55,
+      "name": "Mill Connector",
+      "snowmaking": false
+    },
+    {
+      "id": 19801,
+      "description": "Trail",
+      "x": 373.5,
+      "y": 335.5,
+      "name": "Overlook Trail",
+      "snowmaking": false
+    },
+    {
+      "id": 19811,
+      "description": "Snowshoeing only",
+      "x": 353,
+      "y": 309,
+      "name": "Panther Trail",
+      "snowmaking": false
+    },
+    {
+      "id": 19541,
+      "description": "Trail",
+      "x": 539.7,
+      "y": 145.75,
+      "name": "Pine Board",
+      "status": "OPEN",
+      "statusColour": "#99CC00",
+      "groomed": true,
+      "snowmaking": false
+    },
+    {
+      "id": 19581,
+      "description": "Trail",
+      "x": 608.55,
+      "y": 141.5,
+      "name": "Pine Brule",
+      "status": "OPEN",
+      "statusColour": "#99CC00",
+      "groomed": true,
+      "snowmaking": false
+    },
+    {
+      "id": 19531,
+      "description": "Trail",
+      "x": 551,
+      "y": 146.75,
+      "name": "Pine Cone",
+      "status": "OPEN",
+      "statusColour": "#99CC00",
+      "groomed": true,
+      "snowmaking": false
+    },
+    {
+      "id": 19561,
+      "description": "Trail",
+      "x": 682.75,
+      "y": 161.25,
+      "name": "Pine Slalom",
+      "status": "OPEN",
+      "statusColour": "#99CC00",
+      "groomed": true,
+      "snowmaking": false
+    },
+    {
+      "id": 19451,
+      "description": "Trail",
+      "x": 508.8,
+      "y": 153.5,
+      "name": "Pine Spills",
+      "status": "OPEN",
+      "statusColour": "#99CC00",
+      "groomed": true,
+      "snowmaking": false
+    },
+    {
+      "id": 19591,
+      "description": "Trail",
+      "x": 595,
+      "y": 149,
+      "name": "Pitch Pine",
+      "status": "OPEN",
+      "statusColour": "#99CC00",
+      "groomed": true,
+      "snowmaking": false
+    },
+    {
+      "id": 19431,
+      "description": "Trail",
+      "x": 596.2,
+      "y": 129.45,
+      "name": "Pokey Pine",
+      "status": "OPEN",
+      "statusColour": "#99CC00",
+      "groomed": true,
+      "snowmaking": false
+    },
+    {
+      "id": 19831,
+      "description": "Trail",
+      "x": 797.65,
+      "y": 409.85,
+      "name": "Pooh Hill Trail",
+      "snowmaking": false
+    },
+    {
+      "id": 19501,
+      "description": "Trail",
+      "x": 612.75,
+      "y": 139.5,
+      "name": "Red Pine",
+      "status": "OPEN",
+      "statusColour": "#99CC00",
+      "groomed": true,
+      "snowmaking": false
+    },
+    {
+      "id": 19611,
+      "description": "Trail",
+      "x": 321.2,
+      "y": 373,
+      "name": "Ridge Trail",
+      "snowmaking": false
+    },
+    {
+      "id": 19701,
+      "description": "Trail",
+      "x": 814,
+      "y": 312.95,
+      "name": "Rocky Point Trail",
+      "snowmaking": false
+    },
+    {
+      "id": 19481,
+      "description": "Trail",
+      "x": 477.6,
+      "y": 179.75,
+      "name": "Scotch Pine",
+      "status": "OPEN",
+      "statusColour": "#99CC00",
+      "groomed": true,
+      "snowmaking": false
+    },
+    {
+      "id": 19441,
+      "description": "Trail",
+      "x": 696.1,
+      "y": 140.3,
+      "name": "Slow Pokey",
+      "status": "OPEN",
+      "statusColour": "#99CC00",
+      "groomed": true,
+      "snowmaking": false
+    },
+    {
+      "id": 19731,
+      "description": "Trail",
+      "x": 832.05,
+      "y": 267.9,
+      "name": "Spruce Point Trail",
+      "snowmaking": false
+    },
+    {
+      "id": 19681,
+      "description": "The Sunset Beach trail is a rolling trail leading from the NH Audubon property to the open fields around Sunset Beach.",
+      "x": 393.4,
+      "y": 244.25,
+      "name": "Sunset Beach Trail",
+      "snowmaking": false
+    },
+    {
+      "id": 19661,
+      "description": "",
+      "x": 453.95,
+      "y": 330.75,
+      "name": "The Narrows Trail",
+      "snowmaking": false
+    },
+    {
+      "id": 19671,
+      "description": "Trail",
+      "x": 566.4,
+      "y": 380.75,
+      "name": "The Narrows Trail",
+      "snowmaking": false
+    },
+    {
+      "id": 19791,
+      "description": "Snowshoers can take this trail to visit the Lookout Tower and continue on to the Sexton log cabin. Beyon the cabin are views of Ossipee Valley from Bald Ledge.",
+      "x": 411.95,
+      "y": 349.8,
+      "name": "Tower Trail",
+      "snowmaking": false
+    },
+    {
+      "id": 19721,
+      "description": "Trail",
+      "x": 801.85,
+      "y": 211.05,
+      "name": "Upper Lake Loop",
+      "snowmaking": false
+    },
+    {
+      "id": 83323,
+      "description": "",
+      "x": 410.25,
+      "y": 335,
+      "name": "Valley Trail",
+      "snowmaking": false
+    },
+    {
+      "id": 19551,
+      "description": "Trail",
+      "x": 521.05,
+      "y": 240.5,
+      "name": "West Slope",
+      "status": "OPEN",
+      "statusColour": "#99CC00",
+      "groomed": true,
+      "snowmaking": false
+    },
+    {
+      "id": 19511,
+      "description": "Trail",
+      "x": 587.25,
+      "y": 148.9,
+      "name": "White Pine",
+      "status": "OPEN",
+      "statusColour": "#99CC00",
+      "groomed": true,
+      "snowmaking": false
+    }
+  ],
+  "lifts": [
+    {
+      "id": 3841,
+      "description": "The perfect lift for beginnersand children. Just step on and the carpet will do the rest in an easy, non-intimidating fasion.",
+      "x": 548.5,
+      "y": 319,
+      "name": "Bear Rug Carpet",
+      "status": "Open",
+      "statusColour": "#99CC00"
+    },
+    {
+      "id": 3811,
+      "description": "Provides access to all lifts onKing Pine",
+      "x": 604.5,
+      "y": 143,
+      "name": "Black Bear Triple",
+      "status": "Open",
+      "statusColour": "#99CC00"
+    },
+    {
+      "id": 3831,
+      "description": "Lift",
+      "x": 534.5,
+      "y": 294,
+      "name": "Cubby Tow",
+      "status": "Open",
+      "statusColour": "#99CC00"
+    },
+    {
+      "id": 3801,
+      "description": "Take the Polar Bear lift toreach the summit with access to all trails on King Pine including the back side.",
+      "x": 591.5,
+      "y": 147.5,
+      "name": "Polar Bear Triple",
+      "status": "Open",
+      "statusColour": "#99CC00"
+    },
+    {
+      "id": 3821,
+      "description": "Powder Bear is one of 3lifts included in our Beginner ticket and goes almost to the summit. Acces is to mostly beginner trails and also to the Terrain Park.",
+      "x": 530,
+      "y": 150.5,
+      "name": "Powder Bear Triple",
+      "status": "Open",
+      "statusColour": "#99CC00"
+    },
+    {
+      "id": 3851,
+      "description": "$18/person for 2-hour sessionFri: 5-7, 7-9pmSat/holidays: 10am-Noon, Noon-2, 2-4, (re-groom 4-5) 5-7, 7-9pm Sun: 10am-Noon, Noon-2, 2-4pmFeb 22-25: Noon-2, 2-4pm",
+      "x": 494,
+      "y": 310.5,
+      "name": "Tubing Park Tow"
+    }
+  ]
+}
