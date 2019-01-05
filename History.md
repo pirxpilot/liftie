@@ -1,4 +1,11 @@
 
+3.26.0 / 2019-01-04
+===================
+
+ * fix King Pine resort
+ * add openweathermap API support
+ * remove wunderground weather
+
 3.25.0 / 2019-01-02
 ===================
 
