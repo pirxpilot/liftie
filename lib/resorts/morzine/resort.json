@@ -1,0 +1,16 @@
+{
+  "name": "Morzine",
+  "url": {
+    "host": "http://www.morznet.com",
+    "pathname": "/"
+  },
+  "tags": [
+    "France",
+    "Alps"
+  ],
+  "ll": [
+    null
+  ],
+  "twitter": "morzine",
+  "opening": "2018-12-15"
+}
