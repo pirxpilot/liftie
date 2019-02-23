@@ -1,4 +1,10 @@
 
+3.26.2 / 2019-02-22
+===================
+
+ * replace dirty with a basic cache file
+ * upgrade jshint
+
 3.26.1 / 2019-01-05
 ===================
 
