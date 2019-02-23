@@ -16,9 +16,9 @@ var app = module.exports = express();
 
 
 if (!process.env.SITE_URL) {
-  process.env.SITE_URL =  (app.get('env') === 'production')
-    ? 'https://liftie.info'
-    : 'http://locahost:3000';
+  process.env.SITE_URL =  (app.get('env') === 'production') ?
+    'https://liftie.info' :
+    'http://locahost:3000';
 }
 
 var root = path.join(__dirname, 'public');
