@@ -4,7 +4,7 @@
   "version": "3.28.5",
   "scripts": {
     "test": "make lint test",
-    "heroku-postbuild": "make"
+    "heroku-postbuild": "make dist"
   },
   "dependencies": {
     "@pirxpilot/jade-core": "^1.12.1",
