@@ -70,7 +70,7 @@ DIST = $(BUILD_DIR)/$(PROJECT).min.js $(CSS_DIR)/style.min.css $(BUILD_DIR)/$(PR
 
 .PRECIOUS: $(DIST)
 dist: $(DIST:%=%.gz)
-dist: $(DIST:%=%.br)
+# dist: $(DIST:%=%.br)
 
 # cleaning
 
