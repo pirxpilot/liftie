@@ -1,1 +1,1 @@
-web: npm app
+web: node app
