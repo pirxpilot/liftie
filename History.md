@@ -1,4 +1,11 @@
 
+3.26.4 / 2019-02-28
+===================
+
+ * fix Mt. Rose resort
+ * fix Owl's Head resort
+ * remove references to Google+ page
+
 3.26.3 / 2019-02-23
 ===================
 
