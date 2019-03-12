@@ -1,0 +1,19 @@
+{
+  "name": "Les Arcs",
+  "url": {
+    "host": "https://www.lesarcs.com/",
+    "pathname": "/infos-live/meteo.html"
+  },
+  "dataUrl": {
+    "host": "http://www.skiplan.com",
+    "pathname": "/bulletin/bulletin.php?station=les-arcs&region=alpes&pays=france&lang=fr"
+  },
+  "tags": [
+    "France",
+    "Alps"
+  ],
+  "ll": [
+    6.8288, 45.5722
+  ],
+  "twitter": "lesarcs"
+}
