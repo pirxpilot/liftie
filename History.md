@@ -1,4 +1,13 @@
 
+3.28.0 / 2019-11-06
+===================
+
+ * add Montegenevre
+ * add Cesana Claviere
+ * add Cesana San Sicario
+ * add Sauze d'Oulx
+ * add Sestriere
+
 3.27.0 / 2019-03-12
 ===================
 
