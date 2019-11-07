@@ -43,7 +43,7 @@
     "clean-css-cli": "^4.1.9",
     "commander": "~2",
     "jshint": "~2",
-    "mocha": "~5",
+    "mocha": "~6",
     "postcss-cachify": "^1.4.0",
     "postcss-cli-simple": "~3",
     "prompt": "~1",
