@@ -1,0 +1,20 @@
+{
+  "name": "Montgenevre",
+  "url": {
+    "host": "https://www.vialattea.it",
+    "pathname": "/Ski-Area/Courses-and-lifts/Lift-and-Trails-Report",
+    "query": {
+      "IdLoc": 5
+    }
+  },
+  "tags": [
+    "Italy",
+    "Alps",
+    "Via Lattea"
+  ],
+  "ll": [
+    6.7219,
+    44.9316
+  ],
+  "twitter": "Montgenevre"
+}
