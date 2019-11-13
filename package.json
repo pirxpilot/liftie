@@ -17,7 +17,7 @@
     "cookie-parser": "^1.4.3",
     "css-select": "~2",
     "debounce": "^1.0.0",
-    "debug": "~2",
+    "debug": "~4",
     "domready": "^1.0.8",
     "dynload": "^1.0.2",
     "el-component": "^1.0.1",
