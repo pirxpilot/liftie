@@ -1,4 +1,12 @@
 
+3.28.1 / 2019-11-12
+===================
+
+ * upgrade css-select and debug
+ * upgrade moccha
+ * upgrade autoprefixer
+ * soft dependency update
+
 3.28.0 / 2019-11-06
 ===================
 
