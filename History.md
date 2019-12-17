@@ -1,4 +1,11 @@
 
+3.28.2 / 2019-12-17
+===================
+
+ * remove Arapahoe Basin from vail/epic category
+ * update vail resorts test data
+ * fix Vail resorts script parsing
+
 3.28.1 / 2019-11-12
 ===================
 
