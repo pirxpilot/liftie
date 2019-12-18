@@ -2,11 +2,12 @@
   "name": "Okemo",
   "url": {
     "host": "https://www.okemo.com",
-    "pathname": "/mountain-info/trail-lift-report/"
+    "pathname": "/the-mountain/mountain-conditions/lift-and-terrain-status.aspx"
   },
   "tags": [
     "New England",
-    "Vermont"
+    "Vermont",
+    "Vail Epic"
   ],
   "ll": [
     -72.716705,

@@ -12,25 +12,21 @@ describe('parse okemo', function() {
     stream.pipe(parser(parse, function(err, status) {
       var expected = {
         'Solitude Express Quad': 'open',
-        'Morning Star Triple': 'open',
+        'Morning Star Triple': 'closed',
         'Quantum Four': 'open',
         'Coleman Brook Express Quad': 'open',
-        'Stargazer Carpet': 'open',
+        'Snow Star Carpet': 'closed',
         'Orion\'s Belt Carpet': 'closed',
-        'Green Ridge Triple': 'open',
+        'Green Ridge Triple': 'closed',
         'F-10 Carpet': 'open',
-        'Starlight Carpet': 'closed',
-        'The Pull': 'closed',
         'Black Ridge Triple': 'closed',
         'Sunburst Six': 'open',
-        'Sachem Quad': 'open',
+        'Sachem Quad': 'closed',
         'Glades Peak Quad': 'closed',
-        'South Face Express Quad': 'open',
-        'South Ridge Quad A': 'open',
-        'South Ridge Quad B': 'closed',
-        'Skywalker Carpet': 'closed',
-        'Snow Star Carpet': 'closed',
-        'Sunshine Quad': 'open'
+        'South Face Express Quad': 'closed',
+        'South Ridge Quad A': 'closed',
+        'South Ridge Quad B': 'open',
+        'Sunshine Quad': 'closed'
       };
       should.exist(status);
       status.should.eql(expected);
