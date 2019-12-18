@@ -1,11 +1,12 @@
 {
   "name": "Crested Butte",
   "url": {
-    "host": "http://www.skicb.com",
-    "pathname": "/the-mountain/grooming-lift-status"
+    "host": "https://www.skicb.com",
+    "pathname": "/the-mountain/mountain-conditions/lift-and-terrain-status.aspx"
   },
   "tags": [
-    "Colorado"
+    "Colorado",
+    "Vail Epic"
   ],
   "ll": [
     -106.964821,
