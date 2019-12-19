@@ -1,11 +1,12 @@
 {
   "name": "Stevens Pass",
   "url": {
-    "host": "http://www.stevenspass.com",
-    "pathname": "/site/mountain/reports/alpine-grooming/@@alpine-grooming"
+    "host": "https://www.stevenspass.com",
+    "pathname": "/the-mountain/mountain-conditions/lift-and-terrain-status.aspx"
   },
   "tags": [
-    "Washington"
+    "Washington",
+    "Vail Epic"
   ],
   "opening": "2017-11-29",
   "ll": [
