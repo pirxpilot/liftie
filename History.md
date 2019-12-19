@@ -1,4 +1,13 @@
 
+3.28.3 / 2019-12-19
+===================
+
+ * fix Gunstock for the new season
+ * fix Mount Sunapee for the new season
+ * fix Okemo for the new season
+ * fix Crested Butte for the new season
+ * fix Stven's Pass for the new season
+
 3.28.2 / 2019-12-17
 ===================
 
