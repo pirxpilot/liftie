@@ -1,23 +1,22 @@
-var assert = require('assert');
-var fs = require('fs');
-var parser = require('../../lib/lifts/parser');
-var parse = require('../../lib/lifts/parse')('gunstock');
+const assert = require('assert');
+const fs = require('fs');
+const parser = require('../../lib/lifts/parser');
+const parse = require('../../lib/lifts/parse')('gunstock');
 
 /*global describe, it */
 describe('parse gunstock', function() {
 
   it('should return lift status', function(done) {
-    var stream = fs.createReadStream(__dirname + '/example/gunstock.html');
+    const stream = fs.createReadStream(`${__dirname}/example/gunstock.html`);
     stream.on('error', done);
     stream.pipe(parser(parse, function(err, status) {
-      var expected = {
-        'Flying Carpet': 'closed',
-        'Panorama High Speed Quad': 'closed',
-        'Penny Pitou Silver Medal Quad': 'closed',
-        'Pistol Triple': 'closed',
-        'Ramrod Quad': 'closed',
-        'Tiger Triple': 'closed',
-        'Wonder Carpet': 'closed'
+      const expected = {
+        'Panorama': 'open',
+        'Penny Pitou Silver Medal': 'open',
+        'Pistol': 'open',
+        'Ramrod': 'open',
+        'Tiger': 'closed',
+        'Wonder Carpet': 'open'
       };
       assert.deepEqual(status, expected);
       done(err);
