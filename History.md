@@ -1,4 +1,13 @@
 
+3.28.4 / 2019-12-20
+===================
+
+ * fix Monarch for the new season
+ * fix Crystal Mountain for the new season
+ * fix Solitude for the new season
+ * fix Brighton for the new season
+ * fix Angel Fire for the new season
+
 3.28.3 / 2019-12-19
 ===================
 
