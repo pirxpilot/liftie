@@ -1,25 +1,25 @@
-var should = require('should');
-var fs = require('fs');
-var parser = require('../../lib/lifts/parser');
-var parse = require('../../lib/lifts/parse')('monarch');
+const assert = require('assert');
+const fs = require('fs');
+const parser = require('../../lib/lifts/parser');
+const parse = require('../../lib/lifts/parse')('monarch');
 
 /*global describe, it */
 describe('parse monarch', function() {
 
   it('should return lift status', function(done) {
-    var stream = fs.createReadStream(__dirname + '/example/monarch.html');
+    const stream = fs.createReadStream(`${__dirname}/example/monarch.html`);
     stream.on('error', done);
     stream.pipe(parser(parse, function(err, status) {
-      var expected = {
-        'Garfield': 'closed',
-        'Panorama': 'closed',
-        'Breezeway': 'closed',
+      const expected = {
+        'Garfield': 'open',
+        'Panorama': 'open',
+        'Breezeway': 'open',
         'Pioneer': 'closed',
-        'Tumbelina': 'closed',
-        'Caterpillar': 'closed'
+        'Tumbelina': 'open',
+        'Caterpillar': 'open',
+        'Kaleidoscope': 'closed'
       };
-      should.exist(status);
-      status.should.eql(expected);
+      assert.deepEqual(status, expected);
       done(err);
     }));
   });

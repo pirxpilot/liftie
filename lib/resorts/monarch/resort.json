@@ -1,8 +1,8 @@
 {
   "name": "Monarch Mountain",
   "url": {
-    "host": "http://www.skimonarch.com",
-    "pathname": "/lift-conditions/"
+    "host": "https://www.skimonarch.com",
+    "pathname": "/conditions/"
   },
   "tags": [
     "Colorado"
