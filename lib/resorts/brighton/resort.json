@@ -1,8 +1,8 @@
 {
   "name": "Brighton",
   "url": {
-    "host": "http://www.brightonresort.com",
-    "pathname": "/mountain/snow-report/"
+    "host": "https://brightonresort.com",
+    "pathname": "/conditions"
   },
   "tags": [
     "Utah"
