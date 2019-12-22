@@ -1,8 +1,8 @@
 {
   "name": "49 Degrees North",
   "url": {
-    "host": "http://www.ski49n.com",
-    "pathname": "/grooming.php"
+    "host": "https://new.ski49n.com",
+    "pathname": "/mountain-info/trail-status"
   },
   "tags": [
     "Washington"
