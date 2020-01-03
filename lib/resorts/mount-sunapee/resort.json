@@ -2,11 +2,12 @@
   "name": "Mount Sunapee",
   "url": {
     "host": "https://www.mountsunapee.com",
-    "pathname": "/winter/snow-report/"
+    "pathname": "/the-mountain/mountain-conditions/lift-and-terrain-status.aspx"
   },
   "tags": [
     "New Hampshire",
-    "New England"
+    "New England",
+    "Vail Epic"
   ],
   "ll": [
     -72.075394,

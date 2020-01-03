@@ -12,27 +12,28 @@ describe('parse beavercreek', function() {
     stream.pipe(parser(parse, function(err, status) {
       var expected = {
         'Arrow Bahn': 'closed',
-        'Bachelor Gulch Express': 'closed',
-        'Bibber Bahn': 'closed',
+        'Bachelor Gulch Express': 'open',
+        'Bibber Lift': 'open',
         'Birds of Prey Express': 'closed',
-        'Buckaroo Express Gondola': 'closed',
-        'Centennial Express': 'closed',
-        'Cinch Express': 'closed',
+        'Centennial Express': 'open',
+        'Cinch Express': 'open',
         'Elkhorn Lift': 'closed',
-        'Gold Bahn': 'closed',
         'Grouse Mountain Express': 'closed',
+        'Haymeadow Express Gondola': 'open',
         'Highlands Lift': 'closed',
-        'Kerch Bahn': 'closed',
+        'Jitterbug Lift': 'closed',
         'Larkspur Express': 'closed',
         'Lower Beaver Creek Mountain Express': 'closed',
-        'Magic Carpet': 'closed',
-        'Red Buffalo Express': 'closed',
-        'Ritz Bahn': 'closed',
-        'Riverfront Express Gondola': 'closed',
-        'Rose Bowl Express': 'closed',
-        'Silver Bahn': 'closed',
-        'Strawberry Park Express': 'closed',
-        'Upper Beaver Creek Mountain Express': 'closed'
+        'Magic Lift': 'open',
+        'Red Buffalo Express': 'open',
+        'RitzBahn Lift': 'closed',
+        'Riverfront Express Gondola': 'open',
+        'Rose Bowl Express': 'open',
+        'Snowflake Lift': 'closed',
+        'Strawberry Park Express': 'open',
+        'Train Rider Lift': 'open',
+        'Upper Beaver Creek Mountain Express': 'closed',
+        'Wagon Train Lift': 'open'
       };
       should.exist(status);
       status.should.eql(expected);

@@ -1,0 +1,19 @@
+{
+  "name": "Cesana San Sicario",
+  "url": {
+    "host": "https://www.vialattea.it",
+    "pathname": "/Ski-Area/Courses-and-lifts/Lift-and-Trails-Report",
+    "query": {
+      "IdLoc": 3
+    }
+  },
+  "tags": [
+    "Italy",
+    "Alps",
+    "Via Lattea"
+  ],
+  "ll": [
+    6.8062,
+    44.95812
+  ]
+}

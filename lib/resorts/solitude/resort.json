@@ -1,8 +1,12 @@
 {
   "name": "Solitude",
   "url": {
-    "host": "https://solitudemountain.com",
-    "pathname": "/on-the-mountain"
+    "host": "https://www.solitudemountain.com",
+    "pathname": "/mountain-and-village/conditions-and-maps#/"
+  },
+  "api": {
+    "host": "https://mtnpowder.com",
+    "pathname": "/feed/65/lifts"
   },
   "tags": [
     "Utah"
