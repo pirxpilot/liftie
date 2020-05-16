@@ -1,0 +1,18 @@
+{
+  "name": "Kicking Horse",
+  "url": {
+    "host": "https://kickinghorseresort.com",
+    "pathname": "/conditions/lift-status/"
+  },
+  "tags": [
+    "Kicking Horse",
+    "Golden",
+    "Canada"
+  ],
+  "ll": [
+    -114.0751,
+    47.4605
+  ],
+  "twitter": "KickingHorseMtn",
+  "opening": "2019-12-06"
+}

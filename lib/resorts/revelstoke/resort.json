@@ -1,0 +1,16 @@
+{
+  "name": "Revelstoke",
+  "url": {
+    "host": "https://www.revelstokemountainresort.com",
+    "pathname": "/conditions/snow-report"
+  },
+  "tags": [
+    "Revelstoke",
+    "Canada"
+  ],
+  "ll": [
+    -118.1957
+  ],
+  "twitter": "revelstokemtn",
+  "opening": "2019-11-30"
+}
