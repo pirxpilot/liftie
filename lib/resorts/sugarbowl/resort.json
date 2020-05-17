@@ -1,7 +1,7 @@
 {
   "name": "Sugar Bowl",
   "url": {
-    "host": "http://www.sugarbowl.com",
+    "host": "https://www.sugarbowl.com",
     "pathname": "/conditions"
   },
   "tags": [
