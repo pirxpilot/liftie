@@ -1,4 +1,12 @@
 
+3.28.6 / 2020-05-17
+===================
+
+ * add `noopener` attribute to external links
+ * fix HTML tag typo - ui -> ul
+ * fix Silver Star
+ * fix Sugarbowl
+
 3.28.5 / 2019-12-22
 ===================
 
