@@ -34,7 +34,7 @@ describe('webcams', function() {
         webcam.should.have.property('name', 'Jungfraujoch: Top of Europe');
         webcam.should.have.property('source').with.startWith('https://www.webcams.travel/webcam');
         webcam.should.have.property('image').with.startWith('https://images.webcams.travel/preview/');
-        webcam.should.have.property('notice', 'Webcam by <a href="https://webcams.travel" target="_blank">webcams.travel</a>');
+        webcam.should.have.property('notice', 'Webcam by <a href="https://webcams.travel" target="_blank" rel="noopener">webcams.travel</a>');
 
         webcam.should.have.property('mobile').with.type('object');
         mobile = webcam.mobile;
@@ -42,7 +42,7 @@ describe('webcams', function() {
         mobile.should.have.property('name', 'Jungfraujoch: Top of Europe');
         mobile.should.have.property('source').with.startWith('https://m.webcams.travel/webcam');
         mobile.should.have.property('image').with.startWith('https://images.webcams.travel/preview/');
-        mobile.should.have.property('notice', 'Webcam by <a href="https://m.webcams.travel" target="_blank">webcams.travel</a>');
+        mobile.should.have.property('notice', 'Webcam by <a href="https://m.webcams.travel" target="_blank" rel="noopener">webcams.travel</a>');
 
         done(err);
       });
