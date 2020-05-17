@@ -16,9 +16,9 @@ var app = module.exports = express();
 
 
 if (!process.env.SITE_URL) {
-  process.env.SITE_URL =  (app.get('env') === 'production')
-    ? 'https://liftie.info'
-    : 'http://locahost:3000';
+  process.env.SITE_URL =  (app.get('env') === 'production') ?
+    'https://liftie.info' :
+    'http://locahost:3000';
 }
 
 var root = path.join(__dirname, 'public');
@@ -35,6 +35,7 @@ Object.assign(app.locals, {
 });
 app.set('port', process.env.PORT || 3000);
 app.set('views', __dirname + '/views');
+app.engine('jade', require('@pirxpilot/jade-core').__express);
 app.set('view engine', 'jade');
 
 app.use(favicon(path.join(root, 'favicon.ico')));

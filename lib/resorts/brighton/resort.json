@@ -1,8 +1,8 @@
 {
   "name": "Brighton",
   "url": {
-    "host": "http://www.brightonresort.com",
-    "pathname": "/mountain/snow-report/"
+    "host": "https://brightonresort.com",
+    "pathname": "/conditions"
   },
   "tags": [
     "Utah"
@@ -12,5 +12,6 @@
     40.620697
   ],
   "twitter": "BrightonResort",
-  "opening": "2017-11-25"
+  "opening": "2017-11-25",
+  "noaa": "SLC/109,167"
 }

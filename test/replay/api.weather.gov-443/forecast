@@ -1,0 +1,293 @@
+GET /gridpoints/BTV/107,21/forecast
+accept-encoding: gzip, deflate
+accept: application/geo+json
+
+HTTP/1.1 200 OK
+server: nginx/1.12.2
+content-type: application/geo+json
+access-control-allow-origin: *
+x-server-id: vm-lnx-nids-apiapp42.ncep.noaa.gov
+x-correlation-id: 430cbe0f-1a51-4f8e-8282-74e3b6fc83a7
+x-request-id: 430cbe0f-1a51-4f8e-8282-74e3b6fc83a7
+cache-control: public, max-age=900, s-maxage=120
+expires: Wed, 02 Jan 2019 22:58:51 GMT
+date: Wed, 02 Jan 2019 22:43:51 GMT
+connection: close
+vary: Accept-Encoding, Accept
+strict-transport-security: max-age=31536000 ; includeSubDomains ; preload
+
+{
+    "@context": [
+        "https://raw.githubusercontent.com/geojson/geojson-ld/master/contexts/geojson-base.jsonld",
+        {
+            "wx": "https://api.weather.gov/ontology#",
+            "geo": "http://www.opengis.net/ont/geosparql#",
+            "unit": "http://codes.wmo.int/common/unit/",
+            "@vocab": "https://api.weather.gov/ontology#"
+        }
+    ],
+    "type": "Feature",
+    "geometry": {
+        "type": "GeometryCollection",
+        "geometries": [
+            {
+                "type": "Point",
+                "coordinates": [
+                    -72.805900500000007,
+                    43.674234599999998
+                ]
+            },
+            {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            -72.818181100000004,
+                            43.686630700000002
+                        ],
+                        [
+                            -72.823037800000009,
+                            43.665351200000003
+                        ],
+                        [
+                            -72.793623100000005,
+                            43.661836700000002
+                        ],
+                        [
+                            -72.788760199999999,
+                            43.683115900000004
+                        ],
+                        [
+                            -72.818181100000004,
+                            43.686630700000002
+                        ]
+                    ]
+                ]
+            }
+        ]
+    },
+    "properties": {
+        "updated": "2019-01-02T20:05:44+00:00",
+        "units": "us",
+        "forecastGenerator": "BaselineForecastGenerator",
+        "generatedAt": "2019-01-02T22:43:51+00:00",
+        "updateTime": "2019-01-02T20:05:44+00:00",
+        "validTimes": "2019-01-02T14:00:00+00:00/P7DT23H",
+        "elevation": {
+            "value": 509.01600000000002,
+            "unitCode": "unit:m"
+        },
+        "periods": [
+            {
+                "number": 1,
+                "name": "This Afternoon",
+                "startTime": "2019-01-02T17:00:00-05:00",
+                "endTime": "2019-01-02T18:00:00-05:00",
+                "isDaytime": true,
+                "temperature": 25,
+                "temperatureUnit": "F",
+                "temperatureTrend": null,
+                "windSpeed": "3 mph",
+                "windDirection": "E",
+                "icon": "https://api.weather.gov/icons/land/day/bkn?size=medium",
+                "shortForecast": "Partly Sunny",
+                "detailedForecast": "Partly sunny, with a high near 25. East wind around 3 mph."
+            },
+            {
+                "number": 2,
+                "name": "Tonight",
+                "startTime": "2019-01-02T18:00:00-05:00",
+                "endTime": "2019-01-03T06:00:00-05:00",
+                "isDaytime": false,
+                "temperature": 17,
+                "temperatureUnit": "F",
+                "temperatureTrend": null,
+                "windSpeed": "5 to 9 mph",
+                "windDirection": "SE",
+                "icon": "https://api.weather.gov/icons/land/night/snow,20/snow,90?size=medium",
+                "shortForecast": "Very Light Snow",
+                "detailedForecast": "Snow after 11pm. Mostly cloudy, with a low around 17. Southeast wind 5 to 9 mph. Chance of precipitation is 90%. New snow accumulation of 2 to 4 inches possible."
+            },
+            {
+                "number": 3,
+                "name": "Thursday",
+                "startTime": "2019-01-03T06:00:00-05:00",
+                "endTime": "2019-01-03T18:00:00-05:00",
+                "isDaytime": true,
+                "temperature": 32,
+                "temperatureUnit": "F",
+                "temperatureTrend": null,
+                "windSpeed": "2 to 7 mph",
+                "windDirection": "W",
+                "icon": "https://api.weather.gov/icons/land/day/snow,80/snow,20?size=medium",
+                "shortForecast": "Very Light Snow",
+                "detailedForecast": "Snow before 1pm. Mostly cloudy, with a high near 32. West wind 2 to 7 mph. Chance of precipitation is 80%. New snow accumulation of 3 to 7 inches possible."
+            },
+            {
+                "number": 4,
+                "name": "Thursday Night",
+                "startTime": "2019-01-03T18:00:00-05:00",
+                "endTime": "2019-01-04T06:00:00-05:00",
+                "isDaytime": false,
+                "temperature": 24,
+                "temperatureUnit": "F",
+                "temperatureTrend": null,
+                "windSpeed": "3 to 7 mph",
+                "windDirection": "SW",
+                "icon": "https://api.weather.gov/icons/land/night/bkn?size=medium",
+                "shortForecast": "Mostly Cloudy",
+                "detailedForecast": "Mostly cloudy, with a low around 24. Southwest wind 3 to 7 mph."
+            },
+            {
+                "number": 5,
+                "name": "Friday",
+                "startTime": "2019-01-04T06:00:00-05:00",
+                "endTime": "2019-01-04T18:00:00-05:00",
+                "isDaytime": true,
+                "temperature": 38,
+                "temperatureUnit": "F",
+                "temperatureTrend": null,
+                "windSpeed": "6 to 12 mph",
+                "windDirection": "SW",
+                "icon": "https://api.weather.gov/icons/land/day/bkn?size=medium",
+                "shortForecast": "Partly Sunny",
+                "detailedForecast": "Partly sunny, with a high near 38. Southwest wind 6 to 12 mph."
+            },
+            {
+                "number": 6,
+                "name": "Friday Night",
+                "startTime": "2019-01-04T18:00:00-05:00",
+                "endTime": "2019-01-05T06:00:00-05:00",
+                "isDaytime": false,
+                "temperature": 26,
+                "temperatureUnit": "F",
+                "temperatureTrend": null,
+                "windSpeed": "3 to 8 mph",
+                "windDirection": "S",
+                "icon": "https://api.weather.gov/icons/land/night/sct?size=medium",
+                "shortForecast": "Partly Cloudy",
+                "detailedForecast": "Partly cloudy, with a low around 26. South wind 3 to 8 mph."
+            },
+            {
+                "number": 7,
+                "name": "Saturday",
+                "startTime": "2019-01-05T06:00:00-05:00",
+                "endTime": "2019-01-05T18:00:00-05:00",
+                "isDaytime": true,
+                "temperature": 37,
+                "temperatureUnit": "F",
+                "temperatureTrend": null,
+                "windSpeed": "6 mph",
+                "windDirection": "SE",
+                "icon": "https://api.weather.gov/icons/land/day/snow,30?size=medium",
+                "shortForecast": "Chance Light Snow",
+                "detailedForecast": "A chance of snow between 7am and 11am, then a chance of rain and snow. Partly sunny, with a high near 37. Southeast wind around 6 mph. Chance of precipitation is 30%."
+            },
+            {
+                "number": 8,
+                "name": "Saturday Night",
+                "startTime": "2019-01-05T18:00:00-05:00",
+                "endTime": "2019-01-06T06:00:00-05:00",
+                "isDaytime": false,
+                "temperature": 28,
+                "temperatureUnit": "F",
+                "temperatureTrend": null,
+                "windSpeed": "3 to 8 mph",
+                "windDirection": "SW",
+                "icon": "https://api.weather.gov/icons/land/night/snow,30/snow?size=medium",
+                "shortForecast": "Chance Light Snow then Slight Chance Rain And Snow Showers",
+                "detailedForecast": "A chance of snow before 7pm, then a slight chance of rain and snow showers. Mostly cloudy, with a low around 28. Southwest wind 3 to 8 mph. Chance of precipitation is 30%."
+            },
+            {
+                "number": 9,
+                "name": "Sunday",
+                "startTime": "2019-01-06T06:00:00-05:00",
+                "endTime": "2019-01-06T18:00:00-05:00",
+                "isDaytime": true,
+                "temperature": 35,
+                "temperatureUnit": "F",
+                "temperatureTrend": null,
+                "windSpeed": "8 to 13 mph",
+                "windDirection": "NW",
+                "icon": "https://api.weather.gov/icons/land/day/snow/bkn?size=medium",
+                "shortForecast": "Slight Chance Snow Showers then Partly Sunny",
+                "detailedForecast": "A slight chance of snow showers before 7am. Partly sunny, with a high near 35. Northwest wind 8 to 13 mph."
+            },
+            {
+                "number": 10,
+                "name": "Sunday Night",
+                "startTime": "2019-01-06T18:00:00-05:00",
+                "endTime": "2019-01-07T06:00:00-05:00",
+                "isDaytime": false,
+                "temperature": 13,
+                "temperatureUnit": "F",
+                "temperatureTrend": null,
+                "windSpeed": "12 mph",
+                "windDirection": "NW",
+                "icon": "https://api.weather.gov/icons/land/night/sct?size=medium",
+                "shortForecast": "Partly Cloudy",
+                "detailedForecast": "Partly cloudy, with a low around 13. Northwest wind around 12 mph."
+            },
+            {
+                "number": 11,
+                "name": "Monday",
+                "startTime": "2019-01-07T06:00:00-05:00",
+                "endTime": "2019-01-07T18:00:00-05:00",
+                "isDaytime": true,
+                "temperature": 22,
+                "temperatureUnit": "F",
+                "temperatureTrend": null,
+                "windSpeed": "9 mph",
+                "windDirection": "N",
+                "icon": "https://api.weather.gov/icons/land/day/sct?size=medium",
+                "shortForecast": "Mostly Sunny",
+                "detailedForecast": "Mostly sunny, with a high near 22. North wind around 9 mph."
+            },
+            {
+                "number": 12,
+                "name": "Monday Night",
+                "startTime": "2019-01-07T18:00:00-05:00",
+                "endTime": "2019-01-08T06:00:00-05:00",
+                "isDaytime": false,
+                "temperature": 13,
+                "temperatureUnit": "F",
+                "temperatureTrend": null,
+                "windSpeed": "6 mph",
+                "windDirection": "NE",
+                "icon": "https://api.weather.gov/icons/land/night/snow,30?size=medium",
+                "shortForecast": "Chance Snow Showers",
+                "detailedForecast": "A chance of snow showers after 7pm. Mostly cloudy, with a low around 13. Northeast wind around 6 mph. Chance of precipitation is 30%."
+            },
+            {
+                "number": 13,
+                "name": "Tuesday",
+                "startTime": "2019-01-08T06:00:00-05:00",
+                "endTime": "2019-01-08T18:00:00-05:00",
+                "isDaytime": true,
+                "temperature": 26,
+                "temperatureUnit": "F",
+                "temperatureTrend": null,
+                "windSpeed": "5 to 10 mph",
+                "windDirection": "SE",
+                "icon": "https://api.weather.gov/icons/land/day/snow,60?size=medium",
+                "shortForecast": "Snow Showers Likely",
+                "detailedForecast": "Snow showers likely. Cloudy, with a high near 26. Southeast wind 5 to 10 mph. Chance of precipitation is 60%."
+            },
+            {
+                "number": 14,
+                "name": "Tuesday Night",
+                "startTime": "2019-01-08T18:00:00-05:00",
+                "endTime": "2019-01-09T06:00:00-05:00",
+                "isDaytime": false,
+                "temperature": 19,
+                "temperatureUnit": "F",
+                "temperatureTrend": null,
+                "windSpeed": "10 mph",
+                "windDirection": "E",
+                "icon": "https://api.weather.gov/icons/land/night/snow,60?size=medium",
+                "shortForecast": "Snow Showers Likely",
+                "detailedForecast": "Snow showers likely. Cloudy, with a low around 19. East wind around 10 mph. Chance of precipitation is 60%."
+            }
+        ]
+    }
+}

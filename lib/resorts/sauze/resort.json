@@ -1,0 +1,20 @@
+{
+  "name": "Sauze d'Oulx",
+  "url": {
+    "host": "https://www.vialattea.it",
+    "pathname": "/Ski-Area/Courses-and-lifts/Lift-and-Trails-Report",
+    "query": {
+      "IdLoc": 2
+    }
+  },
+  "tags": [
+    "Italy",
+    "Alps",
+    "Via Lattea"
+  ],
+  "ll": [
+    6.85,
+    45.016667
+  ],
+  "twitter": "sauzeonline"
+}

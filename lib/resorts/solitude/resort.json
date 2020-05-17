@@ -1,8 +1,12 @@
 {
   "name": "Solitude",
   "url": {
-    "host": "https://solitudemountain.com",
-    "pathname": "/on-the-mountain"
+    "host": "https://www.solitudemountain.com",
+    "pathname": "/mountain-and-village/conditions-and-maps#/"
+  },
+  "api": {
+    "host": "https://mtnpowder.com",
+    "pathname": "/feed/65/lifts"
   },
   "tags": [
     "Utah"
@@ -12,5 +16,6 @@
     40.625648
   ],
   "twitter": "solitudemtn",
-  "opening": "2017-12-02"
+  "opening": "2017-12-02",
+  "noaa": "SLC/109,167"
 }

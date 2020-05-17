@@ -1,0 +1,19 @@
+{
+  "name": "Cesana Claviere",
+  "url": {
+    "host": "https://www.vialattea.it",
+    "pathname": "/Ski-Area/Courses-and-lifts/Lift-and-Trails-Report",
+    "query": {
+      "IdLoc": 4
+    }
+  },
+  "tags": [
+    "Italy",
+    "Alps",
+    "Via Lattea"
+  ],
+  "ll": [
+    6.75,
+    44.933333
+  ]
+}

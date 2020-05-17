@@ -1,8 +1,12 @@
 {
   "name": "Crystal Mountain",
   "url": {
-    "host": "https://crystalmountainresort.com",
-    "pathname": "/the-mountain/mountain-report/lift-status/"
+    "host": "https://www.crystalmountainresort.com",
+    "pathname": "/the-mountain/mountain-report-and-webcams#/"
+  },
+  "api": {
+    "host": "https://mtnpowder.com",
+    "pathname": "/feed/80/lifts"
   },
   "tags": [
     "Washington"
@@ -12,5 +16,6 @@
     46.9459
   ],
   "twitter": "crystalmt",
-  "opening": "2017-12-02"
+  "opening": "2017-12-02",
+  "noaa": "SEW/141,31"
 }

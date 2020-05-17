@@ -1,0 +1,15 @@
+{
+  "name": "Coronet Peak",
+  "url": {
+    "host": "https://www.coronetpeak.co.nz",
+    "pathname": "/weather-report/"
+  },
+  "tags": [
+    "New Zealand"
+  ],
+  "ll": [
+    168.736053,
+    -44.926898
+  ],
+  "twitter": "CoronetPeak"
+}

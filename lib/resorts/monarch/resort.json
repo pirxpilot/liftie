@@ -1,8 +1,8 @@
 {
   "name": "Monarch Mountain",
   "url": {
-    "host": "http://www.skimonarch.com",
-    "pathname": "/lift-conditions/"
+    "host": "https://www.skimonarch.com",
+    "pathname": "/conditions/"
   },
   "tags": [
     "Colorado"
@@ -12,5 +12,6 @@
     38.512714
   ],
   "twitter": "MonarchMountain",
-  "opening": "2017-11-22"
+  "opening": "2017-11-22",
+  "noaa": "PUB/35,80"
 }

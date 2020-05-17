@@ -1,4 +1,104 @@
 
+3.28.5 / 2019-12-22
+===================
+
+ * fix 49 Degree North
+ * fix Via Lattea
+
+3.28.4 / 2019-12-20
+===================
+
+ * fix Monarch for the new season
+ * fix Crystal Mountain for the new season
+ * fix Solitude for the new season
+ * fix Brighton for the new season
+ * fix Angel Fire for the new season
+
+3.28.3 / 2019-12-19
+===================
+
+ * fix Gunstock for the new season
+ * fix Mount Sunapee for the new season
+ * fix Okemo for the new season
+ * fix Crested Butte for the new season
+ * fix Stven's Pass for the new season
+
+3.28.2 / 2019-12-17
+===================
+
+ * remove Arapahoe Basin from vail/epic category
+ * update vail resorts test data
+ * fix Vail resorts script parsing
+
+3.28.1 / 2019-11-12
+===================
+
+ * upgrade css-select and debug
+ * upgrade moccha
+ * upgrade autoprefixer
+ * soft dependency update
+
+3.28.0 / 2019-11-06
+===================
+
+ * add Montegenevre
+ * add Cesana Claviere
+ * add Cesana San Sicario
+ * add Sauze d'Oulx
+ * add Sestriere
+
+3.27.0 / 2019-03-12
+===================
+
+ * add Les Arcs resort
+
+3.26.4 / 2019-02-28
+===================
+
+ * fix Mt. Rose resort
+ * fix Owl's Head resort
+ * remove references to Google+ page
+
+3.26.3 / 2019-02-23
+===================
+
+ * fix Alpine/Squaw resorts
+
+3.26.2 / 2019-02-22
+===================
+
+ * replace dirty with a basic cache file
+ * upgrade jshint
+
+3.26.1 / 2019-01-05
+===================
+
+ * adjust style for displaying snow conditions
+ * fix Brian Head resort
+ * fix Camelback resort
+ * add falls-creek resort
+
+3.26.0 / 2019-01-04
+===================
+
+ * fix King Pine resort
+ * add openweathermap API support
+ * remove wunderground weather
+
+3.25.0 / 2019-01-02
+===================
+
+ * replace OpenSnow API with NOAA API
+ * add Perisher resort
+ * add Coronet Peak
+
+3.24.2 / 2019-01-02
+===================
+
+ * upgrade css processing tools
+ * replace jade with @pirxpilot/jade-core
+ * fix Owls Heade resort
+
 3.24.1 / 2018-12-13
 ===================
 
