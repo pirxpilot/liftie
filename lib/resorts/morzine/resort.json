@@ -1,16 +1,11 @@
 {
   "name": "Morzine",
   "url": {
-    "host": "http://www.morznet.com",
-    "pathname": "/"
+    "host": "https://en.morzine-avoriaz.com",
+    "pathname": "/ski-lift-opening.html"
   },
-  "tags": [
-    "France",
-    "Alps"
-  ],
-  "ll": [
-    null
-  ],
+  "tags": ["France", "Alps"],
+  "ll": [null],
   "twitter": "morzine",
   "opening": "2018-12-15"
 }
