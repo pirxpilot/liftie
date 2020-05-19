@@ -1,0 +1,16 @@
+GET /api/webcams/v2/list/nearby=46.54,7.98,5/limit=5?show=webcams:image,url
+accept-encoding: br, gzip, deflate
+accept: application/json
+
+HTTP/1.1 200 OK
+x-powered-by: Express
+access-control-allow-origin: *
+content-type: application/json; charset=utf-8
+vary: Accept-Encoding
+date: Tue, 19 May 2020 13:04:50 GMT
+via: 1.1 google
+alt-svc: clear
+connection: close
+transfer-encoding: chunked
+
+{"status":"OK","result":{"offset":0,"limit":5,"total":1,"webcams":[{"id":"1329413077","status":"active","title":"Fieschertal: Jungfrau - Wengen - Interlaken","image":{"current":{"icon":"https://images-webcams.windy.com/77/1329413077/current/icon/1329413077.jpg","thumbnail":"https://images-webcams.windy.com/77/1329413077/current/thumbnail/1329413077.jpg","preview":"https://images-webcams.windy.com/77/1329413077/current/preview/1329413077.jpg","toenail":"https://images-webcams.windy.com/77/1329413077/current/thumbnail/1329413077.jpg"},"sizes":{"icon":{"width":48,"height":48},"thumbnail":{"width":200,"height":112},"preview":{"width":400,"height":224},"toenail":{"width":200,"height":112}},"daylight":{"icon":"https://images-webcams.windy.com/77/1329413077/daylight/icon/1329413077.jpg","thumbnail":"https://images-webcams.windy.com/77/1329413077/daylight/thumbnail/1329413077.jpg","preview":"https://images-webcams.windy.com/77/1329413077/daylight/preview/1329413077.jpg","toenail":"https://images-webcams.windy.com/77/1329413077/daylight/thumbnail/1329413077.jpg"},"update":1589889677},"url":{"current":{"desktop":"https://www.windy.com/webcams/1329413077","mobile":"https://www.windy.com/webcams/1329413077"},"edit":"https://www.windy.com/webcams/1329413077","daylight":{"desktop":"https://www.windy.com/webcams/1329413077","mobile":"https://www.windy.com/webcams/1329413077"}}}]}}
