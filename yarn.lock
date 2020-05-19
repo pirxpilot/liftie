@@ -702,7 +702,7 @@ cookie@0.4.0:
   resolved "https://registry.yarnpkg.com/cookie/-/cookie-0.4.0.tgz#beb437e7022b3b6d49019d088665303ebe9c14ba"
   integrity sha512-+Hp8fLp57wnUSt0tY0tHEXh4voZRDnoIrZPqlo3DPiI4y9lwg/jqx+1Om94/W6ZaPDOUbnjOt/99w66zk+l1Xg==
 
-cookiejar@^2.1.2:
+cookiejar@^2.1.2, cookiejar@~2:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/cookiejar/-/cookiejar-2.1.2.tgz#dd8a235530752f988f9a0844f3fc589e3111125c"
   integrity sha512-Mw+adcfzPxcPeI+0WlvRrr/3lGVO0bD75SxX6811cxSh1Wbxx7xZBGK1eVtDf6si8rg2lhnUjsVLMFMfbRIuwA==
@@ -1276,11 +1276,12 @@ get-caller-file@^2.0.1:
   resolved "https://registry.yarnpkg.com/get-caller-file/-/get-caller-file-2.0.5.tgz#4f94412a82db32f36e3b0b9741f8a97feb031f7e"
   integrity sha512-DyFP3BM/3YHTQOCUL/w0OZHR0lpKeGrxotcHWcqNEdnltqFwXVfhEBQ94eIo34AfQpo0rGki4cyIiftY06h2Fg==
 
-getlet@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/getlet/-/getlet-1.1.0.tgz#5849c3ab176ef71a5c3d7ef096c1d56aa39af213"
-  integrity sha512-9e0dpxWBtNqe9bGjbBwyzyeCPEpOxykPE/oPqr4IJHC5iT58oZcKPxqqU97zVgC4jnMnMURmVeK0VKMIXHiWzg==
+getlet@~2:
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/getlet/-/getlet-2.4.0.tgz#75fa522f564d1bd80353b12528e1139ef939d679"
+  integrity sha512-weuef4KCPUkU/UqQkWsWme2JQgXOu3hp6WESeCAyAAtB099Edx8WQYXJ6DWJbIh8ZM3/ejoNv3OXA1OSPPFNFg==
   dependencies:
+    cookiejar "~2"
     debug "*"
 
 glob@7.1.3:

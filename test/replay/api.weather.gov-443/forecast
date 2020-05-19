@@ -1,5 +1,5 @@
 GET /gridpoints/BTV/107,21/forecast
-accept-encoding: gzip, deflate
+accept-encoding: br, gzip, deflate
 accept: application/geo+json
 
 HTTP/1.1 200 OK
