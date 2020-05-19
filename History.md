@@ -1,4 +1,14 @@
 
+3.29.1 / 2020-05-19
+===================
+
+ * update webcams API
+ * upgrade getlet to 2.4.0
+ * update dependencies
+ * switch to .svg favicons
+ * switch to .woff2 fonts
+ * update README with more info on adding new resorts
+
 3.29.0 / 2020-05-19
 ===================
 
