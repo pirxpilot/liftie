@@ -30,7 +30,6 @@
     "morgan": "^1.9.0",
     "qs": "^6.3.0",
     "ro-rating": "^1.0.2",
-    "serve-favicon": "^2.4.5",
     "superagent": "^4.1.0",
     "tiny-pager": "^1.0.0",
     "to-title-case": "^1.0.0",

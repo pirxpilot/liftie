@@ -6,8 +6,6 @@ var path = require('path');
 var loaders = require('./lib/loaders');
 var plugins = require('./lib/plugins');
 
-var favicon = require('serve-favicon');
-
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var errorHandler = require('errorhandler');
@@ -38,7 +36,6 @@ app.set('views', __dirname + '/views');
 app.engine('jade', require('@pirxpilot/jade-core').__express);
 app.set('view engine', 'jade');
 
-app.use(favicon(path.join(root, 'favicon.ico')));
 app.use(logger('dev'));
 app.use(cookieParser());
 app.use(cachify(root));
