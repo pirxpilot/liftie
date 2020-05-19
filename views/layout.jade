@@ -23,6 +23,10 @@ html(
     meta(property='og:title', content=title)
     +description('og:description')
 
+    link(rel='icon', href=cachify('/favicon.svg'))
+    link(rel='mask-icon', href= href=cachify('/mask-icon.svg'), color='#009ddb')
+    link(rel='apple-touch-icon', href= href=cachify('/apple-touch-icon.png'))
+
     link(rel='dns-prefetch', href='//cdn.polyfill.io')
     link(rel='manifest', href='/manifest.json')
     link(rel='stylesheet', href=cachify('/stylesheets/style#{min}.css'))

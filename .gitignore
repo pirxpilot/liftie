@@ -6,3 +6,4 @@ public/scripts/
 .project
 .settings
 .DS_Store
+package-lock.json

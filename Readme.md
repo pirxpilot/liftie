@@ -28,12 +28,11 @@ Clone this repo (or your fork)
 
     git clone git@github.com:pirxpilot/liftie.git && cd liftie
 
-Install dependencies with npm:
+Install dependencies:
 
-    npm install
+    yarn
 
-Build client side scripts: liftie is using [component](https://github.com/component/component) -
-make will install all external components and trigger component build for you.
+Build client side scripts: `make` will install all external components and trigger component build for you.
 
     make
 
@@ -43,71 +42,113 @@ Run and profit (liftie binds to port 3000 by default)
 
 ## How to add your favorite  ```acme.com``` resort
 
+### Generate resort scaffolding
+
 The easiest way to start working on a new resort is to run `generate` script.
 
     $./bin/generate
 
-    Short name of the resort [acme]:
-    Human readable name of the resort [Acme Ski]:
-    URL of the page with lift status [http://acme.com/lift/status]:
+The script expects the short (one word, dashes OK) identifier of the ski resort, the human readable name and
+the URL of the page with lift status. It also asks for resort geographical coordinates.
 
-    Generating files for Acme Ski
-    Generating lib/resorts/acme.js...
-    Generating test/resorts/acme.js...
-    Retrieving http://acme.com/lift/status to test/resorts/example/acme.html...
+The following files are generated for a newly added resort:
 
-The script expects the short (one word) identifier of the ski resort, the human readable name and
-the URL of the page with lift status. It generates resort module `lib/resort/acme.js` and a test for
-a parsing function `test/resort/acme.js`. It also retrieves the lift status page and puts it in
-`test/resort/example` directory.
+- resort descriptor `lib/resort/acme/resort.json`,
+- parser `lib/resort/acme/index.js`,
+- and a test for a parsing function `test/resort/acme.js`.
+- lift status page retrived from internet `test/resort/example/acme.html` 
+
+You can check [this commit][commit-scaffold] to see what you can expect after this page is completed.
+
+Newly added resort is displayed automatically on liftie index page, but it won't have any lifts at this stage.
+
+### Update test
+
+Now you can flesh out the test by adding expected list of ski lifts. See [this commit][commit-test].
+
+```javascript
+var expected = {
+  'Super Express Lift': 'closed',
+  'Magic Carpet': 'open',
+  'Ultra Gondola': 'hold',
+  'T-Bar': 'scheduled'
+};
+
+```
 
 At this point you should probably run the tests: since parsing function is not implemented the test
 will fail.
 
-`lib/resorts/acme.js` exports the following object
+### Implement parser
 
-    {
-      name: 'Acme Ski Resort',
-      url: {
-        host: 'http://acme.com',
-        pathname: '/lift/status'
-      },
-      tags: ['state', 'area'], // optional
-      parse: function(dom) {}
+`lib/resorts/acme/index.js` exports the following object
+
+
+```javascript
+module.exports = {
+  selector: '.lifts',                // selector for lift information
+  filter: node => node.children,     // optional - add to skip nodes for which filter returns false
+  parse: {
+    name: '0/1',            // example of a simple path descriptor
+    status: {               // example of a compound descriptor
+      child: '+/1',
+      attribute: 'alt',
+      regex: /-([a-z]+)$/,
+      fn: s => s.slice(0, -3)
     }
+  }
+};
+```
 
-Parse function needs to return a lift status object, which will look something like that:
+You need to adjust it to find the lift names and their statuses:
+- `selector` is a CSS selector that should locate the parent of the `name` and `status` elements
+- `parse` needs to contain 2 descriptors - one for `name` and the other for `status`
+- `name` and `status` descriptors have the following properties
+  - `child` - dash-separated path to the name or status HTML element - `index`, `,`, `..`, `+`, `-` are supported
+  - `attribute` - optional - if specified the value of the attribute instead of the contents of the element is used
+  - `regex` - optional - if specified the regex is executed and the value of the first matching group is used
+  - `fn` - optional - if specified the function is called that can be used to convert the value
 
-    {
-      'Super Express Lift': 'closed',
-      'Magic Carpet': 'open',
-      'Ultra Gondola': 'hold',
-      'T-Bar': 'scheduled'
-    }
+If `child` is the only part of the descriptor it can be used directly. In other words:
 
-Newly added resort is displayed automatically on liftie index page.
+```
+name: {
+  child: '0/3'
+}
+```
 
-### Using resort API
+is the same as
+
+```
+name: '0/3'
+```
+
+Check out [this commit][commit-parse] to see the simple parser implemented.
+
+Once parser is ready the tests should succeed.
+
+### Improvements
+
+- [improve weather][commit-noaa] - US resorts can have more precise weather forecast,
+if there is a NOAA station nearby: run `bin/fetch-noaa --overwrite <resort-name>` to find it
+- [add webcams][commit-webcams] - normally just specifying position would add some webcams
+to the liftie page but you can also just add links to the webcams in resort.json descriptor
+
+### Resort JSON API
 
 In addition to parsing lift status pages Liftie supports resorts that make their lift status
 available through REST API. In such cases you need to specify `api` element in resort descriptor.
 
-    {
-      name: 'Acme Ski Resort',
-      url: {
-        host: 'http://acme.com',
-        pathname: '/lift/status'
-      },
-      api: {
-        host: 'http://api.acme.com',
-        pathname: '/api/status'
-      },
-      parse: function(json) {}
-    }
+```json
+"api": {
+  "host": "http://api.acme.com",
+  "pathname": "/api/status"
+}
+```
 
 If `api` is specified Liftie will retrieve status info through HTTP GET. The resort `parse` function
 will receive parsed json instead of the dom tree. Please note that you still need to configure `url` -
-it is used on Liftie pages to send users to official resort page. Check out [Steamboat](https://github.com/pirxpilot/liftie/blob/master/lib/resorts/steamboat.js) implementation, if you are looking for an example.
+it is used on Liftie pages to send users to official resort page. Check out [this implementation](https://github.com/pirxpilot/liftie/blob/master/lib/resorts/pats-peak/index.js), if you are looking for an example.
 
 ## Credits
 
@@ -123,13 +164,9 @@ Tags CSS (stylus) is a simplified version of [Sliding Tags][7] by [Thibaut Couro
 
 ## License
 
-BSD
+[3-Clause BSD License][BSD-3-Clause]
 
-## TODO
-
-- refresh on change only (web sockets?)
-- detect changes and enable change notifications (HTML5 notifications)
-- tweet on change support
+[BSD-3-Clause]: https://opensource.org/licenses/BSD-3-Clause
 
 [1]: http://dribbble.com/shots/587469-Free-16px-Broccolidryiconsaniconsetitisfullof-icons
 [2]: http://licence.visualidiot.com
@@ -140,3 +177,9 @@ BSD
 [7]: http://www.webinterfacelab.com/snippets/sliding-tags
 [8]: http://thibaut.me
 [9]: http://forecastfont.iconvau.lt
+
+[commit-scaffold]: https://github.com/pirxpilot/liftie/commit/fe6185890b18d7496ce7090e0f63af1ae824257c
+[commit-test]: https://github.com/pirxpilot/liftie/commit/6d2b62823e8a19abd022facf0b18c9d4b755e85f
+[commit-parse]: https://github.com/pirxpilot/liftie/commit/8a2baede3d536193b61d787f0333bb53de89efe6
+[commit-noaa]: https://github.com/pirxpilot/liftie/commit/da1756d86ce9506a73e2cd274919e54a6f4bcfbf
+[commit-webcams]: https://github.com/pirxpilot/liftie/commit/de0951ef963732cea7858d7fd8db07f6ac8592ec
