@@ -28,12 +28,11 @@ Clone this repo (or your fork)
 
     git clone git@github.com:pirxpilot/liftie.git && cd liftie
 
-Install dependencies with npm:
+Install dependencies:
 
-    npm install
+    yarn
 
-Build client side scripts: liftie is using [component](https://github.com/component/component) -
-make will install all external components and trigger component build for you.
+Build client side scripts: `make` will install all external components and trigger component build for you.
 
     make
 

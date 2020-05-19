@@ -1,5 +1,4 @@
 bin
-components
 public/stylesheets/*css
 public/stylesheets/*css.gz
 public/scripts/
@@ -9,4 +8,3 @@ templates
 History.md
 .travis.yml
 .jshintrc
-yarn.lock
