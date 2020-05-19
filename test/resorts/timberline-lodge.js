@@ -11,7 +11,9 @@ describe('parse timberline-lodge', function() {
     stream.on('error', done);
     stream.pipe(parser(parse, function(err, status) {
       var expected = {
-        'lift 1': 'open',
+        'STORMIN’ NORMAN': 'open',
+        'MAGIC MILE':  'open',
+        'PALMER': 'scheduled'
       };
       should.exist(status);
       status.should.eql(expected);
