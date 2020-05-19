@@ -5,6 +5,8 @@
     "pathname": "/ski-lift-opening.html"
   },
   "tags": ["France", "Alps"],
-  "ll": [null],
+  "ll": [
+    6.7089, 46.1789
+  ],
   "twitter": "morzine"
 }
