@@ -1,4 +1,15 @@
 
+3.29.2 / 2020-05-20
+===================
+
+ * add preconnect links for twitter related domains
+ * add theme-color
+ * modernize manifest.json
+ * use default browserlist for autoprefixer
+ * drop console.log when minimizing
+ * remove unnecessary user-scalable declaration
+ * update tweet-html
+
 3.29.1 / 2020-05-19
 ===================
 
