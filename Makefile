@@ -28,7 +28,6 @@ all: lint test build
 		--postcss-cachify.baseUrl /stylesheets \
 		--postcss-cachify.basePath public \
 		--use autoprefixer \
-		--autoprefixer.browsers 'last 2 versions, Explorer >= 11, Safari >= 8, Firefox ESR' \
 		--output $@ $@
 
 %.min.css: %.css
