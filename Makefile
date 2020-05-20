@@ -19,7 +19,7 @@ all: lint test build
 	gzip --best --stdout $< > $@
 
 %.min.js: %.js
-	$(NODE_BIN)/uglifyjs $< --mangle --no-copyright --compress --output $@
+	$(NODE_BIN)/uglifyjs $< --mangle --no-copyright --compress "pure_funcs=console.log" --output $@
 
 %.css: %.styl
 	$(NODE_BIN)/stylus $<
