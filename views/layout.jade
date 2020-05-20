@@ -17,7 +17,8 @@ html(
     +description('description')
     meta(name='apple-mobile-web-app-capable', content='yes')
     meta(name='application-name', content='Liftie')
-    meta(name='viewport', content='width=device-width, initial-scale=1, user-scalable=no')
+    meta(name='theme-color', content='#f5f8ff')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
     meta(property='og:type', content='website')
     meta(property='og:image', content=og.image)
     meta(property='og:title', content=title)
@@ -27,7 +28,10 @@ html(
     link(rel='mask-icon', href= href=cachify('/mask-icon.svg'), color='#009ddb')
     link(rel='apple-touch-icon', href= href=cachify('/apple-touch-icon.png'))
 
-    link(rel='dns-prefetch', href='//cdn.polyfill.io')
+    link(rel='preconnect', href='https://cdn.polyfill.io')
+    link(rel='preconnect', href='https://twemoji.maxcdn.com')
+    link(rel='preconnect', href='https://pbs.twimg.com')
+
     link(rel='manifest', href='/manifest.json')
     link(rel='stylesheet', href=cachify('/stylesheets/style#{min}.css'))
     link(rel='publisher', href='https://plus.google.com/107555641794612264233')

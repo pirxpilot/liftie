@@ -19,7 +19,7 @@ all: lint test build
 	gzip --best --stdout $< > $@
 
 %.min.js: %.js
-	$(NODE_BIN)/uglifyjs $< --mangle --no-copyright --compress --output $@
+	$(NODE_BIN)/uglifyjs $< --mangle --no-copyright --compress "pure_funcs=console.log" --output $@
 
 %.css: %.styl
 	$(NODE_BIN)/stylus $<
@@ -28,7 +28,6 @@ all: lint test build
 		--postcss-cachify.baseUrl /stylesheets \
 		--postcss-cachify.basePath public \
 		--use autoprefixer \
-		--autoprefixer.browsers 'last 2 versions, Explorer >= 11, Safari >= 8, Firefox ESR' \
 		--output $@ $@
 
 %.min.css: %.css
