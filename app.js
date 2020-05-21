@@ -28,7 +28,7 @@ Object.assign(app.locals, {
   siteUrl,
   serviceWorker: true,
   og: {
-    image: `${siteUrl}/img/snowflake-256.png`
+    image: `${siteUrl}/img/snowflake-512.png`
   }
 });
 app.set('port', process.env.PORT || 3000);
