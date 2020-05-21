@@ -20,15 +20,19 @@ if (!process.env.SITE_URL) {
 }
 
 const root = path.join(__dirname, 'public');
-const siteUrl = process.env.SITE_URL;
+const {
+  SITE_URL: siteUrl,
+  LIFTIE_STATIC_HOST: staticHost = ''
+} = process.env;
 
 Object.assign(app.locals, {
   min: '.min',
   decorateAbout() {},
   siteUrl,
+  staticHost,
   serviceWorker: true,
   og: {
-    image: `${siteUrl}/img/snowflake-512.png`
+    image: `${staticHost || siteUrl}/img/snowflake-512.png`
   }
 });
 app.set('port', process.env.PORT || 3000);
