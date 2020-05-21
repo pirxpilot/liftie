@@ -7,6 +7,27 @@ When the ski lift status changes, so will the display. No need to hit browser's 
 resorts you are interested in and will show their lift status when you come back. Liftie can even help you find the latest \
 ski resort deals and score discount lift tickets.")
 
+mixin liftie-script(name)
+  - var c = cachify(name + min + '.js', true);
+
+  script(
+    src=staticHost + c.path,
+    integrity=staticHost ? c.integrity : undefined,
+    crossorigin=staticHost ? 'anonymous' : undefined,
+    defer
+  )
+
+
+mixin liftie-stylesheet(name)
+  - var c = cachify(name + min + '.css', true);
+
+  link(
+    rel='stylesheet',
+    href=staticHost + c.path,
+    integrity=staticHost ?  c.integrity : undefined,
+    crossorigin=staticHost ? 'anonymous' : undefined,
+  )
+
 doctype html
 html(
   lang='en-US'
@@ -35,7 +56,7 @@ html(
     link(rel='apple-touch-icon', href= href=staticHost + cachify('/apple-touch-icon.png'))
 
     link(rel='manifest', href='/manifest.json')
-    link(rel='stylesheet', href=staticHost + cachify('/stylesheets/style#{min}.css'))
+    +liftie-stylesheet('/stylesheets/style')
     link(rel='publisher', href='https://plus.google.com/107555641794612264233')
   body(data-ga-property-id=settings.gaPropertyId)
     block content
@@ -71,4 +92,4 @@ html(
         'getComputedStyle'
       ].join(',');
     script(src='https://cdn.polyfill.io/v2/polyfill#{min}.js?features=#{features}', defer)
-    script(src=staticHost + cachify('/scripts/liftie#{min}.js'), defer)
+    +liftie-script('/scripts/liftie')
