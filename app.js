@@ -1,16 +1,16 @@
-var express = require('express');
-var cachify = require('connect-cachify-static');
-var gzip = require('connect-gzip-static');
-var http = require('http');
-var path = require('path');
-var loaders = require('./lib/loaders');
-var plugins = require('./lib/plugins');
+const express = require('express');
+const cachify = require('connect-cachify-static');
+const gzip = require('connect-gzip-static');
+const http = require('http');
+const path = require('path');
+const loaders = require('./lib/loaders');
+const plugins = require('./lib/plugins');
 
-var cookieParser = require('cookie-parser');
-var logger = require('morgan');
-var errorHandler = require('errorhandler');
+const cookieParser = require('cookie-parser');
+const logger = require('morgan');
+const errorHandler = require('errorhandler');
 
-var app = module.exports = express();
+const app = module.exports = express();
 
 
 if (!process.env.SITE_URL) {
@@ -19,20 +19,20 @@ if (!process.env.SITE_URL) {
     'http://locahost:3000';
 }
 
-var root = path.join(__dirname, 'public');
-var siteUrl = process.env.SITE_URL;
+const root = path.join(__dirname, 'public');
+const siteUrl = process.env.SITE_URL;
 
 Object.assign(app.locals, {
   min: '.min',
-  decorateAbout: function() {},
-  siteUrl: siteUrl,
+  decorateAbout() {},
+  siteUrl,
   serviceWorker: true,
   og: {
-    image: siteUrl + '/img/snowflake-256.png'
+    image: `${siteUrl}/img/snowflake-256.png`
   }
 });
 app.set('port', process.env.PORT || 3000);
-app.set('views', __dirname + '/views');
+app.set('views', `${__dirname}/views`);
 app.engine('jade', require('@pirxpilot/jade-core').__express);
 app.set('view engine', 'jade');
 
