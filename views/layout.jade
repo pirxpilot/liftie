@@ -12,6 +12,7 @@ mixin liftie-script(name)
 
   script(
     src=staticHost + c.path,
+    nonce=cspNonce,
     integrity=staticHost ? c.integrity : undefined,
     crossorigin=staticHost ? 'anonymous' : undefined,
     defer
