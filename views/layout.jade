@@ -7,6 +7,28 @@ When the ski lift status changes, so will the display. No need to hit browser's 
 resorts you are interested in and will show their lift status when you come back. Liftie can even help you find the latest \
 ski resort deals and score discount lift tickets.")
 
+mixin liftie-script(name)
+  - var c = cachify(name + min + '.js', true);
+
+  script(
+    src=staticHost + c.path,
+    nonce=cspNonce,
+    integrity=staticHost ? c.integrity : undefined,
+    crossorigin=staticHost ? 'anonymous' : undefined,
+    defer
+  )
+
+
+mixin liftie-stylesheet(name)
+  - var c = cachify(name + min + '.css', true);
+
+  link(
+    rel='stylesheet',
+    href=staticHost + c.path,
+    integrity=staticHost ?  c.integrity : undefined,
+    crossorigin=staticHost ? 'anonymous' : undefined,
+  )
+
 doctype html
 html(
   lang='en-US'
@@ -24,16 +46,17 @@ html(
     meta(property='og:title', content=title)
     +description('og:description')
 
-    link(rel='icon', href=cachify('/favicon.svg'))
-    link(rel='mask-icon', href= href=cachify('/mask-icon.svg'), color='#009ddb')
-    link(rel='apple-touch-icon', href= href=cachify('/apple-touch-icon.png'))
-
-    link(rel='preconnect', href='https://cdn.polyfill.io')
     link(rel='preconnect', href='https://twemoji.maxcdn.com')
     link(rel='preconnect', href='https://pbs.twimg.com')
+    if staticHost
+      link(rel='preconnect', href=staticHost)
+
+    link(rel='icon', href=staticHost + cachify('/favicon.svg'))
+    link(rel='mask-icon', href= href=staticHost + cachify('/mask-icon.svg'), color='#009ddb')
+    link(rel='apple-touch-icon', href= href=staticHost + cachify('/apple-touch-icon.png'))
 
     link(rel='manifest', href='/manifest.json')
-    link(rel='stylesheet', href=cachify('/stylesheets/style#{min}.css'))
+    +liftie-stylesheet('/stylesheets/style')
     link(rel='publisher', href='https://plus.google.com/107555641794612264233')
   body(data-ga-property-id=settings.gaPropertyId)
     block content
@@ -60,13 +83,5 @@ html(
         - var slug = tag ? '/' + tag : ''
         a.icon-alone(href='/stats#{slug}', title='Check statistics')
           span.ls-pie
-    -
-      var features = [
-        'Element.prototype.classList',
-        'Element.prototype.dataset',
-        'Event',
-        'fetch',
-        'getComputedStyle'
-      ].join(',');
-    script(src='https://cdn.polyfill.io/v2/polyfill#{min}.js?features=#{features}', defer)
-    script(src=cachify('/scripts/liftie#{min}.js'), defer)
+
+    +liftie-script('/scripts/liftie')
