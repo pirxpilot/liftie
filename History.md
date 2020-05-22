@@ -1,4 +1,15 @@
 
+3.29.3 / 2020-05-22
+===================
+
+ * fix same-site cookie warning
+ * add preload headers for fonts
+ * add Feature-Policy, Referrer-Policy, and  Content-Security-Policy headers
+ * remove polyfills - not needed by modern browsers
+ * add integrity for stylesheet and script
+ * add support for static host
+ * fix og:image reference
+
 3.29.2 / 2020-05-20
 ===================
 
