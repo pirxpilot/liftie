@@ -45,7 +45,6 @@ html(
     meta(property='og:title', content=title)
     +description('og:description')
 
-    link(rel='preconnect', href='https://cdn.polyfill.io')
     link(rel='preconnect', href='https://twemoji.maxcdn.com')
     link(rel='preconnect', href='https://pbs.twimg.com')
     if staticHost
@@ -83,13 +82,5 @@ html(
         - var slug = tag ? '/' + tag : ''
         a.icon-alone(href='/stats#{slug}', title='Check statistics')
           span.ls-pie
-    -
-      var features = [
-        'Element.prototype.classList',
-        'Element.prototype.dataset',
-        'Event',
-        'fetch',
-        'getComputedStyle'
-      ].join(',');
-    script(src='https://cdn.polyfill.io/v2/polyfill#{min}.js?features=#{features}', defer)
+
     +liftie-script('/scripts/liftie')
