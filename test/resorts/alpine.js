@@ -11,19 +11,18 @@ describe('parse alpine', function() {
     stream.on('error', done);
     stream.pipe(parser(parse, function(err, status) {
       var expected = {
-        'Summit Express': 'scheduled',
-        'Roundhouse': 'scheduled',
-        'Hot Wheels': 'scheduled',
-        'Scott': 'scheduled',
-        'Lakeview': 'scheduled',
-        'Yellow': 'scheduled',
-        'Meadow': 'scheduled',
-        'Subway': 'scheduled',
-        'Kangaroo': 'scheduled',
-        'Alpine Bowl Chair': 'scheduled',
-        'Sherwood Express': 'scheduled',
-        'Little Carpet': 'scheduled',
-        'Big Carpet': 'scheduled'
+        'Summit Express': 'closed',
+        'Roundhouse': 'closed',
+        'Scott': 'closed',
+        'Lakeview': 'closed',
+        'Yellow': 'closed',
+        'Meadow': 'closed',
+        'Subway': 'closed',
+        'Kangaroo': 'closed',
+        'Alpine Bowl Chair': 'closed',
+        'Sherwood Express': 'closed',
+        'Treeline Cirque': 'closed',
+        'Big Carpet': 'closed'
       };
       should.exist(expected);
       status.should.eql(expected);
