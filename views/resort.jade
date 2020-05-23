@@ -103,7 +103,7 @@ mixin twitter(resort)
 
 mixin addToTrip(resort)
   if resort.ll
-    a.add-to-trip(href='https://trips.furkot.com/trip?#{addToTrip(resort)}', target='_blank')
+    a.add-to-trip(href='https://trips.furkot.com/trip?#{addToTrip(resort)}', target='_blank', rel='noopener')
       span.ls-furkot
       span Plan trip to #{resort.name}
 
