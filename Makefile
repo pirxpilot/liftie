@@ -13,10 +13,10 @@ all: lint test build
 # common rules
 
 %.br: %
-	bro --input $< --output $@
+	brotli --best --force $<
 
 %.gz: %
-	gzip --best --stdout $< > $@
+	gzip --best --force --keep $<
 
 %.min.js: %.js
 	$(NODE_BIN)/uglifyjs $< --mangle --no-copyright --compress "pure_funcs=console.log" --output $@
