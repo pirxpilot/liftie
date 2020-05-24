@@ -1,17 +1,9 @@
-var parse = require('../../lib/lifts/parse')('buttermilk');
+const lifts = require('../lifts');
 
-/*global describe, it */
-describe('parse buttermilk', function() {
-
-  it('should return lift status', function() {
-    var data = require('./example/buttermilk.json');
-    var expected = {
-      'Summit Express': 'closed',
-      'West Buttermilk Express': 'closed',
-      'Tiehack Express': 'closed',
-      'Panda Carpet': 'closed',
-      'Mitey Carpet': 'closed'
-    };
-    parse(data).should.eql(expected);
-  });
+lifts('buttermilk', 'json', {
+  'Summit Express': 'closed',
+  'West Buttermilk Express': 'closed',
+  'Tiehack Express': 'closed',
+  'Panda Carpet': 'closed',
+  'Mitey Carpet': 'closed'
 });

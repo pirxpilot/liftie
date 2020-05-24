@@ -1,17 +1,7 @@
-var should = require('should');
-var fs = require('fs');
-var parser = require('../../lib/lifts/parser');
-var parse = require('../../lib/lifts/parse')('laplagne');
+const lifts = require('../lifts');
 
-/*global describe, it */
-describe('parse laplagne', function() {
-
-  it('should return lift status', function(done) {
-    var stream = fs.createReadStream(__dirname + '/example/laplagne.html');
-    stream.on('error', done);
-    stream.pipe(parser(parse, function(err, status) {
-      var expected = {
-        'TC BELLECOTE': 'closed',
+lifts('laplagne', 'html', {
+  'TC BELLECOTE': 'closed',
   'TS CHALET BELLECOTE': 'closed',
   'TS GLACIER': 'closed',
   'TS TRAVERSEE': 'closed',
@@ -33,7 +23,7 @@ describe('parse laplagne', function() {
   'TS VERDONS NORD': 'closed',
   'FIL NEIGE JARDIN': 'scheduled',
   'FIL NEIGE MICKEY': 'scheduled',
-  TELEBABY: 'scheduled',
+  'TELEBABY': 'scheduled',
   'TELECORDE SOLU': 'scheduled',
   'TK AOLLETS': 'closed',
   'TK BIQUET': 'scheduled',
@@ -122,10 +112,4 @@ describe('parse laplagne', function() {
   'LES COCHES': 'scheduled',
   'MONTALBERT': 'scheduled',
   'MONTCHAVIN': 'scheduled'
-      };
-      should.exist(status);
-      status.should.eql(expected);
-      done(err);
-    }));
-  });
 });
