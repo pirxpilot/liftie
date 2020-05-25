@@ -1,4 +1,4 @@
-var should = require('should');
+var assert = require('assert');
 var webcams = require('../lib/webcams');
 
 /*global describe, it*/
@@ -7,46 +7,44 @@ describe('webcams', function() {
 
   it('should return no webcams if location is missing', function(done) {
     webcams({}, function(err, webcams) {
-      should.not.exist(err);
-      should.not.exist(webcams);
+      assert.ifError(err);
+      assert.ok(!webcams);
       done();
     });
   });
 
 
-  if (!process.env.WEBCAMS_API_KEY) {
-    it.skip('should return webcams for valid location');
-  } else{
-    it('should return webcams for valid location', function(done) {
-      webcams({
-        counter: 1,
-        ll: [ 7.98, 46.54 ] // from API examples https://developers.webcams.travel/#webcams/examples
-      }, function(err, webcams) {
-        var webcam, mobile;
+  it('should return webcams for valid location', function(done) {
+    process.env.WEBCAMS_API_KEY = 'TEST_KEY';
+    webcams({
+      counter: 1,
+      ll: [ 7.98, 46.54 ] // from API examples https://developers.webcams.travel/#webcams/examples
+    }, function(err, webcams) {
+      delete process.env.WEBCAMS_API_KEY;
 
-        should.not.exist(err);
-        should.exist(webcams);
+      var webcam, mobile;
 
-        webcams.should.not.be.empty();
+      assert.ifError(err);
+      assert.ok(webcams);
+      assert.ok(webcams.length > 0);
 
-        webcam = webcams[0];
+      webcam = webcams[0];
 
-        webcam.should.have.property('name', 'Fieschertal: Jungfrau - Wengen - Interlaken');
-        webcam.should.have.property('source').with.startWith('https://www.windy.com/webcams/1329413077');
-        webcam.should.have.property('image').with.startWith('https://images-webcams.windy.com');
-        webcam.should.have.property('notice').with.startWith('Webcams provided by\n<a href="https://www.windy.com/"');
+      assert.equal(webcam.name, 'Fieschertal: Jungfrau - Wengen - Interlaken');
+      assert.ok(webcam.source.startsWith('https://www.windy.com/webcams/1329413077'));
+      assert.ok(webcam.image.startsWith('https://images-webcams.windy.com'));
+      assert.ok(webcam.notice.startsWith('Webcams provided by\n<a href="https://www.windy.com/"'));
 
-        webcam.should.have.property('mobile').with.type('object');
-        mobile = webcam.mobile;
+      assert.equal(typeof webcam.mobile, 'object');
+      mobile = webcam.mobile;
 
-        mobile.should.have.property('name', 'Fieschertal: Jungfrau - Wengen - Interlaken');
-        mobile.should.have.property('source').with.startWith('https://www.windy.com/webcams/1329413077');
-        mobile.should.have.property('image').with.startWith('https://images-webcams.windy.com');
-        mobile.should.have.property('notice').with.startWith('Webcams provided by\n<a href="https://www.windy.com/"');
+      assert.equal(mobile.name, 'Fieschertal: Jungfrau - Wengen - Interlaken');
+      assert.ok(mobile.source.startsWith('https://www.windy.com/webcams/1329413077'));
+      assert.ok(mobile.image.startsWith('https://images-webcams.windy.com'));
+      assert.ok(mobile.notice.startsWith('Webcams provided by\n<a href="https://www.windy.com/"'));
 
-        done(err);
-      });
+      done(err);
     });
-  }
+  });
 
 });

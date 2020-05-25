@@ -1,4 +1,4 @@
-var should = require('should');
+var assert = require('assert');
 var opening = require('../lib/opening');
 var day = require('../lib/tools/millis').day;
 
@@ -20,7 +20,7 @@ var past = iso(now - 2 * day);
 describe('opening', function() {
   it('should be empty for missing dates', function(done) {
     opening({}, function(err, od) {
-      should.not.exist(od);
+      assert.ok(!od);
       done(err);
     });
   });
@@ -29,7 +29,7 @@ describe('opening', function() {
     opening({
       opening: 'abc'
     }, function(err, od) {
-      should.not.exist(od);
+      assert.ok(!od);
       done(err);
     });
   });
@@ -38,7 +38,7 @@ describe('opening', function() {
     opening({
       opening: past
     }, function(err, od) {
-      should.not.exist(od);
+      assert.ok(!od);
       done(err);
     });
   });
@@ -47,7 +47,7 @@ describe('opening', function() {
     opening({
       opening: today
     }, function(err, od) {
-      should.not.exist(od);
+      assert.ok(!od);
       done(err);
     });
   });
@@ -56,8 +56,8 @@ describe('opening', function() {
     opening({
       opening: future
     }, function(err, od) {
-      should.exist(od);
-      od.should.eql(future);
+      assert.ok(od);
+      assert.equal(od, future);
       done(err);
     });
   });
