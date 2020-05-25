@@ -1,6 +1,8 @@
 var assert = require('assert');
 var webcams = require('../lib/webcams');
 
+require('./replay');
+
 /*global describe, it*/
 
 describe('webcams', function() {

@@ -37,7 +37,7 @@ lint:
 	$(NODE_BIN)/jshint $(LINT_SRC)
 
 test:
-	$(NODE_BIN)/mocha --recursive --require test/replay
+	$(NODE_BIN)/mocha --recursive
 
 $(BUILD_DIR):
 	mkdir -p $@

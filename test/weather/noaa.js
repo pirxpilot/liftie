@@ -1,6 +1,8 @@
 const assert = require('assert');
 const noaa = require('../../lib/weather/noaa');
 
+require('../replay');
+
 /*global describe, it*/
 
 describe('noaa', function() {

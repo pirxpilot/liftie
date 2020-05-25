@@ -1,6 +1,8 @@
 const assert = require('assert');
 const openweather = require('../../lib/weather/openweather');
 
+require('../replay');
+
 /*global describe, it */
 
 describe('openweather', function() {

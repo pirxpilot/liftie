@@ -1,6 +1,8 @@
 var assert = require('assert');
 var twitter = require('../../lib/twitter');
 
+require('../replay');
+
 /*global describe, it*/
 
 describe('twitter', function() {
