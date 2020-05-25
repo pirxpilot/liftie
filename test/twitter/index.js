@@ -13,27 +13,22 @@ describe('twitter', function() {
     });
   });
 
-  // configure TWITTER_TOKEN to run the test
-  if (process.env.TWITTER_TOKEN) {
-    it('should return tweets for valid handle', function(done) {
-      twitter({
-        twitter: 'cannonmountain',
-      }, function(err, result) {
-        assert.ifError(err);
-        assert.ok(result);
-        assert.equal(result.user, 'cannonmountain');
-        assert.ok(result.tweets);
-        result.tweets.forEach(function(t) {
-          assert.equal(typeof t.id_str, 'string');
-          assert.equal(typeof t.created_at, 'string');
-          assert.ok(Date.now() > new Date(t.created_at));
-          assert.equal(typeof t.text, 'string');
-          assert.equal(typeof t.entities, 'object');
-        });
-        done(err);
+  it('should return tweets for valid handle', function(done) {
+    twitter({
+      twitter: 'cannonmountain',
+    }, function(err, result) {
+      assert.ifError(err);
+      assert.ok(result);
+      assert.equal(result.user, 'cannonmountain');
+      assert.ok(result.tweets);
+      result.tweets.forEach(function(t) {
+        assert.equal(typeof t.id_str, 'string');
+        assert.equal(typeof t.created_at, 'string');
+        assert.ok(Date.now() > new Date(t.created_at));
+        assert.equal(typeof t.text, 'string');
+        assert.equal(typeof t.entities, 'object');
       });
+      done(err);
     });
-  } else {
-    it.skip('should return tweets for valid handle');
-  }
+  });
 });
