@@ -4,6 +4,8 @@ NODE_BIN=./node_modules/.bin
 BUILD_DIR=public/scripts
 CSS_DIR=public/stylesheets
 SRC = $(wildcard lib/client/*/*.js)
+TESTS = $(filter-out test/replay/%, $(wildcard test/*.js test/*/*.js))
+
 LINT_SRC = app.js bin/generate lib test
 
 PLUGINS = lifts twitter weather webcams snow
@@ -37,7 +39,7 @@ lint:
 	$(NODE_BIN)/jshint $(LINT_SRC)
 
 test:
-	$(NODE_BIN)/mocha --recursive
+	$(NODE_BIN)/tape $(TESTS) | $(NODE_BIN)/tap-dot
 
 $(BUILD_DIR):
 	mkdir -p $@
