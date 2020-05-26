@@ -1,16 +1,6 @@
-var should = require('should');
-var fs = require('fs');
-var parser = require('../../lib/lifts/parser');
-var parse = require('../../lib/lifts/parse')('megeve');
+const lifts = require('../lifts');
 
-/*global describe, it */
-describe('parse megeve', function() {
-
-  it('should return lift status', function(done) {
-    var stream = fs.createReadStream(__dirname + '/example/megeve.html');
-    stream.on('error', done);
-    stream.pipe(parser(parse, function(err, status) {
-      var expected = {
+lifts('megeve', 'html', {
 'CAISSE CENTRALE': 'scheduled',
 'CAISSE DANDRY': 'scheduled',
 'CAISSE JAILLET': 'scheduled',
@@ -112,10 +102,4 @@ describe('parse megeve', function() {
 'TSF TETE TORRAZ': 'scheduled',
 'lesportesdumontblanc.fr': 'open'
 
-      };
-      should.exist(status);
-      status.should.eql(expected);
-      done(err);
-    }));
-  });
 });

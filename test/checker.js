@@ -1,31 +1,33 @@
+var test = require('tape');
 var check = require('../lib/checker');
 
-/*global describe, it*/
+test('stats should return valid names when requested not specified', function(t) {
+  var valid = ['a', 'b', 'c'];
+  valid.forEach(function (v) {
+    valid[v] = true;
+  });
+  t.deepEqual(check(null, valid, valid), valid);
+  t.end();
+});
 
-describe('stats', function() {
-  it('should return valid names when requested not specified', function() {
-    var valid = ['a', 'b', 'c'];
-    valid.forEach(function (v) {
-      valid[v] = true;
-    });
-    check(null, valid, valid).should.eql(valid);
+test('stats should filter out invalid names', function(t) {
+  var valid = ['a', 'b', 'c'];
+  valid.forEach(function (v) {
+    valid[v] = true;
   });
-  it('should filter out invalid names', function() {
-    var valid = ['a', 'b', 'c'];
-    valid.forEach(function (v) {
-      valid[v] = true;
-    });
-    check('a', valid).should.eql(['a']);
-    check('a,x,c', valid).should.eql(['a', 'c']);
-    check('x,y,z', valid).should.eql([]);
+  t.deepEqual(check('a', valid), ['a']);
+  t.deepEqual(check('a,x,c', valid), ['a', 'c']);
+  t.deepEqual(check('x,y,z', valid), []);
+  t.end();
+});
+
+test('stats should work with Arrays', function(t) {
+  var valid = ['a', 'b', 'c'];
+  valid.forEach(function (v) {
+    valid[v] = true;
   });
-  it('should work with Arrays', function() {
-    var valid = ['a', 'b', 'c'];
-    valid.forEach(function (v) {
-      valid[v] = true;
-    });
-    check(['a'], valid).should.eql(['a']);
-    check(['a', 'x', 'c'], valid).should.eql(['a', 'c']);
-    check(['x', 'y', 'z'], valid).should.eql([]);
-  });
+  t.deepEqual(check(['a'], valid), ['a']);
+  t.deepEqual(check(['a', 'x', 'c'], valid), ['a', 'c']);
+  t.deepEqual(check(['x', 'y', 'z'], valid), []);
+  t.end();
 });
