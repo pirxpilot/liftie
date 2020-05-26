@@ -1,4 +1,16 @@
 
+3.29.5 / 2020-05-26
+===================
+
+ * replace mocha/should with tape
+ * use replay to test twitter
+ * simplify resort tests
+ * fix About link
+ * update NOAA stations
+ * use standard brotli tool
+ * add missing noopener for furkot links
+ * upgrade tweet-html to 1.5.1
+
 3.29.4 / 2020-05-22
 ===================
 
