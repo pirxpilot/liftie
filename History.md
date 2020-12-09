@@ -1,4 +1,10 @@
 
+3.29.6 / 2020-12-09
+===================
+
+ * fix Attitash, Wildcat, Mount Snow
+ * make manifest icons maskable
+
 3.29.5 / 2020-05-26
 ===================
 
