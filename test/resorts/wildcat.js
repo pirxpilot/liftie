@@ -1,9 +1,9 @@
 const lifts = require('../lifts');
 
 lifts('wildcat', 'html', {
-  'Bobcat Triple': 'closed',
-  'Snowcat Triple': 'closed',
+  'Bobcat': 'closed',
+  'Snowcat': 'closed',
   'Snowbelt': 'closed',
-  'Tomcat Triple': 'closed',
-  'Wildcat Express Quad': 'open'
+  'Tomcat': 'closed',
+  'Wildcat Express': 'closed'
 });
