@@ -23,13 +23,14 @@ all: lint test build
 %.min.js: %.js
 	$(NODE_BIN)/uglifyjs $< --mangle --no-copyright --compress "pure_funcs=console.log" --output $@
 
-%.css: %.styl
+%.styl.css: %.styl
 	$(NODE_BIN)/stylus $<
+
+%.css: %.styl.css
 	$(NODE_BIN)/postcss \
 		--use postcss-cachify \
 		--postcss-cachify.baseUrl /stylesheets \
 		--postcss-cachify.basePath public \
-		--use autoprefixer \
 		--output $@ $@
 
 %.min.css: %.css
