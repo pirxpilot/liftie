@@ -38,7 +38,7 @@
   "devDependencies": {
     "@pirxpilot/replay": "^2.2.1",
     "browserify": "~16",
-    "clean-css-cli": "^4.1.9",
+    "clean-css-cli": "^5.1.0",
     "commander": "~2",
     "jshint": "~2",
     "postcss-cachify": "^1.4.0",

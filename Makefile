@@ -34,7 +34,7 @@ all: lint test build
 		--output $@ $@
 
 %.min.css: %.css
-	$(NODE_BIN)/cleancss --skip-rebase -O1 --output $@ $<
+	$(NODE_BIN)/cleancss -O1 --output $@ $<
 
 lint:
 	$(NODE_BIN)/jshint $(LINT_SRC)
