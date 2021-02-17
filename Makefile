@@ -21,19 +21,27 @@ all: lint test build
 	gzip --best --force --keep $<
 
 %.min.js: %.js
-	$(NODE_BIN)/uglifyjs $< --mangle --no-copyright --compress "pure_funcs=console.log" --output $@
+	$(NODE_BIN)/terser \
+		--define DEBUG=false \
+		--ecma 2018 \
+		--mangle \
+		--compress warnings=false \
+		--compress drop_console \
+		--output $@ \
+		-- $<
 
-%.css: %.styl
+%.styl.css: %.styl
 	$(NODE_BIN)/stylus $<
+
+%.css: %.styl.css
 	$(NODE_BIN)/postcss \
 		--use postcss-cachify \
 		--postcss-cachify.baseUrl /stylesheets \
 		--postcss-cachify.basePath public \
-		--use autoprefixer \
 		--output $@ $@
 
 %.min.css: %.css
-	$(NODE_BIN)/cleancss --skip-rebase -O1 --output $@ $<
+	$(NODE_BIN)/cleancss -O1 --output $@ $<
 
 lint:
 	$(NODE_BIN)/jshint $(LINT_SRC)
