@@ -1,4 +1,15 @@
 
+3.30.0 / 2021-02-17
+===================
+
+ * upgrade postcss-cli-simple
+ * replace ugligy with terser
+ * upgrade clean-css
+ * remove autoprefixer
+ * upgrade stylus
+ * improve displaying tweets with line-breaks
+ * upgrade tweet-html
+
 3.29.6 / 2020-12-09
 ===================
 
