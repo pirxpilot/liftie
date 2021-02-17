@@ -1925,18 +1925,18 @@ postcss-cachify@^1.4.0:
     postcss "~5 || ~6 || ~7"
 
 postcss-cli-simple@~3:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/postcss-cli-simple/-/postcss-cli-simple-3.0.1.tgz#21d4ab5892a72d33fe248ae06bbacd8450f0f701"
-  integrity sha512-bP1MWLovok4hGs6mzX6udkGGlSsE+/iGX3QQuNhy44Fq5ShV+ZeDGFSOg9TmURo4m2CB/74sjnizFTwqCw7lEg==
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/postcss-cli-simple/-/postcss-cli-simple-3.1.0.tgz#3b0c80ad57d86a3563011c9f7278bf8a6eb845c1"
+  integrity sha512-HrLzRWMR7wUGQsPYHtaI9VM8qEKLlPV84XlT3bzSxrC5/V9iKRcGVVaZDKiJAvSJtta/Kw4Ho+1GXFVd+HC3hA==
   dependencies:
     async "~3"
     postcss "~5 || ~6 || ~7"
     yargs-parser "~18"
 
 "postcss@~5 || ~6 || ~7":
-  version "7.0.30"
-  resolved "https://registry.yarnpkg.com/postcss/-/postcss-7.0.30.tgz#cc9378beffe46a02cbc4506a0477d05fcea9a8e2"
-  integrity sha512-nu/0m+NtIzoubO+xdAlwZl/u5S5vi/y6BCsoL8D+8IxsD3XvBS8X4YEADNIVXKVuQvduiucnRv+vPIqj56EGMQ==
+  version "7.0.35"
+  resolved "https://registry.yarnpkg.com/postcss/-/postcss-7.0.35.tgz#d2be00b998f7f211d8a276974079f2e92b970e24"
+  integrity sha512-3QT8bBJeX/S5zKTTjTCIjRF3If4avAT6kqxcASlTWEtAFCb9NH0OUxNDfgZSWdP5fJnBYCMEWkIFfWeugjzYMg==
   dependencies:
     chalk "^2.4.2"
     source-map "^0.6.1"
