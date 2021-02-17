@@ -31,6 +31,7 @@
     "qs": "^6.3.0",
     "ro-rating": "^1.0.2",
     "superagent": "^4.1.0",
+    "terser": "^5.6.0",
     "tiny-pager": "^1.0.0",
     "to-title-case": "^1.0.0",
     "tweet-html": "^2.1.0"
@@ -46,8 +47,7 @@
     "prompt": "~1",
     "stylus": "^0.54.8",
     "tap-dot": "^2.0.0",
-    "tape": "^5.0.1",
-    "uglify-js": "~3"
+    "tape": "^5.0.1"
   },
   "browser": {
     "chart": "chart.js",
