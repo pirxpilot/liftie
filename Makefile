@@ -10,6 +10,14 @@ LINT_SRC = app.js bin/generate lib test
 
 PLUGINS = lifts twitter weather webcams snow
 
+ifndef TAP_REPORTER
+	ifneq (, $(shell which tap-difflet))
+		TAP_REPORTER = tap-difflet --pessimistic
+	else
+		TAP_REPORTER = cat
+	endif
+endif
+
 all: lint test build
 
 # common rules
@@ -47,7 +55,7 @@ lint:
 	$(NODE_BIN)/jshint $(LINT_SRC)
 
 test:
-	$(NODE_BIN)/tape $(TESTS) | $(NODE_BIN)/tap-dot
+	$(NODE_BIN)/tape $(TESTS) | $(TAP_REPORTER)
 
 $(BUILD_DIR):
 	mkdir -p $@

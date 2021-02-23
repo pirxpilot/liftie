@@ -46,7 +46,6 @@
     "postcss-cli-simple": "~3",
     "prompt": "~1",
     "stylus": "^0.54.8",
-    "tap-dot": "^2.0.0",
     "tape": "^5.0.1"
   },
   "browser": {
