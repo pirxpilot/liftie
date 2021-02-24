@@ -1,4 +1,12 @@
 
+3.30.1 / 2021-02-24
+===================
+
+ * fix Sunday River for new season
+ * fix Big Sky for new season
+ * fixes to boyne parser
+ * make tap reporter configurable
+
 3.30.0 / 2021-02-17
 ===================
 
