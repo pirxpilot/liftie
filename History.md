@@ -1,4 +1,10 @@
 
+3.30.2 / 2021-02-25
+===================
+
+ * improve Makefile to run yarn automatically
+ * add `start_url` to manifest
+
 3.30.1 / 2021-02-24
 ===================
 
