@@ -51,10 +51,14 @@ all: lint test build
 %.min.css: %.css
 	$(NODE_BIN)/cleancss -O1 --output $@ $<
 
-lint:
+node_modules: package.json $(wildcard yarn.lock)
+	yarn --cwd $(@D) --no-progress --frozen-lockfile --silent
+	touch $@
+
+lint: | node_modules
 	$(NODE_BIN)/jshint $(LINT_SRC)
 
-test:
+test: | node_modules
 	$(NODE_BIN)/tape $(TESTS) | $(TAP_REPORTER)
 
 $(BUILD_DIR):
