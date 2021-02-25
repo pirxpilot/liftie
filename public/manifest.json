@@ -2,6 +2,7 @@
   "short_name": "Liftie",
   "name": "Liftie - Clean, simple, easy to read, fast ski resort lift status.",
   "description": "Liftie monitors lift status for selected ski resorts. When the lift status changes, so will the display. No need to hit browser's Refresh button. Liftie remembers which resorts you are interested in and will show their lift status when you come back.",
+  "start_url": "/stars",
   "display": "standalone",
   "scope": "/",
   "theme_color": "#f5f8ff",
