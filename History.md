@@ -1,4 +1,9 @@
 
+3.30.4 / 2021-04-07
+===================
+
+ * update Vail parser to follow through the waitingroom
+
 3.30.3 / 2021-03-08
 ===================
 
