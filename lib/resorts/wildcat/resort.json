@@ -1,7 +1,7 @@
 {
   "name": "Wildcat",
   "url": {
-    "host": "http://www.skiwildcat.com",
+    "host": "https://www.skiwildcat.com",
     "pathname": "/the-mountain/mountain-conditions/lift-and-terrain-status.aspx"
   },
   "tags": [
