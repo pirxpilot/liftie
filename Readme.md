@@ -3,6 +3,14 @@
 [![Dependency Status](https://img.shields.io/david/pirxpilot/liftie.svg)](https://david-dm.org/pirxpilot/liftie)
 [![Dev Dependency Status](https://img.shields.io/david/dev/pirxpilot/liftie.svg)](https://david-dm.org/pirxpilot/liftie?type=dev)
 
+# FATMAP specific
+
+We host this as a mirror of liftie.info @ heroku. As far as we know, it's only used in one place - the regions table in atlas. There is a script to update the URLs there: https://github.com/FATMAP/Atlas/blob/f403603a3c778a1c930c01ab49433fb9da7f6c31/scripts/replace_within_jsonb_array.rb
+
+## prior incidents
+
+https://fatmap.slab.com/posts/2021-06-15-lift-status-down-qzsucbbn
+
 # liftie.info
 
 Clean, simple, easy to read, fast ski resort lift status.
