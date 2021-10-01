@@ -45,7 +45,7 @@
     "postcss-cachify": "^1.4.0",
     "postcss-cli-simple": "~3",
     "prompt": "~1",
-    "stylus": "^0.54.8",
+    "stylus": "^0.55.0",
     "tape": "^5.0.1"
   },
   "browser": {
