@@ -9,7 +9,7 @@
     "@pirxpilot/jade-core": "^1.12.1",
     "@pirxpilot/k": "^1.0.0",
     "@pirxpilot/swipe": "^2.0.2",
-    "async": "~2",
+    "async": "~3",
     "chart.js": "^1.0.2",
     "connect-cachify-static": "^1.5.1",
     "connect-gzip-static": "^2.1.1",
