@@ -1,4 +1,17 @@
 
+3.31.0 / 2021-10-02
+===================
+
+ * add Ponte di Legno - Tonale resorts
+ * add Folgarida Marilleva
+ * add Pinzolo
+ * add Madonna di Campiglio
+ * fix Arapahoe Basin resort
+ * fix June Mountain resort
+ * fix Alyeska resort
+ * dependency update
+ * remove cert checking hack
+
 3.30.4 / 2021-04-07
 ===================
 
