@@ -1,14 +1,14 @@
 {
-  "name": "Alpine Meadows",
+  "name": "Palisades Tahoe",
   "url": {
     "host": "https://www.palisadestahoe.com",
-    "pathname": "/mountain-information/lift-and-grooming-status#tab=alpine-meadows-"
+    "pathname": "/mountain-information/lift-and-grooming-status"
   },
   "api": {
     "host": "https://mtnpowder.com",
     "pathname": "/feed",
     "query": {
-      "resortId": 62
+      "resortId": 61
     }
   },
   "tags": [
@@ -17,9 +17,9 @@
   ],
   "opening": "2021-11-24",
   "ll": [
-    -120.150902,
-    39.148201
+    -120.233299,
+    39.196045
   ],
   "twitter": "palisadestahoe",
-  "noaa": "REV/29,90"
+  "noaa": "REV/27,93"
 }
