@@ -1,7 +1,7 @@
 {
   "name": "Attitash",
   "url": {
-    "host": "http://www.attitash.com",
+    "host": "https://www.attitash.com",
     "pathname": "/the-mountain/mountain-conditions/lift-and-terrain-status.aspx"
   },
   "tags": [
