@@ -1,7 +1,7 @@
 const lifts = require('../lifts');
 
 lifts('palisades', 'json', {
-  'Aerial Tram': 'closed',
+  'Aerial Tram': 'open',
   'Exhibition': 'closed',
   'Far East Express': 'closed',
   'First Venture': 'closed',

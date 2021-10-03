@@ -6,10 +6,7 @@
   },
   "api": {
     "host": "https://mtnpowder.com",
-    "pathname": "/feed",
-    "query": {
-      "resortId": 61
-    }
+    "pathname": "/feed/61/lifts"
   },
   "tags": [
     "California",
