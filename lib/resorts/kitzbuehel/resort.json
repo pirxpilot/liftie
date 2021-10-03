@@ -1,8 +1,8 @@
 {
   "name": "Kitzbühel",
   "url": {
-    "host": "http://www.kitzbuehel.com",
-    "pathname": "/en/winter-holiday/skiing/lift-status"
+    "host": "https://www.kitzski.at",
+    "pathname": "/en/skiarea-tyrol/the-kitzbuehel-kirchberg-ski-area-in-tirol-kitzski-is-calling.html"
   },
   "tags": [
     "Alps",
@@ -11,5 +11,6 @@
   "ll": [
     12.3908,
     47.446602
-  ]
+  ],
+  "twitter": "KitzSki"
 }

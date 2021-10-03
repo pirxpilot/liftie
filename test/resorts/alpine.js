@@ -1,16 +1,17 @@
 const lifts = require('../lifts');
 
-lifts('alpine', 'html', {
-  'Summit Express': 'closed',
+lifts('alpine', 'json', {
+  'Kangaroo': 'closed',
+  'Lakeview': 'closed',
+  'Big Carpet': 'closed',
+  'Meadow': 'closed',
   'Roundhouse': 'closed',
   'Scott': 'closed',
-  'Lakeview': 'closed',
-  'Yellow': 'closed',
-  'Meadow': 'closed',
-  'Subway': 'closed',
-  'Kangaroo': 'closed',
-  'Alpine Bowl Chair': 'closed',
   'Sherwood Express': 'closed',
+  'Subway': 'closed',
+  'Alpine Bowl Chair': 'closed',
+  'Summit Express': 'closed',
+  'Yellow': 'closed',
   'Treeline Cirque': 'closed',
-  'Big Carpet': 'closed'
+  'Little Carpet': 'closed'
 });
