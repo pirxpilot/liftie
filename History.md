@@ -1,4 +1,11 @@
 
+3.31.1 / 2021-10-03
+===================
+
+ * fix Kitzbühel resort
+ * fix Palisades Tahoe resorts
+ * fix Mount Buller resort
+
 3.31.0 / 2021-10-02
 ===================
 
