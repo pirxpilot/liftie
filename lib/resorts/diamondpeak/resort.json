@@ -1,7 +1,7 @@
 {
   "name": "Diamond Peak",
   "url": {
-    "host": "http://diamondpeak.com",
+    "host": "https://www.diamondpeak.com",
     "pathname": "/mountain/conditions"
   },
   "tags": [
@@ -14,22 +14,5 @@
     39.249599
   ],
   "twitter": "diamondpeak",
-  "webcams": [
-    {
-      "name": "Snowflake Lodge",
-      "source": "http://diamondpeak.com/mountain/mountain-cam",
-      "image": "http://diamondpeak.com/resources/web_cams/snowflakelake.php"
-    },
-    {
-      "name": "Ridge Run",
-      "source": "http://diamondpeak.com/mountain/mountain-cam",
-      "image": "http://diamondpeak.com/resources/web_cams/snowflakerun.php"
-    },
-    {
-      "name": "Base Lodge",
-      "source": "http://diamondpeak.com/mountain/mountain-cam",
-      "image": "http://diamondpeak.com/resources/web_cams/lodge.php"
-    }
-  ],
   "noaa": "REV/38,94"
 }

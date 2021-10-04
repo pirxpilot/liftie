@@ -5,7 +5,7 @@
     "pathname": "/the-mountain/conditions-report#mountain-status"
   },
   "api": {
-    "host": "https://snowreporting.herokuapp.com",
+    "host": "https://mtnpowder.com",
     "pathname": "/feed/1/lifts"
   },
   "tags": [

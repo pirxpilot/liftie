@@ -1,7 +1,7 @@
 {
   "name": "Loveland",
   "url": {
-    "host": "http://skiloveland.com",
+    "host": "https://skiloveland.com",
     "pathname": "/trail-lift-report/"
   },
   "tags": [
