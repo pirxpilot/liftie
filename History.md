@@ -1,4 +1,16 @@
 
+3.31.2 / 2021-10-04
+===================
+
+ * improve notice styling
+ * fix NOAA logo
+ * fix Bromley resort
+ * fix Intrawest resorts
+ * fix St. Anton Am Arlberg resort
+ * fix Attitash resort
+ * fix Diamondpeak resort
+ * fix Loveland resort
+
 3.31.1 / 2021-10-03
 ===================
 
