@@ -1,0 +1,687 @@
+{
+	"report": {
+		"name": "Resort",
+		"updated": "2021-07-17T10:44:00-04:00",
+		"units": "imperial",
+
+		"operations": {
+			"resortStatus": "7",
+			"openWeekday": "Closed",
+			"openWeekend": "Closed",
+			"totalAcres": ""
+		},
+		"currentConditions": {
+                        "weather": {
+                            "date": "2021-10-04T12:44:35-04:00",
+                            "icon": {
+                                "class": "wi-forecast-io-cloudy",
+                                "title": "Cloudy"
+                            },
+                            "summary": "Overcast",
+                            "temperature": "54.71",
+                            "minTemperature": "50.14",
+                            "maxTemperature": "55.29",
+                            "sunrise": "2021-10-04T06:55:00-04:00",
+                            "sunset": "2021-10-04T18:28:00-04:00",
+                            "precipType": "na",
+                            "intensity": "none",
+                            "precipProbability": "",
+                                                        "humidity": "0.86",
+                            "windSpeed": "6.1",
+                            "windBearing": "135",
+                            "windDirection": "se",
+                            "pressure": "1018.1"
+                        },
+			"totalDownhillAcresOpen": "",
+			"resortLocations": {
+				"location": {
+					"name": "Resort",
+					"primarySurface": "Variable Conditions",
+					"secondarySurface": "Variable Conditions",
+					"baseRange": "-",
+					"snow24Hours": "-",
+					"snow48Hours": "0",
+					"snow72Hours": "0",
+					"snow7days": "0",
+					"seasonTotal": "201"
+				}
+			}
+		},
+		"forecast": {
+                    "days": [
+                        {
+                            "date": "2021-10-05T00:00:00-04:00",
+                            "icon": {
+                                "class": "wi-forecast-io-rain",
+                                "title": "Rain"
+                            },
+                            "summary": "Light rain in the morning.",
+                            "temperature": "51.935",
+                            "minTemperature": "47.74",
+                            "maxTemperature": "56.13",
+                            "sunrise": "2021-10-05T06:56:00-04:00",
+                            "sunset": "2021-10-05T18:26:00-04:00",
+                            "precipType": "rain",
+                            "intensity": "light",
+                            "precipProbability": "0.82",
+                                                        "humidity": "0.88",
+                            "windSpeed": "3",
+                            "windBearing": "119",
+                            "windDirection": "ese",
+                            "pressure": "1024.8"
+                        },{
+                            "date": "2021-10-06T00:00:00-04:00",
+                            "icon": {
+                                "class": "wi-forecast-io-partly-cloudy-day",
+                                "title": "Partly Cloudy"
+                            },
+                            "summary": "Partly cloudy throughout the day.",
+                            "temperature": "55.06",
+                            "minTemperature": "46.18",
+                            "maxTemperature": "63.94",
+                            "sunrise": "2021-10-06T06:57:00-04:00",
+                            "sunset": "2021-10-06T18:24:00-04:00",
+                            "precipType": "rain",
+                            "intensity": "light",
+                            "precipProbability": "0.05",
+                                                        "humidity": "0.84",
+                            "windSpeed": "1.89",
+                            "windBearing": "1",
+                            "windDirection": "n",
+                            "pressure": "1028.4"
+                        },{
+                            "date": "2021-10-07T00:00:00-04:00",
+                            "icon": {
+                                "class": "wi-forecast-io-clear-day",
+                                "title": "Clear"
+                            },
+                            "summary": "Clear throughout the day.",
+                            "temperature": "56.75",
+                            "minTemperature": "48.6",
+                            "maxTemperature": "64.9",
+                            "sunrise": "2021-10-07T06:58:00-04:00",
+                            "sunset": "2021-10-07T18:22:00-04:00",
+                            "precipType": "na",
+                            "intensity": "none",
+                            "precipProbability": "0.03",
+                                                        "humidity": "0.82",
+                            "windSpeed": "2.29",
+                            "windBearing": "307",
+                            "windDirection": "nw",
+                            "pressure": "1025.3"
+                        },{
+                            "date": "2021-10-08T00:00:00-04:00",
+                            "icon": {
+                                "class": "wi-forecast-io-clear-day",
+                                "title": "Clear"
+                            },
+                            "summary": "Clear throughout the day.",
+                            "temperature": "56.75",
+                            "minTemperature": "47.81",
+                            "maxTemperature": "65.69",
+                            "sunrise": "2021-10-08T06:59:00-04:00",
+                            "sunset": "2021-10-08T18:20:00-04:00",
+                            "precipType": "na",
+                            "intensity": "none",
+                            "precipProbability": "0",
+                                                        "humidity": "0.77",
+                            "windSpeed": "1.95",
+                            "windBearing": "36",
+                            "windDirection": "ne",
+                            "pressure": "1021.5"
+                        },{
+                            "date": "2021-10-09T00:00:00-04:00",
+                            "icon": {
+                                "class": "wi-forecast-io-cloudy",
+                                "title": "Cloudy"
+                            },
+                            "summary": "Overcast throughout the day.",
+                            "temperature": "53.245",
+                            "minTemperature": "47.96",
+                            "maxTemperature": "58.53",
+                            "sunrise": "2021-10-09T07:01:00-04:00",
+                            "sunset": "2021-10-09T18:19:00-04:00",
+                            "precipType": "na",
+                            "intensity": "none",
+                            "precipProbability": "0.01",
+                                                        "humidity": "0.79",
+                            "windSpeed": "5.43",
+                            "windBearing": "135",
+                            "windDirection": "se",
+                            "pressure": "1024.2"
+                        },{
+                            "date": "2021-10-10T00:00:00-04:00",
+                            "icon": {
+                                "class": "wi-forecast-io-cloudy",
+                                "title": "Cloudy"
+                            },
+                            "summary": "Overcast throughout the day.",
+                            "temperature": "53.905",
+                            "minTemperature": "48.13",
+                            "maxTemperature": "59.68",
+                            "sunrise": "2021-10-10T07:02:00-04:00",
+                            "sunset": "2021-10-10T18:17:00-04:00",
+                            "precipType": "na",
+                            "intensity": "none",
+                            "precipProbability": "0.02",
+                                                        "humidity": "0.75",
+                            "windSpeed": "5.58",
+                            "windBearing": "144",
+                            "windDirection": "se",
+                            "pressure": "1024.7"
+                        },{
+                            "date": "2021-10-11T00:00:00-04:00",
+                            "icon": {
+                                "class": "wi-forecast-io-rain",
+                                "title": "Rain"
+                            },
+                            "summary": "Possible light rain in the morning and afternoon.",
+                            "temperature": "55.17",
+                            "minTemperature": "49.53",
+                            "maxTemperature": "60.81",
+                            "sunrise": "2021-10-11T07:03:00-04:00",
+                            "sunset": "2021-10-11T18:15:00-04:00",
+                            "precipType": "rain",
+                            "intensity": "light",
+                            "precipProbability": "0.6",
+                                                        "humidity": "0.8",
+                            "windSpeed": "4.23",
+                            "windBearing": "153",
+                            "windDirection": "sse",
+                            "pressure": "1019.4"
+                        }                    ],
+                    "weather": "Sunny"
+		},
+		"comment": {
+			"comments": "0",
+			"scoop": ""
+		},
+		"facilities": {
+			"areas": [					{
+						"name": "Bolton"
+					},									{
+						"name": "Nordic Trails"
+					}							],
+                        "openDownHillLifts": "0",
+                        "maxOpenDownHillLifts": "6",
+			"lifts": [					{
+						"name": "Mid Mountain",
+						"type": "Double",
+						"statuses": [                                                    "Closed"
+                                                ]
+					},									{
+						"name": "Mighty Mite",
+						"type": "Surface Lift",
+						"statuses": [                                                    "Closed"
+                                                ]
+					},									{
+						"name": "Snowflake",
+						"type": "Double",
+						"statuses": [                                                    "Closed"
+                                                ]
+					},									{
+						"name": "Timberline",
+						"type": "Quad",
+						"statuses": [                                                    "Closed"
+                                                ]
+					},									{
+						"name": "Vista",
+						"type": "Quad",
+						"statuses": [                                                    "Closed"
+                                                ]
+					},									{
+						"name": "Wilderness",
+						"type": "Double",
+						"statuses": [                                                    "Closed"
+                                                ]
+					}							],
+                        "openDownHillTrails": "0",
+                        "maxOpenDownHillTrails": "72",
+			"trails": [
+
+        			                            			{
+            			    "name": "Abenaki Trail",
+                                    "difficulty": "easiest",
+                                    "excluded": false,
+                                    "statuses": [                                        "Closed"
+                                    ]
+                  },                            			{
+            			    "name": "Bear Run",
+                                    "difficulty": "easiest",
+                                    "excluded": false,
+                                    "statuses": [                                        "Closed"
+                                    ]
+                  },                            			{
+            			    "name": "Bull Run",
+                                    "difficulty": "easiest",
+                                    "excluded": false,
+                                    "statuses": [                                        "Closed"
+                                    ]
+                  },                            			{
+            			    "name": "Cobrass Lane",
+                                    "difficulty": "easiest",
+                                    "excluded": false,
+                                    "statuses": [                                        "Closed"
+                                    ]
+                  },                            			{
+            			    "name": "Deer Run",
+                                    "difficulty": "easiest",
+                                    "excluded": false,
+                                    "statuses": [                                        "Closed"
+                                    ]
+                  },                            			{
+            			    "name": "Lower Bently",
+                                    "difficulty": "easiest",
+                                    "excluded": false,
+                                    "statuses": [                                        "Closed"
+                                    ]
+                  },                            			{
+            			    "name": "Lower Crossover",
+                                    "difficulty": "easiest",
+                                    "excluded": false,
+                                    "statuses": [                                        "Closed"
+                                    ]
+                  },                            			{
+            			    "name": "Lower Fanny Hill",
+                                    "difficulty": "easiest",
+                                    "excluded": false,
+                                    "statuses": [                                        "Closed"
+                                    ]
+                  },                            			{
+            			    "name": "Lower Foxy",
+                                    "difficulty": "easiest",
+                                    "excluded": false,
+                                    "statuses": [                                        "Closed"
+                                    ]
+                  },                            			{
+            			    "name": "Lower Turnpike",
+                                    "difficulty": "easiest",
+                                    "excluded": false,
+                                    "statuses": [                                        "Closed"
+                                    ]
+                  },                            			{
+            			    "name": "Lower Villager",
+                                    "difficulty": "easiest",
+                                    "excluded": false,
+                                    "statuses": [                                        "Closed"
+                                    ]
+                  },                            			{
+            			    "name": "Lower Wilderness",
+                                    "difficulty": "easiest",
+                                    "excluded": false,
+                                    "statuses": [                                        "Closed"
+                                    ]
+                  },                            			{
+            			    "name": "Mighty Mite",
+                                    "difficulty": "easiest",
+                                    "excluded": false,
+                                    "statuses": [                                        "Closed"
+                                    ]
+                  },                            			{
+            			    "name": "Primer Loop",
+                                    "difficulty": "easiest",
+                                    "excluded": false,
+                                    "statuses": [                                        "Closed"
+                                    ]
+                  },                            			{
+            			    "name": "Sherman&#039;s Pass",
+                                    "difficulty": "easiest",
+                                    "excluded": false,
+                                    "statuses": [                                        "Closed"
+                                    ]
+                  },                            			{
+            			    "name": "Snowflake Bentley",
+                                    "difficulty": "easiest",
+                                    "excluded": false,
+                                    "statuses": [                                        "Closed"
+                                    ]
+                  },                            			{
+            			    "name": "Spillway Exit",
+                                    "difficulty": "easiest",
+                                    "excluded": false,
+                                    "statuses": [                                        "Closed"
+                                    ]
+                  },                            			{
+            			    "name": "Sprig O&#039; Pine",
+                                    "difficulty": "easiest",
+                                    "excluded": false,
+                                    "statuses": [                                        "Closed"
+                                    ]
+                  },                            			{
+            			    "name": "Spur",
+                                    "difficulty": "easiest",
+                                    "excluded": false,
+                                    "statuses": [                                        "Closed"
+                                    ]
+                  },                            			{
+            			    "name": "Swing",
+                                    "difficulty": "easiest",
+                                    "excluded": false,
+                                    "statuses": [                                        "Closed"
+                                    ]
+                  },                            			{
+            			    "name": "Timberline Lane",
+                                    "difficulty": "easiest",
+                                    "excluded": false,
+                                    "statuses": [                                        "Closed"
+                                    ]
+                  },                            			{
+            			    "name": "Upper Villager",
+                                    "difficulty": "easiest",
+                                    "excluded": false,
+                                    "statuses": [                                        "Closed"
+                                    ]
+                  },                            			{
+            			    "name": "Work Road",
+                                    "difficulty": "easiest",
+                                    "excluded": false,
+                                    "statuses": [                                        "Closed"
+                                    ]
+                  }
+
+        			                ,             			{
+            			    "name": "Alta Vista",
+                                    "difficulty": "more-difficult",
+                                    "excluded": false,
+                                    "statuses": [                                        "Closed"
+                                    ]
+                  },                            			{
+            			    "name": "Beech Seal",
+                                    "difficulty": "more-difficult",
+                                    "excluded": false,
+                                    "statuses": [                                        "Closed"
+                                    ]
+                  },                            			{
+            			    "name": "Cobrass",
+                                    "difficulty": "more-difficult",
+                                    "excluded": false,
+                                    "statuses": [                                        "Closed"
+                                    ]
+                  },                            			{
+            			    "name": "Cobrass Run",
+                                    "difficulty": "more-difficult",
+                                    "excluded": false,
+                                    "statuses": [                                        "Closed"
+                                    ]
+                  },                            			{
+            			    "name": "Coyote",
+                                    "difficulty": "more-difficult",
+                                    "excluded": false,
+                                    "statuses": [                                        "Closed"
+                                    ]
+                  },                            			{
+            			    "name": "Deer Path",
+                                    "difficulty": "more-difficult",
+                                    "excluded": false,
+                                    "statuses": [                                        "Closed"
+                                    ]
+                  },                            			{
+            			    "name": "Enchanted Forest",
+                                    "difficulty": "more-difficult",
+                                    "excluded": false,
+                                    "statuses": [                                        "Closed"
+                                    ]
+                  },                            			{
+            			    "name": "Fanny Hill",
+                                    "difficulty": "more-difficult",
+                                    "excluded": false,
+                                    "statuses": [                                        "Closed"
+                                    ]
+                  },                            			{
+            			    "name": "Five Corners",
+                                    "difficulty": "more-difficult",
+                                    "excluded": false,
+                                    "statuses": [                                        "Closed"
+                                    ]
+                  },                            			{
+            			    "name": "Foxy",
+                                    "difficulty": "more-difficult",
+                                    "excluded": false,
+                                    "statuses": [                                        "Closed"
+                                    ]
+                  },                            			{
+            			    "name": "Glades",
+                                    "difficulty": "more-difficult",
+                                    "excluded": false,
+                                    "statuses": [                                        "Closed"
+                                    ]
+                  },                            			{
+            			    "name": "Hard Luck Lane",
+                                    "difficulty": "more-difficult",
+                                    "excluded": false,
+                                    "statuses": [                                        "Closed"
+                                    ]
+                  },                            			{
+            			    "name": "Lower Brandywine",
+                                    "difficulty": "more-difficult",
+                                    "excluded": false,
+                                    "statuses": [                                        "Closed"
+                                    ]
+                  },                            			{
+            			    "name": "Lower Tattle Tale",
+                                    "difficulty": "more-difficult",
+                                    "excluded": false,
+                                    "statuses": [                                        "Closed"
+                                    ]
+                  },                            			{
+            			    "name": "Moonlight Park",
+                                    "difficulty": "more-difficult",
+                                    "excluded": false,
+                                    "statuses": [                                        "Closed"
+                                    ]
+                  },                            			{
+            			    "name": "Moose Run",
+                                    "difficulty": "more-difficult",
+                                    "excluded": false,
+                                    "statuses": [                                        "Closed"
+                                    ]
+                  },                            			{
+            			    "name": "Mousehole",
+                                    "difficulty": "more-difficult",
+                                    "excluded": false,
+                                    "statuses": [                                        "Closed"
+                                    ]
+                  },                            			{
+            			    "name": "Old Turnpike",
+                                    "difficulty": "more-difficult",
+                                    "excluded": false,
+                                    "statuses": [                                        "Closed"
+                                    ]
+                  },                            			{
+            			    "name": "Peggy Dow&#039;s",
+                                    "difficulty": "more-difficult",
+                                    "excluded": false,
+                                    "statuses": [                                        "Closed"
+                                    ]
+                  },                            			{
+            			    "name": "Showtime",
+                                    "difficulty": "more-difficult",
+                                    "excluded": false,
+                                    "statuses": [                                        "Closed"
+                                    ]
+                  },                            			{
+            			    "name": "Spillway Lane",
+                                    "difficulty": "more-difficult",
+                                    "excluded": false,
+                                    "statuses": [                                        "Closed"
+                                    ]
+                  },                            			{
+            			    "name": "Sure Shot",
+                                    "difficulty": "more-difficult",
+                                    "excluded": false,
+                                    "statuses": [                                        "Closed"
+                                    ]
+                  },                            			{
+            			    "name": "TFR",
+                                    "difficulty": "more-difficult",
+                                    "excluded": false,
+                                    "statuses": [                                        "Closed"
+                                    ]
+                  },                            			{
+            			    "name": "Timberline Run",
+                                    "difficulty": "more-difficult",
+                                    "excluded": false,
+                                    "statuses": [                                        "Closed"
+                                    ]
+                  },                            			{
+            			    "name": "Twice as Nice",
+                                    "difficulty": "more-difficult",
+                                    "excluded": false,
+                                    "statuses": [                                        "Closed"
+                                    ]
+                  },                            			{
+            			    "name": "Wilderness Liftline",
+                                    "difficulty": "more-difficult",
+                                    "excluded": false,
+                                    "statuses": [                                        "Closed"
+                                    ]
+                  },                            			{
+            			    "name": "Wood&#039;s Hole",
+                                    "difficulty": "more-difficult",
+                                    "excluded": false,
+                                    "statuses": [                                        "Closed"
+                                    ]
+                  }
+
+        			                ,             			{
+            			    "name": "Bolton Outlaw",
+                                    "difficulty": "most-difficult",
+                                    "excluded": false,
+                                    "statuses": [                                        "Closed"
+                                    ]
+                  },                            			{
+            			    "name": "Brandywine",
+                                    "difficulty": "most-difficult",
+                                    "excluded": false,
+                                    "statuses": [                                        "Closed"
+                                    ]
+                  },                            			{
+            			    "name": "Cougar",
+                                    "difficulty": "most-difficult",
+                                    "excluded": false,
+                                    "statuses": [                                        "Closed"
+                                    ]
+                  },                            			{
+            			    "name": "Hard Luck",
+                                    "difficulty": "most-difficult",
+                                    "excluded": false,
+                                    "statuses": [                                        "Closed"
+                                    ]
+                  },                            			{
+            			    "name": "Intro",
+                                    "difficulty": "most-difficult",
+                                    "excluded": false,
+                                    "statuses": [                                        "Closed"
+                                    ]
+                  },                            			{
+            			    "name": "Schuss",
+                                    "difficulty": "most-difficult",
+                                    "excluded": false,
+                                    "statuses": [                                        "Closed"
+                                    ]
+                  },                            			{
+            			    "name": "Show Off - Lower",
+                                    "difficulty": "most-difficult",
+                                    "excluded": false,
+                                    "statuses": [                                        "Closed"
+                                    ]
+                  },                            			{
+            			    "name": "Show Off - Upper",
+                                    "difficulty": "most-difficult",
+                                    "excluded": false,
+                                    "statuses": [                                        "Closed"
+                                    ]
+                  },                            			{
+            			    "name": "Spellbinder",
+                                    "difficulty": "most-difficult",
+                                    "excluded": false,
+                                    "statuses": [                                        "Closed"
+                                    ]
+                  },                            			{
+            			    "name": "Spillway",
+                                    "difficulty": "most-difficult",
+                                    "excluded": false,
+                                    "statuses": [                                        "Closed"
+                                    ]
+                  },                            			{
+            			    "name": "Upper Crossover",
+                                    "difficulty": "most-difficult",
+                                    "excluded": false,
+                                    "statuses": [                                        "Closed"
+                                    ]
+                  },                            			{
+            			    "name": "Upper Fanny Hill",
+                                    "difficulty": "most-difficult",
+                                    "excluded": false,
+                                    "statuses": [                                        "Closed"
+                                    ]
+                  },                            			{
+            			    "name": "Upper Tattle Tale",
+                                    "difficulty": "most-difficult",
+                                    "excluded": false,
+                                    "statuses": [                                        "Closed"
+                                    ]
+                  },                            			{
+            			    "name": "Vermont 200",
+                                    "difficulty": "most-difficult",
+                                    "excluded": false,
+                                    "statuses": [                                        "Closed"
+                                    ]
+                  },                            			{
+            			    "name": "Vista Glades",
+                                    "difficulty": "most-difficult",
+                                    "excluded": false,
+                                    "statuses": [                                        "Closed"
+                                    ]
+                  }
+
+        			                ,             			{
+            			    "name": "Adam&#039;s Solitude",
+                                    "difficulty": "expert-only",
+                                    "excluded": false,
+                                    "statuses": [                                        "Closed"
+                                    ]
+                  },                            			{
+            			    "name": "Lost Boyz",
+                                    "difficulty": "expert-only",
+                                    "excluded": false,
+                                    "statuses": [                                        "Closed"
+                                    ]
+                  },                            			{
+            			    "name": "Preacher",
+                                    "difficulty": "expert-only",
+                                    "excluded": false,
+                                    "statuses": [                                        "Closed"
+                                    ]
+                  },                            			{
+            			    "name": "TNT",
+                                    "difficulty": "expert-only",
+                                    "excluded": false,
+                                    "statuses": [                                        "Closed"
+                                    ]
+                  }
+
+        			                ,             			{
+            			    "name": "Hide Away",
+                                    "difficulty": "terrain",
+                                    "excluded": false,
+                                    "statuses": [                                        "Closed"
+                                    ]
+                  },                            			{
+            			    "name": "Pine Street Progression Park",
+                                    "difficulty": "terrain",
+                                    "excluded": false,
+                                    "statuses": [                                        "Closed"
+                                    ]
+                  },                            			{
+            			    "name": "Valley Road",
+                                    "difficulty": "terrain",
+                                    "excluded": false,
+                                    "statuses": [                                        "Closed"
+                                    ]
+                  }
+
+        			      			        			]
+		}
+	}
+}
