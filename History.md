@@ -1,4 +1,10 @@
 
+3.31.3 / 2021-10-05
+===================
+
+ * remove getlet dependency
+ * fix Bolton Valley resort
+
 3.31.2 / 2021-10-04
 ===================
 
