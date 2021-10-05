@@ -1,5 +1,5 @@
 GET /api/webcams/v2/list/nearby=46.54,7.98,5/limit=5?show=webcams:image,url
-accept-encoding: br, gzip, deflate
+accept-encoding: gzip, deflate
 accept: application/json
 
 HTTP/1.1 200 OK
