@@ -1,4 +1,11 @@
 
+3.32.0 / 2021-10-07
+===================
+
+ * add Niseko Japan resort
+ * add Threadbo resort
+ * fix Gore Mountain resort
+
 3.31.3 / 2021-10-05
 ===================
 
