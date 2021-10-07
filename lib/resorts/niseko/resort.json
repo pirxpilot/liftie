@@ -1,0 +1,14 @@
+{
+  "name": "Niseko",
+  "url": {
+    "host": "http://www.niseko.ne.jp",
+    "pathname": "/en/niseko-lift-status/"
+  },
+  "tags": [
+    "Japan"
+  ],
+  "ll": [
+    140.683333,
+    42.8
+  ]
+}
