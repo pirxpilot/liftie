@@ -1,7 +1,5 @@
-[![NPM version](https://img.shields.io/npm/v/liftie.svg)](http://badge.fury.io/js/liftie)
-[![Build Status](https://img.shields.io/travis/pirxpilot/liftie.svg)](http://travis-ci.org/pirxpilot/liftie)
-[![Dependency Status](https://img.shields.io/david/pirxpilot/liftie.svg)](https://david-dm.org/pirxpilot/liftie)
-[![Dev Dependency Status](https://img.shields.io/david/dev/pirxpilot/liftie.svg)](https://david-dm.org/pirxpilot/liftie?type=dev)
+[![NPM version][npm-image]][npm-url]
+[![Build Status][build-image]][build-url]
 
 # liftie.info
 
@@ -183,3 +181,9 @@ Tags CSS (stylus) is a simplified version of [Sliding Tags][7] by [Thibaut Couro
 [commit-parse]: https://github.com/pirxpilot/liftie/commit/8a2baede3d536193b61d787f0333bb53de89efe6
 [commit-noaa]: https://github.com/pirxpilot/liftie/commit/da1756d86ce9506a73e2cd274919e54a6f4bcfbf
 [commit-webcams]: https://github.com/pirxpilot/liftie/commit/de0951ef963732cea7858d7fd8db07f6ac8592ec
+
+[npm-image]: https://img.shields.io/npm/v/liftie.svg
+[npm-url]: http://badge.fury.io/js/liftie
+
+[build-image]: https://img.shields.io/travis/pirxpilot/liftie.svg
+[build-url]: http://travis-ci.org/pirxpilot/liftie
