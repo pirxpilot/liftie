@@ -85,8 +85,8 @@ will fail.
 ```javascript
 module.exports = {
   selector: '.lifts',                // selector for lift information
-  filter: node => node.children,     // optional - add to skip nodes for which filter returns false
   parse: {
+    filter: node => node.children,   // if present skips nodes for which filter is falsy
     name: '0/1',            // example of a simple path descriptor
     status: {               // example of a compound descriptor
       child: '+/1',
