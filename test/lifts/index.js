@@ -17,7 +17,7 @@ function testResort(name, ext, expected, only = false) {
 
     stream.on('error', t.end);
     stream.pipe(parser(parse, function(err, status) {
-      t.deepEqual(status, expected);
+      t.deepEqual(status, expected, `lifts should match for ${name}`);
       t.end(err);
     }));
   }
