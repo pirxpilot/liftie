@@ -1,39 +1,37 @@
-var should = require('should');
+var test = require('tape');
 var twitter = require('../../lib/twitter');
 
-/*global describe, it*/
+require('../replay');
 
-describe('twitter', function() {
-
-  it('should return empty tweets if handle is missing', function(done) {
-    twitter({}, function(err, tweets) {
-      should.not.exist(err);
-      should.not.exist(tweets);
-      done();
-    });
+test('twitter should return empty tweets if handle is missing', function(t) {
+  twitter({}, function(err, tweets) {
+    t.error(err);
+    t.notOk(tweets, 'should have no tweets');
+    t.end();
   });
-
-  // configure TWITTER_TOKEN to run the test
-  if (process.env.TWITTER_TOKEN) {
-    it('should return tweets for valid handle', function(done) {
-      twitter({
-        twitter: 'cannonmountain',
-      }, function(err, result) {
-        should.not.exist(err);
-        should.exist(result);
-        result.should.have.property('user', 'cannonmountain');
-        result.should.have.property('tweets');
-        result.tweets.forEach(function(t) {
-          t.should.have.property('id_str').with.type('string');
-          t.should.have.property('created_at').with.type('string');
-          Date.now().should.be.above(new Date(t.created_at));
-          t.should.have.property('text').with.type('string');
-          t.should.have.property('entities').with.type('object');
-        });
-        done(err);
-      });
-    });
-  } else {
-    it.skip('should return tweets for valid handle');
-  }
 });
+
+var TWITTER_TOKEN = process.env.TWITTER_TOKEN;
+process.env.TWITTER_TOKEN = 'TEST_TOKEN';
+
+test('twitter should return tweets for valid handle', function(t) {
+  twitter({
+    twitter: 'cannonmountain',
+  }, function(err, result) {
+    t.error(err);
+    t.ok(result);
+    t.equal(result.user, 'cannonmountain');
+    t.ok(result.tweets);
+
+    result.tweets.forEach(function(tweet) {
+      t.equal(typeof tweet.id_str, 'string');
+      t.equal(typeof tweet.created_at, 'string');
+      t.ok(Date.now() > new Date(tweet.created_at));
+      t.equal(typeof tweet.text, 'string');
+      t.equal(typeof tweet.entities, 'object');
+    });
+    t.end();
+  });
+});
+
+process.env.TWITTER_TOKEN = TWITTER_TOKEN;

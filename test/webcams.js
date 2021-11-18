@@ -1,52 +1,45 @@
-var should = require('should');
+var test = require('tape');
 var webcams = require('../lib/webcams');
 
-/*global describe, it*/
+require('./replay');
 
-describe('webcams', function() {
-
-  it('should return no webcams if location is missing', function(done) {
-    webcams({}, function(err, webcams) {
-      should.not.exist(err);
-      should.not.exist(webcams);
-      done();
-    });
+test('webcams should return no webcams if location is missing', function(t) {
+  webcams({}, function(err, webcams) {
+    t.error(err);
+    t.notOk(webcams);
+    t.end();
   });
+});
 
 
-  if (!process.env.WEBCAMS_DEV_ID) {
-    it.skip('should return webcams for valid location');
-  } else{
-    it('should return webcams for valid location', function(done) {
-      webcams({
-        counter: 1,
-        ll: [ 7.98, 46.54 ] // from API examples https://developers.webcams.travel/#webcams/examples
-      }, function(err, webcams) {
-        var webcam, mobile;
+test('webcams should return webcams for valid location', function(t) {
+  process.env.WEBCAMS_API_KEY = 'TEST_KEY';
+  webcams({
+    counter: 1,
+    ll: [ 7.98, 46.54 ] // from API examples https://developers.webcams.travel/#webcams/examples
+  }, function(err, webcams) {
+    delete process.env.WEBCAMS_API_KEY;
 
-        should.not.exist(err);
-        should.exist(webcams);
+    t.error(err);
+    t.ok(webcams);
+    t.ok(webcams.length > 0);
 
-        webcams.should.not.be.empty();
+    var webcam = webcams[0];
 
-        webcam = webcams[0];
+    t.equal(webcam.name, 'Fieschertal: Jungfrau - Wengen - Interlaken');
+    t.ok(webcam.source.startsWith('https://www.windy.com/webcams/1329413077'));
+    t.ok(webcam.image.startsWith('https://images-webcams.windy.com'));
+    t.ok(webcam.notice.startsWith('Webcams provided by\n<a href="https://www.windy.com/"'));
 
-        webcam.should.have.property('name', 'Jungfraujoch: Top of Europe');
-        webcam.should.have.property('source').with.startWith('https://www.webcams.travel/webcam');
-        webcam.should.have.property('image').with.startWith('https://images.webcams.travel/preview/');
-        webcam.should.have.property('notice', 'Webcam by <a href="https://webcams.travel" target="_blank">webcams.travel</a>');
+    t.equal(typeof webcam.mobile, 'object');
 
-        webcam.should.have.property('mobile').with.type('object');
-        mobile = webcam.mobile;
+    var mobile = webcam.mobile;
 
-        mobile.should.have.property('name', 'Jungfraujoch: Top of Europe');
-        mobile.should.have.property('source').with.startWith('https://m.webcams.travel/webcam');
-        mobile.should.have.property('image').with.startWith('https://images.webcams.travel/preview/');
-        mobile.should.have.property('notice', 'Webcam by <a href="https://m.webcams.travel" target="_blank">webcams.travel</a>');
+    t.equal(mobile.name, 'Fieschertal: Jungfrau - Wengen - Interlaken');
+    t.ok(mobile.source.startsWith('https://www.windy.com/webcams/1329413077'));
+    t.ok(mobile.image.startsWith('https://images-webcams.windy.com'));
+    t.ok(mobile.notice.startsWith('Webcams provided by\n<a href="https://www.windy.com/"'));
 
-        done(err);
-      });
-    });
-  }
-
+    t.end();
+  });
 });

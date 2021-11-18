@@ -1,0 +1,2376 @@
+<!DOCTYPE html>
+<html lang="en" xml:lang="en">
+<head>
+	<title>Conditions | Timberline Lodge</title>
+	
+	<meta name="description" content="View current weather conditions, lift, terrain, and parking lot statuses.">
+	
+	<meta name="format-detection" content="telephone=no">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/images/site/favicon/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+	<link rel="apple-touch-icon" sizes="57x57" href="/images/site/favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/images/site/favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/images/site/favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/images/site/favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/images/site/favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/images/site/favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/images/site/favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/images/site/favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/images/site/favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="/images/site/favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/images/site/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/images/site/favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/images/site/favicon/favicon-16x16.png">
+	<link rel="manifest" href="/images/site/favicon/manifest.json">
+	<link href="/css/timberline.uikit.min.css" rel="stylesheet" type="text/css">
+	<link href="/css/components/slideshow.min.css" rel="stylesheet" type="text/css">
+	<link href="/css/components/sticky.min.css" rel="stylesheet" type="text/css">
+	<link href="/css/styles.css" rel="stylesheet" type="text/css">
+	<link href="/css/modal.css" rel="stylesheet" type="text/css">
+	<link href="/css/components/notify.css" rel="stylesheet" type="text/css">
+	
+	<link href="/css/template_5.css" rel="stylesheet" type="text/css">
+	<link href="/css/weather-icons/css/weather-icons.min.css" rel="stylesheet" type="text/css">
+	<style>
+	.telemetry-container {
+		font-family: 'GothamMedium', Helvetica, sans-serif;
+		color: #555;
+		text-transform: uppercase;
+	}
+	</style>
+
+
+	<script src="/js/jquery-3.2.1.min.js" type="text/javascript"></script>
+	<script src="/js/uikit.min.js" type="text/javascript"></script>
+	<script type="text/javascript" src="https://menus.singleplatform.co/businesses/storefront/?apiKey=ke09z8icq4xu8uiiccighy1bw"></script>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-6161193-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-6161193-1');
+</script>
+	<script></script>
+	<script type="text/javascript">
+    adroll_adv_id = "OJ6NCKYMD5BATMJPZ63SYQ";
+    adroll_pix_id = "LU7FVBNRMRA3VKEDGTMART";
+    /* OPTIONAL: provide email to improve user identification */
+    /* adroll_email = "username@example.com"; */
+    (function () {
+        var _onload = function(){
+            if (document.readyState && !/loaded|complete/.test(document.readyState)){setTimeout(_onload, 10);return}
+            if (!window.__adroll_loaded){__adroll_loaded=true;setTimeout(_onload, 50);return}
+            var scr = document.createElement("script");
+            var host = (("https:" == document.location.protocol) ? "https://s.adroll.com" : "http://a.adroll.com");
+            scr.setAttribute('async', 'true');
+            scr.type = "text/javascript";
+            scr.src = host + "/j/roundtrip.js";
+            ((document.getElementsByTagName('head') || [null])[0] ||
+                document.getElementsByTagName('script')[0].parentNode).appendChild(scr);
+        };
+        if (window.addEventListener) {window.addEventListener('load', _onload, false);}
+        else {window.attachEvent('onload', _onload)}
+    }());
+</script>
+</head>
+<body >
+	<header id="site_header" class="uk-position-relative">
+		<nav id="site_nav" class="uk-navbar">
+			<a href="/" title="Timberline Logo" class="uk-navbar-brand uk-width-large-2-10 uk-width-medium-3-10 uk-width-small-1-4 uk-flex uk-flex-center uk-flex-middle uk-padding-remove uk-position-relative uk-position-z-index">
+				<div class="uk-width-1-1 uk-height-1-1 uk-flex uk-flex-center uk-flex-middle bg-dark-blue">
+					<img src="/images/site/LOGO_new.svg" alt="Timberline Lodge Logo" width="112" data-uk-svg>
+				</div>
+			</a>
+			<div class="uk-navbar-content uk-hidden-large uk-height-1-1 uk-navbar-flip mobile uk-padding-remove uk-flex uk-flex-middle">
+				<ul class="uk-navbar-nav">
+					<li class="uk-height-1-1"><a href="/conditions#webcams" title="View Weather Cameras"><img src="/images/site/CAM_ICON.svg" alt="Camera Icon" height="40" data-uk-svg></a></li>
+					<li class="uk-height-1-1"><a href="/conditions" title="View more weather information"><img src="/images/site/CONDITIONS.svg" alt="Search Icon" height="40" data-uk-svg></a></li>
+					<li class="uk-height-1-1">
+						<a id="mobile_nav_open" title="Mobile Nav Icon" href="#mobile_site_nav" onclick="makeCloseBtn(this);" class="uk-hidden-large uk-height-1-1" data-uk-offcanvas="{mode: 'slide'}"><img src="/images/site/HAMBURGER.svg" alt="Open Mobile Menu" data-uk-svg></a>
+						<a id="mobile_nav_close" title="Mobile Nav Icon" href="javascript:void(0);" onclick="closeMobileNav(this);" class="uk-hidden uk-hidden-large uk-height-1-1"><img src="/images/site/X_CLOSE.svg" alt="Close Mobile Menu" data-uk-svg></a>
+					</li>
+				</ul>
+			</div>
+			<div class="uk-navbar-flip uk-height-1-1">
+				<div class="uk-height-1-1 uk-flex uk-flex-middle uk-hidden-medium uk-hidden-small">
+					<a href="javascript:void(0)" title="Search" class="uk-margin-right uk-position-relative" data-uk-dropdown="{mode:'click', pos:'left-center'}">
+						<div>
+							<img src="/images/site/SEARCH.svg" alt="Search Icon" data-uk-svg>
+						</div>
+						<div class="uk-dropdown">
+							<form class="uk-form" method="post" action="https://www.timberlinelodge.com/"  >
+<div class='hiddenFields'>
+<input type="hidden" name="ACT" value="11" />
+<input type="hidden" name="RES" value="" />
+<input type="hidden" name="meta" value="Uag0o9UigVND6kTTS2GvddACnHVUPnFwS2oDIGOhhy37xVLZyKYWEvQlOMGkWdqvUD+tp9+M4Q0jP0dbg4jtc1n+ji2y/Mz9+j+yWD5F9RXqtgS7Zmvaq810OjKMWTIGmdoCTpuB3hzuHSRjGTDzGgPcAGQz2jGmqUtJZpiNgftSkdG21W41p30HADrLcI0oq86J6EaBXc0yOCpccoK6KRK0Tk+laCNx0gUc9gpnUpyNpnJ+uJRg9MfFkZYW8W+Fb3nbXU6QQ8FRhwgIGg8/rGLXXO37tZKxgiDdEiac1ZNdzzGnpny2BCGVPMvqvsZHdIaUlscJIQmN3bMI4sn0b3I8kdpeTu6udT5v7aGfBho5zNvm3hITlLlqviLaxlnbwZHuOxx0tpJ4eh6/unb5HJjcw8nxP8qWfjiDw+SisUwwRYlvUdT6SqIOmiInYrKd" />
+<input type="hidden" name="site_id" value="1" />
+<input type="hidden" name="csrf_token" value="69c44facb36322e42ce47729e33a62ad74ad7668" />
+</div>
+
+
+								<input type="search" name="keywords" class="uk-animation-slide-right" minlength="3" required />
+								<input type="submit" value="Search" class="uk-hidden" />
+							</form>
+						</div>
+					</a>
+					<div class="uk-margin-left uk-margin-right uk-height-1-1" style="padding: 15px 0px;">
+						<div class="uk-height-1-1" style="border-right: 1px solid rgba(151, 151, 151, 0.29);"></div>
+					</div>
+					<a href="/conditions#webcams" title="Conditions" class="uk-margin-left uk-margin-right"><img src="/images/site/CAM_ICON.svg" alt="Search Icon" data-uk-svg></a>
+					<div class="uk-margin-right"></div>
+				</div>
+			</div>
+			<div class="uk-navbar-content uk-navbar-center uk-height-1-1 uk-flex uk-flex-center uk-flex-middle uk-hidden-medium uk-hidden-small">
+				<ul class="uk-navbar-nav uk-list">
+									
+						<li class='' data-uk-dropdown="{justify:'#site_nav', offset:65, preventflip:true, remaintime:500, hoverDelayIdle: 100}">
+							
+								<a href="javascript:void(0);" title="The Mountain" class="uk-navbar-nav-subtitle">
+									<div>The</div>
+									<span class="uk-text-uppercase">Mountain</span>
+								</a>
+							
+							
+								<div class="uk-dropdown uk-dropdown-navbar uk-dropdown-blank uk-padding-remove">
+									<div class="uk-block uk-block-secondary">
+										<div class="uk-container uk-container-center">
+							
+							<ul class="dropdown-section uk-flex uk-flex-center  ">
+													
+						<li class='uk-nav-header uk-text-left uk-margin-remove' >
+							
+								
+									<div class="subnav-title">The Mountain</div>
+								
+							
+							
+							<ul class=" uk-padding-remove">
+													
+						<li class='' >
+						
+							<a href="/pucci-chair-upgrade" title="Pucci Chair Upgrade">Pucci Chair Upgrade</a>
+						
+						</li>
+					
+									
+						<li class='' >
+						
+							<a href="/mountain/ski-area" title="Ski area">Ski area</a>
+						
+						</li>
+					
+									
+						<li class='' >
+						
+							<a href="/mountain/ski-area#terrain-park" title="Terrain Park">Terrain Park</a>
+						
+						</li>
+					
+				
+							</ul>
+							
+						</li>
+					
+									
+						<li class='uk-nav-header uk-text-left uk-margin-remove' >
+							
+								
+									<div class="subnav-title">Winter</div>
+								
+							
+							
+							<ul class=" uk-padding-remove">
+													
+						<li class='' >
+						
+							<a href="/mountain/season-passes" title="Ski Season Passes">Ski Season Passes</a>
+						
+						</li>
+					
+									
+						<li class='' >
+						
+							<a href="/mountain/lift-tickets" title="Ski Lift Tickets">Ski Lift Tickets</a>
+						
+						</li>
+					
+									
+						<li class='' >
+						
+							<a href="/mountain/lessons" title="Lessons">Lessons</a>
+						
+						</li>
+					
+									
+						<li class='' >
+						
+							<a href="/mountain/rentals" title="Rentals">Rentals</a>
+						
+						</li>
+					
+									
+						<li class='' >
+						
+							<a href="/mountain/ski-groups" title="Ski Groups">Ski Groups</a>
+						
+						</li>
+					
+									
+						<li class='' >
+						
+							<a href="/mountain/other-winter-activities" title="Other Winter Activities">Other Winter Activities</a>
+						
+						</li>
+					
+				
+							</ul>
+							
+						</li>
+					
+									
+						<li class='uk-nav-header uk-text-left uk-margin-remove' >
+							
+								
+									<div class="subnav-title">Summer</div>
+								
+							
+							
+							<ul class=" uk-padding-remove">
+													
+						<li class='' >
+						
+							<a href="/mountain/bike-park" title="Bike Park">Bike Park</a>
+						
+						</li>
+					
+									
+						<li class='' >
+						
+							<a href="/camps" title="Summer Snow Camps">Summer Snow Camps</a>
+						
+						</li>
+					
+									
+						<li class='' >
+						
+							<a href="/mountain/freestyle-training" title="FREESTYLE TRAINING CENTER">FREESTYLE TRAINING CENTER</a>
+						
+						</li>
+					
+									
+						<li class='' >
+						
+							<a href="/mountain/lane-reservations" title="Lane Reservations">Lane Reservations</a>
+						
+						</li>
+					
+									
+						<li class='' >
+						
+							<a href="/mountain/summer-activities" title="Summer Activities">Summer Activities</a>
+						
+						</li>
+					
+									
+						<li class='' >
+						
+							<a href="/mountain/summer-activities#pct" title="PCT">PCT</a>
+						
+						</li>
+					
+				
+							</ul>
+							
+						</li>
+					
+									
+						<li class='uk-nav-header uk-text-left uk-margin-remove' >
+							
+								
+									<div class="subnav-title">Mountain Info</div>
+								
+							
+							
+							<ul class=" uk-padding-remove">
+													
+						<li class='' >
+						
+							<a href="/conditions" title="Conditions">Conditions</a>
+						
+						</li>
+					
+									
+						<li class='' >
+						
+							<a href="/mountain/trail-map" title="Trail Maps">Trail Maps</a>
+						
+						</li>
+					
+									
+						<li class='' >
+						
+							<a href="/mountain/safety" title="Mountain Safety">Mountain Safety</a>
+						
+						</li>
+					
+									
+						<li class='' >
+						
+							<a href="/mountain/historical-snow-data" title="Historical Snow">Historical Snow</a>
+						
+						</li>
+					
+				
+							</ul>
+							
+						</li>
+					
+				
+							</ul>
+							
+										</div>
+									</div>
+								</div>
+							
+						</li>
+					
+									
+						<li class='' data-uk-dropdown="{justify:'#site_nav', offset:65, preventflip:true, remaintime:500, hoverDelayIdle: 100}">
+							
+								<a href="javascript:void(0);" title="The Lodge" class="uk-navbar-nav-subtitle">
+									<div>The</div>
+									<span class="uk-text-uppercase">Lodge</span>
+								</a>
+							
+							
+								<div class="uk-dropdown uk-dropdown-navbar uk-dropdown-blank uk-padding-remove">
+									<div class="uk-block uk-block-secondary">
+										<div class="uk-container uk-container-center">
+							
+							<ul class="dropdown-section uk-flex uk-flex-center  ">
+													
+						<li class='uk-nav-header uk-text-left uk-margin-remove' >
+							
+								
+									<div class="subnav-title">Accommodations</div>
+								
+							
+							
+							<ul class=" uk-padding-remove">
+													
+						<li class='' >
+						
+							<a href="/lodge" title="Timberline Lodge">Timberline Lodge</a>
+						
+						</li>
+					
+									
+						<li class='' >
+						
+							<a href="/lodge/luxury-condominiums" title="Luxury Condominiums">Luxury Condominiums</a>
+						
+						</li>
+					
+									
+						<li class='' >
+						
+							<a href="/lodge/silcox-hut" title="Silcox Hut">Silcox Hut</a>
+						
+						</li>
+					
+									
+						<li class='' >
+						
+							<a href="/lodge#amenities" title="Amenities">Amenities</a>
+						
+						</li>
+					
+				
+							</ul>
+							
+						</li>
+					
+									
+						<li class='uk-nav-header uk-text-left uk-margin-remove' >
+							
+								
+									<div class="subnav-title">Dining & Bar</div>
+								
+							
+							
+							<ul class=" uk-padding-remove">
+													
+						<li class='' >
+						
+							<a href="/lodge/dining" title="Dining ">Dining</a>
+						
+						</li>
+					
+									
+						<li class='' >
+						
+							<a href="/lodge/dining#cascade" title="Cascade Dining Room">Cascade Dining Room</a>
+						
+						</li>
+					
+									
+						<li class='' >
+						
+							<a href="/lodge/dining#rams" title="Ram's Head Bar">Ram's Head Bar</a>
+						
+						</li>
+					
+									
+						<li class='' >
+						
+							<a href="/lodge/dining#wy_east" title="Wy'East Cafe">Wy'East Cafe</a>
+						
+						</li>
+					
+									
+						<li class='' >
+						
+							<a href="/lodge/dining#ybar" title="Y'Bar">Y'Bar</a>
+						
+						</li>
+					
+									
+						<li class='' >
+						
+							<a href="/lodge/dining#blue_ox_bar" title="Blue Ox Bar">Blue Ox Bar</a>
+						
+						</li>
+					
+									
+						<li class='' >
+						
+							<a href="/lodge/dining#phlox" title="Phlox Point Cabin">Phlox Point Cabin</a>
+						
+						</li>
+					
+									
+						<li class='' >
+						
+							<a href="/lodge/dining#mt_hood_brewing_company" title="Mt Hood Brewing Co.">Mt Hood Brewing Co.</a>
+						
+						</li>
+					
+									
+						<li class='' >
+						
+							<a href="/lodge/dining#summit" title="Summit">SUMMIT</a>
+						
+						</li>
+					
+				
+							</ul>
+							
+						</li>
+					
+									
+						<li class='uk-nav-header uk-text-left uk-margin-remove' >
+							
+								
+									<div class="subnav-title"><a href="/lodge/groups" title="Groups">Groups <i class="uk-icon-angle-right"></i></a></div>
+								
+							
+							
+							<ul class=" uk-padding-remove">
+													
+						<li class='' >
+						
+							<a href="/lodge/venues" title="Venues">Venues</a>
+						
+						</li>
+					
+									
+						<li class='' >
+						
+							<a href="/groups/group-packages" title="Deals & Packages">Deals & Packages</a>
+						
+						</li>
+					
+									
+						<li class='' >
+						
+							<a href="/lodge/groups" title="Menus & Services">Menus & Services</a>
+						
+						</li>
+					
+				
+							</ul>
+							
+						</li>
+					
+									
+						<li class='uk-nav-header uk-text-left uk-margin-remove' >
+							
+								
+									<div class="subnav-title"><a href="/weddings" title="Weddings">Weddings <i class="uk-icon-angle-right"></i></a></div>
+								
+							
+							
+							<ul class=" uk-padding-remove">
+													
+						<li class='' >
+						
+							<a href="/weddings#wedding-venues" title="Wedding Venues">Wedding Venues</a>
+						
+						</li>
+					
+									
+						<li class='' >
+						
+							<a href="/weddings#plan-your-wedding" title="Plan Your Wedding">Plan Your Wedding</a>
+						
+						</li>
+					
+									
+						<li class='' >
+						
+							<a href="/weddings#virtual-tour" title="Virtual Tour">Virtual Tour</a>
+						
+						</li>
+					
+				
+							</ul>
+							
+						</li>
+					
+				
+							</ul>
+							
+										</div>
+									</div>
+								</div>
+							
+						</li>
+					
+									
+						<li class='' data-uk-dropdown="{justify:'#site_nav', offset:65, preventflip:true, remaintime:500, hoverDelayIdle: 100}">
+							
+								<a href="javascript:void(0);" title="The Details" class="uk-navbar-nav-subtitle">
+									<div>The</div>
+									<span class="uk-text-uppercase">Details</span>
+								</a>
+							
+							
+								<div class="uk-dropdown uk-dropdown-navbar uk-dropdown-blank uk-padding-remove">
+									<div class="uk-block uk-block-secondary">
+										<div class="uk-container uk-container-center">
+							
+							<ul class="dropdown-section uk-flex uk-flex-center  ">
+													
+						<li class='uk-nav-header uk-text-left uk-margin-remove' >
+							
+								
+									<div class="subnav-title">Fun & Festivities</div>
+								
+							
+							
+							<ul class=" uk-padding-remove">
+													
+						<li class='' >
+						
+							<a href="/news" title="News">News</a>
+						
+						</li>
+					
+									
+						<li class='' >
+						
+							<a href="/events" title="Events">Events</a>
+						
+						</li>
+					
+									
+						<li class='' >
+						
+							<a href="/events/mountain-music-festival-2019" title="LABOR DAY MUSIC FEST">LABOR DAY MUSIC FEST</a>
+						
+						</li>
+					
+									
+						<li class='' >
+						
+							<a href="/details/the-dogs" title="The Dogs">The Dogs</a>
+						
+						</li>
+					
+				
+							</ul>
+							
+						</li>
+					
+									
+						<li class='uk-nav-header uk-text-left uk-margin-remove' >
+							
+								
+									<div class="subnav-title"><a href="/about-us" title="About Us">About Us <i class="uk-icon-angle-right"></i></a></div>
+								
+							
+							
+							<ul class=" uk-padding-remove">
+													
+						<li class='' >
+						
+							<a href="/about-us/history" title="History">History</a>
+						
+						</li>
+					
+									
+						<li class='' >
+						
+							<a href="/about-us/rlk-company-sustainability" title="Sustainability">Sustainability</a>
+						
+						</li>
+					
+									
+						<li class='' >
+						
+							<a href="/about-us/lodge-preservation" title="Lodge Preservation">Lodge Preservation</a>
+						
+						</li>
+					
+									
+						<li class='' >
+						
+							<a href="/master-plan" title="Master Plan">Master Plan</a>
+						
+						</li>
+					
+									
+						<li class='' >
+						
+							<a href="/details/employment" title="Employment">Employment</a>
+						
+						</li>
+					
+				
+							</ul>
+							
+						</li>
+					
+									
+						<li class='uk-nav-header uk-text-left uk-margin-remove' >
+							
+								
+									<div class="subnav-title"><a href="https://www.timberlinelodge.com/getting-here" title="Getting Here">Getting Here <i class="uk-icon-angle-right"></i></a></div>
+								
+							
+							
+							<ul class=" uk-padding-remove">
+													
+						<li class='' >
+						
+							<a href="/getting-here#transportation" title="Transportation">Transportation</a>
+						
+						</li>
+					
+									
+						<li class='' >
+						
+							<a href="/getting-here#driving" title="Winter Driving">Winter Driving</a>
+						
+						</li>
+					
+									
+						<li class='' >
+						
+							<a href="/getting-here#directions" title="Directions">Directions</a>
+						
+						</li>
+					
+									
+						<li class='' >
+						
+							<a href="/getting-here#parking" title="Parking">Parking</a>
+						
+						</li>
+					
+				
+							</ul>
+							
+						</li>
+					
+				
+							</ul>
+							
+										</div>
+									</div>
+								</div>
+							
+						</li>
+					
+									
+						<li class='' data-uk-dropdown="{justify:'#site_nav', offset:65, preventflip:true, remaintime:500, hoverDelayIdle: 100}">
+							
+								<a href="javascript:void(0);" title="The Store" class="uk-navbar-nav-subtitle">
+									<div>The</div>
+									<span class="uk-text-uppercase">Store</span>
+								</a>
+							
+							
+								<div class="uk-dropdown uk-dropdown-navbar uk-dropdown-blank uk-padding-remove">
+									<div class="uk-block uk-block-secondary">
+										<div class="uk-container uk-container-center">
+							
+							<ul class="dropdown-section uk-flex uk-flex-center  ">
+													
+						<li class='uk-nav-header uk-text-left uk-margin-remove' >
+							
+								
+									<div class="subnav-title">Gifts</div>
+								
+							
+							
+							<ul class=" uk-padding-remove">
+													
+						<li class='' >
+						
+							<a href="/store/gifts" title="Gift Shop & Gift Cards"> Gift Shop & Gift Cards</a>
+						
+						</li>
+					
+				
+							</ul>
+							
+						</li>
+					
+									
+						<li class='uk-nav-header uk-text-left uk-margin-remove' >
+							
+								
+									<div class="subnav-title">Activities</div>
+								
+							
+							
+							<ul class=" uk-padding-remove">
+													
+						<li class='' >
+						
+							<a href="https://tickets.timberlinelodge.com/ItemList.aspx?node_id=847252" title="Lift Tickets">Lift Tickets</a>
+						
+						</li>
+					
+									
+						<li class='' >
+						
+							<a href="https://tickets.timberlinelodge.com/ItemList.aspx?node_id=369861" title="Season Passes">Season Passes</a>
+						
+						</li>
+					
+									
+						<li class='' >
+						
+							<a href="http://www.mthoodfusionpass.com/buy-your-pass/" title="Mt. Hood Fusion Pass">Mt. Hood Fusion Pass</a>
+						
+						</li>
+					
+									
+						<li class='' >
+						
+							<a href="https://tickets.timberlinelodge.com/ItemList.aspx?node_id=348708" title="Lessons">Lessons</a>
+						
+						</li>
+					
+				
+							</ul>
+							
+						</li>
+					
+				
+							</ul>
+							
+										</div>
+									</div>
+								</div>
+							
+						</li>
+					
+				
+				</ul>
+			</div>
+		</nav>
+		<div id="site_message_bar" class="bg-light-blue uk-text-center uk-position-bottom-right uk-width-1-1 uk-visible-large" data-uk-slideshow="{autoplay: true, autoplayInterval: 5000}">
+			<ul class="uk-slideshow">
+								<li>TIMBERLINE'S COVID-19 UPDATES -  <a href="/coronavirus-updates" title="LEARN MORE">LEARN MORE</a></li>
+				
+			</ul>
+			<span class="uk-float-right uk-margin-right uk-position-absolute"></span>
+		</div>
+		<div class="conditions-bar uk-position-bottom-right uk-hidden-small">
+			<div class="uk-width-1-1 uk-flex uk-flex-center uk-flex-middle conditions-bar-inner">
+				
+				<div class="uk-margin-large-left uk-margin-large-right">
+					<em>Temp</em>
+					<strong>36&deg;</strong>
+				</div>
+				
+								
+				
+				<div class="uk-margin-large-right">
+					<em>Lift Status</em>
+					<strong>2</strong>
+				</div>
+				
+								
+				
+				
+								<div class="uk-margin-large-right">
+					<em>Snow Depth</em>
+					<strong>109"</strong>
+				</div>
+				
+				<div>
+					<a class="uk-button uk-button-primary uk-button-large uk-text-uppercase" href="/conditions" title="View all conditions">View All Conditions</a>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	
+
+
+
+
+
+
+
+<div id="template_7_grid" class="uk-margin-large-top">
+	<div class="uk-container uk-container-center">
+		<div class="uk-text-center">
+			<div class="uk-width-medium-3-5 uk-width-small-1-1 uk-container-center">
+				<div class="heading uk-text-uppercase uk-margin-large-top">Conditions</div>
+			</div>
+		</div>
+				<div class="uk-grid uk-margin-large-top uk-margin-large-bottom conditions-panels" data-uk-grid-match="{target:'.conditions-panel'}" data-uk-grid-margin>
+			<div class="uk-width-large-1-3 uk-width-1-1">
+				<h5>Current Conditions:</h5>
+				<div>
+					<div class="conditions-panel bg-dark-blue uk-text-contrast">
+						<p><date>May 18</date> - <small>Updated at 11:02 am</small></p>
+						<div class="uk-grid uk-flex uk-flex-middle">
+							<div class="temp uk-width-3-5">
+								<dl>
+									<dt><strong>36</strong></dt>
+									<dd class="uk-margin-remove">Snow / Rain Mix</dd>
+								</dl>
+							</div>
+							<i title="Snow / Rain Mix" class="weather-icon wi
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								wi-rain-mix
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+							"></i>
+						</div>
+						<hr>
+						<dl>
+							<h6>Today at Timberline:</h6>
+							<p><center>Lifts are scheduled to operate from 9am - 2pm, weather permitting. Reservations are required.</center>
+<br><br>
+<font size=3><b>All skiers and riders are required to make a mandatory reservation prior to visiting Timberline. During this initial phase of re-opening, ski area capacity will be limited by a daily reservation allotment. Reservations cannot be made more than 24 hours in advance and are sold on a first-come-first-served basis. Operations may be limited or modified at any time in response to changing circumstances. There will be absolutely no refunds or rain checks. Please stay tuned for updates. <a href="/coronavirus-updates" target="_blank"> Click here for the most up to date information & FAQ</a></font></b>
+<br><br>
+<font size=3><b>Update May 12: On our initial opening, uphill traffic will not be allowed in the active part of the Timberline Ski Area and is only permitted on the climbers route, located on the east side of the Timberline permit area, accessed from the Salmon River parking lot. Timberline is operating the ski area and hotel with a very measured and cautious approach. We are hopeful uphill traffic visitors practice similar measures with their mindsets and activities.</font></b></p>
+						</dl>
+					</div>
+				<ul class="uk-list note-list" style="font-family: 'GothamMedium', Helvetica, sans-serif; line-height: 1.75em;">
+						<li>Please familiarize yourself with deep snow safety. Uphill travel is only allowed on designated routes. <a href="/mountain/safety">MOUNTAIN SAFETY</a></li>
+					</ul></div>
+			</div>
+			<div class="uk-width-large-1-3 uk-width-1-1">
+				<h5>New Snow:</h5>
+				<div>
+					<div class="conditions-panel bg-dark-blue uk-text-contrast">
+						<date>&nbsp;</date>
+						<dl>
+							<dt><strong>0"</strong></dt>
+							<dd class="uk-margin-top-remove">Since 5am</dd>
+							<dt><strong>0"</strong></dt>
+							<dd class="uk-margin-top-remove">Last 24 hrs (5am to 5am)</dd>
+							<dt><strong>0"</strong></dt>
+							<dd class="uk-margin-top-remove">Last 72 hrs</dd>
+							<dt><strong>109"</strong></dt>
+							<dd class="uk-margin-top-remove">Base depth at lodge</dd>
+						</dl>
+					</div>
+				<ul class="uk-list note-list" style="font-family: 'GothamMedium', Helvetica, sans-serif; line-height: 1.75em;">
+						<li>CAUTION: You are entering an Alpine Environment where ice, snow, and irregular conditions may exist at any time on any surface. <a href="/getting-here">LEARN MORE</a> about getting here.</li>
+					</ul></div>
+			</div>
+			<div class="uk-width-large-1-3 uk-width-1-1">
+				<h5>At The Lodge:</h5>
+				<div>
+					<div class="conditions-panel bg-dark-blue uk-text-contrast">
+						<date>&nbsp;</date>
+						<dl>
+							<dt><img id="web_cam_icon" src="images/site/WEB_CAM_ICON.svg" alt="Webcam Icon" data-uk-svg> <strong>5 webcams</strong></dt>
+							<dd class="uk-margin-top-remove"><a href="#webcams" title="Go to Web Cams" data-uk-smooth-scroll>Click here to view</a></dd>
+							<dt><strong>Wet Roads</strong></dt>
+							<dd class="uk-margin-top-remove">Please take your time and drive with care. Winter driving conditions can exist.
+<br>
+<br>
+Camping is not permitted in the Timberline parking lot or within the area boundary.</br></dd>
+							<dt><strong>Light Wind</strong></dt>
+							<dd class="uk-margin-top-remove">NW @ 6mph</dd>
+							<!-- <dt><strong>416"</strong></dt> -->
+							<dt><strong>416"</strong></dt>
+							<dd class="uk-margin-top-remove">Annual snowfall</dd>
+						</dl>
+					</div>
+					<ul class="uk-list note-list" style="font-family: 'GothamMedium', Helvetica, sans-serif; line-height: 1.75em;">
+						<li>Annual snowfall calculated since September 1st.</li>
+						<li>Sledding, tubing, tobogganing, sliding, and camping are not permitted in the Timberline permit area.</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div id="operating_status" class="section-title uk-text-center uk-margin-large-bottom">
+			<span>Operating Status</span>
+		</div>
+		<div id="lift_status" class="uk-overflow-auto uk-margin-large-bottom uk-overflow-container">
+
+			
+
+			<table class="uk-table uk-table-responsive">
+				<thead>
+					<tr>
+						<th class="uk-width-medium-5-10 uk-width-6-10">Lifts</th>
+						<th class="uk-width-medium-2-10 uk-width-4-10">Status</th>
+						<th class="uk-width-medium-3-10 uk-hidden-small" text-align="right">Operating Hours</th>
+					</tr>
+				</thead>
+				<tbody>
+											<tr>
+							<td class="uk-width-medium-5-10 uk-width-1-2">STORMIN&#8217; NORMAN </td>
+							<td class="uk-width-medium-2-10 uk-width-1-2">
+								<span class="lift-open">open</span>
+								<br class="uk-visible-small uk-margin-bottom-small" />
+								<span class="uk-visible-small" style="font-size: 10px;">9:00am - 2:00pm</span>
+							</td>
+							<td class="uk-width-medium-3-10 uk-hidden-small">9:00am - 2:00pm</td>
+						</tr>
+											<tr>
+							<td class="uk-width-medium-5-10 uk-width-1-2">MAGIC MILE</td>
+							<td class="uk-width-medium-2-10 uk-width-1-2">
+								<span class="lift-open">open</span>
+								<br class="uk-visible-small uk-margin-bottom-small" />
+								<span class="uk-visible-small" style="font-size: 10px;">9:00am - 1:30pm</span>
+							</td>
+							<td class="uk-width-medium-3-10 uk-hidden-small">9:00am - 1:30pm</td>
+						</tr>
+											<tr>
+							<td class="uk-width-medium-5-10 uk-width-1-2">PALMER</td>
+							<td class="uk-width-medium-2-10 uk-width-1-2">
+								<span class="lift-closed">Under Construction</span>
+								<br class="uk-visible-small uk-margin-bottom-small" />
+								<span class="uk-visible-small" style="font-size: 10px;">10:00am - 2:30pm</span>
+							</td>
+							<td class="uk-width-medium-3-10 uk-hidden-small">10:00am - 2:30pm</td>
+						</tr>
+					
+				</tbody>
+			</table>
+
+			<table class="uk-table uk-table-responsive">
+				<thead>
+					<tr>
+						<th class="uk-width-medium-5-10 uk-width-6-10">Terrain</th>
+						<th class="uk-width-medium-2-10 uk-width-4-10">Status</th>
+						<th class="uk-width-medium-3-10 uk-hidden-small" text-align="right">Operating Hours</th>
+					</tr>
+				</thead>
+				<tbody>
+											<tr>
+							<td class="uk-width-medium-5-10 uk-width-1-2">BLOSSOM</td>
+							<td class="uk-width-medium-2-10 uk-width-1-2">
+								<span class="lift-closed">closed</span>
+								<br class="uk-visible-small uk-margin-bottom-small" />
+								<span class="uk-visible-small" style="font-size: 10px;">9:00am - 2:00pm</span>
+							</td>
+							<td class="uk-width-medium-3-10 uk-hidden-small">9:00am - 2:00pm</td>
+						</tr>
+											<tr>
+							<td class="uk-width-medium-5-10 uk-width-1-2">CONWAY&#8217;S </td>
+							<td class="uk-width-medium-2-10 uk-width-1-2">
+								<span class="lift-closed">closed</span>
+								<br class="uk-visible-small uk-margin-bottom-small" />
+								<span class="uk-visible-small" style="font-size: 10px;">9:00am - 2:00pm</span>
+							</td>
+							<td class="uk-width-medium-3-10 uk-hidden-small">9:00am - 2:00pm</td>
+						</tr>
+					
+				</tbody>
+			</table>
+
+			<table class="uk-table uk-table-responsive">
+				<thead>
+					<tr>
+						<th class="uk-width-medium-5-10 uk-width-6-10">Parking Lots</th>
+						<th class="uk-width-medium-2-10 uk-width-4-10">Status</th>
+						<th class="uk-width-medium-3-10 uk-hidden-small" text-align="right">Last Updated</th>
+					</tr>
+				</thead>
+				<tbody>
+											<tr>
+							<td class="uk-width-medium-5-10 uk-width-1-2">MAIN LOT</td>
+							<td class="uk-width-medium-2-10 uk-width-1-2">
+								<span class="lift-open">open</span>
+								<br class="uk-visible-small uk-margin-bottom-small" />
+								<span class="uk-visible-small" style="font-size: 10px;">updated:<br>7:00am</span>
+							</td>
+							<td class="uk-width-medium-3-10 uk-hidden-small">7:00am</td>
+						</tr>
+											<tr>
+							<td class="uk-width-medium-5-10 uk-width-1-2">SALMON RIVER LOT</td>
+							<td class="uk-width-medium-2-10 uk-width-1-2">
+								<span class="lift-open">open</span>
+								<br class="uk-visible-small uk-margin-bottom-small" />
+								<span class="uk-visible-small" style="font-size: 10px;">updated:<br>7:00am</span>
+							</td>
+							<td class="uk-width-medium-3-10 uk-hidden-small">7:00am</td>
+						</tr>
+					
+				</tbody>
+			</table>
+		</div>
+		
+
+		<div id="telemetry" class="section-title uk-text-center uk-margin-large-bottom">
+			<span>Telemetry</span>
+		</div>
+		<div class="uk-grid uk-grid-small uk-margin-large-bottom telemetry-container" data-uk-grid-margin>
+			<div class="uk-width-medium-1-3 uk-width-small-1-1 uk-row-first">
+				<div class="uk-grid">
+					<div class="uk-width-1-2 uk-vertical-align telemetry-height">
+						<div class="uk-vertical-align-middle">
+							<img src="/images/weather_resource/nwac-logo-square-200.jpg" alt="NWAC logo">
+						</div>
+					</div>
+					<div class="uk-width-1-2 uk-text-uppercase uk-padding-remove uk-vertical-align telemetry-height">
+						<span class="uk-vertical-align-middle">Current Telemetry Data from NWAC</span>
+					</div>
+				</div>
+			</div>
+			<div class="uk-width-medium-1-3 uk-width-small-1-1 uk-vertical-align uk-text-center">
+				<div class="uk-vertical-align-middle">
+					<a target="_blank" href="http://www.nwac.us/weatherdata/timberlinebase/now/" title="6,000’ ELEVATION – TIMBERLINE LODGE"><small>6,000’ ELEVATION – TIMBERLINE LODGE</small></a>
+				</div>
+			</div>
+			<div class="uk-width-medium-1-3 uk-width-small-1-1 uk-vertical-align uk-text-center">
+				<div class="uk-vertical-align-middle">
+					<a target="_blank" href="http://www.nwac.us/weatherdata/timberlineupper/now/" title="7,000’ ELEVATION – TOP OF MAGIC MILE"><small>7,000’ ELEVATION – TOP OF MAGIC MILE</small></a>
+				</div>
+			</div>
+		</div>
+		<div id="webcams" class="section-title uk-text-center uk-margin-large-bottom">
+			<span>Webcams</span>
+		</div>
+		<div class="uk-grid uk-grid-small uk-margin-large-bottom webcam-container" data-uk-grid-margin>
+			<div class="uk-margin-large-bottom uk-width-medium-1-3 uk-width-small-1-1 uk-row-first">
+				<div>
+					<a data-lightbox-type="image" data-uk-lightbox="{group: 'webcam'}" href="/snowcameras/lodge.jpg?nocache=1589826463" title="Timberline Lodge Camera">
+						<img src="/snowcameras/lodge.jpg?nocache=1589826463" alt="Live Feed: Timberline Lodge Camera">
+					</a>
+				</div>
+				<h5 class="teaser-headline uk-text-uppercase uk-margin-small">Timberline Lodge</h5>
+			</div>
+			<div class="uk-margin-large-bottom uk-width-medium-1-3 uk-width-small-1-1">
+				<div>
+					<a data-lightbox-type="image" data-uk-lightbox="{group: 'webcam'}" href="/snowcameras/floodtop.jpg?nocache=1589826463" title="Magic Mile">
+						<img src="/snowcameras/floodtop.jpg?nocache=1589826463" alt="Live Feed: Jeff Flood Camera">
+					</a>
+				</div>
+				<h5 class="teaser-headline uk-text-uppercase uk-margin-small">Magic Mile</h5>
+			</div>
+			<div class="uk-margin-large-bottom uk-width-medium-1-3 uk-width-small-1-1">
+				<div>
+					<a data-lightbox-type="image" data-uk-lightbox="{group: 'webcam'}" href="/snowcameras//palmerbottom.jpg?nocache=1589826463" title="Palmer/Silcox Camera">
+						<img src="snowcameras/palmerbottom.jpg?nocache=1589826463" alt="Live Feed: Palmer/Silcox Camera">
+					</a>
+				</div>
+				<h5 class="teaser-headline uk-text-uppercase uk-margin-small">Palmer/Silcox</h5>
+			</div>
+			<div class="uk-margin-large-bottom uk-width-medium-1-3 uk-width-small-1-1">
+				<div>
+					<a data-lightbox-type="image" data-uk-lightbox="{group: 'webcam'}" href="/snowcameras//brunotop.jpg?nocache=1589826463" title="Bruno's Camera">
+						<img src="/snowcameras//brunotop.jpg?nocache=1589826463" alt="Live Feed: Bruno's Camera">
+					</a>
+				</div>
+				<h5 class="teaser-headline uk-text-uppercase uk-margin-small">Bruno's</h5>
+			</div>
+		</div>
+		<div id="weather_resource" class="section-title uk-text-center uk-margin-large-bottom">
+			<span>Weather Resources</span>
+		</div>
+		<div class="uk-grid uk-margin-large-bottom" data-uk-grid-margin>
+			<div class="uk-width-large-1-5 uk-width-medium-2-6 uk-width-small-3-6 uk-width-1-2">
+				<a href="https://weather.com/weather/radar/interactive/l/470:11:US?interactiveMapLayer=radar&baseMap=r" title="The Weather Channel" target="_blank" class="uk-link-muted">
+					<img src="/images/weather_resource/color_weatherchannel.jpg" class="uk-width-1-1" alt="The Weather Channel Logo">
+					<p class="teaser-meta uk-width-1-1 uk-text-center">Weather.com</p>
+				</a>
+			</div>
+			<div class="uk-width-large-1-5 uk-width-medium-2-6 uk-width-small-3-6 uk-width-1-2">
+				<a href="http://www.snow-forecast.com/resorts/Timberline/6day/mid" title="Snow Forecast" target="_blank" class="uk-link-muted">
+					<img src="/images/weather_resource/SNOWFORECAST.jpg" class="uk-width-1-1" alt="Snow Forecast Logo">
+					<p class="teaser-meta uk-width-1-1 uk-text-center">Snow Forecast.com</p>
+				</a>
+			</div>
+			<div class="uk-width-large-1-5 uk-width-medium-2-6 uk-width-small-3-6 uk-width-1-2">
+				<a href="http://forecast.weather.gov/MapClick.php?lat=45.33284041773058&lon=-121.70877456665039&smap=1#.WcGB8dOGNE4" title="NOAA" target="_blank" class="uk-link-muted">
+					<img src="/images/weather_resource/NOAA.jpg" class="uk-width-1-1" alt="NOAA Logo">
+					<p class="teaser-meta uk-width-1-1 uk-text-center">NOAA</p>
+				</a>
+			</div>
+			<div class="uk-width-large-1-5 uk-width-medium-2-6 uk-width-small-3-6 uk-width-1-2">
+				<a href="http://forecast.weather.gov/MapClick.php?zoneid=ORZ011" title="National Weather Service" target="_blank" class="uk-link-muted">
+					<img src="/images/weather_resource/USNationalWeatherService-Logo.jpg" class="uk-width-1-1" alt="US National Weather Service Logo">
+					<p class="teaser-meta uk-width-1-1 uk-text-center">National Weather Service</p>
+				</a>
+			</div>
+			<div class="uk-width-large-1-5 uk-width-medium-2-6 uk-width-small-3-6 uk-width-1-2">
+				<a href="http://www.nwac.us/mountain-weather-forecast/current/" title="Northwest Avalanche Center" target="_blank" class="uk-link-muted">
+					<img src="/images/weather_resource/nwac-logo-square-200.jpg" class="uk-width-1-1" alt="Northwest Avalanche Center Logo">
+					<p class="teaser-meta uk-width-1-1 uk-text-center">Northwest Avalanche Center</p>
+				</a>
+			</div>
+			<!-- <div class="uk-width-large-1-6 uk-width-medium-2-6 uk-width-small-3-6 uk-width-1-2">
+				<a href="http://www.portlandweather.com/mt-hood-weather.html" title="Portland Weather" target="_blank" class="uk-link-muted">
+					<img src="/images/weather_resource/PORTLAND_WEATHER.jpg" class="uk-width-1-1" alt="Portland Weather Logo">
+					<p class="teaser-meta uk-width-1-1 uk-text-center">Portland<br class="uk-visible-small" />Weather.com</p>
+				</a>
+			</div> -->
+		</div>
+		<div id="snow_data" class="section-title uk-text-center uk-margin-large-bottom">
+			<span>Snow Data</span>
+		</div>
+		<div class="uk-cover-background" style="background-image: url('/images/uploads/SNOW_DATA_GRAPHIC.jpg');">
+		    <img class="uk-invisible uk-width-1-1" src="/images/uploads/SNOW_DATA_GRAPHIC.jpg" alt="Snow Data Graphic">
+		</div>
+		<div class="uk-margin-large-bottom uk-block">
+			<div class="uk-grid" data-uk-grid-margin>
+				<div class="uk-width-medium-1-2">
+					<div class="teaser-headline uk-text-uppercase">HISTORICAL SNOW DATA</div>
+					<p>Timberline has been recording snow depths since 1949. See how current measurements stack up to years past.</p>
+					<p><a href="/mountain/historical-snow-data" title="Call to Action" class="uk-text-uppercase">View Charts</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+	<footer id="site_footer" class="uk-position-relative">
+		<div id="footer_image" class="uk-position-absolute uk-position-z-index">
+			<div class="uk-text-center">
+				<span class="title">Mt. Hood</span><br />
+				<span class="title">Elevation 11,245'</span><br />
+				<a href="/mountain/trail-map" title="View map">View map</a>
+			</div>
+			<img src="/images/site/FOOTER_TRAIL_MAP.png" alt="Mountain Trail Map" class="circle-border" />
+		</div>
+		<div>
+			<div class="bar bg-light-blue uk-margin-bottom"></div>
+			<div class="bar bg-dark-blue uk-margin-bottom"></div>
+			<div class="bar bg-black uk-margin-bottom"></div>
+		</div>
+		<div class="uk-block uk-block-large uk-block-secondary uk-contrast">
+			<div class="uk-container uk-container-center">
+				<div class="uk-grid uk-grid-divider uk-margin-large-top uk-margin-large-bottom uk-visible-large">
+											
+							
+								<div class="uk-width-1-4">
+									
+									<h4 class="info-headline uk-text-uppercase">About Us</h4>
+									
+							
+							
+
+							<ul class="uk-list info-copy">
+														
+							
+								<li><a href="/contact-us" title="Contact Us">Contact Us</a></li>
+							
+						
+											
+							
+								<li><a href="/details/the-dogs" title="The Dogs">The Dogs</a></li>
+							
+						
+											
+							
+								<li><a href="/master-plan" title="Master PLan">Master Plan</a></li>
+							
+						
+											
+							
+								<li><a href="/employment/current-jobs" title="Jobs">Jobs</a></li>
+							
+						
+											
+							
+								<li><a href="/privacy" title="Privacy Policy">Privacy Policy</a></li>
+							
+						
+											
+							
+								<li><a href="/contact-us" title="Charitable Contributions">Charitable Contributions</a></li>
+							
+						
+											
+							
+								<li><a href="https://timberlinelodge.formstack.com/forms/timberline_lodge_and_ski_area_lost_property_report" title="Lost and Found">Lost and Found</a></li>
+							
+						
+					
+							</ul>
+
+							
+								</div>
+							
+						
+					
+					<div class="uk-width-2-4 uk-flex uk-flex-center">
+						<div>
+							<h4 class="info-headline uk-text-uppercase">SIGN UP FOR TIMBERLINE NEWS AND PROMOTIONS</h4>
+							<form id="footer_subscription" class="uk-form uk-margin-large-bottom" action="//timberlinelodge.us4.list-manage.com/subscribe/post-json?u=8ebf93f343c3fa766f7a6cc08&amp;id=fb81b73580" method="GET">
+								<input type="email" name="EMAIL" placeholder="Enter your email address" value="" required>
+								<button type="submit" class="uk-button uk-button-primary">Submit</button>
+								<div id="newsletter_signup_result" class="uk-hidden uk-text-center"></div>
+							</form>
+							<div class="uk-flex uk-flex-middle uk-flex-center">
+								<h4 class="info-headline uk-text-uppercase uk-align-left uk-margin-remove">Follow Us</h4>
+					            <a href="https://www.facebook.com/timberlinelodge.oregon/" class="uk-icon-button uk-icon-facebook uk-margin-large-left uk-margin-right" title="Click here to visit the Timberline Lodge Facebook Page"></a>
+					            <a href="https://twitter.com/timberlinelodge" class="uk-icon-button uk-icon-twitter uk-margin-right" title="Click here to visit the Timberline Lodge Twitter Page"></a>
+					            <a href="https://www.instagram.com/timberlinelodge" class="uk-icon-button uk-icon-instagram uk-margin-right" title="Click here to visit the Timberline Lodge Instagram Page"></a>
+					            <a href="https://www.youtube.com/user/timberlinelodge37" class="uk-icon-button uk-icon-youtube-play uk-margin-right" title="Click here to visit the Timberline Lodge YouTube Page"></a>
+							</div>
+						</div>
+					</div>
+					<div class="uk-width-1-4 uk-text-center">
+						<img src="/images/site/FOREST_SERVICE.svg" alt="US Forest Service">
+						<br>
+						<p class="fs_blurb">This institution is an equal opportunity service provider and employer which operates under a special use permit issued by the Mt. Hood National Forest, USDA Forest Service.</p>
+					</div>
+				</div>
+				<div class="mobile uk-grid uk-hidden-large">
+					<div class="uk-width-1-1 uk-text-center">
+						<h4 class="info-headline uk-text-uppercase">SIGN UP FOR TIMBERLINE NEWS AND PROMOTIONS</h4>
+						<form class="uk-form uk-margin-large-bottom">
+							<input type="email" placeholder="Email Address" required>
+							<button class="uk-button uk-button-primary">Submit</button>
+						</form>
+						<hr class="uk-text-contrast" />
+						<div class="uk-flex uk-flex-middle uk-flex-center uk-margin-large-top uk-margin-large-bottom">
+							<div>
+								<h4 class="info-headline uk-text-uppercase">Follow Us</h4>
+								<a href="https://www.facebook.com/timberlinelodge.oregon/" class="uk-icon-button uk-icon-facebook uk-margin-right" title="Click here to visit the Timberline Lodge Facebook Page"></a>
+								<a href="https://twitter.com/timberlinelodge" class="uk-icon-button uk-icon-twitter uk-margin-right" title="Click here to visit the Timberline Lodge Twitter Page"></a>
+								<a href="https://www.instagram.com/timberlinelodge" class="uk-icon-button uk-icon-instagram uk-margin-right"  title="Click here to visit the Timberline Lodge Instagram Page"></a>
+								<a href="https://www.youtube.com/user/timberlinelodge37" class="uk-icon-button uk-icon-youtube-play" title="Click here to visit the Timberline Lodge YouTube Page"></a>
+							</div>
+						</div>
+						<hr class="uk-text-contrast" />
+						<div class="uk-margin-large-top">
+							<img src="/images/site/FOREST_SERVICE.svg" alt="US Forest Service"><br />
+							<p class="fs_blurb">This institution is an equal opportunity service provider and employer which operates under a special use permit issued by the Mt. Hood National Forest, USDA Forest Service.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="mobile-booking uk-hidden-large uk-block-secondary uk-width-1-1 uk-text-center uk-position-bottom uk-position-z-index" data-uk-sticky>
+				<a href="#checkin_modal" title="Book a room" class="uk-text-uppercase uk-text-contrast" data-uk-modal>Book a room</a>
+			</div>
+		</div>
+
+		<div class="uk-block uk-panel-box-primary uk-visible-large" id="footer-contact-info">
+			<div class="uk-container uk-container-center uk-margin-large-bottom">
+				<div class="uk-grid" data-uk-grid-margin>
+					<div class="uk-width-medium-1-4 uk-row-first">
+						<div class="info-headline uk-text-uppercase">Lodge Reservations</div>
+						<p class="info-copy">
+							Toll Free: 800-547-1406
+							<br>
+							Local: 503-272-3410
+							<br>
+							<a href="#contact-modal" title="Email" class="uk-link-muted" data-uk-modal data-contact-target="reservations@timberlinelodge.com">Email</a>
+						</p>
+					</div>
+					<div class="uk-width-medium-1-4">
+						<div class="info-headline uk-text-uppercase">General Information</div>
+						<p class="info-copy">
+							503-272-3311
+							<br>
+							<a href="#contact-modal" title="Email" class="uk-link-muted" data-uk-modal data-contact-target="info@timberlinelodge.com">Email</a>
+						</p>
+					</div>
+					<div class="uk-width-medium-1-4">
+						<div class="info-headline uk-text-uppercase">SKI AREA GUEST SERVICES</div>
+						<p class="info-copy">
+							Local: 503-272-3158
+							<br>
+							<a href="#contact-modal" title="Email" class="uk-link-muted" data-uk-modal data-contact-target="info@timberlinelodge.com">Email</a>
+						</p>
+					</div>
+					<div class="uk-width-medium-1-4">
+						<div class="info-headline uk-text-uppercase">SNOW CONDITIONS</div>
+						<p class="info-copy">
+							Local: 503-222-2211
+							<br>
+							<a href="/conditions" title="Snow Conditions" class="uk-link-muted">Conditions Page</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- contact modal -->
+	<div id="contact-modal" class="uk-modal">
+	    <div class="uk-modal-dialog">
+		    <a class="uk-modal-close uk-close"><img src="/images/site/X.svg" alt="Close Modal Icon" data-uk-svg></a>
+			<!-- modal content -->
+			<div class="uk-container">
+				<div>
+					<div class="uk-width-1-1 ">
+						<div class="title uk-margin-large-top uk-margin-small-bottom">We want to hear from you</div>
+						<div class="heading uk-text-uppercase uk-margin-small-bottom">Contact Us</div>
+						<form id="footer_contact_form" class="uk-form" name="footer-contact-form" method="post" action="https://www.timberlinelodge.com/conditions"  >
+<div class='hiddenFields'>
+<input type="hidden" name="ACT" value="23" />
+<input type="hidden" name="RET" value="conditions" />
+<input type="hidden" name="URI" value="conditions" />
+<input type="hidden" name="PRV" value="" />
+<input type="hidden" name="recipients" value="BetpKwQloH461DtVTggTYeGLrX+jNYHPIWh0SlXHn1Y=" />
+<input type="hidden" name="user_recipients" value="4cUWniODmHJMiYom9orSQgDQ7WUBSlDYfX759SU4VR0=" />
+<input type="hidden" name="charset" value="utf-8" />
+<input type="hidden" name="redirect" value="" />
+<input type="hidden" name="replyto" value="" />
+<input type="hidden" name="markdown" value="PyUlrUKAd5+TLSoQKBWV/6yoGZLsjcew6oOOA27Av2A=" />
+<input type="hidden" name="site_id" value="1" />
+<input type="hidden" name="csrf_token" value="69c44facb36322e42ce47729e33a62ad74ad7668" />
+</div>
+
+
+						<input type="hidden" name="subject" value="Timberline Lodge Contact Request">
+						<input type="hidden" name="name" value="">
+							<div class="uk-container-center uk-width-small-1-1">
+								<div class="uk-grid">
+						            <div class="uk-width-1-1">
+							            <div class="uk-form-row uk-grid">
+								            <div class="uk-width-1-2"><input data-label="First Name" type="text" name="fname" placeholder="First Name" class="uk-width-1-1 uk-margin-small-top" required></div>
+								            <div class="uk-width-1-2"><input data-label="Last Name" type="text" name="lname" placeholder="Last Name" class="uk-width-1-1 uk-margin-small-top" required></div>
+							            </div>
+							            <div class="uk-form-row">
+								            <input data-label="Email Address" type="email" name="from" placeholder="Email Address" class="uk-width-1-1 uk-margin-small-top" required>
+							            </div>
+							            <div class="uk-form-row">
+								        	<input data-label="Phone" type="tel" placeholder="Phone" name="message[]" class="uk-width-1-1 uk-margin-small-top" required>
+							            </div>
+										<div class="uk-form-row ">
+											<select class="uk-width-1-1 uk-margin-small-top" name="to" id="to" required>
+												<option value="" disabled selected>Send message to...</option>
+												<option value="reservations@timberlinelodge.com">Lodge Reservations</option>
+												<option value="info@timberlinelodge.com">General Information</option>
+												<option value="sales@timberlinelodge.com">Sales &amp; Catering</option>
+												<option value="weddings@timberlinelodge.com">Weddings</option>
+												<option value="skischool@timberlinelodge.com">Ski &amp; Ride School</option>
+												<option value="rentals@timberlinelodge.com">Rental Shop</option>
+												<option value="jobs@timberlinelodge.com">Employment</option>
+												<option value="marketing@timberlinelodge.com">Media Contact &amp; PR</option>
+												<option value="retail@timberlinelodge.com">Shopping</option>
+											</select>
+										</div>
+							            <div class="uk-form-row">
+								            <textarea data-label="Message" name="message[]" rows="8" placeholder="Your questions/comments" class="uk-width-1-1 uk-margin-small-top" required></textarea>
+							            </div>
+							            <div class="uk-form-row hp-confirm">
+								            <label for="confirm-subscription">Confirm Subscription</label>
+								            <input type="checkbox" name="confirm-subscription" id="confirm-subscription">
+							            </div>
+							            <div class="uk-form-row">
+								        	<button type="submit" class="uk-button uk-button-primary uk-margin-top uk-width-1-1">Submit</button>
+							            </div>
+						            </div>
+								</div>
+							</div>
+						</form>
+						<hr class="snowflake uk-divider-icon uk-margin-large-top">
+					</div>
+				</div>
+			</div>
+	    </div>
+	</div>
+
+	<div id="mobile_site_nav" class="uk-offcanvas">
+		<div class="uk-offcanvas-bar">
+			<div class="uk-accordion" data-uk-accordion="{showfirst: false, collapse: false}">
+							
+					
+						<div class="uk-accordion-title uk-text-center">
+							<a href="javascript:void(0);" title="The Mountain">
+								<div>The</div>
+								<span class="uk-text-uppercase">Mountain</span>
+							</a>
+						</div>
+						<div class="uk-accordion-content">
+					
+					
+					<ul class="uk-padding-remove uk-list">
+									
+					
+					
+						
+							<h3 class="uk-text-contrast subnav-title uk-text-uppercase">The Mountain</h3>
+						
+					
+					<ul class="uk-padding-remove uk-list">
+									
+					
+					
+					<li>
+						<a href="/pucci-chair-upgrade" title="Pucci Chair Upgrade" onclick="closeMobileNavOnPage();">
+							<span class="uk-text-uppercase">Pucci Chair Upgrade</span>
+						</a>
+					</li>
+					
+				
+							
+					
+					
+					<li>
+						<a href="/mountain/ski-area" title="Ski area" onclick="closeMobileNavOnPage();">
+							<span class="uk-text-uppercase">Ski area</span>
+						</a>
+					</li>
+					
+				
+							
+					
+					
+					<li>
+						<a href="/mountain/ski-area#terrain-park" title="Terrain Park" onclick="closeMobileNavOnPage();">
+							<span class="uk-text-uppercase">Terrain Park</span>
+						</a>
+					</li>
+					
+				
+			
+					</ul>
+					
+				
+							
+					
+					
+						
+							<h3 class="uk-text-contrast subnav-title uk-text-uppercase">Winter</h3>
+						
+					
+					<ul class="uk-padding-remove uk-list">
+									
+					
+					
+					<li>
+						<a href="/mountain/season-passes" title="Ski Season Passes" onclick="closeMobileNavOnPage();">
+							<span class="uk-text-uppercase">Ski Season Passes</span>
+						</a>
+					</li>
+					
+				
+							
+					
+					
+					<li>
+						<a href="/mountain/lift-tickets" title="Ski Lift Tickets" onclick="closeMobileNavOnPage();">
+							<span class="uk-text-uppercase">Ski Lift Tickets</span>
+						</a>
+					</li>
+					
+				
+							
+					
+					
+					<li>
+						<a href="/mountain/lessons" title="Lessons" onclick="closeMobileNavOnPage();">
+							<span class="uk-text-uppercase">Lessons</span>
+						</a>
+					</li>
+					
+				
+							
+					
+					
+					<li>
+						<a href="/mountain/rentals" title="Rentals" onclick="closeMobileNavOnPage();">
+							<span class="uk-text-uppercase">Rentals</span>
+						</a>
+					</li>
+					
+				
+							
+					
+					
+					<li>
+						<a href="/mountain/ski-groups" title="Ski Groups" onclick="closeMobileNavOnPage();">
+							<span class="uk-text-uppercase">Ski Groups</span>
+						</a>
+					</li>
+					
+				
+							
+					
+					
+					<li>
+						<a href="/mountain/other-winter-activities" title="Other Winter Activities" onclick="closeMobileNavOnPage();">
+							<span class="uk-text-uppercase">Other Winter Activities</span>
+						</a>
+					</li>
+					
+				
+			
+					</ul>
+					
+				
+							
+					
+					
+						
+							<h3 class="uk-text-contrast subnav-title uk-text-uppercase">Summer</h3>
+						
+					
+					<ul class="uk-padding-remove uk-list">
+									
+					
+					
+					<li>
+						<a href="/mountain/bike-park" title="Bike Park" onclick="closeMobileNavOnPage();">
+							<span class="uk-text-uppercase">Bike Park</span>
+						</a>
+					</li>
+					
+				
+							
+					
+					
+					<li>
+						<a href="/camps" title="Summer Snow Camps" onclick="closeMobileNavOnPage();">
+							<span class="uk-text-uppercase">Summer Snow Camps</span>
+						</a>
+					</li>
+					
+				
+							
+					
+					
+					<li>
+						<a href="/mountain/freestyle-training" title="FREESTYLE TRAINING CENTER" onclick="closeMobileNavOnPage();">
+							<span class="uk-text-uppercase">FREESTYLE TRAINING CENTER</span>
+						</a>
+					</li>
+					
+				
+							
+					
+					
+					<li>
+						<a href="/mountain/lane-reservations" title="Lane Reservations" onclick="closeMobileNavOnPage();">
+							<span class="uk-text-uppercase">Lane Reservations</span>
+						</a>
+					</li>
+					
+				
+							
+					
+					
+					<li>
+						<a href="/mountain/summer-activities" title="Summer Activities" onclick="closeMobileNavOnPage();">
+							<span class="uk-text-uppercase">Summer Activities</span>
+						</a>
+					</li>
+					
+				
+							
+					
+					
+					<li>
+						<a href="/mountain/summer-activities#pct" title="PCT" onclick="closeMobileNavOnPage();">
+							<span class="uk-text-uppercase">PCT</span>
+						</a>
+					</li>
+					
+				
+			
+					</ul>
+					
+				
+							
+					
+					
+						
+							<h3 class="uk-text-contrast subnav-title uk-text-uppercase">Mountain Info</h3>
+						
+					
+					<ul class="uk-padding-remove uk-list">
+									
+					
+					
+					<li>
+						<a href="/conditions" title="Conditions" onclick="closeMobileNavOnPage();">
+							<span class="uk-text-uppercase">Conditions</span>
+						</a>
+					</li>
+					
+				
+							
+					
+					
+					<li>
+						<a href="/mountain/trail-map" title="Trail Maps" onclick="closeMobileNavOnPage();">
+							<span class="uk-text-uppercase">Trail Maps</span>
+						</a>
+					</li>
+					
+				
+							
+					
+					
+					<li>
+						<a href="/mountain/safety" title="Mountain Safety" onclick="closeMobileNavOnPage();">
+							<span class="uk-text-uppercase">Mountain Safety</span>
+						</a>
+					</li>
+					
+				
+							
+					
+					
+					<li>
+						<a href="/mountain/historical-snow-data" title="Historical Snow" onclick="closeMobileNavOnPage();">
+							<span class="uk-text-uppercase">Historical Snow</span>
+						</a>
+					</li>
+					
+				
+			
+					</ul>
+					
+				
+			
+					</ul>
+					
+						</div>
+					
+				
+							
+					
+						<div class="uk-accordion-title uk-text-center">
+							<a href="javascript:void(0);" title="The Lodge">
+								<div>The</div>
+								<span class="uk-text-uppercase">Lodge</span>
+							</a>
+						</div>
+						<div class="uk-accordion-content">
+					
+					
+					<ul class="uk-padding-remove uk-list">
+									
+					
+					
+						
+							<h3 class="uk-text-contrast subnav-title uk-text-uppercase">Accommodations</h3>
+						
+					
+					<ul class="uk-padding-remove uk-list">
+									
+					
+					
+					<li>
+						<a href="/lodge" title="Timberline Lodge" onclick="closeMobileNavOnPage();">
+							<span class="uk-text-uppercase">Timberline Lodge</span>
+						</a>
+					</li>
+					
+				
+							
+					
+					
+					<li>
+						<a href="/lodge/luxury-condominiums" title="Luxury Condominiums" onclick="closeMobileNavOnPage();">
+							<span class="uk-text-uppercase">Luxury Condominiums</span>
+						</a>
+					</li>
+					
+				
+							
+					
+					
+					<li>
+						<a href="/lodge/silcox-hut" title="Silcox Hut" onclick="closeMobileNavOnPage();">
+							<span class="uk-text-uppercase">Silcox Hut</span>
+						</a>
+					</li>
+					
+				
+							
+					
+					
+					<li>
+						<a href="/lodge#amenities" title="Amenities" onclick="closeMobileNavOnPage();">
+							<span class="uk-text-uppercase">Amenities</span>
+						</a>
+					</li>
+					
+				
+			
+					</ul>
+					
+				
+							
+					
+					
+						
+							<h3 class="uk-text-contrast subnav-title uk-text-uppercase">Dining & Bar</h3>
+						
+					
+					<ul class="uk-padding-remove uk-list">
+									
+					
+					
+					<li>
+						<a href="/lodge/dining" title="Dining " onclick="closeMobileNavOnPage();">
+							<span class="uk-text-uppercase">Dining</span>
+						</a>
+					</li>
+					
+				
+							
+					
+					
+					<li>
+						<a href="/lodge/dining#cascade" title="Cascade Dining Room" onclick="closeMobileNavOnPage();">
+							<span class="uk-text-uppercase">Cascade Dining Room</span>
+						</a>
+					</li>
+					
+				
+							
+					
+					
+					<li>
+						<a href="/lodge/dining#rams" title="Ram's Head Bar" onclick="closeMobileNavOnPage();">
+							<span class="uk-text-uppercase">Ram's Head Bar</span>
+						</a>
+					</li>
+					
+				
+							
+					
+					
+					<li>
+						<a href="/lodge/dining#wy_east" title="Wy'East Cafe" onclick="closeMobileNavOnPage();">
+							<span class="uk-text-uppercase">Wy'East Cafe</span>
+						</a>
+					</li>
+					
+				
+							
+					
+					
+					<li>
+						<a href="/lodge/dining#ybar" title="Y'Bar" onclick="closeMobileNavOnPage();">
+							<span class="uk-text-uppercase">Y'Bar</span>
+						</a>
+					</li>
+					
+				
+							
+					
+					
+					<li>
+						<a href="/lodge/dining#blue_ox_bar" title="Blue Ox Bar" onclick="closeMobileNavOnPage();">
+							<span class="uk-text-uppercase">Blue Ox Bar</span>
+						</a>
+					</li>
+					
+				
+							
+					
+					
+					<li>
+						<a href="/lodge/dining#phlox" title="Phlox Point Cabin" onclick="closeMobileNavOnPage();">
+							<span class="uk-text-uppercase">Phlox Point Cabin</span>
+						</a>
+					</li>
+					
+				
+							
+					
+					
+					<li>
+						<a href="/lodge/dining#mt_hood_brewing_company" title="Mt Hood Brewing Co." onclick="closeMobileNavOnPage();">
+							<span class="uk-text-uppercase">Mt Hood Brewing Co.</span>
+						</a>
+					</li>
+					
+				
+							
+					
+					
+					<li>
+						<a href="/lodge/dining#summit" title="Summit" onclick="closeMobileNavOnPage();">
+							<span class="uk-text-uppercase">SUMMIT</span>
+						</a>
+					</li>
+					
+				
+			
+					</ul>
+					
+				
+							
+					
+					
+						
+							<h3 class="uk-text-contrast subnav-title uk-text-uppercase"><a href="/lodge/groups" title="Groups" onclick="closeMobileNavOnPage();">Groups <i class="uk-icon-angle-right"></i></a></h3>
+						
+					
+					<ul class="uk-padding-remove uk-list">
+									
+					
+					
+					<li>
+						<a href="/lodge/venues" title="Venues" onclick="closeMobileNavOnPage();">
+							<span class="uk-text-uppercase">Venues</span>
+						</a>
+					</li>
+					
+				
+							
+					
+					
+					<li>
+						<a href="/groups/group-packages" title="Deals & Packages" onclick="closeMobileNavOnPage();">
+							<span class="uk-text-uppercase">Deals & Packages</span>
+						</a>
+					</li>
+					
+				
+							
+					
+					
+					<li>
+						<a href="/lodge/groups" title="Menus & Services" onclick="closeMobileNavOnPage();">
+							<span class="uk-text-uppercase">Menus & Services</span>
+						</a>
+					</li>
+					
+				
+			
+					</ul>
+					
+				
+							
+					
+					
+						
+							<h3 class="uk-text-contrast subnav-title uk-text-uppercase"><a href="/weddings" title="Weddings" onclick="closeMobileNavOnPage();">Weddings <i class="uk-icon-angle-right"></i></a></h3>
+						
+					
+					<ul class="uk-padding-remove uk-list">
+									
+					
+					
+					<li>
+						<a href="/weddings#wedding-venues" title="Wedding Venues" onclick="closeMobileNavOnPage();">
+							<span class="uk-text-uppercase">Wedding Venues</span>
+						</a>
+					</li>
+					
+				
+							
+					
+					
+					<li>
+						<a href="/weddings#plan-your-wedding" title="Plan Your Wedding" onclick="closeMobileNavOnPage();">
+							<span class="uk-text-uppercase">Plan Your Wedding</span>
+						</a>
+					</li>
+					
+				
+							
+					
+					
+					<li>
+						<a href="/weddings#virtual-tour" title="Virtual Tour" onclick="closeMobileNavOnPage();">
+							<span class="uk-text-uppercase">Virtual Tour</span>
+						</a>
+					</li>
+					
+				
+			
+					</ul>
+					
+				
+			
+					</ul>
+					
+						</div>
+					
+				
+							
+					
+						<div class="uk-accordion-title uk-text-center">
+							<a href="javascript:void(0);" title="The Details">
+								<div>The</div>
+								<span class="uk-text-uppercase">Details</span>
+							</a>
+						</div>
+						<div class="uk-accordion-content">
+					
+					
+					<ul class="uk-padding-remove uk-list">
+									
+					
+					
+						
+							<h3 class="uk-text-contrast subnav-title uk-text-uppercase">Fun & Festivities</h3>
+						
+					
+					<ul class="uk-padding-remove uk-list">
+									
+					
+					
+					<li>
+						<a href="/news" title="News" onclick="closeMobileNavOnPage();">
+							<span class="uk-text-uppercase">News</span>
+						</a>
+					</li>
+					
+				
+							
+					
+					
+					<li>
+						<a href="/events" title="Events" onclick="closeMobileNavOnPage();">
+							<span class="uk-text-uppercase">Events</span>
+						</a>
+					</li>
+					
+				
+							
+					
+					
+					<li>
+						<a href="/events/mountain-music-festival-2019" title="LABOR DAY MUSIC FEST" onclick="closeMobileNavOnPage();">
+							<span class="uk-text-uppercase">LABOR DAY MUSIC FEST</span>
+						</a>
+					</li>
+					
+				
+							
+					
+					
+					<li>
+						<a href="/details/the-dogs" title="The Dogs" onclick="closeMobileNavOnPage();">
+							<span class="uk-text-uppercase">The Dogs</span>
+						</a>
+					</li>
+					
+				
+			
+					</ul>
+					
+				
+							
+					
+					
+						
+							<h3 class="uk-text-contrast subnav-title uk-text-uppercase"><a href="/about-us" title="About Us" onclick="closeMobileNavOnPage();">About Us <i class="uk-icon-angle-right"></i></a></h3>
+						
+					
+					<ul class="uk-padding-remove uk-list">
+									
+					
+					
+					<li>
+						<a href="/about-us/history" title="History" onclick="closeMobileNavOnPage();">
+							<span class="uk-text-uppercase">History</span>
+						</a>
+					</li>
+					
+				
+							
+					
+					
+					<li>
+						<a href="/about-us/rlk-company-sustainability" title="Sustainability" onclick="closeMobileNavOnPage();">
+							<span class="uk-text-uppercase">Sustainability</span>
+						</a>
+					</li>
+					
+				
+							
+					
+					
+					<li>
+						<a href="/about-us/lodge-preservation" title="Lodge Preservation" onclick="closeMobileNavOnPage();">
+							<span class="uk-text-uppercase">Lodge Preservation</span>
+						</a>
+					</li>
+					
+				
+							
+					
+					
+					<li>
+						<a href="/master-plan" title="Master Plan" onclick="closeMobileNavOnPage();">
+							<span class="uk-text-uppercase">Master Plan</span>
+						</a>
+					</li>
+					
+				
+							
+					
+					
+					<li>
+						<a href="/details/employment" title="Employment" onclick="closeMobileNavOnPage();">
+							<span class="uk-text-uppercase">Employment</span>
+						</a>
+					</li>
+					
+				
+			
+					</ul>
+					
+				
+							
+					
+					
+						
+							<h3 class="uk-text-contrast subnav-title uk-text-uppercase"><a href="https://www.timberlinelodge.com/getting-here" title="Getting Here" onclick="closeMobileNavOnPage();">Getting Here <i class="uk-icon-angle-right"></i></a></h3>
+						
+					
+					<ul class="uk-padding-remove uk-list">
+									
+					
+					
+					<li>
+						<a href="/getting-here#transportation" title="Transportation" onclick="closeMobileNavOnPage();">
+							<span class="uk-text-uppercase">Transportation</span>
+						</a>
+					</li>
+					
+				
+							
+					
+					
+					<li>
+						<a href="/getting-here#driving" title="Winter Driving" onclick="closeMobileNavOnPage();">
+							<span class="uk-text-uppercase">Winter Driving</span>
+						</a>
+					</li>
+					
+				
+							
+					
+					
+					<li>
+						<a href="/getting-here#directions" title="Directions" onclick="closeMobileNavOnPage();">
+							<span class="uk-text-uppercase">Directions</span>
+						</a>
+					</li>
+					
+				
+							
+					
+					
+					<li>
+						<a href="/getting-here#parking" title="Parking" onclick="closeMobileNavOnPage();">
+							<span class="uk-text-uppercase">Parking</span>
+						</a>
+					</li>
+					
+				
+			
+					</ul>
+					
+				
+			
+					</ul>
+					
+						</div>
+					
+				
+							
+					
+						<div class="uk-accordion-title uk-text-center">
+							<a href="javascript:void(0);" title="The Store">
+								<div>The</div>
+								<span class="uk-text-uppercase">Store</span>
+							</a>
+						</div>
+						<div class="uk-accordion-content">
+					
+					
+					<ul class="uk-padding-remove uk-list">
+									
+					
+					
+						
+							<h3 class="uk-text-contrast subnav-title uk-text-uppercase">Gifts</h3>
+						
+					
+					<ul class="uk-padding-remove uk-list">
+									
+					
+					
+					<li>
+						<a href="/store/gifts" title="Gift Shop & Gift Cards" onclick="closeMobileNavOnPage();">
+							<span class="uk-text-uppercase"> Gift Shop & Gift Cards</span>
+						</a>
+					</li>
+					
+				
+			
+					</ul>
+					
+				
+							
+					
+					
+						
+							<h3 class="uk-text-contrast subnav-title uk-text-uppercase">Activities</h3>
+						
+					
+					<ul class="uk-padding-remove uk-list">
+									
+					
+					
+					<li>
+						<a href="https://tickets.timberlinelodge.com/ItemList.aspx?node_id=847252" title="Lift Tickets" onclick="closeMobileNavOnPage();">
+							<span class="uk-text-uppercase">Lift Tickets</span>
+						</a>
+					</li>
+					
+				
+							
+					
+					
+					<li>
+						<a href="https://tickets.timberlinelodge.com/ItemList.aspx?node_id=369861" title="Season Passes" onclick="closeMobileNavOnPage();">
+							<span class="uk-text-uppercase">Season Passes</span>
+						</a>
+					</li>
+					
+				
+							
+					
+					
+					<li>
+						<a href="http://www.mthoodfusionpass.com/buy-your-pass/" title="Mt. Hood Fusion Pass" onclick="closeMobileNavOnPage();">
+							<span class="uk-text-uppercase">Mt. Hood Fusion Pass</span>
+						</a>
+					</li>
+					
+				
+							
+					
+					
+					<li>
+						<a href="https://tickets.timberlinelodge.com/ItemList.aspx?node_id=348708" title="Lessons" onclick="closeMobileNavOnPage();">
+							<span class="uk-text-uppercase">Lessons</span>
+						</a>
+					</li>
+					
+				
+			
+					</ul>
+					
+				
+			
+					</ul>
+					
+						</div>
+					
+				
+			
+			</div>
+			<div class="uk-text-center">
+							
+					
+						<h4 class="info-headline uk-text-uppercase">About Us</h4>
+					
+					
+
+					<ul class="uk-list info-copy">
+										
+					
+						<li><a href="/contact-us" title="Contact Us">Contact Us</a></li>
+					
+				
+							
+					
+						<li><a href="/details/the-dogs" title="The Dogs">The Dogs</a></li>
+					
+				
+							
+					
+						<li><a href="/master-plan" title="Master PLan">Master Plan</a></li>
+					
+				
+							
+					
+						<li><a href="/employment/current-jobs" title="Jobs">Jobs</a></li>
+					
+				
+							
+					
+						<li><a href="/privacy" title="Privacy Policy">Privacy Policy</a></li>
+					
+				
+							
+					
+						<li><a href="/contact-us" title="Charitable Contributions">Charitable Contributions</a></li>
+					
+				
+							
+					
+						<li><a href="https://timberlinelodge.formstack.com/forms/timberline_lodge_and_ski_area_lost_property_report" title="Lost and Found">Lost and Found</a></li>
+					
+				
+			
+					</ul>
+				
+			
+			</div>
+		</div>
+	</div>
+
+	<div id="checkin_modal" class="uk-modal uk-vertical-align">
+		<div class="uk-modal-dialog uk-modal-dialog-blank bg-dark-blue uk-vertical-align-middle">
+			<div class="uk-form-row uk-margin-bottom uk-margin-top">
+				<div class="close-reservation-modal uk-width-1-1 uk-text-center uk-margin-bottom uk-margin-top"><a href="javascript:void(0);" class="uk-modal-close uk-close uk-close-alt uk-margin-bottom uk-margin-top"></a></div>
+			</div>
+			<script>
+				$('.close-reservation-modal').click( function() {$('.resRoomType').val('any');});
+			</script>
+			<div class="uk-form-row">
+				<div class="uk-width-1-1">
+					<form id="resWaveSubmit" class="uk-margin-large-left uk-margin-large-right" action="https://www.reseze.net/servlet/WebresShowAvailable" method="get">
+						<input type="hidden" name="hotelid" value="1264">
+						<input class="resRoomType" type="hidden" name="roomType" value="any">
+						<input type="hidden" name="buildingCode" value="any">
+						<div class="uk-container-center uk-width-medium-4-10 uk-width-small-9-10">
+							<div class="uk-grid uk-margin-large-top">
+								<div class="uk-form-row uk-width-1-1 uk-margin-remove">
+						            <label for="DateIn" class="uk-text-large">Check-in</label>
+								</div>
+								<div class="uk-form-icon uk-form-row uk-width-1-1 uk-margin-small-top">
+									<i class="uk-icon-calendar uk-text-contrast"></i>
+									<input id="format-reswave-date-format" class="uk-width-1-1" type="text" name="arrivalDate" data-uk-datepicker="{format:'MM/DD/YYYY', pos:'bottom'}" value="5/18/2020" required readonly>
+								</div>
+							</div>
+							<div class="uk-grid uk-margin-top">
+								<div class="uk-form-row uk-width-1-1 uk-margin-remove">
+						       <label for="Nights" class="uk-text-large">Number of Nights</label>
+								</div>
+								<div class="uk-form-row uk-width-1-1 uk-margin-small-top nights-notice">
+									<div>
+			            	<input id="Nights" name="nightsStay" type="number" min="1" max="365" value="1" required>
+									</div>
+									<div class="nights-notice-copy">
+										<p>Timberline Lodge hotel rooms may be booked for one night. The Lodge at Government Camp Condos require a minimum of two nights.</p>
+									</div>
+				        </div>
+							</div>
+							<div class="uk-grid uk-margin-top">
+								<div class="uk-width-1-2">
+									<div class="uk-form-row uk-width-1-1 uk-margin-remove">
+													<label for="Rooms" class="uk-text-large">Number of Rooms</label>
+									</div>
+									<div class="uk-form-row uk-width-1-1 uk-margin-small-top">
+											<input name="numberRooms" type="number" min="1" max="365" value="1" required>
+									</div>
+								</div>
+
+								<div class="uk-width-1-2">
+									<div class="uk-form-row uk-width-1-1 uk-margin-remove">
+											<label for="rateCode" class="uk-text-large">Promo Code</label>
+										</div>
+										<div class="uk-form-row uk-width-1-1 uk-margin-small-top">
+												<input name="rateCode" type="text" />
+										</div>
+								</div>
+
+							</div>
+							<div class="uk-grid uk-margin-top">
+								<div class="uk-width-1-3">
+									<div class="uk-form-row uk-width-1-1 uk-margin-remove">
+										<div class="uk-form-row uk-width-1-1 uk-margin-remove">
+							            	<label for="Adults" class="uk-text-large">Adults</label>
+										</div>
+										<div class="uk-form-row uk-width-1-1 uk-margin-small-top">
+							            	<input id="Adults" name="adults" type="number" min="1" max="99" value="1" required>
+										</div>
+									</div>
+								</div>
+								<div class="uk-width-1-3">
+									<div class="uk-form-row uk-width-1-1 uk-margin-remove">
+										<div class="uk-form-row uk-width-1-1 uk-margin-remove">
+							            	<label for="Children" class="uk-text-large">Children</label>
+										</div>
+										<div class="uk-form-row uk-width-1-1 uk-margin-small-top">
+											<input id="Children" name="children" type="number" min="0" max="99" value="0" required>
+											<div class="uk-text-small uk-margin-small-top">(12 &amp; under)</div>
+										</div>
+							        </div>
+								</div>
+							</div>
+							<div class="uk-grid uk-margin-top uk-text-center">
+								<div class="uk-form-row uk-width-1-1">
+									<button type="submit" class="uk-button uk-button-primary uk-width-1-1 uk-text-large uk-padding uk-text-uppercase">Book Your Room</button>
+								</div>
+								<div class="uk-form-row uk-width-1-1 uk-text-small">Or contact us at: 1-800-547-1406</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<a id="site_book_button" href="#checkin_modal" title="Book a room" class="uk-text-uppercase uk-button uk-button-blue uk-button-large uk-visible-large" data-uk-modal>Book a room</a>
+
+	<script src="/js/components/sticky.min.js" type="text/javascript"></script>
+	<script src="/js/components/slideshow.min.js" type="text/javascript"></script>
+	<script src="/js/components/lightbox.min.js" type="text/javascript"></script>
+	<script src="/js/components/accordion.min.js" type="text/javascript"></script>
+	<script src="/js/components/notify.min.js" type="text/javascript"></script>
+	<script src="/js/components/datepicker.min.js" type="text/javascript"></script>
+	
+	<script src="/js/scripts.js" type="text/javascript"></script>
+</body>
+</html>

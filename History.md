@@ -1,4 +1,153 @@
 
+3.32.0 / 2021-10-07
+===================
+
+ * add Niseko Japan resort
+ * add Threadbo resort
+ * fix Gore Mountain resort
+
+3.31.3 / 2021-10-05
+===================
+
+ * remove getlet dependency
+ * fix Bolton Valley resort
+
+3.31.2 / 2021-10-04
+===================
+
+ * improve notice styling
+ * fix NOAA logo
+ * fix Bromley resort
+ * fix Intrawest resorts
+ * fix St. Anton Am Arlberg resort
+ * fix Attitash resort
+ * fix Diamondpeak resort
+ * fix Loveland resort
+
+3.31.1 / 2021-10-03
+===================
+
+ * fix Kitzbühel resort
+ * fix Palisades Tahoe resorts
+ * fix Mount Buller resort
+
+3.31.0 / 2021-10-02
+===================
+
+ * add Ponte di Legno - Tonale resorts
+ * add Folgarida Marilleva
+ * add Pinzolo
+ * add Madonna di Campiglio
+ * fix Arapahoe Basin resort
+ * fix June Mountain resort
+ * fix Alyeska resort
+ * dependency update
+ * remove cert checking hack
+
+3.30.4 / 2021-04-07
+===================
+
+ * update Vail parser to follow through the waitingroom
+
+3.30.3 / 2021-03-08
+===================
+
+ * remove Ischgl - Silvretta twitter account
+
+3.30.2 / 2021-02-25
+===================
+
+ * improve Makefile to run yarn automatically
+ * add `start_url` to manifest
+
+3.30.1 / 2021-02-24
+===================
+
+ * fix Sunday River for new season
+ * fix Big Sky for new season
+ * fixes to boyne parser
+ * make tap reporter configurable
+
+3.30.0 / 2021-02-17
+===================
+
+ * upgrade postcss-cli-simple
+ * replace ugligy with terser
+ * upgrade clean-css
+ * remove autoprefixer
+ * upgrade stylus
+ * improve displaying tweets with line-breaks
+ * upgrade tweet-html
+
+3.29.6 / 2020-12-09
+===================
+
+ * fix Attitash, Wildcat, Mount Snow
+ * make manifest icons maskable
+
+3.29.5 / 2020-05-26
+===================
+
+ * replace mocha/should with tape
+ * use replay to test twitter
+ * simplify resort tests
+ * fix About link
+ * update NOAA stations
+ * use standard brotli tool
+ * add missing noopener for furkot links
+ * upgrade tweet-html to 1.5.1
+
+3.29.4 / 2020-05-22
+===================
+
+ * fix squaw and alpine
+
+3.29.3 / 2020-05-22
+===================
+
+ * fix same-site cookie warning
+ * add preload headers for fonts
+ * add Feature-Policy, Referrer-Policy, and  Content-Security-Policy headers
+ * remove polyfills - not needed by modern browsers
+ * add integrity for stylesheet and script
+ * add support for static host
+ * fix og:image reference
+
+3.29.2 / 2020-05-20
+===================
+
+ * add preconnect links for twitter related domains
+ * add theme-color
+ * modernize manifest.json
+ * use default browserlist for autoprefixer
+ * drop console.log when minimizing
+ * remove unnecessary user-scalable declaration
+ * update tweet-html
+
+3.29.1 / 2020-05-19
+===================
+
+ * update webcams API
+ * upgrade getlet to 2.4.0
+ * update dependencies
+ * switch to .svg favicons
+ * switch to .woff2 fonts
+ * update README with more info on adding new resorts
+
+3.29.0 / 2020-05-19
+===================
+
+ * add Morzine resort
+ * add Timberline Lodge resort
+
+3.28.6 / 2020-05-17
+===================
+
+ * add `noopener` attribute to external links
+ * fix HTML tag typo - ui -> ul
+ * fix Silver Star
+ * fix Sugarbowl
+
 3.28.5 / 2019-12-22
 ===================
 

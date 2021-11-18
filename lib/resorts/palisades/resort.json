@@ -1,0 +1,22 @@
+{
+  "name": "Palisades Tahoe",
+  "url": {
+    "host": "https://www.palisadestahoe.com",
+    "pathname": "/mountain-information/lift-and-grooming-status"
+  },
+  "api": {
+    "host": "https://mtnpowder.com",
+    "pathname": "/feed/61/lifts"
+  },
+  "tags": [
+    "California",
+    "Lake Tahoe"
+  ],
+  "opening": "2021-11-24",
+  "ll": [
+    -120.233299,
+    39.196045
+  ],
+  "twitter": "palisadestahoe",
+  "noaa": "REV/27,93"
+}

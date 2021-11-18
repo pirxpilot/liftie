@@ -1,8 +1,12 @@
 {
   "name": "Deer Valley",
   "url": {
-    "host": "http://www.deervalley.com",
-    "pathname": "/OnTheMountain/Mountain/LiftStatus"
+    "host": "https://www.deervalley.com",
+    "pathname": "/explore-the-mountain/mountain-report#/lifts"
+  },
+  "api": {
+    "host": "https://mtnpowder.com",
+    "pathname": "/feed/49/lifts"
   },
   "tags": [
     "Utah"

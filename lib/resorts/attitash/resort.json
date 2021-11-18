@@ -1,13 +1,13 @@
 {
   "name": "Attitash",
   "url": {
-    "host": "http://www.attitash.com",
-    "pathname": "/the-mountain/snow-report/"
+    "host": "https://www.attitash.com",
+    "pathname": "/the-mountain/mountain-conditions/lift-and-terrain-status.aspx"
   },
   "tags": [
     "New Hampshire",
     "New England",
-    "Peak Resorts"
+    "Vail Epic"
   ],
   "twitter": "AttitashResort",
   "ll": [

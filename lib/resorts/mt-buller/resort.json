@@ -2,7 +2,7 @@
   "name": "Mount Buller",
   "url": {
     "host": "https://www.mtbuller.com.au",
-    "pathname": "//Winter/snow-weather/snow-report/lift-run-report"
+    "pathname": "/Winter/snow-weather/snow-report/lift-run-report"
   },
   "tags": [
     "Australia"

@@ -5,17 +5,17 @@
     "pathname": "/the-mountain/mountain-report#/lifts"
   },
   "api": {
-    "host": "https://snowreporting.herokuapp.com",
+    "host": "https://mtnpowder.com",
     "pathname": "/feed/6/lifts"
   },
   "tags": [
     "Colorado"
   ],
-  "opening": "2017-11-23",
+  "opening": "2021-11-20",
   "ll": [
     -106.805733,
     40.458214
   ],
   "twitter": "skisteamboat",
-  "noaa": "GJT/164,158"
+  "noaa": "GJT/161,158"
 }

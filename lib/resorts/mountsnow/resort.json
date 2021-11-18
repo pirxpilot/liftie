@@ -1,13 +1,13 @@
 {
   "name": "Mount Snow",
   "url": {
-    "host": "http://mountsnow.com",
-    "pathname": "/ski-ride/snow-report/"
+    "host": "https://mountsnow.com",
+    "pathname": "/the-mountain/mountain-conditions/lift-and-terrain-status.aspx"
   },
   "tags": [
     "Vermont",
     "New England",
-    "Peak Resorts"
+    "Vail Epic"
   ],
   "ll": [
     -72.8936,

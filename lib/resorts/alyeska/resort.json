@@ -1,15 +1,8 @@
 {
   "name": "Alyeska",
   "url": {
-    "host": "https://www.alyeskaresort.com",
-    "pathname": "/snow-report/lifts-and-trails-status"
-  },
-  "dataUrl": {
-    "host": "https://www.alyeskaresort.com",
-    "pathname": "/snowreport/lifts",
-    "query": {
-      "path": "/lifts"
-    }
+    "host": "https://alyeskaresort.com",
+    "pathname": "/mountain-report/"
   },
   "tags": [
     "Alaska"
@@ -19,6 +12,5 @@
     60.961445
   ],
   "twitter": "resortalyeska",
-  "opening": "2017-12-15",
-  "noaa": "AER/200,226"
+  "opening": "2017-12-15"
 }

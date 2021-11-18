@@ -4,6 +4,7 @@ mixin overlay(resort, text)
       a(href=resort.href,
         title='Go to official #{ resort.name } page',
         target='_blank'
+        rel='noopener'
       )!= text
     else
       a!= text
@@ -14,13 +15,14 @@ mixin header(resort, widget)
       href=resort.href,
       title='Go to official #{ resort.name } page',
       target='_blank'
+      rel='noopener'
     )
       span.ls-external
   a.resort-name(href='/resort/#{ resort.id }' target=widget && "_blank")= resort.name
   if !widget
     if !single
       if resort.deals
-        a.icon-alone(title=resort.deals.title, href=resort.deals.href, target="_blank", rel="nofollow")
+        a.icon-alone(title=resort.deals.title, href=resort.deals.href, target="_blank", rel="nofollow noopener")
           span.ls-deal
       a.right.icon-alone.minimax
         span.ls-minimax
@@ -67,7 +69,7 @@ mixin weather(resort)
       span.snowforecast
     .text
     .notice Forecast by&nbsp;
-      a(target="_blank", href=resort.weather && resort.weather.notice && resort.weather.notice.href)
+      a(target="_blank", href=resort.weather && resort.weather.notice && resort.weather.notice.href, rel='noopener')
         img(src=resort.weather && resort.weather.notice && resort.weather.notice.img)
 
 mixin snow(resort)
@@ -93,6 +95,7 @@ mixin twitter(resort)
         a.twitter-follow-button(
           href="https://twitter.com/intent/follow?screen_name=#{resort.twitter.user}&tw_p=followbutton"
           target='_blank'
+          rel='noopener'
         )
           span.ls-twitter
           label Follow @#{resort.twitter.user}
@@ -100,13 +103,13 @@ mixin twitter(resort)
 
 mixin addToTrip(resort)
   if resort.ll
-    a.add-to-trip(href='https://trips.furkot.com/trip?#{addToTrip(resort)}', target='_blank')
+    a.add-to-trip(href='https://trips.furkot.com/trip?#{addToTrip(resort)}', target='_blank', rel='noopener')
       span.ls-furkot
       span Plan trip to #{resort.name}
 
 mixin webcam(webcam, mobile)
   div(class='webcam ' + (mobile ? 'mobile' : 'desktop'))
-    a(target="_blank")
+    a(target="_blank", rel='noopener')
       .title
       img.active(src="")
       img.inactive(src="")
@@ -126,14 +129,14 @@ mixin bestDeal(resort)
   if resort.deals && resort.deals.discount
     .deal
       span= resort.deals.title
-      a(title=resort.deals.title, href=resort.deals.href, target="_blank", rel="nofollow")= resort.deals.discount
+      a(title=resort.deals.title, href=resort.deals.href, target="_blank", rel="nofollow noopener")= resort.deals.discount
 
 mixin deals(resort)
   .deals.tile.visible
     for deal in resort.deals.deals
       .deal
         span= deal.title
-        a(title=resort.deals.title, href=resort.deals.href, target="_blank", rel="nofollow")= deal.discount
+        a(title=resort.deals.title, href=resort.deals.href, target="_blank", rel="nofollow noopener")= deal.discount
 
 mixin resort(resort, widget)
   section.panel.resort(
@@ -170,7 +173,7 @@ mixin resort(resort, widget)
     if resort.deals && resort.deals.deals
       section.panel.extras.open(class= single ? 'visible' : 'hidden' )
         header
-          a(href=resort.deals.href, target="_blank", rel="nofollow")
+          a(href=resort.deals.href, target="_blank", rel="nofollow noopener")
             span.ls-deal
             span= resort.deals.title
         +deals(resort)

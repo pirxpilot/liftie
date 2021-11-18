@@ -1,8 +1,16 @@
 {
   "name": "Bolton Valley",
   "url": {
-    "host": "http://www.boltonvalley.com",
-    "pathname": "/the-mountain/snow-report-and-maps"
+    "host": "https://www.boltonvalley.com",
+    "pathname": "/winter/trail-maps-snow-reports/snow-reports/"
+  },
+  "api": {
+    "host": "https://www.boltonvalley.com",
+    "pathname": "/wp-admin/admin-ajax.php",
+    "query": {
+      "action": "get_prop_conditions"
+    },
+    "json": true
   },
   "tags": [
     "Vermont",

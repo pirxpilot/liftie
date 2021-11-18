@@ -1,0 +1,38 @@
+{
+  "name": "Timberline Lodge",
+  "url": {
+    "host": "https://www.timberlinelodge.com",
+    "pathname": "/conditions"
+  },
+  "tags": [
+    "Oregon"
+  ],
+  "ll": [
+    -121.71,
+    45.33
+  ],
+  "webcams": [
+    {
+      "name": "Timberlone Lodge",
+      "source": "https://www.timberlinelodge.com/conditions#webcams",
+      "image": "https://www.timberlinelodge.com/snowcameras/lodge.jpg"
+    },
+    {
+      "name": "Magic Mile",
+      "source": "https://www.timberlinelodge.com/conditions#webcams",
+      "image": "https://www.timberlinelodge.com/snowcameras/floodtop.jpg"
+    },
+    {
+      "name": "Palmer/Silcox",
+      "source": "https://www.timberlinelodge.com/conditions#webcams",
+      "image": "https://www.timberlinelodge.com/snowcameras/palmerbottom.jpg"
+    },
+    {
+      "name": "Bruno's",
+      "source": "https://www.timberlinelodge.com/conditions#webcams",
+      "image": "https://www.timberlinelodge.com/snowcameras/brunotop.jpg"
+    }
+  ],
+  "twitter": "timberlinelodge",
+  "noaa": "PQR/141,88"
+}

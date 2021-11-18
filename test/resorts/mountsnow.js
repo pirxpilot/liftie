@@ -1,37 +1,24 @@
-var should = require('should');
-var fs = require('fs');
-var parser = require('../../lib/lifts/parser');
-var parse = require('../../lib/lifts/parse')('mountsnow');
+const lifts = require('../lifts');
 
-/*global describe, it */
-describe('parse mountsnow', function() {
-
-  it('should return lift status', function(done) {
-    var stream = fs.createReadStream(__dirname + '/example/mountsnow.html');
-    stream.on('error', done);
-    stream.pipe(parser(parse, function(err, status) {
-      var expected = {
-        'Covered Bridge/Tubing': 'closed',
-        'Sundance': 'closed',
-        'Tumbleweed': 'closed',
-        'Canyon Express': 'closed',
-        'Grand Summit Express': 'closed',
-        'Ego Alley': 'closed',
-        'Seasons': 'closed',
-        'Bluebird Express': 'closed',
-        'Voyager': 'closed',
-        'Gemini': 'closed',
-        'Apollo': 'closed',
-        'Discovery Shuttle': 'closed',
-        'Mercury': 'closed',
-        'Outpost': 'closed',
-        'Challenger': 'closed',
-        'Beartrap': 'closed',
-        'Sunbrook': 'closed'
-      };
-      should.exist(status);
-      status.should.eql(expected);
-      done(err);
-    }));
-  });
+lifts('mountsnow', 'html', {
+  'Apollo': 'closed',
+  'Bear Trap': 'closed',
+  'Bluebird Express': 'open',
+  'Canyon Express': 'closed',
+  'Challenger': 'open',
+  'Discovery Shuttle': 'open',
+  'Ego Alley': 'closed',
+  'Gemini': 'closed',
+  'Grand Summit Express': 'closed',
+  'Grommet': 'closed',
+  'Heavy Metal': 'closed',
+  'Mercury': 'closed',
+  'Mixing Bowl': 'closed',
+  'Nitro Express': 'closed',
+  'Outpost': 'closed',
+  'Seasons': 'closed',
+  'Sunbrook': 'closed',
+  'Sundance': 'closed',
+  'Tumbleweed': 'closed',
+  'Voyager': 'closed'
 });

@@ -1,18 +1,22 @@
 {
   "name": "Alpine Meadows",
   "url": {
-    "host": "https://squawalpine.com",
-    "pathname": "/skiing-riding/weather-conditions-webcams/lift-grooming-status"
+    "host": "https://www.palisadestahoe.com",
+    "pathname": "/mountain-information/lift-and-grooming-status#tab=alpine-meadows-"
+  },
+  "api": {
+    "host": "https://mtnpowder.com",
+    "pathname": "/feed/62/lifts"
   },
   "tags": [
     "California",
     "Lake Tahoe"
   ],
-  "opening": "2016-11-11",
+  "opening": "2021-11-24",
   "ll": [
     -120.150902,
     39.148201
   ],
-  "twitter": "squawalpine",
+  "twitter": "palisadestahoe",
   "noaa": "REV/29,90"
 }

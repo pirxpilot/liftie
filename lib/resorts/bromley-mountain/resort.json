@@ -2,11 +2,7 @@
   "name": "Bromley Mountain",
   "url": {
     "host": "https://www.bromley.com",
-    "pathname": "/winter/snow-report/"
-  },
-  "dataUrl": {
-    "host": "https://features.bromley.com",
-    "pathname": "/propsnow/"
+    "pathname": "/the-mountain/snow-report/"
   },
   "tags": [
     "Vermont",

@@ -2,15 +2,11 @@
   "name": "June Mountain",
   "url": {
     "host": "https://www.junemountain.com",
-    "pathname": "/winter/mountain-information/mountain-information/lift-status"
+    "pathname": "/mountain-information/mountain-report#/"
   },
   "api": {
-    "host": "https://www.junemountain.com",
-    "pathname": "/mvc/lifttraildata/getliftdata",
-    "query": {
-      "resort": "2",
-      "view": "_june_lift_status"
-    }
+    "host": "https://mtnpowder.com",
+    "pathname": "/feed/59/lifts"
   },
   "tags": [
     "California"

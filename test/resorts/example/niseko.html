@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+		<title>Weather and Lift Status |  Niseko United</title>
+        <meta name="description" content="description">
+        <link href="https://fonts.googleapis.com/css?family=Advent+Pro:100,300,400,500,700|Fjalla+One" rel="stylesheet">
+        <link rel="stylesheet" href="http://www.niseko.ne.jp/en/wp-content/themes/niseko2018/css/style.css">
+        <link rel="stylesheet" href="http://www.niseko.ne.jp/en/wp-content/themes/niseko2018/css/slick.css">
+        <link rel="shortcut icon" href="https://www.niseko.ne.jp/en/favicon.ico" />
+        <script src="http://www.niseko.ne.jp/en/wp-content/themes/niseko2018/js/jquery-1.11.2.min.js"></script>
+        <script src="http://www.niseko.ne.jp/en/wp-content/themes/niseko2018/js/slick.min.js"></script>
+        <script src="http://www.niseko.ne.jp/en/wp-content/themes/niseko2018/js/common.js"></script>
+        <script>
+            $(function(){
+                var slider = "#mainSlide";
+                var thumbnailItem = "#thumbnail-list .thumbnail-item";
+                $(thumbnailItem).each(function () {
+                    var index = $(thumbnailItem).index(this);
+                    $(this).attr("data-index", index);
+                });
+                $(slider).on('init', function (slick) {
+                    var index = $(".slick-slide.slick-current").attr("data-slick-index");
+                    $(thumbnailItem + '[data-index="' + index + '"]').addClass("thumbnail-current");
+                });
+                $(thumbnailItem).find("a").on('click', function () {
+                    var index = $(this).parents("li").attr("data-index");
+                    $(slider).slick("slickGoTo", index, false);
+                    return false;
+                });
+                $(slider).on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+                    $(thumbnailItem).each(function () {
+                        $(this).removeClass("thumbnail-current");
+                    });
+                    $(thumbnailItem + '[data-index="' + nextSlide + '"]').addClass("thumbnail-current");
+                });
+                $(slider).slick({
+                    accessibility: true,
+                    autoplay: false,
+                    autoplaySpeed: 3000,
+                    speed: 400,
+                    pauseOnHover: true,
+                    pauseOnDotsHover: true,
+                    cssEase: 'ease',
+                    dots: false,
+                    dotsClass: 'dot-class',
+                    draggable: true,
+                    fade: true,
+                    arrows: false,
+                    prevArrow: '<button type="button" class="slick-prev homePtn"></button>',
+                    nextArrow: '<button type="button" class="slick-next homePtn"></button>',
+                    infinite: true,
+                    initialSlide: 0,
+                    pauseOnHover: true,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    swipe: true,
+                    vertical: false,
+                    centerMode: true,
+                    centerPadding: "0px"
+                });
+                $('.newsSlider').slick({
+                    accessibility: true,
+                    autoplay: false,
+                    autoplaySpeed: 3000,
+                    speed: 400,
+                    pauseOnHover: true,
+                    pauseOnDotsHover: true,
+                    cssEase: 'ease',
+                    dots: false,
+                    dotsClass: 'dot-class',
+                    draggable: true,
+                    fade: false,
+                    arrows: true,
+                    prevArrow: '<button type="button" class="slick-prev homePtn"></button>',
+                    nextArrow: '<button type="button" class="slick-next homePtn"></button>',
+                    infinite: true,
+                    initialSlide: 0,
+                    pauseOnHover: true,
+                    slidesToShow: 4,
+                    slidesToScroll: 1,
+                    swipe: true,
+                    vertical: false,
+                    centerMode: true,
+                    centerPadding: "0px",
+                    responsive: [
+                        {
+                            breakpoint: 960,
+                            settings: {
+                                slidesToShow: 3,
+                            }
+                        },
+                        {
+                            breakpoint: 768,
+                            settings: {
+                                slidesToShow: 2,
+                            }
+                        },
+                        {
+                            breakpoint: 480,
+                            settings: {
+                                slidesToShow: 1,
+                            }
+                        },
+                    ]
+                });
+                $('.vSlide').slick({
+                    accessibility: true,
+                    autoplay: false,
+                    autoplaySpeed: 3000,
+                    speed: 400,
+                    pauseOnHover: true,
+                    pauseOnDotsHover: true,
+                    cssEase: 'ease',
+                    dots: false,
+                    dotsClass: 'dot-class',
+                    draggable: true,
+                    fade: false,
+                    arrows: true,
+                    prevArrow:'<button type="button" class="slick-prev vPtn"></button>',
+                    nextArrow:'<button type="button" class="slick-next vPtn"></button>',
+                    infinite: true,
+                    initialSlide: 0,
+                    pauseOnHover: true,
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    swipe: true,
+                    vertical: true,
+                    centerMode: true,
+                    centerPadding: "0px",
+                    responsive:[
+                        {
+                            breakpoint: 960,
+                            settings:{
+                                slidesToShow:2,
+                            }
+                        },
+                        {
+                            breakpoint: 768,
+                            settings:{
+                                slidesToShow:1,
+                            }
+                        },
+                        {
+                            breakpoint: 480,
+                            settings:{
+                                slidesToShow:1,
+                            }
+                        },
+                    ]
+                });
+            })
+        </script>
+<title>Weather and Lift Status &#8211; Niseko United</title>
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel='stylesheet' id='contact-form-7-css'  href='http://www.niseko.ne.jp/en/wp-content/plugins/contact-form-7/includes/css/styles.css' type='text/css' media='all' />
+<link rel='stylesheet' id='contact-form-7-confirm-css'  href='http://www.niseko.ne.jp/en/wp-content/plugins/contact-form-7-add-confirm/includes/css/styles.css' type='text/css' media='all' />
+<script type='text/javascript' src='http://www.niseko.ne.jp/en/wp-includes/js/jquery/jquery.js'></script>
+<script type='text/javascript' src='http://www.niseko.ne.jp/en/wp-includes/js/jquery/jquery-migrate.min.js'></script>
+<link rel="canonical" href="https://www.niseko.ne.jp/en/niseko-lift-status/" />
+<link rel='shortlink' href='https://www.niseko.ne.jp/en/?p=52' />
+                <link rel="stylesheet" href="/yukiyama/css/add_style.css">
+                <script src="/yukiyama/js/common.js"></script>
+                <script src="/yukiyama/yukiyama_api/js/niseko_lift_view_action.js"></script>
+                <script type="text/javascript" src="/yukiyama/yukiyama_api/js/yukiyama_api_core.js"></script>
+                <script type="text/javascript" src="/yukiyama/yukiyama_api/js/yukiyama2niseko.js"></script>
+                <script type="text/javascript">
+function f_onload() {
+        var target = {
+        /* annupuri  */'2DmU0NXKFwqTj2bU': ['weather','lift'],
+        /* niseko_v  */'CAGgELsnAAb14yI3': ['weather','lift'],
+        /* gran_hira */'2jwjZoqMIUtofFGR': ['weather','lift'],
+        /* hanazono  */'ADGjF1qXru06scCR': ['weather','lift'],
+        };
+
+        // スキー場直参照時切り替え対応
+        var urlHash = location.hash;
+        var areaId = "";
+        if (urlHash) {
+                urlHash = urlHash.slice(1);
+                if (urlHash !== "tag_annupuri" &&
+                                urlHash !== "tag_niseko_v" &&
+                                urlHash !== "tag_g_hirafu" &&
+                                urlHash !== "tag_hanazono")
+                {
+                        urlHash = "tag_all";
+                }
+        } else {
+                urlHash = "tag_all";
+        }
+        var callBackF = (function(){
+                y_niseko.setWeather("en");
+                y_niseko.setLiftStatus();
+                setCurrentField(urlHash,"en");
+                url="https://nw2em1pxl9.execute-api.ap-northeast-1.amazonaws.com/prod/ver1-0/jp/news?skiareaId=";
+                $.each(yukiyamaApi.YUKIYAMA_JSON,function(apid,data){
+                        var wind = "";
+                        wind = data.weather[0].comment;
+                        $("#liftWeatherArea ul li p.wind0_"+apid).html("Wind: "+wind);
+                        wind = data.weather[1].comment;
+                        $("#liftWeatherArea ul li p.wind1_"+apid).html("Wind: "+wind);
+                        curl = url+apid+"&limit=2";
+                        $.getJSON(curl,function(tdata){
+                                var cdat = "";
+                                var now = new Date();
+                                var year = now.getFullYear();
+                                var mon = now.getMonth() + 1;
+                                var day = now.getDate();
+                                var num = Object.keys(tdata).length;
+                                if ( num > 1 ) { //データが二つのとき。
+                                        //当日のデータかの判定
+                                        if ( tdata[0] && tdata[1] ) { //正しくdataが作られていること
+                                                var time0 = new Date(tdata[0].time);
+                                                var time1 = new Date(tdata[1].time);
+                                                var year0 = time0.getFullYear();
+                                                var year1 = time1.getFullYear();
+                                                var mon0 = time0.getMonth() + 1;
+                                                var mon1 = time1.getMonth() + 1;
+                                                var day0 = time0.getDate();
+                                                var day1 = time1.getDate();
+                                                if ( year == year0 && year == year1 && mon == mon0 && mon == mon1 && day == day0 && day == day1 ) {
+                                                        if ( tdata[0].message ) {
+                                                                cdat = "<pre>"+tdata[0].message+"</pre>";
+                                                        }
+                                                }
+                                        }
+                                } //データが一つのときは英語はなし。
+                                $("#CommentArea ._"+apid).html(cdat);
+                        });
+                })
+        });
+        yukiyamaApi.getYukiyamaDWrap({
+                "targets": target,
+                "lang": "en",
+                "callback": callBackF,});
+}
+                </script>
+    </head>
+<body onLoad="f_onload()">
+	<div id="header">
+	    <div id="headInner">
+	        <div id="headTop">
+	            <div id="headTopInner">
+	                <ul id="headTopLeft">
+	                    <li><a href="http://www.niseko.ne.jp/en/news/">NEWS</a></li>
+	                    <li><a href="http://www.niseko.ne.jp/en/niseko-lift-status/">LIFT STATUS</a></li>
+	                    <li><a href="http://www.niseko.ne.jp/en/niseko-snow-report/">WEATHER</a></li>
+	                    <li><a href="http://www.niseko.ne.jp/en/map/">TRAIL MAP</a></li>
+	                    <li><a href="http://www.niseko.ne.jp/en/niseko-rules/">RULES</a></li>
+	                </ul>
+	                <div id="headTopRight">
+                        <p class="text">THE OFFICIAL WEBSITE OF <span>NISEKO RESORT</span></p>
+                        <p class="button"><a href="/ja/">日本語</a></p>
+                    </div>
+	            </div>
+	        </div>
+	        <div id="headBtm">
+	            <div id="headBtmInner">
+	                <h1 id="logo"><a href="http://www.niseko.ne.jp/en/"><img src="http://www.niseko.ne.jp/en/wp-content/themes/niseko2018/images/logo.png" alt="NISEKO UNITED" class="o1080"><img src="http://www.niseko.ne.jp/en/wp-content/themes/niseko2018/images/logo_sp.png" alt="NISEKO UNITED" class="u1080"></a></h1>
+                    <div id="navWrap">
+                        <ul id="nav">
+                            <li>
+                                <a href="/en/">HOME</a>
+                            </li>
+                            <li class="current">
+                                <a href="/en/niseko/">ABOUT<br>NISEKO UNITED</a>
+                                <div class="subMenu">
+                                    <div class="subMenuInner">
+                                        <ul class="subMenuListWrap">
+                                            <li>
+                                                <h2>
+                                                    <a href="http://www.niseko.ne.jp/en/niseko/">ABOUT NISEKO UNITED</a>
+                                                </h2>
+                                                <ul class="subMenuList">
+                                                   <li><a href="http://www.niseko.ne.jp/en/niseko/">About Niseko United</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <h2>
+                                                    <a href="http://www.niseko.ne.jp/en/news/">NEWS &amp; EVENTS</a>
+                                                </h2>
+                                                <ul class="subMenuList">
+                                                   <li><a href="http://www.niseko.ne.jp/en/news/">News &amp; Events</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <h2>
+                                                    <a href="http://www.niseko.ne.jp/en/niseko/niseko-rules/">NISEKO RULES</a>
+                                                </h2>
+                                                <ul class="subMenuList">
+                                                   <li><a href="http://www.niseko.ne.jp/en/niseko/niseko-rules/">Niseko Rules</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <h2>
+                                                    <a href="http://www.niseko.ne.jp/en/niseko/niseko-access/#shuttle">NISEKO SHUTTLE BUS</a>
+                                                </h2>
+                                                <ul class="subMenuList">
+                                                   <li><a href="http://www.niseko.ne.jp/en/niseko/niseko-access/#shuttle">Niseko Shuttle Bus</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <h2>
+                                                    <a href="http://www.niseko.ne.jp/en/niseko/niseko-summer/">SUMMER IN NISEKO</a>
+                                                </h2>
+                                                <ul class="subMenuList">
+                                                   <li><a href="http://www.niseko.ne.jp/en/niseko/niseko-summer/">Summer In Niseko</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <h2>
+                                                    <a href="http://www.nisekotourism.com" target="_blank">MORE ON NISEKO</a>
+                                                </h2>
+                                                <ul class="subMenuList">
+                                                   <li><a href="http://www.nisekotourism.com" target="_blank">More On Niseko</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <h2>
+                                                    <a href="http://www.niseko.ne.jp/en/niseko/niseko-access/">GETTING TO NISEKO</a>
+                                                </h2>
+                                                <ul class="subMenuList">
+                                                   <li><a href="http://www.niseko.ne.jp/en/niseko/niseko-access/#shuttle">Shuttle Bus</a></li>
+                                                   <li><a href="http://www.niseko.ne.jp/en/niseko/niseko-access/#shuttle">By Car</a></li>
+                                                   <li><a href="http://www.niseko.ne.jp/en/niseko/niseko-access/#shuttle">By Train</a></li>
+                                                   <li><a href="http://www.niseko.ne.jp/en/niseko/niseko-access/#bus">By Bus</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="current">
+                                <a href="http://www.niseko.ne.jp/en/niseko-lift-status/">WEATHER &amp;<br>LIFT STATUS</a>
+                                <div class="subMenu">
+                                    <div class="subMenuInner">
+                                        <ul class="subMenuListWrap">
+                                            <li>
+                                                <h2>
+                                                    <a href="http://www.niseko.ne.jp/en/niseko-lift-status/">WEATHER &amp; LIFT STATUS</a>
+                                                </h2>
+                                                <ul class="subMenuList">
+                                                    <li>
+                                                       <a href="http://www.niseko.ne.jp/en/niseko-lift-status/">Weather &amp; Lift Status</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <h2>
+                                                    <a href="http://www.niseko.ne.jp/en/livecamera/">WEB CAMS</a>
+                                                </h2>
+                                                <ul class="subMenuList">
+                                                    <li>
+                                                        <a href="http://www.niseko.ne.jp/en/livecamera/">Web Cams</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <h2>
+                                                    <a href="http://niseko.nadare.info/" target="_blank">NISEKO AVALANCHE INFORMATION</a>
+                                                </h2>
+                                                <ul class="subMenuList">
+                                                    <li>
+                                                       <a href="http://niseko.nadare.info/" target="_blank">Niseko Avalanche Information</a>
+                                                    <!--    <a href="http://www.niseko.ne.jp/en/niseko-avalanche-report/">Niseko Avalanche Information</a>-->
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <h2>
+                                                    <a href="http://www.niseko.ne.jp/en/map/">TRAIL MAP</a>
+                                                </h2>
+                                                <ul class="subMenuList">
+                                                    <li>
+                                                        <a href="http://www.niseko.ne.jp/en/map/">Trail Map</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="http://www.niseko.ne.jp/en/map/annupuri/">Annupuri</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="http://www.niseko.ne.jp/en/map/village/">Niseko Village</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="http://www.niseko.ne.jp/en/map/grand-hirafu/">Grand Hirafu</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="http://www.niseko.ne.jp/en/map/hanazono/">Hanazono</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="current">
+                                <a href="http://www.niseko.ne.jp/en/lift/">TICKET &amp; PASSES</a>
+                                <div class="subMenu">
+                                    <div class="subMenuInner">
+                                        <ul class="subMenuListWrap">
+                                            <li>
+                                                <h2>
+                                                    <a href="http://www.niseko.ne.jp/en/lift/">LIFT TICKET PRICES</a>
+                                                </h2>
+                                                <ul class="subMenuList">
+                                                    <li>
+                                                        <a href="http://www.niseko.ne.jp/en/lift/">Lift Ticket Prices</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <h2>
+                                                    <a href="http://www.niseko.ne.jp/en/all-mountain-season-pass/">ALL MOUNTAIN SEASON PASS</a>
+                                                </h2>
+                                                <ul class="subMenuList">
+                                                    <li>
+                                                        <a href="http://www.niseko.ne.jp/en/all-mountain-season-pass/">All Mountain Season Pass</a>
+                                                        <a href="http://www.niseko.ne.jp/en/all-mountain-season-pass/#hokkaido-ski-season-net">Hokkaido Ski Season Net</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <h2>
+                                                    <a href="http://www.niseko.ne.jp/en/lift/web-liftpass/">INTERNET LIFT TICKETS</a>
+                                                </h2>
+                                                <ul class="subMenuList">
+                                                    <li>
+                                                        <a href="http://www.niseko.ne.jp/en/lift/web-liftpass/">Internet Lift Tickets</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <h2>
+                                                    <a href="http://www.niseko.ne.jp/en/lift/otoku/">LIFT TICKET PACKAGES</a>
+                                                </h2>
+                                                <ul class="subMenuList">
+                                                    <li>
+                                                        <a href="http://www.niseko.ne.jp/en/lift/otoku/">LIFT TICKET PACKAGES</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="http://www.niseko.ne.jp/en/lift/otoku/#buspack">BUS PACK</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="http://www.niseko.ne.jp/en/lift/otoku/#yokubari">YOKUBARI PACK</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <h2>
+                                                    <a href="#">COMMERCIAL LIFT TICKETS</a>
+                                                </h2>
+                                                <ul class="subMenuList">
+                                                    <li>
+                                                        <a href="http://www.niseko.ne.jp/en/affiliate-school/">Snowsports &amp; Guiding<br>School Business</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="http://www.niseko.ne.jp/en/photography/">Guided Photography<br>Business</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <h2>
+                                                    <a href="http://www.niseko.ne.jp/en/lift/mountain-collective/">MOUNTAIN COLLECTIVE PASS</a>
+                                                </h2>
+                                                <ul class="subMenuList">
+                                                    <li>
+                                                        <a href="http://www.niseko.ne.jp/en/lift/mountain-collective/">Mountain Collective Pass</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <h2>
+                                                    <a href="http://www.niseko.ne.jp/en/lift/ikonpass/">IKON PASS</a>
+                                                </h2>
+                                                <ul class="subMenuList">
+                                                    <li>
+                                                        <a href="http://www.niseko.ne.jp/en/lift/ikonpass/">IKON PASS</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="current">
+                                <a href="http://www.niseko.ne.jp/en/niseko-accommodation/">PLAN YOUR STAY</a>
+                                <div class="subMenu">
+                                    <div class="subMenuInner">
+                                        <ul class="subMenuListWrap">
+                                            <li>
+                                                <h2>
+                                                    <a href="http://www.niseko.ne.jp/en/niseko-accommodation/">PLAN YOUR STAY</a>
+                                                </h2>
+                                                <ul class="subMenuList">
+                                                    <li>
+                                                        <a href="http://www.niseko.ne.jp/en/niseko-accommodation/">Plan Your Stay</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="http://www.niseko.ne.jp/en/niseko-accommodation/">Accomodation</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="http://www.niseko.ne.jp/en/niseko-ski-school/">Ski School</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="http://www.niseko.ne.jp/en/niseko-rentals/">Rentals</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="http://www.niseko.ne.jp/en/niseko-winter-activities/">Winter Activities</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="http://www.niseko.ne.jp/en/niseko/niseko-summer/">Summer Activities</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="http://www.niseko.ne.jp/en/niseko-resort-dining/">Resort Dining</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="http://www.niseko.ne.jp/en/niseko-kids/">Kids</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="http://www.niseko.ne.jp/en/niseko/niseko-access/">GETTING<br>TO NISEKO</a>
+                            </li>
+                        </ul>
+                        <div id="spMenuOther">
+                            <ul>
+                                <li class="lang"><a href="/ja/"><span class="left">日本語</span><span class="right">Japanese</span></a></li>
+                                <li><a href=""><span class="left"><img style="width:50px;" src="http://www.niseko.ne.jp/en/wp-content/themes/niseko2018/images/icon/a01_snow.png" alt="http://www.niseko.ne.jp/en/"></span><span class="right">Weather &amp; Lift Status</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+	                <div id="headWeather">
+	                    <span class="icon"><img src="http://www.niseko.ne.jp/en/wp-content/themes/niseko2018/images/icon/a01_snow.png" style="width:50px;" alt="http://www.niseko.ne.jp/en/"></span>
+	                                    <span class="temperature">-2°</span>
+	                                    <span class="text">CURRENTLY</span>
+                    </div>
+                    <p id="menuBtnWrap">
+                        <a href="http://www.niseko.ne.jp/en/" id="menuBtn">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </a>
+                    </p>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+<style>
+   #yukiyama {
+      max-width: 1320px;
+      margin: 0 auto;
+      height: auto;
+   }
+   #yukiyama #tabArea_y {
+      margin-right: -20px;
+   }
+   #status,#status ul {
+      width: 100%;
+   }
+   #status ul li {
+      display: inline-block;
+      margin-bottom: 0;
+      flex-basis: 20%;
+      font-size: 1vw;
+      height: 48px;
+   }
+   #status ul li p {
+      display: block;
+   }
+   #liftStatusArea h3, #liftWeatherArea h3, #liftListArea ul li ul.liftListHeader li,body, #liftStatusArea p {
+      font-family: 'Open+Sans+Condensed', 游ゴシック体, 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+   }
+   @media screen and (max-width: 1080px) {
+      #yukiyama {
+          height: auto!important;
+      }
+   }
+</style>
+<div id="mainVisual">
+        <span class="topIcon"></span>
+        <img src="/en/wp-content/themes/niseko2018/images/mv.jpg" alt="">
+        <div class="mvText">
+            <span class="small">SCOPE BEFORE YOU SKI</span>
+            <p>WEATHER<br>AND LIFT<br>STATUS</p>
+        </div>
+        <span class="btmIcon"></span>
+    </div>
+   <div id="yukiyama">
+                <div id="newsBlock">
+                        <ul id="tabArea_y" class="page_lang_en">
+                                <li id="tag_all"><a href="all">RESORT OVERVIEW</a></li>
+                                <li id="tag_annupuri"><a href="#tag_annupuri">ANNUPURI</a></li>
+                                <li id="tag_niseko_v"><a href="#tag_niseko_v">NISEKO VILLAGE</a></li>
+                                <li id="tag_g_hirafu"><a href="#tag_g_hirafu">GRAND HIRAFU</a></li>
+                                <li id="tag_hanazono"><a href="#tag_hanazono">HANAZONO</a></li>
+                        </ul>
+                        <div id="liftArea">
+                                <canvas id="INF_lift_can" width="1920" height="1357"></canvas>
+                                <canvas id="OPB_lift_can" width="1920" height="1357"></canvas>
+                                <canvas id="OPA_lift_can" width="1920" height="1357"></canvas>
+                                <canvas id="OSB_lift_can" width="1920" height="1357"></canvas>
+                                <canvas id="OSA_lift_can" width="1920" height="1357"></canvas>
+                                <canvas id="STA_lift_can" width="1920" height="1357"></canvas>
+                                <canvas id="OTS_lift_can" width="1920" height="1357"></canvas>
+                                <canvas id="CLS_lift_can" width="1920" height="1357"></canvas>
+                                <img src="/yukiyama/yukiyama_api/img/slope_bg.png" alt="Niseko United slope map.">
+                                <script type="text/javascript">
+                                        // リフト明滅
+                                        function opn_map_blink() {
+                                                var ele = document.getElementById('OPB_lift_can');
+                                                if (ele.style.display != "none") {
+                                                        ele.style.display = "none";
+                                                } else {
+                                                        ele.style.display = "block";
+                                                };
+                                        };
+                                        var anim1 = setInterval(opn_map_blink, 500);
+                                        function ops_map_blink() {
+                                                var ele = document.getElementById('OSB_lift_can');
+                                                if (ele.style.display != "none") {
+                                                        ele.style.display = "none";
+                                                } else {
+                                                        ele.style.display = "block";
+                                                };
+                                        };
+                                        var anim1 = setInterval(ops_map_blink, 1000);
+                                </script>
+                        </div>
+                        <div id="status">
+                                <ul>
+                                        <li><p><span></span><span></span><span></span><span></span><span></span></p><p>OPERATING</p></li>
+                                        <li><p><span></span><span></span><span></span><span></span><span></span></p><p>OPERATING SLOWED</p></li>
+                                        <li><p><span></span></p><p>STANBY</p></li>
+                                        <li><p><span></span></p><p>OPERATION TEMPORARILY SUSPENDED</p></li>
+                                        <li><p><span></span></p><p>SUSPENDED / CLOSED</p></li>
+                                </ul>
+                        </div>
+                </div>
+                <div class="section lift">
+                        <div id="Comment">
+                                <div id="CommentArea">
+                                        <h2>TOPICS</h2>
+                                        <ul>
+                                                <li id="Comment_tag_annupuri" class="_2DmU0NXKFwqTj2bU"></li>
+                                                <li id="Comment_tag_niseko_v" class="_CAGgELsnAAb14yI3"></li>
+                                                <li id="Comment_tag_g_hirafu" class="_2jwjZoqMIUtofFGR"></li>
+                                                <li id="Comment_tag_hanazono" class="_ADGjF1qXru06scCR"></li>
+                                        </ul>
+                                </div>
+                        </div>
+                        <div id="liftStatusArea" class="en">
+                                <div id="liftListArea" class="allLiftView">
+                                        <h2>ALL RESORTS LIFT STATUS</h2>
+                                        <ul>
+                                                <li id="liftList_tag_annupuri" class="_2DmU0NXKFwqTj2bU">
+                                                        <h2>ANNUPURI LIFT STATUS</h2>
+                                                        <h3>ANNUPURI</h3>
+                                                        <ul class="liftListHeader"><li>LIFT NAME</li><li>NIGHT SKING</li><li>CURRENT STATUS</li><li></li><li>OPENING TIMES</li></ul>
+                                                        <ul id="_XdKR9mBSLJ2rr2vK"><li><p>Annupuri Gondola</p></li><li><p>-</p></li><li><p>-</p></li><li><p><img class="liftStatusPic" src="/yukiyama/yukiyama_api/img/CLS_PICT.png" alt=""></p></li><li><p>00:00 ～ 00:00</p></li></ul>
+                                                        <ul id="_TiI3DDS3DetpZOjd"><li><p>Dream Quad Lift #1</p></li><li><p>-</p></li><li><p>-</p></li><li><p><img class="liftStatusPic" src="/yukiyama/yukiyama_api/img/CLS_PICT.png" alt=""></p></li><li><p>-</p></li></ul>
+                                                        <ul id="_ljuQ6h8xzxItbmsK"><li><p>Jumbo Quad Lift #1</p></li><li><p>-</p></li><li><p>-</p></li><li><p><img class="liftStatusPic" src="/yukiyama/yukiyama_api/img/CLS_PICT.png" alt=""></p></li><li><p>-</p></li></ul>
+                                                        <ul id="_DzaDcUPXoQo7qODi"><li><p>Jumbo Pair Lift #2</p></li><li><p>-</p></li><li><p>-</p></li><li><p><img class="liftStatusPic" src="/yukiyama/yukiyama_api/img/CLS_PICT.png" alt=""></p></li><li><p>-</p></li></ul>
+                                                        <ul id="_X3klUF5MpQXNDiVO"><li><p>Jumbo Pair Lift #3</p></li><li><p>-</p></li><li><p>-</p></li><li><p><img class="liftStatusPic" src="/yukiyama/yukiyama_api/img/CLS_PICT.png" alt=""></p></li><li><p>-</p></li></ul>
+                                                        <ul id="_dNvXP0oEVZXnjdb9"><li><p>Jumbo Pair Lift #4</p></li><li><p>-</p></li><li><p>-</p></li><li><p><img class="liftStatusPic" src="/yukiyama/yukiyama_api/img/CLS_PICT.png" alt=""></p></li><li><p>-</p></li></ul>
+                                                </li>
+                                                <li id="liftList_tag_niseko_v" class="_CAGgELsnAAb14yI3">
+                                                        <h2>NISEKO VILLAGE LIFT STATUS</h2>
+                                                        <h3>NISEKO VILLAGE</h3>
+                                                        <ul class="liftListHeader"><li>LIFT NAME</li><li>NIGHT SKING</li><li>CURRENT STATUS</li><li></li><li>OPENING TIMES</li></ul>
+                                                        <ul id="_Vivswcy98Anis0Qf"><li><p>Niseko Gondola</p></li><li><p>-</p></li><li><p>-</p></li><li><p><img class="liftStatusPic" src="/yukiyama/yukiyama_api/img/CLS_PICT.png" alt=""></p></li><li><p>-</p></li></ul>
+                                                        <ul id="_zqiyCu1yygLl0ZwC"><li><p>Upper Village Gondola</p></li><li><p>-</p></li><li><p>-</p></li><li><p><img class="liftStatusPic" src="/yukiyama/yukiyama_api/img/CLS_PICT.png" alt=""></p></li><li><p>-</p></li></ul>
+                                                        <ul id="_DTCXAmUidy9guPtR"><li><p>Village Express</p></li><li><p>-</p></li><li><p>-</p></li><li><p><img class="liftStatusPic" src="/yukiyama/yukiyama_api/img/CLS_PICT.png" alt=""></p></li><li><p>-</p></li></ul>
+                                                        <ul id="_9D5xrlebskzFioYG"><li><p>Community Chair</p></li><li><p>-</p></li><li><p>-</p></li><li><p><img class="liftStatusPic" src="/yukiyama/yukiyama_api/img/CLS_PICT.png" alt=""></p></li><li><p>-</p></li></ul>
+                                                        <ul id="_bdxNH6nklMqG9M9H"><li><p>Bonzai Chair</p></li><li><p>-</p></li><li><p>-</p></li><li><p><img class="liftStatusPic" src="/yukiyama/yukiyama_api/img/CLS_PICT.png" alt=""></p></li><li><p>-</p></li></ul>
+                                                        <ul id="_1zz0A4WZZkDHAFjk"><li><p>Mori No Chair</p></li><li><p>-</p></li><li><p>-</p></li><li><p><img class="liftStatusPic" src="/yukiyama/yukiyama_api/img/CLS_PICT.png" alt=""></p></li><li><p>-</p></li></ul>
+                                                        <ul id="_z1CooFuML1YJvkah"><li><p>Country Road Chair</p></li><li><p>-</p></li><li><p>-</p></li><li><p><img class="liftStatusPic" src="/yukiyama/yukiyama_api/img/CLS_PICT.png" alt=""></p></li><li><p>-</p></li></ul>
+                                                        <ul id="_XQWXKamYXDx4IoFF"><li><p>Wonderland Chair</p></li><li><p>-</p></li><li><p>-</p></li><li><p><img class="liftStatusPic" src="/yukiyama/yukiyama_api/img/CLS_PICT.png" alt=""></p></li><li><p>-</p></li></ul>
+                                                </li>
+                                                <li id="liftList_tag_g_hirafu" class="_2jwjZoqMIUtofFGR">
+                                                        <h2>GRAND HIRAFU LIFT STATUS</h2>
+                                                        <h3>GRAND HIRAFU</h3>
+                                                        <ul class="liftListHeader"><li>LIFT NAME</li><li>NIGHT SKING</li><li>CURRENT STATUS</li><li></li><li>OPENING TIMES</li></ul>
+                                                        <ul id="_aet3htFFmmeQ8izB"><li><p>Ace Family Quad Lift</p></li><li><p>-</p></li><li><p>-</p></li><li><p><img class="liftStatusPic" src="/yukiyama/yukiyama_api/img/CLS_PICT.png" alt=""></p></li><li><p>-</p></li></ul>
+                                                        <ul id="_aMALXHXbXEkW4MV5"><li><p>Ace Pair Lift #1</p></li><li><p>-</p></li><li><p>-</p></li><li><p><img class="liftStatusPic" src="/yukiyama/yukiyama_api/img/CLS_PICT.png" alt=""></p></li><li><p>-</p></li></ul>
+                                                        <ul id="_gLcw2s1Y4MNlxp39"><li><p>Ace Quad Lift #2 (Center 4)</p></li><li><p>-</p></li><li><p>-</p></li><li><p><img class="liftStatusPic" src="/yukiyama/yukiyama_api/img/CLS_PICT.png" alt=""></p></li><li><p>-</p></li></ul>
+                                                        <ul id="_0Oo4Db4UOvKF70hc"><li><p>Ace Pair Lift #3</p></li><li><p>-</p></li><li><p>-</p></li><li><p><img class="liftStatusPic" src="/yukiyama/yukiyama_api/img/CLS_PICT.png" alt=""></p></li><li><p>-</p></li></ul>
+                                                        <ul id="_qYmXBchrqoyUvdHE"><li><p>Ace Pair Lift #4</p></li><li><p>-</p></li><li><p>-</p></li><li><p><img class="liftStatusPic" src="/yukiyama/yukiyama_api/img/CLS_PICT.png" alt=""></p></li><li><p>-</p></li></ul>
+                                                        <ul id="_us9pW4AbwkZe6d6o"><li><p>Hirafu Gondola</p></li><li><p>-</p></li><li><p>-</p></li><li><p><img class="liftStatusPic" src="/yukiyama/yukiyama_api/img/CLS_PICT.png" alt=""></p></li><li><p>-</p></li></ul>
+                                                        <ul id="_46uqFohd60DR9OW9"><li><p>Holiday Pair Lift #1</p></li><li><p>-</p></li><li><p>-</p></li><li><p><img class="liftStatusPic" src="/yukiyama/yukiyama_api/img/CLS_PICT.png" alt=""></p></li><li><p>-</p></li></ul>
+                                                        <ul id="_YZZ2lPZ2DGpMyMgX"><li><p>King Pair Lift #1</p></li><li><p>-</p></li><li><p>-</p></li><li><p><img class="liftStatusPic" src="/yukiyama/yukiyama_api/img/CLS_PICT.png" alt=""></p></li><li><p>-</p></li></ul>
+                                                        <ul id="_YhFiRGHOjyBhUYq2"><li><p>King Quad Lift #2</p></li><li><p>-</p></li><li><p>-</p></li><li><p><img class="liftStatusPic" src="/yukiyama/yukiyama_api/img/CLS_PICT.png" alt=""></p></li><li><p>-</p></li></ul>
+                                                        <ul id="_CsWZfmJZAQH22qVb"><li><p>King Hooded Quad Lift #3</p></li><li><p>-</p></li><li><p>-</p></li><li><p><img class="liftStatusPic" src="/yukiyama/yukiyama_api/img/CLS_PICT.png" alt=""></p></li><li><p>-</p></li></ul>
+                                                        <ul id="_c9JH0w0xOHhWSSYR"><li><p>King Lift #4</p></li><li><p>-</p></li><li><p>-</p></li><li><p><img class="liftStatusPic" src="/yukiyama/yukiyama_api/img/CLS_PICT.png" alt=""></p></li><li><p>-</p></li></ul>
+                                                        <ul id="_25cPDSW0yOMiPi1j"><li><p>Swinging Monkey</p></li><li><p>-</p></li><li><p>-</p></li><li><p><img class="liftStatusPic" src="/yukiyama/yukiyama_api/img/CLS_PICT.png" alt=""></p></li><li><p>-</p></li></ul>
+                                                </li>
+                                                <li id="liftList_tag_hanazono" class="_ADGjF1qXru06scCR">
+                                                        <h2>HANAZONO LIFT STATUS</h2>
+                                                        <h3>HANAZONO</h3>
+                                                        <ul class="liftListHeader"><li>LIFT NAME</li><li>NIGHT SKING</li><li>CURRENT STATUS</li><li></li><li>OPENING TIMES</li></ul>
+                                                        <ul id="_TNHzhFEc6n2QgEnL"><li><p>Hanazono Hooded Quad #1</p></li><li><p>-</p></li><li><p>-</p></li><li><p><img class="liftStatusPic" src="/yukiyama/yukiyama_api/img/CLS_PICT.png" alt=""></p></li><li><p>-</p></li></ul>
+                                                        <ul id="_NNHlPPpK5JkYj4fb"><li><p>Hanazono Quad Lift #2</p></li><li><p>-</p></li><li><p>-</p></li><li><p><img class="liftStatusPic" src="/yukiyama/yukiyama_api/img/CLS_PICT.png" alt=""></p></li><li><p>-</p></li></ul>
+                                                        <ul id="_ZZkAc4Nm42D7tfKV"><li><p>Hanazono Hooded Quad Lift #3</p></li><li><p>-</p></li><li><p>-</p></li><li><p><img class="liftStatusPic" src="/yukiyama/yukiyama_api/img/CLS_PICT.png" alt=""></p></li><li><p>-</p></li></ul>
+                                                </li>
+                                        </ul>
+                                        </div>
+                        </div>
+                        <!-- Whether start -->
+                        <div id="liftWeatherArea" class="en">
+                                <h2>LIVE WEATHER</h2>
+                                <ul>
+                                        <li>
+                                                <h3>ANNUPURI</h3>
+                                                <div id="yWeather_sHx9gguYV7i8VNTG">
+                                                        <h4>Mountain peak</h4>
+                                                        <p class="temperature">Unidentified</p>
+                                                        <ul>
+                                                                <li><p></p></li><li><p></p></li><li><p></p></li><li><p class="wind0_2DmU0NXKFwqTj2bU"></p></li><li><p></p></li>
+                                                        </ul>
+                                                </div>
+                                                <div id="yWeather_P7Qnxc1bvfbChznY">
+                                                        <h4>Mountain base</h4>
+                                                        <p class="temperature">Unidentified</p>
+                                                        <ul>
+                                                                <li><p></p></li><li><p></p></li><li><p></p></li><li><p class="wind1_2DmU0NXKFwqTj2bU"></p></li><li><p></p></li>
+                                                        </ul>
+                                                </div>
+                                        </li>
+                                        <li>
+                                                <h3>NISEKO VILLAGE</h3>
+                                                <div id="yWeather_80MLhcM33x0MXytI">
+                                                        <h4>Mountain peak</h4>
+                                                        <p class="temperature">Unidentified</p>
+                                                        <ul>
+                                                                <li><p></p></li><li><p></p></li><li><p></p></li><li><p class="wind0_CAGgELsnAAb14yI3"></p></li><li><p></p></li>
+                                                        </ul>
+                                                </div>
+                                                <div id="yWeather_XSbh8qwQNXBcIy2Y">
+                                                        <h4>Mountain base</h4>
+                                                        <p class="temperature">Unidentified</p>
+                                                        <ul>
+                                                                <li><p></p></li><li><p></p></li><li><p></p></li><li><p class="wind1_CAGgELsnAAb14yI3"></p></li><li><p></p></li>
+                                                        </ul>
+                                                </div>
+                                        </li>
+                                        <li>
+                                                <h3>GRAND HIRAFU</h3>
+                                                <div id="yWeather_8KuHUsi4MLcfzRXG">
+                                                        <h4>Mountain peak</h4>
+                                                        <p class="temperature">Unidentified</p>
+                                                        <ul>
+                                                                <li><p></p></li><li><p></p></li><li><p></p></li><li><p class="wind0_2jwjZoqMIUtofFGR"></p></li><li><p></p></li>
+                                                        </ul>
+                                                </div>
+                                                <div id="yWeather_pkzkO2lz7IqCq8po">
+                                                        <h4>Mountain base</h4>
+                                                        <p class="temperature">Unidentified</p>
+                                                        <ul>
+                                                                <li><p></p></li><li><p></p></li><li><p></p></li><li><p class="wind1_2jwjZoqMIUtofFGR"></p></li><li><p></p></li>
+                                                        </ul>
+                                                </div>
+                                        </li>
+                                        <li>
+                                                <h3>HANAZONO</h3>
+                                                <div id="yWeather_ySpf8ta7QWVJhuum">
+                                                        <h4>Mountain peak</h4>
+                                                        <p class="temperature">Unidentified</p>
+                                                        <ul>
+                                                                <li><p></p></li><li><p></p></li><li><p></p></li><li><p class="wind0_ADGjF1qXru06scCR"></p></li><li><p></p></li>
+                                                        </ul>
+                                                </div>
+                                                <div id="yWeather_rOAzY0jWW4y3b9Ml">
+                                                        <h4>Mountain base</h4>
+                                                        <p class="temperature">Unidentified</p>
+                                                        <ul>
+                                                                <li><p></p></li><li><p></p></li><li><p></p></li><li><p class="wind1_ADGjF1qXru06scCR"></p></li><li><p></p></li>
+                                                        </ul>
+                                                </div>
+                                        </li>
+                                </ul>
+                        </div>
+                        <!-- Whether end -->
+                </div>
+   </div>
+
+	<div id="instaArea">
+	    <div id="instaHead">
+	        <h2>INSTAGRAM FEED  <a href="https://www.instagram.com/nisekounited/" target="_blank">Follow us @nisekounited</a></h2>
+	    </div>
+       <ul id="instafeed"></ul>
+       <script type="text/javascript" src="http://www.niseko.ne.jp/en/wp-content/themes/niseko2018/js/instafeed.min.js"></script>
+       <script type="text/javascript">
+            var feed = new Instafeed({
+                get: 'user',
+                userId: '5821249157',
+                clientId: '4e9df78b276747fbb58755e8a864a83a',
+                accessToken: '5821249157.4e9df78.0570b9d2cec542bc99f4040ebc54e176',
+                resolution: 'standard_resolution',
+                limit: 12,
+                template: '<li><a href="{{link}}" target="_blank"><img src="{{image}}" /></a></li>'
+            });
+            feed.run();
+       </script>
+<div id="mailArea" class="newsletter">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <h2>Get the Latest Deals & Keep Up with WHAT’S HOT</h2>
+                <p>
+                    Straight to your inbox, about once a month, totally free
+                </p>
+                <div class="newsletter-form">
+                    <form action="https://niseko.us17.list-manage.com/subscribe/post?u=1c319435997475a44be24bdc7&amp;id=3f80d195c0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                        <div id="mc_embed_signup_scroll">
+
+                            <!-- Text Input Field -->
+                            <div class="mc-field-group"><input type="email" placeholder="Your Email" name="EMAIL" class="required email" id="mce-EMAIL"></div>
+                            <!-- /Text Input Field -->
+
+                            <div id="mce-responses" class="clear">
+                                <div class="response" id="mce-error-response" style="display:none"></div>
+                                <div class="response" id="mce-success-response" style="display:none"></div>
+                            </div><!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+
+                            <div style="position: absolute; left: -5000px;"><input type="text" name="b_0b5586be71b0fee16a03f5684_e41ec18eab" tabindex="-1" value=""></div>
+
+                            <!-- Submit Button -->
+                            <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                            <!-- /Submit Button -->
+                            <!--<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>-->
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+	</div>
+	<div id="footArea">
+        <div id="footAreaTop">
+               <ul id="footLinks">
+                <li>
+                    <h3>ABOUT NISEKO UNITED</h3>
+                    <ul class="links">
+                        <li><a href="http://www.niseko.ne.jp/en/niseko/">About Niseko United</a></li>
+                        <li><a href="http://www.niseko.ne.jp/en/news/">News &amp; Events</a></li>
+                        <li><a href="http://www.niseko.ne.jp/en/niseko/niseko-rules/">Niseko Rules</a></li>
+                        <li><a href="http://www.niseko.ne.jp/en/niseko/niseko-access/#shuttle">Niseko Shuttle Bus</a></li>
+                        <li><a href="http://www.niseko.ne.jp/en/niseko/niseko-summer/">Summer In Niseko</a></li>
+                        <li><a href="http://www.nisekotourism.com" target="_blank">More On Niseko</a></li>
+                        <li><a href="http://www.niseko.ne.jp/en/niseko/niseko-access/">Getting To Niseko</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>WEATHER &amp; LIFT STATUS</h3>
+                    <ul class="links">
+                        <li><a href="http://www.niseko.ne.jp/en/niseko-lift-status/">Weather &amp; Lift Status</a></li>
+                        <li><a href="http://www.niseko.ne.jp/en/livecamera/">Web Cams</a></li>
+                        <li><a href="http://niseko.nadare.info/" target="_blank">Niseko Avalanche Information</a></li>
+                        <li><a href="http://www.niseko.ne.jp/en/map/">Trail Map</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>TICKET &amp; PASSES</h3>
+                    <ul class="links">
+                        <li><a href="http://www.niseko.ne.jp/en/lift/">Lift Ticket Prices</a></li>
+                        <li><a href="http://www.niseko.ne.jp/en/all-mountain-season-pass/">All Mountain Season Pass</a></li>
+                        <li><a href="http://www.niseko.ne.jp/en/lift/web-liftpass/">Internet Lift Tickets</a></li>
+                        <li><a href="http://www.niseko.ne.jp/en/lift/otoku/">Lift Ticket Packages</a></li>
+                        <li><a href="http://www.niseko.ne.jp/en/affiliate-school/">Commercial Lift Tickets</a></li>
+                        <li><a href="http://www.niseko.ne.jp/en/photography/">Guided Photography<br>Business</a></li>
+                        <li><a href="http://www.niseko.ne.jp/en/lift/mountain-collective/">Mountain Collective Pass</a></li>
+                        <li><a href="http://www.niseko.ne.jp/en/lift/ikonpass/">Ikon Pass</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>PLAN YOUR STAY</h3>
+                    <ul class="links">
+                        <li><a href="http://www.niseko.ne.jp/en/niseko-accommodation/">Accomodation</a></li>
+                        <li><a href="http://www.niseko.ne.jp/en/niseko-ski-school/">Ski School</a></li>
+                        <li><a href="http://www.niseko.ne.jp/en/niseko-rentals/">Rentals</a></li>
+                        <li><a href="http://www.niseko.ne.jp/en/niseko-winter-activities/">Winter Activities</a></li>
+                        <li><a href="http://www.niseko.ne.jp/en/niseko-summer/">Summer Activities</a></li>
+                        <li><a href="http://www.niseko.ne.jp/en/niseko-resort-dining/">Resort Dining</a></li>
+                        <li><a href="http://www.niseko.ne.jp/en/niseko-kids/">Kids</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>GETTING TO NISEKO</h3>
+                    <ul class="links">
+                        <li><a href="http://www.niseko.ne.jp/en/niseko/niseko-access/">Getting To Niseko</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>MEDIA REQUESTS</h3>
+                    <ul class="links">
+                        <li><a href="http://www.niseko.ne.jp/en/media/">Media Requests</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div id="spFootMenuWrap">
+                <ul id="spFootMenu">
+                    <li>
+                        <a href="http://www.niseko.ne.jp/en/news/">NEWS</a>
+                    </li>
+                    <li>
+                        <a href="http://www.niseko.ne.jp/en/niseko-lift-status/">LIFT STATUS</a>
+                    </li>
+                    <li>
+                        <a href="http://www.niseko.ne.jp/en/niseko-snow-report/">WEATHER</a>
+                    </li>
+                    <li>
+                        <a href="http://www.niseko.ne.jp/en/map/">TRAIL MAP</a>
+                    </li>
+                    <li>
+                        <a href="http://www.niseko.ne.jp/en/niseko-rules/">RULES</a>
+                    </li>
+                </ul>
+            </div>
+            <div id="footTopBtm">
+                <div id="award">
+                    <ul><li><img style="width: 100px;padding-bottom: 20px;" src="/en/wp-content/uploads/2018/11/IKON_logo.png"></li>
+                    <li><img style="width: 100px;padding-bottom: 20px;" src="/en/wp-content/uploads/2018/11/MountainCollective_logo.png"></li></ul>
+                    <ul>
+                        <li><img src="http://www.niseko.ne.jp/en/wp-content/themes/niseko2018/images/award2016.png" alt=""></li>
+                        <li><img src="http://www.niseko.ne.jp/en/wp-content/themes/niseko2018/images/award2015.png" alt=""></li>
+                        <li><img src="http://www.niseko.ne.jp/en/wp-content/themes/niseko2018/images/award2014.png" alt=""></li>
+                        <li><img src="http://www.niseko.ne.jp/en/wp-content/themes/niseko2018/images/award2013.png" alt=""></li>
+                        <li>WORLD SKI AWARDS<br><span>Japan's Best Ski Resort</span></li>
+                    </ul>
+                </div>
+                <ul id="sns">
+                    <li><a href="https://www.facebook.com/NisekoUnited/" target="_blank"><img src="http://www.niseko.ne.jp/en/wp-content/themes/niseko2018/images/sns_1.gif" alt=""></a></li>
+                    <li><a href="https://www.instagram.com/nisekounited/" target="_blank"><img src="http://www.niseko.ne.jp/en/wp-content/themes/niseko2018/images/sns_2.gif" alt=""></a></li>
+<!--
+                    <li><a href=""><img src="http://www.niseko.ne.jp/en/wp-content/themes/niseko2018/images/sns_3.gif" alt=""></a></li>
+                    <li><a href=""><img src="http://www.niseko.ne.jp/en/wp-content/themes/niseko2018/images/sns_4.gif" alt=""></a></li>
+-->
+                </ul>
+            </div>
+        </div>
+        <div id="footAreaBtm">
+           <div id="footAreaBtmInner">
+               <div id="brandArea">
+                 <ul>
+                   <li><a href="http://annupuri.info/" target="_blank"><img src="http://www.niseko.ne.jp/en/wp-content/themes/niseko2018/images/brand_annupuri_off.png" alt="NISEKO Annupuri"></a></li>
+                   <li><a href="http://www.niseko-village.com/" target="_blank"><img src="http://www.niseko.ne.jp/en/wp-content/themes/niseko2018/images/brand_nisekovillage_off.png" alt="NISEKO Village"></a></li>
+                   <li><a href="http://www.grand-hirafu.jp/" target="_blank"><img src="http://www.niseko.ne.jp/en/wp-content/themes/niseko2018/images/brand_grandhirafu_off.png" alt="Grand HIRAFU"></a></li>
+                   <li><a href="http://www.hanazononiseko.com/" target="_blank"><img src="http://www.niseko.ne.jp/en/wp-content/themes/niseko2018/images/brand_hanazono_off.png" alt="HANAZONO"></a></li>
+                 </ul>
+              </div>
+              <p id="copy">Copyright &copy; 2018 Niseko United. All Rights Reserved</p>
+           </div>
+        </div>
+	</div>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-104417981-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-104417981-1');
+</script>
+
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wpcf7 = {"apiSettings":{"root":"https:\/\/www.niseko.ne.jp\/en\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"},"recaptcha":{"messages":{"empty":"Please verify that you are not a robot."}}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.niseko.ne.jp/en/wp-content/plugins/contact-form-7/includes/js/scripts.js'></script>
+<script type='text/javascript' src='http://www.niseko.ne.jp/en/wp-includes/js/jquery/jquery.form.min.js'></script>
+<script type='text/javascript' src='http://www.niseko.ne.jp/en/wp-content/plugins/contact-form-7-add-confirm/includes/js/scripts.js'></script>
+</body>
+</html>
