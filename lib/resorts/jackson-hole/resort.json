@@ -1,8 +1,13 @@
 {
   "name": "Jackson Hole",
   "url": {
-    "host": "http://www.jacksonhole.com",
-    "pathname": "/maps/mountain-winter.html"
+    "host": "https://www.jacksonhole.com",
+    "pathname": "/maps/mountain-winter"
+  },
+  "api": {
+    "host": "https://www.jacksonhole.com",
+    "pathname": "/api/all.json",
+    "http2": true
   },
   "tags": [
     "Wyoming"

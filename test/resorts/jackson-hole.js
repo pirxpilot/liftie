@@ -1,16 +1,17 @@
 const lifts = require('../lifts');
 
-lifts('jackson-hole', 'html', {
+lifts('jackson-hole', 'json', {
   'Aerial Tram': 'closed',
-  'Apres Vous High Speed Quad': 'closed',
+  'Apres Vous Quad': 'closed',
   'Bridger Gondola': 'closed',
-  'Casper Bowl High Speed Quad': 'closed',
-  'Eagle\'s Rest Double Chair': 'closed',
-  'Marmot Chair': 'closed',
-  'Moose Creek Quad Chair': 'closed',
-  'Sublette Quad Chair': 'closed',
-  'Sweetwater Triple Chair': 'closed',
-  'Teewinot High Speed Quad': 'closed',
-  'Thunder Quad Chair': 'closed',
-  'Union Pass Quad Chair': 'closed'
+  'Casper Quad': 'closed',
+  'Eagle\'s Rest Quad': 'closed',
+  'Marmot Double': 'closed',
+  'Moose Creek Quad': 'closed',
+  'Sublette Quad': 'closed',
+  'Sweetwater Gondola': 'closed',
+  'Teewinot Quad': 'closed',
+  'Teton Lift Quad': 'closed',
+  'Thunder Quad': 'closed',
+  'Union Pass Quad': 'closed',
 });
