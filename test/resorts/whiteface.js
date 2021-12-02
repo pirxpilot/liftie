@@ -1,16 +1,15 @@
 const lifts = require('../lifts');
 
 lifts('whiteface', 'html', {
-  'Facelift': 'open',
-  'Bear Lift': 'open',
-  'Mixing Bowl Lift': 'open',
-  'Coyote Cruiser': 'closed',
-  'Bunny Hutch Triple Chair': 'open',
+  'Cloudsplitter Gondola': 'open',
   'Lookout Mountain Triple Chair': 'closed',
+  'Little Whiteface Lift': 'closed',
   'Freeway Lift': 'closed',
   'Mountain Run Lift': 'closed',
-  'Little Whiteface Lift': 'open',
-  'Cloudsplitter Gondola': 'open',
+  'Face Lift': 'open',
+  'Bear Lift': 'closed',
   'Summit Quad': 'closed',
-  'Cub Carpet': 'closed'
+  'Falcon Flyer Quad': 'closed',
+  'Cub Carpet': 'closed',
+  'Coyote Carpet': 'closed'
 });

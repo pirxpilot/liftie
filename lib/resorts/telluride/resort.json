@@ -1,8 +1,8 @@
 {
   "name": "Telluride",
   "url": {
-    "host": "http://www.tellurideskiresort.com",
-    "pathname": "/the-mountain/snow-report/"
+    "host": "https://tellurideskiresort.com",
+    "pathname": "/snow-report"
   },
   "tags": [
     "Colorado"

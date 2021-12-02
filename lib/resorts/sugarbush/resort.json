@@ -1,8 +1,12 @@
 {
   "name": "Sugarbush",
   "url": {
-    "host": "http://www.sugarbush.com",
-    "pathname": "/mountain/snow-report/"
+    "host": "https://www.sugarbush.com",
+    "pathname": "/mountain/conditions"
+  },
+  "api": {
+    "host": "https://mtnpowder.com",
+    "pathname": "/feed/70/lifts"
   },
   "tags": [
     "New England",

@@ -1,20 +1,21 @@
 const lifts = require('../lifts');
 
-lifts('telluride', 'html', {
-  'Adult Magic Carpet': 'closed',
-  'Apex Lift': 'closed',
-  'Children\'s Magic Carpet': 'closed',
+lifts('telluride',
+'html', {
   'Chondola': 'closed',
-  'Coonskin Lift': 'closed',
-  'Free Gondola - Town to MV': 'closed',
-  'Gold Hill Express': 'closed',
-  'Lynx': 'closed',
+  'Childrens Magic Carpet': 'closed',
+  'Village Express': 'closed',
+  'Polar Queen Express': 'closed',
+  'Apex Lift': 'closed',
+  'Lift 7': 'closed',
   'Oak Street Lift': 'closed',
   'Plunge Lift': 'closed',
-  'Polar Queen Express': 'closed',
-  'Prospect Express': 'closed',
-  'Revelation Lift': 'closed',
   'Sunshine Express': 'closed',
   'UTE Park': 'closed',
-  'Village Express': 'closed'
+  'Prospect Express': 'closed', Lynx: 'closed',
+  'Gold Hill Express': 'closed',
+  'Revelation Lift': 'closed',
+  'Adult Magic Carpet': 'closed',
+  'Free Gondola – Town to MV': 'closed',
+  'Learning Center Carpet': 'closed'
 });
