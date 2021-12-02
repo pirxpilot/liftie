@@ -1,4 +1,19 @@
 
+3.32.1 / 2021-12-02
+===================
+
+ * fix Telluride resort
+ * fix Whiteface and Gore Mountain resorts
+ * fix Sugarbush resort
+ * fix Boyne resorts
+ * fix jackson-hole
+ * add support for http2 requests
+ * improve assertion message
+ * fix documentation for `filter` property
+ * replace Travis CI with github actions
+ * remove broken dep links from Readme
+ * add Val Gardena resort
+
 3.32.0 / 2021-10-07
 ===================
 
