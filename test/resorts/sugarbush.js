@@ -1,20 +1,20 @@
 const lifts = require('../lifts');
 
-lifts('sugarbush', 'html', {
- 'Valley House Quad': 'closed',
- 'Super Bravo Express Quad': 'scheduled',
- 'Heaven\'s Gate Triple': 'scheduled',
- 'Castlerock Double': 'closed',
- 'North Lynx Triple': 'closed',
- 'Gate House Express Quad': 'closed',
- 'Village Double': 'closed',
- 'Schoolhouse Lift': 'closed',
- 'Welcome Mat': 'closed',
- 'Summit Quad': 'closed',
- 'North Ridge Express Quad': 'closed',
- 'Green Mountain Express Quad': 'closed',
- 'Inverness Quad': 'closed',
- 'Sunshine Double': 'closed',
- 'Tommy\'s Toy': 'closed',
- 'Slide Brook Express Quad': 'closed'
+lifts('sugarbush', 'json', {
+  'Castlerock Double': 'closed',
+  'Gate House Express Quad': 'closed',
+  'Green Mountain Express Quad': 'closed',
+  'Heaven\'s Gate Triple': 'scheduled',
+  'Inverness Quad': 'closed',
+  'North Lynx Triple': 'closed',
+  'North Ridge Express Quad': 'closed',
+  'Schoolhouse Lift': 'closed',
+  'Slide Brook Express Quad': 'closed',
+  'Summit Quad': 'closed',
+  'Sunshine Quad': 'closed',
+  'Super Bravo Express Quad': 'open',
+  'Tommy\'s Toy': 'closed',
+  'Valley House Quad': 'closed',
+  'Village Quad': 'closed',
+  'Welcome Mat': 'closed'
 });
