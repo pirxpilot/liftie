@@ -2,10 +2,9 @@ const lifts = require('../lifts');
 
 lifts('alta', 'html', {
   Albion: 'closed',
-  Cecret: 'closed',
-  Collins: 'open',
+  Collins: 'closed',
   Sugarloaf: 'closed',
-  Sunnyside: 'open',
+  Sunnyside: 'closed',
   Supreme: 'closed',
-  Wildcat: 'open'
+  Wildcat: 'closed'
 });

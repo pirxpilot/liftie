@@ -2,7 +2,13 @@
   "name": "Brian Head",
   "url": {
     "host": "https://www.brianhead.com",
-    "pathname": "/winter/current-weather/"
+    "pathname": "/snow-report/"
+  },
+  "api": {
+    "host": "https://www.brianhead.com",
+    "pathname": "/wp-admin/admin-ajax.php",
+    "body": "action=w153_pl_bh_load_values",
+    "json": true
   },
   "tags": [
     "Utah"
@@ -12,6 +18,5 @@
     -112.848129,
     37.692753
   ],
-  "opening": "2017-11-25",
   "noaa": "SLC/48,41"
 }

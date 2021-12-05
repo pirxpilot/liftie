@@ -1,8 +1,8 @@
 {
   "name": "Alta",
   "url": {
-    "host": "http://www.alta.com",
-    "pathname": "/conditions/daily-mountain-report/snow-report"
+    "host": "https://www.alta.com",
+    "pathname": "/lift-terrain-status"
   },
   "tags": [
     "Utah"
@@ -12,6 +12,5 @@
     40.583828
   ],
   "twitter": "AltaSkiArea",
-  "opening": "2017-11-22",
   "noaa": "SLC/107,165"
 }

@@ -5,7 +5,7 @@
     "pathname": "/Plan-Your-Visit/Snow-Report.aspx"
   },
   "api": {
-    "host": "https://services.patspeak.com:442",
+    "host": "https://services.patspeak.com",
     "pathname": "/api/SnowReport/Status"
   },
   "tags": [

@@ -1,16 +1,15 @@
 const lifts = require('../lifts');
 
 lifts('windham', 'html', {
-  'Whirlwind High Speed Quad (A)': 'closed',
-  'Wheelchair Double Chairlift (B)': 'open',
-  'Wonderama Triple Chairlift (C)': 'open',
-  'Whiteway Triple Chairlift (D)': 'open',
-  'Wooly Bear Conveyor (E)': 'open',
-  'Whistler Triple Chairlift (F)': 'open',
-  'East Peak Express Quad (G)': 'open',
-  'K Triple Chairlift': 'open',
-  'Enclave Conveyor L': 'closed',
-  'Park Tow': 'closed',
-  'Whisper Run Lower': 'open',
-  'Whisper Run Upper': 'open'
+  'East Peak Express Quad': 'closed',
+  'Baker Double': 'closed',
+  'Wonderama Express Quad': 'closed',
+  'Whiteway Triple': 'open',
+  'Wooly Bear Carpet': 'closed',
+  'Westside Six': 'open',
+  'JPark Tow': 'closed',
+  'Willpower Triple': 'closed',
+  'Enclave Carpet': 'closed',
+  'Whisper Run Upper': 'closed',
+  'Whisper Run Lower': 'closed'
 });

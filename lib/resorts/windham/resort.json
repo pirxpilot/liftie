@@ -1,8 +1,8 @@
 {
   "name": "Windham Mountain",
   "url": {
-    "host": "http://www.windhammountain.com",
-    "pathname": "/the-mountain/mountain-report/"
+    "host": "https://www.windhammountain.com",
+    "pathname": "/snow-report/"
   },
   "tags": [
     "New York"

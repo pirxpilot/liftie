@@ -1,12 +1,8 @@
 {
   "name": "Smugglers' Notch",
   "url": {
-    "host": "http://www.smuggs.com",
+    "host": "https://www.smuggs.com",
     "pathname": "/pages/winter/snowReport/"
-  },
-  "dataUrl": {
-    "host": "http://www.smuggs.com",
-    "pathname": "/pages/winter/snowReport/trail_map.xml"
   },
   "tags": [
     "New England",
