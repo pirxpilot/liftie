@@ -1,4 +1,17 @@
 
+3.32.2 / 2021-12-05
+===================
+
+ * fix Smugglers' Notch resort
+ * fix Mount Rose resort
+ * fix Windham resort
+ * fix Camelback resort
+ * fix Caberfae url
+ * fix Brianhead resort
+ * fix Pats Peak resort
+ * fix Alta resort
+ * fix Brighton resort
+
 3.32.1 / 2021-12-02
 ===================
 
