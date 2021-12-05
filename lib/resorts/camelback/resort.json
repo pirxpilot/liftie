@@ -1,8 +1,12 @@
 {
   "name": "Camelback Mountain",
   "url": {
-    "host": "https://www.skicamelback.com",
-    "pathname": "/plan-your-trip/skiing-in-pa-poconos/"
+    "host": "https://www.camelbackresort.com",
+    "pathname": "/ski-tube/poconos-snow-report-conditions/"
+  },
+  "dataUrl": {
+    "host": "https://conditions.camelbackresort.com",
+    "pathname": "/map/propmap/interactive-trail-map/"
   },
   "tags": [
     "Pennsylvania"
