@@ -1,12 +1,12 @@
 const lifts = require('../lifts');
 
 lifts('mtrose', 'html', {
-  'Northwest Mag 6': 'hold',
-  'Blazing Zephyr 6*': 'hold',
+  'Northwest Express': 'closed',
+  'Zephyr Express': 'closed',
   'Chuter': 'closed',
-  'Lakeview': 'open',
+  'Lakeview': 'closed',
   'Galena': 'closed',
-  'Wizard': 'open',
-  'Magic East': 'scheduled',
-  'Magic West': 'scheduled'
+  'Wizard': 'closed',
+  'Magic East': 'closed',
+  'Magic West': 'closed'
 });
