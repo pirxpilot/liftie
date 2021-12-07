@@ -1,4 +1,15 @@
 
+3.32.3 / 2021-12-07
+===================
+
+ * fix Rosiere resort
+ * fix Mount Hood resort
+ * fix Hunter Mountain resort
+ * fix China Peak resort
+ * fix Cataloochee resort
+ * fix Shawnee Mountain resort
+ * fix Shawnee Peak resort
+
 3.32.2 / 2021-12-05
 ===================
 
