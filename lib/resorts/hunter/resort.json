@@ -2,17 +2,16 @@
   "name": "Hunter Mountain",
   "url": {
     "host": "https://www.huntermtn.com",
-    "pathname": "/mountain-info/lifts-terrain/",
-    "ignoreErrors": true
+    "pathname": "/the-mountain/mountain-conditions/lift-and-terrain-status.aspx"
   },
   "tags": [
-    "New York"
+    "New York",
+    "Vail Epic"
   ],
   "ll": [
     -74.20874,
     42.205029
   ],
   "twitter": "huntermtn",
-  "opening": "2017-11-24",
   "noaa": "ALY/46,35"
 }

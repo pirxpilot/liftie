@@ -1,16 +1,16 @@
 const lifts = require('../lifts');
 
 lifts('hunter', 'html', {
-  'Kaatskill Flyer': 'open',
-  'B-Lift': 'open',
-  'C-Lift': 'open',
-  'D-Lift': 'closed',
-  'E-Lift': 'closed',
-  'F-Lift': 'hold',
-  'Carpet Lift': 'open',
-  'Frostyland Carpet': 'open',
-  'Discovery Carpet': 'open',
-  'H-Lift': 'closed',
-  'Zephyr Express': 'closed',
-  'Pony Lift': 'closed'
+  '20th Century (C Lift)': 'closed',
+  'Broadway (B Lift)': 'closed',
+  'D Lift': 'open',
+  'Discovery Carpet': 'closed',
+  'E Lift': 'closed',
+  'F Lift': 'closed',
+  'Frostland Carpet': 'closed',
+  'H Lift': 'closed',
+  'Hunter East Carpet': 'closed',
+  'Kaatskill Flyer': 'closed',
+  'Northern Express': 'closed',
+  'Zephyr Express': 'closed'
 });
