@@ -2,7 +2,11 @@
   "name": "Shawnee Mountain",
   "url": {
     "host": "https://www.shawneemt.com",
-    "pathname": "/mountain/snow-report"
+    "pathname": "/mountain/snow-report/"
+  },
+  "api": {
+    "host": "https://www.shawneemt.com",
+    "pathname": "/wp-json/shawnee-widget/v1/weather/"
   },
   "tags": [
     "Pennsylvania"
