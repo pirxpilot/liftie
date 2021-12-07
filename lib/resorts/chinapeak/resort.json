@@ -1,7 +1,7 @@
 {
   "name": "China Peak",
   "url": {
-    "host": "http://www.skichinapeak.com",
+    "host": "https://www.skichinapeak.com",
     "pathname": "/conditions"
   },
   "tags": [
