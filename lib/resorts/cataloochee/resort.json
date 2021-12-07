@@ -1,7 +1,7 @@
 {
   "name": "Cataloochee",
   "url": {
-    "host": "http://www.cataloochee.com",
+    "host": "https://cataloochee.com",
     "pathname": "/the-mountain/snow-report/"
   },
   "tags": [
@@ -12,6 +12,5 @@
     35.562656
   ],
   "twitter": "skicataloochee",
-  "opening": "2017-11-20",
   "noaa": "GSP/35,71"
 }
