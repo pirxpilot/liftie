@@ -18,28 +18,5 @@
     -72.802879,
     43.619675
   ],
-  "webcams": [
-    {
-      "name": "North Ridge",
-      "source": "http://www.killington.com/site/mountain/webcam/northridge.html",
-      "image": "https://b6b.hdrelay.com/cameras/61e3ce02-faaa-4499-a547-6574ef6fa4f6/GetOneShot?size=296x222"
-    },
-    {
-      "name": "Superstar",
-      "source": "http://www.killington.com/site/mountain/webcam/superstar.html",
-      "image": "https://b6b.hdrelay.com/cameras/a0de9878-d7b7-4906-9e83-536fde35c8a9/GetOneShot?size=296x222"
-    },
-    {
-      "name": "Horizon",
-      "source": "http://www.killington.com/site/mountain/webcam/horizon.html",
-      "image": "https://b6b.hdrelay.com/cameras/2a8b98fa-994e-4e36-9c61-d62e00a500b0/GetOneShot?size=296x222"
-    },
-    {
-      "name": "",
-      "source": "http://www.killington.com/site/mountain/webcam/rams.html",
-      "image": "https://b6b.hdrelay.com/cameras/705fdfca-9ee5-4adf-a6e5-2dbe95708c1a/GetOneShot?size=296x222"
-    }
-  ],
-  "opening": "2017-10-28",
   "noaa": "BTV/108,19"
 }
