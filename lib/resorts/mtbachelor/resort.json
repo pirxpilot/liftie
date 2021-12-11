@@ -1,8 +1,12 @@
 {
   "name": "Mount Bachelor",
   "url": {
-    "host": "http://www.mtbachelor.com",
-    "pathname": "/conditions-report/"
+    "host": "https://www.mtbachelor.com",
+    "pathname": "/the-mountain/weather-operations/lift-trail-report"
+  },
+  "api": {
+    "host": "https://www.mtbachelor.com",
+    "pathname": "/api/v1/dor/status"
   },
   "tags": [
     "Oregon",
@@ -13,6 +17,5 @@
     44.003559
   ],
   "twitter": "mtbachelor",
-  "opening": "2017-11-24",
   "noaa": "PDT/22,40"
 }

@@ -1,15 +1,19 @@
 const lifts = require('../lifts');
 
-lifts('mtbachelor', 'html', {
-  'Pine Marten Express': 'closed',
-  'Skyliner Express': 'closed',
-  'Sunrise Express': 'closed',
-  'Sunshine Accelerator': 'closed',
-  'Carrousel Chair': 'closed',
-  'Rainbow Chair': 'closed',
+lifts('mtbachelor', 'json', {
+  'Chipmunk Carpet': 'closed',
+  'Little Pine': 'closed',
+  'Pine Marten': 'closed',
   'Red Chair': 'closed',
-  'Northwest Express': 'closed',
-  'Outback Express': 'closed',
-  'Summit Express': 'closed',
-  'Hike Zone': 'closed'
+  'Skyliner': 'closed',
+  'Alpenglow': 'closed',
+  'Cloudchaser': 'closed',
+  'Early Riser': 'closed',
+  'First Rays': 'closed',
+  'Lava Tube': 'closed',
+  'Rainbow': 'closed',
+  'Summit': 'closed',
+  'Sunrise': 'closed',
+  'Northwest': 'closed',
+  'Outback': 'closed'
 });
