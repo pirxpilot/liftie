@@ -1,0 +1,17 @@
+{
+  "name": "Saddleback",
+  "url": {
+    "host": "https://www.saddlebackmaine.com",
+    "pathname": "/the-mountain/snow--weather/"
+  },
+  "tags": [
+    "Maine",
+    "New England"
+  ],
+  "ll": [
+    -70.632965,
+    44.983387
+  ],
+  "twitter": "SaddlebackMaine",
+  "noaa": "GYX/52,116"
+}
