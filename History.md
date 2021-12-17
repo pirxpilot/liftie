@@ -1,4 +1,13 @@
 
+3.32.4 / 2021-12-17
+===================
+
+ * fix Mount Bachelor resort
+ * remove defunct Killington webcams
+ * add official twitter for Maddonna - Pinzolo
+ * fix fetch-noaa script
+ * re-add Saddleback Maine resort after reactivation
+
 3.32.3 / 2021-12-07
 ===================
 
