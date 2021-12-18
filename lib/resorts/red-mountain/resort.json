@@ -1,8 +1,12 @@
 {
   "name": "Red Mountain",
   "url": {
-    "host": "http://www.redresort.com",
-    "pathname": "/mountain/report/"
+    "host": "https://www.redresort.com",
+    "pathname": "/report/"
+  },
+  "api": {
+    "host": "https://api.redresort.com",
+    "pathname": "/report/full"
   },
   "tags": [
     "British Columbia"
