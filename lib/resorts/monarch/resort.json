@@ -4,6 +4,10 @@
     "host": "https://www.skimonarch.com",
     "pathname": "/conditions/"
   },
+  "dataUrl": {
+    "host": "https://pmw.skimonarch.com",
+    "pathname": "/conditions/snow-report/snow-report-conditions/"
+  },
   "tags": [
     "Colorado"
   ],

@@ -1,10 +1,10 @@
 const lifts = require('../lifts');
 
 lifts('monarch', 'html', {
-  'Garfield': 'open',
+  'Garfield': 'closed',
   'Panorama': 'open',
-  'Breezeway': 'open',
-  'Pioneer': 'closed',
+  'Breezeway': 'closed',
+  'Pioneer': 'open',
   'Tumbelina': 'open',
   'Caterpillar': 'open',
   'Kaleidoscope': 'closed'
