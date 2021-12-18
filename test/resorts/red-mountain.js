@@ -1,11 +1,13 @@
 const lifts = require('../lifts');
 
-lifts('red-mountain', 'html', {
-  'Grey Mountain Chair (Quad)': 'closed',
-  'Silverlode Chair (Quad)': 'closed',
-  'Motherlode Chair (Triple)': 'closed',
-  'Paradise Chair (Triple)': 'closed',
-  'Red Chair (Double)': 'closed',
+lifts('red-mountain', 'json', {
+  'Grey Quad': 'closed',
+  'Silverlode Quad': 'closed',
+  'Motherlode Triple': 'closed',
+  'Paradise Triple': 'closed',
+  'Topping Triple': 'closed',
+  'Red Double': 'closed',
   'T-Bar': 'closed',
-  'Red Carpet': 'closed'
+  'Magic Carpet': 'closed',
+  'Mt. Kirkup Cat': 'closed'
 });
