@@ -1,4 +1,11 @@
 
+3.32.5 / 2021-12-18
+===================
+
+ * fix Hochfuegen resort
+ * fix Monarch resort
+ * fix Red Mountain resort
+
 3.32.4 / 2021-12-17
 ===================
 
