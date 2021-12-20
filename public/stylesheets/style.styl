@@ -85,6 +85,9 @@ body
   font-size: 1em
   font-family: Ubuntu, "Lucida Grande", Helvetica, Arial, sans-serif
   color $text-color
+  display flex
+  flex-direction column
+  gap $column-gutter
 
 a
   color $link-color
@@ -102,14 +105,10 @@ a
 .panel
   clearfix()
   box-sizing border-box
-  margin 0 ($column-gutter/2) $column-gutter
   width $column-width
   padding 0 $panel-padding
   float left
   background-color $background-color
-
-  &:last-child
-    margin-bottom 0
 
 header .ls-furkot
   font-size .9em
@@ -528,18 +527,18 @@ body > footer
 @import './about'
 @import './tags'
 
-contentWidth(n)
-  return n == 1 ? $column-width : n * ($column-width + $column-gutter)
-
-maxContent(n)
-  .content-{n}
-    max-width contentWidth(n)
-
 .content
-  clearfix()
-  margin $column-gutter auto
-  width contentWidth(7)
+  margin 0 auto
+  min-width $column-width
+  max-width 90vw
 
+.resorts
+  display grid
+  grid-template-columns repeat(auto-fill, $column-width)
+  grid-auto-flow dense
+  gap $column-gutter
+  align-items start
+  flex 1
 
 .widget
   font-size .8em
@@ -554,21 +553,6 @@ maxContent(n)
     .panel
       background-color transparent
       padding 0
-
-for col in 4 3 2 1
-  maxContent(col)
-
-  $max = contentWidth(col + 1)
-  $media_query = 'screen and (max-width:' + $max + ')'
-  @media $media_query
-    .content
-      width contentWidth(col)
-    if col == 1
-      .panel
-        margin-right 0
-        margin-left 0
-      .tags
-        margin 0
 
 @media screen and (max-width: 720px)
   body > footer

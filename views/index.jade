@@ -7,15 +7,11 @@ include resort
 block content
   +about('hidden')
 
-  - var numberOfColumns = resorts.length;
-  - numberOfColumns += single ? 1 : 0;
-  - numberOfColumns += single && resorts[0].deals && resorts[0].deals.deals ? 1 : 0;
-
-  .content(class='content-#{ numberOfColumns }')
+  .content.resorts
     for resort in resorts
       +resort(resort)
 
-  .content(class='content-#{ numberOfColumns + 1}')
+  .content
     ul.tags
       li.starred
         a(href='/stars') Starred
