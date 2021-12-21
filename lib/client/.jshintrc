@@ -4,5 +4,6 @@
   "unused": true,
   "laxbreak": true,
   "browser": true,
-  "browserify": true
+  "browserify": true,
+  "esversion": 10
 }
