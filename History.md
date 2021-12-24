@@ -1,4 +1,10 @@
 
+3.32.6 / 2021-12-24
+===================
+
+ * render stats using CSS pie chart
+ * use modern javascript on the client
+
 3.32.5 / 2021-12-18
 ===================
 
