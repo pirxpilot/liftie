@@ -482,8 +482,17 @@ header .ls-furkot
       float right
 
 .stats
-  canvas
+  .pie
     margin 1em 0
+    width 294px
+    height 294px
+    border-radius 50%
+    background-image conic-gradient(
+      $green 0 var(--open),
+      $yellow 0 var(--hold),
+      $blue 0 var(--scheduled),
+      $red 0
+    )
 
   footer
     .summary li

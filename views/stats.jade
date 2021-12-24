@@ -13,14 +13,9 @@ mixin stats($stats)
 
 block content
   .content.content-1
-    - var size = '294px';
     section.panel.stats.open
       header
         a(href=sectionLink)= sectionTitle
-      canvas(
-        data-stats=stats,
-        width=size,
-        height=size
-      )
+      .pie(data-stats=stats)
       footer
         +stats(stats)
