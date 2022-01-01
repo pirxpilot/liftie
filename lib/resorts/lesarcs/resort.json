@@ -6,7 +6,13 @@
   },
   "dataUrl": {
     "host": "https://bulletin.lumiplan.pro",
-    "pathname": "/bulletin.php?station=les-arcs&region=alpes&pays=france&lang=en"
+    "pathname": "/bulletin.php",
+    "query": {
+      "station": "les-arcs",
+      "region": "alpes",
+      "pays": "france",
+      "lang": "en"
+    }
   },
   "tags": [
     "France",
