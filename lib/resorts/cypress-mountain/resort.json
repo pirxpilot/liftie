@@ -1,0 +1,16 @@
+{
+  "name": "Cypress Mountain",
+  "url": {
+    "host": "https://cypressmountain.com",
+    "pathname": "/downhill-conditions-and-cams"
+  },
+  "tags": [
+    "British Columbia"
+  ],
+  "ll": [
+    -123.19557,
+    49.37141
+  ],
+  "twitter": "cypressmtn",
+  "opening": "2021-11-19"
+}
