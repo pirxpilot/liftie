@@ -1,12 +1,18 @@
 {
   "name": "Courchevel - 3 Vallees",
   "url": {
-    "host": "http://www.courchevel.com",
-    "pathname": "/"
+    "host": "https://courchevel.com",
+    "pathname": ""
   },
   "dataUrl": {
-    "host": "http://www.skiplan.com",
-    "pathname": "/bulletin/bulletin.php?station=courchevel&region=alpes&pays=france&lang=fr"
+    "host": "https://bulletin.lumiplan.pro",
+    "pathname": "/bulletin.php",
+    "query": {
+      "station": "courchevel",
+      "region": "alpes",
+      "pays": "france",
+      "lang": "en"
+    }
   },
   "tags": [
     "France",
