@@ -1,8 +1,34 @@
 {
   "name": "liftie",
-  "description": "Clean, simple, easy to read, fast ski resort lift status",
   "version": "3.32.7",
+  "description": "Clean, simple, easy to read, fast ski resort lift status",
+  "keywords": [
+    "ski",
+    "snowboard"
+  ],
+  "license": "BSD-3-Clause",
+  "author": "Damian Krzeminski <pirxpilot@furkot.com>",
+  "files": [
+    "lib",
+    "public/*",
+    "public/img/*",
+    "public/stylesheets/*.styl",
+    "public/stylesheets/fonts",
+    "views",
+    "Makefile"
+  ],
+  "main": "app.js",
+  "browser": {
+    "el": "el-component",
+    "k": "@pirxpilot/k",
+    "load": "dynload",
+    "pager": "tiny-pager",
+    "rating": "ro-rating",
+    "swipe": "@pirxpilot/swipe"
+  },
+  "repository": "github:pirxpilot/liftie",
   "scripts": {
+    "start": "node app.js",
     "test": "make lint test"
   },
   "dependencies": {
@@ -45,25 +71,5 @@
     "prompt": "~1",
     "stylus": "^0.55.0",
     "tape": "^5.0.1"
-  },
-  "browser": {
-    "chart": "chart.js",
-    "el": "el-component",
-    "k": "@pirxpilot/k",
-    "load": "dynload",
-    "pager": "tiny-pager",
-    "rating": "ro-rating",
-    "swipe": "@pirxpilot/swipe"
-  },
-  "main": "app.js",
-  "directories": {
-    "test": "test"
-  },
-  "repository": "git://github.com/liftie/liftie.git",
-  "keywords": [
-    "ski",
-    "snowboard"
-  ],
-  "author": "Damian Krzeminski <pirxpilot@furkot.com>",
-  "license": "BSD-3-Clause"
+  }
 }
