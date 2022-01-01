@@ -1,12 +1,18 @@
 {
   "name": "Les Menuires",
   "url": {
-    "host": "http://www.lesmenuires.com",
-    "pathname": "/pistes"
+    "host": "https://lesmenuires.com",
+    "pathname": ""
   },
   "dataUrl": {
-    "host": "http://www.skiplan.com",
-    "pathname": "/bulletin/bulletin.php?station=les-menuires&region=alpes&pays=france&lang=fr"
+    "host": "https://bulletin.lumiplan.pro",
+    "pathname": "/bulletin.php",
+    "query": {
+      "station": "les-menuires",
+      "region": "alpes",
+      "pays": "france",
+      "lang": "en"
+    }
   },
   "tags": [
     "France",
