@@ -1,12 +1,18 @@
 {
   "name": "Megève",
   "url": {
-    "host": "http://megeve.com",
+    "host": "https://megeve.com",
     "pathname": ""
   },
   "dataUrl": {
-    "host": "http://www.skiplan.com",
-    "pathname": "/bulletin/bulletin.php?station=megeve&region=alpes&pays=france"
+    "host": "https://bulletin.lumiplan.pro",
+    "pathname": "/bulletin.php",
+    "query": {
+      "station": "megeve",
+      "region": "alpes",
+      "pays": "france",
+      "lang": "en"
+    }
   },
   "tags": [
     "France",
