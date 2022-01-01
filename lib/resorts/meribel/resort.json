@@ -1,12 +1,18 @@
 {
   "name": "Meribel",
   "url": {
-    "host": "http://www.meribel.net",
-    "pathname": "/ski-2011/outils/ouvertures-pistes.html"
+    "host": "https://ski-resort.meribel.net",
+    "pathname": "/"
   },
   "dataUrl": {
-    "host": "http://www.skiplan.com",
-    "pathname": "/bulletin/bulletin.php?station=alpina-mottaret&region=alpes&pays=france&lang=fr"
+    "host": "https://bulletin.lumiplan.pro",
+    "pathname": "/bulletin.php",
+    "query": {
+      "station": "alpina-mottaret",
+      "region": "alpes",
+      "pays": "france",
+      "lang": "en"
+    }
   },
   "tags": [
     "France",
