@@ -1,4 +1,13 @@
 
+3.33.1 / 2022-01-01
+===================
+
+ * fix Courchevel resort
+ * fix La Plagne resort
+ * fix Meribel resort
+ * fix Megeve resort
+ * fix Les Menuires resort
+
 3.33.0 / 2022-01-01
 ===================
 
