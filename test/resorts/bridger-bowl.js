@@ -1,12 +1,14 @@
 const lifts = require('../lifts');
 
-lifts('bridger-bowl', 'html', {
-  'Alpine': 'closed',
-  'Bridger': 'closed',
-  'Pierres Knob': 'closed',
-  'Powder Park': 'closed',
-  'Schlasman\'s': 'closed',
-  'Snowflake': 'closed',
-  'Sunnyside': 'closed',
-  'Virginia City': 'closed'
+lifts('bridger-bowl', 'json', {
+  'Alpine': 'open',
+  'Bridger': 'open',
+  'Pierre\'s Knob': 'open',
+  'Powder Park': 'open',
+  'Schlasman\'s': 'open',
+  'Snowflake': 'open',
+  'Sunnyside': 'open',
+  'Virginia City': 'open',
+  'Sundog': 'open',
+  'Flurry': 'open'
 });
