@@ -1,0 +1,16 @@
+{
+  "name": "Manning Park",
+  "url": {
+    "host": "https://www.manningpark.com",
+    "pathname": "/weather-webcams-and-trail-status/"
+  },
+  "tags": [
+    "British Columbia"
+  ],
+  "ll": [
+    -120.91434120055804,
+    49.06906966124412
+  ],
+  "twitter": "Manningpark",
+  "opening": "2021-12-22"
+}
