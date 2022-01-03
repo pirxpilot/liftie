@@ -4,6 +4,10 @@
     "host": "https://cypressmountain.com",
     "pathname": "/downhill-conditions-and-cams"
   },
+  "conditionsUrl": {
+    "host": "http://www.whistlerblackcomb.com",
+    "pathname": "/the-mountain/mountain-conditions/snow-and-weather-report.aspx"
+  },
   "tags": [
     "British Columbia"
   ],
