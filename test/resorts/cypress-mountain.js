@@ -11,9 +11,9 @@ lifts('cypress-mountain', 'html', {
 });
 
 conditions('cypress-mountain', 'html', {
-  'base': '230',
-  'twelve_hours': '22',
-  'twentyfour_hours': '60',
-  'fortyeight_hours': '62',
-  'seven_days': '65'
+  'base': '245',
+  'season': '386',
+  'twentyfour_hours': '55',
+  'fortyeight_hours': '55',
+  'seven_days': '78'
 });
