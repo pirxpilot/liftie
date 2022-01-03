@@ -1,0 +1,16 @@
+{
+  "name": "Mount Seymour",
+  "url": {
+    "host": "https://mtseymour.ca",
+    "pathname": "/todays-conditions-hours"
+  },
+  "tags": [
+    "British Columbia"
+  ],
+  "ll": [
+    -122.94820807713377,
+    49.36557060120715
+  ],
+  "twitter": "Mt_Seymour",
+  "opening": "2021-12-13"
+}
