@@ -6,7 +6,10 @@
   },
   "dataUrl": {
     "host": "https://skiron.intermaps.com",
-    "pathname": "/get_data.asp?link=http://sdds4.intermaps.com/sdds4_db_xml/default.aspx?region_id=3990"
+    "pathname": "/get_data.asp",
+    "query": {
+      "link": "http://sdds4.intermaps.com/sdds4_db_xml/default.aspx?region_id=3990"
+    }
   },
   "tags": [
     "British Columbia"

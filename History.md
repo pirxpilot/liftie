@@ -1,4 +1,12 @@
 
+3.34.0 / 2022-01-02
+===================
+
+ * add Canada Olympic Park
+ * add Manning Park
+ * fix Bridger Bowl resort
+ * fix Cannon resort
+
 3.33.1 / 2022-01-01
 ===================
 

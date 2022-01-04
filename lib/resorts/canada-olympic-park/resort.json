@@ -1,0 +1,16 @@
+{
+  "name": "Canada Olympic Park",
+  "url": {
+    "host": "https://www.winsport.ca",
+    "pathname": "/winsport-info/hill-report/"
+  },
+  "tags": [
+    "Alberta"
+  ],
+  "ll": [
+    -114.215833,
+    51.079722
+  ],
+  "twitter": "WinSportCanada",
+  "opening": "2021-12-18"
+}

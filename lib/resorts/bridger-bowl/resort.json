@@ -4,6 +4,13 @@
     "host": "https://bridgerbowl.com",
     "pathname": "/weather/snow-report"
   },
+  "api": {
+    "host": "https://api.bridgerbowl.com",
+    "pathname": "/graphql",
+    "body":  {
+      "query": "query Query { lift_status { display_name status } }"
+    }
+  },
   "tags": [
     "Montana"
   ],
