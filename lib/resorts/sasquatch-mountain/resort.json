@@ -1,0 +1,23 @@
+{
+  "name": "Sasquatch Mountain",
+  "url": {
+    "host": "https://sasquatchmountain.ca",
+    "pathname": "/lift-runs/"
+  },
+  "dataUrl": {
+    "host": "https://skiron.intermaps.com",
+    "pathname": "/get_data.asp",
+    "query": {
+      "link": "http://sdds4.intermaps.com/sdds4_db_xml/default.aspx?region_id=3990"
+    }
+  },
+  "tags": [
+    "British Columbia"
+  ],
+  "ll": [
+    -121.93556496672508,
+    49.38000608027801
+  ],
+  "twitter": "SasquatchResort",
+  "opening": "2021-12-17"
+}
