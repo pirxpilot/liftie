@@ -1,0 +1,16 @@
+{
+  "name": "Pejo",
+  "url": {
+    "host": "https://www.skipejo.it",
+    "pathname": "/en/lifts-and-slopes/lifts/"
+  },
+  "tags": [
+    "Alps",
+    "Italy"
+  ],
+  "ll": [
+    10.666667,
+    46.366667
+  ],
+  "twitter": "skipejo"
+}
