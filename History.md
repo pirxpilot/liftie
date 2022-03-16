@@ -1,4 +1,10 @@
 
+3.37.0 / 2022-03-16
+===================
+
+ * fix tags for Dolomiti resorts
+ * add Paganella resort
+
 3.36.0 / 2022-01-22
 ===================
 
