@@ -1,0 +1,16 @@
+{
+  "name": "Paganella",
+  "url": {
+    "host": "https://www.paganella.net",
+    "pathname": "/it/impianti"
+  },
+  "tags": [
+    "Italy",
+    "Alps",
+    "Dolomiti"
+  ],
+  "ll": [
+    11.066667,
+    46.166667
+  ]
+}
