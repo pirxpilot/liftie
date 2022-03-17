@@ -1,0 +1,31 @@
+const lifts = require('../lifts');
+
+lifts('folgaria', 'html', {
+  'Fiorentini': 'open',
+  'Baby Coston': 'open',
+  'Coston - Monte Coston': 'open',
+  'Tre Sassi - Monte Coston': 'open',
+  'Val delle Lanze - Costa d\'Agra': 'open',
+  'Malga Piovernetta - Monte Pioverna': 'open',
+  'Malga Piovernetta - Termental': 'open',
+  'Baby Passo Coe': 'open',
+  'Passo Coe - Plaut': 'open',
+  'Fondo Piccolo - Plaut': 'open',
+  'Baby Fondo Piccolo': 'open',
+  'Fondo Piccolo - Cengio Rosso': 'open',
+  'Fondo Piccolo - Cargaore': 'open',
+  'Fondo Piccolo - Trugalait': 'open',
+  'Fondo Piccolo - Cima Spill': 'open',
+  'Baby Serrada': 'open',
+  'Serrada - Dosso Martinella': 'open',
+  'Fondo Grande - Dosso Martinella': 'open',
+  'Fondo Grande - Sommo Alto': 'open',
+  'Campo Scuola Fondo Grande': 'open',
+  'Baby Fondo Grande': 'open',
+  'Francolini - Sommo Alto': 'closed',
+  'Collegamento Ortesino - Moreta': 'open',
+  'Malga Ortesino - Sommo Alto': 'open',
+  'Costa - Dosso della Madonna': 'open',
+  'Baby Costa': 'open',
+  'Costa - Moreta': 'open'
+});
