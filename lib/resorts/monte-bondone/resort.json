@@ -1,0 +1,21 @@
+{
+  "name": "Monte Bondone",
+  "url": {
+    "host": "https://www.skimontebondone.it",
+    "pathname": "/skiarea/skiarea-monte-bondone/impianti-e-piste/"
+  },
+  "dataUrl": {
+    "host": "https://www.funiviecampiglio.it",
+    "pathname": "/impianti-piste/impianti-mb.php"
+  },
+  "tags": [
+    "italy",
+    "alps",
+    "dolomiti"
+  ],
+  "ll": [
+    11.058611,
+    46.026944
+  ],
+  "twitter": "montebondoneski"
+}
