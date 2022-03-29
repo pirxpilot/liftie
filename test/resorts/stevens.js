@@ -2,16 +2,15 @@ const lifts = require('../lifts');
 
 lifts('stevens', 'html', {
   'Brooks Express': 'closed',
-  'Daisy': 'closed',
-  'Double Diamond': 'closed',
-  'Flow Zone Large Carpet': 'closed',
-  'Flow Zone Medium Carpet': 'closed',
-  'Flow Zone Small Carpet': 'closed',
-  'Hogsback Express': 'closed',
-  'Kehr\'s': 'closed',
-  'Seventh Heaven': 'closed',
+  'Daisy': 'scheduled',
+  'Double Diamond': 'scheduled',
+  'Marmot Carpet': 'scheduled',
+  'Pika Carpet': 'scheduled',
+  'Hogsback Express': 'scheduled',
+  'Kehr\'s': 'scheduled',
+  'Seventh Heaven': 'scheduled',
   'Skyline Express': 'closed',
-  'Tye Mill': 'closed',
-  'Jupiter Express': 'closed',
-  'Southern Cross': 'closed'
+  'Tye Mill': 'scheduled',
+  'Jupiter Express': 'scheduled',
+  'Southern Cross': 'scheduled'
 });
