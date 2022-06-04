@@ -26,7 +26,7 @@
     "rating": "ro-rating",
     "swipe": "@pirxpilot/swipe"
   },
-  "repository": "github:pirxpilot/liftie",
+  "repository": "pirxpilot/liftie",
   "scripts": {
     "start": "node app.js",
     "test": "make lint test"
