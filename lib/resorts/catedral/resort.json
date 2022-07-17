@@ -1,0 +1,21 @@
+{
+  "name": "Catedral Alta Patagonia",
+  "url": {
+    "host": "https://catedralaltapatagonia.com",
+    "pathname": "/partediario/"
+  },
+  "tags": [
+    "CAPSA",
+    "Bariloche",
+    "Catedral",
+    "Río Negro",
+    "Argentina",
+    "Patagonia",
+    "Cerro Catedral"
+  ],
+  "ll": [
+    -41.182686147965306,
+    -71.44978545296134
+  ],
+  "twitter": "CerroCatedralok"
+}
