@@ -1,0 +1,32 @@
+const lifts = require('../lifts');
+
+lifts('catedral', 'html', {
+  'Magic I': 'open',
+  'Magic II': 'open',
+  'Magic III': 'open',
+  'Magic IV': 'open',
+  'Magic V': 'open',
+  'TS Princesa I': 'open',
+  'TS Lenga': 'open',
+  'TS Princesa II': 'open',
+  'TS Princesa III': 'closed',
+  'TS Nubes': 'open',
+  'TK Centro': 'open',
+  'TS Triple Park': 'open',
+  'TK Plaza': 'open',
+  'TS Sextuple': 'open',
+  'TS Punta Nevada': 'open',
+  'TS Lynch': 'closed',
+  'TS Militares': 'open',
+  'TS La Hoya': 'open',
+  'TS Esquiadores': 'closed',
+  'TS Cóndor III': 'closed',
+  'TS Cóndor II': 'open',
+  'TS Cóndor I': 'open',
+  'T-Bar Corto': 'open',
+  'T-Bar Largo': 'open',
+  'TS Diente de Caballo': 'open',
+  'TS Bosque': 'closed',
+  'TS 2000': 'open',
+  'TC Amancay': 'open'
+});
