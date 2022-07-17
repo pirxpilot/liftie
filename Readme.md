@@ -87,7 +87,7 @@ module.exports = {
   selector: '.lifts',                // selector for lift information
   parse: {
     filter: node => node.children,   // if present skips nodes for which filter is falsy
-    name: '0/1',            // example of a simple path descriptor
+    name: '0/1',            // example of a simple path descriptor (second child of the first child)
     status: {               // example of a compound descriptor
       child: '+/1',
       attribute: 'alt',
