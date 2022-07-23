@@ -102,10 +102,21 @@ You need to adjust it to find the lift names and their statuses:
 - `selector` is a CSS selector that should locate the parent of the `name` and `status` elements
 - `parse` needs to contain 2 descriptors - one for `name` and the other for `status`
 - `name` and `status` descriptors have the following properties
-  - `child` - dash-separated path to the name or status HTML element - `index`, `,`, `..`, `+`, `-` are supported
+  - `child` - slash-separated path to the name or status HTML element - each path item is a 0-based child index  
+  additionaly path can contain `+` `-` `..` `.` (respectively: _next_, _previous_, _parent_, _this node_) - see examples below
   - `attribute` - optional - if specified the value of the attribute instead of the contents of the element is used
   - `regex` - optional - if specified the regex is executed and the value of the first matching group is used
   - `fn` - optional - if specified the function is called that can be used to convert the value
+
+Some examples of the child path:
+
+| Child path | Description |
+| :----: | :---------- |
+| `0/1`  | 2nd child of the 1st child |
+| `../3` | 4th child of the parent |
+| `.`    | the element fount by the `selector` |
+| `+/2`  | 3rd child of the immediate sibling  |
+| `-/0`  | 1st child of the element immediately preceding the element | 
 
 If `child` is the only part of the descriptor it can be used directly. In other words:
 
