@@ -1,4 +1,10 @@
 
+3.40.1 / 2022-07-25
+===================
+
+ * use only country and region tags for Catedral Alta Patagonia
+ * fix Campiglio Dolomiti resorts
+
 3.40.0 / 2022-07-17
 ===================
 
