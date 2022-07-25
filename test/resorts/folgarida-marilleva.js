@@ -1,7 +1,7 @@
 const lifts = require('../lifts');
 
 lifts('folgarida-marilleva', 'html', {
-  'Folgarida': 'closed',
+  'Folgarida': 'open',
   'Malghet Aut 2': 'closed',
   'Casina': 'closed',
   'Marilleva 900': 'closed',
@@ -11,7 +11,7 @@ lifts('folgarida-marilleva', 'html', {
   'Marilleva': 'closed',
   'Doss della Pesa': 'closed',
   'Belvedere': 'closed',
-  'Panciana': 'closed',
+  'Panciana': 'open',
   'Sghirlat': 'closed',
   'Mastellina': 'closed',
   'Bassetta': 'closed',
