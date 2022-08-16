@@ -10,6 +10,36 @@ LINT_SRC = app.js bin/generate lib test
 
 PLUGINS = lifts twitter weather webcams snow
 
+ESBUILD_OPTS += \
+	--bundle \
+	--log-level=warning \
+	--color=false \
+	--tree-shaking=true \
+	--target=es2018
+
+ESBUILD_MIN_OPTS += \
+	--define:DEBUG=false \
+	--drop:console \
+	--drop:debugger \
+	--minify
+
+define RUN_ESBUILD
+	$(NODE_BIN)/esbuild $< \
+		$(ESBUILD_OPTS) \
+		--sourcemap=linked \
+		--outfile=$@
+endef
+
+define RUN_ESBUILD_MIN
+	$(NODE_BIN)/esbuild $< \
+		$(ESBUILD_OPTS) \
+		$(ESBUILD_MIN_OPTS) \
+		--sourcemap=external \
+		--sources-content=false \
+		--outfile=$@
+endef
+
+
 ifndef TAP_REPORTER
 	ifneq (, $(shell which tap-difflet))
 		TAP_REPORTER = tap-difflet --pessimistic
@@ -27,16 +57,6 @@ all: lint test build
 
 %.gz: %
 	gzip --best --force --keep $<
-
-%.min.js: %.js
-	$(NODE_BIN)/terser \
-		--define DEBUG=false \
-		--ecma 2018 \
-		--mangle \
-		--compress warnings=false \
-		--compress drop_console \
-		--output $@ \
-		-- $<
 
 %.styl.css: %.styl
 	$(NODE_BIN)/stylus $<
@@ -64,21 +84,17 @@ test: | node_modules
 $(BUILD_DIR):
 	mkdir -p $@
 
-$(BUILD_DIR)/$(PROJECT).js: $(SRC) node_modules | $(BUILD_DIR)
-	NODE_PATH=lib/client:node_modules \
-	$(NODE_BIN)/browserify \
-	--require resort/lifts \
-	--require resort/twitter \
-	--require resort/weather \
-	--require resort/webcams \
-	--require resort/snow \
-	--entry lib/client/boot/index.js \
-	--outfile $@
+$(BUILD_DIR)/$(PROJECT).js: lib/client/boot/index.js $(SRC) node_modules | $(BUILD_DIR)
+	NODE_PATH=lib/client:node_modules $(RUN_ESBUILD)
+
+$(BUILD_DIR)/$(PROJECT).min.js: lib/client/boot/index.js $(SRC) node_modules | $(BUILD_DIR)
+	NODE_PATH=lib/client:node_modules $(RUN_ESBUILD_MIN)
 
 $(BUILD_DIR)/$(PROJECT)-embed.js: lib/embed/index.js | $(BUILD_DIR)
-	echo '(function(){' > $@
-	cat $< >> $@
-	echo '}());' >> $@
+	$(RUN_ESBUILD)
+
+$(BUILD_DIR)/$(PROJECT)-embed.min.js: lib/embed/index.js | $(BUILD_DIR)
+	$(RUN_ESBUILD_MIN)
 
 # stylus for CSS
 
