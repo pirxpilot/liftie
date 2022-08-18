@@ -1,5 +1,5 @@
 const express = require('express');
-const cachify = require('connect-cachify-static');
+const cachifyStatic = require('connect-cachify-static');
 const gzip = require('connect-gzip-static');
 const http = require('http');
 const path = require('path');
@@ -24,6 +24,7 @@ const {
   SITE_URL: siteUrl,
   LIFTIE_STATIC_HOST: staticHost = ''
 } = process.env;
+const cachify = cachifyStatic(root);
 
 Object.assign(app.locals, {
   min: '.min',
@@ -42,7 +43,13 @@ app.set('view engine', 'jade');
 
 app.use(logger('dev'));
 app.use(cookieParser());
-app.use(cachify(root));
+app.use(cachify);
+app.use((req, res, next) => {
+  cachify.helpers().then(fns => {
+    res.locals.cachify = fns.cachify;
+    next();
+  });
+});
 
 app.use(gzip(root));
 
