@@ -54,7 +54,7 @@
     "morgan": "^1.9.0",
     "qs": "^6.3.0",
     "ro-rating": "^1.0.2",
-    "superagent": "~6",
+    "superagent": "~8",
     "tiny-pager": "^1.0.0",
     "to-title-case": "^1.0.0",
     "tweet-html": "^2.1.0"
