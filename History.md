@@ -1,4 +1,12 @@
 
+3.40.3 / 2022-08-28
+===================
+
+ * upgrade css-select and htmlparser2
+ * update stylus
+ * upgrade `connect-` modules to promise API version
+ * update superagent to ~8
+
 3.40.2 / 2022-08-16
 ===================
 
