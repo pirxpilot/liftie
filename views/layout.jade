@@ -11,11 +11,11 @@ mixin liftie-script(name)
   - var c = cachify(name + min + '.js', true);
 
   script(
+    type='module'
     src=staticHost + c.path,
     nonce=cspNonce,
     integrity=staticHost ? c.integrity : undefined,
     crossorigin=staticHost ? 'anonymous' : undefined,
-    defer
   )
 
 
