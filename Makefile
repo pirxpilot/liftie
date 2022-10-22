@@ -10,11 +10,14 @@ LINT_SRC = app.js bin/generate lib test
 
 PLUGINS = lifts weather webcams snow
 
+ESBUILD_FORMAT = esm
+
 ESBUILD_OPTS += \
 	--bundle \
 	--log-level=warning \
 	--color=false \
 	--tree-shaking=true \
+    --format=${ESBUILD_FORMAT} \
 	--target=es2018
 
 ESBUILD_MIN_OPTS += \
@@ -95,9 +98,11 @@ $(BUILD_DIR)/$(PROJECT).js: lib/client/boot/index.js $(SRC) node_modules | $(BUI
 $(BUILD_DIR)/$(PROJECT).min.js: lib/client/boot/index.js $(SRC) node_modules | $(BUILD_DIR)
 	$(RUN_ESBUILD_MIN)
 
+$(BUILD_DIR)/$(PROJECT)-embed.js: ESBUILD_FORMAT=iife
 $(BUILD_DIR)/$(PROJECT)-embed.js: lib/embed/index.js | $(BUILD_DIR)
 	$(RUN_ESBUILD)
 
+$(BUILD_DIR)/$(PROJECT)-embed.min.js: ESBUILD_FORMAT=iife
 $(BUILD_DIR)/$(PROJECT)-embed.min.js: lib/embed/index.js | $(BUILD_DIR)
 	$(RUN_ESBUILD_MIN)
 
