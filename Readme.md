@@ -1,5 +1,6 @@
 [![NPM version][npm-image]][npm-url]
 [![Build Status][build-image]][build-url]
+[![Dependencies][deps-image]][deps-url]
 
 # liftie.info
 
@@ -185,5 +186,8 @@ Tags CSS (stylus) is a simplified version of [Sliding Tags][7] by [Thibaut Couro
 [npm-image]: https://img.shields.io/npm/v/liftie
 [npm-url]: https://npmjs.org/package/liftie
 
-[build-image]: https://img.shields.io/github/workflow/status/pirxpilot/liftie/check
+[build-image]: https://img.shields.io/github/actions/workflow/status/pirxpilot/liftie/check.yaml
 [build-url]: https://github.com/pirxpilot/liftie/actions/workflows/check.yaml
+
+[deps-image]: https://img.shields.io/librariesio/release/npm/liftie
+[deps-url]: https://libraries.io/npm/liftie
