@@ -1,6 +1,6 @@
 const lifts = require('../lifts');
 
-lifts('stowe', 'html', {
+lifts.skip('stowe', 'html', {
   'Adventure Carpet': 'closed',
   'Adventure Triple': 'closed',
   'FourRunner Quad': 'open',

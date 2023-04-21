@@ -1,13 +1,12 @@
 const lifts = require('../lifts');
 
 lifts('attitash', 'html', {
-  'Kachina': 'closed',
-  'Flying Bear Express': 'open',
+  'Abenaki Quad': 'closed',
+  'Flying Bear': 'closed',
   'Flying Yankee': 'closed',
-  'Summit Triple': 'closed',
-  'East Double Double': 'closed',
-  'West Double Double': 'closed',
+  'Kachina': 'closed',
   'Learning Center': 'closed',
+  'Progression Quad': 'closed',
   'Snowbelt': 'closed',
-  'Abenaki Quad': 'open'
+  'Summit Triple': 'closed'
 });

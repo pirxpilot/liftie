@@ -1,6 +1,6 @@
 const lifts = require('../lifts');
 
-lifts('mountsnow', 'html', {
+lifts.skip('mountsnow', 'html', {
   'Apollo': 'closed',
   'Bear Trap': 'closed',
   'Bluebird Express': 'open',

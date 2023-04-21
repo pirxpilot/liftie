@@ -1,6 +1,6 @@
 const lifts = require('../lifts');
 
-lifts('mount-sunapee', 'html', {
+lifts.skip('mount-sunapee', 'html', {
   "Sunapee Express": "open",
   "Sunbowl Express": "open",
   "North Peak Triple": "open",

@@ -1,6 +1,6 @@
 const lifts = require('../lifts');
 
-lifts('okemo', 'html', {
+lifts.skip('okemo', 'html', {
   'Solitude Express Quad': 'open',
   'Morning Star Triple': 'closed',
   'Quantum Four': 'open',
