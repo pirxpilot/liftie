@@ -8,7 +8,7 @@ TESTS = $(filter-out test/replay/%, $(wildcard test/*.js test/*/*.js))
 
 LINT_SRC = app.js bin/generate lib test
 
-PLUGINS = lifts twitter weather webcams snow
+PLUGINS = lifts weather webcams snow
 
 ESBUILD_OPTS += \
 	--bundle \

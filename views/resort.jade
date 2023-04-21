@@ -88,19 +88,6 @@ mixin snow(resort)
     .notice
       != resort.snow && resort.snow.notice
 
-mixin twitter(resort)
-  .twitter.tile(class= resort.twitter ? 'visible' : 'hidden')
-    .follow
-      if resort.twitter && single
-        a.twitter-follow-button(
-          href="https://twitter.com/intent/follow?screen_name=#{resort.twitter.user}&tw_p=followbutton"
-          target='_blank'
-          rel='noopener'
-        )
-          span.ls-twitter
-          label Follow @#{resort.twitter.user}
-    ul.timeline
-
 mixin addToTrip(resort)
   if resort.ll
     a.add-to-trip(href='https://trips.furkot.com/trip?#{addToTrip(resort)}', target='_blank', rel='noopener')
@@ -146,7 +133,6 @@ mixin resort(resort, widget)
     data-name=resort.name,
     data-ll=resort.ll && resort.ll.join(),
     data-weather=single && resort.weather,
-    data-twitter=single && JSON.stringify(resort.twitter),
     data-webcams=single && resort.webcams,
     data-snow=single && resort.snow,
     class=resort.open ? 'open' : ''
@@ -169,7 +155,6 @@ mixin resort(resort, widget)
       +weather(resort)
       +snow(resort)
       +webcams(resort)
-      +twitter(resort)
     if resort.deals && resort.deals.deals
       section.panel.extras.open(class= single ? 'visible' : 'hidden' )
         header

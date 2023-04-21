@@ -104,11 +104,6 @@ anymatch@~3.1.2:
     normalize-path "^3.0.0"
     picomatch "^2.0.4"
 
-approximate-time@~0:
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/approximate-time/-/approximate-time-0.0.1.tgz#f4ef93cc2c80c3aea1f55b203fa221ea3e20aa09"
-  integrity sha512-ScPWNLs6lXpDEaE5N26EYFtJx+oiMiRHM4t5fogMcTiCcKSyGnUi5hd9TLPHHmAix7LPGAQVwJ6NpgpRfKwvlQ==
-
 array-flatten@1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/array-flatten/-/array-flatten-1.1.1.tgz#9a5f699051b1e7073328f2a008968b64ea2955d2"
@@ -564,7 +559,7 @@ ee-first@1.1.1:
   resolved "https://registry.yarnpkg.com/ee-first/-/ee-first-1.1.1.tgz#590c61156b0ae2f4f0255732a158b266bc56b21d"
   integrity sha512-WMwm9LhRUo+WUaRN+vRuETqG89IgZphVSNkdFgeb6sS/E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQlow==
 
-el-component@^1.0.0, el-component@^1.0.1:
+el-component@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/el-component/-/el-component-1.0.1.tgz#ef4ba9d8b5aa9faf1e2491d483aac8e4470b381b"
   integrity sha512-YcWzu92UuLH+OempSa/Eb8XJkL1lvrz3LBJIG6PUFiHWCdW9ucbSaygpz9nrvmiNUN8uBUtoRp5cWqT3+BYhOQ==
@@ -1916,21 +1911,6 @@ transform-property@0.0.1:
   resolved "https://registry.yarnpkg.com/transform-property/-/transform-property-0.0.1.tgz#4863662f9d5e5bb8f0c00648eff08beb14fd65f2"
   integrity sha512-L0nMJCwu3/Lpd5t/pRQl+JoYU5V0sYubcn30yWZnHG0HjC6Gdr/Eg/bun1OixYPmsEZdA7Khbq2jiSIjzlEv6Q==
 
-tweet-html@^2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/tweet-html/-/tweet-html-2.1.0.tgz#f55dd006fe62ab365e7a3c5561ca9980bad372bb"
-  integrity sha512-GXVcv7DYM5GnbYUcoFEo2tXJOS/sNpF0DRqk5PqV89nFXFQ+z+OSS2GeqeG0ldkUAUceHEQVy66QqN8538vVew==
-  dependencies:
-    el-component "^1.0.0"
-    twemoji-parser "^13.0.0"
-    unicode-substring "^1.0.0"
-    yields-ago "~0"
-
-twemoji-parser@^13.0.0:
-  version "13.1.0"
-  resolved "https://registry.yarnpkg.com/twemoji-parser/-/twemoji-parser-13.1.0.tgz#65e7e449c59258791b22ac0b37077349127e3ea4"
-  integrity sha512-AQOzLJpYlpWMy8n+0ATyKKZzWlZBJN+G0C+5lhX7Ftc2PeEVdUU/7ns2Pn2vVje26AIZ/OHwFoUbdv6YYD/wGg==
-
 type-is@~1.6.18:
   version "1.6.18"
   resolved "https://registry.yarnpkg.com/type-is/-/type-is-1.6.18.tgz#4e552cd05df09467dcbc4ef739de89f2cf37c131"
@@ -1948,11 +1928,6 @@ unbox-primitive@^1.0.2:
     has-bigints "^1.0.2"
     has-symbols "^1.0.3"
     which-boxed-primitive "^1.0.2"
-
-unicode-substring@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/unicode-substring/-/unicode-substring-1.0.0.tgz#659fb839078e7bee84b86c27210ac4db215bf885"
-  integrity sha512-2acGIOTaqS/GWocwKdyL1Vk9MHglCss1mR0CL2o/YJTwKrAt6JbTrw4X187VkSDmFcpJ8n2i3/+gJSYEdvXJMg==
 
 unpipe@1.0.0, unpipe@~1.0.0:
   version "1.0.0"
@@ -2048,13 +2023,6 @@ yallist@^4.0.0:
   version "21.1.1"
   resolved "https://registry.yarnpkg.com/yargs-parser/-/yargs-parser-21.1.1.tgz#9096bceebf990d21bb31fa9516e0ede294a77d35"
   integrity sha512-tVpsJW7DdjecAiFpbIB1e3qxIQsE6NoPc5/eTdrbbIC4h0LVsWhnoa3g+m2HclBIujHzsxZ4VJVA+GUuc2/LBw==
-
-yields-ago@~0:
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/yields-ago/-/yields-ago-0.1.0.tgz#3313ae7b18694c02bf3c73ab0cd1c9335e6728a6"
-  integrity sha512-AueqYHKCrZRVTXXMcP6pNyXZ9ELcfNJixDNwrnWkwi3I9yqc8qfxow7zPwt5M4quuumj+s2kyPsTfxt2rmARrA==
-  dependencies:
-    approximate-time "~0"
 
 yields-k-sequence@*:
   version "0.1.0"
