@@ -3,14 +3,8 @@ on: [push]
 jobs:
   build:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node: [ '14', '16' ]
-    name: Check on node ${{ matrix.node }}
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
-        with:
-          node-version:  ${{ matrix.node }}
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
       - run: yarn install
       - run: make
