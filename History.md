@@ -1,4 +1,12 @@
 
+3.41.0 / 2023-04-21
+===================
+
+ * fix vail resort parser
+ * add option to skip some tests
+ * remove support for displaying twitter resort twitter feed
+ * remove social media links
+
 3.40.4 / 2023-04-10
 ===================
 
