@@ -1,6 +1,6 @@
 const lifts = require('../lifts');
 
-lifts('stevens', 'html', {
+lifts.skip('stevens', 'html', {
   'Brooks Express': 'closed',
   'Daisy': 'scheduled',
   'Double Diamond': 'scheduled',

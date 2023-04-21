@@ -1,20 +1,17 @@
 const lifts = require('../lifts');
 
 lifts('kirkwood', 'html', {
-  '#1 Snowkirk': 'open',
-  '#10 The Wall': 'closed',
-  '#11 The Reut': 'closed',
-  '#12 Magic Carpet 1': 'closed',
-  '#13 Magic Carpet 2': 'closed',
-  '#14 Lookout Vista': 'closed',
-  '#15 Covered Wagon 1': 'closed',
-  '#16 Covered Wagon 2': 'closed',
-  '#2 Caples Crest': 'closed',
-  '#3 Iron Horse': 'closed',
-  '#4 Sunrise': 'closed',
-  '#5 Solitude': 'closed',
-  '#6 Cornice Express': 'closed',
+  '#1 Snowkirk': 'scheduled',
+  '#10 The Wall': 'scheduled',
+  '#11 The Reut': 'scheduled',
+  '#12 Ski School Magic Carpet': 'closed',
+  '#13 Public Magic Carpet': 'closed',
+  '#14 Vista T-Bar': 'closed',
+  '#2 Caples Crest': 'scheduled',
+  '#3 Iron Horse': 'scheduled',
+  '#4 Sunrise': 'scheduled',
+  '#5 Solitude': 'scheduled',
+  '#6 Cornice Express': 'scheduled',
   '#7 TC Express': 'closed',
-  '#8 Red Cliffs Tow': 'closed',
   '#9 Bunny': 'closed'
 });
