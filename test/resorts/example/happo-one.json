@@ -1,0 +1,2014 @@
+{
+    "lifts": [
+        {
+            "popup": {
+                "lynx-type": "lift",
+                "title": "SKYLINE 2",
+                "additional-info": {
+                    "length": 953,
+                    "capacity": 1200,
+                    "altitude-valley": 1170,
+                    "altitude-mountain": 1490
+                },
+                "oid": "37252",
+                "status": "closed",
+                "id": "9408985",
+                "subtitle": "2-chair lift",
+                "clients-sub-id": 2602
+            },
+            "number": null,
+            "type": 2602,
+            "icon": "no_icon",
+            "iconOrientation": "right",
+            "status": "closed",
+            "id": "L_9408985"
+        },
+        {
+            "popup": {
+                "lynx-type": "lift",
+                "title": "CENTRAL",
+                "additional-info": {
+                    "length": 809,
+                    "capacity": 1200,
+                    "altitude-valley": 929,
+                    "altitude-mountain": 1211
+                },
+                "oid": "37253",
+                "status": "closed",
+                "id": "9408986",
+                "subtitle": "2-chair lift",
+                "clients-sub-id": 2602
+            },
+            "number": null,
+            "type": 2602,
+            "icon": "no_icon",
+            "iconOrientation": "right",
+            "status": "closed",
+            "id": "L_9408986"
+        },
+        {
+            "popup": {
+                "lynx-type": "lift",
+                "title": "PANORAMA",
+                "additional-info": {
+                    "length": 707,
+                    "capacity": 1200,
+                    "altitude-valley": 1215,
+                    "altitude-mountain": 1405
+                },
+                "oid": "37254",
+                "status": "closed",
+                "id": "9408987",
+                "subtitle": "2-chair lift",
+                "clients-sub-id": 2602
+            },
+            "number": null,
+            "type": 2602,
+            "icon": "no_icon",
+            "iconOrientation": "right",
+            "status": "closed",
+            "id": "L_9408987"
+        },
+        {
+            "popup": {
+                "lynx-type": "lift",
+                "title": "USAGIDAIRA",
+                "additional-info": {
+                    "length": 534,
+                    "capacity": 1200,
+                    "altitude-valley": 1397,
+                    "altitude-mountain": 1588
+                },
+                "oid": "37255",
+                "status": "closed",
+                "id": "9408988",
+                "subtitle": "2-chair lift",
+                "clients-sub-id": 2602
+            },
+            "number": null,
+            "type": 2602,
+            "icon": "no_icon",
+            "iconOrientation": "right",
+            "status": "closed",
+            "id": "L_9408988"
+        },
+        {
+            "popup": {
+                "lynx-type": "lift",
+                "title": "HAPPO 1",
+                "additional-info": {
+                    "length": 553,
+                    "capacity": 1200,
+                    "altitude-valley": 900,
+                    "altitude-mountain": 1057
+                },
+                "oid": "37256",
+                "status": "closed",
+                "id": "9408989",
+                "subtitle": "2-chair lift",
+                "clients-sub-id": 2602
+            },
+            "number": null,
+            "type": 2602,
+            "icon": "no_icon",
+            "iconOrientation": "right",
+            "status": "closed",
+            "id": "L_9408989"
+        },
+        {
+            "popup": {
+                "lynx-type": "lift",
+                "title": "KITAONE 3",
+                "additional-info": {
+                    "length": 465,
+                    "capacity": 1200,
+                    "altitude-valley": 1101,
+                    "altitude-mountain": 1214
+                },
+                "oid": "37257",
+                "status": "closed",
+                "id": "9408990",
+                "subtitle": "2-chair lift",
+                "clients-sub-id": 2602
+            },
+            "number": null,
+            "type": 2602,
+            "icon": "no_icon",
+            "iconOrientation": "right",
+            "status": "closed",
+            "id": "L_9408990"
+        },
+        {
+            "popup": {
+                "lynx-type": "lift",
+                "title": "NAKIYAMA 2",
+                "additional-info": {
+                    "length": 263,
+                    "capacity": 2400,
+                    "altitude-valley": 799,
+                    "altitude-mountain": 873
+                },
+                "oid": "37258",
+                "status": "closed",
+                "id": "9408991",
+                "subtitle": "2-chair lift",
+                "clients-sub-id": 2602
+            },
+            "number": null,
+            "type": 2602,
+            "icon": "no_icon",
+            "iconOrientation": "right",
+            "status": "closed",
+            "id": "L_9408991"
+        },
+        {
+            "popup": {
+                "lynx-type": "lift",
+                "title": "SAKKA 2",
+                "additional-info": {
+                    "length": 558,
+                    "capacity": 1200,
+                    "altitude-valley": 816,
+                    "altitude-mountain": 923
+                },
+                "oid": "37259",
+                "status": "closed",
+                "id": "9408992",
+                "subtitle": "2-chair lift",
+                "clients-sub-id": 2602
+            },
+            "number": null,
+            "type": 2602,
+            "icon": "no_icon",
+            "iconOrientation": "right",
+            "status": "closed",
+            "id": "L_9408992"
+        },
+        {
+            "popup": {
+                "lynx-type": "lift",
+                "title": "KOKUSAI 1",
+                "additional-info": {
+                    "length": 1334,
+                    "capacity": 900,
+                    "altitude-valley": 811,
+                    "altitude-mountain": 1208
+                },
+                "oid": "37260",
+                "status": "closed",
+                "id": "9408993",
+                "subtitle": "2-chair lift",
+                "clients-sub-id": 2602
+            },
+            "number": null,
+            "type": 2602,
+            "icon": "no_icon",
+            "iconOrientation": "right",
+            "status": "closed",
+            "id": "L_9408993"
+        },
+        {
+            "popup": {
+                "lynx-type": "lift",
+                "title": "SHIRAKABA 1",
+                "additional-info": {
+                    "length": 400,
+                    "capacity": 1200,
+                    "altitude-valley": 801,
+                    "altitude-mountain": 922
+                },
+                "oid": "37261",
+                "status": "closed",
+                "id": "9408995",
+                "subtitle": "2-chair lift",
+                "clients-sub-id": 2602
+            },
+            "number": null,
+            "type": 2602,
+            "icon": "no_icon",
+            "iconOrientation": "right",
+            "status": "closed",
+            "id": "L_9408995"
+        },
+        {
+            "popup": {
+                "lynx-type": "lift",
+                "title": "SHIRAKABA 2",
+                "additional-info": {
+                    "length": 312,
+                    "capacity": 1200,
+                    "altitude-valley": 838,
+                    "altitude-mountain": 924
+                },
+                "oid": "37262",
+                "status": "closed",
+                "id": "9408996",
+                "subtitle": "2-chair lift",
+                "clients-sub-id": 2602
+            },
+            "number": null,
+            "type": 2602,
+            "icon": "no_icon",
+            "iconOrientation": "right",
+            "status": "closed",
+            "id": "L_9408996"
+        },
+        {
+            "popup": {
+                "lynx-type": "lift",
+                "title": "KUROBISHI 3",
+                "additional-info": {
+                    "length": 415,
+                    "capacity": 1200,
+                    "altitude-valley": 1489,
+                    "altitude-mountain": 1669
+                },
+                "oid": "37263",
+                "status": "closed",
+                "id": "9408999",
+                "subtitle": "2-chair lift",
+                "clients-sub-id": 2602
+            },
+            "number": null,
+            "type": 2602,
+            "icon": "no_icon",
+            "iconOrientation": "right",
+            "status": "closed",
+            "id": "L_9408999"
+        },
+        {
+            "popup": {
+                "lynx-type": "lift",
+                "title": "KOKUSAI 3 A",
+                "additional-info": {
+                    "length": 668,
+                    "capacity": 1200,
+                    "altitude-valley": 1205,
+                    "altitude-mountain": 1393
+                },
+                "oid": "37264",
+                "status": "closed",
+                "id": "9409000",
+                "subtitle": "2-chair lift",
+                "clients-sub-id": 2602
+            },
+            "number": null,
+            "type": 2602,
+            "icon": "no_icon",
+            "iconOrientation": "right",
+            "status": "closed",
+            "id": "L_9409000"
+        },
+        {
+            "popup": {
+                "lynx-type": "lift",
+                "title": "KOKUSAI 3 B",
+                "additional-info": {
+                    "length": 668,
+                    "capacity": 1200,
+                    "altitude-valley": 1205,
+                    "altitude-mountain": 1393
+                },
+                "oid": "37265",
+                "status": "closed",
+                "id": "9409007",
+                "subtitle": "2-chair lift",
+                "clients-sub-id": 2602
+            },
+            "number": null,
+            "type": 2602,
+            "icon": "no_icon",
+            "iconOrientation": "right",
+            "status": "closed",
+            "id": "L_9409007"
+        },
+        {
+            "popup": {
+                "lynx-type": "lift",
+                "title": "SAKKA 3",
+                "additional-info": {
+                    "length": 360,
+                    "capacity": 1542,
+                    "altitude-valley": 834,
+                    "altitude-mountain": 907
+                },
+                "oid": "37249",
+                "status": "closed",
+                "id": "9408994",
+                "subtitle": "3-chair lift",
+                "clients-sub-id": 2603
+            },
+            "number": null,
+            "type": 2603,
+            "icon": "no_icon",
+            "iconOrientation": "right",
+            "status": "closed",
+            "id": "L_9408994"
+        },
+        {
+            "popup": {
+                "lynx-type": "lift",
+                "title": "NAKIYAMA 3 A",
+                "additional-info": {
+                    "length": 609,
+                    "capacity": 3084,
+                    "altitude-valley": 797,
+                    "altitude-mountain": 979
+                },
+                "oid": "37250",
+                "status": "closed",
+                "id": "9409001",
+                "subtitle": "3-chair lift",
+                "clients-sub-id": 2603
+            },
+            "number": null,
+            "type": 2603,
+            "icon": "no_icon",
+            "iconOrientation": "right",
+            "status": "closed",
+            "id": "L_9409001"
+        },
+        {
+            "popup": {
+                "lynx-type": "lift",
+                "title": "NAKIYAMA 3 B",
+                "additional-info": {
+                    "length": 609,
+                    "capacity": 3084,
+                    "altitude-valley": 797,
+                    "altitude-mountain": 979
+                },
+                "oid": "37251",
+                "status": "closed",
+                "id": "9409006",
+                "subtitle": "3-chair lift",
+                "clients-sub-id": 2603
+            },
+            "number": null,
+            "type": 2603,
+            "icon": "no_icon",
+            "iconOrientation": "right",
+            "status": "closed",
+            "id": "L_9409006"
+        },
+        {
+            "popup": {
+                "lynx-type": "lift",
+                "title": "SAKKA KITAONE QUAD",
+                "additional-info": {
+                    "length": 1099,
+                    "capacity": 2400,
+                    "altitude-valley": 843,
+                    "altitude-mountain": 1214
+                },
+                "oid": "37244",
+                "status": "closed",
+                "id": "9408997",
+                "subtitle": "4-chair lift",
+                "clients-sub-id": 2604
+            },
+            "number": null,
+            "type": 2604,
+            "icon": "no_icon",
+            "iconOrientation": "right",
+            "status": "closed",
+            "id": "L_9408997"
+        },
+        {
+            "popup": {
+                "lynx-type": "lift",
+                "title": "KUROBISHI QUAD",
+                "additional-info": {
+                    "length": 275,
+                    "capacity": 2056,
+                    "altitude-valley": 1793,
+                    "altitude-mountain": 1569
+                },
+                "oid": "37245",
+                "status": "closed",
+                "id": "9408998",
+                "subtitle": "4-chair lift",
+                "clients-sub-id": 2604
+            },
+            "number": null,
+            "type": 2604,
+            "icon": "no_icon",
+            "iconOrientation": "right",
+            "status": "closed",
+            "id": "L_9408998"
+        },
+        {
+            "popup": {
+                "lynx-type": "lift",
+                "title": "GRAT QUAD",
+                "additional-info": {
+                    "length": 597,
+                    "capacity": 2400,
+                    "altitude-valley": 1666,
+                    "altitude-mountain": 1827
+                },
+                "oid": "37246",
+                "status": "closed",
+                "id": "9409003",
+                "subtitle": "4-chair lift",
+                "clients-sub-id": 2604
+            },
+            "number": null,
+            "type": 2604,
+            "icon": "no_icon",
+            "iconOrientation": "right",
+            "status": "closed",
+            "id": "L_9409003"
+        },
+        {
+            "popup": {
+                "lynx-type": "lift",
+                "title": "ALPEN QUAD",
+                "additional-info": {
+                    "length": 783,
+                    "capacity": 2400,
+                    "altitude-valley": 1397,
+                    "altitude-mountain": 1681
+                },
+                "oid": "37247",
+                "status": "closed",
+                "id": "9409004",
+                "subtitle": "4-chair lift",
+                "clients-sub-id": 2604
+            },
+            "number": null,
+            "type": 2604,
+            "icon": "no_icon",
+            "iconOrientation": "right",
+            "status": "closed",
+            "id": "L_9409004"
+        },
+        {
+            "popup": {
+                "lynx-type": "lift",
+                "title": "HAPPO RIESEN QUAD",
+                "additional-info": {
+                    "length": 1682,
+                    "capacity": 2400,
+                    "altitude-valley": 907,
+                    "altitude-mountain": 1413
+                },
+                "oid": "37248",
+                "status": "closed",
+                "id": "9409005",
+                "subtitle": "4-chair lift",
+                "clients-sub-id": 2604
+            },
+            "number": null,
+            "type": 2604,
+            "icon": "no_icon",
+            "iconOrientation": "right",
+            "status": "closed",
+            "id": "L_9409005"
+        },
+        {
+            "popup": {
+                "lynx-type": "lift",
+                "title": "HAPPO GONDOLA \"ADAM\"",
+                "additional-info": {
+                    "length": 2046,
+                    "capacity": 1500,
+                    "altitude-valley": 831,
+                    "altitude-mountain": 1400
+                },
+                "oid": "37242",
+                "status": "closed",
+                "id": "9409002",
+                "subtitle": "cable car",
+                "clients-sub-id": 2623
+            },
+            "number": null,
+            "type": 2623,
+            "icon": "no_icon",
+            "iconOrientation": "right",
+            "status": "closed",
+            "id": "L_9409002"
+        }
+    ],
+    "slopes": [
+        {
+            "popup": {
+                "desc": "yes",
+                "lynx-type": "slope",
+                "number": "9",
+                "title": "SHIRAKABA",
+                "additional-info": {
+                    "length": 585
+                },
+                "oid": "37266",
+                "status": "closed",
+                "id": "9453561",
+                "subtitle": "slope (easy)",
+                "clients-sub-id": 2614
+            },
+            "number": "9",
+            "type": 2614,
+            "icon": "no_icon",
+            "iconOrientation": null,
+            "status": "closed",
+            "id": "R_9453561"
+        },
+        {
+            "popup": {
+                "desc": "yes",
+                "lynx-type": "slope",
+                "number": "4",
+                "title": "SKYLINE COURSE",
+                "additional-info": {
+                    "length": 2745
+                },
+                "oid": "37267",
+                "status": "closed",
+                "id": "9453565",
+                "subtitle": "slope (easy)",
+                "clients-sub-id": 2614
+            },
+            "number": "4",
+            "type": 2614,
+            "icon": "no_icon",
+            "iconOrientation": null,
+            "status": "closed",
+            "id": "R_9453565"
+        },
+        {
+            "popup": {
+                "desc": "yes",
+                "lynx-type": "slope",
+                "number": "11",
+                "title": "SAKKA",
+                "additional-info": {
+                    "length": 635
+                },
+                "oid": "37268",
+                "status": "closed",
+                "id": "9453568",
+                "subtitle": "slope (easy)",
+                "clients-sub-id": 2614
+            },
+            "number": "11",
+            "type": 2614,
+            "icon": "no_icon",
+            "iconOrientation": null,
+            "status": "closed",
+            "id": "R_9453568"
+        },
+        {
+            "popup": {
+                "desc": "yes",
+                "lynx-type": "slope",
+                "number": "3",
+                "title": "PANORAMA COURSE",
+                "additional-info": {
+                    "length": 2030
+                },
+                "oid": "37269",
+                "status": "closed",
+                "id": "9931452",
+                "subtitle": "slope (easy)",
+                "clients-sub-id": 2614
+            },
+            "number": "3",
+            "type": 2614,
+            "icon": "no_icon",
+            "iconOrientation": null,
+            "status": "closed",
+            "id": "R_9931452"
+        },
+        {
+            "popup": {
+                "desc": "yes",
+                "lynx-type": "slope",
+                "number": "6",
+                "title": "NAKIYAMA",
+                "additional-info": {
+                    "length": 560
+                },
+                "oid": "37270",
+                "status": "closed",
+                "id": "9931455",
+                "subtitle": "slope (easy)",
+                "clients-sub-id": 2614
+            },
+            "number": "6",
+            "type": 2614,
+            "icon": "no_icon",
+            "iconOrientation": null,
+            "status": "closed",
+            "id": "R_9931455"
+        },
+        {
+            "popup": {
+                "desc": "yes",
+                "lynx-type": "slope",
+                "number": "9",
+                "title": "SHIRAKABA",
+                "additional-info": {
+                    "length": 585
+                },
+                "oid": "37277",
+                "status": "closed",
+                "id": "9931503",
+                "subtitle": "slope (medium)",
+                "clients-sub-id": 2615
+            },
+            "number": "9",
+            "type": 2615,
+            "icon": "no_icon",
+            "iconOrientation": null,
+            "status": "closed",
+            "id": "R_9931503"
+        },
+        {
+            "popup": {
+                "desc": "yes",
+                "lynx-type": "slope",
+                "number": "4",
+                "title": "SKYLINE COURSE",
+                "additional-info": {
+                    "length": 2745
+                },
+                "oid": "37278",
+                "status": "closed",
+                "id": "9931453",
+                "subtitle": "slope (medium)",
+                "clients-sub-id": 2615
+            },
+            "number": "4",
+            "type": 2615,
+            "icon": "no_icon",
+            "iconOrientation": null,
+            "status": "closed",
+            "id": "R_9931453"
+        },
+        {
+            "popup": {
+                "desc": "yes",
+                "lynx-type": "slope",
+                "number": "5",
+                "title": "KITAONE COURSE",
+                "additional-info": {
+                    "length": 2915
+                },
+                "oid": "37279",
+                "status": "closed",
+                "id": "9453567",
+                "subtitle": "slope (medium)",
+                "clients-sub-id": 2615
+            },
+            "number": "5",
+            "type": 2615,
+            "icon": "no_icon",
+            "iconOrientation": null,
+            "status": "closed",
+            "id": "R_9453567"
+        },
+        {
+            "popup": {
+                "desc": "yes",
+                "lynx-type": "slope",
+                "number": "14",
+                "title": "OLYMPIC COURSE II (WOMEN'S)",
+                "additional-info": {
+                    "length": 1500
+                },
+                "oid": "37280",
+                "status": "closed",
+                "id": "9453564",
+                "subtitle": "slope (medium)",
+                "clients-sub-id": 2615
+            },
+            "number": "14",
+            "type": 2615,
+            "icon": "no_icon",
+            "iconOrientation": null,
+            "status": "closed",
+            "id": "R_9453564"
+        },
+        {
+            "popup": {
+                "desc": "yes",
+                "lynx-type": "slope",
+                "number": "13",
+                "title": "OLYMPIC COURSE I (MEN'S)",
+                "additional-info": {
+                    "length": 1810
+                },
+                "oid": "37281",
+                "status": "closed",
+                "id": "9453562",
+                "subtitle": "slope (medium)",
+                "clients-sub-id": 2615
+            },
+            "number": "13",
+            "type": 2615,
+            "icon": "no_icon",
+            "iconOrientation": null,
+            "status": "closed",
+            "id": "R_9453562"
+        },
+        {
+            "popup": {
+                "desc": "yes",
+                "lynx-type": "slope",
+                "number": "6",
+                "title": "NAKIYAMA",
+                "additional-info": {
+                    "length": 560
+                },
+                "oid": "37282",
+                "status": "closed",
+                "id": "9453560",
+                "subtitle": "slope (medium)",
+                "clients-sub-id": 2615
+            },
+            "number": "6",
+            "type": 2615,
+            "icon": "no_icon",
+            "iconOrientation": null,
+            "status": "closed",
+            "id": "R_9453560"
+        },
+        {
+            "popup": {
+                "desc": "yes",
+                "lynx-type": "slope",
+                "number": "2",
+                "title": "HAKUBA CENTRAL COURSE",
+                "additional-info": {
+                    "length": 1800
+                },
+                "oid": "37283",
+                "status": "closed",
+                "id": "9453559",
+                "subtitle": "slope (medium)",
+                "clients-sub-id": 2615
+            },
+            "number": "2",
+            "type": 2615,
+            "icon": "no_icon",
+            "iconOrientation": null,
+            "status": "closed",
+            "id": "R_9453559"
+        },
+        {
+            "popup": {
+                "desc": "yes",
+                "lynx-type": "slope",
+                "number": "3",
+                "title": "PANORAMA COURSE",
+                "additional-info": {
+                    "length": 2030
+                },
+                "oid": "37284",
+                "status": "closed",
+                "id": "9453558",
+                "subtitle": "slope (medium)",
+                "clients-sub-id": 2615
+            },
+            "number": "3",
+            "type": 2615,
+            "icon": "no_icon",
+            "iconOrientation": null,
+            "status": "closed",
+            "id": "R_9453558"
+        },
+        {
+            "popup": {
+                "desc": "yes",
+                "lynx-type": "slope",
+                "number": "1",
+                "title": "RIESEN SLALOM COURSE",
+                "additional-info": {
+                    "length": 3045
+                },
+                "oid": "37285",
+                "status": "closed",
+                "id": "9453557",
+                "subtitle": "slope (medium)",
+                "clients-sub-id": 2615
+            },
+            "number": "1",
+            "type": 2615,
+            "icon": "no_icon",
+            "iconOrientation": null,
+            "status": "closed",
+            "id": "R_9453557"
+        },
+        {
+            "popup": {
+                "desc": "yes",
+                "lynx-type": "slope",
+                "number": "12",
+                "title": "KUROBISHI",
+                "additional-info": {
+                    "length": 500
+                },
+                "oid": "37286",
+                "status": "closed",
+                "id": "9453556",
+                "subtitle": "slope (medium)",
+                "clients-sub-id": 2615
+            },
+            "number": "12",
+            "type": 2615,
+            "icon": "no_icon",
+            "iconOrientation": null,
+            "status": "closed",
+            "id": "R_9453556"
+        },
+        {
+            "popup": {
+                "desc": "yes",
+                "lynx-type": "slope",
+                "number": "7",
+                "title": "USAGIDAIRA",
+                "additional-info": {
+                    "length": 760
+                },
+                "oid": "37287",
+                "status": "closed",
+                "id": "9453555",
+                "subtitle": "slope (medium)",
+                "clients-sub-id": 2615
+            },
+            "number": "7",
+            "type": 2615,
+            "icon": "no_icon",
+            "iconOrientation": null,
+            "status": "closed",
+            "id": "R_9453555"
+        },
+        {
+            "popup": {
+                "desc": "yes",
+                "lynx-type": "slope",
+                "number": "8",
+                "title": "RIESEN GRAT COURSE",
+                "additional-info": {
+                    "length": 565
+                },
+                "oid": "37288",
+                "status": "closed",
+                "id": "9453554",
+                "subtitle": "slope (medium)",
+                "clients-sub-id": 2615
+            },
+            "number": "8",
+            "type": 2615,
+            "icon": "no_icon",
+            "iconOrientation": null,
+            "status": "closed",
+            "id": "R_9453554"
+        },
+        {
+            "popup": {
+                "desc": "yes",
+                "lynx-type": "slope",
+                "number": "10",
+                "title": "KOKUSAI",
+                "additional-info": {
+                    "length": 1810
+                },
+                "oid": "37271",
+                "status": "closed",
+                "id": "9453563",
+                "subtitle": "slope (difficult)",
+                "clients-sub-id": 2616
+            },
+            "number": "10",
+            "type": 2616,
+            "icon": "no_icon",
+            "iconOrientation": null,
+            "status": "closed",
+            "id": "R_9453563"
+        },
+        {
+            "popup": {
+                "desc": "yes",
+                "lynx-type": "slope",
+                "number": "12",
+                "title": "KUROBISHI",
+                "additional-info": {
+                    "length": 500
+                },
+                "oid": "37272",
+                "status": "closed",
+                "id": "9929767",
+                "subtitle": "slope (difficult)",
+                "clients-sub-id": 2616
+            },
+            "number": "12",
+            "type": 2616,
+            "icon": "no_icon",
+            "iconOrientation": null,
+            "status": "closed",
+            "id": "R_9929767"
+        },
+        {
+            "popup": {
+                "desc": "yes",
+                "lynx-type": "slope",
+                "number": "14",
+                "title": "OLYMPIC COURSE II (WOMEN'S)",
+                "additional-info": {
+                    "length": 1500
+                },
+                "oid": "37273",
+                "status": "closed",
+                "id": "9929769",
+                "subtitle": "slope (difficult)",
+                "clients-sub-id": 2616
+            },
+            "number": "14",
+            "type": 2616,
+            "icon": "no_icon",
+            "iconOrientation": null,
+            "status": "closed",
+            "id": "R_9929769"
+        },
+        {
+            "popup": {
+                "desc": "yes",
+                "lynx-type": "slope",
+                "number": "2",
+                "title": "HAKUBA CENTRAL COURSE",
+                "additional-info": {
+                    "length": 1800
+                },
+                "oid": "37274",
+                "status": "closed",
+                "id": "9929770",
+                "subtitle": "slope (difficult)",
+                "clients-sub-id": 2616
+            },
+            "number": "2",
+            "type": 2616,
+            "icon": "no_icon",
+            "iconOrientation": null,
+            "status": "closed",
+            "id": "R_9929770"
+        },
+        {
+            "popup": {
+                "desc": "yes",
+                "lynx-type": "slope",
+                "number": "5",
+                "title": "KITAONE COURSE",
+                "additional-info": {
+                    "length": 2915
+                },
+                "oid": "37275",
+                "status": "closed",
+                "id": "9931454",
+                "subtitle": "slope (difficult)",
+                "clients-sub-id": 2616
+            },
+            "number": "5",
+            "type": 2616,
+            "icon": "no_icon",
+            "iconOrientation": null,
+            "status": "closed",
+            "id": "R_9931454"
+        },
+        {
+            "popup": {
+                "desc": "yes",
+                "lynx-type": "slope",
+                "number": "8",
+                "title": "RIESEN GRAT COURSE",
+                "additional-info": {
+                    "length": 565
+                },
+                "oid": "37276",
+                "status": "closed",
+                "id": "9931502",
+                "subtitle": "slope (difficult)",
+                "clients-sub-id": 2616
+            },
+            "number": "8",
+            "type": 2616,
+            "icon": "no_icon",
+            "iconOrientation": null,
+            "status": "closed",
+            "id": "R_9931502"
+        }
+    ],
+    "routes": [],
+    "pois": {
+        "3202": [
+            {
+                "popup": {
+                    "lynx-type": "poi",
+                    "title": "Skipasskassa 1",
+                    "oid": "37439",
+                    "id": "37439",
+                    "subtitle": "ticket office",
+                    "clients-sub-id": 3202,
+                    "status": "unknown"
+                },
+                "number": null,
+                "icon": "svg/default/kassa.svg",
+                "iconOrientation": null,
+                "status": "unknown",
+                "id": "37439",
+                "position": {
+                    "x": 116,
+                    "y": 747
+                }
+            },
+            {
+                "popup": {
+                    "lynx-type": "poi",
+                    "title": "Skipasskassa 2",
+                    "oid": "37440",
+                    "id": "37440",
+                    "subtitle": "ticket office",
+                    "clients-sub-id": 3202,
+                    "status": "unknown"
+                },
+                "number": null,
+                "icon": "svg/default/kassa.svg",
+                "iconOrientation": null,
+                "status": "unknown",
+                "id": "37440",
+                "position": {
+                    "x": 109,
+                    "y": 775
+                }
+            },
+            {
+                "popup": {
+                    "lynx-type": "poi",
+                    "title": "Skipasskassa 3",
+                    "oid": "37441",
+                    "id": "37441",
+                    "subtitle": "ticket office",
+                    "clients-sub-id": 3202,
+                    "status": "unknown"
+                },
+                "number": null,
+                "icon": "svg/default/kassa.svg",
+                "iconOrientation": null,
+                "status": "unknown",
+                "id": "37441",
+                "position": {
+                    "x": 305,
+                    "y": 785
+                }
+            },
+            {
+                "popup": {
+                    "lynx-type": "poi",
+                    "title": "Skipasskassa 4",
+                    "oid": "37442",
+                    "id": "37442",
+                    "subtitle": "ticket office",
+                    "clients-sub-id": 3202,
+                    "status": "unknown"
+                },
+                "number": null,
+                "icon": "svg/default/kassa.svg",
+                "iconOrientation": null,
+                "status": "unknown",
+                "id": "37442",
+                "position": {
+                    "x": 437,
+                    "y": 775
+                }
+            },
+            {
+                "popup": {
+                    "lynx-type": "poi",
+                    "title": "Skipasskassa 5",
+                    "oid": "37443",
+                    "id": "37443",
+                    "subtitle": "ticket office",
+                    "clients-sub-id": 3202,
+                    "status": "unknown"
+                },
+                "number": null,
+                "icon": "svg/default/kassa.svg",
+                "iconOrientation": null,
+                "status": "unknown",
+                "id": "37443",
+                "position": {
+                    "x": 536,
+                    "y": 768
+                }
+            },
+            {
+                "popup": {
+                    "lynx-type": "poi",
+                    "title": "Skipasskassa 6",
+                    "oid": "37444",
+                    "id": "37444",
+                    "subtitle": "ticket office",
+                    "clients-sub-id": 3202,
+                    "status": "unknown"
+                },
+                "number": null,
+                "icon": "svg/default/kassa.svg",
+                "iconOrientation": null,
+                "status": "unknown",
+                "id": "37444",
+                "position": {
+                    "x": 829,
+                    "y": 723
+                }
+            }
+        ],
+        "3213": [
+            {
+                "popup": {
+                    "lynx-type": "poi",
+                    "title": "WC 1",
+                    "oid": "37423",
+                    "id": "37423",
+                    "subtitle": "washrooms",
+                    "clients-sub-id": 3213,
+                    "status": "unknown"
+                },
+                "number": null,
+                "icon": "svg/default/wc.svg",
+                "iconOrientation": null,
+                "status": "unknown",
+                "id": "37423",
+                "position": {
+                    "x": 119,
+                    "y": 775
+                }
+            },
+            {
+                "popup": {
+                    "lynx-type": "poi",
+                    "title": "WC 2",
+                    "oid": "37424",
+                    "id": "37424",
+                    "subtitle": "washrooms",
+                    "clients-sub-id": 3213,
+                    "status": "unknown"
+                },
+                "number": null,
+                "icon": "svg/default/wc.svg",
+                "iconOrientation": null,
+                "status": "unknown",
+                "id": "37424",
+                "position": {
+                    "x": 145,
+                    "y": 766
+                }
+            },
+            {
+                "popup": {
+                    "lynx-type": "poi",
+                    "title": "WC 4",
+                    "oid": "37426",
+                    "id": "37426",
+                    "subtitle": "washrooms",
+                    "clients-sub-id": 3213,
+                    "status": "unknown"
+                },
+                "number": null,
+                "icon": "svg/default/wc.svg",
+                "iconOrientation": null,
+                "status": "unknown",
+                "id": "37426",
+                "position": {
+                    "x": 316,
+                    "y": 785
+                }
+            },
+            {
+                "popup": {
+                    "lynx-type": "poi",
+                    "title": "WC 5",
+                    "oid": "37428",
+                    "id": "37428",
+                    "subtitle": "washrooms",
+                    "clients-sub-id": 3213,
+                    "status": "unknown"
+                },
+                "number": null,
+                "icon": "svg/default/wc.svg",
+                "iconOrientation": null,
+                "status": "unknown",
+                "id": "37428",
+                "position": {
+                    "x": 450,
+                    "y": 775
+                }
+            },
+            {
+                "popup": {
+                    "lynx-type": "poi",
+                    "title": "WC 6",
+                    "oid": "37430",
+                    "id": "37430",
+                    "subtitle": "washrooms",
+                    "clients-sub-id": 3213,
+                    "status": "unknown"
+                },
+                "number": null,
+                "icon": "svg/default/wc.svg",
+                "iconOrientation": null,
+                "status": "unknown",
+                "id": "37430",
+                "position": {
+                    "x": 670,
+                    "y": 771
+                }
+            },
+            {
+                "popup": {
+                    "lynx-type": "poi",
+                    "title": "WC 7",
+                    "oid": "37431",
+                    "id": "37431",
+                    "subtitle": "washrooms",
+                    "clients-sub-id": 3213,
+                    "status": "unknown"
+                },
+                "number": null,
+                "icon": "svg/default/wc.svg",
+                "iconOrientation": null,
+                "status": "unknown",
+                "id": "37431",
+                "position": {
+                    "x": 841,
+                    "y": 723
+                }
+            },
+            {
+                "popup": {
+                    "lynx-type": "poi",
+                    "title": "WC 9",
+                    "oid": "37433",
+                    "id": "37433",
+                    "subtitle": "washrooms",
+                    "clients-sub-id": 3213,
+                    "status": "unknown"
+                },
+                "number": null,
+                "icon": "svg/default/wc.svg",
+                "iconOrientation": null,
+                "status": "unknown",
+                "id": "37433",
+                "position": {
+                    "x": 627,
+                    "y": 491
+                }
+            },
+            {
+                "popup": {
+                    "lynx-type": "poi",
+                    "title": "WC 10",
+                    "oid": "37434",
+                    "id": "37434",
+                    "subtitle": "washrooms",
+                    "clients-sub-id": 3213,
+                    "status": "unknown"
+                },
+                "number": null,
+                "icon": "svg/default/wc.svg",
+                "iconOrientation": null,
+                "status": "unknown",
+                "id": "37434",
+                "position": {
+                    "x": 893,
+                    "y": 481
+                }
+            },
+            {
+                "popup": {
+                    "lynx-type": "poi",
+                    "title": "WC 11",
+                    "oid": "37435",
+                    "id": "37435",
+                    "subtitle": "washrooms",
+                    "clients-sub-id": 3213,
+                    "status": "unknown"
+                },
+                "number": null,
+                "icon": "svg/default/wc.svg",
+                "iconOrientation": null,
+                "status": "unknown",
+                "id": "37435",
+                "position": {
+                    "x": 498,
+                    "y": 337
+                }
+            },
+            {
+                "popup": {
+                    "lynx-type": "poi",
+                    "title": "WC 12",
+                    "oid": "37436",
+                    "id": "37436",
+                    "subtitle": "washrooms",
+                    "clients-sub-id": 3213,
+                    "status": "unknown"
+                },
+                "number": null,
+                "icon": "svg/default/wc.svg",
+                "iconOrientation": null,
+                "status": "unknown",
+                "id": "37436",
+                "position": {
+                    "x": 712,
+                    "y": 352
+                }
+            },
+            {
+                "popup": {
+                    "lynx-type": "poi",
+                    "title": "WC 13",
+                    "oid": "37437",
+                    "id": "37437",
+                    "subtitle": "washrooms",
+                    "clients-sub-id": 3213,
+                    "status": "unknown"
+                },
+                "number": null,
+                "icon": "svg/default/wc.svg",
+                "iconOrientation": null,
+                "status": "unknown",
+                "id": "37437",
+                "position": {
+                    "x": 639,
+                    "y": 276
+                }
+            },
+            {
+                "popup": {
+                    "lynx-type": "poi",
+                    "title": "WC 14",
+                    "oid": "37438",
+                    "id": "37438",
+                    "subtitle": "washrooms",
+                    "clients-sub-id": 3213,
+                    "status": "unknown"
+                },
+                "number": null,
+                "icon": "svg/default/wc.svg",
+                "iconOrientation": null,
+                "status": "unknown",
+                "id": "37438",
+                "position": {
+                    "x": 687,
+                    "y": 209
+                }
+            }
+        ],
+        "3201": [
+            {
+                "popup": {
+                    "lynx-type": "poi",
+                    "title": "P6 - Free parking",
+                    "oid": "37452",
+                    "id": "37452",
+                    "subtitle": "parking",
+                    "clients-sub-id": 3201,
+                    "status": "unknown"
+                },
+                "number": null,
+                "icon": "svg/soelden/parkplatz.svg",
+                "iconOrientation": null,
+                "status": "unknown",
+                "id": "37452",
+                "position": {
+                    "x": 20,
+                    "y": 744
+                }
+            },
+            {
+                "popup": {
+                    "lynx-type": "poi",
+                    "title": "P3 - Free parking",
+                    "oid": "37453",
+                    "id": "37453",
+                    "subtitle": "parking",
+                    "clients-sub-id": 3201,
+                    "status": "unknown"
+                },
+                "number": null,
+                "icon": "svg/soelden/parkplatz.svg",
+                "iconOrientation": null,
+                "status": "unknown",
+                "id": "37453",
+                "position": {
+                    "x": 47,
+                    "y": 840
+                }
+            },
+            {
+                "popup": {
+                    "lynx-type": "poi",
+                    "title": "P2 - Free parking",
+                    "oid": "37454",
+                    "id": "37454",
+                    "subtitle": "parking",
+                    "clients-sub-id": 3201,
+                    "status": "unknown"
+                },
+                "number": null,
+                "icon": "svg/soelden/parkplatz.svg",
+                "iconOrientation": null,
+                "status": "unknown",
+                "id": "37454",
+                "position": {
+                    "x": 125,
+                    "y": 831
+                }
+            },
+            {
+                "popup": {
+                    "lynx-type": "poi",
+                    "title": "P9 - Free parking",
+                    "oid": "37455",
+                    "id": "37455",
+                    "subtitle": "parking",
+                    "clients-sub-id": 3201,
+                    "status": "unknown"
+                },
+                "number": null,
+                "icon": "svg/soelden/parkplatz.svg",
+                "iconOrientation": null,
+                "status": "unknown",
+                "id": "37455",
+                "position": {
+                    "x": 615,
+                    "y": 775
+                }
+            },
+            {
+                "popup": {
+                    "lynx-type": "poi",
+                    "title": "P8 - Free parking",
+                    "oid": "37456",
+                    "id": "37456",
+                    "subtitle": "parking",
+                    "clients-sub-id": 3201,
+                    "status": "unknown"
+                },
+                "number": null,
+                "icon": "svg/soelden/parkplatz.svg",
+                "iconOrientation": null,
+                "status": "unknown",
+                "id": "37456",
+                "position": {
+                    "x": 808,
+                    "y": 761
+                }
+            },
+            {
+                "popup": {
+                    "lynx-type": "poi",
+                    "title": "P - Toll parking",
+                    "oid": "37479",
+                    "id": "37479",
+                    "subtitle": "parking",
+                    "clients-sub-id": 3201,
+                    "status": "unknown"
+                },
+                "number": null,
+                "icon": "svg/soelden/parkplatz.svg",
+                "iconOrientation": null,
+                "status": "unknown",
+                "id": "37479",
+                "position": {
+                    "x": 330,
+                    "y": 797
+                }
+            }
+        ],
+        "3205": [
+            {
+                "popup": {
+                    "lynx-type": "poi",
+                    "title": "Kids' Park Sakka",
+                    "oid": "37234",
+                    "id": "37234",
+                    "subtitle": "childrens area",
+                    "clients-sub-id": 3205,
+                    "status": "unknown"
+                },
+                "number": null,
+                "icon": "svg/default/kinderland.svg",
+                "iconOrientation": null,
+                "status": "unknown",
+                "id": "37234",
+                "position": {
+                    "x": 815,
+                    "y": 735
+                }
+            }
+        ],
+        "2809": [
+            {
+                "popup": {
+                    "desc": "https://www.898happo.com/webcam/hkklivec-1.jpg",
+                    "lynx-type": "poi",
+                    "title": "Usagidaira 1",
+                    "thumbnail": "https://images.intermaps.com/web_skimap_thumbs_f4/default.aspx?link=https%3A%2F%2Fwww.898happo.com%2Fwebcam%2Fhkklivec-1.jpg&img_width=248&img_height=188",
+                    "oid": "37416",
+                    "status": "unknown",
+                    "id": "37416",
+                    "subtitle": "Webcams (pictures)",
+                    "clients-sub-id": 2809
+                },
+                "number": null,
+                "icon": "svg/default/livecam.svg",
+                "iconOrientation": null,
+                "status": "unknown",
+                "id": "37416",
+                "position": {
+                    "x": 520,
+                    "y": 375
+                }
+            },
+            {
+                "popup": {
+                    "desc": "https://www.898happo.com/webcam/hkklivec-2.jpg",
+                    "lynx-type": "poi",
+                    "title": "Usagidaira 2",
+                    "thumbnail": "https://images.intermaps.com/web_skimap_thumbs_f4/default.aspx?link=https%3A%2F%2Fwww.898happo.com%2Fwebcam%2Fhkklivec-2.jpg&img_width=248&img_height=188",
+                    "oid": "37417",
+                    "status": "unknown",
+                    "id": "37417",
+                    "subtitle": "Webcams (pictures)",
+                    "clients-sub-id": 2809
+                },
+                "number": null,
+                "icon": "svg/default/livecam.svg",
+                "iconOrientation": null,
+                "status": "unknown",
+                "id": "37417",
+                "position": {
+                    "x": 516,
+                    "y": 388
+                }
+            }
+        ],
+        "3204": [
+            {
+                "popup": {
+                    "lynx-type": "poi",
+                    "title": "Skischule 1",
+                    "oid": "37449",
+                    "id": "37449",
+                    "subtitle": "skiing school",
+                    "clients-sub-id": 3204,
+                    "status": "unknown"
+                },
+                "number": null,
+                "icon": "svg/default/skischule.svg",
+                "iconOrientation": null,
+                "status": "unknown",
+                "id": "37449",
+                "position": {
+                    "x": 120,
+                    "y": 788
+                }
+            },
+            {
+                "popup": {
+                    "lynx-type": "poi",
+                    "title": "Skischule 2",
+                    "oid": "37450",
+                    "id": "37450",
+                    "subtitle": "skiing school",
+                    "clients-sub-id": 3204,
+                    "status": "unknown"
+                },
+                "number": null,
+                "icon": "svg/default/skischule.svg",
+                "iconOrientation": null,
+                "status": "unknown",
+                "id": "37450",
+                "position": {
+                    "x": 842,
+                    "y": 735
+                }
+            },
+            {
+                "popup": {
+                    "lynx-type": "poi",
+                    "title": "Skischule 3",
+                    "oid": "37451",
+                    "id": "37451",
+                    "subtitle": "skiing school",
+                    "clients-sub-id": 3204,
+                    "status": "unknown"
+                },
+                "number": null,
+                "icon": "svg/default/skischule.svg",
+                "iconOrientation": null,
+                "status": "unknown",
+                "id": "37451",
+                "position": {
+                    "x": 500,
+                    "y": 350
+                }
+            }
+        ],
+        "3203": [
+            {
+                "popup": {
+                    "lynx-type": "poi",
+                    "title": "Tourismusinfo 1",
+                    "oid": "37446",
+                    "id": "37446",
+                    "subtitle": "tourist information",
+                    "clients-sub-id": 3203,
+                    "status": "unknown"
+                },
+                "number": null,
+                "icon": "svg/default/info.svg",
+                "iconOrientation": null,
+                "status": "unknown",
+                "id": "37446",
+                "position": {
+                    "x": 829,
+                    "y": 735
+                }
+            },
+            {
+                "popup": {
+                    "lynx-type": "poi",
+                    "title": "Tourismusinfo 2",
+                    "oid": "37447",
+                    "id": "37447",
+                    "subtitle": "tourist information",
+                    "clients-sub-id": 3203,
+                    "status": "unknown"
+                },
+                "number": null,
+                "icon": "svg/default/info.svg",
+                "iconOrientation": null,
+                "status": "unknown",
+                "id": "37447",
+                "position": {
+                    "x": 488,
+                    "y": 350
+                }
+            }
+        ],
+        "3206": [
+            {
+                "popup": {
+                    "lynx-type": "poi",
+                    "title": "Shuttle bus",
+                    "oid": "37457",
+                    "id": "37457",
+                    "subtitle": "ski bus",
+                    "clients-sub-id": 3206,
+                    "status": "unknown"
+                },
+                "number": null,
+                "icon": "svg/default/bus.svg",
+                "iconOrientation": null,
+                "status": "unknown",
+                "id": "37457",
+                "position": {
+                    "x": 89,
+                    "y": 787
+                }
+            },
+            {
+                "popup": {
+                    "lynx-type": "poi",
+                    "title": "Shuttle bus",
+                    "oid": "37458",
+                    "id": "37458",
+                    "subtitle": "ski bus",
+                    "clients-sub-id": 3206,
+                    "status": "unknown"
+                },
+                "number": null,
+                "icon": "svg/default/bus.svg",
+                "iconOrientation": null,
+                "status": "unknown",
+                "id": "37458",
+                "position": {
+                    "x": 329,
+                    "y": 785
+                }
+            },
+            {
+                "popup": {
+                    "lynx-type": "poi",
+                    "title": "Shuttle bus",
+                    "oid": "37459",
+                    "id": "37459",
+                    "subtitle": "ski bus",
+                    "clients-sub-id": 3206,
+                    "status": "unknown"
+                },
+                "number": null,
+                "icon": "svg/default/bus.svg",
+                "iconOrientation": null,
+                "status": "unknown",
+                "id": "37459",
+                "position": {
+                    "x": 550,
+                    "y": 769
+                }
+            },
+            {
+                "popup": {
+                    "lynx-type": "poi",
+                    "title": "Shuttle bus",
+                    "oid": "37460",
+                    "id": "37460",
+                    "subtitle": "ski bus",
+                    "clients-sub-id": 3206,
+                    "status": "unknown"
+                },
+                "number": null,
+                "icon": "svg/default/bus.svg",
+                "iconOrientation": null,
+                "status": "unknown",
+                "id": "37460",
+                "position": {
+                    "x": 796,
+                    "y": 761
+                }
+            }
+        ],
+        "3401": [
+            {
+                "popup": {
+                    "lynx-type": "poi",
+                    "title": "Happo Banks the Snow Park",
+                    "oid": "37232",
+                    "id": "37232",
+                    "subtitle": "Funpark",
+                    "clients-sub-id": 3401,
+                    "status": "unknown"
+                },
+                "number": null,
+                "icon": "svg/default/funpark.svg",
+                "iconOrientation": null,
+                "status": "unknown",
+                "id": "37232",
+                "position": {
+                    "x": 912,
+                    "y": 505
+                }
+            }
+        ],
+        "3207": [
+            {
+                "popup": {
+                    "lynx-type": "poi",
+                    "title": "Pistenrettung",
+                    "oid": "37422",
+                    "id": "37422",
+                    "subtitle": "ski patrol",
+                    "clients-sub-id": 3207,
+                    "status": "unknown"
+                },
+                "number": null,
+                "icon": "svg/default/rettungs.svg",
+                "iconOrientation": null,
+                "status": "unknown",
+                "id": "37422",
+                "position": {
+                    "x": 488,
+                    "y": 361
+                }
+            }
+        ],
+        "3001": [
+            {
+                "popup": {
+                    "desc": "yes",
+                    "lynx-type": "poi",
+                    "title": "Usagidaira Terrace",
+                    "oid": "37227",
+                    "status": "unknown",
+                    "id": "37227",
+                    "subtitle": "restaurants",
+                    "clients-sub-id": 3001
+                },
+                "number": null,
+                "icon": "svg/default/gastro.svg",
+                "iconOrientation": null,
+                "status": "unknown",
+                "id": "37227",
+                "position": {
+                    "x": 532,
+                    "y": 375
+                }
+            },
+            {
+                "popup": {
+                    "desc": "yes",
+                    "lynx-type": "poi",
+                    "title": "Café & Restaurant Pilar",
+                    "oid": "37228",
+                    "status": "unknown",
+                    "id": "37228",
+                    "subtitle": "restaurants",
+                    "clients-sub-id": 3001
+                },
+                "number": null,
+                "icon": "svg/default/gastro.svg",
+                "iconOrientation": null,
+                "status": "unknown",
+                "id": "37228",
+                "position": {
+                    "x": 623,
+                    "y": 276
+                }
+            },
+            {
+                "popup": {
+                    "desc": "yes",
+                    "lynx-type": "poi",
+                    "title": "Cafeteria Kurobishi",
+                    "oid": "37229",
+                    "status": "unknown",
+                    "id": "37229",
+                    "subtitle": "restaurants",
+                    "clients-sub-id": 3001
+                },
+                "number": null,
+                "icon": "svg/default/gastro.svg",
+                "iconOrientation": null,
+                "status": "unknown",
+                "id": "37229",
+                "position": {
+                    "x": 694,
+                    "y": 352
+                }
+            },
+            {
+                "popup": {
+                    "desc": "yes",
+                    "lynx-type": "poi",
+                    "title": "Snow Plaza Sakka",
+                    "oid": "37230",
+                    "status": "unknown",
+                    "id": "37230",
+                    "subtitle": "restaurants",
+                    "clients-sub-id": 3001
+                },
+                "number": null,
+                "icon": "svg/default/gastro.svg",
+                "iconOrientation": null,
+                "status": "unknown",
+                "id": "37230",
+                "position": {
+                    "x": 810,
+                    "y": 747
+                }
+            },
+            {
+                "popup": {
+                    "desc": "yes",
+                    "lynx-type": "poi",
+                    "title": "Sun Terrace Panorama",
+                    "oid": "37231",
+                    "status": "unknown",
+                    "id": "37231",
+                    "subtitle": "restaurants",
+                    "clients-sub-id": 3001
+                },
+                "number": null,
+                "icon": "svg/default/gastro.svg",
+                "iconOrientation": null,
+                "status": "unknown",
+                "id": "37231",
+                "position": {
+                    "x": 614,
+                    "y": 491
+                }
+            }
+        ]
+    },
+    "lookup": {
+        "Cafeteria Kurobishi": "37229",
+        "WC 13": "37437",
+        "NAKIYAMA 2": "L_9408991_group",
+        "HAPPO GONDOLA \"ADAM\"": "L_9409002_group",
+        "WC 6": "37430",
+        "SAKKA 3": "L_9408994_group",
+        "OLYMPIC COURSE II (WOMEN'S)": "R_9929769_group",
+        "Usagidaira 2": "37417",
+        "SKYLINE 2": "L_9408985_group",
+        "WC 2": "37424",
+        "KITAONE COURSE": "R_9931454_group",
+        "SKYLINE COURSE": "R_9931453_group",
+        "NAKIYAMA": "R_9453560_group",
+        "HAKUBA CENTRAL COURSE": "R_9929770_group",
+        "WC 4": "37426",
+        "Skischule 3": "37451",
+        "Skischule 1": "37449",
+        "P9 - Free parking": "37455",
+        "Skipasskassa 1": "37439",
+        "KUROBISHI QUAD": "L_9408998_group",
+        "Skipasskassa 6": "37444",
+        "P3 - Free parking": "37453",
+        "WC 11": "37435",
+        "Skipasskassa 4": "37442",
+        "USAGIDAIRA": "R_9453555_group",
+        "NAKIYAMA 3 B": "L_9409006_group",
+        "SHIRAKABA 2": "L_9408996_group",
+        "GRAT QUAD": "L_9409003_group",
+        "SHIRAKABA 1": "L_9408995_group",
+        "ALPEN QUAD": "L_9409004_group",
+        "CENTRAL": "L_9408986_group",
+        "Kids' Park Sakka": "37234",
+        "WC 10": "37434",
+        "WC 5": "37428",
+        "HAPPO 1": "L_9408989_group",
+        "SAKKA KITAONE QUAD": "L_9408997_group",
+        "Tourismusinfo 1": "37446",
+        "KOKUSAI": "R_9453563_group",
+        "Tourismusinfo 2": "37447",
+        "P8 - Free parking": "37456",
+        "KOKUSAI 1": "L_9408993_group",
+        "SHIRAKABA": "R_9931503_group",
+        "WC 14": "37438",
+        "Skipasskassa 5": "37443",
+        "WC 1": "37423",
+        "SAKKA 2": "L_9408992_group",
+        "Skipasskassa 2": "37440",
+        "RIESEN GRAT COURSE": "R_9931502_group",
+        "OLYMPIC COURSE I (MEN'S)": "R_9453562_group",
+        "Skipasskassa 3": "37441",
+        "Pistenrettung": "37422",
+        "PANORAMA": "L_9408987_group",
+        "Snow Plaza Sakka": "37230",
+        "Sun Terrace Panorama": "37231",
+        "WC 9": "37433",
+        "Skischule 2": "37450",
+        "NAKIYAMA 3 A": "L_9409001_group",
+        "Happo Banks the Snow Park": "37232",
+        "KUROBISHI": "R_9929767_group",
+        "Usagidaira Terrace": "37227",
+        "KOKUSAI 3 A": "L_9409000_group",
+        "PANORAMA COURSE": "R_9453558_group",
+        "P6 - Free parking": "37452",
+        "KUROBISHI 3": "L_9408999_group",
+        "RIESEN SLALOM COURSE": "R_9453557_group",
+        "SAKKA": "R_9453568_group",
+        "Usagidaira 1": "37416",
+        "Café & Restaurant Pilar": "37228",
+        "KOKUSAI 3 B": "L_9409007_group",
+        "P2 - Free parking": "37454",
+        "WC 7": "37431",
+        "P - Toll parking": "37479",
+        "WC 12": "37436",
+        "KITAONE 3": "L_9408990_group",
+        "Shuttle bus": "37460",
+        "HAPPO RIESEN QUAD": "L_9409005_group"
+    },
+    "lastUpdate": "2023-09-04T03:48:39"
+}

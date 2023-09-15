@@ -1,0 +1,13 @@
+{
+  "name": "Films-Laax-Falera",
+  "url": {
+    "host": "https://live.flimslaax.com",
+    "pathname": "/de/anlagen"
+  },
+  "tags": [
+    "Switzerland"
+  ],
+  "ll": [
+    null
+  ]
+}

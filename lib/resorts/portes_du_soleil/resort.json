@@ -1,0 +1,17 @@
+{
+  "name": "portes du soleil",
+  "url": {
+    "host": "https://winter.intermaps.com",
+    "pathname": "/portes_du_soleil/data"
+  },
+  "api": {
+    "host": "https://winter.intermaps.com",
+    "pathname": "/portes_du_soleil/data"
+  },
+  "tags": [
+    "switzerland"
+  ],
+  "ll": [
+    null
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "Arosa-Lenzerheide",
+  "url": {
+    "host": "https://winter.intermaps.com",
+    "pathname": "/arosa_lenzerheide/data"
+  },
+  "tags": [
+    "switzerland"
+  ],
+  "ll": [
+    null
+  ]
+}

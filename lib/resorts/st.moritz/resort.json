@@ -1,0 +1,13 @@
+{
+  "name": "St.Moritz",
+  "url": {
+    "host": "https://winter.intermaps.com",
+    "pathname": "/engadin_stmoritz/data"
+  },
+  "tags": [
+    ""
+  ],
+  "ll": [
+    null
+  ]
+}

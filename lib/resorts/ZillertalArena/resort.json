@@ -1,0 +1,14 @@
+{
+  "name": "Zillertal",
+  "url": {
+    "host": "https://winter.intermaps.com",
+    "pathname": "/zillertalarena/data"
+  },
+  "tags": [
+    "alps",
+    "austria"
+  ],
+  "ll": [
+    null
+  ]
+}

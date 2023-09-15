@@ -1,0 +1,19 @@
+{
+  "name": "Saalbach-Hinterglemm",
+  "url":{
+    "host": "https://winter.intermaps.com",
+    "pathname": "/saalbach_hinterglemm_leogang_fieberbrunn/data?lang=en"
+  },
+  "api": {
+    "host": "https://winter.intermaps.com",
+    "pathname": "/saalbach_hinterglemm_leogang_fieberbrunn/data?lang=en"
+  },
+  "tags": [
+    "Alps",
+    "Austria"
+  ],
+  "ll": [
+    47.391941,
+    12.641559
+  ]
+}

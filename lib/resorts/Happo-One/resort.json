@@ -1,0 +1,13 @@
+{
+  "name": "Happo-One",
+  "url": {
+    "host": "https://winter.intermaps.com",
+    "pathname": "/happo_one/data?lang=eng"
+  },
+  "tags": [
+    "japan"
+  ],
+  "ll": [
+    null
+  ]
+}
