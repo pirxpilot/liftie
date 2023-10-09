@@ -39,15 +39,6 @@ define RUN_ESBUILD_MIN
 		--outfile=$@
 endef
 
-
-ifndef TAP_REPORTER
-	ifneq (, $(shell which tap-difflet))
-		TAP_REPORTER = tap-difflet --pessimistic
-	else
-		TAP_REPORTER = cat
-	endif
-endif
-
 all: lint test build
 
 # common rules
@@ -79,7 +70,7 @@ lint: | node_modules
 	$(NODE_BIN)/jshint $(LINT_SRC)
 
 test: | node_modules
-	$(NODE_BIN)/tape $(TESTS) | $(TAP_REPORTER)
+	node --test $(TESTS)
 
 $(BUILD_DIR):
 	mkdir -p $@

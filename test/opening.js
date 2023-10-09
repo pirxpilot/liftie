@@ -1,4 +1,5 @@
-var test = require('tape');
+var test = require('node:test');
+var assert = require('node:assert/strict');
 var opening = require('../lib/opening');
 var day = require('../lib/tools/millis').day;
 
@@ -14,46 +15,46 @@ var today = iso(now);
 var future = iso(now + 2 * day);
 var past = iso(now - 2 * day);
 
-test('opening should be empty for missing dates', function(t) {
-  opening({}, function(err, od) {
-    t.notOk(od);
-    t.end(err);
+test('opening should be empty for missing dates', function (t, done) {
+  opening({}, function (err, od) {
+    assert.ok(!od);
+    done(err);
   });
 });
 
-test('opening should be empty for invalid dates', function(t) {
+test('opening should be empty for invalid dates', function (t, done) {
   opening({
     opening: 'abc'
-  }, function(err, od) {
-    t.notOk(od);
-    t.end(err);
+  }, function (err, od) {
+    assert.ok(!od);
+    done(err);
   });
 });
 
-test('opening should be empty for past dates', function(t) {
+test('opening should be empty for past dates', function (t, done) {
   opening({
     opening: past
-  }, function(err, od) {
-    t.notOk(od);
-    t.end(err);
+  }, function (err, od) {
+    assert.ok(!od);
+    done(err);
   });
 });
 
-test('opening should be empty for today', function(t) {
+test('opening should be empty for today', function (t, done) {
   opening({
     opening: today
-  }, function(err, od) {
-    t.notOk(od);
-    t.end(err);
+  }, function (err, od) {
+    assert.ok(!od);
+    done(err);
   });
 });
 
-test('opening should be present for future dates', function(t) {
+test('opening should be present for future dates', function (t, done) {
   opening({
     opening: future
-  }, function(err, od) {
-    t.ok(od);
-    t.equal(od, future);
-    t.end(err);
+  }, function (err, od) {
+    assert.ok(od);
+    assert.equal(od, future);
+    done(err);
   });
 });
