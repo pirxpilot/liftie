@@ -1,4 +1,5 @@
-const test = require('tape');
+const test = require('node:test');
+const assert = require('node:assert/strict');
 const { createReadStream } = require('fs');
 
 const parser = require('../../lib/lifts/parser');
@@ -6,23 +7,24 @@ const makeParse = require('../../lib/lifts/parse');
 
 module.exports = testResort;
 
-function testResort(name, ext, expected, { only, skip } = {}) {
+function testResort(name, ext, expected, opts = {}) {
 
   const filename = `${__dirname}/../resorts/example/${name}.${ext}`;
   const parse = makeParse(name);
 
 
-  function testHTML(t) {
+  function testHTML(t, done) {
     const stream = createReadStream(filename);
 
-    stream.on('error', t.end);
+    stream.on('error', done);
     stream.pipe(parser(parse, function (err, status) {
-      t.deepEqual(status, expected, `lifts should match for ${name}`);
-      t.end(err);
+      assert.ifError(err);
+      assert.deepEqual(status, expected, `lifts should match for ${name}`);
+      done();
     }));
   }
 
-  function testJSON(t) {
+  function testJSON(t, done) {
     const asyncParse = parse.isAsync ?
       parse :
       (data, fn) => process.nextTick(fn, null, parse(data));
@@ -30,20 +32,14 @@ function testResort(name, ext, expected, { only, skip } = {}) {
     const data = require(filename);
 
     asyncParse(data, function (err, status) {
-      t.deepEqual(status, expected);
-      t.end(err);
+      assert.deepEqual(status, expected);
+      done(err);
     });
   }
 
 
   const tested = ext === 'json' ? testJSON : testHTML;
-  const runTest = only ?
-    test.only :
-    skip ?
-      test.skip :
-      test;
-
-  runTest(`${name} should return lift status`, tested);
+  test(`${name} should return lift status`, opts, tested);
 }
 
 testResort.only = (...args) => testResort(...args, { only: true });

@@ -1,33 +1,31 @@
-var test = require('tape');
+var test = require('node:test');
+var assert = require('node:assert/strict');
 var check = require('../lib/checker');
 
-test('stats should return valid names when requested not specified', function(t) {
+test('stats should return valid names when requested not specified', function () {
   var valid = ['a', 'b', 'c'];
   valid.forEach(function (v) {
     valid[v] = true;
   });
-  t.deepEqual(check(null, valid, valid), valid);
-  t.end();
+  assert.deepEqual(check(null, valid, valid), valid);
 });
 
-test('stats should filter out invalid names', function(t) {
+test('stats should filter out invalid names', function () {
   var valid = ['a', 'b', 'c'];
   valid.forEach(function (v) {
     valid[v] = true;
   });
-  t.deepEqual(check('a', valid), ['a']);
-  t.deepEqual(check('a,x,c', valid), ['a', 'c']);
-  t.deepEqual(check('x,y,z', valid), []);
-  t.end();
+  assert.deepEqual(check('a', valid), ['a']);
+  assert.deepEqual(check('a,x,c', valid), ['a', 'c']);
+  assert.deepEqual(check('x,y,z', valid), []);
 });
 
-test('stats should work with Arrays', function(t) {
+test('stats should work with Arrays', function () {
   var valid = ['a', 'b', 'c'];
   valid.forEach(function (v) {
     valid[v] = true;
   });
-  t.deepEqual(check(['a'], valid), ['a']);
-  t.deepEqual(check(['a', 'x', 'c'], valid), ['a', 'c']);
-  t.deepEqual(check(['x', 'y', 'z'], valid), []);
-  t.end();
+  assert.deepEqual(check(['a'], valid), ['a']);
+  assert.deepEqual(check(['a', 'x', 'c'], valid), ['a', 'c']);
+  assert.deepEqual(check(['x', 'y', 'z'], valid), []);
 });

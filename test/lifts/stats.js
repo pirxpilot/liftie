@@ -1,8 +1,9 @@
-var test = require('tape');
+var test = require('node:test');
+var assert = require('node:assert/strict');
 var stats = require('../../lib/lifts/stats');
 
-test('stats should report 0 for empty', function(t) {
-  t.deepEqual(stats({}), {
+test('stats should report 0 for empty', function () {
+  assert.deepEqual(stats({}), {
     open: 0,
     closed: 0,
     hold: 0,
@@ -14,10 +15,9 @@ test('stats should report 0 for empty', function(t) {
       scheduled: 25
     }
   });
-  t.end();
 });
 
-test('stats should count all status', function(t) {
+test('stats should count all status', function () {
   var status = {
     'n1': 'open',
     'n2': 'open',
@@ -34,7 +34,7 @@ test('stats should count all status', function(t) {
     'n14': 'scheduled',
     'n17': 'scheduled'
   };
-  t.deepEqual(stats(status), {
+  assert.deepEqual(stats(status), {
     open: 5,
     closed: 4,
     hold: 2,
@@ -46,11 +46,10 @@ test('stats should count all status', function(t) {
       scheduled: 21.4
     }
   });
-  t.end();
 });
 
-test('stats.summary should calculate summary for empty stats', function(t) {
-  t.deepEqual(stats.summary([]), {
+test('stats.summary should calculate summary for empty stats', function () {
+  assert.deepEqual(stats.summary([]), {
     open: 0,
     closed: 0,
     hold: 0,
@@ -62,11 +61,10 @@ test('stats.summary should calculate summary for empty stats', function(t) {
       scheduled: 25
     }
   });
-  t.end();
 });
 
-test('stats.summary should calculate summary for array of stats', function(t) {
-  t.deepEqual(stats.summary([{
+test('stats.summary should calculate summary for array of stats', function () {
+  assert.deepEqual(stats.summary([{
     open: 5,
     closed: 4,
     hold: 2,
@@ -76,7 +74,7 @@ test('stats.summary should calculate summary for array of stats', function(t) {
     open: 10,
     closed: 1
   },
-  null,
+    null,
   {},
   {
     open: 1,
@@ -95,6 +93,5 @@ test('stats.summary should calculate summary for array of stats', function(t) {
       scheduled: 20
     }
   });
-  t.end();
 });
 
