@@ -67,7 +67,6 @@
     "postcss-cachify": "^3.0.0",
     "postcss-cli-simple": "~4.0.0",
     "prompt": "~1",
-    "stylus": "^0.59.0",
-    "tape": "^5.0.1"
+    "stylus": "^0.59.0"
   }
 }
