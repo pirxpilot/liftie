@@ -1,0 +1,15 @@
+{
+  "name": "Flims Laax Falera",
+  "url": {
+    "host": "https://live.flimslaax.com",
+    "pathname": "/en/lifts"
+  },
+  "tags": [
+    "Switzerland",
+    "Alps"
+  ],
+  "ll": [
+    9.283333,
+    46.833333
+  ]
+}
