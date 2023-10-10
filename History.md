@@ -1,4 +1,11 @@
 
+3.42.0 / 2023-10-10
+===================
+
+ * add Alta Badia resort
+ * add Flims Laxx Falera resort
+ * replace tape with node test runner
+
 3.41.1 / 2023-04-21
 ===================
 
