@@ -1,6 +1,6 @@
 const lifts = require('../lifts');
 
-lifts('pinzolo', 'html',  {
+lifts('pinzolo', 'html', {
   'Tulot - Malga Cioca': 'closed',
   'Pinzolo - Pra Rodont': 'open',
   'Pra\' Rodont - Doss del Sabion': 'open',

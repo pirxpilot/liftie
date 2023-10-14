@@ -65,23 +65,24 @@ test('stats.summary should calculate summary for empty stats', function () {
 
 test('stats.summary should calculate summary for array of stats', function () {
   assert.deepEqual(stats.summary([{
-    open: 5,
-    closed: 4,
-    hold: 2,
-    scheduled: 3
-  },
-  {
-    open: 10,
-    closed: 1
-  },
+      open: 5,
+      closed: 4,
+      hold: 2,
+      scheduled: 3
+    },
+    {
+      open: 10,
+      closed: 1
+    },
     null,
-  {},
-  {
-    open: 1,
-    closed: 2,
-    hold: 3,
-    scheduled: 4
-  }]), {
+    {},
+    {
+      open: 1,
+      closed: 2,
+      hold: 3,
+      scheduled: 4
+    }
+  ]), {
     open: 16,
     closed: 7,
     hold: 5,
@@ -94,4 +95,3 @@ test('stats.summary should calculate summary for array of stats', function () {
     }
   });
 });
-

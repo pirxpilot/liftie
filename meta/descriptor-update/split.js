@@ -39,12 +39,12 @@ function update(name) {
 const dir = path.resolve(__dirname, prefix);
 
 readdir(dir)
-  .filter(function(fname) {
+  .filter(function (fname) {
     return stat(path.resolve(dir, fname)).isFile();
   })
-  .map(function(fname) {
+  .map(function (fname) {
     return fname.slice(0, -3);
   })
-  .forEach(function(resort) {
+  .forEach(function (resort) {
     update(resort);
   });
