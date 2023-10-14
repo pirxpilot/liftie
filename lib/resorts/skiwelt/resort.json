@@ -1,0 +1,15 @@
+{
+  "name": "Skiwelt",
+  "url": {
+    "host": "https://www.skiwelt.at",
+    "pathname": "/dk/liftstatus.html"
+  },
+  "tags": [
+    "Alps",
+    "Austria"
+  ],
+  "ll": [
+    12.25,
+    47.45
+  ]
+}
