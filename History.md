@@ -1,4 +1,11 @@
 
+3.43.0 / 2023-10-14
+===================
+
+ * add Skiwelt resort
+ * add Serfaus-Fiss-Ladis resort
+ * add Monterosa resort
+
 3.42.0 / 2023-10-10
 ===================
 
