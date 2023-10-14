@@ -1,4 +1,4 @@
-var Replay = require('@pirxpilot/replay');
+const Replay = require('@pirxpilot/replay');
 Replay.fixtures = __dirname;
 
 // default replay mode is 'replay'

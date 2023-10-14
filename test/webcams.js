@@ -1,6 +1,6 @@
-var test = require('node:test');
-var assert = require('node:assert/strict');
-var webcams = require('../lib/webcams');
+const test = require('node:test');
+const assert = require('node:assert/strict');
+const webcams = require('../lib/webcams');
 
 require('./replay');
 
@@ -25,7 +25,7 @@ test('webcams should return webcams for valid location', function (t, done) {
     assert.ok(webcams);
     assert.ok(webcams.length > 0);
 
-    var webcam = webcams[0];
+    const webcam = webcams[0];
 
     assert.equal(webcam.name, 'Fieschertal: Jungfrau - Wengen - Interlaken');
     assert.ok(webcam.source.startsWith('https://www.windy.com/webcams/1329413077'));
@@ -34,7 +34,7 @@ test('webcams should return webcams for valid location', function (t, done) {
 
     assert.equal(typeof webcam.mobile, 'object');
 
-    var mobile = webcam.mobile;
+    const mobile = webcam.mobile;
 
     assert.equal(mobile.name, 'Fieschertal: Jungfrau - Wengen - Interlaken');
     assert.ok(mobile.source.startsWith('https://www.windy.com/webcams/1329413077'));

@@ -1,6 +1,6 @@
-var test = require('node:test');
-var assert = require('node:assert/strict');
-var stats = require('../../lib/lifts/stats');
+const test = require('node:test');
+const assert = require('node:assert/strict');
+const stats = require('../../lib/lifts/stats');
 
 test('stats should report 0 for empty', function () {
   assert.deepEqual(stats({}), {
@@ -18,7 +18,7 @@ test('stats should report 0 for empty', function () {
 });
 
 test('stats should count all status', function () {
-  var status = {
+  const status = {
     'n1': 'open',
     'n2': 'open',
     'n3': 'closed',
