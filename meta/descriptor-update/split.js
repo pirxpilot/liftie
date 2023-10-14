@@ -1,21 +1,20 @@
-var path = require('path');
-var fs = require('fs');
-var mkdir = fs.mkdirSync;
-var writeFile = fs.writeFileSync;
-var readFile = fs.readFileSync;
-var exists = fs.existsSync;
-var readdir = fs.readdirSync;
-var stat = fs.statSync;
+const path = require('path');
+const fs = require('fs');
+const mkdir = fs.mkdirSync;
+const writeFile = fs.writeFileSync;
+const readFile = fs.readFileSync;
+const exists = fs.existsSync;
+const readdir = fs.readdirSync;
+const stat = fs.statSync;
 
-var prefix = './resorts';
+const prefix = './resorts';
 
 function update(name) {
-  var
-    descriptor = require([prefix, name].join('/')),
-    parse = descriptor.parse,
-    filename = path.resolve(__dirname, prefix, name + '.js'),
-    dir = path.resolve(__dirname, prefix, name),
-    js;
+  let descriptor = require([prefix, name].join('/'));
+  const parse = descriptor.parse;
+  const filename = path.resolve(__dirname, prefix, name + '.js');
+  const dir = path.resolve(__dirname, prefix, name);
+  let js;
 
   delete descriptor.parse;
 
@@ -37,15 +36,15 @@ function update(name) {
 }
 
 
-var dir = path.resolve(__dirname, prefix);
+const dir = path.resolve(__dirname, prefix);
 
 readdir(dir)
-  .filter(function(fname) {
+  .filter(function (fname) {
     return stat(path.resolve(dir, fname)).isFile();
   })
-  .map(function(fname) {
+  .map(function (fname) {
     return fname.slice(0, -3);
   })
-  .forEach(function(resort) {
+  .forEach(function (resort) {
     update(resort);
   });

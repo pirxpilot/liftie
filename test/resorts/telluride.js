@@ -1,7 +1,6 @@
 const lifts = require('../lifts');
 
-lifts('telluride',
-'html', {
+lifts('telluride', 'html', {
   'Chondola': 'closed',
   'Childrens Magic Carpet': 'closed',
   'Village Express': 'closed',
@@ -12,7 +11,8 @@ lifts('telluride',
   'Plunge Lift': 'closed',
   'Sunshine Express': 'closed',
   'UTE Park': 'closed',
-  'Prospect Express': 'closed', Lynx: 'closed',
+  'Prospect Express': 'closed',
+  'Lynx': 'closed',
   'Gold Hill Express': 'closed',
   'Revelation Lift': 'closed',
   'Adult Magic Carpet': 'closed',

@@ -1,7 +1,6 @@
 const lifts = require('../lifts');
 
-lifts('meribel',
-'html', {
+lifts('meribel', 'html', {
   'Rhodos 1': 'scheduled',
   'Rhodos 2': 'scheduled',
   'Saulire Express 1': 'scheduled',

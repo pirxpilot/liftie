@@ -9,4 +9,5 @@ lifts('claviere', 'html', {
   'SG4* COL SAUREL': 'closed',
   'SG4* SAGNALONGA': 'closed',
   'SG4* SERRA GRANET': 'closed',
-  'TP BABY': 'closed'         });
+  'TP BABY': 'closed'
+});

@@ -9,4 +9,3 @@ lifts('pico', 'json', {
   'Outpost Double': 'closed',
   'Summit Express Quad': 'closed'
 });
-

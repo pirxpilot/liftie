@@ -1,9 +1,9 @@
-var test = require('node:test');
-var assert = require('node:assert/strict');
-var tags = require('../../lib/routes/tags');
+const test = require('node:test');
+const assert = require('node:assert/strict');
+const tags = require('../../lib/routes/tags');
 
 test('tags should classify object according to tags', function () {
-  var objs = {
+  const objs = {
     'a': 't3,t2,t1',
     'b': 't2',
     'c': 't1,t2',
@@ -20,7 +20,7 @@ test('tags should classify object according to tags', function () {
   Object.keys(objs).forEach(function (n) {
     objs[n] = load(n);
   });
-  var tt = tags(objs);
+  const tt = tags(objs);
 
   assert.deepEqual(tt.t1.members, ['a', 'c']);
   assert.deepEqual(tt.t2.members, ['a', 'b', 'c']);
@@ -29,7 +29,7 @@ test('tags should classify object according to tags', function () {
 });
 
 test('tags should conver names to cannonical form', function () {
-  var objs = {
+  const objs = {
     'a': 'Nice Tag,Another Tag',
     'b': 'Another Tag'
   };
@@ -44,7 +44,7 @@ test('tags should conver names to cannonical form', function () {
   Object.keys(objs).forEach(function (n) {
     objs[n] = load(n);
   });
-  var tt = tags(objs);
+  const tt = tags(objs);
 
   assert.deepEqual(tt['nice-tag'].members, ['a']);
   assert.deepEqual(tt['nice-tag'].label, 'Nice Tag');

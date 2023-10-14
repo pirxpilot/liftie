@@ -1,6 +1,6 @@
-var test = require('node:test');
-var assert = require('node:assert/strict');
-var coerce = require('../../lib/tools/coerce');
+const test = require('node:test');
+const assert = require('node:assert/strict');
+const coerce = require('../../lib/tools/coerce');
 
 test('coerce should report "scheduled" when in doubt', function () {
   assert.equal(coerce(''), 'scheduled');

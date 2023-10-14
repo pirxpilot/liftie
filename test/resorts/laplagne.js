@@ -1,7 +1,6 @@
 const lifts = require('../lifts');
 
-lifts('laplagne',
-'html', {
+lifts('laplagne', 'html', {
   'AIME LA PLAGNE': 'scheduled',
   'BECOIN': 'scheduled',
   'CRETES': 'closed',
@@ -24,7 +23,8 @@ lifts('laplagne',
   'FUNIPLAGNE GRANDE ROCHETTE': 'scheduled',
   'MELEZES': 'scheduled',
   'SOLU': 'scheduled',
-  'TELEBUS': 'open', 'LOVATIERE': 'scheduled',
+  'TELEBUS': 'open',
+  'LOVATIERE': 'scheduled',
   'INDIENS': 'scheduled',
   'ANGE': 'scheduled',
   'ARPETTE.': 'scheduled',

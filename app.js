@@ -14,7 +14,7 @@ const app = module.exports = express();
 
 
 if (!process.env.SITE_URL) {
-  process.env.SITE_URL =  (app.get('env') === 'production') ?
+  process.env.SITE_URL = app.get('env') === 'production' ?
     'https://liftie.info' :
     'http://locahost:3000';
 }
@@ -72,13 +72,13 @@ app.data = require('./lib/routes/data')();
 require('./lib/routes')(app);
 
 app.run = function run() {
-  app.data.init(function(err) {
+  app.data.init(function (err) {
     if (err) {
       console.error(err);
       process.exit(1);
       return;
     }
-    http.createServer(app).listen(app.get('port'), function(){
+    http.createServer(app).listen(app.get('port'), function () {
       console.log(`Running on: http://localhost:${app.get('port')}`);
     });
   });

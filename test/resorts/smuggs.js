@@ -1,7 +1,6 @@
 const lifts = require('../lifts');
 
-lifts('smuggs',
-'html', {
+lifts('smuggs', 'html', {
   'Sterling Summit Lift': 'open',
   'Sterling T-Bar Lift': 'closed',
   'Mogul Mouse\'s Magic Lift': 'closed',

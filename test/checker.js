@@ -1,9 +1,9 @@
-var test = require('node:test');
-var assert = require('node:assert/strict');
-var check = require('../lib/checker');
+const test = require('node:test');
+const assert = require('node:assert/strict');
+const check = require('../lib/checker');
 
 test('stats should return valid names when requested not specified', function () {
-  var valid = ['a', 'b', 'c'];
+  const valid = ['a', 'b', 'c'];
   valid.forEach(function (v) {
     valid[v] = true;
   });
@@ -11,7 +11,7 @@ test('stats should return valid names when requested not specified', function ()
 });
 
 test('stats should filter out invalid names', function () {
-  var valid = ['a', 'b', 'c'];
+  const valid = ['a', 'b', 'c'];
   valid.forEach(function (v) {
     valid[v] = true;
   });
@@ -21,7 +21,7 @@ test('stats should filter out invalid names', function () {
 });
 
 test('stats should work with Arrays', function () {
-  var valid = ['a', 'b', 'c'];
+  const valid = ['a', 'b', 'c'];
   valid.forEach(function (v) {
     valid[v] = true;
   });

@@ -1,18 +1,18 @@
-var test = require('node:test');
-var assert = require('node:assert/strict');
-var sorter = require('../../lib/routes/sorter');
+const test = require('node:test');
+const assert = require('node:assert/strict');
+const sorter = require('../../lib/routes/sorter');
 
 function id2resorts(commaSeparatedIds) {
   return commaSeparatedIds.split(',').map(function (id) {
     return {
-      id: id,
+      id,
       name: id.toUpperCase()
     };
   });
 }
 
 test('sorter should mark all as open if no cookie', function () {
-  var resorts = id2resorts('a,b,c,d,e');
+  let resorts = id2resorts('a,b,c,d,e');
 
   resorts = sorter(resorts, {});
 
@@ -22,7 +22,7 @@ test('sorter should mark all as open if no cookie', function () {
 });
 
 test('sorter should mark none as open if no cookie and at least 5 resorts', function () {
-  var resorts = id2resorts('a,b,c,d,e,f');
+  let resorts = id2resorts('a,b,c,d,e,f');
 
   resorts = sorter(resorts, {});
 
@@ -32,7 +32,7 @@ test('sorter should mark none as open if no cookie and at least 5 resorts', func
 });
 
 test('sorter should mark none as open if empty cookie', function () {
-  var resorts = id2resorts('a,b,c,d,e');
+  let resorts = id2resorts('a,b,c,d,e');
 
   resorts = sorter(resorts, {
     'resorts-open': ''
@@ -44,7 +44,7 @@ test('sorter should mark none as open if empty cookie', function () {
 });
 
 test('sorter should mark none as open if cookie has unknown names', function () {
-  var resorts = id2resorts('a,b,c,d,e');
+  let resorts = id2resorts('a,b,c,d,e');
 
   resorts = sorter(resorts, {
     'resorts-open': 'x,y'
@@ -57,7 +57,7 @@ test('sorter should mark none as open if cookie has unknown names', function () 
 
 
 test('sorter should mark mark and sort if cookie present', function () {
-  var resorts = id2resorts('a,e,c,d,b');
+  let resorts = id2resorts('a,e,c,d,b');
 
   resorts = sorter(resorts, {
     'resorts-open': 'e,b'
@@ -76,7 +76,7 @@ test('sorter should mark mark and sort if cookie present', function () {
 });
 
 test('sorter should update resort status', function () {
-  var resorts = id2resorts('a,b');
+  let resorts = id2resorts('a,b');
 
   resorts[0].open = true;
 
