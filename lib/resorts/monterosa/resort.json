@@ -1,0 +1,15 @@
+{
+  "name": "Monterosa",
+  "url": {
+    "host": "https://visitmonterosa.com",
+    "pathname": "/in-tempo-reale/skirama/monterosa-ski-3-valli"
+  },
+  "tags": [
+    "Italy",
+    "Alps"
+  ],
+  "ll": [
+    7.833333,
+    45.833333
+  ]
+}
