@@ -146,11 +146,6 @@
   resolved "https://registry.yarnpkg.com/@esbuild/win32-x64/-/win32-x64-0.19.5.tgz#faad84c41ba12e3a0acb52571df9bff37bee75f6"
   integrity sha512-czTrygUsB/jlM8qEW5MD8bgYU2Xg14lo6kBDXW6HdxKjh8M5PzETGiSHaz9MtbXBYDloHNUAUW2tMiKW4KM9Mw==
 
-"@folder/readdir@^3.1.0":
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/@folder/readdir/-/readdir-3.1.0.tgz#f0c64b5d67669ba6f8374bb8d0dc376f36532b1e"
-  integrity sha512-mqkVdQ77BcCOWur/dxoPxjJS2eJg8Eqqx1Dgdc/qbTeGI5UMPDLmT0peGEjxLdlnD9SvhMnpJuiyaYl2btdT6A==
-
 "@pirxpilot/events@~1":
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/@pirxpilot/events/-/events-1.0.1.tgz#15068c967573d8b1a1482debd74384fafa1bd2b8"
@@ -412,22 +407,20 @@ concat-map@0.0.1:
   resolved "https://registry.yarnpkg.com/concat-map/-/concat-map-0.0.1.tgz#d8a96bd77fd68df7793a73036a3ba0d5405d477b"
   integrity sha512-/Srv4dswyQNBfohGpz9o6Yb3Gz3SrUDqBH5rTuhGR7ahtlbYKnVxw2bCFMRljaA7EXHaXZ8wsHdodFvbkhKmqg==
 
-connect-cachify-static@^3.0.0, connect-cachify-static@~3:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/connect-cachify-static/-/connect-cachify-static-3.0.1.tgz#9f48e9fccda65f907b73a542592318f2a78f6104"
-  integrity sha512-q29JE5iSOHaxQrrsM8smiKG4QPZXhT36q284xqmCOeF515djTWwUPgTMB9F+chbY7vggP/R25R46/SfAx24tow==
+connect-cachify-static@^4.0.0, connect-cachify-static@~4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/connect-cachify-static/-/connect-cachify-static-4.0.0.tgz#f25954dd1f256e8dfcc6080b457a286528cb24dc"
+  integrity sha512-nAho/7JzVztdXsNICAtz5VzO7kkqP6s+7OF9IeEKPnWHzm+jgUUMrEL9rd1V7wtj9FVquBlUQBpjlxxibQc74Q==
   dependencies:
-    "@folder/readdir" "^3.1.0"
     debug "~2||~3||~4"
     on-headers "^1.0.0"
     parseurl "~1"
 
-connect-gzip-static@^3.0.0:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/connect-gzip-static/-/connect-gzip-static-3.0.1.tgz#7dcd2165031875a5f019964b8bb8e60c9f9b7b47"
-  integrity sha512-VVqi1fJ4uZK8aIrb1BN9n7tsRAbc3BhkIo/mz1VuNhYC2KDuP1ZgCDapjYIfT3mcGgWzyUr04kv7nmnGOnCvWg==
+connect-gzip-static@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/connect-gzip-static/-/connect-gzip-static-4.0.0.tgz#4d3bd27e9e9d42b181bd977d2570d446dd948275"
+  integrity sha512-FUqVdpuOzlHC4+1BE4e64HMbVMQanczQke7olQbXYd6h1ptKFZPx2Kob3SzcKTA19bsIu18oLP+A+sbh3MfByA==
   dependencies:
-    "@folder/readdir" "^3.1.0"
     debug "~2||~3||~4"
     parseurl "~1"
     send "~0"
@@ -1097,12 +1090,12 @@ picomatch@^2.0.4, picomatch@^2.2.1:
   resolved "https://registry.yarnpkg.com/picomatch/-/picomatch-2.3.1.tgz#3ba3833733646d9d3e4995946c1365a67fb07a42"
   integrity sha512-JU3teHTNjmE2VCGFzuY8EXzCDVwEqB2a8fsIvwaStHhAWJEeVd1o1QD80CU6+ZdEXXSLbSsuLwJjkCBWqRQUVA==
 
-postcss-cachify@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/postcss-cachify/-/postcss-cachify-3.0.0.tgz#ff1e509106741c677656409e6e50beb3d0601688"
-  integrity sha512-rHCoaS1vwtYlux7HZfJ1bTl/BPC1XTN5dHRGs8LiQz1lA8dEibcfV6QOP4nVyf6WIzugDNQimDNcEFQr4gkx3g==
+postcss-cachify@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/postcss-cachify/-/postcss-cachify-4.0.0.tgz#a0aa0660cae7acb18f70e5e0c9a146fbfb322269"
+  integrity sha512-ocZNRNMwh131O6JVINL7+uWAcVLtCLhGDXcQiqbXu2tDmCGgT6x5xd04xtC94NhDlNUeYEZ6EJJ8QOxI5k+8SQ==
   dependencies:
-    connect-cachify-static "~3"
+    connect-cachify-static "~4.0.0"
     debug "~3 || ~4"
 
 postcss-cli-simple@~4.0.0:

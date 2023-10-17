@@ -26,7 +26,10 @@
     "rating": "ro-rating",
     "swipe": "@pirxpilot/swipe"
   },
-  "repository": "pirxpilot/liftie",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pirxpilot/liftie.git"
+  },
   "scripts": {
     "start": "node app.js",
     "test": "make lint test"
@@ -36,8 +39,8 @@
     "@pirxpilot/k": "^1.0.0",
     "@pirxpilot/swipe": "^2.0.2",
     "async": "~3",
-    "connect-cachify-static": "^3.0.0",
-    "connect-gzip-static": "^3.0.0",
+    "connect-cachify-static": "^4.0.0",
+    "connect-gzip-static": "^4.0.0",
     "cookie-parser": "^1.4.3",
     "css-select": "~5",
     "debounce": "^1.0.0",
@@ -64,9 +67,12 @@
     "clean-css-cli": "^5.1.0",
     "commander": "~2",
     "postcss": "~8",
-    "postcss-cachify": "^3.0.0",
+    "postcss-cachify": "^4.0.0",
     "postcss-cli-simple": "~4.0.0",
     "prompt": "~1",
     "stylus": "^0.59.0"
+  },
+  "engines": {
+    "node": ">= 20.1.0"
   }
 }
