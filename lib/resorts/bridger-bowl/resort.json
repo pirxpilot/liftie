@@ -7,7 +7,7 @@
   "api": {
     "host": "https://api.bridgerbowl.com",
     "pathname": "/graphql",
-    "body":  {
+    "body": {
       "query": "query Query { lift_status { display_name status } }"
     }
   },
@@ -19,5 +19,5 @@
     45.817974
   ],
   "twitter": "bridgerbowl",
-  "noaa": "TFX/101,63"
+  "noaa": "TFX/102,64"
 }
