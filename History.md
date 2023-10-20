@@ -1,4 +1,11 @@
 
+3.44.0 / 2023-10-20
+===================
+
+ * add Cervino resort
+ * fix Paganella resort
+ * update NOAA stations info
+
 3.43.1 / 2023-10-17
 ===================
 
