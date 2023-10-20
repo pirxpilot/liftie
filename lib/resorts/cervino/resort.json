@@ -1,0 +1,15 @@
+{
+  "name": "Cervino Ski Paradise",
+  "url": {
+    "host": "https://www.cervinia.it",
+    "pathname": "/en/impianti"
+  },
+  "tags": [
+    "Italy",
+    "Alps"
+  ],
+  "ll": [
+    45.93426991893467,
+    7.632435690816057
+  ]
+}
