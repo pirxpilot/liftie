@@ -346,6 +346,7 @@ header .ls-furkot
 
     .webcam
       max-width 100%
+      display inline-block
 
       >a
         display block
@@ -365,11 +366,6 @@ header .ls-furkot
         .title
           margin-bottom .5em
           text-align center
-
-      &.desktop
-        display inline-block
-      &.mobile
-        display none
 
   .snow
     .value
@@ -505,7 +501,7 @@ for col in 4 3 2 1
       display none
 
 @media screen and (max-width: 400px)
-  .extras .webcams .webcam
+  .extras
     &.desktop
       display none
 
