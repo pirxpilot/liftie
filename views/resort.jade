@@ -94,22 +94,21 @@ mixin addToTrip(resort)
       span.ls-furkot
       span Plan trip to #{resort.name}
 
-mixin webcam(webcam, mobile)
-  div(class='webcam ' + (mobile ? 'mobile' : 'desktop'))
+mixin webcam(webcam)
+  .webcam
     a(target="_blank", rel='noopener')
       .title
       img.active(src="")
       img.inactive(src="")
     .notice
-      != webcam && ((mobile && webcam.mobile) ? webcam.mobile.notice : webcam.notice)
+      != webcam?.notice
 
 mixin webcams(resort)
-  .tile.webcams(class= resort.webcams && resort.webcams.length ? 'visible' : 'hidden')
+  .tile.webcams(class= resort.webcams?.length ? 'visible' : 'hidden')
     .swipe
       ul
         li
-          +webcam(resort.webcams && resort.webcams[0])
-          +webcam(resort.webcams && resort.webcams[0], true)
+          +webcam(resort.webcams?.[0])
     .pager
 
 mixin bestDeal(resort)

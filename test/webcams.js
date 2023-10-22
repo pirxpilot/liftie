@@ -4,6 +4,10 @@ const webcams = require('../lib/webcams');
 
 require('./replay');
 
+if (process.env.REPLAY !== 'record') {
+  process.env.WEBCAMS_API_KEY = 'TEST_KEY';
+}
+
 test('webcams should return no webcams if location is missing', function (t, done) {
   webcams({}, function (err, webcams) {
     assert.ifError(err);
@@ -12,12 +16,10 @@ test('webcams should return no webcams if location is missing', function (t, don
   });
 });
 
-
 test('webcams should return webcams for valid location', function (t, done) {
-  process.env.WEBCAMS_API_KEY = 'TEST_KEY';
   webcams({
     counter: 1,
-    ll: [7.98, 46.54] // from API examples https://developers.webcams.travel/#webcams/examples
+    ll: [7.98, 46.54] // from API examples https://windy.com/webcams/1697038975'
   }, function (err, webcams) {
     delete process.env.WEBCAMS_API_KEY;
 
@@ -27,19 +29,10 @@ test('webcams should return webcams for valid location', function (t, done) {
 
     const webcam = webcams[0];
 
-    assert.equal(webcam.name, 'Fieschertal: Jungfrau - Wengen - Interlaken');
-    assert.ok(webcam.source.startsWith('https://www.windy.com/webcams/1329413077'));
-    assert.ok(webcam.image.startsWith('https://images-webcams.windy.com'));
-    assert.ok(webcam.notice.startsWith('Webcams provided by\n<a href="https://www.windy.com/"'));
-
-    assert.equal(typeof webcam.mobile, 'object');
-
-    const mobile = webcam.mobile;
-
-    assert.equal(mobile.name, 'Fieschertal: Jungfrau - Wengen - Interlaken');
-    assert.ok(mobile.source.startsWith('https://www.windy.com/webcams/1329413077'));
-    assert.ok(mobile.image.startsWith('https://images-webcams.windy.com'));
-    assert.ok(mobile.notice.startsWith('Webcams provided by\n<a href="https://www.windy.com/"'));
+    assert.equal(webcam.name, 'Fieschertal: Jungfraujoch');
+    assert.equal(webcam.source, 'https://windy.com/webcams/1697038975');
+    assert.match(webcam.image, /^https:\/\/images-webcams.windy.com\//);
+    assert.match(webcam.notice, /^Webcams provided by\n<a href="https:\/\/www.windy.com\/"/);
 
     done();
   });
