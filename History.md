@@ -1,4 +1,10 @@
 
+3.44.1 / 2023-10-22
+===================
+
+ * upgrade to Webcams API v3
+ * fix Cervino coordinates
+
 3.44.0 / 2023-10-20
 ===================
 
