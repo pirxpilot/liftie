@@ -1,0 +1,16 @@
+{
+  "name": "Piancavallo",
+  "url": {
+    "host": "https://www.turismofvg.it",
+    "pathname": "/montagna/infoneve?hub=piancavallo&day=today&type=4"
+  },
+  "tags": [
+    "Italy",
+    "Alps",
+    "Friuli Venezia Giulia"
+  ],
+  "ll": [
+    12.51721,
+    46.10733
+  ]
+}

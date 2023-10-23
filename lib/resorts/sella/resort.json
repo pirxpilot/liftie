@@ -1,0 +1,16 @@
+{
+  "name": "Sella Nevea",
+  "url": {
+    "host": "https://www.turismofvg.it",
+    "pathname": "/montagna/infoneve?hub=sella&day=today&type=4"
+  },
+  "tags": [
+    "Italy",
+    "Alps",
+    "Friuli Venezia Giulia"
+  ],
+  "ll": [
+    13.47331,
+    46.38774
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "Forni di Sopra",
+  "url": {
+    "host": "https://www.turismofvg.it",
+    "pathname": "/montagna/infoneve?hub=forni&day=today&type=4"
+  },
+  "tags": [
+    "Italy",
+    "Alps",
+    "Friuli Venezia Giulia"
+  ],
+  "ll": [
+    12.58232,
+    46.42171
+  ]
+}
