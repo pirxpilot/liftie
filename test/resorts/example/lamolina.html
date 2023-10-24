@@ -1,0 +1,1281 @@
+<!DOCTYPE html>
+<!--[if lte IE 8]> <html class="oldie" lang="en"> <![endif]-->
+<!--[if IE 9]> <html class="ie9" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--> <html lang="en"> <!--<![endif]-->
+    <head>
+        <title>Snow report | La Molina - Winter</title>
+                <meta name="description" content="Discover the weather conditions, snow depths and snow quality with the daily snow report." />
+<meta name="keywords" content="snow depths, snow quality, weather conditions, wind, snow report, La Molina, ski resort" />                                                                                                                                                                                                    <meta name="google-site-verification" content="7hfwLXSXb09_Qj0xCFk6KqCh9InFVWNRoWzXFgIsWsg" />                                                                                                                        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+        <meta http-equiv="Content-Language" content="en" />
+        <meta http-equiv="Content-Script-Type" content="text/javascript"/>
+        <meta http-equiv="Content-Style-Type" content="text/css" />
+        <meta property="og:description" content="Discover the weather conditions, snow depths and snow quality with the daily snow report." />        <meta property="og:title" content="Snow report | La Molina - Winter" />
+		<meta property="og:image" content="/content/imgs/imgs2019/logo.png" />
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" href="/favicon-ios.png" />
+        <link rel="alternate" type="application/rss+xml" title="RSS" href="https://www.lamolina.cat/feed/en/" />
+        <link rel="stylesheet" href="/content/css/fa/css/font-awesome.min.css">
+        <link href="/content/css/selectric.css" rel="stylesheet" type="text/css" />
+		        <link rel="alternate" hreflang="ca" href="https://www.lamolina.cat/hivern/estacio/comunicat-neu/" />
+                    <link rel="alternate" hreflang="es" href="https://www.lamolina.cat/es/invierno/estacion/parte-nieve/" />
+                    <link rel="alternate" hreflang="en" href="https://www.lamolina.cat/en/winter/resort/snow-report/" />
+            
+		<link href="https://www.lamolina.cat/data/public/molina/en/cache/css-js/d8f6aedcc3c85e0ccdfc1bcfba4e3b35.php?update=1698130007" rel="stylesheet" type="text/css" />
+		<script src="https://www.lamolina.cat/data/public/molina/en/cache/css-js/3339218ece69498c79e76a271abafecc.php?update=1698130007" type="text/javascript"></script>        <meta property="og:image" content="https://www.lamolina.cat/content/imgs/logo.jpg">
+	<meta property="og:image" content="https://www.lamolina.cat/content/imgsxml/galerias/texto/74/headm-01-estacio-01-estacio-portada.jpg">
+		<meta name="google-site-verification" content="wbt1p7fs_mBdXV9e31rx9COUAT4jrOgmHSJsbR5Mjhg" />
+<meta name="google-play-app" content="app-id=com.lamolina.lamolina">
+<link href="https://www.skitude.com/css/jquery.smartbanner.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600" rel="stylesheet">
+<script src="https://www.skitude.com/js/jquery.smartbanner.js"></script>
+<meta name="facebook-domain-verification" content="akj7k2cybsfsuulirwaqr6g1p4ghv0" /> <meta name="apple-itunes-app" content="app-id=1260899516">    </head>
+        <body id="" class="v pl-comunicado pg74 banner robapaginas" itemscope itemtype="http://schema.org/WebPage">
+        <script type="text/javascript">
+    dataLayer = [{
+      'dl_season' : 'hivern',          'dl_section' : 'estacio',
+            'dl_language' : 'en'
+    }];
+    </script>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N3WBDS8V"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-N3WBDS8V');</script>    
+        <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+            <div id="menumobile2"><div class="buttonsdef buttons_mov">
+        	<div class="weather">
+
+			<!-- DEBUG: codigo icono clima 3 -->		<div class="text"><strong>6.4º</strong>
+			<div>meteo</div>
+		</div>
+			</div>
+	<div class="webcam">
+		<div class="icon"></div>
+		<div class="text"><div>Webcams</div></div>
+	</div>
+		<div class="snow">
+		<div class="icon"></div>
+		<div class="text"><div>Snow report</div></div>
+			</div>
+		</div></div>
+<div id="menumobile">
+    <div class="close"><i class="close"></i></div>
+    <a class="capatelefonos fa fa-phone" href="#capatelefonos"></a>
+        <div class="alerts">
+        <div class="alist"></div>
+            <div class="language mobile">
+        <p class="en"><i style="background-image:url(/content/imgs/lang/flag-en.png)"></i><span></span></p>
+        <ul>
+            <li><a hreflang="ca" rel="alternate" rev="alternate" href="/hivern/estacio/comunicat-neu/" data-gtm-event="lang" data-gtm-lang="ca"><i style="background-image:url(/content/imgs/lang/flag-ca.png)"></i></a></li>
+            <li><a hreflang="es" rel="alternate" rev="alternate" href="/es/invierno/estacion/parte-nieve/" data-gtm-event="lang" data-gtm-lang="es"><i style="background-image:url(/content/imgs/lang/flag-es.png)"></i></a></li>
+                        
+        </ul>
+    </div>
+        </div>
+    <div class="scroller">
+        <ul id="navmobile">
+                            <li data-id="27" class="ppal on">
+                    <a href="/en/winter/resort/the-resort/" title="Resort">Resort</a>
+                </li>
+                <li data-son="27" class="sm"><a href="/en/winter/resort/the-resort/" title="The resort"><i></i>The resort</a></li>
+                <li data-son="27" class="sm"><a href="/en/winter/resort/opening-hours-calendar/" title="Opening hours and calendar"><i></i>Opening hours and calendar</a></li>
+                <li data-son="27" class="sm"><a href="/en/winter/resort/ski-passes-tickets-prices/" title="Ski passes and tickets prices"><i></i>Ski passes and tickets prices</a></li>
+                <li data-son="27" class="sm"><a href="/en/winter/resort/photos/" title="Photos"><i></i>Photos</a></li>
+                <li data-son="27" class="sm"><a href="/en/winter/resort/freestyle-la-molina/" title="Freestyle La Molina"><i></i>Freestyle La Molina</a></li>
+                <li data-son="27" class="sm"><a href="https://lamolina.3dmap.spotlio.com/?locale=en" title="Interactive 3D Map"><i></i>Interactive 3D Map</a></li>
+                <li data-son="27" class="sm"><a href="/en/winter/resort/location/" title="Location"><i></i>Location</a></li>
+                <li data-son="27" class="sm"><a href="/en/winter/resort/snow-report/" title="Facilities Opening Status"><i></i>Facilities Opening Status</a></li>
+                <li data-son="27" class="sm"><a href="/en/winter/resort/la-molina-masella/" title="La Molina - Masella"><i></i>La Molina - Masella</a></li>
+                <li data-son="27" class="sm"><a href="/en/winter/resort/safety-advice/" title="Safety advice"><i></i>Safety advice</a></li>
+                <li data-son="27" class="sm"><a href="/en/winter/resort/la-molina-app/" title="La Molina App"><i></i>La Molina App</a></li>
+                <li data-son="27" class="sm last"><a href="https://www.turismefgc.cat/en/environment-care-and-quality/" title="Environment & Quality"><i></i>Quality & Environment</a></li>
+                                        <li data-id="28" class="ppal">
+                    <a href="/en/winter/services/rental/" title="Services">Services</a>
+                </li>
+                <li data-son="28" class="sm"><a href="https://www.turismefgc.cat/es/agencias-homologadas/?_ga=2.85304285.512410584.1649757563-2048876046.1649757563" title="Approved Marketing Agencies"><i></i>Approved Marketing Agencies</a></li>
+                <li data-son="28" class="sm"><a href="/en/winter/services/rental/" title="Equipment rental"><i></i>Equipment rental</a></li>
+                <li data-son="28" class="sm"><a href="/en/winter/services/equipment-lockers/" title="Equipment lockers"><i></i>Equipment lockers</a></li>
+                <li data-son="28" class="sm"><a href="/en/winter/services/competition-stadiums-reservation/" title="Competition stadiums reservation"><i></i>Competition stadiums reservation</a></li>
+                <li data-son="28" class="sm"><a href="/en/winter/services/schools/" title="Ski and snowboard schools"><i></i>Ski and snowboard schools</a></li>
+                <li data-son="28" class="sm"><a href="/en/winter/services/transport-slopes/" title="Transport to the slopes"><i></i>Transport to the slopes</a></li>
+                <li data-son="28" class="sm"><a href="/en/winter/services/medical-services/" title="Medical services"><i></i>Medical services</a></li>
+                <li data-son="28" class="sm"><a href="/en/winter/services/children-playground/" title="Children Playground"><i></i>Children Playground</a></li>
+                <li data-son="28" class="sm"><a href="/en/winter/services/adapted-sports-center/" title="Adapted Sports Center"><i></i>Adapted Sport Center</a></li>
+                <li data-son="28" class="sm"><a href="/en/winter/services/bars-restaurants/" title="Bars and Restaurants"><i></i>Bars and Restaurants</a></li>
+                <li data-son="28" class="sm"><a href="/en/winter/services/accommodation/" title="Accommodation"><i></i>Accommodation</a></li>
+                <li data-son="28" class="sm last"><a href="/en/winter/services/atm/" title="ATM"><i></i>ATM</a></li>
+                                        <li data-id="29" class="ppal">
+                    <a href="/en/winter/activities/" title="Activities">Activities</a>
+                </li>
+                <li data-son="29" class="sm"><a href="/en/winter/activities/tubbing-slopes/" title="Tubbing Slopes"><i></i>Tubbing Slopes</a></li>
+                <li data-son="29" class="sm"><a href="/en/winter/activities/sledges-track/" title="Sledges track"><i></i>Sledges track</a></li>
+                <li data-son="29" class="sm"><a href="/en/winter/activities/fun-park/" title="Fun Park"><i></i>Fun Park</a></li>
+                <li data-son="29" class="sm"><a href="/en/winter/activities/panoramic-gondola-ride/" title="Panoramic Gondola Gondola ride"><i></i>Panoramic Gondola ride</a></li>
+                <li data-son="29" class="sm"><a href="/en/winter/activities/trees-adventure-park/" title="Trees Adventure park"><i></i>Trees Adventure park</a></li>
+                <li data-son="29" class="sm"><a href="/en/winter/activities/segway/" title="Segway"><i></i>Segway</a></li>
+                <li data-son="29" class="sm"><a href="/en/winter/activities/nordic-walking/" title="Nordic Walking"><i></i>Nordic Walking</a></li>
+                <li data-son="29" class="sm"><a href="/en/winter/activities/spa/" title="Spa"><i></i>Spa</a></li>
+                <li data-son="29" class="sm"><a href="/en/winter/activities/bowling/" title="Bowling"><i></i>Bowling</a></li>
+                <li data-son="29" class="sm"><a href="/en/winter/activities/chair-ride/" title="Tandem Adapted  Ride"><i></i>Tandem Adapted Ride</a></li>
+                <li data-son="29" class="sm"><a href="/en/winter/activities/escape-snow/" title="Escape Snow La Molina"><i></i>Escape Snow La Molina</a></li>
+                <li data-son="29" class="sm"><a href="/en/winter/activities/night-descent/" title="Night descent"><i></i>Night descent</a></li>
+                <li data-son="29" class="sm"><a href="/en/winter/activities/circuit-snowshoe-discovery-wildlife/" title="Snowshoe Circuit: Wildlife Discovery"><i></i>Snowshoe Circuit: Wildlife Discovery</a></li>
+                <li data-son="29" class="sm"><a href="/en/winter/activities/snowshoeing/" title="Snowshoeing"><i></i>Snowshoeing</a></li>
+                <li data-son="29" class="sm"><a href="https://www.turismefgc.cat/en/skimo/" title="FGC Skimo: Skitouring"><i></i>FGC Skimo: Skitouring</a></li>
+                <li data-son="29" class="sm"><a href="/en/winter/activities/mountain-activities-mountain-skiing/" title="Mountain skiing and mountain activities"><i></i>Mountain skiing and mountain activities</a></li>
+                <li data-son="29" class="sm"><a href="/en/winter/activities/arva-park/" title="ARVA park"><i></i>ARVA park</a></li>
+                <li data-son="29" class="sm"><a href="https://www.lamolina.cat/en/photopoint/" title="Photopoint La Molina"><i></i>Photopoint La Molina</a></li>
+                <li data-son="29" class="sm last"><a href="/en/winter/activities/technological-slalom/" title="Nissan e-POWER Slalom"><i></i>Nissan e-POWER Slalom</a></li>
+                                        <li data-id="30" class="ppal">
+                    <a href="/en/winter/news/events/" title="News">News</a>
+                </li>
+                <li data-son="30" class="sm"><a href="/en/winter/news/events/" title="Events"><i></i>Events</a></li>
+                <li data-son="30" class="sm last"><a href="/en/winternews/news/" title="News"><i></i>News</a></li>
+                                        <li data-id="42" class="ppal bookings">
+                    <a href="/en/winter/webshop/ski-passes/" title="Webshop">Webshop</a>
+                </li>
+                <li data-son="42" class="sm"><a href="/en/winter/webshop/ski-passes/" title="La Molina Ski Passes"><i></i>La Molina Ski Passes</a></li>
+                <li data-son="42" class="sm"><a href="/en/winter/webshop/experiences/" title="Experiences"><i></i>Experiences</a></li>
+                <li data-son="42" class="sm"><a href="/en/winter/webshop/activities/" title="Activities"><i></i>Activities</a></li>
+                <li data-son="42" class="sm"><a href="/en/winter/webshop/groups-schools-companies/" title="Groups, schools and companies"><i></i>Groups, schools and companies</a></li>
+                <li data-son="42" class="sm last"><a href="https://www.turismefgc.cat/en/b2b/" title="Travel agencies"><i></i>Travel agencies</a></li>
+                    					<li class="ppal"><a href="http://www.turismefgc.cat/en/blog/la-molina/" target="_blank" rel="noopener noreferrer">Blog</a></li>
+					    </ul>
+        <div class="season winter mobile">
+            <div>
+                <a href="javascript:" class="wintersel" data-gtm-event="season" data-gtm-season="hivern"><i></i>Winter</a>
+                <a href="javascript:" class="switch" data-gtm-event="season" data-gtm-season="estiu"></a>
+                <a href="javascript:" class="summersel" data-gtm-event="season" data-gtm-season="estiu">Summer<i></i></a>
+            </div>
+        </div>
+        
+    <div class="logogene mobile">
+        <a href="http://www.gencat.cat" target="_blank" rel="noopener noreferrer" title="Generalitat de Catalunya"><img src="/content/imgs/imgs2019/logo-gencat-gris.png" title="Generalitat de Catalunya"></a>
+    </div>
+    </div>
+</div>
+            <div class="fullcontainer">
+        <header>
+            <div id="top">
+                <div class="frame clearfix">
+                    <div class="logo">
+                        <img src="/content/imgs/imgs2019/gencat.png" alt="Generalitat de Catalunya" title="Generalitat de Catalunya" >
+                    </div>
+                    <div id="alertalay"></div>
+                                        <div class="season winter">
+                        <div>
+                            <a href="javascript:" class="wintersel" data-gtm-event="season" data-gtm-season="hivern"><i></i><span>Winter</span></a>
+                            <div class="switch"></div>
+                            <a href="javascript:" class="summersel" data-gtm-event="season" data-gtm-season="estiu"><span>Summer</span><i></i></a>
+                        </div>
+                    </div>
+                                                            <div class="info capatelefonos desktop">
+                            <i class="phone"></i>+ 34 972 89 20 31                            <div id="capatelefonos" class="desktop">
+                                <div class="capa0"></div>
+                                <div class="capa1">
+                                                                    <div class="telefono">
+                                        Resort info: </span>
+                                        <span class="numero">+34 972 89 20 31</span>
+                                    </div>
+                                                                    <div class="telefono">
+                                        Emergency: </span>
+                                        <span class="numero">+34 972 145 087</span>
+                                    </div>
+                                                                    <div class="telefono">
+                                        Commercial Attention: </span>
+                                        <span class="numero">+34 932 041 041</span>
+                                    </div>
+                                                                </div>
+                            </div>
+                        </div>
+                                                            <div class="language">
+                        <p class="en"><i style="background-image:url(/content/imgs/lang/flag-en.png)"></i><span></span></p>
+                        <ul>
+                            <li onclick="document.location.href='/hivern/estacio/comunicat-neu/'"><i style="background-image:url(/content/imgs/lang/flag-ca.png)"></i><a hreflang="ca" rel="alternate" rev="alternate" href="/hivern/estacio/comunicat-neu/" data-gtm-event="lang" data-gtm-lang="ca">ca</a></li>
+                            <li onclick="document.location.href='/es/invierno/estacion/parte-nieve/'"><i style="background-image:url(/content/imgs/lang/flag-es.png)"></i><a hreflang="es" rel="alternate" rev="alternate" href="/es/invierno/estacion/parte-nieve/" data-gtm-event="lang" data-gtm-lang="es">es</a></li>
+                                                        
+                        </ul>
+                    </div>
+                                        <div class="followus_header">
+                    <section class="followus">
+    <ul>
+    	            <li><a class="fa fa-facebook" href="https://www.facebook.com/lamolina.cat" target="_blank" rel="noopener noreferrer" onclick='trackEvent("Redes sociales header", "Facebook");' title="Facebook"></a></li>
+                                    <li><a class="fa fa-twitter" href="https://twitter.com/SnowLaMolina" target="_blank" rel="noopener noreferrer" onclick='trackEvent("Redes sociales header", "Twitter");' title="Twitter"></a></li>
+                                    <li><a class="fa fa-instagram" href="https://www.instagram.com/lamolina/" target="_blank" rel="noopener noreferrer" onclick='trackEvent("Redes sociales header", "Instagram");' title="Instagram"></a></li>
+                                    <li><a class="fa fa-youtube" href="https://www.youtube.com/user/SnowLaMolina" target="_blank" rel="noopener noreferrer" onclick='trackEvent("Redes sociales header", "Youtube");' title="Youtube"></a></li>
+                                        <li>
+                    <a href="https://www.tiktok.com/@lamolina_fgc" class="tiktok-header" target="_blank" rel="noopener noreferrer" onclick='trackEvent("Redes sociales header", "TikTok");' title="TikTok">       
+                        <svg id="Capa_1" enable-background="new 0 0 512 512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="m475.074 0h-438.148c-20.395 0-36.926 16.531-36.926 36.926v438.148c0 20.395 16.531 36.926 36.926 36.926h438.148c20.395 0 36.926-16.531 36.926-36.926v-438.148c0-20.395-16.531-36.926-36.926-36.926zm-90.827 195.959v34.613c-16.322.006-32.181-3.192-47.137-9.503-9.617-4.06-18.577-9.292-26.772-15.613l.246 106.542c-.103 23.991-9.594 46.532-26.772 63.51-13.98 13.82-31.695 22.609-50.895 25.453-4.512.668-9.103 1.011-13.746 1.011-20.553 0-40.067-6.659-56.029-18.943-3.004-2.313-5.876-4.82-8.612-7.521-18.617-18.4-28.217-43.34-26.601-69.575 1.234-19.971 9.229-39.017 22.558-53.945 17.635-19.754 42.306-30.719 68.684-30.719 4.643 0 9.234.348 13.746 1.017v12.798 35.601c-4.277-1.411-8.846-2.187-13.603-2.187-24.1 0-43.597 19.662-43.237 43.779.228 15.431 8.658 28.92 21.09 36.355 5.842 3.495 12.564 5.659 19.737 6.053 5.62.308 11.016-.474 16.013-2.124 17.218-5.688 29.639-21.861 29.639-40.935l.057-71.346v-130.252h47.668c.046 4.723.525 9.332 1.416 13.797 3.598 18.075 13.786 33.757 27.966 44.448 12.364 9.326 27.76 14.854 44.448 14.854.011 0 .148 0 .137-.011v12.843z"/></svg>
+                    </a>
+                </li>
+                            </ul>
+</section>                    </div>
+                </div>
+            
+            </div>
+            
+                        <div class="dynamic">
+                <div id="head">
+                    <div>
+                        <div class="container">
+                            <div class="mobilemenu">
+                                <div>
+                                    <i class="fa fa-bars open"></i>
+                                    <i class="close"></i>
+                                </div>
+                            </div>
+                            <div class="logo">
+                                                                <a href="/en/"><img src="/content/imgs/imgs2019/logo.png" alt="La Molina" title="La Molina"></a>
+                            </div>
+		                    	                            <div id="opencapatelefonos" class="phone">
+	                                <div>
+	                                <a class="capatelefonos mobile fa fa-phone" href="#capatelefonos"></a>
+	                                </div>
+	                            </div>
+	                            <div id="capatelefonos" class="mobile">
+	                            		                            		<div class="telefono">
+	                            			<a onclick="trackEvent('Telèfon', '+ 34 972 89 20 31');" href="tel:+ 34 972 89 20 31"><span class="texto">Resort info: </span>
+	                            			<span class="numero">+34 972 89 20 31</span></a>
+	                            		</div>
+                            			                            		<div class="telefono">
+	                            			<a onclick="trackEvent('Telèfon', '+ 34 972 89 20 31');" href="tel:+ 34 972 89 20 31"><span class="texto">Emergency: </span>
+	                            			<span class="numero">+34 972 145 087</span></a>
+	                            		</div>
+                            			                            		<div class="telefono">
+	                            			<a onclick="trackEvent('Telèfon', '+ 34 972 89 20 31');" href="tel:+ 34 972 89 20 31"><span class="texto">Commercial Attention: </span>
+	                            			<span class="numero">+34 932 041 041</span></a>
+	                            		</div>
+                            			                            </div>
+							                                <div class="contmenutools">
+        <ul id="nav">
+                                        <li data-id="27" class=" on">
+                        <a href="/en/winter/resort/the-resort/" title="Resort">Resort</a>
+                        <i></i>                    </li>
+                                        <li data-id="28" class="">
+                        <a href="/en/winter/services/rental/" title="Services">Services</a>
+                        <i></i>                    </li>
+                                        <li data-id="29" class="">
+                        <a href="/en/winter/activities/" title="Activities">Activities</a>
+                        <i></i>                    </li>
+                                        <li data-id="30" class="">
+                        <a href="/en/winter/news/events/" title="News">News</a>
+                        <i></i>                    </li>
+                                        <li data-id="42" class=" bookings">
+                        <a href="/en/winter/webshop/ski-passes/" title="Webshop">Webshop</a>
+                        <i></i>                    </li>
+                        <li class="blogmenu"><i></i><a href="http://www.turismefgc.cat/en/blog/la-molina/" target="_blank" rel="noopener noreferrer">Blog</a></li>
+                    </ul>
+    </div>
+                                <div class="buttonsdef buttons">
+        	<div class="weather">
+
+			<!-- DEBUG: codigo icono clima 3 -->		<div class="text"><strong>6.4º</strong>
+			<div>meteo</div>
+		</div>
+			</div>
+	<div class="webcam">
+		<div class="icon"></div>
+		<div class="text"><div>Webcams</div></div>
+	</div>
+		<div class="snow">
+		<div class="icon"></div>
+		<div class="text"><div>Snow report</div></div>
+			</div>
+		</div>                                <div class="m-bannerparte">
+                                                                        <a href="https://ad.doubleclick.net/ddm/trackclk/N1246177.4754838LAMOLINA0/B29057402.358940986;dc_trk_aid=549959818;dc_trk_cid=183265604;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;ltd=" target="_blank">
+                                                                            <img class="deferimg" src="/content/imgs/white.png" alt="" data-mobile="/content/imgsxml/banners/ip-es-lamolina-digital-bd-banner-300x250-150k.jpg" data-tablet="/content/imgsxml/banners/ip-es-lamolina-digital-bd-banner-300x250-150k.jpg" data-desktop="/content/imgsxml/banners/ip-es-lamolina-digital-bd-banner-300x250-150k.jpg">
+                                                                        </a>
+                                                                        <IMG SRC="https://ad.doubleclick.net/ddm/trackimp/N1246177.4754838LAMOLINA0/B29057402.358940986;dc_trk_aid=549959818;dc_trk_cid=183265604;ord=[timestamp];dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ltd=?" BORDER="0" HEIGHT="1" WIDTH="1" ALT="Advertisement">                                </div>
+                            <div class="cbooking">
+	<div class="buttonfixed">Buy in La Molina</div>
+	<div id="booking">	
+	</div>
+</div>
+<script type="text/javascript">
+$(function(){
+	
+	function switchBooking() {
+		if (!isMobile()) {
+			var c = $('#booking .header').parent().parent();
+			if (c.hasClass('closed')) {
+				c.css('height', 'auto');
+				var h = c.height();
+				c.css('height', '52px');
+
+				c.animate({height: h}, 500, function() {
+					c.removeClass('closed');	
+					c.css('height', '').css('overflow', '');		
+				})
+				
+				
+				
+				
+
+			} else {
+				closeBooking();		                
+			}
+		}
+	}
+	
+	function closeBooking() {
+		if ($('header').hasClass('fixed')) {
+			$('header.fixed #booking').fadeOut();
+		} else {
+			var c = $('#booking .header').parent().parent();
+			var h = c.height();
+			c.css('overflow', 'hidden').css('height', h).animate({ height: 52}, 500, function() {
+				c.addClass('closed');
+			});
+		}
+	}
+
+	function loadRate(id) {
+		
+		$('#booking').load('/content/comun/ajax_load_booking.php?bk=&idioma=en&ruta=/&season=2&id=' + id, function() {
+					$('.linkmobile').show();
+					
+				if ($('#formBk').length == 0) {
+					
+				} else {
+					$('.cbookingmobile.new_mobile .linkmobile').html("Buy in La Molina").attr('href', 'javascript:').click(function(e){
+						  e.preventDefault();
+						  $('.cbooking').addClass('on');
+						  return false;
+					});
+					$('.selectric').selectric();
+					$('#activ').change(function() {
+						loadRate($(this).val());
+					});
+					$('#openIn').click(function() {
+						$('#dateIn').datepicker('show');
+					});
+					$('#openOut').click(function() {
+						$('#dateOut').datepicker('show');
+					});
+					openDatePicker('#dateIn','#dateOut');
+					$('#booking .header').click(function() {
+						switchBooking();
+						
+					});
+										if ($('header').hasClass('fixed')) {
+						//closeBooking();
+					}
+									}
+			});
+	}
+
+	loadRate('');
+});
+</script>                        </div>
+                            <div class="submenu" data-id="27">
+        <div class="container">
+            <ul>
+            <li><i></i><a href="/en/winter/resort/the-resort/" title="The resort">The resort</a></li><li><i></i><a href="/en/winter/resort/opening-hours-calendar/" title="Opening hours and calendar">Opening hours and calendar</a></li><li><i></i><a href="/en/winter/resort/ski-passes-tickets-prices/" title="Ski passes and tickets prices">Ski passes and tickets prices</a></li><li><i></i><a href="/en/winter/resort/freestyle-la-molina/" title="Freestyle La Molina">Freestyle La Molina</a></li><li><i></i><a href="/en/winter/resort/location/" title="Location">Location</a></li></ul><ul>
+                <li><i></i><a href="/en/winter/resort/snow-report/" title="Facilities Opening Status">Facilities Opening Status</a></li><li><i></i><a href="/en/winter/resort/la-molina-masella/" title="La Molina - Masella">La Molina - Masella</a></li><li><i></i><a href="/en/winter/resort/safety-advice/" title="Safety advice">Safety advice</a></li><li><i></i><a href="/en/winter/resort/la-molina-app/" title="La Molina App">La Molina App</a></li><li><i></i><a href="https://www.turismefgc.cat/en/environment-care-and-quality/" title="Environment & Quality">Quality & Environment</a></li></ul><ul>
+                            </ul>
+        <ul><li>
+                    <i></i>
+                    <a href="https://lamolina.3dmap.spotlio.com/?locale=en">Interactive 3D Map</a></li>
+                                <li>
+                <i></i>
+                <a href="/en/winter/resort/photos/">Photos</a>
+            </li></ul>        </div>
+    </div>
+    <div class="submenu" data-id="28">
+        <div class="container">
+            <ul>
+            <li><i></i><a href="https://www.turismefgc.cat/es/agencias-homologadas/?_ga=2.85304285.512410584.1649757563-2048876046.1649757563" title="Approved Marketing Agencies">Approved Marketing Agencies</a></li><li><i></i><a href="/en/winter/services/rental/" title="Equipment rental">Equipment rental</a></li><li><i></i><a href="/en/winter/services/equipment-lockers/" title="Equipment lockers">Equipment lockers</a></li><li><i></i><a href="/en/winter/services/competition-stadiums-reservation/" title="Competition stadiums reservation">Competition stadiums reservation</a></li></ul><ul>
+                <li><i></i><a href="/en/winter/services/schools/" title="Ski and snowboard schools">Ski and snowboard schools</a></li><li><i></i><a href="/en/winter/services/transport-slopes/" title="Transport to the slopes">Transport to the slopes</a></li><li><i></i><a href="/en/winter/services/medical-services/" title="Medical services">Medical services</a></li><li><i></i><a href="/en/winter/services/children-playground/" title="Children Playground">Children Playground</a></li></ul><ul>
+                <li><i></i><a href="/en/winter/services/adapted-sports-center/" title="Adapted Sports Center">Adapted Sport Center</a></li><li><i></i><a href="/en/winter/services/bars-restaurants/" title="Bars and Restaurants">Bars and Restaurants</a></li><li><i></i><a href="/en/winter/services/accommodation/" title="Accommodation">Accommodation</a></li><li><i></i><a href="/en/winter/services/atm/" title="ATM">ATM</a></li></ul><ul>
+                            </ul>
+                </div>
+    </div>
+    <div class="submenu" data-id="29">
+        <div class="container">
+            <ul>
+            <li><i></i><a href="/en/winter/activities/tubbing-slopes/" title="Tubbing Slopes">Tubbing Slopes</a></li><li><i></i><a href="/en/winter/activities/sledges-track/" title="Sledges track">Sledges track</a></li><li><i></i><a href="/en/winter/activities/fun-park/" title="Fun Park">Fun Park</a></li><li><i></i><a href="/en/winter/activities/panoramic-gondola-ride/" title="Panoramic Gondola Gondola ride">Panoramic Gondola ride</a></li><li><i></i><a href="/en/winter/activities/trees-adventure-park/" title="Trees Adventure park">Trees Adventure park</a></li><li><i></i><a href="/en/winter/activities/segway/" title="Segway">Segway</a></li><li><i></i><a href="/en/winter/activities/nordic-walking/" title="Nordic Walking">Nordic Walking</a></li></ul><ul>
+                <li><i></i><a href="/en/winter/activities/spa/" title="Spa">Spa</a></li><li><i></i><a href="/en/winter/activities/bowling/" title="Bowling">Bowling</a></li><li><i></i><a href="/en/winter/activities/chair-ride/" title="Tandem Adapted  Ride">Tandem Adapted Ride</a></li><li><i></i><a href="/en/winter/activities/escape-snow/" title="Escape Snow La Molina">Escape Snow La Molina</a></li><li><i></i><a href="/en/winter/activities/night-descent/" title="Night descent">Night descent</a></li><li><i></i><a href="/en/winter/activities/circuit-snowshoe-discovery-wildlife/" title="Snowshoe Circuit: Wildlife Discovery">Snowshoe Circuit: Wildlife Discovery</a></li><li><i></i><a href="/en/winter/activities/snowshoeing/" title="Snowshoeing">Snowshoeing</a></li></ul><ul>
+                <li><i></i><a href="https://www.turismefgc.cat/en/skimo/" title="FGC Skimo: Skitouring">FGC Skimo: Skitouring</a></li><li><i></i><a href="/en/winter/activities/mountain-activities-mountain-skiing/" title="Mountain skiing and mountain activities">Mountain skiing and mountain activities</a></li><li><i></i><a href="/en/winter/activities/arva-park/" title="ARVA park">ARVA park</a></li><li><i></i><a href="https://www.lamolina.cat/en/photopoint/" title="Photopoint La Molina">Photopoint La Molina</a></li><li><i></i><a href="/en/winter/activities/technological-slalom/" title="Nissan e-POWER Slalom">Nissan e-POWER Slalom</a></li>            </ul>
+                </div>
+    </div>
+    <div class="submenu" data-id="30">
+        <div class="container">
+            <ul>
+            <li><i></i><a href="/en/winter/news/events/" title="Events">Events</a></li><li><i></i><a href="/en/winternews/news/" title="News">News</a></li>            </ul>
+                </div>
+    </div>
+    <div class="submenu" data-id="42">
+        <div class="container">
+            <ul>
+            <li><i></i><a href="/en/winter/webshop/ski-passes/" title="La Molina Ski Passes">La Molina Ski Passes</a></li><li><i></i><a href="/en/winter/webshop/experiences/" title="Experiences">Experiences</a></li><li><i></i><a href="/en/winter/webshop/activities/" title="Activities">Activities</a></li></ul><ul>
+                <li><i></i><a href="/en/winter/webshop/groups-schools-companies/" title="Groups, schools and companies">Groups, schools and companies</a></li><li><i></i><a href="https://www.turismefgc.cat/en/b2b/" title="Travel agencies">Travel agencies</a></li>            </ul>
+                            </div>
+    </div>
+                    </div>
+                </div>
+            </div>
+            <div id="infoad"><div class="preloader"></div></div>
+        </header>
+        
+    <div class="dynamic">
+<div id="content_cont" class="int season2">
+<section class="header responsive" data-bg="" data-desktop="/content/imgsxml/galerias/texto/74/headd-01-estacio-01-estacio-portada.jpg" data-tablet="/content/imgsxml/galerias/texto/74/headt-01-estacio-01-estacio-portada.jpg" data-mobile="/content/imgsxml/galerias/texto/74/headm-01-estacio-01-estacio-portada.jpg">
+</section>
+<div id="shadowheader"></div>
+
+<div class="container"></div>    <div class="container">
+        <div class="contcap">
+            <div class="cap">
+                <div class="heading">Discover La Molina&nbsp;</div>
+                <h1>
+                    Facilities Opening Status                </h1>
+                <div id="hilo">
+                    <div id="breadcrumb" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+    <span itemtype="http://data-vocabulary.org/Breadcrumb"><meta itemprop="title" content="Home"><a class="first" itemprop="url" title="Go to: Home" href="/en/"><span itemprop="name">Home</span></a></span> &gt; <span itemtype="http://data-vocabulary.org/Breadcrumb" itemprop="child"><meta itemprop="title" content="Resort"><a itemprop="url" title="Go to: Resort" href="/en/winter/resort/the-resort/"><span itemprop="name">Resort</span></a></span> &gt; <span class="selected" title="Facilities Opening Status">Facilities Opening Status</span></div>
+                </div>
+            </div>
+        </div>
+        		<script type="text/javascript" src="/content/js/jquery.floatThead.js"></script>
+<section class="comunicado meteocat">
+	<div class="capcom">
+		<div class="container">
+			<div class="capd">
+				<div class="c1">
+					<div class="h2">Facilities Opening Status</div>
+					<div class="fecha">Monday 02 Octobre 2023</div>
+									</div>
+				<div class="otros">
+				<a></a>				</div>
+			</div>
+			<div class="parte">
+				<div class="c1">
+					<div class="whitebox">
+						<div class="r1"><a href="https://www.lamolina.cat/feed/en/" target="_blank" rel="noopener noreferrer" title="RSS"></a></div>
+						<div class="r2">
+						<div class="m-status closed">Closed resort</div>							<div><strong>Last update:</strong> 16/10/2023 13:36</div>
+							<div><strong>Snow depths:</strong> </div>
+							<div><strong>Snow quality:</strong> </div>
+							<div class="tbl"><div class="c11">La Molina Masella connection</div>
+									<div class="c12">Closed</div></div>
+									<div class="tbl"><div class="c11">Telecabina Cadí-Moixeró (ride)</div>
+									<div class="c12">Closed</div></div>
+									<div><br></div>
+						</div>
+					</div>
+										<form id="form_auto_4" target="_blank" accept-charset="utf-8" name="form_auto_4" class="form_auto subscribecom formwhite" action="https://www.turismefgc.cat/en/communications/infoneu/?web=2" method="post">
+						
+					
+						<div class="h1"> Subscribe now</div>
+						<div class="h2">Receive La Molina snow report</div>
+						<div class="form">
+							<input type="email" name="email" placeholder="Enter your e-mail">
+							<div class="button">
+								<button>Send</button>
+							</div>
+						</div>
+						
+						
+					
+						
+						
+					</form>
+					
+				</div>
+
+				                        <div class="m-bannerparte">
+                                                        <a href="https://ad.doubleclick.net/ddm/trackclk/N1246177.4754838LAMOLINA0/B29057402.358940986;dc_trk_aid=549959818;dc_trk_cid=183265604;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;ltd=" target="_blank">
+                                                            <img class="deferimg" src="/content/imgs/white.png" alt="" data-mobile="/content/imgsxml/banners/es-lamolina-350x150-150.jpg" data-tablet="/content/imgsxml/banners/es-lamolina-350x150-150.jpg" data-desktop="/content/imgsxml/banners/es-lamolina-350x150-150.jpg">
+                                                        </a>
+                                                        <IMG SRC="https://ad.doubleclick.net/ddm/trackimp/N1246177.4754838LAMOLINA0/B29057402.358940986;dc_trk_aid=549959818;dc_trk_cid=183265604;ord=[timestamp];dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ltd=?" BORDER="0" HEIGHT="1" WIDTH="1" ALT="Advertisement">                        </div>
+                    				
+				<div class="c2">
+					<a class="descarrega" target="con" href="/content/comun/pdf.php?ruta=/&idioma=en&bk=&report="><i></i>Download snow report</a>
+					
+				<div class="r1 infopistas">
+	<div class="pistas">
+		<div class="pct">
+			<div class="bg"></div>
+			<canvas class="loader" data-value="0"></canvas>
+			<div class="pc">%</div>
+		 </div>
+		 <i></i>
+		 <div class="txt">Slopes</div>
+		 <div class="num"><strong>0</strong> de 0</div>
+		 <a class="vermas" href="#pistas">See more<span class="fa fa-chevron-down"></span></a>
+		 	</div>
+	<div class="esquiables">
+		<div class="pct">
+			<div class="bg"></div>
+			<canvas class="loader" data-value="0"></canvas>
+			<div class="pc">%</div>
+		 </div>
+		 <i></i>
+		 <div class="txt">Skiable Km</div>
+		 <div class="num"><strong>0</strong> de 0</div>
+	</div>
+	<div class="remontadores">
+		<div class="pct">
+			<div class="bg"></div>
+			<canvas class="loader" data-value="0"></canvas>
+			<div class="pc">%</div>
+		 </div>
+		 <i></i>
+		 <div class="txt">Ski lifts</div>
+		 <div class="num"><strong>0</strong> de 3</div>
+		 <a class="vermas" href="#remontadores">See more<span class="fa fa-chevron-down"></span></a>
+		 	</div>
+</div></div>
+			</div>
+		</div>
+	</div>
+	<div class="capasecundaria">
+	<iframe name="con" id="con"></iframe>
+		<div class="container">
+									<div class="titulo_meteo">
+				<div class="h1">Meteo</div>
+				<div class="date">Tuesday 24 Oct 2023 09:25</div>
+			</div>
+			<div class="tiempo">
+				<div class="c1">
+					<div>
+						<div class="prediccio actual">
+							<div class="title">Observation information: </div>
+							
+							
+							<div class="muntanya">
+															<div class="cotamax">
+									<div class="cota">Tosa d&#39;Alp 2537m.</div>
+									<div class="datoscota">
+										<span>Tº: 9.3ºC</span>
+										
+										<span>Wind: <!-- debug 14 -->ESE 4.9 km/h									</div>
+								</div>
+																<div class="cotamin">
+									<div class="cota">Font Canaleta 1700m.</div>
+										
+									<div class="datoscota">
+										<span>Tº: 6.4ºC</span>
+										<span>Wind: <!-- debug 293 -->ONO 0.0 km/h</span>
+									</div>
+								</div>
+
+							</div>
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+						</div>
+						<div class="prediccio">
+							<div class="title">Prediction information: *</div>
+							<div class="muntanya">
+								<div class="cotamax">
+									<div class="cota">Tosa d&#39;Alp 2537m.</div>
+									<div class="datoscota">
+										<span>Màx.: 3ºC</span>
+										<span>Mín.: 1ºC</span>
+										<span>Wind: <!-- debug 253 -->OSO 30 km/h									</div>
+								</div>
+								<div class="cotamin">
+									<div class="cota">Font Canaleta 1700m.</div>
+									<div class="datoscota">
+										<span>Màx.: 8ºC</span>
+										<span>Mín.: 6ºC</span>
+										<span>Wind: <!-- debug 285 -->ONO 9 km/h</span>
+									</div>
+								</div>
+							</div>
+							<div class="visibilitat lower"></div>
+							<div class="precipitacions visibilitat">
+								<div class="m-flex">
+								<div>
+									<div class="title">Precipitations: </div>
+									<div class="pluja"><span class="meteo_label">Rain and probability:</span> <5 L./m2 </div>
+									<div class="neu"><span class="meteo_label">Snow accumulation 24 h:</span> No se n&#39;espera</div>
+									</div>
+							<div>
+							<div class="title">Índex UVI: </div>
+							<div class="temperatura">UVI màxim: 4</div>
+							<div class="temperatura">UVI actual: 2</div>
+							</div></div>
+														</div>
+							<div class="precipitacions">
+								<div class="title">Sky:</div>
+															<div class="m-clima">
+																					</div></div>
+						</div>
+						<div class="notas">
+ 							 							
+ 							<div>* Accumulation of snow, rain and probability at 2300 masl</div>
+ 						</div>
+						<div class="icono_meteocat">
+							<div>Forecast Data:</div>
+							<div><img src="/content/imgs/meteocat.png" title="Meteocat"/></div>
+														<div class="m-sec">Observation Data:</div>
+							<div><img src="/content/imgs/imgs2019/logo.png"></div>
+													</div>
+					</div>
+				</div>
+				<div class="c2">
+										<div class="forecast">
+												<div class="date">Wednesday 25 Oct 2023</div>
+						<div class="actual">
+							<!-- DEBUG: codigo icono clima 2 -->														<div class="icon" style="background-image:url(/content/imgs/iconos_clima/soleado.png)" title="Assoleiat"></div>
+														<div class="extraactual">
+								<div class="visibilitat"><span class="meteo_label">Visibility:</span> Excel·lent > 50 km</div>
+								<div class="neu"><span class="meteo_label">Snow accumulation 24 h:</span> No se n&#39;espera</div>
+								<div class="neu"><span class="meteo_label">UVI màxim:</span> 5</div>
+							<div class="neu"><span class="meteo_label">UVI previst:</span> 2</div>
+							
+					
+														</div>
+						</div>
+						<div class="prediccio">
+							<div class="muntanya">
+								<div class="cotamax">
+									<div class="cota">2537m.</div>
+									<div class="datoscota">
+										<span>Màx.: 5ºC</span>
+										<span>Mín.: 2ºC</span>
+										<span>Wind: <!-- debug 305 -->NNO 14 km/h									</div>
+								</div>
+								<div class="cotamin">
+									<div class="cota">1700m.</div>
+									<div class="datoscota">
+										<span>Màx.: 10ºC</span>
+										<span>Mín.: 6ºC</span>
+										<span>Wind: <!-- debug 291 -->ONO 8 km/h									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+										<div class="forecast">
+												<div class="date">Thursday 26 Oct 2023</div>
+						<div class="actual">
+							<!-- DEBUG: codigo icono clima 2 -->														<div class="icon" style="background-image:url(/content/imgs/iconos_clima/soleado.png)" title="Assoleiat"></div>
+														<div class="extraactual">
+								<div class="visibilitat"><span class="meteo_label">Visibility:</span> Excel·lent > 50 km</div>
+								<div class="neu"><span class="meteo_label">Snow accumulation 24 h:</span> No se n&#39;espera</div>
+								<div class="neu"><span class="meteo_label">UVI màxim:</span> 4</div>
+							<div class="neu"><span class="meteo_label">UVI previst:</span> 2</div>
+							
+					
+														</div>
+						</div>
+						<div class="prediccio">
+							<div class="muntanya">
+								<div class="cotamax">
+									<div class="cota">2537m.</div>
+									<div class="datoscota">
+										<span>Màx.: 7ºC</span>
+										<span>Mín.: 5ºC</span>
+										<span>Wind: <!-- debug 257 -->OSO 42 km/h									</div>
+								</div>
+								<div class="cotamin">
+									<div class="cota">1700m.</div>
+									<div class="datoscota">
+										<span>Màx.: 11ºC</span>
+										<span>Mín.: 8ºC</span>
+										<span>Wind: <!-- debug 266 -->ONO 15 km/h									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+									</div>
+			</div>
+						<div class="datos">
+				<div class="c1">
+									</div>
+				<div class="c2">
+									</div>
+			</div>
+		</div>
+	</div>
+		<div class="container">
+			<a name="pistas"></a>
+			<section class="bannercentral">
+	<div class="container">
+		        <a href="https://ad.doubleclick.net/ddm/trackclk/N1246177.4754838LAMOLINA0/B29057402.353737049;dc_trk_aid=545001563;dc_trk_cid=183265604;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;ltd=" target="_blank">
+                    <img class="deferimg" src="/content/imgs/white.png" alt="" data-mobile="/content/imgsxml/banners/ipc-es-lamolina-digital-bannerweb-1280x200-200kb-dic22-v1.jpg" data-tablet="/content/imgsxml/banners/ipc-es-lamolina-digital-bannerweb-1280x200-200kb-dic22-v1.jpg" data-desktop="/content/imgsxml/banners/ipc-es-lamolina-digital-bannerweb-1280x200-200kb-dic22-v1.jpg">
+                </a>
+                <IMG SRC="https://ad.doubleclick.net/ddm/trackimp/N1246177.4754838LAMOLINA0/B29057402.353737049;dc_trk_aid=545001563;dc_trk_cid=183265604;ord=[timestamp];dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ltd=?" BORDER="0" HEIGHT="1" WIDTH="1" ALT="Advertisement">	</div>
+</section>			<div class="pistas">
+			<a name="remontadores"></a>
+				<div class="tabla">
+					<div class="data">
+						<div class="c1"><span>Ski lifts:</span> <strong>0</strong> de 3 / <strong>0%</strong></div>
+						<div class="c2">
+							<ul>
+								<li>Open:</li>
+															</ul>
+						</div>
+					</div>
+					<table cellspacing="0" cellpadding="0">
+						<thead>
+							<tr>
+								<th>Name</th>
+								<th>Type of</th>
+								<th>Conditions</th>
+							</tr>
+						</thead>
+						<tbody>
+													<tr>
+								<td><a name="rmtcarpet_lift"></a><i style="background-size:17px 17px; background-image:url(/content/imgs/tipos_remontador/carpet_lift.png)"></i>CT Johan Cruyff</td>
+								<td>Cinta transportadora</td>
+																<td class="estado">Closed</td>
+															</tr>
+														<tr>
+								<td><a name="rmtdisengageable_chairlift"></a><i style="background-size:17px 17px; background-image:url(/content/imgs/tipos_remontador/disengageable_chairlift.png)"></i>TSD Cap de Comella</td>
+								<td>Telecadira desembragable</td>
+																<td class="estado">Closed</td>
+															</tr>
+														<tr>
+								<td><a name="rmtgondola_lift"></a><i style="background-size:17px 17px; background-image:url(/content/imgs/tipos_remontador/gondola_lift.png)"></i>TCB Cadí-Moixeró - Part 1</td>
+								<td>Telecabina</td>
+																<td class="estado">Closed</td>
+															</tr>
+														<tr>
+								<td><i style="background-size:17px 17px; background-image:url(/content/imgs/tipos_remontador/gondola_lift.png)"></i>TCB Cadí-Moixeró -  Part II</td>
+								<td>Telecabina</td>
+																<td class="estado">Closed</td>
+															</tr>
+													</tbody>
+					</table>
+				</div>
+			<div class="tabla">
+						<div class="data">
+							<div class="c1"><span>Parking:</span> <strong>7</strong> de 7 / <strong>100%</strong></div>
+						</div>
+					<table cellspacing="0" cellpadding="0">
+							<thead>
+								<tr>
+									<th>Name</th>
+									<th>Conditions</th>
+								</tr>
+							</thead>
+							<tbody>
+															<tr>
+								<td>P1- P2 TELECABINA</td>
+								<td class="estadoS">Available</td>
+							</tr>
+														<tr>
+								<td>P3 - FONT CANALETA</td>
+								<td class="estadoS">Available</td>
+							</tr>
+														<tr>
+								<td>P4 - PISTA LLARGA</td>
+								<td class="estadoS">Available</td>
+							</tr>
+														<tr>
+								<td>P5 - ROC BLANC</td>
+								<td class="estadoS">Available</td>
+							</tr>
+														<tr>
+								<td>P6 - ALABAU</td>
+								<td class="estadoS">Available</td>
+							</tr>
+														<tr>
+								<td>P7 - COLL SISÉ</td>
+								<td class="estadoS">Available</td>
+							</tr>
+														<tr>
+								<td>P8 - EL LLAC</td>
+								<td class="estadoS">Available</td>
+							</tr>
+							</tbody>
+							</table>
+				<div class="tabla">
+						<div class="data">
+							<div class="c1"><span>Services:</span> <strong>0</strong> de 6 / <strong>0%</strong></div>
+							<div class="c2">
+							<ul>
+								<li>Open:</li>
+																<li class="remonte"><a href="#servrestaurants">Restauració (1) <span class="fa fa-angle-down"></span></a></li>
+																<li class="remonte"><a href="#servrental_shop">Botiga de lloguer (1) <span class="fa fa-angle-down"></span></a></li>
+																<li class="remonte"><a href="#servother">Altres (4) <span class="fa fa-angle-down"></span></a></li>
+															</ul>
+						</div>
+						</div>
+					<table cellspacing="0" cellpadding="0">
+							<thead>
+								<tr>
+									<th>Name</th>
+									<th>Type of</th>
+									<th>Conditions</th>
+								</tr>
+							</thead>
+							<tbody>
+															<tr>
+								<td><a name="servrestaurants"></a>Mountain hut</td>
+								<td>Restauració</td>
+								<td class="estado">Closed</td>
+							</tr>
+														<tr>
+								<td><a name="servrental_shop"></a>Equipment rental</td>
+								<td>Botiga de lloguer</td>
+								<td class="estado">Closed</td>
+							</tr>
+														<tr>
+								<td><a name="servother"></a>Van Parking</td>
+								<td>Altres</td>
+								<td class="estado">Closed</td>
+							</tr>
+														<tr>
+								<td>ATM</td>
+								<td>Altres</td>
+								<td class="estado">Closed</td>
+							</tr>
+														<tr>
+								<td>Information and offices</td>
+								<td>Altres</td>
+								<td class="estado">Closed</td>
+							</tr>
+														<tr>
+								<td>Forfaits Rental</td>
+								<td>Altres</td>
+								<td class="estado">Closed</td>
+							</tr>
+							</tbody>
+							</table>
+				<div class="tabla">
+						<div class="data">
+							<div class="c1"><span>Activities:</span> <strong>0</strong> de 6 / <strong>0%</strong></div>
+						</div>
+					<table cellspacing="0" cellpadding="0">
+							<thead>
+								<tr>
+									<th>Name</th>
+									<th>Conditions</th>
+								</tr>
+							</thead>
+							<tbody>
+															<tr>
+								<td>Panoramic Gondola Ride</td>
+								<td class="estado">Closed</td>
+							</tr>
+														<tr>
+								<td>Tubbing</td>
+								<td class="estado">Closed</td>
+							</tr>
+														<tr>
+								<td>Bowling</td>
+								<td class="estado">Closed</td>
+							</tr>
+														<tr>
+								<td>Nordic walking</td>
+								<td class="estado">Closed</td>
+							</tr>
+														<tr>
+								<td>Adventure Park</td>
+								<td class="estado">Closed</td>
+							</tr>
+														<tr>
+								<td>Segway</td>
+								<td class="estado">Closed</td>
+							</tr>
+							</tbody>
+							</table>
+						</div>
+	</div>
+</section>
+<script type="text/javascript">
+$(function() {
+	var sub = 80;
+	if (isMobile()) sub = 65;
+	$('.tabla table').floatThead({
+		scrollingTop: sub	});
+	sub = "-136px";
+	var sub2 = "136px";
+	if (isMobile()) {
+		sub = "-111px";
+		sub2 = "111px";
+	}
+	$('a[name]').css({
+		display: 'block',
+		visibility: 'hidden',
+		marginTop: sub,
+		height: sub2	});
+
+	if (!isDesktop()) canvasize(80, 35, 8);
+	else canvasize(200, 90, 20);
+	$(window).resize(canvasResponsive);
+});
+
+var reescaling = null;
+function canvasResponsive() {
+	if (reescaling != null) {
+		clearTimeout(reescaling);
+	}
+	reescaling = setTimeout(function() {	
+
+		if (!isDesktop()) canvasize(80, 35, 8);
+		else canvasize(200, 90, 20);
+	}, 500);
+}
+
+
+function canvasize(tam, dm, lw) {
+	var fs = tam * 0.3;
+	$('canvas.loader').each(function() {
+		var val = $(this).attr('data-value');
+		var realval = $(this).attr('data-value');
+		$(this).css('width',tam).css('height',tam).ClassyLoader({
+	        percentage: val,
+	        animate: true,
+	        width: tam,
+	        height: tam,
+	        speed: 0,
+	        fontFamily: 'ProximaNova-Regular',
+	        fontSize: fs + 'px',
+	        lineWidth: lw,
+	        fontColor: 'rgba(255,255,255,1)',
+	        lineColor: 'rgba(128,175,210,1)',
+	        remainingLineColor: 'rgba(0,0,0,0)',
+	        diameter: dm,
+	        realval: realval
+	    });
+	});	
+}
+</script>
+    </div>
+</div>
+<footer>
+            <div class="footer_sponsors color">
+                    <div class="container">
+                        <div class="footer">
+                            <div class="colfull">
+                                <section class="sponsors">
+    <div class="title">Sponsors</div>
+    <ul><li>
+    	<a href="/en/sponsors/#spo38"><img src="/content/thumbs/_54/content/imgsxml/patrocinadores/ne-capturadepantalla20221118alas14.32.22.png" alt="Nissan"></a><li>
+    	<a href="/en/sponsors/#spo36"><img src="/content/thumbs/_54/content/imgsxml/patrocinadores/ne-capturadepantalla20221118alas13.58.50.png" alt="Alpro"></a><li>
+    	<a href="/en/sponsors/#spo2"><img src="/content/thumbs/_54/content/imgsxml/patrocinadores/ne-logo-cocacola.png" alt="Coca-Cola"></a><li>
+    	<a href="/en/sponsors/#spo32"><img src="/content/thumbs/_54/content/imgsxml/patrocinadores/ne-dammgrisclar.png" alt="Estrella Damm"></a></ul>
+</section>
+                            </div>
+                            <div class="colfull">
+                                                                <div class="m-bannerfooter">
+                                                                        <a href="https://ad.doubleclick.net/ddm/trackclk/N1246177.4754838LAMOLINA0/B29057402.354088479;dc_trk_aid=545027379;dc_trk_cid=183265604;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;ltd=" target="_blank">
+                                                                            <img class="deferimg" src="/content/imgs/white.png" alt="" data-mobile="/content/imgsxml/banners/ifp-es-lamolina-digital-bannerweb-468x60-50kb-dic22-v2.jpg" data-tablet="/content/imgsxml/banners/ifp-es-lamolina-digital-bannerweb-468x60-50kb-dic22-v2.jpg" data-desktop="/content/imgsxml/banners/ifp-es-lamolina-digital-bannerweb-468x60-50kb-dic22-v2.jpg">
+                                                                        </a>
+                                                                        <IMG SRC="https://ad.doubleclick.net/ddm/trackimp/N1246177.4754838LAMOLINA0/B29057402.354088479;dc_trk_aid=545027379;dc_trk_cid=183265604;ord=[timestamp];dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ltd=?" BORDER="0" HEIGHT="1" WIDTH="1" ALT="Advertisement">                                </div>
+                                                            </div>
+                            
+                        </div>
+                                                <div class="footer">
+                            <div class="colfull">
+                                <section class="sponsors">
+    <div class="title">Institutions</div>
+    <ul><li>
+    	<a href="http://ca.costabrava.org/" title="Patronat Turisme Costa Brava - Girona" target="_blank" rel="noopener noreferrer"><img src="/content/thumbs/_54/content/imgsxml/patrocinadores/ne-logo-brava.png" alt="Patronat Turisme Costa Brava - Girona"></a><li>
+    	<a href="http://www.totnordic.com/totnordic_2017/" title="Tot Nòrdic" target="_blank" rel="noopener noreferrer"><img src="/content/thumbs/_54/content/imgsxml/patrocinadores/ne-logo-totnordic.png" alt="Tot Nòrdic"></a><li>
+    	<a href="http://www.visitpirineus.com/" title="PIrineus - Turisme de Catalunya" target="_blank" rel="noopener noreferrer"><img src="/content/thumbs/_54/content/imgsxml/patrocinadores/ne-logo-pirineus.png" alt="PIrineus - Turisme de Catalunya"></a><li>
+    	<a href="http://parcsnaturals.gencat.cat/en/cadi/index.html" title="Cadí-Moixeró Natural Park" target="_blank" rel="noopener noreferrer"><img src="/content/thumbs/_54/content/imgsxml/patrocinadores/ne-logo-moixero.png" alt="Cadí-Moixeró Natural Park"></a><li>
+    	<img src="/content/thumbs/_54/content/imgsxml/patrocinadores/ne-capturadepantalla20230420alas16.23.54.png" alt="Pirineu Català"></ul>
+</section>
+                            </div>
+                        </div>
+                                                                        <div class="footer m-tablet">
+                            <div class="m-bannerfooter">
+                                                                <a href="https://ad.doubleclick.net/ddm/trackclk/N1246177.4754838LAMOLINA0/B29057402.354088479;dc_trk_aid=545027379;dc_trk_cid=183265604;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;ltd=" target="_blank">
+                                                                    <img class="deferimg" src="/content/imgs/white.png" alt="" data-mobile="/content/imgsxml/banners/ifp-es-lamolina-digital-bannerweb-468x60-50kb-dic22-v2.jpg" data-tablet="/content/imgsxml/banners/ifp-es-lamolina-digital-bannerweb-468x60-50kb-dic22-v2.jpg" data-desktop="/content/imgsxml/banners/ifp-es-lamolina-digital-bannerweb-468x60-50kb-dic22-v2.jpg">
+                                                                </a>
+                                                                <IMG SRC="https://ad.doubleclick.net/ddm/trackimp/N1246177.4754838LAMOLINA0/B29057402.354088479;dc_trk_aid=545027379;dc_trk_cid=183265604;ord=[timestamp];dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ltd=?" BORDER="0" HEIGHT="1" WIDTH="1" ALT="Advertisement">                            </div>
+                        </div>
+                                            </div>
+                </div>
+                            <div class="footer_newsletter">
+                <div class="container">
+                    <div class="footer">
+                        <div class="col1">
+                            <section class="sponsors">
+    <div class="title">CERTIFICATIONS & DISTINCTIONS OF QUALITY</div>
+    <ul><li>
+    	<a href="https://www.turismefgc.cat/en/environment-care-and-quality/" title="ISO" target="_blank" rel="noopener noreferrer"><img src="/content/imgsxml/calidad/pt-iso14001-blanc-granok2019.png" alt="ISO"></a><li>
+    	<a href="https://www.turismefgc.cat/en/environment-care-and-quality/" title="Calidad Turística" target="_blank" rel="noopener noreferrer"><img src="/content/imgsxml/calidad/pt-logocertificatqualitatblanc100px2019.png" alt="Calidad Turística"></a><li>
+    	<a href="https://www.turismefgc.cat/en/environment-care-and-quality/" title="Equipament Turisme Familiar" target="_blank" rel="noopener noreferrer"><img src="/content/imgsxml/calidad/pt-equipamentfamiliar-blanc2019.png" alt="Equipament Turisme Familiar"></a></ul>
+</section>
+                        </div>
+                        <div class="col2">
+                            <div class="followus">
+                                <section class="followus">
+    <ul>
+    	            <li><a class="fa fa-facebook" href="https://www.facebook.com/lamolina.cat" target="_blank" rel="noopener noreferrer" onclick='trackEvent("Redes sociales", "Facebook");' title="Facebook"></a></li>
+                                    <li><a class="fa fa-twitter" href="https://twitter.com/SnowLaMolina" target="_blank" rel="noopener noreferrer" onclick='trackEvent("Redes sociales", "Twitter");' title="Twitter"></a></li>
+                                    <li><a class="fa fa-instagram" href="https://www.instagram.com/lamolina/" target="_blank" rel="noopener noreferrer" onclick='trackEvent("Redes sociales", "Instagram");' title="Instagram"></a></li>
+                                    <li><a class="fa fa-youtube" href="https://www.youtube.com/user/SnowLaMolina" target="_blank" rel="noopener noreferrer" onclick='trackEvent("Redes sociales", "Youtube");' title="Youtube"></a></li>
+                                        <li>
+                    <a href="https://www.tiktok.com/@lamolina_fgc" class="tiktok-footer" target="_blank" rel="noopener noreferrer" onclick='trackEvent("Redes sociales", "TikTok");' title="TikTok">       
+                        <svg id="Capa_1" enable-background="new 0 0 512 512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="m475.074 0h-438.148c-20.395 0-36.926 16.531-36.926 36.926v438.148c0 20.395 16.531 36.926 36.926 36.926h438.148c20.395 0 36.926-16.531 36.926-36.926v-438.148c0-20.395-16.531-36.926-36.926-36.926zm-90.827 195.959v34.613c-16.322.006-32.181-3.192-47.137-9.503-9.617-4.06-18.577-9.292-26.772-15.613l.246 106.542c-.103 23.991-9.594 46.532-26.772 63.51-13.98 13.82-31.695 22.609-50.895 25.453-4.512.668-9.103 1.011-13.746 1.011-20.553 0-40.067-6.659-56.029-18.943-3.004-2.313-5.876-4.82-8.612-7.521-18.617-18.4-28.217-43.34-26.601-69.575 1.234-19.971 9.229-39.017 22.558-53.945 17.635-19.754 42.306-30.719 68.684-30.719 4.643 0 9.234.348 13.746 1.017v12.798 35.601c-4.277-1.411-8.846-2.187-13.603-2.187-24.1 0-43.597 19.662-43.237 43.779.228 15.431 8.658 28.92 21.09 36.355 5.842 3.495 12.564 5.659 19.737 6.053 5.62.308 11.016-.474 16.013-2.124 17.218-5.688 29.639-21.861 29.639-40.935l.057-71.346v-130.252h47.668c.046 4.723.525 9.332 1.416 13.797 3.598 18.075 13.786 33.757 27.966 44.448 12.364 9.326 27.76 14.854 44.448 14.854.011 0 .148 0 .137-.011v12.843z"/></svg>
+                    </a>
+                </li>
+                            </ul>
+</section>                            </div>
+                            <section class="newsletter">
+                                <div class="title">Receive the newsletter</div>
+                                                                <form class="clearfix" name="formnews" target="_blank" method="post" action="https://www.turismefgc.cat/en/communications/newsletter/?web=2#a_fnl">
+                                    <input class="phb" type="text" name="email" placeholder="Enter your e-mail">
+                                    <div class="button"><button aria-label="Register now"><span>Register now<span>&gt;</span></span></button></div>
+                                    
+                                </form>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="otherwebs">
+    <div class="container">
+    	<div class="title"><img src="/content/imgs/corp.svg" alt="FGC">FGC Turisme websites</div>
+    	<ul>
+    		<li><a target="_blank" rel="noopener noreferrer" href="http://www.turismefgc.cat/en">FGC Turisme</a></li><li><a target="_blank" rel="noopener noreferrer" href="https://www.valldenuria.cat/en/">Vall de Núria</a></li><li><a target="_blank" rel="noopener noreferrer" href="https://www.vallter.cat/en/">Vallter</a></li><li><a target="_blank" rel="noopener noreferrer" href="https://www.espotesqui.cat/en/">Espot</a></li><li><a target="_blank" rel="noopener noreferrer" href="https://www.portaine.cat/en/">Port Ainé</a></li><li><a target="_blank" rel="noopener noreferrer" href="https://www.boitaull.cat/en/">Boí Taüll</a></li><li><a target="_blank" rel="noopener noreferrer" href="https://www.skipallars.cat/es/verano/">Skipallars</a></li><li><a target="_blank" rel="noopener noreferrer" href="https://turistren.cat/en/">Turistren</a></li><li><a target="_blank" rel="noopener noreferrer" href="https://www.parcastronomic.cat/?lang=en">Parc Astronòmic Montsec</a></li>    	</ul>
+        <select class="mobile" onchange="if ($(this).val() != '') { document.location.href = $(this).val() }">
+            <option value="">Choose</option>
+            <option value="http://www.turismefgc.cat/en">FGC Turisme</option>
+            <option value="https://www.valldenuria.cat/en/">Vall de Núria</option>
+            <option value="https://www.vallter.cat/en/">Vallter</option>
+            <option value="https://www.espotesqui.cat/en/">Espot</option>
+            <option value="https://www.portaine.cat/en/">Port Ainé</option>
+            <option value="https://www.boitaull.cat/en/">Boí Taüll</option>
+            <option value="https://www.skipallars.cat/es/verano/">Skipallars</option>
+            <option value="https://turistren.cat/en/">Turistren</option>
+            <option value="https://www.parcastronomic.cat/?lang=en">Parc Astronòmic Montsec</option>
+                    </select>
+
+        </div>
+    </div>
+</div>        <div class="footerbottom blue">
+            <div class="container">
+                <div class="col1">
+                    <ul class="footerbottom_top">
+                    <li><a rel="noopener noreferrer" class="white" target="" href="/en/web-map/" title="Web Map">Web Map</a></li><li><a rel="noopener noreferrer" class="white" target="_blank" href="https://www.turismefgc.cat/en/communications/contact/?web=2" title="Contact">Contact</a></li><li><a rel="noopener noreferrer" class="white" target="_blank" href="https://www.fgc.cat/en/work-at-fgc/" title="Work at FGC">Work at FGC</a></li><li><a rel="noopener noreferrer" class="white" target="" href="/en/winter/supporters/" title="Supporters La Molina">Supporters</a></li><li><a rel="noopener noreferrer" class="white" target="" href="/en/winter/faqs/" title="FAQs">FAQs</a></li><li><a rel="noopener noreferrer" class="white" target="_blank" href="https://www.turismefgc.cat/en/environment-care-and-quality/" title="Environment care and quality">Environment care and quality</a></li>                    </ul>
+                    
+                </div>
+                <div class="col2">
+                    <section class="followus">
+    <ul>
+    	            <li><a class="fa fa-facebook" href="https://www.facebook.com/lamolina.cat" target="_blank" rel="noopener noreferrer" onclick='trackEvent("Redes sociales", "Facebook");' title="Facebook"></a></li>
+                                    <li><a class="fa fa-twitter" href="https://twitter.com/SnowLaMolina" target="_blank" rel="noopener noreferrer" onclick='trackEvent("Redes sociales", "Twitter");' title="Twitter"></a></li>
+                                    <li><a class="fa fa-instagram" href="https://www.instagram.com/lamolina/" target="_blank" rel="noopener noreferrer" onclick='trackEvent("Redes sociales", "Instagram");' title="Instagram"></a></li>
+                                    <li><a class="fa fa-youtube" href="https://www.youtube.com/user/SnowLaMolina" target="_blank" rel="noopener noreferrer" onclick='trackEvent("Redes sociales", "Youtube");' title="Youtube"></a></li>
+                                        <li>
+                    <a href="https://www.tiktok.com/@lamolina_fgc" class="tiktok-footer" target="_blank" rel="noopener noreferrer" onclick='trackEvent("Redes sociales", "TikTok");' title="TikTok">       
+                        <svg id="Capa_1" enable-background="new 0 0 512 512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="m475.074 0h-438.148c-20.395 0-36.926 16.531-36.926 36.926v438.148c0 20.395 16.531 36.926 36.926 36.926h438.148c20.395 0 36.926-16.531 36.926-36.926v-438.148c0-20.395-16.531-36.926-36.926-36.926zm-90.827 195.959v34.613c-16.322.006-32.181-3.192-47.137-9.503-9.617-4.06-18.577-9.292-26.772-15.613l.246 106.542c-.103 23.991-9.594 46.532-26.772 63.51-13.98 13.82-31.695 22.609-50.895 25.453-4.512.668-9.103 1.011-13.746 1.011-20.553 0-40.067-6.659-56.029-18.943-3.004-2.313-5.876-4.82-8.612-7.521-18.617-18.4-28.217-43.34-26.601-69.575 1.234-19.971 9.229-39.017 22.558-53.945 17.635-19.754 42.306-30.719 68.684-30.719 4.643 0 9.234.348 13.746 1.017v12.798 35.601c-4.277-1.411-8.846-2.187-13.603-2.187-24.1 0-43.597 19.662-43.237 43.779.228 15.431 8.658 28.92 21.09 36.355 5.842 3.495 12.564 5.659 19.737 6.053 5.62.308 11.016-.474 16.013-2.124 17.218-5.688 29.639-21.861 29.639-40.935l.057-71.346v-130.252h47.668c.046 4.723.525 9.332 1.416 13.797 3.598 18.075 13.786 33.757 27.966 44.448 12.364 9.326 27.76 14.854 44.448 14.854.011 0 .148 0 .137-.011v12.843z"/></svg>
+                    </a>
+                </li>
+                            </ul>
+</section>                </div>
+            </div>
+        </div>
+        <div class="footerbottom">
+            <div class="container">
+                <div class="col1">
+                                        <ul>
+                    <li><a rel="noopener noreferrer" href="https://www.fgc.cat/en/legal-advise/" target="_blank" title="Legal Notice">Legal Notice</a></li><li><a rel="noopener noreferrer" href="https://www.fgc.cat/en/privacy-policy/" target="_blank" title="Privacy Policy">Privacy Policy</a></li><li><a rel="noopener noreferrer" href="/en/cookies/" target="" title="Cookies">Cookies</a></li><li><a rel="noopener noreferrer" href="https://www.fgc.cat/es/transparencia/" target="_blank" title="Transparency">Transparency</a></li><li><a rel="noopener noreferrer" href="/en/accessibility/" target="" title="Accessibility">Accessibility</a></li>                    </ul>
+                </div>
+                <div class="col2">
+                    
+                    <div class="credits">by <a rel="nofollow" href="https://www.emascaroleisure.com/" rel="noopener noreferrer" title="Transformamos el OCIO en Experiencias Digitales" target="_blank">eMascaró</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="cbookingmobilefooter">
+            <div>
+                <a href="javascript:" onclick="$('.cbooking').addClass('opened');">Book in La Molina</a>
+            </div>
+                            <div><a onclick="trackEvent('Forfets', 'Booking box');" rel="noopener noreferrer" target="_blank" href="">Purchase / Recharge</a></div>
+                    </div>
+        <div id="topmobile" onclick="goToTop()">
+            <i></i>
+            Top
+        </div>
+    </div>
+    </div>
+        <script type="text/javascript">
+    var lineColor='128,175,210';
+
+
+        $(function() {
+        var sel = '';
+        if ($('div#shadowheader').length == 1) {sel = 'div#shadowheader';}
+        else if ($('div.homeslider').length == 1) {sel = 'div.homeslider';}
+        
+                     
+            $('#alertalay').load('/content/comun/ajax_get_alerts.php?ruta=/&bk=&idioma=en&season=2', function(e) {
+                        $('.alist').html(e);    
+                    });
+                    if (sel != '') {
+           
+            //capa ventajas
+            //if (!isMobile()) {
+                var plantilla = 'pl-comunicado';
+                if (plantilla == 'pl-summer' || plantilla == 'pl-winter') {
+                    $(sel).after('<div class="ventajas" id="capaventajas"></div>');
+                    $('#capaventajas').load('/content/comun/ajax_get_ventajas.php?ruta=/&bk=&idioma=en');
+                    
+                }
+            //}
+        }
+    });
+    
+    $(function() {
+        season = 'winter';
+        updateSeason();
+        $('a.legales').click(function() {
+            loadLegal();
+        });
+        $('a.legales_rgpd').click(function() {
+            loadLegalRGPD($(this).attr("data-id"));
+        });
+    });
+
+    function setSeason(season) {
+        var url = '';
+        if (season == 'winter') {
+            url = '/en/winter/';
+        } else {
+            url = '/en/summer/';
+        }
+        document.location.href = url;
+    }
+
+       
+   $(function() {
+             
+      $('.buttons .snow, .buttons_mov .snow').click(function() {
+        //goToTop2();
+        closeMenuMobile();
+        $('.buttons > div, .buttons_mov > div').removeClass('on');
+        var $obj = $(this);
+        trackEvent('Botones Superiores', 'Parte nieve');
+         $('#infoad').empty().show().load('/content/comun/ajax_snow_report.php?ruta=/&idioma=en&bk=&rss=https://www.lamolina.cat/feed/en/&thisurl=//www.lamolina.cat/en/winter/resort/snow-report/&activa_rgpd=S', function() {
+
+            setTancar();
+			$('body').addClass('adopen');
+            $obj.addClass('on');
+         });
+      });
+      $('.buttons .estado_servicio, .buttons_mov .estado_servicio').click(function() {
+        //goToTop2();
+        closeMenuMobile();
+        $('.buttons > div, .buttons_mov > div').removeClass('on');
+        trackEvent('Botones Superiores', 'Estado el servicio');
+        var $obj = $(this);
+         $('#infoad').load('/content/comun/ajax_layer_montserrat_report.php?ruta=/&idioma=en&bk=&rss=https://www.lamolina.cat/feed/en/&thisurl=//www.lamolina.cat/en/winter/resort/snow-report/', function() {
+            $('#infoad').show();
+			$('body').addClass('adopen');
+            setTancar();
+            $obj.addClass('on');
+         });
+      });
+      $('.buttons .weather, .buttons_mov .weather').not('.nolayer').click(function() {
+        //goToTop2();
+        closeMenuMobile();
+        $('.buttons > div, .buttons_mov > div').removeClass('on');
+        trackEvent('Botones Superiores', 'Meteo');
+        var $obj = $(this);
+        $('#infoad').empty().load('/content/comun/ajax_weather.php?ruta=/&idioma=en&bk=&season=2', function() {
+            $('#infoad').fadeIn(200);
+            setTancar();
+			$('body').addClass('adopen');
+            $obj.addClass('on');
+         });
+      });
+      $('.buttons .webcam, .buttons_mov .webcam').click(function() {
+        closeMenuMobile();
+        $('.buttons > div, .buttons_mov > div').removeClass('on');
+        var $obj = $(this);
+        $('#infoad').empty().load('/content/comun/ajax_webcams.php?ruta=/&idioma=en&bk=', function() {
+            trackEvent('Botones Superiores', 'Webcams');
+            $obj.addClass('on');
+			$('body').addClass('adopen');
+            $('#infoad').fadeIn(200);
+            //$('#infoad').hide().slideDown(200, function() {
+                $(window).trigger('scroll');
+                $('#infoad .m-cams a').magnificPopup({
+                        type:'image', 
+                        image: {
+                           titleSrc: 'title'
+                        }
+                    });
+               
+           
+            setTancar();
+
+            
+         });
+      });
+   });
+    </script>
+    <div id="laycookie"></div>
+        <div id="mybook">
+        <div id="fondolay" onclick="closemybook()"></div>
+        <div class="cont-misreservas">
+            <div class="close" onclick="closemybook()">x</div>
+            <div class="tit">My booking</div>
+            <div class="txt">Enter your booking number and your email to check your reservation, to cancel it or change it.</div>
+            <div class="fmisreservas" id="misreservas">
+                <form name="fmisreservas" action="/en/bookings/" method="get" onsubmit="return validaMisReservas()">
+                                    <input name="channelkey" value="E8DDA54B-82AA-569F-E040-FB0A0622062B" type="hidden">
+                    <input name="fullintegration" value="1" type="hidden">
+                    <input name="vscroll" value="1" type="hidden">
+                    <input name="skin" value="bluemol" type="hidden">
+                    <input name="idioma" value="en" type="hidden">
+                    <div class="input"><input name="localizador" placeholder="Booking number" class="loc" type="text"></div>
+                    <div class="input"><input name="email" class="em" type="text" placeholder="E-mail"></div>
+                    <div class="btnaccess clearfix"><button class="bot slim btn"><span>Access</span></button></div>
+                </form>
+            </div>
+        </div>
+    </div>
+   <div id="legalinfo"></div>
+   <div id="alertas20" data-id="74"></div>
+   <div id="notificacions"></div>
+   <div class="is-desktop"></div>
+   <div class="is-tablet"></div>
+   <div class="is-mobile"></div>
+      <script type="text/javascript">
+     var oct8ne = document.createElement("script");
+     oct8ne.server = "backoffice-eu.oct8ne.com/";
+     oct8ne.type = "text/javascript";
+     oct8ne.async = true;
+     oct8ne.license ="CAA57179C877FC0FA01E98A130D37679";
+     oct8ne.src = (document.location.protocol == "https:" ? "https://" : "http://") + "static-eu.oct8ne.com/api/v2/oct8ne-api-2.3.js?" + (Math.round(new Date().getTime() / 86400000));
+     oct8ne.locale = "en-US";
+     oct8ne.baseUrl ="//www.lamolina.cat/";
+     oct8ne.allowedDepartmentsId = "2233";
+     var s = document.getElementsByTagName("script")[0];
+     s.parentNode.insertBefore(oct8ne, s);
+   </script>
+
+<script src="https://static.skitude.com/applications/015c14183ae5a6c143d9205d8a857f5fe3a422e203ec38962d01d94c9898b72d/smartbanner/smartbanner_en.js"></script><script type="text/javascript">/*<![CDATA[*/
+/*]]>*/</script></body>
+</html>
