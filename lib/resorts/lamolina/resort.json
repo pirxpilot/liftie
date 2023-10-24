@@ -1,0 +1,14 @@
+{
+  "name": "La Molina",
+  "url": {
+    "host": "https://www.lamolina.cat",
+    "pathname": "/en/winter/resort/snow-report"
+  },
+  "tags": [
+    "Spain"
+  ],
+  "ll": [
+    1.94163,
+    42.3358
+  ]
+}
