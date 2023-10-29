@@ -26,7 +26,10 @@
     "rating": "ro-rating",
     "swipe": "@pirxpilot/swipe"
   },
-  "repository": "pirxpilot/liftie",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pirxpilot/liftie.git"
+  },
   "scripts": {
     "start": "node app.js",
     "test": "make lint test"
@@ -36,8 +39,8 @@
     "@pirxpilot/k": "^1.0.0",
     "@pirxpilot/swipe": "^2.0.2",
     "async": "~3",
-    "connect-cachify-static": "^3.0.0",
-    "connect-gzip-static": "^3.0.0",
+    "connect-cachify-static": "^4.0.0",
+    "connect-gzip-static": "^4.0.0",
     "cookie-parser": "^1.4.3",
     "css-select": "~5",
     "debounce": "^1.0.0",
@@ -45,11 +48,11 @@
     "dynload": "^1.0.2",
     "el-component": "^1.0.1",
     "errorhandler": "^1.5.0",
-    "esbuild": "^0.15.3",
+    "esbuild": "^0.19.5",
     "express": "^4.16.2",
-    "htmlparser2": "~8",
-    "js-cookie": "^2.2.1",
-    "limiter": "~1",
+    "htmlparser2": "~9.0.0",
+    "js-cookie": "^3.0.5",
+    "limiter": "~2.1.0",
     "lodash": "^4.16.6",
     "morgan": "^1.9.0",
     "qs": "^6.3.0",
@@ -62,11 +65,14 @@
     "@pirxpilot/jshint": "^3.0.1",
     "@pirxpilot/replay": "^2.2.1",
     "clean-css-cli": "^5.1.0",
-    "commander": "~2",
+    "commander": "~11.1.0",
     "postcss": "~8",
-    "postcss-cachify": "^3.0.0",
+    "postcss-cachify": "^4.0.0",
     "postcss-cli-simple": "~4.0.0",
     "prompt": "~1",
-    "stylus": "^0.59.0"
+    "stylus": "^0.60.0"
+  },
+  "engines": {
+    "node": ">= 20.1.0"
   }
 }
