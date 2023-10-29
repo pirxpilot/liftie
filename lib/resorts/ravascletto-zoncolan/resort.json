@@ -1,0 +1,16 @@
+{
+  "name": "Ravascletto/Zoncolan",
+  "url": {
+    "host": "https://www.turismofvg.it",
+    "pathname": "/montagna/infoneve?hub=zoncolan&day=today&type=4"
+  },
+  "tags": [
+    "Italy",
+    "Alps",
+    "Friuli Venezia Giulia"
+  ],
+  "ll": [
+    12.92393,
+    46.52506
+  ]
+}

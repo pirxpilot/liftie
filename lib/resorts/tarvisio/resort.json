@@ -1,0 +1,16 @@
+{
+  "name": "Tarvisio",
+  "url": {
+    "host": "https://www.turismofvg.it",
+    "pathname": "/montagna/infoneve?hub=tarvisio&day=today&type=4"
+  },
+  "tags": [
+    "Italy",
+    "Alps",
+    "Friuli Venezia Giulia"
+  ],
+  "ll": [
+    13.58024,
+    46.5047
+  ]
+}
