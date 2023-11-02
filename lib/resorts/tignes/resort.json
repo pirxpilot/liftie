@@ -1,0 +1,25 @@
+{
+  "name": "Tignes",
+  "url": {
+    "host": "https://en.tignes.net/",
+    "pathname": "/skiing/ski-area/ski-map/lifts-and-pistes-live-opening"
+  },
+  "dataUrl": {
+    "host": "https://bulletin.lumiplan.pro",
+    "pathname": "/bulletin.php",
+    "query": {
+      "station": "tignes",
+      "region": "alpes",
+      "pays": "france",
+      "lang": "en"
+    }
+  },
+  "tags": [
+    "France",
+    "Alps"
+  ],
+  "ll": [
+    6.90692,
+    45.46976
+  ]
+}
