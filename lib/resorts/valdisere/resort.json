@@ -1,0 +1,15 @@
+{
+  "name": "Val d'Isere",
+  "url": {
+    "host": "https://www.seevaldisere.com",
+    "pathname": "/lifts/status"
+  },
+  "tags": [
+    "France",
+    "Alps"
+  ],
+  "ll": [
+    6.97732,
+    45.44627
+  ]
+}
