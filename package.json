@@ -76,5 +76,10 @@
   },
   "engines": {
     "node": ">= 20.1.0"
+  },
+  "pnpm": {
+    "overrides": {
+      "@adobe/css-tools": "^4.3.1"
+    }
   }
 }
