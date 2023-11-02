@@ -55,7 +55,7 @@ The following files are generated for a newly added resort:
 - resort descriptor `lib/resort/acme/resort.json`,
 - parser `lib/resort/acme/index.js`,
 - and a test for a parsing function `test/resort/acme.js`.
-- lift status page retrived from internet `test/resort/example/acme.html` 
+- lift status page retrieved from internet `test/resort/example/acme.html` 
 
 You can check [this commit][commit-scaffold] to see what you can expect after this page is completed.
 
@@ -132,6 +132,17 @@ Once parser is ready the tests should succeed.
 if there is a NOAA station nearby: run `bin/fetch-noaa --overwrite <resort-name>` to find it
 - [add webcams][commit-webcams] - normally just specifying position would add some webcams
 to the liftie page but you can also just add links to the webcams in resort.json descriptor
+
+### Alternative status source
+
+In some cases the lift status info is not directly accessible on the web page to which
+liftie should be redirecting its users. For example lift status might be contained in an
+invisible iframe or retrieved from a 3rd party server. In such cases specify `dataUrl` in
+addition to the `url` entry in the resort descriptor.
+
+Liftie will always use `url` to construct the link to the relevant resort page, and - if
+present - it will use `dataUrl` to retrieve the page that is subsequently parsed to obtain
+lift information.
 
 ### Resort JSON API
 
