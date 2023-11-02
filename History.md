@@ -1,4 +1,11 @@
 
+3.47.0 / 2023-11-02
+===================
+
+ * add Tignes resort
+ * add Val d'Isere resort
+ * fix lumiplan parser - title case
+
 3.46.0 / 2023-10-29
 ===================
 
