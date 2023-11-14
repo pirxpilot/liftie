@@ -78,6 +78,10 @@ var expected = {
 At this point you should probably run the tests: since parsing function is not implemented the test
 will fail.
 
+You can run only the specific resort test by running:
+
+   yarn test TESTS="**/*/acme.js"
+
 ### Implement parser
 
 `lib/resorts/acme/index.js` exports the following object
