@@ -1,0 +1,15 @@
+{
+  "name": "Chamonix",
+  "url": {
+    "host": "https://www.chamonix.net",
+    "pathname": "/english/lift-systems"
+  },
+  "tags": [
+    "France",
+    "Alps"
+  ],
+  "ll": [
+    6.86787,
+    45.92652
+  ]
+}
