@@ -19,7 +19,7 @@ function testResort(name, ext, expected, opts = {}) {
     stream.on('error', done);
     stream.pipe(parser(parse, function (err, status) {
       assert.ifError(err);
-      assert.deepEqual(status, expected, `lifts should match for ${name}`);
+      assert.deepEqual(status, expected, `lifts should match for ${name}, received: ${JSON.stringify(status)}`);
       done();
     }));
   }
