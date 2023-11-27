@@ -24,10 +24,11 @@ mixin header(resort, widget)
       if resort.deals
         a.icon-alone(title=resort.deals.title, href=resort.deals.href, target="_blank", rel="nofollow noopener")
           span.ls-deal
-      a.right.icon-alone.minimax
-        span.ls-minimax
     a.right.icon-alone.star
       span.ls-star
+    if !single
+      a.right.icon-alone.minimax
+        span.ls-minimax
 
 mixin lifts(resort)
   .lifts-status

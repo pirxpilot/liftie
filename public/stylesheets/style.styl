@@ -139,10 +139,9 @@ header .ls-furkot
     font-size 1.2em
     border-bottom solid 2px transparent
     vertical-align middle
-
-    a + a,
-    span + span
-      margin-left .2em
+    display flex
+    align-items baseline
+    gap .2em
 
     a
       outline none
@@ -225,6 +224,10 @@ header .ls-furkot
 
 .resort-link
   font-size .9em
+
+.resort-name
+  flex 1
+  ellipsis()
 
 .summary
   list-style none
