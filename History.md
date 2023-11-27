@@ -1,4 +1,10 @@
 
+3.49.0 / 2023-11-27
+===================
+
+ * adjust CSS to better support long resort names
+ * add Dolomiti Superski resorts
+
 3.48.0 / 2023-11-22
 ===================
 
