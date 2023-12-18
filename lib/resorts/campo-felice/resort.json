@@ -1,0 +1,16 @@
+{
+  "name": "Campo Felice",
+  "url": {
+    "host": "https://www.campofelice.it",
+    "pathname": "/ita/impianti.php"
+  },
+  "tags": [
+    "Italy",
+    "Appennines",
+    "Abruzzo"
+  ],
+  "ll": [
+    13.460177207717742,
+    42.21372813629604
+  ]
+}
