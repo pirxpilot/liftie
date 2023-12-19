@@ -1,0 +1,16 @@
+{
+  "name": "Monte Amiata",
+  "url": {
+    "host": "https://amiataneve.it",
+    "pathname": "/"
+  },
+  "tags": [
+    "Italy",
+    "Appennines",
+    "Tuscany"
+  ],
+  "ll": [
+    11.62626,
+    42.89159
+  ]
+}
