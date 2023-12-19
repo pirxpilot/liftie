@@ -1,0 +1,20 @@
+{
+  "name": "Roccaraso - Rivisondoli",
+  "dataUrl": {
+    "host": "https://monitor.roccaraso.net",
+    "pathname": "/impianti.php"
+  },
+  "url": {
+    "host": "https://www.roccaraso.net",
+    "pathname": "/"
+  },
+  "tags": [
+    "Italy",
+    "Appennines",
+    "Abruzzo"
+  ],
+  "ll": [
+    14.08396047685749,
+    41.85103115486714
+  ]
+}
