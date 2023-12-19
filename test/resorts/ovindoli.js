@@ -1,7 +1,6 @@
 const lifts = require('../lifts');
 
 lifts('ovindoli', 'html', {
-  Nome: 'scheduled',
   'B - Topolino 1': 'open',
   'E - Dolce Vita - Magnola': 'closed',
   'C - Topolino 2': 'closed',
