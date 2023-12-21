@@ -1,17 +1,19 @@
 const lifts = require('../lifts');
 
 lifts('sugarloaf', 'html', {
-  'SuperQuad': 'closed',
-  'Whiffletree SuperQuad': 'closed',
-  'Skyline': 'closed',
-  'King Pine': 'closed',
-  'Timberline': 'closed',
-  'Skidway': 'closed',
-  'Double Runner East': 'closed',
+  'Moose-calator': 'closed',
+  Snubber: 'closed',
   'Double Runner West': 'closed',
-  'Sawduster': 'closed',
-  'West Mountain': 'closed',
-  'Snubber': 'closed',
+  'CVA/Colby T-Bar': 'closed',
+  Skyline: 'closed',
   '#3 T-Bar/Bateau': 'closed',
-  'Moose-calator': 'closed'
+  'Whiffletree SuperQuad': 'closed',
+  'King Pine': 'closed',
+  Timberline: 'closed',
+  'Bucksaw Express': 'closed',
+  'West Mountain': 'closed',
+  Sawduster: 'closed',
+  Skidway: 'closed',
+  'Double Runner East': 'closed',
+  SuperQuad: 'closed'
 });

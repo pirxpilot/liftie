@@ -1,14 +1,15 @@
 const lifts = require('../lifts');
 
 lifts('loon', 'html', {
-  'North Peak Express Quad': 'open',
-  'White Mountain Express Gondola': 'open',
-  'Lincoln Express Quad': 'closed',
-  'Tote Road Connector': 'closed',
-  'Kancamagus 8': 'closed',
-  'Kissin\' Cousin Double': 'closed',
-  'Sarsaparilla Carpet': 'closed',
+  "Children's Center Carpet": 'closed',
   'East Basin Double': 'closed',
+  'Kancamagus 8': 'open', "Kissin' Cousin Double": 'open',
+  'Lincoln Express Quad': 'closed',
   'Little Sister Double': 'closed',
-  'Seven Brothers Triple': 'closed'
+  'North Peak Express Quad': 'open', "River's Edge Double": 'closed',
+  'Sarsaparilla Carpet': 'open',
+  'Seven Brothers Express Quad': 'open',
+  'Timbertown Quad': 'closed',
+  'Tote Road Connector': 'closed',
+  'White Mountain Express Gondola': 'open'
 });
