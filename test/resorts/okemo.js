@@ -1,20 +1,24 @@
 const lifts = require('../lifts');
 
-lifts.skip('okemo', 'html', {
-  'Solitude Express Quad': 'open',
-  'Morning Star Triple': 'closed',
-  'Quantum Four': 'open',
+lifts('okemo', 'html', {
+  'Black Ridge Triple': 'open',
   'Coleman Brook Express Quad': 'open',
-  'Snow Star Carpet': 'closed',
-  'Orion\'s Belt Carpet': 'closed',
-  'Green Ridge Triple': 'closed',
+  'Evergreen Summit Express': 'closed',
   'F-10 Carpet': 'open',
-  'Black Ridge Triple': 'closed',
-  'Sunburst Six': 'open',
-  'Sachem Quad': 'closed',
   'Glades Peak Quad': 'closed',
+  'Morning Star Triple': 'open',
+  "Orion's Belt Carpet": 'open',
+  'Quantum Six': 'open',
+  'Sachem Quad': 'closed',
+  'Skywalker Carpet': 'closed',
+  'Snowstar Carpet': 'closed',
+  'Solitude Express Quad': 'open',
   'South Face Express Quad': 'closed',
-  'South Ridge Quad A': 'closed',
-  'South Ridge Quad B': 'open',
-  'Sunshine Quad': 'closed'
+  'South Ridge Quad A': 'open',
+  'South Ridge Quad B': 'closed',
+  Stargazer: 'open',
+  Starlight: 'open',
+  'Sunburst Six': 'open',
+  'Sunshine Quad': 'closed',
+  'The Pull': 'closed'
 });
