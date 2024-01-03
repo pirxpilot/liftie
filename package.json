@@ -72,14 +72,9 @@
     "postcss-cachify": "^4.0.0",
     "postcss-cli-simple": "~4.0.0",
     "prompt": "~1",
-    "stylus": "^0.60.0"
+    "stylus": "^0.62.0"
   },
   "engines": {
     "node": ">= 20.1.0"
-  },
-  "pnpm": {
-    "overrides": {
-      "@adobe/css-tools": "^4.3.1"
-    }
   }
 }
