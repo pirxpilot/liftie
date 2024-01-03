@@ -1,13 +1,12 @@
 const lifts = require('../lifts');
 
-lifts.skip('mount-sunapee', 'html', {
-  "Sunapee Express": "open",
-  "Sunbowl Express": "open",
-  "North Peak Triple": "open",
-  "Spruce Triple": "closed",
-  "Clipper Ship Quad": "open",
-  "Middle Carpet": "open",
-  "Flying Carpet": "open",
-  "Piggyback": "closed",
-  "Little Carpet": "closed"
+lifts('mount-sunapee', 'html', {
+  'Clipper Ship Quad': 'open',
+  'Flying Carpet': 'open',
+  'Little Carpet': 'open',
+  'Middle Carpet': 'open',
+  'North Peak Triple': 'closed',
+  'Spruce Triple': 'closed',
+  'Sunapee Express': 'open',
+  'Sunbowl Express': 'open'
 });
