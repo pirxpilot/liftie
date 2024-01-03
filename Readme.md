@@ -27,10 +27,6 @@ Clone this repo (or your fork)
 
     git clone git@github.com:pirxpilot/liftie.git && cd liftie
 
-Install dependencies:
-
-    yarn
-
 Build client side scripts: `make` will install all external components and trigger component build for you.
 
     make
@@ -80,7 +76,7 @@ will fail.
 
 You can run only the specific resort test by running:
 
-   yarn test TESTS="**/*/acme.js"
+   make test TESTS="**/*/acme.js"
 
 ### Implement parser
 

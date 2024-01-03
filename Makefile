@@ -62,9 +62,11 @@ all: lint test build
 %.min.css: %.css
 	$(NODE_BIN)/cleancss -O1 --output $@ $<
 
-node_modules: package.json $(wildcard yarn.lock)
-	yarn --cwd $(@D) --no-progress --frozen-lockfile --silent
+node_modules: package.json pnpm-lock.yaml
+	pnpm install -C $(@D) --silent --frozen-lockfile
 	touch $@
+
+.NOTPARALLEL: node_modules
 
 lint: | node_modules
 	$(NODE_BIN)/jshint $(LINT_SRC)
@@ -89,7 +91,7 @@ $(BUILD_DIR)/$(PROJECT)-embed.min.js: lib/embed/index.js | $(BUILD_DIR)
 
 # stylus for CSS
 
-$(CSS_DIR)/style.css: $(wildcard $(CSS_DIR)/*.styl)
+$(CSS_DIR)/style.css: $(wildcard $(CSS_DIR)/*.styl) | node_modules
 
 build: $(BUILD_DIR)/$(PROJECT).js $(CSS_DIR)/style.css $(BUILD_DIR)/$(PROJECT)-embed.js
 

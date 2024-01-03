@@ -1,6 +1,5 @@
 tasks:
   - init: |
-      yarn
       make
     command: node app
 ports:
