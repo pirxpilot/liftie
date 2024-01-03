@@ -1,16 +1,16 @@
 const lifts = require('../lifts');
 
-lifts.skip('stowe', 'html', {
-  'Adventure Carpet': 'closed',
-  'Adventure Triple': 'closed',
+lifts('stowe', 'html', {
+  'Adventure Carpet': 'open',
+  'Adventure Triple': 'open',
   'FourRunner Quad': 'open',
-  'Gondola': 'hold',
-  'Lookout Double': 'closed',
-  'Meadows Carpet': 'closed',
-  'Meadows Quad': 'closed',
-  'Mountain Triple': 'closed',
-  'Over Easy Gondola': 'closed',
+  'Lookout Double': 'scheduled',
+  'Mansfield Gondola': 'open',
+  'Meadows Carpet': 'open',
+  'Meadows Quad': 'open',
+  'Over Easy Gondola': 'open',
   'Sensation Quad': 'closed',
-  'Sunny Spruce Quad': 'closed',
+  'Sunny Spruce Quad': 'open',
+  'Sunrise Lift': 'open',
   'Toll House Double': 'closed'
 });
