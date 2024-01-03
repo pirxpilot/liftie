@@ -1,4 +1,12 @@
 
+3.51.2 / 2024-01-03
+===================
+
+ * fix skipped test
+ * upgrade stylus to 0.62
+ * soft dependency upgrade
+ * switch from yarn to pnpm
+
 3.51.1 / 2023-12-21
 ===================
 
