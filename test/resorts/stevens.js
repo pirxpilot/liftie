@@ -1,16 +1,17 @@
 const lifts = require('../lifts');
 
-lifts.skip('stevens', 'html', {
-  'Brooks Express': 'closed',
-  'Daisy': 'scheduled',
-  'Double Diamond': 'scheduled',
-  'Marmot Carpet': 'scheduled',
-  'Pika Carpet': 'scheduled',
-  'Hogsback Express': 'scheduled',
-  'Kehr\'s': 'scheduled',
-  'Seventh Heaven': 'scheduled',
-  'Skyline Express': 'closed',
-  'Tye Mill': 'scheduled',
-  'Jupiter Express': 'scheduled',
-  'Southern Cross': 'scheduled'
+lifts('stevens', 'html', {
+  'Brooks Express': 'open',
+  Daisy: 'open',
+  'Double Diamond': 'closed',
+  'Hogsback Express': 'open',
+  'Jupiter Express': 'closed',
+  "Kehr's": 'open',
+  'Marmot Carpet': 'closed',
+  'Pika Carpet': 'closed',
+  'Rope Tow 1': 'open',
+  'Rope Tow 2': 'closed',
+  'Skyline Express': 'open',
+  'Southern Cross': 'closed',
+  'Tye Mill': 'open'
 });
