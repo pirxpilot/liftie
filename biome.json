@@ -31,7 +31,6 @@
       },
       "style": {
         "useTemplate": "off",
-        "useConst": "off",
         "noParameterAssign": "off"
       },
       "performance": {

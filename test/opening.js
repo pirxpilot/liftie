@@ -4,9 +4,8 @@ const opening = require('../lib/opening');
 const day = require('../lib/tools/millis').day;
 
 function iso(millis) {
-  let date;
   millis -= (new Date().getTimezoneOffset()) * 60 * 1000;
-  date = new Date(millis);
+  const date = new Date(millis);
   return date.toISOString().slice(0, 10);
 }
 
