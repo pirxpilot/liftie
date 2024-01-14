@@ -32,7 +32,6 @@
         "noUselessSwitchCase": "off"
       },
       "style": {
-        "noUnusedTemplateLiteral": "off",
         "useTemplate": "off",
         "useConst": "off",
         "noParameterAssign": "off"
