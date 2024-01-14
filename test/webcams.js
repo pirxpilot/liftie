@@ -8,7 +8,7 @@ if (process.env.REPLAY !== 'record') {
   process.env.WEBCAMS_API_KEY = 'TEST_KEY';
 }
 
-test('webcams should return no webcams if location is missing', (t, done) => {
+test('webcams should return no webcams if location is missing', (_t, done) => {
   webcams({}, (err, webcams) => {
     assert.ifError(err);
     assert.ok(!webcams);
@@ -16,7 +16,7 @@ test('webcams should return no webcams if location is missing', (t, done) => {
   });
 });
 
-test('webcams should return webcams for valid location', (t, done) => {
+test('webcams should return webcams for valid location', (_t, done) => {
   webcams({
     counter: 1,
     ll: [7.98, 46.54] // from API examples https://windy.com/webcams/1697038975'

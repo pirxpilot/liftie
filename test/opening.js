@@ -14,14 +14,14 @@ const today = iso(now);
 const future = iso(now + 2 * day);
 const past = iso(now - 2 * day);
 
-test('opening should be empty for missing dates', (t, done) => {
+test('opening should be empty for missing dates', (_t, done) => {
   opening({}, (err, od) => {
     assert.ok(!od);
     done(err);
   });
 });
 
-test('opening should be empty for invalid dates', (t, done) => {
+test('opening should be empty for invalid dates', (_t, done) => {
   opening({
     opening: 'abc'
   }, (err, od) => {
@@ -30,7 +30,7 @@ test('opening should be empty for invalid dates', (t, done) => {
   });
 });
 
-test('opening should be empty for past dates', (t, done) => {
+test('opening should be empty for past dates', (_t, done) => {
   opening({
     opening: past
   }, (err, od) => {
@@ -39,7 +39,7 @@ test('opening should be empty for past dates', (t, done) => {
   });
 });
 
-test('opening should be empty for today', (t, done) => {
+test('opening should be empty for today', (_t, done) => {
   opening({
     opening: today
   }, (err, od) => {
@@ -48,7 +48,7 @@ test('opening should be empty for today', (t, done) => {
   });
 });
 
-test('opening should be present for future dates', (t, done) => {
+test('opening should be present for future dates', (_t, done) => {
   opening({
     opening: future
   }, (err, od) => {

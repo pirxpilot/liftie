@@ -4,7 +4,7 @@ const openweather = require('../../lib/weather/openweather');
 
 require('../replay');
 
-test('openweather should return forecast', (t, done) => {
+test('openweather should return forecast', (_t, done) => {
   openweather({
     // Killington, VT
     ll: [-72.7933, 43.6647]

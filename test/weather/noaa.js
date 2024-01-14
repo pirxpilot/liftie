@@ -4,7 +4,7 @@ const noaa = require('../../lib/weather/noaa');
 
 require('../replay');
 
-test('noaa should return empty forecast if location is missing', (t, done) => {
+test('noaa should return empty forecast if location is missing', (_t, done) => {
   noaa({
     ll: [0, 0]
   }, (err, forecast) => {
@@ -14,7 +14,7 @@ test('noaa should return empty forecast if location is missing', (t, done) => {
   });
 });
 
-test('noaa should return forecast for valid location', (t, done) => {
+test('noaa should return forecast for valid location', (_t, done) => {
   noaa({
     // Killington, VT
     noaa: 'BTV/107,21',

@@ -13,7 +13,7 @@ function testResort(name, ext, expected, opts = {}) {
   const parse = makeParse(name);
 
 
-  function testHTML(t, done) {
+  function testHTML(_t, done) {
     const stream = createReadStream(filename);
 
     stream.on('error', done);
@@ -24,7 +24,7 @@ function testResort(name, ext, expected, opts = {}) {
     }));
   }
 
-  function testJSON(t, done) {
+  function testJSON(_t, done) {
     const asyncParse = parse.isAsync ?
       parse :
       (data, fn) => process.nextTick(fn, null, parse(data));

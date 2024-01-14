@@ -44,7 +44,7 @@ app.set('view engine', 'jade');
 app.use(logger('dev'));
 app.use(cookieParser());
 app.use(cachify);
-app.use((req, res, next) => {
+app.use((_req, res, next) => {
   cachify.helpers().then(fns => {
     res.locals.cachify = fns.cachify;
     next();
