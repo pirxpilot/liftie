@@ -27,8 +27,7 @@
       "complexity": {
         "noForEach": "off",
         "useArrowFunction": "off",
-        "useLiteralKeys": "off",
-        "noUselessSwitchCase": "off"
+        "useLiteralKeys": "off"
       },
       "style": {
         "useTemplate": "off",
