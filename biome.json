@@ -35,7 +35,6 @@
         "noUnusedTemplateLiteral": "off",
         "useTemplate": "off",
         "useConst": "off",
-        "noUselessElse": "off",
         "noParameterAssign": "off",
         "noArguments": "off"
       },
