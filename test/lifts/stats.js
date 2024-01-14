@@ -2,7 +2,7 @@ const test = require('node:test');
 const assert = require('node:assert/strict');
 const stats = require('../../lib/lifts/stats');
 
-test('stats should report 0 for empty', function () {
+test('stats should report 0 for empty', () => {
   assert.deepEqual(stats({}), {
     open: 0,
     closed: 0,
@@ -17,7 +17,7 @@ test('stats should report 0 for empty', function () {
   });
 });
 
-test('stats should count all status', function () {
+test('stats should count all status', () => {
   const status = {
     'n1': 'open',
     'n2': 'open',
@@ -48,7 +48,7 @@ test('stats should count all status', function () {
   });
 });
 
-test('stats.summary should calculate summary for empty stats', function () {
+test('stats.summary should calculate summary for empty stats', () => {
   assert.deepEqual(stats.summary([]), {
     open: 0,
     closed: 0,
@@ -63,7 +63,7 @@ test('stats.summary should calculate summary for empty stats', function () {
   });
 });
 
-test('stats.summary should calculate summary for array of stats', function () {
+test('stats.summary should calculate summary for array of stats', () => {
   assert.deepEqual(stats.summary([{
       open: 5,
       closed: 4,

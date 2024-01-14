@@ -14,44 +14,44 @@ const today = iso(now);
 const future = iso(now + 2 * day);
 const past = iso(now - 2 * day);
 
-test('opening should be empty for missing dates', function (t, done) {
-  opening({}, function (err, od) {
+test('opening should be empty for missing dates', (t, done) => {
+  opening({}, (err, od) => {
     assert.ok(!od);
     done(err);
   });
 });
 
-test('opening should be empty for invalid dates', function (t, done) {
+test('opening should be empty for invalid dates', (t, done) => {
   opening({
     opening: 'abc'
-  }, function (err, od) {
+  }, (err, od) => {
     assert.ok(!od);
     done(err);
   });
 });
 
-test('opening should be empty for past dates', function (t, done) {
+test('opening should be empty for past dates', (t, done) => {
   opening({
     opening: past
-  }, function (err, od) {
+  }, (err, od) => {
     assert.ok(!od);
     done(err);
   });
 });
 
-test('opening should be empty for today', function (t, done) {
+test('opening should be empty for today', (t, done) => {
   opening({
     opening: today
-  }, function (err, od) {
+  }, (err, od) => {
     assert.ok(!od);
     done(err);
   });
 });
 
-test('opening should be present for future dates', function (t, done) {
+test('opening should be present for future dates', (t, done) => {
   opening({
     opening: future
-  }, function (err, od) {
+  }, (err, od) => {
     assert.ok(od);
     assert.equal(od, future);
     done(err);

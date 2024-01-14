@@ -26,7 +26,6 @@
       "recommended": true,
       "complexity": {
         "noForEach": "off",
-        "useArrowFunction": "off",
         "useLiteralKeys": "off"
       },
       "style": {
