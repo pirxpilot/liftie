@@ -35,8 +35,7 @@
         "noUnusedTemplateLiteral": "off",
         "useTemplate": "off",
         "useConst": "off",
-        "noParameterAssign": "off",
-        "noArguments": "off"
+        "noParameterAssign": "off"
       },
       "performance": {
         "noDelete": "off"
