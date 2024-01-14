@@ -1,0 +1,51 @@
+{
+  "$schema": "https://biomejs.dev/schemas/1.5.1/schema.json",
+  "organizeImports": {
+    "enabled": false
+  },
+  "formatter": {
+    "enabled": false
+  },
+  "files": {
+    "ignore": [
+      "bin/generate",
+      "test/resorts/example",
+      "test/replay"
+    ]
+  },
+  "javascript": {
+    "formatter": {
+      "quoteStyle": "single",
+      "trailingComma": "none",
+      "arrowParentheses": "asNeeded"
+    }
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "recommended": true,
+      "complexity": {
+        "noForEach": "off",
+        "useOptionalChain": "off",
+        "useArrowFunction": "off",
+        "useLiteralKeys": "off",
+        "noUselessSwitchCase": "off"
+      },
+      "style": {
+        "noUnusedTemplateLiteral": "off",
+        "useTemplate": "off",
+        "useConst": "off",
+        "noUselessElse": "off",
+        "noParameterAssign": "off",
+        "noArguments": "off"
+      },
+      "performance": {
+        "noDelete": "off"
+      },
+      "suspicious": {
+        "noAssignInExpressions": "off",
+        "noGlobalIsNan": "off"
+      }
+    }
+  }
+}
