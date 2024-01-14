@@ -29,7 +29,6 @@
         "useLiteralKeys": "off"
       },
       "style": {
-        "useTemplate": "off",
         "noParameterAssign": "off"
       },
       "performance": {
