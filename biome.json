@@ -41,8 +41,7 @@
         "noDelete": "off"
       },
       "suspicious": {
-        "noAssignInExpressions": "off",
-        "noGlobalIsNan": "off"
+        "noAssignInExpressions": "off"
       }
     }
   }
