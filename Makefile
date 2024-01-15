@@ -69,7 +69,7 @@ node_modules: package.json pnpm-lock.yaml
 .NOTPARALLEL: node_modules
 
 lint: | node_modules
-	$(NODE_BIN)/jshint $(LINT_SRC)
+	$(NODE_BIN)/biome lint $(LINT_SRC)
 
 test: | node_modules
 	node --test $(TESTS)

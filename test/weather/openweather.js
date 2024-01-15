@@ -4,11 +4,11 @@ const openweather = require('../../lib/weather/openweather');
 
 require('../replay');
 
-test('openweather should return forecast', function (t, done) {
+test('openweather should return forecast', (_t, done) => {
   openweather({
     // Killington, VT
     ll: [-72.7933, 43.6647]
-  }, 'testkey', function (err, forecast) {
+  }, 'testkey', (err, forecast) => {
     assert.ifError(err);
     assert.ok(forecast);
     assert.deepEqual(forecast.icon, ['basenone', 'icon-moon']);

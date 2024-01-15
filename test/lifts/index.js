@@ -13,25 +13,25 @@ function testResort(name, ext, expected, opts = {}) {
   const parse = makeParse(name);
 
 
-  function testHTML(t, done) {
+  function testHTML(_t, done) {
     const stream = createReadStream(filename);
 
     stream.on('error', done);
-    stream.pipe(parser(parse, function (err, status) {
+    stream.pipe(parser(parse, (err, status) => {
       assert.ifError(err);
       assert.deepEqual(status, expected, `lifts should match for ${name}, received: ${JSON.stringify(status)}`);
       done();
     }));
   }
 
-  function testJSON(t, done) {
+  function testJSON(_t, done) {
     const asyncParse = parse.isAsync ?
       parse :
       (data, fn) => process.nextTick(fn, null, parse(data));
 
     const data = require(filename);
 
-    asyncParse(data, function (err, status) {
+    asyncParse(data, (err, status) => {
       assert.deepEqual(status, expected);
       done(err);
     });

@@ -64,7 +64,7 @@
     "to-title-case": "^1.0.0"
   },
   "devDependencies": {
-    "@pirxpilot/jshint": "^3.0.1",
+    "@biomejs/biome": "^1.5.1",
     "@pirxpilot/replay": "^2.2.1",
     "clean-css-cli": "^5.1.0",
     "commander": "~11.1.0",

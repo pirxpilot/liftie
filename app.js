@@ -44,7 +44,7 @@ app.set('view engine', 'jade');
 app.use(logger('dev'));
 app.use(cookieParser());
 app.use(cachify);
-app.use((req, res, next) => {
+app.use((_req, res, next) => {
   cachify.helpers().then(fns => {
     res.locals.cachify = fns.cachify;
     next();
@@ -72,13 +72,13 @@ app.data = require('./lib/routes/data')();
 require('./lib/routes')(app);
 
 app.run = function run() {
-  app.data.init(function (err) {
+  app.data.init(err => {
     if (err) {
       console.error(err);
       process.exit(1);
       return;
     }
-    http.createServer(app).listen(app.get('port'), function () {
+    http.createServer(app).listen(app.get('port'), () => {
       console.log(`Running on: http://localhost:${app.get('port')}`);
     });
   });

@@ -3,60 +3,58 @@ const assert = require('node:assert/strict');
 const sorter = require('../../lib/routes/sorter');
 
 function id2resorts(commaSeparatedIds) {
-  return commaSeparatedIds.split(',').map(function (id) {
-    return {
+  return commaSeparatedIds.split(',').map((id) => ({
       id,
       name: id.toUpperCase()
-    };
-  });
+    }));
 }
 
-test('sorter should mark all as open if no cookie', function () {
+test('sorter should mark all as open if no cookie', () => {
   let resorts = id2resorts('a,b,c,d,e');
 
   resorts = sorter(resorts, {});
 
-  resorts.forEach(function (r) {
+  resorts.forEach((r) => {
     assert.ok(r.open);
   });
 });
 
-test('sorter should mark none as open if no cookie and at least 5 resorts', function () {
+test('sorter should mark none as open if no cookie and at least 5 resorts', () => {
   let resorts = id2resorts('a,b,c,d,e,f');
 
   resorts = sorter(resorts, {});
 
-  resorts.forEach(function (r) {
+  resorts.forEach((r) => {
     assert.ok(!r.open);
   });
 });
 
-test('sorter should mark none as open if empty cookie', function () {
+test('sorter should mark none as open if empty cookie', () => {
   let resorts = id2resorts('a,b,c,d,e');
 
   resorts = sorter(resorts, {
     'resorts-open': ''
   });
 
-  resorts.forEach(function (r) {
+  resorts.forEach((r) => {
     assert.ok(!r.open);
   });
 });
 
-test('sorter should mark none as open if cookie has unknown names', function () {
+test('sorter should mark none as open if cookie has unknown names', () => {
   let resorts = id2resorts('a,b,c,d,e');
 
   resorts = sorter(resorts, {
     'resorts-open': 'x,y'
   });
 
-  resorts.forEach(function (r) {
+  resorts.forEach((r) => {
     assert.ok(!r.open);
   });
 });
 
 
-test('sorter should mark mark and sort if cookie present', function () {
+test('sorter should mark mark and sort if cookie present', () => {
   let resorts = id2resorts('a,e,c,d,b');
 
   resorts = sorter(resorts, {
@@ -75,7 +73,7 @@ test('sorter should mark mark and sort if cookie present', function () {
   assert.ok(!resorts[4].open);
 });
 
-test('sorter should update resort status', function () {
+test('sorter should update resort status', () => {
   let resorts = id2resorts('a,b');
 
   resorts[0].open = true;
