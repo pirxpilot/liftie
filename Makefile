@@ -57,6 +57,7 @@ all: lint test build
 		--use postcss-cachify \
 		--postcss-cachify.baseUrl /stylesheets \
 		--postcss-cachify.basePath public \
+		--postcss-cachify.format name \
 		--output $@ $@
 
 %.min.css: %.css
