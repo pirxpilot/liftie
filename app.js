@@ -20,7 +20,7 @@ process.env.NODE_ENV ??= 'development';
 const root = path.join(__dirname, 'public');
 const { SITE_URL: siteUrl, LIFTIE_STATIC_HOST: staticHost = '' } = process.env;
 
-const cachify = cachifyStatic(root);
+const cachify = cachifyStatic(root, { format: 'name' });
 
 app.locals = {
   min: '.min',
