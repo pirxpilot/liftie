@@ -5,7 +5,7 @@
     "pathname": "/conditions-weather/lifts-trails-report"
   },
   "api": {
-    "host": "https://www.killington.com",
+    "host": "https://api.killington.com",
     "pathname": "/api/v1/dor/status"
   },
   "tags": [

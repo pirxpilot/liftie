@@ -5,7 +5,7 @@
     "pathname": "/the-mountain/weather-operations/lift-trail-report"
   },
   "api": {
-    "host": "https://www.mtbachelor.com",
+    "host": "https://api.mtbachelor.com",
     "pathname": "/api/v1/dor/status"
   },
   "tags": [
