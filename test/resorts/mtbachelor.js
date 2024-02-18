@@ -1,19 +1,19 @@
 const lifts = require('../lifts');
 
 lifts('mtbachelor', 'json', {
-  'Chipmunk Carpet': 'closed',
-  'Little Pine': 'closed',
-  'Pine Marten': 'closed',
-  'Red Chair': 'closed',
-  'Skyliner': 'closed',
-  'Alpenglow': 'closed',
-  'Cloudchaser': 'closed',
-  'Early Riser': 'closed',
+  'Chipmunk Carpet': 'scheduled',
+  'Little Pine': 'scheduled',
+  'Pine Marten': 'scheduled',
+  'Red Chair': 'scheduled',
+  'Skyliner Express': 'scheduled',
+  'Alpenglow': 'scheduled',
+  'Cloudchaser': 'scheduled',
+  'Early Riser': 'scheduled',
   'First Rays': 'closed',
-  'Lava Tube': 'closed',
-  'Rainbow': 'closed',
-  'Summit': 'closed',
-  'Sunrise': 'closed',
-  'Northwest': 'closed',
-  'Outback': 'closed'
+  'Lava Tube': 'scheduled',
+  'Rainbow': 'scheduled',
+  'Summit': 'scheduled',
+  'Sunrise': 'scheduled',
+  'Northwest': 'scheduled',
+  'Outback': 'scheduled'
 });
