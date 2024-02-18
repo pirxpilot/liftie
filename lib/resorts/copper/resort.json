@@ -5,7 +5,7 @@
     "pathname": "/the-mountain/trail-lift-info/winter-trail-report"
   },
   "api": {
-    "host": "https://www.coppercolorado.com",
+    "host": "https://api.coppercolorado.com",
     "pathname": "/api/v1/dor/status"
   },
   "tags": [

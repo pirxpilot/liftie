@@ -5,7 +5,7 @@
     "pathname": "/the-mountain/the-mountain/trail-lift-info/full-trail-report"
   },
   "api": {
-    "host": "https://www.rideboreal.com",
+    "host": "https://api.rideboreal.com",
     "pathname": "/api/v1/dor/status"
   },
   "tags": [
