@@ -1,0 +1,15 @@
+{
+  "name": "Whitefish Mountain Resort",
+  "url": {
+    "host": "https://skiwhitefish.com",
+    "pathname": "/snowreport/"
+  },
+  "tags": [
+    "Montana"
+  ],
+  "ll": [
+    -114.34,
+    48.5
+  ],
+  "opening": "1947-12-14"
+}
