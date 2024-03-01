@@ -1,4 +1,10 @@
 
+3.52.0 / 2024-03-01
+===================
+
+ * add Whitefish Mountain resort
+ * add Bogus Basin resort
+
 3.51.4 / 2024-02-29
 ===================
 
