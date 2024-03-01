@@ -1,0 +1,16 @@
+{
+  "name": "Bogus Basin",
+  "url": {
+    "host": "https://bogusbasin.org",
+    "pathname": "/your-mountain/trails-grooming/"
+  },
+  "tags": [
+    "Idaho"
+  ],
+  "ll": [
+    -116.104,
+    43.764
+  ],
+  "opening": "1960-02-02",
+  "noaa": "BOI/138,92"
+}
