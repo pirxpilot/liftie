@@ -1,6 +1,6 @@
 const test = require('node:test');
 const assert = require('node:assert/strict');
-const { createReadStream } = require('fs');
+const { createReadStream } = require('node:fs');
 
 const parser = require('../../lib/lifts/parser');
 const makeParse = require('../../lib/lifts/parse');
