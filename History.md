@@ -1,4 +1,10 @@
 
+3.52.1 / 2024-03-09
+===================
+
+ * remove async dependency
+ * fix Cranmore Mountain resort
+
 3.52.0 / 2024-03-01
 ===================
 
