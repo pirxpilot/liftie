@@ -38,7 +38,6 @@
     "@pirxpilot/jade-core": "^1.12.1",
     "@pirxpilot/k": "^1.0.0",
     "@pirxpilot/swipe": "^2.0.2",
-    "async": "~3",
     "connect-cachify-static": "^4.0.0",
     "connect-gzip-static": "^4.0.0",
     "cookie-parser": "^1.4.3",
