@@ -1,8 +1,8 @@
 const express = require('express');
 const cachifyStatic = require('connect-cachify-static');
 const gzip = require('connect-gzip-static');
-const http = require('http');
-const path = require('path');
+const http = require('node:http');
+const path = require('node:path');
 const loaders = require('./lib/loaders');
 const plugins = require('./lib/plugins');
 
