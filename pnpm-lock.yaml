@@ -54,8 +54,8 @@ dependencies:
     specifier: ^4.16.2
     version: 4.18.3
   htmlparser2:
-    specifier: ~9.0.0
-    version: 9.0.0
+    specifier: ~9
+    version: 9.1.0
   js-cookie:
     specifier: ^3.0.5
     version: 3.0.5
@@ -1116,8 +1116,8 @@ packages:
     engines: {node: '>=8'}
     dev: false
 
-  /htmlparser2@9.0.0:
-    resolution: {integrity: sha512-uxbSI98wmFT/G4P2zXx4OVx04qWUmyFPrD2/CNepa2Zo3GPNaCaaxElDgwUrwYWkK1nr9fft0Ya8dws8coDLLQ==}
+  /htmlparser2@9.1.0:
+    resolution: {integrity: sha512-5zfg6mHUoaer/97TxnGpxmbR7zJtPwIYFMZ/H5ucTlPZhKvtum05yiPK3Mgai3a0DyVxv7qYqoweaEd2nrYQzQ==}
     dependencies:
       domelementtype: 2.3.0
       domhandler: 5.0.3
