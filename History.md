@@ -1,4 +1,12 @@
 
+3.52.2 / 2024-03-29
+===================
+
+ * fix Telluride resort
+ * update dependencies
+ * use `Number.*` methods instead of global scope
+ * use `node:` prefix when using Node's built-in modules
+
 3.52.1 / 2024-03-09
 ===================
 
