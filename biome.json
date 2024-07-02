@@ -16,7 +16,7 @@
   "javascript": {
     "formatter": {
       "quoteStyle": "single",
-      "trailingComma": "none",
+      "trailingCommas": "none",
       "arrowParentheses": "asNeeded"
     }
   },
@@ -25,7 +25,8 @@
     "rules": {
       "recommended": true,
       "correctness": {
-        "all": true
+        "all": true,
+        "noNodejsModules": "off"
       },
       "complexity": {
         "noForEach": "off",
