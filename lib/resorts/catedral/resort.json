@@ -1,8 +1,8 @@
 {
   "name": "Catedral Alta Patagonia",
   "url": {
-    "host": "https://catedralaltapatagonia.com",
-    "pathname": "/partediario/"
+    "host": "https://partediario.catedralaltapatagonia.com",
+    "pathname": "/partediario/#nav-medios-tab"
   },
   "tags": [
     "CAPSA",
