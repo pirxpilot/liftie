@@ -1,4 +1,11 @@
 
+3.52.7 / 2024-09-17
+===================
+
+ * use esbuild to minimize CSS
+ * remove `browser` section from package.json
+ * dependency update
+
 3.52.6 / 2024-08-19
 ===================
 
