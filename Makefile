@@ -60,7 +60,15 @@ all: lint test build
 		--output $@ $@
 
 %.min.css: %.css
-	$(NODE_BIN)/cleancss -O1 --output $@ $<
+	$(NODE_BIN)/esbuild \
+		--log-level=warning \
+		--color=false \
+		--minify \
+		--external:*.woff2 \
+		--sourcemap=external \
+		--sources-content=false \
+		--bundle $< \
+		--outfile=$@
 
 node_modules: package.json pnpm-lock.yaml
 	pnpm install -C $(@D) --silent --frozen-lockfile
@@ -78,10 +86,10 @@ $(BUILD_DIR):
 	mkdir -p $@
 
 $(BUILD_DIR)/$(PROJECT).js: lib/client/boot/index.js $(SRC) node_modules | $(BUILD_DIR)
-	NODE_PATH=lib/client:node_modules $(RUN_ESBUILD)
+	$(RUN_ESBUILD)
 
 $(BUILD_DIR)/$(PROJECT).min.js: lib/client/boot/index.js $(SRC) node_modules | $(BUILD_DIR)
-	NODE_PATH=lib/client:node_modules $(RUN_ESBUILD_MIN)
+	$(RUN_ESBUILD_MIN)
 
 $(BUILD_DIR)/$(PROJECT)-embed.js: lib/embed/index.js | $(BUILD_DIR)
 	$(RUN_ESBUILD)
