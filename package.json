@@ -57,7 +57,6 @@
   "devDependencies": {
     "@biomejs/biome": "^1.5.1",
     "@pirxpilot/replay": "^2.2.1",
-    "clean-css-cli": "^5.6.3",
     "commander": "~12",
     "postcss": "~8",
     "postcss-cachify": "^4.0.0",

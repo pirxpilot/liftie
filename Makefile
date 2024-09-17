@@ -60,7 +60,15 @@ all: lint test build
 		--output $@ $@
 
 %.min.css: %.css
-	$(NODE_BIN)/cleancss -O1 --output $@ $<
+	$(NODE_BIN)/esbuild \
+		--log-level=warning \
+		--color=false \
+		--minify \
+		--external:*.woff2 \
+		--sourcemap=external \
+		--sources-content=false \
+		--bundle $< \
+		--outfile=$@
 
 node_modules: package.json pnpm-lock.yaml
 	pnpm install -C $(@D) --silent --frozen-lockfile
