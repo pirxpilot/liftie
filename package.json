@@ -18,14 +18,6 @@
     "Makefile"
   ],
   "main": "app.js",
-  "browser": {
-    "el": "el-component",
-    "k": "@pirxpilot/k",
-    "load": "dynload",
-    "pager": "tiny-pager",
-    "rating": "ro-rating",
-    "swipe": "@pirxpilot/swipe"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/pirxpilot/liftie.git"

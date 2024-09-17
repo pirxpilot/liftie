@@ -78,10 +78,10 @@ $(BUILD_DIR):
 	mkdir -p $@
 
 $(BUILD_DIR)/$(PROJECT).js: lib/client/boot/index.js $(SRC) node_modules | $(BUILD_DIR)
-	NODE_PATH=lib/client:node_modules $(RUN_ESBUILD)
+	$(RUN_ESBUILD)
 
 $(BUILD_DIR)/$(PROJECT).min.js: lib/client/boot/index.js $(SRC) node_modules | $(BUILD_DIR)
-	NODE_PATH=lib/client:node_modules $(RUN_ESBUILD_MIN)
+	$(RUN_ESBUILD_MIN)
 
 $(BUILD_DIR)/$(PROJECT)-embed.js: lib/embed/index.js | $(BUILD_DIR)
 	$(RUN_ESBUILD)
