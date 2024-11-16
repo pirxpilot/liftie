@@ -1,11 +1,12 @@
 const lifts = require('../lifts');
 
 lifts('boreal', 'json', {
-  'Accelerator Express Quad Charilift': 'open',
-  'Castle Peak Quad Chairlift': 'open',
-  'California Cruiser Quad Chairlift': 'open',
-  'Discovery Carpet': 'open',
-  'Cedar Ridge Triple Chairlift': 'open',
-  '49er Triple Chairlift': 'open',
-  'Lost Dutchman Triple Chairlift': 'open'
+      '49er Triple Chairlift': 'closed',
+      'Accelerator Express Quad Charilift': 'closed',
+      'California Cruiser Quad Chairlift': 'closed',
+      'Castle Peak Quad Chairlift': 'closed',
+      'Cedar Ridge Triple Chairlift': 'closed',
+      'Discovery Carpet': 'closed',
+      'Lost Dutchman Triple Chairlift': 'closed',
+      'Tahoe Tubing Carpet': 'closed'
 });

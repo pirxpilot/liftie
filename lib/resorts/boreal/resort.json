@@ -6,7 +6,7 @@
   },
   "api": {
     "host": "https://api.rideboreal.com",
-    "pathname": "/api/v1/dor/status"
+    "pathname": "/api/v1/dor/drupal/lifts"
   },
   "tags": [
     "California",
