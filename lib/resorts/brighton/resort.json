@@ -4,6 +4,10 @@
     "host": "https://brightonresort.com",
     "pathname": "/conditions"
   },
+  "api": {
+    "host": "https://apim-marketing-001.azure-api.net",
+    "pathname": "/FeedService/v1/Feed/Facilities/Areas/Lifts/All?resortName=br"
+  },
   "tags": [
     "Utah"
   ],

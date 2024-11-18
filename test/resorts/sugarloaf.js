@@ -1,6 +1,6 @@
 const lifts = require('../lifts');
 
-lifts('sugarloaf', 'html', {
+lifts('sugarloaf', 'json', {
   'Moose-calator': 'closed',
   Snubber: 'closed',
   'Double Runner West': 'closed',

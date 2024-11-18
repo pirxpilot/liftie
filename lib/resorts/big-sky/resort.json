@@ -2,7 +2,11 @@
   "name": "Big Sky",
   "url": {
     "host": "https://bigskyresort.com",
-    "pathname": "/lift-status"
+    "pathname": "/current-conditions"
+  },
+  "api": {
+    "host": "https://apim-marketing-001.azure-api.net",
+    "pathname": "/FeedService/v1/Feed/Facilities/Areas/Lifts/All?resortName=bs"
   },
   "tags": [
     "Montana"
