@@ -1,10 +1,10 @@
 const lifts = require('../lifts');
 
-lifts('sunday-river', 'html', {
+lifts('sunday-river', 'json', {
   'Little White Cap Quad #11': 'closed',
   'White Cap Quad #9': 'closed',
   'White Heat Quad #10': 'closed',
-  'Locke Mountain Triple #4': 'closed',
+  'Locke Mountain Triple #4': 'open',
   'Alera Group Competition Lift #5': 'closed',
   'Barker 6 #1': 'closed',
   'Chondola #7': 'closed',

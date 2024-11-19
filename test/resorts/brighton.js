@@ -1,12 +1,12 @@
 const lifts = require('../lifts');
 
-lifts('brighton', 'html', {
-  'Great Western Express': 'open',
-  'Snake Creek': 'open',
-  Majestic: 'open',
-  'Crest 6': 'open',
+lifts('brighton', 'json', {
+  'Crest 6': 'closed',
+  'Great Western Express': 'closed',
+  'Milly Express': 'closed',
+  'Snake Creek': 'closed',
+  Caterpillar: 'closed',
   Explorer: 'open',
-  'Porcupine Surface Lift': 'open',
-  'Caterpillar Surface Lift': 'open',
-  'Milly Express': 'closed'
+  Majestic: 'open',
+  Porcupine: 'closed'
 });

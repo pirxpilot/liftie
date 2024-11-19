@@ -2,7 +2,11 @@
   "name": "Sugarloaf",
   "url": {
     "host": "https://www.sugarloaf.com",
-    "pathname": "/conditions-and-cams"
+    "pathname": "/mountain-report"
+  },
+  "api": {
+    "host": "https://apim-marketing-001.azure-api.net",
+    "pathname": "/FeedService/v1/Feed/Facilities/Areas/Lifts/All?resortName=sl"
   },
   "tags": [
     "New England",
