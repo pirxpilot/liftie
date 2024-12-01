@@ -1,7 +1,7 @@
 {
   "name": "Bretton Woods",
   "url": {
-    "host": "http://brettonwoods.com",
+    "host": "https://www.brettonwoods.com",
     "pathname": "/alpine_trails/trail_report"
   },
   "tags": [
