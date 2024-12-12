@@ -1,4 +1,11 @@
 
+3.52.13 / 2024-12-12
+====================
+
+ * fix Brianhead resort
+ * fix Snowbird resort
+ * fix Snowbasin resort
+
 3.52.12 / 2024-12-12
 ====================
 
