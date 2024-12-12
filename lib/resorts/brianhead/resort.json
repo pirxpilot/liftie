@@ -2,13 +2,7 @@
   "name": "Brian Head",
   "url": {
     "host": "https://www.brianhead.com",
-    "pathname": "/snow-report/"
-  },
-  "api": {
-    "host": "https://www.brianhead.com",
-    "pathname": "/wp-admin/admin-ajax.php",
-    "body": "action=w153_pl_bh_load_values",
-    "json": true
+    "pathname": "/weather-conditions-webcams/"
   },
   "tags": [
     "Utah"

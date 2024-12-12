@@ -2,7 +2,11 @@
   "name": "Snowbird",
   "url": {
     "host": "https://www.snowbird.com",
-    "pathname": "/mountain-report/"
+    "pathname": "/the-mountain/mountain-report/lift-trail-report"
+  },
+  "api": {
+    "host": "https://api.snowbird.com",
+    "pathname": "/api/v1/dor/drupal/lifts"
   },
   "tags": [
     "Utah"

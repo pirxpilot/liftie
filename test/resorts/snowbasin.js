@@ -1,13 +1,17 @@
 const lifts = require('../lifts');
 
 lifts('snowbasin', 'html', {
+  'Allen Peak Tram': 'closed',
   'Strawberry Express': 'closed',
-  'Becker': 'closed',
-  'Little Cat Express': 'closed',
-  'Middle Bowl Triple': 'closed',
-  'Needles Express': 'closed',
-  'Wild Cat': 'closed',
-  'Porcupine': 'closed',
+  'Needles Gondola': 'open',
+  'Littlecat Express': 'open',
+  'Middle Bowl Express': 'open',
+  'Wildcat Express': 'closed',
   'John Paul Express': 'closed',
-  'Mt. Allen Tram': 'closed'
+  'DeMoisy Express': 'closed',
+  'Becker': 'closed',
+  'Porcupine': 'closed',
+  'Wildflower Carpet': 'open',
+  'Grizzly Carpet': 'closed',
+  'Wildcat Handle Tow': 'open'
 });
