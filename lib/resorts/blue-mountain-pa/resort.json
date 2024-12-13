@@ -4,10 +4,6 @@
     "host": "https://www.skibluemt.com",
     "pathname": "/condition-report/"
   },
-  "dataUrl": {
-    "host": "https://www.skibluemt.com",
-    "pathname": "/condition-report/"
-  },
   "tags": ["Pennsylvania"],
   "ll": [75.5234443, 40.81073]
 }
