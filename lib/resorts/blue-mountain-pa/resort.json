@@ -4,6 +4,12 @@
     "host": "https://www.skibluemt.com",
     "pathname": "/condition-report/"
   },
-  "tags": ["Pennsylvania"],
-  "ll": [75.5234443, 40.81073]
+  "tags": [
+    "Pennsylvania"
+  ],
+  "ll": [
+    -75.5234443,
+    40.81073
+  ],
+  "noaa": "PHI/32,113"
 }
