@@ -64,6 +64,11 @@
     "prompt": "~1",
     "stylus": "^0.64.0"
   },
+  "pnpm": {
+    "overrides": {
+      "debug": "~4"
+    }
+  },
   "engines": {
     "node": ">= 20.1.0"
   }
