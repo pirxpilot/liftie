@@ -1,4 +1,11 @@
 
+3.53.1 / 2024-12-28
+===================
+
+ * use single version of debug package
+ * upgrade htmlparser2 to ~10
+ * soft dependency upgrade
+
 3.53.0 / 2024-12-13
 ===================
 
