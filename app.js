@@ -1,4 +1,4 @@
-const express = require('express');
+const connect = require('@pirxpilot/connect');
 const cachifyStatic = require('connect-cachify-static');
 const gzip = require('connect-gzip-static');
 const http = require('node:http');
@@ -9,24 +9,23 @@ const plugins = require('./lib/plugins');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const errorHandler = require('errorhandler');
+const renderer = require('connect-renderer');
 
-const app = module.exports = express();
+const app = module.exports = connect();
 
-
-if (!process.env.SITE_URL) {
-  process.env.SITE_URL = app.get('env') === 'production' ?
-    'https://liftie.info' :
-    'http://localhost:3000';
-}
+process.env.PORT ??= 3000;
+process.env.SITE_URL ??= `http://localhost:${process.env.PORT}`;
+process.env.NODE_ENV ??= 'development';
 
 const root = path.join(__dirname, 'public');
 const {
   SITE_URL: siteUrl,
   LIFTIE_STATIC_HOST: staticHost = ''
 } = process.env;
+
 const cachify = cachifyStatic(root);
 
-Object.assign(app.locals, {
+app.locals = {
   min: '.min',
   decorateAbout() {},
   siteUrl,
@@ -35,25 +34,24 @@ Object.assign(app.locals, {
   og: {
     image: `${staticHost || siteUrl}/img/snowflake-512.png`
   }
-});
-app.set('port', process.env.PORT || 3000);
-app.set('views', `${__dirname}/views`);
-app.engine('jade', require('@pirxpilot/jade-core').__express);
-app.set('view engine', 'jade');
+};
+
+app.use(renderer(`${__dirname}/views`).engine('jade', require('@pirxpilot/jade-core')));
 
 app.use(logger('dev'));
 app.use(cookieParser());
 app.use(cachify);
-app.use((_req, res, next) => {
-  cachify.helpers().then(fns => {
-    res.locals.cachify = fns.cachify;
-    next();
-  });
+app.use(async (req, res, next) => {
+  req.app = app;
+  res.locals ??= {};
+  const fns = await cachify.helpers();
+  res.locals.cachify = fns.cachify;
+  next();
 });
 
 app.use(gzip(root));
 
-if (app.get('env') === 'development') {
+if (process.env.NODE_ENV === 'development') {
   app.locals.min = '';
   app.use(errorHandler());
 }
@@ -78,8 +76,8 @@ app.run = function run() {
       process.exit(1);
       return;
     }
-    http.createServer(app).listen(app.get('port'), () => {
-      console.log(`Running on: http://localhost:${app.get('port')}`);
+    http.createServer(app).listen(process.env.PORT, () => {
+      console.log(`Running on: http://localhost:${process.env.PORT}`);
     });
   });
 };
