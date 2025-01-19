@@ -1,4 +1,10 @@
 
+3.54.0 / 2025-01-19
+===================
+
+ * add Berkshire East resort
+ * fix Smugglers' Notch resort
+
 3.53.2 / 2025-01-04
 ===================
 
