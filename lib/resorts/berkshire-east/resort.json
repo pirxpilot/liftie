@@ -1,0 +1,15 @@
+{
+  "name": "Berkshire East",
+  "url": {
+    "host": "https://berkshireeast.com",
+    "pathname": "/winter/mountain-conditions"
+  },
+  "tags": [
+    "Massachusetts"
+  ],
+  "ll": [
+    -72.87711354420584,
+    42.62131426140839
+  ],
+  "noaa": "BOX/9,91"
+}
