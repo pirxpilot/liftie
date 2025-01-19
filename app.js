@@ -36,7 +36,10 @@ app.locals = {
   }
 };
 
-app.use(renderer(`${__dirname}/views`).engine('jade', require('@pirxpilot/jade-core')));
+app.use(renderer(`${__dirname}/views`).engine('jade', {
+  compile: require('@pirxpilot/jade-core').compile,
+  options: { compileDebug: process.env.NODE_ENV !== 'production' }
+}));
 
 app.use(logger('dev'));
 app.use(cookieParser());
