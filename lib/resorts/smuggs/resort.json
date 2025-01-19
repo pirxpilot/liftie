@@ -2,7 +2,7 @@
   "name": "Smugglers' Notch",
   "url": {
     "host": "https://www.smuggs.com",
-    "pathname": "/pages/winter/snowReport/"
+    "pathname": "/conditions/winter-report/"
   },
   "tags": [
     "New England",
