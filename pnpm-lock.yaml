@@ -12,8 +12,8 @@ importers:
   .:
     dependencies:
       '@pirxpilot/connect':
-        specifier: ^4.0.2
-        version: 4.0.2
+        specifier: ^4.2.0
+        version: 4.2.0
       '@pirxpilot/jade-core':
         specifier: ^1.12.1
         version: 1.12.2
@@ -21,8 +21,8 @@ importers:
         specifier: ^1.0.0
         version: 1.0.1
       '@pirxpilot/router':
-        specifier: ^1.0.0
-        version: 1.0.0
+        specifier: ^1.1.0
+        version: 1.1.0
       '@pirxpilot/swipe':
         specifier: ^2.0.2
         version: 2.0.2
@@ -30,11 +30,11 @@ importers:
         specifier: ^4.0.0
         version: 4.0.0
       connect-gzip-static:
-        specifier: ^4.0.0
-        version: 4.2.0
+        specifier: ^4.2.1
+        version: 4.2.1
       connect-renderer:
-        specifier: ^0.1.1
-        version: 0.1.1
+        specifier: ^0.2.0
+        version: 0.2.0
       cookie-parser:
         specifier: ^1.4.3
         version: 1.4.7
@@ -357,8 +357,8 @@ packages:
     resolution: {integrity: sha512-O8jcjabXaleOG9DQ0+ARXWZBTfnP4WNAqzuiJK7ll44AmxGKv/J2M4TPjxjY3znBCfvBXFzucm1twdyFybFqEA==}
     engines: {node: '>=12'}
 
-  '@pirxpilot/connect@4.0.2':
-    resolution: {integrity: sha512-GobsW2CE8hzz5Y4FqaQPdFvhF46SoiO3TAdXAtfCDxcLQpqVm+i2Jt4p+OPLBdRVKyHgvBJ7IQ1PkV8gspcVbA==}
+  '@pirxpilot/connect@4.2.0':
+    resolution: {integrity: sha512-VuLSeZ4D1qbUejV0XHi7N6b09bt6FWZ2P0moAbRLkiWGUQlDgTfkAz5MbAM7HzpJYt/fVMvOI7T93J79+PeIKw==}
 
   '@pirxpilot/events@1.0.1':
     resolution: {integrity: sha512-Xy/trHRWfkeIAJQZlaJ8wDngGbyK4Q/oWQ32meC6sXBcT7QGu3t5EOz+7yjlFoMM3wX1HL4kSKxG+WQPgCnBWg==}
@@ -372,8 +372,8 @@ packages:
   '@pirxpilot/replay@2.2.1':
     resolution: {integrity: sha512-h7ttPOELEOxxShD71csZoMmyd/moKg/BspRu2JmUS/18McYzZiiYm5E9y2FXGJ27dFSGKNzKuQjxYQCbUG2AIw==}
 
-  '@pirxpilot/router@1.0.0':
-    resolution: {integrity: sha512-6AgMB0U1h2qI8w5KAabgOAt0vdzp0E6naLt3sC3EMO5OQl4X0VvGHq+GqquBOM0ZsXuX3kke5xdqmuw9KDii3w==}
+  '@pirxpilot/router@1.1.0':
+    resolution: {integrity: sha512-kcpxJkJVzeqDJr6oE3gwVC9qhIvAJfoaqK9QiE8WgT9GwlYhZ32d4xA6KltJgj9myqGO8PPvzKPet1OOeoecKA==}
     engines: {node: '>= 0.10'}
 
   '@pirxpilot/swipe@2.0.2':
@@ -476,12 +476,12 @@ packages:
     engines: {node: '>= 20.1.0'}
     hasBin: true
 
-  connect-gzip-static@4.2.0:
-    resolution: {integrity: sha512-T6ErLEf3t15KVRcns/J5UWLL1OJT5gTD8QofYDRVGG8pEzE6uXWkkd8HgsZ224mwHtENv9kbpIdgi0liMjoLtw==}
+  connect-gzip-static@4.2.1:
+    resolution: {integrity: sha512-6qC1NYUEZU6mftg2gPspcoPjgBzADm+fB1fPXu3RxBVe59P/Q9HQGQEHnuDaGRDJUoJwl5NX2OgoaaZp7RdpfQ==}
     engines: {node: '>= 20.1.0'}
 
-  connect-renderer@0.1.1:
-    resolution: {integrity: sha512-pv67IgdHiJrRlfDFgEiCl7LQNdP2NHfT2Tts0wJXmh6Mjub2pJ3RRH/UV/uWyGImneCVyMvCi8NdBBhhdKerMw==}
+  connect-renderer@0.2.0:
+    resolution: {integrity: sha512-9YHdsXicW724r/0nhAuAiRSjiZQbIh61NVUyQf65ill/8MRziI+9hcwCGdF8TzHuOa6LFhjx73vKeRQ9n+fP4w==}
 
   constantinople@4.0.1:
     resolution: {integrity: sha512-vCrqcSIq4//Gx74TXXCGnHpulY1dskqLTFGDmhrGxzeXL8lF8kvXv6mpNWlJj1uD4DW23D4ljAqbY4RRaaUZIw==}
@@ -1157,7 +1157,7 @@ snapshots:
       wrap-ansi: 8.1.0
       wrap-ansi-cjs: wrap-ansi@7.0.0
 
-  '@pirxpilot/connect@4.0.2':
+  '@pirxpilot/connect@4.2.0':
     dependencies:
       debug: 4.4.0
       parseurl: 1.3.3
@@ -1187,9 +1187,8 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@pirxpilot/router@1.0.0':
+  '@pirxpilot/router@1.1.0':
     dependencies:
-      methods: 1.1.2
       parseurl: 1.3.3
       path-to-regexp: 8.2.0
 
@@ -1283,7 +1282,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  connect-gzip-static@4.2.0:
+  connect-gzip-static@4.2.1:
     dependencies:
       debug: 4.4.0
       mime-types: 2.1.35
@@ -1293,7 +1292,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  connect-renderer@0.1.1:
+  connect-renderer@0.2.0:
     dependencies:
       debug: 4.4.0
     transitivePeerDependencies:
