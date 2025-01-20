@@ -11,7 +11,7 @@ lifts('snowmass', 'json', {
   'Elk Camp Gondola': 'open',
   'Village Express': 'open',
   'Coney Glade': 'closed',
-  'Sam\'s Knob': 'open',
+  "Sam's Knob": 'open',
   'Campground': 'closed',
   'Big Burn': 'open',
   'Sheer Bliss': 'closed',

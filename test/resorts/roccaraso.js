@@ -22,5 +22,5 @@ lifts('roccaraso', 'html', {
   Pizzalto: 'closed',
   'Paradiso 1 e 2': 'closed',
   'Gravare-ToppeTes': 'closed',
-  'Pizzalto-Gravare': 'closed',
+  'Pizzalto-Gravare': 'closed'
 });

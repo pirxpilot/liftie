@@ -27,5 +27,5 @@ lifts('civetta', 'html', {
   'Rio Canedo': 'closed',
   'Santa Fosca': 'closed',
   'Pescul-Fedare': 'closed',
-  'Fedare-Pescul': 'closed',
+  'Fedare-Pescul': 'closed'
 });

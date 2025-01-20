@@ -11,17 +11,14 @@ const logger = require('morgan');
 const errorHandler = require('errorhandler');
 const renderer = require('connect-renderer');
 
-const app = module.exports = connect();
+const app = (module.exports = connect());
 
 process.env.PORT ??= 3000;
 process.env.SITE_URL ??= `http://localhost:${process.env.PORT}`;
 process.env.NODE_ENV ??= 'development';
 
 const root = path.join(__dirname, 'public');
-const {
-  SITE_URL: siteUrl,
-  LIFTIE_STATIC_HOST: staticHost = ''
-} = process.env;
+const { SITE_URL: siteUrl, LIFTIE_STATIC_HOST: staticHost = '' } = process.env;
 
 const cachify = cachifyStatic(root);
 
@@ -36,10 +33,12 @@ app.locals = {
   }
 };
 
-app.use(renderer(`${__dirname}/views`).engine('jade', {
-  compile: require('@pirxpilot/jade-core').compile,
-  options: { compileDebug: process.env.NODE_ENV !== 'production' }
-}));
+app.use(
+  renderer(`${__dirname}/views`).engine('jade', {
+    compile: require('@pirxpilot/jade-core').compile,
+    options: { compileDebug: process.env.NODE_ENV !== 'production' }
+  })
+);
 
 app.use(logger('dev'));
 app.use(cookieParser());

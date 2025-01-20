@@ -45,5 +45,5 @@ lifts('val-di-fiemme', 'html', {
   Obereggen: 'open',
   Laner: 'open',
   Deutschnofen: 'closed',
-  Panorama: 'closed',
+  Panorama: 'closed'
 });

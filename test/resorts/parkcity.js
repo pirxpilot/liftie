@@ -17,7 +17,7 @@ lifts('parkcity', 'html', {
   'Iron Mtn. Express': 'closed',
   'Jupiter Lift': 'hold',
   'King Con Lift': 'closed',
-  'McConkey\'s Lift': 'hold',
+  "McConkey's Lift": 'hold',
   'Mine Cart': 'closed',
   'Motherlode Lift': 'closed',
   'Mule Train': 'closed',

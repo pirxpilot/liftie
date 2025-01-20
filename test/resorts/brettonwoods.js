@@ -5,7 +5,7 @@ lifts('brettonwoods', 'html', {
   'Rosebrook Summit Express': 'closed',
   'Bethlehem Express': 'closed',
   'Telegraph T-Bar': 'closed',
-  'Fabyan\'s Express Triple': 'closed',
+  "Fabyan's Express Triple": 'closed',
   'West Mountain Express': 'closed',
   'Learning Center Quad': 'closed',
   'Wonder Carpet': 'closed',

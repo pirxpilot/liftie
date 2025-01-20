@@ -9,5 +9,5 @@ lifts('chinapeak', 'html', {
   'Chair 7': 'closed',
   'Kids Carpet': 'closed',
   'Boulder Carpet': 'closed',
-  'Juniper Carpet': 'closed',
+  'Juniper Carpet': 'closed'
 });

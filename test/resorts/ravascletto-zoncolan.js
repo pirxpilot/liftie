@@ -13,5 +13,5 @@ lifts('ravascletto-zoncolan', 'html', {
   '110 Tappeto Cima Zoncolan': 'closed',
   '111 Tappeti Madessa (1,2,3)': 'closed',
   'Pradibosco|Skilift': 'closed',
-  'Pradibosco|Tappeto': 'closed',
+  'Pradibosco|Tappeto': 'closed'
 });

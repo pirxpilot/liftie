@@ -1,7 +1,7 @@
 const lifts = require('../lifts');
 
 lifts('jiminypeak', 'html', {
-  'Alex\'s Park Carpet Lift': 'closed',
+  "Alex's Park Carpet Lift": 'closed',
   'Triple Chair': 'closed',
   'Grand Slam': 'closed',
   'Novice Triple': 'closed',

@@ -56,5 +56,5 @@ lifts('courchevel', 'html', {
   Mickey: 'scheduled',
   'Petit Moriond': 'scheduled',
   Mine: 'scheduled',
-  Sheriff: 'scheduled',
+  Sheriff: 'scheduled'
 });

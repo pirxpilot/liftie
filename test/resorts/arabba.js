@@ -26,5 +26,5 @@ lifts('arabba', 'html', {
   'Banc - Serauta': 'closed',
   'Serauta- P.Rocca': 'closed',
   Padon: 'closed',
-  'Campo Scuola': 'closed',
+  'Campo Scuola': 'closed'
 });

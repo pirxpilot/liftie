@@ -24,5 +24,4 @@ lifts('monterosa', 'html', {
   'TAPIS ROULANT WOLD': 'closed',
   'TAPIS ROULANT PIANALUNGA': 'closed',
   'CIMALEGNA-SALATI': 'closed'
-
 });

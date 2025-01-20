@@ -54,5 +54,5 @@ lifts('val-di-fassa', 'html', {
   'Pra di Tori': 'closed',
   'Le Pope': 'closed',
   'Golf II': 'closed',
-  'Skibus Vigo di Fassa - Carezza': 'closed',
+  'Skibus Vigo di Fassa - Carezza': 'closed'
 });

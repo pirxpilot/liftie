@@ -24,5 +24,5 @@ lifts('alpe-lusia-san-pellegrino', 'html', {
   'Le Buse - Laresei': 'closed',
   'Molino - Le Buse': 'closed',
   'Castelir - Fassane': 'closed',
-  'Fassane - Morea': 'closed',
+  'Fassane - Morea': 'closed'
 });

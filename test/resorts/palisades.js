@@ -13,7 +13,7 @@ lifts('palisades', 'json', {
   'Resort Chair': 'closed',
   'SnoVentures Carpet': 'closed',
   'Wa She Shu': 'closed',
-  'Bailey\'s Beach': 'closed',
+  "Bailey's Beach": 'closed',
   'Belmont': 'closed',
   'Big Blue Express': 'closed',
   'Broken Arrow': 'closed',
@@ -29,5 +29,5 @@ lifts('palisades', 'json', {
   'The Pulley': 'closed',
   'Boomer': 'closed',
   'Shaka': 'closed',
-  'Wylee': 'closed',
+  'Wylee': 'closed'
 });

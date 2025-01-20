@@ -41,5 +41,5 @@ lifts('meribel', 'html', {
   Plattières: 'scheduled',
   Bouquetin: 'scheduled',
   Chatelet: 'scheduled',
-  'Plan Des Mains': 'scheduled',
+  'Plan Des Mains': 'scheduled'
 });

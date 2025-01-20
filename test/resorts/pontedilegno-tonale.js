@@ -3,7 +3,7 @@ const lifts = require('../lifts');
 lifts('pontedilegno-tonale', 'html', {
   'Casola': 'closed',
   'Valbione': 'closed',
-  'Corno d\'Aola': 'closed',
+  "Corno d'Aola": 'closed',
   'Angelo': 'closed',
   'Campo Scuola Cida': 'closed',
   'Sozzine': 'closed',

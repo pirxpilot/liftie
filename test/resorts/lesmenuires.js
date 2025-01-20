@@ -29,5 +29,5 @@ lifts('lesmenuires', 'html', {
   Menuires: 'scheduled',
   'Jardin Enfants': 'scheduled',
   Stade: 'scheduled',
-  Pelvoux: 'scheduled',
+  Pelvoux: 'scheduled'
 });

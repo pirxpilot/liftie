@@ -11,5 +11,5 @@ lifts('ovindoli', 'html', {
   'M - Fonte Fredda - Monte Freddo': 'closed',
   'H - Campetto degli Alpini - Monte Freddo': 'closed',
   'I - Kids': 'closed',
-  'L - Belvedere': 'closed',
+  'L - Belvedere': 'closed'
 });

@@ -1,23 +1,35 @@
 {
-  "$schema": "https://biomejs.dev/schemas/1.5.1/schema.json",
+  "$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
   "organizeImports": {
     "enabled": false
   },
   "formatter": {
-    "enabled": false
+    "enabled": true
   },
   "files": {
     "ignore": [
+      "package.json",
+      "pnpm-lock.yaml",
       "bin/generate",
       "test/resorts/example",
-      "test/replay"
+      "test/replay",
+      "**/.*",
+      "public"
     ]
   },
   "javascript": {
     "formatter": {
+      "arrowParentheses": "asNeeded",
+      "indentStyle": "space",
       "quoteStyle": "single",
       "trailingCommas": "none",
-      "arrowParentheses": "asNeeded"
+      "lineWidth": 120
+    }
+  },
+  "json": {
+    "formatter": {
+      "enabled": false,
+      "indentStyle": "space"
     }
   },
   "linter": {
@@ -61,6 +73,16 @@
         "globals": [
           "options"
         ]
+      }
+    },
+    {
+      "include": [
+        "test/resorts/*.js"
+      ],
+      "javascript": {
+        "formatter": {
+          "quoteProperties": "preserve"
+        }
       }
     }
   ]

@@ -1,12 +1,12 @@
 const lifts = require('../lifts');
 
 lifts('cransmontana', 'xml', {
-  '1 Crans Cry D\'er': 'open',
+  "1 Crans Cry D'er": 'open',
   '4 Chetseron T 1': 'open',
-  '6 Cry D\'er T2': 'open',
+  "6 Cry D'er T2": 'open',
   '9 Merignou': 'open',
   '22 Montana Sup': 'open',
-  '22 Montana-c. D\'er': 'open',
+  "22 Montana-c. D'er": 'open',
   '24 Verdets': 'open',
   '27 Pas-du-loup': 'open',
   '41 Bellalui': 'scheduled',

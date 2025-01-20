@@ -38,5 +38,5 @@ lifts('valdisere', 'html', {
   'Tk Legettaz': 'closed',
   'Tk Savonette': 'closed',
   'Tapis Pim Pam': 'closed',
-  'Tapis Poum': 'closed',
+  'Tapis Poum': 'closed'
 });
