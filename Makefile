@@ -77,7 +77,10 @@ node_modules: package.json pnpm-lock.yaml
 .NOTPARALLEL: node_modules
 
 lint: | node_modules
-	$(NODE_BIN)/biome lint $(LINT_SRC)
+	$(NODE_BIN)/biome check $(LINT_SRC)
+
+format: | node_modules
+	$(NODE_BIN)/biome format --write $(LINT_SRC)
 
 test: | node_modules
 	node --test $(TESTS)
@@ -119,4 +122,4 @@ distclean: clean
 distclean:
 	rm -rf node_modules
 
-.PHONY: all test build dist clean distclean
+.PHONY: all test build dist clean distclean lint format
