@@ -4,10 +4,10 @@ const tags = require('../../lib/routes/tags');
 
 test('tags should classify object according to tags', () => {
   const objs = {
-    'a': 't3,t2,t1',
-    'b': 't2',
-    'c': 't1,t2',
-    'd': ''
+    a: 't3,t2,t1',
+    b: 't2',
+    c: 't1,t2',
+    d: ''
   };
 
   function load(name) {
@@ -17,7 +17,7 @@ test('tags should classify object according to tags', () => {
     };
   }
 
-  Object.keys(objs).forEach((n) => {
+  Object.keys(objs).forEach(n => {
     objs[n] = load(n);
   });
   const tt = tags(objs);
@@ -30,8 +30,8 @@ test('tags should classify object according to tags', () => {
 
 test('tags should conver names to cannonical form', () => {
   const objs = {
-    'a': 'Nice Tag,Another Tag',
-    'b': 'Another Tag'
+    a: 'Nice Tag,Another Tag',
+    b: 'Another Tag'
   };
 
   function load(name) {
@@ -41,7 +41,7 @@ test('tags should conver names to cannonical form', () => {
     };
   }
 
-  Object.keys(objs).forEach((n) => {
+  Object.keys(objs).forEach(n => {
     objs[n] = load(n);
   });
   const tt = tags(objs);

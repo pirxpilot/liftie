@@ -36,5 +36,5 @@ lifts('cortina-d-ampezzo', 'html', {
   Loita: 'closed',
   Donariè: 'closed',
   Tambres: 'closed',
-  'San Marco': 'closed',
+  'San Marco': 'closed'
 });

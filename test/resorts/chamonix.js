@@ -20,5 +20,5 @@ lifts('chamonix', 'html', {
   Planards: 'closed',
   'Luge De Chamonix': 'hold',
   "Parc D'attractions": 'hold',
-  'Tc Flegere': 'closed',
+  'Tc Flegere': 'closed'
 });

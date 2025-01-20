@@ -15,5 +15,5 @@ lifts('tignes', 'html', {
   'Fil Neige Replat': 'closed',
   Funiculaire: 'closed',
   'Tp De Grande Motte': 'closed',
-  'Tsd De La Vanoise': 'closed',
+  'Tsd De La Vanoise': 'closed'
 });

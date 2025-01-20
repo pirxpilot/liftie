@@ -13,5 +13,5 @@ lifts('tarvisio', 'html', {
   "110 Seggiovia Duca d'Aosta -3 posti": 'closed',
   '111 Seggiovia Florianca - 4 posti': 'closed',
   '112 Seggiovia Hütte - 2 posti': 'closed',
-  '113 Seggiovia Prasnig - 4 posti': 'closed',
+  '113 Seggiovia Prasnig - 4 posti': 'closed'
 });

@@ -7,7 +7,7 @@ lifts('mt-buller', 'html', {
   'Bourke Street Carpet': 'closed',
   'Bull Run': 'closed',
   'Canyon Tows': 'closed',
-  'Cattleman\'s Carpets': 'closed',
+  "Cattleman's Carpets": 'closed',
   'Federation': 'closed',
   'Gliders Carpet': 'closed',
   'Grimus': 'closed',

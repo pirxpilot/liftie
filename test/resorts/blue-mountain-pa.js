@@ -12,5 +12,5 @@ lifts('blue-mountain-pa', 'html', {
   'Valley School Triple': 'closed',
   'Valley Conveyor Lower': 'closed',
   'Valley Conveyor Middle': 'closed',
-  'Valley Conveyor Upper': 'closed',
+  'Valley Conveyor Upper': 'closed'
 });

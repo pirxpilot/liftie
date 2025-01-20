@@ -8,5 +8,5 @@ lifts('sappada', 'html', {
   '105 Seggiovia Pian dei Nidi - 2 posti': 'closed',
   '106 Seggiovia Eiben Col dei Mughi - 2 posti': 'closed',
   '107 Sciovia Campetto 1': 'closed',
-  '108 Sciovia Campetto 2': 'closed',
+  '108 Sciovia Campetto 2': 'closed'
 });

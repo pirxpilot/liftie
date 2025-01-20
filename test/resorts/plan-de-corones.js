@@ -34,5 +34,5 @@ lifts('plan-de-corones', 'html', {
   'Sompunt/Sponata-Piculin': 'closed',
   'Piculin-Sponata/Sompunt': 'closed',
   'Pichl Gsies': 'closed',
-  'Treno Versciaco - Perca': 'closed',
+  'Treno Versciaco - Perca': 'closed'
 });

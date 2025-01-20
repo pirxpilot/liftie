@@ -19,20 +19,20 @@ test('stats should report 0 for empty', () => {
 
 test('stats should count all status', () => {
   const status = {
-    'n1': 'open',
-    'n2': 'open',
-    'n3': 'closed',
-    'n4': 'open',
-    'n5': 'open',
-    'n6': 'scheduled',
-    'n7': 'open',
-    'n8': 'closed',
-    'n9': 'closed',
-    'n11': 'hold',
-    'n12': 'hold',
-    'n13': 'closed',
-    'n14': 'scheduled',
-    'n17': 'scheduled'
+    n1: 'open',
+    n2: 'open',
+    n3: 'closed',
+    n4: 'open',
+    n5: 'open',
+    n6: 'scheduled',
+    n7: 'open',
+    n8: 'closed',
+    n9: 'closed',
+    n11: 'hold',
+    n12: 'hold',
+    n13: 'closed',
+    n14: 'scheduled',
+    n17: 'scheduled'
   };
   assert.deepEqual(stats(status), {
     open: 5,
@@ -64,34 +64,38 @@ test('stats.summary should calculate summary for empty stats', () => {
 });
 
 test('stats.summary should calculate summary for array of stats', () => {
-  assert.deepEqual(stats.summary([{
-      open: 5,
-      closed: 4,
-      hold: 2,
-      scheduled: 3
-    },
+  assert.deepEqual(
+    stats.summary([
+      {
+        open: 5,
+        closed: 4,
+        hold: 2,
+        scheduled: 3
+      },
+      {
+        open: 10,
+        closed: 1
+      },
+      null,
+      {},
+      {
+        open: 1,
+        closed: 2,
+        hold: 3,
+        scheduled: 4
+      }
+    ]),
     {
-      open: 10,
-      closed: 1
-    },
-    null,
-    {},
-    {
-      open: 1,
-      closed: 2,
-      hold: 3,
-      scheduled: 4
+      open: 16,
+      closed: 7,
+      hold: 5,
+      scheduled: 7,
+      percentage: {
+        open: 45.7,
+        closed: 20,
+        hold: 14.2,
+        scheduled: 20
+      }
     }
-  ]), {
-    open: 16,
-    closed: 7,
-    hold: 5,
-    scheduled: 7,
-    percentage: {
-      open: 45.7,
-      closed: 20,
-      hold: 14.2,
-      scheduled: 20
-    }
-  });
+  );
 });

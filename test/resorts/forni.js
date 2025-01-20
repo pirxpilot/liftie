@@ -8,5 +8,5 @@ lifts('forni', 'html', {
   '105 Seggiovia Cimacuta - 3 posti': 'closed',
   '106 Tappeto Davost': 'closed',
   '107 Sciovia Davost': 'closed',
-  '108 Tappeto Primi Passi': 'closed',
+  '108 Tappeto Primi Passi': 'closed'
 });

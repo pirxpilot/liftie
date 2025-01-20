@@ -6,7 +6,7 @@ lifts('folgarida-marilleva', 'html', {
   'Casina': 'closed',
   'Marilleva 900': 'closed',
   'Ometto': 'closed',
-  'Albare\'': 'closed',
+  "Albare'": 'closed',
   'Biancaneve': 'closed',
   'Marilleva': 'closed',
   'Doss della Pesa': 'closed',

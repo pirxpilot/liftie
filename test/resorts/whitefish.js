@@ -16,5 +16,5 @@ lifts('whitefish', 'html', {
   'T-Bar 1 - Heritage': 'closed',
   'T-Bar 2 - Bigfoot': 'closed',
   'Big Easy Carpet': 'open',
-  '2 Easy Carpet': 'closed',
+  '2 Easy Carpet': 'closed'
 });

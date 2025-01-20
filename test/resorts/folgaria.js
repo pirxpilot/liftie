@@ -5,7 +5,7 @@ lifts('folgaria', 'html', {
   'Baby Coston': 'open',
   'Coston - Monte Coston': 'open',
   'Tre Sassi - Monte Coston': 'open',
-  'Val delle Lanze - Costa d\'Agra': 'open',
+  "Val delle Lanze - Costa d'Agra": 'open',
   'Malga Piovernetta - Monte Pioverna': 'open',
   'Malga Piovernetta - Termental': 'open',
   'Baby Passo Coe': 'open',

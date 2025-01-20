@@ -74,5 +74,5 @@ lifts('laplagne', 'html', {
   Gentil: 'closed',
   Grangette: 'closed',
   Grenouilles: 'scheduled',
-  Montalbert: 'scheduled',
+  Montalbert: 'scheduled'
 });

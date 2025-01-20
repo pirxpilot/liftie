@@ -25,5 +25,5 @@ lifts('rio-pusteria-bressanone', 'html', {
   Plose: 'closed',
   Maders: 'closed',
   Lüsen: 'closed',
-  Filler: 'closed',
+  Filler: 'closed'
 });

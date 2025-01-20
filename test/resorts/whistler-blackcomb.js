@@ -18,7 +18,7 @@ lifts('whistler-blackcomb', 'xml', {
   'Creek Side Gondola': 'closed',
   'Emerald Express': 'closed',
   'Fitzsimmons Express': 'closed',
-  'Franz\'s Chair': 'closed',
+  "Franz's Chair": 'closed',
   'Garbanzo Express': 'closed',
   'Harmony Express': 'closed',
   'Olympic Chair': 'closed',

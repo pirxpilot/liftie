@@ -3,10 +3,10 @@ const assert = require('node:assert/strict');
 const sorter = require('../../lib/routes/sorter');
 
 function id2resorts(commaSeparatedIds) {
-  return commaSeparatedIds.split(',').map((id) => ({
-      id,
-      name: id.toUpperCase()
-    }));
+  return commaSeparatedIds.split(',').map(id => ({
+    id,
+    name: id.toUpperCase()
+  }));
 }
 
 test('sorter should mark all as open if no cookie', () => {
@@ -14,7 +14,7 @@ test('sorter should mark all as open if no cookie', () => {
 
   resorts = sorter(resorts, {});
 
-  resorts.forEach((r) => {
+  resorts.forEach(r => {
     assert.ok(r.open);
   });
 });
@@ -24,7 +24,7 @@ test('sorter should mark none as open if no cookie and at least 5 resorts', () =
 
   resorts = sorter(resorts, {});
 
-  resorts.forEach((r) => {
+  resorts.forEach(r => {
     assert.ok(!r.open);
   });
 });
@@ -36,7 +36,7 @@ test('sorter should mark none as open if empty cookie', () => {
     'resorts-open': ''
   });
 
-  resorts.forEach((r) => {
+  resorts.forEach(r => {
     assert.ok(!r.open);
   });
 });
@@ -48,11 +48,10 @@ test('sorter should mark none as open if cookie has unknown names', () => {
     'resorts-open': 'x,y'
   });
 
-  resorts.forEach((r) => {
+  resorts.forEach(r => {
     assert.ok(!r.open);
   });
 });
-
 
 test('sorter should mark mark and sort if cookie present', () => {
   let resorts = id2resorts('a,e,c,d,b');

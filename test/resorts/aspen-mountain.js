@@ -8,5 +8,5 @@ lifts('aspen-mountain', 'json', {
   'Bell Mountain': 'closed',
   'F.I.S.': 'closed',
   'Ajax Express': 'open',
-  'Gent\'s Ridge': 'open'
+  "Gent's Ridge": 'open'
 });

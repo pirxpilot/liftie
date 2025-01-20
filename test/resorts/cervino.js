@@ -17,5 +17,5 @@ lifts('cervino', 'html', {
   '88 Pass/testa Ii': 'closed',
   '83 Plateau-rosa': 'closed',
   '84 Ventina': 'closed',
-  '85 Matter': 'closed',
+  '85 Matter': 'closed'
 });

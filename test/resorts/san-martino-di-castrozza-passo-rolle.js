@@ -22,5 +22,5 @@ lifts('san-martino-di-castrozza-passo-rolle', 'html', {
   Colverde: 'closed',
   Rosetta: 'closed',
   'Prà delle Nasse 1': 'closed',
-  'Prà delle Nasse 2': 'closed',
+  'Prà delle Nasse 2': 'closed'
 });

@@ -84,5 +84,5 @@ lifts('megeve', 'html', {
   'Tk Debutant': 'open',
   'Tk Gouet': 'open',
   'Tk Plateau': 'open',
-  'Tk Vanay': 'open',
+  'Tk Vanay': 'open'
 });

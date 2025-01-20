@@ -12,5 +12,5 @@ lifts('piancavallo', 'html', {
   '109 Tappeto Caprioli': 'closed',
   '110 Tappeto Bambi': 'closed',
   '111 Tappeto Busa': 'closed',
-  '112 Tappeto Tremol': 'closed',
+  '112 Tappeto Tremol': 'closed'
 });

@@ -8,5 +8,5 @@ lifts('bromley-mountain', 'html', {
   'East Meadow Chairlift': 'closed',
   'Alpine Chairlift': 'closed',
   'Blue Ribbon Quad': 'closed',
-  'Lord\'s Prayer T-Bar': 'closed'
+  "Lord's Prayer T-Bar": 'closed'
 });

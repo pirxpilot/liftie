@@ -1,7 +1,7 @@
 const lifts = require('../lifts');
 
 lifts('shawnee-peak', 'html', {
-  'Li\'l Pine Beginner Carpet': 'closed',
+  "Li'l Pine Beginner Carpet": 'closed',
   'Pine Quad': 'closed',
   'Rabbit Run': 'closed',
   'Snow Pine Carpet': 'closed',

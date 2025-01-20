@@ -33,5 +33,5 @@ lifts('3cime', 'html', {
   Kameriot: 'closed',
   Sonnleiten: 'closed',
   Cenerentola: 'closed',
-  "Col d'la Tenda": 'closed',
+  "Col d'la Tenda": 'closed'
 });

@@ -17,5 +17,5 @@ lifts('telluride', 'html', {
   'Lynx': 'closed',
   'Gold Hill Express': 'closed',
   'Revelation Lift': 'closed',
-  'North Meadows Carpet': 'closed',
+  'North Meadows Carpet': 'closed'
 });

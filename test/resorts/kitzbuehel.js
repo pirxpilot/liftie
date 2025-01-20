@@ -58,5 +58,5 @@ lifts('kitzbuehel', 'html', {
   'G10 Panoramabahn II': 'open',
   'G11 Sun Kid Resterhöhe': 'closed',
   'H1 Bichlalm': 'open',
-  'Schneekatze': 'closed',
+  'Schneekatze': 'closed'
 });

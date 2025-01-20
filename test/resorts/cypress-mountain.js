@@ -6,5 +6,5 @@ lifts('cypress-mountain', 'html', {
   'Raven Ridge': 'open',
   'Easy Rider': 'open',
   'Sky Chair': 'open',
-  'Midway Chair': 'open',
+  'Midway Chair': 'open'
 });

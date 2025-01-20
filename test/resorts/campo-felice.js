@@ -15,5 +15,5 @@ lifts('campo-felice', 'html', {
   'Tappeto Innamorati': 'closed',
   'Skilift Snow Park': 'closed',
   'Tappeto scuola (Snow Tubing)': 'closed',
-  'Tappeto Scuola Campo Felice': 'closed',
+  'Tappeto Scuola Campo Felice': 'closed'
 });

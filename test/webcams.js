@@ -17,23 +17,26 @@ test('webcams should return no webcams if location is missing', (_t, done) => {
 });
 
 test('webcams should return webcams for valid location', (_t, done) => {
-  webcams({
-    counter: 1,
-    ll: [7.98, 46.54] // from API examples https://windy.com/webcams/1697038975'
-  }, (err, webcams) => {
-    delete process.env.WEBCAMS_API_KEY;
+  webcams(
+    {
+      counter: 1,
+      ll: [7.98, 46.54] // from API examples https://windy.com/webcams/1697038975'
+    },
+    (err, webcams) => {
+      delete process.env.WEBCAMS_API_KEY;
 
-    assert.ifError(err);
-    assert.ok(webcams);
-    assert.ok(webcams.length > 0);
+      assert.ifError(err);
+      assert.ok(webcams);
+      assert.ok(webcams.length > 0);
 
-    const webcam = webcams[0];
+      const webcam = webcams[0];
 
-    assert.equal(webcam.name, 'Fieschertal: Jungfraujoch');
-    assert.equal(webcam.source, 'https://windy.com/webcams/1697038975');
-    assert.match(webcam.image, /^https:\/\/images-webcams.windy.com\//);
-    assert.match(webcam.notice, /^Webcams provided by\n<a href="https:\/\/www.windy.com\/"/);
+      assert.equal(webcam.name, 'Fieschertal: Jungfraujoch');
+      assert.equal(webcam.source, 'https://windy.com/webcams/1697038975');
+      assert.match(webcam.image, /^https:\/\/images-webcams.windy.com\//);
+      assert.match(webcam.notice, /^Webcams provided by\n<a href="https:\/\/www.windy.com\/"/);
 
-    done();
-  });
+      done();
+    }
+  );
 });

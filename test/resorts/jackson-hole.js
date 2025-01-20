@@ -5,7 +5,7 @@ lifts('jackson-hole', 'json', {
   'Apres Vous Quad': 'closed',
   'Bridger Gondola': 'closed',
   'Casper Quad': 'closed',
-  'Eagle\'s Rest Quad': 'closed',
+  "Eagle's Rest Quad": 'closed',
   'Marmot Double': 'closed',
   'Moose Creek Quad': 'closed',
   'Sublette Quad': 'closed',
@@ -13,5 +13,5 @@ lifts('jackson-hole', 'json', {
   'Teewinot Quad': 'closed',
   'Teton Lift Quad': 'closed',
   'Thunder Quad': 'closed',
-  'Union Pass Quad': 'closed',
+  'Union Pass Quad': 'closed'
 });

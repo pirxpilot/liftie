@@ -25,5 +25,5 @@ lifts('mtbrighton', 'html', {
   'Sunrise Bowl': 'closed',
   'Ledges': 'closed',
   'Gopher': 'closed',
-  'Riglet Park': 'closed',
+  'Riglet Park': 'closed'
 });

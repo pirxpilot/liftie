@@ -5,5 +5,5 @@ lifts('manning-park', 'html', {
   'Blue Chair': 'closed',
   'Handle Tow': 'open',
   'T-Bar': 'closed',
-  'Polar Coaster Tube Park': 'closed',
+  'Polar Coaster Tube Park': 'closed'
 });

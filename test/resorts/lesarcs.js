@@ -53,5 +53,5 @@ lifts('lesarcs', 'html', {
   Parchey: 'scheduled',
   '1Er Virages': 'scheduled',
   Cabri: 'scheduled',
-  '1Ere Glisse': 'scheduled',
+  '1Ere Glisse': 'scheduled'
 });

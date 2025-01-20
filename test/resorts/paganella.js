@@ -19,5 +19,5 @@ lifts('paganella', 'html', {
   'Tapis R. Rolly Marchi': 'closed',
   'Tapis R. Primi Passi Rindole': 'closed',
   'Tapis R. Snowpark Dosson': 'closed',
-  'Tapis R. Primi Passi Pingu': 'closed',
+  'Tapis R. Primi Passi Pingu': 'closed'
 });

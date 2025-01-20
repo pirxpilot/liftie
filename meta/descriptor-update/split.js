@@ -35,7 +35,6 @@ function update(name) {
   writeFile(path.join(dir, 'index.js'), js);
 }
 
-
 const dir = path.resolve(__dirname, prefix);
 
 readdir(dir)
