@@ -1,4 +1,10 @@
 
+3.55.0 / 2025-01-21
+===================
+
+ * add Pleasant Mountain, formerly Shawnee Peak
+ * remove Shawnee Peak (now Pleasant Mountain)
+
 3.54.0 / 2025-01-19
 ===================
 
