@@ -1,0 +1,22 @@
+{
+  "name": "Pleasant Mountain",
+  "url": {
+    "host": "https://www.pleasantmountain.com",
+    "pathname": "/mountain-report"
+  },
+  "api": {
+    "host": "https://apim-marketing-001.azure-api.net",
+    "pathname": "/FeedService/v1/Feed/Facilities/Areas/Lifts/All?resortName=pm"
+  },
+  "tags": [
+    "Maine",
+    "New England"
+  ],
+  "ll": [
+    -70.817528,
+    44.053791
+  ],
+  "twitter": "pleasantmtnme",
+  "opening": "2022-09-02",
+  "noaa": "GYX/55,73"
+}
