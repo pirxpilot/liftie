@@ -35,7 +35,7 @@
     "@pirxpilot/swipe": "^2.0.2",
     "connect-cachify-static": "^4.0.0",
     "connect-gzip-static": "^4.2.1",
-    "connect-renderer": "^0.2.0",
+    "connect-renderer": "^1.0.0",
     "css-select": "~5",
     "debounce": "^2.0.0",
     "debug": "~4",
