@@ -6,7 +6,7 @@ const path = require('node:path');
 const loaders = require('./lib/loaders');
 const plugins = require('./lib/plugins');
 
-const cookieParser = require('cookie-parser');
+const cookieParser = require('@pirxpilot/cookie-parser');
 const logger = require('morgan');
 const errorHandler = require('errorhandler');
 const renderer = require('connect-renderer');

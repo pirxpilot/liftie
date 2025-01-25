@@ -28,6 +28,7 @@
   },
   "dependencies": {
     "@pirxpilot/connect": "^4.2.0",
+    "@pirxpilot/cookie-parser": "~2",
     "@pirxpilot/jade-core": "^1.12.1",
     "@pirxpilot/k": "^1.0.0",
     "@pirxpilot/router": "^1.1.0",
@@ -35,7 +36,6 @@
     "connect-cachify-static": "^4.0.0",
     "connect-gzip-static": "^4.2.1",
     "connect-renderer": "^0.2.0",
-    "cookie-parser": "^1.4.3",
     "css-select": "~5",
     "debounce": "^2.0.0",
     "debug": "~4",
