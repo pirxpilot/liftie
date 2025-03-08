@@ -63,7 +63,7 @@ importers:
         specifier: ^1.5.0
         version: 1.5.1
       esbuild:
-        specifier: ^0.24.0
+        specifier: ^0.24.2
         version: 0.24.2
       htmlparser2:
         specifier: ~10
