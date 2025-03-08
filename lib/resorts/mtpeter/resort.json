@@ -1,0 +1,17 @@
+{
+  "name": "Mount Peter",
+  "url": {
+    "host": "https://mtpeter.com",
+    "pathname": "/snow-report"
+  },
+  "tags": [
+    "New York"
+  ],
+  "ll": [
+    -74.28,
+    41.26
+  ],
+  "opening": "1936-01-01",
+  "twitter": "MountPeter",
+  "noaa": "OKX/20,58"
+}
