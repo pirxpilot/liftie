@@ -44,7 +44,7 @@
     "dynload": "^1.0.2",
     "el-component": "^1.0.1",
     "errorhandler": "^1.5.0",
-    "esbuild": "^0.24.2",
+    "esbuild": "^0.25.1",
     "htmlparser2": "~10",
     "js-cookie": "^3.0.5",
     "limiter": "~2.1.0",
