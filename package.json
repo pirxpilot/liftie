@@ -42,7 +42,7 @@
     "domelementtype": "^2.3.0",
     "domhandler": "~5",
     "dynload": "^1.0.2",
-    "el-component": "^1.0.1",
+    "el-component": "~2",
     "errorhandler": "^1.5.0",
     "esbuild": "^0.25.1",
     "htmlparser2": "~10",

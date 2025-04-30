@@ -57,8 +57,8 @@ importers:
         specifier: ^1.0.2
         version: 1.0.2
       el-component:
-        specifier: ^1.0.1
-        version: 1.0.1
+        specifier: ~2
+        version: 2.0.2
       errorhandler:
         specifier: ^1.5.0
         version: 1.5.1
@@ -575,6 +575,9 @@ packages:
 
   el-component@1.0.1:
     resolution: {integrity: sha512-YcWzu92UuLH+OempSa/Eb8XJkL1lvrz3LBJIG6PUFiHWCdW9ucbSaygpz9nrvmiNUN8uBUtoRp5cWqT3+BYhOQ==}
+
+  el-component@2.0.2:
+    resolution: {integrity: sha512-Rmvqd9V+QkYf7T/VyptyCNHZ9mCbdQ2CaSkxZAN15+xzQfZ3RX93CKMsLW+9JbUwgqV8mohw+U8k0eYb8ancNg==}
 
   emoji-regex@8.0.0:
     resolution: {integrity: sha512-MSjYzcWNOA0ewAHpz0MxpYFvwg6yjy1NG3xteoqz644VCo/RPgnr1/GGt+ic3iJTzQ8Eu3TdM14SawnVUmGE6A==}
@@ -1392,6 +1395,8 @@ snapshots:
   ee-first@1.1.1: {}
 
   el-component@1.0.1: {}
+
+  el-component@2.0.2: {}
 
   emoji-regex@8.0.0: {}
 
