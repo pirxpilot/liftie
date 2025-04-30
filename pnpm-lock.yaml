@@ -87,8 +87,8 @@ importers:
         specifier: ^6.13.1
         version: 6.14.0
       ro-rating:
-        specifier: ^1.0.2
-        version: 1.0.4
+        specifier: ~2
+        version: 2.0.0
       superagent:
         specifier: ~10
         version: 10.2.0
@@ -873,8 +873,8 @@ packages:
     resolution: {integrity: sha512-xcBILK2pA9oh4SiinPEZfhP8HfrB/ha+a2fTMyl7Om2WjlDVrOQy99N2MXXlUHqGJz4qEu2duXxHJjDWuK/0xg==}
     engines: {node: '>= 0.4.0'}
 
-  ro-rating@1.0.4:
-    resolution: {integrity: sha512-1ZJLMliIK+T0zdwlkqDIGQgJHqCJCfBfYD/80LjTCLRbwOM8O6F/47ypkGm9C6AIjpUWdPoBFtnrJjPzX6VH8A==}
+  ro-rating@2.0.0:
+    resolution: {integrity: sha512-nY3u1O9nqOgcJ7He6WDK7hsVWP+51O4BfeUdaN7nrvbo5/DcEXJVIF5akdms3Ha8bD9hS+dD5nbbzwWlEsBYeQ==}
 
   safe-buffer@5.1.2:
     resolution: {integrity: sha512-Gd2UZBJDkXlY7GbJxfsE8/nvKkUEU1G38c1siN6QP6a9PT9MmHB8GnpscSmMJSoF8LOIrt8ud/wPtojys4G6+g==}
@@ -1694,7 +1694,7 @@ snapshots:
 
   revalidator@0.1.8: {}
 
-  ro-rating@1.0.4: {}
+  ro-rating@2.0.0: {}
 
   safe-buffer@5.1.2: {}
 
