@@ -1,4 +1,14 @@
 
+3.56.2 / 2025-04-30
+===================
+
+ * upgrade `ro-rating` to 2.0.0
+ * upgrade `limiter` to 3.0.0
+ * upgrade `el-component` to 2.0.2
+ * upgrade superagent to 10.2.0
+ * soft dependency update
+ * replace `Feature-Policy` with `Permissions-Policy` header
+
 3.56.1 / 2025-03-26
 ===================
 
