@@ -72,8 +72,8 @@ importers:
         specifier: ^3.0.5
         version: 3.0.5
       limiter:
-        specifier: ~2.1.0
-        version: 2.1.0
+        specifier: ~3
+        version: 3.0.0
       lodash:
         specifier: ^4.16.6
         version: 4.17.21
@@ -726,11 +726,8 @@ packages:
   jstransformer@1.0.0:
     resolution: {integrity: sha512-C9YK3Rf8q6VAPDCCU9fnqo3mAfOH6vUGnMcP4AQAYIEpWtfGLpwOTmZ+igtdK5y+VvI2n3CyYSzy4Qh34eq24A==}
 
-  just-performance@4.3.0:
-    resolution: {integrity: sha512-L7RjvtJsL0QO8xFs5wEoDDzzJwoiowRw6Rn/GnvldlchS2JQr9wFYPiwZcDfrbbujEKqKN0tvENdbjXdYhDp5Q==}
-
-  limiter@2.1.0:
-    resolution: {integrity: sha512-361TYz6iay6n+9KvUUImqdLuFigK+K79qrUtBsXhJTLdH4rIt/r1y8r1iozwh8KbZNpujbFTSh74mJ7bwbAMOw==}
+  limiter@3.0.0:
+    resolution: {integrity: sha512-hev7DuXojsTFl2YwyzUJMDnZ/qBDd3yZQLSH3aD4tdL1cqfc3TMnoecEJtWFaQFdErZsKoFMBTxF/FBSkgDbEg==}
 
   lodash@4.17.21:
     resolution: {integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==}
@@ -1571,11 +1568,7 @@ snapshots:
       is-promise: 2.2.2
       promise: 7.3.1
 
-  just-performance@4.3.0: {}
-
-  limiter@2.1.0:
-    dependencies:
-      just-performance: 4.3.0
+  limiter@3.0.0: {}
 
   lodash@4.17.21: {}
 
