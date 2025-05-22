@@ -102,9 +102,6 @@ importers:
       '@biomejs/biome':
         specifier: ^1.5.1
         version: 1.9.4
-      '@pirxpilot/replay':
-        specifier: ^2.2.1
-        version: 2.2.1
       commander:
         specifier: ~13
         version: 13.1.0
@@ -123,6 +120,9 @@ importers:
       stylus:
         specifier: ^0.64.0
         version: 0.64.0
+      undici:
+        specifier: ^7.10.0
+        version: 7.10.0
 
 packages:
 
@@ -379,9 +379,6 @@ packages:
 
   '@pirxpilot/k@1.0.1':
     resolution: {integrity: sha512-ArLSBo2EcPFiprpPnYVVbRa7kkJAgxva+9u6swwpIXu6aDAytfgiYapHI5LutOvL2xto3q56MuUMKrUKcgtPTA==}
-
-  '@pirxpilot/replay@2.2.1':
-    resolution: {integrity: sha512-h7ttPOELEOxxShD71csZoMmyd/moKg/BspRu2JmUS/18McYzZiiYm5E9y2FXGJ27dFSGKNzKuQjxYQCbUG2AIw==}
 
   '@pirxpilot/router@1.1.0':
     resolution: {integrity: sha512-kcpxJkJVzeqDJr6oE3gwVC9qhIvAJfoaqK9QiE8WgT9GwlYhZ32d4xA6KltJgj9myqGO8PPvzKPet1OOeoecKA==}
@@ -719,10 +716,6 @@ packages:
     resolution: {integrity: sha512-cEiJEAEoIbWfCZYKWhVwFuvPX1gETRYPw6LlaTKoxD3s2AkXzkCjnp6h0V77ozyqj0jakteJ4YqDJT830+lVGw==}
     engines: {node: '>=14'}
 
-  js-string-escape@1.0.1:
-    resolution: {integrity: sha512-Smw4xcfIQ5LVjAOuJCvN/zIodzA/BBSsluuoSykP+lUvScIi4U6RJLfwHet5cxFnCswUjISV8oAXaqaJDY3chg==}
-    engines: {node: '>= 0.8'}
-
   jstransformer@1.0.0:
     resolution: {integrity: sha512-C9YK3Rf8q6VAPDCCU9fnqo3mAfOH6vUGnMcP4AQAYIEpWtfGLpwOTmZ+igtdK5y+VvI2n3CyYSzy4Qh34eq24A==}
 
@@ -989,6 +982,10 @@ packages:
   transform-property@0.0.1:
     resolution: {integrity: sha512-L0nMJCwu3/Lpd5t/pRQl+JoYU5V0sYubcn30yWZnHG0HjC6Gdr/Eg/bun1OixYPmsEZdA7Khbq2jiSIjzlEv6Q==}
 
+  undici@7.10.0:
+    resolution: {integrity: sha512-u5otvFBOBZvmdjWLVW+5DAc9Nkq8f24g0O9oY7qw2JVIF1VocIFoyz9JFkuVOS2j41AufeO0xnlweJ2RLT8nGw==}
+    engines: {node: '>=20.18.1'}
+
   void-elements@3.1.0:
     resolution: {integrity: sha512-Dhxzh5HZuiHQhbvTW9AMetFfBHDMYpo23Uo9btPXgdYP+3T5S+p+jgNy7spra+veYhBP2dCSgxR/i2Y02h5/6w==}
     engines: {node: '>=0.10.0'}
@@ -1198,13 +1195,6 @@ snapshots:
       component-os: 0.0.1
       yields-k-sequence: 0.1.0
       yields-keycode: 1.1.0
-
-  '@pirxpilot/replay@2.2.1':
-    dependencies:
-      debug: 4.4.1
-      js-string-escape: 1.0.1
-    transitivePeerDependencies:
-      - supports-color
 
   '@pirxpilot/router@1.1.0':
     dependencies:
@@ -1561,8 +1551,6 @@ snapshots:
 
   js-cookie@3.0.5: {}
 
-  js-string-escape@1.0.1: {}
-
   jstransformer@1.0.0:
     dependencies:
       is-promise: 2.2.2
@@ -1846,6 +1834,8 @@ snapshots:
   toidentifier@1.0.1: {}
 
   transform-property@0.0.1: {}
+
+  undici@7.10.0: {}
 
   void-elements@3.1.0: {}
 
