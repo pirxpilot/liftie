@@ -1,42 +1,59 @@
 const test = require('node:test');
-const assert = require('node:assert/strict');
+const { Agent, MockAgent, setGlobalDispatcher } = require('undici');
+
 const webcams = require('../lib/webcams');
 
-require('./replay');
+const webcamsJson = require('./webcams.json');
 
-if (process.env.REPLAY !== 'record') {
-  process.env.WEBCAMS_API_KEY = 'TEST_KEY';
-}
-
-test('webcams should return no webcams if location is missing', (_t, done) => {
+test('webcams should return no webcams if location is missing', (t, done) => {
   webcams({}, (err, webcams) => {
-    assert.ifError(err);
-    assert.ok(!webcams);
+    t.assert.ifError(err);
+    t.assert.ok(!webcams);
     done();
   });
 });
 
-test('webcams should return webcams for valid location', (_t, done) => {
-  webcams(
-    {
-      counter: 1,
-      ll: [7.98, 46.54] // from API examples https://windy.com/webcams/1697038975'
-    },
-    (err, webcams) => {
-      delete process.env.WEBCAMS_API_KEY;
+test('webcams should return webcams', async t => {
+  const mockAgent = new MockAgent();
 
-      assert.ifError(err);
-      assert.ok(webcams);
-      assert.ok(webcams.length > 0);
+  t.before(() => {
+    process.env.WEBCAMS_API_KEY = 'TEST_KEY';
+    setGlobalDispatcher(mockAgent);
+    mockAgent.disableNetConnect();
+    mockAgent
+      .get('https://api.windy.com')
+      .intercept({
+        path: '/webcams/api/v3/webcams?limit=5&nearby=46.54,7.98,5&include=images,urls'
+      })
+      .reply(200, webcamsJson);
+  });
 
-      const webcam = webcams[0];
+  t.after(async () => {
+    delete process.env.WEBCAMS_API_KEY;
+    await mockAgent.close();
+    setGlobalDispatcher(new Agent());
+  });
 
-      assert.equal(webcam.name, 'Fieschertal: Jungfraujoch');
-      assert.equal(webcam.source, 'https://windy.com/webcams/1697038975');
-      assert.match(webcam.image, /^https:\/\/images-webcams.windy.com\//);
-      assert.match(webcam.notice, /^Webcams provided by\n<a href="https:\/\/www.windy.com\/"/);
+  await t.test('valid location', (t, done) => {
+    webcams(
+      {
+        counter: 1,
+        ll: [7.98, 46.54] // from API examples https://windy.com/webcams/1697038975'
+      },
+      (err, webcams) => {
+        t.assert.ifError(err);
+        t.assert.ok(webcams);
+        t.assert.ok(webcams.length > 0);
 
-      done();
-    }
-  );
+        const webcam = webcams[0];
+
+        t.assert.equal(webcam.name, 'Fieschertal: Jungfraujoch');
+        t.assert.equal(webcam.source, 'https://windy.com/webcams/1697038975');
+        t.assert.match(webcam.image, /^https:\/\/images-webcams.windy.com\//);
+        t.assert.match(webcam.notice, /^Webcams provided by\n<a href="https:\/\/www.windy.com\/"/);
+
+        done();
+      }
+    );
+  });
 });

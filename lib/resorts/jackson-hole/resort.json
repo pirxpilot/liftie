@@ -6,8 +6,7 @@
   },
   "api": {
     "host": "https://www.jacksonhole.com",
-    "pathname": "/api/all.json",
-    "http2": true
+    "pathname": "/api/all.json"
   },
   "tags": [
     "Wyoming"
