@@ -1,4 +1,10 @@
 
+3.56.3 / 2025-05-22
+===================
+
+ * remove `http2` support for lift status
+ * use `fetch` instead of `superagent`
+
 3.56.2 / 2025-04-30
 ===================
 
