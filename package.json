@@ -58,12 +58,12 @@
   },
   "devDependencies": {
     "@biomejs/biome": "^1.5.1",
+    "@pirxpilot/stylus": "^1.2.0",
     "commander": "~13",
     "postcss": "~8",
     "postcss-cachify": "^4.0.0",
     "postcss-cli-simple": "~4.0.0",
     "prompt": "~1",
-    "stylus": "^0.64.0",
     "undici": "^7.10.0"
   },
   "pnpm": {
