@@ -5,6 +5,7 @@ settings:
   excludeLinksFromLockfile: false
 
 overrides:
+  on-headers: npm:@pirxpilot/on-headers@2.0.0
   debug: ~4
 
 importers:
@@ -363,6 +364,10 @@ packages:
   '@pirxpilot/k@1.0.1':
     resolution: {integrity: sha512-ArLSBo2EcPFiprpPnYVVbRa7kkJAgxva+9u6swwpIXu6aDAytfgiYapHI5LutOvL2xto3q56MuUMKrUKcgtPTA==}
 
+  '@pirxpilot/on-headers@2.0.0':
+    resolution: {integrity: sha512-VyGrSxK5QmH60aGvk1ieb0MZEn3dFyY42lxnMkxPYzc+727FM9efg+tcIT0qblZKBfkmb8W+UKNuxoNV2jQeDQ==}
+    engines: {node: '>= 20.0.0'}
+
   '@pirxpilot/router@1.1.0':
     resolution: {integrity: sha512-kcpxJkJVzeqDJr6oE3gwVC9qhIvAJfoaqK9QiE8WgT9GwlYhZ32d4xA6KltJgj9myqGO8PPvzKPet1OOeoecKA==}
     engines: {node: '>= 0.10'}
@@ -665,10 +670,6 @@ packages:
 
   on-finished@2.4.1:
     resolution: {integrity: sha512-oVlzkg3ENAhCk2zdv7IJwd/QUD4z2RxRwpkcGY8psCVcCYZNq4wYnVWALHM+brtuJjePWiYF/ClmuDr8Ch5+kg==}
-    engines: {node: '>= 0.8'}
-
-  on-headers@1.0.2:
-    resolution: {integrity: sha512-pZAE+FJLoyITytdqK0U5s+FIpjN0JP3OzFi/u8Rx+EV5/W+JTWGXG8xFzevE7AjBfDqHv/8vL8qQsIhHnqRkrA==}
     engines: {node: '>= 0.8'}
 
   parseurl@1.3.3:
@@ -980,6 +981,8 @@ snapshots:
       yields-k-sequence: 0.1.0
       yields-keycode: 1.1.0
 
+  '@pirxpilot/on-headers@2.0.0': {}
+
   '@pirxpilot/router@1.1.0':
     dependencies:
       parseurl: 1.3.3
@@ -1047,7 +1050,7 @@ snapshots:
   connect-cachify-static@4.0.1:
     dependencies:
       debug: 4.4.1
-      on-headers: 1.0.2
+      on-headers: '@pirxpilot/on-headers@2.0.0'
       parseurl: 1.3.3
     transitivePeerDependencies:
       - supports-color
@@ -1270,7 +1273,7 @@ snapshots:
       debug: 4.4.1
       depd: 2.0.0
       on-finished: 2.3.0
-      on-headers: 1.0.2
+      on-headers: '@pirxpilot/on-headers@2.0.0'
     transitivePeerDependencies:
       - supports-color
 
@@ -1295,8 +1298,6 @@ snapshots:
   on-finished@2.4.1:
     dependencies:
       ee-first: 1.1.1
-
-  on-headers@1.0.2: {}
 
   parseurl@1.3.3: {}
 

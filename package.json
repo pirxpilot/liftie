@@ -66,6 +66,9 @@
     "prompt": "~1",
     "undici": "^7.10.0"
   },
+  "resolutions": {
+    "on-headers": "npm:@pirxpilot/on-headers@2.0.0"
+   },
   "pnpm": {
     "overrides": {
       "debug": "~4"
