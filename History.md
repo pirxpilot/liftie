@@ -1,4 +1,11 @@
 
+3.56.4 / 2025-07-23
+===================
+
+ * use `@pirxpilot/on-headers`
+ * remove accidentally checked in HTML test fixture
+ * use `@pirxpilot/stylus` instead of stylus
+
 3.56.3 / 2025-05-22
 ===================
 
