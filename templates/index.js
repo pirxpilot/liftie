@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   selector: '.lifts', // selector for lift information
   parse: {
     filter: node => node.children, // if present skips nodes for which filter is falsy

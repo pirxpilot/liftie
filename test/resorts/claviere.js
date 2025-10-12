@@ -1,4 +1,4 @@
-const lifts = require('../lifts');
+import lifts from '../lifts/index.js';
 
 lifts('claviere', 'html', {
   'SG2 RAFUYEL': 'closed',

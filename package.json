@@ -2,6 +2,7 @@
   "name": "liftie",
   "version": "3.56.5",
   "description": "Clean, simple, easy to read, fast ski resort lift status",
+  "type": "module",
   "keywords": [
     "ski",
     "snowboard"

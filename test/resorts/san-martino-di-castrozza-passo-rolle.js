@@ -1,4 +1,4 @@
-const lifts = require('../lifts');
+import lifts from '../lifts/index.js';
 
 lifts('san-martino-di-castrozza-passo-rolle', 'html', {
   Rolle: 'closed',

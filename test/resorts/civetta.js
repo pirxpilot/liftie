@@ -1,4 +1,4 @@
-const lifts = require('../lifts');
+import lifts from '../lifts/index.js';
 
 lifts('civetta', 'html', {
   'Alleghe/Piani di Pezzè': 'closed',

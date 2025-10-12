@@ -1,23 +1,31 @@
-const connect = require('@pirxpilot/connect');
-const cachifyStatic = require('connect-cachify-static');
-const gzip = require('connect-gzip-static');
-const http = require('node:http');
-const path = require('node:path');
-const loaders = require('./lib/loaders');
-const plugins = require('./lib/plugins');
+import http from 'node:http';
+import path from 'node:path';
+import connect from '@pirxpilot/connect';
+import cookieParser from '@pirxpilot/cookie-parser';
+import { compile } from '@pirxpilot/jade-core';
+import cachifyStatic from 'connect-cachify-static';
+import gzip from 'connect-gzip-static';
+import renderer from 'connect-renderer';
+import errorHandler from 'errorhandler';
+import logger from 'morgan';
+import lifts from './lib/lifts/index.js';
+import loader from './lib/loader.js';
+import * as loaders from './lib/loaders.js';
+import opening from './lib/opening.js';
+import * as plugins from './lib/plugins.js';
+import dataRoutes from './lib/routes/data.js';
+import routes from './lib/routes/index.js';
+import weather from './lib/weather/index.js';
+import webcams from './lib/webcams.js';
 
-const cookieParser = require('@pirxpilot/cookie-parser');
-const logger = require('morgan');
-const errorHandler = require('errorhandler');
-const renderer = require('connect-renderer');
-
-const app = (module.exports = connect());
+const app = connect();
+export default app;
 
 process.env.PORT ??= 3000;
 process.env.SITE_URL ??= `http://localhost:${process.env.PORT}`;
 process.env.NODE_ENV ??= 'development';
 
-const root = path.join(__dirname, 'public');
+const root = path.join(path.dirname(new URL(import.meta.url).pathname), 'public');
 const { SITE_URL: siteUrl, LIFTIE_STATIC_HOST: staticHost = '' } = process.env;
 
 const cachify = cachifyStatic(root);
@@ -34,8 +42,8 @@ app.locals = {
 };
 
 app.use(
-  renderer(`${__dirname}/views`).engine('jade', {
-    compile: require('@pirxpilot/jade-core').compile,
+  renderer(`${path.dirname(new URL(import.meta.url).pathname)}/views`).engine('jade', {
+    compile,
     options: { compileDebug: process.env.NODE_ENV !== 'production' }
   })
 );
@@ -59,17 +67,17 @@ if (process.env.NODE_ENV === 'development') {
 }
 
 app.loaders = loaders;
-app.loaders.register(require('./lib/loader'));
+app.loaders.register(loader);
 
 app.plugins = plugins;
-app.plugins.register('lifts', require('./lib/lifts'));
-app.plugins.register('opening', require('./lib/opening'));
-app.plugins.register('weather', require('./lib/weather'));
-app.plugins.register('webcams', require('./lib/webcams'));
+app.plugins.register('lifts', lifts);
+app.plugins.register('opening', opening);
+app.plugins.register('weather', weather);
+app.plugins.register('webcams', webcams);
 
-app.data = require('./lib/routes/data')();
+app.data = dataRoutes();
 
-require('./lib/routes')(app);
+routes(app);
 
 app.run = function run() {
   app.data.init(err => {
@@ -84,6 +92,6 @@ app.run = function run() {
   });
 };
 
-if (!module.parent) {
+if (import.meta.main) {
   app.run();
 }

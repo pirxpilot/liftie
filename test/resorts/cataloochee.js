@@ -1,4 +1,4 @@
-const lifts = require('../lifts');
+import lifts from '../lifts/index.js';
 
 lifts('cataloochee', 'html', {
   'Easy Way (Triple)': 'open',

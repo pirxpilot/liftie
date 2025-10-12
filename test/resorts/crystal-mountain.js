@@ -1,4 +1,4 @@
-const lifts = require('../lifts');
+import lifts from '../lifts/index.js';
 
 lifts('crystal-mountain', 'json', {
   'Mt. Rainier Gondola': 'closed',

@@ -1,15 +1,13 @@
-const test = require('node:test');
-const assert = require('node:assert/strict');
-const { createReadStream } = require('node:fs');
+import assert from 'node:assert/strict';
+import { createReadStream, readFileSync } from 'node:fs';
+import { resolve } from 'node:path';
+import test from 'node:test';
+import makeParse from '../../lib/lifts/parse.js';
+import parser from '../../lib/lifts/parser.js';
 
-const parser = require('../../lib/lifts/parser');
-const makeParse = require('../../lib/lifts/parse');
-
-module.exports = testResort;
-
-function testResort(name, ext, expected, opts = {}) {
-  const filename = `${__dirname}/../resorts/example/${name}.${ext}`;
-  const parse = makeParse(name);
+export default async function testResort(name, ext, expected, opts = {}) {
+  const filename = resolve(import.meta.dirname, `../resorts/example/${name}.${ext}`);
+  const parse = await makeParse(name);
 
   function testHTML(_t, done) {
     const stream = createReadStream(filename);
@@ -27,7 +25,7 @@ function testResort(name, ext, expected, opts = {}) {
   function testJSON(_t, done) {
     const asyncParse = parse.isAsync ? parse : (data, fn) => process.nextTick(fn, null, parse(data));
 
-    const data = require(filename);
+    const data = JSON.parse(readFileSync(filename, 'utf8'));
 
     asyncParse(data, (err, status) => {
       assert.deepEqual(status, expected);

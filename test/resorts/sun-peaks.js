@@ -1,4 +1,4 @@
-const lifts = require('../lifts');
+import lifts from '../lifts/index.js';
 
 lifts('sun-peaks', 'html', {
   'Sunburst Express Chairlift': 'open',

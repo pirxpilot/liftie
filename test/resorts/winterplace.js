@@ -1,4 +1,4 @@
-const lifts = require('../lifts');
+import lifts from '../lifts/index.js';
 
 lifts('winterplace', 'html', {
   '#1 Double Chairlift': 'closed',

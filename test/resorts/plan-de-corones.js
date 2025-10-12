@@ -1,4 +1,4 @@
-const lifts = require('../lifts');
+import lifts from '../lifts/index.js';
 
 lifts('plan-de-corones', 'html', {
   'Kronplatz 1': 'open',

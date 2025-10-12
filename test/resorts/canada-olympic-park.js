@@ -1,4 +1,4 @@
-const lifts = require('../lifts');
+import lifts from '../lifts/index.js';
 
 lifts('canada-olympic-park', 'html', {
   '88 Lift Express': 'open',

@@ -1,4 +1,4 @@
-const lifts = require('../lifts');
+import lifts from '../lifts/index.js';
 
 lifts('sunvalley', 'html', {
   '#01 River Run': 'closed',

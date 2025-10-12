@@ -1,4 +1,4 @@
-const lifts = require('../lifts');
+import lifts from '../lifts/index.js';
 
 lifts('jackson-hole', 'json', {
   'Aerial Tram': 'closed',
