@@ -1,20 +1,27 @@
 {
-  "$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
-  "organizeImports": {
-    "enabled": false
+  "$schema": "node_modules/@biomejs/biome/configuration_schema.json",
+  "assist": {
+    "actions": {
+      "source": {
+        "organizeImports": "on"
+      }
+    }
+  },
+  "vcs": {
+    "enabled": true,
+    "clientKind": "git",
+    "useIgnoreFile": true
   },
   "formatter": {
     "enabled": true
   },
   "files": {
-    "ignore": [
-      "package.json",
-      "pnpm-lock.yaml",
-      "bin/generate",
-      "test/resorts/example",
-      "test/replay",
-      "**/.*",
-      "public"
+    "includes": [
+      "**",
+      "!**/pnpm-lock.yaml",
+      "!**/bin/generate",
+      "!**/test/resorts/example",
+      "!**/test/replay"
     ]
   },
   "javascript": {
@@ -28,7 +35,8 @@
   },
   "json": {
     "formatter": {
-      "enabled": false,
+      "enabled": true,
+      "expand": "always",
       "indentStyle": "space"
     }
   },
@@ -37,29 +45,34 @@
     "rules": {
       "recommended": true,
       "correctness": {
-        "all": true,
-        "noNodejsModules": "off",
-        "useImportExtensions": "off"
-
+        "noUnusedVariables": "error",
+        "noUndeclaredVariables": "error",
+        "noUnusedFunctionParameters": "error"
       },
       "complexity": {
         "noForEach": "off",
         "useLiteralKeys": "off"
       },
       "style": {
-        "noParameterAssign": "off"
+        "noParameterAssign": "off",
+        "useDefaultParameterLast": "error",
+        "useSingleVarDeclarator": "error",
+        "noUnusedTemplateLiteral": "error",
+        "useNumberNamespace": "error",
+        "noUselessElse": "error"
       },
       "performance": {
         "noDelete": "off"
       },
       "suspicious": {
-        "noAssignInExpressions": "off"
+        "noAssignInExpressions": "off",
+        "useIterableCallbackReturn": "off"
       }
     }
   },
   "overrides": [
     {
-      "include": [
+      "includes": [
         "**/sw.template.js"
       ],
       "linter": {
@@ -76,8 +89,8 @@
       }
     },
     {
-      "include": [
-        "test/resorts/*.js"
+      "includes": [
+        "**/test/resorts/**/*.js"
       ],
       "javascript": {
         "formatter": {
