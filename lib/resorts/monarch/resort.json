@@ -1,12 +1,8 @@
 {
   "name": "Monarch Mountain",
   "url": {
-    "host": "https://www.skimonarch.com",
+    "host": "https://skimonarch.com",
     "pathname": "/conditions/"
-  },
-  "dataUrl": {
-    "host": "https://pmw.skimonarch.com",
-    "pathname": "/conditions/snow-report/snow-report-conditions/"
   },
   "tags": [
     "Colorado"
