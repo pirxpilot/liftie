@@ -2,7 +2,7 @@ const lifts = require('../lifts');
 
 lifts('abasin', 'html', {
   'Black Mountain Express Lift': 'closed',
-  'Lenawee Mountain Lift': 'closed',
+  'Lenawee Express Lift': 'closed',
   'Pallavicini Lift': 'closed',
   'Lazy J Tow': 'closed',
   'Zuma Lift': 'closed',
