@@ -1,4 +1,4 @@
-const lifts = require('../lifts');
+import lifts from '../lifts/index.js';
 
 lifts('montegenevre', 'html', {
   'SC LA DURANCE': 'closed',

@@ -1,4 +1,4 @@
-const lifts = require('../lifts');
+import lifts from '../lifts/index.js';
 
 lifts('tarvisio', 'html', {
   '101 Telecabina M. Lussari - 8 posti': 'closed',

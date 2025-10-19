@@ -1,4 +1,4 @@
-const lifts = require('../lifts');
+import lifts from '../lifts/index.js';
 
 lifts('sappada', 'html', {
   '101 Seggiovia Monte Siera - 2 posti': 'closed',

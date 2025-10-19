@@ -1,6 +1,6 @@
-const test = require('node:test');
-const assert = require('node:assert/strict');
-const check = require('../lib/checker');
+import assert from 'node:assert/strict';
+import test from 'node:test';
+import check from '../lib/checker.js';
 
 test('stats should return valid names when requested not specified', () => {
   const valid = ['a', 'b', 'c'];

@@ -1,4 +1,4 @@
-const lifts = require('../lifts');
+import lifts from '../lifts/index.js';
 
 lifts('sella', 'html', {
   '101 Telecabina Canin - 16 posti': 'closed',

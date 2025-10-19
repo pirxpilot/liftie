@@ -1,4 +1,4 @@
-const lifts = require('../lifts');
+import lifts from '../lifts/index.js';
 
 lifts('red-lodge-mountain', 'html', {
   'Magic Carpet': 'closed',

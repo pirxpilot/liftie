@@ -1,4 +1,4 @@
-const lifts = require('../lifts');
+import lifts from '../lifts/index.js';
 
 lifts('telluride', 'html', {
   'Free Gondola – Town to MV': 'open',

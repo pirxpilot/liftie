@@ -1,4 +1,4 @@
-const lifts = require('../lifts');
+import lifts from '../lifts/index.js';
 
 lifts('49-degrees-north', 'html', {
   'Chair 1': 'open',

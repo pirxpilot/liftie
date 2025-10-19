@@ -1,4 +1,4 @@
-const lifts = require('../lifts');
+import lifts from '../lifts/index.js';
 
 lifts('sauris', 'html', {
   '101 Sciovia Richelan': 'closed',

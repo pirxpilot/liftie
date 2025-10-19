@@ -1,4 +1,4 @@
-const lifts = require('../lifts');
+import lifts from '../lifts/index.js';
 
 lifts('mammoth-lakes', 'json', {
   'Broadway Express 1': 'scheduled',

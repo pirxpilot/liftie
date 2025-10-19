@@ -1,6 +1,0 @@
-#!/bin/bash
-
-# update resort files after moving descriptor to JSON
-
-find lib/resorts -name index.js | xargs -I F sed -i "s/= require('\.\./= require('..\/../" F
-find test/resorts -name \*.js | xargs -I F sed -i "s/)\.parse;/);/" F

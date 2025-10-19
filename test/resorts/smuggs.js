@@ -1,4 +1,4 @@
-const lifts = require('../lifts');
+import lifts from '../lifts/index.js';
 
 lifts('smuggs', 'html', {
   "Mogul Mouse's Magic Lift": 'open',

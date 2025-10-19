@@ -1,4 +1,4 @@
-const lifts = require('../lifts');
+import lifts from '../lifts/index.js';
 
 lifts('madonna-di-campiglio', 'html', {
   'Pradalago': 'open',

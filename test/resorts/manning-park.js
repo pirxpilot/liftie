@@ -1,4 +1,4 @@
-const lifts = require('../lifts');
+import lifts from '../lifts/index.js';
 
 lifts('manning-park', 'html', {
   'The Bear Chair – New Quad Chairlift': 'open',

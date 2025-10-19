@@ -1,8 +1,7 @@
-const test = require('node:test');
-const noaa = require('../../lib/weather/noaa');
-
-const { Agent, MockAgent, setGlobalDispatcher } = require('undici');
-const responseJson = require('./noaa.json');
+import test from 'node:test';
+import { Agent, MockAgent, setGlobalDispatcher } from 'undici';
+import noaa from '../../lib/weather/noaa.js';
+import responseJson from './noaa.json' with { type: 'json' };
 
 test('noaa should return empty forecast if location is missing', (t, done) => {
   noaa(

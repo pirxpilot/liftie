@@ -1,4 +1,4 @@
-const lifts = require('../lifts');
+import lifts from '../lifts/index.js';
 
 lifts('brighton', 'json', {
   'Crest 6': 'closed',

@@ -1,4 +1,4 @@
-const lifts = require('../lifts');
+import lifts from '../lifts/index.js';
 
 lifts('cransmontana', 'xml', {
   "1 Crans Cry D'er": 'open',

@@ -1,7 +1,7 @@
-const test = require('node:test');
-const assert = require('node:assert/strict');
-const opening = require('../lib/opening');
-const day = require('../lib/tools/millis').day;
+import assert from 'node:assert/strict';
+import test from 'node:test';
+import opening from '../lib/opening.js';
+import { day } from '../lib/tools/millis.js';
 
 function iso(millis) {
   millis -= new Date().getTimezoneOffset() * 60 * 1000;

@@ -1,4 +1,4 @@
-const lifts = require('../lifts');
+import lifts from '../lifts/index.js';
 
 lifts('sunday-river', 'json', {
   'Little White Cap Quad #11': 'closed',

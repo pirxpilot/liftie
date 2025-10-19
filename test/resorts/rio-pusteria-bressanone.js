@@ -1,4 +1,4 @@
-const lifts = require('../lifts');
+import lifts from '../lifts/index.js';
 
 lifts('rio-pusteria-bressanone', 'html', {
   Bergbahn: 'closed',

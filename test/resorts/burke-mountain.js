@@ -1,4 +1,4 @@
-const lifts = require('../lifts');
+import lifts from '../lifts/index.js';
 
 lifts('burke-mountain', 'html', {
   'MidBurke Express': 'closed',

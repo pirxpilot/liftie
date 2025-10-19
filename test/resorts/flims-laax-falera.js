@@ -1,4 +1,4 @@
-const lifts = require('../lifts');
+import lifts from '../lifts/index.js';
 
 lifts('flims-laax-falera', 'html', {
   'GB10 FlemXpress Flims - Foppa': 'scheduled',

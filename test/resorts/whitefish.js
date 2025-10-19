@@ -1,4 +1,4 @@
-const lifts = require('../lifts');
+import lifts from '../lifts/index.js';
 
 lifts('whitefish', 'html', {
   'Chair 1 - Big Mountain Express': 'open',

@@ -1,6 +1,6 @@
-const test = require('node:test');
-const assert = require('node:assert/strict');
-const tags = require('../../lib/routes/tags');
+import assert from 'node:assert/strict';
+import test from 'node:test';
+import tags from '../../lib/routes/tags.js';
 
 test('tags should classify object according to tags', () => {
   const objs = {

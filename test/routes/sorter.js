@@ -1,6 +1,6 @@
-const test = require('node:test');
-const assert = require('node:assert/strict');
-const sorter = require('../../lib/routes/sorter');
+import assert from 'node:assert/strict';
+import test from 'node:test';
+import sorter from '../../lib/routes/sorter.js';
 
 function id2resorts(commaSeparatedIds) {
   return commaSeparatedIds.split(',').map(id => ({

@@ -1,9 +1,7 @@
-const test = require('node:test');
-const { Agent, MockAgent, setGlobalDispatcher } = require('undici');
-
-const webcams = require('../lib/webcams');
-
-const webcamsJson = require('./webcams.json');
+import test from 'node:test';
+import { Agent, MockAgent, setGlobalDispatcher } from 'undici';
+import webcams from '../lib/webcams.js';
+import webcamsJson from './webcams.json' with { type: 'json' };
 
 test('webcams should return no webcams if location is missing', (t, done) => {
   webcams({}, (err, webcams) => {

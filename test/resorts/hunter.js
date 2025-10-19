@@ -1,4 +1,4 @@
-const lifts = require('../lifts');
+import lifts from '../lifts/index.js';
 
 lifts('hunter', 'html', {
   '20th Century (C Lift)': 'closed',

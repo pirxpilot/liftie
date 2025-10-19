@@ -1,4 +1,4 @@
-const lifts = require('../lifts');
+import lifts from '../lifts/index.js';
 
 lifts('whistler-blackcomb', 'xml', {
   '7th Heaven Express': 'closed',

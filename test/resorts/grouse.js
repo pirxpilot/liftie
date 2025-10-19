@@ -1,4 +1,4 @@
-const lifts = require('../lifts');
+import lifts from '../lifts/index.js';
 
 lifts('grouse', 'html', {
   'Olympic Express High-Speed Quad Chair': 'scheduled',

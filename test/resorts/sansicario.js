@@ -1,4 +1,4 @@
-const lifts = require('../lifts');
+import lifts from '../lifts/index.js';
 
 lifts('sansicario', 'html', {
   'SC FRAITEVE DX': 'closed',

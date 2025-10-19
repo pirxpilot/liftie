@@ -1,8 +1,7 @@
-const test = require('node:test');
-const { Agent, MockAgent, setGlobalDispatcher } = require('undici');
-const openweather = require('../../lib/weather/openweather');
-
-const responseJson = require('./openweather.json');
+import test from 'node:test';
+import { Agent, MockAgent, setGlobalDispatcher } from 'undici';
+import openweather from '../../lib/weather/openweather.js';
+import responseJson from './openweather.json' with { type: 'json' };
 
 test('openweather should return forecast', async t => {
   const mockAgent = new MockAgent();

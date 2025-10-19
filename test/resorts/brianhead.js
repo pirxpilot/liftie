@@ -1,4 +1,4 @@
-const lifts = require('../lifts');
+import lifts from '../lifts/index.js';
 
 lifts('brianhead', 'html', {
   'Wildflower, Chair 1': 'open',

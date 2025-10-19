@@ -1,4 +1,4 @@
-const lifts = require('../lifts');
+import lifts from '../lifts/index.js';
 
 lifts('ravascletto-zoncolan', 'html', {
   '101 Funifor Monte Zoncolan': 'closed',

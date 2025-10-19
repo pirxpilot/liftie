@@ -1,4 +1,4 @@
-const lifts = require('../lifts');
+import lifts from '../lifts/index.js';
 
 lifts('ovindoli', 'html', {
   'B - Topolino 1': 'open',

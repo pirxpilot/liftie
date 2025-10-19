@@ -1,4 +1,4 @@
-const lifts = require('../lifts');
+import lifts from '../lifts/index.js';
 
 lifts('silver-star', 'json', {
   'Comet Express': 'open',

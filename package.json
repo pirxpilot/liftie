@@ -2,6 +2,7 @@
   "name": "liftie",
   "version": "3.56.5",
   "description": "Clean, simple, easy to read, fast ski resort lift status",
+  "type": "module",
   "keywords": [
     "ski",
     "snowboard"
@@ -57,7 +58,7 @@
     "to-title-case": "^1.0.0"
   },
   "devDependencies": {
-    "@biomejs/biome": "^1.5.1",
+    "@biomejs/biome": "2.2.6",
     "@pirxpilot/stylus": "^1.2.0",
     "commander": "~13",
     "postcss": "~8",

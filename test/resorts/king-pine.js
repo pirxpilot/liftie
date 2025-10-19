@@ -1,4 +1,4 @@
-const lifts = require('../lifts');
+import lifts from '../lifts/index.js';
 
 lifts('king-pine', 'json', {
   'Polar Bear Triple': 'open',

@@ -1,4 +1,4 @@
-const lifts = require('../lifts');
+import lifts from '../lifts/index.js';
 
 lifts('snow-valley', 'html', {
   '(1) Double Chair': 'closed',

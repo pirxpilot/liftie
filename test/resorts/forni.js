@@ -1,4 +1,4 @@
-const lifts = require('../lifts');
+import lifts from '../lifts/index.js';
 
 lifts('forni', 'html', {
   '101 Seggiovia Varmost 1 - 4 posti': 'closed',
