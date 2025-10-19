@@ -1,4 +1,11 @@
 
+3.56.5 / 2025-10-19
+===================
+
+ * fix Loveland resort
+ * fix Monarch resort
+ * fix abasin resort
+
 3.56.4 / 2025-07-23
 ===================
 
