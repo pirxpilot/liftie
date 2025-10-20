@@ -1,6 +1,6 @@
 {
   "name": "liftie",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "description": "Clean, simple, easy to read, fast ski resort lift status",
   "type": "module",
   "keywords": [
