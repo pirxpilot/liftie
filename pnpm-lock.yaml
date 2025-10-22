@@ -110,8 +110,8 @@ importers:
         specifier: ~8
         version: 8.5.6
       postcss-cachify:
-        specifier: ^4.0.0
-        version: 4.0.0(postcss@8.5.6)
+        specifier: ^5.0.0
+        version: 5.0.0(postcss@8.5.6)
       postcss-cli-simple:
         specifier: ~4.0.0
         version: 4.0.4(postcss@8.5.6)
@@ -688,8 +688,8 @@ packages:
   picocolors@1.1.1:
     resolution: {integrity: sha512-xceH2snhtb5M9liqDsmEw56le376mTZkEX/jEb/RxNFyegNul7eNslCXP9FDj/Lcu0X8KEyMceP2ntpaHrDEVA==}
 
-  postcss-cachify@4.0.0:
-    resolution: {integrity: sha512-ocZNRNMwh131O6JVINL7+uWAcVLtCLhGDXcQiqbXu2tDmCGgT6x5xd04xtC94NhDlNUeYEZ6EJJ8QOxI5k+8SQ==}
+  postcss-cachify@5.0.0:
+    resolution: {integrity: sha512-NV/MG0XLnTt9wL9ys2wWgL4+r2ZPITZ1JPEnUznc0+ZW5WOLNz5NTt8RIoEfug+rOxVLGXmypkTEfDuyEIs+Ig==}
     peerDependencies:
       postcss: ~8
 
@@ -1318,7 +1318,7 @@ snapshots:
 
   picocolors@1.1.1: {}
 
-  postcss-cachify@4.0.0(postcss@8.5.6):
+  postcss-cachify@5.0.0(postcss@8.5.6):
     dependencies:
       connect-cachify-static: 4.0.1
       debug: 4.4.3
