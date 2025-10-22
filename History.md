@@ -1,4 +1,13 @@
 
+4.0.2 / 2025-10-21
+==================
+
+ * upgrade `postcss-cachify` to 5.0.0
+ * soft dependency update
+ * use `mobile-web-app-capable` instead of `apple-*` version
+ * use esm format for compiled javascript module
+ * cachify-static format changed to `name`
+
 4.0.1 / 2025-10-20
 ==================
 
