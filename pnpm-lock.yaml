@@ -34,8 +34,8 @@ importers:
         specifier: ~5
         version: 5.0.1
       connect-gzip-static:
-        specifier: ^4.2.1
-        version: 4.2.2
+        specifier: ~5
+        version: 5.0.0
       connect-renderer:
         specifier: ^1.0.0
         version: 1.0.0
@@ -448,9 +448,9 @@ packages:
     engines: {node: '>= 20.1.0'}
     hasBin: true
 
-  connect-gzip-static@4.2.2:
-    resolution: {integrity: sha512-9mfCKkVhSC+GHY/nWTkeSGxqDHvMYW06VSeKD9zsrpoE8QXgPtRRvhGbk1gSNmY0d+jZEgm5FXew/dxmb2OByQ==}
-    engines: {node: '>= 20.1.0'}
+  connect-gzip-static@5.0.0:
+    resolution: {integrity: sha512-VftGp5BPfzxv0GEJS+/nABgbY6OxewAfRfyb7fRilO44DA1jPSHArWTcQV/olLYUu3pDV01Z1DgoPLYYc4ThhA==}
+    engines: {node: '>= 22'}
 
   connect-renderer@1.0.0:
     resolution: {integrity: sha512-HhsaBqA1lZKrLJnRK3zmcSucqfou2AXsE7F3aORMjzhobGjOj3FYdiwWNrUk9fXsBev+R82EnwCp4sbx4rEWsA==}
@@ -1076,7 +1076,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  connect-gzip-static@4.2.2:
+  connect-gzip-static@5.0.0:
     dependencies:
       debug: 4.4.3
       mime-types: 3.0.1
