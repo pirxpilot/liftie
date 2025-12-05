@@ -28,7 +28,7 @@
     "test": "make lint test"
   },
   "dependencies": {
-    "@pirxpilot/connect": "^4.2.0",
+    "@pirxpilot/connect": "^5.0.0",
     "@pirxpilot/cookie-parser": "~2",
     "@pirxpilot/jade-core": "^1.12.1",
     "@pirxpilot/k": "^1.0.0",
