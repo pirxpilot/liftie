@@ -91,8 +91,8 @@ importers:
         specifier: ~2
         version: 2.0.0
       tiny-pager:
-        specifier: ^1.0.0
-        version: 1.0.0
+        specifier: ^2.0.0
+        version: 2.0.0
       to-title-case:
         specifier: ^1.0.0
         version: 1.0.0
@@ -435,6 +435,10 @@ packages:
   component-emitter@1.3.1:
     resolution: {integrity: sha512-T0+barUSQRTUQASh8bx02dl+DhF54GtIDY13Y3m9oWTklKbb3Wv974meRpeZ3lp1JpLVECWWNHC4vaG2XHXouQ==}
 
+  component-emitter@2.0.0:
+    resolution: {integrity: sha512-4m5s3Me2xxlVKG9PkZpQqHQR7bgpnN7joDMJ4yvVkVXngjoITG76IaZmzmywSeRTeTpc6N6r3H3+KyUurV8OYw==}
+    engines: {node: '>=18'}
+
   component-os@0.0.1:
     resolution: {integrity: sha512-ZoGIVg1w3XGMnVM+ssMAUPvDofaI9rpXDSEAFlLICBkHg9SSv9CmB5EwvnwD18QcWNFjam5ccP+MRurFe0VZfw==}
 
@@ -516,9 +520,6 @@ packages:
 
   ee-first@1.1.1:
     resolution: {integrity: sha512-WMwm9LhRUo+WUaRN+vRuETqG89IgZphVSNkdFgeb6sS/E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQlow==}
-
-  el-component@1.0.1:
-    resolution: {integrity: sha512-YcWzu92UuLH+OempSa/Eb8XJkL1lvrz3LBJIG6PUFiHWCdW9ucbSaygpz9nrvmiNUN8uBUtoRp5cWqT3+BYhOQ==}
 
   el-component@2.0.2:
     resolution: {integrity: sha512-Rmvqd9V+QkYf7T/VyptyCNHZ9mCbdQ2CaSkxZAN15+xzQfZ3RX93CKMsLW+9JbUwgqV8mohw+U8k0eYb8ancNg==}
@@ -783,8 +784,8 @@ packages:
     resolution: {integrity: sha512-DvEy55V3DB7uknRo+4iOGT5fP1slR8wQohVdknigZPMpMstaKJQWhwiYBACJE3Ul2pTnATihhBYnRhZQHGBiRw==}
     engines: {node: '>= 0.8'}
 
-  tiny-pager@1.0.0:
-    resolution: {integrity: sha512-Q7R0LBr9TcPFQdcxKaE9fUrJxVY4is4I8xHw3t847hfR6aVuZnbPkRt4hqAXocvupJbNtXaL5jgSUErCrlQa1Q==}
+  tiny-pager@2.0.0:
+    resolution: {integrity: sha512-pP1AFL1GdV5H+6oUQS4mGvYdgxHpZKug2Fi2JQCDYDCzkdhULnC8NphiVUls6coZGS1TA+UBNmPpiKBzGB4gtg==}
 
   title-case-minors@1.0.0:
     resolution: {integrity: sha512-GFT+1ZjqJgq5AywOXjl9VelGgqMpOtfwdxYaYy3eUE1gbyxneeSnADLoov7TxXelqftIhlblsnHVqw5hNFUbGQ==}
@@ -1058,6 +1059,8 @@ snapshots:
 
   component-emitter@1.3.1: {}
 
+  component-emitter@2.0.0: {}
+
   component-os@0.0.1: {}
 
   connect-cachify-static@4.0.1:
@@ -1148,8 +1151,6 @@ snapshots:
   dynload@1.0.2: {}
 
   ee-first@1.1.1: {}
-
-  el-component@1.0.1: {}
 
   el-component@2.0.2: {}
 
@@ -1439,10 +1440,10 @@ snapshots:
 
   statuses@2.0.2: {}
 
-  tiny-pager@1.0.0:
+  tiny-pager@2.0.0:
     dependencies:
-      component-emitter: 1.3.1
-      el-component: 1.0.1
+      component-emitter: 2.0.0
+      el-component: 2.0.2
 
   title-case-minors@1.0.0: {}
 
