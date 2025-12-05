@@ -38,7 +38,7 @@
     "connect-gzip-static": "~5",
     "connect-renderer": "^2.0.0",
     "css-select": "~6",
-    "debounce": "^2.0.0",
+    "debounce": "^3.0.0",
     "debug": "~4",
     "domelementtype": "^2.3.0",
     "domhandler": "~5",
