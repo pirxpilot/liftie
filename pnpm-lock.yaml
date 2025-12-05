@@ -37,8 +37,8 @@ importers:
         specifier: ~5
         version: 5.0.0
       connect-renderer:
-        specifier: ^1.0.0
-        version: 1.0.0
+        specifier: ^2.0.0
+        version: 2.0.0
       css-select:
         specifier: ~6
         version: 6.0.0
@@ -452,8 +452,8 @@ packages:
     resolution: {integrity: sha512-VftGp5BPfzxv0GEJS+/nABgbY6OxewAfRfyb7fRilO44DA1jPSHArWTcQV/olLYUu3pDV01Z1DgoPLYYc4ThhA==}
     engines: {node: '>= 22'}
 
-  connect-renderer@1.0.0:
-    resolution: {integrity: sha512-HhsaBqA1lZKrLJnRK3zmcSucqfou2AXsE7F3aORMjzhobGjOj3FYdiwWNrUk9fXsBev+R82EnwCp4sbx4rEWsA==}
+  connect-renderer@2.0.0:
+    resolution: {integrity: sha512-VkOEFY8LEX5ozKT1rzC6Cf2oBZX2iy0w6YkiOGcz+f+lAN0i/50mT0RD+jh+N+9eVq+6JIQHsLwoCXHDTrhavw==}
 
   constantinople@4.0.1:
     resolution: {integrity: sha512-vCrqcSIq4//Gx74TXXCGnHpulY1dskqLTFGDmhrGxzeXL8lF8kvXv6mpNWlJj1uD4DW23D4ljAqbY4RRaaUZIw==}
@@ -1086,7 +1086,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  connect-renderer@1.0.0:
+  connect-renderer@2.0.0:
     dependencies:
       debug: 4.4.3
     transitivePeerDependencies:
