@@ -1,4 +1,20 @@
 
+4.0.3 / 2025-12-06
+==================
+
+ * soft dependency update
+ * upgrade biome to 2.3.8
+ * upgrade esbuild to 0.27.1
+ * upgrade `@pirxpilot/swipe` to 3.0
+ * upgrade `tiny-pager` to 2.0.0
+ * upgrade `debounce` to 3.0.0
+ * upgrade connect-renderer to 2.0.0
+ * upgrade `@pirxpilot/connect` to 5.0.0
+ * upgrade `css-select` to ~6
+ * upgrade `connect-gzip-static` to ~5
+ * upgrade `connect-cachify-static` to ~5
+ * upgrade `@pirxpilot/router` to ~2
+
 4.0.2 / 2025-10-21
 ==================
 
