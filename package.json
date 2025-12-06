@@ -33,7 +33,7 @@
     "@pirxpilot/jade-core": "^1.12.1",
     "@pirxpilot/k": "^1.0.0",
     "@pirxpilot/router": "~2",
-    "@pirxpilot/swipe": "^2.0.2",
+    "@pirxpilot/swipe": "^3.0.0",
     "connect-cachify-static": "~5",
     "connect-gzip-static": "~5",
     "connect-renderer": "^2.0.0",

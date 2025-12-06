@@ -28,8 +28,8 @@ importers:
         specifier: ~2
         version: 2.0.0
       '@pirxpilot/swipe':
-        specifier: ^2.0.2
-        version: 2.0.2
+        specifier: ^3.0.0
+        version: 3.0.0
       connect-cachify-static:
         specifier: ~5
         version: 5.0.1
@@ -361,8 +361,8 @@ packages:
     resolution: {integrity: sha512-YEieYUeRRDlAYkbI6aLDPJ2uUs7jhhfyRVwnvJlVcBn8HvqXOZGM+/NkrKwz3o335TO2xaYBdUJnM59OB1yY2w==}
     engines: {node: '>= 20'}
 
-  '@pirxpilot/events@1.0.1':
-    resolution: {integrity: sha512-Xy/trHRWfkeIAJQZlaJ8wDngGbyK4Q/oWQ32meC6sXBcT7QGu3t5EOz+7yjlFoMM3wX1HL4kSKxG+WQPgCnBWg==}
+  '@pirxpilot/events@3.0.0':
+    resolution: {integrity: sha512-xzlRslStMKhWO+AAkL3XU1Sm/9YCtaxgUdbeICaCMVnHeGJElbr7oODvF6TJyWw05K5paH8tfx/gzTY2+yNTCw==}
 
   '@pirxpilot/jade-core@1.12.2':
     resolution: {integrity: sha512-S6p4vHEANx+Pr712GDFBabpvwWFfCaz2Qq2R260BJ/9o0Q4+NhmfjWVDtXZUQIxDyUIPHQgBeHNH4Z66bcjYDw==}
@@ -383,8 +383,8 @@ packages:
     engines: {node: '>=22'}
     hasBin: true
 
-  '@pirxpilot/swipe@2.0.2':
-    resolution: {integrity: sha512-Gc01mbSQDh8RDWxpOMrRuklfww118OOBjrvX/Ik5gyzBCdJ22EU9IbHcO5bD1r3LC1ehSmTEnb1beEgEwkYEjg==}
+  '@pirxpilot/swipe@3.0.0':
+    resolution: {integrity: sha512-0HqjRTRICdOpQsYQxlEut8oSS9yV2Jg6iEItIwzf+8nyooPZPQjwN2vJnDDqf/zPYk+cTQvGILnwTVQmAwhF1w==}
 
   accepts@1.3.8:
     resolution: {integrity: sha512-PYAthTa2m2VKxuvSD3DPC/Gy+U+sOA1LAuT8mkmRuvw+NACSaeXEQ+NHcVF7rONl6qcaxV3Uuemwawk+7+SJLw==}
@@ -431,9 +431,6 @@ packages:
   commander@14.0.1:
     resolution: {integrity: sha512-2JkV3gUZUVrbNA+1sjBOYLsMZ5cEEl8GTFP2a4AVz5hvasAMCQ1D2l2le/cX+pV4N6ZU17zjUahLpIXRrnWL8A==}
     engines: {node: '>=20'}
-
-  component-emitter@1.3.1:
-    resolution: {integrity: sha512-T0+barUSQRTUQASh8bx02dl+DhF54GtIDY13Y3m9oWTklKbb3Wv974meRpeZ3lp1JpLVECWWNHC4vaG2XHXouQ==}
 
   component-emitter@2.0.0:
     resolution: {integrity: sha512-4m5s3Me2xxlVKG9PkZpQqHQR7bgpnN7joDMJ4yvVkVXngjoITG76IaZmzmywSeRTeTpc6N6r3H3+KyUurV8OYw==}
@@ -593,9 +590,6 @@ packages:
   has-symbols@1.1.0:
     resolution: {integrity: sha512-1cDNdwJ2Jaohmb3sg4OmKaMBwuC48sYni5HUw2DvsC8LjGTLK9h+eb1X6RyuOHe4hT0ULCW68iomhjUoKUqlPQ==}
     engines: {node: '>= 0.4'}
-
-  has-translate3d@0.0.3:
-    resolution: {integrity: sha512-8tA0Rt/VtJaiDxri1oZEIbkmFqJu9GK5pLcL+f6B91MkBgkrRD3IaDSHMu8IOAEn60OUDC2oICcw3Mo1QQk8hw==}
 
   hasown@2.0.2:
     resolution: {integrity: sha512-0hJU9SCPvmMzIBdZFqNPXWa6dqh7WdH0cII9y+CyS8rG3nL48Bclra9HmKhVVUHyPWNH5Y7xDwAB7bfgSjkUMQ==}
@@ -809,9 +803,6 @@ packages:
     resolution: {integrity: sha512-o5sSPKEkg/DIQNmH43V0/uerLrpzVedkUh8tGNvaeXpfpuwjKenlSox/2O/BTlZUtEe+JG7s5YhEz608PlAHRA==}
     engines: {node: '>=0.6'}
 
-  transform-property@0.0.1:
-    resolution: {integrity: sha512-L0nMJCwu3/Lpd5t/pRQl+JoYU5V0sYubcn30yWZnHG0HjC6Gdr/Eg/bun1OixYPmsEZdA7Khbq2jiSIjzlEv6Q==}
-
   undici@7.16.0:
     resolution: {integrity: sha512-QEg3HPMll0o3t2ourKwOeUAZ159Kn9mx5pnzHRQO8+Wixmh88YdZRiIwat0iNzNNXn0yoEtXJqFpyW7eM8BV7g==}
     engines: {node: '>=20.18.1'}
@@ -980,7 +971,7 @@ snapshots:
       cookie: 1.0.2
       cookie-signature: 1.2.2
 
-  '@pirxpilot/events@1.0.1': {}
+  '@pirxpilot/events@3.0.0': {}
 
   '@pirxpilot/jade-core@1.12.2':
     dependencies:
@@ -1010,11 +1001,10 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@pirxpilot/swipe@2.0.2':
+  '@pirxpilot/swipe@3.0.0':
     dependencies:
-      '@pirxpilot/events': 1.0.1
-      component-emitter: 1.3.1
-      has-translate3d: 0.0.3
+      '@pirxpilot/events': 3.0.0
+      component-emitter: 2.0.0
 
   accepts@1.3.8:
     dependencies:
@@ -1056,8 +1046,6 @@ snapshots:
   colors@1.0.3: {}
 
   commander@14.0.1: {}
-
-  component-emitter@1.3.1: {}
 
   component-emitter@2.0.0: {}
 
@@ -1235,10 +1223,6 @@ snapshots:
   gopd@1.2.0: {}
 
   has-symbols@1.1.0: {}
-
-  has-translate3d@0.0.3:
-    dependencies:
-      transform-property: 0.0.1
 
   hasown@2.0.2:
     dependencies:
@@ -1469,8 +1453,6 @@ snapshots:
       to-sentence-case: 1.0.0
 
   toidentifier@1.0.1: {}
-
-  transform-property@0.0.1: {}
 
   undici@7.16.0: {}
 
