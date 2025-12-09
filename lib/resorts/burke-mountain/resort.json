@@ -1,8 +1,8 @@
 {
   "name": "Burke Mountain",
   "url": {
-    "host": "http://www.skiburke.com",
-    "pathname": "/skiing-and-riding/the-mountain/trails-lifts-and-grooming/"
+    "host": "https://skiburke.com",
+    "pathname": "/the-mountain/weather-conditions"
   },
   "tags": [
     "Vermont",
