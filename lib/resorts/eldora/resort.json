@@ -1,0 +1,21 @@
+{
+  "name": "Eldora",
+  "url": {
+    "host": "https://www.eldora.com",
+    "pathname": "/the-mountain/trail-lift-info/winter-trail-report"
+  },
+  "api": {
+    "host": "https://api.eldora.com",
+    "pathname": "/api/v1/dor/drupal/lifts"
+  },
+  "tags": [
+    "Colorado",
+    "Eldora",
+    "Powdr"
+  ],
+  "ll": [
+    -105.583611,
+    39.9375
+  ],
+  "noaa": "BOU/43,72"
+}
