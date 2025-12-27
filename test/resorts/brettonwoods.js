@@ -1,14 +1,13 @@
 import lifts from '../lifts/index.js';
 
 lifts('brettonwoods', 'html', {
-  'B-Lift Double': 'closed',
-  'Rosebrook Summit Express': 'closed',
-  'Bethlehem Express': 'closed',
+  'Rosebrook Summit Express Quad': 'open',
+  'Bretton Woods Skyway Gondola': 'open',
+  'Bethlehem Express Quad II (BEQ II)': 'open',
   'Telegraph T-Bar': 'closed',
-  "Fabyan's Express Triple": 'closed',
-  'West Mountain Express': 'closed',
-  'Learning Center Quad': 'closed',
+  'West Mountain Express': 'open',
+  'Learning Center Quad (LCQ)': 'open',
   'Wonder Carpet': 'closed',
-  'Red Carpet': 'closed',
-  'Zephyr': 'open'
+  'Red Carpet': 'open',
+  'Zephyr High Speed Quad': 'open'
 });
