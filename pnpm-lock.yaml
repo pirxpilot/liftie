@@ -16,8 +16,8 @@ importers:
         specifier: ^5.0.0
         version: 5.0.0
       '@pirxpilot/cookie-parser':
-        specifier: ~2
-        version: 2.0.1
+        specifier: ~3
+        version: 3.0.0
       '@pirxpilot/jade-core':
         specifier: ^1.12.1
         version: 1.12.2
@@ -357,8 +357,8 @@ packages:
   '@pirxpilot/connect@5.0.0':
     resolution: {integrity: sha512-usjYGr5xcJvjdAwSFE+AGBiaPFcrb4pMVVFTOLVAjkkjSxew8by0r14mfq7gwA0G6MlkIfRYoakwrZIXIv/ikw==}
 
-  '@pirxpilot/cookie-parser@2.0.1':
-    resolution: {integrity: sha512-YEieYUeRRDlAYkbI6aLDPJ2uUs7jhhfyRVwnvJlVcBn8HvqXOZGM+/NkrKwz3o335TO2xaYBdUJnM59OB1yY2w==}
+  '@pirxpilot/cookie-parser@3.0.0':
+    resolution: {integrity: sha512-V3Vdc3Xpb630P9ehNAgAamDn2D9N2pMH7TgsYwuU0emJ+5iJbND7Td3mz3akAX2MVCCWK4trr6hizM3dMXwZ5Q==}
     engines: {node: '>= 20'}
 
   '@pirxpilot/events@3.0.0':
@@ -962,7 +962,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@pirxpilot/cookie-parser@2.0.1':
+  '@pirxpilot/cookie-parser@3.0.0':
     dependencies:
       cookie: 1.1.1
       cookie-signature: 1.2.2

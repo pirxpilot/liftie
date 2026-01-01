@@ -29,7 +29,7 @@
   },
   "dependencies": {
     "@pirxpilot/connect": "^5.0.0",
-    "@pirxpilot/cookie-parser": "~2",
+    "@pirxpilot/cookie-parser": "~3",
     "@pirxpilot/jade-core": "^1.12.1",
     "@pirxpilot/k": "^1.0.0",
     "@pirxpilot/router": "~2",
