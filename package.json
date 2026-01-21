@@ -57,7 +57,7 @@
     "to-title-case": "^1.0.0"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.3.10",
+    "@biomejs/biome": "2.3.11",
     "@pirxpilot/stylus": "^1.2.0",
     "commander": "~14",
     "postcss": "~8",
