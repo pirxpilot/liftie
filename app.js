@@ -25,8 +25,10 @@ process.env.PORT ??= 3000;
 process.env.SITE_URL ??= `http://localhost:${process.env.PORT}`;
 process.env.NODE_ENV ??= 'development';
 
-const root = path.join(path.dirname(new URL(import.meta.url).pathname), 'public');
 const { SITE_URL: siteUrl, LIFTIE_STATIC_HOST: staticHost = '' } = process.env;
+
+const root = path.resolve(import.meta.dirname, 'public');
+const views = path.resolve(import.meta.dirname, 'views');
 
 const cachify = cachifyStatic(root, { format: 'name' });
 
@@ -42,7 +44,7 @@ app.locals = {
 };
 
 app.use(
-  renderer(`${path.dirname(new URL(import.meta.url).pathname)}/views`).engine('jade', {
+  renderer(views).engine('jade', {
     compile,
     options: { compileDebug: process.env.NODE_ENV !== 'production' }
   })
