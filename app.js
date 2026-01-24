@@ -8,6 +8,7 @@ import gzip from 'connect-gzip-static';
 import renderer from 'connect-renderer';
 import errorHandler from 'errorhandler';
 import logger from 'morgan';
+import { NODE_ENV, PORT, SITE_URL as siteUrl, LIFTIE_STATIC_HOST as staticHost } from './lib/env.js';
 import lifts from './lib/lifts/index.js';
 import loader from './lib/loader.js';
 import * as loaders from './lib/loaders.js';
@@ -21,12 +22,8 @@ import webcams from './lib/webcams.js';
 const app = connect();
 export default app;
 
-process.env.PORT ??= 3000;
-process.env.SITE_URL ??= `http://localhost:${process.env.PORT}`;
-process.env.NODE_ENV ??= 'development';
-
-const root = path.join(path.dirname(new URL(import.meta.url).pathname), 'public');
-const { SITE_URL: siteUrl, LIFTIE_STATIC_HOST: staticHost = '' } = process.env;
+const root = path.resolve(import.meta.dirname, 'public');
+const views = path.resolve(import.meta.dirname, 'views');
 
 const cachify = cachifyStatic(root, { format: 'name' });
 
@@ -42,9 +39,9 @@ app.locals = {
 };
 
 app.use(
-  renderer(`${path.dirname(new URL(import.meta.url).pathname)}/views`).engine('jade', {
+  renderer(views).engine('jade', {
     compile,
-    options: { compileDebug: process.env.NODE_ENV !== 'production' }
+    options: { compileDebug: NODE_ENV !== 'production' }
   })
 );
 
@@ -61,7 +58,7 @@ app.use(async (req, res, next) => {
 
 app.use(gzip(root));
 
-if (process.env.NODE_ENV === 'development') {
+if (NODE_ENV === 'development') {
   app.locals.min = '';
   app.use(errorHandler());
 }
@@ -86,8 +83,8 @@ app.run = function run() {
       process.exit(1);
       return;
     }
-    http.createServer(app).listen(process.env.PORT, () => {
-      console.log(`Running on: http://localhost:${process.env.PORT}`);
+    http.createServer(app).listen(PORT, () => {
+      console.log(`Running on: http://localhost:${PORT}`);
     });
   });
 };
