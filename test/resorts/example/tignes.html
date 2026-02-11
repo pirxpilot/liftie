@@ -1,348 +1,845 @@
+<!DOCTYPE html> 
+<link rel="stylesheet" href="components/headers/headers.css" type="text/css"><link rel="stylesheet" href="components/weather/weather.css" type="text/css"><link rel="stylesheet" href="components/global/global.css" type="text/css"><link rel="stylesheet" href="components/infos/info.css" type="text/css"><link rel="stylesheet" href="components/poi/poi.css" type="text/css"><link rel="stylesheet" href="components/poi/circle.css" type="text/css"><link rel="stylesheet" href="components/legende/legende.css" type="text/css"><link rel="stylesheet" href="components/legende/legendeV2.css" type="text/css"><style>:root { --primaryColor: #2a2840;}</style><style>:root { --backgroundColor: #ffffff;}</style><style>:root { --contentColor: #f8f8f8;}</style><style>:root { --primaryFont: Arial, Helvetica, sans-serif;}</style><style>:root { --displayMessagePOI: initial;}</style><style>:root { --fontForPrint: Arial, Helvetica, sans-serif;}</style>
+    <html lang=fr>
+        <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+            <link rel="stylesheet" href="bulletin.css" type="text/css">
+            <link rel="stylesheet" href="print.css" type="text/css" media="print">
+            <title>Bulletin Neige TIGNES</title>
+        </head><body><div class="content">
+        <div class="intro"><div class="logo1">
+                        <img class="logo_1" height="60" src="image/logo/tignes/logo.jpg"></div><div class="title"><span class="intro_title">Weather report & open status on the area</span><div class="maj_soir">
+                            <span class="intro_maj">Last Update 02/11/2026 at 4:16 PM</span></div></div><div class="pdf" style="display: none" >
+                        <img class="icone" src="image/document/pdf-download-icon.png"></div></div></div><div class="content_marge">
+        <div class="bloc_meteo">
+        <div class="title_info_crop">
+        <div class="conditions">
+            <img class="image_conditions" src="image/base/image_meteo.svg" alt="conditions">
+            <h1 class="conditions_title">Weather</h1>
+        </div>
+    
+    <div class="legend_info">
+        <img class="image_infos" src="image/document/icon-info.png" alt="légende">
+    </div>
+    
+    <div class="icon_crop">
+        <img class="image_infos" src="image/document/arrow-circular-button.svg">
+    </div>
+    </div>
+        <div class="meteo_card"><div class="bloc_title"><h2 class="bloc_title_text">Grande Motte</h2><h2>- 3032 m</h2></div>
+        <div class="card-content meteo_row">
+    <div class="meteo">
+            <div class="meteo_matin">
+                <img class="image_weather" src="image/meteo/skyStatus/EM-11.svg" alt="information météo">
+                <span class="subtext">Morning</span>
+                <span class="text">-7°C</span> 
+            </div>
+            <div class="meteo_matin">
+                <img class="image_weather" src="image/meteo/skyStatus/EM-11.svg" alt="information météo">
+                <span class="subtext">Afternoon</span>
+                <span class="text">-7°C</span> 
+            </div>
+            <div class="meteo_matin">
+                <img class="image_weather" src="image/meteo/wind.svg" alt="information météo">
+                <span class="subtext">24km/h</span>
+                <span class=""></span> 
+            </div>
+            <div class="meteo_matin">
+                <img class="wind_direction_image" src="image/meteo/windDirection/W.svg" alt="information météo">
+                <span class="subtext">West</span>
+                <span class=""></span> 
+            </div>
+            <div class="meteo_matin">
+                <img class="image_weather" src="image/meteo/image_neige.svg" alt="information météo">
+                <span class="text">150 cm</span>
+                <span class="subtext">Packed powder</span> 
+            </div>
+            <div class="meteo_matin">
+                <img class="image_weather" src="image/meteo/calendrier_neige.svg" alt="information météo">
+                <span class="text">35 cm</span>
+                <span class="text_italic">11/02/2026</span> 
+            </div><div class="avalanche">
+            <div class="info_avalanche">
+                <div class="avalanche_score"><span class="bold">4</span>/5</div>
+            </div>
+            <img class="avalanche_image" src="image/avalanche_risk/R4.svg" alt="info avalanche"></div></div>
+            </div>
+        </div>
+        <div class="meteo_card"><div class="bloc_title"><h2 class="bloc_title_text">Tignes Lac</h2><h2>- 2100 m</h2></div>
+        <div class="card-content meteo_row">
+    <div class="meteo">
+            <div class="meteo_matin">
+                <img class="image_weather" src="image/meteo/skyStatus/EM-11.svg" alt="information météo">
+                <span class="subtext">Morning</span>
+                <span class="text">-2°C</span> 
+            </div>
+            <div class="meteo_matin">
+                <img class="image_weather" src="image/meteo/skyStatus/EM-11.svg" alt="information météo">
+                <span class="subtext">Afternoon</span>
+                <span class="text">-1°C</span> 
+            </div>
+            <div class="meteo_matin">
+                <img class="image_weather" src="image/meteo/wind.svg" alt="information météo">
+                <span class="subtext">4km/h</span>
+                <span class=""></span> 
+            </div>
+            <div class="meteo_matin">
+                <img class="wind_direction_image" src="image/meteo/windDirection/N.svg" alt="information météo">
+                <span class="subtext">North</span>
+                <span class=""></span> 
+            </div>
+            <div class="meteo_matin">
+                <img class="image_weather" src="image/meteo/image_neige.svg" alt="information météo">
+                <span class="text">106 cm</span>
+                <span class="subtext">Packed powder</span> 
+            </div>
+            <div class="meteo_matin">
+                <img class="image_weather" src="image/meteo/calendrier_neige.svg" alt="information météo">
+                <span class="text">25 cm</span>
+                <span class="text_italic">11/02/2026</span> 
+            </div><div class="avalanche">
+            <div class="info_avalanche">
+                <div class="avalanche_score"><span class="bold">4</span>/5</div>
+            </div>
+            <img class="avalanche_image" src="image/avalanche_risk/R4.svg" alt="info avalanche"></div></div>
+            </div>
+        </div>
+        <div class="meteo_card prevision"><div class="bloc_title"><h2 class="bloc_title_text">Forecasts and Trends</h2></div>
+            <div class="card-content prevision_row">
+        <div class="previsions">
+        </div>
+    
+        <div class="previsions">
+        </div>
+    
+            </div>
+        </div>
+        
+        </div>
+    </div><div class="content_marge">
+            <div class="bloc_conditions">
+        <div class="title_info_crop">
+        <div class="conditions">
+            <img class="image_conditions" src="image/base/smiley.svg" alt="conditions">
+            <h1 class="conditions_title">Conditions of stay</h1>
+        </div>
+    
+    <div class="legend_info">
+        <img class="image_infos" src="image/document/icon-info.png" alt="légende">
+    </div>
+    
+    <div class="icon_crop">
+        <img class="image_infos" src="image/document/arrow-circular-button.svg">
+    </div>
+    </div>
+        <div class="road_card"><div class="bloc_title"><h2 class="bloc_title_text">Roads</h2></div>
+            <div class="card-content road_row">
+        <div class="road">
+            <div class="road_status"><div class="road_image">State</div>
+            </div><div class="road_name">Name</div><div class="road_number">N°</div><div class="road_surface">Surface</div><div class="road_equipment">Equipment</div><div class="road_message">Message</div></div>    
+    
+        <div class="road">
+            <div class="road_status"><img class="road_image" src="image/etats/lp_runway_trail_opened.svg" alt="statut">
+            </div><div class="road_name">Route d'accès à la station Tignes</div><div class="road_number">N°D87A</div><div class="road_surface">Icy in spots</div><div class="road_equipment">Traction law in effect</div><div class="road_message"</div>    
+    
+            </div>
+        </div>
+        </div></div><div class="content_marge">
+        <div class="bloc_etat">
+        <div class="title_info_crop">
+        <div class="conditions">
+            <img class="image_conditions" src="image/base/image_domaine.svg" alt="conditions">
+            <h1 class="conditions_title">Area status</h1>
+        </div>
+    
+    <div class="legend_info">
+        <img class="image_infos" src="image/document/icon-info.png" alt="légende">
+    </div>
+    
+    <div class="icon_crop">
+        <img class="image_infos" src="image/document/arrow-circular-button.svg">
+    </div>
+    </div><div class="totaux_row"><div class="totaux_lift_inter"><div class="c100 p71 normal"><img class="image" src="image/type/LIFTS.svg" alt="activité"><div class="text default" style="color: #3d4754;">
+                <span class="strong">31</span>
+                /44</div><div class="slice">
+               <div class="bar" style="border-color: #3d4754;"></div>
+               <div class="fill" style="border-color: #3d4754;"></div>
+           </div></div></div><div class="totaux_trails"><div class="row_trails"><div class="c100 p100 normal"><img class="image" src="image/type/DOWNHILL_SKIING.svg" alt="activité"><div class="text default" style="color: #3d4754;">
+                <span class="strong">80</span>
+                /80</div><div class="slice">
+               <div class="bar" style="border-color: #3d4754;"></div>
+               <div class="fill" style="border-color: #3d4754;"></div>
+           </div></div><div class="c100 p100 small"><img class="image" src="image/type/DOWNHILL_SKIING_GREEN.svg" alt="activité"><div class="text default" style="color: #3f9b48;">
+                <span class="strong">9</span>
+                /9</div><div class="slice">
+               <div class="bar" style="border-color: #3f9b48;"></div>
+               <div class="fill" style="border-color: #3f9b48;"></div>
+           </div></div><div class="c100 p100 small"><img class="image" src="image/type/DOWNHILL_SKIING_BLUE.svg" alt="activité"><div class="text default" style="color: #0052B4;">
+                <span class="strong">35</span>
+                /35</div><div class="slice">
+               <div class="bar" style="border-color: #0052B4;"></div>
+               <div class="fill" style="border-color: #0052B4;"></div>
+           </div></div><div class="c100 p100 small"><img class="image" src="image/type/DOWNHILL_SKIING_RED.svg" alt="activité"><div class="text default" style="color: #E42623;">
+                <span class="strong">19</span>
+                /19</div><div class="slice">
+               <div class="bar" style="border-color: #E42623;"></div>
+               <div class="fill" style="border-color: #E42623;"></div>
+           </div></div><div class="c100 p100 small"><img class="image" src="image/type/DOWNHILL_SKIING_BLACK.svg" alt="activité"><div class="text default" style="color: #000000;">
+                <span class="strong">17</span>
+                /17</div><div class="slice">
+               <div class="bar" style="border-color: #000000;"></div>
+               <div class="fill" style="border-color: #000000;"></div>
+           </div></div></div><div class="row_trails"><div class="c100 p67 normal"><img class="image" src="image/type/CROSS_COUNTRY_SKIING.svg" alt="activité"><div class="text default" style="color: #3d4754;">
+                <span class="strong">2</span>
+                /3</div><div class="slice">
+               <div class="bar" style="border-color: #3d4754;"></div>
+               <div class="fill" style="border-color: #3d4754;"></div>
+           </div></div><div class="c100 p67 small"><img class="image" src="image/type/CROSS_COUNTRY_SKIING_BLUE.svg" alt="activité"><div class="text default" style="color: #0052B4;">
+                <span class="strong">2</span>
+                /3</div><div class="slice">
+               <div class="bar" style="border-color: #0052B4;"></div>
+               <div class="fill" style="border-color: #0052B4;"></div>
+           </div></div></div></div></div></div></div><div class="content_marge">
+        <div class="bloc_pistes_remontees">
+        <div class="title_info_crop">
+        <div class="conditions">
+            <img class="image_conditions" src="image/base/skis.svg" alt="conditions">
+            <h1 class="conditions_title">Lifts and trails</h1>
+        </div>
+    
+    <div class="legend_info">
+        <img class="image_infos" src="image/document/icon-info.png" alt="légende">
+    </div>
+    
+    <div class="icon_crop">
+        <img class="image_infos" src="image/document/arrow-circular-button.svg">
+    </div>
+    </div>
+            <div class="meteo_card"><div class="bloc_title"><h2 class="bloc_title_text">LIAISON TIGNES-VAL D'ISERE</h2></div>
+            <div class="card-content remontee_pistes">
+        <div class="POI_title">
+            <div class="title">Interconnections</div>
+        </div>
+     <div class="liaisons"><div class="POI_info"><div class="poi_type_picto"><img src="image/type/LINK.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">TIGNES > VAL D'ISERE</span><div class="heure"><span>09:00 AM</span>
+                  <span> - </span>
+                  <span>05:00 PM </span></div></div><span class="message">strong wind</span></div><div class="picto"><img src="image/type/DEFAULT_IMAGE_TRANSPARENTE.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_closed.svg" class="img_status" alt="statut ouverture"></div></div></div>
+            </div>
+        </div>
+        
+            <div class="meteo_card"><div class="bloc_title"><h2 class="bloc_title_text">TOVIERE</h2></div>
+            <div class="card-content remontee_pistes">
+        <div class="POI_title">
+            <div class="title">Lifts</div>
+        </div>
+     <div class="liaisons"><div class="POI_info"><div class="poi_type_picto"><img src="image/type/GONDOLA.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">TC DE TOVIERE</span><div class="heure"><span>09:00 AM</span>
+                  <span> - </span>
+                  <span>05:00 PM </span></div></div></div><div class="picto"><img src="image/type/DEFAULT_IMAGE_TRANSPARENTE.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_closed.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/DETACHABLE_CHAIRLIFT.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">TSD DE FRESSE</span><div class="heure"><span>09:15 AM</span>
+                  <span> - </span>
+                  <span>04:45 PM </span></div></div><span class="message">STRONG WIND</span></div><div class="picto"><img src="image/type/DEFAULT_IMAGE_TRANSPARENTE.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_closed.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/DETACHABLE_CHAIRLIFT.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">TSD DU BOLLIN</span><div class="heure"><span>09:00 AM</span>
+                  <span> - </span>
+                  <span>05:10 PM </span></div></div></div><div class="picto"><img src="image/type/DEFAULT_IMAGE_TRANSPARENTE.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_opened.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/DETACHABLE_CHAIRLIFT.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">TSD DU PAQUIS</span><div class="heure"><span>09:00 AM</span>
+                  <span> - </span>
+                  <span>05:00 PM </span></div></div></div><div class="picto"><img src="image/type/DEFAULT_IMAGE_TRANSPARENTE.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_opened.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/DETACHABLE_CHAIRLIFT.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">TSD TOMMEUSES</span><div class="heure"><span>09:15 AM</span>
+                  <span> - </span>
+                  <span>05:00 PM </span></div></div><span class="message">strong wind</span></div><div class="picto"><img src="image/type/DEFAULT_IMAGE_TRANSPARENTE.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_closed.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/CHAIRLIFT.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">TS DU ROSSET</span><div class="heure"><span>09:00 AM</span>
+                  <span> - </span>
+                  <span>05:10 PM </span></div></div></div><div class="picto"><img src="image/type/DEFAULT_IMAGE_TRANSPARENTE.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_on_hold.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/CHAIRLIFT.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">TSD  DES TUFS</span><div class="heure"><span>09:00 AM</span>
+                  <span> - </span>
+                  <span>05:00 PM </span></div></div></div><div class="picto"><img src="image/type/DEFAULT_IMAGE_TRANSPARENTE.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_closed.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/SURFACE_LIFT.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">TK DE COMBE FOLLE</span><div class="heure"><span>09:15 AM</span>
+                  <span> - </span>
+                  <span>05:00 PM </span></div></div><span class="message">STRONG WIND</span></div><div class="picto"><img src="image/type/DEFAULT_IMAGE_TRANSPARENTE.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_closed.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/SURFACE_LIFT.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">TK DU LAVACHET</span><div class="heure"><span>09:00 AM</span>
+                  <span> - </span>
+                  <span>05:10 PM </span></div></div></div><div class="picto"><img src="image/type/DEFAULT_IMAGE_TRANSPARENTE.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_opened.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/MAGIC_CARPET.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">TAPIS DU CENTRE</span><div class="heure"><span>09:00 AM</span>
+                  <span> - </span>
+                  <span>05:20 PM </span></div></div></div><div class="picto"><img src="image/type/DEFAULT_IMAGE_TRANSPARENTE.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_opened.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/MAGIC_CARPET.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">TAPIS DU CLARET</span><div class="heure"><span>09:00 AM</span>
+                  <span> - </span>
+                  <span>05:10 PM </span></div></div></div><div class="picto"><img src="image/type/DEFAULT_IMAGE_TRANSPARENTE.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_opened.svg" class="img_status" alt="statut ouverture"></div></div></div>
+        <div class="POI_title">
+            <div class="title">Trails and activities</div>
+        </div>
+     <div class="liaisons"><div class="POI_info"><div class="poi_type_picto"><img src="image/type/DOWNHILL_SKIING_GREEN.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">BOIU /ANIMAUX SUPER HEROS</span><div class="heure"><span>09:00 AM</span>
+                  <span> - </span>
+                  <span>05:00 PM </span></div></div></div><div class="picto"><img src="image/damage/groomed.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_opened.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/DOWNHILL_SKIING_GREEN.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">CAFO</span><div class="heure"><span>09:00 AM</span>
+                  <span> - </span>
+                  <span>05:15 PM </span></div></div></div><div class="picto"><img src="image/damage/groomed.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_opened.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/DOWNHILL_SKIING_GREEN.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">DEPOT</span><div class="heure"><span>09:00 AM</span>
+                  <span> - </span>
+                  <span>05:15 PM </span></div></div></div><div class="picto"><img src="image/damage/groomed.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_opened.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/DOWNHILL_SKIING_GREEN.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">DIGUES</span><div class="heure"><span>09:00 AM</span>
+                  <span> - </span>
+                  <span>05:15 PM </span></div></div></div><div class="picto"><img src="image/damage/groomed.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_opened.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/DOWNHILL_SKIING_GREEN.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">LAVACHET</span><div class="heure"><span>09:00 AM</span>
+                  <span> - </span>
+                  <span>05:15 PM </span></div></div></div><div class="picto"><img src="image/damage/groomed.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_opened.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/DOWNHILL_SKIING_GREEN.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">PISTE DU CENTRE</span><div class="heure"><span>09:00 AM</span>
+                  <span> - </span>
+                  <span>05:15 PM </span></div></div></div><div class="picto"><img src="image/damage/groomed.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_opened.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/DOWNHILL_SKIING_BLUE.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">BOLLIN</span><div class="heure"><span>09:00 AM</span>
+                  <span> - </span>
+                  <span>05:15 PM </span></div></div></div><div class="picto"><img src="image/damage/groomed.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_opened.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/DOWNHILL_SKIING_BLUE.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">CREUX</span><div class="heure"><span>09:00 AM</span>
+                  <span> - </span>
+                  <span>05:00 PM </span></div></div></div><div class="picto"><img src="image/damage/groomed.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_scheduled.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/DOWNHILL_SKIING_BLUE.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">EDELWEISS</span><div class="heure"><span>09:00 AM</span>
+                  <span> - </span>
+                  <span>05:00 PM </span></div></div></div><div class="picto"><img src="image/damage/groomed.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_scheduled.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/DOWNHILL_SKIING_BLUE.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">PISTE HENRI</span><div class="heure"><span>09:00 AM</span>
+                  <span> - </span>
+                  <span>05:00 PM </span></div></div></div><div class="picto"><img src="image/damage/groomed.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_opened.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/DOWNHILL_SKIING_BLUE.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">ROSSET</span><div class="heure"><span>09:00 AM</span>
+                  <span> - </span>
+                  <span>05:15 PM </span></div></div></div><div class="picto"><img src="image/damage/groomed.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_opened.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/DOWNHILL_SKIING_BLUE.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">VIOLETTES</span><div class="heure"><span>09:00 AM</span>
+                  <span> - </span>
+                  <span>05:00 PM </span></div></div></div><div class="picto"><img src="image/damage/groomed.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_scheduled.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/DOWNHILL_SKIING_RED.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">ROCS</span><div class="heure"><span>09:00 AM</span>
+                  <span> - </span>
+                  <span>05:00 PM </span></div></div></div><div class="picto"><img src="image/damage/groomed.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_scheduled.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/DOWNHILL_SKIING_BLACK.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">ASTER</span><div class="heure"><span>09:00 AM</span>
+                  <span> - </span>
+                  <span>05:00 PM </span></div></div></div><div class="picto"><img src="image/type/DEFAULT_IMAGE_TRANSPARENTE.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_scheduled.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/DOWNHILL_SKIING_BLACK.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">CAMPANULES</span><div class="heure"><span>09:00 AM</span>
+                  <span> - </span>
+                  <span>05:00 PM </span></div></div></div><div class="picto"><img src="image/type/DEFAULT_IMAGE_TRANSPARENTE.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_scheduled.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/DOWNHILL_SKIING_BLACK.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">COMBE FOLLE</span><div class="heure"><span>09:00 AM</span>
+                  <span> - </span>
+                  <span>05:00 PM </span></div></div></div><div class="picto"><img src="image/damage/groomed.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_scheduled.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/DOWNHILL_SKIING_BLACK.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">CRETES</span><div class="heure"><span>09:00 AM</span>
+                  <span> - </span>
+                  <span>05:00 PM </span></div></div></div><div class="picto"><img src="image/damage/groomed.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_scheduled.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/DOWNHILL_SKIING_BLACK.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">CROCUS</span><div class="heure"><span>09:00 AM</span>
+                  <span> - </span>
+                  <span>05:00 PM </span></div></div></div><div class="picto"><img src="image/damage/groomed.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_opened.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/DOWNHILL_SKIING_BLACK.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">ENVERS CAMPANULES</span><div class="heure"><span>09:00 AM</span>
+                  <span> - </span>
+                  <span>05:00 PM </span></div></div></div><div class="picto"><img src="image/type/DEFAULT_IMAGE_TRANSPARENTE.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_scheduled.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/DOWNHILL_SKIING_BLACK.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">JOHAN CLAREY</span><div class="heure"><span>09:00 AM</span>
+                  <span> - </span>
+                  <span>05:00 PM </span></div></div></div><div class="picto"><img src="image/damage/groomed.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_opened.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/DOWNHILL_SKIING_BLACK.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">PAQUERETTES</span><div class="heure"><span>09:00 AM</span>
+                  <span> - </span>
+                  <span>05:00 PM </span></div></div></div><div class="picto"><img src="image/type/DEFAULT_IMAGE_TRANSPARENTE.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_scheduled.svg" class="img_status" alt="statut ouverture"></div></div></div> <div class="liaisons"></div> <div class="liaisons"></div>
+            </div>
+        </div>
+        
+            <div class="meteo_card"><div class="bloc_title"><h2 class="bloc_title_text">AIGUILLE PERCEE</h2></div>
+            <div class="card-content remontee_pistes">
+        <div class="POI_title">
+            <div class="title">Lifts</div>
+        </div>
+     <div class="liaisons"><div class="POI_info"><div class="poi_type_picto"><img src="image/type/GONDOLA.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">TC BREVIERES</span><div class="heure"><span>09:00 AM</span>
+                  <span> - </span>
+                  <span>05:10 PM </span></div></div></div><div class="picto"><img src="image/type/DEFAULT_IMAGE_TRANSPARENTE.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_opened.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/GONDOLA.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">TC DES BOISSES</span><div class="heure"><span>09:00 AM</span>
+                  <span> - </span>
+                  <span>05:00 PM </span></div></div></div><div class="picto"><img src="image/type/DEFAULT_IMAGE_TRANSPARENTE.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_opened.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/DETACHABLE_CHAIRLIFT.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">TS AIGUILLE PERCEE</span><div class="heure"><span>09:15 AM</span>
+                  <span> - </span>
+                  <span>04:40 PM </span></div></div><span class="message">SNOW SAFETY</span></div><div class="picto"><img src="image/type/DEFAULT_IMAGE_TRANSPARENTE.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_closed.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/DETACHABLE_CHAIRLIFT.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">TSD  AIGUILLE ROUGE</span><div class="heure"><span>09:05 AM</span>
+                  <span> - </span>
+                  <span>05:00 PM </span></div></div></div><div class="picto"><img src="image/type/DEFAULT_IMAGE_TRANSPARENTE.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_opened.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/DETACHABLE_CHAIRLIFT.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">TSD DE CHAUDANNES</span><div class="heure"><span>09:00 AM</span>
+                  <span> - </span>
+                  <span>05:00 PM </span></div></div></div><div class="picto"><img src="image/type/DEFAULT_IMAGE_TRANSPARENTE.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_opened.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/DETACHABLE_CHAIRLIFT.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">TSD DU MARAIS</span><div class="heure"><span>09:25 AM</span>
+                  <span> - </span>
+                  <span>04:40 PM </span></div></div><span class="message">SNOW SAFETY</span></div><div class="picto"><img src="image/type/DEFAULT_IMAGE_TRANSPARENTE.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_closed.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/DETACHABLE_CHAIRLIFT.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">TSD PALAFOUR</span><div class="heure"><span>09:00 AM</span>
+                  <span> - </span>
+                  <span>05:00 PM </span></div></div></div><div class="picto"><img src="image/type/DEFAULT_IMAGE_TRANSPARENTE.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_opened.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/CHAIRLIFT.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">TS DES ALMES</span><div class="heure"><span>09:00 AM</span>
+                  <span> - </span>
+                  <span>05:10 PM </span></div></div></div><div class="picto"><img src="image/type/DEFAULT_IMAGE_TRANSPARENTE.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_opened.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/SURFACE_LIFT.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">TK PAREI</span><div class="heure"><span>09:00 AM</span>
+                  <span> - </span>
+                  <span>05:15 PM </span></div></div></div><div class="picto"><img src="image/type/DEFAULT_IMAGE_TRANSPARENTE.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_opened.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/MAGIC_CARPET.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">TAPIS 1 TIGNES 1800</span><div class="heure"><span>09:00 AM</span>
+                  <span> - </span>
+                  <span>05:10 PM </span></div></div></div><div class="picto"><img src="image/type/DEFAULT_IMAGE_TRANSPARENTE.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_opened.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/MAGIC_CARPET.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">TAPIS 2 TIGNES 1800</span><div class="heure"><span>09:00 AM</span>
+                  <span> - </span>
+                  <span>05:10 PM </span></div></div></div><div class="picto"><img src="image/type/DEFAULT_IMAGE_TRANSPARENTE.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_opened.svg" class="img_status" alt="statut ouverture"></div></div></div>
+        <div class="POI_title">
+            <div class="title">Trails and activities</div>
+        </div>
+     <div class="liaisons"><div class="POI_info"><div class="poi_type_picto"><img src="image/type/DOWNHILL_SKIING_GREEN.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">BUIS</span><div class="heure"><span>08:45 AM</span>
+                  <span> - </span>
+                  <span>05:15 PM </span></div></div></div><div class="picto"><img src="image/damage/groomed.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_scheduled.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/DOWNHILL_SKIING_GREEN.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">MYRTILLES</span><div class="heure"><span>09:00 AM</span>
+                  <span> - </span>
+                  <span>05:00 PM </span></div></div></div><div class="picto"><img src="image/damage/groomed.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_scheduled.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/DOWNHILL_SKIING_GREEN.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">PITOTS</span><div class="heure"><span>09:00 AM</span>
+                  <span> - </span>
+                  <span>05:15 PM </span></div></div></div><div class="picto"><img src="image/damage/groomed.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_scheduled.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/DOWNHILL_SKIING_BLUE.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">AIRELLES</span><div class="heure"><span>09:00 AM</span>
+                  <span> - </span>
+                  <span>05:00 PM </span></div></div></div><div class="picto"><img src="image/damage/groomed.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_scheduled.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/DOWNHILL_SKIING_BLUE.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">ANEMONE</span><div class="heure"><span>09:00 AM</span>
+                  <span> - </span>
+                  <span>05:00 PM </span></div></div></div><div class="picto"><img src="image/damage/groomed.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_opened.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/DOWNHILL_SKIING_BLUE.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">BEAUPLAN</span><div class="heure"><span>09:15 AM</span>
+                  <span> - </span>
+                  <span>04:40 PM </span></div></div></div><div class="picto"><img src="image/damage/groomed.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_scheduled.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/DOWNHILL_SKIING_BLUE.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">BEC ROUGE</span><div class="heure"><span>09:00 AM</span>
+                  <span> - </span>
+                  <span>05:00 PM </span></div></div></div><div class="picto"><img src="image/damage/groomed.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_opened.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/DOWNHILL_SKIING_BLUE.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">BERGERIE</span><div class="heure"><span>09:00 AM</span>
+                  <span> - </span>
+                  <span>04:45 PM </span></div></div></div><div class="picto"><img src="image/damage/groomed.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_opened.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/DOWNHILL_SKIING_BLUE.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">BRUYERES</span><div class="heure"><span>09:15 AM</span>
+                  <span> - </span>
+                  <span>04:40 PM </span></div></div></div><div class="picto"><img src="image/damage/groomed.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_scheduled.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/DOWNHILL_SKIING_BLUE.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">COLCHIQUE</span><div class="heure"><span>09:00 AM</span>
+                  <span> - </span>
+                  <span>04:45 PM </span></div></div></div><div class="picto"><img src="image/damage/groomed.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_scheduled.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/DOWNHILL_SKIING_BLUE.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">COMBE</span><div class="heure"><span>09:00 AM</span>
+                  <span> - </span>
+                  <span>05:00 PM </span></div></div></div><div class="picto"><img src="image/damage/groomed.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_opened.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/DOWNHILL_SKIING_BLUE.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">CORNICHE</span><div class="heure"><span>09:15 AM</span>
+                  <span> - </span>
+                  <span>04:40 PM </span></div></div></div><div class="picto"><img src="image/damage/groomed.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_scheduled.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/DOWNHILL_SKIING_BLUE.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">GENTIANE</span><div class="heure"><span>09:00 AM</span>
+                  <span> - </span>
+                  <span>05:00 PM </span></div></div></div><div class="picto"><img src="image/damage/groomed.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_opened.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/DOWNHILL_SKIING_BLUE.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">JOUBARBE</span><div class="heure"><span>09:00 AM</span>
+                  <span> - </span>
+                  <span>05:15 PM </span></div></div></div><div class="picto"><img src="image/damage/groomed.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_opened.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/DOWNHILL_SKIING_BLUE.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">KASTLE GLISSPARK</span><div class="heure"><span>09:00 AM</span>
+                  <span> - </span>
+                  <span>05:00 PM </span></div></div></div><div class="picto"><img src="image/damage/groomed.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_scheduled.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/DOWNHILL_SKIING_BLUE.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">LES ALMES</span><div class="heure"><span>09:00 AM</span>
+                  <span> - </span>
+                  <span>05:15 PM </span></div></div></div><div class="picto"><img src="image/damage/groomed.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_opened.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/DOWNHILL_SKIING_BLUE.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">LYS</span><div class="heure"><span>09:00 AM</span>
+                  <span> - </span>
+                  <span>05:00 PM </span></div></div></div><div class="picto"><img src="image/damage/groomed.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_opened.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/DOWNHILL_SKIING_BLUE.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">PERCE NEIGE</span><div class="heure"><span>09:15 AM</span>
+                  <span> - </span>
+                  <span>05:00 PM </span></div></div></div><div class="picto"><img src="image/damage/groomed.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_scheduled.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/DOWNHILL_SKIING_BLUE.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">PETIT COL</span><div class="heure"><span>09:00 AM</span>
+                  <span> - </span>
+                  <span>05:00 PM </span></div></div></div><div class="picto"><img src="image/damage/groomed.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_opened.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/DOWNHILL_SKIING_BLUE.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">PONEY</span><div class="heure"><span>09:15 AM</span>
+                  <span> - </span>
+                  <span>04:40 PM </span></div></div></div><div class="picto"><img src="image/damage/groomed.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_scheduled.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/DOWNHILL_SKIING_BLUE.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">RHODODENDRON</span><div class="heure"><span>09:00 AM</span>
+                  <span> - </span>
+                  <span>05:00 PM </span></div></div></div><div class="picto"><img src="image/damage/groomed.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_opened.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/DOWNHILL_SKIING_RED.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">ANCOLIE</span><div class="heure"><span>09:15 AM</span>
+                  <span> - </span>
+                  <span>05:00 PM </span></div></div></div><div class="picto"><img src="image/damage/groomed.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_scheduled.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/DOWNHILL_SKIING_RED.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">ARCOSSES</span><div class="heure"><span>09:15 AM</span>
+                  <span> - </span>
+                  <span>04:40 PM </span></div></div></div><div class="picto"><img src="image/damage/groomed.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_scheduled.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/DOWNHILL_SKIING_RED.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">BLEUETS</span><div class="heure"><span>09:00 AM</span>
+                  <span> - </span>
+                  <span>05:00 PM </span></div></div></div><div class="picto"><img src="image/damage/groomed.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_opened.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/DOWNHILL_SKIING_RED.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">CHARDONS</span><div class="heure"><span>09:00 AM</span>
+                  <span> - </span>
+                  <span>04:45 PM </span></div></div></div><div class="picto"><img src="image/damage/groomed.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_scheduled.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/DOWNHILL_SKIING_RED.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">CYCLAMEN</span><div class="heure"><span>09:15 AM</span>
+                  <span> - </span>
+                  <span>04:40 PM </span></div></div></div><div class="picto"><img src="image/damage/groomed.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_scheduled.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/DOWNHILL_SKIING_RED.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">MELEZES</span><div class="heure"><span>09:00 AM</span>
+                  <span> - </span>
+                  <span>05:00 PM </span></div></div></div><div class="picto"><img src="image/damage/groomed.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_scheduled.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/DOWNHILL_SKIING_RED.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">MYOSOTIS</span><div class="heure"><span>09:15 AM</span>
+                  <span> - </span>
+                  <span>05:00 PM </span></div></div></div><div class="picto"><img src="image/damage/groomed.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_opened.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/DOWNHILL_SKIING_RED.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">PAVOTS</span><div class="heure"><span>09:00 AM</span>
+                  <span> - </span>
+                  <span>05:00 PM </span></div></div></div><div class="picto"><img src="image/damage/groomed.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_scheduled.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/DOWNHILL_SKIING_BLACK.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">EPILOBE</span><div class="heure"><span>09:00 AM</span>
+                  <span> - </span>
+                  <span>05:00 PM </span></div></div></div><div class="picto"><img src="image/damage/not_groomed.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_opened.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/DOWNHILL_SKIING_BLACK.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">OEILLET</span><div class="heure"><span>09:00 AM</span>
+                  <span> - </span>
+                  <span>05:00 PM </span></div></div></div><div class="picto"><img src="image/damage/not_groomed.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_opened.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/DOWNHILL_SKIING_BLACK.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">PISTE AIGUILLE PERCEE</span><div class="heure"><span>09:15 AM</span>
+                  <span> - </span>
+                  <span>04:40 PM </span></div></div></div><div class="picto"><img src="image/damage/not_groomed.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_scheduled.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/DOWNHILL_SKIING_BLACK.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">PRIMEVERES</span><div class="heure"><span>09:00 AM</span>
+                  <span> - </span>
+                  <span>05:15 PM </span></div></div></div><div class="picto"><img src="image/damage/groomed.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_opened.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/DOWNHILL_SKIING_BLACK.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">SACHE</span><div class="heure"><span>09:15 AM</span>
+                  <span> - </span>
+                  <span>04:40 PM </span></div></div><span class="message">EXPERT SKIERS ONLY</span></div><div class="picto"><img src="image/damage/groomed.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_scheduled.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/DOWNHILL_SKIING_BLACK.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">SILENE</span><div class="heure"><span>09:15 AM</span>
+                  <span> - </span>
+                  <span>04:40 PM </span></div></div><span class="message">EXPERT SKIERS ONLY</span></div><div class="picto"><img src="image/damage/not_groomed.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_scheduled.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/SKI_TOURING.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">LA FASTOCHE</span><div class="heure"><span>09:00 AM</span>
+                  <span> - </span>
+                  <span>05:00 PM </span></div></div></div><div class="picto"><img src="image/type/DEFAULT_IMAGE_TRANSPARENTE.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_scheduled.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/SKI_TOURING.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">LE COLLU</span><div class="heure"><span>09:00 AM</span>
+                  <span> - </span>
+                  <span>05:00 PM </span></div></div></div><div class="picto"><img src="image/damage/groomed.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_scheduled.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/SKI_TOURING.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">PALA' FOULEE</span><div class="heure"><span>09:00 AM</span>
+                  <span> - </span>
+                  <span>05:00 PM </span></div></div></div><div class="picto"><img src="image/type/DEFAULT_IMAGE_TRANSPARENTE.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_scheduled.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/SLEDDING_HILL_GREEN.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">EXPEDITION COBRA</span><div class="heure"><span>05:30 PM</span>
+                  <span> - </span>
+                  <span>07:30 PM </span></div></div><span class="message">Closed for the season</span></div><div class="picto"><img src="image/type/DEFAULT_IMAGE_TRANSPARENTE.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_closed.svg" class="img_status" alt="statut ouverture"></div></div></div> <div class="liaisons"></div> <div class="liaisons"><div class="POI_info"><div class="poi_type_picto"><img src="image/type/MOUNTAIN_RESTAURANT.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">SALLE HORS-SAC BREVIERES</span></div></div><div class="picto"><img src="image/type/DEFAULT_IMAGE_TRANSPARENTE.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_closed.svg" class="img_status" alt="statut ouverture"></div></div></div>
+            </div>
+        </div>
+        
+            <div class="meteo_card"><div class="bloc_title"><h2 class="bloc_title_text">PALET</h2></div>
+            <div class="card-content remontee_pistes">
+        <div class="POI_title">
+            <div class="title">Lifts</div>
+        </div>
+     <div class="liaisons"><div class="POI_info"><div class="poi_type_picto"><img src="image/type/DETACHABLE_CHAIRLIFT.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">TSD  DES MERLES</span><div class="heure"><span>09:10 AM</span>
+                  <span> - </span>
+                  <span>04:50 PM </span></div></div></div><div class="picto"><img src="image/type/DEFAULT_IMAGE_TRANSPARENTE.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_closed.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/DETACHABLE_CHAIRLIFT.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">TSD DU GRATTALU</span><div class="heure"><span>09:10 AM</span>
+                  <span> - </span>
+                  <span>04:45 PM </span></div></div></div><div class="picto"><img src="image/type/DEFAULT_IMAGE_TRANSPARENTE.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_closed.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/DETACHABLE_CHAIRLIFT.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">TSD DU TICHOT</span><div class="heure"><span>09:00 AM</span>
+                  <span> - </span>
+                  <span>05:00 PM </span></div></div></div><div class="picto"><img src="image/type/DEFAULT_IMAGE_TRANSPARENTE.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_opened.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/CHAIRLIFT.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">TS DU COL DES VES</span><div class="heure"><span>09:30 AM</span>
+                  <span> - </span>
+                  <span>04:00 PM </span></div></div></div><div class="picto"><img src="image/type/DEFAULT_IMAGE_TRANSPARENTE.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_scheduled.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/CHAIRLIFT.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">TS DU GRAND HUIT</span><div class="heure"><span>09:15 AM</span>
+                  <span> - </span>
+                  <span>04:35 PM </span></div></div><span class="message">Strong wind</span></div><div class="picto"><img src="image/type/DEFAULT_IMAGE_TRANSPARENTE.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_closed.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/SURFACE_LIFT.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">TK DU CHARDONNET</span><div class="heure"><span>09:00 AM</span>
+                  <span> - </span>
+                  <span>05:00 PM </span></div></div></div><div class="picto"><img src="image/type/DEFAULT_IMAGE_TRANSPARENTE.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_opened.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/SURFACE_LIFT.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">TK DU COL DU PALET</span><div class="heure"><span>09:10 AM</span>
+                  <span> - </span>
+                  <span>04:30 PM </span></div></div><span class="message">SNOW SAFETY </span></div><div class="picto"><img src="image/type/DEFAULT_IMAGE_TRANSPARENTE.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_closed.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/MAGIC_CARPET.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">TAPIS BALME 1 & 2</span><div class="heure"><span>09:10 AM</span>
+                  <span> - </span>
+                  <span>04:50 PM </span></div></div></div><div class="picto"><img src="image/type/DEFAULT_IMAGE_TRANSPARENTE.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_opened.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/ROPE_TOW.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">FIL NEIGE REPLAT</span><div class="heure"><span>09:00 AM</span>
+                  <span> - </span>
+                  <span>05:00 PM </span></div></div></div><div class="picto"><img src="image/type/DEFAULT_IMAGE_TRANSPARENTE.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_opened.svg" class="img_status" alt="statut ouverture"></div></div></div>
+        <div class="POI_title">
+            <div class="title">Trails and activities</div>
+        </div>
+     <div class="liaisons"><div class="POI_info"><div class="poi_type_picto"><img src="image/type/DOWNHILL_SKIING_BLUE.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">BALMES</span><div class="heure"><span>09:10 AM</span>
+                  <span> - </span>
+                  <span>04:45 PM </span></div></div></div><div class="picto"><img src="image/damage/groomed.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_opened.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/DOWNHILL_SKIING_BLUE.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">CARLINE</span><div class="heure"><span>09:00 AM</span>
+                  <span> - </span>
+                  <span>05:00 PM </span></div></div></div><div class="picto"><img src="image/damage/groomed.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_opened.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/DOWNHILL_SKIING_BLUE.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">GRATTALU</span><div class="heure"><span>09:10 AM</span>
+                  <span> - </span>
+                  <span>04:45 PM </span></div></div></div><div class="picto"><img src="image/damage/groomed.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_opened.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/DOWNHILL_SKIING_BLUE.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">LAC</span><div class="heure"><span>09:10 AM</span>
+                  <span> - </span>
+                  <span>04:45 PM </span></div></div></div><div class="picto"><img src="image/damage/groomed.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_opened.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/DOWNHILL_SKIING_BLUE.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">PREMOU</span><div class="heure"><span>09:10 AM</span>
+                  <span> - </span>
+                  <span>04:45 PM </span></div></div></div><div class="picto"><img src="image/damage/groomed.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_opened.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/DOWNHILL_SKIING_BLUE.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">SIGNAL</span><div class="heure"><span>09:10 AM</span>
+                  <span> - </span>
+                  <span>04:30 PM </span></div></div></div><div class="picto"><img src="image/damage/groomed.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_scheduled.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/DOWNHILL_SKIING_RED.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">BOARDER CROSS</span><div class="heure"><span>09:10 AM</span>
+                  <span> - </span>
+                  <span>04:30 PM </span></div></div></div><div class="picto"><img src="image/damage/groomed.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_scheduled.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/DOWNHILL_SKIING_RED.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">LE MUR</span><div class="heure"><span>09:10 AM</span>
+                  <span> - </span>
+                  <span>04:45 PM </span></div></div></div><div class="picto"><img src="image/damage/groomed.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_opened.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/DOWNHILL_SKIING_RED.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">MERLES</span><div class="heure"><span>09:10 AM</span>
+                  <span> - </span>
+                  <span>04:45 PM </span></div></div></div><div class="picto"><img src="image/damage/groomed.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_opened.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/DOWNHILL_SKIING_BLACK.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">G.CHICHERIT</span><div class="heure"><span>09:30 AM</span>
+                  <span> - </span>
+                  <span>04:00 PM </span></div></div></div><div class="picto"><img src="image/damage/not_groomed.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_scheduled.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/DOWNHILL_SKIING_BLACK.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">GOLF</span><div class="heure"><span>09:10 AM</span>
+                  <span> - </span>
+                  <span>04:45 PM </span></div></div></div><div class="picto"><img src="image/damage/not_groomed.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_scheduled.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/DOWNHILL_SKIING_BLACK.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">PRAMECOU</span><div class="heure"><span>09:30 AM</span>
+                  <span> - </span>
+                  <span>04:00 PM </span></div></div></div><div class="picto"><img src="image/damage/not_groomed.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_scheduled.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/SNOWPARK.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">SNOWPARK</span><div class="heure"><span>09:10 AM</span>
+                  <span> - </span>
+                  <span>04:45 PM </span></div></div><span class="message">Zones 1+2. Expert Zone 1 only</span></div><div class="picto"><img src="image/damage/groomed.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_scheduled.svg" class="img_status" alt="statut ouverture"></div></div></div> <div class="liaisons"></div> <div class="liaisons"></div>
+            </div>
+        </div>
+        
+            <div class="meteo_card"><div class="bloc_title"><h2 class="bloc_title_text">GRANDE MOTTE</h2></div>
+            <div class="card-content remontee_pistes">
+        <div class="POI_title">
+            <div class="title">Lifts</div>
+        </div>
+     <div class="liaisons"><div class="POI_info"><div class="poi_type_picto"><img src="image/type/FUNICULAR.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">FUNICULAIRE</span><div class="heure"><span>09:00 AM</span>
+                  <span> - </span>
+                  <span>04:30 PM </span></div></div></div><div class="picto"><img src="image/type/DEFAULT_IMAGE_TRANSPARENTE.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_opened.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/TRAM.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">TP DE GRANDE MOTTE</span><div class="heure"><span>09:30 AM</span>
+                  <span> - </span>
+                  <span>04:15 PM </span></div></div><span class="message">strong wind</span></div><div class="picto"><img src="image/type/DEFAULT_IMAGE_TRANSPARENTE.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_scheduled.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/DETACHABLE_CHAIRLIFT.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">TSD DE LA VANOISE</span><div class="heure"><span>09:45 AM</span>
+                  <span> - </span>
+                  <span>04:30 PM </span></div></div><span class="message">strong wind</span></div><div class="picto"><img src="image/type/DEFAULT_IMAGE_TRANSPARENTE.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_closed.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/DETACHABLE_CHAIRLIFT.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">TSD DES LANCHES</span><div class="heure"><span>09:15 AM</span>
+                  <span> - </span>
+                  <span>04:45 PM </span></div></div></div><div class="picto"><img src="image/type/DEFAULT_IMAGE_TRANSPARENTE.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_closed.svg" class="img_status" alt="statut ouverture"></div></div></div>
+        <div class="POI_title">
+            <div class="title">Trails and activities</div>
+        </div>
+     <div class="liaisons"><div class="POI_info"><div class="poi_type_picto"><img src="image/type/DOWNHILL_SKIING_BLUE.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">CAIRN</span><div class="heure"><span>09:15 AM</span>
+                  <span> - </span>
+                  <span>04:45 PM </span></div></div></div><div class="picto"><img src="image/damage/groomed.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_opened.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/DOWNHILL_SKIING_BLUE.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">GENEPY.</span><div class="heure"><span>09:15 AM</span>
+                  <span> - </span>
+                  <span>04:30 PM </span></div></div></div><div class="picto"><img src="image/damage/groomed.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_opened.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/DOWNHILL_SKIING_BLUE.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">ISOLEE</span><div class="heure"><span>09:15 AM</span>
+                  <span> - </span>
+                  <span>04:45 PM </span></div></div></div><div class="picto"><img src="image/damage/groomed.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_scheduled.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/DOWNHILL_SKIING_BLUE.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">PRARIOND</span><div class="heure"><span>09:15 AM</span>
+                  <span> - </span>
+                  <span>04:45 PM </span></div></div></div><div class="picto"><img src="image/damage/groomed.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_opened.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/DOWNHILL_SKIING_BLUE.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">RABOTCH</span><div class="heure"><span>09:15 AM</span>
+                  <span> - </span>
+                  <span>04:30 PM </span></div></div></div><div class="picto"><img src="image/damage/groomed.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_opened.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/DOWNHILL_SKIING_RED.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">CIRSE</span><div class="heure"><span>09:15 AM</span>
+                  <span> - </span>
+                  <span>04:45 PM </span></div></div></div><div class="picto"><img src="image/damage/groomed.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_opened.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/DOWNHILL_SKIING_RED.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">DAHU</span><div class="heure"><span>09:15 AM</span>
+                  <span> - </span>
+                  <span>04:45 PM </span></div></div></div><div class="picto"><img src="image/damage/groomed.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_opened.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/DOWNHILL_SKIING_RED.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">DOUBLE M</span><div class="heure"><span>09:15 AM</span>
+                  <span> - </span>
+                  <span>04:45 PM </span></div></div></div><div class="picto"><img src="image/damage/groomed.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_opened.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/DOWNHILL_SKIING_RED.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">EPENA</span><div class="heure"><span>09:15 AM</span>
+                  <span> - </span>
+                  <span>04:45 PM </span></div></div></div><div class="picto"><img src="image/damage/groomed.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_opened.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/DOWNHILL_SKIING_RED.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">FACE.</span><div class="heure"><span>09:15 AM</span>
+                  <span> - </span>
+                  <span>04:45 PM </span></div></div></div><div class="picto"><img src="image/damage/groomed.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_opened.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/DOWNHILL_SKIING_RED.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">GLACIER</span><div class="heure"><span>09:30 AM</span>
+                  <span> - </span>
+                  <span>04:15 PM </span></div></div></div><div class="picto"><img src="image/damage/groomed.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_scheduled.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/DOWNHILL_SKIING_RED.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">RIMAYE</span><div class="heure"><span>09:30 AM</span>
+                  <span> - </span>
+                  <span>04:30 PM </span></div></div></div><div class="picto"><img src="image/damage/groomed.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_scheduled.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/DOWNHILL_SKIING_BLACK.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">DESCENTE</span><div class="heure"><span>09:30 AM</span>
+                  <span> - </span>
+                  <span>04:15 PM </span></div></div></div><div class="picto"><img src="image/type/DEFAULT_IMAGE_TRANSPARENTE.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_out_period.svg" class="img_status" alt="statut ouverture"></div></div></div> <div class="liaisons"></div> <div class="liaisons"><div class="POI_info"><div class="poi_type_picto"><img src="image/type/MOUNTAIN_RESTAURANT.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">SALLE HORS-SAC GRANDE MOTTE</span></div></div><div class="picto"><img src="image/type/DEFAULT_IMAGE_TRANSPARENTE.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_out_period.svg" class="img_status" alt="statut ouverture"></div></div></div>
+            </div>
+        </div>
+        
+            <div class="meteo_card"><div class="bloc_title"><h2 class="bloc_title_text">GLACIER</h2></div>
+            <div class="card-content remontee_pistes">
+        <div class="POI_title">
+            <div class="title">Trails and activities</div>
+        </div>
+     <div class="liaisons"><div class="POI_info"><div class="poi_type_picto"><img src="image/type/DOWNHILL_SKIING_RED.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">3500</span></div></div><div class="picto"><img src="image/type/DEFAULT_IMAGE_TRANSPARENTE.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_out_period.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/BUMP_TRAIL.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">STADE BOSSES</span></div></div><div class="picto"><img src="image/type/DEFAULT_IMAGE_TRANSPARENTE.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_out_period.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/SLALOM_STADIUM_RED.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">STADE 3500</span></div></div><div class="picto"><img src="image/type/DEFAULT_IMAGE_TRANSPARENTE.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_out_period.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/SLALOM_STADIUM_BLACK.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">STADE DESCENTE</span></div></div><div class="picto"><img src="image/type/DEFAULT_IMAGE_TRANSPARENTE.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_out_period.svg" class="img_status" alt="statut ouverture"></div></div></div> <div class="liaisons"></div> <div class="liaisons"></div>
+            </div>
+        </div>
+        
+            <div class="meteo_card"><div class="bloc_title"><h2 class="bloc_title_text">ITINERAIRES DE FOND</h2></div>
+            <div class="card-content remontee_pistes">
+        <div class="POI_title">
+            <div class="title">Trails and activities</div>
+        </div>
+     <div class="liaisons"><div class="POI_info"><div class="poi_type_picto"><img src="image/type/CROSS_COUNTRY_SKIING_BLUE.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">BREVIERES-SKI DE FOND</span><div class="heure"><span>09:00 AM</span>
+                  <span> - </span>
+                  <span>05:00 PM </span></div></div><span class="message">Closed for the season</span></div><div class="picto"><img src="image/damage/groomed.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_closed.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/CROSS_COUNTRY_SKIING_BLUE.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">CHARTREUX-SKI DE FOND</span><div class="heure"><span>09:00 AM</span>
+                  <span> - </span>
+                  <span>05:00 PM </span></div></div></div><div class="picto"><img src="image/damage/groomed.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_opened.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/CROSS_COUNTRY_SKIING_BLUE.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">ITINERAIRE GLACIER</span></div></div><div class="picto"><img src="image/type/DEFAULT_IMAGE_TRANSPARENTE.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_out_period.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/CROSS_COUNTRY_SKIING_BLUE.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">LAC-SKI DE FOND</span><div class="heure"><span>09:00 AM</span>
+                  <span> - </span>
+                  <span>05:00 PM </span></div></div></div><div class="picto"><img src="image/damage/groomed.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_opened.svg" class="img_status" alt="statut ouverture"></div></div></div> <div class="liaisons"></div> <div class="liaisons"></div>
+            </div>
+        </div>
+        
+            <div class="meteo_card"><div class="bloc_title"><h2 class="bloc_title_text">ITINERAIRES PIETONS</h2></div>
+            <div class="card-content remontee_pistes">
+        <div class="POI_title">
+            <div class="title">Trails and activities</div>
+        </div>
+     <div class="liaisons"><div class="POI_info"><div class="poi_type_picto"><img src="image/type/PEDESTRIAN.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">BREVIERES-PIETONS</span><div class="heure"><span>09:00 AM</span>
+                  <span> - </span>
+                  <span>05:00 PM </span></div></div></div><div class="picto"><img src="image/damage/groomed.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_closed.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/PEDESTRIAN.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">CHARTREUX-PIETONS</span><div class="heure"><span>09:00 AM</span>
+                  <span> - </span>
+                  <span>05:00 PM </span></div></div></div><div class="picto"><img src="image/damage/groomed.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_opened.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/PEDESTRIAN.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">LAC-PIETONS</span><div class="heure"><span>09:00 AM</span>
+                  <span> - </span>
+                  <span>05:00 PM </span></div></div></div><div class="picto"><img src="image/damage/groomed.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_opened.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/PEDESTRIAN.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">PIETON ET FOND DU MARAIS</span><div class="heure"><span>09:00 AM</span>
+                  <span> - </span>
+                  <span>05:00 PM </span></div></div></div><div class="picto"><img src="image/damage/groomed.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_closed.svg" class="img_status" alt="statut ouverture"></div></div></div> <div class="liaisons"></div> <div class="liaisons"></div>
+            </div>
+        </div>
+        
+            <div class="meteo_card"><div class="bloc_title"><h2 class="bloc_title_text">REMONTEES PIETONS</h2></div>
+            <div class="card-content remontee_pistes">
+        <div class="POI_title">
+            <div class="title">Lifts</div>
+        </div>
+     <div class="liaisons"><div class="POI_info"><div class="poi_type_picto"><img src="image/type/FUNICULAR.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">Funiculaire</span><div class="heure"><span>09:00 AM</span>
+                  <span> - </span>
+                  <span>03:30 PM </span></div></div></div><div class="picto"><img src="image/type/DEFAULT_IMAGE_TRANSPARENTE.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_scheduled.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/TRAM.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">Téléphérique Grande Motte</span><div class="heure"><span>09:30 AM</span>
+                  <span> - </span>
+                  <span>03:30 PM </span></div></div></div><div class="picto"><img src="image/type/DEFAULT_IMAGE_TRANSPARENTE.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_scheduled.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/GONDOLA.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">TC Boisses</span><div class="heure"><span>09:00 AM</span>
+                  <span> - </span>
+                  <span>04:00 PM </span></div></div></div><div class="picto"><img src="image/type/DEFAULT_IMAGE_TRANSPARENTE.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_scheduled.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/GONDOLA.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">TC Brévières</span><div class="heure"><span>09:00 AM</span>
+                  <span> - </span>
+                  <span>05:10 PM </span></div></div></div><div class="picto"><img src="image/type/DEFAULT_IMAGE_TRANSPARENTE.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_opened.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/GONDOLA.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">TC Tovière</span><div class="heure"><span>09:00 AM</span>
+                  <span> - </span>
+                  <span>04:00 PM </span></div></div></div><div class="picto"><img src="image/type/DEFAULT_IMAGE_TRANSPARENTE.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_scheduled.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/DETACHABLE_CHAIRLIFT.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">TSD Aiguille Rouge</span><div class="heure"><span>09:05 AM</span>
+                  <span> - </span>
+                  <span>04:30 PM </span></div></div></div><div class="picto"><img src="image/type/DEFAULT_IMAGE_TRANSPARENTE.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_opened.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/DETACHABLE_CHAIRLIFT.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">TSD Bollin</span><div class="heure"><span>09:00 AM</span>
+                  <span> - </span>
+                  <span>05:10 PM </span></div></div></div><div class="picto"><img src="image/type/DEFAULT_IMAGE_TRANSPARENTE.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_opened.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/DETACHABLE_CHAIRLIFT.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">TSD Chaudannes</span><div class="heure"><span>09:00 AM</span>
+                  <span> - </span>
+                  <span>04:00 PM </span></div></div></div><div class="picto"><img src="image/type/DEFAULT_IMAGE_TRANSPARENTE.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_scheduled.svg" class="img_status" alt="statut ouverture"></div></div><div class="POI_info"><div class="poi_type_picto"><img src="image/type/DETACHABLE_CHAIRLIFT.svg" class="img_type" alt="pistes/remontées"></div><div class="poi_content"><div class="nom_heure"><span class="nom">TSD Tichot</span><div class="heure"><span>09:00 AM</span>
+                  <span> - </span>
+                  <span>04:00 PM </span></div></div></div><div class="picto"><img src="image/type/DEFAULT_IMAGE_TRANSPARENTE.svg" class="img_status" alt="statut damage"><img src="image/etats/lp_runway_trail_scheduled.svg" class="img_status" alt="statut ouverture"></div></div></div>
+            </div>
+        </div>
+          
+        </div>
+    </div><div class="legend"><div class="all_legend">
+            <div class="marge_legend">
+                <h2>Légende :</h2>
+                <div class="content_legend">
+    <div class="tooltip_meteo_neige">
+        <div class="title_legend">
+            <div>Météo et Neige</div>
+        </div>
+        <!-- Vitesse du vent -->
+            <div class="legende_meteo">
+                <img src="image/meteo/vent.svg" class="image_tooltip">
+                <div class="text_tooltip">Vitesse du vent en Km/h</div>
+            </div>
+        <!-- Direction du vent -->
+        <div class="legende_meteo">
+            <img src="image/meteo/direction_vent.svg" class="image_tooltip_vent">
+            <div class="text_tooltip">Direction du vent suivant les points<br> cardinaux</div>
+        </div>
+        <!-- Hauteur et qualité de la neige -->
+        <div class="legende_meteo">
+            <img src="image/meteo/image_neige.svg" class="image_tooltip">
+            <div class="text_tooltip">Cumul de neige & Qualité de la neige</div>
+        </div>
+        <!-- Limite pluie-neige -->
+        <div class="legende_meteo">
+            <img src="image/meteo/limite_pluie_neige.svg" class="image_tooltip">
+            <div class="text_tooltip">Limite pluie/neige, altitude à laquelle la<br> pluie se transforme en neige</div>
+        </div>
+        <!-- Chute de neige -->
+        <div class="legende_meteo">
+            <img src="image/meteo/calendrier_neige.svg" class="image_tooltip">
+            <div class="text_tooltip">Hauteur et date de la dernière chute de<br> neige</div>
+        </div>
+    </div>
+    <div class="tooltip_meteo_neige border">
+        <div class="title_legend">
+            <div>Risque d'avalanche</div>
+        </div>
+    <div class="tooltip_avalanche">
+        <div class="legende_avalanche">
+            <img class="image_tooltip_avalanche" src="image/avalanche_risk/R1.svg">
+            <div class="info_legend">
+                <span>1</span>
+                <div class="text_tooltip_avalanche">Faible</div>
+            </div>
+        </div>
+        <div class="legende_avalanche">
+            <img class="image_tooltip_avalanche" src="image/avalanche_risk/R2.svg">
+            <div class="info_legend">
+                <span>2</span>
+                <div class="text_tooltip_avalanche" >Limité</div>
+            </div>
+        </div>
+        <div class="legende_avalanche">
+            <img class="image_tooltip_avalanche" src="image/avalanche_risk/R3.svg">
+            <div class="info_legend">
+                <span>3</span>
+                <div class="text_tooltip_avalanche">Marqué</div>
+            </div>
+        </div>
+        <div class="legende_avalanche">
+            <img class="image_tooltip_avalanche" src="image/avalanche_risk/R4.svg">
+            <div class="info_legend">
+                <span>4</span>
+                <div class="text_tooltip_avalanche">Fort</div>
+            </div>
+        </div>
+        <div class="legende_avalanche">
+            <img class="image_tooltip_avalanche" src="image/avalanche_risk/R5.svg">
+            <div class="info_legend">
+                <span>5</span>
+                <div class="text_tooltip_avalanche">Très fort</div>
+            </div>
+        </div>
+    </div>
+    </div>
+    
+    <div class="tooltip_meteo_neige border">
+        <div class="title_legend">
+            <div>Types</div>
+        </div>
+        <div class="type">
+            <div class="col">
+            <!-- Remontées mécaniques -->
+            <div class="legende_poi">
+                <img src="image/base/telecabine.svg" class="tooltip_domaine_image">
+                <div class="text_tooltip">Télécabine</div>
+            </div>
 
-<!doctype html>
-<html lang="en">
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="expires" content="-1">
+            <!-- Pistes ski alpin - Freestyle -->
+            <div class="legende_poi">
+                <img src="image/base/ts_black.svg" class="tooltip_domaine_image">
+                <div class="text_tooltip">Télésiège</div>
+            </div>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="etc/bootstrap.min.css">
+            <!-- Liaisons -->
+            <div class="legende_poi">
+                <img src="image/base/tk_black.svg" class="tooltip_domaine_image" >
+                <div class="text_tooltip">Téléski</div>
+            </div>
 
-    <!-- JS utile -->
-    <script src="etc/svg-inject.min.js"></script>
-    <script src="etc/iframeResizer.contentWindow.min.js"></script>
+            <!-- Ski aurore -->
+            <div class="legende_poi">
+                <img src="image/base/tlc_black.svg" class="tooltip_domaine_image">
+                <div class="text_tooltip">Tapis roulant</div>
+            </div>
 
-    <!-- Autre CSS -->
-    <link
-        rel="stylesheet"
-        href="etc/light.css"
-    />
+            <!-- Ski Nocturne -->
+            <div class="legende_poi">
+                <img src="image/base/LIAISON.svg" class="tooltip_domaine_image">
+                <div class="text_tooltip">Liaison</div>
+            </div>
+            </div>
+            <div class="col">
+            <div class="legende_poi">
+                <img src="image/base/ski-fond.svg" class="tooltip_domaine_image">
+                <div class="text_tooltip">Ski de fond</div>
+            </div>
+            <div class="legende_poi">
+                <img src="image/base/boardercross_black.svg" class="tooltip_domaine_image">
+                <div class="text_tooltip">Snowpark</div>
+            </div>
+            <div class="legende_poi">
+                <img src="image/base/ski-rando_black.svg" class="tooltip_domaine_image">
+                <div class="text_tooltip">Ski de rando</div>
+            </div>
+            <div class="legende_poi">
+                <img src="image/base/luge.svg" class="tooltip_domaine_image">
+                <div class="text_tooltip">Luge</div>
+            </div>
+            <div class="legende_poi">
+                <img src="image/base/pietons.svg" class="tooltip_domaine_image">
+                <div class="text_tooltip">Chemin piéton</div>
+            </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="tooltip_meteo_neige border">
+        <div class="title_legend">
+            <div>Niveaux</div>
+        </div>
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="circle.css">
-    <link rel="stylesheet" href="style.php?color=&colorText_Headind=&primaryBackgroundColor=&secondaryBackgroundColor=&colorPictoWeather=&colorText=&font1=&font2=&font3=&background=&border=&colorTitle=&print=&station=tignes"><link rel="stylesheet" href="stylePrint.php?font=">    
+        <!-- Ouvert -->
+        <div class="legende_prl">
+            <img src="image/type/DOWNHILL_SKIING_GREEN.svg" class="tooltip_domaine_image">
+            <div class="text_tooltip">Piste verte</div>
+        </div>
 
-    <title>Bulletin Neige Tignes</title>
-</head>
+        <!-- Prévision d'ouverture -->
+        <div class="legende_prl">
+            <img src="image/type/DOWNHILL_SKIING_BLUE.svg" class="tooltip_domaine_image">
+            <div class="text_tooltip">Piste bleu</div>
+        </div>
 
+        <!-- Retardé -->
+        <div class="legende_prl">
+            <img src="image/type/DOWNHILL_SKIING_RED.svg" class="tooltip_domaine_image">
+            <div class="text_tooltip">Piste rouge</div>
+        </div>
 
-<body style="overflow-x: hidden">
+        <!-- Arrêt -->
+        <div class="legende_prl">
+            <img src="image/type/DOWNHILL_SKIING_BLACK.svg" class="tooltip_domaine_image">
+            <div class="text_tooltip">Piste noir</div>
+        </div>
+    </div>
+    
+    <div class="tooltip_meteo_neige border">
+        <div class="title_legend">
+            <div>Damage</div>
+        </div>
+        <!-- Vitesse du vent -->
+            <div class="legende_meteo">
+                <img src="image/grooming/GROOMING.svg" class="image_tooltip">
+                <div class="text_tooltip">Damé</div>
+            </div>
+        <!-- Direction du vent -->
+        <div class="legende_meteo">
+            <img src="image/grooming/PARTIAL_GROOMING.svg" class="image_tooltip_vent">
+            <div class="text_tooltip">Partiellement damé</div>
+        </div>
+        <!-- Hauteur et qualité de la neige -->
+        <div class="legende_meteo">
+            <img src="image/grooming/GROOMED_48H.svg" class="image_tooltip">
+            <div class="text_tooltip">Damé du matin</div>
+        </div>
+        <!-- Limite pluie-neige -->
+        <div class="legende_meteo">
+            <img src="image/grooming/GROOMED_MORNING.svg" class="image_tooltip">
+            <div class="text_tooltip">Damé du soir</div>
+        </div>
+        <!-- Chute de neige -->
+        <div class="legende_meteo">
+            <img src="image/grooming/GROOMED_EVENING.svg" class="image_tooltip">
+            <div class="text_tooltip">Damé il y a 48h</div>
+        </div>
+        <!-- Chute de neige -->
+        <div class="legende_meteo">
+            <img src="image/grooming/GROOMING_FORECAST.svg" class="image_tooltip">
+            <div class="text_tooltip">Prévision de damage</div>
+        </div>
+        <!-- Chute de neige -->
+        <div class="legende_meteo">
+            <img src="image/grooming/NOT_GROOMED.svg" class="image_tooltip">
+            <div class="text_tooltip">Non damé</div>
+        </div>
+    </div>
+    <div class="tooltip_meteo_neige border">
+        <div class="title_legend">
+            <div>Etats d'ouvertures</div>
+        </div>
 
-        <div class="col-12 prl_background"><div class="col-md-12"> <div class="jumbotron prl"><div class="row bottom"><div class="col-md-1 col-1 col-1 title">
-                            <img class="image_text" src="image/base/telecabine_base.svg" onload="SVGInject(this)">
-                        </div>
-                        <div class="col-md-9 col-8 col-8">
-                            <div class="title">
-                                <div><span class="text"><strong>Lifts and trails</strong></span></div>
-                            </div>
-                        </div><div class="col-md-1 col-1 col-1 offset-1">
-                        </div>
-                    </div><div class="pistes_remontees" id="pistes_remontees"><div class="card col-lg-12 col-md-12" style="padding-right: 0; padding-left: 0; padding-bottom: 20px">
-                            <div class="card-header col-lg-12 col-md-12 col-12 prl_info" style="padding-top: 10px">
-                        <div class="sector center col-12">TOVIERE</div>
-                    </div><div class="card-body prl_info" style="margin-bottom: -30px"><div class="text col-12">
-                                    <p class="center">Lifts</p>
-                                    <p class="right"><span class="right_bold">0</span>/7</p>
-                                </div><div class="row prl_affichage"><div class="col-lg-6 col-12 prl_group border_top_prl border_bottom_prl border_right" title='TC DE TOVIERE'>
-                                        <div class="col-lg-1 col-1 prl_center">
-                                            <img src="image/type/TC.svg" class="img_type">
-                                        </div><div class="col-lg-3 col-3 prl_name">
-                                                        <div class="text">TC DE TOVIERE</div>
-                                                        <div class="subtext">09:00 16:30</div>
-                                                    </div><div class="col-lg-6 col-6 prl_message" >
-                                                    <div class="text"></div>
-                                                </div>  
-                                        <div class="col-lg-1 col-1">
-                                        </div>
-                                        <div class="col-lg-1 col-1 status">
-                                            <img src="image/etats/H.svg" class="image_status">
-                                        </div>
-                                        </div><div class="col-lg-6 col-12 prl_group border_top_prl border_bottom_prl" title='TSD DU BOLLIN'>
-                                        <div class="col-lg-1 col-1 prl_center">
-                                            <img src="image/type/TSD.svg" class="img_type">
-                                        </div><div class="col-lg-3 col-3 prl_name">
-                                                        <div class="text">TSD DU BOLLIN</div>
-                                                        <div class="subtext">09:00 16:30</div>
-                                                    </div><div class="col-lg-6 col-6 prl_message" >
-                                                    <div class="text">SUMMER CLOSURE</div>
-                                                </div>  
-                                        <div class="col-lg-1 col-1">
-                                        </div>
-                                        <div class="col-lg-1 col-1 status">
-                                            <img src="image/etats/H.svg" class="image_status">
-                                        </div>
-                                        </div><div class="col-lg-6 col-12 prl_group border_top_prl border_bottom_prl border_right" title='TS DU ROSSET'>
-                                        <div class="col-lg-1 col-1 prl_center">
-                                            <img src="image/type/TS.svg" class="img_type">
-                                        </div><div class="col-lg-3 col-3 prl_name">
-                                                        <div class="text">TS DU ROSSET</div>
-                                                        <div class="subtext">09:00 16:40</div>
-                                                    </div><div class="col-lg-6 col-6 prl_message" >
-                                                    <div class="text"></div>
-                                                </div>  
-                                        <div class="col-lg-1 col-1">
-                                        </div>
-                                        <div class="col-lg-1 col-1 status">
-                                            <img src="image/etats/H.svg" class="image_status">
-                                        </div>
-                                        </div><div class="col-lg-6 col-12 prl_group border_top_prl border_bottom_prl" title='TSD  DES TUFS'>
-                                        <div class="col-lg-1 col-1 prl_center">
-                                            <img src="image/type/TS.svg" class="img_type">
-                                        </div><div class="col-lg-3 col-3 prl_name">
-                                                        <div class="text">TSD  DES TUFS</div>
-                                                        <div class="subtext">09:00 16:30</div>
-                                                    </div><div class="col-lg-6 col-6 prl_message" >
-                                                    <div class="text">SUMMER CLOSURE</div>
-                                                </div>  
-                                        <div class="col-lg-1 col-1">
-                                        </div>
-                                        <div class="col-lg-1 col-1 status">
-                                            <img src="image/etats/H.svg" class="image_status">
-                                        </div>
-                                        </div><div class="col-lg-6 col-12 prl_group border_top_prl border_bottom_prl border_right" title='TK DU LAVACHET'>
-                                        <div class="col-lg-1 col-1 prl_center">
-                                            <img src="image/type/TK.svg" class="img_type">
-                                        </div><div class="col-lg-3 col-3 prl_name">
-                                                        <div class="text">TK DU LAVACHET</div>
-                                                        <div class="subtext">09:00 16:30</div>
-                                                    </div><div class="col-lg-6 col-6 prl_message" >
-                                                    <div class="text"></div>
-                                                </div>  
-                                        <div class="col-lg-1 col-1">
-                                        </div>
-                                        <div class="col-lg-1 col-1 status">
-                                            <img src="image/etats/H.svg" class="image_status">
-                                        </div>
-                                        </div><div class="col-lg-6 col-12 prl_group border_top_prl border_bottom_prl" title='TAPIS DU CENTRE'>
-                                        <div class="col-lg-1 col-1 prl_center">
-                                            <img src="image/type/TR.svg" class="img_type">
-                                        </div><div class="col-lg-3 col-3 prl_name">
-                                                        <div class="text">TAPIS DU CENTRE</div>
-                                                        <div class="subtext">09:00 16:45</div>
-                                                    </div><div class="col-lg-6 col-6 prl_message" >
-                                                    <div class="text"></div>
-                                                </div>  
-                                        <div class="col-lg-1 col-1">
-                                        </div>
-                                        <div class="col-lg-1 col-1 status">
-                                            <img src="image/etats/H.svg" class="image_status">
-                                        </div>
-                                        </div><div class="col-lg-6 col-12 prl_group border_top_prl border_bottom_prl border_right" title='TAPIS DU CLARET'>
-                                        <div class="col-lg-1 col-1 prl_center">
-                                            <img src="image/type/TR.svg" class="img_type">
-                                        </div><div class="col-lg-3 col-3 prl_name">
-                                                        <div class="text">TAPIS DU CLARET</div>
-                                                        <div class="subtext">09:00 16:40</div>
-                                                    </div><div class="col-lg-6 col-6 prl_message" >
-                                                    <div class="text"></div>
-                                                </div>  
-                                        <div class="col-lg-1 col-1">
-                                        </div>
-                                        <div class="col-lg-1 col-1 status">
-                                            <img src="image/etats/H.svg" class="image_status">
-                                        </div>
-                                        </div></div></div>
-                </div><div class="card col-lg-12 col-md-12" style="padding-right: 0; padding-left: 0; padding-bottom: 20px">
-                            <div class="card-header col-lg-12 col-md-12 col-12 prl_info" style="padding-top: 10px">
-                        <div class="sector center col-12">AIGUILLE PERCEE</div>
-                    </div><div class="card-body prl_info" style="margin-bottom: -30px"><div class="text col-12">
-                                    <p class="center">Lifts</p>
-                                    <p class="right"><span class="right_bold">0</span>/1</p>
-                                </div><div class="row prl_affichage"><div class="col-lg-6 col-12 prl_group border_top_prl border_right" title='TSD PALAFOUR'>
-                                        <div class="col-lg-1 col-1 prl_center">
-                                            <img src="image/type/TSD.svg" class="img_type">
-                                        </div><div class="col-lg-3 col-3 prl_name">
-                                                        <div class="text">TSD PALAFOUR</div>
-                                                        <div class="subtext">09:00 16:30</div>
-                                                    </div><div class="col-lg-6 col-6 prl_message" >
-                                                    <div class="text">SUMMER CLOSURE</div>
-                                                </div>  
-                                        <div class="col-lg-1 col-1">
-                                        </div>
-                                        <div class="col-lg-1 col-1 status">
-                                            <img src="image/etats/H.svg" class="image_status">
-                                        </div>
-                                        </div></div></div>
-                </div><div class="card col-lg-12 col-md-12" style="padding-right: 0; padding-left: 0; padding-bottom: 20px">
-                            <div class="card-header col-lg-12 col-md-12 col-12 prl_info" style="padding-top: 10px">
-                        <div class="sector center col-12">PALET</div>
-                    </div><div class="card-body prl_info" style="margin-bottom: -30px"><div class="text col-12">
-                                    <p class="center">Lifts</p>
-                                    <p class="right"><span class="right_bold">0</span>/4</p>
-                                </div><div class="row prl_affichage"><div class="col-lg-6 col-12 prl_group border_top_prl border_bottom_prl border_right" title='TSD DU TICHOT'>
-                                        <div class="col-lg-1 col-1 prl_center">
-                                            <img src="image/type/TSD.svg" class="img_type">
-                                        </div><div class="col-lg-3 col-3 prl_name">
-                                                        <div class="text">TSD DU TICHOT</div>
-                                                        <div class="subtext">09:00 16:30</div>
-                                                    </div><div class="col-lg-6 col-6 prl_message" >
-                                                    <div class="text"></div>
-                                                </div>  
-                                        <div class="col-lg-1 col-1">
-                                        </div>
-                                        <div class="col-lg-1 col-1 status">
-                                            <img src="image/etats/H.svg" class="image_status">
-                                        </div>
-                                        </div><div class="col-lg-6 col-12 prl_group border_top_prl border_bottom_prl" title='TSD  DES MERLES'>
-                                        <div class="col-lg-1 col-1 prl_center">
-                                            <img src="image/type/TSD.svg" class="img_type">
-                                        </div><div class="col-lg-3 col-3 prl_name">
-                                                        <div class="text">TSD  DES MERLES</div>
-                                                        <div class="subtext">09:10 16:30</div>
-                                                    </div><div class="col-lg-6 col-6 prl_message" >
-                                                    <div class="text"></div>
-                                                </div>  
-                                        <div class="col-lg-1 col-1">
-                                        </div>
-                                        <div class="col-lg-1 col-1 status">
-                                            <img src="image/etats/H.svg" class="image_status">
-                                        </div>
-                                        </div><div class="col-lg-6 col-12 prl_group border_top_prl border_bottom_prl border_right" title='TSD DU GRATTALU'>
-                                        <div class="col-lg-1 col-1 prl_center">
-                                            <img src="image/type/TSD.svg" class="img_type">
-                                        </div><div class="col-lg-3 col-3 prl_name">
-                                                        <div class="text">TSD DU GRATTALU</div>
-                                                        <div class="subtext">09:10 16:15</div>
-                                                    </div><div class="col-lg-6 col-6 prl_message" >
-                                                    <div class="text"></div>
-                                                </div>  
-                                        <div class="col-lg-1 col-1">
-                                        </div>
-                                        <div class="col-lg-1 col-1 status">
-                                            <img src="image/etats/H.svg" class="image_status">
-                                        </div>
-                                        </div><div class="col-lg-6 col-12 prl_group border_top_prl border_bottom_prl" title='FIL NEIGE REPLAT'>
-                                        <div class="col-lg-1 col-1 prl_center">
-                                            <img src="image/type/TLC.svg" class="img_type">
-                                        </div><div class="col-lg-3 col-3 prl_name">
-                                                        <div class="text">FIL NEIGE REPLAT</div>
-                                                        <div class="subtext">09:00 16:30</div>
-                                                    </div><div class="col-lg-6 col-6 prl_message" >
-                                                    <div class="text"></div>
-                                                </div>  
-                                        <div class="col-lg-1 col-1">
-                                        </div>
-                                        <div class="col-lg-1 col-1 status">
-                                            <img src="image/etats/H.svg" class="image_status">
-                                        </div>
-                                        </div></div></div>
-                </div><div class="card col-lg-12 col-md-12" style="padding-right: 0; padding-left: 0; padding-bottom: 20px">
-                            <div class="card-header col-lg-12 col-md-12 col-12 prl_info" style="padding-top: 10px">
-                        <div class="sector center col-12">GRANDE MOTTE</div>
-                    </div><div class="card-body prl_info" style="margin-bottom: -30px"><div class="text col-12">
-                                    <p class="center">Lifts</p>
-                                    <p class="right"><span class="right_bold">0</span>/3</p>
-                                </div><div class="row prl_affichage"><div class="col-lg-6 col-12 prl_group border_top_prl border_right" title='FUNICULAIRE'>
-                                        <div class="col-lg-1 col-1 prl_center">
-                                            <img src="image/type/FUNI.svg" class="img_type">
-                                        </div><div class="col-lg-3 col-3 prl_name">
-                                                        <div class="text">FUNICULAIRE</div>
-                                                        <div class="subtext">09:15 16:00</div>
-                                                    </div><div class="col-lg-6 col-6 prl_message" >
-                                                    <div class="text">SUMMER CLOSURE</div>
-                                                </div>  
-                                        <div class="col-lg-1 col-1">
-                                        </div>
-                                        <div class="col-lg-1 col-1 status">
-                                            <img src="image/etats/H.svg" class="image_status">
-                                        </div>
-                                        </div><div class="col-lg-6 col-12 prl_group border_top_prl border_bottom_prl" title='TP DE GRANDE MOTTE'>
-                                        <div class="col-lg-1 col-1 prl_center">
-                                            <img src="image/type/TPH.svg" class="img_type">
-                                        </div><div class="col-lg-3 col-3 prl_name">
-                                                        <div class="text">TP DE GRANDE MOTTE</div>
-                                                        <div class="subtext">09:30 15:30</div>
-                                                    </div><div class="col-lg-6 col-6 prl_message" >
-                                                    <div class="text">SUMMER CLOSURE</div>
-                                                </div>  
-                                        <div class="col-lg-1 col-1">
-                                        </div>
-                                        <div class="col-lg-1 col-1 status">
-                                            <img src="image/etats/H.svg" class="image_status">
-                                        </div>
-                                        </div><div class="col-lg-6 col-12 prl_group border_top_prl border_right" title='TSD DE LA VANOISE'>
-                                        <div class="col-lg-1 col-1 prl_center">
-                                            <img src="image/type/TSD.svg" class="img_type">
-                                        </div><div class="col-lg-3 col-3 prl_name">
-                                                        <div class="text">TSD DE LA VANOISE</div>
-                                                        <div class="subtext">09:45 16:00</div>
-                                                    </div><div class="col-lg-6 col-6 prl_message" >
-                                                    <div class="text">SEASONAL CLOSURE</div>
-                                                </div>  
-                                        <div class="col-lg-1 col-1">
-                                        </div>
-                                        <div class="col-lg-1 col-1 status">
-                                            <img src="image/etats/H.svg" class="image_status">
-                                        </div>
-                                        </div></div></div>
-                </div></div>
-                </div>
-            </div></div>
-<!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="etc/jquery-3.2.1.slim.min.js"></script>
-<script src="etc/popper.min.js"></script>
-<script src="etc/bootstrap.min.js"></script>
-<script src="etc/index.all.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+        <!-- Ouvert -->
+        <div class="legende_prl">
+            <img src="image/etats/lp_runway_trail_opened.svg" class="tooltip_domaine_image">
+            <div class="text_tooltip">Ouvert</div>
+        </div>
 
+        <!-- Prévision d'ouverture -->
+        <div class="legende_prl">
+            <img src="image/etats/lp_runway_trail_scheduled.svg" class="tooltip_domaine_image">
+            <div class="text_tooltip">Prévision</div>
+        </div>
 
+        <!-- Retardé -->
+        <div class="legende_prl">
+            <img src="image/etats/lp_runway_trail_delayed.svg" class="tooltip_domaine_image">
+            <div class="text_tooltip">Retardé</div>
+        </div>
 
-<script>
-    const template = document.getElementById('tooltip_meteo_neige');
-    const container = document.createElement('div');
-    container.appendChild(document.importNode(template.content, true));
+        <!-- Arrêt -->
+        <div class="legende_prl">
+            <img src="image/etats/lp_runway_trail_on_hold.svg" class="tooltip_domaine_image">
+            <div class="text_tooltip">Arrêt</div>
+        </div>
 
-    tippy('#button_tooltip_meteo', {
-        content: container.innerHTML,
-        theme: "light",
-        placement: "right",
-        offset: "128, -51",
-        trigger: "click",
-        maxWidth: 300
-    });
+        <!-- Fermé -->
+        <div class="legende_prl">
+            <img src="image/etats/lp_runway_trail_closed.svg" class="tooltip_domaine_image">
+            <div class="text_tooltip">Fermé</div>
+        </div>
 
-    const template_prl = document.getElementById('tooltip_prl');
-    const container_prl = document.createElement('div');
-    container_prl.appendChild(document.importNode(template_prl.content, true));
-
-    tippy('#button_tooltip_prl', {
-        content: container_prl.innerHTML,
-        theme: "light",
-        placement: "right",
-        offset: "126, -51",
-        trigger: "click",
-        maxWidth: 300
-    });
-
-    const template_domaine_skiable = document.getElementById('tooltip_domaine_skiable');
-    const container_domaine_skiable = document.createElement('div');
-    container_domaine_skiable.appendChild(document.importNode(template_domaine_skiable.content, true));
-
-    tippy('#button_tooltip_domaine', {
-        content: container_domaine_skiable.innerHTML,
-        theme: "light",
-        placement: "right",
-        offset: "90, -51",
-        trigger: "click",
-        maxWidth: 300
-    })
-</script>
-
-<script>
-    function hide(element){
-        var div = document.getElementById(element);
-        var image = document.getElementById("button_" + element);
-        if (div.style.display === "none") {
-            div.style.display = "block";
-            image.setAttribute("class", "");
-        } else {
-            div.style.display = "none";
-            image.setAttribute("class", "rotated-image")
-        }
-    }
-</script>
-</body>
-</html>
+        <!-- Hors période -->
+        <div class="legende_prl">
+            <img src="image/etats/lp_runway_trail_out_period.svg" class="tooltip_domaine_image">
+            <div class="text_tooltip">Hors période</div>
+        </div>
+        
+    </div>
+    </div></div></div></div></body>
+    </html>
+    
