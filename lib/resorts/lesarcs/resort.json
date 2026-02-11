@@ -5,12 +5,11 @@
     "pathname": "/lifts-slopes-status.html"
   },
   "dataUrl": {
-    "host": "https://bulletin.lumiplan.pro",
+    "host": "https://bulletinv3.lumiplan.pro",
     "pathname": "/bulletin.php",
     "query": {
       "station": "les-arcs",
-      "region": "alpes",
-      "pays": "france",
+      "isSoir": "false",
       "lang": "en"
     }
   },
