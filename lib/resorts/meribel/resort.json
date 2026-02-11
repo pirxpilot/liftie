@@ -5,12 +5,10 @@
     "pathname": "/"
   },
   "dataUrl": {
-    "host": "https://bulletin.lumiplan.pro",
+    "host": "https://bulletinv3.lumiplan.pro",
     "pathname": "/bulletin.php",
     "query": {
-      "station": "alpina-mottaret",
-      "region": "alpes",
-      "pays": "france",
+      "station": "meribel",
       "lang": "en"
     }
   },

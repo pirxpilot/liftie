@@ -5,12 +5,10 @@
     "pathname": ""
   },
   "dataUrl": {
-    "host": "https://bulletin.lumiplan.pro",
+    "host": "https://bulletinv3.lumiplan.pro",
     "pathname": "/bulletin.php",
     "query": {
       "station": "les-menuires",
-      "region": "alpes",
-      "pays": "france",
       "lang": "en"
     }
   },
