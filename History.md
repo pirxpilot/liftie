@@ -1,4 +1,11 @@
 
+4.2.5 / 2026-02-12
+==================
+
+ * fix Angel Fire resort
+ * use `Array.at(-1)` to retrieve last item
+ * use nullish coalescing assignment `??=` where possible
+
 4.2.4 / 2026-02-11
 ==================
 
