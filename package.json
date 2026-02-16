@@ -45,7 +45,7 @@
     "dynload": "^1.0.2",
     "el-component": "~2",
     "errorhandler": "^1.5.0",
-    "esbuild": "^0.27.1",
+    "esbuild": "^0.27.3",
     "htmlparser2": "~10",
     "js-cookie": "^3.0.5",
     "limiter": "~3",
@@ -57,7 +57,7 @@
     "to-title-case": "^1.0.0"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.3.14",
+    "@biomejs/biome": "2.4.0",
     "@pirxpilot/stylus": "^1.2.0",
     "commander": "~14",
     "postcss": "~8",
