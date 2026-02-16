@@ -2,17 +2,17 @@ import lifts from '../lifts/index.js';
 
 lifts('sierra', 'html', {
   'Easy Rider Express': 'open',
-  'Easy Street Slider Carpet': 'open',
-  'Easy Street Chill Carpet': 'closed',
-  'Grandview Express': 'closed',
-  'Nob Hill': 'open',
+  'Grandview Express': 'open',
   'Rock Garden': 'open',
-  'Tahoe King': 'closed',
-  'Thunder Gulch Carpet': 'closed',
-  'Tubing Hill Tow': 'open',
-  'Wild Mountain Carpet': 'open',
+  'Tahoe King': 'hold',
+  'Thunder Gulch Carpet (Ski/Ride School Only)': 'open',
+  'Blizzard Mountain Tubing': 'closed',
+  'Fuego Carpet': 'open',
+  'Nob Hill': 'open',
+  'Slider Carpet': 'open',
+  'Wild Mountain Carpet (Ski/Ride School Only)': 'open',
   'El Dorado': 'closed',
-  'Short Stuff': 'closed',
-  'Puma': 'closed',
-  'West Bowl Express': 'open'
+  'Short Stuff': 'open',
+  'West Bowl Express': 'open',
+  'Puma': 'hold'
 });
