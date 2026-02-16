@@ -1,4 +1,11 @@
 
+4.2.6 / 2026-02-16
+==================
+
+ * soft dependency update
+ * upgrade `esbuild` to 0.27.3
+ * upgrade `biome` to 2.4.0
+
 4.2.5 / 2026-02-12
 ==================
 
