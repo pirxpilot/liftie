@@ -1,4 +1,10 @@
 
+4.2.7 / 2026-02-16
+==================
+
+ * fix Sierra at Tahoe resort
+ * add LIFITE_USER_AGENT environment variable
+
 4.2.6 / 2026-02-16
 ==================
 
