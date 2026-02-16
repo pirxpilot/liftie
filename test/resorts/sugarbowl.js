@@ -1,17 +1,16 @@
 import lifts from '../lifts/index.js';
 
 lifts('sugarbowl', 'html', {
-  'Lincoln Express': 'scheduled',
-  'Judah Express': 'scheduled',
-  'Disney Express': 'scheduled',
+  'Jerome Hill Express': 'open',
+  'Mt. Judah Express': 'open',
   'Summit Chair': 'closed',
-  'Christmas Tree Express': 'scheduled',
-  "Crow's Peak": 'scheduled',
-  'Jerome Hill Express': 'scheduled',
-  'Village Tow': 'scheduled',
-  'White Pine (Beginner)': 'scheduled',
-  'Flume Carpet': 'scheduled',
-  'Nob Hill (Beginner)': 'scheduled',
+  'White Pine': 'open',
+  'Flume Carpet': 'open',
+  'Mt. Lincoln Express': 'open',
+  'Christmas Tree Express': 'open',
+  'Mt. Disney Express': 'open',
+  'Nob Hill': 'open',
   'Gondola': 'open',
-  'Village Kids Carpet': 'scheduled'
+  'Village Tow': 'open',
+  "Crow's Peak": 'hold'
 });
