@@ -1,4 +1,13 @@
 
+4.2.8 / 2026-02-17
+==================
+
+ * fix Skiwelt resort
+ * fix Sunshine Village resort
+ * fix Grand Targhee resort
+ * fix SunValley resort
+ * fix Sugarbowl resort
+
 4.2.7 / 2026-02-16
 ==================
 
