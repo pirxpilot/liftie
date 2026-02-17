@@ -2,7 +2,18 @@
   "name": "Skiwelt",
   "url": {
     "host": "https://www.skiwelt.at",
-    "pathname": "/dk/liftstatus.html"
+    "pathname": "/en/lift-status-winter.html"
+  },
+  "dataUrl": {
+    "host": "https://www.skiwelt.at",
+    "pathname": "/webapi/micadoweb",
+    "query": {
+      "api": "Micado.Ski.Web/Micado.Ski.Web.IO.Api.FacilityApi/List.api",
+      "region": "skiwelt",
+      "season": "winter",
+      "typeIDs": 1
+    },
+    "json": true
   },
   "tags": [
     "Alps",

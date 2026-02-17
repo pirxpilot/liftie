@@ -6,7 +6,7 @@
   },
   "api": {
     "host": "https://www.skibanff.com",
-    "pathname": "/api/data/lifts",
+    "pathname": "/wp-json/sunshine/v1/lifts",
     "json": true
   },
   "tags": [
