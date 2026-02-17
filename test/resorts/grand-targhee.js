@@ -1,9 +1,10 @@
 import lifts from '../lifts/index.js';
 
 lifts('grand-targhee', 'html', {
+  'Blackfoot': 'closed',
+  'Colter': 'closed',
   'Dreamcatcher': 'closed',
   'Sacajawea': 'closed',
-  'Blackfoot': 'closed',
   'Shoshone': 'closed',
-  'Papoose': 'closed'
+  'Huckleberry': 'closed'
 });
