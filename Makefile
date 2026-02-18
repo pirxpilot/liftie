@@ -81,10 +81,10 @@ node_modules: package.json pnpm-lock.yaml
 .NOTPARALLEL: node_modules
 
 lint: | node_modules
-	$(NODE_BIN)/biome ci $(LINT_SRC)
+	$(NODE_BIN)/biome ci
 
 format: | node_modules
-	$(NODE_BIN)/biome check --write $(LINT_SRC)
+	$(NODE_BIN)/biome check --write
 
 test: | node_modules
 	node --test $(TESTS)
