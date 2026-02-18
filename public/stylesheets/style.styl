@@ -1,9 +1,3 @@
-clearfix()
-  &:after
-    content " "
-    display block
-    clear both
-
 ellipsis()
   text-overflow ellipsis
   overflow hidden
@@ -51,9 +45,6 @@ a, input, button
   display none !important
   visibility hidden
 
-.visible
-  clearfix()
-
 /*
  * Hide only visually, but have it available for screenreaders: h5bp.com/v
  */
@@ -98,12 +89,9 @@ a
     color saturate($link-color, 20%)
 
 .panel
-  clearfix()
   box-sizing border-box
-  margin 0 ($column-gutter/2) $column-gutter
   width $column-width
   padding 0 $panel-padding
-  float left
   background-color $background-color
 
   &:last-child
@@ -128,7 +116,6 @@ header .ls-furkot
   header,
   footer
     transition all .4s ease
-    clearfix()
 
   header
     padding .7em 0 .5em
@@ -185,19 +172,18 @@ header .ls-furkot
   margin .2em 0
 
   .lift
-    display block
+    display flex
+    justify-content space-between
     line-height 2
-    clearfix()
 
     .name
-      float left
+      flex-grow 1
       max-width 90%
       cursor default
       ellipsis()
 
     .status
       font-size 1.1em
-      float right
       text-shadow 1px 1px white
       padding-right 2px
 
@@ -231,11 +217,11 @@ header .ls-furkot
 
 .summary
   list-style none
-  clearfix()
   font-size .8em
+  display flex
+  justify-content space-between
 
   li
-    float left
     margin-right .5em
 
     &:last-child
@@ -252,16 +238,15 @@ header .ls-furkot
       text-shadow 1px 1px white
 
 .summary-color-bar
-  clearfix()
   width 100%
   margin-bottom .5em
+  display flex
 
   .open,
   .hold,
   .scheduled,
   .closed
     height 2px
-    float left
 
   .open
     background-color $green
@@ -272,6 +257,15 @@ header .ls-furkot
   .closed
     background-color $red
 
+@css {
+  .extras .weather {
+    grid-template-areas:
+      "icon temperature"
+      "icon snow"
+      "text text"
+      "notice notice";
+  }
+}
 .extras
   padding-bottom .7em
 
@@ -296,27 +290,28 @@ header .ls-furkot
     gap .5em
 
   .weather
+    display grid
+    grid-template-rows: min-content min-content min-content min-content;
+    gap .5em
+
     .weather-icon
-      float left
-      height 70px
-      margin-top -10px
+      grid-area icon
     .temperature
-      float right
       font-size 1.5em
+      text-align end
+      grid-area temperature
     .snow-conditions
-      clear right
-      float right
       font-size 1.1em
-      margin-left 60px
-      text-align right
+      text-align end
+      grid-area snow
     .snowforecast
       margin-left .5em
       font-weight bold
     .text
-      clear both
+      grid-area text
     .notice
+      grid-area notice
       img
-        float none
         width 126px
         vertical-align bottom
 
@@ -380,13 +375,10 @@ header .ls-furkot
     padding-bottom 0
 
     .deal
-      clearfix()
       padding .4em 0
       line-height 1.5
-      span
-        float left
-      a
-        float right
+      display flex
+      justify-content space-between
 
 .resort
   .deal
@@ -394,9 +386,8 @@ header .ls-furkot
     margin-bottom .5em
     padding .5em 0
     border-bottom solid 2px rgba(black, .3)
-
-    a
-      float right
+    display flex
+    justify-content space-between
 
 .stats
   .pie
@@ -413,8 +404,6 @@ header .ls-furkot
 
   footer
     .summary li
-      float none
-      clear both
       line-height 2
       text-align right
       width 55%
@@ -454,17 +443,18 @@ body > footer
 @import './about'
 @import './tags'
 
-contentWidth(n)
-  return n == 1 ? $column-width : n * ($column-width + $column-gutter)
-
-maxContent(n)
-  .content-{n}
-    max-width contentWidth(n)
-
 .content
-  clearfix()
   margin $column-gutter auto
-  width contentWidth(7)
+  gap $column-gutter
+  display grid
+  grid-template-columns: repeat( auto-fit, $column-width )
+  justify-content: center
+  justify-items: center
+  align-items: start
+
+.content:has(> .tags),
+.content:has(> .about)
+  grid-template-columns: 1fr
 
 
 .widget
@@ -474,27 +464,11 @@ maxContent(n)
     width 100%
     margin 0
     display block
-    float none
 
   &.naked
     .panel
       background-color transparent
       padding 0
-
-for col in 4 3 2 1
-  maxContent(col)
-
-  $max = contentWidth(col + 1)
-  $media_query = 'screen and (max-width:' + $max + ')'
-  @media $media_query
-    .content
-      width contentWidth(col)
-    if col == 1
-      .panel
-        margin-right 0
-        margin-left 0
-      .tags
-        margin 0
 
 @media screen and (max-width: 720px)
   body > footer
@@ -520,7 +494,6 @@ for col in 4 3 2 1
 @media screen and (min-width: 500px)
   .widget
     .lift
-      float left
       margin-right 3%
 
 @media screen and (min-width: 500px) and (max-width: 749px)
