@@ -53,7 +53,7 @@ all: lint test build
 	gzip --best --force --keep $<
 
 %.styl.css: %.styl
-	$(NODE_BIN)/stylus $<
+	$(NODE_BIN)/stylus --ext .styl.css $<
 
 %.css: %.styl.css
 	$(NODE_BIN)/postcss \
@@ -61,7 +61,7 @@ all: lint test build
 		--postcss-cachify.baseUrl /stylesheets \
 		--postcss-cachify.basePath public \
 		--postcss-cachify.format name \
-		--output $@ $@
+		--output $@ $<
 
 %.min.css: %.css
 	$(NODE_BIN)/esbuild \
