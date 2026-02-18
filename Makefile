@@ -52,9 +52,6 @@ all: lint test build
 %.gz: %
 	gzip --best --force --keep $<
 
-%.styl.css: %.styl
-	$(NODE_BIN)/stylus --ext .styl.css $<
-
 %.css: %.styl.css
 	$(NODE_BIN)/postcss \
 		--use postcss-cachify \

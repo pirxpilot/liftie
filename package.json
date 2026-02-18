@@ -58,7 +58,6 @@
   },
   "devDependencies": {
     "@biomejs/biome": "2.4.0",
-    "@pirxpilot/stylus": "^1.2.0",
     "commander": "~14",
     "postcss": "~8",
     "postcss-cachify": "^5.0.0",
