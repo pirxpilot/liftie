@@ -13,21 +13,23 @@
     "useIgnoreFile": true
   },
   "formatter": {
-    "enabled": true
+    "enabled": true,
+    "useEditorconfig": true
   },
   "files": {
     "includes": [
       "**",
-      "!**/pnpm-lock.yaml",
-      "!**/bin/generate",
-      "!**/test/resorts/example",
-      "!**/test/replay"
+      "!pnpm-lock.yaml",
+      "!bin/generate",
+      "!test/resorts/example",
+      "!test/replay",
+      "!meta/liftie.json",
+      "!templates"
     ]
   },
   "javascript": {
     "formatter": {
       "arrowParentheses": "asNeeded",
-      "indentStyle": "space",
       "quoteStyle": "single",
       "trailingCommas": "none",
       "lineWidth": 120
@@ -36,8 +38,7 @@
   "json": {
     "formatter": {
       "enabled": true,
-      "expand": "always",
-      "indentStyle": "space"
+      "expand": "always"
     }
   },
   "linter": {
@@ -47,6 +48,9 @@
     },
     "rules": {
       "recommended": true,
+      "a11y": {
+        "useGenericFontNames": "off"
+      },
       "correctness": {
         "noUnusedVariables": "error",
         "noUndeclaredDependencies": "error",
@@ -56,7 +60,8 @@
       },
       "complexity": {
         "noForEach": "off",
-        "useLiteralKeys": "off"
+        "useLiteralKeys": "off",
+        "noImportantStyles": "off"
       },
       "style": {
         "noParameterAssign": "off",

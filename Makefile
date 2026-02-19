@@ -52,16 +52,13 @@ all: lint test build
 %.gz: %
 	gzip --best --force --keep $<
 
-%.styl.css: %.styl
-	$(NODE_BIN)/stylus $<
-
 %.css: %.styl.css
 	$(NODE_BIN)/postcss \
 		--use postcss-cachify \
 		--postcss-cachify.baseUrl /stylesheets \
 		--postcss-cachify.basePath public \
 		--postcss-cachify.format name \
-		--output $@ $@
+		--output $@ $<
 
 %.min.css: %.css
 	$(NODE_BIN)/esbuild \
@@ -81,10 +78,10 @@ node_modules: package.json pnpm-lock.yaml
 .NOTPARALLEL: node_modules
 
 lint: | node_modules
-	$(NODE_BIN)/biome ci $(LINT_SRC)
+	$(NODE_BIN)/biome ci
 
 format: | node_modules
-	$(NODE_BIN)/biome check --write $(LINT_SRC)
+	$(NODE_BIN)/biome check --write
 
 test: | node_modules
 	node --test $(TESTS)

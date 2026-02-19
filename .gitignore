@@ -1,7 +1,8 @@
 node_modules
-public/stylesheets/*css
-public/stylesheets/*css.gz
-public/stylesheets/*css.br
+public/stylesheets/style.css
+public/stylesheets/*.min.css
+public/stylesheets/*.gz
+public/stylesheets/*.br
 public/scripts/
 .project
 .settings
