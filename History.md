@@ -1,4 +1,16 @@
 
+4.3.0 / 2026-02-19
+==================
+
+ * remove background gradients
+ * replace stylus files with a single CSS style
+ * remove unused stylus files
+ * remove stylus dependency
+ * adjust biome config to lint and format all files
+ * adjust .gitignore for CSS
+ * use flex and grid CSS layouts
+ * fix compiling stylus
+
 4.2.8 / 2026-02-17
 ==================
 
