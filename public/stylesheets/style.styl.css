@@ -19,7 +19,8 @@
   /* Text & Body Colors */
   --color-text-body: hsl(0, 0%, 20%);
   --color-link: hsl(200, 100%, 43%);
-  --color-link-hover: hsl(200, 100%, 47%);
+  --color-link-hover: hsl(from var(--color-link) h s calc(l + 5));
+
   --color-white: hsl(0, 0%, 100%);
   --color-gray-light: hsl(0, 0%, 44%);
   --color-gray-medium: hsl(0, 0%, 40%);
@@ -27,22 +28,16 @@
 
   /* Panel & Background Colors */
   --color-panel-bg: hsl(220, 100%, 97%);
-  --color-about-bg-light: hsl(220, 100%, 98%);
-  --color-about-bg-dark: hsl(220, 100%, 90%);
 
   /* Button & Gradient Colors */
-  --color-button-primary: hsl(200, 100%, 43%);
-  --color-button-gradient-light: hsl(200, 100%, 46%);
-  --color-button-gradient-dark: hsl(200, 100%, 41%);
-  --color-button-hover: hsl(200, 100%, 49%);
-  --color-button-hover-light: hsl(200, 100%, 51%);
-  --color-button-hover-dark: hsl(200, 100%, 47%);
+  --color-button-primary: var(--color-link);
+  --color-button-hover: var(--color-link-hover);
 
   /* Transparency Colors */
   --color-overlay: hsla(0, 0%, 0%, 0.3);
 
   /* Panel Opening Date Background */
-  --color-panel-opening-date: hsla(220, 100%, 97%, 0.9);
+  --color-panel-opening-date: hsla(from var(--color-panel-bg) h s l 0.9);
 
   --column-width: 320px;
   --column-gutter: 16px;
@@ -778,12 +773,8 @@ header {
 }
 
 .about {
-  background-color: var(--color-panel-bg);
-  background-image: linear-gradient(
-    to bottom,
-    var(--color-about-bg-light),
-    var(--color-about-bg-dark)
-  );
+  --bg-color: var(--color-panel-bg);
+  background-color: var(--bg-color);
   box-sizing: border-box;
   padding: 1em;
   max-width: 120ch;
@@ -811,20 +802,11 @@ header {
     display: block;
     float: right;
     padding: 0.3em 0.5em;
-    background-color: var(--color-button-primary);
-    background-image: linear-gradient(
-      to bottom,
-      var(--color-button-gradient-light),
-      var(--color-button-gradient-dark)
-    );
+    --bg-color: var(--color-button-primary);
+    background-color: var(--bg-color);
 
     &:hover {
-      background-color: var(--color-button-hover);
-      background-image: linear-gradient(
-        to bottom,
-        var(--color-button-hover-light),
-        var(--color-button-hover-dark)
-      );
+      --bg-color: var(--color-button-hover);
     }
   }
 }
@@ -859,12 +841,8 @@ header {
     color: var(--color-link);
     text-shadow: 0 1px var(--color-white);
     padding: 5px 6px 5px 7px;
-    background-color: var(--color-panel-bg);
-    background-image: linear-gradient(
-      to bottom,
-      var(--color-about-bg-light),
-      var(--color-about-bg-dark)
-    );
+    --bg-color: var(--color-panel-bg);
+    background-color: var(--bg-color);
 
     .count {
       position: absolute;
@@ -876,12 +854,8 @@ header {
       padding: 5px 0 5px 2px;
       color: var(--color-white);
       text-shadow: 0 -1px var(--color-overlay);
-      background-color: var(--color-button-primary);
-      background-image: linear-gradient(
-        to bottom,
-        var(--color-button-gradient-light),
-        var(--color-button-gradient-dark)
-      );
+      --bg-color: var(--color-button-primary);
+      background-color: var(--bg-color);
       opacity: 0.95;
       transition-duration: 0.3s;
       transition-timing-function: ease-out;
