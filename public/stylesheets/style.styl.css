@@ -314,7 +314,7 @@ button {
 
 body {
   font-size: 1em;
-  font-family: sans-serif;
+  font-family: system-ui, sans-serif;
   color: var(--color-text-body);
 
   display: flex;
