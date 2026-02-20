@@ -1,4 +1,12 @@
 
+4.3.1 / 2026-02-19
+==================
+
+ * prefer `system-ui` font family when supported
+ * add explicit UTF encoding declaration for JSON content
+ * add explicit UTF-8 encoding declaration to HTML
+ * remove `Eldora` tag
+
 4.3.0 / 2026-02-19
 ==================
 
