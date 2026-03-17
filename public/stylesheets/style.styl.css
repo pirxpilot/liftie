@@ -879,6 +879,10 @@ header {
   justify-items: center;
   align-items: start;
 
+  &.resorts {
+    display: grid-lanes;
+  }
+
   &:has(> .tags),
   &:has(> .about) {
     grid-template-columns: 1fr;
