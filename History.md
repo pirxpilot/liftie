@@ -1,4 +1,11 @@
 
+4.3.3 / 2026-04-12
+==================
+
+ * soft dependencies update
+ * add explicit permission for check workflow
+ * fix incomplete regular expression for hostnames
+
 4.3.2 / 2026-03-17
 ==================
 
