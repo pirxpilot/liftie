@@ -47,7 +47,7 @@ test('webcams should return webcams', async t => {
 
         t.assert.equal(webcam.name, 'Fieschertal: Jungfraujoch');
         t.assert.equal(webcam.source, 'https://windy.com/webcams/1697038975');
-        t.assert.match(webcam.image, /^https:\/\/images-webcams.windy.com\//);
+        t.assert.match(webcam.image, /^https:\/\/images-webcams\.windy\.com\//);
         t.assert.match(webcam.notice, /^Webcams provided by\n<a href="https:\/\/www.windy.com\/"/);
 
         done();
