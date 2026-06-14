@@ -58,7 +58,7 @@
   },
   "devDependencies": {
     "@biomejs/biome": "2.5.0",
-    "commander": "~14",
+    "commander": "~15.0.0",
     "postcss": "~8",
     "postcss-cachify": "^5.0.0",
     "postcss-cli-simple": "~4.0.0",
