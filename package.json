@@ -57,7 +57,7 @@
     "to-title-case": "^1.0.0"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.4.0",
+    "@biomejs/biome": "2.5.0",
     "commander": "~14",
     "postcss": "~8",
     "postcss-cachify": "^5.0.0",

@@ -47,9 +47,10 @@
       "project": "recommended"
     },
     "rules": {
-      "recommended": true,
+      "preset": "recommended",
       "a11y": {
-        "useGenericFontNames": "off"
+        "useGenericFontNames": "off",
+        "noSvgWithoutTitle": "off"
       },
       "correctness": {
         "noUnusedVariables": "error",
@@ -67,6 +68,7 @@
         "noParameterAssign": "off",
         "useDefaultParameterLast": "error",
         "useSingleVarDeclarator": "error",
+        "noDescendingSpecificity": "off",
         "noUnusedTemplateLiteral": "error",
         "useNumberNamespace": "error",
         "noUselessElse": "error"
