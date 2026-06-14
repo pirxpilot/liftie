@@ -37,16 +37,16 @@
     "connect-cachify-static": "~5",
     "connect-gzip-static": "~5",
     "connect-renderer": "^2.0.0",
-    "css-select": "~6",
+    "css-select": "~7.0.0",
     "debounce": "^3.0.0",
     "debug": "~4",
-    "domelementtype": "^2.3.0",
-    "domhandler": "~5",
+    "domelementtype": "^3.0.0",
+    "domhandler": "~6.0.1",
     "dynload": "^1.0.2",
     "el-component": "~2",
     "errorhandler": "^1.5.0",
-    "esbuild": "^0.27.3",
-    "htmlparser2": "~10",
+    "esbuild": "^0.28.1",
+    "htmlparser2": "~12.0.0",
     "js-cookie": "^3.0.5",
     "limiter": "~3",
     "lodash": "^4.16.6",
@@ -57,13 +57,13 @@
     "to-title-case": "^1.0.0"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.4.0",
-    "commander": "~14",
+    "@biomejs/biome": "2.5.0",
+    "commander": "~15.0.0",
     "postcss": "~8",
     "postcss-cachify": "^5.0.0",
     "postcss-cli-simple": "~4.0.0",
     "prompt": "~1",
-    "undici": "^7.10.0"
+    "undici": "^8.4.1"
   },
   "resolutions": {
     "on-headers": "npm:@pirxpilot/on-headers@2.0.0"

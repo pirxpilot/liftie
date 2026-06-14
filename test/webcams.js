@@ -1,5 +1,5 @@
 import test from 'node:test';
-import { Agent, MockAgent, setGlobalDispatcher } from 'undici';
+import { Agent, install, MockAgent, setGlobalDispatcher } from 'undici';
 import webcams from '../lib/webcams.js';
 import webcamsJson from './webcams.json' with { type: 'json' };
 
@@ -16,6 +16,7 @@ test('webcams should return webcams', async t => {
 
   t.before(() => {
     process.env.WEBCAMS_API_KEY = 'TEST_KEY';
+    install();
     setGlobalDispatcher(mockAgent);
     mockAgent.disableNetConnect();
     mockAgent
