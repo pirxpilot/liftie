@@ -1,4 +1,14 @@
 
+4.3.5 / 2026-06-14
+==================
+
+ * update NOAA stations
+ * upgrade `commander` to ~15
+ * update HTML / CSS parsers
+ * upgrade `undici` to ~8
+ * upgrade `biome` to 2.5.0
+ * upgrade esbuild
+
 4.3.4 / 2026-05-23
 ==================
 
