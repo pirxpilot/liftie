@@ -1,11 +1,12 @@
 import test from 'node:test';
-import { Agent, MockAgent, setGlobalDispatcher } from 'undici';
+import { Agent, install, MockAgent, setGlobalDispatcher } from 'undici';
 import openweather from '../../lib/weather/openweather.js';
 import responseJson from './openweather.json' with { type: 'json' };
 
 test('openweather should return forecast', async t => {
   const mockAgent = new MockAgent();
   t.before(() => {
+    install();
     setGlobalDispatcher(mockAgent);
     mockAgent.disableNetConnect();
     mockAgent

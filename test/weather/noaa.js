@@ -1,5 +1,5 @@
 import test from 'node:test';
-import { Agent, MockAgent, setGlobalDispatcher } from 'undici';
+import { Agent, install, MockAgent, setGlobalDispatcher } from 'undici';
 import noaa from '../../lib/weather/noaa.js';
 import responseJson from './noaa.json' with { type: 'json' };
 
@@ -19,6 +19,7 @@ test('noaa should return empty forecast if location is missing', (t, done) => {
 test('noaa should return forecast for valid location', async t => {
   const mockAgent = new MockAgent();
   t.before(() => {
+    install();
     setGlobalDispatcher(mockAgent);
     mockAgent.disableNetConnect();
     mockAgent
