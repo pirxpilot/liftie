@@ -1,0 +1,16 @@
+{
+  "name": "Donner Ski Ranch",
+  "url": {
+    "host": "https://www.donnerskiranch.com",
+    "pathname": "/liftstatus"
+  },
+  "tags": [
+    "California",
+    "Lake Tahoe"
+  ],
+  "ll": [
+    -120.330422,
+    39.317661
+  ],
+  "twitter": "DonnerSkiRanch"
+}
