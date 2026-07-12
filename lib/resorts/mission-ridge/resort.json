@@ -1,0 +1,15 @@
+{
+  "name": "Mission Ridge",
+  "url": {
+    "host": "https://www.missionridge.com",
+    "pathname": "/mountain-report/"
+  },
+  "tags": [
+    "Washington"
+  ],
+  "ll": [
+    -120.3993,
+    47.2926
+  ],
+  "twitter": "MissionRidge"
+}
