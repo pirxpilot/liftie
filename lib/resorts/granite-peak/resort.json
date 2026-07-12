@@ -1,0 +1,16 @@
+{
+  "name": "Granite Peak",
+  "url": {
+    "host": "https://www.skigranitepeak.com",
+    "pathname": "/mountain-info/mountain-report"
+  },
+  "tags": [
+    "Wisconsin",
+    "Midwest"
+  ],
+  "ll": [
+    -89.6832,
+    44.9328
+  ],
+  "twitter": "SkiGranitePeak"
+}
