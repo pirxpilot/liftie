@@ -1,8 +1,8 @@
 {
   "name": "Manning Park",
   "url": {
-    "host": "https://www.manningpark.com",
-    "pathname": "/weather-webcams-and-trail-status/"
+    "host": "https://manningpark.com",
+    "pathname": "/weather-webcams-trail-stats/"
   },
   "tags": [
     "British Columbia"
