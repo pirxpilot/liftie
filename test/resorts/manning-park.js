@@ -1,9 +1,9 @@
 import lifts from '../lifts/index.js';
 
 lifts('manning-park', 'html', {
-  'The Bear Chair – New Quad Chairlift': 'open',
+  'Bear Chair': 'closed',
   'Blue Chair': 'closed',
-  'Handle Tow': 'open',
+  'Handle Tow': 'closed',
   'T-Bar': 'closed',
-  'Polar Coaster Tube Park': 'closed'
+  'Whiskey Jack Carpet': 'closed'
 });
