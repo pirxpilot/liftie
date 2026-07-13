@@ -1,0 +1,16 @@
+{
+  "name": "Pitztaler Gletscher",
+  "url": {
+    "host": "https://www.pitztaler-gletscher.at",
+    "pathname": "/pistenplan-und-liftstatus"
+  },
+  "tags": [
+    "Alps",
+    "Austria",
+    "Tirol"
+  ],
+  "ll": [
+    10.8806,
+    46.9275
+  ]
+}
