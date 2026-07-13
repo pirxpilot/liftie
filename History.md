@@ -1,4 +1,11 @@
 
+4.3.6 / 2026-07-12
+==================
+
+ * resort: fix manning-park
+ * resort: fix burke-mountain
+ * resort: fix skiwelt
+
 4.3.5 / 2026-06-14
 ==================
 
