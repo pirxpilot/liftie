@@ -1,0 +1,16 @@
+{
+  "name": "West Mountain",
+  "url": {
+    "host": "https://westmountain.com",
+    "pathname": "/trail-conditions/"
+  },
+  "tags": [
+    "New York"
+  ],
+  "ll": [
+    -73.6866,
+    43.2842
+  ],
+  "twitter": "WestMtn",
+  "noaa": "ALY/70,92"
+}
