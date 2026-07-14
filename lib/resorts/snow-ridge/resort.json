@@ -1,0 +1,15 @@
+{
+  "name": "Snow Ridge",
+  "url": {
+    "host": "https://snowridge.com",
+    "pathname": "/trail-conditions/"
+  },
+  "tags": [
+    "New York"
+  ],
+  "ll": [
+    -75.4085,
+    43.6295
+  ],
+  "noaa": "BUF/147,96"
+}
