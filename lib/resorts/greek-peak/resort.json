@@ -1,0 +1,16 @@
+{
+  "name": "Greek Peak",
+  "url": {
+    "host": "https://www.greekpeak.net",
+    "pathname": "/ski-ride/current-conditions/"
+  },
+  "tags": [
+    "New York"
+  ],
+  "ll": [
+    -76.136,
+    42.5034
+  ],
+  "twitter": "GreekPeakMtn",
+  "noaa": "BGM/56,74"
+}
