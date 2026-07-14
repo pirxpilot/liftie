@@ -1,0 +1,15 @@
+{
+  "name": "Calabogie Peaks",
+  "url": {
+    "host": "https://calabogie.com",
+    "pathname": "/trail-status/"
+  },
+  "tags": [
+    "Ontario"
+  ],
+  "ll": [
+    -76.79553,
+    45.25789
+  ],
+  "twitter": "CalabogiePeaks"
+}
