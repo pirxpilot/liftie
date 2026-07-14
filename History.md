@@ -1,4 +1,18 @@
 
+4.4.0 / 2026-07-14
+==================
+
+ * add west-mountain
+ * add snow-ridge
+ * add granite-peak
+ * add swain
+ * add greek-peak
+ * add mission-ridge
+ * add pitztaler-gletscher
+ * add hochzeiger
+ * add calabogie
+ * add donner-ski-ranch
+
 4.3.6 / 2026-07-12
 ==================
 
