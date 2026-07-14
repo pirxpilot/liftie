@@ -1,0 +1,16 @@
+{
+  "name": "Swain",
+  "url": {
+    "host": "https://swain.com",
+    "pathname": "/trail-report/"
+  },
+  "tags": [
+    "New York"
+  ],
+  "ll": [
+    -77.8586,
+    42.4773
+  ],
+  "twitter": "SwainResort",
+  "noaa": "BUF/72,32"
+}
