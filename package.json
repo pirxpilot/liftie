@@ -63,7 +63,7 @@
     "postcss-cachify": "^5.0.0",
     "postcss-cli-simple": "~4.0.0",
     "prompt": "~1",
-    "undici": "^8.4.1"
+    "undici": "^8.7.0"
   },
   "resolutions": {
     "on-headers": "npm:@pirxpilot/on-headers@2.0.0"
