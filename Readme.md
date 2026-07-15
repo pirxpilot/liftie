@@ -50,16 +50,16 @@ The following files are generated for a newly added resort:
 
 - resort descriptor `lib/resort/acme/resort.json`,
 - parser `lib/resort/acme/index.js`,
-- and a test for a parsing function `test/resort/acme.js`.
-- lift status page retrieved from internet `test/resort/example/acme.html` 
+- and a test for the parsing function `test/resort/acme.js`.
+- lift status page retrieved from the internet `test/resort/example/acme.html` 
 
 You can check [this commit][commit-scaffold] to see what you can expect after this page is completed.
 
-Newly added resort is displayed automatically on liftie index page, but it won't have any lifts at this stage.
+Newly added resort is displayed automatically on the liftie index page, but it won't have any lifts at this stage.
 
 ### Update test
 
-Now you can flesh out the test by adding expected list of ski lifts. See [this commit][commit-test].
+Now you can flesh out the test by adding the expected list of ski lifts. See [this commit][commit-test].
 
 ```javascript
 var expected = {
@@ -71,7 +71,7 @@ var expected = {
 
 ```
 
-At this point you should probably run the tests: since parsing function is not implemented the test
+At this point you should probably run the tests: since the parsing function is not implemented the test
 will fail.
 
 You can run only the specific resort test by running:
@@ -103,7 +103,12 @@ You need to adjust it to find the lift names and their statuses:
 - `selector` is a CSS selector that should locate the parent of the `name` and `status` elements
 - `parse` needs to contain 2 descriptors - one for `name` and the other for `status`
 - `name` and `status` descriptors have the following properties
-  - `child` - dash-separated path to the name or status HTML element - `index`, `,`, `..`, `+`, `-` are supported
+  - `child` - slash-separated path to the name or status HTML element:
+    - `number`: the index of the child element (0-based), negative indexes are supported, -1 means the last element etc.
+    - `.`: the element itself
+    - `..`: the parent element
+    - `+`: the next sibling element
+    - `-`: the previous sibling element
   - `attribute` - optional - if specified the value of the attribute instead of the contents of the element is used
   - `regex` - optional - if specified the regex is executed and the value of the first matching group is used
   - `fn` - optional - if specified the function is called that can be used to convert the value
@@ -122,9 +127,9 @@ is the same as
 name: '0/3'
 ```
 
-Check out [this commit][commit-parse] to see the simple parser implemented.
+Check out [this commit][commit-parse] to see a simple parser implemented.
 
-Once parser is ready the tests should succeed.
+Once the parser is ready the tests should succeed.
 
 ### Improvements
 
@@ -135,7 +140,7 @@ to the liftie page but you can also just add links to the webcams in resort.json
 
 ### Alternative status source
 
-In some cases the lift status info is not directly accessible on the web page to which
+In some cases, the lift status info is not directly accessible on the web page to which
 liftie should be redirecting its users. For example lift status might be contained in an
 invisible iframe or retrieved from a 3rd party server. In such cases specify `dataUrl` in
 addition to the `url` entry in the resort descriptor.
@@ -147,7 +152,7 @@ lift information.
 ### Resort JSON API
 
 In addition to parsing lift status pages Liftie supports resorts that make their lift status
-available through REST API. In such cases you need to specify `api` element in resort descriptor.
+available through REST API. In such cases, you need to specify `api` element in resort descriptor.
 
 ```json
 "api": {
@@ -156,7 +161,7 @@ available through REST API. In such cases you need to specify `api` element in r
 }
 ```
 
-If `api` is specified Liftie will retrieve status info through HTTP GET. The resort `parse` function
+If `api` is specified, Liftie will retrieve status info through HTTP GET. The resort `parse` function
 will receive parsed json instead of the dom tree. Please note that you still need to configure `url` -
 it is used on Liftie pages to send users to official resort page. Check out [this implementation](https://github.com/pirxpilot/liftie/blob/master/lib/resorts/pats-peak/index.js), if you are looking for an example.
 
