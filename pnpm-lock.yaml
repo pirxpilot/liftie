@@ -59,7 +59,7 @@ importers:
         version: 1.0.2
       el-component:
         specifier: ~2
-        version: 2.0.3
+        version: 2.0.4
       errorhandler:
         specifier: ^1.5.0
         version: 1.5.2
@@ -102,13 +102,13 @@ importers:
         version: 15.0.0
       postcss:
         specifier: ~8
-        version: 8.5.15
+        version: 8.5.19
       postcss-cachify:
         specifier: ^5.0.0
-        version: 5.0.1(postcss@8.5.15)
+        version: 5.0.1(postcss@8.5.19)
       postcss-cli-simple:
         specifier: ~4.0.0
-        version: 4.0.5(postcss@8.5.15)
+        version: 4.0.5(postcss@8.5.19)
       prompt:
         specifier: ~1
         version: 1.3.0
@@ -499,8 +499,8 @@ packages:
   ee-first@1.1.1:
     resolution: {integrity: sha512-WMwm9LhRUo+WUaRN+vRuETqG89IgZphVSNkdFgeb6sS/E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQlow==}
 
-  el-component@2.0.3:
-    resolution: {integrity: sha512-3nlcIL6Pq7ueD6ra6/CXXERyQ7V8VKpFMxH2bYGe9NFgEFM/0wmKYrTwmnhAc2NJAo7rhis1WSpyPHnlXzpwcw==}
+  el-component@2.0.4:
+    resolution: {integrity: sha512-8cye2k2qsb+eSVFD+7oHdQ50815b0NX2CusI9Df1u+QGwfYG0gk3GHvePfNFJKRfhGfEMBw+lRXNoeOtfAYHrg==}
 
   encodeurl@2.0.0:
     resolution: {integrity: sha512-Q0n9HRi4m6JuGIV1eFlmvJB7ZEVxu93IrMyiMsGC0lrMJMWzRgx6WGquyfQgZVb31vhGgXnfmPNNXmxnOkRBrg==}
@@ -592,8 +592,8 @@ packages:
   mute-stream@0.0.8:
     resolution: {integrity: sha512-nnbWWOkoWyUsTjKrhgD0dcz22mdkSnpYqbEjIm2nhwhuxlSkpywJmBo8h0ZqJdkp73mb90SssHkN4rsRaBAfAA==}
 
-  nanoid@3.3.12:
-    resolution: {integrity: sha512-ZB9RH/39qpq5Vu6Y+NmUaFhQR6pp+M2Xt76XBnEwDaGcVAqhlvxrl3B2bKS5D3NH3QR76v3aSrKaF/Kiy7lEtQ==}
+  nanoid@3.3.16:
+    resolution: {integrity: sha512-bzlKTyNJ7+LdGIIwy8ijFpIqEQIvafahV7eYykJ8Cvh42EdJeODoJ6gUJXpQJvej1BddH8OqTXZNE/KfbWAu8Q==}
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
 
@@ -627,8 +627,8 @@ packages:
     peerDependencies:
       postcss: ~5 || ~6 || ~7 || ~8
 
-  postcss@8.5.15:
-    resolution: {integrity: sha512-FfR8sjd4em2T6fb3I2MwAJU7HWVMr9zba+enmQeeWFfCbm+UOC/0X4DS8XtpUTMwWMGbjKYP7xjfNekzyGmB3A==}
+  postcss@8.5.19:
+    resolution: {integrity: sha512-Mz8SaolMd8nB+G13WkORcxQKHZ/NE4xXevtkJHVuG+guo9/wYKlIMTKAqGdEmYOXR2ijPjTYNHssizdaVSUNdQ==}
     engines: {node: ^10 || ^12 || >=14}
 
   promise@7.3.1:
@@ -638,8 +638,8 @@ packages:
     resolution: {integrity: sha512-ZkaRWtaLBZl7KKAKndKYUL8WqNT+cQHKRZnT4RYYms48jQkFw3rrBL+/N5K/KtdEveHkxs982MX2BkDKub2ZMg==}
     engines: {node: '>= 6.0.0'}
 
-  range-parser@1.2.1:
-    resolution: {integrity: sha512-Hrgsx+orqoygnmhFbKaHE6c296J+HTAQXoxEF6gNupROmmGJRoyzfG3ccAveqCBrwr/2yxQ5BVd/GTl5agOwSg==}
+  range-parser@1.3.0:
+    resolution: {integrity: sha512-hek2mFQpPuI4E1BBKrSto+BU3e3x4xuarsbiwr3+lf7p44juvFMV0XFWQAP3xUyqXA4RrXLIoaSUGbSt056ZMw==}
     engines: {node: '>= 0.6'}
 
   read@1.0.7:
@@ -1008,7 +1008,7 @@ snapshots:
 
   ee-first@1.1.1: {}
 
-  el-component@2.0.3: {}
+  el-component@2.0.4: {}
 
   encodeurl@2.0.0: {}
 
@@ -1116,7 +1116,7 @@ snapshots:
 
   mute-stream@0.0.8: {}
 
-  nanoid@3.3.12: {}
+  nanoid@3.3.16: {}
 
   negotiator@0.6.3: {}
 
@@ -1132,22 +1132,22 @@ snapshots:
 
   picocolors@1.1.1: {}
 
-  postcss-cachify@5.0.1(postcss@8.5.15):
+  postcss-cachify@5.0.1(postcss@8.5.19):
     dependencies:
       connect-cachify-static: 5.0.1
       debug: 4.4.3
-      postcss: 8.5.15
+      postcss: 8.5.19
     transitivePeerDependencies:
       - supports-color
 
-  postcss-cli-simple@4.0.5(postcss@8.5.15):
+  postcss-cli-simple@4.0.5(postcss@8.5.19):
     dependencies:
-      postcss: 8.5.15
+      postcss: 8.5.19
       yargs-parser: 22.0.0
 
-  postcss@8.5.15:
+  postcss@8.5.19:
     dependencies:
-      nanoid: 3.3.12
+      nanoid: 3.3.16
       picocolors: 1.1.1
       source-map-js: 1.2.1
 
@@ -1163,7 +1163,7 @@ snapshots:
       revalidator: 0.1.8
       winston: 2.4.7
 
-  range-parser@1.2.1: {}
+  range-parser@1.3.0: {}
 
   read@1.0.7:
     dependencies:
@@ -1186,7 +1186,7 @@ snapshots:
       mime-types: 3.0.2
       ms: 2.1.3
       on-finished: 2.4.1
-      range-parser: 1.2.1
+      range-parser: 1.3.0
       statuses: 2.0.2
     transitivePeerDependencies:
       - supports-color
@@ -1211,7 +1211,7 @@ snapshots:
   tiny-pager@2.0.0:
     dependencies:
       component-emitter: 2.0.0
-      el-component: 2.0.3
+      el-component: 2.0.4
 
   title-case-minors@1.0.0: {}
 
