@@ -2,13 +2,18 @@
   "name": "liftie",
   "version": "4.4.0",
   "description": "Clean, simple, easy to read, fast ski resort lift status",
-  "type": "module",
   "keywords": [
     "ski",
     "snowboard"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pirxpilot/liftie.git"
+  },
   "license": "BSD-3-Clause",
   "author": "Damian Krzeminski <pirxpilot@furkot.com>",
+  "type": "module",
+  "main": "app.js",
   "files": [
     "lib",
     "public/*",
@@ -18,14 +23,12 @@
     "views",
     "Makefile"
   ],
-  "main": "app.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/pirxpilot/liftie.git"
-  },
   "scripts": {
     "start": "node app.js",
     "test": "make lint test"
+  },
+  "resolutions": {
+    "on-headers": "npm:@pirxpilot/on-headers@2.0.0"
   },
   "dependencies": {
     "@pirxpilot/connect": "^5.0.0",
@@ -57,23 +60,20 @@
     "to-title-case": "^1.0.0"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.5.0",
+    "@biomejs/biome": "2.5.4",
     "commander": "~15.0.0",
     "postcss": "~8",
     "postcss-cachify": "^5.0.0",
     "postcss-cli-simple": "~4.0.0",
     "prompt": "~1",
-    "undici": "^8.4.1"
+    "undici": "^8.7.0"
   },
-  "resolutions": {
-    "on-headers": "npm:@pirxpilot/on-headers@2.0.0"
+  "engines": {
+    "node": ">= 20.1.0"
   },
   "pnpm": {
     "overrides": {
       "debug": "~4"
     }
-  },
-  "engines": {
-    "node": ">= 20.1.0"
   }
 }
