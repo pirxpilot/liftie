@@ -1,4 +1,11 @@
 
+4.4.1 / 2026-09-14
+==================
+
+ * upgrade `biome` to 2.5.4
+ * upgrade `undici` to 8.7.0
+ * improve Readme child path syntax details
+
 4.4.0 / 2026-07-14
 ==================
 
