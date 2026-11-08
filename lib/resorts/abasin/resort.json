@@ -1,8 +1,12 @@
 {
-  "name": "Arapaho Basin",
+  "name": "Arapahoe Basin",
   "url": {
     "host": "https://www.arapahoebasin.com",
-    "pathname": "/snow-report/"
+    "pathname": "/snow-report/#lift-and-trail-status"
+  },
+  "api": {
+    "host": "https://mtnpowder.com",
+    "pathname": "/feed/93/lifts"
   },
   "tags": [
     "Colorado"
