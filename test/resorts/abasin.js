@@ -8,6 +8,6 @@ lifts('abasin', 'json', {
   'Zuma Lift': 'closed',
   'Beavers': 'closed',
   'Molly Hogan Lift': 'closed',
-  "Molly's Magic Carpet": 'closed',
-  'Pika Place Carpet': 'closed'
+  "Molly's Magic Carpet ": 'closed',
+  'Pika Place Carpet ': 'closed'
 });
