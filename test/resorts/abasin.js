@@ -1,6 +1,6 @@
 import lifts from '../lifts/index.js';
 
-lifts('abasin', 'html', {
+lifts('abasin', 'json', {
   'Black Mountain Express Lift': 'closed',
   'Lenawee Express Lift': 'closed',
   'Pallavicini Lift': 'closed',

@@ -1,0 +1,2319 @@
+[
+    {
+      "Name": "Black Mountain Express Lift",
+      "MountainAreaName": "Front Side Terrain",
+      "Status": "Open",
+      "StatusEnglish": "open",
+      "FirstTracks": "No",
+      "UpdateDate": "2026-10-28T08:39:15-0600",
+      "LiftType": "High-Speed Quad",
+      "Hours": {
+        "Sunday": {
+          "Open": "9:00 AM",
+          "Close": "4:00 PM"
+        },
+        "Monday": {
+          "Open": "9:00 AM",
+          "Close": "4:00 PM"
+        },
+        "Tuesday": {
+          "Open": "9:00 AM",
+          "Close": "4:00 PM"
+        },
+        "Wednesday": {
+          "Open": "9:00 AM",
+          "Close": "4:00 PM"
+        },
+        "Thursday": {
+          "Open": "9:00 AM",
+          "Close": "4:00 PM"
+        },
+        "Friday": {
+          "Open": "9:00 AM",
+          "Close": "4:00 PM"
+        },
+        "Saturday": {
+          "Open": "9:00 AM",
+          "Close": "4:00 PM"
+        }
+      },
+      "Trails": [
+        {
+          "Name": "High Noon",
+          "MountainAreaName": "Front Side Terrain",
+          "Status": "Open",
+          "StatusEnglish": "open",
+          "UpdateDate": "2026-10-28T08:44:09-0600",
+          "Difficulty": "Intermediate",
+          "SnowMaking": "No",
+          "Grooming": "Yes",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "Lower Chisholm Trail",
+          "MountainAreaName": "Front Side Terrain",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-02T13:15:22-0600",
+          "Difficulty": "Easy",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "Lynx Lane",
+          "MountainAreaName": "Front Side Terrain",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-02T13:16:00-0600",
+          "Difficulty": "Intermediate",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "Moose Hollow",
+          "MountainAreaName": "Front Side Terrain",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-02T13:16:04-0600",
+          "Difficulty": "Intermediate",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "North Fork",
+          "MountainAreaName": "Front Side Terrain",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-02T13:16:09-0600",
+          "Difficulty": "Intermediate",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "Ramrod",
+          "MountainAreaName": "Front Side Terrain",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-02T13:16:17-0600",
+          "Difficulty": "Intermediate",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "Sundance",
+          "MountainAreaName": "Front Side Terrain",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-02T13:15:29-0600",
+          "Difficulty": "Easy",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "TB Glades",
+          "MountainAreaName": "Front Side Terrain",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-26T11:25:09-0600",
+          "Difficulty": "Intermediate",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "Yes"
+        },
+        {
+          "Name": "Upper Chisholm Trail",
+          "MountainAreaName": "Front Side Terrain",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-02T13:15:33-0600",
+          "Difficulty": "Easy",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "Weasel Way",
+          "MountainAreaName": "Front Side Terrain",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-02T13:16:21-0600",
+          "Difficulty": "Intermediate",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "Wrangler",
+          "MountainAreaName": "Front Side Terrain",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-02T13:15:33-0600",
+          "Difficulty": "Easy",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        }
+      ],
+      "WaitTime": null,
+      "WaitTimeString": null,
+      "WaitTimeStatus": null
+    },
+    {
+      "Name": "Lenawee Express Lift",
+      "MountainAreaName": "Front Side Terrain",
+      "Status": "Closed",
+      "StatusEnglish": "closed",
+      "FirstTracks": "No",
+      "UpdateDate": "2026-10-28T08:55:58-0600",
+      "LiftType": "High-Speed 6 Chair",
+      "Hours": {
+        "Sunday": {
+          "Open": "9:00 AM",
+          "Close": "4:00 PM"
+        },
+        "Monday": {
+          "Open": "9:00 AM",
+          "Close": "4:00 PM"
+        },
+        "Tuesday": {
+          "Open": "9:00 AM",
+          "Close": "4:00 PM"
+        },
+        "Wednesday": {
+          "Open": "9:00 AM",
+          "Close": "4:00 PM"
+        },
+        "Thursday": {
+          "Open": "9:00 AM",
+          "Close": "4:00 PM"
+        },
+        "Friday": {
+          "Open": "9:00 AM",
+          "Close": "4:00 PM"
+        },
+        "Saturday": {
+          "Open": "9:00 AM",
+          "Close": "4:00 PM"
+        }
+      },
+      "Trails": [
+        {
+          "Name": "Below the Traverse",
+          "MountainAreaName": "Front Side Terrain",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-02T13:05:09-0600",
+          "Difficulty": "Very Difficult",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "Cabins Glades",
+          "MountainAreaName": "Front Side Terrain",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-26T11:25:28-0600",
+          "Difficulty": "Intermediate",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "Yes"
+        },
+        {
+          "Name": "Corner Chute",
+          "MountainAreaName": "Front Side Terrain",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-09T16:21:48-0600",
+          "Difficulty": "Very Difficult",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "Cornice Run",
+          "MountainAreaName": "Front Side Terrain",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-02T13:05:10-0600",
+          "Difficulty": "Intermediate",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "Dercum's Gulch",
+          "MountainAreaName": "Front Side Terrain",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-02T13:05:09-0600",
+          "Difficulty": "Intermediate",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "Dragon",
+          "MountainAreaName": "Front Side Terrain",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-02T13:16:21-0600",
+          "Difficulty": "Intermediate",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "East Gully",
+          "MountainAreaName": "Front Side Terrain",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-02T13:16:21-0600",
+          "Difficulty": "Intermediate",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "Falcon",
+          "MountainAreaName": "Front Side Terrain",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-21T08:05:26-0600",
+          "Difficulty": "Expert",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "Gentry",
+          "MountainAreaName": "Front Side Terrain",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-02T13:16:21-0600",
+          "Difficulty": "Intermediate",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "Half Moon Glades",
+          "MountainAreaName": "Front Side Terrain",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-26T11:25:48-0600",
+          "Difficulty": "Expert",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "Yes"
+        },
+        {
+          "Name": "Humbug",
+          "MountainAreaName": "Front Side Terrain",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-02T13:05:09-0600",
+          "Difficulty": "Intermediate",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "Jamie's Face",
+          "MountainAreaName": "Front Side Terrain",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-02T13:05:10-0600",
+          "Difficulty": "Intermediate",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "King Cornice",
+          "MountainAreaName": "Front Side Terrain",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-02T13:05:10-0600",
+          "Difficulty": "Intermediate",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "Knolls",
+          "MountainAreaName": "Front Side Terrain",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-02T13:05:11-0600",
+          "Difficulty": "Intermediate",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "Land of the Giants",
+          "MountainAreaName": "Front Side Terrain",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-02T13:05:09-0600",
+          "Difficulty": "Very Difficult",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "Lenawee Face",
+          "MountainAreaName": "Front Side Terrain",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-02T13:05:10-0600",
+          "Difficulty": "Intermediate",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "Lenawee Parks",
+          "MountainAreaName": "Front Side Terrain",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-02T13:16:21-0600",
+          "Difficulty": "Intermediate",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "Mountain Goat Alley",
+          "MountainAreaName": "Front Side Terrain",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-02T13:16:21-0600",
+          "Difficulty": "Intermediate",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "North Pole",
+          "MountainAreaName": "Front Side Terrain",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-09T13:50:34-0600",
+          "Difficulty": "Very Difficult",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "North Y Chute",
+          "MountainAreaName": "Front Side Terrain",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-09T16:21:36-0600",
+          "Difficulty": "Very Difficult",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "Norway Face",
+          "MountainAreaName": "Front Side Terrain",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-02T13:05:10-0600",
+          "Difficulty": "Intermediate",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "Norway Mountain Run",
+          "MountainAreaName": "Front Side Terrain",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-02T13:05:10-0600",
+          "Difficulty": "Intermediate",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "Powerline",
+          "MountainAreaName": "Front Side Terrain",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-02T13:05:10-0600",
+          "Difficulty": "Intermediate",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "Snorkel Nose",
+          "MountainAreaName": "Front Side Terrain",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-09T16:21:16-0600",
+          "Difficulty": "Very Difficult",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "South Y Chute",
+          "MountainAreaName": "Front Side Terrain",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-09T16:20:39-0600",
+          "Difficulty": "Very Difficult",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "Tree Chutes 1-8",
+          "MountainAreaName": "Front Side Terrain",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-09T13:50:34-0600",
+          "Difficulty": "Very Difficult",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "West Gully",
+          "MountainAreaName": "Front Side Terrain",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-02T13:16:21-0600",
+          "Difficulty": "Intermediate",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "West Wall",
+          "MountainAreaName": "Front Side Terrain",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-02T13:05:10-0600",
+          "Difficulty": "Intermediate",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "Willy's Wide",
+          "MountainAreaName": "Front Side Terrain",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-09T16:21:03-0600",
+          "Difficulty": "Very Difficult",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        }
+      ],
+      "WaitTime": null,
+      "WaitTimeString": null,
+      "WaitTimeStatus": null
+    },
+    {
+      "Name": "Beavers",
+      "MountainAreaName": "The Beavers",
+      "Status": "Closed",
+      "StatusEnglish": "closed",
+      "FirstTracks": "No",
+      "UpdateDate": "2026-10-28T08:59:03-0600",
+      "LiftType": "Quad Chair",
+      "Hours": {
+        "Sunday": {
+          "Open": "9:00 AM",
+          "Close": "4:00 PM"
+        },
+        "Monday": {
+          "Open": "9:00 AM",
+          "Close": "4:00 PM"
+        },
+        "Tuesday": {
+          "Open": "9:00 AM",
+          "Close": "4:00 PM"
+        },
+        "Wednesday": {
+          "Open": "9:00 AM",
+          "Close": "4:00 PM"
+        },
+        "Thursday": {
+          "Open": "9:00 AM",
+          "Close": "4:00 PM"
+        },
+        "Friday": {
+          "Open": "9:00 AM",
+          "Close": "4:00 PM"
+        },
+        "Saturday": {
+          "Open": "9:00 AM",
+          "Close": "4:00 PM"
+        }
+      },
+      "Trails": [
+        {
+          "Name": "Alex",
+          "MountainAreaName": "The Beavers",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-21T08:14:56-0600",
+          "Difficulty": "Expert",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "Bailey Bros.",
+          "MountainAreaName": "The Beavers",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-21T08:14:23-0600",
+          "Difficulty": "Expert",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "Beaver Bowl",
+          "MountainAreaName": "The Beavers",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-21T08:16:01-0600",
+          "Difficulty": "Expert",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "Bighorn",
+          "MountainAreaName": "The Beavers",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-21T08:13:01-0600",
+          "Difficulty": "Expert",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "Castor",
+          "MountainAreaName": "The Beavers",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-21T08:14:29-0600",
+          "Difficulty": "Expert",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "Davis",
+          "MountainAreaName": "The Beavers",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-02T13:06:05-0600",
+          "Difficulty": "Intermediate",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "Digger",
+          "MountainAreaName": "The Beavers",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-21T08:15:01-0600",
+          "Difficulty": "Expert",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "Dreamcatcher",
+          "MountainAreaName": "The Beavers",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-21T08:13:06-0600",
+          "Difficulty": "Expert",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "Drummond",
+          "MountainAreaName": "The Beavers",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-21T08:13:13-0600",
+          "Difficulty": "Expert",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "East Woods",
+          "MountainAreaName": "The Beavers",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-21T08:14:35-0600",
+          "Difficulty": "Expert",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "Face Shot Gully",
+          "MountainAreaName": "The Beavers",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-21T08:14:40-0600",
+          "Difficulty": "Expert",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "Faculty Club",
+          "MountainAreaName": "The Beavers",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-21T08:14:45-0600",
+          "Difficulty": "Expert",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "Glockenspiel Glade",
+          "MountainAreaName": "The Beavers",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-26T11:29:11-0600",
+          "Difficulty": "Expert",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "Yes"
+        },
+        {
+          "Name": "Hauk",
+          "MountainAreaName": "The Beavers",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-21T08:13:23-0600",
+          "Difficulty": "Expert",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "Jaeger",
+          "MountainAreaName": "The Beavers",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-21T08:15:07-0600",
+          "Difficulty": "Expert",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "Jetta",
+          "MountainAreaName": "The Beavers",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-21T08:15:12-0600",
+          "Difficulty": "Expert",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "Loafer",
+          "MountainAreaName": "The Beavers",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-02T13:06:05-0600",
+          "Difficulty": "Intermediate",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "Marmot",
+          "MountainAreaName": "The Beavers",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-21T08:15:17-0600",
+          "Difficulty": "Expert",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "Peaceful Valley",
+          "MountainAreaName": "The Beavers",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-21T08:11:35-0600",
+          "Difficulty": "Expert",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "Pioneer Willy",
+          "MountainAreaName": "The Beavers",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-21T08:13:33-0600",
+          "Difficulty": "Expert",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "Porcupine",
+          "MountainAreaName": "The Beavers",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-21T08:14:51-0600",
+          "Difficulty": "Expert",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "Ptarmigan",
+          "MountainAreaName": "The Beavers",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-21T08:12:25-0600",
+          "Difficulty": "Expert",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "The Last Waltz",
+          "MountainAreaName": "The Beavers",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-21T08:13:39-0600",
+          "Difficulty": "Expert",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "Thick & Thin",
+          "MountainAreaName": "The Beavers",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-21T08:15:44-0600",
+          "Difficulty": "Expert",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "Tinker Toy",
+          "MountainAreaName": "The Beavers",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-21T08:13:44-0600",
+          "Difficulty": "Expert",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "Todd's Ridge",
+          "MountainAreaName": "The Beavers",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-21T08:14:18-0600",
+          "Difficulty": "Expert",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        }
+      ],
+      "WaitTime": null,
+      "WaitTimeString": null,
+      "WaitTimeStatus": null
+    },
+    {
+      "Name": "Zuma Lift",
+      "MountainAreaName": "Montezuma Bowl",
+      "Status": "Closed",
+      "StatusEnglish": "closed",
+      "FirstTracks": "No",
+      "UpdateDate": "2026-10-28T09:00:00-0600",
+      "LiftType": "Quad Chair",
+      "Hours": {
+        "Sunday": {
+          "Open": "9:00 AM",
+          "Close": "4:00 PM"
+        },
+        "Monday": {
+          "Open": "9:00 AM",
+          "Close": "4:00 PM"
+        },
+        "Tuesday": {
+          "Open": "9:00 AM",
+          "Close": "4:00 PM"
+        },
+        "Wednesday": {
+          "Open": "9:00 AM",
+          "Close": "4:00 PM"
+        },
+        "Thursday": {
+          "Open": "9:00 AM",
+          "Close": "4:00 PM"
+        },
+        "Friday": {
+          "Open": "9:00 AM",
+          "Close": "4:00 PM"
+        },
+        "Saturday": {
+          "Open": "9:00 AM",
+          "Close": "4:00 PM"
+        }
+      },
+      "Trails": [
+        {
+          "Name": "Bierstadt",
+          "MountainAreaName": "Montezuma Bowl",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-21T08:06:17-0600",
+          "Difficulty": "Expert",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "Black Bear",
+          "MountainAreaName": "Montezuma Bowl",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-21T08:08:30-0600",
+          "Difficulty": "Expert",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "Black Forest",
+          "MountainAreaName": "Montezuma Bowl",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-02T13:06:03-0600",
+          "Difficulty": "Very Difficult",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "Cooper",
+          "MountainAreaName": "Montezuma Bowl",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-02T13:06:03-0600",
+          "Difficulty": "Intermediate",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "Crags",
+          "MountainAreaName": "Montezuma Bowl",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-02T13:06:03-0600",
+          "Difficulty": "Very Difficult",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "Davo",
+          "MountainAreaName": "Montezuma Bowl",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-02T13:06:03-0600",
+          "Difficulty": "Very Difficult",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "Davo's Glade",
+          "MountainAreaName": "Montezuma Bowl",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-26T11:29:39-0600",
+          "Difficulty": "Expert",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "Yes"
+        },
+        {
+          "Name": "Durrance",
+          "MountainAreaName": "Montezuma Bowl",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-02T13:06:02-0600",
+          "Difficulty": "Very Difficult",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "Elephant's Trunk - Lower",
+          "MountainAreaName": "Montezuma Bowl",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-02T13:06:03-0600",
+          "Difficulty": "Very Difficult",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "Elephant's Trunk - Upper",
+          "MountainAreaName": "Montezuma Bowl",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-02T13:06:03-0600",
+          "Difficulty": "Very Difficult",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "Elk Meadows",
+          "MountainAreaName": "Montezuma Bowl",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-02T13:06:03-0600",
+          "Difficulty": "Intermediate",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "End Zone",
+          "MountainAreaName": "Montezuma Bowl",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-02T13:06:03-0600",
+          "Difficulty": "Very Difficult",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "Eureka",
+          "MountainAreaName": "Montezuma Bowl",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-21T08:09:06-0600",
+          "Difficulty": "Expert",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "Gentling",
+          "MountainAreaName": "Montezuma Bowl",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-02T13:06:03-0600",
+          "Difficulty": "Intermediate",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "Grays",
+          "MountainAreaName": "Montezuma Bowl",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-21T08:06:32-0600",
+          "Difficulty": "Expert",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "Groswold",
+          "MountainAreaName": "Montezuma Bowl",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-02T13:06:02-0600",
+          "Difficulty": "Very Difficult",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "Independence",
+          "MountainAreaName": "Montezuma Bowl",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-02T13:06:03-0600",
+          "Difficulty": "Intermediate",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "Jump",
+          "MountainAreaName": "Montezuma Bowl",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-02T13:06:03-0600",
+          "Difficulty": "Very Difficult",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "Lightning Traverse",
+          "MountainAreaName": "Montezuma Bowl",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-21T08:06:56-0600",
+          "Difficulty": "Expert",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "Lightning Trees",
+          "MountainAreaName": "Montezuma Bowl",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-02T13:06:03-0600",
+          "Difficulty": "Very Difficult",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "Log Roll",
+          "MountainAreaName": "Montezuma Bowl",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-21T08:07:14-0600",
+          "Difficulty": "Expert",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "Long Chute",
+          "MountainAreaName": "Montezuma Bowl",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-21T08:08:45-0600",
+          "Difficulty": "Expert",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "Max",
+          "MountainAreaName": "Montezuma Bowl",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-02T13:06:02-0600",
+          "Difficulty": "Very Difficult",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "Miner's Glade",
+          "MountainAreaName": "Montezuma Bowl",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-26T11:29:26-0600",
+          "Difficulty": "Intermediate",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "Yes"
+        },
+        {
+          "Name": "Montezuma's Revenge",
+          "MountainAreaName": "Montezuma Bowl",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-21T08:09:15-0600",
+          "Difficulty": "Expert",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "Mountain Goat Traverse",
+          "MountainAreaName": "Montezuma Bowl",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-21T08:07:33-0600",
+          "Difficulty": "Expert",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "Ned's Cache",
+          "MountainAreaName": "Montezuma Bowl",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-02T13:06:03-0600",
+          "Difficulty": "Intermediate",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "Northern Spy",
+          "MountainAreaName": "Montezuma Bowl",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-21T08:07:42-0600",
+          "Difficulty": "Expert",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "Placer Junction",
+          "MountainAreaName": "Montezuma Bowl",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-21T08:07:51-0600",
+          "Difficulty": "Expert",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "Schauffler",
+          "MountainAreaName": "Montezuma Bowl",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-02T13:06:03-0600",
+          "Difficulty": "Very Difficult",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "Shining Light",
+          "MountainAreaName": "Montezuma Bowl",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-02T13:06:03-0600",
+          "Difficulty": "Intermediate",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "Tieze's Claim",
+          "MountainAreaName": "Montezuma Bowl",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-21T08:08:03-0600",
+          "Difficulty": "Expert",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "Torreys",
+          "MountainAreaName": "Montezuma Bowl",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-21T08:08:12-0600",
+          "Difficulty": "Expert",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "Winning Card",
+          "MountainAreaName": "Montezuma Bowl",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-21T08:09:25-0600",
+          "Difficulty": "Expert",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "Zuma Cornice",
+          "MountainAreaName": "Montezuma Bowl",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-02T13:06:03-0600",
+          "Difficulty": "Very Difficult",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        }
+      ],
+      "WaitTime": null,
+      "WaitTimeString": null,
+      "WaitTimeStatus": null
+    },
+    {
+      "Name": "Lazy J Tow",
+      "MountainAreaName": "Montezuma Bowl",
+      "Status": "Closed",
+      "StatusEnglish": "closed",
+      "FirstTracks": "No",
+      "UpdateDate": "2026-10-28T09:00:43-0600",
+      "LiftType": "Rope Tow",
+      "Hours": {
+        "Sunday": {
+          "Open": "9:00 AM",
+          "Close": "4:00 PM"
+        },
+        "Monday": {
+          "Open": "9:00 AM",
+          "Close": "4:00 PM"
+        },
+        "Tuesday": {
+          "Open": "9:00 AM",
+          "Close": "4:00 PM"
+        },
+        "Wednesday": {
+          "Open": "9:00 AM",
+          "Close": "4:00 PM"
+        },
+        "Thursday": {
+          "Open": "9:00 AM",
+          "Close": "4:00 PM"
+        },
+        "Friday": {
+          "Open": "9:00 AM",
+          "Close": "4:00 PM"
+        },
+        "Saturday": {
+          "Open": "9:00 AM",
+          "Close": "4:00 PM"
+        }
+      },
+      "Trails": [],
+      "WaitTime": null,
+      "WaitTimeString": null,
+      "WaitTimeStatus": null
+    },
+    {
+      "Name": "Pallavicini Lift",
+      "MountainAreaName": "Pallavicini",
+      "Status": "Closed",
+      "StatusEnglish": "closed",
+      "FirstTracks": "No",
+      "UpdateDate": "2026-10-28T08:56:35-0600",
+      "LiftType": "Double",
+      "Hours": {
+        "Sunday": {
+          "Open": "9:00 AM",
+          "Close": "4:00 PM"
+        },
+        "Monday": {
+          "Open": "9:00 AM",
+          "Close": "4:00 PM"
+        },
+        "Tuesday": {
+          "Open": "9:00 AM",
+          "Close": "4:00 PM"
+        },
+        "Wednesday": {
+          "Open": "9:00 AM",
+          "Close": "4:00 PM"
+        },
+        "Thursday": {
+          "Open": "9:00 AM",
+          "Close": "4:00 PM"
+        },
+        "Friday": {
+          "Open": "9:00 AM",
+          "Close": "4:00 PM"
+        },
+        "Saturday": {
+          "Open": "9:00 AM",
+          "Close": "4:00 PM"
+        }
+      },
+      "Trails": [
+        {
+          "Name": "13 Cornices",
+          "MountainAreaName": "Pallavicini",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-02T13:06:04-0600",
+          "Difficulty": "Very Difficult",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "1st Alley - David's Run",
+          "MountainAreaName": "Pallavicini",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-02T13:06:04-0600",
+          "Difficulty": "Very Difficult",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "2nd Alley",
+          "MountainAreaName": "Pallavicini",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-02T13:06:04-0600",
+          "Difficulty": "Very Difficult",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "3rd Alley",
+          "MountainAreaName": "Pallavicini",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-02T13:06:04-0600",
+          "Difficulty": "Very Difficult",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "4th Alley (West Alley)",
+          "MountainAreaName": "Pallavicini",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-02T13:06:04-0600",
+          "Difficulty": "Very Difficult",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "Bald Spot",
+          "MountainAreaName": "Pallavicini",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-02T13:06:04-0600",
+          "Difficulty": "Very Difficult",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "Bear Trap",
+          "MountainAreaName": "Pallavicini",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-02T13:06:04-0600",
+          "Difficulty": "Very Difficult",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "Challenger",
+          "MountainAreaName": "Pallavicini",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-21T08:09:39-0600",
+          "Difficulty": "Expert",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "Christmas Trees",
+          "MountainAreaName": "Pallavicini",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-02T13:06:04-0600",
+          "Difficulty": "Very Difficult",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "East Avenue",
+          "MountainAreaName": "Pallavicini",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-02T13:06:04-0600",
+          "Difficulty": "Very Difficult",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "Exhibition",
+          "MountainAreaName": "Pallavicini",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-21T08:12:44-0600",
+          "Difficulty": "Expert",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "Gauthier",
+          "MountainAreaName": "Pallavicini",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-02T13:06:04-0600",
+          "Difficulty": "Very Difficult",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "Grand Portage",
+          "MountainAreaName": "Pallavicini",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-02T13:06:04-0600",
+          "Difficulty": "Very Difficult",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "Grizzly Road",
+          "MountainAreaName": "Pallavicini",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-02T13:06:04-0600",
+          "Difficulty": "Intermediate",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "International",
+          "MountainAreaName": "Pallavicini",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-02T13:06:04-0600",
+          "Difficulty": "Very Difficult",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "Janitors Only",
+          "MountainAreaName": "Pallavicini",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-02T13:06:04-0600",
+          "Difficulty": "Very Difficult",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "My Chute",
+          "MountainAreaName": "Pallavicini",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-02T13:06:04-0600",
+          "Difficulty": "Very Difficult",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "No Name",
+          "MountainAreaName": "Pallavicini",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-21T08:09:47-0600",
+          "Difficulty": "Expert",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "North Chute",
+          "MountainAreaName": "Pallavicini",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-21T08:10:21-0600",
+          "Difficulty": "Expert",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "North Glade",
+          "MountainAreaName": "Pallavicini",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-26T11:28:34-0600",
+          "Difficulty": "Very Difficult",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "Yes"
+        },
+        {
+          "Name": "Nose",
+          "MountainAreaName": "Pallavicini",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-21T08:10:31-0600",
+          "Difficulty": "Expert",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "Pali Face",
+          "MountainAreaName": "Pallavicini",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-02T13:06:04-0600",
+          "Difficulty": "Very Difficult",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "Pali Main Street",
+          "MountainAreaName": "Pallavicini",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-02T13:06:04-0600",
+          "Difficulty": "Very Difficult",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "Pali Wog",
+          "MountainAreaName": "Pallavicini",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-02T13:06:04-0600",
+          "Difficulty": "Very Difficult",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "Powder Keg",
+          "MountainAreaName": "Pallavicini",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-21T08:10:47-0600",
+          "Difficulty": "Expert",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "Radical",
+          "MountainAreaName": "Pallavicini",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-21T08:09:58-0600",
+          "Difficulty": "Expert",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "Rock Garden",
+          "MountainAreaName": "Pallavicini",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-02T13:06:04-0600",
+          "Difficulty": "Very Difficult",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "Roller Coaster",
+          "MountainAreaName": "Pallavicini",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-02T13:06:04-0600",
+          "Difficulty": "Very Difficult",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "Scudder",
+          "MountainAreaName": "Pallavicini",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-21T08:10:07-0600",
+          "Difficulty": "Expert",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "SG 1",
+          "MountainAreaName": "Pallavicini",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-02T13:06:04-0600",
+          "Difficulty": "Very Difficult",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "SG 2",
+          "MountainAreaName": "Pallavicini",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-02T13:06:04-0600",
+          "Difficulty": "Very Difficult",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "SG 3",
+          "MountainAreaName": "Pallavicini",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-02T13:06:04-0600",
+          "Difficulty": "Very Difficult",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "SG 4",
+          "MountainAreaName": "Pallavicini",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-02T13:06:04-0600",
+          "Difficulty": "Very Difficult",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "SG 5",
+          "MountainAreaName": "Pallavicini",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-02T13:06:04-0600",
+          "Difficulty": "Very Difficult",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "Slalom Slope",
+          "MountainAreaName": "Pallavicini",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-21T08:10:56-0600",
+          "Difficulty": "Expert",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "South Chute",
+          "MountainAreaName": "Pallavicini",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-21T08:12:32-0600",
+          "Difficulty": "Expert",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "Standard",
+          "MountainAreaName": "Pallavicini",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-21T08:12:50-0600",
+          "Difficulty": "Expert",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "Steep Gullies Hike Back Trail",
+          "MountainAreaName": "Pallavicini",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-02T13:06:04-0600",
+          "Difficulty": "Very Difficult",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "The Cellar",
+          "MountainAreaName": "Pallavicini",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-02T13:06:05-0600",
+          "Difficulty": "Very Difficult",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "The Gulch",
+          "MountainAreaName": "Pallavicini",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-21T08:12:56-0600",
+          "Difficulty": "Expert",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "The Spine",
+          "MountainAreaName": "Pallavicini",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-02T13:06:04-0600",
+          "Difficulty": "Very Difficult",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "Timber Glades",
+          "MountainAreaName": "Pallavicini",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-26T11:26:07-0600",
+          "Difficulty": "Very Difficult",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "Yes"
+        },
+        {
+          "Name": "Turbo",
+          "MountainAreaName": "Pallavicini",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-02T13:06:04-0600",
+          "Difficulty": "Very Difficult",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "West Turbo",
+          "MountainAreaName": "Pallavicini",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-02T13:06:04-0600",
+          "Difficulty": "Very Difficult",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "Wildcat",
+          "MountainAreaName": "Pallavicini",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-21T08:12:39-0600",
+          "Difficulty": "Expert",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        }
+      ],
+      "WaitTime": null,
+      "WaitTimeString": null,
+      "WaitTimeStatus": null
+    },
+    {
+      "Name": "Molly Hogan Lift",
+      "MountainAreaName": "Molly Hogan",
+      "Status": "Closed",
+      "StatusEnglish": "closed",
+      "FirstTracks": "No",
+      "UpdateDate": "2026-10-28T08:57:02-0600",
+      "LiftType": "Quad Chair",
+      "Hours": {
+        "Sunday": {
+          "Open": "9:00 AM",
+          "Close": "4:00 PM"
+        },
+        "Monday": {
+          "Open": "9:00 AM",
+          "Close": "4:00 PM"
+        },
+        "Tuesday": {
+          "Open": "9:00 AM",
+          "Close": "4:00 PM"
+        },
+        "Wednesday": {
+          "Open": "9:00 AM",
+          "Close": "4:00 PM"
+        },
+        "Thursday": {
+          "Open": "9:00 AM",
+          "Close": "4:00 PM"
+        },
+        "Friday": {
+          "Open": "9:00 AM",
+          "Close": "4:00 PM"
+        },
+        "Saturday": {
+          "Open": "9:00 AM",
+          "Close": "4:00 PM"
+        }
+      },
+      "Trails": [
+        {
+          "Name": "Molly Hogan",
+          "MountainAreaName": "Molly Hogan",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-09T11:43:31-0600",
+          "Difficulty": "Easy",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        },
+        {
+          "Name": "Pika Place",
+          "MountainAreaName": "Molly Hogan",
+          "Status": "Closed",
+          "StatusEnglish": "closed",
+          "UpdateDate": "2026-10-09T11:43:15-0600",
+          "Difficulty": "Easy",
+          "SnowMaking": "No",
+          "Grooming": "No",
+          "NightSkiing": "No",
+          "Moguls": "No",
+          "Glades": "No"
+        }
+      ],
+      "WaitTime": null,
+      "WaitTimeString": null,
+      "WaitTimeStatus": null
+    },
+    {
+      "Name": "Molly's Magic Carpet ",
+      "MountainAreaName": "Molly Hogan",
+      "Status": "Closed",
+      "StatusEnglish": "closed",
+      "FirstTracks": "No",
+      "UpdateDate": "2026-10-28T08:57:45-0600",
+      "LiftType": "Magic Carpet",
+      "Hours": {
+        "Sunday": {
+          "Open": "9:00 AM",
+          "Close": "4:00 PM"
+        },
+        "Monday": {
+          "Open": "9:00 AM",
+          "Close": "4:00 PM"
+        },
+        "Tuesday": {
+          "Open": "9:00 AM",
+          "Close": "4:00 PM"
+        },
+        "Wednesday": {
+          "Open": "9:00 AM",
+          "Close": "4:00 PM"
+        },
+        "Thursday": {
+          "Open": "9:00 AM",
+          "Close": "4:00 PM"
+        },
+        "Friday": {
+          "Open": "9:00 AM",
+          "Close": "4:00 PM"
+        },
+        "Saturday": {
+          "Open": "9:00 AM",
+          "Close": "4:00 PM"
+        }
+      },
+      "Trails": [],
+      "WaitTime": null,
+      "WaitTimeString": null,
+      "WaitTimeStatus": null
+    },
+    {
+      "Name": "Pika Place Carpet ",
+      "MountainAreaName": "Molly Hogan",
+      "Status": "Closed",
+      "StatusEnglish": "closed",
+      "FirstTracks": "No",
+      "UpdateDate": "2026-10-28T08:58:34-0600",
+      "LiftType": "Magic Carpet",
+      "Hours": {
+        "Sunday": {
+          "Open": "9:00 AM",
+          "Close": "4:00 PM"
+        },
+        "Monday": {
+          "Open": "9:00 AM",
+          "Close": "4:00 PM"
+        },
+        "Tuesday": {
+          "Open": "9:00 AM",
+          "Close": "4:00 PM"
+        },
+        "Wednesday": {
+          "Open": "9:00 AM",
+          "Close": "4:00 PM"
+        },
+        "Thursday": {
+          "Open": "9:00 AM",
+          "Close": "4:00 PM"
+        },
+        "Friday": {
+          "Open": "9:00 AM",
+          "Close": "4:00 PM"
+        },
+        "Saturday": {
+          "Open": "9:00 AM",
+          "Close": "4:00 PM"
+        }
+      },
+      "Trails": [],
+      "WaitTime": null,
+      "WaitTimeString": null,
+      "WaitTimeStatus": null
+    }
+  ]
