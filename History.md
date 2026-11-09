@@ -1,4 +1,11 @@
 
+4.4.2 / 2026-11-09
+==================
+
+ * fix Arapahoe Basin resort
+ * upgrade `biome` to 2.5.13
+ * upgrade `limiter` to 4.1.0
+
 4.4.1 / 2026-09-14
 ==================
 
